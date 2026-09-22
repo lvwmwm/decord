@@ -1,9 +1,9 @@
 // Module ID: 13336
 // Function ID: 13337
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 13336
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/logos", width: 167.5, height: 16, scales: [2, 3], hash: "48c1555b13d7692f2f1f3a2ca57206f1", name: "server_boost_logo_light", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting", width: 270, height: 134, scales: [2, 3], hash: "05b73f8565eab54ae61e59eb9ff991a8", name: "img_premium_embed_background_dark", type: "png" });

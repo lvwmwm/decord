@@ -1,21 +1,21 @@
-// Module ID: 17886
-// Function ID: 17887
+// Module ID: 17996
+// Function ID: 17997
 // Name: usePendingParentRequests
-// Dependencies: [32, 19, 7537, 1371, 7538, 504, 8651, 11921, 2]
+// Dependencies: [32, 19, 7640, 1371, 7641, 504, 8768, 12050, 2]
 // Exports: useDerivedPendingRequests, usePendingRequestListController, usePendingRequestResolution
 
-// Module 17886 (usePendingParentRequests)
-import useUserLinks from "useUserLinks" /* 8651 */;
-import useFamilyCenterActions from "useFamilyCenterActions" /* 11921 */;
+// Module 17996 (usePendingParentRequests)
+import useUserLinks from "useUserLinks" /* 8768 */;
+import useFamilyCenterActions from "useFamilyCenterActions" /* 12050 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7537 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7640 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const UserLinkStatus = fn(7538).UserLinkStatus;
+const UserLinkStatus = fn(7641).UserLinkStatus;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/safety_flows/usePendingParentRequests.tsx");
 

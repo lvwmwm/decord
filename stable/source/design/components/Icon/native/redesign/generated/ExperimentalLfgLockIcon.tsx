@@ -1,13 +1,13 @@
-// Module ID: 5084
-// Function ID: 5085
+// Module ID: 5165
+// Function ID: 5166
 // Name: ExperimentalLfgLockIcon
-// Dependencies: [19, 21, 576, 4261, 5064, 2]
+// Dependencies: [19, 21, 576, 4337, 5145, 2]
 // Exports: ExperimentalLfgLockIcon
 
-// Module 5084 (ExperimentalLfgLockIcon)
+// Module 5165 (ExperimentalLfgLockIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod5064 from "module_5064" /* 5064 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod5145 from "module_5145" /* 5145 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ExperimentalLfgLockIcon = function ExperimentalLfgLockIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5064, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5145, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

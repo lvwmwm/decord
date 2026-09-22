@@ -1,15 +1,15 @@
-// Module ID: 4579
-// Function ID: 4580
+// Module ID: 4655
+// Function ID: 4656
 // Name: VoiceStateStore
-// Dependencies: [32, 4580, 1074, 4581, 12, 504, 1608, 573, 2]
+// Dependencies: [32, 4656, 1074, 4657, 12, 504, 1608, 573, 2]
 
-// Module 4579 (VoiceStateStore)
+// Module 4655 (VoiceStateStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1608 */;
 import _slicedToArray from "module_32" /* 32 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4580 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4656 */;
 
 require = fn;
 function updateVoiceState(arg0, arg1, fn) {
@@ -151,7 +151,7 @@ function handleGuildCreateOrDelete(guild) {
   delete tmp2[tmp];
 }
 const ME = fn(1074).ME;
-const VoicePlatforms = fn(4581).VoicePlatforms;
+const VoicePlatforms = fn(4657).VoicePlatforms;
 let c9 = 0;
 let closure_10 = 0;
 const dependencyMap = {};
@@ -233,11 +233,11 @@ prototype["getVoiceStateForChannel"] = function getVoiceStateForChannel(channelI
   }
   return tmp4;
 };
-prototype["getVoiceStateForUser"] = function getVoiceStateForUser(id) {
-  let tmp2 = dependencyMap4[id];
+prototype["getVoiceStateForUser"] = function getVoiceStateForUser(userId) {
+  let tmp2 = dependencyMap4[userId];
   if (null == tmp2) {
     const obj = {};
-    tmp[id] = obj;
+    tmp[userId] = obj;
     tmp2 = obj;
   }
   return Object.values(tmp2)[0];

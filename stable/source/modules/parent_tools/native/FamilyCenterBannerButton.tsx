@@ -1,26 +1,26 @@
-// Module ID: 14879
-// Function ID: 14880
+// Module ID: 14966
+// Function ID: 14967
 // Name: FamilyCenterBannerButton
-// Dependencies: [19, 17, 1371, 7537, 7538, 1074, 4770, 21, 4560, 576, 8651, 4258, 1114, 11921, 563, 14880, 1242, 14881, 4527, 14882, 1896, 4973, 4975, 9059, 2396, 14885, 4763, 1365, 11918, 1608, 5139, 13871, 2]
+// Dependencies: [19, 17, 1371, 7640, 7641, 1074, 4846, 21, 4636, 576, 8768, 4334, 1114, 12050, 563, 14967, 1240, 14968, 4603, 14969, 1896, 5054, 5056, 9182, 2396, 14972, 4839, 1365, 12047, 1608, 5220, 13956, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 14879 (FamilyCenterBannerButton)
+// Module 14966 (FamilyCenterBannerButton)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1608 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
 import _modDef2396 from "module_2396" /* 2396 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import components_Button_Button from "components/Button/Button" /* 4975 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14881 */;
-import QrCodeIcon from "QrCodeIcon" /* 14885 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import components_Button_Button from "components/Button/Button" /* 5056 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 14968 */;
+import QrCodeIcon from "QrCodeIcon" /* 14972 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7537 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7640 */;
 
 const require = globalThis.__r;
 
-const NativePermissionUtilsDefault = tmp(5139);
+const NativePermissionUtilsDefault = tmp(5220);
 require = fn;
 function FamilyCenterTeenQRCodeButtonInner() {
   const callback = stateFromStores1.useCallback(() => {
@@ -68,7 +68,7 @@ function FamilyCenterTeenQRCodeButtonInner() {
       const obj2 = { action: React7.ShowQRCodeModal };
       AnalyticsUtilsDefault.track(AnalyticEvents.FAMILY_CENTER_ACTION, obj2);
       const obj4 = { linkCode: stateFromStores1, expiresAt: stateFromStores2, onRefresh: getLinkCode2 };
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14882, dependencyMap.paths), React5, obj4);
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14969, dependencyMap.paths), React5, obj4);
     }
   }, items4);
   const obj8 = { direction: "horizontal", spacing: getLinkCode2(stateFromStores[9]).space.PX_8, style: tmp.container, children: null };
@@ -102,16 +102,16 @@ class FamilyCenterBannerButton {
   }
 }
 const View = fn(17).View;
-const FamilyCenterConstants = fn(7538);
+const FamilyCenterConstants = fn(7641);
 ({ CONNECT_GUARDIAN_BOTTOM_SHEET_KEY: closure_7, FAMILY_CENTER_LINK_REQUEST_REGEX: closure_8, FamilyCenterAction: closure_9 } = FamilyCenterConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const NativePermissionTypes = fn(4770).NativePermissionTypes;
+const NativePermissionTypes = fn(4846).NativePermissionTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-let createStyles = fn(4560);
+let createStyles = fn(4636);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_16 } };
 let closure_14 = createStyles.createStyles(obj2);
-createStyles = fn(4560);
+createStyles = fn(4636);
 const value = createStyles.createStyles({ button: { height: 50, width: "100%", marginTop: 16 }, art: { width: 18, height: 18, marginRight: 6 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/parent_tools/native/FamilyCenterBannerButton.tsx");
@@ -172,6 +172,6 @@ export const FamilyCenterParentQRCodeButton = function FamilyCenterParentQRCodeB
     };
     return closure_12(FamilyCenterBannerButton, obj2);
   }
-  obj = handleQrCodeScanSucess(8651);
+  obj = handleQrCodeScanSucess(8768);
   tmp = handleQrCodeScanSucess;
 };

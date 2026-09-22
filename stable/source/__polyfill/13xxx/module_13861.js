@@ -1,9 +1,9 @@
 // Module ID: 13861
 // Function ID: 13862
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 13861
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/contact_sync/native/images", width: 40, height: 40, scales: [2, 3], hash: "1d68443a64aaff8d1d20c2355b47322a", name: "cta", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf_channels/native/images", width: 120, height: 120, scales: [1], hash: "b269fec2e8135bbc2e2d49cb182b352b", name: "amanda", type: "png" });

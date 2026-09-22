@@ -1,9 +1,9 @@
 // Module ID: 13427
 // Function ID: 13428
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 13427
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "337f717407aa04f32bdedf504de7310b", name: "emoji", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/saved_messages", width: 297, height: 238, scales: [1], hash: "2a38db2647d78740ca056c705d4301a7", name: "wumpus-clock", type: "png" });

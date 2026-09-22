@@ -1,124 +1,73 @@
 // Module ID: 3800
 // Function ID: 3801
-// Dependencies: [3801, 3650, 3654, 3651, 3802, 3803]
-// Exports: default
+// Dependencies: [2036, 2035]
 
 // Module 3800
-import module_3801_mod from "module_3801" /* 3801 */;
-import _typeof_mod from "module_3650" /* 3650 */;
-import module_3654_mod from "module_3654" /* 3654 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
-import module_3802_mod from "module_3802" /* 3802 */;
-import module_3803_mod from "module_3803" /* 3803 */;
+import module_2036 from "module_2036" /* 2036 */;
+import module_2035 from "module_2035" /* 2035 */;
 
-let module_3801 = module_3801_mod;
-if (!module_3801) {
-  const obj = { default: module_3801 };
-  let tmp3 = obj;
+if (!module_2036) {
+  const obj2 = { default: module_2036 };
+  let obj = obj2;
 } else {
-  tmp3 = module_3801;
+  obj = module_2036;
 }
-module_3801 = tmp3;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  let obj2 = { default: _typeof };
-  let tmp5 = obj2;
+if (!module_2035) {
+  const obj4 = { default: module_2035 };
+  let obj3 = obj4;
 } else {
-  tmp5 = _typeof;
+  obj3 = module_2035;
 }
-_typeof = tmp5;
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  let obj3 = { default: module_3654 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3654;
-}
-module_3654 = tmp7;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj4 = { default: requiredArgs };
-  let tmp9 = obj4;
-} else {
-  tmp9 = requiredArgs;
-}
-requiredArgs = tmp9;
-let module_3802 = module_3802_mod;
-if (!module_3802) {
-  const obj5 = { default: module_3802 };
-  let tmp11 = obj5;
-} else {
-  tmp11 = module_3802;
-}
-module_3802 = tmp11;
-let module_3803 = module_3803_mod;
-if (!module_3803) {
-  const obj6 = { default: module_3803 };
-  let tmp13 = obj6;
-} else {
-  tmp13 = module_3803;
-}
-module_3803 = tmp13;
-
-export default function addBusinessDays(arg0, arg1) {
-  let diff;
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  let obj2 = module_3801;
-  let defaultResult2 = module_3801.default(defaultResult1);
-  const defaultResult3 = module_3654.default(arg1);
-  if (isNaN(defaultResult3)) {
-    const _Date = Date;
-    const date = new Date(NaN);
-    return date;
-  } else {
-    let num3 = 1;
-    const hours = defaultResult1.getHours();
-    if (defaultResult3 < 0) {
-      num3 = -1;
+const date = {
+  ordinalNumber: obj.default({
+    matchPattern: /^第?\d+(年|四半期|月|週|日|時|分|秒)?/i,
+    parsePattern: /\d+/i,
+    valueCallback(match) {
+      return parseInt(match, 10);
     }
-    defaultResult1.setDate(defaultResult1.getDate() + 7 * obj3.default(defaultResult3 / 5));
-    const _Math = Math;
-    let absolute = Math.abs(defaultResult3 % 5);
-    if (absolute > 0) {
-      do {
-        let setDateResult1 = defaultResult1.setDate(defaultResult1.getDate() + num3);
-        let tmp9 = module_3801;
-        diff = absolute;
-        if (!module_3801.default(defaultResult1)) {
-          diff = absolute - 1;
-        }
-        absolute = diff;
-        obj2 = tmp9;
-      } while (diff > 0);
-    }
-    if (defaultResult2) {
-      defaultResult2 = obj2.default(defaultResult1);
-    }
-    if (defaultResult2) {
-      defaultResult2 = 0 !== defaultResult3;
-    }
-    if (defaultResult2) {
-      if (module_3803.default(defaultResult1)) {
-        let num6 = -1;
-        if (num3 < 0) {
-          num6 = 2;
-        }
-        defaultResult1.setDate(defaultResult1.getDate() + num6);
-        const date1 = defaultResult1.getDate();
-      }
-      if (module_3802.default(defaultResult1)) {
-        let num7 = -2;
-        if (num3 < 0) {
-          num7 = 1;
-        }
-        defaultResult1.setDate(defaultResult1.getDate() + num7);
-        const date2 = defaultResult1.getDate();
-      }
-    }
-    defaultResult1.setHours(hours);
-    return defaultResult1;
-  }
-  obj3 = module_3654;
+  }),
+  era: null,
+  quarter: null,
+  month: null,
+  day: null,
+  dayPeriod: null
 };
+const obj6 = { matchPatterns: { narrow: /^(B\.?C\.?|A\.?D\.?)/i, abbreviated: /^(紀元[前後]|西暦)/i, wide: /^(紀元[前後]|西暦)/i }, defaultMatchWidth: "wide", parsePatterns: null, defaultParseWidth: "any" };
+const obj7 = { narrow: null, any: null };
+const items = [/^B/i, /^A/i];
+obj7.narrow = items;
+const items1 = [/^(紀元前)/i, /^(西暦|紀元後)/i];
+obj7.any = items1;
+obj6.parsePatterns = obj7;
+date.era = obj3.default(obj6);
+const obj8 = {
+  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^Q[1234]/i, wide: /^第[1234一二三四１２３４]四半期/i },
+  defaultMatchWidth: "wide",
+  parsePatterns: null,
+  defaultParseWidth: "any",
+  valueCallback(arg0) {
+    return arg0 + 1;
+  }
+};
+const obj9 = { any: null };
+const items2 = [/(1|一|１)/i, /(2|二|２)/i, /(3|三|３)/i, /(4|四|４)/i];
+obj9.any = items2;
+obj8.parsePatterns = obj9;
+date.quarter = obj3.default(obj8);
+const obj10 = { matchPatterns: { narrow: /^([123456789]|1[012])/, abbreviated: /^([123456789]|1[012])月/i, wide: /^([123456789]|1[012])月/i }, defaultMatchWidth: "wide", parsePatterns: null, defaultParseWidth: "any" };
+const obj11 = { any: null };
+const items3 = [/^1\D/, /^2/, /^3/, /^4/, /^5/, /^6/, /^7/, /^8/, /^9/, /^10/, /^11/, /^12/];
+obj11.any = items3;
+obj10.parsePatterns = obj11;
+date.month = obj3.default(obj10);
+const obj12 = { matchPatterns: { narrow: /^[日月火水木金土]/, short: /^[日月火水木金土]/, abbreviated: /^[日月火水木金土]/, wide: /^[日月火水木金土]曜日/ }, defaultMatchWidth: "wide", parsePatterns: null, defaultParseWidth: "any" };
+const obj13 = { any: null };
+const items4 = [/^日/, /^月/, /^火/, /^水/, /^木/, /^金/, /^土/];
+obj13.any = items4;
+obj12.parsePatterns = obj13;
+date.day = obj3.default(obj12);
+const obj14 = { matchPatterns: { any: /^(AM|PM|午前|午後|正午|深夜|真夜中|夜|朝)/i }, defaultMatchWidth: "any", parsePatterns: { any: { am: /^(A|午前)/i, pm: /^(P|午後)/i, midnight: /^深夜|真夜中/i, noon: /^正午/i, morning: /^朝/i, afternoon: /^午後/i, evening: /^夜/i, night: /^深夜/i } }, defaultParseWidth: "any" };
+date.dayPeriod = obj3.default(obj14);
+
+export default date;
 export default exports.default;

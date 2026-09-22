@@ -1,17 +1,17 @@
-// Module ID: 4793
-// Function ID: 4794
+// Module ID: 4869
+// Function ID: 4870
 // Name: useMessageAuthor
-// Dependencies: [1957, 2021, 2015, 1979, 4209, 1371, 38, 504, 4404, 4794, 2]
+// Dependencies: [1957, 2021, 2015, 1979, 4285, 1371, 38, 504, 4481, 4870, 2]
 // Exports: default, getMessageAuthor, useUserNickAndColor
 
-// Module 4793 (useMessageAuthor)
+// Module 4869 (useMessageAuthor)
 import _modDef38 from "module_38" /* 38 */;
-import UserUtilsDefault from "UserUtils" /* 4404 */;
+import UserUtilsDefault from "UserUtils" /* 4481 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 import GuildRoleStore from "GuildRoleStore" /* 2015 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = fn;
@@ -168,13 +168,9 @@ function useNullableUserAuthor(author, channel) {
     return nickname;
   });
   const tmp3Result2 = require("initialize");
-  const obj3 = { user: author, channel, guild: stateFromStores1, memberColorRole: stateFromStores2, member: stateFromStores, userName: id(guild_id[8]).useName(author), friendNickname: stateFromStores3, displayNameStyles: null };
-  let displayNameStyles;
-  if (author != null) {
-    displayNameStyles = author.displayNameStyles;
-  }
-  obj3.displayNameStyles = displayNameStyles;
-  return computeMessageAuthor(obj3);
+  const name = id(guild_id[8]).useName(author);
+  const obj5 = id(guild_id[8]);
+  return computeMessageAuthor({ user: author, channel, guild: stateFromStores1, memberColorRole: stateFromStores2, member: stateFromStores, userName: name, friendNickname: stateFromStores3, displayNameStyles: id(guild_id[9])({ userId: id, guildId: guild_id }) });
 }
 function getUserAuthor(user, channel) {
   let id;

@@ -1,18 +1,18 @@
-// Module ID: 11771
-// Function ID: 11772
+// Module ID: 11899
+// Function ID: 11900
 // Name: useCanFulfillStreamRequest
-// Dependencies: [1915, 4582, 502, 1957, 1979, 4199, 4600, 4583, 1074, 9952, 1115, 504, 2]
+// Dependencies: [1915, 4658, 502, 1957, 1979, 4275, 4676, 4659, 1074, 10076, 1363, 504, 2]
 // Exports: default
 
-// Module 11771 (useCanFulfillStreamRequest)
+// Module 11899 (useCanFulfillStreamRequest)
 import RunningGameStore from "RunningGameStore" /* 1915 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4582 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import PresenceStore from "PresenceStore" /* 4600 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import PresenceStore from "PresenceStore" /* 4676 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
 
 const require = globalThis.__r;
 

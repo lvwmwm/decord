@@ -1,12 +1,12 @@
-// Module ID: 10874
-// Function ID: 10875
+// Module ID: 11001
+// Function ID: 11002
 // Name: getPrivateChannelCall
-// Dependencies: [4579, 1074, 4767, 7982, 1114, 9088, 2]
+// Dependencies: [4655, 1074, 4843, 8085, 1114, 9211, 2]
 // Exports: default
 
-// Module 10874 (getPrivateChannelCall)
-import CallsUtils from "CallsUtils" /* 9088 */;
-import VoiceStateStore from "VoiceStateStore" /* 4579 */;
+// Module 11001 (getPrivateChannelCall)
+import CallsUtils from "CallsUtils" /* 9211 */;
+import VoiceStateStore from "VoiceStateStore" /* 4655 */;
 
 const require = globalThis.__r;
 

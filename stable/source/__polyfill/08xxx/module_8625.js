@@ -1,9 +1,11 @@
 // Module ID: 8625
 // Function ID: 8626
-// Dependencies: [1122]
+// Dependencies: [65]
 
 // Module 8625
-import registerAsset from "module_1122" /* 1122 */;
+import module_65 from "module_65" /* 65 */;
 
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGFeGaussianBlur", validAttributes: { x: true, y: true, width: true, height: true, result: true, in1: true, stdDeviationX: true, stdDeviationY: true, edgeMode: true } };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "0da6e85b52f6338da38daa05a2b6d1cc", name: "ic_mic_24px", type: "png" });
+export default module_65.get("RNSVGFeGaussianBlur", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

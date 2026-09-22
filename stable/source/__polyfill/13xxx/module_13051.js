@@ -1,9 +1,10 @@
 // Module ID: 13051
 // Function ID: 13052
-// Dependencies: [1122]
+// Dependencies: []
+// Exports: escapeStringForRegex
 
 // Module 13051
-import registerAsset from "module_1122" /* 1122 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ae439aad7c7ee77514ad4b1f3601a8e9", name: "VideoSlashIcon", type: "png" });
+export const escapeStringForRegex = function escapeStringForRegex(str) {
+  return str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&").replace(/-/g, "\\x2d");
+};

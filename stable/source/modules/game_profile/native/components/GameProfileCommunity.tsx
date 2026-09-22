@@ -1,294 +1,196 @@
-// Module ID: 8742
-// Function ID: 8743
+// Module ID: 8863
+// Function ID: 8864
 // Name: GameProfileCommunity
-// Dependencies: [5, 32, 19, 17, 1959, 21, 4560, 576, 8695, 4543, 4548, 8743, 504, 8692, 7342, 8744, 1971, 4556, 1114, 5584, 8746, 1178, 4975, 2]
+// Dependencies: [19, 17, 21, 576, 4636, 7046, 8860, 8859, 8838, 8809, 7445, 8864, 1971, 1114, 5665, 4632, 8866, 1176, 5056, 2]
 // Exports: default
 
-// Module 8742 (GameProfileCommunity)
+// Module 8863 (GameProfileCommunity)
 import nativeDefault from "native" /* 576 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8692 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8744 */;
-import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import _slicedToArray from "module_32" /* 32 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7046 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8809 */;
+import GameProfileSection from "GameProfileSection" /* 8859 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 8860 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 8864 */;
 import noop from "module_19" /* 19 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 1959 */;
+
+const GameProfileSkeletonDefault = GameProfileSkeleton;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
-({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
-let obj2 = { container: { gap: nativeDefault.space.PX_8 }, headerText: null, card: null, guildContent: null, guildHeaderRow: null, guildIcon: null, guildIconImage: null, guildInfo: null, guildNameDescriptionContainer: null, guildNameRow: null, memberCountsContainer: null, memberCountContainer: null, onlineEllipse: null, membersEllipse: null };
-let obj3 = { gap: nativeDefault.space.PX_8 };
-obj2.headerText = { paddingHorizontal: nativeDefault.space.PX_8 };
-let obj4 = { paddingHorizontal: nativeDefault.space.PX_8 };
-obj2.card = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let obj5 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj2.guildContent = { flexDirection: "column", padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
-let obj6 = { flexDirection: "column", padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
-obj2.guildHeaderRow = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
-let size = { width: 56, height: 56, borderRadius: nativeDefault.radii.md, overflow: "hidden", borderWidth: nativeDefault.space.PX_4, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginLeft: -nativeDefault.space.PX_4 };
-obj2.guildIcon = size;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
+const sum = nativeDefault.space.PX_48 + nativeDefault.space.PX_8;
+const createStyles = fn(4636);
+let obj = { card: { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, guildContent: null, guildHeaderRow: null, guildIcon: null, guildIconImage: null, guildIconLoading: null, guildInfo: null, guildNameDescriptionContainer: null, guildNameRow: null, memberCountsContainer: null, memberCountContainer: null, onlineEllipse: null, membersEllipse: null, skeletonGuildIcon: null, skeletonGuildInfo: null, skeletonGuildInfoSmall: null, skeletonGuildInfoLarge: null, skeletonGuildName: null, skeletonGuildDescription: null, skeletonMemberCounts: null };
+let obj3 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj.guildContent = { flexDirection: "column", padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
+let obj4 = { flexDirection: "column", padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };
+obj.guildHeaderRow = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
+let size = { width: sum, height: sum, borderRadius: nativeDefault.radii.md, overflow: "hidden", borderWidth: nativeDefault.space.PX_4, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginLeft: -nativeDefault.space.PX_4 };
+obj.guildIcon = size;
 const size1 = { width: "100%", height: "100%", borderRadius: nativeDefault.radii.none };
-obj2.guildIconImage = size1;
-let obj7 = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
-obj2.guildInfo = { flex: 1, gap: nativeDefault.space.PX_16 };
-let obj8 = { flex: 1, gap: nativeDefault.space.PX_16 };
-obj2.guildNameDescriptionContainer = { gap: nativeDefault.space.PX_4 };
-let obj9 = { gap: nativeDefault.space.PX_4 };
-obj2.guildNameRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-let obj10 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj2.memberCountsContainer = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
-let obj11 = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
-obj2.memberCountContainer = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-const size2 = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
-obj2.onlineEllipse = size2;
-const size3 = { width: 8, height: 8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.TEXT_DEFAULT };
-obj2.membersEllipse = size3;
-let closure_10 = createStyles.createStyles(obj2);
+obj.guildIconImage = size1;
+let obj5 = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
+obj.guildIconLoading = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
+let obj6 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
+obj.guildInfo = { flex: 1, gap: nativeDefault.space.PX_16 };
+const obj7 = { flex: 1, gap: nativeDefault.space.PX_16 };
+obj.guildNameDescriptionContainer = { gap: nativeDefault.space.PX_4 };
+let obj8 = { gap: nativeDefault.space.PX_4 };
+obj.guildNameRow = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+let obj9 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj.memberCountsContainer = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
+let obj10 = { flexDirection: "row", gap: nativeDefault.space.PX_16 };
+obj.memberCountContainer = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+const size2 = { width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.STATUS_POSITIVE };
+obj.onlineEllipse = size2;
+const size3 = { width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.TEXT_DEFAULT };
+obj.membersEllipse = size3;
+const size4 = { width: sum, height: sum, borderRadius: nativeDefault.radii.md, borderWidth: nativeDefault.space.PX_4, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+obj.skeletonGuildIcon = size4;
+obj.skeletonGuildInfo = { flex: 1, justifyContent: "space-between", marginBottom: 2 };
+let obj11 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj.skeletonGuildInfoSmall = { height: nativeDefault.space.PX_96 + 2 };
+let obj12 = { height: nativeDefault.space.PX_96 + 2 };
+obj.skeletonGuildInfoLarge = { height: nativeDefault.space.PX_80 + nativeDefault.space.PX_8 };
+const size5 = { width: "60%", height: nativeDefault.space.PX_20, borderRadius: nativeDefault.radii.xs };
+obj.skeletonGuildName = size5;
+const size6 = { width: "90%", height: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.xs };
+obj.skeletonGuildDescription = size6;
+const size7 = { width: "55%", height: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.xs };
+obj.skeletonMemberCounts = size7;
+let closure_7 = createStyles.createStyles(obj);
+let closure_8 = noop.memo(() => {
+  const tmp = closure_7();
+  const result = 2 * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS;
+  const obj = { animationDelayMs: result, showViewAllSkeleton: false, skeletonTitleWidth: 80, children: null };
+  const obj2 = { style: tmp.card, children: null };
+  const obj3 = { animationDelayMs: result, style: tmp.guildContent, children: null };
+  const obj4 = { style: tmp.guildHeaderRow, children: null };
+  const items = [hasOwnProperty(GameProfileSkeletonDefault, { style: tmp.skeletonGuildIcon }), ];
+  const items1 = [tmp.skeletonGuildInfo, ];
+  const obj6 = { style: items1, children: null };
+  items1[1] = useIsWindowLargeDefault() ? tmp.skeletonGuildInfoLarge : tmp.skeletonGuildInfoSmall;
+  const items2 = [hasOwnProperty(GameProfileSkeletonDefault, { style: tmp.skeletonGuildName }), hasOwnProperty(GameProfileSkeletonDefault, { style: tmp.skeletonGuildDescription }), hasOwnProperty(GameProfileSkeletonDefault, { style: tmp.skeletonMemberCounts })];
+  obj6.children = items2;
+  items[1] = timestampProducer(View, obj6);
+  obj4.children = items;
+  const items3 = [timestampProducer(View, obj4), hasOwnProperty(GameProfileSkeleton.GameProfileSkeletonButton, {})];
+  obj3.children = items3;
+  obj2.children = timestampProducer(GameProfileSkeleton.GameProfileSkeletonContainer, obj3);
+  obj.children = hasOwnProperty(View, obj2);
+  return hasOwnProperty(GameProfileSection.GameProfileSectionSkeleton, obj);
+});
 size = fn(2);
-const result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileCommunity.tsx");
+let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileCommunity.tsx");
 
-export default function GameProfileCommunityServer(game) {
-  game = game.game;
-  const trackAction = game.trackAction;
-  const onInviteResolved = game.onInviteResolved;
-  const closeModal = game.closeModal;
-  let first;
-  noop = undefined;
-  let memo;
-  let stateFromStores;
-  const tmp = closure_10();
-  const tmp2 = first(noop.useState(null), 2);
-  first = tmp2[0];
-  noop = tmp2[1];
-  closure_6 = noop.useRef(onInviteResolved);
-  const items = [onInviteResolved];
-  const effect = noop.useEffect(() => {
-    closure_6.current = onInviteResolved;
-  }, items);
-  let websites;
-  if (game != null) {
-    websites = game.websites;
-  }
-  const items1 = [websites];
-  memo = noop.useMemo(() => {
-    let found;
-    if (game != null) {
-      const websites = game.websites;
-      if (websites != null) {
-        found = websites.find((category) => category.category === game(onInviteResolved[8]).ThirdPartyGameApplicationWebsiteCategory.DISCORD);
-      }
-    }
-    return found;
-  }, items1);
-  const items2 = [memo];
-  const effect1 = noop.useEffect(() => {
-    closure_0 = async function _resolve(arg0, value) {
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp6 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              closure_1 = tmp3;
-              closure_0 = tmp7;
-              closure_128_0 = undefined;
-              let invite;
-              let banned;
-              if (null != memo) {
-                const findCodedLinkResult = game(onInviteResolved[9]).findCodedLink(tmp35.url);
-                if (null != findCodedLinkResult) {
-                  if (findCodedLinkResult.type === tmp20(tmp21[10]).CodedLinkType.INVITE) {
-                    c2 = 1;
-                    c3 = 2;
-                    c4 = 1;
-                    const obj5 = { value: trackAction(tmp21[11])(findCodedLinkResult.code, "game_profile"), done: false };
-                    return obj5;
-                  }
-                }
-                const obj2 = game(onInviteResolved[9]);
-                tmp20 = game;
-              }
-            }
-          } else {
-            if (1 === tmp7) {
-              c2 = 0;
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 !== 2) {
-              closure_128_0 = value;
-              invite = closure_128_0.invite;
-              banned = closure_128_0.banned;
-              let tmp10 = null != invite;
-              if (tmp10) {
-                tmp10 = true !== banned;
-              }
-              if (tmp10) {
-                closure_1_5(invite);
-                const current = ref.current;
-                if (current != null) {
-                  current(invite);
-                }
-              }
-              c2 = 0;
-            }
-            c2 = 0;
-            c4 = 3;
-            const obj = { value, done: true };
-            return obj;
-          }
-          c4 = 3;
-        } catch (tmp24) {
-          if (tmp4 === c2) {
-            c4 = tmp2;
-            throw tmp24;
-          } else {
-            c3 = tmp;
-          }
-        }
-      }
-    };
-    if (null != memo) {
-      (function resolve() {
-        const self = this;
-        const apply = closure_0.apply;
-        if (typeof apply === "unknown") {
-          let applyArgumentsResult = HermesBuiltin.applyArguments(self);
-        } else {
-          applyArgumentsResult = apply(self, arguments);
-        }
-        return applyArgumentsResult;
-      })();
-    }
-  }, items2);
-  const items3 = [memo];
-  stateFromStores = game(onInviteResolved[12]).useStateFromStores(items3, () => {
-    let id;
-    if (first != null) {
-      const guild = tmp.guild;
-      if (guild != null) {
-        id = guild.id;
-      }
-    }
-    let isMemberResult = null != id;
-    if (isMemberResult) {
-      isMemberResult = GuildMembershipStore.isMember(tmp.guild.id);
-    }
-    return isMemberResult;
-  });
-  const items4 = [first, stateFromStores, trackAction, closeModal];
-  if (null != first) {
-    if (null != first.guild) {
-      const fromInviteGuildResult = tmp8(tmp9[16]).fromInviteGuild(first.guild);
-      let approximate_member_count = first.approximate_member_count;
+export default function GameProfileCommunityServer(closeModal) {
+  ({ game, trackAction } = closeModal);
+  closeModal = closeModal.closeModal;
+  let invite;
+  const tmp = closure_7();
+  const tmp4 = closeModal(invite[8])(game, closeModal.onInviteResolved);
+  invite = tmp4.invite;
+  const isMember = tmp4.isMember;
+  const items = [invite, isMember, trackAction, closeModal];
+  const result = trackAction(invite[8]).hasGameProfileDiscordWebsite(game);
+  if (null != invite) {
+    if (null != invite.guild) {
+      const fromInviteGuildResult = tmp5(tmp3[12]).fromInviteGuild(invite.guild);
+      let approximate_member_count = invite.approximate_member_count;
       if (approximate_member_count == null) {
-        approximate_member_count = first.guild.approximate_member_count;
+        approximate_member_count = invite.guild.approximate_member_count;
       }
-      let approximate_presence_count = first.approximate_presence_count;
+      let approximate_presence_count = invite.approximate_presence_count;
       if (approximate_presence_count == null) {
-        approximate_presence_count = first.guild.approximate_presence_count;
+        approximate_presence_count = invite.guild.approximate_presence_count;
       }
-      let obj3 = { style: tmp.container, children: null };
-      let obj4 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.headerText, children: null };
-      const intl = tmp8(tmp9[18]).intl;
-      obj4.children = intl.string(tmp8(tmp9[18]).t["U2N+ci"]);
-      const items5 = [stateFromStores(tmp8(tmp9[17]).Text, obj4), ];
-      let obj5 = { style: tmp.card, children: null };
-      const obj6 = { style: tmp.guildContent, children: null };
-      const obj7 = { style: tmp.guildHeaderRow, children: null };
-      const obj8 = { style: tmp.guildIcon, children: null };
-      const obj9 = { guild: fromInviteGuildResult, size: null, style: null };
-      const tmp8Result = tmp8(tmp9[16]);
-      obj9.size = tmp8(tmp9[19]).GuildIconSizes.LARGE;
-      obj9.style = tmp.guildIconImage;
-      obj8.children = stateFromStores(trackAction(tmp9[19]), obj9);
-      const items6 = [stateFromStores(closure_6, obj8), ];
-      const obj10 = { style: tmp.guildInfo, children: null };
-      const obj11 = { style: tmp.guildNameDescriptionContainer, children: null };
-      const obj12 = { style: tmp.guildNameRow, children: null };
-      const obj13 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: fromInviteGuildResult.name };
-      const items7 = [stateFromStores(tmp8(tmp9[17]).Text, obj13), ];
-      const obj14 = { guild: fromInviteGuildResult, size: null };
-      const tmp16 = trackAction(tmp9[19]);
-      obj14.size = tmp8(tmp9[21]).Icon.Sizes.REFRESH_SMALL_16;
-      items7[1] = stateFromStores(trackAction(tmp9[20]), obj14);
-      obj12.children = items7;
-      const items8 = [closure_9(closure_6, obj12), ];
-      const obj15 = { variant: "text-sm/medium", color: "text-default", lineClamp: 2, children: fromInviteGuildResult.description };
-      items8[1] = stateFromStores(tmp8(tmp9[17]).Text, obj15);
-      obj11.children = items8;
-      const items9 = [closure_9(closure_6, obj11), ];
-      const obj16 = { style: tmp.memberCountsContainer, children: null };
-      let tmp12Result = null;
+      const obj2 = { title: null, children: null };
+      const tmp5Result = tmp5(tmp3[12]);
+      const intl = tmp5(tmp3[13]).intl;
+      obj2.title = intl.string(tmp5(tmp3[13]).t["U2N+ci"]);
+      const obj3 = { style: tmp.card, children: null };
+      const obj4 = { style: tmp.guildContent, children: null };
+      const obj5 = { style: tmp.guildHeaderRow, children: null };
+      const obj6 = { style: tmp.guildIcon, children: null };
+      const obj8 = { guild: fromInviteGuildResult, size: null, style: null, loadingStyle: null };
+      const tmp2Result = tmp2(tmp3[7]);
+      obj8.size = tmp5(tmp3[14]).GuildIconSizes.LARGE;
+      ({ guildIconImage: obj7.style, guildIconLoading: obj7.loadingStyle } = tmp);
+      obj6.children = closure_5(tmp2(tmp3[14]), obj8);
+      const items1 = [closure_5(View, obj6), ];
+      const obj9 = { style: tmp.guildInfo, children: null };
+      const obj10 = { style: tmp.guildNameDescriptionContainer, children: null };
+      const obj11 = { style: tmp.guildNameRow, children: null };
+      const obj12 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: fromInviteGuildResult.name };
+      const items2 = [closure_5(tmp5(tmp3[15]).Text, obj12), ];
+      const obj13 = { guild: fromInviteGuildResult, size: null };
+      const tmp2Result3 = tmp2(tmp3[14]);
+      obj13.size = tmp5(tmp3[17]).Icon.Sizes.REFRESH_SMALL_16;
+      items2[1] = closure_5(tmp2(tmp3[16]), obj13);
+      obj11.children = items2;
+      const items3 = [closure_6(View, obj11), ];
+      const obj14 = { variant: "text-sm/medium", color: "text-default", lineClamp: 2, children: fromInviteGuildResult.description };
+      items3[1] = closure_5(tmp5(tmp3[15]).Text, obj14);
+      obj10.children = items3;
+      const items4 = [closure_6(View, obj10), ];
+      const obj15 = { style: tmp.memberCountsContainer, children: null };
+      let tmp11Result = null;
       if (null != approximate_presence_count) {
-        const obj17 = { style: tmp.memberCountContainer, children: null };
-        const obj18 = { style: tmp.onlineEllipse };
-        const items10 = [tmp14(tmp13, obj18), ];
-        const obj19 = { variant: "text-xs/normal", color: "text-default", children: null };
-        const intl2 = tmp8(tmp9[18]).intl;
-        const obj20 = { membersOnline: approximate_presence_count };
-        obj19.children = intl2.formatToPlainString(tmp8(tmp9[18]).t["LC+S+m"], obj20);
-        items10[1] = tmp14(tmp8(tmp9[17]).Text, obj19);
-        obj17.children = items10;
-        tmp12Result = tmp12(tmp13, obj17);
+        const obj16 = { style: tmp.memberCountContainer, children: null };
+        const obj17 = { style: tmp.onlineEllipse };
+        const items5 = [tmp8(tmp10, obj17), ];
+        const obj18 = { variant: "text-xs/normal", color: "text-default", children: null };
+        const intl2 = tmp5(tmp3[13]).intl;
+        const obj19 = { membersOnline: approximate_presence_count };
+        obj18.children = intl2.formatToPlainString(tmp5(tmp3[13]).t["LC+S+m"], obj19);
+        items5[1] = tmp8(tmp5(tmp3[15]).Text, obj18);
+        obj16.children = items5;
+        tmp11Result = tmp11(tmp10, obj16);
       }
-      const items11 = [tmp12Result, ];
-      let tmp12Result2 = null;
+      const items6 = [tmp11Result, ];
+      let tmp11Result2 = null;
       if (null != approximate_member_count) {
-        const obj21 = { style: tmp.memberCountContainer, children: null };
-        const obj22 = { style: tmp.membersEllipse };
-        const items12 = [tmp14(tmp13, obj22), ];
-        const obj23 = { variant: "text-xs/normal", color: "text-default", children: null };
-        const intl3 = tmp8(tmp9[18]).intl;
-        const obj24 = { count: approximate_member_count };
-        obj23.children = intl3.formatToPlainString(tmp8(tmp9[18]).t.zRl6XR, obj24);
-        items12[1] = tmp14(tmp8(tmp9[17]).Text, obj23);
-        obj21.children = items12;
-        tmp12Result2 = tmp12(tmp13, obj21);
+        const obj20 = { style: tmp.memberCountContainer, children: null };
+        const obj21 = { style: tmp.membersEllipse };
+        const items7 = [tmp8(tmp10, obj21), ];
+        const obj22 = { variant: "text-xs/normal", color: "text-default", children: null };
+        const intl3 = tmp5(tmp3[13]).intl;
+        const obj23 = { count: approximate_member_count };
+        obj22.children = intl3.formatToPlainString(tmp5(tmp3[13]).t.zRl6XR, obj23);
+        items7[1] = tmp8(tmp5(tmp3[15]).Text, obj22);
+        obj20.children = items7;
+        tmp11Result2 = tmp11(tmp10, obj20);
       }
-      items11[1] = tmp12Result2;
-      obj16.children = items11;
-      items9[1] = closure_9(closure_6, obj16);
-      obj10.children = items9;
-      items6[1] = closure_9(closure_6, obj10);
-      obj7.children = items6;
-      const items13 = [closure_9(closure_6, obj7), ];
-      const intl4 = tmp8(tmp9[18]).intl;
+      items6[1] = tmp11Result2;
+      obj15.children = items6;
+      items4[1] = closure_6(View, obj15);
+      obj9.children = items4;
+      items1[1] = closure_6(View, obj9);
+      obj5.children = items1;
+      const items8 = [closure_6(View, obj5), ];
+      const intl4 = tmp5(tmp3[13]).intl;
       const string = intl4.string;
-      const t = tmp8(tmp9[18]).t;
-      if (stateFromStores) {
+      const t = tmp5(tmp3[13]).t;
+      if (isMember) {
         let stringResult = string(t.cEnaWx);
       } else {
         stringResult = string(t.XpeFYr);
       }
-      const obj25 = { variant: "secondary", size: "md", text: stringResult, onPress: tmp11 };
-      items13[1] = stateFromStores(tmp8(tmp9[22]).Button, obj25);
-      obj6.children = items13;
-      obj5.children = closure_9(closure_6, obj6);
-      items5[1] = stateFromStores(closure_6, obj5);
-      obj3.children = items5;
-      return closure_9(closure_6, obj3);
+      const obj24 = { variant: "secondary", size: "md", text: stringResult, onPress: tmp7 };
+      items8[1] = closure_5(tmp5(tmp3[18]).Button, obj24);
+      obj4.children = items8;
+      obj3.children = closure_6(View, obj4);
+      obj2.children = closure_5(View, obj3);
+      return closure_5(tmp2Result, obj2);
     }
   }
-  return null;
+  let tmp17 = null;
+  if (result) {
+    tmp17 = null;
+    if (tmp4.isResolving) {
+      tmp17 = closure_5(closure_8, {});
+    }
+  }
+  return tmp17;
 };

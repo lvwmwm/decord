@@ -1,52 +1,46 @@
 // Module ID: 3849
 // Function ID: 3850
-// Dependencies: [3650, 3850, 3851, 3651]
-// Exports: default
+// Dependencies: [3850, 3851, 3852, 3853, 3854]
 
 // Module 3849
-import _typeof_mod from "module_3650" /* 3650 */;
-import endOfDay_mod from "endOfDay" /* 3850 */;
-import endOfMonth_mod from "endOfMonth" /* 3851 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import module_3850 from "module_3850" /* 3850 */;
+import module_3851 from "module_3851" /* 3851 */;
+import module_3852 from "module_3852" /* 3852 */;
+import date_mod from "module_3853" /* 3853 */;
+import date_mod from "module_3854" /* 3854 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+if (!module_3850) {
+  const obj = { default: module_3850 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_3850;
 }
-_typeof = tmp3;
-let endOfDay = endOfDay_mod;
-if (!endOfDay) {
-  const obj2 = { default: endOfDay };
+if (!module_3851) {
+  const obj2 = { default: module_3851 };
   let tmp5 = obj2;
 } else {
-  tmp5 = endOfDay;
+  tmp5 = module_3851;
 }
-endOfDay = tmp5;
-let endOfMonth = endOfMonth_mod;
-if (!endOfMonth) {
-  const obj3 = { default: endOfMonth };
+if (!module_3852) {
+  const obj3 = { default: module_3852 };
   let tmp7 = obj3;
 } else {
-  tmp7 = endOfMonth;
+  tmp7 = module_3852;
 }
-endOfMonth = tmp7;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj4 = { default: requiredArgs };
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
   let tmp9 = obj4;
 } else {
-  tmp9 = requiredArgs;
+  tmp9 = date;
 }
-requiredArgs = tmp9;
+let date = date_mod;
+if (!date) {
+  const obj5 = { default: date };
+  let tmp11 = obj5;
+} else {
+  tmp11 = date;
+}
 
-export default function isLastDayOfMonth(arg0) {
-  requiredArgs.default(1, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const time = endOfDay.default(defaultResult1).getTime();
-  const defaultResult2 = endOfDay.default(defaultResult1);
-  return time === endOfMonth.default(defaultResult1).getTime();
-};
+export default { code: "sv", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
 export default exports.default;

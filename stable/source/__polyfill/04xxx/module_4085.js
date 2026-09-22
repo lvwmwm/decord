@@ -1,0 +1,31 @@
+// Module ID: 4085
+// Function ID: 4086
+// Dependencies: [4077, 3726]
+// Exports: default
+
+// Module 4085
+import module_4077_mod from "module_4077" /* 4077 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
+
+let module_4077 = module_4077_mod;
+if (!module_4077) {
+  const obj = { default: module_4077 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_4077;
+}
+module_4077 = tmp3;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
+} else {
+  tmp5 = requiredArgs;
+}
+requiredArgs = tmp5;
+
+export default function isThisQuarter(arg0) {
+  requiredArgs.default(1, arguments);
+  return module_4077.default(Date.now(), arg0);
+};
+export default exports.default;

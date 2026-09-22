@@ -1,12 +1,12 @@
-// Module ID: 8204
-// Function ID: 8205
+// Module ID: 8320
+// Function ID: 8321
 // Name: FramePreviewOverrideStore
-// Dependencies: [5, 17, 8205, 3, 8206, 1152, 8207, 8211, 560, 2]
+// Dependencies: [5, 17, 8321, 3, 8322, 1150, 8323, 8327, 560, 2]
 
-// Module 8204 (FramePreviewOverrideStore)
+// Module 8320 (FramePreviewOverrideStore)
 import LoggerDefault from "Logger" /* 3 */;
-import NativeFileModuleDefault from "NativeFileModule" /* 1152 */;
-import FileManagerUtils from "FileManagerUtils" /* 8206 */;
+import NativeFileModuleDefault from "NativeFileModule" /* 1150 */;
+import FileManagerUtils from "FileManagerUtils" /* 8322 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -224,7 +224,7 @@ let closure_11 = async function _buildOverride(arg0) {
   })();
 };
 const Image = fn(17).Image;
-const FrameOverrideConstants = fn(8205);
+const FrameOverrideConstants = fn(8321);
 ({ MANIFEST_NAME: hasOwnProperty, OVERRIDE_DIR: metroRequire } = FrameOverrideConstants);
 let closure_7 = new LoggerDefault("FramePreviewOverrideStore");
 let closure_8 = 0;

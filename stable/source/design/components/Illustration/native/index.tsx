@@ -1,24 +1,26 @@
-// Module ID: 8234
-// Function ID: 8235
-// Dependencies: [4271, 2]
+// Module ID: 8349
+// Function ID: 8350
+// Dependencies: [1074, 4347, 2]
 // Exports: getIllustrationSource, useIllustrationSource
 
-// Module 8234
-import native from "native" /* 4271 */;
+// Module 8349
+import Constants from "Constants" /* 1074 */;
+import native from "native" /* 4347 */;
 import size from "module_2" /* 2 */;
 
+const ThemeTypes = Constants.ThemeTypes;
 const result = size.fileFinishedImporting("design/components/Illustration/native/index.tsx");
 
 export const getIllustrationSource = function getIllustrationSource(theme, light) {
-  if ("light" === theme) {
+  if (theme === ThemeTypes.LIGHT) {
     light = light.light;
-  } else if ("darker" === theme) {
+  } else if (theme === tmp.DARK) {
     let midnight = light.darker;
     if (midnight == null) {
       midnight = light.midnight;
     }
     light = midnight;
-  } else if ("midnight" === theme) {
+  } else if (theme === tmp.ONYX) {
     let darker = light.midnight;
     if (darker == null) {
       darker = light.darker;

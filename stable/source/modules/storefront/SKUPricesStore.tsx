@@ -1,9 +1,9 @@
-// Module ID: 7232
-// Function ID: 7233
+// Module ID: 7335
+// Function ID: 7336
 // Name: SKUPricesStore
 // Dependencies: [2025, 504, 1369, 573, 2]
 
-// Module 7232 (SKUPricesStore)
+// Module 7335 (SKUPricesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;

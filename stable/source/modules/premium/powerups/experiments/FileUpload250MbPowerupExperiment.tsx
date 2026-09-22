@@ -1,11 +1,11 @@
-// Module ID: 4487
-// Function ID: 4488
+// Module ID: 4563
+// Function ID: 4564
 // Name: FileUpload250MbPowerupExperiment
-// Dependencies: [4474, 2]
+// Dependencies: [4550, 2]
 // Exports: getFileUpload250MbPowerupEnabled, getFileUpload250MbPowerupRollbackEnabled, useFileUpload250MbPowerupEnabled, useFileUpload250MbPowerupRollbackEnabled
 
-// Module 4487 (FileUpload250MbPowerupExperiment)
-import createExperiment from "module_4474" /* 4474 */;
+// Module 4563 (FileUpload250MbPowerupExperiment)
+import createExperiment from "module_4550" /* 4550 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2026-03_file_upload_250_mb_powerup", label: "File Upload 250MB Powerup", defaultConfig: { enabled: false, rollbackEnabled: false }, treatments: null };

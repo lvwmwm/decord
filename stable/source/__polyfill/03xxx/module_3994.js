@@ -1,32 +1,22 @@
 // Module ID: 3994
 // Function ID: 3995
-// Dependencies: [3650, 3651]
+// Dependencies: [3975, 3730]
 // Exports: default
 
 // Module 3994
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import _mod3730 from "module_3730" /* 3730 */;
+import assign_mod from "assign" /* 3975 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+let assign = assign_mod;
+if (!assign) {
+  const obj = { default: assign };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = assign;
 }
-_typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
-  let tmp5 = obj2;
-} else {
-  tmp5 = requiredArgs;
-}
-requiredArgs = tmp5;
+assign = tmp3;
 
-export default function isPast(arg0) {
-  requiredArgs.default(1, arguments);
-  const time = _typeof.default(arg0).getTime();
-  return time < Date.now();
+export default function getDefaultOptions() {
+  return assign.default({}, _mod3730.getDefaultOptions());
 };
 export default exports.default;

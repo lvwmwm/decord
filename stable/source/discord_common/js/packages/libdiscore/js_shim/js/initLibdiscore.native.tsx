@@ -1,12 +1,12 @@
-// Module ID: 1355
-// Function ID: 1356
+// Module ID: 1353
+// Function ID: 1354
 // Name: initLibdiscore
-// Dependencies: [5, 17, 1356, 2]
+// Dependencies: [5, 17, 1354, 2]
 // Exports: initLibdiscore, isLibdiscoreInitialized
 
-// Module 1355 (initLibdiscore)
+// Module 1353 (initLibdiscore)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import timers_mod from "timers" /* 1356 */;
+import timers_mod from "timers" /* 1354 */;
 
 let closure_2 = async function _initLibdiscore(arg0, value) {
   if (c0 === 2) {

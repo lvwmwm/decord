@@ -1,10 +1,10 @@
-// Module ID: 7473
-// Function ID: 7474
+// Module ID: 7576
+// Function ID: 7577
 // Name: sendUnloadRequest
 // Dependencies: [2]
 // Exports: sendUnloadRequest
 
-// Module 7473 (sendUnloadRequest)
+// Module 7576 (sendUnloadRequest)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/analytics/sendUnloadRequest.tsx");

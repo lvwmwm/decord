@@ -1,10 +1,10 @@
-// Module ID: 4993
-// Function ID: 4994
+// Module ID: 5074
+// Function ID: 5075
 // Name: hooks/useMountEffect
 // Dependencies: [19, 2]
 // Exports: default, useMountLayoutEffect, useUnmountEffect
 
-// Module 4993 (hooks/useMountEffect)
+// Module 5074 (hooks/useMountEffect)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

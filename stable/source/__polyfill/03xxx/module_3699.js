@@ -1,12 +1,9 @@
 // Module ID: 3699
 // Function ID: 3700
-// Dependencies: []
-// Exports: default
+// Dependencies: [1120]
 
 // Module 3699
-let closure_0 = { lastWeek: "eeee 'dernier \u00E0' p", yesterday: "'hier \u00E0' p", today: "'aujourd\u2019hui \u00E0' p", tomorrow: "'demain \u00E0' p'", nextWeek: "eeee 'prochain \u00E0' p", other: "P" };
+import registerAsset from "module_1120" /* 1120 */;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  return closure_0[arg0];
-};
-export default exports.default;
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "8112377a672668d68fc4288bccd47d3a", name: "hi.messages.8112377a672668d68fc4288bccd47d3a.compiled.messages", type: "jsona" });

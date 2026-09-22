@@ -1,9 +1,9 @@
 // Module ID: 9342
 // Function ID: 9343
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 9342
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/CamoIcon", width: 60, height: 60, scales: [2, 3], hash: "4e81188cb8befe97a7c2fb2d0b3c1c42", name: "CamoIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "000feaebcabc55e90b1dcd63e76aa1dd", name: "ShieldLockIcon", type: "png" });

@@ -1,10 +1,10 @@
 // Module ID: 1445
 // Function ID: 1446
-// Dependencies: [1446, 1444, 1316, 1288]
+// Dependencies: [1446, 1444, 1314, 1286]
 
 // Module 1445
-import _mod1288 from "module_1288" /* 1288 */;
-import callBoundIntrinsic from "callBoundIntrinsic" /* 1316 */;
+import _mod1286 from "module_1286" /* 1286 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1314 */;
 import _mod1444 from "module_1444" /* 1444 */;
 import regexTester from "regexTester" /* 1446 */;
 
@@ -19,7 +19,7 @@ export default function isGeneratorFunction(fn) {
   } else if (closure_3(closure_6(fn))) {
     return true;
   } else if (closure_4) {
-    if (_mod1288) {
+    if (_mod1286) {
       if (undefined === closure_2) {
         const tmp6 = (() => {
           if (closure_1_4) {
@@ -32,10 +32,10 @@ export default function isGeneratorFunction(fn) {
             return false;
           }
         })();
-        closure_2 = tmp6 && tmp3(1288)(tmp6);
-        const tmp7 = tmp6 && tmp3(1288)(tmp6);
+        closure_2 = tmp6 && tmp3(1286)(tmp6);
+        const tmp7 = tmp6 && tmp3(1286)(tmp6);
       }
-      return tmp3(1288)(fn) === closure_2;
+      return tmp3(1286)(fn) === closure_2;
     } else {
       return false;
     }

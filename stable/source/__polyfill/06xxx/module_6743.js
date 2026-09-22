@@ -1,22 +1,20 @@
 // Module ID: 6743
 // Function ID: 6744
-// Dependencies: [6723, 6738, 6714]
-// Exports: useFlingGesture
+// Dependencies: [19, 6739]
+// Exports: useBottomSheetModalInternal
 
 // Module 6743
-import ComposedGestureName from "ComposedGestureName" /* 6714 */;
-import DEFAULT_PROPS_TRANSFORMER from "DEFAULT_PROPS_TRANSFORMER" /* 6723 */;
-import _mod6738 from "module_6738" /* 6738 */;
+import _mod19 from "module_19" /* 19 */;
+import BottomSheetContext from "BottomSheetContext" /* 6739 */;
 
-require = arg1;
-const dependencyMap = arg6;
-let closure_2 = {};
+const useContext = _mod19.useContext;
 
-export const useFlingGesture = function useFlingGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_2;
+export const useBottomSheetModalInternal = function useBottomSheetModalInternal(arg0) {
+  const tmp = useContext(BottomSheetContext.BottomSheetModalInternalContext);
+  if (true !== arg0) {
+    if (null === tmp) {
+      throw "'BottomSheetModalInternalContext' cannot be null!";
+    }
   }
-  const clonedAndRemappedConfig = DEFAULT_PROPS_TRANSFORMER.useClonedAndRemappedConfig(tmp);
-  return _mod6738.useGesture(ComposedGestureName.SingleGestureName.Fling, clonedAndRemappedConfig);
+  return tmp;
 };

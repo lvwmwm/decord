@@ -1,18 +1,18 @@
-// Module ID: 14187
-// Function ID: 14188
+// Module ID: 14273
+// Function ID: 14274
 // Name: migration
-// Dependencies: [19, 21, 4560, 576, 4279, 4255, 4257, 1178, 2]
+// Dependencies: [19, 21, 4636, 576, 4357, 4331, 4333, 1176, 2]
 // Exports: IntlLink
 
-// Module 14187 (migration)
+// Module 14273 (migration)
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4255 */;
-import _modDef4257 from "module_4257" /* 4257 */;
+import LinkingDefault from "Linking" /* 4331 */;
+import _modDef4333 from "module_4333" /* 4333 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_5 = createStyles.createStyles((arg0) => {
   const link = { color: nativeDefault.colors.TEXT_LINK, textDecorationLine: null };
   let str = "none";
@@ -28,20 +28,28 @@ const result = size.fileFinishedImporting("intl/native/migration.tsx");
 export const IntlLink = function IntlLink(children) {
   const target = children.target;
   if (typeof target === "string") {
-    let fn = () => {
+    let fn = function k() {
       const obj = LinkingDefault;
-      return obj.openURL(_modDef4257.sanitizeUrl(target));
+      return obj.openURL(_modDef4333.sanitizeUrl(target));
     };
+    let str = "link";
   } else {
+    str = "link";
     fn = target;
     if (typeof target === "object") {
+      str = "link";
       fn = target;
       if (null != target.onClick) {
-        fn = target.onClick;
+        ({ accessibilityRole, onClick } = target);
+        if (accessibilityRole == null) {
+          accessibilityRole = "link";
+        }
+        str = accessibilityRole;
+        fn = onClick;
       }
     }
   }
   const tmp = target;
-  const tmp3 = closure_5(noop.useContext(target(4279).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
-  return jsx(tmp(1178).LegacyText, { accessible: true, accessibilityRole: "link", onPress: fn, style: closure_5(noop.useContext(target(4279).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
+  const tmp3 = closure_5(noop.useContext(target(4357).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  return jsx(tmp(1176).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: closure_5(noop.useContext(target(4357).AccessibilityPreferencesContext).alwaysShowLinkDecorations).link, children: children.children });
 };

@@ -1,21 +1,21 @@
-// Module ID: 16536
-// Function ID: 16537
+// Module ID: 16636
+// Function ID: 16637
 // Name: GuildRoleSubscriptionsOverview
-// Dependencies: [19, 5277, 4385, 1979, 21, 4556, 16537, 1114, 9372, 15216, 16538, 563, 7251, 5499, 4905, 1100, 2]
+// Dependencies: [19, 5358, 4462, 1979, 21, 4632, 16637, 1114, 9496, 15297, 16638, 563, 7354, 5580, 4981, 1100, 2]
 // Exports: default
 
-// Module 16536 (GuildRoleSubscriptionsOverview)
+// Module 16636 (GuildRoleSubscriptionsOverview)
 import router_utils from "router_utils" /* 1100 */;
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 4905 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9372 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15216 */;
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16537 */;
-import GuildRoleSubscriptionPurchasePageDefault from "GuildRoleSubscriptionPurchasePage" /* 16538 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 4981 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9496 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 15297 */;
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16637 */;
+import GuildRoleSubscriptionPurchasePageDefault from "GuildRoleSubscriptionPurchasePage" /* 16638 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5277 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4385 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5358 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4462 */;
 import GuildStore from "GuildStore" /* 1979 */;
 
 require = fn;
@@ -36,10 +36,10 @@ class RoleSubscriptionsUnavailableNotice {
 }
 function PurchasePage(arg0) {
   ({ guildId, gatedChannelId } = arg0);
-  const storeFront = NativePaymentHooksDefault.useNativeIAPPayments().storeFront;
+  const mobileStoreFront = NativePaymentHooksDefault.useMobileStoreFront();
   let country;
-  if (storeFront != null) {
-    country = storeFront.country;
+  if (mobileStoreFront != null) {
+    country = mobileStoreFront.country;
   }
   return jsx(GroupListingsFetchContext.GroupListingsFetchContextProvider, { guildId, refetchOnMount: null == gatedChannelId, countryCode: country, dontFetchWhileTrue: null == country, children: jsx(GuildRoleSubscriptionPurchasePageDefault, { guildId, gatedChannelId }) });
 }

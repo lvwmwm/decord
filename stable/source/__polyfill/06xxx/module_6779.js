@@ -1,83 +1,88 @@
 // Module ID: 6779
 // Function ID: 6780
-// Dependencies: [41, 42, 93, 95, 96, 98, 6676]
+// Dependencies: [19, 21, 6780, 6801, 6806, 6802, 6807, 6808, 6791, 6804, 6803, 6809, 6810]
+// Exports: GestureDetector
 
 // Module 6779
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _get from "_get" /* 96 */;
-import _inherits from "_inherits" /* 98 */;
+import jsxProd from "jsxProd" /* 21 */;
+import _modDef6791 from "module_6791" /* 6791 */;
+import attachHandlers from "attachHandlers" /* 6804 */;
+import noop_mod from "module_19" /* 19 */;
 
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
+let noop = noop_mod;
+({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = noop);
+let noop = noop_mod;
+const jsx = jsxProd.jsx;
+
+export const GestureDetector = (gesture) => {
+  if (gesture.gesture) {
+    gesture = gesture.gesture;
+    (function propagateDetectorConfig(gesture, gesture) {
+      const items = ["userSelect", "enableContextMenu", "touchAction"];
+      for (const item10008 of items) {
+        let tmp2 = arg0[item10008];
+        if (undefined !== tmp2) {
+          let toGestureArrayResult = arg1.toGestureArray();
+          for (const item10018 of toGestureArrayResult) {
+            item10018.config[tmp] = tmp3;
+            continue;
+          }
+        }
+        continue;
+      }
+    })(gesture, gesture);
+    let items = [gesture];
+    let gesturesToAttach = current2(() => gesture.toGestureArray(), items);
+    const someResult = gesturesToAttach.some((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
+    webEventHandlers = gesture(webEventHandlers[2]).useWebEventHandlers();
+    const current = detectorUpdater({ firstRender: true, viewRef: null, previousViewTag: -1, forceRebuildReanimatedEvent: false }).current;
+    const obj3 = { attachedGestures: [], animatedEventHandler: null, animatedHandlers: null, shouldUseReanimated: someResult, isMounted: false };
+    current2 = noop.useRef(obj3).current;
+    const obj4 = gesture(webEventHandlers[3]);
+    detectorUpdater = obj4.useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers);
+    const obj2 = gesture(webEventHandlers[2]);
+    const viewRefHandler = gesture(webEventHandlers[4]).useViewRefHandler(current, detectorUpdater);
+    let needsToReattachResult = current.firstRender || current.forceRebuildReanimatedEvent;
+    if (!needsToReattachResult) {
+      needsToReattachResult = tmp9(tmp10[5]).needsToReattach(current2, gesturesToAttach);
+      const tmp9Result = tmp9(tmp10[5]);
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let _classCallCheck = _classCallCheck_mod;
-function changeEventCalculator(rotation, rotation2) {
-  if (undefined === rotation2) {
-    const obj2 = { rotationChange: rotation.rotation };
-    let obj = obj2;
+    current.forceRebuildReanimatedEvent = false;
+    const obj5 = gesture(webEventHandlers[4]);
+    const animatedGesture = gesture(webEventHandlers[6]).useAnimatedGesture(current2, needsToReattachResult);
+    const tmp9Result5 = gesture(webEventHandlers[6]);
+    const isomorphicLayoutEffect = gesture(webEventHandlers[7]).useIsomorphicLayoutEffect(() => {
+      current2.isMounted = true;
+      gesturesToAttach = attachHandlers;
+      const tmp = _modDef6791(current.viewRef);
+      gesturesToAttach.attachHandlers({ preparedGesture: current2, gestureConfig: gesture, gesturesToAttach, webEventHandlersRef: webEventHandlers, viewTag: _modDef6791(current.viewRef) });
+      return () => {
+        current2.isMounted = false;
+        gesture(webEventHandlers[10]).dropHandlers(current2);
+      };
+    }, []);
+    const items1 = [gesture];
+    current(() => {
+      if (current.firstRender) {
+        tmp.firstRender = false;
+      } else {
+        detectorUpdater();
+      }
+    }, items1);
+    const tmp9Result6 = gesture(webEventHandlers[7]);
+    const mountReactions = gesture(webEventHandlers[11]).useMountReactions(detectorUpdater, current2);
+    const tmp9Result8 = gesture(webEventHandlers[12]);
+    if (someResult) {
+      const obj6 = { ref: viewRefHandler, onGestureHandlerEvent: current2.animatedEventHandler, children: gesture.children };
+      let tmp28Result = tmp28(tmp9Result8.AnimatedWrap, obj6);
+    } else {
+      const obj7 = { ref: viewRefHandler, children: gesture.children };
+      tmp28Result = tmp28(tmp9Result8.Wrap, obj7);
+    }
+    return tmp28Result;
   } else {
-    obj = { rotationChange: rotation.rotation - rotation2.rotation };
-  }
-  const merged = Object.assign(rotation);
-  const merged1 = Object.assign(obj);
-  return {};
-}
-changeEventCalculator.__closure = {};
-changeEventCalculator.__workletHash = 11988645380499;
-changeEventCalculator.__initData = { code: "function changeEventCalculator_Pnpm_rotationGestureTs1(current,previous){let changePayload;if(previous===undefined){changePayload={rotationChange:current.rotation};}else{changePayload={rotationChange:current.rotation-previous.rotation};}return{...current,...changePayload};}" };
-class RotationGesture {
-  constructor() {
-    self = this;
-    tmp = closure_0(this, RotationGesture);
-    tmp2 = c2;
-    obj = c2(RotationGesture);
-    tmp3 = closure_1;
-    if (closure_4()) {
-      tmp5 = globalThis;
-      _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, undefined);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.handlerName = "RotationGestureHandler";
-    return tmp3Result;
-  }
-}
-_classCallCheck = RotationGesture;
-_inherits(RotationGesture, fn(6676).ContinousBaseGesture);
-const entry = {
-  key: "onChange",
-  value: function onChange(arg0) {
-    this.handlers.changeEventCalculator = hasOwnProperty;
-    const self = this;
-    let fn = _get(_getPrototypeOf(_classCallCheck.prototype), "onChange", this);
-    if (typeof fn === "function") {
-      fn = (items) => fn.apply(self, items);
-    }
-    const items = [arg0];
-    return fn(items);
+    const _Error = Error;
+    const error = new Error("GestureDetector must have a gesture prop provided.");
+    throw error;
   }
 };
-let items = [entry];
-
-export const RotationGesture = _createClass(RotationGesture, items);

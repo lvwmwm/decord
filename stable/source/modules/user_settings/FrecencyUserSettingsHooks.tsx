@@ -1,13 +1,13 @@
-// Module ID: 10376
-// Function ID: 10377
+// Module ID: 10500
+// Function ID: 10501
 // Name: FrecencyUserSettingsHooks
-// Dependencies: [19, 1221, 1940, 504, 2]
+// Dependencies: [19, 1219, 1940, 504, 2]
 // Exports: useFrecencySettings
 
-// Module 10376 (FrecencyUserSettingsHooks)
+// Module 10500 (FrecencyUserSettingsHooks)
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 1940 */;
 import noop from "module_19" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
 
 require = fn;
 const size = fn(2);

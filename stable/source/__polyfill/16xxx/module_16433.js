@@ -1,9 +1,9 @@
 // Module ID: 16433
 // Function ID: 16434
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 16433
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/main_tabs", width: 24, height: 24, scales: [2, 3], hash: "afec4e7bfe67c8da93450ca26af6a62e", name: "NotificationCenter", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 12, height: 12, scales: [2, 3], hash: "1ec5eedfae937386cd0649a58d830a41", name: "ic_video", type: "png" });

@@ -1,15 +1,15 @@
-// Module ID: 16297
-// Function ID: 16298
+// Module ID: 16391
+// Function ID: 16392
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 4984, 16288, 21, 4560, 576, 4262, 4271, 4974, 4296, 7073, 16298, 16025, 1114, 4272, 5589, 8819, 2]
+// Dependencies: [19, 5065, 16379, 21, 4636, 576, 4338, 4347, 5055, 4373, 7176, 16392, 16117, 16122, 1114, 4348, 16393, 5670, 8940, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 16297 (GuildsBarAnimatedItemWrapper)
+// Module 16391 (GuildsBarAnimatedItemWrapper)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import useToken from "useToken" /* 4262 */;
-import native from "native" /* 4271 */;
-import spring from "spring" /* 4974 */;
+import useToken from "useToken" /* 4338 */;
+import native from "native" /* 4347 */;
+import spring from "spring" /* 5055 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -128,14 +128,14 @@ class UnreadIndicator {
 function renderUnreadIndicator(arg0, sharedId, transitionState, cleanUp) {
   return React6(UnreadIndicator, { sharedId: sharedId.sharedId, id: sharedId.id, selected: sharedId.selected, transitionState, cleanUp }, arg0);
 }
-const IOS_POINTER_STYLE = fn(4984).IOS_POINTER_STYLE;
-const GuildsBarConstants = fn(16288);
+const IOS_POINTER_STYLE = fn(5065).IOS_POINTER_STYLE;
+const GuildsBarConstants = fn(16379);
 ({ GUILD_ITEM_HIT_SLOP: hasOwnProperty, GUILD_ITEM_INSET_LEFT: metroRequire, useGuildWrapperSize: closure_7 } = GuildsBarConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let closure_10 = { mass: 0.8, damping: 100, stiffness: 150 };
 const BAR_SPRING_PHYSICS = { mass: 0.25, damping: 100, stiffness: 200 };
-let createStyles = fn(4560);
+let createStyles = fn(4636);
 let closure_12 = createStyles.createStyles(() => {
   let num = arg0;
   if (arg0 === undefined) {
@@ -148,7 +148,7 @@ let closure_12 = createStyles.createStyles(() => {
   obj.expandedChildrenWrapper = rect;
   return obj;
 });
-createStyles = fn(4560);
+createStyles = fn(4636);
 let closure_13 = createStyles.createStyles((arg0, arg1, width, height) => {
   const obj = { pressableWrapper: null, itemShape: null, itemShapeSelected: null };
   const size = { position: "relative", paddingTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, paddingBottom: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, paddingLeft, height, width: width + hasOwnProperty.left + hasOwnProperty.right };
@@ -174,7 +174,7 @@ let closure_13 = createStyles.createStyles((arg0, arg1, width, height) => {
 });
 const __initData = { code: "function GuildsBarAnimatedItemWrapperTsx1(values){const{disableEntering,sharedId,id,withSpring,BAR_SPRING_PHYSICS,guildItemSize}=this.__closure;if(disableEntering||sharedId!=null&&sharedId.get()!==id){return{animations:{},initialValues:{}};}return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:8,originY:guildItemSize/2,originX:-12}};}" };
 const __initData2 = { code: "function GuildsBarAnimatedItemWrapperTsx2(values){const{withSpring,BAR_SPRING_PHYSICS,transitionState,TransitionStates,cleanUp,runOnJS}=this.__closure;return{animations:{originY:withSpring(values.targetOriginY,BAR_SPRING_PHYSICS,'animate-always'),originX:withSpring(values.targetOriginX,BAR_SPRING_PHYSICS,'animate-always'),height:withSpring(values.targetHeight,BAR_SPRING_PHYSICS,'animate-always')},initialValues:{height:values.currentHeight,originY:values.currentOriginY,originX:values.currentOriginX},callback:function(finished){if(transitionState===TransitionStates.YEETED&&finished&&cleanUp!=null){runOnJS(cleanUp)();}}};}" };
-let __initData3 = { code: "function GuildsBarAnimatedItemWrapperTsx3(){const{withSpring,circle,guildItemSelectedBorderRadius,guildItemSize,CORNER_SPRING_PHYSICS}=this.__closure;return{borderRadius:withSpring(!circle?guildItemSelectedBorderRadius:guildItemSize/2,CORNER_SPRING_PHYSICS,'animate-always')};}" };
+let closure_18 = { code: "function GuildsBarAnimatedItemWrapperTsx3(){const{withSpring,circle,guildItemSelectedBorderRadius,guildItemSize,CORNER_SPRING_PHYSICS}=this.__closure;return{borderRadius:withSpring(!circle?guildItemSelectedBorderRadius:guildItemSize/2,CORNER_SPRING_PHYSICS,'animate-always')};}" };
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarAnimatedItemWrapper.tsx");
 
@@ -203,20 +203,22 @@ export default function GuildsBarAnimatedItemWrapper(id) {
   }
   const overState = id.overState;
   const styles = id.styles;
-  ({ accessibilityActions, expanded } = id);
-  ({ zIndex, onAccessibilityAction, entering, exiting, layout } = id);
+  const accessibilityActions = id.accessibilityActions;
+  const onAccessibilityAction = id.onAccessibilityAction;
+  const expanded = id.expanded;
+  ({ zIndex, entering, exiting, layout } = id);
   if (zIndex === undefined) {
     zIndex = 0;
   }
   const sharedId = id.sharedId;
   flag2 = undefined;
-  __initData3 = undefined;
-  closure_19 = undefined;
+  closure_21 = undefined;
+  closure_22 = undefined;
   let tmp = num();
-  closure_13 = tmp;
+  closure_15 = tmp;
   const token = id(circle[6]).useToken(selected(circle[5]).modules.mobile.GUILD_BAR_ITEM_SIZE);
-  const tmp6 = sharedId(tmp);
-  let draggedElement = tmp6;
+  const tmp6 = expanded(tmp);
+  renderItem = tmp6;
   const tmp7 = selected(circle[11])(config);
   let obj = id(circle[6]);
   const token1 = id(circle[6]).useToken(selected(circle[5]).modules.mobile.GUILD_ITEM_SELECTED_BORDER_RADIUS);
@@ -225,22 +227,24 @@ export default function GuildsBarAnimatedItemWrapper(id) {
     constructor() {
       obj = closure_0(closure_2[8]);
       if (circle) {
-        tmp2 = closure_14;
+        tmp2 = closure_16;
         num = 2;
-        result = closure_14 / 2;
+        result = closure_16 / 2;
       } else {
-        result = closure_16;
+        result = closure_18;
       }
       obj1 = { borderRadius: obj.withSpring(result, closure_10, "animate-always") };
       return obj1;
     }
   }
   const obj3 = id(circle[9]);
-  X.__closure = { withSpring: id(circle[8]).withSpring, circle, guildItemSelectedBorderRadius: token1, guildItemSize: token, CORNER_SPRING_PHYSICS: expanded };
+  X.__closure = { withSpring: id(circle[8]).withSpring, circle, guildItemSelectedBorderRadius: token1, guildItemSize: token, CORNER_SPRING_PHYSICS: accessibilityActions };
   X.__workletHash = 15930523896348;
-  X.__initData = __initData3;
+  X.__initData = token1;
   const animatedStyle = obj3.useAnimatedStyle(X);
   const enableHome = hint.useContext(id(circle[12]).HomeDrawerStateContext).enableHome;
+  const obj4 = { withSpring: id(circle[8]).withSpring, circle, guildItemSelectedBorderRadius: token1, guildItemSize: token, CORNER_SPRING_PHYSICS: accessibilityActions };
+  const drawerOpen = id(circle[13]).useDrawerOpen(enableHome);
   let items = [isDragTarget, dragState, num, overState, zIndex, tmp];
   const memo = hint.useMemo(() => {
     if (isDragTarget) {
@@ -282,9 +286,9 @@ export default function GuildsBarAnimatedItemWrapper(id) {
     }
     str5 = "none";
   }, items);
-  const items1 = [styles.pressableWrapper, isDragTarget, tmp6.draggedElement];
+  let items1 = [styles.pressableWrapper, isDragTarget, tmp6.draggedElement];
   ({ style, unreadStyle } = memo);
-  let tmp12 = !unread;
+  let tmp13 = !unread;
   const memo1 = hint.useMemo(() => {
     const items = [styles.pressableWrapper, , ];
     draggedElement = undefined;
@@ -296,23 +300,23 @@ export default function GuildsBarAnimatedItemWrapper(id) {
     return items;
   }, items1);
   if (!unread) {
-    tmp12 = !selected;
+    tmp13 = !selected;
   }
-  if (!tmp12) {
-    tmp12 = isDragTarget;
+  if (!tmp13) {
+    tmp13 = isDragTarget;
   }
-  if (!tmp12) {
-    tmp12 = flag2;
+  if (!tmp13) {
+    tmp13 = flag2;
   }
-  flag2 = tmp12;
-  const items2 = [tmp12, selected, sharedId, id];
+  flag2 = tmp13;
+  const items2 = [tmp13, selected, sharedId, id];
   const memo2 = obj5.useMemo(() => {
     if (!flag2) {
       const obj = { selected, sharedId, id };
       return obj;
     }
   }, items2);
-  __initData3 = obj5.useRef(undefined);
+  hint.useRef(undefined);
   const items3 = [expanded];
   const effect = obj5.useEffect(() => {
     if (undefined !== ref.current) {
@@ -320,7 +324,7 @@ export default function GuildsBarAnimatedItemWrapper(id) {
         let AccessibilityAnnouncer = require;
         const intl = util.intl;
         const t = util.t;
-        AccessibilityAnnouncer = AccessibilityAnnouncer(4272).AccessibilityAnnouncer;
+        AccessibilityAnnouncer = AccessibilityAnnouncer(4348).AccessibilityAnnouncer;
         AccessibilityAnnouncer.announce(intl.string(tmp3 ? t.CUnsOR : t.jsudFd));
         tmp.current = tmp3;
         const stringResult = intl.string(tmp3 ? t.CUnsOR : t.jsudFd);
@@ -329,13 +333,42 @@ export default function GuildsBarAnimatedItemWrapper(id) {
       tmp.current = expanded;
     }
   }, items3);
-  let tmp15 = null != accessibilityActions;
-  if (tmp15) {
-    tmp15 = accessibilityActions.length > 0;
-  }
-  closure_19 = tmp15;
-  const items4 = [hint, flag, tmp15];
+  const tmp16 = selected(circle[16])(enableHome, drawerOpen);
+  closure_21 = tmp16;
+  const items4 = [accessibilityActions, tmp16];
   const memo3 = obj5.useMemo(() => {
+    if (null == closure_21) {
+      let items1 = accessibilityActions;
+    } else {
+      let items = accessibilityActions;
+      if (accessibilityActions == null) {
+        items = [];
+      }
+      items1 = [];
+      const obj = { name: null, label: null };
+      ({ name: obj.name, label: obj.label } = closure_21);
+      items1[HermesBuiltin.arraySpread(items, 0)] = obj;
+    }
+    return items1;
+  }, items4);
+  const items5 = [tmp16, onAccessibilityAction];
+  let tmp18 = null != memo3;
+  const callback = obj5.useCallback((nativeEvent) => {
+    if (null != closure_21) {
+      if (nativeEvent.nativeEvent.actionName === obj.name) {
+        obj.action();
+      }
+    }
+    if (onAccessibilityAction != null) {
+      tmp2(nativeEvent);
+    }
+  }, items5);
+  if (tmp18) {
+    tmp18 = memo3.length > 0;
+  }
+  closure_22 = tmp18;
+  const items6 = [hint, flag, tmp18];
+  const memo4 = obj5.useMemo(() => {
     let tmp = null != hint;
     if (tmp) {
       tmp = arr.length > 0;
@@ -348,82 +381,88 @@ export default function GuildsBarAnimatedItemWrapper(id) {
       const intl = util.intl;
       items.push(intl.string(util.t.BGMUFB));
     }
-    if (closure_19) {
+    if (closure_22) {
       const intl2 = util.intl;
       items.push(intl2.string(util.t.X2x0MF));
     }
     return items.join(". ");
-  }, items4);
-  const obj6 = {};
-  const obj4 = { withSpring: id(circle[8]).withSpring, circle, guildItemSelectedBorderRadius: token1, guildItemSize: token, CORNER_SPRING_PHYSICS: expanded };
+  }, items6);
+  const obj7 = {};
+  const obj6 = id(circle[13]);
   const merged = Object.assign(tmp7);
-  obj6.style = memo1;
-  obj6.accessibilityLabel = label;
-  obj6.accessible = true;
-  obj6.focusable = true;
-  obj6.accessibilityRole = "button";
-  obj6.accessibilityState = { selected, expanded };
-  obj6.hitSlop = isDragTarget;
-  let tmp19;
-  if (memo3.length > 0) {
-    tmp19 = memo3;
+  obj7.style = memo1;
+  obj7.accessibilityLabel = label;
+  obj7.accessible = true;
+  obj7.focusable = true;
+  obj7.accessibilityRole = "button";
+  obj7.accessibilityState = { selected, expanded };
+  obj7.hitSlop = isDragTarget;
+  let tmp22;
+  if (memo4.length > 0) {
+    tmp22 = memo4;
   }
-  obj6.accessibilityHint = tmp19;
-  obj6.collapsable = false;
-  obj6.accessibilityActions = accessibilityActions;
-  obj6.onAccessibilityAction = onAccessibilityAction;
-  const items5 = [externalChildren, , ];
-  const obj7 = { pointerEvents: "none", style: unreadStyle, collapsable: false, children: null };
-  const tmp4Result = selected(circle[15]);
-  obj7.children = overState(id(circle[7]).TransitionItem, { item: memo2, renderItem: flag2 });
-  items5[1] = overState(selected(circle[15]), obj7);
-  const obj9 = { style: null, cutouts, children: null };
-  const items6 = [styles.itemShape, animatedStyle];
-  obj9.style = items6;
-  const items7 = [tmp6.selectedBackgroundOverlay, ];
+  obj7.accessibilityHint = tmp22;
+  obj7.collapsable = false;
+  obj7.accessibilityActions = memo3;
+  obj7.onAccessibilityAction = callback;
+  const items7 = [externalChildren, , ];
+  const obj8 = { pointerEvents: "none", style: unreadStyle, collapsable: false, children: null };
+  const tmp4Result = selected(circle[17]);
+  obj8.children = overState(id(circle[7]).TransitionItem, { item: memo2, renderItem });
+  items7[1] = overState(selected(circle[17]), obj8);
+  const obj10 = { style: null, cutouts, children: null };
+  const items8 = [styles.itemShape, animatedStyle];
+  obj10.style = items8;
+  const items9 = [tmp6.selectedBackgroundOverlay, ];
   let itemShapeSelected = null;
-  const obj8 = { item: memo2, renderItem: flag2 };
-  const tmp4Result5 = selected(circle[15]);
+  const obj9 = { item: memo2, renderItem };
+  const tmp4Result5 = selected(circle[17]);
   if (selected) {
     itemShapeSelected = styles.itemShapeSelected;
   }
-  items7[1] = itemShapeSelected;
-  const items8 = [overState(selected(circle[15]), { pointerEvents: "none", style: items7 }), ];
-  let tmp24 = !isDragTarget;
+  items9[1] = itemShapeSelected;
+  const items10 = [overState(selected(circle[17]), { pointerEvents: "none", style: items9 }), ];
+  let tmp27 = !isDragTarget;
   if (!isDragTarget) {
-    tmp24 = children;
+    tmp27 = children;
   }
-  items8[1] = tmp24;
-  obj9.children = items8;
-  items5[2] = styles(id(circle[16]).ClipViewAnimated, obj9);
-  obj6.children = items5;
-  const tmp4Result6 = selected(circle[15]);
+  items10[1] = tmp27;
+  obj10.children = items10;
+  items7[2] = styles(id(circle[18]).ClipViewAnimated, obj10);
+  obj7.children = items7;
+  const tmp4Result6 = selected(circle[17]);
   let container = null;
-  const tmp16Result = styles(tmp4Result, obj6);
+  const tmp19Result = styles(tmp4Result, obj7);
   if (enableHome) {
     container = tmp6.container;
   }
-  const obj10 = { style: null, layout, entering, exiting, collapsable: false, children: null };
-  const items9 = [container, style];
-  obj10.style = items9;
-  const items10 = [tmp16Result, ];
-  let tmp20Result = null;
+  const obj11 = { style: null, layout, entering, exiting, collapsable: false, children: null };
+  const items11 = [container, style];
+  obj11.style = items11;
+  const items12 = [tmp19Result, ];
+  let tmp23Result = null;
   if (enableHome) {
-    const obj11 = {};
+    const obj12 = {};
     const merged1 = Object.assign(tmp7);
-    obj11.style = tmp6.expandedChildrenWrapper;
-    obj11.collapsable = false;
-    let tmp33 = !isDragTarget;
-    if (!isDragTarget) {
-      tmp33 = expandedChildren;
+    obj12.style = tmp6.expandedChildrenWrapper;
+    obj12.collapsable = false;
+    obj12.accessibilityElementsHidden = !drawerOpen;
+    let str = "no-hide-descendants";
+    if (drawerOpen) {
+      str = "auto";
     }
-    obj11.children = tmp33;
-    tmp20Result = tmp20(tmp4(tmp3[15]), obj11);
-    const tmp4Result8 = tmp4(tmp3[15]);
+    obj12.importantForAccessibility = str;
+    let tmp36 = !isDragTarget;
+    if (!isDragTarget) {
+      tmp36 = expandedChildren;
+    }
+    obj12.children = tmp36;
+    tmp23Result = tmp23(tmp4(tmp3[17]), obj12);
+    const tmp4Result8 = tmp4(tmp3[17]);
   }
-  items10[1] = tmp20Result;
-  obj10.children = items10;
-  return styles(selected(circle[10]), obj10);
+  items12[1] = tmp23Result;
+  obj11.children = items12;
+  return styles(selected(circle[10]), obj11);
 };
 export const useGuildsBarAnimatedWrapperStyles = function useGuildsBarAnimatedWrapperStyles(arg0) {
   let obj = arg0;

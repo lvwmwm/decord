@@ -1,17 +1,17 @@
-// Module ID: 7630
-// Function ID: 7631
+// Module ID: 7732
+// Function ID: 7733
 // Name: UserProfilePersonalWidget
-// Dependencies: [1371, 1373, 7631, 4380, 1943, 1369, 1332, 7622, 1885, 2]
+// Dependencies: [1371, 1373, 7733, 4457, 1943, 1369, 1330, 7724, 1885, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 7630 (UserProfilePersonalWidget)
-import _modDef1332 from "module_1332" /* 1332 */;
+// Module 7732 (UserProfilePersonalWidget)
+import _modDef1330 from "module_1330" /* 1330 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1885 */;
 import dismissible_content from "dismissible_content" /* 1943 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4380 */;
-import WidgetType from "WidgetType" /* 7622 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7631 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4457 */;
+import WidgetType from "WidgetType" /* 7724 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7733 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;
@@ -94,19 +94,19 @@ function parseField(image) {
 function serializeSection(type) {
   type = type.type;
   if (PersonalWidgetSectionType.PersonalWidgetSectionType.COVER === type) {
-    const obj4 = { type: null, title: null, subtitle: null, image: null };
-    ({ type: obj2.type, title: obj2.title, subtitle: obj2.subtitle, image } = type);
-    if (null == image) {
-      obj4.image = undefined;
-      return obj4;
-    } else if ("localDataUri" in image) {
-      const obj6 = { filename: null };
-      image = image.filename;
-      obj6.filename = image;
-      let size = obj6;
+    const obj6 = { type: null, title: null, subtitle: null, image: null };
+    ({ type: obj2.type, title: obj2.title, subtitle: obj2.subtitle, image: originalHash } = type);
+    if (null == originalHash) {
+      obj6.image = undefined;
+      return obj6;
+    } else if ("localDataUri" in originalHash) {
+      const obj7 = { filename: null, original_hash: null };
+      ({ filename: obj4.filename, originalHash } = originalHash);
+      obj7.original_hash = originalHash;
+      let size = obj7;
     } else {
       size = { file_id: null, width: null, height: null, is_animated: null };
-      ({ fileId: obj3.file_id, width: obj3.width, height: obj3.height, isAnimated: obj3.is_animated } = image);
+      ({ fileId: obj3.file_id, width: obj3.width, height: obj3.height, isAnimated: obj3.is_animated } = originalHash);
     }
   } else if (PersonalWidgetSectionType.PersonalWidgetSectionType.FIELDS === type) {
     const fields = type.fields;
@@ -124,18 +124,18 @@ function serializeSection(type) {
       type: type.type,
       fields: found.map((title) => {
           const obj = { title: title.title, description: title.description, image: null };
-          let filename = title.image;
-          if (null == filename) {
+          originalHash = title.image;
+          if (null == originalHash) {
             obj.image = undefined;
             return obj;
-          } else if ("localDataUri" in filename) {
-            const obj3 = { filename: null };
-            filename = filename.filename;
-            obj3.filename = filename;
-            let size = obj3;
+          } else if ("localDataUri" in originalHash) {
+            const obj4 = { filename: null, original_hash: null };
+            ({ filename: obj3.filename, originalHash } = originalHash);
+            obj4.original_hash = originalHash;
+            let size = obj4;
           } else {
             size = { file_id: null, width: null, height: null, is_animated: null };
-            ({ fileId: obj2.file_id, width: obj2.width, height: obj2.height, isAnimated: obj2.is_animated } = filename);
+            ({ fileId: obj2.file_id, width: obj2.width, height: obj2.height, isAnimated: obj2.is_animated } = originalHash);
           }
         })
     };
@@ -243,12 +243,12 @@ prototype["isEqual"] = function isEqual(header) {
             if (tmp13) {
               image2 = image2.image;
               image = image.image;
-              tmp13 = _modDef1332(image2, image);
+              tmp13 = _modDef1330(image2, image);
             }
             sum = sum + 1;
             num2 = sum;
             flag = true;
-          } else if (tmp16(7631).PersonalWidgetSectionType.FIELDS !== type) {
+          } else if (tmp16(7733).PersonalWidgetSectionType.FIELDS !== type) {
             flag = false;
           }
           tmp16 = require;
@@ -266,7 +266,7 @@ prototype["isEqual"] = function isEqual(header) {
                 tmp8 = tmp6.description === tmp7.description;
               }
               if (tmp8) {
-                tmp8 = _modDef1332(tmp6.image, tmp7.image);
+                tmp8 = _modDef1330(tmp6.image, tmp7.image);
               }
               flag2 = false;
               if (!tmp8) {

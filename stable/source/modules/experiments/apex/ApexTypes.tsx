@@ -1,7 +1,7 @@
 // Module ID: 1436
 // Function ID: 1437
 // Name: apex/ApexTypes
-// Dependencies: [2, 1239]
+// Dependencies: [2, 1237]
 
 // Module 1436 (apex/ApexTypes)
 import size from "module_2" /* 2 */;

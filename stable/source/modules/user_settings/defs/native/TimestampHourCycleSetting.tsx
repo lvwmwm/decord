@@ -1,22 +1,22 @@
-// Module ID: 15475
-// Function ID: 15476
+// Module ID: 15559
+// Function ID: 15560
 // Name: TimestampHourCycleSetting
-// Dependencies: [19, 7976, 1935, 1114, 1187, 11473, 4245, 2]
+// Dependencies: [19, 8079, 1935, 1114, 1185, 11605, 4321, 2]
 
-// Module 15475 (TimestampHourCycleSetting)
+// Module 15559 (TimestampHourCycleSetting)
 import util from "util" /* 1114 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1187 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
 import UserSettings from "UserSettings" /* 1935 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const SettingBuilders = fn(11473);
+const SettingBuilders = fn(11605);
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.dyamEI);
   },
-  parent: fn(7976).MobileUserSettings.APPEARANCE,
+  parent: fn(8079).MobileUserSettings.APPEARANCE,
   useValue: fn(1935).TimestampHourCycle.useSetting,
   onValueChange: function onTimestampHourCycleChange(arg0) {
     const TimestampHourCycle = UserSettings.TimestampHourCycle;
@@ -42,7 +42,7 @@ const radio = SettingBuilders.createRadio({
       return items;
     }, []);
   },
-  usePredicate: fn(4245).supportsSystemDateFormatter
+  usePredicate: fn(4321).supportsSystemDateFormatter
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/TimestampHourCycleSetting.tsx");

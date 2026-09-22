@@ -1,23 +1,23 @@
-// Module ID: 11443
-// Function ID: 11444
+// Module ID: 11575
+// Function ID: 11576
 // Name: GiftCodeRedeemModal
-// Dependencies: [19, 11434, 1371, 21, 5624, 4763, 11444, 11457, 11458, 504, 11445, 7000, 2]
+// Dependencies: [19, 11566, 1371, 21, 5705, 4839, 11576, 11589, 11590, 504, 11577, 7103, 2]
 // Exports: default
 
-// Module 11443 (GiftCodeRedeemModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4763 */;
-import GiftCodeRedeemStartDefault from "GiftCodeRedeemStart" /* 11444 */;
-import useGiftCodeErrorMessageDefault from "useGiftCodeErrorMessage" /* 11445 */;
-import GiftCodeRedeemSuccessDefault from "GiftCodeRedeemSuccess" /* 11457 */;
-import GiftCodeRedeemErrorDefault from "GiftCodeRedeemError" /* 11458 */;
+// Module 11575 (GiftCodeRedeemModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+import GiftCodeRedeemStartDefault from "GiftCodeRedeemStart" /* 11576 */;
+import useGiftCodeErrorMessageDefault from "useGiftCodeErrorMessage" /* 11577 */;
+import GiftCodeRedeemSuccessDefault from "GiftCodeRedeemSuccess" /* 11589 */;
+import GiftCodeRedeemErrorDefault from "GiftCodeRedeemError" /* 11590 */;
 import noop from "module_19" /* 19 */;
-import GiftCodeStore from "GiftCodeStore" /* 11434 */;
+import GiftCodeStore from "GiftCodeStore" /* 11566 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
 const GiftCodeModalScreens = { START: "giftcode-start", SUCCESS: "giftcode-success", ERROR: "giftcode-error" };
-const NavigatorHeader = fn(5624);
+const NavigatorHeader = fn(5705);
 const headerTitle = NavigatorHeader.getHeaderNoTitle();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/GiftCodeRedeemModal.tsx");
@@ -39,7 +39,7 @@ export default function GiftCodeRedeemModal(code) {
     let items2 = obj;
     const obj4 = {
       headerTitle,
-      headerLeft: tmp2(5624).getHeaderCloseButton(() => ModalActionCreatorsDefault.pop()),
+      headerLeft: tmp2(5705).getHeaderCloseButton(() => ModalActionCreatorsDefault.pop()),
       render(arg0) {
           const obj = {};
           const merged = Object.assign(arg0);
@@ -49,8 +49,8 @@ export default function GiftCodeRedeemModal(code) {
     };
     obj3[obj.START] = obj4;
     const obj5 = { headerTitle, headerLeft: null, render: null };
-    const tmp2Result = tmp2(5624);
-    obj5.headerLeft = tmp2(5624).getHeaderCloseButton(() => ModalActionCreatorsDefault.pop());
+    const tmp2Result = tmp2(5705);
+    obj5.headerLeft = tmp2(5705).getHeaderCloseButton(() => ModalActionCreatorsDefault.pop());
     obj5.render = function render(arg0) {
       const obj = {};
       const merged = Object.assign(arg0);
@@ -59,8 +59,8 @@ export default function GiftCodeRedeemModal(code) {
     };
     obj3[obj.SUCCESS] = obj5;
     const obj6 = { headerTitle, headerLeft: null, render: null };
-    const tmp2Result3 = tmp2(5624);
-    obj6.headerLeft = tmp2(5624).getHeaderCloseButton(() => ModalActionCreatorsDefault.pop());
+    const tmp2Result3 = tmp2(5705);
+    obj6.headerLeft = tmp2(5705).getHeaderCloseButton(() => ModalActionCreatorsDefault.pop());
     obj6.render = function render(arg0) {
       const merged = Object.assign(arg0);
       return jsx(GiftCodeRedeemErrorDefault, {});
@@ -85,9 +85,9 @@ export default function GiftCodeRedeemModal(code) {
         items3 = [obj10];
       }
       obj7.initialRouteStack = items3;
-      jsx(tmp2(7000).Navigator, { screens: obj3, initialRouteStack: null });
+      jsx(tmp2(7103).Navigator, { screens: obj3, initialRouteStack: null });
     }
-    const tmp2Result4 = tmp2(5624);
+    const tmp2Result4 = tmp2(5705);
   }
 };
 export { GiftCodeModalScreens };

@@ -1,25 +1,25 @@
 // Module ID: 1956
 // Function ID: 1957
 // Name: EmbeddedActivitiesStore
-// Dependencies: [32, 502, 1957, 2011, 1371, 1920, 9511, 1074, 9485, 9486, 4189, 9518, 13988, 1109, 9540, 573, 9532, 9416, 1115, 1894, 7523, 504, 2]
+// Dependencies: [32, 502, 1957, 2011, 1371, 1920, 9635, 1074, 9609, 9610, 4265, 9642, 14073, 1109, 9664, 573, 9658, 9540, 1363, 1894, 7626, 504, 2]
 
 // Module 1956 (EmbeddedActivitiesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Server from "Server" /* 1894 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4189 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7523 */;
-import getPlatformDefault from "getPlatform" /* 9416 */;
-import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 9485 */;
-import ContentClassificationReference from "ContentClassificationReference" /* 9486 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 9518 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4265 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 7626 */;
+import getPlatformDefault from "getPlatform" /* 9540 */;
+import ContentClassificationEmbeddedActivityFilterExperiment2 from "ContentClassificationEmbeddedActivityFilterExperiment" /* 9609 */;
+import ContentClassificationReference from "ContentClassificationReference" /* 9610 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9642 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
 import UserStore from "UserStore" /* 1371 */;
 
-const isVoiceEmbeddedActivityDefault = combined(9532);
+const isVoiceEmbeddedActivityDefault = combined(9658);
 require = fn;
 function participantFromServer(userId) {
   return { userId: userId.user_id, sessionId: userId.session_id, nonce: userId.nonce };
@@ -30,7 +30,7 @@ function updateEmbeddedActivities(content_classification) {
   let combined = importDefault;
   const tmp3 = getURLForApplicationDefault(application_id);
   if (null != tmp3) {
-    const embeddedActivityLocationChannelId = application_id(4189).getEmbeddedActivityLocationChannelId(_location);
+    const embeddedActivityLocationChannelId = application_id(4265).getEmbeddedActivityLocationChannelId(_location);
     if (null != embeddedActivityLocationChannelId) {
       value = map2.get(embeddedActivityLocationChannelId);
       items = undefined;
@@ -57,7 +57,7 @@ function updateEmbeddedActivities(content_classification) {
     if (found1 != null) {
       const sessionId = found1.sessionId;
     }
-    const obj19 = application_id(4189);
+    const obj19 = application_id(4265);
     const value9 = map.get(application_id);
     let tmp12 = embeddedActivityLocationChannelId;
     if (embeddedActivityLocationChannelId == null) {
@@ -139,7 +139,7 @@ function updateEmbeddedActivities(content_classification) {
               }
             }
             value11.upsert(application_id, _location.id, tmp61);
-            const embeddedActivityLocationChannelId1 = tmp76(4189).getEmbeddedActivityLocationChannelId(_location);
+            const embeddedActivityLocationChannelId1 = tmp76(4265).getEmbeddedActivityLocationChannelId(_location);
             if (null != embeddedActivityLocationChannelId1) {
               let value12 = map2.get(embeddedActivityLocationChannelId1);
               if (null == value12) {
@@ -153,7 +153,7 @@ function updateEmbeddedActivities(content_classification) {
                 }
               }
               value12.upsert(application_id, _location.id, tmp61);
-              let str5 = tmp76(4189).getEmbeddedActivityLocationGuildId(_location);
+              let str5 = tmp76(4265).getEmbeddedActivityLocationGuildId(_location);
               if (str5 == null) {
                 str5 = "0";
               }
@@ -171,9 +171,9 @@ function updateEmbeddedActivities(content_classification) {
               value13.upsert(application_id, _location.id, tmp61);
               obj17 = map1;
               obj22 = map2;
-              const tmp76Result4 = tmp76(4189);
+              const tmp76Result4 = tmp76(4265);
             }
-            const tmp76Result = tmp76(4189);
+            const tmp76Result = tmp76(4265);
           } else {
             const _Array = Array;
             const arr = Array.from(value9.userIds);
@@ -202,7 +202,7 @@ function updateEmbeddedActivities(content_classification) {
               id1 = value14.location.id;
             }
             if (id1 !== _location.id) {
-              const embeddedActivityLocationChannelId2 = tmp76(4189).getEmbeddedActivityLocationChannelId(_location);
+              const embeddedActivityLocationChannelId2 = tmp76(4265).getEmbeddedActivityLocationChannelId(_location);
               const channel = ChannelStore.getChannel(embeddedActivityLocationChannelId2);
               if (channel != null) {
                 const guildId = channel.getGuildId();
@@ -232,7 +232,7 @@ function updateEmbeddedActivities(content_classification) {
                 const ComponentDispatch2 = tmp76(1109).ComponentDispatch;
                 const obj8 = { location: _location, applicationId: application_id, isFirstActivityInChannel: 0 === arr2.length, isStart: tmp78, participants: mapped, embeddedActivity: obj7, inviterUserId };
                 ComponentDispatch2.dispatch(constants.OPEN_EMBEDDED_ACTIVITY, obj8);
-                tmp76(9540);
+                tmp76(9664);
                 if (true === renderInFramePool) {
                   let ACTIVITY_POPOUT_WINDOW = ActivityPanelModes.DISCONNECTED;
                   const _HermesInternal2 = HermesInternal;
@@ -255,7 +255,7 @@ function updateEmbeddedActivities(content_classification) {
                 const combinedResult = DispatcherDefault;
                 const tmp41 = 0 === arr2.length;
               }
-              const tmp76Result5 = tmp76(4189);
+              const tmp76Result5 = tmp76(4265);
             }
           }
         }
@@ -269,10 +269,10 @@ function updateEmbeddedActivities(content_classification) {
       obj6.delete("" + application_id + ":" + tmp59);
     }
     obj6 = map4;
-    const someResult1 = mapped.some((item) => application_id(13988).isActivityParticipantCurrentUserCurrentSession(item));
+    const someResult1 = mapped.some((item) => application_id(14073).isActivityParticipantCurrentUserCurrentSession(item));
   }
 }
-const ActivityPanelConstants = fn(9511);
+const ActivityPanelConstants = fn(9635);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 const FocusedActivityLayouts = ActivityPanelConstants.FocusedActivityLayouts;
 const Constants = fn(1074);
@@ -898,7 +898,7 @@ const embeddedActivitiesStoreClass = new EmbeddedActivitiesStoreClass(Dispatcher
     }
     const result = map5.set(guildId, activities);
     const timestamp = Date.now();
-    obj = timestamp(1115);
+    obj = timestamp(1363);
     importDefault = getPlatformDefault(obj.getOS());
     obj.dateRangesForSurfaces = activities.reduce((acc, item) => {
       closure_1 = tmp;

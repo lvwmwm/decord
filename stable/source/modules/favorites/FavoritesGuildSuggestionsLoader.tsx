@@ -1,10 +1,10 @@
-// Module ID: 16276
-// Function ID: 16277
+// Module ID: 16370
+// Function ID: 16371
 // Name: FavoritesGuildSuggestionsLoader
-// Dependencies: [19, 16205, 21, 16277, 2]
+// Dependencies: [19, 16299, 21, 16371, 2]
 
-// Module 16276 (FavoritesGuildSuggestionsLoader)
-import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 16277 */;
+// Module 16370 (FavoritesGuildSuggestionsLoader)
+import useFavoritesGuildSuggestionCandidatesDefault from "useFavoritesGuildSuggestionCandidates" /* 16371 */;
 import noop from "module_19" /* 19 */;
 
 function FavoritesGuildSuggestionsLoaderInner() {
@@ -16,7 +16,7 @@ function FavoritesGuildSuggestionsLoaderInner() {
   }, items);
   return null;
 }
-const FavoritesGuildSuggestionsStore = fn(16205);
+const FavoritesGuildSuggestionsStore = fn(16299);
 ({ NO_SUGGESTIONS: c3, setFavoritesGuildSuggestions: closure_4, useFavoritesGuildSuggestionsVisibility: hasOwnProperty } = FavoritesGuildSuggestionsStore);
 const jsx = fn(21).jsx;
 const size = fn(2);

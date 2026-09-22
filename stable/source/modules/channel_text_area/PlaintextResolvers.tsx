@@ -1,25 +1,25 @@
-// Module ID: 9421
-// Function ID: 9422
+// Module ID: 9545
+// Function ID: 9546
 // Name: PlaintextResolvers
-// Dependencies: [32, 5459, 5506, 1957, 2012, 2021, 2015, 1979, 4199, 4209, 1371, 1074, 1374, 7686, 4713, 11, 5442, 4213, 4217, 2]
+// Dependencies: [32, 5540, 5587, 1957, 2012, 2021, 2015, 1979, 4275, 4285, 1371, 1074, 1374, 7788, 4789, 11, 5523, 4289, 4293, 2]
 // Exports: resolveApplicationCommandOption
 
-// Module 9421 (PlaintextResolvers)
+// Module 9545 (PlaintextResolvers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4213 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4217 */;
-import useChannelName from "useChannelName" /* 4713 */;
-import SlateUtils from "SlateUtils" /* 7686 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4293 */;
+import useChannelName from "useChannelName" /* 4789 */;
+import SlateUtils from "SlateUtils" /* 7788 */;
 import _slicedToArray from "module_32" /* 32 */;
-import EmojiStore from "EmojiStore" /* 5459 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5506 */;
+import EmojiStore from "EmojiStore" /* 5540 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5587 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildChannelStore from "GuildChannelStore" /* 2012 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 import GuildRoleStore from "GuildRoleStore" /* 2015 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;

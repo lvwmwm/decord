@@ -1,16 +1,16 @@
-// Module ID: 11899
-// Function ID: 11900
+// Module ID: 12028
+// Function ID: 12029
 // Name: Chat
-// Dependencies: [19, 4552, 21, 4560, 6655, 11900, 11901, 504, 11277, 2]
+// Dependencies: [19, 4628, 21, 4636, 6756, 12029, 12030, 504, 11409, 2]
 
-// Module 11899 (Chat)
+// Module 12028 (Chat)
 import initialize from "initialize" /* 504 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6655 */;
-import ChatNativeComponentDefault from "ChatNativeComponent" /* 11277 */;
-import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 11900 */;
-import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 11901 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6756 */;
+import ChatNativeComponentDefault from "ChatNativeComponent" /* 11409 */;
+import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 12029 */;
+import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 12030 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 
 require = fn;
 function DCDChatList() {
@@ -28,7 +28,7 @@ function DCDChatList() {
 }
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_7 = createStyles.createStyles({ chatList: { flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat/native/Chat.android.tsx");

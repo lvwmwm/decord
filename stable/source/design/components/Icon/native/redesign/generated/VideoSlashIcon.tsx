@@ -1,13 +1,13 @@
-// Module ID: 13050
-// Function ID: 13051
+// Module ID: 13180
+// Function ID: 13181
 // Name: VideoSlashIcon
-// Dependencies: [19, 21, 576, 4261, 13051, 2]
+// Dependencies: [19, 21, 576, 4337, 13181, 2]
 // Exports: VideoSlashIcon
 
-// Module 13050 (VideoSlashIcon)
+// Module 13180 (VideoSlashIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod13051 from "module_13051" /* 13051 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod13181 from "module_13181" /* 13181 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const VideoSlashIcon = function VideoSlashIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod13051, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod13181, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

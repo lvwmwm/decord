@@ -1,39 +1,32 @@
-// Module ID: 8202
-// Function ID: 8203
+// Module ID: 8318
+// Function ID: 8319
 // Name: useMaybeFetchProfileFrame
-// Dependencies: [19, 8203, 8213, 8214, 7541, 2]
+// Dependencies: [19, 8319, 8329, 7644, 2]
 // Exports: default
 
-// Module 8202 (useMaybeFetchProfileFrame)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7541 */;
-import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 8203 */;
-import useProfileFrameDefault from "useProfileFrame" /* 8214 */;
+// Module 8318 (useMaybeFetchProfileFrame)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7644 */;
+import useFramePreviewOverrideFrameDefault from "useFramePreviewOverrideFrame" /* 8319 */;
+import useProfileFrameDefault from "useProfileFrame" /* 8329 */;
 import noop from "module_19" /* 19 */;
-
-const require = globalThis.__r;
 
 require = fn;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useMaybeFetchProfileFrame.tsx");
 
-export default function useMaybeFetchProfileFrame(arg0, location) {
-  _require = arg0;
+export default function useMaybeFetchProfileFrame(arg0) {
+  closure_0 = arg0;
   let tmp = useFramePreviewOverrideFrameDefault();
-  const isProfileFramesEnabled = require("CollectiblesProfileFramesExperiment").useIsProfileFramesEnabled(location);
-  const tmp3 = useProfileFrameDefault(arg0);
-  importDefault = tmp4;
-  const items = [null == tmp && isProfileFramesEnabled && null != arg0 && null == tmp3, arg0];
+  const tmp2 = useProfileFrameDefault(arg0);
+  importDefault = tmp3;
+  const items = [null == tmp && null != arg0 && null == tmp2, arg0];
   const effect = noop.useEffect(() => {
     if (closure_1) {
       const result = CollectiblesActionCreators.maybeFetchCollectiblesProduct(closure_0);
     }
   }, items);
   if (tmp == null) {
-    let tmp6;
-    if (isProfileFramesEnabled) {
-      tmp6 = tmp3;
-    }
-    tmp = tmp6;
+    tmp = tmp2;
   }
   return tmp;
 };

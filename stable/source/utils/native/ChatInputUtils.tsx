@@ -1,15 +1,15 @@
-// Module ID: 4425
-// Function ID: 4426
+// Module ID: 4502
+// Function ID: 4503
 // Name: ChatInputUtils
-// Dependencies: [4426, 1874, 4427, 1609, 1481, 4428, 2]
+// Dependencies: [4503, 1874, 4504, 1609, 1481, 4505, 2]
 // Exports: createInputRefTracker, dismissKeyboard, getBestActiveInputForChannelId, getChatInputRef, getHighestActiveScreenIndex
 
-// Module 4425 (ChatInputUtils)
+// Module 4502 (ChatInputUtils)
 import KeyboardTypes from "KeyboardTypes" /* 1609 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1874 */;
-import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4426 */;
-import useKeyboardType from "useKeyboardType" /* 4427 */;
-import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4428 */;
+import ScreenIndexFrozen from "ScreenIndexFrozen" /* 4503 */;
+import useKeyboardType from "useKeyboardType" /* 4504 */;
+import PortalKeyboardUIStore from "PortalKeyboardUIStore" /* 4505 */;
 import size from "module_2" /* 2 */;
 
 function getBestActiveInput() {
@@ -178,9 +178,9 @@ export const getChatInputRef = function getChatInputRef(id, screenIndex) {
     return current;
   }
 };
-export const getBestActiveInputForChannelId = function getBestActiveInputForChannelId(channelId) {
-  if (null != channelId) {
-    value = map.get(channelId);
+export const getBestActiveInputForChannelId = function getBestActiveInputForChannelId(id) {
+  if (null != id) {
+    value = map.get(id);
     if (null != value) {
       let obj2 = value;
       if (value === undefined) {

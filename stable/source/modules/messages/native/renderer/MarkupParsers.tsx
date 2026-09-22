@@ -1,15 +1,18 @@
-// Module ID: 8090
-// Function ID: 8091
+// Module ID: 8194
+// Function ID: 8195
 // Name: MarkupParsers
-// Dependencies: [1074, 1090, 1437, 4550, 8091, 7889, 2]
+// Dependencies: [1074, 1090, 1437, 4626, 8195, 8196, 8210, 7992, 8212, 1230, 2]
 // Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
 
-// Module 8090 (MarkupParsers)
+// Module 8194 (MarkupParsers)
 import Constants from "Constants" /* 1074 */;
 import DurationsDefault from "Durations" /* 1090 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4550 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 7889 */;
-import ChangeLogStandardTemplate from "ChangeLogStandardTemplate" /* 8091 */;
+import SentryUtilsDefault from "SentryUtils" /* 1230 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4626 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 7992 */;
+import NativeMarkdownExperiment2 from "NativeMarkdownExperiment" /* 8195 */;
+import trackMarkdownParse from "trackMarkdownParse" /* 8210 */;
+import parseNativeMarkupDefault from "parseNativeMarkup" /* 8212 */;
 import priv from "priv" /* 1437 */;
 import size from "module_2" /* 2 */;
 
@@ -89,53 +92,108 @@ export const parseMessageMarkup = function parseMessageMarkup(message, message2,
   if (arg4 === undefined) {
     flag2 = false;
   }
-  let obj = result;
+  let flag3 = result;
   if (result === undefined) {
-    obj = false;
-  }
-  let flag3 = result2;
-  if (result2 === undefined) {
     flag3 = false;
   }
+  let flag4 = result2;
+  if (result2 === undefined) {
+    flag4 = false;
+  }
+  const NativeMarkdownExperiment = NativeMarkdownExperiment2.NativeMarkdownExperiment;
+  const enabled = NativeMarkdownExperiment.getConfig({ location: "parseMessageMarkup" }).enabled;
   value = closure_7.get(message);
   if (null != value) {
     if (value.isInlineReplyPreview === flag) {
-      return value;
+      if (value.nativeMarkdownEnabled === enabled) {
+        return value;
+      }
     }
   }
-  if (message.type !== MessageTypes.CHANGELOG) {
-    const obj4 = { contentMessage: message2, hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowGameMentions: true, allowHeading: null, allowList: null, allowLinks: null, previewLinkTarget: null };
-    let tmp5 = flag2;
-    if (!flag2) {
-      tmp5 = obj;
+  if (message.type === MessageTypes.CHANGELOG) {
+    if (null != message.changelogId) {
+      const obj6 = MarkupUtilsDefault;
+      const obj2 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowHeading: null, allowList: null, allowLinks: null, previewLinkTarget: null };
+      let tmp15 = flag2;
+      const tmpResult = tmp(8196);
+      if (!flag2) {
+        tmp15 = flag3;
+      }
+      obj2.allowHeading = tmp15;
+      if (!flag2) {
+        flag2 = flag3;
+      }
+      let obj3 = { content: null, isInlineReplyPreview: false, hasSpoilerEmbeds: false, hasBailedAst: false, nativeMarkdownEnabled: null };
+      obj2.allowList = flag2;
+      obj2.allowLinks = flag4;
+      obj2.previewLinkTarget = flag4;
+      obj3.content = obj6.astParserFor(tmp(8196).changelogRules(message.changelogId, true))(message.content, false, obj2);
+      obj3.nativeMarkdownEnabled = enabled;
+      const result1 = obj.set(message, obj3);
+      return obj3;
     }
-    obj4.allowHeading = tmp5;
-    let tmp6 = flag2;
-    if (!flag2) {
-      tmp6 = obj;
-    }
-    let obj5 = {};
-    obj4.allowList = tmp6;
-    obj4.allowLinks = flag3;
-    obj4.previewLinkTarget = flag3;
-    const merged = Object.assign(renderMessageMarkup.renderMessageMarkupToAST(message, obj4));
-    obj5.isInlineReplyPreview = flag;
-    result = obj2.set(message, obj5);
   }
-  const obj6 = MarkupUtilsDefault;
-  const obj8 = { hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowHeading: null, allowList: null, allowLinks: null, previewLinkTarget: null };
-  flag = flag2;
+  let tmp4 = message2;
+  let obj4 = { contentMessage: message2, hideSimpleEmbedContent: forceHideSimpleEmbedContent, formatInline: flag, allowGameMentions: true, allowHeading: null, allowList: null, allowLinks: null, previewLinkTarget: null };
+  let tmp6 = flag2;
   if (!flag2) {
-    flag = obj;
+    tmp6 = flag3;
   }
-  obj8.allowHeading = flag;
+  obj4.allowHeading = tmp6;
+  let tmp7 = flag2;
   if (!flag2) {
-    flag2 = obj;
+    tmp7 = flag3;
   }
-  obj = { content: obj6.astParserFor(ChangeLogStandardTemplate.changelogRules(message.changelogId, true))(message.content, false, obj8), isInlineReplyPreview: false, hasSpoilerEmbeds: false, hasBailedAst: false };
-  obj8.allowList = flag2;
-  obj8.allowLinks = flag3;
-  obj8.previewLinkTarget = flag3;
-  const result1 = obj2.set(message, obj);
-  obj5 = obj;
+  obj4.allowList = tmp7;
+  obj4.allowLinks = flag4;
+  obj4.previewLinkTarget = flag4;
+  const nowResult = performance.now();
+  ({ result, path } = (function parseMessageContentToAST(message, arg1, enabled) {
+    if (!enabled) {
+      const obj4 = { result: renderMessageMarkup.renderMessageMarkupToAST(message, arg1), path: "legacy" };
+      return obj4;
+    } else {
+      try {
+        const obj = { result: renderMessageMarkup.renderMessageMarkupToASTWithParser(parseNativeMarkupDefault, message, arg1), path: "native" };
+        return obj;
+      } catch (tmp4) {
+        SentryUtilsDefault.captureException(tmp4);
+      }
+    }
+  })(message, obj4, enabled));
+  const obj5 = {};
+  const diff = performance.now() - nowResult;
+  const merged = Object.assign(result);
+  obj5.isInlineReplyPreview = flag;
+  obj5.nativeMarkdownEnabled = enabled;
+  result2 = obj.set(message, obj5);
+  const tmp8 = (function parseMessageContentToAST(message, arg1, enabled) {
+    if (!enabled) {
+      const obj4 = { result: renderMessageMarkup.renderMessageMarkupToAST(message, arg1), path: "legacy" };
+      return obj4;
+    } else {
+      try {
+        const obj = { result: renderMessageMarkup.renderMessageMarkupToASTWithParser(parseNativeMarkupDefault, message, arg1), path: "native" };
+        return obj;
+      } catch (tmp4) {
+        SentryUtilsDefault.captureException(tmp4);
+      }
+    }
+  })(message, obj4, enabled);
+  const obj7 = { durationMs: diff, path, contentLength: null, hasBailedAst: null };
+  if (tmp4 == null) {
+    tmp4 = message;
+  }
+  const content = tmp4.content;
+  let num;
+  if (content != null) {
+    num = content.length;
+  }
+  if (num == null) {
+    num = 0;
+  }
+  obj7.contentLength = num;
+  obj7.hasBailedAst = obj5.hasBailedAst;
+  trackMarkdownParse.trackMarkdownParse(obj7);
+  return obj5;
 };

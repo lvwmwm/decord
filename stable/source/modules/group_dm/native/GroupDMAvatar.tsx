@@ -1,12 +1,12 @@
-// Module ID: 10915
-// Function ID: 10916
+// Module ID: 11045
+// Function ID: 11046
 // Name: GroupDMAvatar
-// Dependencies: [19, 17, 1371, 21, 1178, 4560, 8819, 504, 1369, 2]
+// Dependencies: [19, 17, 1371, 21, 1176, 4636, 8940, 504, 1369, 2]
 // Exports: default
 
-// Module 10915 (GroupDMAvatar)
+// Module 11045 (GroupDMAvatar)
 import GlobalUtils from "GlobalUtils" /* 1369 */;
-import ClipView from "ClipView" /* 8819 */;
+import ClipView from "ClipView" /* 8940 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -60,7 +60,7 @@ class FacepileGroupDMAvatar {
     }, items1);
     tmp9 = jsxs;
     tmp10 = View;
-    obj9 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: 0, animate: "absolute" };
+    obj9 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: "r", animate: "r" };
     obj9.cutout = memo1;
     obj9.animate = animate;
     if (null == users) {
@@ -74,7 +74,7 @@ class FacepileGroupDMAvatar {
     merged = Object.assign(obj11);
     items3 = [, ];
     items3[0] = tmp11(tmp2(tmp3[4]).Avatar, obj9);
-    obj12 = { status, statusSizeOverride: tmp2(tmp3[4]).StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "oldest" };
+    obj12 = { status, statusSizeOverride: tmp2(tmp3[4]).StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate: "Reset Modal State" };
     obj12.animate = animate;
     if (null == users) {
       obj13 = { source: null };
@@ -94,15 +94,15 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let obj = {};
-obj[fn(1178).AvatarSizes.LARGE_48] = fn(1178).AvatarSizes.SMALL;
-obj[fn(1178).AvatarSizes.XLARGE] = fn(1178).AvatarSizes.NORMAL;
-obj[fn(1178).AvatarSizes.XXLARGE] = fn(1178).AvatarSizes.LARGE;
-obj[fn(1178).AvatarSizes.PROFILE] = fn(1178).AvatarSizes.XXLARGE;
-obj[fn(1178).AvatarSizes.REFRESH_MEDIUM_32] = fn(1178).AvatarSizes.XSMALL_20;
-obj[fn(1178).AvatarSizes.XSMALL] = fn(1178).AvatarSizes.SIZE_16;
-obj[fn(1178).AvatarSizes.SIZE_16] = fn(1178).AvatarSizes.XXSMALL_10;
-obj[fn(1178).AvatarSizes.NORMAL] = fn(1178).AvatarSizes.XSMALL;
-const createStyles = fn(4560);
+obj[fn(1176).AvatarSizes.LARGE_48] = fn(1176).AvatarSizes.SMALL;
+obj[fn(1176).AvatarSizes.XLARGE] = fn(1176).AvatarSizes.NORMAL;
+obj[fn(1176).AvatarSizes.XXLARGE] = fn(1176).AvatarSizes.LARGE;
+obj[fn(1176).AvatarSizes.PROFILE] = fn(1176).AvatarSizes.XXLARGE;
+obj[fn(1176).AvatarSizes.REFRESH_MEDIUM_32] = fn(1176).AvatarSizes.XSMALL_20;
+obj[fn(1176).AvatarSizes.XSMALL] = fn(1176).AvatarSizes.SIZE_16;
+obj[fn(1176).AvatarSizes.SIZE_16] = fn(1176).AvatarSizes.XXSMALL_10;
+obj[fn(1176).AvatarSizes.NORMAL] = fn(1176).AvatarSizes.XSMALL;
+const createStyles = fn(4636);
 const React6 = createStyles.createStyles({ firstFace: { position: "absolute", top: 0, left: 0 }, secondFace: { position: "absolute", bottom: 0, right: 0 } });
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/group_dm/native/GroupDMAvatar.tsx");
@@ -121,7 +121,7 @@ export default function GroupDMAvatar(pileSizeOverride) {
       if (0 !== stateFromStoresArray.length) {
         if (1 === stateFromStoresArray.length) {
           const obj2 = { autoStatusCutout: true, status, style, size, user: stateFromStoresArray[0], guildId: "a", animate, accessible, accessibilityLabel };
-          let tmp5 = closure_5(tmp(1178).Avatar, obj2);
+          let tmp5 = closure_5(tmp(1176).Avatar, obj2);
         } else {
           const obj3 = { status, style, size, animate, users: stateFromStoresArray, pileSizeOverride: pileSizeOverride.pileSizeOverride, accessible, accessibilityLabel };
           tmp5 = closure_5(FacepileGroupDMAvatar, obj3);
@@ -130,6 +130,6 @@ export default function GroupDMAvatar(pileSizeOverride) {
       return tmp5;
     }
   }
-  tmp5 = closure_5(tmp(1178).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
+  tmp5 = closure_5(tmp(1176).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
 };
 export { FacepileGroupDMAvatar };

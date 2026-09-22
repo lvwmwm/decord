@@ -1,54 +1,54 @@
-// Module ID: 13913
-// Function ID: 13914
+// Module ID: 13998
+// Function ID: 13999
 // Name: GuildActionSheetActions
-// Dependencies: [19, 17, 7532, 1221, 1975, 7636, 2015, 4575, 4741, 1371, 1074, 7097, 7945, 4742, 21, 4560, 576, 504, 7200, 1114, 10969, 7335, 4380, 1943, 7528, 4527, 4763, 11554, 1896, 12295, 4712, 7162, 7182, 9213, 1178, 9809, 13914, 1187, 1940, 9073, 13915, 8166, 9190, 4556, 1935, 6995, 7119, 10152, 7114, 13963, 10149, 13964, 9679, 5407, 9743, 9704, 11574, 13965, 4906, 38, 13912, 10104, 10103, 7535, 11560, 13966, 8635, 8018, 11834, 7189, 7190, 4258, 1396, 2]
+// Dependencies: [19, 17, 7635, 1219, 1975, 7738, 2015, 4651, 4817, 1371, 1074, 7200, 8048, 4818, 21, 4636, 576, 504, 7302, 1114, 11100, 7438, 4457, 1943, 7631, 4603, 4839, 11682, 1896, 12424, 4788, 7265, 7285, 9336, 1176, 9933, 13999, 1185, 1940, 9196, 14000, 8282, 9313, 4632, 1935, 7098, 7222, 10275, 7217, 14048, 10272, 14049, 9803, 5488, 9867, 9828, 11702, 14050, 4982, 38, 13997, 10227, 10226, 7638, 11688, 14051, 8752, 8121, 11963, 7291, 7292, 4334, 1396, 2]
 // Exports: GuildActionSheetDirectoryActions, GuildActionSheetPrimaryActions, GuildActionSheetSecondaryActions, GuildDeveloperOptionAction, GuildUnreadAction, handleLeaveServer
 
-// Module 13913 (GuildActionSheetActions)
+// Module 13998 (GuildActionSheetActions)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1187 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
 import UserSettings from "UserSettings" /* 1935 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 1940 */;
-import ToastUtils from "ToastUtils" /* 4258 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4712 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4763 */;
-import useAlertStore from "useAlertStore" /* 4906 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 5407 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6995 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7114 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7119 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7162 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7182 */;
-import TidaWebformExperimentDefault from "TidaWebformExperiment" /* 7189 */;
-import ClipboardUtils from "ClipboardUtils" /* 7190 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7335 */;
-import ChannelListState from "ChannelListState" /* 7528 */;
-import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8018 */;
-import ReportModals from "ReportModals" /* 8635 */;
-import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 9213 */;
-import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9679 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9704 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9743 */;
-import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 10969 */;
-import OptInOnboardingUtils from "OptInOnboardingUtils" /* 11560 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11574 */;
-import useIsServerThemeAvailableForGuildDefault from "useIsServerThemeAvailableForGuild" /* 13914 */;
-import markGuildsAsReadDefault from "markGuildsAsRead" /* 13963 */;
-import GuildAntiRaidModalActionCreators from "GuildAntiRaidModalActionCreators" /* 13966 */;
+import ToastUtils from "ToastUtils" /* 4334 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+import useAlertStore from "useAlertStore" /* 4982 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 5488 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7098 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7217 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7222 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7265 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
+import TidaWebformExperimentDefault from "TidaWebformExperiment" /* 7291 */;
+import ClipboardUtils from "ClipboardUtils" /* 7292 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7438 */;
+import ChannelListState from "ChannelListState" /* 7631 */;
+import GuildAntiRaidTypes from "GuildAntiRaidTypes" /* 8121 */;
+import ReportModals from "ReportModals" /* 8752 */;
+import useOpenProfileSettingsDefault from "useOpenProfileSettings" /* 9336 */;
+import useCanCreateAnEventDefault from "useCanCreateAnEvent" /* 9803 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 9828 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 9867 */;
+import ChannelCollapseActionCreatorsDefault from "ChannelCollapseActionCreators" /* 11100 */;
+import OptInOnboardingUtils from "OptInOnboardingUtils" /* 11688 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11702 */;
+import useIsServerThemeAvailableForGuildDefault from "useIsServerThemeAvailableForGuild" /* 13999 */;
+import markGuildsAsReadDefault from "markGuildsAsRead" /* 14048 */;
+import GuildAntiRaidModalActionCreators from "GuildAntiRaidModalActionCreators" /* 14051 */;
 import noop from "module_19" /* 19 */;
-import NewChannelsStore from "NewChannelsStore" /* 7532 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7636 */;
+import NewChannelsStore from "NewChannelsStore" /* 7635 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7738 */;
 import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import ReadStateStore from "ReadStateStore" /* 4575 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4741 */;
+import ReadStateStore from "ReadStateStore" /* 4651 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
 import UserStore from "UserStore" /* 1371 */;
 
-const DiscordTagDefault = tmp2(9809);
+const DiscordTagDefault = tmp2(9933);
 require = fn;
 function HideMutedChannelsOption(guild) {
   guild = guild.guild;
@@ -61,13 +61,13 @@ function HideMutedChannelsOption(guild) {
   obj2.onValueChange = function onValueChange() {
     return ChannelCollapseActionCreatorsDefault.toggleCollapseGuild(guild.id);
   };
-  return closure_21(guild(7200).ActionSheetSwitchRow, obj2);
+  return closure_21(guild(7302).ActionSheetSwitchRow, obj2);
 }
 function BrowseChannelsOption(guild) {
   guild = guild.guild;
   const tmp2 = useGuildOnboardingAvailableDefault(guild);
-  const result = guild(4380).useIsDismissibleContentDismissed_UNSAFE(guild(1943).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
-  let obj = guild(4380);
+  const result = guild(4457).useIsDismissibleContentDismissed_UNSAFE(guild(1943).DismissibleContent.CHANNEL_BROWSER_NEW_BADGE_NUX);
+  let obj = guild(4457);
   const items = [ReadStateStore];
   const stateFromStores = guild(504).useStateFromStores(items, () => ReadStateStore.hasUnread(guild.id, ReadStateTypes.GUILD_ONBOARDING_QUESTION));
   const obj2 = guild(504);
@@ -77,7 +77,7 @@ function BrowseChannelsOption(guild) {
   const features = guild.features;
   const callback = noop.useCallback(() => {
     ActionSheetActionCreatorsDefault.hideActionSheet();
-    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11554, dependencyMap.paths), { guildId: guild.id }, closure_18);
+    ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11682, dependencyMap.paths), { guildId: guild.id }, closure_18);
   }, items2);
   if (!features.has(constants2.COMMUNITY)) {
     return null;
@@ -99,7 +99,7 @@ function BrowseChannelsOption(guild) {
       obj4.label = stringResult;
       tmp8(tmp9, obj4);
     }
-    tmp8Result2 = tmp8(tmp3(12295).NewBadge, {});
+    tmp8Result2 = tmp8(tmp3(12424).NewBadge, {});
   }
 }
 function ChangeIdentityOption(arg0) {
@@ -117,8 +117,8 @@ function ChangeIdentityOption(arg0) {
     tmp9 = nickname;
     if (user.hasAvatarForGuild(guild.id)) {
       const obj3 = { style: tmp.identitySublabel, children: null };
-      const obj4 = { size: tmp7(1178).AvatarSizes.SIZE_16, style: tmp.guildServerAvatar, user, guildId: guild.id };
-      const items = [tmp6(tmp7(1178).Avatar, obj4), ];
+      const obj4 = { size: tmp7(1176).AvatarSizes.SIZE_16, style: tmp.guildServerAvatar, user, guildId: guild.id };
+      const items = [tmp6(tmp7(1176).Avatar, obj4), ];
       const obj9 = { user, nick: nickname, usernameStyle: null, discriminatorStyle: null, nicknameStyle: null };
       ({ identityName: obj5.usernameStyle, identityName: obj5.discriminatorStyle, identityName: obj5.nicknameStyle } = tmp);
       items[1] = tmp6(DiscordTagDefault, obj9);
@@ -145,9 +145,9 @@ function GuildThemePreferenceOption(guild) {
     const obj2 = { label: null, value: null, onValueChange: null };
     const intl = tmp3(1114).intl;
     obj2.label = intl.string(tmp3(1114).t.CFzDOG);
-    obj2.value = stateFromStores === tmp3(1187).GuildThemeSourcePreference.GUILD;
+    obj2.value = stateFromStores === tmp3(1185).GuildThemeSourcePreference.GUILD;
     obj2.onValueChange = tmp5;
-    tmp6 = closure_21(tmp3(7200).ActionSheetSwitchRow, obj2);
+    tmp6 = closure_21(tmp3(7302).ActionSheetSwitchRow, obj2);
   }
   return tmp6;
 }
@@ -155,14 +155,14 @@ function ServerTagOption(guild) {
   guild = guild.guild;
   const tmp = closure_23();
   [][0] = guild.id;
-  const result = guild(9073).canViewMobileServerTag(guild.id);
+  const result = guild(9196).canViewMobileServerTag(guild.id);
   if (result) {
     const profile = guild.profile;
     let badge;
     if (profile != null) {
       badge = profile.badge;
     }
-    const guildTagBadgeUrl = tmp2(8166).getGuildTagBadgeUrl(guild.id, badge, GuildTagBadgeSize.SIZE_16);
+    const guildTagBadgeUrl = tmp2(8282).getGuildTagBadgeUrl(guild.id, badge, GuildTagBadgeSize.SIZE_16);
     let obj2 = { style: tmp.serverTagLabel, children: null };
     const profile2 = guild.profile;
     let tag;
@@ -172,20 +172,20 @@ function ServerTagOption(guild) {
     const obj3 = { label: null, onPress: null };
     const obj4 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
     const obj5 = { guildTag: tag, guildBadge: guildTagBadgeUrl, badgeSize: GuildTagBadgeSize.SIZE_16 };
-    obj4.children = closure_21(tmp2(9190).BaseGuildTagChiplet, obj5);
+    obj4.children = closure_21(tmp2(9313).BaseGuildTagChiplet, obj5);
     const items = [closure_21(View, obj4), ];
     const obj6 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp2(1114).intl;
     obj6.children = intl.string(tmp2(1114).t["2QmKZ2"]);
-    items[1] = closure_21(tmp2(4556).Text, obj6);
+    items[1] = closure_21(tmp2(4632).Text, obj6);
     obj2.children = items;
     obj3.label = closure_22(View, obj2);
     obj3.onPress = tmp5;
-    return closure_21(tmp2(7200).ActionSheetRow, obj3);
+    return closure_21(tmp2(7302).ActionSheetRow, obj3);
   } else {
     return null;
   }
-  let obj = guild(9073);
+  let obj = guild(9196);
 }
 class RestrictedGuildPrivacyOption {
   constructor(arg0) {
@@ -240,12 +240,12 @@ const GuildRecord = fn(1975);
 ({ isGuildOwner: closure_7, getGuildIconURL: closure_8 } = GuildRecord);
 const Constants = fn(1074);
 ({ ChannelTypes: closure_14, GuildFeatures: closure_15, AnalyticsSections: closure_16, AVATAR_MAX_SIZE: closure_17, Fonts } = Constants);
-let closure_18 = fn(7097).CHANNELS_AND_ROLES_MODAL_KEY;
-const GuildTagBadgeSize = fn(7945).GuildTagBadgeSize;
-const ReadStateTypes = fn(4742).ReadStateTypes;
+let closure_18 = fn(7200).CHANNELS_AND_ROLES_MODAL_KEY;
+const GuildTagBadgeSize = fn(8048).GuildTagBadgeSize;
+const ReadStateTypes = fn(4818).ReadStateTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_21, jsxs: closure_22 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { guildServerAvatar: { marginRight: 4 }, identityName: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 }, identitySublabel: { flexDirection: "row" }, serverTagLabel: null };
 let obj3 = { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, fontFamily: Fonts.PRIMARY_MEDIUM, fontSize: 12 };
 obj2.serverTagLabel = { flexDirection: "row", alignItems: "center", columnGap: nativeDefault.space.PX_8 };
@@ -311,8 +311,8 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
             const _HermesInternal = HermesInternal;
             const obj2 = ActionSheetActionCreatorsDefault;
             const obj3 = { guildId: guild.id };
-            obj2.openLazy(asyncRequireImpl(10149, dependencyMap.paths), "muteSettings" + guild.id, obj3);
-            const tmp5 = asyncRequireImpl(10149, dependencyMap.paths);
+            obj2.openLazy(asyncRequireImpl(10272, dependencyMap.paths), "muteSettings" + guild.id, obj3);
+            const tmp5 = asyncRequireImpl(10272, dependencyMap.paths);
           }
         }
     };
@@ -321,7 +321,7 @@ export const GuildUnreadAction = function GuildUnreadAction(guild) {
 };
 export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryActions(guild) {
   guild = guild.guild;
-  let obj = guild(13964);
+  let obj = guild(14049);
   const tmp3 = useCanCreateAnEventDefault(guild.id);
   const items = [GuildRoleStore];
   const items1 = [];
@@ -334,7 +334,7 @@ export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryAc
       ActionSheetActionCreatorsDefault.hideActionSheet();
       CreateChannelModalActionCreatorsDefault.open(null, guild.id, null, null);
     };
-    items1.push(closure_21(tmp(7200).ActionSheetRow, obj3));
+    items1.push(closure_21(tmp(7302).ActionSheetRow, obj3));
     const obj4 = { label: null, onPress: null };
     const intl2 = tmp(1114).intl;
     obj4.label = intl2.string(tmp(1114).t["ISN+NM"]);
@@ -342,7 +342,7 @@ export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryAc
       ActionSheetActionCreatorsDefault.hideActionSheet();
       CreateChannelModalActionCreatorsDefault.open(constants.GUILD_CATEGORY, guild.id, null, null);
     };
-    items1.push(closure_21(tmp(7200).ActionSheetRow, obj4));
+    items1.push(closure_21(tmp(7302).ActionSheetRow, obj4));
   }
   if (tmp3) {
     const obj5 = { label: null, onPress: null };
@@ -352,7 +352,7 @@ export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryAc
       ActionSheetActionCreatorsDefault.hideActionSheet();
       const result = GuildScheduledEventModalActionCreators.openCreateOrEditGuildEventModal(guild, {});
     };
-    items1.push(closure_21(tmp(7200).ActionSheetRow, obj5));
+    items1.push(closure_21(tmp(7302).ActionSheetRow, obj5));
   }
   if (stateFromStores) {
     const obj6 = { label: null, onPress: null };
@@ -367,12 +367,12 @@ export const GuildActionSheetPrimaryActions = function GuildActionSheetPrimaryAc
         }
       });
     };
-    items1.push(closure_21(tmp(7200).ActionSheetRow, obj6));
+    items1.push(closure_21(tmp(7302).ActionSheetRow, obj6));
   }
   let tmp12 = null;
   if (0 !== items1.length) {
     const obj7 = { hasIcons: false, children: items1.map((children, index) => closure_1_21(React.Fragment, { children }, index)) };
-    tmp12 = closure_21(tmp(7200).ActionSheetRow.Group, obj7);
+    tmp12 = closure_21(tmp(7302).ActionSheetRow.Group, obj7);
   }
   return tmp12;
 };
@@ -390,7 +390,7 @@ export const GuildActionSheetDirectoryActions = function GuildActionSheetDirecto
   items.push(closure_21(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(closure_21(RestrictedGuildPrivacyOption, { guild }));
   const tmp4 = closure_7(guild, currentUser);
-  const messageRequestPrivacyOption = guild(13912).useMessageRequestPrivacyOption({ guild });
+  const messageRequestPrivacyOption = guild(13997).useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
   }
@@ -398,7 +398,7 @@ export const GuildActionSheetDirectoryActions = function GuildActionSheetDirecto
     let tmp5Result = null;
     if (0 !== items.length) {
       const obj2 = { hasIcons: false, children: items.map((children, index) => closure_1_21(React.Fragment, { children }, index)) };
-      tmp5Result = tmp5(tmp9(7200).ActionSheetRow.Group, obj2);
+      tmp5Result = tmp5(tmp9(7302).ActionSheetRow.Group, obj2);
     }
     return tmp5Result;
   } else {
@@ -421,20 +421,20 @@ export const GuildActionSheetDirectoryActions = function GuildActionSheetDirecto
           useAlertStore.openAlert("guild-action-sheet-leave-server", __initData(lazyResult, { guild }));
         }
     };
-    t = items.push(tmp5(tmp9(7200).ActionSheetRow, obj3));
+    t = items.push(tmp5(tmp9(7302).ActionSheetRow, obj3));
   }
 };
 export const GuildActionSheetSecondaryActions = function GuildActionSheetSecondaryActions(guild) {
   guild = guild.guild;
   const currentUser = UserStore.getCurrentUser();
   const tmp2 = closure_7(guild, currentUser);
-  const canReportRaid = guild(10104).useCanReportRaid(guild);
-  let obj = guild(10104);
-  const guildIncidentsState = guild(10103).useGuildIncidentsState(guild.id);
+  const canReportRaid = guild(10227).useCanReportRaid(guild);
+  let obj = guild(10227);
+  const guildIncidentsState = guild(10226).useGuildIncidentsState(guild.id);
   const items = [];
   ({ shouldShowIncidentActions, isUnderLockdown } = guildIncidentsState);
-  let obj2 = guild(10103);
-  const optInEnabledForGuild = guild(7535).useOptInEnabledForGuild(guild.id);
+  let obj2 = guild(10226);
+  const optInEnabledForGuild = guild(7638).useOptInEnabledForGuild(guild.id);
   items.push(closure_21(ChangeIdentityOption, { guild, user: currentUser }));
   items.push(closure_21(GuildThemePreferenceOption, { guild }));
   items.push(closure_21(ServerTagOption, { guild }));
@@ -447,13 +447,13 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
     obj4.onValueChange = function onValueChange() {
       return OptInOnboardingUtils.toggleShowAllChannels(guild.id);
     };
-    items.push(tmp8(tmp3(7200).ActionSheetSwitchRow, obj4));
+    items.push(tmp8(tmp3(7302).ActionSheetSwitchRow, obj4));
   }
   items.push(closure_21(HideMutedChannelsOption, { guild }));
   items.push(closure_21(RestrictedGuildPrivacyOption, { guild }));
-  const obj3 = guild(7535);
+  const obj3 = guild(7638);
   const tmp12 = constants2;
-  const messageRequestPrivacyOption = guild(13912).useMessageRequestPrivacyOption({ guild });
+  const messageRequestPrivacyOption = guild(13997).useMessageRequestPrivacyOption({ guild });
   if (null != messageRequestPrivacyOption) {
     items.push(messageRequestPrivacyOption);
   }
@@ -465,7 +465,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
       ActionSheetActionCreatorsDefault.hideActionSheet();
       GuildAntiRaidModalActionCreators.openReportRaidModal(guild.id);
     };
-    items.push(tmp8(tmp3(7200).ActionSheetRow, obj5));
+    items.push(tmp8(tmp3(7302).ActionSheetRow, obj5));
   }
   if (!tmp2) {
     const obj6 = { label: null, onPress: null };
@@ -475,14 +475,14 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
       ActionSheetActionCreatorsDefault.hideActionSheet();
       const result = ReportModals.showReportModalForGuild(guild);
     };
-    items.push(tmp8(tmp3(7200).ActionSheetRow, obj6));
+    items.push(tmp8(tmp3(7302).ActionSheetRow, obj6));
   }
   if (!shouldShowIncidentActions) {
     if (tmp2) {
       let tmp8Result = null;
       if (0 !== items.length) {
         const obj7 = { hasIcons: false, children: items.map((children, index) => closure_1_21(React.Fragment, { children }, index)) };
-        tmp8Result = tmp8(tmp3(7200).ActionSheetRow.Group, obj7);
+        tmp8Result = tmp8(tmp3(7302).ActionSheetRow.Group, obj7);
       }
       return tmp8Result;
     } else {
@@ -505,7 +505,7 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
               useAlertStore.openAlert("guild-action-sheet-leave-server", __initData(lazyResult, { guild }));
             }
       };
-      t2 = items.push(tmp8(tmp3(7200).ActionSheetRow, obj8));
+      t2 = items.push(tmp8(tmp3(7302).ActionSheetRow, obj8));
     }
   } else {
     const intl4 = tmp3(1114).intl;
@@ -522,10 +522,10 @@ export const GuildActionSheetSecondaryActions = function GuildActionSheetSeconda
       onPress() {
           ActionSheetActionCreatorsDefault.hideActionSheet();
           const obj2 = { source: GuildAntiRaidTypes.GuildIncidentActionSources.GUILD_PROFILE };
-          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11834, dependencyMap.paths), "GuildIncidentActionsActionSheet", { guild, analyticsData: obj2 });
+          ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(11963, dependencyMap.paths), "GuildIncidentActionsActionSheet", { guild, analyticsData: obj2 });
         }
     };
-    t = items.push(tmp8(tmp3(7200).ActionSheetRow, obj9));
+    t = items.push(tmp8(tmp3(7302).ActionSheetRow, obj9));
   }
 };
 export const GuildDeveloperOptionAction = function GuildDeveloperOptionAction(guild) {
@@ -542,7 +542,7 @@ export const GuildDeveloperOptionAction = function GuildDeveloperOptionAction(gu
       ClipboardUtils.copy(guild.id);
       ToastUtils.presentIdCopied();
     };
-    items.push(closure_21(tmp(7200).ActionSheetRow, obj));
+    items.push(closure_21(tmp(7302).ActionSheetRow, obj));
     if (tmp5) {
       if (null != guild.icon) {
         let obj2 = { label: null, onPress: null };
@@ -555,7 +555,7 @@ export const GuildDeveloperOptionAction = function GuildDeveloperOptionAction(gu
             ToastUtils.presentLinkCopied();
           }
         };
-        items.push(tmp7(tmp(7200).ActionSheetRow, obj2));
+        items.push(tmp7(tmp(7302).ActionSheetRow, obj2));
       }
       if (null != guild.banner) {
         let obj3 = { label: null, onPress: null };
@@ -568,14 +568,14 @@ export const GuildDeveloperOptionAction = function GuildDeveloperOptionAction(gu
             ToastUtils.presentLinkCopied();
           }
         };
-        items.push(tmp7(tmp(7200).ActionSheetRow, obj3));
+        items.push(tmp7(tmp(7302).ActionSheetRow, obj3));
       }
     }
     let obj4 = { hasIcons: false, title: null, children: null };
     const intl4 = tmp(1114).intl;
     obj4.title = intl4.string(tmp(1114).t.ObIb1Q);
     obj4.children = items.map((children, index) => closure_1_21(React.Fragment, { children }, index));
-    return closure_21(tmp(7200).ActionSheetRow.Group, obj4);
+    return closure_21(tmp(7302).ActionSheetRow.Group, obj4);
   } else {
     return null;
   }

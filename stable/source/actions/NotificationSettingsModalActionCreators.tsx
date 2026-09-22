@@ -1,23 +1,23 @@
-// Module ID: 7119
-// Function ID: 7120
+// Module ID: 7222
+// Function ID: 7223
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 4741, 1074, 4212, 1084, 573, 7114, 7116, 11, 4411, 1114, 1384, 1272, 2]
+// Dependencies: [5, 4817, 1074, 4288, 1084, 573, 7217, 7219, 11, 4488, 1114, 1384, 1270, 2]
 
-// Module 7119 (NotificationSettingsModalActionCreators)
+// Module 7222 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1114 */;
-import shared from "shared" /* 4411 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7114 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7116 */;
+import shared from "shared" /* 4488 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7217 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7219 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4741 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const Endpoints = fn(1074).Endpoints;
-const constants = fn(4212).NotificationSettingsUpdateType;
+const constants = fn(4288).NotificationSettingsUpdateType;
 let closure_7 = fn(1084).ChannelNotificationSettingsFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/NotificationSettingsModalActionCreators.tsx");
@@ -139,12 +139,12 @@ export default {
               closure_128_0 = undefined;
               const setFlagResult = closure_0(1384).setFlag(UserGuildSettingsStore.accountNotificationSettings.flags, closure_0, tmp2);
               closure_128_0 = setFlagResult;
-              const HTTP = closure_0(1272).HTTP;
+              const HTTP = closure_0(1270).HTTP;
               const request = { url: constants.ACCOUNT_NOTIFICATION_SETTINGS, body: null, rejectWithError: null };
               const obj5 = { flags: setFlagResult };
               request.body = obj5;
               const obj10 = closure_0(1384);
-              request.rejectWithError = closure_0(1272).rejectWithMigratedError();
+              request.rejectWithError = closure_0(1270).rejectWithMigratedError();
               dependencyMap = 1;
               c3 = 1;
               const obj6 = { value: HTTP.patch(request), done: false };

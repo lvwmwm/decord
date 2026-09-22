@@ -1,10 +1,10 @@
-// Module ID: 7223
-// Function ID: 7224
+// Module ID: 7326
+// Function ID: 7327
 // Name: useIsNewMember
-// Dependencies: [2014, 2021, 4187, 1384, 1090, 504, 2]
+// Dependencies: [2014, 2021, 4262, 1384, 1090, 504, 2]
 // Exports: default, getIsNewMember
 
-// Module 7223 (useIsNewMember)
+// Module 7326 (useIsNewMember)
 import DurationsDefault from "Durations" /* 1090 */;
 import FlagUtils from "FlagUtils" /* 1384 */;
 import ImpersonateStore from "ImpersonateStore" /* 2014 */;
@@ -13,7 +13,7 @@ import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 const require = globalThis.__r;
 
 require = fn;
-const GuildMemberFlags = fn(4187).GuildMemberFlags;
+const GuildMemberFlags = fn(4262).GuildMemberFlags;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/useIsNewMember.tsx");
 

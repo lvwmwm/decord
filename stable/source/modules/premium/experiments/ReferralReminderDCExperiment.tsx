@@ -1,10 +1,10 @@
-// Module ID: 8067
-// Function ID: 8068
+// Module ID: 8171
+// Function ID: 8172
 // Name: ReferralReminderDCExperiment
 // Dependencies: [1433, 2]
 // Exports: useIsReferralReminderDCExperimentEnabled
 
-// Module 8067 (ReferralReminderDCExperiment)
+// Module 8171 (ReferralReminderDCExperiment)
 import ApexExperiment from "ApexExperiment" /* 1433 */;
 import size from "module_2" /* 2 */;
 

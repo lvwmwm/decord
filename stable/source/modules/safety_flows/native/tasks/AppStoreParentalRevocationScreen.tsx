@@ -1,29 +1,29 @@
-// Module ID: 17890
-// Function ID: 17891
+// Module ID: 18000
+// Function ID: 18001
 // Name: AppStoreParentalRevocationScreen
-// Dependencies: [19, 17, 21, 4560, 576, 4255, 8422, 8423, 4973, 4556, 1114, 2690, 11931, 17877, 11001, 8584, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 4331, 8539, 8540, 5054, 4632, 1114, 2690, 12060, 17987, 11132, 8701, 2]
 // Exports: default
 
-// Module 17890 (AppStoreParentalRevocationScreen)
+// Module 18000 (AppStoreParentalRevocationScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import _modDef2690 from "module_2690" /* 2690 */;
-import LinkingDefault from "Linking" /* 4255 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Stack_Stack from "Stack/Stack" /* 4973 */;
-import ModalScreen from "ModalScreen" /* 8422 */;
-import ModalContent from "ModalContent" /* 8423 */;
-import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8584 */;
-import ModalActionButton from "ModalActionButton" /* 11001 */;
-import ModalFooter from "ModalFooter" /* 11931 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17877 */;
+import LinkingDefault from "Linking" /* 4331 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Stack_Stack from "Stack/Stack" /* 5054 */;
+import ModalScreen from "ModalScreen" /* 8539 */;
+import ModalContent from "ModalContent" /* 8540 */;
+import LinkExternalSmallIcon from "LinkExternalSmallIcon" /* 8701 */;
+import ModalActionButton from "ModalActionButton" /* 11132 */;
+import ModalFooter from "ModalFooter" /* 12060 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 17987 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { content: { flexGrow: 1, width: "100%" }, upperHalf: { flex: 1, justifyContent: "flex-end", alignItems: "center" }, lowerHalf: { flex: 1 }, text: { textAlign: "center" }, body: { paddingHorizontal: nativeDefault.space.PX_16 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

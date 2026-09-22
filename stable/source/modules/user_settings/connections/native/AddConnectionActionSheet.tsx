@@ -1,19 +1,19 @@
-// Module ID: 14960
-// Function ID: 14961
+// Module ID: 15047
+// Function ID: 15048
 // Name: AddConnectionActionSheet
-// Dependencies: [1074, 1921, 21, 4560, 1178, 4495, 1611, 7503, 7168, 7150, 7149, 1114, 6627, 5605, 4527, 9258, 1396, 4411, 7165, 7162, 7182, 2]
+// Dependencies: [1074, 1921, 21, 4636, 1176, 4571, 1611, 7606, 7271, 7253, 7252, 1114, 6728, 5686, 4603, 9381, 1396, 4488, 7268, 7265, 7285, 2]
 // Exports: default
 
-// Module 14960 (AddConnectionActionSheet)
+// Module 15047 (AddConnectionActionSheet)
 import Constants from "Constants" /* 1074 */;
 import AvatarUtils from "AvatarUtils" /* 1396 */;
 import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 1921 */;
-import shared from "shared" /* 4411 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import TableRow from "TableRow" /* 5605 */;
+import shared from "shared" /* 4488 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import TableRow from "TableRow" /* 5686 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4560 */;
-import native from "native" /* 1178 */;
+import createStyles from "createStyles" /* 4636 */;
+import native from "native" /* 1176 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,10 +23,10 @@ function AddApplicationIdentityTableRow(application) {
   _require = undefined;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7165)(application));
-  const tmp2 = analyticsLocations(7165)(application);
-  analyticsLocations = analyticsLocations(7162)(analyticsLocations(7182).ACTION_SHEET).analyticsLocations;
-  const tmp3 = analyticsLocations(7162);
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7268)(application));
+  const tmp2 = analyticsLocations(7268)(application);
+  analyticsLocations = analyticsLocations(7265)(analyticsLocations(7285).ACTION_SHEET).analyticsLocations;
+  const tmp3 = analyticsLocations(7265);
   const tmp4 = closure_7();
   const iconSource = application.getIconSource(require("native").getIconSize(require("native").IconSizes.LARGE));
   const obj2 = {
@@ -44,7 +44,7 @@ function AddApplicationIdentityTableRow(application) {
   let tmp7Result = null;
   if (null != iconSource) {
     const obj3 = { source: iconSource, style: tmp4.icon, disableColor: true };
-    tmp7Result = tmp7(tmp5(1178).Icon, obj3);
+    tmp7Result = tmp7(tmp5(1176).Icon, obj3);
   }
   obj2.icon = tmp7Result;
   obj2.trailing = closure_5(require("TableRow").TableRow.Arrow, {});

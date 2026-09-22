@@ -1,15 +1,15 @@
-// Module ID: 10007
-// Function ID: 10008
+// Module ID: 10131
+// Function ID: 10132
 // Name: ChannelCallMicButton
-// Dependencies: [19, 4577, 21, 7345, 504, 10008, 10009, 9503, 1114, 10012, 10013, 576, 2]
+// Dependencies: [19, 4653, 21, 7448, 504, 10132, 10133, 9627, 1114, 10136, 10137, 576, 2]
 // Exports: ChannelCallMicButton
 
-// Module 10007 (ChannelCallMicButton)
-import useMuteStatesDefault from "useMuteStates" /* 7345 */;
-import CallBarActionAll from "CallBarAction" /* 9503 */;
-import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 10009 */;
+// Module 10131 (ChannelCallMicButton)
+import useMuteStatesDefault from "useMuteStates" /* 7448 */;
+import CallBarActionAll from "CallBarAction" /* 9627 */;
+import VoicePanelRiveMicButton from "VoicePanelRiveMicButton" /* 10133 */;
 import noop from "module_19" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4577 */;
+import GameConsoleStore from "GameConsoleStore" /* 4653 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -27,7 +27,7 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
   const items = [GameConsoleStore];
   const stateFromStores = mute(504).useStateFromStores(items, () => null != awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
   const obj = mute(504);
-  const muteHandler = mute(10008).createMuteHandler(tmp3, stateFromStores);
+  const muteHandler = mute(10132).createMuteHandler(tmp3, stateFromStores);
   mute = muteHandler.mute;
   const items1 = [mute];
   const memo = noop.useMemo(() => jsx(VoicePanelRiveMicButton.VoicePanelRiveMicButton, { muted: mute }), items1);
@@ -35,7 +35,7 @@ export const ChannelCallMicButton = function ChannelCallMicButton(disableTint) {
   const intl = mute(1114).intl;
   obj3.accessibilityLabel = intl.string(mute(1114).t.B3zz0G);
   obj3.onPress = muteHandler.onPress;
-  obj3.source = importDefault(mute ? 10012 : 10013);
+  obj3.source = importDefault(mute ? 10136 : 10137);
   if (!flag) {
     flag = mute;
   }

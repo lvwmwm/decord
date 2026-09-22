@@ -1,9 +1,9 @@
 // Module ID: 2071
 // Function ID: 2072
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 2071
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", scales: [1], hash: "e278d8ccf36b14a915c87c3b02554092", name: "bg.messages.e278d8ccf36b14a915c87c3b02554092.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZHM=", scales: [1], hash: "2b00013b5b04287a165c0a9bd16b21c1", name: "bg.messages.2b00013b5b04287a165c0a9bd16b21c1.compiled.messages", type: "jsona" });

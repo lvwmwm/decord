@@ -1,10 +1,10 @@
-// Module ID: 4607
-// Function ID: 4608
+// Module ID: 4683
+// Function ID: 4684
 // Name: StreamSettingsConstants
 // Dependencies: [1074, 1373, 1114, 2]
 // Exports: getApplicationFramerate, getApplicationResolution, makeResolutionLabel
 
-// Module 4607 (StreamSettingsConstants)
+// Module 4683 (StreamSettingsConstants)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1114 */;
 import PremiumConstants from "PremiumConstants" /* 1373 */;

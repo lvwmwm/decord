@@ -1,17 +1,17 @@
-// Module ID: 11199
-// Function ID: 11200
+// Module ID: 11331
+// Function ID: 11332
 // Name: BrandSafetyContext
-// Dependencies: [11200, 1957, 1979, 4209, 4381, 1371, 11201, 7699, 1396, 4713, 2]
+// Dependencies: [11332, 1957, 1979, 4285, 4458, 1371, 11333, 7801, 1396, 4789, 2]
 // Exports: getBrandSafetyContext
 
-// Module 11199 (BrandSafetyContext)
+// Module 11331 (BrandSafetyContext)
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 11201 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 11200 */;
+import ContentImpressionTrackerConstants from "ContentImpressionTrackerConstants" /* 11333 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 11332 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4381 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
 import UserStore from "UserStore" /* 1371 */;
 import size from "module_2" /* 2 */;
 

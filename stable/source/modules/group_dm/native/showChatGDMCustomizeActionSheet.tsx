@@ -1,18 +1,18 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 11054
+// Function ID: 11055
 // Name: showChatGDMCustomizeActionSheet
-// Dependencies: [4527, 4763, 10925, 1896, 2]
+// Dependencies: [4603, 4839, 11055, 1896, 2]
 // Exports: default
 
-// Module 10924 (showChatGDMCustomizeActionSheet)
+// Module 11054 (showChatGDMCustomizeActionSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4763 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/group_dm/native/showChatGDMCustomizeActionSheet.tsx");
 
 export default function showChatGDMCustomizeActionSheet(merged) {
   ActionSheetActionCreatorsDefault.hideActionSheet();
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(10925, dependencyMap.paths), merged, "customize-group-dm", { presentation: "modal" });
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(11055, dependencyMap.paths), merged, "customize-group-dm", { presentation: "modal" });
 };

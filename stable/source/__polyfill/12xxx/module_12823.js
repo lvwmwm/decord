@@ -1,22 +1,9 @@
 // Module ID: 12823
 // Function ID: 12824
-// Dependencies: [12807]
-// Exports: _getSpanForScope, _setSpanForScope
+// Dependencies: [1120]
 
 // Module 12823
-import _mod12807 from "module_12807" /* 12807 */;
+import registerAsset from "module_1120" /* 1120 */;
 
-require = arg1;
-const dependencyMap = arg6;
-const _sentrySpan = "_sentrySpan";
 
-export const _getSpanForScope = function _getSpanForScope(arg0) {
-  return arg0[_sentrySpan];
-};
-export const _setSpanForScope = function _setSpanForScope(arg0, arg1) {
-  if (arg1) {
-    const result = _mod12807.addNonEnumerableProperty(arg0, _sentrySpan, arg1);
-  } else {
-    delete tmp2[tmp];
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/contact_sync/native/images", width: 102, height: 106, scales: [1, 2, 3], hash: "22ff64f3c42212e7404d5af41f019eda", name: "mallow", type: "png" });

@@ -1,23 +1,23 @@
-// Module ID: 16632
-// Function ID: 16633
+// Module ID: 16738
+// Function ID: 16739
 // Name: SearchBarActivityIcon
-// Dependencies: [19, 17, 7281, 12343, 7879, 21, 4560, 576, 563, 12344, 4296, 4561, 7051, 1115, 2]
+// Dependencies: [19, 17, 7384, 12472, 7982, 21, 4636, 576, 563, 12473, 4373, 4637, 7154, 1363, 2]
 
-// Module 16632 (SearchBarActivityIcon)
+// Module 16738 (SearchBarActivityIcon)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import timing from "timing" /* 4561 */;
-import SearchUtils from "SearchUtils" /* 12344 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import timing from "timing" /* 4637 */;
+import SearchUtils from "SearchUtils" /* 12473 */;
 import noop from "module_19" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 7281 */;
-import SearchQueryStore from "SearchQueryStore" /* 12343 */;
+import SearchMessageStore from "SearchMessageStore" /* 7384 */;
+import SearchQueryStore from "SearchQueryStore" /* 12472 */;
 
 require = fn;
 const ActivityIndicator = fn(17).ActivityIndicator;
-let closure_7 = fn(7879).SEARCH_MESSAGE_TAB_SENTINEL;
+let closure_7 = fn(7982).SEARCH_MESSAGE_TAB_SENTINEL;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { spinnerColor: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, spinner: { width: 18, height: 18, alignItems: "center", justifyContent: "center", position: "absolute" }, icon: { marginLeft: 12, marginRight: 4 } };
 let closure_11 = createStyles.createStyles(obj);
 let obj4 = { START: 0, [0]: "START", END: 1, [1]: "END" };

@@ -1,20 +1,20 @@
-// Module ID: 1230
-// Function ID: 1231
+// Module ID: 1228
+// Function ID: 1229
 // Name: ClientThemesConstants
-// Dependencies: [1085, 1187, 1231, 1114, 12, 2]
+// Dependencies: [1085, 1185, 1229, 1114, 12, 2]
 // Exports: isSelectableGradientPreset
 
-// Module 1230 (ClientThemesConstants)
+// Module 1228 (ClientThemesConstants)
 import Constants from "Constants" /* 1085 */;
 import util from "util" /* 1114 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1187 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1231 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1229 */;
 import apply from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;
 const items = [, , ];
-({ DARK: arr[0], DARKER: arr[1], MIDNIGHT: arr[2] } = ThemeTypes);
+({ ASH: arr[0], DARK: arr[1], ONYX: arr[2] } = ThemeTypes);
 const obj = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.MINT_APPLE,
@@ -135,11 +135,11 @@ const obj8 = {
 const items9 = [{ token: "BG_GRADIENT_DESERT_KHAKI_1", stop: 12.92 }, { token: "BG_GRADIENT_DESERT_KHAKI_2", stop: 32.92 }, { token: "BG_GRADIENT_DESERT_KHAKI_3", stop: 52.11 }];
 obj8.colors = items9;
 items2[7] = obj8;
-const DARKER = ThemeTypes.DARKER;
+const DARK = ThemeTypes.DARK;
 const obj9 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.SUNSET,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 141.68,
   getName() {
@@ -154,7 +154,7 @@ const items11 = [obj9, , , , , , , , , , , , ];
 const obj10 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.CHROMA_GLOW,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 128.92,
   getName() {
@@ -169,7 +169,7 @@ items11[1] = obj10;
 const obj11 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.FOREST,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 162.27,
   getName() {
@@ -184,7 +184,7 @@ items11[2] = obj11;
 const obj12 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.CRIMSON_MOON,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 64.92,
   getName() {
@@ -199,7 +199,7 @@ items11[3] = obj12;
 const obj13 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.MIDNIGHT_BLURPLE,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 48.17,
   getName() {
@@ -214,7 +214,7 @@ items11[4] = obj13;
 const obj14 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.MARS,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 170.82,
   getName() {
@@ -229,7 +229,7 @@ items11[5] = obj14;
 const obj15 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.DUSK,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 180,
   getName() {
@@ -244,7 +244,7 @@ items11[6] = obj15;
 const obj16 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.UNDER_THE_SEA,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 179.14,
   getName() {
@@ -259,7 +259,7 @@ items11[7] = obj16;
 const obj17 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.RETRO_STORM,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 148.71,
   getName() {
@@ -274,7 +274,7 @@ items11[8] = obj17;
 const obj18 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.NEON_NIGHTS,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 180,
   getName() {
@@ -289,7 +289,7 @@ items11[9] = obj18;
 const obj19 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.STRAWBERRY_LEMONADE,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 161.03,
   getName() {
@@ -304,7 +304,7 @@ items11[10] = obj19;
 const obj20 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.AURORA,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 239.16,
   getName() {
@@ -319,7 +319,7 @@ items11[11] = obj20;
 const obj21 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.SEPIA,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 69.98,
   getName() {
@@ -334,7 +334,7 @@ items11[12] = obj21;
 const obj22 = {
   type: ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET,
   id: preloaded_user_settings.BackgroundGradientPresetId.BLURPLE_TWILIGHT,
-  theme: DARKER,
+  theme: DARK,
   colors: null,
   angle: 47.61,
   getName() {
@@ -365,7 +365,7 @@ items27[HermesBuiltin.arraySpread(items2, HermesBuiltin.arraySpread(items11, 1))
 const items28 = [
   {
     type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-    theme: DARKER,
+    theme: DARK,
     getName() {
       const intl = util.intl;
       return intl.string(util.t.b8Cei3);
@@ -377,7 +377,7 @@ const items28 = [
 ];
 const obj24 = {
   type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-  theme: DARKER,
+  theme: DARK,
   getName() {
     const intl = util.intl;
     return intl.string(util.t.b8Cei3);
@@ -401,18 +401,18 @@ const obj25 = {
 };
 items28[2] = {
   type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-  theme: ThemeTypes.MIDNIGHT,
+  theme: ThemeTypes.ONYX,
   getName() {
     const intl = util.intl;
-    return intl.string(util.t.pQwSpQ);
+    return intl.string(util.t.Do4ZJx);
   }
 };
 const obj26 = {
   type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-  theme: ThemeTypes.MIDNIGHT,
+  theme: ThemeTypes.ONYX,
   getName() {
     const intl = util.intl;
-    return intl.string(util.t.pQwSpQ);
+    return intl.string(util.t.Do4ZJx);
   }
 };
 items28[3] = {
@@ -455,7 +455,7 @@ const obj28 = {
 };
 items29[1] = {
   type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-  theme: ThemeTypes.DARK,
+  theme: ThemeTypes.ASH,
   getName() {
     const intl = util.intl;
     return intl.string(util.t.SMPT1k);
@@ -463,7 +463,7 @@ items29[1] = {
 };
 const obj29 = {
   type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-  theme: ThemeTypes.DARK,
+  theme: ThemeTypes.ASH,
   getName() {
     const intl = util.intl;
     return intl.string(util.t.SMPT1k);
@@ -471,7 +471,7 @@ const obj29 = {
 };
 items29[2] = {
   type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-  theme: ThemeTypes.DARKER,
+  theme: ThemeTypes.DARK,
   getName() {
     const intl = util.intl;
     return intl.string(util.t.b8Cei3);
@@ -479,7 +479,7 @@ items29[2] = {
 };
 const obj30 = {
   type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-  theme: ThemeTypes.DARKER,
+  theme: ThemeTypes.DARK,
   getName() {
     const intl = util.intl;
     return intl.string(util.t.b8Cei3);
@@ -487,7 +487,7 @@ const obj30 = {
 };
 items29[3] = {
   type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-  theme: ThemeTypes.MIDNIGHT,
+  theme: ThemeTypes.ONYX,
   getName() {
     const intl = util.intl;
     return intl.string(util.t.Do4ZJx);
@@ -495,7 +495,7 @@ items29[3] = {
 };
 const obj31 = {
   type: ClientThemesTypes.ClientThemeType.STANDARD_BACKGROUND_THEME,
-  theme: ThemeTypes.MIDNIGHT,
+  theme: ThemeTypes.ONYX,
   getName() {
     const intl = util.intl;
     return intl.string(util.t.Do4ZJx);

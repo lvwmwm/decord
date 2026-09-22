@@ -1,13 +1,13 @@
-// Module ID: 11334
-// Function ID: 11335
+// Module ID: 11466
+// Function ID: 11467
 // Name: openChannelPicker
-// Dependencies: [2012, 1979, 4527, 11335, 1896, 1114, 2]
+// Dependencies: [2012, 1979, 4603, 11467, 1896, 1114, 2]
 // Exports: default
 
-// Module 11334 (openChannelPicker)
+// Module 11466 (openChannelPicker)
 import util from "util" /* 1114 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
 import GuildChannelStore from "GuildChannelStore" /* 2012 */;
 import GuildStore from "GuildStore" /* 1979 */;
 
@@ -41,5 +41,5 @@ export default function openChannelPicker(onClose) {
   obj2.channels = found.map((channel) => channel.channel);
   obj2.selectedChannel = selectedChannel;
   const merged1 = Object.assign(merged);
-  obj.openLazy(asyncRequireImpl(11335, dependencyMap.paths), "ChannelPicker", obj2);
+  obj.openLazy(asyncRequireImpl(11467, dependencyMap.paths), "ChannelPicker", obj2);
 };

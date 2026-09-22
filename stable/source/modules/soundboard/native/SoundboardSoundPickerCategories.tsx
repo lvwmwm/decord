@@ -1,18 +1,18 @@
-// Module ID: 17082
-// Function ID: 17083
+// Module ID: 17190
+// Function ID: 17191
 // Name: SoundboardSoundPickerCategories
-// Dependencies: [19, 17, 17064, 1371, 1074, 21, 4560, 576, 5020, 5584, 1114, 10396, 4523, 17080, 8723, 5123, 1178, 5095, 4528, 4529, 504, 4218, 9971, 1611, 4432, 8246, 2]
+// Dependencies: [19, 17, 17172, 1371, 1074, 21, 4636, 576, 5101, 5665, 1114, 10520, 4599, 17188, 8842, 5204, 1176, 5176, 4604, 4605, 504, 4294, 10095, 1611, 6756, 4509, 8361, 2]
 
-// Module 17082 (SoundboardSoundPickerCategories)
+// Module 17190 (SoundboardSoundPickerCategories)
 import nativeDefault from "native" /* 576 */;
-import HapticUtils from "HapticUtils" /* 4528 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4529 */;
-import SoundboardTypes from "SoundboardTypes" /* 5020 */;
-import Pressables from "Pressables" /* 5123 */;
-import GuildIconDefault from "GuildIcon" /* 5584 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 9971 */;
-import _modDef10396 from "module_10396" /* 10396 */;
-import _modDef17080 from "module_17080" /* 17080 */;
+import HapticUtils from "HapticUtils" /* 4604 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4605 */;
+import SoundboardTypes from "SoundboardTypes" /* 5101 */;
+import Pressables from "Pressables" /* 5204 */;
+import GuildIconDefault from "GuildIcon" /* 5665 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10095 */;
+import _modDef10520 from "module_10520" /* 10520 */;
+import _modDef17188 from "module_17188" /* 17188 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -31,29 +31,29 @@ function SoundCategoryItem(style) {
     let tmp14Result = closure_1_10(GuildIconDefault, obj2);
     let tmp6 = null;
     let tmp7 = null;
-  } else if (tmp2(5020).SoundboardSoundGridSectionType.FAVORITES === type) {
+  } else if (tmp2(5101).SoundboardSoundGridSectionType.FAVORITES === type) {
     const intl4 = tmp2(1114).intl;
     name = intl4.string(tmp2(1114).t.y3LQCG);
-    tmp6 = _modDef10396;
+    tmp6 = _modDef10520;
     tmp7 = null;
     tmp14Result = null;
-  } else if (tmp2(5020).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
+  } else if (tmp2(5101).SoundboardSoundGridSectionType.FREQUENTLY_USED === type) {
     const intl3 = tmp2(1114).intl;
     name = intl3.string(tmp2(1114).t["+cGVV6"]);
     const obj = { style: tmp.keyboardItem };
-    tmp7 = closure_1_10(tmp2(4523).ClockIcon, obj);
+    tmp7 = closure_1_10(tmp2(4599).ClockIcon, obj);
     tmp6 = null;
     tmp14Result = null;
-  } else if (tmp2(5020).SoundboardSoundGridSectionType.DEFAULTS === type) {
+  } else if (tmp2(5101).SoundboardSoundGridSectionType.DEFAULTS === type) {
     const intl2 = tmp2(1114).intl;
     name = intl2.string(tmp2(1114).t.Rtvk9X);
-    tmp6 = _modDef17080;
+    tmp6 = _modDef17188;
     tmp7 = null;
     tmp14Result = null;
-  } else if (tmp2(5020).SoundboardSoundGridSectionType.SEARCH === type) {
+  } else if (tmp2(5101).SoundboardSoundGridSectionType.SEARCH === type) {
     const intl = tmp2(1114).intl;
     name = intl.string(tmp2(1114).t.sKt3xS);
-    tmp6 = _modDef17080;
+    tmp6 = _modDef17188;
     tmp7 = null;
     tmp14Result = null;
   } else {
@@ -61,12 +61,12 @@ function SoundCategoryItem(style) {
     tmp7 = null;
     tmp14Result = null;
     name = null;
-    if (tmp2(5020).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
+    if (tmp2(5101).SoundboardSoundGridSectionType.TOP_SOUNDS === type) {
       const intl5 = tmp2(1114).intl;
       const obj3 = { guildName: category.categoryInfo.guild.name };
       name = intl5.formatToPlainString(tmp2(1114).t.GXs41w, obj3);
       const obj4 = { style: tmp.keyboardItem };
-      tmp7 = closure_1_10(tmp2(8723).TrophyIcon, obj4);
+      tmp7 = closure_1_10(tmp2(8842).TrophyIcon, obj4);
       tmp6 = null;
       tmp14Result = null;
     }
@@ -87,13 +87,13 @@ function SoundCategoryItem(style) {
   }
   if (tmp14Result == null) {
     const obj7 = { style: tmp.keyboardItem, source: tmp6 };
-    tmp14Result = tmp14(tmp2(1178).Icon, obj7);
+    tmp14Result = tmp14(tmp2(1176).Icon, obj7);
   }
   const items1 = [tmp14Result, ];
   if (locked) {
     const obj8 = { style: tmp.lockContainer, children: null };
     const obj9 = { style: tmp.lock };
-    obj8.children = tmp14(tmp2(5095).LockIcon, obj9);
+    obj8.children = tmp14(tmp2(5176).LockIcon, obj9);
     locked = tmp14(tmp16, obj8);
   }
   items1[1] = locked;
@@ -107,12 +107,12 @@ function getItemLayout(arg0, index) {
 get_ActivityIndicator = fn(17);
 const StyleSheet = get_ActivityIndicator.StyleSheet;
 ({ View: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
-const setSearchQuery = fn(17064).setSearchQuery;
+const setSearchQuery = fn(17172).setSearchQuery;
 const Constants = fn(1074);
 ({ CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT: closure_9, NODE_SIZE, NODE_MARGIN } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { container: { borderTopWidth: StyleSheet.hairlineWidth, paddingHorizontal: 8, flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderTopColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, item: null, fadedItem: { opacity: 0.5 }, activeItem: null, guildItem: null, keyboardItem: null, lockContainer: null, lock: null };
 let size = { margin: NODE_MARGIN, height: NODE_SIZE, width: NODE_SIZE, borderRadius: NODE_SIZE / 2, alignItems: "center", justifyContent: "center" };
 obj.item = size;
@@ -210,13 +210,18 @@ export default noop.memo(function SoundboardSoundPickerCategories(guildId) {
     }
     fadedItem = closure_3.fadedItem;
   }, items3);
+  const memo = noop.useMemo(() => {
+    const Gesture = guildId(listRef[24]).Gesture;
+    return Gesture.Native().disallowInterruption(true);
+  }, []);
   let obj2 = { hostName: "soundboard-footer", children: null };
   const obj3 = { style: null, children: null };
   const items4 = [tmp.container, { paddingBottom: categoryIndex(listRef[23])().bottom }, style];
   obj3.style = items4;
-  const items5 = [
-    closure_10(categoryIndex(listRef[25]), { style: ref.absoluteFill }),
-    closure_10(closure_14, {
+  const items5 = [closure_10(categoryIndex(listRef[26]), { style: ref.absoluteFill }), ];
+  const obj5 = {
+    gesture: memo,
+    children: closure_10(closure_14, {
       ref,
       getItemLayout,
       onLayout: callback,
@@ -230,8 +235,9 @@ export default noop.memo(function SoundboardSoundPickerCategories(guildId) {
       renderItem: callback3,
       showsHorizontalScrollIndicator: false
     })
-  ];
+  };
+  items5[1] = closure_10(guildId(listRef[24]).GestureDetector, obj5);
   obj3.children = items5;
   obj2.children = closure_11(ref, obj3);
-  return closure_10(guildId(listRef[24]).Portal, obj2);
+  return closure_10(guildId(listRef[25]).Portal, obj2);
 });

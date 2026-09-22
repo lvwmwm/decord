@@ -1,14 +1,14 @@
-// Module ID: 10984
-// Function ID: 10985
+// Module ID: 11115
+// Function ID: 11116
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 1957, 4199, 1960, 1074, 504, 9841, 1982, 1369, 2]
+// Dependencies: [19, 1957, 4275, 1960, 1074, 504, 9965, 1982, 1369, 2]
 // Exports: default
 
-// Module 10984 (useFavoritesGuildChannelFilter)
-import sortByMatchScore from "sortByMatchScore" /* 9841 */;
+// Module 11115 (useFavoritesGuildChannelFilter)
+import sortByMatchScore from "sortByMatchScore" /* 9965 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 import FavoriteStore from "FavoriteStore" /* 1960 */;
 
 require = fn;
@@ -37,11 +37,11 @@ export default function useFavoritesGuildChannelFilter() {
         tmp15 = tmp17;
       }
       return tmp15;
-    } else if (tmp(9841).AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (tmp(9965).AutocompleterResultTypes.GROUP_DM === type) {
       return null == stateFromStores[type.record.id];
     } else {
-      if (tmp(9841).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (tmp(9841).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (tmp(9965).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (tmp(9965).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           return tmp(1369).assertNever(type);
         }
       }

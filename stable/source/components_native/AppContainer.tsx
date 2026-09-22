@@ -1,42 +1,41 @@
-// Module ID: 14557
-// Function ID: 14558
+// Module ID: 14643
+// Function ID: 14644
 // Name: AppContainer
-// Dependencies: [32, 19, 17, 7328, 1957, 2011, 1074, 1964, 21, 4560, 576, 4296, 5126, 14558, 4766, 1109, 1233, 4418, 4912, 7036, 14560, 14561, 4417, 1100, 4495, 1242, 4419, 14562, 7041, 1484, 1369, 14563, 1115, 11538, 14564, 14572, 4341, 14574, 1480, 9649, 12787, 12793, 14575, 4432, 14576, 14578, 14580, 14581, 14582, 15934, 15942, 1232, 2]
+// Dependencies: [32, 19, 17, 7431, 1957, 2011, 1074, 1964, 21, 4636, 576, 4373, 5207, 14644, 4842, 1109, 1231, 4495, 4988, 7139, 14646, 14647, 4494, 1100, 4571, 1240, 4496, 14648, 7144, 1484, 1369, 14649, 1363, 11666, 14650, 14658, 4418, 14660, 1480, 9773, 12916, 12922, 14661, 4509, 14662, 14664, 14665, 14666, 16028, 16036, 1230, 2]
 
-// Module 14557 (AppContainer)
+// Module 14643 (AppContainer)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import SentryUtilsDefault from "SentryUtils" /* 1232 */;
-import SentryInitUtils from "SentryInitUtils" /* 1233 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import SentryUtilsDefault from "SentryUtils" /* 1230 */;
+import SentryInitUtils from "SentryInitUtils" /* 1231 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1480 */;
 import Link from "Link" /* 1484 */;
-import ManaContext from "ManaContext" /* 4341 */;
-import RootNavigationRef from "RootNavigationRef" /* 4418 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4419 */;
-import Portal from "Portal" /* 4432 */;
-import useThemeDefault from "useTheme" /* 4495 */;
-import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 4766 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 5126 */;
-import useNavigationTheme from "useNavigationTheme" /* 7041 */;
-import WebViewContext from "WebViewContext" /* 9649 */;
-import StartupProfiler from "StartupProfiler" /* 11538 */;
-import MemoryRouter from "MemoryRouter" /* 12787 */;
-import RouteManagerDefault from "RouteManager" /* 12793 */;
-import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 14558 */;
-import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 14561 */;
-import MainNavigationLoggerDefault from "MainNavigationLogger" /* 14562 */;
-import ReanimatedScreenProvider from "ReanimatedScreenProvider" /* 14564 */;
-import RootThemeContextProvider from "RootThemeContextProvider" /* 14572 */;
-import AccessibilityPreferencesContextProviderDefault from "AccessibilityPreferencesContextProvider" /* 14574 */;
-import ErrorBoundaryDefault from "ErrorBoundary" /* 14575 */;
-import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 14576 */;
-import KeyCommandsViewDefault from "KeyCommandsView" /* 14578 */;
-import ThemedStatusBarDefault from "ThemedStatusBar" /* 14580 */;
-import SafeAreaProvider from "SafeAreaProvider" /* 14581 */;
-import DevToolsLazyDefault from "DevToolsLazy" /* 14582 */;
-import ScreenRecordingPipDefault from "ScreenRecordingPip" /* 15934 */;
+import ManaContext from "ManaContext" /* 4418 */;
+import RootNavigationRef from "RootNavigationRef" /* 4495 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4496 */;
+import Portal from "Portal" /* 4509 */;
+import useThemeDefault from "useTheme" /* 4571 */;
+import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 4842 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 5207 */;
+import useNavigationTheme from "useNavigationTheme" /* 7144 */;
+import WebViewContext from "WebViewContext" /* 9773 */;
+import StartupProfiler from "StartupProfiler" /* 11666 */;
+import MemoryRouter from "MemoryRouter" /* 12916 */;
+import RouteManagerDefault from "RouteManager" /* 12922 */;
+import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 14644 */;
+import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 14647 */;
+import MainNavigationLoggerDefault from "MainNavigationLogger" /* 14648 */;
+import ReanimatedScreenProvider from "ReanimatedScreenProvider" /* 14650 */;
+import RootThemeContextProvider from "RootThemeContextProvider" /* 14658 */;
+import AccessibilityPreferencesContextProviderDefault from "AccessibilityPreferencesContextProvider" /* 14660 */;
+import ErrorBoundaryDefault from "ErrorBoundary" /* 14661 */;
+import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 14662 */;
+import ThemedStatusBarDefault from "ThemedStatusBar" /* 14664 */;
+import SafeAreaProvider from "SafeAreaProvider" /* 14665 */;
+import DevToolsLazyDefault from "DevToolsLazy" /* 14666 */;
+import ScreenRecordingPipDefault from "ScreenRecordingPip" /* 16028 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
@@ -76,26 +75,26 @@ function AppNavigationContainer(children) {
     if (null != rootNavigationRef) {
       if (rootNavigationRef.isReady()) {
         const currentRoute = rootNavigationRef.getCurrentRoute();
-        const tmpResult = tmp(4417);
-        const tmp4 = null != tmp(4417).coerceGuildsRoute(currentRoute);
+        const tmpResult = tmp(4494);
+        const tmp4 = null != tmp(4494).coerceGuildsRoute(currentRoute);
         const tmp5 = ref;
-        const tmpResult4 = tmp(4417);
+        const tmpResult4 = tmp(4494);
         if (tmp6) {
           AnalyticsUtilsDefault.track(constants.NAV_DRAWER_OPENED);
         }
         tmp5.current = currentRoute;
-        tmp6 = null != tmp(4417).coerceChannelRoute(ref.current) && tmp4;
+        tmp6 = null != tmp(4494).coerceChannelRoute(ref.current) && tmp4;
         const tmp14 = _slicedToArray(getChannelDetailsFromRouteDefault(currentRoute, true), 2)[1];
         if (null != tmp14) {
           if (isStaticChannelRoute(tmp14)) {
             if (tmp14 !== SelectedChannelStore.getChannelId()) {
-              const coerceChannelRouteResult = tmp(4417).coerceChannelRoute(currentRoute);
+              const coerceChannelRouteResult = tmp(4494).coerceChannelRoute(currentRoute);
               if (!tmp18) {
                 tmp(1100).transitionTo(closure_2_12.CHANNEL(tmp13, tmp14), { openChannel: true, navigationReplace: false });
                 const tmpResult6 = tmp(1100);
               }
               tmp18 = null != coerceChannelRouteResult && coerceChannelRouteResult.params.showCreateThread;
-              const tmpResult5 = tmp(4417);
+              const tmpResult5 = tmp(4494);
             }
           }
         }
@@ -166,30 +165,30 @@ function AppNavigationContainerOrEmpty(arg0) {
   }
 }
 const NativeModules = fn(17).NativeModules;
-let closure_7 = fn(7328).handleHistoryStoreNavigationChange;
+let closure_7 = fn(7431).handleHistoryStoreNavigationChange;
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, ComponentActions: closure_11, Routes: closure_12 } = Constants);
 const isStaticChannelRoute = fn(1964).isStaticChannelRoute;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { flex: { flex: 1 }, rootBackgroundColor: { backgroundColor: nativeDefault.colors.ANDROID_NAVIGATION_BAR_BACKGROUND } };
 let closure_16 = createStyles.createStyles(obj2);
-const ReanimatedRexport = fn(4296);
+const ReanimatedRexport = fn(4373);
 let obj3 = { backgroundColor: nativeDefault.colors.ANDROID_NAVIGATION_BAR_BACKGROUND };
-let result = ReanimatedRexport.configureReanimatedLogger({ level: fn(4296).ReanimatedLogLevel.error, strict: false });
+let result = ReanimatedRexport.configureReanimatedLogger({ level: fn(4373).ReanimatedLogLevel.error, strict: false });
 try {
-  fn(4912).enableFreeze();
-  let obj6 = fn(4912);
-  let obj8 = { useTrackNavigatorScreenImpression: fn(14560).useTrackNavigatorScreenImpression };
-  fn(7036).setDesignConfig(obj8);
+  fn(4988).enableFreeze();
+  let obj6 = fn(4988);
+  let obj8 = { useTrackNavigatorScreenImpression: fn(14646).useTrackNavigatorScreenImpression };
+  fn(7139).setDesignConfig(obj8);
   let c22 = false;
   let closure_23 = { code: "function AppContainerTsx1(){const{RNScreensTurboModule}=this.__closure;global.RNScreensTurboModule=RNScreensTurboModule;}" };
-  let obj7 = fn(7036);
+  let obj7 = fn(7139);
   const result1 = SentryUtilsDefault.profiledRootComponent(function AppContainer(children) {
     children = children.children;
     const appEntryKey = children.appEntryKey;
-    const requestGatewaySocket = appEntryKey(14563).useRequestGatewaySocket("AppContainer:" + appEntryKey);
+    const requestGatewaySocket = appEntryKey(14649).useRequestGatewaySocket("AppContainer:" + appEntryKey);
     const effect = noop.useEffect(() => {
       if (!c22) {
         RNScreensTurboModule = RNScreensTurboModule.RNScreensTurboModule;
@@ -200,13 +199,13 @@ try {
         fn.__closure = obj2;
         fn.__workletHash = 8891274578898;
         fn.__initData = __initData;
-        appEntryKey(4296).runOnUI(fn)();
+        appEntryKey(4373).runOnUI(fn)();
         c22 = true;
-        const obj = appEntryKey(4296);
+        const obj = appEntryKey(4373);
       }
     }, []);
     const effect1 = noop.useEffect(() => {
-      let SplashScreenManager = appEntryKey(1115).isIOS();
+      let SplashScreenManager = appEntryKey(1363).isIOS();
       if (SplashScreenManager) {
         SplashScreenManager = NativeModules.SplashScreenManager;
       }
@@ -215,8 +214,8 @@ try {
         SplashScreenManager2.hideSplashScreen();
       }
     }, []);
-    let obj = appEntryKey(14563);
-    const riveAppStatePlaybackExperiment = appEntryKey(15942).useRiveAppStatePlaybackExperiment("AppContainer");
+    let obj = appEntryKey(14649);
+    const riveAppStatePlaybackExperiment = appEntryKey(16036).useRiveAppStatePlaybackExperiment("AppContainer");
     closure_129_0 = riveAppStatePlaybackExperiment;
     let items = [riveAppStatePlaybackExperiment];
     const memo = noop.useMemo(() => {
@@ -232,7 +231,7 @@ try {
       const obj = {
         experiments: { enabledExperiments: appEntryKey },
         captureException(arg0, tags) {
-          return memo1(dependencyMap[51]).captureException(arg0, { tags });
+          return memo1(dependencyMap[50]).captureException(arg0, { tags });
         }
       };
       return obj;
@@ -255,18 +254,15 @@ try {
       const obj12 = { children: null };
       const obj13 = { children: null };
       const obj14 = { children: null };
-      const obj15 = { children: null };
-      const tmp3 = ErrorBoundaryDefault;
       const items = [closure_2_14(ThemedStatusBarDefault, {}), ];
-      const obj16 = { children: null };
+      const obj15 = { children: null };
       const items1 = [children, closure_2_14(SafeAreaProvider.SafeAreaReporter, {}), closure_2_14(DevToolsLazyDefault, {}), closure_2_14(ScreenRecordingPipDefault, {})];
-      obj16.children = items1;
-      items[1] = __initData(SafeAreaProvider.SafeAreaProvider, obj16);
-      obj15.children = items;
-      obj14.children = __initData(KeyCommandsViewDefault, obj15);
-      obj13.children = closure_2_14(AnimatedKeyboardProviderDefault.Component, obj14);
+      obj15.children = items1;
+      items[1] = __initData(SafeAreaProvider.SafeAreaProvider, obj15);
+      obj14.children = items;
+      obj13.children = __initData(AnimatedKeyboardProviderDefault.Component, obj14);
       obj12.children = closure_2_14(Portal.PortalProvider, obj13);
-      obj11.children = closure_2_14(tmp3, obj12);
+      obj11.children = closure_2_14(ErrorBoundaryDefault, obj12);
       obj9.children = closure_2_14(GestureWrapper, obj11);
       obj8.children = closure_2_14(MemoryRouter.Router, obj9);
       obj7.children = closure_2_14(WebViewContext.WebViewContextProvider, obj8);

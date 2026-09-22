@@ -1,17 +1,17 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 12355
+// Function ID: 12356
 // Name: ScheduledMessageEditContentModal
-// Dependencies: [5, 32, 19, 17, 1957, 21, 4560, 576, 1611, 9310, 504, 7682, 7845, 12215, 4763, 1114, 5631, 7864, 1115, 5624, 5123, 4556, 7085, 2]
+// Dependencies: [5, 32, 19, 17, 1957, 21, 4636, 576, 1611, 9433, 504, 7784, 7947, 12344, 4839, 1114, 5712, 7966, 1363, 5705, 5204, 4632, 7188, 2]
 // Exports: default
 
-// Module 12226 (ScheduledMessageEditContentModal)
+// Module 12355 (ScheduledMessageEditContentModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Pressables from "Pressables" /* 5123 */;
-import MessageParserDefault from "MessageParser" /* 7682 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7845 */;
-import HeaderShared from "HeaderShared" /* 7864 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Pressables from "Pressables" /* 5204 */;
+import MessageParserDefault from "MessageParser" /* 7784 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 7947 */;
+import HeaderShared from "HeaderShared" /* 7966 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -21,7 +21,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { modal: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, headerLeftContainer: null, headerRightContainer: null, container: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.headerLeftContainer = { paddingLeft: nativeDefault.space.PX_16 };
@@ -74,11 +74,11 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const obj5 = v1(7682);
+            const obj5 = v1(7784);
             const obj4 = { content: obj5.parse(stateFromStores, first).content, flags: scheduledMessage.createArgs.flags };
             v1 = 1;
             dependencyMap = 1;
-            const obj7 = { value: tmp4(12215).editScheduledMessage(scheduledMessage.scheduledMessageId, obj4), done: false };
+            const obj7 = { value: tmp4(12344).editScheduledMessage(scheduledMessage.scheduledMessageId, obj4), done: false };
             return obj7;
           }
         } else if (arg0 === 1) {
@@ -90,8 +90,8 @@ export default function ScheduledMessageEditContentModal(scheduledMessage) {
           return obj;
         } else {
           if (value) {
-            v1(4763).pop();
-            const arr = v1(4763);
+            v1(4839).pop();
+            const arr = v1(4839);
           }
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };

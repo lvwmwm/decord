@@ -1,20 +1,20 @@
-// Module ID: 13978
-// Function ID: 13979
+// Module ID: 14063
+// Function ID: 14064
 // Name: GuildProgressOverview
-// Dependencies: [19, 17, 1074, 21, 4560, 576, 12478, 12481, 7195, 1114, 5123, 1178, 4556, 9945, 13979, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 576, 12607, 12610, 7297, 1114, 5204, 1176, 4632, 10069, 14064, 2]
 // Exports: default
 
-// Module 13978 (GuildProgressOverview)
+// Module 14063 (GuildProgressOverview)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Pressables from "Pressables" /* 5123 */;
-import showSimpleActionSheet from "showSimpleActionSheet" /* 7195 */;
-import _modDef9945 from "module_9945" /* 9945 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 12478 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12481 */;
-import GuildProgressBarDefault from "GuildProgressBar" /* 13979 */;
+import native from "native" /* 1176 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Pressables from "Pressables" /* 5204 */;
+import showSimpleActionSheet from "showSimpleActionSheet" /* 7297 */;
+import _modDef10069 from "module_10069" /* 10069 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12607 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12610 */;
+import GuildProgressBarDefault from "GuildProgressBar" /* 14064 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -51,7 +51,7 @@ class GuildProgressOverviewView {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { padding: 16 }, horizontal: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, title: { fontSize: 16, lineHeight: 20, fontFamily: fn(1074).Fonts.PRIMARY_SEMIBOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, marginBottom: 2 }, step: { lineHeight: 16 }, progressBar: { marginTop: 8 } };
 const React5 = createStyles.createStyles(obj2);
 const size = fn(2);

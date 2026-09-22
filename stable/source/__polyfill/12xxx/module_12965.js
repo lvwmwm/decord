@@ -1,9 +1,43 @@
 // Module ID: 12965
 // Function ID: 12966
-// Dependencies: [1122]
+// Dependencies: [12937]
+// Exports: handleCallbackErrors
 
 // Module 12965
-import registerAsset from "module_1122" /* 1122 */;
+import _mod12937 from "module_12937" /* 12937 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_viewer/native/images", width: 24, height: 24, scales: [2, 3], hash: "05e33949de588de2bb105d38c549ac02", name: "ic_eye_hidden", type: "png" });
+export const handleCallbackErrors = function handleCallbackErrors(fn, arg1) {
+  fn = arg2;
+  if (arg2 === undefined) {
+    fn = function t() {
+
+    };
+  }
+  try {
+    return (function maybeHandlePromiseRejection(promise, arg1, fn) {
+      closure_0 = arg1;
+      closure_1 = fn;
+      if (obj.isThenable(promise)) {
+        return promise.then((result) => {
+          closure_1();
+          return result;
+        }, (arg0) => {
+          closure_0(arg0);
+          closure_1();
+          throw arg0;
+        });
+      } else {
+        fn();
+        return promise;
+      }
+      obj = _mod12937;
+    })(fn(), arg1, fn);
+  } catch (tmp5) {
+    tmp3(tmp5);
+    tmp2();
+    throw tmp5;
+  }
+};

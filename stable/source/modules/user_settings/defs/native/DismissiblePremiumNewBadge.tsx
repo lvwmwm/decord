@@ -1,22 +1,22 @@
-// Module ID: 14721
-// Function ID: 14722
+// Module ID: 14805
+// Function ID: 14806
 // Name: DismissiblePremiumNewBadge
-// Dependencies: [19, 7432, 21, 4560, 576, 10630, 1115, 1178, 4987, 1093, 2]
+// Dependencies: [19, 7535, 21, 4636, 576, 10754, 1363, 1176, 5068, 1093, 2]
 // Exports: default
 
-// Module 14721 (DismissiblePremiumNewBadge)
+// Module 14805 (DismissiblePremiumNewBadge)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import native from "native" /* 1178 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
-import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10630 */;
+import native from "native" /* 1176 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
+import SelectedDismissibleContentDefault from "SelectedDismissibleContent" /* 10754 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Gradients = fn(7432).Gradients;
+const Gradients = fn(7535).Gradients;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { newTag: { backgroundColor: "transparent" }, newTagContainer: { borderRadius: nativeDefault.radii.sm, marginLeft: nativeDefault.space.PX_4 } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);

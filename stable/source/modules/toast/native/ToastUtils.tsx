@@ -1,28 +1,28 @@
-// Module ID: 4258
-// Function ID: 4259
+// Module ID: 4334
+// Function ID: 4335
 // Name: ToastUtils
-// Dependencies: [1074, 4259, 1114, 4260, 4497, 4499, 4501, 4503, 4505, 4507, 4509, 4511, 1396, 4513, 4515, 4518, 1256, 4520, 4523, 2]
+// Dependencies: [1074, 4335, 1114, 4336, 4573, 4575, 4577, 4579, 4581, 4583, 4585, 4587, 1396, 4589, 4591, 4594, 1254, 4596, 4599, 2]
 // Exports: communityAdminOnly, communityRequirementSatisfied, memberOrRoleAddedToast, memberOrRoleRemovedToast, presentAddedFriendToast, presentCommandCopied, presentCopiedToClipboard, presentEmoji, presentError, presentFailedToast, presentFeedbackSent, presentFriendRequestAcceptedToast, presentFriendRequestIgnoredToast, presentGameFriendRequestAcceptedToast, presentGameFriendRequestIgnoredToast, presentGifSaved, presentGuildMemberBio, presentGuildMemberPronouns, presentGuildRoleSubscriptionTrialTierMonthCost, presentIdCopied, presentImageSaved, presentInviteSent, presentLinkCopied, presentMessageCopied, presentMessageIdCopied, presentNoiseCancellation, presentNoiseCancellationError, presentPostIdCopied, presentTimestamp, presentUserPronouns, presentUsernameCopied, presentVideoSaved, presentVoiceActivityDetectionError, roleCreateFailedToast, roleCreatedToast, roleIdCopied, roleTemplateAppliedToast, showMaxGroupMembers, showSafetySuccess, showTransferOwnershipSuccess, showVerificationSent, showVoiceRecordingFailed, transferOwnershipProtected, unverifiedVoiceGate
 
-// Module 4258 (ToastUtils)
+// Module 4334 (ToastUtils)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1114 */;
-import v1 from "v1" /* 1256 */;
+import v1 from "v1" /* 1254 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4259 */;
-import FriendsIcon from "FriendsIcon" /* 4260 */;
-import UserPlatformIcon from "UserPlatformIcon" /* 4499 */;
-import UserMinusIcon from "UserMinusIcon" /* 4501 */;
-import LinkIcon from "LinkIcon" /* 4503 */;
-import SendMessageIcon from "SendMessageIcon" /* 4505 */;
-import CopyIcon from "CopyIcon" /* 4507 */;
-import DownloadIcon from "DownloadIcon" /* 4509 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4511 */;
-import XLargeIcon2 from "XLargeIcon" /* 4513 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4515 */;
-import TrashIcon from "TrashIcon" /* 4518 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4520 */;
-import ClockIcon from "ClockIcon" /* 4523 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
+import FriendsIcon from "FriendsIcon" /* 4336 */;
+import UserPlatformIcon from "UserPlatformIcon" /* 4575 */;
+import UserMinusIcon from "UserMinusIcon" /* 4577 */;
+import LinkIcon from "LinkIcon" /* 4579 */;
+import SendMessageIcon from "SendMessageIcon" /* 4581 */;
+import CopyIcon from "CopyIcon" /* 4583 */;
+import DownloadIcon from "DownloadIcon" /* 4585 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 4587 */;
+import XLargeIcon2 from "XLargeIcon" /* 4589 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4591 */;
+import TrashIcon from "TrashIcon" /* 4594 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4596 */;
+import ClockIcon from "ClockIcon" /* 4599 */;
 import size from "module_2" /* 2 */;
 
 const VerificationCriteria = Constants.VerificationCriteria;
@@ -47,7 +47,7 @@ export const presentFriendRequestAcceptedToast = function presentFriendRequestAc
     stringResult = intl.formatToPlainString(util.t.b3eoD4, obj2);
   }
   const obj = ToastActionCreatorsDefault;
-  obj.open({ key: "TOAST_FRIEND_REQUEST_ACCEPTED", content: stringResult, IconComponent: tmp2(4497).UserPlusIcon, iconColor: "status-positive" });
+  obj.open({ key: "TOAST_FRIEND_REQUEST_ACCEPTED", content: stringResult, IconComponent: tmp2(4573).UserPlusIcon, iconColor: "status-positive" });
 };
 export const presentGameFriendRequestAcceptedToast = function presentGameFriendRequestAcceptedToast() {
   const obj2 = { key: "TOAST_GAME_FRIEND_REQUEST_ACCEPTED", content: null, IconComponent: null, iconColor: "status-positive" };
@@ -166,9 +166,9 @@ export const presentNoiseCancellation = function presentNoiseCancellation(arg0) 
   }
   const obj2 = { key: "NOISE_CANCELLATION_TOGGLE", content: stringResult, IconComponent: null, iconColor: null };
   if (arg0) {
-    let XLargeIcon = tmp4(4511).CheckmarkLargeIcon;
+    let XLargeIcon = tmp4(4587).CheckmarkLargeIcon;
   } else {
-    XLargeIcon = tmp4(4513).XLargeIcon;
+    XLargeIcon = tmp4(4589).XLargeIcon;
   }
   obj2.IconComponent = XLargeIcon;
   let str = "icon-feedback-critical";

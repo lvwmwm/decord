@@ -1,14 +1,14 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 8149
+// Function ID: 8150
 // Name: InGameMessageNuxSystemMessage
-// Dependencies: [4788, 1074, 7954, 7961, 7963, 2024, 1114, 7965, 2]
+// Dependencies: [4864, 1074, 8057, 8064, 8066, 2024, 1114, 8068, 2]
 // Exports: createInGameMessageNuxSystemMessage
 
-// Module 8045 (InGameMessageNuxSystemMessage)
+// Module 8149 (InGameMessageNuxSystemMessage)
 import util from "util" /* 1114 */;
-import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 7954 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7961 */;
-import ApplicationStore from "ApplicationStore" /* 4788 */;
+import resolveMessageContentColorsDefault from "resolveMessageContentColors" /* 8057 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8064 */;
+import ApplicationStore from "ApplicationStore" /* 4864 */;
 
 require = fn;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
@@ -29,7 +29,7 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     const messageAuthorWithProcessedColor = useAuthorWithProcessedColor.getMessageAuthorWithProcessedColor(message);
     const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, gameName: null, urlOnClick: null };
     const obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj2.usernameOnClick = tmp(7963)(obj3);
+    obj2.usernameOnClick = tmp(8066)(obj3);
     obj2.gameName = application.name;
     const obj4 = { action: "bindOpenUrl", url: null, linkColor: null, medium: true };
     obj4.url = tmp(2024).getArticleURL(HelpdeskArticles.SOCIAL_LAYER_CONNECTIONS);
@@ -38,7 +38,7 @@ export const createInGameMessageNuxSystemMessage = function createInGameMessageN
     const obj5 = { content: null };
     const intl = util.intl;
     obj5.content = intl.formatToParts(util.t["92erOB"], obj2);
-    const merged = Object.assign(tmp(7965)(message));
+    const merged = Object.assign(tmp(8068)(message));
     return obj5;
   }
   tmp3 = resolveMessageContentColorsDefault(theme);

@@ -1,20 +1,20 @@
-// Module ID: 7450
-// Function ID: 7451
+// Module ID: 7553
+// Function ID: 7554
 // Name: UserOfferStore
-// Dependencies: [7451, 7452, 8064, 7454, 1371, 7394, 4224, 1373, 1085, 504, 13301, 4218, 573, 2]
+// Dependencies: [7554, 7555, 8168, 7557, 1371, 7497, 4300, 1373, 1085, 504, 13433, 4294, 573, 2]
 
-// Module 7450 (UserOfferStore)
+// Module 7553 (UserOfferStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PremiumUtils from "PremiumUtils" /* 4218 */;
-import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 13301 */;
-import DiscountRecord from "DiscountRecord" /* 7451 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 7452 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8064 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7454 */;
+import PremiumUtils from "PremiumUtils" /* 4294 */;
+import PremiumOfferReminderExperiment from "PremiumOfferReminderExperiment" /* 13433 */;
+import DiscountRecord from "DiscountRecord" /* 7554 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 7555 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8168 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 7557 */;
 import UserStore from "UserStore" /* 1371 */;
-import EntitlementStore from "EntitlementStore" /* 7394 */;
-import SubscriptionStore from "SubscriptionStore" /* 4224 */;
+import EntitlementStore from "EntitlementStore" /* 7497 */;
+import SubscriptionStore from "SubscriptionStore" /* 4300 */;
 
 require = fn;
 function emitChanges() {

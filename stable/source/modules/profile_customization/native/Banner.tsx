@@ -1,19 +1,19 @@
-// Module ID: 8255
-// Function ID: 8256
+// Module ID: 8370
+// Function ID: 8371
 // Name: Banner
-// Dependencies: [19, 17, 1074, 21, 4560, 1091, 5587, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 1091, 5668, 2]
 // Exports: default
 
-// Module 8255 (Banner)
+// Module 8370 (Banner)
 import utils_ColorUtils from "utils/ColorUtils" /* 1091 */;
-import FastImageDefault from "FastImage" /* 5587 */;
+import FastImageDefault from "FastImage" /* 5668 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const BANNER_HEIGHT = fn(1074).BANNER_HEIGHT;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_6 = createStyles.createStyles({ root: { width: "100%" }, image: { width: "100%", height: "100%" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/profile_customization/native/Banner.tsx");

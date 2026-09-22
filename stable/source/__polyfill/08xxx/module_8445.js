@@ -1,9 +1,10 @@
 // Module ID: 8445
 // Function ID: 8446
-// Dependencies: [1122]
+// Dependencies: [4466]
 
 // Module 8445
-import registerAsset from "module_1122" /* 1122 */;
+import emptyFunction from "module_4466" /* 4466 */;
 
+const point = { x: emptyFunction.number, y: emptyFunction.number };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "7b2d2e9a77a15fa8da20d6c6b46e3600", name: "VideoSelfieIcon", type: "png" });
+export default emptyFunction.shape(point);

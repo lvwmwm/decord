@@ -1,12 +1,12 @@
-// Module ID: 4297
-// Function ID: 4298
+// Module ID: 4374
+// Function ID: 4375
 // Name: REAWorkaroundView
-// Dependencies: [19, 21, 1636, 4298, 2]
+// Dependencies: [19, 21, 1636, 4375, 2]
 
-// Module 4297 (REAWorkaroundView)
+// Module 4374 (REAWorkaroundView)
 import _mod19 from "module_19" /* 19 */;
 import jsxProd from "jsxProd" /* 21 */;
-import ReanimatedViewNativeComponentDefault from "ReanimatedViewNativeComponent" /* 4298 */;
+import ReanimatedViewNativeComponentDefault from "ReanimatedViewNativeComponent" /* 4375 */;
 import cancelAnimation from "cancelAnimation" /* 1636 */;
 import size from "module_2" /* 2 */;
 

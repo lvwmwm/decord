@@ -1,16 +1,16 @@
-// Module ID: 17000
-// Function ID: 17001
+// Module ID: 17108
+// Function ID: 17109
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 7538, 1074, 21, 576, 4560, 1611, 14869, 14868, 17001, 9685, 4262, 7552, 1242, 7539, 7382, 4556, 4987, 1114, 2396, 2]
+// Dependencies: [19, 17, 7641, 1074, 21, 576, 4636, 1611, 14956, 14955, 17109, 9809, 4338, 7655, 1240, 7642, 7485, 4632, 5068, 1114, 2396, 2]
 // Exports: default
 
-// Module 17000 (ParentalConsentWarningBanner)
+// Module 17108 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import openUserSettings from "openUserSettings" /* 7382 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7539 */;
-import tinycolorDefault from "tinycolor" /* 7552 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import openUserSettings from "openUserSettings" /* 7485 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7642 */;
+import tinycolorDefault from "tinycolor" /* 7655 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,14 +19,14 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, StyleSheet } = get_ActivityIndicator);
 const View = get_ActivityIndicator.View;
-const FamilyCenterSubPages = fn(7538).FamilyCenterSubPages;
+const FamilyCenterSubPages = fn(7641).FamilyCenterSubPages;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, UserSettingsSections: closure_9, VerticalGradient: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 let closure_14 = 28 + nativeDefault.space.PX_16;
 const locations = [0.5875, 1];
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { strip: null, pressable: null, label: null, link: null };
 const rect = { position: "absolute", top: 0, left: 0, right: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.strip = rect;

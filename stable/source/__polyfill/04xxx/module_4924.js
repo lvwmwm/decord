@@ -1,26 +1,19 @@
 // Module ID: 4924
 // Function ID: 4925
-// Dependencies: [17]
-// Exports: executeNativeBackPress, parseBooleanToOptionalBooleanNativeProp
+// Dependencies: [1280, 1314]
 
 // Module 4924
-import get_ActivityIndicator from "module_17" /* 17 */;
+import _mod1280 from "module_1280" /* 1280 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1314 */;
 
-({ BackHandler: closure_0, Platform } = get_ActivityIndicator);
-const items = ["ios", "android"];
-
-export const isSearchBarAvailableForCurrentPlatform = items.includes("android");
-export const isHeaderBarButtonsAvailableForCurrentPlatform = false;
-export const executeNativeBackPress = function executeNativeBackPress() {
-  React.exitApp();
-  return true;
-};
-export function parseBooleanToOptionalBooleanNativeProp(fullScreenSwipeEnabled) {
-  if (undefined === fullScreenSwipeEnabled) {
-    return "undefined";
-  } else if (true === fullScreenSwipeEnabled) {
-    return "true";
-  } else if (false === fullScreenSwipeEnabled) {
-    return "false";
-  }
+const tmp = _mod1280("%Array%");
+const isArray = tmp.isArray;
+let tmp2 = !isArray;
+if (!isArray) {
+  tmp2 = callBoundIntrinsic("Object.prototype.toString");
 }
+let closure_0 = tmp2;
+
+export default tmp.isArray || (function IsArray(arg0) {
+  return "[object Array]" === closure_0(arg0);
+});

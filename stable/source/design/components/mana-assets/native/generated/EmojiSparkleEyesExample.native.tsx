@@ -1,13 +1,13 @@
-// Module ID: 5955
-// Function ID: 5956
+// Module ID: 6056
+// Function ID: 6057
 // Name: EmojiSparkleEyesExample
-// Dependencies: [21, 5587, 5956, 2]
+// Dependencies: [21, 5668, 6057, 2]
 // Exports: EmojiSparkleEyesExample
 
-// Module 5955 (EmojiSparkleEyesExample)
+// Module 6056 (EmojiSparkleEyesExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef5956 from "module_5956" /* 5956 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6057 from "module_6057" /* 6057 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const EmojiSparkleEyesExample = function EmojiSparkleEyesExample(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5956 };
+  const obj2 = { uri: _modDef6057 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

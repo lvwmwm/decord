@@ -1,18 +1,18 @@
-// Module ID: 16604
-// Function ID: 16605
+// Module ID: 16706
+// Function ID: 16707
 // Name: VibegrationsProjectSettingsSheet
-// Dependencies: [5, 32, 19, 17, 2015, 16590, 1074, 21, 4560, 576, 504, 7248, 4527, 1114, 3547, 7198, 4556, 7149, 9724, 7050, 6627, 5687, 5604, 7247, 16597, 6606, 5605, 4975, 2]
+// Dependencies: [5, 32, 19, 17, 2015, 16690, 1074, 21, 4636, 576, 504, 7348, 4603, 1114, 3590, 7300, 4632, 7252, 9848, 7153, 6728, 5768, 5685, 7347, 16697, 6707, 5686, 5056, 2]
 // Exports: default
 
-// Module 16604 (VibegrationsProjectSettingsSheet)
+// Module 16706 (VibegrationsProjectSettingsSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4527 */;
-import VibegrationsTypes from "VibegrationsTypes" /* 7248 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4603 */;
+import VibegrationsTypes from "VibegrationsTypes" /* 7348 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 2015 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 16590 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 16690 */;
 
 const ActionSheetActionCreatorsDefault = ActionSheetActionCreators;
 
@@ -84,13 +84,13 @@ function VibegrationsCollaboratorRolesSheet(guildId) {
   let obj2 = { count: first.size, max: guildId(onSave[11]).MAX_PROJECT_COLLABORATOR_ROLES };
   const obj3 = { scrollable: true, startExpanded: true, keyboardShouldPersistTaps: "handled", dismissAccessibilityLabel: null, footer: null, header: null, children: null };
   const intl2 = guildId(onSave[13]).intl;
-  obj3.dismissAccessibilityLabel = intl2.string(require("module_3547")["9yHiDe"]);
-  let formatToPlainStringResult = intl.formatToPlainString(require("module_3547").eaqbJt, { count: first.size, max: guildId(onSave[11]).MAX_PROJECT_COLLABORATOR_ROLES });
+  obj3.dismissAccessibilityLabel = intl2.string(require("module_3590")["9yHiDe"]);
+  let formatToPlainStringResult = intl.formatToPlainString(require("module_3590").eaqbJt, { count: first.size, max: guildId(onSave[11]).MAX_PROJECT_COLLABORATOR_ROLES });
   const tmp12 = closure_11;
-  obj3.footer = closure_10(closure_6, { style: tmp.roleListFooter, children: closure_10(guildId(onSave[16]).Text, { variant: "text-xs/normal", color: "text-muted", children: intl.formatToPlainString(require("module_3547").eaqbJt, { count: first.size, max: guildId(onSave[11]).MAX_PROJECT_COLLABORATOR_ROLES }) }) });
+  obj3.footer = closure_10(closure_6, { style: tmp.roleListFooter, children: closure_10(guildId(onSave[16]).Text, { variant: "text-xs/normal", color: "text-muted", children: intl.formatToPlainString(require("module_3590").eaqbJt, { count: first.size, max: guildId(onSave[11]).MAX_PROJECT_COLLABORATOR_ROLES }) }) });
   const obj5 = { title: null, trailing: null };
   const intl3 = guildId(onSave[13]).intl;
-  obj5.title = intl3.string(require("module_3547").fqvhf0);
+  obj5.title = intl3.string(require("module_3590").fqvhf0);
   const obj6 = { label: null, onPress: null };
   const intl4 = guildId(onSave[13]).intl;
   obj6.label = intl4.string(guildId(onSave[13]).t.i4jeWR);
@@ -144,7 +144,7 @@ function VibegrationsCollaboratorRolesSheet(guildId) {
           if (tmp3) {
             const intl = guildId(onSave[13]).intl;
             const obj4 = { max: guildId(onSave[11]).MAX_PROJECT_COLLABORATOR_ROLES };
-            formatToPlainStringResult = intl.formatToPlainString(require("module_3547").VPUL05, obj4);
+            formatToPlainStringResult = intl.formatToPlainString(require("module_3590").VPUL05, obj4);
           }
           obj2.accessibilityHint = formatToPlainStringResult;
           obj2.onPress = function onPress(arg0) {
@@ -166,7 +166,7 @@ const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const VibegrationsProjectSettingsSheet = "VibegrationsProjectSettingsSheet";
 VibegrationsCollaboratorRolesSheet = "VibegrationsCollaboratorRolesSheet";
-let createStyles = fn(4560);
+let createStyles = fn(4636);
 let obj2 = { content: { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, roleLabel: null, roleListContent: null, roleListEmpty: null, roleListFooter: null };
 let obj3 = { gap: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.roleLabel = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -177,7 +177,7 @@ obj2.roleListEmpty = { alignItems: "center", paddingVertical: nativeDefault.spac
 let obj6 = { alignItems: "center", paddingVertical: nativeDefault.space.PX_24 };
 obj2.roleListFooter = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_48, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 let closure_14 = createStyles.createStyles(obj2);
-createStyles = fn(4560);
+createStyles = fn(4636);
 let closure_15 = createStyles.createStyles((backgroundColor) => {
   const obj = { circle: null };
   const size = { width: 12, height: 12, borderRadius: nativeDefault.radii.round, backgroundColor, flexShrink: 0 };

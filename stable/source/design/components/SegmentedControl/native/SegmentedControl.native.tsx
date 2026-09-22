@@ -1,13 +1,13 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 9923
+// Function ID: 9924
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 4560, 576, 4262, 4296, 4974, 9800, 6655, 1115, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 4338, 4373, 5055, 9924, 6756, 1363, 2]
 // Exports: SegmentedControl
 
-// Module 9799 (SegmentedControl)
+// Module 9923 (SegmentedControl)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import spring from "spring" /* 4974 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import spring from "spring" /* 5055 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 let c8 = 0.04;
 let SELECTED_INDICATOR_SPRING = { mass: 0.3, damping: 13, stiffness: 100, restDisplacementThreshold: 0.001, overshootClamping: true };
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_10 = createStyles.createStyles((borderRadius, paddingVertical) => {
   const obj = { scrollContentContainer: { flexGrow: 1 }, controlsContainer: { backgroundColor: nativeDefault.colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical, display: "flex", flexDirection: "row", alignItems: "center" }, indicatorContainer: { position: "absolute", width: "100%", height: "100%", borderRadius, flexDirection: "row" }, indicator: null };
   const obj2 = { backgroundColor: nativeDefault.colors.MOBILE_SEGMENTED_CONTROL_BACKGROUND, borderRadius: borderRadius + paddingVertical, paddingVertical, display: "flex", flexDirection: "row", alignItems: "center" };
@@ -65,8 +65,6 @@ export const SegmentedControl = function SegmentedControl(keyboardShouldPersistT
   SELECTED_INDICATOR_SPRING = tmp4;
   length = items.length;
   let obj = state(activeIndex[5]);
-  const tmp2 = state;
-  let tmp3 = activeIndex;
   sharedValue = state(activeIndex[6]).useSharedValue(-1);
   let obj2 = state(activeIndex[6]);
   sharedValue1 = state(activeIndex[6]).useSharedValue(0);
@@ -316,18 +314,29 @@ export const SegmentedControl = function SegmentedControl(keyboardShouldPersistT
   H.__initData = derivedValue1;
   let obj11 = { panIndex: sharedValue, activeIndex, runOnJS: state(activeIndex[6]).runOnJS, setActiveIndex };
   const onEndResult = onUpdateResult.onEnd(H);
-  let str2 = "tabbar";
-  if (obj15.isAndroid()) {
-    str2 = "tablist";
+  let str2 = "tablist";
+  if (!obj15.isAndroid()) {
+    let str3;
+    if (tmp) {
+      str3 = "tabbar";
+    }
+    str2 = str3;
   }
   const obj12 = { accessibilityRole: str2, style: tmp4.controlsContainer, children: null };
   const items4 = [setActiveIndex(items, { accessible: false, style: tmp4.indicatorContainer, children: memo }), memo1];
   obj12.children = items4;
   const tmp18 = closure_7(items, obj12, items.length);
-  let tmp17Result = setActiveIndex(pressedIndex, { horizontal: true, alwaysBounceHorizontal: false, contentContainerStyle: tmp4.scrollContentContainer, keyboardShouldPersistTaps: keyboardShouldPersistTaps.keyboardShouldPersistTaps, children: tmp18 });
+  let obj13 = { accessible: false, style: tmp4.indicatorContainer, children: memo };
+  obj15 = state(activeIndex[10]);
+  const tmp19 = pressedIndex;
+  let str4;
+  if (tmp2Result.isIOS()) {
+    str4 = "tabbar";
+  }
+  let tmp17Result = tmp17(tmp19, { horizontal: true, accessibilityRole: str4, alwaysBounceHorizontal: false, contentContainerStyle: tmp4.scrollContentContainer, keyboardShouldPersistTaps: keyboardShouldPersistTaps.keyboardShouldPersistTaps, children: tmp18 });
   if ("experimental_Large" === str) {
     const obj16 = { gesture: onEndResult, children: tmp18 };
-    tmp17Result = setActiveIndex(tmp2(tmp3[9]).GestureDetector, obj16);
+    tmp17Result = tmp17(tmp2(tmp3[9]).GestureDetector, obj16);
   }
   return tmp17Result;
 };

@@ -1,12 +1,12 @@
 // Module ID: 14365
 // Function ID: 14366
-// Dependencies: [14344, 14343]
+// Dependencies: [14366, 14367]
 
 // Module 14365
-import _mod14343 from "module_14343" /* 14343 */;
-import _mod14344 from "module_14344" /* 14344 */;
+const require = globalThis.__r;
 
+const require = arg1;
+const dependencyMap = arg6;
 
-export default Object.keys || (function keys(arg0) {
-  return _mod14344(arg0, _mod14343);
-});
+export const shouldPolyfill = require("module_14366").shouldPolyfill;
+export const supportedValuesOf = require("supportedValuesOf").supportedValuesOf;

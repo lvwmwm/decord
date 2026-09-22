@@ -1,16 +1,16 @@
-// Module ID: 12279
-// Function ID: 12280
+// Module ID: 12408
+// Function ID: 12409
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 4576, 12277, 12280, 4581, 4296, 11359, 558, 9628, 12281, 12282, 1249, 2]
+// Dependencies: [32, 19, 17, 4652, 12406, 12409, 4657, 4373, 11491, 558, 9752, 12410, 12411, 1247, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 12279 (VoicePanelCardLayoutManager)
+// Module 12408 (VoicePanelCardLayoutManager)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1249 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11359 */;
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1247 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11491 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4576 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
 
 const require = globalThis.__r;
 
@@ -25,12 +25,12 @@ function getTargetCardSize(windowWidth) {
   return Math.max(React6, (windowWidth - safeAreaLeft - safeAreaRight - gutter * (num - 1)) / num);
 }
 const PixelRatio = fn(17).PixelRatio;
-const VoicePanelConstants = fn(12277);
+const VoicePanelConstants = fn(12406);
 const VoicePanelCardItemType = VoicePanelConstants.VoicePanelCardItemType;
 ({ BASE_TARGET_CARD_SIZE: closure_8, VoicePanelCTACardDimensionKeys: closure_9, VoicePanelCTACardDimensions: c10, VOICE_PANEL_CHUNK_DIVISOR: closure_11 } = VoicePanelConstants);
-const VoicePanelCardConstants = fn(12280);
+const VoicePanelCardConstants = fn(12409);
 ({ EDGE_GUTTER: closure_12, CALL_TILE_GUTTER: map1 } = VoicePanelCardConstants);
-const ParticipantTypes = fn(4581).ParticipantTypes;
+const ParticipantTypes = fn(4657).ParticipantTypes;
 let closure_15 = { id: "invalid", type: VoicePanelCardItemType.PARTICIPANT, x: 0, y: 0, width: 0, height: 0, zIndex: 0 };
 let set = new Set();
 let closure_17 = { enlargeSquare: false, fillAspectRatio: false };

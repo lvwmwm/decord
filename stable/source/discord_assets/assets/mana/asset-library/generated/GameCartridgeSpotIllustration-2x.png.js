@@ -1,8 +1,8 @@
-// Module ID: 6008
-// Function ID: 6009
+// Module ID: 6109
+// Function ID: 6110
 // Dependencies: [2]
 
-// Module 6008
+// Module 6109
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GameCartridgeSpotIllustration-2x.png.js");

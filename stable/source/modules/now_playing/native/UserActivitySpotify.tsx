@@ -1,21 +1,21 @@
-// Module ID: 11753
-// Function ID: 11754
+// Module ID: 11881
+// Function ID: 11882
 // Name: UserActivitySpotify
-// Dependencies: [19, 17, 8341, 21, 1364, 1272, 4255, 11754, 4975, 8143, 1114, 1178, 2]
+// Dependencies: [19, 17, 8458, 21, 1362, 1270, 4331, 11882, 5056, 8259, 1114, 1176, 2]
 // Exports: SpotifyPlayButton, attributeInstall, canOpenSpotifyUrl, openAlbum, openArtist, openTrack, openUrl
 
-// Module 11753 (UserActivitySpotify)
-import native from "native" /* 1178 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import ClientInfoUtilsAll from "ClientInfoUtils" /* 1364 */;
-import LinkingDefault from "Linking" /* 4255 */;
-import _modDef8143 from "module_8143" /* 8143 */;
+// Module 11881 (UserActivitySpotify)
+import native from "native" /* 1176 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import ClientInfoUtilsAll from "ClientInfoUtils" /* 1362 */;
+import LinkingDefault from "Linking" /* 4331 */;
+import _modDef8259 from "module_8259" /* 8259 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Linking: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const SpotifyConstants = fn(8341);
+const SpotifyConstants = fn(8458);
 ({ SPOTIFY_APP_PROTOCOL: metroRequire, SpotifyEndpoints: closure_7, SpotifyResourceTypes: closure_8 } = SpotifyConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
@@ -248,7 +248,7 @@ export const openAlbum = function openAlbum(activity, id) {
 export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
   activity = activity.activity;
   let obj = { style: activity.style, children: null };
-  let obj2 = { icon: closure_9(activity(4975).Button.Icon, { source: _modDef8143 }), text: null, size: "sm", onPress: null, grow: true };
+  let obj2 = { icon: closure_9(activity(5056).Button.Icon, { source: _modDef8259 }), text: null, size: "sm", onPress: null, grow: true };
   const intl = activity(1114).intl;
   obj2.text = intl.formatToPlainString(activity(1114).t.LEgD7t, { platform: activity.name });
   obj2.onPress = function onPress() {
@@ -261,7 +261,7 @@ export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
         });
         const openURLResult = closure_2_4.openURL(closure_2_7.PLAYER_OPEN(constants.TRACK, sync_id));
       } else {
-        const HTTP = activity(1272).HTTP;
+        const HTTP = activity(1270).HTTP;
         const obj2 = { url: closure_2_7.INSTALL_ATTRIBUTION(ClientInfoUtilsAll.getConstants().Identifier), rejectWithError: true };
         value = HTTP.get(obj2);
         catchPromise = LinkingDefault.openURL(closure_2_7.APP_STORE);
@@ -271,7 +271,7 @@ export const SpotifyPlayButton = function SpotifyPlayButton(activity) {
 
     });
   };
-  obj.children = closure_9(activity(4975).Button, obj2);
+  obj.children = closure_9(activity(5056).Button, obj2);
   return closure_9(closure_5, obj);
 };
 export { SpotifyTrack };

@@ -1,15 +1,15 @@
-// Module ID: 8601
-// Function ID: 8602
+// Module ID: 8718
+// Function ID: 8719
 // Name: RowButton
-// Dependencies: [19, 21, 4560, 576, 5611, 5605, 4296, 5607, 8602, 2]
+// Dependencies: [19, 21, 4636, 576, 5692, 5686, 4373, 5688, 8719, 2]
 
-// Module 8601 (RowButton)
+// Module 8718 (RowButton)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import TableRow from "TableRow" /* 5605 */;
-import Card from "Card" /* 5607 */;
-import TableRowIcon from "TableRowIcon" /* 5611 */;
-import BackgroundBlurView from "BackgroundBlurView" /* 8602 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import TableRow from "TableRow" /* 5686 */;
+import Card from "Card" /* 5688 */;
+import TableRowIcon from "TableRowIcon" /* 5692 */;
+import BackgroundBlurView from "BackgroundBlurView" /* 8719 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -116,7 +116,7 @@ function RowButtonWrapper(experimental_withBlurBackground) {
   return jsx(Card.InternalCard, obj4);
 }
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_5 = createStyles.createStyles(() => {
   const obj = { card: null, cardWithBlur: null };
   const obj2 = { padding: "y", borderTopStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderTopEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomStartRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, borderBottomEndRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS };
@@ -124,9 +124,9 @@ let closure_5 = createStyles.createStyles(() => {
   obj.cardWithBlur = { overflow: "hidden" };
   return obj;
 });
-RowButton.Icon = fn(5611).TableRowIcon;
+RowButton.Icon = fn(5692).TableRowIcon;
 const size = fn(2);
 let result = size.fileFinishedImporting("design/components/TableRow/native/RowButton.native.tsx");
 
-export const RowButtonIconProps = fn(5611).TableRowIconProps;
+export const RowButtonIconProps = fn(5692).TableRowIconProps;
 export { RowButton };

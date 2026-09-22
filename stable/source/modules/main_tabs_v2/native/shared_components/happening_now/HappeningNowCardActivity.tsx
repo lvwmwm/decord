@@ -1,21 +1,19 @@
-// Module ID: 16076
-// Function ID: 16077
+// Module ID: 16170
+// Function ID: 16171
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 1962, 1371, 15297, 1074, 1085, 21, 16077, 16078, 4560, 576, 7162, 504, 7168, 1242, 9542, 1896, 8180, 16072, 4712, 16079, 15298, 16073, 1178, 16082, 10896, 16083, 9917, 13006, 8714, 5097, 9229, 1114, 4409, 10064, 5587, 16074, 16085, 10067, 8140, 16087, 8249, 2]
+// Dependencies: [19, 17, 1962, 1371, 15380, 1074, 1085, 21, 16171, 16172, 4636, 576, 7265, 504, 7271, 1240, 9666, 1896, 8296, 16166, 4788, 16173, 15381, 16167, 1176, 16176, 11023, 16177, 10041, 13136, 8831, 5178, 9352, 1114, 4486, 1363, 10188, 5668, 16168, 16179, 10191, 8256, 16181, 8364, 2]
 
-// Module 16076 (HappeningNowCardActivity)
+// Module 16170 (HappeningNowCardActivity)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import native from "native" /* 1176 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ColorUtils from "ColorUtils" /* 4409 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 8140 */;
-import VideoBackground from "VideoBackground" /* 8249 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10067 */;
-import useLiveStageData from "useLiveStageData" /* 16074 */;
-import _modDef16077 from "module_16077" /* 16077 */;
-import _modDef16078 from "module_16078" /* 16078 */;
-import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 16085 */;
+import ColorUtils from "ColorUtils" /* 4486 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10191 */;
+import useLiveStageData from "useLiveStageData" /* 16168 */;
+import _modDef16171 from "module_16171" /* 16171 */;
+import _modDef16172 from "module_16172" /* 16172 */;
+import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 16179 */;
 import noop from "module_19" /* 19 */;
 import StageInstanceStore from "StageInstanceStore" /* 1962 */;
 import UserStore from "UserStore" /* 1371 */;
@@ -23,10 +21,10 @@ import UserStore from "UserStore" /* 1371 */;
 require = fn;
 function IconOrPreview(arg0) {
   ({ userId, activity, stream, game } = arg0);
-  c1 = undefined;
-  c2 = undefined;
+  importDefault = undefined;
+  dependencyMap = undefined;
   const tmp = closure_16();
-  closure_0 = tmp;
+  _require = tmp;
   let guildId;
   if (stream != null) {
     guildId = stream.guildId;
@@ -65,7 +63,8 @@ function IconOrPreview(arg0) {
       large_image1 = activity.assets.large_image;
     }
     items = [closure_14, closure_14];
-    assetImage = ApplicationAssetUtils.getAssetImage(application_id, large_image1, items);
+    assetImage = require("ApplicationAssetUtils").getAssetImage(application_id, large_image1, items);
+    const obj = require("ApplicationAssetUtils");
   }
   if (null == assetImage) {
     let iconURL;
@@ -94,35 +93,50 @@ function IconOrPreview(arg0) {
     if (activity != null) {
       small_image1 = activity.assets.small_image;
     }
-    const items1 = [closure_14, closure_14];
-    assetImage = ApplicationAssetUtils.getAssetImage(application_id1, small_image1, items1);
+    let items1 = [closure_14, closure_14];
+    assetImage = require("ApplicationAssetUtils").getAssetImage(application_id1, small_image1, items1);
+    let obj2 = require("ApplicationAssetUtils");
   }
   if (null != assetImage) {
-    const memoizedImageSourceResult = VideoBackground.memoizedImageSource(assetImage);
-    const dominantRGBFromImage = VideoBackground.useDominantRGBFromImage(assetImage, memoizedImageSourceResult);
+    const memoizedImageSourceResult = require("VideoBackground").memoizedImageSource(assetImage);
+    let obj4 = require("VideoBackground");
+    const dominantRGBFromImage = require("VideoBackground").useDominantRGBFromImage(assetImage, memoizedImageSourceResult);
     ({ r, g, b } = dominantRGBFromImage);
-    const rgbToHexResult = ColorUtils.rgbToHex(r, g, b);
-    c1 = rgbToHexResult;
-    const hexWithOpacityResult = ColorUtils.hexWithOpacity(rgbToHexResult, 0.2);
-    c2 = hexWithOpacityResult;
+    const obj5 = require("VideoBackground");
+    const rgbToHexResult = require("ColorUtils").rgbToHex(r, g, b);
+    importDefault = rgbToHexResult;
+    const obj6 = require("ColorUtils");
+    const hexWithOpacityResult = require("ColorUtils").hexWithOpacity(rgbToHexResult, 0.2);
+    dependencyMap = hexWithOpacityResult;
     const items2 = [rgbToHexResult, tmp.cardImageAssetContainer];
     const memo = noop.useMemo(() => {
-      items = [closure_0.cardImageAssetContainer, { shadowColor }];
+      items = [closure_0.cardImageAssetContainer, ];
+      if (obj.isAndroid()) {
+        const obj2 = { boxShadow: null };
+        const obj3 = { offsetX: 0, offsetY: 0, blurRadius: 5, color: ColorUtils.hexWithOpacity(shadowColor, 0.32) };
+        const items1 = [obj3];
+        obj2.boxShadow = items1;
+        let obj4 = obj2;
+        const tmpResult = ColorUtils;
+      } else {
+        obj4 = { shadowColor };
+      }
+      items[1] = obj4;
       return items;
     }, items2);
     const items3 = [hexWithOpacityResult, tmp.cardImageAssetBackground];
     if (null != stream) {
-      const obj3 = { style: memo, children: null };
+      let obj3 = { style: memo, children: null };
       const obj8 = { stream, children: null, style: null, ctaText: null, disabled: true };
       ({ cardImageStreamLive: obj13.style, stageStreamLiveText: obj13.textStyle } = tmp);
-      obj8.children = closure_1_11(tmp28(1178).LiveTag, { style: null, textStyle: null, allowFontScaling: false });
+      obj8.children = closure_11(tmp28(1176).LiveTag, { style: null, textStyle: null, allowFontScaling: false });
       obj8.style = tmp.cardImageStreamPreview;
       const intl5 = tmp28(1114).intl;
       obj8.ctaText = intl5.string(tmp28(1114).t["7Xq/nV"]);
-      obj3.children = closure_1_11(tmp2(10064), obj8);
-      return closure_1_11(React4, obj3);
+      obj3.children = closure_11(tmp2(10188), obj8);
+      return closure_11(closure_4, obj3);
     } else {
-      if (tmp2(10896)(activity)) {
+      if (tmp2(11023)(activity)) {
         const intl4 = tmp28(1114).intl;
         let stringResult = intl4.string(tmp28(1114).t.rmnkz4);
       } else {
@@ -133,7 +147,7 @@ function IconOrPreview(arg0) {
         if (type === constants2.LISTENING) {
           const intl3 = tmp28(1114).intl;
           stringResult = intl3.string(tmp28(1114).t.kUEnxN);
-        } else if (tmp2(13006)(activity)) {
+        } else if (tmp2(13136)(activity)) {
           const intl2 = tmp28(1114).intl;
           stringResult = intl2.string(tmp28(1114).t.T0uYK9);
         } else {
@@ -150,10 +164,11 @@ function IconOrPreview(arg0) {
       const obj10 = { style: memo, accessibilityLabel: stringResult, children: null };
       const obj11 = { style: tmp35, children: null };
       const obj12 = { style: tmp.cardImageAsset, source: memoizedImageSourceResult };
-      obj11.children = closure_1_11(tmp2(5587), obj12);
-      obj10.children = closure_1_11(React4, obj11);
-      return closure_1_11(React4, obj10);
+      obj11.children = closure_11(tmp2(5668), obj12);
+      obj10.children = closure_11(closure_4, obj11);
+      return closure_11(closure_4, obj10);
     }
+    const obj7 = require("ColorUtils");
   } else {
     let type2;
     if (activity != null) {
@@ -164,7 +179,7 @@ function IconOrPreview(arg0) {
       userId = substr.charCodeAt(0);
       let tmp2Result2 = items[userId % items.length];
     } else {
-      tmp2Result2 = tmp2(16087);
+      tmp2Result2 = tmp2(16181);
     }
   }
 }
@@ -186,23 +201,23 @@ function StageStreamAvatars(stage) {
 }
 get_ActivityIndicator = fn(17);
 ({ PixelRatio, View: closure_4 } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15297);
+const HappeningNowConstants = fn(15380);
 ({ HAPPENING_NOW_CONTENT_HEIGHT, HappeningNowCardTrackingType: closure_7, STATUS_CUTOUT_SMALL: closure_8, HAPPENING_NOW_STAGE_PREVIEW_HEIGHT } = HappeningNowConstants);
 const Constants = fn(1074);
 ({ ActivityTypes: closure_9, AnalyticEvents: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 const pixelSizeForLayoutSize = PixelRatio.getPixelSizeForLayoutSize(HAPPENING_NOW_CONTENT_HEIGHT);
-let items = [_modDef16077, _modDef16078];
-const createStyles = fn(4560);
+let items = [_modDef16171, _modDef16172];
+const createStyles = fn(4636);
 let obj = { content: { flexShrink: 1, gap: 2 }, avatarStackContainer: { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 }, cardAvatar: { marginBottom: 2 }, cardImage: { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12, position: "relative" }, cardImageStream: { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, position: "relative" }, cardImageAsset: null, cardImageAssetContainer: null, cardImageAssetBackground: null, cardImageStreamPreview: null, cardImageStreamLive: null, stageStreamLiveText: null, stagePreviewWrapper: null };
 let obj3 = { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
 obj.cardImageAsset = { flex: 1, width: "100%", borderRadius: nativeDefault.radii.sm - 1 };
 let obj4 = { flex: 1, width: "100%", borderRadius: nativeDefault.radii.sm - 1 };
-obj.cardImageAssetContainer = { height: "100%", backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG, borderRadius: nativeDefault.radii.sm, shadowOffset: { width: 0, height: 0 }, shadowRadius: 5, shadowOpacity: 0.32, elevation: 10 };
+obj.cardImageAssetContainer = { height: "100%", backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG, borderRadius: nativeDefault.radii.sm, shadowOffset: { width: 0, height: 0 }, shadowRadius: 5, shadowOpacity: 0.32 };
 let size = { width: HAPPENING_NOW_CONTENT_HEIGHT, height: HAPPENING_NOW_CONTENT_HEIGHT, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE };
 obj.cardImageAssetBackground = size;
-let obj5 = { height: "100%", backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG, borderRadius: nativeDefault.radii.sm, shadowOffset: { width: 0, height: 0 }, shadowRadius: 5, shadowOpacity: 0.32, elevation: 10 };
+let obj5 = { height: "100%", backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG, borderRadius: nativeDefault.radii.sm, shadowOffset: { width: 0, height: 0 }, shadowRadius: 5, shadowOpacity: 0.32 };
 obj.cardImageStreamPreview = { borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj.cardImageStreamLive = { top: 4, left: 4, position: "absolute" };
 obj.stageStreamLiveText = { fontSize: 10, lineHeight: 13, fontFamily: fn(1085).Fonts.PRIMARY_BOLD };
@@ -290,11 +305,11 @@ export default noop.memo((userId) => {
     obj2.destination_channel_id = channelId;
     AnalyticsUtilsDefault.track(constants3.ACTIVITY_CARD_CLICKED, obj2);
     if (null != stream) {
-      asyncRequireImpl(9542, tmp6.paths).then((result) => result.default(channelId.channelId, true));
-      const promise2 = asyncRequireImpl(9542, tmp6.paths);
+      asyncRequireImpl(9666, tmp6.paths).then((result) => result.default(channelId.channelId, true));
+      const promise2 = asyncRequireImpl(9666, tmp6.paths);
     } else {
-      asyncRequireImpl(8180, tmp6.paths).then((result) => result.default({ userId, localUser, sourceAnalyticsLocations }));
-      const promise = asyncRequireImpl(8180, tmp6.paths);
+      asyncRequireImpl(8296, tmp6.paths).then((result) => result.default({ userId, localUser, sourceAnalyticsLocations }));
+      const promise = asyncRequireImpl(8296, tmp6.paths);
     }
   }, items2);
   if (null == stateFromStores) {

@@ -1,14 +1,14 @@
-// Module ID: 8060
-// Function ID: 8061
+// Module ID: 8164
+// Function ID: 8165
 // Name: PremiumSubscriptionTrialUtil
-// Dependencies: [1371, 4224, 7450, 1373, 504, 2]
+// Dependencies: [1371, 4300, 7553, 1373, 504, 2]
 // Exports: getPremiumTrialOffer, hasActiveTrial, isEligibleTrialSub, useCurrentPremiumTrialTier, useHasActiveTrial
 
-// Module 8060 (PremiumSubscriptionTrialUtil)
+// Module 8164 (PremiumSubscriptionTrialUtil)
 import initialize from "initialize" /* 504 */;
 import UserStore from "UserStore" /* 1371 */;
-import SubscriptionStore from "SubscriptionStore" /* 4224 */;
-import UserOfferStore from "UserOfferStore" /* 7450 */;
+import SubscriptionStore from "SubscriptionStore" /* 4300 */;
+import UserOfferStore from "UserOfferStore" /* 7553 */;
 
 require = fn;
 const PremiumConstants = fn(1373);

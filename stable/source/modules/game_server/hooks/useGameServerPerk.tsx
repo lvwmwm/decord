@@ -1,21 +1,21 @@
-// Module ID: 12580
-// Function ID: 12581
+// Module ID: 12709
+// Function ID: 12710
 // Name: useGameServerPerk
-// Dependencies: [19, 4470, 4451, 4450, 4473, 504, 12581, 1114, 2850, 12582, 2]
+// Dependencies: [19, 4546, 4527, 4526, 4549, 504, 12710, 1114, 2850, 12711, 2]
 // Exports: default
 
-// Module 12580 (useGameServerPerk)
+// Module 12709 (useGameServerPerk)
 import util from "util" /* 1114 */;
 import _modDef2850 from "module_2850" /* 2850 */;
-import _modDef12582 from "module_12582" /* 12582 */;
+import _modDef12711 from "module_12711" /* 12711 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4470 */;
+import GameServerStore from "GameServerStore" /* 4546 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_5 = fn(4451).GAME_SERVER_POWERUP_SKU_ID;
-const GuildPowerupType = fn(4450).GuildPowerupType;
+let closure_5 = fn(4527).GAME_SERVER_POWERUP_SKU_ID;
+const GuildPowerupType = fn(4526).GuildPowerupType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_server/hooks/useGameServerPerk.tsx");
 
@@ -43,8 +43,8 @@ export default function useGameServerPerk(guildId) {
         obj.cost = tmp2;
         obj.dependencies = [];
         obj.type = GuildPowerupType.PERK;
-        obj.animatedImageUrl = _modDef12582;
-        obj.staticImageUrl = _modDef12582;
+        obj.animatedImageUrl = _modDef12711;
+        obj.staticImageUrl = _modDef12711;
         tmp = obj;
       }
     }

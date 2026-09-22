@@ -1,19 +1,19 @@
-// Module ID: 15462
-// Function ID: 15463
+// Module ID: 15545
+// Function ID: 15546
 // Name: SettingsChatScreen
-// Dependencies: [19, 17, 1371, 4224, 7976, 1074, 21, 4560, 576, 1483, 563, 4218, 4556, 1114, 5607, 1178, 10403, 6990, 11473, 14692, 2]
+// Dependencies: [19, 17, 1371, 4300, 8079, 1074, 21, 4636, 576, 1483, 563, 4294, 4632, 1114, 5688, 1176, 10527, 7093, 11605, 14776, 2]
 // Exports: default
 
-// Module 15462 (SettingsChatScreen)
+// Module 15545 (SettingsChatScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 6990 */;
-import _modDef10403 from "module_10403" /* 10403 */;
-import SettingBuilders from "SettingBuilders" /* 11473 */;
-import SettingLayoutDefault from "SettingLayout" /* 14692 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7093 */;
+import _modDef10527 from "module_10527" /* 10527 */;
+import SettingBuilders from "SettingBuilders" /* 11605 */;
+import SettingLayoutDefault from "SettingLayout" /* 14776 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
-import SubscriptionStore from "SubscriptionStore" /* 4224 */;
+import SubscriptionStore from "SubscriptionStore" /* 4300 */;
 
 require = fn;
 function VideoUploadQualityNitroUpsell() {
@@ -35,8 +35,8 @@ function VideoUploadQualityNitroUpsell() {
     const obj4 = { style: tmp3.card, children: null };
     const obj5 = { border: "none", shadow: "none", children: null };
     const obj6 = { style: tmp3.cardContent, children: null };
-    const obj7 = { style: tmp3.cardIcon, source: _modDef10403, size: tmp(1178).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
-    const items2 = [tmp7(tmp(1178).Icon, obj7), ];
+    const obj7 = { style: tmp3.cardIcon, source: _modDef10527, size: tmp(1176).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.PRIMARY_400 };
+    const items2 = [tmp7(tmp(1176).Icon, obj7), ];
     const obj8 = { variant: "text-sm/medium", color: "text-muted", children: null };
     const intl2 = tmp(1114).intl;
     const obj9 = {
@@ -46,21 +46,21 @@ function VideoUploadQualityNitroUpsell() {
         }
     };
     obj8.children = intl2.format(tmp(1114).t.uW1zul, obj9);
-    items2[1] = tmp7(tmp(4556).Text, obj8);
+    items2[1] = tmp7(tmp(4632).Text, obj8);
     obj6.children = items2;
     obj5.children = tmp5(tmp6, obj6);
-    obj4.children = tmp7(tmp(5607).Card, obj5);
+    obj4.children = tmp7(tmp(5688).Card, obj5);
     tmp7Result = tmp7(tmp6, obj4);
   }
   children[1] = tmp7Result;
   return closure_10(View, { children });
 }
 const View = fn(17).View;
-const MobileUserSettings = fn(7976).MobileUserSettings;
+const MobileUserSettings = fn(8079).MobileUserSettings;
 const UserSettingsSections = fn(1074).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { card: { marginTop: 8, borderColor: nativeDefault.colors.REDESIGN_INPUT_CONTROL_SELECTED, borderWidth: 1, borderRadius: nativeDefault.radii.lg }, cardContent: { flexDirection: "row", alignItems: "center" }, cardIcon: { marginEnd: 8 } };
 let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -86,7 +86,7 @@ export default function SettingsChatScreen(route) {
     obj3.settings = items;
     const intl2 = util.intl;
     obj3.subLabel = intl2.string(util.t.T0rbtM);
-    const items1 = [obj3, , , , , , , , ];
+    const items1 = [obj3, , , , , , , , , ];
     const obj4 = { label: null, settings: null, subLabel: null };
     const intl3 = util.intl;
     obj4.label = intl3.string(util.t.YTnrbV);
@@ -126,29 +126,33 @@ export default function SettingsChatScreen(route) {
       }
     });
     items1[5] = obj8;
-    const obj10 = { label: null, settings: null, subLabel: null };
-    const intl10 = util.intl;
-    obj10.label = intl10.string(util.t["29xPVZ"]);
-    const items7 = [MobileUserSettings.STICKER_AUTOCOMPLETE];
+    const obj10 = { settings: null };
+    const items7 = [MobileUserSettings.SHOW_SPOILERS];
     obj10.settings = items7;
-    const intl11 = util.intl;
-    obj10.subLabel = intl11.string(util.t["/eVrj8"]);
     items1[6] = obj10;
-    const obj11 = { label: null, settings: null };
-    const intl12 = util.intl;
-    obj11.label = intl12.string(util.t["4NDJgM"]);
-    const items8 = [, , ];
-    ({ SWIPE_RIGHT_TO_LEFT: arr9[0], DOUBLE_TAP_TO_REACT_ENABLED: arr9[1], DOUBLE_TAP_EMOJI: arr9[2] } = MobileUserSettings);
+    const obj11 = { label: null, settings: null, subLabel: null };
+    const intl10 = util.intl;
+    obj11.label = intl10.string(util.t["29xPVZ"]);
+    const items8 = [MobileUserSettings.STICKER_AUTOCOMPLETE];
     obj11.settings = items8;
+    const intl11 = util.intl;
+    obj11.subLabel = intl11.string(util.t["/eVrj8"]);
     items1[7] = obj11;
-    const obj12 = { label: null, settings: null, subLabel: null };
-    const intl13 = util.intl;
-    obj12.label = intl13.string(util.t.BkuOO6);
-    const items9 = [MobileUserSettings.TEXT_AND_MEDIA_SYNC];
+    const obj12 = { label: null, settings: null };
+    const intl12 = util.intl;
+    obj12.label = intl12.string(util.t["4NDJgM"]);
+    const items9 = [, , ];
+    ({ SWIPE_RIGHT_TO_LEFT: arr10[0], DOUBLE_TAP_TO_REACT_ENABLED: arr10[1], DOUBLE_TAP_EMOJI: arr10[2] } = MobileUserSettings);
     obj12.settings = items9;
-    const intl14 = util.intl;
-    obj12.subLabel = intl14.string(util.t.p4IKE9);
     items1[8] = obj12;
+    const obj13 = { label: null, settings: null, subLabel: null };
+    const intl13 = util.intl;
+    obj13.label = intl13.string(util.t.BkuOO6);
+    const items10 = [MobileUserSettings.TEXT_AND_MEDIA_SYNC];
+    obj13.settings = items10;
+    const intl14 = util.intl;
+    obj13.subLabel = intl14.string(util.t.p4IKE9);
+    items1[9] = obj13;
     obj2.sections = items1;
     let initialSetting;
     if (route != null) {

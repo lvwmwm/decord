@@ -1,9 +1,9 @@
 // Module ID: 5390
 // Function ID: 5391
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 5390
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "39595ed126e57294bab83f7792a4b2ff", name: "img_account_sync_mastodon_light_and_dark", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "e0157f8261da28670f8ce7828f01db25", name: "img_account_sync_skype_white", type: "svg" });

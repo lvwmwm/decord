@@ -1,13 +1,13 @@
-// Module ID: 13561
-// Function ID: 13562
+// Module ID: 13647
+// Function ID: 13648
 // Name: useOutboundPromotionRedemptionEndDate
-// Dependencies: [19, 4153, 4242, 2]
+// Dependencies: [19, 4228, 4318, 2]
 // Exports: default
 
-// Module 13561 (useOutboundPromotionRedemptionEndDate)
-import DateUtils from "DateUtils" /* 4242 */;
+// Module 13647 (useOutboundPromotionRedemptionEndDate)
+import DateUtils from "DateUtils" /* 4318 */;
 import noop from "module_19" /* 19 */;
-import hooks from "module_4153" /* 4153 */;
+import hooks from "module_4228" /* 4228 */;
 
 require = fn;
 let closure_4 = hooks.duration(30, "days");

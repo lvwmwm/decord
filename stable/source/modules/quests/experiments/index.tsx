@@ -1,13 +1,13 @@
-// Module ID: 11494
-// Function ID: 11495
+// Module ID: 11626
+// Function ID: 11627
 // Name: apexExperiment
-// Dependencies: [1433, 11297, 11298, 11495, 2]
+// Dependencies: [1433, 11429, 11430, 11627, 2]
 // Exports: useQuestOrbsMultiplierMarketing
 
-// Module 11494 (apexExperiment)
-import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 11297 */;
-import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 11298 */;
-import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 11495 */;
+// Module 11626 (apexExperiment)
+import QuestOrbMultiplierHooks from "QuestOrbMultiplierHooks" /* 11429 */;
+import QuestOrbMultiplierUtils from "QuestOrbMultiplierUtils" /* 11430 */;
+import QuestOrbsMultiplier from "QuestOrbsMultiplier" /* 11627 */;
 import ApexExperiment_mod from "ApexExperiment" /* 1433 */;
 import size from "module_2" /* 2 */;
 
@@ -54,15 +54,13 @@ const apexExperiment6 = ApexExperiment.createApexExperiment(obj16);
 let ApexExperiment = ApexExperiment_mod;
 const apexExperiment7 = ApexExperiment.createApexExperiment({ name: "2026-03-mobile-quest-home-red-dot-notification", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let ApexExperiment = ApexExperiment_mod;
-const apexExperiment8 = ApexExperiment.createApexExperiment({ name: "2026-05-quest-home-tile-redesign", kind: "user", defaultConfig: { useNewLayoutWithSearch: false, useNewTile: false, useLargeFeaturedTiles: false, ctaOnHover: false }, variations: { 0: { useNewLayoutWithSearch: false, useNewTile: false, useLargeFeaturedTiles: false, ctaOnHover: false }, 1: { useNewLayoutWithSearch: true, useNewTile: false, useLargeFeaturedTiles: false, ctaOnHover: false }, 2: { useNewLayoutWithSearch: true, useNewTile: true, useLargeFeaturedTiles: true, ctaOnHover: true }, 3: { useNewLayoutWithSearch: true, useNewTile: true, useLargeFeaturedTiles: false, ctaOnHover: true }, 4: { useNewLayoutWithSearch: true, useNewTile: true, useLargeFeaturedTiles: true, ctaOnHover: false } } });
+const apexExperiment8 = ApexExperiment.createApexExperiment({ name: "2026-05-quest-home-tile-redesign", kind: "user", defaultConfig: { useNewLayoutWithSearch: false, useNewTile: false, useNewFeaturedTiles: false, ctaOnHover: false }, variations: { 0: { useNewLayoutWithSearch: false, useNewTile: false, useNewFeaturedTiles: false, ctaOnHover: false }, 1: { useNewLayoutWithSearch: true, useNewTile: false, useNewFeaturedTiles: false, ctaOnHover: false }, 2: { useNewLayoutWithSearch: true, useNewTile: true, useNewFeaturedTiles: true, ctaOnHover: true }, 3: { useNewLayoutWithSearch: true, useNewTile: true, useNewFeaturedTiles: false, ctaOnHover: true }, 4: { useNewLayoutWithSearch: true, useNewTile: true, useNewFeaturedTiles: true, ctaOnHover: false } } });
 let ApexExperiment = ApexExperiment_mod;
 const obj21 = { CONTROL: 0, [0]: "CONTROL", NEW_LAYOUT_WITH_SEARCH: 1, [1]: "NEW_LAYOUT_WITH_SEARCH", LARGE_MASK_MARGIN: 2, [2]: "LARGE_MASK_MARGIN", REMOVE_QUEST_TITLE_SUFFIX: 3, [3]: "REMOVE_QUEST_TITLE_SUFFIX", REPLACE_QUEST_NAME_WITH_GAME_PUBLISHER: 4, [4]: "REPLACE_QUEST_NAME_WITH_GAME_PUBLISHER" };
 const apexExperiment9 = ApexExperiment.createApexExperiment({ name: "2026-05-bounty-stale-refresh-quest-home", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 let ApexExperiment = ApexExperiment_mod;
 const obj22 = { name: "2026-06-quest-home-layout-visual-tweaks", kind: "user", defaultConfig: { enabled: false, variant: obj21.CONTROL }, variations: { 0: { enabled: false, variant: obj21.CONTROL }, 1: { enabled: true, variant: obj21.NEW_LAYOUT_WITH_SEARCH }, 2: { enabled: true, variant: obj21.LARGE_MASK_MARGIN }, 3: { enabled: true, variant: obj21.REMOVE_QUEST_TITLE_SUFFIX }, 4: { enabled: true, variant: obj21.REPLACE_QUEST_NAME_WITH_GAME_PUBLISHER } } };
 const apexExperiment10 = ApexExperiment.createApexExperiment(obj22);
-let ApexExperiment = ApexExperiment_mod;
-const apexExperiment11 = ApexExperiment.createApexExperiment({ name: "2026-07-quest-bar-secondary-cta", kind: "user", defaultConfig: { enabled: false, showPlayInstantlyLabel: false }, variations: { 0: { enabled: false, showPlayInstantlyLabel: false }, 1: { enabled: true, showPlayInstantlyLabel: false }, 2: { enabled: true, showPlayInstantlyLabel: true } } });
 const result = size.fileFinishedImporting("modules/quests/experiments/index.tsx");
 
 export const VideoEndCardV2Experiment = apexExperiment;
@@ -76,8 +74,8 @@ export const MutedVideoQuestNewDefaultsExperiment = apexExperiment5;
 export const useQuestOrbsMultiplierMarketing = function useQuestOrbsMultiplierMarketing(location) {
   const questOrbMultiplierEligibility = QuestOrbMultiplierHooks.useQuestOrbMultiplierEligibility();
   const obj = { location };
-  const tmp4 = questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.CREPE && closure_2.useConfig({ location }).enabled;
-  return { shouldShowBonusOrbsUX: questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.CREPE && closure_2.useConfig({ location }).enabled, multiplier: QuestOrbsMultiplier.QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
+  const tmp4 = questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS && closure_2.useConfig({ location }).enabled;
+  return { shouldShowBonusOrbsUX: questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.INELIGIBLE && questOrbMultiplierEligibility !== QuestOrbMultiplierUtils.QuestOrbMultiplierEligibilityType.XBOX_GAME_PASS && closure_2.useConfig({ location }).enabled, multiplier: QuestOrbsMultiplier.QuestOrbsMultiplier.PREMIUM_TIER_2_MULTIPLIER_PERCENTAGE_POINTS / 100 };
 };
 export const ComposedQuestPlayerExperiment = apexExperiment6;
 export const MobileQuestHomeRedDotNotificationExperiment = apexExperiment7;
@@ -85,4 +83,3 @@ export const QuestHomeTileRedesignExperiment = apexExperiment8;
 export const BountyStaleRefreshQuestHomeExperiment = apexExperiment9;
 export const QuestHomeLayoutVisualTweakVariant = obj21;
 export const QuestHomeLayoutVisualTweaksExperiment = apexExperiment10;
-export const QuestBarSecondaryCtaExperiment = apexExperiment11;

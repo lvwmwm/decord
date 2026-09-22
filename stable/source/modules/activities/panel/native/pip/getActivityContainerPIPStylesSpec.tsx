@@ -1,13 +1,13 @@
-// Module ID: 17023
-// Function ID: 17024
+// Module ID: 17131
+// Function ID: 17132
 // Name: getActivityContainerPIPStylesSpec
-// Dependencies: [1920, 9511, 10998, 2]
+// Dependencies: [1920, 9635, 11129, 2]
 // Exports: default
 
-// Module 17023 (getActivityContainerPIPStylesSpec)
+// Module 17131 (getActivityContainerPIPStylesSpec)
 import Constants from "Constants" /* 1920 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 9511 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10998 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 9635 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11129 */;
 import size from "module_2" /* 2 */;
 
 const OrientationLockState = Constants.OrientationLockState;

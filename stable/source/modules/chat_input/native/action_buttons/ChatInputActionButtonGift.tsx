@@ -1,26 +1,26 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12381
+// Function ID: 12382
 // Name: ChatInputActionButtonGift
-// Dependencies: [32, 19, 17, 4552, 10670, 11966, 1954, 21, 4560, 576, 504, 10747, 1925, 7388, 1943, 12253, 11035, 1114, 4987, 12243, 1945, 12254, 2]
+// Dependencies: [32, 19, 17, 4628, 10794, 12095, 1954, 21, 4636, 576, 504, 10871, 1925, 7491, 1943, 12382, 11168, 1114, 5068, 12372, 1945, 12383, 2]
 
-// Module 12252 (ChatInputActionButtonGift)
+// Module 12381 (ChatInputActionButtonGift)
 import nativeDefault from "native" /* 576 */;
 import dismissible_content from "dismissible_content" /* 1943 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 1945 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
-import PromotionsStore from "PromotionsStore" /* 10670 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import PromotionsStore from "PromotionsStore" /* 10794 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const ChatInputActionType = fn(11966).ChatInputActionType;
+const ChatInputActionType = fn(12095).ChatInputActionType;
 const ContentDismissActionType = fn(1954).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_12 = createStyles.createStyles(() => {
   const obj = { gradientContainerRefresh: null, transparentBackground: null };
   const rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, borderRadius: nativeDefault.radii.sm };

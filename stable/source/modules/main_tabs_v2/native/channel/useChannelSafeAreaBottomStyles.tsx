@@ -1,18 +1,18 @@
-// Module ID: 11362
-// Function ID: 11363
+// Module ID: 11494
+// Function ID: 11495
 // Name: useChannelSafeAreaBottomStyles
-// Dependencies: [19, 5277, 4200, 1957, 1908, 4583, 1074, 1964, 4560, 576, 11363, 5007, 4427, 563, 1609, 1115, 4262, 7873, 2]
+// Dependencies: [19, 5358, 4276, 1957, 1908, 4659, 1074, 1964, 4636, 576, 11495, 5088, 4504, 563, 1609, 1363, 4338, 7975, 2]
 // Exports: default
 
-// Module 11362 (useChannelSafeAreaBottomStyles)
+// Module 11494 (useChannelSafeAreaBottomStyles)
 import nativeDefault from "native" /* 576 */;
 import KeyboardTypes from "KeyboardTypes" /* 1609 */;
 import noop from "module_19" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5277 */;
-import LurkingStore from "LurkingStore" /* 4200 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5358 */;
+import LurkingStore from "LurkingStore" /* 4276 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
 
 const require = globalThis.__r;
 
@@ -20,7 +20,7 @@ require = fn;
 const InputModes = fn(1074).InputModes;
 const StaticChannelRoute = fn(1964).StaticChannelRoute;
 let closure_11 = { LURKER: "lurker", VOICE: "voice", CHAT: "chat", DIRECTORY: "directory", EXPRESSION_PICKER: "expression", MEDIA: "media", APPS: "apps", NONE: "none" };
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_12 = createStyles.createStyles((backgroundColor) => {
   const obj = { lurker: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, chat: { backgroundColor }, voice: { backgroundColor }, expressionPickerBackground: { backgroundColor } };
   return obj;
@@ -62,19 +62,19 @@ export default function useChannelSafeAreaBottomStyles(arg0) {
                 if (tmp10Result.isAndroid()) {
                   let VOICE = constants.EXPRESSION_PICKER;
                 }
-                tmp10Result = tmp10(1115);
+                tmp10Result = tmp10(1363);
               }
               if (noop === KeyboardTypes.KeyboardTypes.MEDIA) {
                 if (tmp10Result3.isAndroid()) {
                   VOICE = constants.MEDIA;
                 }
-                tmp10Result3 = tmp10(1115);
+                tmp10Result3 = tmp10(1363);
               }
               if (noop === KeyboardTypes.KeyboardTypes.APP_LAUNCHER) {
                 if (tmp10Result4.isAndroid()) {
                   VOICE = constants.APPS;
                 }
-                tmp10Result4 = tmp10(1115);
+                tmp10Result4 = tmp10(1363);
               }
               let isDirectoryResult;
               if (channel != null) {

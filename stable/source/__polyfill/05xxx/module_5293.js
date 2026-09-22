@@ -1,9 +1,22 @@
 // Module ID: 5293
 // Function ID: 5294
-// Dependencies: [1122]
+// Dependencies: []
 
 // Module 5293
-import registerAsset from "module_1122" /* 1122 */;
+class MetadataMissingError {
+  constructor(arg0) {
+    obj = { name: "MetadataMissingError" };
+    str = arg0;
+    if (!arg0) {
+      str = "No Exif data";
+    }
+    obj.message = str;
+    error = new Error();
+    obj.stack = error.stack;
+    return;
+  }
+}
+let error = new Error();
+MetadataMissingError.prototype = error;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "74748dfcc94ad61e313c4e70aacf64f7", name: "img_account_sync_battlenet_white", type: "png" });
+export default { MetadataMissingError };

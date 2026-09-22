@@ -1,19 +1,19 @@
-// Module ID: 13275
-// Function ID: 13276
+// Module ID: 13407
+// Function ID: 13408
 // Name: GuildActionSheetMemberCount
-// Dependencies: [19, 17, 21, 4560, 576, 1116, 1114, 4556, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 1364, 1114, 4632, 2]
 
-// Module 13275 (GuildActionSheetMemberCount)
+// Module 13407 (GuildActionSheetMemberCount)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
+import Text_Text from "Text/Text" /* 4632 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { wrapper: { flexDirection: "row", alignItems: "center" }, dot: null, dotContainer: null, onlineDot: null, offlineDot: null, refreshText: null };
 let size = { width: 8, height: 8, borderRadius: nativeDefault.radii.sm };
 obj.dot = size;
@@ -21,7 +21,7 @@ obj.dotContainer = { alignItems: "center", justifyContent: "center", marginRight
 obj.onlineDot = { backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
 let obj3 = { backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
 obj.offlineDot = { backgroundColor: nativeDefault.colors.TEXT_STATUS_OFFLINE };
-const PlatformUtils = fn(1116);
+const PlatformUtils = fn(1364);
 let num;
 if (PlatformUtils.isAndroid()) {
   num = 14;
@@ -33,7 +33,7 @@ size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetMemberCount.tsx");
 
 export default noop.memo(function MemberCount(arg0) {
-  ({ type, count, color, dotContainerWidth } = arg0);
+  ({ type, count, color, dotContainerWidth, textVariant } = arg0);
   if (null == count) {
     const intl2 = util.intl;
     if ("online" === type) {
@@ -67,10 +67,16 @@ export default noop.memo(function MemberCount(arg0) {
     obj5.style = items1;
     obj4.children = React3(View, obj5);
     const items2 = [React3(View, obj4), ];
+    if (textVariant == null) {
+      textVariant = "text-sm/normal";
+    }
+    const obj6 = { variant: textVariant, color: null, lineClamp: 1, style: null, children: null };
     if (color == null) {
       color = "text-default";
     }
-    const obj6 = { variant: "text-sm/normal", color, lineClamp: 1, style: tmp12.refreshText, children: intl.format(etqpUG, obj) };
+    obj6.color = color;
+    obj6.style = tmp12.refreshText;
+    obj6.children = intl.format(etqpUG, obj);
     items2[1] = React3(Text_Text.Text, obj6);
     obj2.children = items2;
     return React4(View, obj2);

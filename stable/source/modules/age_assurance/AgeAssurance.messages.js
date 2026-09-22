@@ -1,9 +1,9 @@
 // Module ID: 2946
 // Function ID: 2947
-// Dependencies: [1120, 2947, 2948, 2949, 2950, 2951, 2952, 2953, 2954, 2955, 2956, 2957, 2958, 2959, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2969, 2970, 2971, 2972, 2973, 2974, 2975, 2976, 2977, 1155, 2]
+// Dependencies: [1118, 2947, 2948, 2949, 2950, 2951, 2952, 2953, 2954, 2955, 2956, 2957, 2958, 2959, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2969, 2970, 2971, 2972, 2973, 2974, 2975, 2976, 2977, 1153, 2]
 
 // Module 2946
-import AssetJsonUtils from "AssetJsonUtils" /* 1120 */;
+import AssetJsonUtils from "AssetJsonUtils" /* 1118 */;
 import _mod2947 from "module_2947" /* 2947 */;
 import _mod2948 from "module_2948" /* 2948 */;
 import _mod2949 from "module_2949" /* 2949 */;
@@ -35,11 +35,11 @@ import _mod2974 from "module_2974" /* 2974 */;
 import _mod2975 from "module_2975" /* 2975 */;
 import _mod2976 from "module_2976" /* 2976 */;
 import _mod2977 from "module_2977" /* 2977 */;
-import module_1155_mod from "module_1155" /* 1155 */;
+import module_1153_mod from "module_1153" /* 1153 */;
 import size from "module_2" /* 2 */;
 
-let module_1155 = module_1155_mod;
-const loader = module_1155.createLoader({
+let module_1153 = module_1153_mod;
+const loader = module_1153.createLoader({
   bg() {
     const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2947);
     return jsonAsset.then((result) => ({ default: result }));
@@ -165,8 +165,8 @@ const loader = module_1155.createLoader({
     return jsonAsset.then((result) => ({ default: result }));
   }
 }, "en-US");
-let module_1155 = module_1155_mod;
-const messagesProxy = module_1155.makeMessagesProxy(loader);
+let module_1153 = module_1153_mod;
+const messagesProxy = module_1153.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/age_assurance/AgeAssurance.messages.js");
 
 export default messagesProxy;

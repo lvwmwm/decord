@@ -1,9 +1,9 @@
 // Module ID: 15365
 // Function ID: 15366
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 15365
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3feea67804381f17d046d28e82abf627", name: "EmojiAngryFaceWithHornsIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 161, height: 160, scales: [1], hash: "483ce0fdce44b3dc03843ae26158121f", name: "amanda_1", type: "png" });

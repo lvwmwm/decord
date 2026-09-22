@@ -1,10 +1,10 @@
-// Module ID: 17627
-// Function ID: 17628
+// Module ID: 17739
+// Function ID: 17740
 // Name: GuildSettingsRolesActionCreators
-// Dependencies: [5, 1074, 573, 5520, 11578, 1109, 2]
+// Dependencies: [5, 1074, 573, 5601, 11706, 1109, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 17627 (GuildSettingsRolesActionCreators)
+// Module 17739 (GuildSettingsRolesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
@@ -694,8 +694,8 @@ export const updateRoleStyles = function updateRoleStyles(id, currentStyle) {
 export const toggleRoleSettings = function toggleRoleSettings(id, hoist, mentionable) {
   DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_ROLES_UPDATE_SETTINGS", id, hoist, mentionable });
 };
-export const updateRoleIcon = function updateRoleIcon(id, icon, unicodeEmoji) {
-  DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_ICON", id, icon, unicodeEmoji });
+export const updateRoleIcon = function updateRoleIcon(roleId, icon, unicodeEmoji) {
+  DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_ICON", id: roleId, icon, unicodeEmoji });
 };
 export const updateRoleConnectionConfigurations = function updateRoleConnectionConfigurations(id, roleConnectionConfigurations) {
   DispatcherDefault.dispatch({ type: "GUILD_SETTINGS_ROLES_UPDATE_ROLE_CONNECTION_CONFIGURATIONS", roleId: id, roleConnectionConfigurations });

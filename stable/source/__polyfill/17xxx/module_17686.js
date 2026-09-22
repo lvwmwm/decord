@@ -1,0 +1,9 @@
+// Module ID: 17686
+// Function ID: 17687
+// Dependencies: [1120]
+
+// Module 17686
+import registerAsset from "module_1120" /* 1120 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 272, height: 212, scales: [2, 3], hash: "d170615f8db6e5f7f55a15bde87cb516", name: "empty_server_settings_emoji_darker", type: "png" });

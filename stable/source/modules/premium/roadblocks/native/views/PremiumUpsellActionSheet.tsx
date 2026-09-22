@@ -1,29 +1,29 @@
-// Module ID: 7851
-// Function ID: 7852
+// Module ID: 7953
+// Function ID: 7954
 // Name: PremiumUpsellActionSheet
-// Dependencies: [32, 19, 17, 4552, 1183, 1185, 4381, 1371, 1373, 1074, 4607, 7852, 7846, 21, 4560, 576, 4262, 4218, 7853, 5179, 5134, 7854, 7855, 7857, 5692, 1114, 4255, 2024, 7858, 7859, 4527, 7850, 7860, 7861, 13295, 13296, 12215, 12224, 13299, 1093, 504, 9364, 7201, 4556, 1115, 8814, 5587, 4987, 7162, 9319, 9971, 9327, 1242, 9972, 4425, 7198, 13300, 4975, 8052, 2]
+// Dependencies: [32, 19, 17, 4628, 1181, 1183, 4458, 1371, 1373, 1074, 4683, 7954, 7948, 21, 4636, 576, 4338, 4294, 7955, 5260, 5215, 7956, 7957, 7959, 5773, 1114, 4331, 2024, 7960, 7961, 4603, 7952, 7962, 7963, 13427, 13428, 12344, 12353, 13431, 1093, 504, 9488, 7303, 4632, 1363, 8935, 5668, 5068, 7265, 9443, 10095, 9451, 1240, 10096, 4502, 7300, 13432, 5056, 8156, 2]
 // Exports: default
 
-// Module 7851 (PremiumUpsellActionSheet)
+// Module 7953 (PremiumUpsellActionSheet)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import PremiumUtils from "PremiumUtils" /* 4218 */;
-import ChatInputUtils from "ChatInputUtils" /* 4425 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 7850 */;
-import showForLaterModal from "showForLaterModal" /* 7860 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 7861 */;
-import APNGPlayer from "APNGPlayer" /* 8814 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9364 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import PremiumUtils from "PremiumUtils" /* 4294 */;
+import ChatInputUtils from "ChatInputUtils" /* 4502 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 7952 */;
+import showForLaterModal from "showForLaterModal" /* 7962 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 7963 */;
+import APNGPlayer from "APNGPlayer" /* 8935 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 9488 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1185 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4381 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1183 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;
@@ -47,8 +47,8 @@ function AlwaysCompressImagesSwitch(isKestrelTreatment) {
       const obj4 = { style: tmp.compressionHint, variant: "text-xs/normal", children: null };
       const intl2 = tmp2(1114).intl;
       obj4.children = intl2.string(tmp2(1114).t["wC0+Ph"]);
-      obj3.subLabel = __initData2(tmp2(4556).Text, obj4);
-      obj2.children = __initData2(tmp2(7201).TableSwitchRow, obj3);
+      obj3.subLabel = __initData2(tmp2(4632).Text, obj4);
+      obj2.children = __initData2(tmp2(7303).TableSwitchRow, obj3);
       tmp6 = __initData2(View, obj2);
     }
   }
@@ -103,13 +103,13 @@ const PremiumConstants = fn(1373);
 ({ PremiumSubscriptionSKUs: closure_11, PremiumTypes: closure_12, PremiumUpsellTypes: map1 } = PremiumConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_14, AnalyticsPages: closure_15, HelpdeskArticles: closure_16, ThemeTypes: closure_17 } = Constants);
-const ApplicationStreamFPS = fn(4607).ApplicationStreamFPS;
-const SavedMessagesConstants = fn(7852);
+const ApplicationStreamFPS = fn(4683).ApplicationStreamFPS;
+const SavedMessagesConstants = fn(7954);
 ({ SAVED_BOOKMARKS_MAX: closure_19, SAVED_REMINDERS_MAX: closure_20 } = SavedMessagesConstants);
-const premiumMax = fn(7846).MAX_SCHEDULED_MESSAGES_PER_USER;
+const premiumMax = fn(7948).MAX_SCHEDULED_MESSAGES_PER_USER;
 const jsxProd = fn(21);
 ({ jsx: closure_22, Fragment: closure_23, jsxs: closure_24 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { hero: { alignSelf: "center", marginTop: nativeDefault.space.PX_16 }, image: { width: 240, height: 144 }, text: { alignSelf: "center", textAlign: "center" }, betaTag: { marginLeft: 0 }, description: null, textContainer: null, buttonContainer: null, compressionContainer: null, compressionHint: null, imageGradientBackgroundContainer: null, imageGradientBackground: null, imageInGradientBackground: null };
 let obj3 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 obj2.description = { marginHorizontal: nativeDefault.space.PX_16 };

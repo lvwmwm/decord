@@ -1,9 +1,9 @@
-// Module ID: 10422
-// Function ID: 10423
+// Module ID: 10546
+// Function ID: 10547
 // Name: StickerPickerListEmptyState
-// Dependencies: [19, 17, 1074, 21, 4560, 576, 10326, 6627, 1178, 1114, 10423, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 576, 10450, 6728, 1176, 1114, 10547, 2]
 
-// Module 10422 (StickerPickerListEmptyState)
+// Module 10546 (StickerPickerListEmptyState)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
@@ -11,7 +11,7 @@ const require = fn;
 const ScrollView = fn(17).ScrollView;
 const EXPRESSION_FOOTER_HEIGHT = fn(1074).EXPRESSION_FOOTER_HEIGHT;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: { color: nativeDefault.colors.TEXT_SUBTLE }, emptyStateImage: null };
 const obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj.emptyStateImage = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
@@ -26,9 +26,9 @@ export default noop.memo(function StickerPickerListEmptyState(insetBottom) {
   const items = [insetBottom, insetTop];
   const memo = noop.useMemo(() => ({ marginBottom: insetBottom + EXPRESSION_FOOTER_HEIGHT, marginTop: insetTop, flex: 1 }), items);
   const tmp = closure_7();
-  const modalDismissGuardRefreshControl = insetTop(10326).useModalDismissGuardRefreshControl();
+  const modalDismissGuardRefreshControl = insetTop(10450).useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp3(6627).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp3(6728).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }
@@ -42,8 +42,8 @@ export default noop.memo(function StickerPickerListEmptyState(insetBottom) {
   const intl = tmp3(1114).intl;
   obj5.body = intl.string(insetTop(1114).t.jyiGfc);
   ({ emptyStateBody: obj3.bodyStyle, emptyStateContainer: obj3.containerStyle, emptyStateImage: obj3.imageStyle } = tmp);
-  obj5.source = insetBottom(10423);
+  obj5.source = insetBottom(10547);
   obj5.titleStyle = { marginBottom: 0 };
-  obj2.children = jsx(insetTop(1178).RefreshEmptyState, { body: null, bodyStyle: null, containerStyle: null, imageStyle: null, source: null, titleStyle: null });
+  obj2.children = jsx(insetTop(1176).RefreshEmptyState, { body: null, bodyStyle: null, containerStyle: null, imageStyle: null, source: null, titleStyle: null });
   return <BottomSheetScrollView contentContainerStyle={memo} keyboardShouldPersistTaps="always" refreshControl={null}>{null}</BottomSheetScrollView>;
 });

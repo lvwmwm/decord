@@ -1,24 +1,24 @@
-// Module ID: 9319
-// Function ID: 9320
+// Module ID: 9443
+// Function ID: 9444
 // Name: PremiumUpsellUtils
-// Dependencies: [19, 1371, 1074, 1373, 21, 9320, 1114, 9321, 9322, 9323, 4218, 9324, 9325, 9326, 4905, 9328, 1896, 7447, 9368, 4425, 1242, 4527, 9398, 2]
+// Dependencies: [19, 1371, 1074, 1373, 21, 9444, 1114, 9445, 9446, 9447, 4294, 9448, 9449, 9450, 4981, 9452, 1896, 7550, 9492, 4502, 1240, 4603, 9522, 2]
 // Exports: getUpsellItems, usePremiumUpsellConfig
 
-// Module 9319 (PremiumUpsellUtils)
+// Module 9443 (PremiumUpsellUtils)
 import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import PremiumUtils from "PremiumUtils" /* 4218 */;
-import ChatInputUtils from "ChatInputUtils" /* 4425 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import _modDef9320 from "module_9320" /* 9320 */;
-import _modDef9321 from "module_9321" /* 9321 */;
-import _modDef9322 from "module_9322" /* 9322 */;
-import _modDef9323 from "module_9323" /* 9323 */;
-import _modDef9324 from "module_9324" /* 9324 */;
-import _modDef9325 from "module_9325" /* 9325 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9368 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9398 */;
+import PremiumUtils from "PremiumUtils" /* 4294 */;
+import ChatInputUtils from "ChatInputUtils" /* 4502 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import _modDef9444 from "module_9444" /* 9444 */;
+import _modDef9445 from "module_9445" /* 9445 */;
+import _modDef9446 from "module_9446" /* 9446 */;
+import _modDef9447 from "module_9447" /* 9447 */;
+import _modDef9448 from "module_9448" /* 9448 */;
+import _modDef9449 from "module_9449" /* 9449 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 9492 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9522 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -152,57 +152,57 @@ export default {
     if (undefined === analyticsProperties) {
       analyticsProperties = {};
     }
-    ({ largestFileSize: UserStore, imageSource: closure_5 } = initialUpsellKey);
+    ({ largestFileSize: UserStore, imageSource: closure_5, isDismissable } = initialUpsellKey);
     const currentUser = UserStore.getCurrentUser();
     let flag = false;
     if (null != currentUser) {
       if (constants3.UPLOAD === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).isPremiumExactly(currentUser, TIER_2.TIER_2);
         const obj15 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.GLOBAL_EMOJI === initialUpsellKey) {
+      } else if (tmp3.GLOBAL_EMOJI === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUseEmojisEverywhere(currentUser);
         const obj14 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.ANIMATED_AVATAR === initialUpsellKey) {
+      } else if (tmp3.ANIMATED_AVATAR === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUseAnimatedAvatar(currentUser);
         const obj13 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.BADGE === initialUpsellKey) {
+      } else if (tmp3.BADGE === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUseBadges(currentUser);
         const obj12 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.ANIMATED_EMOJI === initialUpsellKey) {
+      } else if (tmp3.ANIMATED_EMOJI === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUseAnimatedEmojis(currentUser);
         const obj11 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.EMOJI_AUTOCOMPLETE === initialUpsellKey) {
+      } else if (tmp3.EMOJI_AUTOCOMPLETE === initialUpsellKey) {
         const canUseAnimatedEmojisResult = analyticsLocation(analyticsLocations[10]).canUseAnimatedEmojis(currentUser);
-        let tmp18 = !canUseAnimatedEmojisResult;
+        let tmp19 = !canUseAnimatedEmojisResult;
         if (canUseAnimatedEmojisResult) {
-          tmp18 = !tmp15(tmp16[10]).canUseEmojisEverywhere(currentUser);
-          const tmp15Result = tmp15(tmp16[10]);
+          tmp19 = !tmp16(tmp17[10]).canUseEmojisEverywhere(currentUser);
+          const tmp16Result = tmp16(tmp17[10]);
         }
-        flag = tmp18;
+        flag = tmp19;
         const obj9 = analyticsLocation(analyticsLocations[10]);
-        tmp15 = analyticsLocation;
-        tmp16 = analyticsLocations;
-      } else if (tmp2.CUSTOM_PROFILES === initialUpsellKey) {
+        tmp16 = analyticsLocation;
+        tmp17 = analyticsLocations;
+      } else if (tmp3.CUSTOM_PROFILES === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUsePremiumProfileCustomization(currentUser);
         const obj8 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.APP_ICONS === initialUpsellKey) {
+      } else if (tmp3.APP_ICONS === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUsePremiumAppIcons(currentUser);
         const obj7 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.GLOBAL_STICKER === initialUpsellKey) {
+      } else if (tmp3.GLOBAL_STICKER === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUseCustomStickersEverywhere(currentUser);
         const obj6 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.PREMIUM_GUILD_PROFILE === initialUpsellKey) {
+      } else if (tmp3.PREMIUM_GUILD_PROFILE === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUsePremiumGuildMemberProfile(currentUser);
         const obj5 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.LONGER_MESSAGE === initialUpsellKey) {
+      } else if (tmp3.LONGER_MESSAGE === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUseIncreasedMessageLength(currentUser);
         const obj4 = analyticsLocation(analyticsLocations[10]);
-      } else if (tmp2.GUILD_CAP === initialUpsellKey) {
+      } else if (tmp3.GUILD_CAP === initialUpsellKey) {
         flag = !analyticsLocation(analyticsLocations[10]).canUseIncreasedGuildCap(currentUser);
         const obj3 = analyticsLocation(analyticsLocations[10]);
       } else {
         flag = false;
-        if (tmp2.STREAM_HIGH_QUALITY === initialUpsellKey) {
+        if (tmp3.STREAM_HIGH_QUALITY === initialUpsellKey) {
           flag = true;
         }
       }
@@ -211,7 +211,7 @@ export default {
       if (!analyticsLocation(analyticsLocations[13])(initialUpsellKey)) {
         let obj = {
           importer() {
-                return asyncRequireImpl(9328, dependencyMap.paths).then((result) => {
+                return asyncRequireImpl(9452, dependencyMap.paths).then((result) => {
                   closure_0 = result.default;
                   return (arg0) => {
                     const obj = {};
@@ -225,19 +225,20 @@ export default {
                     return <closure_0 />;
                   };
                 });
-              }
+              },
+          isDismissable: tmp
         };
-        tmp30(tmp31[14]).openLazy(obj);
-        const tmp30Result = tmp30(tmp31[14]);
+        tmp31(tmp32[14]).openLazy(obj);
+        const tmp31Result = tmp31(tmp32[14]);
       }
-      tmp30 = analyticsLocation;
-      tmp31 = analyticsLocations;
+      tmp31 = analyticsLocation;
+      tmp32 = analyticsLocations;
     }
   },
   usePremiumUpsellConfig
 };
 export const getUpsellItems = function getUpsellItems() {
-  const obj = { key: constants3.GLOBAL_EMOJI, image: _modDef9320, activeTitle: null, passiveTitle: null, description: null };
+  const obj = { key: constants3.GLOBAL_EMOJI, image: _modDef9444, activeTitle: null, passiveTitle: null, description: null };
   const intl = util.intl;
   obj.activeTitle = intl.string(util.t.gKtr8N);
   const intl2 = util.intl;
@@ -245,7 +246,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl3 = util.intl;
   obj.description = intl3.format(util.t.rf7Ixp, {});
   const items = [obj, , , , , ];
-  const obj2 = { key: constants3.ANIMATED_EMOJI, image: _modDef9321, activeTitle: null, passiveTitle: null, description: null };
+  const obj2 = { key: constants3.ANIMATED_EMOJI, image: _modDef9445, activeTitle: null, passiveTitle: null, description: null };
   const intl4 = util.intl;
   obj2.activeTitle = intl4.string(util.t.F6rmyq);
   const intl5 = util.intl;
@@ -253,7 +254,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl6 = util.intl;
   obj2.description = intl6.format(util.t.JxTzzb, {});
   items[1] = obj2;
-  const obj3 = { key: constants3.ANIMATED_AVATAR, image: _modDef9322, activeTitle: null, passiveTitle: null, description: null };
+  const obj3 = { key: constants3.ANIMATED_AVATAR, image: _modDef9446, activeTitle: null, passiveTitle: null, description: null };
   const intl7 = util.intl;
   obj3.activeTitle = intl7.string(util.t["tQh+gF"]);
   const intl8 = util.intl;
@@ -261,7 +262,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl9 = util.intl;
   obj3.description = intl9.format(util.t["Tso/Fn"], {});
   items[2] = obj3;
-  const obj4 = { key: constants3.UPLOAD, image: _modDef9323, activeTitle: null, passiveTitle: null, description: null };
+  const obj4 = { key: constants3.UPLOAD, image: _modDef9447, activeTitle: null, passiveTitle: null, description: null };
   const intl10 = util.intl;
   obj4.activeTitle = intl10.string(util.t["1EOZqw"]);
   const intl11 = util.intl;
@@ -273,7 +274,7 @@ export const getUpsellItems = function getUpsellItems() {
   obj5.maxUploadPremium = PremiumUtils.getMaxFileSizeForPremiumType(React7.TIER_2);
   obj4.description = intl12.format(util.t.DUT5IC, obj5);
   items[3] = obj4;
-  const obj7 = { key: constants3.BADGE, image: _modDef9324, activeTitle: null, passiveTitle: null, description: null };
+  const obj7 = { key: constants3.BADGE, image: _modDef9448, activeTitle: null, passiveTitle: null, description: null };
   const intl14 = util.intl;
   obj7.activeTitle = intl14.string(util.t["602BK4"]);
   const intl15 = util.intl;
@@ -281,7 +282,7 @@ export const getUpsellItems = function getUpsellItems() {
   const intl16 = util.intl;
   obj7.description = intl16.format(util.t["p7i+li"], {});
   items[4] = obj7;
-  const obj8 = { key: constants3.APP_ICONS, image: _modDef9325, activeTitle: null, passiveTitle: null, description: null };
+  const obj8 = { key: constants3.APP_ICONS, image: _modDef9449, activeTitle: null, passiveTitle: null, description: null };
   const intl17 = util.intl;
   obj8.activeTitle = intl17.string(util.t["1B1Cyn"]);
   const intl18 = util.intl;

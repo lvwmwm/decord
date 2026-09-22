@@ -1,31 +1,26 @@
 // Module ID: 6806
 // Function ID: 6807
-// Dependencies: [19, 6650]
-// Exports: useBoundingClientRect
+// Dependencies: [19, 6791]
+// Exports: useViewRefHandler
 
 // Module 6806
 import _mod19 from "module_19" /* 19 */;
+import _modDef6791 from "module_6791" /* 6791 */;
 
-const useLayoutEffect = _mod19.useLayoutEffect;
+_mod19.useCallback;
 
-export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) {
-  closure_0 = arg0;
-  closure_1 = arg1;
-  if (obj.isFabricInstalled()) {
-    useLayoutEffect(() => {
-      if (closure_0) {
-        if (tmp.current) {
-          if (typeof tmp.current.unstable_getBoundingClientRect !== "function") {
-            if (typeof tmp.current.getBoundingClientRect === "function") {
-              const current2 = tmp.current;
-              closure_1(current2.getBoundingClientRect());
-            }
-          } else {
-            const current = tmp.current;
-            closure_1(current.unstable_getBoundingClientRect());
-          }
-        }
+export const useViewRefHandler = function useViewRefHandler(current, detectorUpdater) {
+  const previousViewTag = current;
+  const items = [current, detectorUpdater];
+  return useCallback((viewRef) => {
+    if (null !== viewRef) {
+      previousViewTag.viewRef = viewRef;
+      if (-1 === previousViewTag.previousViewTag) {
+        tmp.previousViewTag = _modDef6791(tmp.viewRef);
       }
-    });
-  }
+      if (!previousViewTag.firstRender) {
+        detectorUpdater(true);
+      }
+    }
+  }, items);
 };

@@ -1,27 +1,27 @@
-// Module ID: 17135
-// Function ID: 17136
+// Module ID: 17243
+// Function ID: 17244
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 4582, 4583, 5419, 12277, 12275, 17091, 12280, 1074, 4581, 12278, 21, 4296, 4556, 4987, 1178, 4560, 576, 4702, 4612, 5589, 1114, 4975, 12276, 504, 9601, 4615, 13042, 9603, 9600, 17136, 9613, 8832, 8252, 4561, 4974, 7073, 5587, 4262, 17137, 10998, 9501, 4271, 7162, 17095, 17107, 17090, 17138, 17139, 8180, 6655, 17140, 12279, 17141, 17142, 17143, 17144, 17145, 17155, 2]
+// Dependencies: [32, 19, 17, 4658, 4659, 5500, 12406, 12404, 17199, 12409, 1074, 4657, 12407, 21, 4373, 4632, 5068, 1176, 4636, 576, 4778, 4688, 5670, 1114, 5056, 12405, 504, 9725, 4691, 13172, 9727, 9724, 17244, 9737, 8953, 8367, 4637, 5055, 7176, 5668, 4338, 17245, 11129, 9625, 4347, 7265, 17203, 17215, 17198, 17246, 17247, 8296, 6756, 17248, 12408, 17249, 17250, 17251, 17252, 17253, 17263, 2]
 
-// Module 17135 (VoicePanelCard)
+// Module 17243 (VoicePanelCard)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4271 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4296 */;
-import timing from "timing" /* 4561 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4612 */;
-import StreamActionCreators from "StreamActionCreators" /* 4702 */;
-import spring from "spring" /* 4974 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8180 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10998 */;
-import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17090 */;
-import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17137 */;
-import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17138 */;
+import native from "native" /* 4347 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4373 */;
+import timing from "timing" /* 4637 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4688 */;
+import StreamActionCreators from "StreamActionCreators" /* 4778 */;
+import spring from "spring" /* 5055 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11129 */;
+import VoicePanelPIPUtils from "VoicePanelPIPUtils" /* 17198 */;
+import computeCardBorderRadiusDefault from "computeCardBorderRadius" /* 17245 */;
+import calculateContentCenterOffsetDefault from "calculateContentCenterOffset" /* 17246 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4582 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
-import SpeakingStore from "SpeakingStore" /* 5419 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
+import SpeakingStore from "SpeakingStore" /* 5500 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
 
@@ -821,28 +821,28 @@ function AnimatedWrapper(children) {
   return windowDimensions(cleanUp(id[52]).GestureDetector, obj10);
 }
 const StyleSheet = fn(17).StyleSheet;
-const VoicePanelConstants = fn(12277);
+const VoicePanelConstants = fn(12406);
 ({ VoicePanelCTACard: closure_9, VoicePanelModes: c10, MODE_CHANGE_PHYSICS: closure_11, SPEAKING_PHYSICS: closure_12, VoicePanelCardItemType: map1 } = VoicePanelConstants);
-const VoicePanelControlsModes = fn(12275).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(17091).VoicePanelPIPModes;
-const EDGE_GUTTER = fn(12280).EDGE_GUTTER;
+const VoicePanelControlsModes = fn(12404).VoicePanelControlsModes;
+const VoicePanelPIPModes = fn(17199).VoicePanelPIPModes;
+const EDGE_GUTTER = fn(12409).EDGE_GUTTER;
 const ApplicationStreamStates = fn(1074).ApplicationStreamStates;
-const ParticipantTypes = fn(4581).ParticipantTypes;
-let SCALE_PHYSICS = fn(12278).SCALE_PHYSICS;
+const ParticipantTypes = fn(4657).ParticipantTypes;
+let SCALE_PHYSICS = fn(12407).SCALE_PHYSICS;
 const jsxProd = fn(21);
 ({ jsx: closure_20, Fragment: closure_21, jsxs: closure_22 } = jsxProd);
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_23 = ReanimatedRexport.createAnimatedComponent(fn(4556).Text);
+let closure_23 = ReanimatedRexport.createAnimatedComponent(fn(4632).Text);
 let ReanimatedRexport = ReanimatedRexport_mod;
 const LinearGradient = ReanimatedRexport.createAnimatedComponent(LinearGradientDefault);
-let tmp4 = fn(1178).AVATAR_SIZE_MAP[fn(undefined, 1178).AvatarSizes.XXLARGE];
+let tmp4 = fn(1176).AVATAR_SIZE_MAP[fn(undefined, 1176).AvatarSizes.XXLARGE];
 let obj = {};
 let merged = Object.assign(SCALE_PHYSICS);
 obj.stiffness = 150;
 let closure_26 = { duration: 200 };
 let closure_27 = { duration: 0 };
 let c28 = 0.75;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { positionWrapper: null, userRoundedCard: null, nonUserRoundedCard: null, blackBackground: null, selfStreamFocusedSubtitle: null, avatarImageMaskStyles: null, avatarPlaceholder: null, image: null, speakingIndicatorWrapper: null, speakingIndicatorUnderlay: null, speakingIndicatorGreenBar: null };
 const rect = { position: "absolute", top: 0, left: 0, overflow: "hidden", backgroundColor: nativeDefault.colors.BLACK };
 obj2.positionWrapper = rect;
@@ -1110,7 +1110,7 @@ const __initData7 = { code: "function VoicePanelCardTsx9(){const{focused}=this._
 const __initData8 = { code: "function VoicePanelCardTsx10(focusedId,previous){const{runOnJS,handleFocusedParticipantChange}=this.__closure;if(focusedId===previous)return;runOnJS(handleFocusedParticipantChange)(focusedId);}" };
 const __initData9 = { code: "function VoicePanelCardTsx11(){const{mode,focused,sharedTransitionState}=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};}" };
 const __initData10 = { code: "function VoicePanelCardTsx12(props,previous){const{cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,runOnJS,cleanUp,id}=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{runOnJS(cleanUp)();}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}}" };
-let closure_47 = { isSelf: false, hasVideo: false, user: { id: "Array" } };
+let closure_47 = { isSelf: false, hasVideo: false, user: { id: "r" } };
 function layoutTransitionFunction(originX, SUBTLE_SPRING) {
   let flag = arg2;
   if (arg2 === undefined) {
@@ -1144,7 +1144,7 @@ function layoutTransitionFunction(originX, SUBTLE_SPRING) {
   return obj2;
 }
 let obj4 = { position: "relative", borderRadius: nativeDefault.radii.round, overflow: "hidden" };
-layoutTransitionFunction.__closure = { withSpring: fn(4974).withSpring };
+layoutTransitionFunction.__closure = { withSpring: fn(5055).withSpring };
 layoutTransitionFunction.__workletHash = 4871152530917;
 layoutTransitionFunction.__initData = { code: "function layoutTransitionFunction_VoicePanelCardTsx13(values,physics,disableAnimation=false){const{withSpring}=this.__closure;return{animations:{originX:withSpring(values.targetOriginX,physics,!disableAnimation?'animate-always':'animate-never'),originY:withSpring(values.targetOriginY,physics,!disableAnimation?'animate-always':'animate-never'),width:withSpring(values.targetWidth,physics,!disableAnimation?'animate-always':'animate-never'),height:withSpring(values.targetHeight,physics,!disableAnimation?'animate-always':'animate-never')},initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight}};}" };
 const __initData11 = { code: "function VoicePanelCardTsx14(){const{id,pipState,mode,VoicePanelModes}=this.__closure;if(id===pipState.id&&mode.get()===VoicePanelModes.PIP){return true;}return false;}" };
@@ -1155,7 +1155,7 @@ const __initData15 = { code: "function VoicePanelCardTsx18(finished){const{share
 const __initData16 = { code: "function VoicePanelCardTsx19(values){const{withSpring,layoutPhysics,wrapperOffset}=this.__closure;const initialValues={originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight};return{animations:{originX:withSpring(values.targetOriginX,layoutPhysics,'animate-always'),originY:withSpring(values.targetOriginY,layoutPhysics,'animate-always'),width:withSpring(values.targetWidth,layoutPhysics,'animate-always'),height:withSpring(values.targetHeight,layoutPhysics,'animate-always')},initialValues:initialValues,callback:function(){const _wrapperOffset=wrapperOffset.get();if(!_wrapperOffset.gestureActive&&_wrapperOffset.y!==0){wrapperOffset.set({gestureActive:false,x:0,y:0});}}};}" };
 const __initData17 = { code: "function VoicePanelCardTsx20(){const{EDGE_GUTTER,coords,scrollPosition,windowDimensions}=this.__closure;const yPos=EDGE_GUTTER+coords.get().y;return yPos>scrollPosition.get()-coords.get().height&&yPos<scrollPosition.get()+windowDimensions.get().height;}" };
 let closure_57 = { code: "function layoutTransition_VoicePanelCardTsx21(values,disableAnimation=false){const{layoutTransitionFunction,physics}=this.__closure;return layoutTransitionFunction(values,physics,disableAnimation);}" };
-let obj9 = { withSpring: fn(4974).withSpring };
+let obj9 = { withSpring: fn(5055).withSpring };
 size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/card/VoicePanelCard.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 1219
-// Function ID: 1220
+// Module ID: 1217
+// Function ID: 1218
 // Name: ExpressionPickerConstants
 // Dependencies: [2]
 
-// Module 1219 (ExpressionPickerConstants)
+// Module 1217 (ExpressionPickerConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { EMOJI: "emoji", GIF: "gif", STICKER: "sticker", SOUNDBOARD: "soundboard" };

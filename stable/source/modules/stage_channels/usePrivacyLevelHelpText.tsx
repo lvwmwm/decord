@@ -1,14 +1,14 @@
-// Module ID: 9821
-// Function ID: 9822
+// Module ID: 9945
+// Function ID: 9946
 // Name: usePrivacyLevelHelpText
-// Dependencies: [4199, 1074, 1963, 1085, 504, 4204, 1086, 1114, 2024, 2]
+// Dependencies: [4275, 1074, 1963, 1085, 504, 4280, 1086, 1114, 2024, 2]
 // Exports: default
 
-// Module 9821 (usePrivacyLevelHelpText)
+// Module 9945 (usePrivacyLevelHelpText)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4204 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 
 const require = globalThis.__r;
 

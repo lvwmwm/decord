@@ -1,25 +1,25 @@
-// Module ID: 15810
-// Function ID: 15811
+// Module ID: 15900
+// Function ID: 15901
 // Name: CollectiblesShopV2
-// Dependencies: [32, 19, 17, 4559, 1183, 1371, 7542, 1076, 1074, 21, 4560, 7182, 13414, 15811, 504, 5598, 1256, 10739, 15812, 1115, 7553, 9372, 8179, 8782, 4411, 7162, 1483, 8854, 4231, 15814, 1242, 7590, 8188, 15815, 15817, 15840, 1232, 8773, 10827, 15843, 15844, 15820, 15845, 7603, 2]
+// Dependencies: [32, 19, 17, 4635, 1181, 1371, 7645, 1076, 1074, 21, 4636, 7285, 13542, 15901, 504, 5679, 1254, 10863, 15902, 1363, 7656, 9496, 8295, 8902, 4488, 7265, 1483, 8973, 4307, 15904, 1240, 7692, 8304, 15905, 15907, 15930, 1230, 8893, 10954, 15933, 15934, 15910, 15935, 7705, 2]
 
-// Module 15810 (CollectiblesShopV2)
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7590 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8188 */;
-import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8854 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9372 */;
-import ShopCategory from "ShopCategory" /* 15815 */;
-import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15817 */;
+// Module 15900 (CollectiblesShopV2)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import CollectiblesPerfLogging from "CollectiblesPerfLogging" /* 7692 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8304 */;
+import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 8973 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9496 */;
+import ShopCategory from "ShopCategory" /* 15905 */;
+import CollectiblesShopFeaturedPageDefault from "CollectiblesShopFeaturedPage" /* 15907 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4559 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
+import DevSettingsStore from "DevSettingsStore" /* 4635 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
 import UserStore from "UserStore" /* 1371 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7542 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7645 */;
 
-const SentryUtilsDefault = tmp(1232);
+const SentryUtilsDefault = tmp(1230);
 require = fn;
 class CollectiblesShopV2 {
   constructor(arg0) {
@@ -99,7 +99,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_14, PaymentGateways: closure_15 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const collapsedCategories = createStyles.createStyles({ rootContainer: { height: "100%", width: "100%" }, spinner: { position: "absolute", top: "50%", left: "50%", marginTop: -8, marginLeft: -8 } });
 function CollectiblesShopInternal(analyticsSource) {
   analyticsSource = analyticsSource.analyticsSource;

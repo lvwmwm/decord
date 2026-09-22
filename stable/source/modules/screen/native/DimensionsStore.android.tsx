@@ -1,11 +1,11 @@
 // Module ID: 1478
 // Function ID: 1479
 // Name: DimensionsStore
-// Dependencies: [17, 1479, 1876, 1611, 1877, 1624, 1249, 560, 1612, 2]
+// Dependencies: [17, 1479, 1876, 1611, 1877, 1624, 1247, 560, 1612, 2]
 
 // Module 1478 (DimensionsStore)
 import _mod17 from "module_17" /* 17 */;
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1249 */;
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1247 */;
 import useSafeAreaInsets from "useSafeAreaInsets" /* 1611 */;
 import AppEntryKey from "AppEntryKey" /* 1624 */;
 import readAppEntryWindowMetrics from "readAppEntryWindowMetrics" /* 1876 */;

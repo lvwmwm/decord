@@ -1,9 +1,9 @@
 // Module ID: 10013
 // Function ID: 10014
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 10013
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls/light_theme", width: 24, height: 24, scales: [2, 3], hash: "494f8fec7816d9dd79747ac9155bc550", name: "voice_bar_mute_off", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "31fe21f79423d8afd3dcadd61d04938b", name: "ic_mail", type: "png" });

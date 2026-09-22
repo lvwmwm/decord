@@ -1,13 +1,13 @@
-// Module ID: 15358
-// Function ID: 15359
+// Module ID: 15441
+// Function ID: 15442
 // Name: ChatDotsIcon
-// Dependencies: [19, 21, 576, 4261, 15359, 2]
+// Dependencies: [19, 21, 576, 4337, 15442, 2]
 // Exports: ChatDotsIcon
 
-// Module 15358 (ChatDotsIcon)
+// Module 15441 (ChatDotsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod15359 from "module_15359" /* 15359 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod15442 from "module_15442" /* 15442 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChatDotsIcon = function ChatDotsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15359, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15442, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

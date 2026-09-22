@@ -1,21 +1,21 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17462
+// Function ID: 17463
 // Name: KvBackgroundManager
-// Dependencies: [32, 5, 12417, 7478, 7479, 1090, 3, 7118, 17351, 7755, 1115, 1986, 1987, 2003, 2]
+// Dependencies: [32, 5, 12546, 7581, 7582, 1090, 3, 7221, 17463, 7857, 1363, 1986, 1987, 2003, 2]
 
-// Module 17350 (KvBackgroundManager)
+// Module 17462 (KvBackgroundManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1090 */;
-import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 17351 */;
+import reportMalformedStorageValuesDefault from "reportMalformedStorageValues" /* 17463 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 12417 */;
-import SaveableChannelsStore_mod from "SaveableChannelsStore" /* 7478 */;
-import FileSystemStore from "FileSystemStore" /* 7479 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
+import MultiAccountStore from "MultiAccountStore" /* 12546 */;
+import SaveableChannelsStore_mod from "SaveableChannelsStore" /* 7581 */;
+import FileSystemStore from "FileSystemStore" /* 7582 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 
 let require = fn;
-let SaveableChannelsStore = fn(7478);
+let SaveableChannelsStore = fn(7581);
 ({ MAXIMUM_MESSAGES_PER_CHANNEL_DEFAULT: metroRequire, MAXIMUM_MESSAGES_PER_CHANNEL_EVER: closure_7 } = SaveableChannelsStore);
 let SaveableChannelsStore = SaveableChannelsStore_mod;
 let closure_10 = 5 * DurationsDefault.Millis.MINUTE;

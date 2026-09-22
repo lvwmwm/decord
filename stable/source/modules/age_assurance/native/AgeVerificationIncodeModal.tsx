@@ -1,17 +1,17 @@
-// Module ID: 8416
-// Function ID: 8417
+// Module ID: 8533
+// Function ID: 8534
 // Name: AgeVerificationIncodeModal
-// Dependencies: [19, 21, 4560, 576, 4763, 7377, 1114, 8417, 8424, 7000, 2]
+// Dependencies: [19, 21, 4636, 576, 4839, 7480, 1114, 8534, 8541, 7103, 2]
 // Exports: default
 
-// Module 8416 (AgeVerificationIncodeModal)
+// Module 8533 (AgeVerificationIncodeModal)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 let jsx = fn(21).jsx;
 const constants = { METHOD_SELECT: "METHOD_SELECT", VERIFY_AGE: "VERIFY_AGE" };
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

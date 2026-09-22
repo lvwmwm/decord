@@ -1,9 +1,9 @@
 // Module ID: 2786
 // Function ID: 2787
-// Dependencies: [1120, 2787, 2788, 2789, 2790, 2791, 2792, 2793, 2794, 2795, 2796, 2797, 2798, 2799, 2800, 2801, 2802, 2803, 2804, 2805, 2806, 2807, 2808, 2809, 2810, 2811, 2812, 2813, 2814, 2815, 2816, 2817, 1155, 2]
+// Dependencies: [1118, 2787, 2788, 2789, 2790, 2791, 2792, 2793, 2794, 2795, 2796, 2797, 2798, 2799, 2800, 2801, 2802, 2803, 2804, 2805, 2806, 2807, 2808, 2809, 2810, 2811, 2812, 2813, 2814, 2815, 2816, 2817, 1153, 2]
 
 // Module 2786
-import AssetJsonUtils from "AssetJsonUtils" /* 1120 */;
+import AssetJsonUtils from "AssetJsonUtils" /* 1118 */;
 import _mod2787 from "module_2787" /* 2787 */;
 import _mod2788 from "module_2788" /* 2788 */;
 import _mod2789 from "module_2789" /* 2789 */;
@@ -35,11 +35,11 @@ import _mod2814 from "module_2814" /* 2814 */;
 import _mod2815 from "module_2815" /* 2815 */;
 import _mod2816 from "module_2816" /* 2816 */;
 import _mod2817 from "module_2817" /* 2817 */;
-import module_1155_mod from "module_1155" /* 1155 */;
+import module_1153_mod from "module_1153" /* 1153 */;
 import size from "module_2" /* 2 */;
 
-let module_1155 = module_1155_mod;
-const loader = module_1155.createLoader({
+let module_1153 = module_1153_mod;
+const loader = module_1153.createLoader({
   bg() {
     const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2787);
     return jsonAsset.then((result) => ({ default: result }));
@@ -165,8 +165,8 @@ const loader = module_1155.createLoader({
     return jsonAsset.then((result) => ({ default: result }));
   }
 }, "en-US");
-let module_1155 = module_1155_mod;
-const messagesProxy = module_1155.makeMessagesProxy(loader);
+let module_1153 = module_1153_mod;
+const messagesProxy = module_1153.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/display_name_styles/intl/DisplayNameStyles.messages.js");
 
 export default messagesProxy;

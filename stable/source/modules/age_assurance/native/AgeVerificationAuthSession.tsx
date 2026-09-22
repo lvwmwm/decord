@@ -1,12 +1,12 @@
-// Module ID: 8426
-// Function ID: 8427
+// Module ID: 8543
+// Function ID: 8544
 // Name: AgeVerificationAuthSession
-// Dependencies: [5, 17, 3, 560, 1115, 2]
+// Dependencies: [5, 17, 3, 560, 1363, 2]
 // Exports: closeAgeVerificationAuthSession, getIsAgeVerificationAuthSessionAwaitingResult, getIsAgeVerificationAuthSessionOpen, openAgeVerificationAuthSession, useIsAgeVerificationAuthSessionOpen
 
-// Module 8426 (AgeVerificationAuthSession)
+// Module 8543 (AgeVerificationAuthSession)
 import LoggerDefault from "Logger" /* 3 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -64,7 +64,7 @@ let closure_10 = async function _openAgeVerificationAuthSession(arg0, value) {
             c4 = 1;
             c5 = 2;
             c6 = 1;
-            const obj4 = { value: BrowserManager.openAuthSessionURL(tmp34), done: false };
+            const obj4 = { value: BrowserManager.openAuthSessionURL(tmp34, true), done: false };
             return obj4;
           } else {
             c6 = 3;

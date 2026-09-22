@@ -1,12 +1,12 @@
-// Module ID: 8797
-// Function ID: 8798
+// Module ID: 8918
+// Function ID: 8919
 // Name: ContentInventoryOutboxStore
-// Dependencies: [504, 8338, 573, 2]
+// Dependencies: [504, 8455, 573, 2]
 
-// Module 8797 (ContentInventoryOutboxStore)
+// Module 8918 (ContentInventoryOutboxStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import matchUtils from "matchUtils" /* 8338 */;
+import matchUtils from "matchUtils" /* 8455 */;
 
 require = fn;
 let map = new Map();
@@ -30,8 +30,8 @@ prototype["getMatchingOutboxEntry"] = function getMatchingOutboxEntry(activity) 
 prototype["getUserOutbox"] = function getUserOutbox(id) {
   return map.get(id);
 };
-prototype["isFetchingUserOutbox"] = function isFetchingUserOutbox(arg0) {
-  return set.has(arg0);
+prototype["isFetchingUserOutbox"] = function isFetchingUserOutbox(userId) {
+  return set.has(userId);
 };
 Object.defineProperty(prototype, "deleteOutboxEntryError", {
   get: function deleteOutboxEntryError() {

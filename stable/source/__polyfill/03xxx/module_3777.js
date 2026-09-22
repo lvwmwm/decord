@@ -1,12 +1,46 @@
 // Module ID: 3777
 // Function ID: 3778
-// Dependencies: []
-// Exports: default
+// Dependencies: [3778, 3779, 3780, 3781, 3782]
 
 // Module 3777
-let closure_0 = { lastWeek: "'i' EEEE's kl.' p", yesterday: "'ig\u00E5r kl.' p", today: "'idag kl.' p", tomorrow: "'imorgon kl.' p", nextWeek: "EEEE 'kl.' p", other: "P" };
+import module_3778 from "module_3778" /* 3778 */;
+import module_3779 from "module_3779" /* 3779 */;
+import module_3780 from "module_3780" /* 3780 */;
+import date_mod from "module_3781" /* 3781 */;
+import date_mod from "module_3782" /* 3782 */;
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  return closure_0[arg0];
-};
+if (!module_3778) {
+  const obj = { default: module_3778 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_3778;
+}
+if (!module_3779) {
+  const obj2 = { default: module_3779 };
+  let tmp5 = obj2;
+} else {
+  tmp5 = module_3779;
+}
+if (!module_3780) {
+  const obj3 = { default: module_3780 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_3780;
+}
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
+  let tmp9 = obj4;
+} else {
+  tmp9 = date;
+}
+let date = date_mod;
+if (!date) {
+  const obj5 = { default: date };
+  let tmp11 = obj5;
+} else {
+  tmp11 = date;
+}
+
+export default { code: "hr", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 1 } };
 export default exports.default;

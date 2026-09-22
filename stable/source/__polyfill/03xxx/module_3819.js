@@ -1,40 +1,46 @@
 // Module ID: 3819
 // Function ID: 3820
-// Dependencies: [3654, 3799, 3651]
-// Exports: default
+// Dependencies: [3820, 3821, 3822, 3823, 3824]
 
 // Module 3819
-import module_3654_mod from "module_3654" /* 3654 */;
-import module_3799_mod from "module_3799" /* 3799 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import module_3820 from "module_3820" /* 3820 */;
+import module_3821 from "module_3821" /* 3821 */;
+import module_3822 from "module_3822" /* 3822 */;
+import date_mod from "module_3823" /* 3823 */;
+import date_mod from "module_3824" /* 3824 */;
 
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  const obj = { default: module_3654 };
+if (!module_3820) {
+  const obj = { default: module_3820 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3654;
+  tmp3 = module_3820;
 }
-module_3654 = tmp3;
-let module_3799 = module_3799_mod;
-if (!module_3799) {
-  const obj2 = { default: module_3799 };
+if (!module_3821) {
+  const obj2 = { default: module_3821 };
   let tmp5 = obj2;
 } else {
-  tmp5 = module_3799;
+  tmp5 = module_3821;
 }
-module_3799 = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
+if (!module_3822) {
+  const obj3 = { default: module_3822 };
   let tmp7 = obj3;
 } else {
-  tmp7 = requiredArgs;
+  tmp7 = module_3822;
 }
-requiredArgs = tmp7;
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
+  let tmp9 = obj4;
+} else {
+  tmp9 = date;
+}
+let date = date_mod;
+if (!date) {
+  const obj5 = { default: date };
+  let tmp11 = obj5;
+} else {
+  tmp11 = date;
+}
 
-export default function addYears(interval, arg1) {
-  requiredArgs.default(2, arguments);
-  return module_3799.default(interval, 12 * module_3654.default(arg1));
-};
+export default { code: "nb", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 1, firstWeekContainsDate: 4 } };
 export default exports.default;

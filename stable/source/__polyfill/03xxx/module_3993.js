@@ -1,11 +1,11 @@
 // Module ID: 3993
 // Function ID: 3994
-// Dependencies: [3650, 3651]
+// Dependencies: [3725, 3726]
 // Exports: default
 
 // Module 3993
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isMonday(arg0) {
+export default function getDecade(arg0) {
   requiredArgs.default(1, arguments);
-  return 1 === _typeof.default(arg0).getDay();
+  return 10 * Math.floor(_typeof.default(arg0).getFullYear() / 10);
 };
 export default exports.default;

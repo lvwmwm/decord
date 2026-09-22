@@ -1,34 +1,34 @@
-// Module ID: 14840
-// Function ID: 14841
+// Module ID: 14927
+// Function ID: 14928
 // Name: ModerationUtils
-// Dependencies: [1074, 1937, 575, 14841, 1114, 1187, 2]
+// Dependencies: [1074, 1937, 575, 14928, 1114, 1185, 2]
 // Exports: generateContentFilterHighlightedOptions, generateContentFilterOptions, generateDmSpamOptions, generateExplicitImageOptions, generateVerificationLevelOptions, mapOptionToHighlightedRowOptions
 
-// Module 14840 (ModerationUtils)
+// Module 14927 (ModerationUtils)
 import shims from "shims" /* 575 */;
 import util from "util" /* 1114 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1187 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
 import DMSafetyConstants from "DMSafetyConstants" /* 1937 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 
 function mapColorToHighlightColor(arg0) {
   if (obj.unsafe_getRawColor("PRIMARY_400") === arg0) {
-    return tmp(14841).HighlightColors.ACCENT;
+    return tmp(14928).HighlightColors.ACCENT;
   } else {
     if (tmpResult.unsafe_getRawColor("GREEN_360") === arg0) {
-      return tmp(14841).HighlightColors.GREEN;
+      return tmp(14928).HighlightColors.GREEN;
     } else {
       if (tmpResult4.unsafe_getRawColor("YELLOW_360") === arg0) {
-        return tmp(14841).HighlightColors.YELLOW;
+        return tmp(14928).HighlightColors.YELLOW;
       } else {
         if (tmpResult5.unsafe_getRawColor("ORANGE_345") === arg0) {
-          return tmp(14841).HighlightColors.ORANGE;
+          return tmp(14928).HighlightColors.ORANGE;
         } else {
           if (tmpResult6.unsafe_getRawColor("RED_400") === arg0) {
-            return tmp(14841).HighlightColors.RED;
+            return tmp(14928).HighlightColors.RED;
           } else {
-            return tmp(14841).HighlightColors.NONE;
+            return tmp(14928).HighlightColors.NONE;
           }
           tmpResult6 = tmp(575);
         }

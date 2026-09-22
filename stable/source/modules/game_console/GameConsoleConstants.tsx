@@ -1,12 +1,12 @@
-// Module ID: 9239
-// Function ID: 9240
+// Module ID: 9362
+// Function ID: 9363
 // Name: GameConsoleConstants
-// Dependencies: [1074, 8340, 2]
+// Dependencies: [1074, 8457, 2]
 // Exports: XBOX_HANDOFF_SEARCH_PARAMS
 
-// Module 9239 (GameConsoleConstants)
+// Module 9362 (GameConsoleConstants)
 import Constants from "Constants" /* 1074 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 8340 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 8457 */;
 import size from "module_2" /* 2 */;
 
 const items = [OAuth2Scopes.OAuth2Scopes.VOICE, OAuth2Scopes.OAuth2Scopes.DM_CHANNELS_READ, OAuth2Scopes.OAuth2Scopes.GUILDS, OAuth2Scopes.OAuth2Scopes.GUILDS_MEMBERS_READ, OAuth2Scopes.OAuth2Scopes.IDENTIFY, OAuth2Scopes.OAuth2Scopes.CONNECTIONS, OAuth2Scopes.OAuth2Scopes.ACTIVITIES_READ];

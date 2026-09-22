@@ -1,8 +1,8 @@
-// Module ID: 6536
-// Function ID: 6537
+// Module ID: 6637
+// Function ID: 6638
 // Dependencies: [2]
 
-// Module 6536
+// Module 6637
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SwordIllocon-2x.png.js");

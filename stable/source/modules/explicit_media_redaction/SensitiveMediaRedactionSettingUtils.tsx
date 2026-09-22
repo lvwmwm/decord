@@ -1,12 +1,12 @@
-// Module ID: 7300
-// Function ID: 7301
+// Module ID: 7403
+// Function ID: 7404
 // Name: SensitiveMediaRedactionSettingUtils
-// Dependencies: [1187, 12, 2]
+// Dependencies: [1185, 12, 2]
 // Exports: areSettingsEqual, getShouldObscureForSetting
 
-// Module 7300 (SensitiveMediaRedactionSettingUtils)
+// Module 7403 (SensitiveMediaRedactionSettingUtils)
 import _mod12 from "module_12" /* 12 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1187 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/SensitiveMediaRedactionSettingUtils.tsx");

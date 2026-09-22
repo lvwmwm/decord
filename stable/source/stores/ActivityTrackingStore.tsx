@@ -1,21 +1,21 @@
-// Module ID: 13747
-// Function ID: 13748
+// Module ID: 13833
+// Function ID: 13834
 // Name: ActivityTrackingStore
-// Dependencies: [1915, 1221, 502, 1931, 7397, 4583, 2011, 1074, 1090, 510, 7399, 11477, 4447, 4689, 504, 573, 2]
+// Dependencies: [1915, 1219, 502, 1931, 7500, 4659, 2011, 1074, 1090, 510, 7502, 11609, 1952, 4765, 504, 573, 2]
 
-// Module 13747 (ActivityTrackingStore)
+// Module 13833 (ActivityTrackingStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1090 */;
-import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4689 */;
-import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11477 */;
+import GameAnalyticsUtils from "GameAnalyticsUtils" /* 4765 */;
+import ActivitiesActionCreatorsDefault from "ActivitiesActionCreators" /* 11609 */;
 import RunningGameStore from "RunningGameStore" /* 1915 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import DetectableGameStore from "DetectableGameStore" /* 1931 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7397 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7500 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
 
 require = fn;
@@ -72,7 +72,7 @@ function updateActivity(applicationId) {
   ActivitiesActionCreatorsDefault.updateActivity(obj3);
   applicationId.updatedAt = timestamp;
   if (null == dependencyMap[applicationId.applicationId]) {
-    const interval = new tmp3(4447).Interval();
+    const interval = new tmp3(1952).Interval();
     tmp11[applicationId.applicationId] = interval;
     interval.start(closure_12, () => {
       updateActivity(closure_0);

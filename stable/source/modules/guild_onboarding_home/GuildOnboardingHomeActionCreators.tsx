@@ -1,19 +1,19 @@
-// Module ID: 12288
-// Function ID: 12289
+// Module ID: 12417
+// Function ID: 12418
 // Name: GuildOnboardingHomeActionCreators
-// Dependencies: [5, 2014, 1957, 4747, 4748, 1074, 573, 1272, 12289, 1242, 4571, 11, 2]
+// Dependencies: [5, 2014, 1957, 4823, 4824, 1074, 573, 1270, 12418, 1240, 4647, 11, 2]
 // Exports: clearNewMemberActions, completeNewMemberAction, fetchGuildHomeSettings, fetchNewMemberActions, selectHomeResourceChannel, selectNewMemberActionChannel
 
-// Module 12288 (GuildOnboardingHomeActionCreators)
+// Module 12417 (GuildOnboardingHomeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import transitionToChannel from "transitionToChannel" /* 4571 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import transitionToChannel from "transitionToChannel" /* 4647 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 2014 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4747 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4748 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4823 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4824 */;
 
 require = fn;
 let closure_10 = async function _fetchGuildHomeSettings(guildId) {
@@ -247,8 +247,8 @@ export const completeNewMemberAction = function completeNewMemberAction(guildId,
           }
           return hasItem;
         }, true);
-        tmp(1242).track(constants.SERVER_GUIDE_ACTION_COMPLETED, obj4);
-        const tmpResult2 = tmp(1242);
+        tmp(1240).track(constants.SERVER_GUIDE_ACTION_COMPLETED, obj4);
+        const tmpResult2 = tmp(1240);
       }
     }
     const HTTP = HTTPUtils.HTTP;

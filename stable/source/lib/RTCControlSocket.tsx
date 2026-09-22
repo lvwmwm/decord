@@ -1,27 +1,27 @@
 // Module ID: 1907
 // Function ID: 1908
 // Name: RTCControlSocket
-// Dependencies: [1347, 1908, 4585, 1090, 4618, 559, 3, 4589, 14082, 1115, 38, 2]
+// Dependencies: [1345, 1908, 4661, 1090, 4694, 559, 3, 4665, 14166, 1363, 38, 2]
 
 // Module 1907 (RTCControlSocket)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DurationsDefault from "Durations" /* 1090 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import TimeUtils from "TimeUtils" /* 4589 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1347 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import TimeUtils from "TimeUtils" /* 4665 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1345 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4618 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4694 */;
 
 require = fn;
 function noop() {
 
 }
-const Constants = fn(4585);
+const Constants = fn(4661);
 ({ Features: hasOwnProperty, MediaEngineContextTypes: metroRequire, MediaTypes: closure_7, SpeakingFlags: closure_8 } = Constants);
 const RTCSocketOpcode = { IDENTIFY: 0, [0]: "IDENTIFY", SELECT_PROTOCOL: 1, [1]: "SELECT_PROTOCOL", READY: 2, [2]: "READY", HEARTBEAT: 3, [3]: "HEARTBEAT", SELECT_PROTOCOL_ACK: 4, [4]: "SELECT_PROTOCOL_ACK", SPEAKING: 5, [5]: "SPEAKING", HEARTBEAT_ACK: 6, [6]: "HEARTBEAT_ACK", RESUME: 7, [7]: "RESUME", HELLO: 8, [8]: "HELLO", RESUMED: 9, [9]: "RESUMED", CLIENT_CONNECT: 11, [11]: "CLIENT_CONNECT", VIDEO: 12, [12]: "VIDEO", CLIENT_DISCONNECT: 13, [13]: "CLIENT_DISCONNECT", SESSION_UPDATE: 14, [14]: "SESSION_UPDATE", MEDIA_SINK_WANTS: 15, [15]: "MEDIA_SINK_WANTS", VOICE_BACKEND_VERSION: 16, [16]: "VOICE_BACKEND_VERSION", CHANNEL_OPTIONS_UPDATE: 17, [17]: "CHANNEL_OPTIONS_UPDATE", FLAGS: 18, [18]: "FLAGS", PLATFORM: 20, [20]: "PLATFORM", DAVE_PROTOCOL_PREPARE_TRANSITION: 21, [21]: "DAVE_PROTOCOL_PREPARE_TRANSITION", DAVE_PROTOCOL_EXECUTE_TRANSITION: 22, [22]: "DAVE_PROTOCOL_EXECUTE_TRANSITION", DAVE_PROTOCOL_READY_FOR_TRANSITION: 23, [23]: "DAVE_PROTOCOL_READY_FOR_TRANSITION", DAVE_PROTOCOL_PREPARE_EPOCH: 24, [24]: "DAVE_PROTOCOL_PREPARE_EPOCH", MLS_EXTERNAL_SENDER_PACKAGE: 25, [25]: "MLS_EXTERNAL_SENDER_PACKAGE", MLS_KEY_PACKAGE: 26, [26]: "MLS_KEY_PACKAGE", MLS_PROPOSALS: 27, [27]: "MLS_PROPOSALS", MLS_COMMIT_WELCOME: 28, [28]: "MLS_COMMIT_WELCOME", MLS_PREPARE_COMMIT_TRANSITION: 29, [29]: "MLS_PREPARE_COMMIT_TRANSITION", MLS_WELCOME: 30, [30]: "MLS_WELCOME", MLS_INVALID_COMMIT_WELCOME: 31, [31]: "MLS_INVALID_COMMIT_WELCOME", CLIENT_CANNOT_REACH_RTC_SERVER: 32, [32]: "CLIENT_CANNOT_REACH_RTC_SERVER", SFU_UPDATE: 33, [33]: "SFU_UPDATE" };
-let obj2 = { AUTHENTICATION_FAILED: 4004, [4004]: "AUTHENTICATION_FAILED", INVALID_SESSION: 4006, [4006]: "INVALID_SESSION", SERVER_NOT_FOUND: 4011, [4011]: "SERVER_NOT_FOUND", SERVER_CRASH: 4015, [4015]: "SERVER_CRASH", CANCELED: 4016, [4016]: "CANCELED", HEARTBEAT_TIMEOUT: 4800, [4800]: "HEARTBEAT_TIMEOUT", UNRESUMABLE: 4801, [4801]: "UNRESUMABLE", RESET_BACKOFF: 4802, [4802]: "RESET_BACKOFF", REPEATED_MLS_INVALID_MESSAGES: 4803, [4803]: "REPEATED_MLS_INVALID_MESSAGES" };
+let obj2 = { AUTHENTICATION_FAILED: 4004, [4004]: "AUTHENTICATION_FAILED", INVALID_SESSION: 4006, [4006]: "INVALID_SESSION", SERVER_NOT_FOUND: 4011, [4011]: "SERVER_NOT_FOUND", SERVER_CRASH: 4015, [4015]: "SERVER_CRASH", CANCELED: 4016, [4016]: "CANCELED", HEARTBEAT_TIMEOUT: 4800, [4800]: "HEARTBEAT_TIMEOUT", UNRESUMABLE: 4801, [4801]: "UNRESUMABLE", RESET_BACKOFF: 4802, [4802]: "RESET_BACKOFF", REPEATED_MLS_INVALID_MESSAGES: 4803, [4803]: "REPEATED_MLS_INVALID_MESSAGES", DAVE_DOWNGRADE_REFUSED: 4804, [4804]: "DAVE_DOWNGRADE_REFUSED" };
 const constants3 = { DISCONNECTED: 0, [0]: "DISCONNECTED", CONNECTING: 1, [1]: "CONNECTING", IDENTIFYING: 2, [2]: "IDENTIFYING", RESUMING: 3, [3]: "RESUMING", CONNECTED: 4, [4]: "CONNECTED", RECONNECTING: 5, [5]: "RECONNECTING" };
 let closure_13 = 20 * DurationsDefault.Millis.SECOND;
 const MINUTE = DurationsDefault.Millis.MINUTE;
@@ -73,12 +73,12 @@ prototype["createWebSocket"] = function createWebSocket() {
     logger2.error("Connect called with already existing websocket");
     self.cleanupWebSocket((close) => close.close(4000));
   }
-  self.connectionStartTime = self(4589).now();
+  self.connectionStartTime = self(4665).now();
   self.helloTimeout = setTimeout(() => {
     self.handleClose(false, 0, "The connection timed out after " + TimeUtils.now() - self.connectionStartTime + " ms - did not receive OP_HELLO in time.");
   }, closure_13);
-  let obj = self(4589);
-  obj2 = self(14082);
+  let obj = self(4665);
+  obj2 = self(14166);
   const webSocket = new WebSocket("" + self.url + "?v=" + obj2.getVoiceGatewayProtocolVersion({ location: "RTCControlSocket", supportsSfuUpdate: MediaEngineStore.supports(constants.UDP_ENDPOINT_UPDATE) }));
   self.webSocket = webSocket;
   webSocket.binaryType = "arraybuffer";
@@ -366,7 +366,7 @@ prototype["handleHello"] = function handleHello(d) {
     }
     tmp = require;
   }
-  const diff = tmp4(4589).now() - self.connectionStartTime;
+  const diff = tmp4(4665).now() - self.connectionStartTime;
   ({ logger, heartbeatInterval } = self);
   if (heartbeatInterval == null) {
     heartbeatInterval = "??";
@@ -839,6 +839,12 @@ prototype["disconnectForRepeatedMLSInvalidMessages"] = function disconnectForRep
   logger.warn("[MLS] " + arg0 + " consecutive invalid commit/welcome messages.");
   this.cleanupWebSocket((close) => close.close(constants.REPEATED_MLS_INVALID_MESSAGES));
   this.disconnect(false, obj2.REPEATED_MLS_INVALID_MESSAGES, "Repeated invalid MLS commit/welcome messages.");
+};
+prototype["disconnectForRefusedDaveDowngrade"] = function disconnectForRefusedDaveDowngrade(EPOCH) {
+  const logger = this.logger;
+  logger.warn("[DAVE] Refused protocol downgrade to version 0 at " + EPOCH + ".");
+  this.cleanupWebSocket((close) => close.close(constants.DAVE_DOWNGRADE_REFUSED));
+  this.disconnect(false, obj2.DAVE_DOWNGRADE_REFUSED, "Refused DAVE protocol downgrade.");
 };
 prototype["noRoute"] = function noRoute() {
   this.send(obj.CLIENT_CANNOT_REACH_RTC_SERVER, {});

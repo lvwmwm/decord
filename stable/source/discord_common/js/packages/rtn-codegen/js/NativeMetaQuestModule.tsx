@@ -1,9 +1,9 @@
-// Module ID: 1342
-// Function ID: 1343
+// Module ID: 1340
+// Function ID: 1341
 // Name: NativeMetaQuestModule
 // Dependencies: [17, 2]
 
-// Module 1342 (NativeMetaQuestModule)
+// Module 1340 (NativeMetaQuestModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

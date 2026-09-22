@@ -1,11 +1,11 @@
 // Module ID: 1454
 // Function ID: 1455
 // Name: callBind
-// Dependencies: [1293, 1455, 1306, 1458]
+// Dependencies: [1291, 1455, 1304, 1458]
 
 // Module 1454 (callBind)
-import callBindBasic from "callBindBasic" /* 1293 */;
-import flag from "flag" /* 1306 */;
+import callBindBasic from "callBindBasic" /* 1291 */;
+import flag from "flag" /* 1304 */;
 import _mod1455 from "module_1455" /* 1455 */;
 import applyBind from "applyBind" /* 1458 */;
 

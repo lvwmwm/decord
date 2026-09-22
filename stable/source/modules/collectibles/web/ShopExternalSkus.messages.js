@@ -1,9 +1,9 @@
 // Module ID: 2170
 // Function ID: 2171
-// Dependencies: [1120, 2171, 2172, 2173, 2174, 2175, 2176, 2177, 2178, 2179, 2180, 2181, 2182, 2183, 2184, 2185, 2186, 2187, 2188, 2189, 2190, 2191, 2192, 2193, 2194, 2195, 2196, 2197, 2198, 2199, 2200, 2201, 1155, 2]
+// Dependencies: [1118, 2171, 2172, 2173, 2174, 2175, 2176, 2177, 2178, 2179, 2180, 2181, 2182, 2183, 2184, 2185, 2186, 2187, 2188, 2189, 2190, 2191, 2192, 2193, 2194, 2195, 2196, 2197, 2198, 2199, 2200, 2201, 1153, 2]
 
 // Module 2170
-import AssetJsonUtils from "AssetJsonUtils" /* 1120 */;
+import AssetJsonUtils from "AssetJsonUtils" /* 1118 */;
 import _mod2171 from "module_2171" /* 2171 */;
 import _mod2172 from "module_2172" /* 2172 */;
 import _mod2173 from "module_2173" /* 2173 */;
@@ -35,11 +35,11 @@ import _mod2198 from "module_2198" /* 2198 */;
 import _mod2199 from "module_2199" /* 2199 */;
 import _mod2200 from "module_2200" /* 2200 */;
 import _mod2201 from "module_2201" /* 2201 */;
-import module_1155_mod from "module_1155" /* 1155 */;
+import module_1153_mod from "module_1153" /* 1153 */;
 import size from "module_2" /* 2 */;
 
-let module_1155 = module_1155_mod;
-const loader = module_1155.createLoader({
+let module_1153 = module_1153_mod;
+const loader = module_1153.createLoader({
   bg() {
     const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod2171);
     return jsonAsset.then((result) => ({ default: result }));
@@ -165,8 +165,8 @@ const loader = module_1155.createLoader({
     return jsonAsset.then((result) => ({ default: result }));
   }
 }, "en-US");
-let module_1155 = module_1155_mod;
-const messagesProxy = module_1155.makeMessagesProxy(loader);
+let module_1153 = module_1153_mod;
+const messagesProxy = module_1153.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/collectibles/web/ShopExternalSkus.messages.js");
 
 export default messagesProxy;

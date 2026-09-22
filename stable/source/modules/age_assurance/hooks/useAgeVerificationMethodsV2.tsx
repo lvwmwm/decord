@@ -1,15 +1,15 @@
-// Module ID: 8453
-// Function ID: 8454
+// Module ID: 8570
+// Function ID: 8571
 // Name: useAgeVerificationMethodsV2
-// Dependencies: [5, 32, 19, 8454, 8419, 8438, 573, 2]
+// Dependencies: [5, 32, 19, 8571, 8536, 8555, 573, 2]
 // Exports: useAgeVerificationMethodsV2
 
-// Module 8453 (useAgeVerificationMethodsV2)
+// Module 8570 (useAgeVerificationMethodsV2)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8454 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 8571 */;
 
 const require = fn;
 const size = fn(2);
@@ -80,8 +80,8 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
             tmp75(true);
             v0(false);
             v0 = 2;
-            const result = closure_0(8419).isCurrentUserSuspended();
-            const obj7 = closure_0(8438);
+            const result = closure_0(8536).isCurrentUserSuspended();
+            const obj7 = closure_0(8555);
             if (result) {
               c5 = 4;
               c6 = 1;
@@ -93,7 +93,7 @@ export const useAgeVerificationMethodsV2 = function useAgeVerificationMethodsV2(
               const obj9 = { value: obj7.fetchAgeVerificationMethodsV2(), done: false };
               return obj9;
             }
-            const obj6 = closure_0(8419);
+            const obj6 = closure_0(8536);
           }
         } else if (1 === tmp9) {
           v0 = 0;

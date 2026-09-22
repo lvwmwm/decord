@@ -1,17 +1,17 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 14961
+// Function ID: 14962
 // Name: useSelectedTab
-// Dependencies: [7537, 7538, 1074, 563, 7539, 1242, 2]
+// Dependencies: [7640, 7641, 1074, 563, 7642, 1240, 2]
 // Exports: default
 
-// Module 14874 (useSelectedTab)
+// Module 14961 (useSelectedTab)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7539 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7537 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7642 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7640 */;
 
 require = fn;
-const FamilyCenterConstants = fn(7538);
+const FamilyCenterConstants = fn(7641);
 ({ FamilyCenterAction: closure_4, FamilyCenterSubPages } = FamilyCenterConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);

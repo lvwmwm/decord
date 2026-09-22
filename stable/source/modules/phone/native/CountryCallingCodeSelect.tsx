@@ -1,21 +1,21 @@
-// Module ID: 7048
-// Function ID: 7049
+// Module ID: 7151
+// Function ID: 7152
 // Name: CountryCallingCodeSelect
-// Dependencies: [32, 19, 17, 4776, 21, 4560, 576, 6944, 4777, 7049, 5517, 5605, 4556, 7050, 7053, 7054, 1114, 7055, 2]
+// Dependencies: [32, 19, 17, 4852, 21, 4636, 576, 7045, 4853, 7152, 5598, 5686, 4632, 7153, 7156, 7157, 1114, 7158, 2]
 // Exports: default
 
-// Module 7048 (CountryCallingCodeSelect)
+// Module 7151 (CountryCallingCodeSelect)
 import nativeDefault from "native" /* 576 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5517 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5598 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const getI18NCountryName = fn(4776).getI18NCountryName;
+const getI18NCountryName = fn(4852).getI18NCountryName;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingHorizontal: null, paddingTop: null, paddingBottom: null, flex: 1 };
   const space = nativeDefault.space;

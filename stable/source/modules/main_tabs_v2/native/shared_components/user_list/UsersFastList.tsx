@@ -1,18 +1,18 @@
-// Module ID: 10871
-// Function ID: 10872
+// Module ID: 10998
+// Function ID: 10999
 // Name: UsersFastList
-// Dependencies: [32, 19, 17, 10218, 21, 4560, 576, 10872, 5605, 7873, 4296, 4556, 1178, 5123, 5125, 1611, 7049, 10217, 10873, 10914, 10917, 7055, 2]
+// Dependencies: [32, 19, 17, 10342, 21, 4636, 576, 10999, 5686, 7975, 4373, 4632, 1176, 5204, 5206, 1611, 7152, 10341, 11000, 11044, 11047, 7158, 2]
 
-// Module 10871 (UsersFastList)
+// Module 10998 (UsersFastList)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import TableRow from "TableRow" /* 5605 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 7873 */;
-import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10872 */;
-import UserRowDefault from "UserRow" /* 10873 */;
-import GroupDMRowDefault from "GroupDMRow" /* 10914 */;
-import ChannelRowDefault from "ChannelRow" /* 10917 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import TableRow from "TableRow" /* 5686 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 7975 */;
+import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 10999 */;
+import UserRowDefault from "UserRow" /* 11000 */;
+import GroupDMRowDefault from "GroupDMRow" /* 11044 */;
+import ChannelRowDefault from "ChannelRow" /* 11047 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -34,11 +34,11 @@ function PlaceholderSection() {
   return React5(View, {});
 }
 const View = fn(17).View;
-const UsersFastListConstants = fn(10218);
+const UsersFastListConstants = fn(10342);
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { sectionHeader: { flex: 1, overflow: "hidden", top: -1 * UsersFastListConstants.USERS_LIST_SECTION_BOTTOM_PADDING }, stickyHeader: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, list: null, emptySection: null, section: null, interactiveSection: null, titlePressable: null, titleRow: null, badgeWrapper: null, badge: null };
 let obj3 = { flex: 1, overflow: "hidden", top: -1 * UsersFastListConstants.USERS_LIST_SECTION_BOTTOM_PADDING };
 let obj4 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -147,7 +147,7 @@ let closure_16 = noop.memo(function UserSectionInner(stickyAt) {
   if (null != badge) {
     const obj7 = { style: tmp.badgeWrapper, children: null };
     const obj8 = { style: tmp.badge, value: badge };
-    obj7.children = React5(tmp3(1178).Badge, obj8);
+    obj7.children = React5(tmp3(1176).Badge, obj8);
     tmp12 = React5(View, obj7);
   }
   items3[1] = tmp12;
@@ -163,7 +163,7 @@ let closure_16 = noop.memo(function UserSectionInner(stickyAt) {
   let tmp18 = tmp11Result4;
   if (null != onTitlePress) {
     const obj10 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp11Result4 };
-    tmp18 = React5(tmp3(5123).PressableOpacity, obj10);
+    tmp18 = React5(tmp3(5204).PressableOpacity, obj10);
   }
   const obj11 = { style: memo1, children: null };
   const items5 = [tmp18, ];
@@ -171,8 +171,8 @@ let closure_16 = noop.memo(function UserSectionInner(stickyAt) {
   if (null != actionTitle) {
     const obj12 = { onPress: action, children: null };
     const obj13 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
-    obj12.children = React5(tmp3(4556).Text, obj13);
-    tmp21 = React5(tmp3(5123).PressableOpacity, obj12);
+    obj12.children = React5(tmp3(4632).Text, obj13);
+    tmp21 = React5(tmp3(5204).PressableOpacity, obj12);
   }
   items5[1] = tmp21;
   obj11.children = items5;
@@ -182,8 +182,8 @@ let closure_16 = noop.memo(function UserSectionInner(stickyAt) {
     const obj14 = { style: memo2, children: null };
     let tmp26 = !disableThemedGradient;
     if (!disableThemedGradient) {
-      const obj15 = { style: animatedStyle1, children: React5(tmp25(5125), { absolute: true, tall: true, wide: true, mix: true }) };
-      tmp26 = React5(tmp25(4296).View, obj15);
+      const obj15 = { style: animatedStyle1, children: React5(tmp25(5206), { absolute: true, tall: true, wide: true, mix: true }) };
+      tmp26 = React5(tmp25(4373).View, obj15);
     }
     const items6 = [tmp26, tmp11Result5];
     obj14.children = items6;

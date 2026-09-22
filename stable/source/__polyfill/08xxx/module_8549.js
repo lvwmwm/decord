@@ -1,11 +1,12 @@
 // Module ID: 8549
 // Function ID: 8550
-// Dependencies: [65]
+// Dependencies: [8550, 668]
 
 // Module 8549
-import module_65 from "module_65" /* 65 */;
+import baseAssignValue from "baseAssignValue" /* 668 */;
+import _mod8550 from "module_8550" /* 8550 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGRadialGradient", validAttributes: { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, fx: true, fy: true, cx: true, cy: true, rx: true, ry: true, gradient: true, gradientUnits: true, gradientTransform: true } };
 
-export default module_65.get("RNSVGRadialGradient", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default _mod8550((arg0, arg1, arg2) => {
+  baseAssignValue(arg0, arg2, arg1);
+});

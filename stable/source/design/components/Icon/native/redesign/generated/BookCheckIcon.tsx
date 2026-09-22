@@ -1,13 +1,13 @@
-// Module ID: 5075
-// Function ID: 5076
+// Module ID: 5156
+// Function ID: 5157
 // Name: BookCheckIcon
-// Dependencies: [19, 21, 576, 4261, 5061, 2]
+// Dependencies: [19, 21, 576, 4337, 5142, 2]
 // Exports: BookCheckIcon
 
-// Module 5075 (BookCheckIcon)
+// Module 5156 (BookCheckIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod5061 from "module_5061" /* 5061 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod5142 from "module_5142" /* 5142 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BookCheckIcon = function BookCheckIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5061, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5142, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

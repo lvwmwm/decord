@@ -1,9 +1,9 @@
 // Module ID: 3482
 // Function ID: 3483
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 3482
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/spatial_audio", scales: [1], hash: "6bc7a3c8d247122e749a7d0311c681e0", name: "SpatialAudio.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "5a4a83838a6fb88bb3f90f4ca0c64b4e", name: "ro.messages.5a4a83838a6fb88bb3f90f4ca0c64b4e.compiled.messages", type: "jsona" });

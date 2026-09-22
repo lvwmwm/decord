@@ -1,0 +1,49 @@
+// Module ID: 15557
+// Function ID: 15558
+// Name: ShowSpoilersSetting
+// Dependencies: [19, 8079, 1074, 1935, 1114, 11605, 2]
+
+// Module 15557 (ShowSpoilersSetting)
+import util from "util" /* 1114 */;
+import UserSettings from "UserSettings" /* 1935 */;
+import noop from "module_19" /* 19 */;
+
+require = fn;
+const SpoilerRenderSetting = fn(1074).SpoilerRenderSetting;
+const SettingBuilders = fn(11605);
+const radio = SettingBuilders.createRadio({
+  useTitle() {
+    const intl = util.intl;
+    return intl.string(util.t.QgwmVz);
+  },
+  parent: fn(8079).MobileUserSettings.CHAT,
+  useValue: fn(1935).RenderSpoilers.useSetting,
+  onValueChange: function onShowSpoilersChange(arg0) {
+    const RenderSpoilers = UserSettings.RenderSpoilers;
+    RenderSpoilers.updateSetting(arg0);
+  },
+  useOptions: function useShowSpoilersOptions() {
+    return noop.useMemo(() => {
+      const obj = { label: null, value: null };
+      const intl = util.intl;
+      obj.label = intl.string(util.t["KFH/me"]);
+      obj.value = constants.ON_CLICK;
+      const items = [obj, , ];
+      const obj2 = { label: null, value: null };
+      const intl2 = util.intl;
+      obj2.label = intl2.string(util.t.Pe1RbL);
+      obj2.value = constants.ALWAYS;
+      items[1] = obj2;
+      const obj3 = { label: null, value: null };
+      const intl3 = util.intl;
+      obj3.label = intl3.string(util.t.K5VTBE);
+      obj3.value = constants.IF_MODERATOR;
+      items[2] = obj3;
+      return items;
+    }, []);
+  }
+});
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/user_settings/defs/native/ShowSpoilersSetting.tsx");
+
+export default radio;

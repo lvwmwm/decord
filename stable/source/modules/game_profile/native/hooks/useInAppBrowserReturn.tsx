@@ -1,14 +1,14 @@
-// Module ID: 8693
-// Function ID: 8694
+// Module ID: 8810
+// Function ID: 8811
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 8688, 1116, 4525, 8686, 8692, 2]
+// Dependencies: [19, 8805, 1364, 4601, 8803, 8809, 2]
 // Exports: default
 
-// Module 8693 (useInAppBrowserReturn)
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8686 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8692 */;
+// Module 8810 (useInAppBrowserReturn)
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 8803 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8809 */;
 import noop from "module_19" /* 19 */;
-import GameProfileStore from "GameProfileStore" /* 8688 */;
+import GameProfileStore from "GameProfileStore" /* 8805 */;
 
 require = fn;
 const size = fn(2);
@@ -16,8 +16,8 @@ let result = size.fileFinishedImporting("modules/game_profile/native/hooks/useIn
 
 export default function useInAppBrowserReturn(gameId) {
   gameId = gameId.gameId;
-  const scrollOffsetRef = gameId.scrollOffsetRef;
-  const items = [gameId, scrollOffsetRef];
+  const scrollY = gameId.scrollY;
+  const items = [gameId, scrollY];
   const effect = noop.useEffect(() => {
     if (null != c0) {
       if (obj.isIOS()) {
@@ -26,7 +26,7 @@ export default function useInAppBrowserReturn(gameId) {
           if (!arg1) {
             if (arg0) {
               c0 = true;
-              const obj2 = { gameId, initialScrollOffset: scrollOffsetRef.current };
+              const obj2 = { gameId, initialScrollOffset: scrollY.get() };
               const result = GameProfileActionCreatorsDefault.setGameProfilePendingReturn(obj2);
             }
           }

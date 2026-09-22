@@ -1,9 +1,9 @@
-// Module ID: 12499
-// Function ID: 12500
+// Module ID: 12628
+// Function ID: 12629
 // Name: GuildPowerupsNotification
 // Dependencies: [2]
 
-// Module 12499 (GuildPowerupsNotification)
+// Module 12628 (GuildPowerupsNotification)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/constants/GuildPowerupsNotification.tsx");

@@ -1,13 +1,13 @@
 // Module ID: 1936
 // Function ID: 1937
 // Name: UserSettingsOverridesStore
-// Dependencies: [1221, 504, 510, 573, 2]
+// Dependencies: [1219, 504, 510, 573, 2]
 
 // Module 1936 (UserSettingsOverridesStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
 
 require = fn;
 function updateExistingSettings() {

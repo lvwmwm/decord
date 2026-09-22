@@ -1,21 +1,21 @@
-// Module ID: 10382
-// Function ID: 10383
+// Module ID: 10506
+// Function ID: 10507
 // Name: GIFPickerNoResults
-// Dependencies: [19, 17, 1074, 21, 4560, 576, 10288, 10322, 1114, 10326, 6627, 1178, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 576, 10412, 10446, 1114, 10450, 6728, 1176, 2]
 
-// Module 10382 (GIFPickerNoResults)
+// Module 10506 (GIFPickerNoResults)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
-import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10288 */;
-import SearchEmpty from "SearchEmpty" /* 10322 */;
-import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10326 */;
+import native from "native" /* 1176 */;
+import useExpressionPickerInsetsDefault from "useExpressionPickerInsets" /* 10412 */;
+import SearchEmpty from "SearchEmpty" /* 10446 */;
+import useModalDismissGuardRefreshControl from "useModalDismissGuardRefreshControl" /* 10450 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 fn(1074).GIFPickerResultTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { emptyStateContainer: { padding: 0, flex: 1 }, emptyStateBody: { color: nativeDefault.colors.TEXT_SUBTLE }, emptyStateImage: null };
 const obj3 = { color: nativeDefault.colors.TEXT_SUBTLE };
 obj.emptyStateImage = { marginBottom: nativeDefault.space.PX_8, marginTop: 0 };
@@ -40,7 +40,7 @@ export default noop.memo(function GIFPickerNoResults(inActionSheet) {
   }
   const modalDismissGuardRefreshControl = useModalDismissGuardRefreshControl.useModalDismissGuardRefreshControl();
   if (inActionSheet) {
-    let BottomSheetScrollView = tmp4(6627).BottomSheetScrollView;
+    let BottomSheetScrollView = tmp4(6728).BottomSheetScrollView;
   } else {
     BottomSheetScrollView = ScrollView;
   }

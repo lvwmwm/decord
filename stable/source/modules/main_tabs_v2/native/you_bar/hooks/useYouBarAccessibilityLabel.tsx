@@ -1,21 +1,21 @@
-// Module ID: 16369
-// Function ID: 16370
+// Module ID: 16463
+// Function ID: 16464
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [4582, 1957, 4199, 4600, 4209, 5279, 4579, 1074, 4404, 16370, 16371, 1935, 10885, 8166, 504, 10883, 10884, 10891, 1114, 10893, 2]
+// Dependencies: [4658, 1957, 4275, 4676, 4285, 5360, 4655, 1074, 4481, 16464, 16465, 1935, 11012, 8282, 504, 11010, 11011, 11018, 1114, 11020, 2]
 // Exports: useYouBarAccessibilityLabel
 
-// Module 16369 (useYouBarAccessibilityLabel)
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 10883 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 10884 */;
-import isGameActivityDefault from "isGameActivity" /* 10891 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 10893 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4582 */;
+// Module 16463 (useYouBarAccessibilityLabel)
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 11010 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 11011 */;
+import isGameActivityDefault from "isGameActivity" /* 11018 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 11020 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import PresenceStore from "PresenceStore" /* 4600 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5279 */;
-import VoiceStateStore from "VoiceStateStore" /* 4579 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import PresenceStore from "PresenceStore" /* 4676 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5360 */;
+import VoiceStateStore from "VoiceStateStore" /* 4655 */;
 
 const require = globalThis.__r;
 
@@ -26,12 +26,12 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarAccessibilityLabel.tsx");
 
 export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(stateFromStores) {
-  _require = id(4404).useName(stateFromStores);
+  _require = id(4481).useName(stateFromStores);
   id = undefined;
   if (stateFromStores != null) {
     id = stateFromStores.id;
   }
-  let obj = id(4404);
+  let obj = id(4481);
   dependencyMap = require("YouBarActivityStatusExperiment").useYouBarActivityStatusEnabled("YouBar");
   const obj2 = require("YouBarActivityStatusExperiment");
   const isYouBarGuildTagEnabled = require("YouBarGuildTagExperiment").useIsYouBarGuildTagEnabled("YouBar");
@@ -53,13 +53,13 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
     if (stateFromStores != null) {
       primaryGuild = stateFromStores.primaryGuild;
     }
-    const userPrimaryGuild = tmp3(8166).getUserPrimaryGuild(primaryGuild);
+    const userPrimaryGuild = tmp3(8282).getUserPrimaryGuild(primaryGuild);
     let tag;
     if (userPrimaryGuild != null) {
       tag = userPrimaryGuild.tag;
     }
     tmp8 = tag;
-    const tmp3Result3 = tmp3(8166);
+    const tmp3Result3 = tmp3(8282);
   }
   tag = tmp8;
   const tmp3Result = require("useGameMentionsAsPlainText");
@@ -136,8 +136,8 @@ export const useYouBarAccessibilityLabel = function useYouBarAccessibilityLabel(
         text = closure_3;
       }
       if (text == null) {
-        text = tmp4(4404).humanizeStatus(status);
-        const tmp4Result = tmp4(4404);
+        text = tmp4(4481).humanizeStatus(status);
+        const tmp4Result = tmp4(4481);
       }
       const items1 = [tmp, tag, text];
       const found2 = items1.filter((item) => null != item);

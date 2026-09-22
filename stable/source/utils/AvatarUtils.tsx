@@ -1,7 +1,7 @@
 // Module ID: 1396
 // Function ID: 1397
 // Name: AvatarUtils
-// Dependencies: [1074, 1397, 1399, 1115, 1430, 1471, 1879, 1880, 14, 1881, 1883, 1884, 11, 1367, 2]
+// Dependencies: [1074, 1397, 1399, 1363, 1430, 1471, 1879, 1880, 14, 1881, 1883, 1884, 11, 1367, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
 // Module 1396 (AvatarUtils)
@@ -16,7 +16,7 @@ import NumberUtils from "NumberUtils" /* 1880 */;
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 1881 */;
 import _modDef1884 from "module_1884" /* 1884 */;
 import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import size from "module_2" /* 2 */;
 
 function getAvatarURL(canAnimate) {

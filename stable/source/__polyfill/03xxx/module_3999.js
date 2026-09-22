@@ -1,20 +1,20 @@
 // Module ID: 3999
 // Function ID: 4000
-// Dependencies: [3811, 3651]
+// Dependencies: [3725, 3726]
 // Exports: default
 
 // Module 3999
-import startOfISOWeekYear_mod from "startOfISOWeekYear" /* 3811 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let startOfISOWeekYear = startOfISOWeekYear_mod;
-if (!startOfISOWeekYear) {
-  const obj = { default: startOfISOWeekYear };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = startOfISOWeekYear;
+  tmp3 = _typeof;
 }
-startOfISOWeekYear = tmp3;
+_typeof = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,10 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isSameISOWeekYear(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = startOfISOWeekYear.default(arg0);
-  const time = defaultResult1.getTime();
-  return time === startOfISOWeekYear.default(arg1).getTime();
+export default function getMilliseconds(arg0) {
+  requiredArgs.default(1, arguments);
+  return _typeof.default(arg0).getMilliseconds();
 };
 export default exports.default;

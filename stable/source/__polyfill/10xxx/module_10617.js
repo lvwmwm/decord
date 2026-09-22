@@ -1,10 +1,10 @@
 // Module ID: 10617
 // Function ID: 10618
-// Dependencies: [41, 42, 93, 95, 98, 10461, 10443, 10444]
+// Dependencies: [41, 42, 93, 95, 98, 10585, 10567, 10566, 10568]
 
 // Module 10617
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10444 */;
-import now from "now" /* 10461 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10568 */;
+import now from "now" /* 10585 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -12,7 +12,7 @@ import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
 let self = this;
-const ITCasualDateParser = require;
+const FRCasualDateParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -95,13 +95,12 @@ if (self2) {
     }
     const _Object3 = Object;
     let closure_9 = fn(now);
-    const re10 = /(ora|oggi|stasera|questa sera|domani|dmn|ieri\s*sera)(?=\W|$)/i;
-    class ITCasualDateParser {
+    class FRCasualDateParser {
       constructor() {
         self = this;
-        tmp = c2(this, ITCasualDateParser);
+        tmp = c2(this, FRCasualDateParser);
         tmp2 = closure_4;
-        obj = closure_4(ITCasualDateParser);
+        obj = closure_4(FRCasualDateParser);
         tmp3 = closure_3;
         if (hasOwnProperty()) {
           tmp7 = globalThis;
@@ -116,11 +115,11 @@ if (self2) {
         return tmp3(self, constructResult);
       }
     }
-    _inherits(ITCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+    _inherits(FRCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
     const entry = {
       key: "innerPattern",
       value: function innerPattern(arg0) {
-            return re10;
+            return /(maintenant|aujourd'hui|demain|hier|cette\s*nuit|la\s*veille)(?=\W|$)/i;
           }
     };
     let items = [entry, ];
@@ -130,40 +129,32 @@ if (self2) {
             refDate = refDate.refDate;
             const str2 = arg1[0].toLowerCase();
             const parsingComponents = refDate.createParsingComponents();
-            if ("ora" === str2) {
+            if ("maintenant" === str2) {
               return closure_9.now(refDate.reference);
-            } else if ("oggi" === str2) {
+            } else if ("aujourd'hui" === str2) {
               return closure_9.today(refDate.reference);
-            } else if ("ieri" === str2) {
+            } else if ("hier" === str2) {
               return closure_9.yesterday(refDate.reference);
-            } else {
-              if ("domani" !== str2) {
-                if ("dmn" !== str2) {
-                  if ("stasera" !== str2) {
-                    if ("questa sera" !== str2) {
-                      if (str2.match(/ieri\s*sera/)) {
-                        let tmp = refDate;
-                        if (refDate.getHours() > 6) {
-                          const _Date = Date;
-                          const date = new Date(refDate.getTime());
-                          date.setDate(date.getDate() - 1);
-                          tmp = date;
-                        }
-                        ITCasualDateParser(10443).assignSimilarDate(parsingComponents, tmp);
-                        parsingComponents.imply("hour", 0);
-                      }
-                      return parsingComponents;
-                    }
-                  }
-                  return closure_9.tonight(refDate.reference);
-                }
-              }
+            } else if ("demain" === str2) {
               return closure_9.tomorrow(refDate.reference);
+            } else {
+              if (str2.match(/cette\s*nuit/)) {
+                FRCasualDateParser(10567).assignSimilarDate(parsingComponents, refDate);
+                parsingComponents.imply("hour", 22);
+                parsingComponents.imply("meridiem", FRCasualDateParser(10566).Meridiem.PM);
+              } else if (str2.match(/la\s*veille/)) {
+                const _Date = Date;
+                const date = new Date(refDate.getTime());
+                date.setDate(date.getDate() - 1);
+                FRCasualDateParser(10567).assignSimilarDate(parsingComponents, date);
+                parsingComponents.imply("hour", 0);
+              }
+              return parsingComponents;
             }
           }
     };
     items[1] = entry1;
-    exports.default = _createClass(ITCasualDateParser, items);
+    exports.default = _createClass(FRCasualDateParser, items);
   } else {
     const _Object2 = Object;
   }

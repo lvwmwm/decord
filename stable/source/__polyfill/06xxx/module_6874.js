@@ -1,15 +1,9 @@
 // Module ID: 6874
 // Function ID: 6875
-// Dependencies: [6872]
-// Exports: getInvertedTransformStyle
+// Dependencies: [6875]
 
 // Module 6874
-import PlatformConfig2 from "PlatformConfig" /* 6872 */;
+import _modDef6875 from "module_6875" /* 6875 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const getInvertedTransformStyle = function getInvertedTransformStyle(horizontal) {
-  const PlatformConfig = PlatformConfig2.PlatformConfig;
-  return horizontal ? PlatformConfig.invertedTransformStyleHorizontal : PlatformConfig.invertedTransformStyle;
-};
+export default _modDef6875;

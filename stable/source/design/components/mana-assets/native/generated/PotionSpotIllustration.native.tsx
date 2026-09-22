@@ -1,13 +1,13 @@
-// Module ID: 6353
-// Function ID: 6354
+// Module ID: 6454
+// Function ID: 6455
 // Name: PotionSpotIllustration
-// Dependencies: [21, 5587, 6354, 2]
+// Dependencies: [21, 5668, 6455, 2]
 // Exports: PotionSpotIllustration
 
-// Module 6353 (PotionSpotIllustration)
+// Module 6454 (PotionSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6354 from "module_6354" /* 6354 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6455 from "module_6455" /* 6455 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const PotionSpotIllustration = function PotionSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6354 };
+  const obj2 = { uri: _modDef6455 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

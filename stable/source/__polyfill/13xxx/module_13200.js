@@ -1,9 +1,0 @@
-// Module ID: 13200
-// Function ID: 13201
-// Dependencies: [1122]
-
-// Module 13200
-import registerAsset from "module_1122" /* 1122 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 144, height: 150, scales: [1], hash: "8ea6c899915dc4dfb91fde69307aaf42", name: "chest_idle", type: "png" });

@@ -1,11 +1,11 @@
-// Module ID: 6614
-// Function ID: 6615
+// Module ID: 6715
+// Function ID: 6716
 // Name: useTextField
-// Dependencies: [32, 19, 4971, 2]
+// Dependencies: [32, 19, 5052, 2]
 // Exports: useTextField, useTextFieldState
 
-// Module 6614 (useTextField)
-import setAccessibilityFocus from "setAccessibilityFocus" /* 4971 */;
+// Module 6715 (useTextField)
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5052 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

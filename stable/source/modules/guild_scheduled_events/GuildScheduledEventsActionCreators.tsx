@@ -1,17 +1,17 @@
-// Module ID: 9709
-// Function ID: 9710
+// Module ID: 9833
+// Function ID: 9834
 // Name: GuildScheduledEventsActionCreators
-// Dependencies: [5, 502, 7526, 1963, 1074, 1272, 5411, 1100, 9710, 4802, 573, 9712, 11, 2]
+// Dependencies: [5, 502, 7629, 1963, 1074, 1270, 5492, 1100, 9834, 4878, 573, 9836, 11, 2]
 
-// Module 9709 (GuildScheduledEventsActionCreators)
+// Module 9833 (GuildScheduledEventsActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1100 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5411 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9710 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5492 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9834 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7526 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7629 */;
 
 require = fn;
 const GuildScheduledEventsConstants = fn(1963);
@@ -67,7 +67,7 @@ export default {
     closure_0 = arg0;
     closure_1 = arg1;
     return (async () => {
-      await tmp5(4802).httpGetWithCountryCodeQuery({ url: closure_1_10.GUILD_EVENT(tmp5, tmp2), rejectWithError: tmp5(1272).rejectWithMigratedError() });
+      await tmp5(4878).httpGetWithCountryCodeQuery({ url: closure_1_10.GUILD_EVENT(tmp5, tmp2), rejectWithError: tmp5(1270).rejectWithMigratedError() });
       const body = arg1.body;
       tmp2(573).dispatch({ type: "FETCH_GUILD_EVENT", guildScheduledEvent: body });
       return body;
@@ -76,7 +76,7 @@ export default {
   fetchGuildEventsForGuild(guild_id) {
     closure_0 = guild_id;
     return (async () => {
-      await tmp5(4802).httpGetWithCountryCodeQuery({ url: closure_1_10.GUILD_EVENTS_FOR_GUILD(tmp5), rejectWithError: tmp5(1272).rejectWithMigratedError() });
+      await tmp5(4878).httpGetWithCountryCodeQuery({ url: closure_1_10.GUILD_EVENTS_FOR_GUILD(tmp5), rejectWithError: tmp5(1270).rejectWithMigratedError() });
       const body = arg1.body;
       tmp2(573).dispatch({ type: "FETCH_GUILD_EVENTS_FOR_GUILD", guildId: closure_129_0, guildScheduledEvents: body });
       return body;
@@ -134,13 +134,13 @@ export default {
               return obj3;
             } else {
               let body;
-              const HTTP = tmp5(1272).HTTP;
+              const HTTP = tmp5(1270).HTTP;
               const request = { url: constants.USER_GUILD_EVENTS, query: null, rejectWithError: null };
               const obj4 = { guild_ids: null };
               const items = [tmp5];
               obj4.guild_ids = items;
               request.query = obj4;
-              request.rejectWithError = tmp5(1272).rejectWithMigratedError();
+              request.rejectWithError = tmp5(1270).rejectWithMigratedError();
               dependencyMap = 1;
               c3 = 1;
               const obj5 = { value: HTTP.get(request), done: false };
@@ -478,11 +478,11 @@ export default {
               closure_128_0 = undefined;
               if (null != tmp5) {
                 if (null != closure_2) {
-                  const HTTP = tmp5(1272).HTTP;
+                  const HTTP = tmp5(1270).HTTP;
                   const request = { url: closure_1_10.GUILD_EVENT_USERS(closure_2, tmp5, tmp2), query: null, rejectWithError: null };
                   const obj4 = { limit, with_member: true };
                   request.query = obj4;
-                  request.rejectWithError = tmp5(1272).rejectWithMigratedError();
+                  request.rejectWithError = tmp5(1270).rejectWithMigratedError();
                   dependencyMap = 1;
                   c3 = 1;
                   const obj5 = { value: HTTP.get(request), done: false };

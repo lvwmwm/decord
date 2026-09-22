@@ -1,23 +1,23 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12516
+// Function ID: 12517
 // Name: DiceRollBar
-// Dependencies: [19, 17, 4552, 11963, 21, 4560, 576, 504, 4296, 4561, 1178, 12388, 8840, 4556, 2]
+// Dependencies: [19, 17, 4628, 12092, 21, 4636, 576, 504, 4373, 4637, 1176, 12517, 8959, 4632, 2]
 // Exports: default
 
-// Module 12387 (DiceRollBar)
+// Module 12516 (DiceRollBar)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import timing from "timing" /* 4561 */;
+import native from "native" /* 1176 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import timing from "timing" /* 4637 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 
 require = fn;
 const View = fn(17).View;
-const useDiceRollState = fn(11963).useDiceRollState;
+const useDiceRollState = fn(12092).useDiceRollState;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { animatedContainer: { overflow: "hidden" }, container: { flexDirection: "row", alignItems: "center", paddingHorizontal: 16, paddingVertical: 8, gap: 12, borderTopWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_9 = createStyles.createStyles(obj2);
 const __initData = { code: "function DiceRollBarTsx1(){const{useReducedMotion,height,opacity,withTiming,ANIMATION_DURATION_MS,DECELERATED_EASING}=this.__closure;if(useReducedMotion){return{height:height.get(),opacity:opacity.get()};}return{height:withTiming(height.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING}),opacity:withTiming(opacity.get(),{duration:ANIMATION_DURATION_MS,easing:DECELERATED_EASING})};}" };

@@ -1,10 +1,10 @@
-// Module ID: 6599
-// Function ID: 6600
+// Module ID: 6700
+// Function ID: 6701
 // Name: WebAuthnUtils
 // Dependencies: [2]
 // Exports: encodeUserIdForWebAuthn
 
-// Module 6599 (WebAuthnUtils)
+// Module 6700 (WebAuthnUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/webauthn/WebAuthnUtils.tsx");

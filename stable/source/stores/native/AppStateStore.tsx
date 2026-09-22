@@ -1,7 +1,7 @@
 // Module ID: 1895
 // Function ID: 1896
 // Name: AppStateStore
-// Dependencies: [17, 1074, 504, 1242, 1896, 573, 2]
+// Dependencies: [17, 1074, 504, 1240, 1896, 573, 2]
 
 // Module 1895 (AppStateStore)
 import _mod17 from "module_17" /* 17 */;
@@ -25,7 +25,7 @@ prototype["getLastActiveTime"] = function getLastActiveTime() {
   return closure_2;
 };
 AppStateStore.displayName = "AppStateStore";
-asyncRequireImpl(1242, dependencyMap.paths).then((addExtraAnalyticsDecorator) => {
+asyncRequireImpl(1240, dependencyMap.paths).then((addExtraAnalyticsDecorator) => {
   const result = addExtraAnalyticsDecorator.addExtraAnalyticsDecorator((arg0) => {
     arg0.client_app_state = client_app_state;
   });

@@ -1,17 +1,17 @@
-// Module ID: 10749
-// Function ID: 10750
+// Module ID: 10873
+// Function ID: 10874
 // Name: PremiumGiftingIntentActionCreators
-// Dependencies: [7659, 502, 4781, 1373, 1074, 1272, 573, 1232, 1242, 2]
+// Dependencies: [7761, 502, 4857, 1373, 1074, 1270, 573, 1230, 1240, 2]
 // Exports: fetchAndReconcileGiftIntentDismissals, logFriendsListGiftIntentsShown, logGiftIntentFlowPurchasedGift, logGiftIntentMessageDismissed, logMessageGiftIntentShown
 
-// Module 10749 (PremiumGiftingIntentActionCreators)
+// Module 10873 (PremiumGiftingIntentActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SentryUtilsDefault from "SentryUtils" /* 1232 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7659 */;
+import SentryUtilsDefault from "SentryUtils" /* 1230 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7761 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 4781 */;
+import MessageStore from "MessageStore" /* 4857 */;
 
 const require = globalThis.__r;
 
@@ -39,8 +39,8 @@ export const fetchAndReconcileGiftIntentDismissals = function fetchAndReconcileG
       DispatcherDefault.dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
     }
   }, (arg0) => {
-    closure_1(1232).captureException(arg0, { tags: { feature: "gift_intent" } });
-    const obj = closure_1(1232);
+    closure_1(1230).captureException(arg0, { tags: { feature: "gift_intent" } });
+    const obj = closure_1(1230);
     closure_1(573).dispatch({ type: "GIFT_INTENT_DISMISSALS_FETCH_FAILURE" });
   });
 };

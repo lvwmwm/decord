@@ -1,9 +1,9 @@
-// Module ID: 4477
-// Function ID: 4478
+// Module ID: 4553
+// Function ID: 4554
 // Name: ExperimentConstants
 // Dependencies: [2]
 
-// Module 4477 (ExperimentConstants)
+// Module 4553 (ExperimentConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/experiments/ExperimentConstants.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 15894
-// Function ID: 15895
+// Module ID: 15984
+// Function ID: 15985
 // Name: ParentalControlsSensitiveContentFiltersScreen
-// Dependencies: [19, 7976, 21, 1114, 11473, 14692, 2]
+// Dependencies: [19, 8079, 21, 1114, 11605, 14776, 2]
 // Exports: default
 
-// Module 15894 (ParentalControlsSensitiveContentFiltersScreen)
+// Module 15984 (ParentalControlsSensitiveContentFiltersScreen)
 import util from "util" /* 1114 */;
-import SettingBuilders from "SettingBuilders" /* 11473 */;
-import SettingLayoutDefault from "SettingLayout" /* 14692 */;
+import SettingBuilders from "SettingBuilders" /* 11605 */;
+import SettingLayoutDefault from "SettingLayout" /* 14776 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const MobileUserSettings = fn(7976).MobileUserSettings;
+const MobileUserSettings = fn(8079).MobileUserSettings;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/family_center/native/ParentalControlsSensitiveContentFiltersScreen.tsx");

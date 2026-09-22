@@ -1,9 +1,9 @@
 // Module ID: 13378
 // Function ID: 13379
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 13378
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium_marketing/native/images", width: 366.5, height: 180, scales: [2, 3], hash: "36372d934592de3c10481ad82af6bc9f", name: "img_longer_messages", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_channel/native/images", width: 284, height: 189, scales: [2, 3], hash: "8c2bdea51e6ab077ef729f3b6fe02c7a", name: "asset_blurred_media_post_preview", type: "png" });

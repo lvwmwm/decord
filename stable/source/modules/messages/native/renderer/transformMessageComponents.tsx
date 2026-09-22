@@ -1,25 +1,25 @@
-// Module ID: 8111
-// Function ID: 8112
+// Module ID: 8227
+// Function ID: 8228
 // Name: transformMessageComponents
-// Dependencies: [109, 17, 4786, 8112, 7889, 1369, 1894, 4785, 1114, 8113, 8120, 8121, 8123, 8126, 8127, 4773, 5135, 8128, 8130, 7952, 4710, 1384, 4791, 8109, 8108, 1365, 1437, 1090, 4550, 8144, 1116, 4213, 2]
+// Dependencies: [109, 17, 4862, 8228, 7992, 1369, 1894, 4861, 1114, 8229, 8236, 8237, 8239, 8242, 8243, 4849, 5216, 8244, 8246, 8055, 4786, 1384, 4867, 8225, 8224, 1365, 1437, 1090, 4626, 8260, 1364, 4289, 2]
 // Exports: default, getUnfurledMediaItemType
 
-// Module 8111 (transformMessageComponents)
+// Module 8227 (transformMessageComponents)
 import DurationsDefault from "Durations" /* 1090 */;
 import URLUtilsDefault from "URLUtils" /* 1365 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4710 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 4785 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8109 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8127 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4786 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 4861 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8225 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8243 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import priv from "priv" /* 1437 */;
 
 const util = tmp4(1114);
 const FlagUtils = tmp4(1384);
-const AgeVerificationUtils = tmp4(4773);
-const MediaTypes = tmp4(4791);
-const sanitizeMediaDimension = tmp4(8108);
-const ExplicitMediaUtils = tmp4(8126);
+const AgeVerificationUtils = tmp4(4849);
+const MediaTypes = tmp4(4867);
+const sanitizeMediaDimension = tmp4(8224);
+const ExplicitMediaUtils = tmp4(8242);
 require = fn;
 function transformToRowGeneratedComponent(message, accessory) {
   _require = message;
@@ -105,13 +105,13 @@ function transformToRowGeneratedComponent(message, accessory) {
         if (tmp(tmp2[6]).ComponentType.MENTIONABLE_SELECT !== type) {
           if (tmp(tmp2[6]).ComponentType.CHANNEL_SELECT !== type) {
             if (tmp(tmp2[6]).ComponentType.SECTION === type) {
-              const tmp70 = transformToRowGeneratedComponent(message, accessory.accessory);
-              let tmp72 = null;
-              if (null != tmp70) {
-                tmp72 = tmp70;
-              }
+              const tmp71 = transformToRowGeneratedComponent(message, accessory.accessory);
               let tmp73 = null;
-              if (null != tmp72) {
+              if (null != tmp71) {
+                tmp73 = tmp71;
+              }
+              let tmp74 = null;
+              if (null != tmp73) {
                 let obj6 = {};
                 const merged3 = Object.assign(accessory);
                 const components1 = accessory.components;
@@ -124,12 +124,12 @@ function transformToRowGeneratedComponent(message, accessory) {
                   return tmp2;
                 });
                 obj6.components = mapped2.filter(tmp(tmp2[5]).isNotNullish);
-                obj6.accessory = tmp72;
+                obj6.accessory = tmp73;
                 obj6.errorText = tmp(tmp2[7]).getLayoutComponentErrorText(interaction, message, accessory);
-                tmp73 = obj6;
+                tmp74 = obj6;
                 const tmpResult32 = tmp(tmp2[7]);
               }
-              return tmp73;
+              return tmp74;
             } else if (tmp(tmp2[6]).ComponentType.TEXT_DISPLAY === type) {
               const obj7 = {};
               const merged4 = Object.assign(accessory);
@@ -194,11 +194,11 @@ function transformToRowGeneratedComponent(message, accessory) {
                     obj11.isObscure = isObscured2;
                     obj11.isObscureAwaitingScan = obscureAwaitingScan2;
                     obj11.obscureDescription = obscureDescription2;
-                    let tmp55 = isObscured2;
+                    let tmp56 = isObscured2;
                     if (isObscured2) {
-                      tmp55 = shouldAgeVerify;
+                      tmp56 = shouldAgeVerify;
                     }
-                    obj11.verifyAge = tmp55;
+                    obj11.verifyAge = tmp56;
                     obj11.obscureHideControls = isVerifiedTeenResult;
                     obj11.obscureIsOpaque = isObscured2;
                     let intl3 = tmp(tmp2[8]).intl;
@@ -219,12 +219,12 @@ function transformToRowGeneratedComponent(message, accessory) {
                     if (null != height) {
                       if (height > 0) {
                         if (obj.isImageContentType(contentType)) {
-                          let VISUAL_PLACEHOLDER = tmp(8127).MediaGalleryItemType.IMAGE;
+                          let VISUAL_PLACEHOLDER = tmp(8243).MediaGalleryItemType.IMAGE;
                         } else {
                           if (tmpResult.isVideoContentType(contentType)) {
-                            VISUAL_PLACEHOLDER = tmp(8127).MediaGalleryItemType.VIDEO;
+                            VISUAL_PLACEHOLDER = tmp(8243).MediaGalleryItemType.VIDEO;
                           }
-                          tmpResult = tmp(4710);
+                          tmpResult = tmp(4786);
                         }
                         obj = MediaFormatTesters;
                       }
@@ -314,14 +314,14 @@ function transformToRowGeneratedComponent(message, accessory) {
                 VISUAL_PLACEHOLDER = RowGeneratorTypes.MediaGalleryItemType.VISUAL_PLACEHOLDER;
               });
               const found2 = mapped3.filter(tmp(tmp2[5]).isNotNullish);
-              let tmp44 = null;
+              let tmp45 = null;
               if (0 !== found2.length) {
                 const obj13 = {};
                 const merged7 = Object.assign(accessory);
                 obj13.items = found2;
-                tmp44 = obj13;
+                tmp45 = obj13;
               }
-              return tmp44;
+              return tmp45;
             } else if (tmp(tmp2[6]).ComponentType.FILE === type) {
               const obj14 = { type: "file", mediaItem: null, isSpoilered: null, isAuthorBot: null, shouldObscureSpoiler: null, shouldAgeVerify: null, enabledContentHarmTypeFlags: null };
               ({ file: obj16.mediaItem, spoiler } = accessory);
@@ -363,11 +363,11 @@ function transformToRowGeneratedComponent(message, accessory) {
               obj15.isObscure = isObscured;
               obj15.isObscureAwaitingScan = obscureAwaitingScan;
               obj15.obscureDescription = obscureDescription;
-              let tmp43 = isObscured;
+              let tmp44 = isObscured;
               if (isObscured) {
-                tmp43 = shouldAgeVerify;
+                tmp44 = shouldAgeVerify;
               }
-              obj15.verifyAge = tmp43;
+              obj15.verifyAge = tmp44;
               obj15.obscureHideControls = isVerifiedTeenResult1;
               obj15.obscureIsOpaque = isObscured;
               return obj15;
@@ -394,14 +394,14 @@ function transformToRowGeneratedComponent(message, accessory) {
                 return tmp2;
               });
               obj20.components = mapped4.filter(tmp(tmp2[5]).isNotNullish);
-              let tmp30 = null;
+              let tmp31 = null;
               if (null != accessory.accentColor) {
-                tmp30 = processColor(accessory.accentColor);
+                tmp31 = processColor(accessory.accentColor);
               }
-              obj20.accentColor = tmp30;
-              obj20.isSpoiler = accessory.spoiler;
+              obj20.accentColor = tmp31;
+              obj20.isSpoiler = accessory.spoiler && shouldObscureSpoiler;
               let stringResult = null;
-              if (accessory.spoiler) {
+              if (accessory.spoiler && shouldObscureSpoiler) {
                 let intl = tmp(tmp2[8]).intl;
                 stringResult = intl.string(tmp(tmp2[8]).t.C8ci33);
               }
@@ -530,12 +530,12 @@ function transformUnfurledMediaItem(media, shouldShowMedia) {
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            let VISUAL_PLACEHOLDER = tmp(8127).MediaGalleryItemType.IMAGE;
+            let VISUAL_PLACEHOLDER = tmp(8243).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              VISUAL_PLACEHOLDER = tmp(8127).MediaGalleryItemType.VIDEO;
+              VISUAL_PLACEHOLDER = tmp(8243).MediaGalleryItemType.VIDEO;
             }
-            tmpResult = tmp(4710);
+            tmpResult = tmp(4786);
           }
           obj = MediaFormatTesters;
         }
@@ -570,8 +570,8 @@ function transformUnfurledMediaItem(media, shouldShowMedia) {
 }
 let closure_3 = ["checkpointData"];
 const processColor = fn(17).processColor;
-const CheckpointVersions = fn(4786).CheckpointVersions;
-let closure_7 = fn(8112).TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
+const CheckpointVersions = fn(4862).CheckpointVersions;
+let closure_7 = fn(8228).TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
 let obj = { max: Infinity, maxAge: null, updateAgeOnGet: true };
 obj.maxAge = 15 * DurationsDefault.Millis.MINUTE;
 const importDefaultResult1 = new priv(obj);
@@ -579,7 +579,7 @@ let size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/transformMessageComponents.tsx");
 
 export default function transformMessageComponents(message, arr) {
-  const obj = { type: "textDisplayComponent", parserState: obj3(7889).getInitialParserStateFromMessage(message.message, closure_7) };
+  const obj = { type: "textDisplayComponent", parserState: obj3(7992).getInitialParserStateFromMessage(message.message, closure_7) };
   obj3 = {};
   const merged = Object.assign(message);
   obj3.markdownConfigs = { textDisplayComponent: obj };
@@ -593,12 +593,12 @@ export const getUnfurledMediaItemType = function getUnfurledMediaItemType(arg0) 
       if (null != height) {
         if (height > 0) {
           if (obj.isImageContentType(contentType)) {
-            return tmp(8127).MediaGalleryItemType.IMAGE;
+            return tmp(8243).MediaGalleryItemType.IMAGE;
           } else {
             if (tmpResult.isVideoContentType(contentType)) {
-              return tmp(8127).MediaGalleryItemType.VIDEO;
+              return tmp(8243).MediaGalleryItemType.VIDEO;
             }
-            tmpResult = tmp(4710);
+            tmpResult = tmp(4786);
           }
           obj = MediaFormatTesters;
         }

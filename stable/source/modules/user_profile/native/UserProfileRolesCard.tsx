@@ -1,16 +1,17 @@
-// Module ID: 7185
-// Function ID: 7186
+// Module ID: 7288
+// Function ID: 7289
 // Name: UserProfileRolesCard
-// Dependencies: [19, 17, 2021, 2015, 1074, 21, 4560, 576, 7186, 1935, 7189, 7190, 4258, 1114, 7187, 7195, 7204, 4556, 5123, 504, 7206, 7207, 2]
+// Dependencies: [19, 17, 2021, 2015, 1074, 21, 4636, 576, 7289, 1935, 7291, 7292, 4334, 1114, 7290, 7297, 7306, 4632, 7308, 5204, 504, 7309, 7310, 2]
 // Exports: default
 
-// Module 7185 (UserProfileRolesCard)
+// Module 7288 (UserProfileRolesCard)
 import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4258 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import ClipboardUtils from "ClipboardUtils" /* 7190 */;
-import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7204 */;
-import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7206 */;
+import ToastUtils from "ToastUtils" /* 4334 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import ClipboardUtils from "ClipboardUtils" /* 7292 */;
+import VerifiedRoleIconDefault from "VerifiedRoleIcon" /* 7306 */;
+import RoleIconDefault from "RoleIcon" /* 7308 */;
+import UserProfileRoleUtils from "UserProfileRoleUtils" /* 7309 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 import GuildRoleStore from "GuildRoleStore" /* 2015 */;
@@ -54,8 +55,8 @@ class RoleItem {
     tmp5 = closure_2;
     obj = role(closure_2[8]);
     obj1 = { guildId, roleId: role.id, size: 12 };
-    roleIcon = obj.useRoleIcon(obj1);
-    closure_4 = roleIcon;
+    roleIconProps = obj.useRoleIconProps(obj1);
+    closure_4 = roleIconProps;
     tags = role.tags;
     guild_connections = undefined;
     if (tags != null) {
@@ -76,10 +77,15 @@ class RoleItem {
         tmp3Result = tmp3(RoleDot, obj);
         tmp8 = tmp3;
       }
-      const obj3 = { children: null };
-      const items = [tmp3Result, tmp8(Text_Text.Text, { variant: "text-xs/medium", children: name }), roleIcon];
-      obj3.children = items;
-      return closure_2_11(closure_2_10, obj3);
+      const children = [tmp3Result, tmp8(Text_Text.Text, { variant: "text-xs/medium", children: name }), ];
+      let tmp8Result = null;
+      if (null != roleIconProps) {
+        const obj4 = {};
+        const merged = Object.assign(tmp16);
+        tmp8Result = tmp8(RoleIconDefault, obj4);
+      }
+      children[2] = tmp8Result;
+      return closure_2_11(closure_2_10, { children });
     };
     closure_5 = undefined !== guild_connections;
     DeveloperMode = tmp4(tmp5[9]).DeveloperMode;
@@ -91,7 +97,7 @@ class RoleItem {
     items1 = [, , ];
     items1[0] = role;
     items1[1] = name;
-    items1[2] = roleIcon;
+    items1[2] = roleIconProps;
     callback = colorString.useCallback(() => {
       ClipboardUtils.copy(role.id);
       ToastUtils.roleIdCopied(name);
@@ -113,7 +119,7 @@ class RoleItem {
       obj6.style = tmp.role;
       num3 = 0;
       obj6.children = renderContent();
-      tmp11Result = tmp11(tmp4(tmp5[18]).PressableHighlight, obj6);
+      tmp11Result = tmp11(tmp4(tmp5[19]).PressableHighlight, obj6);
     } else {
       tmp12 = closure_4;
       obj7 = { style: null, children: null };
@@ -147,7 +153,7 @@ const Constants = fn(1074);
 ({ DEFAULT_ROLE_COLOR_HEX: closure_7, MAX_VISUAL_ROLE_LENGTH: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { roleContainer: { flexDirection: "row", gap: 8, flexWrap: "wrap" }, role: { flexDirection: "row", alignItems: "center", columnGap: 4, padding: 6, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.sm }, roleDot: null };
 let size = { borderRadius: nativeDefault.radii.round, height: 12, width: 12 };
 obj2.roleDot = size;
@@ -176,8 +182,8 @@ export default function UserProfileRolesCard(userId) {
     obj2.style = userId.style;
     const obj3 = { guildId, guildMemberRoleIds: roles };
     obj2.children = closure_9(RolesList, obj3);
-    tmp4 = closure_9(guildId(7207), obj2);
-    const tmp7 = guildId(7207);
+    tmp4 = closure_9(guildId(7310), obj2);
+    const tmp7 = guildId(7310);
   }
   return tmp4;
 };

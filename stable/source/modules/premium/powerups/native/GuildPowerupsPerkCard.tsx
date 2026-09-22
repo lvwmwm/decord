@@ -1,25 +1,25 @@
-// Module ID: 12575
-// Function ID: 12576
+// Module ID: 12704
+// Function ID: 12705
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4560, 576, 4495, 4411, 8096, 12572, 12527, 4987, 4556, 12528, 1178, 1114, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 4571, 4488, 7083, 12701, 12656, 5068, 4632, 12657, 1176, 1114, 2]
 // Exports: default
 
-// Module 12575 (GuildPowerupsPerkCard)
+// Module 12704 (GuildPowerupsPerkCard)
 import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4411 */;
-import useThemeDefault from "useTheme" /* 4495 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 8096 */;
-import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12528 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12572 */;
+import shared from "shared" /* 4488 */;
+import useThemeDefault from "useTheme" /* 4571 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7083 */;
+import GuildPowerupsCardFooter from "GuildPowerupsCardFooter" /* 12657 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 12701 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_16 }, card: { padding: 0, overflow: "hidden" }, contentContainer: null, imageContainer: null, gradient: null, headerContainer: null, badge: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_16 };
 obj2.contentContainer = { gap: nativeDefault.space.PX_16, padding: nativeDefault.space.PX_16 };
@@ -56,8 +56,8 @@ export default function GuildPowerupsPerkCard(arg0) {
       imageUrl = "";
     }
     const obj5 = { imageUrl, isAnimated: isImageAnimated };
-    riveComponent = React4(tmp3(12527), obj5);
-    const tmp3Result2 = tmp3(12527);
+    riveComponent = React4(tmp3(12656), obj5);
+    const tmp3Result2 = tmp3(12656);
   }
   const items1 = [riveComponent, React4(LinearGradientDefault, { colors: tmp9, style: tmp2.gradient })];
   obj4.children = items1;
@@ -95,7 +95,7 @@ export default function GuildPowerupsPerkCard(arg0) {
     const intl = tmp6(1114).intl;
     obj11.text = intl.string(tmp6(1114).t.y2b7CA);
     obj11.style = tmp2.badge;
-    tmp15Result = tmp15(tmp6(1178).TextBadge, obj11);
+    tmp15Result = tmp15(tmp6(1176).TextBadge, obj11);
   }
   items2[2] = tmp15Result;
   let tmp15Result2 = "beta" === badge;
@@ -103,9 +103,9 @@ export default function GuildPowerupsPerkCard(arg0) {
     const obj12 = { text: null, color: null, style: null };
     const intl2 = tmp6(1114).intl;
     obj12.text = intl2.string(tmp6(1114).t.oW0eUd);
-    obj12.color = tmp6(1178).BadgeColors.BRAND;
+    obj12.color = tmp6(1176).BadgeColors.BRAND;
     obj12.style = tmp2.badge;
-    tmp15Result2 = tmp15(tmp6(1178).TextBadge, obj12);
+    tmp15Result2 = tmp15(tmp6(1176).TextBadge, obj12);
   }
   items2[3] = tmp15Result2;
   obj3.children = items2;

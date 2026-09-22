@@ -1,13 +1,13 @@
-// Module ID: 6223
-// Function ID: 6224
+// Module ID: 6324
+// Function ID: 6325
 // Name: LightningIllocon
-// Dependencies: [21, 5587, 6224, 2]
+// Dependencies: [21, 5668, 6325, 2]
 // Exports: LightningIllocon
 
-// Module 6223 (LightningIllocon)
+// Module 6324 (LightningIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6224 from "module_6224" /* 6224 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6325 from "module_6325" /* 6325 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const LightningIllocon = function LightningIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6224 };
+  const obj2 = { uri: _modDef6325 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

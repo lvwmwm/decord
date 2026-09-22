@@ -1,9 +1,9 @@
 // Module ID: 3032
 // Function ID: 3033
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 3032
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
 export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hcHBsaWNhdGlvbl9hY2NvdW50X2xpbmtpbmc=", scales: [1], hash: "60c14a91daf0c02bf16ce9bf33dfd334", name: "ro.messages.60c14a91daf0c02bf16ce9bf33dfd334.compiled.messages", type: "jsona" });

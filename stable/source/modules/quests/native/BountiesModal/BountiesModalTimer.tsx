@@ -1,13 +1,13 @@
-// Module ID: 15044
-// Function ID: 15045
+// Module ID: 15130
+// Function ID: 15131
 // Name: BountiesModalTimer
-// Dependencies: [19, 17, 21, 4980, 4296, 8457, 4560, 576, 1115, 4561, 4556, 9445, 2]
+// Dependencies: [19, 17, 21, 5061, 4373, 8574, 4636, 576, 1363, 4637, 4632, 9569, 2]
 // Exports: default
 
-// Module 15044 (BountiesModalTimer)
+// Module 15130 (BountiesModalTimer)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4296 */;
-import timing from "timing" /* 4561 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4373 */;
+import timing from "timing" /* 4637 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,18 +18,18 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let c7 = "#2ECC71";
-let result = (fn(4980).SMALL_BUTTON_HEIGHT - 4) / 2;
+let result = (fn(5061).SMALL_BUTTON_HEIGHT - 4) / 2;
 let closure_9 = 2 * Math.PI * result;
-const Easing = fn(4296).Easing;
+const Easing = fn(4373).Easing;
 let closure_10 = Easing.bezier(0.15, 0.21, 0.58, 1);
-const Easing2 = fn(4296).Easing;
+const Easing2 = fn(4373).Easing;
 let closure_11 = Easing2.bezier(0.61, 0, 0.58, 1);
-const Easing3 = fn(4296).Easing;
+const Easing3 = fn(4373).Easing;
 let closure_12 = Easing3.bezier(0.42, 0, 0.58, 1);
-let closure_13 = ReanimatedRexport.createAnimatedComponent(fn(8457).Circle);
-const createStyles = fn(4560);
+let closure_13 = ReanimatedRexport.createAnimatedComponent(fn(8574).Circle);
+const createStyles = fn(4636);
 let obj = { progress: null, ring: null, trackPath: null, countdownText: null, checkmarkLayer: null, checkmarkBackground: null, checkmarkIcon: null };
-let size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: fn(4980).SMALL_BUTTON_HEIGHT, height: fn(4980).SMALL_BUTTON_HEIGHT };
+let size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: fn(5061).SMALL_BUTTON_HEIGHT, height: fn(5061).SMALL_BUTTON_HEIGHT };
 obj.progress = size;
 let obj3 = { position: "absolute", transform: null };
 let items = [{ rotate: "-90deg" }];
@@ -37,7 +37,7 @@ obj3.transform = items;
 obj.ring = obj3;
 obj.trackPath = { color: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST };
 let obj5 = { color: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT, lineHeight: null };
-const PlatformUtils = fn(1115);
+const PlatformUtils = fn(1363);
 let num;
 if (PlatformUtils.isAndroid()) {
   num = 14;

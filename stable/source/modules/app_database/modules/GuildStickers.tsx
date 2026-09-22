@@ -1,9 +1,9 @@
-// Module ID: 5505
-// Function ID: 5506
+// Module ID: 5586
+// Function ID: 5587
 // Name: GuildStickers
 // Dependencies: [5, 3, 1986, 2]
 
-// Module 5505 (GuildStickers)
+// Module 5586 (GuildStickers)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseDaosDefault from "DatabaseDaos" /* 1986 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

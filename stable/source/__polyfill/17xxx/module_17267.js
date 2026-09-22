@@ -1,20 +1,9 @@
 // Module ID: 17267
 // Function ID: 17268
-// Dependencies: []
+// Dependencies: [1120]
 
 // Module 17267
-globalThis.IntlMessageFormat.__addLocaleData({
-  locale: "tr",
-  pluralRuleFunction(arg0, arg1) {
-    let str = "other";
-    let str2 = "other";
-    if (!arg1) {
-      if (1 == arg0) {
-        str = "one";
-      }
-      str2 = str;
-    }
-    return str2;
-  }
-});
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "tr-CY", parentLocale: "tr" });
+import registerAsset from "module_1120" /* 1120 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_panel/native/images", width: 20, height: 20, scales: [1, 2, 3, 4], hash: "2477b520035213801129f8906948e423", name: "maximize", type: "png" });

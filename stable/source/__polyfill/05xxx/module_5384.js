@@ -1,9 +1,9 @@
 // Module ID: 5384
 // Function ID: 5385
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 5384
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "409fe2e37775c47f20538750422d7e2c", name: "img_account_sync_instagram_light_and_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "36aa11af17352d73b5ec4f98f307b37b", name: "img_bungie_light", type: "svg" });

@@ -1,13 +1,13 @@
-// Module ID: 14511
-// Function ID: 14512
+// Module ID: 14597
+// Function ID: 14598
 // Name: vibegrationsVoice
-// Dependencies: [4465, 1074, 14479, 14462, 2]
+// Dependencies: [4541, 1074, 14565, 14548, 2]
 
-// Module 14511 (vibegrationsVoice)
+// Module 14597 (vibegrationsVoice)
 import Constants2 from "Constants" /* 1074 */;
-import VibegrationsVoiceSessionCoordinatorDefault from "VibegrationsVoiceSessionCoordinator" /* 14462 */;
-import Constants from "Constants" /* 4465 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 14479 */;
+import VibegrationsVoiceSessionCoordinatorDefault from "VibegrationsVoiceSessionCoordinator" /* 14548 */;
+import Constants from "Constants" /* 4541 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 14565 */;
 import size from "module_2" /* 2 */;
 
 ({ RPC_AUTHENTICATED_SCOPE, RPC_EMBEDDED_APP_SCOPE, RPC_SCOPE_CONFIG } = Constants);

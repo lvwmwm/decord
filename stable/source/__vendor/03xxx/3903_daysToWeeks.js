@@ -1,0 +1,24 @@
+// Module ID: 3903
+// Function ID: 3904
+// Name: daysToWeeks
+// Dependencies: [3726, 3904]
+// Exports: default
+
+// Module 3903 (daysToWeeks)
+import daysInWeek from "daysInWeek" /* 3904 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
+
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj = { default: requiredArgs };
+  let tmp3 = obj;
+} else {
+  tmp3 = requiredArgs;
+}
+requiredArgs = tmp3;
+
+export default function daysToWeeks(arg0) {
+  requiredArgs.default(1, arguments);
+  return Math.floor(arg0 / daysInWeek.daysInWeek);
+};
+export default exports.default;

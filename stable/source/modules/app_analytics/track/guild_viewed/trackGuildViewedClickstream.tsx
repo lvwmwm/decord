@@ -1,13 +1,13 @@
-// Module ID: 16741
-// Function ID: 16742
+// Module ID: 16852
+// Function ID: 16853
 // Name: trackGuildViewedClickstream
-// Dependencies: [1074, 4399, 7465, 2]
+// Dependencies: [1074, 4476, 7568, 2]
 // Exports: default
 
-// Module 16741 (trackGuildViewedClickstream)
+// Module 16852 (trackGuildViewedClickstream)
 import Constants from "Constants" /* 1074 */;
-import RouteUtils from "RouteUtils" /* 4399 */;
-import Clickstream from "Clickstream" /* 7465 */;
+import RouteUtils from "RouteUtils" /* 4476 */;
+import Clickstream from "Clickstream" /* 7568 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

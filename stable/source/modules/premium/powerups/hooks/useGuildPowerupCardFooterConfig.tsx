@@ -1,18 +1,18 @@
-// Module ID: 12537
-// Function ID: 12538
+// Module ID: 12666
+// Function ID: 12667
 // Name: useGuildPowerupCardFooterConfig
-// Dependencies: [1979, 4450, 1074, 12503, 504, 4453, 12500, 2]
+// Dependencies: [1979, 4526, 1074, 12632, 504, 4529, 12629, 2]
 // Exports: default
 
-// Module 12537 (useGuildPowerupCardFooterConfig)
-import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12500 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12503 */;
+// Module 12666 (useGuildPowerupCardFooterConfig)
+import useGuildPowerupRollbackEnabledDefault from "useGuildPowerupRollbackEnabled" /* 12629 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 12632 */;
 import GuildStore from "GuildStore" /* 1979 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const GuildPowerupsConstants = fn(4450);
+const GuildPowerupsConstants = fn(4526);
 ({ GUILD_POWERUP_CONFIGURABLE_SKUS_DESKTOP, GUILD_POWERUP_CONFIGURABLE_SKUS_MOBILE: closure_4, PowerupActiveStatusType: hasOwnProperty } = GuildPowerupsConstants);
 const GuildFeatures = fn(1074).GuildFeatures;
 const size = fn(2);

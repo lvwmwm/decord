@@ -1,14 +1,14 @@
-// Module ID: 9681
-// Function ID: 9682
+// Module ID: 9805
+// Function ID: 9806
 // Name: StageViewWithPrompts
-// Dependencies: [19, 17, 1085, 21, 9682, 4560, 1611, 9683, 8408, 4556, 2]
+// Dependencies: [19, 17, 1085, 21, 9806, 4636, 1611, 9807, 8525, 4632, 2]
 // Exports: default
 
-// Module 9681 (StageViewWithPrompts)
+// Module 9805 (StageViewWithPrompts)
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import StageSparkleDefault from "StageSparkle" /* 8408 */;
-import FocusedControls from "FocusedControls" /* 9683 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import StageSparkleDefault from "StageSparkle" /* 8525 */;
+import FocusedControls from "FocusedControls" /* 9807 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,8 +17,8 @@ get_ActivityIndicator = fn(17);
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let closure_8 = fn(9682).CALL_ACTION_BAR_HEIGHT + 8;
-const createStyles = fn(4560);
+let closure_8 = fn(9806).CALL_ACTION_BAR_HEIGHT + 8;
+const createStyles = fn(4636);
 const styles = createStyles.createStyles({ scrollView: { flex: 1 }, container: { paddingHorizontal: 16, alignItems: "center" }, sparkle: { marginTop: 48, marginBottom: 16 }, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, body: { fontSize: 14, textAlign: "center" }, prompts: { marginTop: 24, display: "flex", flexDirection: "column", width: "100%" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/stage_channels/native/components/StageViewWithPrompts.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 12498
-// Function ID: 12499
+// Module ID: 12627
+// Function ID: 12628
 // Name: GuildDismissibleContentUtils
-// Dependencies: [1221, 1074, 1954, 1084, 1942, 504, 1940, 1242, 1943, 2]
+// Dependencies: [1219, 1074, 1954, 1084, 1942, 504, 1940, 1240, 1943, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 12498 (GuildDismissibleContentUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+// Module 12627 (GuildDismissibleContentUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import Uint8ArrayUtils from "Uint8ArrayUtils" /* 1942 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
 
 const require = globalThis.__r;
 

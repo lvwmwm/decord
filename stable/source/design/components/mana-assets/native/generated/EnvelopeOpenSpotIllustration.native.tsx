@@ -1,13 +1,13 @@
-// Module ID: 5967
-// Function ID: 5968
+// Module ID: 6068
+// Function ID: 6069
 // Name: EnvelopeOpenSpotIllustration
-// Dependencies: [21, 5587, 5968, 2]
+// Dependencies: [21, 5668, 6069, 2]
 // Exports: EnvelopeOpenSpotIllustration
 
-// Module 5967 (EnvelopeOpenSpotIllustration)
+// Module 6068 (EnvelopeOpenSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef5968 from "module_5968" /* 5968 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6069 from "module_6069" /* 6069 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const EnvelopeOpenSpotIllustration = function EnvelopeOpenSpotIllustratio
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5968 };
+  const obj2 = { uri: _modDef6069 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

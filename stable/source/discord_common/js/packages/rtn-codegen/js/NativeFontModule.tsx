@@ -1,9 +1,9 @@
-// Module ID: 10125
-// Function ID: 10126
+// Module ID: 10248
+// Function ID: 10249
 // Name: NativeFontModule
 // Dependencies: [17, 2]
 
-// Module 10125 (NativeFontModule)
+// Module 10248 (NativeFontModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

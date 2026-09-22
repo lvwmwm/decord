@@ -1,9 +1,12 @@
 // Module ID: 4512
 // Function ID: 4513
-// Dependencies: [1122]
+// Dependencies: [19]
 
 // Module 4512
-import registerAsset from "module_1122" /* 1122 */;
+import _mod19 from "module_19" /* 19 */;
 
+const createContext = _mod19.createContext;
+const context = createContext(null);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "5a0d5d16e378eea1c4baa447014a7b8d", name: "CheckmarkLargeIcon", type: "png" });
+export const PortalStateContext = context;
+export const PortalDispatchContext = createContext(null);

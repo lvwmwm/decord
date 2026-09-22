@@ -1,9 +1,20 @@
 // Module ID: 14139
 // Function ID: 14140
-// Dependencies: [1122]
+// Dependencies: [14132]
 
 // Module 14139
-import registerAsset from "module_1122" /* 1122 */;
+import _mod14132 from "module_14132" /* 14132 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "99f159454017c9a8930c299b70fe8f24", name: "MessagesTab", type: "lottie" });
+export default (arg0, arg1) => {
+  try {
+    const tmp8 = new _mod14132(arg0, arg1);
+    let str = tmp8.range;
+    if (!str) {
+      str = "*";
+    }
+    return str;
+  } catch (err) {
+    return null;
+  }
+};

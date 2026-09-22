@@ -1,19 +1,19 @@
-// Module ID: 12478
-// Function ID: 12479
+// Module ID: 12607
+// Function ID: 12608
 // Name: GuildProgressUtils
-// Dependencies: [2012, 1979, 4199, 12479, 12473, 1074, 4527, 12480, 1896, 12481, 504, 12476, 12592, 1114, 11, 2]
+// Dependencies: [2012, 1979, 4275, 12608, 12602, 1074, 4603, 12609, 1896, 12610, 504, 12605, 12721, 1114, 11, 2]
 // Exports: createGuildProgress, hideActionSheet, openActionSheet, useGuildProgressStep, useIsEligibleForGuildProgress
 
-// Module 12478 (GuildProgressUtils)
+// Module 12607 (GuildProgressUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1114 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12481 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12610 */;
 import GuildChannelStore from "GuildChannelStore" /* 2012 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import GuildProgressStore from "GuildProgressStore" /* 12479 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import GuildProgressStore from "GuildProgressStore" /* 12608 */;
 
 const require = globalThis.__r;
 
@@ -71,7 +71,7 @@ function useIOSCompletionStates(guild) {
   const items6 = [tmp8];
   const stateFromStores4 = require("initialize").useStateFromStores(items6, () => GuildProgressStore.getProgress(guild.id));
   if (stateFromStores) {
-    const ServerSetupBoostCtaExperiment = tmp(12592).ServerSetupBoostCtaExperiment;
+    const ServerSetupBoostCtaExperiment = tmp(12721).ServerSetupBoostCtaExperiment;
     const enabled = ServerSetupBoostCtaExperiment.getConfig({ location: "GuildProgress" }).enabled;
     const items7 = [guildPopulated, guildPersonalized, stateFromStores2];
     if (enabled) {
@@ -102,7 +102,7 @@ function useIOSCompletionStates(guild) {
   }
   const tmpResult4 = require("initialize");
 }
-const Steps = fn(12473).Steps;
+const Steps = fn(12602).Steps;
 const Constants = fn(1074);
 ({ WELCOME_OLD_GUILD_AGE_THRESHOLD: closure_8, Permissions: closure_9 } = Constants);
 const size = fn(2);
@@ -112,7 +112,7 @@ export const MIN_PROGRESS_PERCENT = 3;
 export const PROGRESS_BACKGROUND_COLOR = "rgba(78, 93, 148, 0.3)";
 export const openActionSheet = function openActionSheet(guild) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequireImpl(12480, dependencyMap.paths), "guild-progress-" + guild.id, { guild });
+  obj.openLazy(asyncRequireImpl(12609, dependencyMap.paths), "guild-progress-" + guild.id, { guild });
 };
 export const hideActionSheet = function hideActionSheet(arg0) {
   ActionSheetActionCreatorsDefault.hideActionSheet("guild-progress-" + arg0);

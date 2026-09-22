@@ -1,20 +1,20 @@
-// Module ID: 8616
-// Function ID: 8617
+// Module ID: 8733
+// Function ID: 8734
 // Name: FormSliderRow
-// Dependencies: [19, 17, 21, 4560, 5686, 5607, 4556, 8279, 7137, 2]
+// Dependencies: [19, 17, 21, 4636, 5767, 5688, 4632, 8396, 7240, 2]
 // Exports: default
 
-// Module 8616 (FormSliderRow)
-import RedesignCompat from "RedesignCompat" /* 5686 */;
-import FormRowDefault from "FormRow" /* 7137 */;
-import _modDef8279 from "module_8279" /* 8279 */;
+// Module 8733 (FormSliderRow)
+import RedesignCompat from "RedesignCompat" /* 5767 */;
+import FormRowDefault from "FormRow" /* 7240 */;
+import _modDef8396 from "module_8396" /* 8396 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_8 = createStyles.createStyles({ labels: { flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, slider: { marginStart: -4, marginTop: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FormSliderRow.tsx");
@@ -28,22 +28,22 @@ export default function FormSliderRow(arg0) {
     const obj2 = { children: null };
     const obj3 = { style: tmp5.labels, children: null };
     const obj4 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: label };
-    const items = [hasOwnProperty(tmp2(4556).Text, obj4), trailing];
+    const items = [hasOwnProperty(tmp2(4632).Text, obj4), trailing];
     obj3.children = items;
     const items1 = [tmp6(View, obj3), ];
     const obj5 = {};
     const merged1 = Object.assign(merged);
     obj5.style = tmp5.slider;
-    items1[1] = hasOwnProperty(_modDef8279, obj5);
+    items1[1] = hasOwnProperty(_modDef8396, obj5);
     obj2.children = items1;
-    let tmp6Result = tmp6(tmp2(5607).Card, obj2);
+    let tmp6Result = tmp6(tmp2(5688).Card, obj2);
   } else {
     const obj = { children: null };
     const obj6 = { label, trailing };
     const items2 = [hasOwnProperty(FormRowDefault, obj6), ];
     const obj7 = {};
     const merged2 = Object.assign(merged);
-    items2[1] = hasOwnProperty(_modDef8279, obj7);
+    items2[1] = hasOwnProperty(_modDef8396, obj7);
     obj.children = items2;
     tmp6Result = tmp6(React5, obj);
   }

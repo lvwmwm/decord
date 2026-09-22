@@ -1,45 +1,47 @@
-// Module ID: 13255
-// Function ID: 13256
+// Module ID: 13385
+// Function ID: 13386
 // Name: ConversationFocusScreen
-// Dependencies: [19, 17, 7596, 21, 4560, 576, 1486, 504, 7910, 7924, 1114, 4556, 4975, 13256, 2]
+// Dependencies: [19, 17, 7698, 21, 4636, 576, 4338, 1486, 504, 8013, 8027, 1114, 4632, 5056, 13386, 2]
 // Exports: default
 
-// Module 13255 (ConversationFocusScreen)
+// Module 13385 (ConversationFocusScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7910 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7924 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8013 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8027 */;
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7596 */;
+import ConversationsStore from "ConversationsStore" /* 7698 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
-({ ActivityIndicator: c3, ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
+({ ActivityIndicator: closure_4, ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
-({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
-let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, pendingContent: null };
-const obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-obj2.pendingContent = { flex: 1, paddingVertical: nativeDefault.space.PX_24, alignItems: "center", gap: nativeDefault.space.PX_32, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
-let closure_9 = createStyles.createStyles(obj2);
+({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
+const createStyles = fn(4636);
+let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, pendingContent: null };
+let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+obj2.pendingContent = { flex: 1, paddingVertical: nativeDefault.space.PX_24, alignItems: "center", gap: nativeDefault.space.PX_32, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
+let closure_10 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationFocusScreen.tsx");
 
 export default function ConversationFocusScreen() {
-  let container = closure_9();
+  let container = closure_10();
   let ChatPreview = channelId;
-  let tmp = conversationId;
-  const params = channelId(conversationId[6]).useRoute().params;
+  let tmp = startMessageId;
+  const token = channelId(startMessageId[6]).useToken(conversationId(startMessageId[5]).colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  let obj = channelId(startMessageId[6]);
+  const params = channelId(startMessageId[7]).useRoute().params;
   channelId = params.channelId;
   conversationId = params.conversationId;
-  let obj = channelId(conversationId[6]);
+  let obj2 = channelId(startMessageId[7]);
   const items = [ConversationsStore];
   const items1 = [channelId, conversationId];
-  const stateFromStores = channelId(conversationId[7]).useStateFromStores(items, () => ConversationsStore.getHydratedMessages(channelId, conversationId), items1);
-  let obj2 = channelId(conversationId[7]);
+  const stateFromStores = channelId(startMessageId[8]).useStateFromStores(items, () => ConversationsStore.getHydratedMessages(channelId, conversationId), items1);
+  const obj3 = channelId(startMessageId[8]);
   const items2 = [ConversationsStore];
   const items3 = [channelId, conversationId];
-  const stateFromStoresObject = channelId(conversationId[7]).useStateFromStoresObject(items2, () => {
+  const stateFromStoresObject = channelId(startMessageId[8]).useStateFromStoresObject(items2, () => {
     const conversationMetadata = ConversationsStore.getConversationMetadata(channelId, conversationId);
     let flag;
     if (conversationMetadata != null) {
@@ -61,7 +63,7 @@ export default function ConversationFocusScreen() {
   }, items3);
   ({ fullyHydrated, startMessageId } = stateFromStoresObject);
   const items4 = [channelId, conversationId];
-  const onBeforeJumpToMessage = startMessageId.useCallback((arg0) => {
+  onBeforeJumpToMessage = onBeforeJumpToMessage.useCallback((arg0) => {
     if ("footer_cta" === arg0) {
       const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
       const obj = { channelId, conversationId, dismissReason: "jump_to_conversation" };
@@ -70,12 +72,12 @@ export default function ConversationFocusScreen() {
   }, items4);
   const items5 = [channelId, startMessageId];
   const items6 = [startMessageId, onBeforeJumpToMessage];
-  const callback1 = startMessageId.useCallback(() => {
+  const callback1 = onBeforeJumpToMessage.useCallback(() => {
     if (null != startMessageId) {
       const result = ConversationNavigatorUtils.closeConversationsAndJumpToMessage(channelId, tmp);
     }
   }, items5);
-  const memo = startMessageId.useMemo(() => {
+  const memo = onBeforeJumpToMessage.useMemo(() => {
     const obj = { jumpToChatText: null, jumpTargetId: null, onBeforeJumpToMessage: null };
     const intl = util.intl;
     obj.jumpToChatText = intl.string(util.t["bz/ik0"]);
@@ -85,36 +87,36 @@ export default function ConversationFocusScreen() {
   }, items6);
   if (!fullyHydrated) {
     if (stateFromStoresObject.isFullFetchPending) {
-      const obj4 = { style: container.pendingContent, children: closure_7(onBeforeJumpToMessage, {}) };
-      return closure_7(closure_5, obj4);
+      const obj5 = { style: container.pendingContent, children: closure_8(closure_4, {}) };
+      return closure_8(closure_6, obj5);
     }
   }
   if (fullyHydrated) {
-    const obj5 = { horizontal: true, scrollEnabled: false, bounces: false, contentContainerStyle: null, children: null };
+    const obj6 = { horizontal: true, scrollEnabled: false, bounces: false, contentContainerStyle: null, children: null };
     container = container.container;
-    obj5.contentContainerStyle = container;
-    ChatPreview = ChatPreview(tmp[13]).ChatPreview;
-    const obj6 = { channelId, messages: stateFromStores, jumpToChatProps: memo, initialScrollToTop: true, allowReactions: true };
-    tmp = closure_7(ChatPreview, obj6);
-    obj5.children = tmp;
-    closure_7(closure_4, obj5);
+    obj6.contentContainerStyle = container;
+    ChatPreview = ChatPreview(tmp[14]).ChatPreview;
+    const obj7 = { channelId, messages: stateFromStores, jumpToChatProps: memo, backgroundColor: token, initialScrollToTop: true, allowReactions: true };
+    tmp = closure_8(ChatPreview, obj7);
+    obj6.children = tmp;
+    closure_8(closure_5, obj6);
   } else {
-    const obj7 = { style: container.pendingContent, children: null };
-    const obj8 = { variant: "text-md/normal", color: "text-muted", children: null };
-    let intl = ChatPreview(tmp[10]).intl;
-    obj8.children = intl.string(ChatPreview(tmp[10]).t.eylmYW);
-    const items7 = [closure_7(ChatPreview(tmp[11]).Text, obj8), ];
-    let tmp12Result = null != startMessageId;
-    if (tmp12Result) {
-      const obj9 = { variant: "tertiary", text: null, onPress: null };
-      const intl2 = ChatPreview(tmp[10]).intl;
-      obj9.text = intl2.string(ChatPreview(tmp[10]).t.aBNTxl);
-      obj9.onPress = callback1;
-      tmp12Result = tmp12(ChatPreview(tmp[12]).Button, obj9);
+    const obj8 = { style: container.pendingContent, children: null };
+    const obj9 = { variant: "text-md/normal", color: "text-muted", children: null };
+    let intl = ChatPreview(tmp[11]).intl;
+    obj9.children = intl.string(ChatPreview(tmp[11]).t.eylmYW);
+    const items7 = [closure_8(ChatPreview(tmp[12]).Text, obj9), ];
+    let tmp13Result = null != startMessageId;
+    if (tmp13Result) {
+      const obj10 = { variant: "tertiary", text: null, onPress: null };
+      const intl2 = ChatPreview(tmp[11]).intl;
+      obj10.text = intl2.string(ChatPreview(tmp[11]).t.aBNTxl);
+      obj10.onPress = callback1;
+      tmp13Result = tmp13(ChatPreview(tmp[13]).Button, obj10);
     }
-    items7[1] = tmp12Result;
-    obj7.children = items7;
-    closure_8(closure_5, obj7);
-    tmp12 = closure_7;
+    items7[1] = tmp13Result;
+    obj8.children = items7;
+    closure_9(closure_6, obj8);
+    tmp13 = closure_8;
   }
 };

@@ -1,13 +1,13 @@
-// Module ID: 1235
-// Function ID: 1236
+// Module ID: 1233
+// Function ID: 1234
 // Name: telemetry_ring/TelemetryRingLifecycle
-// Dependencies: [1236, 1371, 1895, 1074, 1898, 1899, 1359, 573, 1903, 2]
+// Dependencies: [1234, 1371, 1895, 1074, 1898, 1899, 1357, 573, 1903, 2]
 
-// Module 1235 (telemetry_ring/TelemetryRingLifecycle)
+// Module 1233 (telemetry_ring/TelemetryRingLifecycle)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1359 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1357 */;
 import ZoomedInTelemetryDefault from "ZoomedInTelemetry" /* 1899 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1236 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1234 */;
 import UserStore from "UserStore" /* 1371 */;
 import AppStateStore from "AppStateStore" /* 1895 */;
 import LifecycleManager from "LifecycleManager" /* 1898 */;

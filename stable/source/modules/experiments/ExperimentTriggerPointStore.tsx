@@ -1,14 +1,14 @@
-// Module ID: 13693
-// Function ID: 13694
+// Module ID: 13779
+// Function ID: 13780
 // Name: ExperimentTriggerPointStore
-// Dependencies: [4476, 1236, 13694, 13695, 504, 573, 2]
+// Dependencies: [4552, 1234, 13780, 13781, 504, 573, 2]
 
-// Module 13693 (ExperimentTriggerPointStore)
+// Module 13779 (ExperimentTriggerPointStore)
 import initializeDefault from "initialize" /* 504 */;
 import Dispatcher2 from "Dispatcher" /* 573 */;
-import ConnectionOpenTriggerPoint2 from "ConnectionOpenTriggerPoint" /* 13695 */;
-import ExperimentStore from "ExperimentStore" /* 4476 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1236 */;
+import ConnectionOpenTriggerPoint2 from "ConnectionOpenTriggerPoint" /* 13781 */;
+import ExperimentStore from "ExperimentStore" /* 4552 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1234 */;
 
 const Dispatcher = Dispatcher2;
 
@@ -17,7 +17,7 @@ function handleConnectionOpen() {
   const ConnectionOpenTriggerPoint = ConnectionOpenTriggerPoint2.ConnectionOpenTriggerPoint;
   ConnectionOpenTriggerPoint.trigger();
 }
-const DebugExperiment = fn(13694);
+const DebugExperiment = fn(13780);
 const Store = initializeDefault.Store;
 class ExperimentTriggerPointStore extends Store {
   constructor() {

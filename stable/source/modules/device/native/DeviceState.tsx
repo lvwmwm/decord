@@ -1,10 +1,10 @@
-// Module ID: 7750
-// Function ID: 7751
+// Module ID: 7852
+// Function ID: 7853
 // Name: device/DeviceState
-// Dependencies: [5, 17, 3, 7751, 2]
+// Dependencies: [5, 17, 3, 7853, 2]
 // Exports: getDeviceState
 
-// Module 7750 (device/DeviceState)
+// Module 7852 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

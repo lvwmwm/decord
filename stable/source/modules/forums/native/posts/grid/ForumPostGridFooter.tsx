@@ -1,15 +1,15 @@
-// Module ID: 12021
-// Function ID: 12022
+// Module ID: 12150
+// Function ID: 12151
 // Name: ForumPostGridFooter
-// Dependencies: [19, 17, 1074, 21, 4560, 576, 11970, 12022, 12023, 11419, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 576, 12099, 12151, 12152, 11551, 2]
 // Exports: default
 
-// Module 12021 (ForumPostGridFooter)
+// Module 12150 (ForumPostGridFooter)
 import nativeDefault from "native" /* 576 */;
-import ForumPostReactions from "ForumPostReactions" /* 11419 */;
-import useTypingUsersIds from "useTypingUsersIds" /* 11970 */;
-import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12022 */;
-import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12023 */;
+import ForumPostReactions from "ForumPostReactions" /* 11551 */;
+import useTypingUsersIds from "useTypingUsersIds" /* 12099 */;
+import ForumPostMessageCountDefault from "ForumPostMessageCount" /* 12151 */;
+import ForumPostTypingUsersDefault from "ForumPostTypingUsers" /* 12152 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ const View = fn(17).View;
 const AnalyticsObjects = fn(1074).AnalyticsObjects;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { footer: { display: "flex", alignItems: "center", flexDirection: "row", justifyContent: "flex-start", marginTop: 12 }, dot: null };
 let size = { height: 4, width: 4, borderRadius: 2, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginHorizontal: 8 };
 obj2.dot = size;

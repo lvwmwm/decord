@@ -1,49 +1,33 @@
 // Module ID: 4077
 // Function ID: 4078
-// Dependencies: [3654, 3650, 3651]
+// Dependencies: [3937, 3726]
 // Exports: default
 
 // Module 4077
-import module_3654_mod from "module_3654" /* 3654 */;
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import startOfQuarter_mod from "startOfQuarter" /* 3937 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  const obj = { default: module_3654 };
+let startOfQuarter = startOfQuarter_mod;
+if (!startOfQuarter) {
+  const obj = { default: startOfQuarter };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3654;
+  tmp3 = startOfQuarter;
 }
-module_3654 = tmp3;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj2 = { default: _typeof };
-  let tmp5 = obj2;
-} else {
-  tmp5 = _typeof;
-}
-_typeof = tmp5;
+startOfQuarter = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
 } else {
-  tmp7 = requiredArgs;
+  tmp5 = requiredArgs;
 }
-requiredArgs = tmp7;
+requiredArgs = tmp5;
 
-export default function setYear(date, arg1) {
+export default function isSameQuarter(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(date);
-  if (isNaN(defaultResult1.getTime())) {
-    const _Date = Date;
-    date = new Date(NaN);
-    return date;
-  } else {
-    defaultResult1.setFullYear(defaultResult2);
-    return defaultResult1;
-  }
-  defaultResult2 = module_3654.default(arg1);
+  const defaultResult1 = startOfQuarter.default(arg0);
+  const time = defaultResult1.getTime();
+  return time === startOfQuarter.default(arg1).getTime();
 };
 export default exports.default;

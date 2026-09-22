@@ -1,13 +1,13 @@
-// Module ID: 11347
-// Function ID: 11348
+// Module ID: 11479
+// Function ID: 11480
 // Name: useIsSelectedResourceChannel
-// Dependencies: [7280, 1957, 2011, 1074, 1964, 563, 1384, 11348, 7222, 2]
+// Dependencies: [7383, 1957, 2011, 1074, 1964, 563, 1384, 11480, 7325, 2]
 // Exports: default
 
-// Module 11347 (useIsSelectedResourceChannel)
+// Module 11479 (useIsSelectedResourceChannel)
 import FlagUtils from "FlagUtils" /* 1384 */;
-import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 11348 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7280 */;
+import isSelectedFromHomeChannelDefault from "isSelectedFromHomeChannel" /* 11480 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7383 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
 

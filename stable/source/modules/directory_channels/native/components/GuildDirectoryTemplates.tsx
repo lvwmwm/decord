@@ -1,12 +1,12 @@
-// Module ID: 12327
-// Function ID: 12328
+// Module ID: 12456
+// Function ID: 12457
 // Name: GuildDirectoryTemplates
-// Dependencies: [19, 17, 12309, 12314, 21, 4560, 12328, 1178, 12329, 1483, 1611, 12313, 4556, 1114, 5687, 6938, 2]
+// Dependencies: [19, 17, 12438, 12443, 21, 4636, 12457, 1176, 12458, 1483, 1611, 12442, 4632, 1114, 5768, 7039, 2]
 // Exports: default
 
-// Module 12327 (GuildDirectoryTemplates)
-import native from "native" /* 1178 */;
-import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 12329 */;
+// Module 12456 (GuildDirectoryTemplates)
+import native from "native" /* 1176 */;
+import GuildDirectoryTemplatesIcons from "GuildDirectoryTemplatesIcons" /* 12458 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -30,12 +30,12 @@ class GuildTemplatesItem {
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const GuildDirectoryConstants = fn(12309);
+const GuildDirectoryConstants = fn(12438);
 ({ getHubGuildTemplatesMap: metroRequire, HubGuildTemplateId: closure_7 } = GuildDirectoryConstants);
-const GuildDirectoryCreate = fn(12314).GuildDirectoryCreate;
+const GuildDirectoryCreate = fn(12443).GuildDirectoryCreate;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_11 = createStyles.createStyles({ label: { marginTop: 16, marginLeft: 16, marginBottom: 8 }, title: { marginBottom: 8, textAlign: "center" }, description: { textAlign: "center" }, header: { alignItems: "center", justifyContent: "center", padding: 16 }, templateGroup: { marginHorizontal: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryTemplates.tsx");

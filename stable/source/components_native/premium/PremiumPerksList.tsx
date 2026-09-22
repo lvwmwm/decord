@@ -1,19 +1,19 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15780
+// Function ID: 15781
 // Name: PremiumPerksList
-// Dependencies: [19, 17, 21, 4560, 576, 4556, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 4632, 2]
 // Exports: default
 
-// Module 15692 (PremiumPerksList)
+// Module 15780 (PremiumPerksList)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4556 */;
+import Text_Text from "Text/Text" /* 4632 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj2 = { perkInfoContainer: { flexDirection: "row", alignItems: "center", gap: 16 }, perkInfoTextContainer: { flexDirection: "column", gap: 4, maxWidth: 279 }, perkListContainer: { width: "100%", paddingVertical: 24, flexDirection: "column", gap: 24 }, perkIconContainer: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round, width: 40, height: 40, justifyContent: "center", alignItems: "center" };
 obj2.perkIconContainer = size;

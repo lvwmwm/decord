@@ -1,21 +1,21 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17426
+// Function ID: 17427
 // Name: AgeVerificationManager
-// Dependencies: [1957, 4781, 2011, 1371, 1074, 8400, 3, 1095, 7456, 7304, 7118, 1894, 5423, 5424, 8593, 5272, 2]
+// Dependencies: [1957, 4857, 2011, 1371, 1074, 8517, 3, 1095, 7559, 7407, 7221, 1894, 5504, 5505, 8710, 5353, 2]
 
-// Module 17315 (AgeVerificationManager)
+// Module 17426 (AgeVerificationManager)
 import LoggerDefault from "Logger" /* 3 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1095 */;
 import Server from "Server" /* 1894 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 5272 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5423 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5424 */;
-import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8593 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 5353 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5504 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5505 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8710 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import MessageStore from "MessageStore" /* 4781 */;
+import MessageStore from "MessageStore" /* 4857 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
 import UserStore from "UserStore" /* 1371 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 
 require = fn;
 function handleMessageCreate(channelId) {
@@ -25,7 +25,7 @@ function handleMessageCreate(channelId) {
 const transformUser = fn(1371).transformUser;
 const Constants = fn(1074);
 ({ ChannelTypes: closure_8, MAX_MESSAGES_PER_CHANNEL: closure_9 } = Constants);
-const SafetyToastType = fn(8400).SafetyToastType;
+const SafetyToastType = fn(8517).SafetyToastType;
 let closure_10 = new LoggerDefault("AgeVerificationManager");
 const prototype = function AgeVerificationManager() {
   const applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -83,7 +83,7 @@ const prototype = function AgeVerificationManager() {
         }
         if (tmp20) {
           (function handleLoadChannelMessages(channelId) {
-            const messages = _true(7456).fetchMessages({ channelId, limit });
+            const messages = _true(7559).fetchMessages({ channelId, limit });
           })(tmp16);
           (function handleLoadForumPosts(arg0) {
             channel = channel.getChannel(arg0);
@@ -100,8 +100,8 @@ const prototype = function AgeVerificationManager() {
               tmp4 = type1 !== tmp3.GUILD_MEDIA;
             }
             if (!tmp4) {
-              channelId(7304).preloadForumThreads(channel);
-              const obj = channelId(7304);
+              channelId(7407).preloadForumThreads(channel);
+              const obj = channelId(7407);
             }
           })(tmp16);
         }

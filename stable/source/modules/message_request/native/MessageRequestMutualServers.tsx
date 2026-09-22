@@ -1,18 +1,18 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 16994
+// Function ID: 16995
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 4560, 5584, 16883, 1114, 12622, 4556, 5123, 2]
+// Dependencies: [19, 17, 21, 4636, 5665, 16995, 1114, 12751, 4632, 5204, 2]
 // Exports: default
 
-// Module 16882 (MessageRequestMutualServers)
-import GuildIconDefault from "GuildIcon" /* 5584 */;
+// Module 16994 (MessageRequestMutualServers)
+import GuildIconDefault from "GuildIcon" /* 5665 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_6 = createStyles.createStyles({ container: { flexDirection: "row", alignItems: "center", gap: 4 }, label: { flexShrink: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/message_request/native/MessageRequestMutualServers.tsx");
@@ -21,7 +21,7 @@ export default function MessageRequestMutualServers(textVariant) {
   ({ onPress, iconSize } = textVariant);
   ({ userId, style } = textVariant);
   if (iconSize === undefined) {
-    iconSize = iconSize(5584).GuildIconSizes.XXSMALL_12;
+    iconSize = iconSize(5665).GuildIconSizes.XXSMALL_12;
   }
   let str = textVariant.textVariant;
   if (str === undefined) {
@@ -29,7 +29,7 @@ export default function MessageRequestMutualServers(textVariant) {
   }
   const suffix = textVariant.suffix;
   const tmp3 = closure_6();
-  const mutualGuildsForMessageRequests = iconSize(16883).useMutualGuildsForMessageRequests(userId);
+  const mutualGuildsForMessageRequests = iconSize(16995).useMutualGuildsForMessageRequests(userId);
   const substr = mutualGuildsForMessageRequests.slice(0, 3);
   if (mutualGuildsForMessageRequests.length > 0) {
     const intl2 = tmp4(1114).intl;
@@ -45,7 +45,7 @@ export default function MessageRequestMutualServers(textVariant) {
   let tmp9 = length > 0;
   if (tmp9) {
     const obj4 = { size: iconSize, names: substr.map((name) => name.name), children: substr.map((guild) => React4(GuildIconDefault, { guild, size: iconSize }, guild.id)) };
-    tmp9 = closure_4(tmp4(12622).GuildIconPile, obj4);
+    tmp9 = closure_4(tmp4(12751).GuildIconPile, obj4);
   }
   const items1 = [tmp9, ];
   const obj5 = { variant: str, color: "text-muted", lineClamp: 1, style: tmp3.label, children: null };
@@ -55,7 +55,7 @@ export default function MessageRequestMutualServers(textVariant) {
     combined = "" + formatResult + " \u00B7 " + suffix;
   }
   obj5.children = combined;
-  items1[1] = closure_4(iconSize(4556).Text, obj5);
+  items1[1] = closure_4(iconSize(4632).Text, obj5);
   obj3.children = items1;
   const tmp7Result = closure_5(View, obj3);
   let tmp11Result = tmp7Result;
@@ -63,7 +63,7 @@ export default function MessageRequestMutualServers(textVariant) {
     tmp11Result = tmp7Result;
     if (length > 0) {
       const obj6 = { accessibilityRole: "button", onPress, children: tmp7Result };
-      tmp11Result = tmp11(tmp4(5123).PressableOpacity, obj6);
+      tmp11Result = tmp11(tmp4(5204).PressableOpacity, obj6);
     }
   }
   return tmp11Result;

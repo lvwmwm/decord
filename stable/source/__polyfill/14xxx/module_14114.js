@@ -1,9 +1,9 @@
 // Module ID: 14114
 // Function ID: 14115
-// Dependencies: [1122]
+// Dependencies: [14103]
 
 // Module 14114
-import registerAsset from "module_1122" /* 1122 */;
+import _mod14103 from "module_14103" /* 14103 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "7730e55139737e3f08bf4e9540ae6591", name: "StatusOffline", type: "png" });
+export default (arg0, arg1) => new _mod14103(arg0, arg1).minor;

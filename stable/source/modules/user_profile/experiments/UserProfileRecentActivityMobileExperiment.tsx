@@ -1,0 +1,20 @@
+// Module ID: 13209
+// Function ID: 13210
+// Name: UserProfileRecentActivityMobileExperiment
+// Dependencies: [1433, 2]
+// Exports: useIsRecentActivityMobileEnabled
+
+// Module 13209 (UserProfileRecentActivityMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1433 */;
+import size from "module_2" /* 2 */;
+
+const obj = { name: "2026-09-recent-activity-mobile", kind: "user", defaultConfig: { enabled: false }, variations: null };
+const obj2 = { 1: null };
+obj2[1] = { enabled: true };
+obj.variations = obj2;
+let closure_0 = ApexExperiment.createApexExperiment(obj);
+const result = size.fileFinishedImporting("modules/user_profile/experiments/UserProfileRecentActivityMobileExperiment.tsx");
+
+export const useIsRecentActivityMobileEnabled = function useIsRecentActivityMobileEnabled(UserProfileContent) {
+  return closure_0.useConfig({ location: UserProfileContent }).enabled;
+};

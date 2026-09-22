@@ -1,9 +1,0 @@
-// Module ID: 12333
-// Function ID: 12334
-// Dependencies: [1122]
-
-// Module 12333
-import registerAsset from "module_1122" /* 1122 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 48, height: 48, scales: [2, 3], hash: "4baba2bad08c08e75957838b804dc091", name: "img_study", type: "png" });

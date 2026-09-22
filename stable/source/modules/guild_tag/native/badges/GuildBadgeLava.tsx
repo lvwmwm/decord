@@ -1,12 +1,12 @@
-// Module ID: 13935
-// Function ID: 13936
+// Module ID: 14020
+// Function ID: 14021
 // Name: GuildBadgeLava
-// Dependencies: [19, 21, 13920, 8457, 2]
+// Dependencies: [19, 21, 14005, 8574, 2]
 // Exports: GuildBadgeLava
 
-// Module 13935 (GuildBadgeLava)
-import inlineStyles from "inlineStyles" /* 8457 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13920 */;
+// Module 14020 (GuildBadgeLava)
+import inlineStyles from "inlineStyles" /* 8574 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14005 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

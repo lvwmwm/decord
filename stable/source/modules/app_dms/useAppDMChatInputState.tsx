@@ -1,20 +1,20 @@
-// Module ID: 13265
-// Function ID: 13266
+// Module ID: 13396
+// Function ID: 13397
 // Name: useAppDMChatInputState
-// Dependencies: [19, 9296, 4788, 7621, 1918, 1371, 1074, 1894, 504, 8188, 573, 7168, 2]
+// Dependencies: [19, 9419, 4864, 7723, 1918, 1371, 1074, 1894, 504, 8304, 573, 7271, 2]
 // Exports: default
 
-// Module 13265 (useAppDMChatInputState)
+// Module 13396 (useAppDMChatInputState)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8188 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8304 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 4788 */;
-import UserProfileStore from "UserProfileStore" /* 7621 */;
+import ApplicationStore from "ApplicationStore" /* 4864 */;
+import UserProfileStore from "UserProfileStore" /* 7723 */;
 import ApplicationRecord from "ApplicationRecord" /* 1918 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = fn;
-const useQueryState = fn(9296).useQueryState;
+const useQueryState = fn(9419).useQueryState;
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
 let items = [fn(1894).ApplicationCommandType.PRIMARY_ENTRY_POINT, fn(1894).ApplicationCommandType.CHAT, fn(1894).ApplicationCommandType.MESSAGE, fn(1894).ApplicationCommandType.USER];
 const size = fn(2);

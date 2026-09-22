@@ -1,15 +1,16 @@
-// Module ID: 13575
-// Function ID: 13576
+// Module ID: 10876
+// Function ID: 10877
 // Name: GiftingBadgesUtils
-// Dependencies: [8193, 1371, 10748, 13576, 504, 4380, 1943, 2]
-// Exports: getGiftingBadgeProgressPercent, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgesDesktopEnabled
+// Dependencies: [8309, 1371, 10872, 10877, 10878, 504, 4457, 1943, 2]
+// Exports: getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgeComplexArtEnabled, useIsGiftingBadgesDesktopEnabled
 
-// Module 13575 (GiftingBadgesUtils)
+// Module 10876 (GiftingBadgesUtils)
 import initialize from "initialize" /* 504 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4380 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8193 */;
-import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 10748 */;
-import GiftingBadgeDesktopExperiment2 from "GiftingBadgeDesktopExperiment" /* 13576 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4457 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8309 */;
+import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 10872 */;
+import GiftingBadgeDesktopExperiment2 from "GiftingBadgeDesktopExperiment" /* 10877 */;
+import GiftingBadgeComplexArtExperiment2 from "GiftingBadgeComplexArtExperiment" /* 10878 */;
 import UserStore from "UserStore" /* 1371 */;
 import size from "module_2" /* 2 */;
 
@@ -55,6 +56,29 @@ export const getIsGiftingBadgesDesktopEnabled = function getIsGiftingBadgesDeskt
     enabled = GiftingBadgeDesktopExperiment.getConfig(obj2).enabled;
   }
   return enabled;
+};
+export const useIsGiftingBadgeComplexArtEnabled = function useIsGiftingBadgeComplexArtEnabled(UserSettingsGiftingBadgeProgress) {
+  const GiftingBadgeComplexArtExperiment = GiftingBadgeComplexArtExperiment2.GiftingBadgeComplexArtExperiment;
+  return GiftingBadgeComplexArtExperiment.useConfig({ location: UserSettingsGiftingBadgeProgress }).enabled;
+};
+export const getGiftingBadgeTierIconUrl = function getGiftingBadgeTierIconUrl(nextTier, isGiftingBadgeComplexArtEnabled) {
+  if (isGiftingBadgeComplexArtEnabled) {
+    let prop;
+    if (!tmp) {
+      prop = nextTier.complex_icon_static_url;
+    }
+    if (prop == null) {
+      let simple_icon_url1;
+      if (nextTier != null) {
+        simple_icon_url1 = nextTier.simple_icon_url;
+      }
+      prop = simple_icon_url1;
+    }
+    let simple_icon_url = prop;
+  } else if (!tmp) {
+    simple_icon_url = nextTier.simple_icon_url;
+  }
+  return simple_icon_url;
 };
 export const useIsEligibleToShowGiftingBadgeCoachmark = function useIsEligibleToShowGiftingBadgeCoachmark(location) {
   const _location = location.location;

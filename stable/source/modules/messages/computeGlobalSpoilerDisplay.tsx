@@ -1,11 +1,11 @@
-// Module ID: 11531
-// Function ID: 11532
+// Module ID: 8389
+// Function ID: 8390
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: [4199, 1074, 563, 1935, 2]
+// Dependencies: [4275, 1074, 563, 1935, 2]
 // Exports: default, useShouldDisplaySpoilerObscurity
 
-// Module 11531 (computeGlobalSpoilerDisplay)
-import PermissionStore from "PermissionStore" /* 4199 */;
+// Module 8389 (computeGlobalSpoilerDisplay)
+import PermissionStore from "PermissionStore" /* 4275 */;
 
 const require = globalThis.__r;
 
@@ -25,10 +25,10 @@ export default function computeGlobalSpoilerDisplay(arg0, arg1) {
     return false;
   }
 };
-export const useShouldDisplaySpoilerObscurity = function useShouldDisplaySpoilerObscurity(channel) {
-  _require = channel;
+export const useShouldDisplaySpoilerObscurity = function useShouldDisplaySpoilerObscurity(stateFromStores) {
+  _require = stateFromStores;
   const items = [PermissionStore];
-  const stateFromStores = require("useStateFromStores").useStateFromStores(items, () => PermissionStore.can(constants.MANAGE_MESSAGES, closure_0));
+  stateFromStores = require("useStateFromStores").useStateFromStores(items, () => PermissionStore.can(constants.MANAGE_MESSAGES, closure_0));
   const RenderSpoilers = require("UserSettings").RenderSpoilers;
   const setting = RenderSpoilers.useSetting();
   let flag = true;

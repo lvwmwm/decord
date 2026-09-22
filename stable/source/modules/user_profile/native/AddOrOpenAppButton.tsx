@@ -1,16 +1,16 @@
-// Module ID: 13001
-// Function ID: 13002
+// Module ID: 13131
+// Function ID: 13132
 // Name: AddOrOpenAppButton
-// Dependencies: [5, 32, 19, 9296, 1074, 1482, 21, 12149, 9579, 4527, 7190, 12136, 4258, 1365, 8584, 8873, 1114, 4975, 576, 7163, 4573, 4425, 1609, 1242, 2]
+// Dependencies: [5, 32, 19, 9419, 1074, 1482, 21, 12278, 9703, 4603, 7292, 12265, 4334, 1365, 8701, 8992, 1114, 5056, 576, 7266, 4649, 4502, 1609, 1240, 2]
 // Exports: default
 
-// Module 13001 (AddOrOpenAppButton)
-import ToastUtils from "ToastUtils" /* 4258 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import ClipboardUtils from "ClipboardUtils" /* 7190 */;
-import ApplicationUtils from "ApplicationUtils" /* 9579 */;
-import getApplicationInstallURL from "getApplicationInstallURL" /* 12136 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12149 */;
+// Module 13131 (AddOrOpenAppButton)
+import ToastUtils from "ToastUtils" /* 4334 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import ClipboardUtils from "ClipboardUtils" /* 7292 */;
+import ApplicationUtils from "ApplicationUtils" /* 9703 */;
+import getApplicationInstallURL from "getApplicationInstallURL" /* 12265 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12278 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -31,7 +31,7 @@ function AddAppButton(application) {
   const customInstallUrl = application.customInstallUrl;
   if (null != customInstallUrl) {
     if (!obj2.isDiscordUrl(customInstallUrl)) {
-      let PlusSmallIcon = application(8584).LinkExternalSmallIcon;
+      let PlusSmallIcon = application(8701).LinkExternalSmallIcon;
       let tmp6 = application;
     }
     const items1 = [application];
@@ -58,9 +58,9 @@ function AddAppButton(application) {
     obj3.onAccessibilityAction = callback1;
     const obj4 = { size: "sm", color: guildId(576).colors.WHITE };
     obj3.icon = <PlusSmallIcon size="sm" color={guildId(576).colors.WHITE} />;
-    return jsx(tmp6(4975).Button, { text: null, onPress: null, onLongPress: null, accessibilityActions: null, onAccessibilityAction: null, icon: null });
+    return jsx(tmp6(5056).Button, { text: null, onPress: null, onLongPress: null, accessibilityActions: null, onAccessibilityAction: null, icon: null });
   }
-  PlusSmallIcon = application(8873).PlusSmallIcon;
+  PlusSmallIcon = application(8992).PlusSmallIcon;
   tmp6 = application;
 }
 function OpenAppButton(profileApplication) {
@@ -118,18 +118,18 @@ function OpenAppButton(profileApplication) {
             if (application1 == null) {
               c3 = 1;
               c4 = 1;
-              const obj7 = { value: tmp2(7163).fetchApplication(tmp42.id), done: false };
+              const obj7 = { value: tmp2(7266).fetchApplication(tmp42.id), done: false };
               return obj7;
             } else {
               closure_129_1 = closure_0;
               closure_130_3(false);
               if (null != closure_129_0) {
-                tmp2(4527).hideAllActionSheets();
-                const obj5 = tmp2(4527);
+                tmp2(4603).hideAllActionSheets();
+                const obj5 = tmp2(4603);
                 const obj8 = { recipientIds: closure_130_1 };
                 c3 = 2;
                 c4 = 1;
-                const obj10 = { value: tmp2(4573).openPrivateChannel(obj8), done: false };
+                const obj10 = { value: tmp2(4649).openPrivateChannel(obj8), done: false };
                 return obj10;
               } else {
                 c4 = 3;
@@ -169,8 +169,8 @@ function OpenAppButton(profileApplication) {
             }
           }, 0);
           const obj12 = { application_id: closure_129_1.id };
-          tmp2(1242).track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj12);
-          const obj = tmp2(1242);
+          tmp2(1240).track(constants.APP_PROFILE_OPEN_APP_BUTTON_CLICKED, obj12);
+          const obj = tmp2(1240);
         }
         c4 = 3;
         const obj13 = { value, done: true };
@@ -187,7 +187,7 @@ function OpenAppButton(profileApplication) {
   obj.onPress = callback;
   return jsx(profileApplication(channel[17]).Button, { text: null, loading: null, onPress: null });
 }
-const getSection = fn(9296).getSection;
+const getSection = fn(9419).getSection;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const AppLauncherRouteName = fn(1482).AppLauncherRouteName;
 const jsx = fn(21).jsx;

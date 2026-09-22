@@ -1,19 +1,19 @@
-// Module ID: 4802
-// Function ID: 4803
+// Module ID: 4878
+// Function ID: 4879
 // Name: StoreUtils
-// Dependencies: [5, 502, 4220, 4221, 4224, 1074, 4803, 4801, 4882, 1430, 4884, 1272, 1115, 1114, 2]
+// Dependencies: [5, 502, 4296, 4297, 4300, 1074, 4879, 4877, 4958, 1430, 4960, 1270, 1363, 1114, 2]
 // Exports: getAssetURL, getPrimarySKUForApplication, httpGetWithCountryCodeQuery, nativePlatformTypeToSKUOperatingSystem, skuOperatingSystemToText
 
-// Module 4802 (StoreUtils)
+// Module 4878 (StoreUtils)
 import util from "util" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1430 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BillingInfoStore from "BillingInfoStore" /* 4220 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4221 */;
-import SubscriptionStore from "SubscriptionStore" /* 4224 */;
-import allSettled_mod from "allSettled" /* 4803 */;
+import BillingInfoStore from "BillingInfoStore" /* 4296 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4297 */;
+import SubscriptionStore from "SubscriptionStore" /* 4300 */;
+import allSettled_mod from "allSettled" /* 4879 */;
 
 require = fn;
 let closure_10 = async function _httpGetWithCountryCodeQuery(arg0, value) {
@@ -246,14 +246,14 @@ const Constants = fn(1074);
 ({ Endpoints: closure_7, OperatingSystems: closure_8 } = Constants);
 let allSettled = allSettled_mod;
 allSettled = allSettled.shim();
-const isMobile = fn(4801).isMobile;
+const isMobile = fn(4877).isMobile;
 let tmp4 = !isMobile;
 if (!isMobile) {
-  tmp4 = !fn(4801).isTablet;
+  tmp4 = !fn(4877).isTablet;
 }
 if (tmp4) {
-  tmp4 = -1 !== fn(4882).getChromeVersion();
-  let obj2 = fn(4882);
+  tmp4 = -1 !== fn(4958).getChromeVersion();
+  let obj2 = fn(4958);
 }
 let closure_9 = tmp4;
 const size = fn(2);
@@ -307,9 +307,9 @@ export const httpGetWithCountryCodeQuery = function httpGetWithCountryCodeQuery(
 export const nativePlatformTypeToSKUOperatingSystem = function nativePlatformTypeToSKUOperatingSystem(platform) {
   if (PlatformUtils.PlatformTypes.WINDOWS === platform) {
     return constants.WINDOWS;
-  } else if (tmp(1115).PlatformTypes.OSX === platform) {
+  } else if (tmp(1363).PlatformTypes.OSX === platform) {
     return constants.MACOS;
-  } else if (tmp(1115).PlatformTypes.LINUX === platform) {
+  } else if (tmp(1363).PlatformTypes.LINUX === platform) {
     return constants.LINUX;
   } else {
     return null;

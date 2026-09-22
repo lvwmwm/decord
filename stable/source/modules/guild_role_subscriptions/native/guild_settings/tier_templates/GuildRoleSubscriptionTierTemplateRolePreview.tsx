@@ -1,19 +1,19 @@
-// Module ID: 17789
-// Function ID: 17790
+// Module ID: 17903
+// Function ID: 17904
 // Name: GuildRoleSubscriptionTierTemplateRolePreview
-// Dependencies: [19, 17, 1371, 21, 4560, 576, 1114, 563, 4712, 5587, 4556, 1091, 1178, 7188, 2]
+// Dependencies: [19, 17, 1371, 21, 4636, 576, 1114, 563, 4788, 5668, 4632, 1091, 1176, 7308, 2]
 // Exports: GuildRoleSubscriptionRolePreview
 
-// Module 17789 (GuildRoleSubscriptionTierTemplateRolePreview)
+// Module 17903 (GuildRoleSubscriptionTierTemplateRolePreview)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtilsAll from "utils/ColorUtils" /* 1091 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4712 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import RoleIconDefault from "RoleIcon" /* 7188 */;
+import native from "native" /* 1176 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import RoleIconDefault from "RoleIcon" /* 7308 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -21,7 +21,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flexDirection: "row", padding: 16, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, avatar: { width: 40, height: 40, borderRadius: 20 }, content: { marginStart: 16 }, contextRow: { flexDirection: "row", alignItems: "center" } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -51,7 +51,7 @@ export const GuildRoleSubscriptionRolePreview = function GuildRoleSubscriptionRo
   obj8.color = utils_ColorUtilsAll.int2hex(roleColor);
   obj7.style = obj8;
   obj7.children = name;
-  const items3 = [timestampProducer(Text_Text.Text, obj7), timestampProducer(native.Spacer, { size: 4 }), timestampProducer(RoleIconDefault, { name: roleName, source: { uri: roleImage }, size: 16 }), timestampProducer(native.Spacer, { size: 8 }), timestampProducer(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" })];
+  const items3 = [timestampProducer(Text_Text.Text, obj7), timestampProducer(native.Spacer, { size: 4 }), timestampProducer(RoleIconDefault, { name: roleName, src: roleImage, size: 16 }), timestampProducer(native.Spacer, { size: 8 }), timestampProducer(Text_Text.Text, { variant: "text-xs/medium", color: "text-muted", children: "4:20 PM" })];
   obj6.children = items3;
   const items4 = [React5(View, obj6), timestampProducer(Text_Text.Text, { variant: "text-md/normal", color: "text-default", style: textStyle, children: content })];
   obj5.children = items4;

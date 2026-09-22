@@ -1,12 +1,12 @@
-// Module ID: 7429
-// Function ID: 7430
+// Module ID: 7532
+// Function ID: 7533
 // Name: payments/OrderActionCreators
-// Dependencies: [5, 4542, 1074, 3, 1272, 4233, 573, 7243, 2]
+// Dependencies: [5, 4618, 1074, 3, 1270, 4309, 573, 7346, 2]
 // Exports: cancelSigningAndDiscardOrder, getOrCreateOrder, markOrderAsSigningInProgress, patchOrder, patchOrderLineItem, updateOrder
 
-// Module 7429 (payments/OrderActionCreators)
+// Module 7532 (payments/OrderActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -51,40 +51,47 @@ let closure_8 = async function _getOrders(arg0, value) {
           c4 = 1;
           let status;
           if (closure_0 != null) {
-            status = tmp39.status;
+            status = tmp40.status;
           }
           const obj5 = {};
           if (null != status) {
-            const items = [tmp39.status];
+            const items = [tmp40.status];
             obj5.statuses = items;
           }
           let skuId;
           if (closure_0 != null) {
-            skuId = tmp39.skuId;
+            skuId = tmp40.skuId;
           }
           if (null != skuId) {
-            obj5.sku_id = tmp39.skuId;
+            obj5.sku_id = tmp40.skuId;
           }
           let createdAfter;
           if (closure_0 != null) {
-            createdAfter = tmp39.createdAfter;
+            createdAfter = tmp40.createdAfter;
           }
           if (null != createdAfter) {
-            obj5.created_after = tmp39.createdAfter;
+            obj5.created_after = tmp40.createdAfter;
           }
           let isGift;
           if (closure_0 != null) {
-            isGift = tmp39.isGift;
+            isGift = tmp40.isGift;
           }
           if (null != isGift) {
-            obj5.is_gift = tmp39.isGift;
+            obj5.is_gift = tmp40.isGift;
+          }
+          let recipientUserId;
+          if (closure_0 != null) {
+            recipientUserId = tmp40.recipientUserId;
+          }
+          if (null != recipientUserId) {
+            obj5.recipient_id = tmp40.recipientUserId;
           }
           let paymentGateway;
           if (closure_0 != null) {
-            paymentGateway = tmp39.paymentGateway;
+            paymentGateway = tmp40.paymentGateway;
           }
           if (null != paymentGateway) {
-            obj5.payment_gateway = tmp39.paymentGateway;
+            obj5.payment_gateway = tmp40.paymentGateway;
           }
           const HTTP = HTTPUtils.HTTP;
           const request = { url: constants.ORDER_LIST, query: obj5, rejectWithError: true };
@@ -121,11 +128,11 @@ let closure_8 = async function _getOrders(arg0, value) {
         const obj = { value: body, done: true };
         return obj;
       }
-    } catch (tmp31) {
-      closure_3 = tmp31;
+    } catch (tmp32) {
+      closure_3 = tmp32;
       if (tmp4 === c4) {
         c6 = tmp2;
-        throw tmp31;
+        throw tmp32;
       } else {
         c5 = tmp;
       }
@@ -384,7 +391,7 @@ let closure_12 = async function _getOrCreateOrder(arg0, value) {
           const obj4 = { value, done: true };
           return obj4;
         } else {
-          const obj5 = { isGift: closure_129_4, status: closure_130_4.DRAFT, skuId: closure_129_0, createdAfter: closure_129_6 };
+          const obj5 = { isGift: closure_129_4, status: closure_130_4.DRAFT, skuId: closure_129_0, createdAfter: closure_129_6, recipientUserId: closure_129_2 };
           c3 = 2;
           c4 = 1;
           const obj6 = { value: closure_130_7(obj5), done: false };
@@ -431,9 +438,9 @@ let closure_12 = async function _getOrCreateOrder(arg0, value) {
         const obj = { value, done: true };
         return obj;
       }
-    } catch (tmp20) {
+    } catch (tmp21) {
       c4 = tmp;
-      throw tmp20;
+      throw tmp21;
     }
   }
 };
@@ -1328,7 +1335,7 @@ let closure_22 = async function _cancelOrderSigning(arg0, value) {
     }
   }
 };
-const OrderStatus = fn(4542).OrderStatus;
+const OrderStatus = fn(4618).OrderStatus;
 const Endpoints = fn(1074).Endpoints;
 const tmp2 = new LoggerDefault("OrderActionCreators");
 let closure_6 = tmp2;

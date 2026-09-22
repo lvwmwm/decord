@@ -1,13 +1,13 @@
-// Module ID: 13493
-// Function ID: 13494
+// Module ID: 13579
+// Function ID: 13580
 // Name: PremiumGroupStore
-// Dependencies: [4224, 4232, 1074, 573, 13494, 504, 2]
+// Dependencies: [4300, 4308, 1074, 573, 13580, 504, 2]
 
-// Module 13493 (PremiumGroupStore)
+// Module 13579 (PremiumGroupStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PremiumGroupActionCreators from "PremiumGroupActionCreators" /* 13494 */;
-import SubscriptionStore from "SubscriptionStore" /* 4224 */;
+import PremiumGroupActionCreators from "PremiumGroupActionCreators" /* 13580 */;
+import SubscriptionStore from "SubscriptionStore" /* 4300 */;
 
 require = fn;
 function handleMutationStart() {
@@ -24,7 +24,7 @@ function handleMutationSuccess(subscriptionId) {
 function handleMutationFailure() {
   closure_7.membersData.isUpdating = false;
 }
-const PremiumGroupConstants = fn(4232);
+const PremiumGroupConstants = fn(4308);
 ({ PremiumGroupAPIErrorCodes: closure_4, TOTAL_PREMIUM_GROUP_MEMBER_SEATS: hasOwnProperty } = PremiumGroupConstants);
 const NOOP_NULL = fn(1074).NOOP_NULL;
 let closure_7 = { membersData: { data: null, isFetching: false, isUpdating: false }, membershipData: { data: null, isFetching: false, hasFetched: false } };

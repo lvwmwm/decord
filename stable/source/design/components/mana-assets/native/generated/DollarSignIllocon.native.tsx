@@ -1,13 +1,13 @@
-// Module ID: 5931
-// Function ID: 5932
+// Module ID: 6032
+// Function ID: 6033
 // Name: DollarSignIllocon
-// Dependencies: [21, 5587, 5932, 2]
+// Dependencies: [21, 5668, 6033, 2]
 // Exports: DollarSignIllocon
 
-// Module 5931 (DollarSignIllocon)
+// Module 6032 (DollarSignIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef5932 from "module_5932" /* 5932 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6033 from "module_6033" /* 6033 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const DollarSignIllocon = function DollarSignIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5932 };
+  const obj2 = { uri: _modDef6033 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

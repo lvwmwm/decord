@@ -1,0 +1,13 @@
+// Module ID: 16732
+// Function ID: 16733
+// Name: NavigationTTIDefinition
+// Dependencies: [1248, 1334, 2]
+
+// Module 16732 (NavigationTTIDefinition)
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
+import AnalyticsSchema from "AnalyticsSchema" /* 1334 */;
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavigationTTIDefinition.tsx");
+
+export const CHANNEL_NAVIGATION_TTI = { rootEventName: discord_common_AnalyticsUtils.SpanTtiNames.CHANNEL, componentEventName: AnalyticsSchema.SpanComponentNames.CHANNEL };

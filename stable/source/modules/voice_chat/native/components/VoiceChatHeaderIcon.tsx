@@ -1,18 +1,18 @@
-// Module ID: 10005
-// Function ID: 10006
+// Module ID: 10129
+// Function ID: 10130
 // Name: VoiceChatHeaderIcon
-// Dependencies: [19, 17, 4575, 1074, 21, 4560, 576, 5682, 504, 9930, 12, 4271, 5123, 1178, 2]
+// Dependencies: [19, 17, 4651, 1074, 21, 4636, 576, 5763, 504, 10054, 12, 4347, 5204, 1176, 2]
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 10005 (VoiceChatHeaderIcon)
+// Module 10129 (VoiceChatHeaderIcon)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
-import native2 from "native" /* 4271 */;
-import Pressables from "Pressables" /* 5123 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 9930 */;
+import native from "native" /* 1176 */;
+import native2 from "native" /* 4347 */;
+import Pressables from "Pressables" /* 5204 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10054 */;
 import noop from "module_19" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4575 */;
+import ReadStateStore from "ReadStateStore" /* 4651 */;
 
 const require = globalThis.__r;
 
@@ -35,14 +35,14 @@ const View = fn(17).View;
 const ThemeTypes = fn(1074).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { headerButton: null, disabledOpacity: null, chatIconContainer: null, chatIcon: null, badge: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, alignSelf: "center", padding: 6, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND };
 obj2.headerButton = size;
 obj2.disabledOpacity = { opacity: 0.6 };
-obj2.chatIconContainer = { marginRight: 12, height: fn(5682).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center" };
+obj2.chatIconContainer = { marginRight: 12, height: fn(5763).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj2.chatIcon = { marginHorizontal: 0, width: 32, height: 32 };
-const obj3 = { marginRight: 12, height: fn(5682).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center" };
+const obj3 = { marginRight: 12, height: fn(5763).NAV_BAR_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj2.badge = { backgroundColor: nativeDefault.colors.ICON_STRONG };
 let closure_8 = createStyles.createStyles(obj2);
 size = fn(2);

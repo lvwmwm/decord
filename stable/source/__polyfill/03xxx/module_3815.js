@@ -1,41 +1,16 @@
 // Module ID: 3815
 // Function ID: 3816
-// Dependencies: [3654, 3805, 3651]
-// Exports: default
+// Dependencies: [2030]
 
 // Module 3815
-import module_3654_mod from "module_3654" /* 3654 */;
-import module_3805_mod from "module_3805" /* 3805 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import module_2030 from "module_2030" /* 2030 */;
 
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  const obj = { default: module_3654 };
-  let tmp3 = obj;
+if (!module_2030) {
+  const obj2 = { default: module_2030 };
+  let obj = obj2;
 } else {
-  tmp3 = module_3654;
+  obj = module_2030;
 }
-module_3654 = tmp3;
-let module_3805 = module_3805_mod;
-if (!module_3805) {
-  const obj2 = { default: module_3805 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3805;
-}
-module_3805 = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
-} else {
-  tmp7 = requiredArgs;
-}
-requiredArgs = tmp7;
-let c3 = 60000;
 
-export default function addMinutes(interval, arg1) {
-  requiredArgs.default(2, arguments);
-  return module_3805.default(interval, module_3654.default(arg1) * c3);
-};
+export default { date: obj.default({ formats: { full: "EEEE d MMMM y", long: "d MMMM y", medium: "d MMM y", short: "dd-MM-y" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "HH:mm:ss zzzz", long: "HH:mm:ss z", medium: "HH:mm:ss", short: "HH:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} 'om' {{time}}", long: "{{date}} 'om' {{time}}", medium: "{{date}}, {{time}}", short: "{{date}}, {{time}}" }, defaultWidth: "full" }) };
 export default exports.default;

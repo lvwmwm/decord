@@ -1,12 +1,12 @@
-// Module ID: 12162
-// Function ID: 12163
+// Module ID: 12291
+// Function ID: 12292
 // Name: FileTypeFiltering
-// Dependencies: [32, 19, 2025, 1115, 1114, 504, 4904, 2]
+// Dependencies: [32, 19, 2025, 1363, 1114, 504, 4980, 2]
 // Exports: getFileTypeFiltering, useFileTypeFiltering, useFileTypesFormattedString
 
-// Module 12162 (FileTypeFiltering)
+// Module 12291 (FileTypeFiltering)
 import util from "util" /* 1114 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4904 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2025 */;

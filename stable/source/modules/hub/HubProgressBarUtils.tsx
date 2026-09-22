@@ -1,17 +1,17 @@
-// Module ID: 12673
-// Function ID: 12674
+// Module ID: 12802
+// Function ID: 12803
 // Name: HubProgressBarUtils
-// Dependencies: [19, 1221, 5281, 9837, 1074, 504, 1187, 1114, 1369, 1384, 2]
+// Dependencies: [19, 1219, 5362, 9961, 1074, 504, 1185, 1114, 1369, 1384, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 12673 (HubProgressBarUtils)
-import preloaded_user_settings from "preloaded_user_settings" /* 1187 */;
+// Module 12802 (HubProgressBarUtils)
+import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
 import noop from "module_19" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5281 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5362 */;
 
 require = fn;
-const HUB_PROGRESS_STEP_ORDER = fn(9837).HUB_PROGRESS_STEP_ORDER;
+const HUB_PROGRESS_STEP_ORDER = fn(9961).HUB_PROGRESS_STEP_ORDER;
 const PlatformTypes = fn(1074).PlatformTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx");
@@ -20,13 +20,13 @@ export const getHubProgressTitleForStep = function getHubProgressTitleForStep(ne
   if (preloaded_user_settings.HubProgressStep.JOIN_GUILD === nextHubProgressStep) {
     const intl3 = tmp(1114).intl;
     return intl3.string(tmp(1114).t.iNR25n);
-  } else if (tmp(1187).HubProgressStep.INVITE_USER === nextHubProgressStep) {
+  } else if (tmp(1185).HubProgressStep.INVITE_USER === nextHubProgressStep) {
     const intl2 = tmp(1114).intl;
     return intl2.string(tmp(1114).t["3NlTYU"]);
-  } else if (tmp(1187).HubProgressStep.CONTACT_SYNC === nextHubProgressStep) {
+  } else if (tmp(1185).HubProgressStep.CONTACT_SYNC === nextHubProgressStep) {
     const intl = tmp(1114).intl;
     return intl.string(tmp(1114).t.HFvFte);
-  } else if (tmp(1187).HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
+  } else if (tmp(1185).HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
     return null;
   } else {
     tmp(1369).assertNever(nextHubProgressStep);

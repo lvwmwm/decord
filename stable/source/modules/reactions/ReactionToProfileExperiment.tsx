@@ -1,9 +1,9 @@
-// Module ID: 11262
-// Function ID: 11263
+// Module ID: 11394
+// Function ID: 11395
 // Name: ReactionToProfileExperiment
 // Dependencies: [1434, 2]
 
-// Module 11262 (ReactionToProfileExperiment)
+// Module 11394 (ReactionToProfileExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1434 */;
 
 const obj = { kind: "user", name: "2026-07-mobile-reaction-to-profile", defaultConfig: { reactionToProfileEnabled: false }, variations: null };

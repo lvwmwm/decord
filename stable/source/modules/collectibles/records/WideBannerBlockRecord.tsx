@@ -1,10 +1,10 @@
-// Module ID: 7584
-// Function ID: 7585
+// Module ID: 7686
+// Function ID: 7687
 // Name: WideBannerBlockRecord
-// Dependencies: [7573, 2]
+// Dependencies: [7675, 2]
 
-// Module 7584 (WideBannerBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 7573 */;
+// Module 7686 (WideBannerBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 7675 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function WideBannerBlockRecord(arg0) {

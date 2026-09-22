@@ -1,13 +1,13 @@
-// Module ID: 13405
-// Function ID: 13406
+// Module ID: 13517
+// Function ID: 13518
 // Name: showMarketingMomentRewardScreen
-// Dependencies: [5, 7542, 7541, 11082, 2]
+// Dependencies: [5, 7645, 7644, 11215, 2]
 // Exports: showMarketingMomentRewardScreen
 
-// Module 13405 (showMarketingMomentRewardScreen)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7541 */;
+// Module 13517 (showMarketingMomentRewardScreen)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7644 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7542 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7645 */;
 
 require = fn;
 let closure_5 = async function _showMarketingMomentRewardScreen(arg0, value) {

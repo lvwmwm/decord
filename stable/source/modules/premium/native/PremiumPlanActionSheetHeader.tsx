@@ -1,13 +1,13 @@
-// Module ID: 7431
-// Function ID: 7432
+// Module ID: 7534
+// Function ID: 7535
 // Name: PremiumPlanActionSheetHeader
-// Dependencies: [19, 17, 1373, 7432, 21, 4560, 7433, 7434, 4218, 4987, 1093, 5587, 7435, 7436, 7437, 7438, 9391, 10720, 9396, 2]
+// Dependencies: [19, 17, 1373, 7535, 21, 4636, 7536, 7537, 4294, 5068, 1093, 5668, 7538, 7539, 7540, 7541, 9515, 10844, 9520, 2]
 // Exports: default
 
-// Module 7431 (PremiumPlanActionSheetHeader)
+// Module 7534 (PremiumPlanActionSheetHeader)
 import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import PremiumUtils from "PremiumUtils" /* 4218 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import PremiumUtils from "PremiumUtils" /* 4294 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
 import noop from "module_19" /* 19 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -16,10 +16,10 @@ require = fn;
 const View = fn(17).View;
 const PremiumConstants = fn(1373);
 ({ PremiumTypes: closure_4, SubscriptionIntervalTypes: hasOwnProperty } = PremiumConstants);
-const getPremiumGradientColor = fn(7432).getPremiumGradientColor;
+const getPremiumGradientColor = fn(7535).getPremiumGradientColor;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { header: { height: 112, justifyContent: "center", alignItems: "center" }, logoContainer: { position: "absolute", top: 16, left: 16 }, imgWumpus: { position: "absolute", height: 90 }, imgWumpusRight: null, imgWumpusBottom: { bottom: 0 }, discountPill: { marginTop: 10 } };
 let obj3 = { transform: null };
 let items = [{ scaleX: -1 }];
@@ -56,12 +56,12 @@ export default function PremiumPlanActionSheetHeader(arg0) {
   const tmp14 = LinearGradientDefault;
   obj2.accessibilityLabel = PremiumUtils.getPremiumTypeDisplayName(premiumType);
   if (TIER_0.TIER_0 === premiumType) {
-    let tmp13Result = tmp13(7433);
+    let tmp13Result = tmp13(7536);
   } else {
     tmp13Result = null;
     if (tmp15.TIER_1 !== premiumType) {
       if (tmp15.TIER_2 === premiumType) {
-        tmp13Result = tmp13(7434);
+        tmp13Result = tmp13(7537);
       }
     }
   }
@@ -69,35 +69,35 @@ export default function PremiumPlanActionSheetHeader(arg0) {
     const items = [tmp13Result, , ];
     const obj3 = { style: tmp.logoContainer, children: null };
     if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result8 = tmp13(7435);
+      let tmp13Result8 = tmp13(7538);
     } else if (tmp15.TIER_1 === premiumType) {
-      tmp13Result8 = tmp13(7436);
+      tmp13Result8 = tmp13(7539);
     } else if (tmp15.TIER_2 === premiumType) {
-      tmp13Result8 = tmp13(7437);
+      tmp13Result8 = tmp13(7540);
     }
     const obj4 = { source: tmp13Result8, resizeMode: "contain" };
-    const items1 = [React5(tmp13(5587), obj4), , ];
+    const items1 = [React5(tmp13(5668), obj4), , ];
     let tmp22Result = null;
     if (tmp2) {
       const obj5 = { style: tmp.discountPill, trialOffer, premiumType, useWhiteBackground: true, hideTrialCountdown: true };
-      tmp22Result = tmp22(tmp6(7438).PremiumPill, obj5);
+      tmp22Result = tmp22(tmp6(7541).PremiumPill, obj5);
     }
     items1[1] = tmp22Result;
     let tmp22Result2 = null;
     if (tmp10) {
       const obj6 = { style: tmp.discountPill, discountOffer, premiumType, shouldShowDiscountUpsell: true, useWhiteBackground: true };
-      tmp22Result2 = tmp22(tmp6(7438).PremiumPill, obj6);
+      tmp22Result2 = tmp22(tmp6(7541).PremiumPill, obj6);
     }
     items1[2] = tmp22Result2;
     obj3.children = items1;
     items[1] = tmp12(View, obj3);
-    const tmp13Result7 = tmp13(5587);
+    const tmp13Result7 = tmp13(5668);
     if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result10 = tmp13(9391);
+      let tmp13Result10 = tmp13(9515);
     } else if (tmp15.TIER_1 === premiumType) {
-      tmp13Result10 = tmp13(10720);
+      tmp13Result10 = tmp13(10844);
     } else if (tmp15.TIER_2 === premiumType) {
-      tmp13Result10 = tmp13(9396);
+      tmp13Result10 = tmp13(9520);
     }
     const obj7 = { source: tmp13Result10, style: null, resizeMode: "contain" };
     const items2 = [tmp.imgWumpus, ];
@@ -114,20 +114,20 @@ export default function PremiumPlanActionSheetHeader(arg0) {
       return tmp12(tmp14, obj2);
     }
     imgWumpusBottom = tmp.imgWumpusBottom;
-    tmp13Result9 = tmp13(5587);
+    tmp13Result9 = tmp13(5668);
   } else {
     if (tmp15.TIER_0 === premiumType) {
-      let tmp13Result12 = tmp13(7433);
+      let tmp13Result12 = tmp13(7536);
     } else {
       tmp13Result12 = null;
       if (tmp15.TIER_1 !== premiumType) {
         if (tmp15.TIER_2 === premiumType) {
-          tmp13Result12 = tmp13(7434);
+          tmp13Result12 = tmp13(7537);
         }
       }
     }
     const obj8 = { source: tmp13Result12 };
-    React5(tmp13(5587), obj8);
-    const tmp13Result11 = tmp13(5587);
+    React5(tmp13(5668), obj8);
+    const tmp13Result11 = tmp13(5668);
   }
 };

@@ -1,10 +1,10 @@
-// Module ID: 9494
-// Function ID: 9495
+// Module ID: 9618
+// Function ID: 9619
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 9473, 1074, 21, 4560, 1178, 9495, 1477, 6981, 9498, 4296, 4974, 9499, 9500, 6655, 1115, 2]
+// Dependencies: [32, 19, 17, 9597, 1074, 21, 4636, 1176, 9619, 1477, 7084, 9622, 4373, 5055, 9623, 9624, 6756, 1363, 2]
 
-// Module 9494 (PictureInPicture)
-import spring from "spring" /* 4974 */;
+// Module 9618 (PictureInPicture)
+import spring from "spring" /* 5055 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,10 +13,10 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: hasOwnProperty } = get_ActivityIndicator);
-const toggleFocus = fn(9473).toggleFocus;
+const toggleFocus = fn(9597).toggleFocus;
 const PictureInPicturePositions = fn(1074).PictureInPicturePositions;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { pipOuterContainer: null, pipInnerContainer: null, elevationShadow: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -26,8 +26,8 @@ let obj4 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj4.alignItems = "baseline";
 obj.pipInnerContainer = obj4;
-const native = fn(1178);
-obj.elevationShadow = native.generateBoxShadowStyle(fn(1178).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
+const native = fn(1176);
+obj.elevationShadow = native.generateBoxShadowStyle(fn(1176).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
 let closure_9 = createStyles.createStyles(obj);
 function getSpringAnimationConfig(velocity) {
   return { mass: 0.2, damping: 7.5, stiffness: 100, restDisplacementThreshold: 0.1, restSpeedThreshold: 0.1, overshootClamping: true, velocity };

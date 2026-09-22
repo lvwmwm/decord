@@ -1,12 +1,12 @@
-// Module ID: 9638
-// Function ID: 9639
+// Module ID: 9762
+// Function ID: 9763
 // Name: useCurrentEmbeddedApplication
-// Dependencies: [32, 9639, 7168, 2]
+// Dependencies: [32, 9763, 7271, 2]
 // Exports: default
 
-// Module 9638 (useCurrentEmbeddedApplication)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7168 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9639 */;
+// Module 9762 (useCurrentEmbeddedApplication)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7271 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 9763 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 const size = fn(2);

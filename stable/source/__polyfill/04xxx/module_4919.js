@@ -1,18 +1,16 @@
 // Module ID: 4919
 // Function ID: 4920
-// Dependencies: [19]
-// Exports: usePrevious
+// Dependencies: [1306]
 
 // Module 4919
-import noop from "module_19" /* 19 */;
+import _mod1306 from "module_1306" /* 1306 */;
 
-({ useEffect: closure_0, useRef: closure_1 } = noop);
 
-export const usePrevious = function usePrevious(current) {
-  const tmp = framebus(undefined);
-  closure_1 = tmp;
-  React(() => {
-    closure_1.current = current;
-  });
-  return tmp.current;
+export default function mod(arg0, arg1) {
+  const result = arg0 % arg1;
+  let sum = result;
+  if (result < 0) {
+    sum = result + arg1;
+  }
+  return _mod1306(sum);
 };

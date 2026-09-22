@@ -1,20 +1,20 @@
-// Module ID: 14663
-// Function ID: 14664
+// Module ID: 14748
+// Function ID: 14749
 // Name: WebAuthnScreens
-// Dependencies: [14660, 21, 14664, 1114, 14671, 5624, 14666, 14676, 14677, 14680, 14681, 2]
+// Dependencies: [14745, 21, 14749, 1114, 14756, 5705, 14751, 14760, 14761, 14764, 14765, 2]
 // Exports: getScreens
 
-// Module 14663 (WebAuthnScreens)
+// Module 14748 (WebAuthnScreens)
 import jsxProd from "jsxProd" /* 21 */;
 import util from "util" /* 1114 */;
-import WebAuthnConstants from "WebAuthnConstants" /* 14660 */;
-import PasskeyUpsellViewDefault from "PasskeyUpsellView" /* 14664 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14666 */;
-import PasskeyInitStepDefault from "PasskeyInitStep" /* 14671 */;
-import WebAuthnEditStepDefault from "WebAuthnEditStep" /* 14676 */;
-import WebAuthnRegisterStepDefault from "WebAuthnRegisterStep" /* 14677 */;
-import WebAuthnNameStepDefault from "WebAuthnNameStep" /* 14680 */;
-import WebAuthnSuccessStepDefault from "WebAuthnSuccessStep" /* 14681 */;
+import WebAuthnConstants from "WebAuthnConstants" /* 14745 */;
+import PasskeyUpsellViewDefault from "PasskeyUpsellView" /* 14749 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 14751 */;
+import PasskeyInitStepDefault from "PasskeyInitStep" /* 14756 */;
+import WebAuthnEditStepDefault from "WebAuthnEditStep" /* 14760 */;
+import WebAuthnRegisterStepDefault from "WebAuthnRegisterStep" /* 14761 */;
+import WebAuthnNameStepDefault from "WebAuthnNameStep" /* 14764 */;
+import WebAuthnSuccessStepDefault from "WebAuthnSuccessStep" /* 14765 */;
 import size from "module_2" /* 2 */;
 
 const WebAuthnScreens = WebAuthnConstants.WebAuthnScreens;
@@ -32,8 +32,8 @@ export const getScreens = function getScreens(isModal) {
   };
   let headerCloseButton;
   if (isModal) {
-    headerCloseButton = tmp2(5624).getHeaderCloseButton(PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal);
-    const tmp2Result = tmp2(5624);
+    headerCloseButton = tmp2(5705).getHeaderCloseButton(PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal);
+    const tmp2Result = tmp2(5705);
   }
   obj3.headerLeft = headerCloseButton;
   obj[WebAuthnScreens.INIT] = obj3;
@@ -68,8 +68,8 @@ export const getScreens = function getScreens(isModal) {
   obj6.title = intl4.string(util.t["cY/IOu"]);
   let headerCloseButton1;
   if (isModal) {
-    headerCloseButton1 = tmp2(5624).getHeaderCloseButton(PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal);
-    const tmp2Result2 = tmp2(5624);
+    headerCloseButton1 = tmp2(5705).getHeaderCloseButton(PasskeyUpsellActionCreatorsDefault.closePasskeyUpsellModal);
+    const tmp2Result2 = tmp2(5705);
   }
   obj6.headerLeft = headerCloseButton1;
   obj[WebAuthnScreens.NAME] = obj6;

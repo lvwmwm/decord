@@ -1,8 +1,8 @@
-// Module ID: 5866
-// Function ID: 5867
+// Module ID: 5967
+// Function ID: 5968
 // Dependencies: [2]
 
-// Module 5866
+// Module 5967
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CoinSlotSpotIllustration-2x.png.js");

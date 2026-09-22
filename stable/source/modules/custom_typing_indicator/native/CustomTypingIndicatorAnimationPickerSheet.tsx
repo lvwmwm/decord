@@ -1,14 +1,14 @@
-// Module ID: 15362
-// Function ID: 15363
+// Module ID: 15445
+// Function ID: 15446
 // Name: CustomTypingIndicatorAnimationPickerSheet
-// Dependencies: [32, 19, 17, 21, 4560, 576, 5607, 4556, 1379, 1114, 3549, 7198, 11985, 4973, 2]
+// Dependencies: [32, 19, 17, 21, 4636, 576, 5688, 4632, 1379, 1114, 3592, 7300, 12114, 5054, 2]
 // Exports: default
 
-// Module 15362 (CustomTypingIndicatorAnimationPickerSheet)
+// Module 15445 (CustomTypingIndicatorAnimationPickerSheet)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Stack_Stack from "Stack/Stack" /* 4973 */;
-import Card from "Card" /* 5607 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Stack_Stack from "Stack/Stack" /* 5054 */;
+import Card from "Card" /* 5688 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -36,7 +36,7 @@ function MotionOptionButton(isSelected) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { content: { paddingHorizontal: nativeDefault.space.PX_16 }, previewRow: null, optionCard: null, optionCardSelected: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.previewRow = { alignSelf: "center", paddingVertical: nativeDefault.space.PX_24 };
@@ -60,24 +60,24 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
   const items = [obj, , , ];
   const obj2 = { value: onChange(1379).TypingIndicatorAnimation.PULSE, label: null };
   const intl2 = onChange(1114).intl;
-  obj2.label = intl2.string(animation(3549)["gyL/ce"]);
+  obj2.label = intl2.string(animation(3592)["gyL/ce"]);
   items[1] = obj2;
   const obj3 = { value: onChange(1379).TypingIndicatorAnimation.RING, label: null };
   const intl3 = onChange(1114).intl;
-  obj3.label = intl3.string(animation(3549).EgekTm);
+  obj3.label = intl3.string(animation(3592).EgekTm);
   items[2] = obj3;
   const obj4 = { value: onChange(1379).TypingIndicatorAnimation.WAVE, label: null };
   const intl4 = onChange(1114).intl;
-  obj4.label = intl4.string(animation(3549)["8t5EiI"]);
+  obj4.label = intl4.string(animation(3592)["8t5EiI"]);
   items[3] = obj4;
   const obj5 = { contentStyles: tmp.content, dismissAccessibilityLabel: null, children: null };
   const intl5 = onChange(1114).intl;
-  obj5.dismissAccessibilityLabel = intl5.string(animation(3549)["q+qHax"]);
+  obj5.dismissAccessibilityLabel = intl5.string(animation(3592)["q+qHax"]);
   const obj6 = { style: tmp.previewRow, children: null };
   const obj7 = { config: null, size: 54 };
   const obj8 = { emojis, animation, typingSuggestion: onChange(1379).TypingSuggestion.UNSPECIFIED };
   obj7.config = obj8;
-  obj6.children = closure_6(animation(11985), obj7);
+  obj6.children = closure_6(animation(12114), obj7);
   const items1 = [closure_6(View, obj6), ];
   const obj9 = { spacing: 8, children: null };
   const items2 = [items.slice(0, 2), items.slice(2, 4)];
@@ -94,7 +94,7 @@ export default function CustomTypingIndicatorAnimationPickerSheet(onChange) {
       }
     }, label.label))
   }, index));
-  items1[1] = closure_6(onChange(4973).Stack, obj9);
+  items1[1] = closure_6(onChange(5054).Stack, obj9);
   obj5.children = items1;
-  return closure_7(onChange(7198).ActionSheet, obj5);
+  return closure_7(onChange(7300).ActionSheet, obj5);
 };

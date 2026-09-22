@@ -1,25 +1,25 @@
-// Module ID: 16405
-// Function ID: 16406
+// Module ID: 16499
+// Function ID: 16500
 // Name: useForLaterCoachmark
-// Dependencies: [32, 19, 17, 1954, 21, 1943, 4560, 13296, 7855, 7388, 1114, 11132, 2]
+// Dependencies: [32, 19, 17, 1954, 21, 1943, 4636, 13428, 7957, 7491, 1114, 11265, 2]
 // Exports: default
 
-// Module 16405 (useForLaterCoachmark)
+// Module 16499 (useForLaterCoachmark)
 import util from "util" /* 1114 */;
-import _modDef13296 from "module_13296" /* 13296 */;
+import _modDef13428 from "module_13428" /* 13428 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function CoachmarkImg() {
-  const obj = { source: _modDef13296, style: closure_9().imageContainer };
-  return <Image source={_modDef13296} style={closure_9().imageContainer} />;
+  const obj = { source: _modDef13428, style: closure_9().imageContainer };
+  return <Image source={_modDef13428} style={closure_9().imageContainer} />;
 }
 const Image = fn(17).Image;
 const ContentDismissActionType = fn(1954).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let closure_8 = fn(1943).DismissibleContent.FOR_LATER_NOTIFICATIONS_COACHMARK;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_9 = createStyles.createStyles({ imageContainer: { width: 100, height: 80 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/saved_messages/native/useForLaterCoachmark.tsx");
@@ -31,8 +31,8 @@ export default function useForLaterCoachmark(targetRef) {
   } else {
     items1 = [];
   }
-  obj = first(7855);
-  const tmp4 = _slicedToArray(first(7388).useSelectedDismissibleContent(items1, undefined, true), 2);
+  obj = first(7957);
+  const tmp4 = _slicedToArray(first(7491).useSelectedDismissibleContent(items1, undefined, true), 2);
   first = tmp4[0];
   closure_1 = tmp6;
   const items2 = [tmp4[1], first];
@@ -51,7 +51,7 @@ export default function useForLaterCoachmark(targetRef) {
     };
     return obj;
   }, items2);
-  const tmpResult = first(7388);
-  const coachmark = first(11132).useCoachmark(targetRef, memo);
+  const tmpResult = first(7491);
+  const coachmark = first(11265).useCoachmark(targetRef, memo);
   return tmp4[1];
 };

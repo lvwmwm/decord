@@ -1,9 +1,0 @@
-// Module ID: 10403
-// Function ID: 10404
-// Dependencies: [1122]
-
-// Module 10403
-import registerAsset from "module_1122" /* 1122 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 12, height: 12, scales: [2, 3], hash: "91cf7e45c8979413a0ad2486eb772598", name: "ic_nitro_wheel", type: "png" });

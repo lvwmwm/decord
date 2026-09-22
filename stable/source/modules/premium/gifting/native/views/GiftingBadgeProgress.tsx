@@ -1,15 +1,14 @@
-// Module ID: 11036
-// Function ID: 11037
+// Module ID: 11169
+// Function ID: 11170
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 8193, 21, 4560, 576, 10754, 4556, 1114, 2492, 2]
+// Dependencies: [19, 17, 8309, 21, 4636, 576, 10876, 10881, 4632, 1114, 2492, 2]
 // Exports: default
 
-// Module 11036 (GiftingBadgeProgress)
+// Module 11169 (GiftingBadgeProgress)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
 import _modDef2492 from "module_2492" /* 2492 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10754 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 10876 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 10881 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,12 +22,12 @@ function GiftingBadgeProgressBar(percent) {
   return hasOwnProperty(View, obj);
 }
 const View = fn(17).View;
-let closure_4 = fn(8193).getSingleRequirementThreshold;
+let closure_4 = fn(8309).getSingleRequirementThreshold;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_16 }, content: null, progressBarTrack: null, progressBarFill: null, labels: null };
-let obj3 = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_16 };
+const obj3 = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_16 };
 obj2.content = { flex: 1, paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 };
 let obj4 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 };
 obj2.progressBarTrack = { height: 6, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL, overflow: "hidden" };
@@ -41,64 +40,59 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/gifting/native/views/GiftingBadgeProgress.tsx");
 
 export default function GiftingBadgeProgress(title) {
-  ({ progress, currentTier, nextTier, iconSize } = title);
+  ({ progress, nextTier, iconSize } = title);
   if (iconSize === undefined) {
     iconSize = 24;
   }
   title = title.title;
   const tmp = closure_8();
-  const tmp2 = closure_4(nextTier);
-  let tmp3 = null != nextTier;
-  if (tmp3) {
-    tmp3 = tmp2 > 0;
+  const isGiftingBadgeComplexArtEnabled = GiftingBadgesUtils.useIsGiftingBadgeComplexArtEnabled("GiftingBadgeProgress");
+  const giftingBadgeTierIconUrl = GiftingBadgesUtils.getGiftingBadgeTierIconUrl(title.currentTier, isGiftingBadgeComplexArtEnabled);
+  const giftingBadgeTierIconUrl1 = GiftingBadgesUtils.getGiftingBadgeTierIconUrl(nextTier, isGiftingBadgeComplexArtEnabled);
+  const tmp7 = closure_4(nextTier);
+  let tmp8 = null != nextTier;
+  if (tmp8) {
+    tmp8 = tmp7 > 0;
   }
   let num2 = 100;
-  if (tmp3) {
+  if (tmp8) {
     const _Math = Math;
     const _Math2 = Math;
-    num2 = Math.min(Math.max(progress / tmp2 * 100, 0), 100);
+    num2 = Math.min(Math.max(progress / tmp7 * 100, 0), 100);
   }
-  const obj = { style: tmp.container, children: null };
-  let simple_icon_url;
-  if (currentTier != null) {
-    simple_icon_url = currentTier.simple_icon_url;
-  }
-  let tmp8 = null != simple_icon_url;
-  if (tmp8) {
-    const obj2 = { icon: currentTier.simple_icon_url, size: iconSize };
-    tmp8 = hasOwnProperty(GiftingBadgeIconDefault, obj2);
-  }
-  const items = [tmp8, , ];
-  const obj3 = { style: tmp.content, children: null };
-  let tmp12 = null != title;
+  const obj4 = { style: tmp.container, children: null };
+  let tmp12 = null != giftingBadgeTierIconUrl;
   if (tmp12) {
-    const obj4 = { variant: "text-md/semibold", children: title };
-    tmp12 = hasOwnProperty(Text_Text.Text, obj4);
+    const obj5 = { icon: giftingBadgeTierIconUrl, size: iconSize };
+    tmp12 = hasOwnProperty(GiftingBadgeIconDefault, obj5);
   }
-  const items1 = [tmp12, hasOwnProperty(GiftingBadgeProgressBar, { percent: num2 }), ];
-  const obj5 = { style: tmp.labels, children: null };
-  let tmp16Result = null != nextTier;
-  if (tmp16Result) {
-    const obj6 = { variant: "text-xs/normal", color: "text-muted", children: null };
-    const intl = util.intl;
-    const obj7 = { count: progress, threshold: tmp2 };
-    obj6.children = intl.format(_modDef2492.iIpfQe, obj7);
-    tmp16Result = tmp16(Text_Text.Text, obj6);
+  const items = [tmp12, , ];
+  const obj6 = { style: tmp.content, children: null };
+  let tmp15 = null != title;
+  if (tmp15) {
+    const obj7 = { variant: "text-md/semibold", children: title };
+    tmp15 = hasOwnProperty(tmp2(4632).Text, obj7);
   }
-  obj5.children = tmp16Result;
-  items1[2] = hasOwnProperty(View, obj5);
-  obj3.children = items1;
-  items[1] = timestampProducer(View, obj3);
-  let simple_icon_url1;
-  if (nextTier != null) {
-    simple_icon_url1 = nextTier.simple_icon_url;
+  const items1 = [tmp15, hasOwnProperty(GiftingBadgeProgressBar, { percent: num2 }), ];
+  const obj8 = { style: tmp.labels, children: null };
+  let tmp17Result = null != nextTier;
+  if (tmp17Result) {
+    const obj9 = { variant: "text-xs/normal", color: "text-muted", children: null };
+    const intl = tmp2(1114).intl;
+    const obj10 = { count: progress, threshold: tmp7 };
+    obj9.children = intl.format(_modDef2492.iIpfQe, obj10);
+    tmp17Result = tmp17(tmp2(4632).Text, obj9);
   }
-  let tmp16Result2 = null != simple_icon_url1;
-  if (tmp16Result2) {
-    const obj8 = { icon: nextTier.simple_icon_url, size: iconSize };
-    tmp16Result2 = tmp16(GiftingBadgeIconDefault, obj8);
+  obj8.children = tmp17Result;
+  items1[2] = hasOwnProperty(View, obj8);
+  obj6.children = items1;
+  items[1] = timestampProducer(View, obj6);
+  let tmp17Result2 = null != giftingBadgeTierIconUrl1;
+  if (tmp17Result2) {
+    const obj11 = { icon: giftingBadgeTierIconUrl1, size: iconSize };
+    tmp17Result2 = tmp17(GiftingBadgeIconDefault, obj11);
   }
-  items[2] = tmp16Result2;
-  obj.children = items;
-  return timestampProducer(View, obj);
+  items[2] = tmp17Result2;
+  obj4.children = items;
+  return timestampProducer(View, obj4);
 };

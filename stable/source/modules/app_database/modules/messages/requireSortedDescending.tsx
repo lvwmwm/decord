@@ -1,10 +1,10 @@
-// Module ID: 5276
-// Function ID: 5277
+// Module ID: 5357
+// Function ID: 5358
 // Name: requireSortedDescending
 // Dependencies: [38, 11, 2]
 // Exports: requireSortedDescending
 
-// Module 5276 (requireSortedDescending)
+// Module 5357 (requireSortedDescending)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef38 from "module_38" /* 38 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 17688
-// Function ID: 17689
+// Module ID: 17802
+// Function ID: 17803
 // Name: CreatorMonetizationEligibilityActionCreators
-// Dependencies: [5, 1074, 1350, 1272, 573, 7163, 2]
+// Dependencies: [5, 1074, 1348, 1270, 573, 7266, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 17688 (CreatorMonetizationEligibilityActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1272 */;
+// Module 17802 (CreatorMonetizationEligibilityActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1270 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -250,7 +250,7 @@ let closure_13 = async function _removeMonetization() {
   return arg1;
 };
 const Endpoints = fn(1074).Endpoints;
-const ApplicationTypes = fn(1350).ApplicationTypes;
+const ApplicationTypes = fn(1348).ApplicationTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/creator_monetization_eligibility/CreatorMonetizationEligibilityActionCreators.tsx");
 

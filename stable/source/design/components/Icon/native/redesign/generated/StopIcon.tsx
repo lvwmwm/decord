@@ -1,13 +1,13 @@
-// Module ID: 15940
-// Function ID: 15941
+// Module ID: 16034
+// Function ID: 16035
 // Name: StopIcon
-// Dependencies: [19, 21, 576, 4261, 15941, 2]
+// Dependencies: [19, 21, 576, 4337, 16035, 2]
 // Exports: StopIcon
 
-// Module 15940 (StopIcon)
+// Module 16034 (StopIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod15941 from "module_15941" /* 15941 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod16035 from "module_16035" /* 16035 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const StopIcon = function StopIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15941, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16035, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,15 +1,15 @@
-// Module ID: 10282
-// Function ID: 10283
+// Module ID: 10406
+// Function ID: 10407
 // Name: useExpressionPickerTabData
-// Dependencies: [19, 1219, 1114, 2]
+// Dependencies: [19, 1217, 1114, 2]
 // Exports: default
 
-// Module 10282 (useExpressionPickerTabData)
+// Module 10406 (useExpressionPickerTabData)
 import util from "util" /* 1114 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ExpressionPickerConstants = fn(1219);
+const ExpressionPickerConstants = fn(1217);
 ({ ExpressionPickerOrder: c3, ExpressionPickerViewType: closure_4 } = ExpressionPickerConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/expression_picker/native/useExpressionPickerTabData.tsx");

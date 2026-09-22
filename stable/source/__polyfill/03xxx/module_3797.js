@@ -1,130 +1,16 @@
 // Module ID: 3797
 // Function ID: 3798
-// Dependencies: [3798, 3799, 3650, 3651, 3654]
-// Exports: default
+// Dependencies: [2030]
 
 // Module 3797
-import module_3798_mod from "module_3798" /* 3798 */;
-import module_3799_mod from "module_3799" /* 3799 */;
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
-import module_3654_mod from "module_3654" /* 3654 */;
+import module_2030 from "module_2030" /* 2030 */;
 
-function _typeof(arg0) {
-  if (typeof Symbol === "function") {
-    let _Symbol = Symbol;
-    if (typeof Symbol.iterator === "symbol") {
-      _typeof = function _typeof(arg0) {
-        return typeof arg0;
-      };
-    }
-    return _typeof(arg0);
-  }
-  _typeof = function _typeof(arg0) {
-    if (arg0) {
-      const _Symbol = Symbol;
-      if (typeof Symbol === "function") {
-        const _Symbol3 = Symbol;
-        if (arg0.constructor === Symbol) {
-          const _Symbol2 = Symbol;
-          let str = "symbol";
-        }
-        return str;
-      }
-    }
-    str = typeof arg0;
-  };
-}
-let module_3798 = module_3798_mod;
-if (!module_3798) {
-  const obj = { default: module_3798 };
-  let tmp3 = obj;
+if (!module_2030) {
+  const obj2 = { default: module_2030 };
+  let obj = obj2;
 } else {
-  tmp3 = module_3798;
+  obj = module_2030;
 }
-module_3798 = tmp3;
-let module_3799 = module_3799_mod;
-if (!module_3799) {
-  const obj2 = { default: module_3799 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3799;
-}
-module_3799 = tmp5;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj3 = { default: _typeof };
-  let tmp7 = obj3;
-} else {
-  tmp7 = _typeof;
-}
-_typeof = tmp7;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj4 = { default: requiredArgs };
-  let tmp9 = obj4;
-} else {
-  tmp9 = requiredArgs;
-}
-requiredArgs = tmp9;
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  const obj5 = { default: module_3654 };
-  let tmp11 = obj5;
-} else {
-  tmp11 = module_3654;
-}
-module_3654 = tmp11;
 
-export default function add(arg0, years) {
-  requiredArgs.default(2, arguments);
-  if (years) {
-    if ("object" === _typeof(years)) {
-      let num = 0;
-      if (years.years) {
-        num = module_3654.default(years.years);
-      }
-      let num2 = 0;
-      if (years.months) {
-        num2 = module_3654.default(years.months);
-      }
-      let num3 = 0;
-      if (years.weeks) {
-        num3 = module_3654.default(years.weeks);
-      }
-      let num4 = 0;
-      if (years.days) {
-        num4 = module_3654.default(years.days);
-      }
-      let num5 = 0;
-      if (years.hours) {
-        num5 = module_3654.default(years.hours);
-      }
-      let num6 = 0;
-      if (years.minutes) {
-        num6 = module_3654.default(years.minutes);
-      }
-      let num7 = 0;
-      if (years.seconds) {
-        num7 = module_3654.default(years.seconds);
-      }
-      const defaultResult1 = _typeof.default(arg0);
-      if (num2) {
-        let defaultResult2 = module_3799.default(defaultResult1, num2 + 12 * num);
-      } else {
-        defaultResult2 = defaultResult1;
-      }
-      if (num4) {
-        let defaultResult3 = module_3798.default(defaultResult2, num4 + 7 * num3);
-      } else {
-        defaultResult3 = defaultResult2;
-      }
-      const _Date = Date;
-      const sum = num7 + 60 * (num6 + 60 * num5);
-      const date = new Date(defaultResult3.getTime() + 1000 * sum);
-      return date;
-    }
-  }
-  return new Date(NaN);
-};
+export default { date: obj.default({ formats: { full: "y\u5E74M\u6708d\u65E5EEEE", long: "y\u5E74M\u6708d\u65E5", medium: "y/MM/dd", short: "y/MM/dd" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "H\u6642mm\u5206ss\u79D2 zzzz", long: "H:mm:ss z", medium: "H:mm:ss", short: "H:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} {{time}}", long: "{{date}} {{time}}", medium: "{{date}} {{time}}", short: "{{date}} {{time}}" }, defaultWidth: "full" }) };
 export default exports.default;

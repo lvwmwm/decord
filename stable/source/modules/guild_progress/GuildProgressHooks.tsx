@@ -1,21 +1,21 @@
-// Module ID: 12476
-// Function ID: 12477
+// Module ID: 12605
+// Function ID: 12606
 // Name: GuildProgressHooks
-// Dependencies: [19, 502, 1957, 2012, 4480, 1979, 12477, 4781, 4199, 1074, 504, 9780, 11, 12, 7270, 2]
+// Dependencies: [19, 502, 1957, 2012, 4556, 1979, 12606, 4857, 4275, 1074, 504, 9904, 11, 12, 7373, 2]
 // Exports: useChannelsMessaged, useCompletedStates, useGuildChannelCreated, useGuildMessaged, useGuildPersonalized, useGuildPopulated, usePermissions
 
-// Module 12476 (GuildProgressHooks)
+// Module 12605 (GuildProgressHooks)
 import _modDef12 from "module_12" /* 12 */;
-import canViewInviteModal from "canViewInviteModal" /* 9780 */;
+import canViewInviteModal from "canViewInviteModal" /* 9904 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 2012 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4480 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4556 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import LayerStore from "LayerStore" /* 12477 */;
-import MessageStore from "MessageStore" /* 4781 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import LayerStore from "LayerStore" /* 12606 */;
+import MessageStore from "MessageStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 
 const require = globalThis.__r;
 

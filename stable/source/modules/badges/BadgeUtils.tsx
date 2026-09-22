@@ -1,13 +1,13 @@
-// Module ID: 11204
-// Function ID: 11205
+// Module ID: 11336
+// Function ID: 11337
 // Name: BadgeUtils
-// Dependencies: [8184, 8185, 8194, 2]
+// Dependencies: [8300, 8301, 8310, 2]
 // Exports: getLegacyIconUrlByBadgeId, getUnhideableBadgeIds, groupCustomizableBadges
 
-// Module 11204 (BadgeUtils)
-import Constants from "Constants" /* 8184 */;
-import BadgeId from "BadgeId" /* 8185 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8194 */;
+// Module 11336 (BadgeUtils)
+import Constants from "Constants" /* 8300 */;
+import BadgeId from "BadgeId" /* 8301 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8310 */;
 import size from "module_2" /* 2 */;
 
 function isPinnedBadge(badge_id) {

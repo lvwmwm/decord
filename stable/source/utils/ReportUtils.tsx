@@ -1,13 +1,13 @@
-// Module ID: 7289
-// Function ID: 7290
+// Module ID: 7392
+// Function ID: 7393
 // Name: ReportUtils
-// Dependencies: [1957, 4480, 4199, 1371, 1074, 2]
+// Dependencies: [1957, 4556, 4275, 1371, 1074, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 7289 (ReportUtils)
+// Module 7392 (ReportUtils)
 import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4480 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4556 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const Constants = fn(1074);

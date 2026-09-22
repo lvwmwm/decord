@@ -1,18 +1,18 @@
-// Module ID: 1362
-// Function ID: 1363
+// Module ID: 1360
+// Function ID: 1361
 // Name: BuildOverrideUtils
-// Dependencies: [1363, 1074, 1364, 1115, 1365, 1272, 1367, 1370, 2]
+// Dependencies: [1361, 1074, 1362, 1363, 1365, 1270, 1367, 1370, 2]
 // Exports: getAPIEndpoint, getBuildOverride, getBuildOverrideExperiments, getBuildOverrideMeta, isBuildOverrideLink, isManualBuildOverrideLink, manualOverrideLinkMeta, probablyHasBuildOverride, validateURL
 
-// Module 1362 (BuildOverrideUtils)
+// Module 1360 (BuildOverrideUtils)
 import Constants from "Constants" /* 1074 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import BuildOverrideConstants from "BuildOverrideConstants" /* 1363 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import BuildOverrideConstants from "BuildOverrideConstants" /* 1361 */;
 import URLUtilsDefault from "URLUtils" /* 1365 */;
 import UrlAll from "Url" /* 1367 */;
 import _modDef1370 from "module_1370" /* 1370 */;
-import ClientInfoUtils_mod from "ClientInfoUtils" /* 1364 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import ClientInfoUtils_mod from "ClientInfoUtils" /* 1362 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = BuildOverrideConstants.BUILD_OVERRIDE_COOKIE_NAME;

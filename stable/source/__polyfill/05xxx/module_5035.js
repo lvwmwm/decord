@@ -1,9 +1,13 @@
 // Module ID: 5035
 // Function ID: 5036
-// Dependencies: [1122]
+// Dependencies: [17, 65]
 
 // Module 5035
-import registerAsset from "module_1122" /* 1122 */;
+import _mod17 from "module_17" /* 17 */;
+import module_65 from "module_65" /* 65 */;
 
+const codegenNativeComponent = _mod17.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSScreenFooter", validAttributes: {} };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3cca2566d6ada925d540d64d7940bca5", name: "AtIcon", type: "png" });
+export default module_65.get("RNSScreenFooter", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

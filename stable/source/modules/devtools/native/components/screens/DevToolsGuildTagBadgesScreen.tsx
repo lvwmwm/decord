@@ -1,13 +1,13 @@
-// Module ID: 15707
-// Function ID: 15708
+// Module ID: 15795
+// Function ID: 15796
 // Name: DevToolsGuildTagBadgesScreen
-// Dependencies: [32, 19, 17, 7945, 21, 4560, 576, 4973, 4556, 4975, 13918, 2]
+// Dependencies: [32, 19, 17, 8048, 21, 4636, 576, 5054, 4632, 5056, 14003, 2]
 // Exports: default
 
-// Module 15707 (DevToolsGuildTagBadgesScreen)
+// Module 15795 (DevToolsGuildTagBadgesScreen)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import badges_GuildBadge from "badges/GuildBadge" /* 13918 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import badges_GuildBadge from "badges/GuildBadge" /* 14003 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const GuildTagConstants = fn(7945);
+const GuildTagConstants = fn(8048);
 ({ GUILD_TAG_BADGE_NUM_CUSTOMIZABLE_COLORS: metroRequire, GUILD_TAG_BADGE_PALETTE_PRESETS, GuildTagBadgeKind } = GuildTagConstants);
 const jsxProd = fn(21);
 ({ jsxs: closure_7, jsx: closure_8 } = jsxProd);
@@ -31,7 +31,7 @@ let closure_9 = found.map((item) => {
 });
 let items = [{ label: "Untinted", primary: "sa", secondary: "i" }, ...GUILD_TAG_BADGE_PALETTE_PRESETS.map((primary, index) => ({ label: "P" + index + 1, primary: primary.primary, secondary: primary.secondary }))];
 const dependencyMap = [24, 48, 72];
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 }, contentContainer: null, controlRow: null, grid: null, tile: null, badgeBox: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flex: 1 };
 obj2.contentContainer = { padding: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };

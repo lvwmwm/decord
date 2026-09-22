@@ -1,12 +1,12 @@
-// Module ID: 10219
-// Function ID: 10220
+// Module ID: 10343
+// Function ID: 10344
 // Name: BugReportManager
-// Dependencies: [5, 17, 1347, 1074, 4770, 1115, 10099, 10101, 1256, 7118, 10220, 2]
+// Dependencies: [5, 17, 1345, 1074, 4846, 1363, 10223, 10225, 1254, 7221, 10344, 2]
 
-// Module 10219 (BugReportManager)
+// Module 10343 (BugReportManager)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1347 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1345 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 
 const require = fn;
 function showNotification(uri) {
@@ -126,15 +126,15 @@ function showNotification(uri) {
                 };
                 return obj10;
               }
-              obj2 = tmp2(1115);
+              obj2 = tmp2(1363);
             }
             closure_128_0 = tmp7;
             BUG_REPORTER = constants.BUG_REPORTER;
-            notificationDuration = tmp2(10099).getNotificationDuration(BUG_REPORTER);
-            const obj5 = tmp2(10099);
+            notificationDuration = tmp2(10223).getNotificationDuration(BUG_REPORTER);
+            const obj5 = tmp2(10223);
             const obj11 = { type: BUG_REPORTER, duration: notificationDuration, key: null, image: null, imageUri: null, onDismiss: null, inAppNotificationId: null };
-            const obj6 = tmp3(10101);
-            obj11.key = tmp2(1256).v4();
+            const obj6 = tmp3(10225);
+            obj11.key = tmp2(1254).v4();
             obj11.image = closure_128_0;
             uri = undefined;
             if (closure_128_0 != null) {
@@ -144,8 +144,8 @@ function showNotification(uri) {
             obj11.onDismiss = function onDismiss() {
               closure_1_1(dependencyMap[7]).clearNotification();
             };
-            const obj8 = tmp2(1256);
-            obj11.inAppNotificationId = tmp2(1256).v4();
+            const obj8 = tmp2(1254);
+            obj11.inAppNotificationId = tmp2(1254).v4();
             obj6.enqueueNotification(obj11);
             c3 = 3;
             return { value: "HermesInternal", done: null };
@@ -171,7 +171,7 @@ function showNotification(uri) {
 get_ActivityIndicator = fn(17);
 const NativeModules = get_ActivityIndicator.NativeModules;
 const InAppNotificationTypes = fn(1074).InAppNotificationTypes;
-const NativePermissionStatus = fn(4770).NativePermissionStatus;
+const NativePermissionStatus = fn(4846).NativePermissionStatus;
 const nativeEventEmitter = new get_ActivityIndicator.NativeEventEmitter(NativeModules.ScreenshotHelper);
 class BugReportManager extends tmp4 {
 }

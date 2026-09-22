@@ -1,18 +1,18 @@
-// Module ID: 10192
-// Function ID: 10193
+// Module ID: 10315
+// Function ID: 10316
 // Name: bug_reporter/BugReportUtils
-// Dependencies: [5, 1183, 1074, 1272, 1114, 10193, 1115, 4753, 1250, 2]
+// Dependencies: [5, 1181, 1074, 1270, 1114, 10316, 1363, 4829, 1248, 2]
 // Exports: fetchBugReportConfig, getFeatureId, getPriorities, submitReport
 
-// Module 10192 (bug_reporter/BugReportUtils)
+// Module 10315 (bug_reporter/BugReportUtils)
 import util from "util" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1250 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4753 */;
-import DebugUploadManager from "DebugUploadManager" /* 10193 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4829 */;
+import DebugUploadManager from "DebugUploadManager" /* 10316 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
 
 require = fn;
 let closure_7 = async function _fetchBugReportConfig() {

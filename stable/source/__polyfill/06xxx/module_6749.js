@@ -1,22 +1,15 @@
 // Module ID: 6749
 // Function ID: 6750
-// Dependencies: [6723, 6738, 6714]
-// Exports: useNativeGesture
+// Dependencies: []
+// Exports: enableLogging, print
 
 // Module 6749
-import ComposedGestureName from "ComposedGestureName" /* 6714 */;
-import DEFAULT_PROPS_TRANSFORMER from "DEFAULT_PROPS_TRANSFORMER" /* 6723 */;
-import _mod6738 from "module_6738" /* 6738 */;
+function print() {
 
-require = arg1;
-const dependencyMap = arg6;
-let closure_2 = {};
+}
+const frozen = Object.freeze(print);
 
-export const useNativeGesture = function useNativeGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_2;
-  }
-  const clonedAndRemappedConfig = DEFAULT_PROPS_TRANSFORMER.useClonedAndRemappedConfig(tmp);
-  return _mod6738.useGesture(ComposedGestureName.SingleGestureName.Native, clonedAndRemappedConfig);
+export { print };
+export const enableLogging = (arg0) => {
+  console.warn("[BottomSheet] could not enable logging on production!");
 };

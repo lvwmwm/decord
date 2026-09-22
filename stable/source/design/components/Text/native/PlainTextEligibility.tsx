@@ -1,10 +1,10 @@
-// Module ID: 4569
-// Function ID: 4570
+// Module ID: 4645
+// Function ID: 4646
 // Name: PlainTextEligibility
 // Dependencies: [17, 2]
 // Exports: getPlainTextEligibility, isPlainTextEligible
 
-// Module 4569 (PlainTextEligibility)
+// Module 4645 (PlainTextEligibility)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

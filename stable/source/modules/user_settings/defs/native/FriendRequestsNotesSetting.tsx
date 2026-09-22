@@ -1,14 +1,14 @@
-// Module ID: 15912
-// Function ID: 15913
+// Module ID: 16002
+// Function ID: 16003
 // Name: FriendRequestsNotesSetting
-// Dependencies: [7976, 11473, 1114, 13125, 1935, 2]
+// Dependencies: [8079, 11605, 1114, 13258, 1935, 2]
 
-// Module 15912 (FriendRequestsNotesSetting)
+// Module 16002 (FriendRequestsNotesSetting)
 import util from "util" /* 1114 */;
 import UserSettings from "UserSettings" /* 1935 */;
-import SettingsConstants from "SettingsConstants" /* 7976 */;
-import HideFriendRequestNotesUtils from "HideFriendRequestNotesUtils" /* 13125 */;
-import SettingBuilders from "SettingBuilders" /* 11473 */;
+import SettingsConstants from "SettingsConstants" /* 8079 */;
+import HideFriendRequestNotesUtils from "HideFriendRequestNotesUtils" /* 13258 */;
+import SettingBuilders from "SettingBuilders" /* 11605 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

@@ -1,9 +1,9 @@
 // Module ID: 17648
 // Function ID: 17649
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 17648
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 165, height: 178, scales: [2, 3], hash: "b685c2aca3ddb21997a856f7601ff6ad", name: "img_vanity_urls", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "d505051fb36c757db4674831cf82260a", name: "ic_image_upload", type: "png" });

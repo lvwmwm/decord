@@ -1,12 +1,12 @@
-// Module ID: 11009
-// Function ID: 11010
+// Module ID: 11142
+// Function ID: 11143
 // Name: useSyncGiftOptionsToOrder
-// Dependencies: [32, 19, 3, 7429, 4233, 2]
+// Dependencies: [32, 19, 3, 7532, 4309, 2]
 // Exports: default
 
-// Module 11009 (useSyncGiftOptionsToOrder)
+// Module 11142 (useSyncGiftOptionsToOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import BillingUtils from "BillingUtils" /* 4233 */;
+import BillingUtils from "BillingUtils" /* 4309 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

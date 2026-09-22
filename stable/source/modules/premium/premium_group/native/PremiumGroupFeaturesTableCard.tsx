@@ -1,20 +1,20 @@
-// Module ID: 13489
-// Function ID: 13490
+// Module ID: 13575
+// Function ID: 13576
 // Name: PremiumGroupFeaturesTableCard
-// Dependencies: [17, 7432, 21, 4560, 576, 4556, 1114, 13490, 1178, 4987, 4409, 9387, 2]
+// Dependencies: [17, 7535, 21, 4636, 576, 4632, 1114, 13576, 1176, 5068, 4486, 9511, 2]
 // Exports: default
 
-// Module 13489 (PremiumGroupFeaturesTableCard)
+// Module 13575 (PremiumGroupFeaturesTableCard)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
-import ColorUtils from "ColorUtils" /* 4409 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import ColorConstants from "ColorConstants" /* 7432 */;
-import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13490 */;
+import native from "native" /* 1176 */;
+import ColorUtils from "ColorUtils" /* 4486 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import ColorConstants from "ColorConstants" /* 7535 */;
+import usePremiumGroupFeaturesTableCardTextDefault from "usePremiumGroupFeaturesTableCardText" /* 13576 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4560 */;
+import createStyles from "createStyles" /* 4636 */;
 import size from "module_2" /* 2 */;
 
 class BetaPill {
@@ -53,7 +53,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     ({ subheaderString, bodyString } = tmp4);
     const obj = { borderWidth: 2, direction: native.GradientBorder.Direction.HORIZONTAL, colors: Gradients.PREMIUM_TIER_2, borderRadius: tmp2(576).radii.sm, style, children: null };
     const obj2 = { start: { x: 0, y: 0 }, end: { x: 1, y: 0 }, colors: null, locations: null, style: null, children: null };
-    const tmp2Result = tmp2(4987);
+    const tmp2Result = tmp2(5068);
     const items = [ColorUtils.hexWithOpacity("#8547C6", 0.15), , ];
     items[1] = ColorUtils.hexWithOpacity("#B845C1", 0.15);
     items[2] = ColorUtils.hexWithOpacity("#AB5D8A", 0.15);
@@ -61,7 +61,7 @@ export default function PremiumGroupFeaturesTableCard(arg0) {
     obj2.locations = [0, 0.4996, 0.9593];
     obj2.style = tmp.premiumGroupCard;
     const obj6 = { style: tmp.headerContainer, children: null };
-    const items1 = [hasOwnProperty(tmp2(9387), { width: 181, height: 16 }), hasOwnProperty(BetaPill, {})];
+    const items1 = [hasOwnProperty(tmp2(9511), { width: 181, height: 16 }), hasOwnProperty(BetaPill, {})];
     obj6.children = items1;
     const items2 = [timestampProducer(View, obj6), , ];
     const obj7 = { variant: "text-sm/normal", style: tmp.title, children: subheaderString };

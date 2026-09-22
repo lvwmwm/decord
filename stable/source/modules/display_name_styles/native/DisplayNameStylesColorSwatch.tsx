@@ -1,17 +1,17 @@
-// Module ID: 14619
-// Function ID: 14620
+// Module ID: 14704
+// Function ID: 14705
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 4560, 576, 1390, 14620, 4987, 1091, 2]
+// Dependencies: [17, 21, 4636, 576, 1390, 14705, 5068, 1091, 2]
 // Exports: default
 
-// Module 14619 (DisplayNameStylesColorSwatch)
+// Module 14704 (DisplayNameStylesColorSwatch)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1390 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
-import GummyStripesDefault from "GummyStripes" /* 14620 */;
-import createStyles from "createStyles" /* 4560 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
+import GummyStripesDefault from "GummyStripes" /* 14705 */;
+import createStyles from "createStyles" /* 4636 */;
 import size_mod from "module_2" /* 2 */;
 
 const utils_ColorUtils = tmp2(1091);

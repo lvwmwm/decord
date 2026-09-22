@@ -1,14 +1,14 @@
-// Module ID: 1232
-// Function ID: 1233
+// Module ID: 1230
+// Function ID: 1231
 // Name: SentryUtils
-// Dependencies: [17, 3, 1233, 675, 14086, 674, 1364, 2]
+// Dependencies: [17, 3, 1231, 675, 14170, 674, 1362, 2]
 
-// Module 1232 (SentryUtils)
+// Module 1230 (SentryUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _mod17 from "module_17" /* 17 */;
 import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 674 */;
 import _modAll675 from "module_675" /* 675 */;
-import SentryInitUtils_mod from "SentryInitUtils" /* 1233 */;
+import SentryInitUtils_mod from "SentryInitUtils" /* 1231 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

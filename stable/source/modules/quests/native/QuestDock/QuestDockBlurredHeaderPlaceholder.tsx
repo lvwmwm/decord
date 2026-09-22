@@ -1,31 +1,31 @@
-// Module ID: 15196
-// Function ID: 15197
+// Module ID: 15274
+// Function ID: 15275
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 5444, 15098, 21, 4560, 15099, 15197, 4296, 2]
+// Dependencies: [19, 17, 5525, 15176, 21, 4636, 15177, 15275, 4373, 2]
 
-// Module 15196 (QuestDockBlurredHeaderPlaceholder)
-import thumbHashToRGBA from "thumbHashToRGBA" /* 15197 */;
+// Module 15274 (QuestDockBlurredHeaderPlaceholder)
+import thumbHashToRGBA from "thumbHashToRGBA" /* 15275 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, View: closure_4 } = get_ActivityIndicator);
-const QuestDockMode = fn(5444).QuestDockMode;
-const QuestDockConstants = fn(15098);
-({ QUEST_DOCK_EXPANDED_HEIGHT, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED } = QuestDockConstants);
+const QuestDockMode = fn(5525).QuestDockMode;
+const QuestDockConstants = fn(15176);
+({ QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT, QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED } = QuestDockConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { image: null, overlay: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3.height = QUEST_DOCK_EXPANDED_HEIGHT;
+obj3.height = QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
 obj3.top = -QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED;
 obj.image = obj3;
 let obj4 = {};
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 obj4.backgroundColor = "rgba(38, 39, 50, 0.3)";
-obj4.height = QUEST_DOCK_EXPANDED_HEIGHT;
+obj4.height = QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
 obj.overlay = obj4;
 let closure_10 = createStyles.createStyles(obj);
 const __initData = { code: "function QuestDockBlurredHeaderPlaceholderTsx1(){const{activeQuestDockMode,QuestDockMode,QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED,questDockWrapperSpecs}=this.__closure;return{left:activeQuestDockMode.get()===QuestDockMode.EXPANDED?-QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED:0,width:questDockWrapperSpecs.get().width+QUEST_DOCK_UNENROLLED_HEADER_INSET_EXPANDED};}" };

@@ -1,21 +1,21 @@
-// Module ID: 11032
-// Function ID: 11033
+// Module ID: 11165
+// Function ID: 11166
 // Name: CollectiblesShopGiftBadgePostPurchaseModal
-// Dependencies: [19, 17, 21, 4560, 576, 1611, 4763, 7541, 7182, 8422, 1114, 5680, 4556, 2492, 11033, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 1611, 4839, 7644, 7285, 8539, 1114, 5761, 4632, 2492, 11166, 2]
 // Exports: default
 
-// Module 11032 (CollectiblesShopGiftBadgePostPurchaseModal)
+// Module 11165 (CollectiblesShopGiftBadgePostPurchaseModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
 import _modDef2492 from "module_2492" /* 2492 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4763 */;
-import XSmallIcon from "XSmallIcon" /* 5680 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7182 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7541 */;
-import ModalScreen from "ModalScreen" /* 8422 */;
-import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 11033 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+import XSmallIcon from "XSmallIcon" /* 5761 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7644 */;
+import ModalScreen from "ModalScreen" /* 8539 */;
+import GiftBadgePostPurchaseDefault from "GiftBadgePostPurchase" /* 11166 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_8 = createStyles.createStyles((paddingTop) => {
   const obj = { header: null, closeButton: null, closeIcon: null };
   const rect = { position: "absolute", top: 0, left: 0, right: 0, height: paddingTop + 56, paddingTop, zIndex: 1, flexDirection: "row", alignItems: "center", justifyContent: "center" };

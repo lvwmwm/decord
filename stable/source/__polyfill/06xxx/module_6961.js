@@ -1,9 +1,37 @@
 // Module ID: 6961
 // Function ID: 6962
-// Dependencies: [1122]
+// Dependencies: [6962]
 
 // Module 6961
-import registerAsset from "module_1122" /* 1122 */;
+import _mod6962 from "module_6962" /* 6962 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "69dddc8653cca8ffd8b6435928647a3f", name: "MobilePhoneIcon", type: "png" });
+export default function _unsupportedIterableToArray(str, arg1) {
+  if (str) {
+    if (typeof str === "string") {
+      return _mod6962(str, arg1);
+    } else {
+      const toString = {}.toString;
+      const call = toString.call;
+      const substr = typeof call === "unknown" ? toString() : call(str).slice(8, -1);
+      let name = substr;
+      if (tmp3) {
+        name = str.constructor.name;
+      }
+      if ("Map" !== name) {
+        if ("Set" !== name) {
+          if ("Arguments" === name) {
+            let arr2 = _mod6962(str, arg1);
+          } else {
+            const obj = /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/;
+          }
+        }
+        return arr2;
+      }
+      const _Array = Array;
+      arr2 = Array.from(str);
+      const arr = typeof call === "unknown" ? toString() : call(str);
+      tmp3 = "Object" === substr && str.constructor;
+    }
+  }
+};

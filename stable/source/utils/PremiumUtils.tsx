@@ -1,37 +1,38 @@
-// Module ID: 4218
-// Function ID: 4219
+// Module ID: 4294
+// Function ID: 4295
 // Name: PremiumUtils
-// Dependencies: [32, 19, 4219, 1371, 4220, 4221, 4223, 4224, 1074, 1373, 4232, 1085, 3, 4233, 4230, 1885, 38, 1114, 3063, 4153, 4242, 4249, 7234, 4231, 13465, 1090, 504, 11447, 5130, 4457, 13983, 7556, 1377, 1379, 9365, 2]
+// Dependencies: [32, 19, 4295, 1371, 4296, 4297, 4299, 4300, 1074, 1373, 4308, 1085, 3, 4309, 4306, 1885, 38, 1114, 3074, 4228, 4318, 4325, 7337, 4307, 13546, 1090, 504, 11579, 5211, 4533, 14068, 1377, 1379, 9489, 2]
 // Exports: calculateYearlyPlanDollarSavingsAmount, calculateYearlyPlanMonthlyRateAmount, castPremiumSubscriptionAsSkuId, coerceExistingItemsToNewItemInterval, experimentalGetPrice, extendDateWithUnconsumedFractionalPremium, formatInterval, formatIntervalDuration, formatPriceString, formatTrialCtaIntervalDurationFromTrialOffer, formatTrialOfferIntervalDuration, getBillingInformationString, getBillingReviewSubheader, getCountryPrices, getDaysRemainingUntilSubscriptionCurrentPeriodEnds, getDaysSincePremium, getDiscountIntervalString, getDisplayNameFromSku, getExternalPlanDisplayName, getExternalSubscriptionMethodUrl, getFormattedPlanPriceFromInvoice, getFormattedRateForPlan, getFractionalPremiumUnitsHours, getFractionalPremiumUnitsHoursFromSkuIds, getGuildBoostPlanItem, getInterval, getIntervalForInvoice, getIntervalString, getIntervalStringAsNoun, getItemsFromNewAdditionalPlans, getItemsWithUpsertedPremiumGuildPlan, getItemsWithUpsertedPremiumPlanId, getItemsWithoutPremiumPlanItem, getMaxFileSizeForPremiumType, getOfferNoticeThreshold, getPlanDescriptionFromInvoice, getPlanIdForPremiumType, getPlanIdFromInvoice, getPremiumBranding, getPremiumGuildHeaderDescription, getPremiumPlanItem, getPremiumPlanOptions, getPremiumSkuIdForSubscription, getPremiumType, getPremiumTypeDisplayName, getPremiumTypeFromPlanId, getPremiumTypeFromSubscription, getSavingsPercent, getStatusFromInvoice, getSubscriptionWithNewPlansTotalServerPrice, getSwitchingPlansDisabledMessage, getTierDisplayNameByPlanId, getUnactivatedFractionalPremiumDurationString, hasPremiumSubscriptionToDisplay, isBaseSubscriptionCanceled, isBoostOnlySubscription, isDiscountOffer, isNewUser, isNitroLockedState, isPremiumBaseSubscriptionPlan, isPremiumEligible, isPremiumGroupSubscriptionPlan, isPremiumGuildSubscriptionPlan, isPremiumSubscriptionPlan, isPrepaidPaymentSource, isSubscriptionPrepaidPaymentSource, isSubscriptionStatusFailedPayment, isSwitchingPlansDisabled, isTrialOffer, subscriptionHasPremiumGuildPlan, useHasPremiumSubscriptionToDisplay, useHasTier2Premium, usePlanSelectPriceState, withContextPlanPrices
 
-// Module 4218 (PremiumUtils)
+// Module 4294 (PremiumUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import initialize from "initialize" /* 504 */;
 import DurationsDefault from "Durations" /* 1090 */;
 import util from "util" /* 1114 */;
+import PerksStateUtils from "PerksStateUtils" /* 1377 */;
+import user2 from "user" /* 1379 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1885 */;
-import _modDef3063 from "module_3063" /* 3063 */;
-import _modDef4153 from "module_4153" /* 4153 */;
-import PremiumSubscription from "PremiumSubscription" /* 4230 */;
-import BillingUtils from "BillingUtils" /* 4233 */;
-import openURLDefault from "openURL" /* 4249 */;
-import FileSizeUtils from "FileSizeUtils" /* 4457 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5130 */;
-import PriceUtils from "PriceUtils" /* 7234 */;
-import XboxGamePassPerksExperiment from "XboxGamePassPerksExperiment" /* 7556 */;
-import CheckoutError from "CheckoutError" /* 11447 */;
-import useFPDurationLeft from "useFPDurationLeft" /* 13465 */;
-import ProductCatalog from "ProductCatalog" /* 13983 */;
+import _modDef3074 from "module_3074" /* 3074 */;
+import _modDef4228 from "module_4228" /* 4228 */;
+import PremiumSubscription from "PremiumSubscription" /* 4306 */;
+import BillingUtils from "BillingUtils" /* 4309 */;
+import openURLDefault from "openURL" /* 4325 */;
+import FileSizeUtils from "FileSizeUtils" /* 4533 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 5211 */;
+import PriceUtils from "PriceUtils" /* 7337 */;
+import CheckoutError from "CheckoutError" /* 11579 */;
+import useFPDurationLeft from "useFPDurationLeft" /* 13546 */;
+import ProductCatalog from "ProductCatalog" /* 14068 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
-import BillingInfoStore from "BillingInfoStore" /* 4220 */;
-import PaymentSourceStore from "PaymentSourceStore" /* 4221 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4223 */;
-import SubscriptionStore from "SubscriptionStore" /* 4224 */;
+import BillingInfoStore from "BillingInfoStore" /* 4296 */;
+import PaymentSourceStore from "PaymentSourceStore" /* 4297 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 4299 */;
+import SubscriptionStore from "SubscriptionStore" /* 4300 */;
 
-const DateUtils = tmp5(4242);
+const DateUtils = tmp5(4318);
 require = fn;
 function getPremiumPlanItem(subscription) {
   const items = subscription.items;
@@ -459,7 +460,7 @@ function getDisplayName(planId, arg1, arg2, duration) {
       let stringResult = intl10.string(util.t.SmVbHc);
     } else {
       const obj5 = { premiumGroupProductName: closure_47() };
-      stringResult = intl10.formatToPlainString(_modDef3063["8bPDtb"], obj5);
+      stringResult = intl10.formatToPlainString(_modDef3074["8bPDtb"], obj5);
     }
     return stringResult;
   } else if (tmp.PREMIUM_YEAR_TIER_2 === planId) {
@@ -742,8 +743,8 @@ function getPlanDescription(arg0) {
                 } else if (tmp17.PAUSE_PENDING === CANCELED) {
                   let diffResult = null;
                   if (null != subscription.pauseEndsAt) {
-                    diffResult = _modDef4153(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
-                    const obj19 = _modDef4153(subscription.pauseEndsAt);
+                    diffResult = _modDef4228(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
+                    const obj19 = _modDef4228(subscription.pauseEndsAt);
                   }
                   if (null != diffResult) {
                     const intl11 = util.intl;
@@ -765,8 +766,8 @@ function getPlanDescription(arg0) {
                 } else if (tmp17.BILLING_RETRY === CANCELED) {
                   const intl8 = util.intl;
                   const obj15 = { endDate: null };
-                  const obj16 = _modDef4153(subscription.currentPeriodStart);
-                  obj15.endDate = _modDef4153(subscription.currentPeriodStart).add(__initData7, "days").toDate();
+                  const obj16 = _modDef4228(subscription.currentPeriodStart);
+                  obj15.endDate = _modDef4228(subscription.currentPeriodStart).add(__initData7, "days").toDate();
                   return intl8.format(util.t["IlJ/HV"], obj15);
                 } else if (tmp17.PAST_DUE === CANCELED) {
                   const intl7 = util.intl;
@@ -872,8 +873,8 @@ function getPlanDescription(arg0) {
             } else if (tmp17.PAUSE_PENDING === CANCELED) {
               let diffResult1 = null;
               if (null != subscription.pauseEndsAt) {
-                diffResult1 = _modDef4153(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
-                const obj32 = _modDef4153(subscription.pauseEndsAt);
+                diffResult1 = _modDef4228(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
+                const obj32 = _modDef4228(subscription.pauseEndsAt);
               }
               if (null != diffResult1) {
                 const intl18 = util.intl;
@@ -942,8 +943,8 @@ function getPlanDescription(arg0) {
         } else if (tmp17.PAUSE_PENDING === CANCELED) {
           let diffResult2 = null;
           if (null != subscription.pauseEndsAt) {
-            diffResult2 = _modDef4153(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
-            const obj42 = _modDef4153(subscription.pauseEndsAt);
+            diffResult2 = _modDef4228(subscription.pauseEndsAt).diff(subscription.currentPeriodEnd, "days");
+            const obj42 = _modDef4228(subscription.pauseEndsAt);
           }
           if (null != diffResult2) {
             const intl25 = util.intl;
@@ -1034,9 +1035,9 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
       prop = metadata.apple_grace_period_expires_date;
     }
     if (null != prop) {
-      const obj11 = _modDef4153(subscription.metadata.apple_grace_period_expires_date);
+      const obj11 = _modDef4228(subscription.metadata.apple_grace_period_expires_date);
       const obj3 = { days: null, expiresDate: null };
-      obj3.days = _modDef4153.duration(obj11.diff(subscription.currentPeriodStart)).days();
+      obj3.days = _modDef4228.duration(obj11.diff(subscription.currentPeriodStart)).days();
       obj3.expiresDate = obj11;
       return obj3;
     }
@@ -1054,10 +1055,10 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
         prop2 = metadata3.google_original_expires_date;
       }
       if (null != prop2) {
-        const obj7 = _modDef4153(subscription.metadata.google_grace_period_expires_date);
+        const obj7 = _modDef4228(subscription.metadata.google_grace_period_expires_date);
         const obj4 = { days: null, expiresDate: null };
-        const tmp20 = _modDef4153(subscription.metadata.google_original_expires_date);
-        obj4.days = _modDef4153.duration(obj7.diff(tmp20)).days();
+        const tmp20 = _modDef4228(subscription.metadata.google_original_expires_date);
+        obj4.days = _modDef4228.duration(obj7.diff(tmp20)).days();
         obj4.expiresDate = obj7;
         return obj4;
       }
@@ -1065,7 +1066,7 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
   }
   if (subscription.isPurchasedExternally) {
     const tmp15 = subscription.isPurchasedViaApple ? closure_1_17 : collapsedCategories;
-    const obj5 = { days: tmp15, expiresDate: _modDef4153(subscription.currentPeriodStart).add(tmp15, "days") };
+    const obj5 = { days: tmp15, expiresDate: _modDef4228(subscription.currentPeriodStart).add(tmp15, "days") };
     return obj5;
   } else {
     const metadata4 = subscription.metadata;
@@ -1081,12 +1082,12 @@ function getBillingGracePeriodDaysAndExpiresDate(subscription) {
       }
       const obj8 = { days: null, expiresDate: null };
       const tmp11 = importDefault;
-      obj8.days = _modDef4153(prop4).diff(subscription.currentPeriodStart, "days");
-      obj8.expiresDate = tmp11(4153)(subscription.metadata.grace_period_expires_date);
+      obj8.days = _modDef4228(prop4).diff(subscription.currentPeriodStart, "days");
+      obj8.expiresDate = tmp11(4228)(subscription.metadata.grace_period_expires_date);
       return obj8;
     } else {
       const tmp8 = null == subscription.paymentSourceId ? closure_1_19 : __initData8;
-      obj = { days: tmp8, expiresDate: _modDef4153(subscription.currentPeriodStart).add(tmp8, "days") };
+      obj = { days: tmp8, expiresDate: _modDef4228(subscription.currentPeriodStart).add(tmp8, "days") };
       return obj;
     }
   }
@@ -1096,7 +1097,7 @@ function getExpectedRenewalDate(premiumSubscription, fractionalPremiumInfo) {
   let toDateResult = date;
   if (!tmp2) {
     const unactivatedUnits = fractionalPremiumInfo.unactivatedUnits;
-    obj = _modDef4153(date);
+    obj = _modDef4228(date);
     let addResult = obj;
     if (unactivatedUnits.length > 0) {
       const mapped = unactivatedUnits.map((skuId) => skuId.skuId);
@@ -1127,7 +1128,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
   }
   let tmp2 = fractionalPremiumInfo;
   if (fractionalPremiumInfo === undefined) {
-    obj = { isFractionalPremiumActive: false, fetched: true, fractionalState: constants6.NONE, startsAt: _modDef4153(0), endsAt: _modDef4153(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef4153(0), unactivatedUnits: [] };
+    obj = { isFractionalPremiumActive: false, fetched: true, fractionalState: constants6.NONE, startsAt: _modDef4228(0), endsAt: _modDef4228(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef4228(0), unactivatedUnits: [] };
     tmp2 = obj;
   }
   let tmp6 = subscriptionPeriodStart;
@@ -1219,7 +1220,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       isPurchasedViaGoogle = null != prop;
     }
     if (isPurchasedViaGoogle) {
-      expiresDate = _modDef4153(status.metadata.google_grace_period_expires_date);
+      expiresDate = _modDef4228(status.metadata.google_grace_period_expires_date);
     }
     let isPurchasedViaApple = status.isPurchasedViaApple;
     if (isPurchasedViaApple) {
@@ -1231,7 +1232,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       isPurchasedViaApple = null != prop1;
     }
     if (isPurchasedViaApple) {
-      expiresDate = _modDef4153(status.metadata.apple_grace_period_expires_date);
+      expiresDate = _modDef4228(status.metadata.apple_grace_period_expires_date);
     }
     const intl9 = tmp14(1114).intl;
     const format2 = intl9.format;
@@ -1263,8 +1264,8 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
   } else if (status.status === tmp16.BILLING_RETRY) {
     const intl8 = tmp14(1114).intl;
     const obj13 = { endDate: null, price: null };
-    const obj18 = _modDef4153(status.currentPeriodStart);
-    obj13.endDate = _modDef4153(status.currentPeriodStart).add(__initData7, "days").toDate();
+    const obj18 = _modDef4228(status.currentPeriodStart);
+    obj13.endDate = _modDef4228(status.currentPeriodStart).add(__initData7, "days").toDate();
     obj13.price = formatPriceResult;
     return intl8.format(tmp14(1114).t.EMTLOT, obj13);
   } else if (status.status === tmp16.ACCOUNT_HOLD) {
@@ -1272,8 +1273,8 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       if (!tmp14Result.isGooglePlayBillingSupported()) {
         const intl6 = tmp14(1114).intl;
         const obj14 = { endDate: null, paymentGatewayName: null, paymentSourceLink: null };
-        const obj12 = _modDef4153(status.currentPeriodStart);
-        obj14.endDate = _modDef4153(status.currentPeriodStart).add(dependencyMap, "days").toDate();
+        const obj12 = _modDef4228(status.currentPeriodStart);
+        obj14.endDate = _modDef4228(status.currentPeriodStart).add(dependencyMap, "days").toDate();
         obj14.paymentGatewayName = dependencyMap3[status.paymentGateway];
         const paymentGateway2 = status.paymentGateway;
         if (constants2.APPLE_PARTNER !== paymentGateway2) {
@@ -1293,17 +1294,17 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
           }
         }
         PAYMENT_SOURCE_MANAGEMENT = constants9.PAYMENT_SOURCE_MANAGEMENT;
-        const addResult1 = _modDef4153(status.currentPeriodStart).add(dependencyMap, "days");
+        const addResult1 = _modDef4228(status.currentPeriodStart).add(dependencyMap, "days");
       }
       return formatResult2;
     }
     const intl7 = tmp14(1114).intl;
     const obj16 = { endDate: null, price: null };
-    const obj15 = _modDef4153(status.currentPeriodStart);
-    obj16.endDate = _modDef4153(status.currentPeriodStart).add(dependencyMap, "days").toDate();
+    const obj15 = _modDef4228(status.currentPeriodStart);
+    obj16.endDate = _modDef4228(status.currentPeriodStart).add(dependencyMap, "days").toDate();
     obj16.price = formatPriceResult;
     formatResult2 = intl7.format(tmp14(1114).t.EMTLOT, obj16);
-    const addResult2 = _modDef4153(status.currentPeriodStart).add(dependencyMap, "days");
+    const addResult2 = _modDef4228(status.currentPeriodStart).add(dependencyMap, "days");
   } else {
     let tmp21 = null != status.paymentSourceId;
     if (tmp21) {
@@ -1354,7 +1355,7 @@ function getBillingInformationString(status, subscriptionPeriodStart, first1, fl
       let toDateResult = date;
       if (!tmp26) {
         const unactivatedUnits = tmp2.unactivatedUnits;
-        const obj3 = _modDef4153(date);
+        const obj3 = _modDef4228(date);
         let addResult3 = obj3;
         if (unactivatedUnits.length > 0) {
           const mapped1 = unactivatedUnits.map((skuId) => skuId.skuId);
@@ -1396,7 +1397,7 @@ function extendDateWithUnconsumedFractionalPremium(date, unactivatedFractionalPr
   if (!excludeReverseTrialFromCountdown) {
     tmp4 = date;
   }
-  const tmp3Result = _modDef4153(tmp4);
+  const tmp3Result = _modDef4228(tmp4);
   let addResult = tmp3Result;
   if (unactivatedFractionalPremiumUnits.length > 0) {
     const mapped = unactivatedFractionalPremiumUnits.map((skuId) => skuId.skuId);
@@ -1417,7 +1418,7 @@ function extendDateWithUnconsumedFractionalPremium(date, unactivatedFractionalPr
   if (!excludeReverseTrialFromCountdown) {
     addResult1 = addResult;
     if (undefined !== diff) {
-      const diffResult = diff.diff(_modDef4153(), "hours", true);
+      const diffResult = diff.diff(_modDef4228(), "hours", true);
       addResult1 = addResult;
       if (diffResult > 0) {
         addResult1 = addResult.add(diffResult, "hours");
@@ -1708,7 +1709,7 @@ function getBillingReviewSubheader(arg0, id, arg2) {
   } else if (tmp2.PREMIUM_GROUP_MONTH === id) {
     const intl4 = util.intl;
     obj2 = { premiumGroupProductName: closure_47() };
-    return intl4.formatToPlainString(_modDef3063.LwdrNi, obj2);
+    return intl4.formatToPlainString(_modDef3074.LwdrNi, obj2);
   } else if (tmp2.PREMIUM_YEAR_TIER_2 === id) {
     const intl3 = util.intl;
     const string = intl3.string;
@@ -2112,13 +2113,13 @@ function getDaysRemainingUntilSubscriptionCurrentPeriodEnds(currentPeriodEnd) {
   const date = new Date(currentPeriodEnd.currentPeriodEnd);
   return Math.max(1, Math.ceil(obj.differenceInDays(date, new Date())));
 }
-const isNoneSubscription = fn(4219).isNoneSubscription;
+const isNoneSubscription = fn(4295).isNoneSubscription;
 let Constants = fn(1074);
 ({ InvoiceStatusTypes: closure_11, PaymentGateways: closure_12, PriceSetAssignmentPurchaseTypes: map1, SubscriptionStatusTypes: closure_14 } = Constants);
 const PremiumConstants = fn(1373);
 ({ DISCOUNTS: closure_15, ANNUAL_DISCOUNT_PERCENTAGE_FALLBACK: closure_16, DEFAULT_APPLE_GRACE_PERIOD_DAYS: closure_17, DEFAULT_GOOGLE_GRACE_PERIOD_DAYS: closure_18, DEFAULT_MAX_GRACE_PERIOD_DAYS: closure_19, DISCOUNT_DURATION_FALLBACK: closure_20, DISCOUNT_PERCENTAGE_FALLBACK: closure_21, DiscountUserUsageLimitIntervalTypes: closure_22, FRACTIONAL_PREMIUM_SKU_INTERVAL_COUNTS: closure_23, FractionalPremiumIntervalTypes: closure_24, FractionalPremiumStates: closure_25, MAX_ACCOUNT_HOLD_DAYS: closure_26, MAX_PAYMENT_PROCESSING_TIME_DAYS: closure_27, NUM_FREE_GUILD_BOOSTS_WITH_PREMIUM: closure_28, PAID_SUBSCRIPTION_MAX_BILLING_RETRY_DAYS: closure_29, PAID_SUBSCRIPTION_MAX_GRACE_PERIOD_DAYS: closure_30, PREMIUM_GUILD_SUBSCRIPTION_PLANS: items, PREMIUM_PLANS: closure_32, PREMIUM_SKU_TO_MONTHLY_PLAN: closure_33, PREMIUM_TIER_2_PLANS: closure_34, PREMIUM_TIER_2_REVERSE_FOLLOWUP_TRIAL_ID: closure_35, PREMIUM_TIER_2_TRIAL_FOR_EVERYONE_TRIAL_ID: closure_36, PREMIUM_TYPE_DISPLAY_NAME: closure_37, PremiumSubscriptionSKUs: closure_38, PremiumTypes: closure_39, PremiumUserLimits: closure_40, SubscriptionIntervalTypes: closure_41, SubscriptionPlanInfo: closure_42, SubscriptionPlans } = PremiumConstants);
 ({ TRIAL_FOR_EVERYONE_OFFER_EXPIRES_APPROACHING_THRESHOLD: closure_44, USER_PREMIUM_OFFER_EXPIRES_APPROACHING_4_DAY_THRESHOLD: closure_45, USER_PREMIUM_OFFER_EXPIRES_APPROACHING_7_DAY_THRESHOLD: closure_46 } = PremiumConstants);
-let closure_47 = fn(4232).getPremiumGroupProductName;
+let closure_47 = fn(4308).getPremiumGroupProductName;
 Constants = fn(1085);
 ({ CurrencyCodes: closure_48, PaymentGatewayToFriendlyName: closure_49, PREPAID_PAYMENT_SOURCES: closure_50 } = Constants);
 const constants9 = { PAYMENT_SOURCE_MANAGEMENT: "https://support.apple.com/HT201266", BILLING_HISTORY: "https://support.apple.com/HT201266", SUBSCRIPTION_MANAGEMENT: "https://support.apple.com/HT202039" };
@@ -2162,7 +2163,7 @@ const frozen = Object.freeze({
       throw error;
     }
   },
-  getUserMaxFileSize: fn(9365).getUserMaxFileSize,
+  getUserMaxFileSize: fn(9489).getUserMaxFileSize,
   getSkuIdForPlan(planId) {
     if (null == dependencyMap2[planId]) {
       const _Error = Error;
@@ -2356,48 +2357,35 @@ const frozen = Object.freeze({
     return ProductCatalog.canUserUse(ProductCatalog.COLLECTIBLES, user);
   },
   canUseMonthlyOrbs(stateFromStores) {
-    let hasPerkResult = XboxGamePassPerksExperiment.getIsXboxGamePassPerksEnabled("canUseMonthlyOrbs");
-    if (hasPerkResult) {
-      let perks;
-      if (stateFromStores != null) {
-        perks = stateFromStores.perks;
-      }
-      hasPerkResult = tmp(1377).hasPerk(perks, tmp(1379).Perk.MONTHLY_ORBS);
-      const tmpResult = tmp(1377);
+    let perks;
+    if (stateFromStores != null) {
+      perks = stateFromStores.perks;
+    }
+    return PerksStateUtils.hasPerk(perks, user2.Perk.MONTHLY_ORBS);
+  },
+  canUseShopDiscounts(currentUser) {
+    let perks;
+    if (currentUser != null) {
+      perks = currentUser.perks;
+    }
+    let hasPerkResult = PerksStateUtils.hasPerk(perks, tmp(1379).Perk.SHOP_DISCOUNTS);
+    if (!hasPerkResult) {
+      hasPerkResult = tmp(14068).canUserUse(tmp(14068).COLLECTIBLES, currentUser);
+      const tmpResult = tmp(14068);
     }
     return hasPerkResult;
   },
-  canUseShopDiscounts(currentUser) {
-    let isXboxGamePassPerksEnabled = XboxGamePassPerksExperiment.getIsXboxGamePassPerksEnabled("canUseShopDiscounts");
-    if (isXboxGamePassPerksEnabled) {
-      let perks;
-      if (currentUser != null) {
-        perks = currentUser.perks;
-      }
-      isXboxGamePassPerksEnabled = tmp(1377).hasPerk(perks, tmp(1379).Perk.SHOP_DISCOUNTS);
-      const tmpResult = tmp(1377);
-    }
-    if (!isXboxGamePassPerksEnabled) {
-      isXboxGamePassPerksEnabled = tmp(13983).canUserUse(tmp(13983).COLLECTIBLES, currentUser);
-      const tmpResult2 = tmp(13983);
-    }
-    return isXboxGamePassPerksEnabled;
-  },
   canUseMoreQuestOrbs(perks) {
-    let isXboxGamePassPerksEnabled = XboxGamePassPerksExperiment.getIsXboxGamePassPerksEnabled("canUseMoreQuestOrbs");
-    if (isXboxGamePassPerksEnabled) {
-      perks = undefined;
-      if (perks != null) {
-        perks = perks.perks;
-      }
-      isXboxGamePassPerksEnabled = tmp(1377).hasPerk(perks, tmp(1379).Perk.MORE_QUEST_ORBS);
-      const tmpResult = tmp(1377);
+    perks = undefined;
+    if (perks != null) {
+      perks = perks.perks;
     }
-    if (!isXboxGamePassPerksEnabled) {
-      isXboxGamePassPerksEnabled = tmp(13983).canUserUse(tmp(13983).QUEST_ORB_MULTIPLIER, perks);
-      const tmpResult2 = tmp(13983);
+    let hasPerkResult = PerksStateUtils.hasPerk(perks, tmp(1379).Perk.MORE_QUEST_ORBS);
+    if (!hasPerkResult) {
+      hasPerkResult = tmp(14068).canUserUse(tmp(14068).QUEST_ORB_MULTIPLIER, perks);
+      const tmpResult = tmp(14068);
     }
-    return isXboxGamePassPerksEnabled;
+    return hasPerkResult;
   },
   formatPriceString,
   StreamQuality: obj2

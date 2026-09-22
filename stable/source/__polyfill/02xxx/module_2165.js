@@ -1,9 +1,9 @@
 // Module ID: 2165
 // Function ID: 2166
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 2165
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/checkout/messages", scales: [1], hash: "44314bc7705323e95ccdf93061abcb62", name: "Checkout.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/checkout/messages", scales: [1], hash: "cc150e4e12b9d4c6634c9b9465880663", name: "Checkout.compiled.messages", type: "jsona" });

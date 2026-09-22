@@ -1,11 +1,11 @@
-// Module ID: 7629
-// Function ID: 7630
+// Module ID: 7731
+// Function ID: 7732
 // Name: UserProfileClipsGalleryWidgetTypes
-// Dependencies: [7622, 1332, 2]
+// Dependencies: [7724, 1330, 2]
 
-// Module 7629 (UserProfileClipsGalleryWidgetTypes)
-import _modDef1332 from "module_1332" /* 1332 */;
-import WidgetType from "WidgetType" /* 7622 */;
+// Module 7731 (UserProfileClipsGalleryWidgetTypes)
+import _modDef1330 from "module_1330" /* 1330 */;
+import WidgetType from "WidgetType" /* 7724 */;
 import size from "module_2" /* 2 */;
 
 function convertClip(gameId) {
@@ -55,7 +55,7 @@ prototype["isEqual"] = function isEqual(clips) {
   let tmp = clips instanceof ClipsGalleryWidget;
   if (tmp) {
     const self = this;
-    tmp = _modDef1332(this.clips, clips.clips);
+    tmp = _modDef1330(this.clips, clips.clips);
   }
   return tmp;
 };

@@ -1,33 +1,46 @@
 // Module ID: 3831
 // Function ID: 3832
-// Dependencies: [3814, 3651]
-// Exports: default
+// Dependencies: [3832, 3833, 3834, 3835, 3836]
 
 // Module 3831
-import startOfDay_mod from "startOfDay" /* 3814 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import module_3832 from "module_3832" /* 3832 */;
+import module_3833 from "module_3833" /* 3833 */;
+import module_3834 from "module_3834" /* 3834 */;
+import date_mod from "module_3835" /* 3835 */;
+import date_mod from "module_3836" /* 3836 */;
 
-let startOfDay = startOfDay_mod;
-if (!startOfDay) {
-  const obj = { default: startOfDay };
+if (!module_3832) {
+  const obj = { default: module_3832 };
   let tmp3 = obj;
 } else {
-  tmp3 = startOfDay;
+  tmp3 = module_3832;
 }
-startOfDay = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+if (!module_3833) {
+  const obj2 = { default: module_3833 };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = module_3833;
 }
-requiredArgs = tmp5;
+if (!module_3834) {
+  const obj3 = { default: module_3834 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_3834;
+}
+let date = date_mod;
+if (!date) {
+  const obj4 = { default: date };
+  let tmp9 = obj4;
+} else {
+  tmp9 = date;
+}
+let date = date_mod;
+if (!date) {
+  const obj5 = { default: date };
+  let tmp11 = obj5;
+} else {
+  tmp11 = date;
+}
 
-export default function isSameDay(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = startOfDay.default(arg0);
-  const time = defaultResult1.getTime();
-  return time === startOfDay.default(arg1).getTime();
-};
+export default { code: "pt-BR", formatDistance: tmp3.default, formatLong: tmp5.default, formatRelative: tmp7.default, localize: tmp9.default, match: tmp11.default, options: { weekStartsOn: 0, firstWeekContainsDate: 1 } };
 export default exports.default;

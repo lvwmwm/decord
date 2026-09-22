@@ -1,11 +1,11 @@
-// Module ID: 16329
-// Function ID: 16330
+// Module ID: 16424
+// Function ID: 16425
 // Name: UnreadSubtitle
-// Dependencies: [19, 17, 21, 16327, 5028, 5080, 1114, 4556, 2]
+// Dependencies: [19, 17, 21, 16422, 5109, 5161, 1114, 4632, 2]
 // Exports: default
 
-// Module 16329 (UnreadSubtitle)
-import Text_Text from "Text/Text" /* 4556 */;
+// Module 16424 (UnreadSubtitle)
+import Text_Text from "Text/Text" /* 4632 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -14,11 +14,11 @@ const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/home_drawer/native/subtitles/UnreadSubtitle.tsx");
 
-export default function UnreadSubtitle(channel) {
-  channel = channel.channel;
+export default function UnreadSubtitle(arg0) {
+  ({ channel, channelName } = arg0);
   let subtitleStyles;
   let channelIconComponentWithGuild;
-  ({ guild, channelName, count } = channel);
+  ({ guild, count } = arg0);
   subtitleStyles = subtitleStyles(channelIconComponentWithGuild[3]).useSubtitleStyles();
   channelIconComponentWithGuild = undefined;
   if (null != channel) {
@@ -28,11 +28,13 @@ export default function UnreadSubtitle(channel) {
   if (channelIconComponentWithGuild == null) {
     channelIconComponentWithGuild = tmp(tmp2[5]).TextIcon;
   }
-  const obj2 = { style: subtitleStyles.subtitleRow, children: null };
+  const diff = count - 1;
   const intl = tmp(tmp2[6]).intl;
-  obj2.children = intl.format(subtitleStyles(channelIconComponentWithGuild[6]).t.OqlmU6, {
+  const obj2 = { style: subtitleStyles.subtitleRow, accessible: true, accessibilityLabel: intl.formatToPlainString(subtitleStyles(channelIconComponentWithGuild[6]).t.gxD5I6, { channelName, count: diff }), children: null };
+  const intl2 = tmp(tmp2[6]).intl;
+  obj2.children = intl2.format(subtitleStyles(channelIconComponentWithGuild[6]).t.OqlmU6, {
     channelName,
-    count: count - 1,
+    count: diff,
     labelHook(children, arg1) {
       return jsx(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", lineClamp: 1, children }, arg1);
     },
@@ -46,5 +48,5 @@ export default function UnreadSubtitle(channel) {
       return jsx(subtitleStyles(channelIconComponentWithGuild[7]).Text, { variant: "text-xs/medium", color: "text-muted", children }, arg1);
     }
   });
-  return <View style={subtitleStyles.subtitleRow}>{null}</View>;
+  return <View style={subtitleStyles.subtitleRow} accessible accessibilityLabel={intl.formatToPlainString(subtitleStyles(channelIconComponentWithGuild[6]).t.gxD5I6, { channelName, count: diff })}>{null}</View>;
 };

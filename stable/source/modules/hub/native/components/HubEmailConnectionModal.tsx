@@ -1,25 +1,25 @@
-// Module ID: 12731
-// Function ID: 12732
+// Module ID: 12860
+// Function ID: 12861
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 12723, 21, 4560, 5682, 5624, 12732, 1250, 12735, 12738, 12740, 12741, 12742, 12745, 7123, 1483, 5598, 12747, 7000, 1114, 2]
+// Dependencies: [19, 12852, 21, 4636, 5763, 5705, 12861, 1248, 12864, 12867, 12869, 12870, 12871, 12874, 7226, 1483, 5679, 12876, 7103, 1114, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 12731 (HubEmailConnectionModal)
+// Module 12860 (HubEmailConnectionModal)
 import util from "util" /* 1114 */;
 import useNavigation from "useNavigation" /* 1483 */;
-import useInitialValueDefault from "useInitialValue" /* 5598 */;
-import NavigatorHeader from "NavigatorHeader" /* 5624 */;
-import Navigator from "Navigator" /* 7000 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7123 */;
+import useInitialValueDefault from "useInitialValue" /* 5679 */;
+import NavigatorHeader from "NavigatorHeader" /* 5705 */;
+import Navigator from "Navigator" /* 7103 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7226 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const HubEmailConnectionSteps = fn(12723).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(12852).HubEmailConnectionSteps;
 let jsx = fn(21).jsx;
-const createStyles = fn(4560);
-let obj2 = { safeArea: { marginTop: fn(5682).NAV_BAR_HEIGHT, flex: 1 } };
+const createStyles = fn(4636);
+let obj2 = { safeArea: { marginTop: fn(5763).NAV_BAR_HEIGHT, flex: 1 } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/hub/native/components/HubEmailConnectionModal.tsx");
@@ -68,7 +68,7 @@ export default function HubEmailConnectionModal(arg0) {
     const obj5 = { screens: null, initialRouteStack: null };
     const obj6 = { [closure_2_3.STUDENT_PROMPT]: obj7 };
     obj6[HubEmailConnectionSteps.VERIFY_EMAIL] = {
-      impressionName: tmp9(1250).ImpressionNames.HUB_EMAIL_SIGNUP,
+      impressionName: tmp9(1248).ImpressionNames.HUB_EMAIL_SIGNUP,
       impressionProperties(invite) {
         return { has_invite: null != invite.invite };
       },
@@ -79,7 +79,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(closure_1_1(12735), {});
+        return navigation(closure_1_1(12864), {});
       }
     };
     obj6[HubEmailConnectionSteps.EMAIL_WAITLIST] = {
@@ -89,7 +89,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(closure_1_1(12738), {});
+        return navigation(closure_1_1(12867), {});
       }
     };
     obj6[HubEmailConnectionSteps.SUBMIT_SCHOOL] = {
@@ -99,7 +99,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(closure_1_1(12740), {});
+        return navigation(closure_1_1(12869), {});
       }
     };
     obj6[HubEmailConnectionSteps.SELECT_SCHOOL] = {
@@ -109,7 +109,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(closure_1_1(12741), {});
+        return navigation(closure_1_1(12870), {});
       }
     };
     obj6[HubEmailConnectionSteps.VERIFY_PIN] = {
@@ -119,7 +119,7 @@ export default function HubEmailConnectionModal(arg0) {
       },
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(closure_1_1(12742), {});
+        return navigation(closure_1_1(12871), {});
       }
     };
     obj6[HubEmailConnectionSteps.SELECT_SCHOOL_SEARCH] = {
@@ -127,7 +127,7 @@ export default function HubEmailConnectionModal(arg0) {
       headerShown: false,
       render(arg0) {
         const merged = Object.assign(arg0);
-        return navigation(closure_1_1(12745), {});
+        return navigation(closure_1_1(12874), {});
       }
     };
     obj5.screens = obj6;

@@ -1,18 +1,18 @@
-// Module ID: 9467
-// Function ID: 9468
+// Module ID: 9591
+// Function ID: 9592
 // Name: getXboxURIForChannel
-// Dependencies: [1979, 1908, 4209, 1371, 9239, 1074, 4713, 1114, 1272, 2]
+// Dependencies: [1979, 1908, 4285, 1371, 9362, 1074, 4789, 1114, 1270, 2]
 // Exports: default
 
-// Module 9467 (getXboxURIForChannel)
-import useChannelName from "useChannelName" /* 4713 */;
+// Module 9591 (getXboxURIForChannel)
+import useChannelName from "useChannelName" /* 4789 */;
 import GuildStore from "GuildStore" /* 1979 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;
-const GameConsoleConstants = fn(9239);
+const GameConsoleConstants = fn(9362);
 ({ XBOX_HANDOFF_SEARCH_PARAMS: metroRequire, XBOX_URL_BASE: closure_7 } = GameConsoleConstants);
 const Constants = fn(1074);
 ({ Endpoints: closure_8, ZERO_STRING_GUILD_ID: closure_9 } = Constants);
@@ -42,10 +42,10 @@ export default function getXboxURIForChannel(channelId, arg1) {
   obj.nonce = nonce;
   const str = timestampProducer(obj);
   if (forQRCode) {
-    const aPIBaseURL = tmp5(1272).getAPIBaseURL();
+    const aPIBaseURL = tmp5(1270).getAPIBaseURL();
     const _HermesInternal2 = HermesInternal;
     let combined = "" + aPIBaseURL + constants.XBOX_HANDOFF + "?" + str.toString();
-    const tmp5Result = tmp5(1272);
+    const tmp5Result = tmp5(1270);
   } else {
     const _HermesInternal = HermesInternal;
     combined = "" + React5 + "?" + str.toString();

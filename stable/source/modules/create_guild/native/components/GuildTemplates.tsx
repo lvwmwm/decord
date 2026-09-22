@@ -1,17 +1,17 @@
-// Module ID: 12714
-// Function ID: 12715
+// Module ID: 12843
+// Function ID: 12844
 // Name: GuildTemplates
-// Dependencies: [32, 19, 17, 12711, 6980, 1074, 21, 4560, 5682, 576, 4556, 1114, 1483, 1611, 4975, 12687, 1242, 12328, 12715, 7123, 5687, 2]
+// Dependencies: [32, 19, 17, 12840, 7081, 1074, 21, 4636, 5763, 576, 4632, 1114, 1483, 1611, 5056, 12816, 1240, 12457, 12844, 7226, 5768, 2]
 // Exports: default
 
-// Module 12714 (GuildTemplates)
+// Module 12843 (GuildTemplates)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import ListSelectionItemDefault from "ListSelectionItem" /* 12328 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12687 */;
-import CreateGuildIcons from "CreateGuildIcons" /* 12715 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import ListSelectionItemDefault from "ListSelectionItem" /* 12457 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12816 */;
+import CreateGuildIcons from "CreateGuildIcons" /* 12844 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -57,8 +57,8 @@ function GuildTemplatesJoinFooter(trigger) {
   const intl3 = tmp2(1114).intl;
   obj4.children = intl3.string(trigger(1114).t["N+Mi/U"]);
   const items2 = [
-    closure_14(trigger(4556).Text, obj4),
-    closure_14(trigger(4975).Button, {
+    closure_14(trigger(4632).Text, obj4),
+    closure_14(trigger(5056).Button, {
       variant: "primary",
       grow: true,
       text: stringResult,
@@ -92,17 +92,17 @@ function GuildTemplatesItem(guildTemplate) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
-let CreateGuildConstants = fn(12711);
+let CreateGuildConstants = fn(12840);
 ({ getGuildTemplatesMap: closure_7, GuildTemplateId: closure_8 } = CreateGuildConstants);
-CreateGuildConstants = fn(6980);
+CreateGuildConstants = fn(7081);
 ({ CreateGuildModalStates: closure_9, GuildTemplateTriggers: c10, NUXGuildTemplatesAnalytics: closure_11 } = CreateGuildConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, AnalyticsLocations: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4560);
-let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(5682).NAV_BAR_HEIGHT }, scrollContainer: null, sections: null, headerContainer: null, headerTitle: null, headerDescription: null, footerSafeAreaContainer: null, footerContainer: null, footerTitle: null };
-let obj3 = { marginTop: fn(5682).NAV_BAR_HEIGHT };
+const createStyles = fn(4636);
+let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(5763).NAV_BAR_HEIGHT }, scrollContainer: null, sections: null, headerContainer: null, headerTitle: null, headerDescription: null, footerSafeAreaContainer: null, footerContainer: null, footerTitle: null };
+let obj3 = { marginTop: fn(5763).NAV_BAR_HEIGHT };
 obj2.scrollContainer = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 let obj4 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.sections = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING, gap: 24 };

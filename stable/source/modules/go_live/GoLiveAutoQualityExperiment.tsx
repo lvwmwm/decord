@@ -1,17 +1,17 @@
-// Module ID: 9962
-// Function ID: 9963
+// Module ID: 10086
+// Function ID: 10087
 // Name: GoLiveAutoQualityExperiment
-// Dependencies: [1236, 4606, 4607, 1434, 504, 510, 4702, 2]
+// Dependencies: [1234, 4682, 4683, 1434, 504, 510, 4778, 2]
 // Exports: getGoLiveAutoQualityExperimentConfig, maybeMigrateToAutoQuality, useGoLiveAutoQualityExperimentConfig
 
-// Module 9962 (GoLiveAutoQualityExperiment)
+// Module 10086 (GoLiveAutoQualityExperiment)
 import Storage3 from "Storage" /* 510 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1236 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4606 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1234 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4682 */;
 import ApexExperiment from "apex/ApexExperiment" /* 1434 */;
 
 require = fn;
-const ApplicationStreamPresets = fn(4607).ApplicationStreamPresets;
+const ApplicationStreamPresets = fn(4683).ApplicationStreamPresets;
 let obj = { allowAutoQuality: false, defaultAutoQuality: false, migrateAutoQuality: false };
 const GoLiveAutoQualityMigrationVersion = "GoLiveAutoQualityMigrationVersion";
 const obj2 = { name: "2025-10-go-live-auto-quality", kind: "user", defaultConfig: obj, variations: null };
@@ -51,10 +51,10 @@ export const maybeMigrateToAutoQuality = function maybeMigrateToAutoQuality() {
       if (state.preset !== ApplicationStreamPresets.PRESET_CUSTOM) {
         const obj = { preset: tmp9.PRESET_AUTO, resolution: null, frameRate: null, soundshareEnabled: null, noTrack: true };
         ({ resolution: obj2.resolution, fps: obj2.frameRate, soundshareEnabled: obj2.soundshareEnabled } = state);
-        tmp(4702).updateStreamSettings(obj);
+        tmp(4778).updateStreamSettings(obj);
         const Storage2 = tmp(510).Storage;
         const result = Storage2.set(GoLiveAutoQualityMigrationVersion, 1);
-        const tmpResult = tmp(4702);
+        const tmpResult = tmp(4778);
       }
     }
   }

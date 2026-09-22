@@ -1,9 +1,9 @@
 // Module ID: 5376
 // Function ID: 5377
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 5376
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "c8b1b3c79df9edf9120c2a71e2b3bfd3", name: "img_account_sync_ebay_light_and_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "f2fc96c4a753dd0c5dd02646aa2a518c", name: "img_account_sync_battlenet_white", type: "svg" });

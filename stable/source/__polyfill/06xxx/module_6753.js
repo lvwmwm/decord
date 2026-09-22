@@ -1,38 +1,47 @@
 // Module ID: 6753
 // Function ID: 6754
-// Dependencies: [17]
-// Exports: applyRelationProp, getTVProps
+// Dependencies: [19, 6736, 6745]
+// Exports: useScrollableSetter
 
 // Module 6753
-import _mod17 from "module_17" /* 17 */;
+import normalizeSnapPoint from "normalizeSnapPoint" /* 6745 */;
+import noop from "module_19" /* 19 */;
 
-const Platform = _mod17.Platform;
+const require = globalThis.__r;
 
-export const getTVProps = function getTVProps(focusable) {
-  if (Platform.isTV) {
-    let flag = focusable.focusable;
-    if (flag == null) {
-      flag = focusable.isTVSelectable;
-    }
-    if (flag == null) {
-      flag = true;
-    }
-    const obj2 = { isTVSelectable: flag };
-    let obj = obj2;
-  } else {
-    obj = {};
+({ useCallback: c2, useEffect: c3 } = noop);
+
+export const useScrollableSetter = (arg0, value, arg2, value3) => {
+  _require = arg0;
+  dependencyMap = value;
+  value2 = arg2;
+  let tmp = arg4;
+  if (arg4 === undefined) {
+    tmp = value3;
   }
-  return obj;
-};
-export const applyRelationProp = function applyRelationProp(arg0, arg1, arg2) {
-  if (arg2) {
-    const _Array = Array;
-    if (Array.isArray(arg2)) {
-      const items = [];
-      HermesBuiltin.arraySpread(arg2, 0);
-      HermesBuiltin.apply(items, arg0);
+  const bottomSheetInternal = require("module_6736").useBottomSheetInternal();
+  const animatedScrollableType = bottomSheetInternal.animatedScrollableType;
+  const animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
+  const isContentHeightFixed = bottomSheetInternal.isContentHeightFixed;
+  const isScrollableRefreshable = bottomSheetInternal.isScrollableRefreshable;
+  const setScrollableRef = bottomSheetInternal.setScrollableRef;
+  const removeScrollableRef = bottomSheetInternal.removeScrollableRef;
+  const items = [arg0, value, value3, animatedScrollableType, animatedScrollableContentOffsetY, arg2, isScrollableRefreshable, isContentHeightFixed, setScrollableRef, removeScrollableRef];
+  tmp(value2(() => {
+    animatedScrollableContentOffsetY.value = value2.value;
+    animatedScrollableType.value = value;
+    isScrollableRefreshable.value = value3;
+    isContentHeightFixed.value = false;
+    const findNodeHandleResult = normalizeSnapPoint.findNodeHandle(ref.current);
+    if (findNodeHandleResult) {
+      const obj2 = { id: findNodeHandleResult, node: ref };
+      setScrollableRef(obj2);
     } else {
-      tmp4(arg2);
+      const _console = console;
+      console.warn("Couldn't find the scrollable node handle id!");
     }
-  }
+    return () => {
+      removeScrollableRef(ref);
+    };
+  }, items));
 };

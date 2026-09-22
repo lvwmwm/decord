@@ -1,25 +1,25 @@
-// Module ID: 7124
-// Function ID: 7125
+// Module ID: 7227
+// Function ID: 7228
 // Name: GuildOnboardingPrompt
-// Dependencies: [32, 19, 17, 5459, 5572, 1979, 7100, 7097, 1374, 21, 4560, 5682, 576, 1483, 504, 1611, 4262, 672, 7123, 5601, 4556, 1114, 4975, 5547, 4987, 1093, 7106, 7125, 7126, 7130, 1396, 4527, 7135, 1896, 5123, 7158, 2]
+// Dependencies: [32, 19, 17, 5540, 5653, 1979, 7203, 7200, 1374, 21, 4636, 5763, 576, 1483, 504, 1611, 4338, 672, 7226, 5682, 4632, 1114, 5056, 5628, 5068, 1093, 7209, 7228, 7229, 7233, 1396, 4603, 7238, 1896, 5204, 7261, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 7124 (GuildOnboardingPrompt)
+// Module 7227 (GuildOnboardingPrompt)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5547 */;
-import TermsFieldListDefault from "TermsFieldList" /* 5601 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7106 */;
-import EmojiDefault from "Emoji" /* 7130 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5628 */;
+import TermsFieldListDefault from "TermsFieldList" /* 5682 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7209 */;
+import EmojiDefault from "Emoji" /* 7233 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5459 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5572 */;
+import EmojiStore from "EmojiStore" /* 5540 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5653 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7100 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7203 */;
 
 const require = globalThis.__r;
 
@@ -46,7 +46,7 @@ function PromptHeader(currentPrompt) {
     const obj6 = { variant: "text-sm/medium", color: "text-brand", children: null };
     const intl2 = tmp6(1114).intl;
     obj6.children = intl2.string(tmp6(1114).t.Ur8Vrt);
-    items1[1] = tmp5(tmp6(4556).Text, obj6);
+    items1[1] = tmp5(tmp6(4632).Text, obj6);
     obj4.children = items1;
     tmp2Result = tmp2(tmp3, obj4);
   }
@@ -218,19 +218,19 @@ function DropdownOption(option) {
   }
   obj4.name = str;
   obj3.children = closure_15(EmojiDefault, obj4);
-  const items1 = [closure_15(closure_6, obj3), closure_15(tmp2(4556).Text, { variant: "text-md/semibold", children: option.title })];
+  const items1 = [closure_15(closure_6, obj3), closure_15(tmp2(4632).Text, { variant: "text-md/semibold", children: option.title })];
   obj2.children = items1;
   return tmp5(closure_6, obj2);
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire, ScrollView: closure_7, FlatList: closure_8 } = get_ActivityIndicator);
-let closure_13 = fn(7097).GuildOnboardingModalStates;
+let closure_13 = fn(7200).GuildOnboardingModalStates;
 const EMOJI_URL_BASE_SIZE = fn(1374).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
-const createStyles = fn(4560);
-let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5682).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollContainer: null, scrollContainerGradient: null, promptHeader: null, requiredSeparator: null, countText: null, title: null, helpText: null, footer: null, footerText: null, footerContent: null, optionTextEmoji: null, optionImageEmoji: null, emojiContainer: null, dropdownContainer: null, emptyDropdownText: null, dropdownPill: null, dropdownIconContainer: null, dropdownIcon: null };
-let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5682).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+const createStyles = fn(4636);
+let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5763).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollContainer: null, scrollContainerGradient: null, promptHeader: null, requiredSeparator: null, countText: null, title: null, helpText: null, footer: null, footerText: null, footerContent: null, optionTextEmoji: null, optionImageEmoji: null, emojiContainer: null, dropdownContainer: null, emptyDropdownText: null, dropdownPill: null, dropdownIconContainer: null, dropdownIcon: null };
+let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5763).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollContainer = { display: "flex", flexGrow: 1, justifyContent: "center", paddingHorizontal: 16, paddingTop: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollContainerGradient = { position: "absolute", height: 48, width: "100%", left: 0, top: -48 };
 obj2.promptHeader = { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 };
@@ -467,7 +467,7 @@ export const DropdownPrompt = function DropdownPrompt(guildId) {
   items3[1] = { paddingBottom: 64 + currentPrompt(selectOption[15])().bottom + 48 + 48, position: "relative" };
   obj2.contentContainerStyle = items3;
   const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(7135, dependencyMap.paths), "DropdownOptions", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(7238, dependencyMap.paths), "DropdownOptions", {
       guildId,
       promptId: currentPrompt.id,
       onSelect(id, arg1) {

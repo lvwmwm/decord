@@ -1,9 +1,46 @@
 // Module ID: 5346
 // Function ID: 5347
-// Dependencies: [1122]
+// Dependencies: [5294]
 
 // Module 5346
-import registerAsset from "module_1122" /* 1122 */;
+const require = globalThis.__r;
 
+const require = arg1;
+const dependencyMap = arg6;
+let closure_2 = [6, 7, 99];
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 228, height: 60, scales: [1], hash: "5297c54e8d9a10bee3a01f60b91ba3ae", name: "img_account_sync_samsung_white", type: "png" });
+export default {
+  get(buffer, Compression, arg2) {
+    let prop = Compression;
+    if (Compression) {
+      let hasItem = undefined === Compression.Compression;
+      if (!hasItem) {
+        hasItem = closure_2.includes(Compression.Compression.value);
+      }
+      prop = hasItem;
+    }
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormat;
+    }
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormat.value;
+    }
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormatLength;
+    }
+    if (prop) {
+      prop = Compression.JPEGInterchangeFormatLength.value;
+    }
+    if (prop) {
+      Compression.type = "image/jpeg";
+      const sum = arg2 + Compression.JPEGInterchangeFormat.value;
+      buffer = buffer.buffer;
+      Compression.image = buffer.slice(sum, sum + Compression.JPEGInterchangeFormatLength.value);
+      require("module_5294").deferInit(Compression, "base64", function() {
+        return require("module_5294").getBase64Image(this.image);
+      });
+      const obj = require("module_5294");
+    }
+    return Compression;
+  }
+};

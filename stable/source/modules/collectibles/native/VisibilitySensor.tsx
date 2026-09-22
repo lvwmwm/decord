@@ -1,10 +1,10 @@
-// Module ID: 15826
-// Function ID: 15827
+// Module ID: 15916
+// Function ID: 15917
 // Name: VisibilitySensor
 // Dependencies: [19, 17, 21, 1477, 2]
 // Exports: default
 
-// Module 15826 (VisibilitySensor)
+// Module 15916 (VisibilitySensor)
 import _mod17 from "module_17" /* 17 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
 import noop_mod from "module_19" /* 19 */;

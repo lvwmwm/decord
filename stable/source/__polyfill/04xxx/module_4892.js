@@ -1,283 +1,52 @@
 // Module ID: 4892
 // Function ID: 4893
-// Dependencies: []
-// Exports: loadStripe
+// Dependencies: [1314, 4893, 4895, 4896, 4920, 4921, 4908, 4944, 4931, 4945, 4946]
 
 // Module 4892
-let fn = function _typeof(arg0) {
-  if (typeof Symbol === "function") {
-    let _Symbol = Symbol;
-    if (typeof Symbol.iterator === "symbol") {
-      fn = (arg0) => typeof arg0;
-    }
-    return fn(arg0);
-  }
-  fn = (arg0) => {
-    if (arg0) {
-      const _Symbol = Symbol;
-      if (typeof Symbol === "function") {
-        const _Symbol3 = Symbol;
-        if (arg0.constructor === Symbol) {
-          const _Symbol2 = Symbol;
-          let str = "symbol";
-        }
-        return str;
-      }
-    }
-    str = typeof arg0;
-  };
-};
-const basil = "basil";
-let c3 = "https://js.stripe.com";
-let combined = "".concat("https://js.stripe.com", "/");
-let closure_4 = combined.concat("basil", "/stripe.js");
-const re5 = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/;
-const re6 = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
-let c7 = "loadStripe.setLoadParameters was called but an existing Stripe.js script already exists in the document; existing script parameters will be used";
-function isStripeJSURL(arg0) {
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1314 */;
+import ToObject from "ToObject" /* 4893 */;
+import ToUint32 from "ToUint32" /* 4896 */;
+import ToString from "ToString" /* 4908 */;
+import _mod4920 from "module_4920" /* 4920 */;
+import HasProperty from "HasProperty" /* 4944 */;
 
+const ObjectResult = Object("a");
+let tmp2 = "a" !== ObjectResult[0];
+if (!tmp2) {
+  tmp2 = !(0 in ObjectResult);
 }
-function injectScript(array) {
-  let str = "";
-  if (array) {
-    str = "";
-    if (!array.advancedFraudSignals) {
-      str = "?advancedFraudSignals=false";
-    }
-  }
-  const element = <script />;
-  const combined = "".concat(closure_4);
-  element.src = combined.concat(str);
-  let body = document.head;
-  if (!body) {
-    const _document = document;
-    body = document.body;
-  }
-  if (body) {
-    body.appendChild(element);
-    return element;
-  } else {
-    const _Error = Error;
-    const error = new Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
-    throw error;
-  }
-}
-let c10 = null;
-let closure_11 = null;
-let closure_12 = null;
-function loadScript(arg0) {
+let closure_2 = tmp2;
+let closure_3 = callBoundIntrinsic("String.prototype.split");
 
-}
-function validateLoadParams(arg0) {
-
-}
-let c15 = false;
-function loadStripe() {
-  const length = arguments.length;
-  const array = new Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    array[num] = arguments[num];
-  }
-  c15 = true;
-  closure_1 = Date.now();
-  if (typeof loadScript === "function") {
-    closure_129_0 = closure_1;
-    let catchPromise = c10;
-    if (null === c10) {
-      const promise = new Promise((fn, arg1) => {
-        if (typeof window !== "undefined") {
-          const _document = document;
-          if (typeof document !== "undefined") {
-            let _window = window;
-            if (tmp4) {
-              const _console = console;
-              console.warn(c7);
-            }
-            const _window2 = window;
-            if (window.Stripe) {
-              const _window3 = window;
-              fn(window.Stripe);
-            } else {
-              try {
-                const tmp8 = (function findScript() {
-                  const elements = document.querySelectorAll("script[src^=\"".concat(closure_1_3, "\"]"));
-                  let num = 0;
-                  if (0 < elements.length) {
-                    const src = tmp.src;
-                    while (typeof closure_1_8 === "function") {
-                      let isMatch = regex.test(src);
-                      if (!isMatch) {
-                        isMatch = regex2.test(src);
-                      }
-                      if (isMatch) {
-                        return tmp;
-                      } else {
-                        num = num + 1;
-                      }
-                    }
-                    throw new TypeError("Trying to call a non-function");
-                  }
-                  return null;
-                })();
-                let obj = tmp8;
-                if (tmp8) {
-                  if (array) {
-                    const _console2 = console;
-                    console.warn(c7);
-                  }
-                  closure_12 = (function onLoad(fn, arg1) {
-                    closure_0 = fn;
-                    closure_1 = arg1;
-                    return () => {
-                      if (window.Stripe) {
-                        const _window = window;
-                        closure_0(window.Stripe);
-                      } else {
-                        const _Error = Error;
-                        const error = new Error("Stripe.js not available");
-                        closure_1(error);
-                      }
-                    };
-                  })(fn, arg1);
-                  closure_11 = (function onError(arg0) {
-                    closure_0 = arg0;
-                    return (cause) => {
-                      const error = new Error("Failed to load Stripe.js", { cause });
-                      closure_0(error);
-                    };
-                  })(arg1);
-                  const listener = obj.addEventListener("load", closure_12);
-                  const listener1 = obj.addEventListener("error", closure_11);
-                }
-                if (obj) {
-                  if (obj) {
-                    if (null !== closure_12) {
-                      if (null !== closure_11) {
-                        const removed = obj.removeEventListener("load", closure_12);
-                        const removed1 = obj.removeEventListener("error", closure_11);
-                        const parentNode = obj.parentNode;
-                        let tmp17 = null === parentNode;
-                        if (!tmp17) {
-                          tmp17 = undefined === obj2;
-                        }
-                        if (!tmp17) {
-                          obj2.removeChild(obj);
-                        }
-                        obj = injectScript(array);
-                      }
-                    }
-                  }
-                } else {
-                  obj = injectScript(array);
-                }
-              } catch (tmp30) {
-                tmp2(tmp30);
-              }
-            }
-            tmp4 = window.Stripe && array;
-          }
-        }
-        fn(null);
-      });
-      c10 = promise;
-      catchPromise = promise.catch((error) => {
-        c10 = null;
-        return Promise.reject(error);
-      });
+export default function map(arg0) {
+  const tmp3 = ToObject(this);
+  let arr = tmp3;
+  if (closure_2) {
+    arr = tmp3;
+    if (tmp(4895)(tmp3)) {
+      arr = closure_3(tmp3, "");
     }
-    return catchPromise.then((version) => {
-      let tmp3 = null;
-      if (null !== version) {
-        let match = tmp[0].match(/^pk_test/);
-        version = version.version;
-        let str = "v3";
-        if (3 !== version) {
-          str = version;
-        }
-        if (match) {
-          match = str !== tmp4;
-        }
-        if (match) {
-          const _console = console;
-          const concat = "Stripe.js@".concat;
-          const combined = "Stripe.js@".concat(str, " was loaded on the page, but @stripe/stripe-js@");
-          const combined1 = combined.concat("7.3.1", " expected Stripe.js@");
-          console.warn(combined1.concat(tmp4, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
-        }
-        const applyResult = version.apply(undefined, tmp);
-        let _registerWrapper = applyResult;
-        if (applyResult) {
-          _registerWrapper = applyResult._registerWrapper;
-        }
-        tmp3 = applyResult;
-        if (_registerWrapper) {
-          const obj = { name: "stripe-js", version: "7.3.1", startTime: tmp2 };
-          applyResult._registerWrapper(obj);
-          tmp3 = applyResult;
-        }
+  }
+  const tmp5 = ToUint32(arr.length);
+  if (_mod4920(arg0)) {
+    if (arguments.length > 1) {
+      const tmp11 = arguments[1];
+    }
+    const tmp12 = tmp(4921)(tmp3, tmp5);
+    for (let num2 = 0; num2 < tmp5; num2 = num2 + 1) {
+      let tmp13 = require;
+      let tmp15 = ToString(num2);
+      if (HasProperty(tmp3, tmp15)) {
+        let tmp17 = tmp13(4931)(tmp3, tmp15);
+        let items = [tmp17, num2, tmp3];
+        let tmp18 = tmp13(4945)(arg0, tmp11, items);
+        let tmp19 = tmp13(4946)(tmp12, tmp15, tmp18);
       }
-      return tmp3;
-    });
+    }
+    return tmp12;
   } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-}
-loadStripe.setLoadParameters = (advancedFraudSignals) => {
-  if (c15) {
-    if (closure_1) {
-      if (typeof validateLoadParams === "function") {
-        const concat = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat;
-        const _JSON = JSON;
-        const combined = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat(JSON.stringify(advancedFraudSignals), "\n");
-        if (null !== advancedFraudSignals) {
-          if ("object" === advancedFraudSignals(advancedFraudSignals)) {
-            const _Object3 = Object;
-            if (1 === Object.keys(advancedFraudSignals).length) {
-              if (typeof advancedFraudSignals.advancedFraudSignals === "boolean") {
-                const _Object = Object;
-                const keys = Object.keys(advancedFraudSignals);
-              }
-            }
-            const _Error = Error;
-            const error = new Error(combined);
-            throw error;
-          }
-        }
-        const _Error5 = Error;
-        const error1 = new Error(combined);
-        throw error1;
-      } else {
-        throw new TypeError("Trying to call a non-function");
-      }
-    }
-  }
-  if (c15) {
-    const _Error4 = Error;
-    const error2 = new Error("You cannot change load parameters after calling loadStripe");
-    throw error2;
-  } else if (typeof validateLoadParams === "function") {
-    const concat2 = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat;
-    const _JSON2 = JSON;
-    const combined1 = "invalid load parameters; expected object of shape\n\n    {advancedFraudSignals: boolean}\n\nbut received\n\n    ".concat(JSON.stringify(advancedFraudSignals), "\n");
-    if (null !== advancedFraudSignals) {
-      if ("object" === advancedFraudSignals(advancedFraudSignals)) {
-        const _Object2 = Object;
-        if (1 === Object.keys(advancedFraudSignals).length) {
-          if (typeof advancedFraudSignals.advancedFraudSignals === "boolean") {
-            closure_1 = advancedFraudSignals;
-          }
-        }
-        const _Error2 = Error;
-        const error3 = new Error(combined1);
-        throw error3;
-      }
-    }
-    const _Error3 = Error;
-    const error4 = new Error(combined1);
-    throw error4;
-  } else {
-    throw new TypeError("Trying to call a non-function");
+    const _TypeError = TypeError;
+    const typeError = new TypeError("Array.prototype.map callback must be a function");
+    throw typeError;
   }
 };
-
-export { loadStripe };

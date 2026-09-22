@@ -1,9 +1,9 @@
 // Module ID: 5369
 // Function ID: 5370
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 5369
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 267, height: 267, scales: [1], hash: "8004c631509b26672d76ec4ff50dd8cb", name: "img_roblox_light", type: "svg" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "344ee148b183cbe058428a0b2e53672e", name: "img_account_sync_youtube_light_and_dark", type: "png" });

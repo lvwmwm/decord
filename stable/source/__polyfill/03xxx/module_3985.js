@@ -1,262 +1,199 @@
 // Module ID: 3985
 // Function ID: 3986
-// Dependencies: [3958, 3959, 3956]
+// Dependencies: [3887, 3957, 3971, 3958, 3725, 3888, 3726, 3729, 3730]
+// Exports: default
 
 // Module 3985
-import Parser2 from "Parser" /* 3956 */;
+import _mod3730 from "module_3730" /* 3730 */;
+import differenceInCalendarDays_mod from "differenceInCalendarDays" /* 3887 */;
+import format_mod from "module_3957" /* 3957 */;
+import code_mod from "module_3971" /* 3971 */;
+import subMilliseconds_mod from "subMilliseconds" /* 3958 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import module_3888_mod from "module_3888" /* 3888 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
+import module_3729_mod from "module_3729" /* 3729 */;
 
-function _typeof(arg0) {
-  if (typeof Symbol === "function") {
-    let _Symbol = Symbol;
-    if (typeof Symbol.iterator === "symbol") {
-      _typeof = function _typeof(arg0) {
-        return typeof arg0;
-      };
-    }
-    return _typeof(arg0);
+let differenceInCalendarDays = differenceInCalendarDays_mod;
+if (!differenceInCalendarDays) {
+  let obj = { default: differenceInCalendarDays };
+  let tmp3 = obj;
+} else {
+  tmp3 = differenceInCalendarDays;
+}
+differenceInCalendarDays = tmp3;
+let format = format_mod;
+if (!format) {
+  let obj2 = { default: format };
+  let tmp5 = obj2;
+} else {
+  tmp5 = format;
+}
+format = tmp5;
+let code = code_mod;
+if (!code) {
+  const obj3 = { default: code };
+  let tmp7 = obj3;
+} else {
+  tmp7 = code;
+}
+code = tmp7;
+let subMilliseconds = subMilliseconds_mod;
+if (!subMilliseconds) {
+  const obj4 = { default: subMilliseconds };
+  let tmp9 = obj4;
+} else {
+  tmp9 = subMilliseconds;
+}
+subMilliseconds = tmp9;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj5 = { default: _typeof };
+  let tmp11 = obj5;
+} else {
+  tmp11 = _typeof;
+}
+_typeof = tmp11;
+let module_3888 = module_3888_mod;
+if (!module_3888) {
+  const obj6 = { default: module_3888 };
+  let tmp13 = obj6;
+} else {
+  tmp13 = module_3888;
+}
+module_3888 = tmp13;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj7 = { default: requiredArgs };
+  let tmp15 = obj7;
+} else {
+  tmp15 = requiredArgs;
+}
+requiredArgs = tmp15;
+let module_3729 = module_3729_mod;
+if (!module_3729) {
+  const obj8 = { default: module_3729 };
+  let tmp17 = obj8;
+} else {
+  tmp17 = module_3729;
+}
+module_3729 = tmp17;
+
+export default function formatRelative(arg0, arg1, locale) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const defaultResult2 = _typeof.default(arg1);
+  const defaultOptions = _mod3730.getDefaultOptions();
+  let locale1;
+  if (null != locale) {
+    locale1 = locale.locale;
   }
-  _typeof = function _typeof(arg0) {
-    if (arg0) {
-      const _Symbol = Symbol;
-      if (typeof Symbol === "function") {
-        const _Symbol3 = Symbol;
-        if (arg0.constructor === Symbol) {
-          const _Symbol2 = Symbol;
-          let str = "symbol";
-        }
-        return str;
-      }
-    }
-    str = typeof arg0;
-  };
-}
-function _setPrototypeOf(Hour1To24Parser, Parser) {
-  _setPrototypeOf = Object.setPrototypeOf;
-  if (!_setPrototypeOf) {
-    _setPrototypeOf = function _setPrototypeOf(Hour1To24Parser, Parser) {
-      Hour1To24Parser.__proto__ = Parser;
-      return Hour1To24Parser;
-    };
+  if (null === locale1) {
+    locale1 = defaultOptions.locale;
   }
-  return _setPrototypeOf(Hour1To24Parser, Parser);
-}
-function _getPrototypeOf(arg0) {
-  if (Object.setPrototypeOf) {
-    let _Object = Object;
-    _getPrototypeOf = Object.getPrototypeOf;
-  } else {
-    _getPrototypeOf = function _getPrototypeOf(arg0) {
-      let __proto__ = arg0.__proto__;
-      if (!__proto__) {
-        const _Object = Object;
-        __proto__ = Object.getPrototypeOf(arg0);
-      }
-      return __proto__;
-    };
+  if (null === locale1) {
+    locale1 = code.default;
   }
-  return _getPrototypeOf(arg0);
-}
-const Parser = Parser2.Parser;
-let _createSuperInternal;
-class Hour1To24Parser {
-  constructor() {
-    if (this instanceof closure_1) {
-      length = arguments.length;
-      _Array = Array;
-      tmp6 = new.target;
-      tmp7 = new.target;
-      tmp8 = length;
-      array = new Array(length);
-      tmp10 = array;
-      num = 0;
-      num2 = 1;
-      if (0 < length) {
-        do {
-          array[num] = arguments[num];
-          num = num + 1;
-        } while (num < length);
-      }
-      tmp11 = _createSuperInternal;
-      call = _createSuperInternal.call;
-      items = [];
-      items[0] = tmp;
-      applyResult = call.apply(_createSuperInternal, items.concat(array));
-      tmp13 = undefined === applyResult;
-      if (tmp13) {
-        _ReferenceError2 = ReferenceError;
-        tmp20 = new.target;
-        str5 = "this hasn't been initialised - super() hasn't been called";
-        tmp21 = new.target;
-        referenceError = new ReferenceError("this hasn't been initialised - super() hasn't been called");
-        tmp23 = referenceError;
-        throw referenceError;
-      } else {
-        str2 = "priority";
-        if ("priority" in applyResult) {
-          _Object = Object;
-          definePropertyResult = Object.defineProperty(applyResult, "priority", { value: 70, enumerable: true, configurable: true, writable: true });
-        } else {
-          num3 = 70;
-          applyResult.priority = 70;
-        }
-        if (tmp13) {
-          _ReferenceError = ReferenceError;
-          tmp16 = new.target;
-          str4 = "this hasn't been initialised - super() hasn't been called";
-          tmp17 = new.target;
-          referenceError1 = new ReferenceError("this hasn't been initialised - super() hasn't been called");
-          tmp19 = referenceError1;
-          throw referenceError1;
-        } else {
-          items1 = ["a", "b", "h", "H", "K", "t", "T"];
-          str3 = "incompatibleTokens";
-          if ("incompatibleTokens" in applyResult) {
-            _Object2 = Object;
-            obj = { value: null, enumerable: true, configurable: true, writable: true };
-            obj.value = items1;
-            definePropertyResult1 = Object.defineProperty(applyResult, "incompatibleTokens", obj);
-          } else {
-            applyResult.incompatibleTokens = items1;
-          }
-          return applyResult;
-        }
-      }
-    } else {
-      _TypeError = TypeError;
-      tmp2 = new.target;
-      str = "Cannot call a class as a function";
-      tmp3 = new.target;
-      typeError = new TypeError("Cannot call a class as a function");
-      tmp5 = typeError;
-      throw typeError;
-    }
+  let weekStartsOn;
+  if (null != locale) {
+    weekStartsOn = locale.weekStartsOn;
   }
-}
-let dependencyMap = Hour1To24Parser;
-if (typeof Parser !== "function") {
-  if (null !== Parser) {
-    let _TypeError = TypeError;
-    let typeError = new TypeError("Super expression must either be null or a function");
-    throw typeError;
-  }
-}
-let prototype = Parser;
-if (Parser) {
-  prototype = Parser.prototype;
-}
-Hour1To24Parser.prototype = Object.create(prototype, { constructor: { value: Hour1To24Parser, writable: true, configurable: true } });
-if (Parser) {
-  _setPrototypeOf(Hour1To24Parser, Parser);
-}
-let num = 0;
-dependencyMap = (function _isNativeReflectConstruct() {
-  if (typeof Reflect !== "undefined") {
-    const _Reflect3 = Reflect;
-    if (Reflect.construct) {
-      const _Reflect = Reflect;
-      if (Reflect.construct.sham) {
-        return false;
-      } else {
-        const _Proxy = Proxy;
-        if (typeof Proxy === "function") {
-          return true;
-        } else {
-          try {
-            const _Boolean = Boolean;
-            const call = valueOf.call;
-            const _Reflect2 = Reflect;
-            const _Boolean2 = Boolean;
-            if (typeof call === "unknown") {
-              valueOf();
-            } else {
-              call(constructResult);
+  if (null === weekStartsOn) {
+    let weekStartsOn1;
+    if (null != locale) {
+      locale = locale.locale;
+      if (null !== locale) {
+        if (undefined !== locale) {
+          const options = locale.options;
+          if (null !== options) {
+            if (undefined !== options) {
+              weekStartsOn1 = options.weekStartsOn;
             }
-            return true;
-          } catch (err) {
-            return false;
           }
         }
       }
     }
+    weekStartsOn = weekStartsOn1;
   }
-  return false;
-})();
-_createSuperInternal = function _createSuperInternal() {
-  const self = this;
-  const obj = _getPrototypeOf(_createSuperInternal);
-  if (closure_1) {
-    const _Reflect = Reflect;
-    let constructResult = Reflect.construct(obj, arguments, _getPrototypeOf(self).constructor);
-  } else {
-    constructResult = obj(...arguments);
+  if (null === weekStartsOn) {
+    weekStartsOn = defaultOptions.weekStartsOn;
   }
-  if (!constructResult) {
-    let tmp8 = self;
-    if (undefined === self) {
-      const _ReferenceError = ReferenceError;
-      const referenceError = new ReferenceError("this hasn't been initialised - super() hasn't been called");
-      throw referenceError;
+  if (null === weekStartsOn) {
+    const locale2 = defaultOptions.locale;
+    let weekStartsOn2;
+    if (null !== locale2) {
+      if (undefined !== locale2) {
+        const options2 = locale2.options;
+        if (null !== options2) {
+          if (undefined !== options2) {
+            weekStartsOn2 = options2.weekStartsOn;
+          }
+        }
+      }
     }
-  } else {
-    tmp8 = constructResult;
-    if ("object" !== _typeof(constructResult)) {
-      tmp8 = constructResult;
+    weekStartsOn = weekStartsOn2;
+  }
+  let num = 0;
+  if (null !== weekStartsOn) {
+    num = 0;
+    if (undefined !== weekStartsOn) {
+      num = weekStartsOn;
     }
   }
-  return tmp8;
-};
-const entry = {
-  key: "parse",
-  value: function parse(arg0, arg1, ordinalNumber) {
-    if ("k" === arg1) {
-      return _createSuperInternal(3958).parseNumericPattern(_createSuperInternal(3959).numericPatterns.hour24h, arg0);
-    } else if ("ko" === arg1) {
-      return ordinalNumber.ordinalNumber(arg0, { unit: "hour" });
+  const defaultResult3 = module_3729.default(num);
+  if (locale1.localize) {
+    if (locale1.formatLong) {
+      if (locale1.formatRelative) {
+        const defaultResult4 = differenceInCalendarDays.default(defaultResult1, defaultResult2);
+        const _isNaN = isNaN;
+        if (isNaN(defaultResult4)) {
+          const _RangeError4 = RangeError;
+          const rangeError = new RangeError("Invalid time value");
+          throw rangeError;
+        } else {
+          let str4 = "other";
+          let str5 = "other";
+          if (defaultResult4 >= -6) {
+            let str6 = "lastWeek";
+            if (defaultResult4 >= -1) {
+              let str7 = "yesterday";
+              if (defaultResult4 >= 0) {
+                let str8 = "today";
+                if (defaultResult4 >= 1) {
+                  let str9 = "tomorrow";
+                  if (defaultResult4 >= 2) {
+                    if (defaultResult4 < 7) {
+                      str4 = "nextWeek";
+                    }
+                    str9 = str4;
+                  }
+                  str8 = str9;
+                }
+                str7 = str8;
+              }
+              str6 = str7;
+            }
+            str5 = str6;
+          }
+          const defaultResult5 = subMilliseconds.default(defaultResult1, module_3888.default(defaultResult1));
+          const obj = { locale: locale1, weekStartsOn: defaultResult3 };
+          const obj2 = { locale: locale1, weekStartsOn: defaultResult3 };
+          return format.default(defaultResult1, locale1.formatRelative(str5, defaultResult5, subMilliseconds.default(defaultResult2, module_3888.default(defaultResult2)), obj), obj2);
+        }
+      } else {
+        const _RangeError3 = RangeError;
+        const rangeError1 = new RangeError("locale must contain formatRelative property");
+        throw rangeError1;
+      }
     } else {
-      return _createSuperInternal(3958).parseNDigits(arg1.length, arg0);
+      const _RangeError2 = RangeError;
+      const rangeError2 = new RangeError("locale must contain formatLong property");
+      throw rangeError2;
     }
+  } else {
+    const _RangeError = RangeError;
+    const rangeError3 = new RangeError("locale must contain localize property");
+    throw rangeError3;
   }
 };
-let items = [
-  entry,
-  {
-    key: "validate",
-    value: function validate(arg0, arg1) {
-      let tmp = arg1 >= 1;
-      if (tmp) {
-        tmp = arg1 <= 24;
-      }
-      return tmp;
-    }
-  },
-  {
-    key: "set",
-    value: function set(setUTCHours, arg1, arg2) {
-      let result = arg2;
-      if (arg2 <= 24) {
-        result = arg2 % 24;
-      }
-      setUTCHours.setUTCHours(result, 0, 0, 0);
-      return setUTCHours;
-    }
-  }
-];
-if (0 < items.length) {
-  do {
-    let tmp5 = items[num];
-    let flag = tmp5.enumerable;
-    if (!flag) {
-      flag = false;
-    }
-    tmp5.enumerable = flag;
-    tmp5.configurable = true;
-    if ("value" in tmp5) {
-      tmp5.writable = true;
-    }
-    let _Object = Object;
-    let definePropertyResult1 = Object.defineProperty(tmp4, tmp5.key, tmp5);
-    num = num + 1;
-  } while (num < items.length);
-}
-
-export { Hour1To24Parser };
+export default exports.default;

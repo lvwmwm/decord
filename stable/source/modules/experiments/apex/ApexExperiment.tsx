@@ -1,17 +1,17 @@
 // Module ID: 1434
 // Function ID: 1435
 // Name: apex/ApexExperiment
-// Dependencies: [32, 502, 1236, 1435, 1255, 1369, 504, 2]
+// Dependencies: [32, 502, 1234, 1435, 1253, 1369, 504, 2]
 // Exports: default
 
 // Module 1434 (apex/ApexExperiment)
 import initialize from "initialize" /* 504 */;
-import FingerprintUtils from "FingerprintUtils" /* 1255 */;
+import FingerprintUtils from "FingerprintUtils" /* 1253 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;
 import discord_common_apex_ApexExperimentDefault from "discord_common/apex/ApexExperiment" /* 1435 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1236 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1234 */;
 
 require = fn;
 function getUnitId(arg0, guildId) {
@@ -40,7 +40,7 @@ function useUnitId(arg0, guildId) {
   } else if ("user" === arg0) {
     return tmp4;
   } else if ("installation" === arg0) {
-    let str3 = tmp(1255).maybeExtractId(tmp5);
+    let str3 = tmp(1253).maybeExtractId(tmp5);
     if (str3 == null) {
       str3 = "";
     }

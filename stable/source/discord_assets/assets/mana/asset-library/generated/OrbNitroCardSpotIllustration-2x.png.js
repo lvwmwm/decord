@@ -1,8 +1,8 @@
-// Module ID: 6334
-// Function ID: 6335
+// Module ID: 6435
+// Function ID: 6436
 // Dependencies: [2]
 
-// Module 6334
+// Module 6435
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/OrbNitroCardSpotIllustration-2x.png.js");

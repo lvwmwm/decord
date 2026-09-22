@@ -1,0 +1,19 @@
+// Module ID: 17355
+// Function ID: 17356
+// Dependencies: []
+
+// Module 17355
+globalThis.IntlMessageFormat.__addLocaleData({
+  locale: "bg",
+  pluralRuleFunction(arg0, arg1) {
+    let str = "other";
+    let str2 = "other";
+    if (!arg1) {
+      if (1 == arg0) {
+        str = "one";
+      }
+      str2 = str;
+    }
+    return str2;
+  }
+});

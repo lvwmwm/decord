@@ -1,19 +1,19 @@
-// Module ID: 11913
-// Function ID: 11914
+// Module ID: 12042
+// Function ID: 12043
 // Name: AppealIngestionSpam
-// Dependencies: [19, 17, 21, 4560, 11891, 7123, 1178, 2]
+// Dependencies: [19, 17, 21, 4636, 12020, 7226, 1176, 2]
 // Exports: default
 
-// Module 11913 (AppealIngestionSpam)
-import native from "native" /* 1178 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7123 */;
-import AppealIngestionModal from "AppealIngestionModal" /* 11891 */;
+// Module 12042 (AppealIngestionSpam)
+import native from "native" /* 1176 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7226 */;
+import AppealIngestionModal from "AppealIngestionModal" /* 12020 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_4 = createStyles.createStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/native/AppealIngestionSpam.tsx");

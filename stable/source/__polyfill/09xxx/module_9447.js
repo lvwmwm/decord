@@ -1,9 +1,9 @@
 // Module ID: 9447
 // Function ID: 9448
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 9447
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/user_settings/connections/native/two_way_link/images", width: 59, height: 85.5, scales: [2, 3], hash: "07edfc27bc58db41fd8c1993a9ed69f0", name: "xbox_app_phone", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 120, height: 80, scales: [2, 3], hash: "17353b23aadfbe0d3f7b9982ef6491bf", name: "img_nitro_file_upload", type: "png" });

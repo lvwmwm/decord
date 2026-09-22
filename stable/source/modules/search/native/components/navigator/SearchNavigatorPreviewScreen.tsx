@@ -1,18 +1,18 @@
-// Module ID: 16864
-// Function ID: 16865
+// Module ID: 16976
+// Function ID: 16977
 // Name: SearchNavigatorPreviewScreen
-// Dependencies: [19, 17, 1074, 21, 4560, 1483, 1486, 12362, 16821, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 1483, 1486, 12491, 16933, 2]
 // Exports: default
 
-// Module 16864 (SearchNavigatorPreviewScreen)
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12362 */;
+// Module 16976 (SearchNavigatorPreviewScreen)
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12491 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const ScrollView = fn(17).ScrollView;
 const SearchTypes = fn(1074).SearchTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_7 = createStyles.createStyles({ container: { flex: 1 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/components/navigator/SearchNavigatorPreviewScreen.tsx");

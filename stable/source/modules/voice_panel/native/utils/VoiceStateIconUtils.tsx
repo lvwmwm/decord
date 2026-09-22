@@ -1,13 +1,13 @@
-// Module ID: 9126
-// Function ID: 9127
+// Module ID: 9249
+// Function ID: 9250
 // Name: VoiceStateIconUtils
-// Dependencies: [1908, 4579, 558, 504, 2]
+// Dependencies: [1908, 4655, 558, 504, 2]
 // Exports: useMuteDeafenIconState, useStableVideoState, useStableVoiceParticipant, useVideoIconState
 
-// Module 9126 (VoiceStateIconUtils)
+// Module 9249 (VoiceStateIconUtils)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import VoiceStateStore from "VoiceStateStore" /* 4579 */;
+import VoiceStateStore from "VoiceStateStore" /* 4655 */;
 
 const require = globalThis.__r;
 

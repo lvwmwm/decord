@@ -1,21 +1,9 @@
 // Module ID: 5672
 // Function ID: 5673
-// Dependencies: [19, 5671]
-// Exports: useHeaderHeight
+// Dependencies: [1120]
 
 // Module 5672
-import HeaderHeightContext from "HeaderHeightContext" /* 5671 */;
-import noop from "module_19" /* 19 */;
+import registerAsset from "module_1120" /* 1120 */;
 
-require = arg1;
 
-export const useHeaderHeight = function useHeaderHeight() {
-  const context = noop.useContext(HeaderHeightContext.HeaderHeightContext);
-  if (undefined === context) {
-    const _Error = Error;
-    const error = new Error("Couldn't find the header height. Are you inside a screen in a navigator with a header?");
-    throw error;
-  } else {
-    return context;
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "e4080f713973c251e1438e7043339acb", name: "ic_verified_guild_icon_green_24px", type: "png" });

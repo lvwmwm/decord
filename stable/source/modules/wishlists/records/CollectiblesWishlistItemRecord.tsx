@@ -1,17 +1,17 @@
-// Module ID: 8786
-// Function ID: 8787
+// Module ID: 8906
+// Function ID: 8907
 // Name: CollectiblesWishlistItemRecord
-// Dependencies: [7547, 7546, 1887, 7548, 7549, 5511, 8785, 1074, 1889, 2]
+// Dependencies: [7650, 7649, 1887, 7651, 7652, 5592, 8905, 1074, 1889, 2]
 // Exports: isCollectiblesWishlistItemRecord
 
-// Module 8786 (CollectiblesWishlistItemRecord)
+// Module 8906 (CollectiblesWishlistItemRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7547 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7650 */;
 import NameplateRecord from "NameplateRecord" /* 1887 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7548 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7549 */;
-import SKURecord from "SKURecord" /* 5511 */;
-import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8785 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7651 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7652 */;
+import SKURecord from "SKURecord" /* 5592 */;
+import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8905 */;
 
 require = fn;
 function createCollectiblesItemFromServerResponse(collectibles_item) {
@@ -28,7 +28,7 @@ function createCollectiblesItemFromServerResponse(collectibles_item) {
     return null;
   }
 }
-let closure_3 = fn(7546).transformSKUToCollectiblesItem;
+let closure_3 = fn(7649).transformSKUToCollectiblesItem;
 const SKUProductLines = fn(1074).SKUProductLines;
 const prototype = function CollectiblesWishlistItemRecord(bundle_items) {
   const tmp2 = new prototype(bundle_items, tmp);

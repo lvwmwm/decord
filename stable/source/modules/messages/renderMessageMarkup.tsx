@@ -1,12 +1,12 @@
-// Module ID: 7889
-// Function ID: 7890
+// Module ID: 7992
+// Function ID: 7993
 // Name: renderMessageMarkup
-// Dependencies: [7890, 4550, 2]
-// Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupWithParser
+// Dependencies: [7993, 4626, 2]
+// Exports: default, getInitialParserStateFromMessage, renderAutomodMessageMarkup, renderAutomodMessageMarkupToAST, renderMessageContentMarkup, renderMessageMarkupToAST, renderMessageMarkupToASTWithParser, renderMessageMarkupWithParser
 
-// Module 7889 (renderMessageMarkup)
-import MarkupUtilsDefault from "MarkupUtils" /* 4550 */;
-import MarkupPostProcessors from "MarkupPostProcessors" /* 7890 */;
+// Module 7992 (renderMessageMarkup)
+import MarkupUtilsDefault from "MarkupUtils" /* 4626 */;
+import MarkupPostProcessors from "MarkupPostProcessors" /* 7993 */;
 import size from "module_2" /* 2 */;
 
 function getInitialParserState(channelId) {
@@ -120,6 +120,16 @@ export const renderMessageMarkupToAST = function renderMessageMarkupToAST(messag
   const merged = Object.assign(obj);
   obj2.toAST = true;
   return render(obj.formatInline ? tmp2.parseInlineReplyToAST : tmp2.parseToAST, message, obj2);
+};
+export const renderMessageMarkupToASTWithParser = function renderMessageMarkupToASTWithParser(arg0, message, arg2) {
+  let obj = arg2;
+  if (arg2 === undefined) {
+    obj = {};
+  }
+  const obj2 = {};
+  const merged = Object.assign(obj);
+  obj2.toAST = true;
+  return render(arg0, message, obj2);
 };
 export const renderMessageContentMarkup = function renderMessageContentMarkup(notifCenterV2MessagePreviewParser, guildId, arg2) {
   let obj = arg2;

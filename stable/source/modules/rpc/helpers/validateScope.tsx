@@ -1,11 +1,11 @@
-// Module ID: 14505
-// Function ID: 14506
+// Module ID: 14591
+// Function ID: 14592
 // Name: validateScope
-// Dependencies: [4465, 2]
+// Dependencies: [4541, 2]
 // Exports: default
 
-// Module 14505 (validateScope)
-import Constants from "Constants" /* 4465 */;
+// Module 14591 (validateScope)
+import Constants from "Constants" /* 4541 */;
 import size from "module_2" /* 2 */;
 
 const RPC_SCOPE_CONFIG = Constants.RPC_SCOPE_CONFIG;

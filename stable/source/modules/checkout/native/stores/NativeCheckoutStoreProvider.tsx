@@ -1,14 +1,14 @@
-// Module ID: 10809
-// Function ID: 10810
+// Module ID: 10936
+// Function ID: 10937
 // Name: NativeCheckoutStoreProvider
-// Dependencies: [5, 32, 19, 17, 7424, 1074, 4542, 21, 4560, 5598, 10810, 7429, 7430, 5577, 1256, 1232, 4992, 10813, 1242, 10817, 2]
+// Dependencies: [5, 32, 19, 17, 7527, 1074, 4618, 21, 4636, 5679, 10937, 573, 7532, 7533, 5658, 1254, 1230, 5073, 10940, 1240, 10944, 2]
 // Exports: default
 
-// Module 10809 (NativeCheckoutStoreProvider)
-import SentryUtilsDefault from "SentryUtils" /* 1232 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import v1 from "v1" /* 1256 */;
-import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10813 */;
+// Module 10936 (NativeCheckoutStoreProvider)
+import SentryUtilsDefault from "SentryUtils" /* 1230 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import v1 from "v1" /* 1254 */;
+import PaymentFlowStartedTriggerPoint from "PaymentFlowStartedTriggerPoint" /* 10940 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -19,7 +19,7 @@ require = fn;
 function NativeCheckoutStoreProvider(children) {
   ({ checkoutInitParameters: require, order } = children);
   ({ paymentGateway: dependencyMap, orderRequired: asyncGeneratorStep, onOrderRetryCancellation: _slicedToArray, initialSubscriptionFacet: noop, checkoutAnalyticsFields: View, analyticsInitialStep: closure_7 } = children);
-  const contextMetadata = order(5598)(() => {
+  const contextMetadata = order(5679)(() => {
     let id;
     if (order != null) {
       id = order.id;
@@ -32,7 +32,7 @@ function NativeCheckoutStoreProvider(children) {
     const obj3 = { message: "Checkout session ID: " + id };
     return { loadId: id, startTime: Date.now() };
   });
-  redux = order(5598)(() => {
+  redux = order(5679)(() => {
     const obj = {};
     const merged = Object.assign(View);
     obj.load_id = contextMetadata.loadId;
@@ -40,7 +40,7 @@ function NativeCheckoutStoreProvider(children) {
     return obj;
   });
   value = _slicedToArray(noop.useState(() => React5({ order, checkoutInitParameters, contextMetadata, analyticsFields, paymentGateway: dependencyMap, orderRequired, onOrderRetryCancellation, initialSubscriptionFacet })), 1)[0];
-  order(4992)(() => {
+  order(5073)(() => {
     if (null != View) {
       const result = PaymentFlowStartedTriggerPoint.trackPaymentFlowStartedAnalyticsAndCTP(closure_9);
       const obj3 = {};
@@ -57,8 +57,8 @@ function NativeCheckoutStoreProvider(children) {
           checkoutSucceeded = purchaseInFlight;
         }
         if (!checkoutSucceeded) {
-          order(1242).track(first.PAYMENT_FLOW_CANCELED, analyticsFields);
-          const obj = order(1242);
+          order(1240).track(first.PAYMENT_FLOW_CANCELED, analyticsFields);
+          const obj = order(1240);
         }
       };
     }
@@ -84,20 +84,20 @@ function NativeCheckoutStoreProvider(children) {
       const obj2 = { checkoutSucceeded: tmp2, order: null };
       ({ id: obj3.id, status: obj3.status } = orderRecord);
       obj2.order = { id: null, status: null };
-      checkoutInitParameters(10817).discardDraftOrder(obj2);
-      const obj = checkoutInitParameters(10817);
+      checkoutInitParameters(10944).discardDraftOrder(obj2);
+      const obj = checkoutInitParameters(10944);
       const obj5 = { id: null, status: null };
     }
   }, items1);
   return <contextMetadata value={value}><redux.Provider value={value}>{arg0.children}</redux.Provider></contextMetadata>;
 }
 const View = fn(17).View;
-const NativeCheckoutStore = fn(7424);
+const NativeCheckoutStore = fn(7527);
 ({ createNativeStore: closure_7, NativeCheckoutStoreContext: closure_8, NativeCheckoutStoreContextOrNull: closure_9 } = NativeCheckoutStore);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ItemPurchaseType = fn(4542).ItemPurchaseType;
+const ItemPurchaseType = fn(4618).ItemPurchaseType;
 let jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_13 = createStyles.createStyles({ loadingSpinnerContainer: { display: "flex", alignItems: "center", justifyContent: "center", height: "100%" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/checkout/native/stores/NativeCheckoutStoreProvider.tsx");
@@ -119,11 +119,11 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
   }
   c9 = undefined;
   jsx = undefined;
-  let storeFront;
+  let mobileStoreFront;
   let callback;
   let callback1;
   ({ checkoutAnalyticsFields, analyticsInitialStep } = orderRequired);
-  let tmp = storeFront();
+  let tmp = mobileStoreFront();
   [tmp3, c9] = activeSubscription(defaultPlans.useState(null), 2);
   const tmp4 = activeSubscription(defaultPlans.useState(orderRequired), 2);
   closure_10 = tmp4[1];
@@ -145,14 +145,20 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
   }
   const tmp6 = paymentGateway(isGift[9]);
   const tmp9 = _require;
-  storeFront = require("hooks/NativePaymentHooks").useNativeIAPPayments().storeFront;
+  mobileStoreFront = require("hooks/NativePaymentHooks").useMobileStoreFront();
+  const effect = obj.useEffect(() => {
+    paymentGateway(isGift[11]).dispatch({ type: "IAP_CHECKOUT_START" });
+    return () => {
+      paymentGateway(isGift[11]).dispatch({ type: "IAP_CHECKOUT_END" });
+    };
+  }, []);
   onOrderCreated(function*(arg0) {
     const obj5 = { orderLineItems: closure_129_0, paymentGateway, isGift, subscriptionFacet: closure_129_1, externalGatewayFacet, countryCode: null };
     if (country != null) {
       country = country.country;
     }
     obj5.countryCode = country;
-    closure_129_2 = yield closure_0(isGift[11]).createOrder(obj5);
+    closure_129_2 = yield closure_0(isGift[12]).createOrder(obj5);
     _undefined(closure_129_2);
     if (null != v2) {
       v2(closure_129_2);
@@ -163,7 +169,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     ({ orderLineItems: closure_129_0, subscriptionFacet: closure_129_1 } = closure_0);
     return "PX_16";
   });
-  let items = [paymentGateway, onOrderCreated, isGift, storeFront, initialExternalGatewayFacet];
+  let items = [paymentGateway, onOrderCreated, isGift, mobileStoreFront, initialExternalGatewayFacet];
   callback = obj.useCallback(function() {
     const self = this;
     const apply = closure_0.apply;
@@ -180,12 +186,12 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     yield callback(closure_0);
     if (1 === tmp7) {
       c3 = 0;
-      const result = closure_0(isGift[12]).showCheckoutOrderErrorModal(() => callback(closure_1_0), () => {
+      const result = closure_0(isGift[13]).showCheckoutOrderErrorModal(() => callback(closure_1_0), () => {
         closure_1_10(false);
         closure_1_6();
       });
       c5 = 3;
-      closure_0(isGift[12]);
+      closure_0(isGift[13]);
     } else if (arg0 === 1) {
       c5 = 3;
       throw arg1;
@@ -205,12 +211,12 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     }
     return applyArgumentsResult;
   }, items1);
-  const items2 = [tmp6Result, orderRequired, callback1, defaultPlans, storeFront, activeSubscription, initialSubscriptionFacet];
-  const effect = obj.useEffect(() => {
+  const items2 = [tmp6Result, orderRequired, callback1, defaultPlans, mobileStoreFront, activeSubscription, initialSubscriptionFacet];
+  const effect1 = obj.useEffect(() => {
     let tmp = ref;
     if (!ref.current) {
-      country = storeFront;
-      if (null != storeFront) {
+      country = mobileStoreFront;
+      if (null != mobileStoreFront) {
         if (closure_0) {
           const items = [];
           if (null != defaultPlans) {
@@ -249,12 +255,12 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     }
   }, items2);
   if (tmp4[0]) {
-    let tmp16 = null;
+    let tmp18 = null;
     if (!flag) {
-      const obj3 = { style: tmp.loadingSpinnerContainer, children: jsx(tmp9(tmp5[13]).ActivityIndicator, { animating: true, size: "large" }) };
-      tmp16 = <onOrderRetryCancellation style={tmp.loadingSpinnerContainer}>{jsx(tmp9(tmp5[13]).ActivityIndicator, { animating: true, size: "large" })}</onOrderRetryCancellation>;
+      const obj3 = { style: tmp.loadingSpinnerContainer, children: jsx(tmp9(tmp5[14]).ActivityIndicator, { animating: true, size: "large" }) };
+      tmp18 = <onOrderRetryCancellation style={tmp.loadingSpinnerContainer}>{jsx(tmp9(tmp5[14]).ActivityIndicator, { animating: true, size: "large" })}</onOrderRetryCancellation>;
     }
-    let tmp15 = tmp16;
+    let tmp17 = tmp18;
   } else {
     let obj4 = { checkoutInitParameters: null, order: null, paymentGateway: null, onOrderRetryCancellation: null, orderRequired: null, initialSubscriptionFacet: null, checkoutAnalyticsFields: null, analyticsInitialStep: null, children: null };
     let obj5 = { skuIds, isGift, activeSubscription, referralTrialOfferId: null };
@@ -267,7 +273,7 @@ export default function NativeCheckoutStoreProviderWrapper(orderRequired) {
     obj4.checkoutAnalyticsFields = checkoutAnalyticsFields;
     obj4.analyticsInitialStep = analyticsInitialStep;
     obj4.children = orderRequired.children;
-    tmp15 = <callback checkoutInitParameters={null} order={null} paymentGateway={null} onOrderRetryCancellation={null} orderRequired={null} initialSubscriptionFacet={null} checkoutAnalyticsFields={null} analyticsInitialStep={null}>{null}</callback>;
+    tmp17 = <callback checkoutInitParameters={null} order={null} paymentGateway={null} onOrderRetryCancellation={null} orderRequired={null} initialSubscriptionFacet={null} checkoutAnalyticsFields={null} analyticsInitialStep={null}>{null}</callback>;
   }
-  return tmp15;
+  return tmp17;
 };

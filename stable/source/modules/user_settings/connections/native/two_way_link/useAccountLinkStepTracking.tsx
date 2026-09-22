@@ -1,11 +1,11 @@
-// Module ID: 9275
-// Function ID: 9276
+// Module ID: 9398
+// Function ID: 9399
 // Name: useAccountLinkStepTracking
-// Dependencies: [19, 1074, 1242, 2]
+// Dependencies: [19, 1074, 1240, 2]
 // Exports: useAccountLinkStepTracking
 
-// Module 9275 (useAccountLinkStepTracking)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+// Module 9398 (useAccountLinkStepTracking)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import noop from "module_19" /* 19 */;
 
 const AnalyticEvents = fn(1074).AnalyticEvents;

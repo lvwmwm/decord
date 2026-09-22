@@ -1,21 +1,21 @@
-// Module ID: 5421
-// Function ID: 5422
+// Module ID: 5502
+// Function ID: 5503
 // Name: StageChannelRoleStore
-// Dependencies: [1957, 2021, 2015, 1979, 1371, 4579, 4707, 4204, 1965, 12, 504, 5422, 573, 2]
+// Dependencies: [1957, 2021, 2015, 1979, 1371, 4655, 4783, 4280, 1965, 12, 504, 5503, 573, 2]
 
-// Module 5421 (StageChannelRoleStore)
+// Module 5502 (StageChannelRoleStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4204 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4707 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5422 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4783 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 5503 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 import GuildRoleStore from "GuildRoleStore" /* 2015 */;
 import GuildStore from "GuildStore" /* 1979 */;
 import UserStore from "UserStore" /* 1371 */;
-import VoiceStateStore from "VoiceStateStore" /* 4579 */;
+import VoiceStateStore from "VoiceStateStore" /* 4655 */;
 
 require = fn;
 function buildStageChannelUserRoles(user, id2, flag) {

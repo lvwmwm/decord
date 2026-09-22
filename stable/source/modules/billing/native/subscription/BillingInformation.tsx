@@ -1,10 +1,10 @@
-// Module ID: 13351
-// Function ID: 13352
+// Module ID: 13481
+// Function ID: 13482
 // Name: BillingInformation
-// Dependencies: [5, 1074, 4218, 1116, 1114, 11052, 2]
+// Dependencies: [5, 1074, 4294, 1364, 1114, 11185, 2]
 // Exports: getBillingInformationStringNative
 
-// Module 13351 (BillingInformation)
+// Module 13481 (BillingInformation)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,55 @@
 // Module ID: 10635
 // Function ID: 10636
-// Dependencies: [1122]
+// Dependencies: [41, 42, 10631, 10562]
 
 // Module 10635
-import registerAsset from "module_1122" /* 1122 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 
+const JPSlashDateFormatParser = require;
+const regExp = new RegExp("([0-9\uFF10-\uFF19]{4}[\\/|\\\uFF0F])?([0-1\uFF10-\uFF11]{0,1}[0-9\uFF10-\uFF19]{1})(?:[\\/|\\\uFF0F]([0-3\uFF10-\uFF13]{0,1}[0-9\uFF10-\uFF19]{1}))", "i");
+class JPSlashDateFormatParser {
+  constructor() {
+    tmp = c2(this, JPSlashDateFormatParser);
+    return;
+  }
+}
+const entry = {
+  key: "pattern",
+  value: function pattern() {
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "extract",
+    value: function extract(createParsingComponents, arg1) {
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      const parsed = parseInt(JPSlashDateFormatParser(10631).toHankaku(arg1[2]));
+      const parsed1 = parseInt(JPSlashDateFormatParser(10631).toHankaku(arg1[3]));
+      if (parsed >= 1) {
+        if (parsed <= 12) {
+          if (parsed1 >= 1) {
+            if (parsed1 <= 31) {
+              parsingComponents.assign("day", parsed1);
+              parsingComponents.assign("month", parsed);
+              if (arg1[1]) {
+                const _parseInt = parseInt;
+                const parsed2 = parseInt(tmp(10631).toHankaku(arg1[1]));
+                parsingComponents.assign("year", tmp(10562).findMostLikelyADYear(parsed2));
+              } else {
+                parsingComponents.imply("year", tmp(10562).findYearClosestToRef(createParsingComponents.reference.instant, parsed1, parsed));
+              }
+              return parsingComponents;
+            }
+          }
+          return null;
+        }
+      }
+      return null;
+    }
+  }
+];
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "0f6346bda6a1fe957f683601cddba824", name: "IdIcon", type: "png" });
+export default _createClass(JPSlashDateFormatParser, items);

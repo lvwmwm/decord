@@ -1,8 +1,8 @@
-// Module ID: 8149
-// Function ID: 8150
+// Module ID: 8265
+// Function ID: 8266
 // Dependencies: [2]
 
-// Module 8149
+// Module 8265
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/card-origami.png.js");

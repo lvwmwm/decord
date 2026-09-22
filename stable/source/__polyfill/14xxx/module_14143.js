@@ -1,9 +1,12 @@
 // Module ID: 14143
 // Function ID: 14144
-// Dependencies: [1122]
+// Dependencies: [14132]
 
 // Module 14143
-import registerAsset from "module_1122" /* 1122 */;
+import _mod14132 from "module_14132" /* 14132 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "42c5142fba4f2f3f3d86c5b7ea6fd4ac", name: "YouTab", type: "lottie" });
+export default (arg0, arg1, arg2) => {
+  const obj = new _mod14132(arg0, arg2);
+  return obj.intersects(new _mod14132(arg1, arg2), arg2);
+};

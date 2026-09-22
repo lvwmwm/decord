@@ -1,9 +1,67 @@
 // Module ID: 8621
 // Function ID: 8622
-// Dependencies: [1122]
+// Dependencies: [41, 42, 93, 95, 98, 8590, 8613]
 
 // Module 8621
-import registerAsset from "module_1122" /* 1122 */;
+import _modDef8613 from "module_8613" /* 8613 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
+const FeDisplacementMap = arg1;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const call = valueOf.call;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    if (typeof call === "unknown") {
+      let callResult = valueOf();
+    } else {
+      callResult = call(constructResult);
+    }
+    closure_0 = !callResult;
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+class FeDisplacementMap {
+  constructor() {
+    self = this;
+    tmp = c2(this, FeDisplacementMap);
+    tmp2 = closure_4;
+    obj = closure_4(FeDisplacementMap);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp7 = globalThis;
+      _Reflect = Reflect;
+      tmp8 = arguments;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      tmp4 = arguments;
+      tmp5 = arguments;
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(FeDisplacementMap, _modDef8613);
+const entry = {
+  key: "render",
+  value: function render() {
+    const result = FeDisplacementMap(8590).warnUnimplementedFilter();
+    return null;
+  }
+};
+const items = [entry];
+const importDefaultResultResult = _createClass(FeDisplacementMap, items);
+importDefaultResultResult.displayName = "FeDisplacementMap";
+const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
+importDefaultResultResult.defaultProps = {};
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "adb011bbeb7f189fa87848559cc4fbc7", name: "ic_leave_stage", type: "png" });
+export default importDefaultResultResult;

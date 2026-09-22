@@ -1,0 +1,9 @@
+// Module ID: 13862
+// Function ID: 13863
+// Dependencies: [1120]
+
+// Module 13862
+import registerAsset from "module_1120" /* 1120 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf_channels/native/images", width: 26, height: 51, scales: [1], hash: "da7dcc5777ff296b64b9eaee0cd191e4", name: "star_blue", type: "png" });

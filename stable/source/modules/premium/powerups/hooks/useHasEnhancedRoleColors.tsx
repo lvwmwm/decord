@@ -1,10 +1,10 @@
-// Module ID: 5004
-// Function ID: 5005
+// Module ID: 5085
+// Function ID: 5086
 // Name: useHasEnhancedRoleColors
 // Dependencies: [1979, 1074, 504, 2]
 // Exports: default, getHasEnhancedRoleColors, getHasEnhancedRoleColorsForRole, useHasEnhancedRoleColorsForRole
 
-// Module 5004 (useHasEnhancedRoleColors)
+// Module 5085 (useHasEnhancedRoleColors)
 import GuildStore from "GuildStore" /* 1979 */;
 
 const require = globalThis.__r;

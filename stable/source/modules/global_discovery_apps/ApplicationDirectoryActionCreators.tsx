@@ -1,25 +1,25 @@
-// Module ID: 12075
-// Function ID: 12076
+// Module ID: 12204
+// Function ID: 12205
 // Name: ApplicationDirectoryActionCreators
-// Dependencies: [5, 4559, 2025, 1347, 7164, 12076, 12077, 12072, 12078, 12079, 1074, 573, 559, 1272, 12073, 1115, 12080, 12081, 12082, 2]
+// Dependencies: [5, 4635, 2025, 1345, 7267, 12205, 12206, 12201, 12207, 12208, 1074, 573, 559, 1270, 12202, 1363, 12209, 12210, 12211, 2]
 // Exports: fetchCollections, fetchIntegrationApplicationIdsForMyGuilds, getApplication, getCategories, getEmbedApplication, getSimilarApplications, search
 
-// Module 12075 (ApplicationDirectoryActionCreators)
+// Module 12204 (ApplicationDirectoryActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12081 */;
-import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12082 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12210 */;
+import ApplicationCollectionActiveState from "ApplicationCollectionActiveState" /* 12211 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 4559 */;
+import DevSettingsStore from "DevSettingsStore" /* 4635 */;
 import LocaleStore from "LocaleStore" /* 2025 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1347 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7164 */;
-import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12076 */;
-import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 12077 */;
-import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12072 */;
-import ApplicationDirectorySimilarApplicationsStore from "ApplicationDirectorySimilarApplicationsStore" /* 12078 */;
-import MyGuildApplicationsStore from "MyGuildApplicationsStore" /* 12079 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1345 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7267 */;
+import ApplicationDirectoryCategoriesStore from "ApplicationDirectoryCategoriesStore" /* 12205 */;
+import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 12206 */;
+import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12201 */;
+import ApplicationDirectorySimilarApplicationsStore from "ApplicationDirectorySimilarApplicationsStore" /* 12207 */;
+import MyGuildApplicationsStore from "MyGuildApplicationsStore" /* 12208 */;
 
 require = fn;
 let closure_20 = async function _getEmbedApplication(arg0, value) {
@@ -813,11 +813,11 @@ let closure_26 = async function _fetchIntegrationApplicationIdsForMyGuilds(arg0,
     }
   }
 };
-fn(7164).FetchState;
-fn(12077).FetchState;
-fn(12072).FetchState;
-fn(12078).FetchState;
-const FetchState = fn(12079).FetchState;
+fn(7267).FetchState;
+fn(12206).FetchState;
+fn(12201).FetchState;
+fn(12207).FetchState;
+const FetchState = fn(12208).FetchState;
 const Endpoints = fn(1074).Endpoints;
 let c18 = 600000;
 const map = new Map();

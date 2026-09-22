@@ -1,8 +1,8 @@
-// Module ID: 5916
-// Function ID: 5917
+// Module ID: 6017
+// Function ID: 6018
 // Dependencies: [2]
 
-// Module 5916
+// Module 6017
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiscordWordmarkLogo-2x.png.js");

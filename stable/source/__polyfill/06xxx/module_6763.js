@@ -1,63 +1,151 @@
 // Module ID: 6763
 // Function ID: 6764
-// Dependencies: [6723, 6660, 6698]
-// Exports: useComposedGesture
+// Dependencies: [6761, 6762]
 
 // Module 6763
-const require = arg1;
-const dependencyMap = arg6;
+import tagMessage from "tagMessage" /* 6761 */;
+import _mod6762 from "module_6762" /* 6762 */;
 
-export const useComposedGesture = function useComposedGesture(type) {
-  const substr = [...arguments].slice();
-  const flatMapResult = substr.flatMap((handlerTags) => {
-    if (obj.isComposedGesture(handlerTags)) {
-      handlerTags = handlerTags.handlerTags;
-    } else {
-      handlerTags = [handlerTags.handlerTag];
-    }
-    return handlerTags;
-  });
-  if (obj.containsDuplicates(flatMapResult)) {
-    const _Error2 = Error;
-    const error = new Error(tmp2(6660).tagMessage("Each gesture can be used only once in the gesture composition."));
-    throw error;
+require = fn;
+const dependencyMap = arg6;
+let wrappedSetGestureState = function t(arg0, arg1) {
+  const _globalThis = globalThis;
+  if (globalThis._setGestureStateSync) {
+    _globalThis._setGestureStateSync(arg0, arg1);
+  } else if (_globalThis._setGestureStateAsync) {
+    const _globalThis2 = globalThis;
+    const result = globalThis._setGestureStateAsync(arg0, arg1);
   } else {
-    const obj2 = { shouldUseReanimatedDetector: substr.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: substr.some((config) => config.config.dispatchesAnimatedEvents) };
-    if (obj2.shouldUseReanimatedDetector) {
-      if (obj2.dispatchesAnimatedEvents) {
+    const _Error = Error;
+    const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+    throw error;
+  }
+};
+wrappedSetGestureState.__closure = { tagMessage: fn(6761).tagMessage };
+wrappedSetGestureState.__workletHash = 727405139747;
+wrappedSetGestureState.__initData = { code: "function pnpm_gestureStateManagerTs1(handlerTag,state){const{tagMessage}=this.__closure;if(globalThis._setGestureStateSync){globalThis._setGestureStateSync(handlerTag,state);}else if(globalThis._setGestureStateAsync){globalThis._setGestureStateAsync(handlerTag,state);}else{throw new Error(tagMessage('Failed to set gesture state'));}}" };
+const __initData = { code: "function pnpm_gestureStateManagerTs3(){const{wrappedSetGestureState,handlerTag,State}=this.__closure;wrappedSetGestureState(handlerTag,State.BEGAN);}" };
+const __initData2 = { code: "function pnpm_gestureStateManagerTs4(){const{wrappedSetGestureState,handlerTag,State}=this.__closure;wrappedSetGestureState(handlerTag,State.ACTIVE);}" };
+const __initData3 = { code: "function pnpm_gestureStateManagerTs5(){const{wrappedSetGestureState,handlerTag,State}=this.__closure;wrappedSetGestureState(handlerTag,State.FAILED);}" };
+const __initData4 = { code: "function pnpm_gestureStateManagerTs6(){const{wrappedSetGestureState,handlerTag,State}=this.__closure;wrappedSetGestureState(handlerTag,State.END);}" };
+let obj2 = { create: null };
+function create(handlerTag) {
+  _require = handlerTag;
+  const obj = { handlerTag, begin: null, activate: null, fail: null, end: null };
+  const wrappedSetGestureState = function p() {
+    const BEGAN = _mod6762.State.BEGAN;
+    if (typeof fn === "function") {
+      const _globalThis = globalThis;
+      const _globalThis2 = globalThis;
+      if (globalThis._setGestureStateSync) {
+        _globalThis2._setGestureStateSync(tmp, BEGAN);
+      } else if (_globalThis2._setGestureStateAsync) {
+        const _globalThis3 = globalThis;
+        const result = globalThis._setGestureStateAsync(tmp, BEGAN);
+      } else {
         const _Error = Error;
-        const error1 = new Error(tmp2(6660).tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
-        throw error1;
+        const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+        throw error;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+  wrappedSetGestureState.__closure = { wrappedSetGestureState, handlerTag, State: require("module_6762").State };
+  wrappedSetGestureState.__workletHash = 15218261064802;
+  wrappedSetGestureState.__initData = __initData;
+  obj.begin = wrappedSetGestureState;
+  const fn2 = function c() {
+    const ACTIVE = _mod6762.State.ACTIVE;
+    if (typeof fn === "function") {
+      const _globalThis = globalThis;
+      const _globalThis2 = globalThis;
+      if (globalThis._setGestureStateSync) {
+        _globalThis2._setGestureStateSync(tmp, ACTIVE);
+      } else if (_globalThis2._setGestureStateAsync) {
+        const _globalThis3 = globalThis;
+        const result = globalThis._setGestureStateAsync(tmp, ACTIVE);
+      } else {
+        const _Error = Error;
+        const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+        throw error;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+  const obj2 = { wrappedSetGestureState, handlerTag, State: require("module_6762").State };
+  fn2.__closure = { wrappedSetGestureState, handlerTag, State: require("module_6762").State };
+  fn2.__workletHash = 4587865373510;
+  fn2.__initData = __initData2;
+  obj.activate = fn2;
+  class S {
+    constructor() {
+      tmp = closure_0;
+      tmp2 = closure_0;
+      tmp3 = closure_1;
+      FAILED = closure_0(closure_1[1]).State.FAILED;
+      if (typeof t === "function") {
+        tmp4 = globalThis;
+        _globalThis = globalThis;
+        _globalThis2 = globalThis;
+        if (globalThis._setGestureStateSync) {
+          _setGestureStateSyncResult = _globalThis2._setGestureStateSync(tmp, FAILED);
+        } else if (_globalThis2._setGestureStateAsync) {
+          _globalThis3 = globalThis;
+          result = globalThis._setGestureStateAsync(tmp, FAILED);
+        } else {
+          _Error = Error;
+          tmp2Result = tmp2(tmp3[0]);
+          str = "Failed to set gesture state";
+          tmp5 = new.target;
+          tmp6 = new.target;
+          error = new Error(tmp2Result.tagMessage("Failed to set gesture state"));
+          tmp8 = error;
+          throw error;
+        }
+        return;
+      } else {
+        str2 = "Trying to call a non-function";
+        throw new TypeError("Trying to call a non-function");
       }
     }
-    const Reanimated = tmp2(6698).Reanimated;
-    let composedEventHandler;
-    if (Reanimated != null) {
-      composedEventHandler = Reanimated.useComposedEventHandler(substr.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
-    }
-    const found = substr.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
-    let animatedEventHandler;
-    if (found.length > 0) {
-      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
-    }
-    const obj3 = { handlerTags: flatMapResult, type, config: obj2, detectorCallbacks: null, externalSimultaneousHandlers: null, gestures: null };
-    const obj4 = {
-      jsEventHandler(arg0) {
-          for (const item10007 of substr) {
-            if (item10007.detectorCallbacks.jsEventHandler) {
-              let detectorCallbacks = tmp.detectorCallbacks;
-              let jsEventHandlerResult = detectorCallbacks.jsEventHandler(arg0);
-            }
-            continue;
-          }
-        },
-      reanimatedEventHandler: composedEventHandler,
-      animatedEventHandler
-    };
-    obj3.detectorCallbacks = obj4;
-    obj3.externalSimultaneousHandlers = [];
-    obj3.gestures = substr;
-    return obj3;
   }
-  obj = substr(6723);
-};
+  const obj3 = { wrappedSetGestureState, handlerTag, State: require("module_6762").State };
+  S.__closure = { wrappedSetGestureState, handlerTag, State: require("module_6762").State };
+  S.__workletHash = 12634480855880;
+  S.__initData = __initData3;
+  obj.fail = S;
+  const fn3 = function s() {
+    const END = _mod6762.State.END;
+    if (typeof fn === "function") {
+      const _globalThis = globalThis;
+      const _globalThis2 = globalThis;
+      if (globalThis._setGestureStateSync) {
+        _globalThis2._setGestureStateSync(tmp, END);
+      } else if (_globalThis2._setGestureStateAsync) {
+        const _globalThis3 = globalThis;
+        const result = globalThis._setGestureStateAsync(tmp, END);
+      } else {
+        const _Error = Error;
+        const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
+        throw error;
+      }
+    } else {
+      throw new TypeError("Trying to call a non-function");
+    }
+  };
+  const obj4 = { wrappedSetGestureState, handlerTag, State: require("module_6762").State };
+  fn3.__closure = { wrappedSetGestureState, handlerTag, State: require("module_6762").State };
+  fn3.__workletHash = 6198601582791;
+  fn3.__initData = __initData4;
+  obj.end = fn3;
+  return obj;
+}
+let obj = { tagMessage: fn(6761).tagMessage };
+create.__closure = { wrappedSetGestureState, State: fn(6762).State };
+create.__workletHash = 1974124167608;
+create.__initData = { code: "function create_Pnpm_gestureStateManagerTs2(handlerTag){const{wrappedSetGestureState,State}=this.__closure;return{handlerTag:handlerTag,begin:function(){'worklet';wrappedSetGestureState(handlerTag,State.BEGAN);},activate:function(){'worklet';wrappedSetGestureState(handlerTag,State.ACTIVE);},fail:function(){'worklet';wrappedSetGestureState(handlerTag,State.FAILED);},end:function(){'worklet';wrappedSetGestureState(handlerTag,State.END);}};}" };
+obj2.create = create;
+
+export const GestureStateManager = obj2;

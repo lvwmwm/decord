@@ -1,10 +1,10 @@
-// Module ID: 5157
-// Function ID: 5158
+// Module ID: 5238
+// Function ID: 5239
 // Name: DiscordMd5
-// Dependencies: [5, 5158, 2]
+// Dependencies: [5, 5239, 2]
 
-// Module 5157 (DiscordMd5)
-import _modDef5158 from "module_5158" /* 5158 */;
+// Module 5238 (DiscordMd5)
+import _modDef5239 from "module_5239" /* 5239 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const prototype = function DiscordMd5() {
@@ -18,7 +18,7 @@ prototype["fromBlob"] = function fromBlob(arg0) {
   })();
 };
 prototype["fromArrayBuffer"] = function fromArrayBuffer(value) {
-  const _ArrayBuffer = _modDef5158.ArrayBuffer;
+  const _ArrayBuffer = _modDef5239.ArrayBuffer;
   return _ArrayBuffer.hash(value);
 };
 prototype["fromDataURI"] = function fromDataURI(arg0) {
@@ -46,7 +46,7 @@ prototype["fromDataURI"] = function fromDataURI(arg0) {
           length = atobResult.length;
         } while (num < length);
       }
-      const _ArrayBuffer = _modDef5158.ArrayBuffer;
+      const _ArrayBuffer = _modDef5239.ArrayBuffer;
       return _ArrayBuffer.hash(arrayBuffer);
     }
     const obj = /^data:[^;]*;base64,(.*)$/;

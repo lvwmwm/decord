@@ -1,9 +1,0 @@
-// Module ID: 10420
-// Function ID: 10421
-// Dependencies: [1122]
-
-// Module 10420
-import registerAsset from "module_1122" /* 1122 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stickers/native/images", width: 16, height: 16, scales: [2, 3], hash: "494d75fe739ed4a36d195ab8193847fa", name: "alert", type: "png" });

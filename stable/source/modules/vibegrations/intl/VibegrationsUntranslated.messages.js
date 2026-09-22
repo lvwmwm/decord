@@ -1,22 +1,22 @@
-// Module ID: 3547
-// Function ID: 3548
-// Dependencies: [1120, 3548, 1155, 2]
+// Module ID: 3590
+// Function ID: 3591
+// Dependencies: [1118, 3591, 1153, 2]
 
-// Module 3547
-import AssetJsonUtils from "AssetJsonUtils" /* 1120 */;
-import _mod3548 from "module_3548" /* 3548 */;
-import module_1155_mod from "module_1155" /* 1155 */;
+// Module 3590
+import AssetJsonUtils from "AssetJsonUtils" /* 1118 */;
+import _mod3591 from "module_3591" /* 3591 */;
+import module_1153_mod from "module_1153" /* 1153 */;
 import size from "module_2" /* 2 */;
 
-let module_1155 = module_1155_mod;
-const loader = module_1155.createLoader({
+let module_1153 = module_1153_mod;
+const loader = module_1153.createLoader({
   () => {
-    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod3548);
+    const jsonAsset = AssetJsonUtils.loadJsonAsset(_mod3591);
     return jsonAsset.then((result) => ({ default: result }));
   }
 }, "en-US");
-let module_1155 = module_1155_mod;
-const messagesProxy = module_1155.makeMessagesProxy(loader);
+let module_1153 = module_1153_mod;
+const messagesProxy = module_1153.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("modules/vibegrations/intl/VibegrationsUntranslated.messages.js");
 
 export default messagesProxy;

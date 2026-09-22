@@ -1,10 +1,10 @@
-// Module ID: 1340
-// Function ID: 1341
+// Module ID: 1338
+// Function ID: 1339
 // Name: clientLaunchId
-// Dependencies: [1256, 2]
+// Dependencies: [1254, 2]
 
-// Module 1340 (clientLaunchId)
-import v1_mod from "v1" /* 1256 */;
+// Module 1338 (clientLaunchId)
+import v1_mod from "v1" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 let v1 = v1_mod;

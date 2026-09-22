@@ -1,21 +1,21 @@
-// Module ID: 13168
-// Function ID: 13169
+// Module ID: 13298
+// Function ID: 13299
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1074, 1085, 21, 9371, 8848, 11014, 1115, 4231, 10827, 10809, 4527, 8177, 13169, 2]
+// Dependencies: [19, 1074, 1085, 21, 9495, 8967, 11147, 1363, 4307, 10954, 10936, 4603, 8293, 13299, 2]
 // Exports: default
 
-// Module 13168 (HeadlessCollectiblesPurchaseFlow)
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8177 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8848 */;
-import ACOMExperiments from "ACOMExperiments" /* 9371 */;
-import NativePaymentContext from "NativePaymentContext" /* 10827 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 11014 */;
-import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13169 */;
+// Module 13298 (HeadlessCollectiblesPurchaseFlow)
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8293 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 8967 */;
+import ACOMExperiments from "ACOMExperiments" /* 9495 */;
+import NativePaymentContext from "NativePaymentContext" /* 10954 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 11147 */;
+import HeadlessCollectiblesPurchaseRunner from "HeadlessCollectiblesPurchaseRunner" /* 13299 */;
 import noop from "module_19" /* 19 */;
 
-const NativeCheckoutStoreProviderDefault = tmp3(10809);
+const NativeCheckoutStoreProviderDefault = tmp3(10936);
 require = fn;
 const application_id = fn(1074).COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = fn(1085).PaymentGateways;
@@ -42,8 +42,8 @@ export default function HeadlessCollectiblesPurchaseFlow(arg0) {
     if (!tmp8) {
       let result = GOOGLE === tmp6.GOOGLE;
       if (result) {
-        result = tmp(4231).isGooglePlayBillingSupported();
-        const tmpResult = tmp(4231);
+        result = tmp(4307).isGooglePlayBillingSupported();
+        const tmpResult = tmp(4307);
       }
       tmp8 = result;
     }

@@ -1,8 +1,8 @@
-// Module ID: 5966
-// Function ID: 5967
+// Module ID: 6067
+// Function ID: 6068
 // Dependencies: [2]
 
-// Module 5966
+// Module 6067
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiWumpThinkExample-2x.png.js");

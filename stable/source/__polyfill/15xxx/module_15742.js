@@ -1,9 +1,9 @@
 // Module ID: 15742
 // Function ID: 15743
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 15742
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "5ec77c8acc74b99b6106b4203580cb98", name: "BugIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "69729bb923b51734340337d311da1203", name: "zh-TW.messages.69729bb923b51734340337d311da1203.compiled.messages", type: "jsona" });

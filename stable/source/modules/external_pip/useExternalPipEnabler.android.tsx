@@ -1,14 +1,14 @@
-// Module ID: 17004
-// Function ID: 17005
+// Module ID: 17112
+// Function ID: 17113
 // Name: useExternalPipEnabler
-// Dependencies: [4576, 502, 4583, 504, 17005, 2]
+// Dependencies: [4652, 502, 4659, 504, 17113, 2]
 // Exports: default
 
-// Module 17004 (useExternalPipEnabler)
-import ExternalPipEnablerState from "ExternalPipEnablerState" /* 17005 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4576 */;
+// Module 17112 (useExternalPipEnabler)
+import ExternalPipEnablerState from "ExternalPipEnablerState" /* 17113 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
 
 require = fn;
 const size = fn(2);

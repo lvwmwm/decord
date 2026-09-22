@@ -1,10 +1,10 @@
-// Module ID: 5179
-// Function ID: 5180
+// Module ID: 5260
+// Function ID: 5261
 // Name: KestrelExperiment
 // Dependencies: [1433, 2]
 // Exports: getEffectiveKestrelLimit, getKestrelConfig, getKestrelVariantName
 
-// Module 5179 (KestrelExperiment)
+// Module 5260 (KestrelExperiment)
 import ApexExperiment_mod from "ApexExperiment" /* 1433 */;
 import size from "module_2" /* 2 */;
 

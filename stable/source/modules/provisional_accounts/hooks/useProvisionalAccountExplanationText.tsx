@@ -1,13 +1,13 @@
-// Module ID: 12633
-// Function ID: 12634
+// Module ID: 12762
+// Function ID: 12763
 // Name: useProvisionalAccountExplanationText
-// Dependencies: [19, 1074, 12634, 1114, 2024, 2]
+// Dependencies: [19, 1074, 12763, 1114, 2024, 2]
 // Exports: useProvisionalAccountExplanationText
 
-// Module 12633 (useProvisionalAccountExplanationText)
+// Module 12762 (useProvisionalAccountExplanationText)
 import util from "util" /* 1114 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12634 */;
+import useProvisionalAccountApplicationDefault from "useProvisionalAccountApplication" /* 12763 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

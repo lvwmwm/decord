@@ -1,13 +1,13 @@
-// Module ID: 6323
-// Function ID: 6324
+// Module ID: 6424
+// Function ID: 6425
 // Name: NitroWumpusOfferingRight3dIllustration
-// Dependencies: [21, 5587, 6324, 2]
+// Dependencies: [21, 5668, 6425, 2]
 // Exports: NitroWumpusOfferingRight3dIllustration
 
-// Module 6323 (NitroWumpusOfferingRight3dIllustration)
+// Module 6424 (NitroWumpusOfferingRight3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6324 from "module_6324" /* 6324 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6425 from "module_6425" /* 6425 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const NitroWumpusOfferingRight3dIllustration = function NitroWumpusOfferi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6324 };
+  const obj2 = { uri: _modDef6425 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

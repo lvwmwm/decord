@@ -1,9 +1,23 @@
 // Module ID: 5032
 // Function ID: 5033
-// Dependencies: [1122]
+// Dependencies: [19, 17, 21, 5033]
+// Exports: SafeAreaView
 
 // Module 5032
-import registerAsset from "module_1122" /* 1122 */;
+import _modDef5033 from "module_5033" /* 5033 */;
+import noop from "module_19" /* 19 */;
 
+const StyleSheet = fn(17).StyleSheet;
+const jsx = fn(21).jsx;
+const styles = StyleSheet.create({ flex: { flex: 1 } });
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "fee15a76bef55eb0f2b368d5439c39b9", name: "TextIcon", type: "png" });
+export const SafeAreaView = function SafeAreaView(style) {
+  const obj = {};
+  const merged = Object.assign(style);
+  const items = [styles.flex, style.style];
+  obj.style = items;
+  const rect = { top: false, bottom: false, left: false, right: false };
+  const merged1 = Object.assign(style.edges);
+  obj.edges = rect;
+  return jsx(_modDef5033, {});
+};

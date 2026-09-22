@@ -1,10 +1,10 @@
-// Module ID: 13040
-// Function ID: 13041
+// Module ID: 13170
+// Function ID: 13171
 // Name: getStreamURL
 // Dependencies: [1920, 2]
 // Exports: default
 
-// Module 13040 (getStreamURL)
+// Module 13170 (getStreamURL)
 import Constants from "Constants" /* 1920 */;
 import size from "module_2" /* 2 */;
 

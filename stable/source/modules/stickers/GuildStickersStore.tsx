@@ -1,11 +1,11 @@
-// Module ID: 5503
-// Function ID: 5504
+// Module ID: 5584
+// Function ID: 5585
 // Name: GuildStickersStore
-// Dependencies: [32, 1973, 1980, 1979, 5268, 4213, 1983, 2]
+// Dependencies: [32, 1973, 1980, 1979, 5349, 4289, 1983, 2]
 
-// Module 5503 (GuildStickersStore)
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4213 */;
-import StickersTypes from "StickersTypes" /* 5268 */;
+// Module 5584 (GuildStickersStore)
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
+import StickersTypes from "StickersTypes" /* 5349 */;
 import _slicedToArray from "module_32" /* 32 */;
 import GuildStore from "GuildStore" /* 1979 */;
 
@@ -27,12 +27,12 @@ function parseServerGuildStickers(stickers) {
 }
 function deriveStickerMetadata(arg0, tags) {
   const items = [];
-  const obj = { type: items(5268).StickerMetadataTypes.STICKER_NAME, value: null };
+  const obj = { type: items(5349).StickerMetadataTypes.STICKER_NAME, value: null };
   const trimmed = tags.name.trim();
   obj.value = trimmed.toLocaleLowerCase();
   items.push(obj);
   if (null != tags.tags) {
-    const obj2 = { type: tmp(5268).StickerMetadataTypes.TAG, value: null };
+    const obj2 = { type: tmp(5349).StickerMetadataTypes.TAG, value: null };
     const trimmed1 = str.trim();
     obj2.value = trimmed1.toLocaleLowerCase();
     items.push(obj2);
@@ -45,13 +45,13 @@ function deriveStickerMetadata(arg0, tags) {
         tmp5 = "" !== toLocaleLowerCaseResult;
       }
       if (tmp5) {
-        const obj3 = { type: tmp(5268).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
+        const obj3 = { type: tmp(5349).StickerMetadataTypes.GUILD_NAME, value: toLocaleLowerCaseResult };
         items.push(obj3);
       }
     }
     const byName = UnicodeEmojisDefault.getByName(str);
     if (null != byName) {
-      const obj4 = { type: tmp(5268).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
+      const obj4 = { type: tmp(5349).StickerMetadataTypes.CORRELATED_EMOJI, value: byName.surrogates };
       items.push(obj4);
       byName.forEachDiversity((surrogates) => items.push({ type: StickersTypes.StickerMetadataTypes.CORRELATED_EMOJI, value: surrogates.surrogates }));
     }

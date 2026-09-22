@@ -1,12 +1,12 @@
-// Module ID: 16607
-// Function ID: 16608
+// Module ID: 16709
+// Function ID: 16710
 // Name: VibegrationsMessageAuthor
-// Dependencies: [19, 17, 1371, 21, 4560, 576, 16608, 504, 4404, 1178, 4556, 2]
+// Dependencies: [19, 17, 1371, 21, 4636, 576, 16710, 504, 4481, 1176, 4632, 2]
 // Exports: default
 
-// Module 16607 (VibegrationsMessageAuthor)
+// Module 16709 (VibegrationsMessageAuthor)
 import nativeDefault from "native" /* 576 */;
-import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 16608 */;
+import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 16710 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -14,7 +14,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { author: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -34,14 +34,14 @@ export default function VibegrationsMessageAuthor(userId) {
     }
     return vibegrationsMessageAuthors.resolveMessageAuthor(userId, user, UserStore.getCurrentUser());
   }, items2);
-  userId(4404);
+  userId(4481);
   let tmp8 = null;
   if (null != stateFromStores) {
     const obj2 = { style: tmp.author, children: null };
-    const obj3 = { size: tmp3(1178).AvatarSizes.SIZE_16, user: stateFromStores, guildId: "Array" };
-    const items3 = [closure_5(tmp3(1178).Avatar, obj3), ];
+    const obj3 = { size: tmp3(1176).AvatarSizes.SIZE_16, user: stateFromStores, guildId: "r" };
+    const items3 = [closure_5(tmp3(1176).Avatar, obj3), ];
     const obj4 = { variant: "text-xs/semibold", color: "text-muted", children: tmp7 };
-    items3[1] = closure_5(tmp3(4556).Text, obj4);
+    items3[1] = closure_5(tmp3(4632).Text, obj4);
     obj2.children = items3;
     tmp8 = closure_6(View, obj2);
   }

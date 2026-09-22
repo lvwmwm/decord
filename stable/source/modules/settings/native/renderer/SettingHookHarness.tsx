@@ -1,16 +1,16 @@
-// Module ID: 14585
-// Function ID: 14586
+// Module ID: 14670
+// Function ID: 14671
 // Name: SettingHookHarness
-// Dependencies: [32, 19, 14586, 11474, 14587, 2]
+// Dependencies: [32, 19, 14671, 11606, 14672, 2]
 // Exports: getCachedSettingSearchTerms, getCachedSettingTitle
 
-// Module 14585 (SettingHookHarness)
+// Module 14670 (SettingHookHarness)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 14586 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 14671 */;
 
 const require = fn;
-const NodeType = fn(11474).NodeType;
+const NodeType = fn(11606).NodeType;
 let closure_6 = [];
 const map = new Map();
 const map1 = new Map();

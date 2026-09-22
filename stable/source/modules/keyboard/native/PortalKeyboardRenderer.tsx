@@ -1,13 +1,13 @@
-// Module ID: 16759
-// Function ID: 16760
+// Module ID: 16870
+// Function ID: 16871
 // Name: PortalKeyboardRenderer
-// Dependencies: [19, 1479, 21, 4271, 4427, 1609, 1115, 16760, 4428, 4418, 7221, 10094, 1481, 4431, 10327, 2]
+// Dependencies: [19, 1479, 21, 4347, 4504, 1609, 1363, 16871, 4505, 4495, 7324, 10218, 1481, 4508, 10451, 2]
 // Exports: PortalKeyboardRenderer
 
-// Module 16759 (PortalKeyboardRenderer)
-import native from "native" /* 4271 */;
-import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 4428 */;
-import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 16760 */;
+// Module 16870 (PortalKeyboardRenderer)
+import native from "native" /* 4347 */;
+import PortalKeyboardUIStore3 from "PortalKeyboardUIStore" /* 4505 */;
+import PortalKeyboardRendererComponentDefault from "PortalKeyboardRendererComponent" /* 16871 */;
 import noop from "module_19" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1479 */;
 
@@ -20,13 +20,13 @@ let closure_6 = [];
 function transitionGroupRenderItem(arg0, item, state, cleanUp) {
   let isAndroidResult = state === native.TransitionStates.YEETED;
   if (isAndroidResult) {
-    const keyboardType = tmp(4427).getKeyboardType();
+    const keyboardType = tmp(4504).getKeyboardType();
     isAndroidResult = keyboardType === tmp(1609).KeyboardTypes.SYSTEM;
-    const tmpResult = tmp(4427);
+    const tmpResult = tmp(4504);
   }
   if (isAndroidResult) {
-    isAndroidResult = tmp(1115).isAndroid();
-    const tmpResult2 = tmp(1115);
+    isAndroidResult = tmp(1363).isAndroid();
+    const tmpResult2 = tmp(1363);
   }
   let tmp5 = null;
   if (!isAndroidResult) {
@@ -49,17 +49,17 @@ export const PortalKeyboardRenderer = function PortalKeyboardRenderer(portal) {
   const layoutEffect = noop.useLayoutEffect(() => PortalKeyboardUIStore3.registerPortalKeyboardRenderer(id), items);
   const layoutEffect1 = noop.useLayoutEffect(() => {
     closure_0 = closure_4(() => {
-      const PortalKeyboardUIStore = closure_0(4428).PortalKeyboardUIStore;
+      const PortalKeyboardUIStore = closure_0(4505).PortalKeyboardUIStore;
       field = PortalKeyboardUIStore.getField("keyboard");
-      closure_0(4427);
+      closure_0(4504);
       if (tmp6) {
-        const result = closure_0(4428).closePortalKeyboardIfUnhandled();
-        const tmpResult = closure_0(4428);
+        const result = closure_0(4505).closePortalKeyboardIfUnhandled();
+        const tmpResult = closure_0(4505);
       }
     });
     return () => {
       closure_0();
-      const result = id(4428).closePortalKeyboardIfUnhandled();
+      const result = id(4505).closePortalKeyboardIfUnhandled();
     };
   }, []);
   const layoutEffect2 = noop.useLayoutEffect(() => {
@@ -97,9 +97,9 @@ export const PortalKeyboardRenderer = function PortalKeyboardRenderer(portal) {
       let tmpResult = rootNavigationRef(dependencyMap[9]);
     }
   }, []);
-  let PortalKeyboardUIStore = id(4428).PortalKeyboardUIStore;
+  let PortalKeyboardUIStore = id(4505).PortalKeyboardUIStore;
   let field = PortalKeyboardUIStore.useField("keyboard");
-  const PortalKeyboardUIStore2 = id(4428).PortalKeyboardUIStore;
+  const PortalKeyboardUIStore2 = id(4505).PortalKeyboardUIStore;
   const field1 = PortalKeyboardUIStore2.useField("renderers");
   let tmp8 = 0 === field1.length;
   if (!tmp8) {
@@ -117,13 +117,13 @@ export const PortalKeyboardRenderer = function PortalKeyboardRenderer(portal) {
     }
     tmp3 = closure_6;
   }, items1);
-  const tmp11 = jsx(id(4271).TransitionGroup, { items: memo, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
+  const tmp11 = jsx(id(4347).TransitionGroup, { items: memo, getItemKey: transitionGroupGetItemKey, renderItem: transitionGroupRenderItem });
   if (flag) {
     const obj3 = { children: tmp11 };
-    let tmp10Result = tmp10(tmp5(4431).PortalKeyboard, obj3);
+    let tmp10Result = tmp10(tmp5(4508).PortalKeyboard, obj3);
   } else {
     const obj4 = { value: true, children: tmp11 };
-    tmp10Result = tmp10(tmp5(10327).PortalKeyboardInModalContext.Provider, obj4);
+    tmp10Result = tmp10(tmp5(10451).PortalKeyboardInModalContext.Provider, obj4);
   }
   return tmp10Result;
 };

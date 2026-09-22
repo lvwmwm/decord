@@ -1,14 +1,14 @@
-// Module ID: 15243
-// Function ID: 15244
+// Module ID: 15324
+// Function ID: 15325
 // Name: EmojiIcon
-// Dependencies: [19, 21, 15244, 5587, 10307, 7130, 1396, 2]
+// Dependencies: [19, 21, 15325, 5668, 10431, 7233, 1396, 2]
 // Exports: default
 
-// Module 15243 (EmojiIcon)
-import FastImageDefault from "FastImage" /* 5587 */;
-import EmojiDefault from "Emoji" /* 7130 */;
-import _modDef10307 from "module_10307" /* 10307 */;
-import useEmojiByIdOrName from "useEmojiByIdOrName" /* 15244 */;
+// Module 15324 (EmojiIcon)
+import FastImageDefault from "FastImage" /* 5668 */;
+import EmojiDefault from "Emoji" /* 7233 */;
+import _modDef10431 from "module_10431" /* 10431 */;
+import useEmojiByIdOrName from "useEmojiByIdOrName" /* 15325 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -37,7 +37,7 @@ export default function EmojiIcon(size) {
       const obj2 = { resizeMode: "contain", style: null, source: null };
       size = { width: num, height: num };
       obj2.style = size;
-      obj2.source = _modDef10307;
+      obj2.source = _modDef10431;
       tmp4 = jsx(FastImageDefault, { resizeMode: "contain", style: null, source: null });
     }
     let tmp8Result = tmp4;

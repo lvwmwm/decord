@@ -1,0 +1,9 @@
+// Module ID: 17647
+// Function ID: 17648
+// Dependencies: [1120]
+
+// Module 17647
+import registerAsset from "module_1120" /* 1120 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_settings/overview", width: 343, height: 193, scales: [2, 3], hash: "14f8bd930afc02eff31d9dfb6640a712", name: "asset_gradient", type: "png" });

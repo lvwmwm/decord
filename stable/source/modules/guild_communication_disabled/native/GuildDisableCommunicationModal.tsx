@@ -1,11 +1,11 @@
-// Module ID: 11845
-// Function ID: 11846
+// Module ID: 11974
+// Function ID: 11975
 // Name: GuildDisableCommunicationModal
-// Dependencies: [19, 21, 10927, 10929, 1114, 4712, 11846, 2]
+// Dependencies: [19, 21, 11057, 11059, 1114, 4788, 11975, 2]
 // Exports: default
 
-// Module 11845 (GuildDisableCommunicationModal)
-import GuildDisableCommunicationDefault from "GuildDisableCommunication" /* 11846 */;
+// Module 11974 (GuildDisableCommunicationModal)
+import GuildDisableCommunicationDefault from "GuildDisableCommunication" /* 11975 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

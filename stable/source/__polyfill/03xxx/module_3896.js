@@ -1,16 +1,39 @@
 // Module ID: 3896
 // Function ID: 3897
-// Dependencies: [2027]
+// Dependencies: [3897, 3898, 3726]
+// Exports: default
 
 // Module 3896
-import code from "module_2027" /* 2027 */;
+import _typeof_mod from "module_3897" /* 3897 */;
+import _typeof_mod from "module_3898" /* 3898 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-if (!code) {
-  const obj = { default: code };
-  let tmp3 = obj;
-} else {
-  tmp3 = code;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
 }
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
+}
+_typeof = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
 
-export default tmp3.default;
+export default function clamp(arg0, arg1) {
+  ({ start, end } = arg1);
+  requiredArgs.default(2, arguments);
+  const items = [arg0, start];
+  const items1 = [_typeof.default(items), end];
+  return _typeof.default(items1);
+};
 export default exports.default;

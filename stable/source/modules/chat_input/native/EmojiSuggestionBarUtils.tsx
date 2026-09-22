@@ -1,16 +1,16 @@
-// Module ID: 12430
-// Function ID: 12431
+// Module ID: 12559
+// Function ID: 12560
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4552, 1074, 21, 1178, 4296, 4974, 4271, 4561, 504, 12395, 12431, 12432, 9319, 2]
+// Dependencies: [32, 19, 4628, 1074, 21, 1176, 4373, 5055, 4347, 4637, 504, 12524, 12560, 12561, 9443, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 12430 (EmojiSuggestionBarUtils)
-import native from "native" /* 4271 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import spring from "spring" /* 4974 */;
+// Module 12559 (EmojiSuggestionBarUtils)
+import native from "native" /* 4347 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import spring from "spring" /* 5055 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 
 const require = globalThis.__r;
 
@@ -18,7 +18,7 @@ require = fn;
 const UpsellTypes = fn(1074).UpsellTypes;
 const jsx = fn(21).jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
-const SUGGESTION_BAR_HEIGHT_TIMING = { duration: 250, easing: fn(1178).STANDARD_EASING };
+const SUGGESTION_BAR_HEIGHT_TIMING = { duration: 250, easing: fn(1176).STANDARD_EASING };
 let closure_10 = { duration: 200, dampingRatio: 0.7 };
 const __initData = { code: "function EmojiSuggestionBarUtilsTsx1(){const{progress}=this.__closure;return{opacity:progress.get(),transform:[{scale:progress.get()}]};}" };
 let closure_12 = { code: "function EmojiSuggestionBarUtilsTsx2(finished){const{runOnJS,cleanUp}=this.__closure;if(finished){runOnJS(cleanUp)();}}" };
@@ -108,14 +108,14 @@ export const useSuggestionBarHeight = function useSuggestionBarHeight(transition
       if (closure_3 != null) {
         tmp11(0);
       }
-      const tmpResult = tmp(4561);
+      const tmpResult = tmp(4637);
       const fn = function n(arg0) {
         if (arg0) {
           closure_0(dependencyMap[6]).runOnJS(cleanUp)();
           obj = closure_0(dependencyMap[6]);
         }
       };
-      const __closure = { runOnJS: tmp(4296).runOnJS, cleanUp };
+      const __closure = { runOnJS: tmp(4373).runOnJS, cleanUp };
       fn.__closure = __closure;
       fn.__workletHash = 15923583203906;
       fn.__initData = __initData;
@@ -124,8 +124,8 @@ export const useSuggestionBarHeight = function useSuggestionBarHeight(transition
       if (closure_3 != null) {
         tmp3(dependencyMap);
       }
-      const result1 = sharedValue.set(tmp(4561).withTiming(dependencyMap, __closure));
-      const tmpResult2 = tmp(4561);
+      const result1 = sharedValue.set(tmp(4637).withTiming(dependencyMap, __closure));
+      const tmpResult2 = tmp(4637);
     }
   }, items);
   return sharedValue;

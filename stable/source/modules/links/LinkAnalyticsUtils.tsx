@@ -1,13 +1,13 @@
-// Module ID: 8376
-// Function ID: 8377
+// Module ID: 8493
+// Function ID: 8494
 // Name: LinkAnalyticsUtils
-// Dependencies: [1074, 8377, 1365, 4714, 1242, 2]
+// Dependencies: [1074, 8494, 1365, 4790, 1240, 2]
 
-// Module 8376 (LinkAnalyticsUtils)
+// Module 8493 (LinkAnalyticsUtils)
 import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import URLUtilsDefault from "URLUtils" /* 1365 */;
-import LinkUtils from "LinkUtils" /* 4714 */;
+import LinkUtils from "LinkUtils" /* 4790 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

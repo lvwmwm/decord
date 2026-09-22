@@ -1,8 +1,8 @@
-// Module ID: 6440
-// Function ID: 6441
+// Module ID: 6541
+// Function ID: 6542
 // Dependencies: [2]
 
-// Module 6440
+// Module 6541
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconStarblasterExample-2x.png.js");

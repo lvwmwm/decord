@@ -1,13 +1,14 @@
-// Module ID: 9233
-// Function ID: 9234
+// Module ID: 9356
+// Function ID: 9357
 // Name: TwoWayLinkStepHeader
-// Dependencies: [19, 21, 9232, 4556, 1114, 2]
+// Dependencies: [19, 21, 9355, 7082, 4632, 1114, 2]
 // Exports: TwoWayLinkStepHeader
 
-// Module 9233 (TwoWayLinkStepHeader)
+// Module 9356 (TwoWayLinkStepHeader)
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9232 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7082 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 9355 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,8 +19,11 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 export const TwoWayLinkStepHeader = function TwoWayLinkStepHeader(arg0) {
   ({ idx, total } = arg0);
   const twoWayLinkStyles = TwoWayLinkStyles.useTwoWayLinkStyles();
-  const obj2 = { variant: "text-xs/bold", color: "text-default", style: twoWayLinkStyles.stepHeader, children: null };
+  const typeConsolidationEyebrow = useTypeConsolidationTextTransform.useTypeConsolidationEyebrow("TwoWayLinkStepHeader", "text-xs/bold");
+  const obj3 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: null, children: null };
+  const items = [twoWayLinkStyles.stepHeader, typeConsolidationEyebrow.style];
+  obj3.style = items;
   const intl = util.intl;
-  obj2.children = intl.format(util.t.fHz6eR, { number: idx, total });
-  return jsx(Text_Text.Text, { variant: "text-xs/bold", color: "text-default", style: twoWayLinkStyles.stepHeader, children: null });
+  obj3.children = intl.format(util.t.fHz6eR, { number: idx, total });
+  return jsx(Text_Text.Text, { variant: typeConsolidationEyebrow.variant, color: "text-default", style: null, children: null });
 };

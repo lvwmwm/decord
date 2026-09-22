@@ -1,9 +1,11 @@
 // Module ID: 14384
 // Function ID: 14385
-// Dependencies: [14372]
+// Dependencies: [14385, 14450]
 
 // Module 14384
-import replaceByteInByteSequence from "replaceByteInByteSequence" /* 14372 */;
+import _mod14450 from "module_14450" /* 14450 */;
+import module_14385 from "module_14385" /* 14385 */;
 
-
-export const URLSearchParams = replaceByteInByteSequence.URLSearchParams;
+const obj = { target: "Object", stat: true, arity: 2, forced: null };
+obj.forced = Object.assign !== _mod14450;
+module_14385(obj, { assign: _mod14450 });

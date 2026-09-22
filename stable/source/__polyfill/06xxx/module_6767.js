@@ -1,101 +1,178 @@
 // Module ID: 6767
 // Function ID: 6768
-// Dependencies: [6660, 6661]
+// Dependencies: [109, 19, 17, 21, 6768, 6852, 6854]
+// Exports: BorderlessButton, RectButton
 
 // Module 6767
-import tagMessage from "tagMessage" /* 6660 */;
-import _mod6661 from "module_6661" /* 6661 */;
+import ButtonComponentDefault from "ButtonComponent" /* 6852 */;
+import _mod6854 from "module_6854" /* 6854 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import noop from "module_19" /* 19 */;
+import module_6768 from "module_6768" /* 6768 */;
 
 require = fn;
-const dependencyMap = arg6;
-const setGestureState = function t(arg0, arg1) {
-  const _globalThis = globalThis;
-  if (globalThis._setGestureStateSync) {
-    _globalThis._setGestureStateSync(arg0, arg1);
-  } else if (_globalThis._setGestureStateAsync) {
-    const _globalThis2 = globalThis;
-    const result = globalThis._setGestureStateAsync(arg0, arg1);
-  } else {
-    const _Error = Error;
-    const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
-    throw error;
+let closure_2 = ["onLongPress", "onPress", "onActiveStateChange", "style"];
+let closure_3 = ["children", "style", "activeOpacity", "underlayColor"];
+let closure_4 = ["children", "style", "ref"];
+const useRef = fn(19).useRef;
+get_ActivityIndicator = fn(17);
+const Animated = get_ActivityIndicator.Animated;
+({ Platform, StyleSheet } = get_ActivityIndicator);
+const jsxProd = fn(21);
+({ jsx: closure_9, jsxs: c10 } = jsxProd);
+const ButtonComponent = module_6768(ButtonComponentDefault, { shouldCancelWhenOutside: false, shouldActivateOnStart: false });
+class RawButton {
+  constructor(arg0) {
+    obj = {};
+    merged = Object.assign(global);
+    obj.needsOffscreenAlphaCompositing = true;
+    return jsx(closure_11, obj);
   }
-};
-setGestureState.__closure = { tagMessage: fn(6660).tagMessage };
-setGestureState.__workletHash = 727405139747;
-setGestureState.__initData = { code: "function pnpm_gestureStateManagerTs1(handlerTag,state){const{tagMessage}=this.__closure;if(globalThis._setGestureStateSync){globalThis._setGestureStateSync(handlerTag,state);}else if(globalThis._setGestureStateAsync){globalThis._setGestureStateAsync(handlerTag,state);}else{throw new Error(tagMessage('Failed to set gesture state'));}}" };
-const obj2 = { activate: null, fail: null, deactivate: null };
-const fn2 = function _(arg0) {
-  const ACTIVE = _mod6661.State.ACTIVE;
-  if (typeof fn === "function") {
-    const _globalThis = globalThis;
-    const _globalThis2 = globalThis;
-    if (globalThis._setGestureStateSync) {
-      _globalThis2._setGestureStateSync(arg0, ACTIVE);
-    } else if (_globalThis2._setGestureStateAsync) {
-      const _globalThis3 = globalThis;
-      const result = globalThis._setGestureStateAsync(arg0, ACTIVE);
-    } else {
-      const _Error = Error;
-      const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
-      throw error;
+}
+class BaseButton {
+  constructor(arg0) {
+    closure_0 = global;
+    closure_1 = useRef(false);
+    closure_2 = useRef(undefined);
+    num = global.delayLongPress;
+    if (num == null) {
+      num = 600;
     }
-  } else {
-    throw new TypeError("Trying to call a non-function");
+    c3 = num;
+    ({ onLongPress, onPress, onActiveStateChange } = global);
+    tmp = closure_5(global, closure_2);
+    wrappedLongPress = function wrappedLongPress() {
+      closure_1.current = true;
+      if (closure_1_4 != null) {
+        tmp();
+      }
+    };
+    obj = closure_0(closure_1[6]);
+    tVProps = obj.getTVProps(tmp);
+    obj1 = { style: null };
+    items = [, ];
+    items[0] = global.style;
+    items[1] = false;
+    obj1.style = items;
+    merged = Object.assign(tmp);
+    merged1 = Object.assign(tVProps);
+    obj1.onBegin = function onBegin(pointerInside) {
+      if (pointerInside.pointerInside) {
+        if (useRef != null) {
+          tmp(true);
+        }
+        closure_1.current = false;
+        if (closure_1_4) {
+          const _setTimeout = setTimeout;
+          closure_2.current = setTimeout(wrappedLongPress, num);
+        }
+        const onBegin = delayLongPress.onBegin;
+        if (onBegin != null) {
+          onBegin(pointerInside);
+        }
+      }
+    };
+    obj1.onActivate = function onActivate(pointerInside) {
+      pointerInside = pointerInside.pointerInside;
+      if (!pointerInside) {
+        pointerInside = undefined === ref2.current;
+      }
+      if (!pointerInside) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(ref2.current);
+        ref2.current = undefined;
+      }
+      const onActivate = delayLongPress.onActivate;
+      if (onActivate != null) {
+        onActivate(pointerInside);
+      }
+    };
+    obj1.onDeactivate = function onDeactivate(arg0) {
+      const onDeactivate = delayLongPress.onDeactivate;
+      if (onDeactivate != null) {
+        onDeactivate(arg0);
+      }
+    };
+    obj1.onFinalize = function onFinalize(canceled) {
+      if (useRef != null) {
+        tmp(false);
+      }
+      let current = canceled.canceled;
+      if (!current) {
+        current = ref.current;
+      }
+      if (!current) {
+        if (_objectWithoutProperties != null) {
+          tmp4(canceled.pointerInside);
+        }
+      }
+      if (undefined !== ref2.current) {
+        const _clearTimeout = clearTimeout;
+        clearTimeout(tmp6.current);
+        tmp6.current = undefined;
+      }
+      const onFinalize = delayLongPress.onFinalize;
+      if (onFinalize != null) {
+        onFinalize(canceled);
+      }
+    };
+    return jsx(RawButton, obj1);
   }
-};
-const obj = { tagMessage: fn(6660).tagMessage };
-fn2.__closure = { setGestureState, State: fn(6661).State };
-fn2.__workletHash = 14928129771754;
-fn2.__initData = { code: "function activate_Pnpm_gestureStateManagerTs2(handlerTag){const{setGestureState,State}=this.__closure;setGestureState(handlerTag,State.ACTIVE);}" };
-obj2.activate = fn2;
-const fn3 = function n(arg0) {
-  const FAILED = _mod6661.State.FAILED;
-  if (typeof fn === "function") {
-    const _globalThis = globalThis;
-    const _globalThis2 = globalThis;
-    if (globalThis._setGestureStateSync) {
-      _globalThis2._setGestureStateSync(arg0, FAILED);
-    } else if (_globalThis2._setGestureStateAsync) {
-      const _globalThis3 = globalThis;
-      const result = globalThis._setGestureStateAsync(arg0, FAILED);
-    } else {
-      const _Error = Error;
-      const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
-      throw error;
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-const obj3 = { setGestureState, State: fn(6661).State };
-fn3.__closure = { setGestureState, State: fn(6661).State };
-fn3.__workletHash = 1703030189599;
-fn3.__initData = { code: "function fail_Pnpm_gestureStateManagerTs3(handlerTag){const{setGestureState,State}=this.__closure;setGestureState(handlerTag,State.FAILED);}" };
-obj2.fail = fn3;
-const fn4 = function s(arg0) {
-  const END = _mod6661.State.END;
-  if (typeof fn === "function") {
-    const _globalThis = globalThis;
-    const _globalThis2 = globalThis;
-    if (globalThis._setGestureStateSync) {
-      _globalThis2._setGestureStateSync(arg0, END);
-    } else if (_globalThis2._setGestureStateAsync) {
-      const _globalThis3 = globalThis;
-      const result = globalThis._setGestureStateAsync(arg0, END);
-    } else {
-      const _Error = Error;
-      const error = new Error(tagMessage.tagMessage("Failed to set gesture state"));
-      throw error;
-    }
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-const obj4 = { setGestureState, State: fn(6661).State };
-fn4.__closure = { setGestureState, State: fn(6661).State };
-fn4.__workletHash = 5511283927342;
-fn4.__initData = { code: "function deactivate_Pnpm_gestureStateManagerTs4(handlerTag){const{setGestureState,State}=this.__closure;setGestureState(handlerTag,State.END);}" };
-obj2.deactivate = fn4;
+}
+let closure_14 = Animated.createAnimatedComponent(BaseButton);
+const underlay = StyleSheet.create({ underlay: { position: "absolute", left: 0, right: 0, bottom: 0, top: 0 } });
 
-export const GestureStateManager = obj2;
+export { RawButton };
+export { BaseButton };
+export const RectButton = (children) => {
+  let onActiveStateChange = children;
+  ({ style, activeOpacity, underlayColor } = children);
+  let str = "black";
+  if (undefined !== underlayColor) {
+    str = underlayColor;
+  }
+  value = new Animated.Value(0);
+  if (style == null) {
+    style = {};
+  }
+  const flattenResult = StyleSheet.flatten(style);
+  const obj = {};
+  const merged = Object.assign(_objectWithoutProperties(children, closure_3));
+  obj.style = flattenResult;
+  obj.onActiveStateChange = function onActiveStateChange(arg0) {
+    onActiveStateChange = onActiveStateChange.onActiveStateChange;
+    if (onActiveStateChange != null) {
+      onActiveStateChange(arg0);
+    }
+  };
+  const obj2 = { style: null };
+  const items = [underlay.underlay, { opacity: useRef(value).current, backgroundColor: str, borderRadius: flattenResult.borderRadius, borderTopLeftRadius: flattenResult.borderTopLeftRadius, borderTopRightRadius: flattenResult.borderTopRightRadius, borderBottomLeftRadius: flattenResult.borderBottomLeftRadius, borderBottomRightRadius: flattenResult.borderBottomRightRadius }];
+  obj2.style = items;
+  const items1 = [React7(Animated.View, obj2), children.children];
+  obj.children = items1;
+  return closure_1_10(BaseButton, obj);
+};
+export const BorderlessButton = (ref) => {
+  let onActiveStateChange = ref;
+  value = new Animated.Value(1);
+  const current = useRef(value).current;
+  ref = ref.ref;
+  ({ children, style } = ref);
+  const obj = { borderless: true };
+  const merged = Object.assign(_objectWithoutProperties(ref, closure_4));
+  if (ref == null) {
+    ref = null;
+  }
+  obj.ref = ref;
+  obj.onActiveStateChange = function onActiveStateChange(arg0) {
+    onActiveStateChange = onActiveStateChange.onActiveStateChange;
+    if (onActiveStateChange != null) {
+      onActiveStateChange(arg0);
+    }
+  };
+  const items = [style, false];
+  obj.style = items;
+  obj.children = children;
+  return React7(closure_14, obj);
+};
+export const PureNativeButton = ButtonComponentDefault;

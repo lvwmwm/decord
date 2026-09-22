@@ -1,10 +1,10 @@
-// Module ID: 16458
-// Function ID: 16459
+// Module ID: 16552
+// Function ID: 16553
 // Name: ICYMICustomScoresModal
-// Dependencies: [19, 21, 7914, 4560, 576, 7000, 7864, 1114, 10930, 16459, 16460, 2]
+// Dependencies: [19, 21, 8017, 4636, 576, 7103, 7966, 1114, 11060, 16553, 16554, 2]
 // Exports: default
 
-// Module 16458 (ICYMICustomScoresModal)
+// Module 16552 (ICYMICustomScoresModal)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,9 +13,9 @@ const require = globalThis.__r;
 const require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const NativeStackNavigator = fn(7914);
+const NativeStackNavigator = fn(8017);
 let closure_5 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj3 = { header: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW } };
 let closure_6 = createStyles.createStyles(obj3);
 const size = fn(2);
@@ -47,22 +47,22 @@ export default function ICYMICustomScoresModal() {
         const obj = { title: null, headerLeft: null };
         const intl = closure_0(1114).intl;
         obj.title = intl.string(closure_0(1114).t.jVshKt);
-        obj.headerLeft = closure_0(7864).getRenderModalCloseImage(navigation.navigation);
-        const merged = Object.assign(closure_1(10930)());
+        obj.headerLeft = closure_0(7966).getRenderModalCloseImage(navigation.navigation);
+        const merged = Object.assign(closure_1(11060)());
         return obj;
       },
       getComponent() {
-        return closure_0(16459).default;
+        return closure_0(16553).default;
       }
     }),
     closure_3(closure_5.Screen, {
       name: "guild",
       options(navigation) {
-        const obj = { headerLeft: closure_0(7864).getRenderModalBackImage(navigation.navigation) };
+        const obj = { headerLeft: closure_0(7966).getRenderModalBackImage(navigation.navigation) };
         return obj;
       },
       getComponent() {
-        return closure_0(16460).default;
+        return closure_0(16554).default;
       }
     })
   ];

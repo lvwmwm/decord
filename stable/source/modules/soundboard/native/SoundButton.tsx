@@ -1,15 +1,15 @@
-// Module ID: 17072
-// Function ID: 17073
+// Module ID: 17180
+// Function ID: 17181
 // Name: SoundButton
-// Dependencies: [19, 17, 17065, 21, 4296, 4560, 576, 1115, 5123, 4974, 7130, 11939, 17073, 17074, 7162, 7182, 17076, 17062, 17078, 4556, 5095, 2]
+// Dependencies: [19, 17, 17173, 21, 4373, 4636, 576, 1363, 5204, 5055, 7233, 12068, 17181, 17182, 7265, 7285, 17184, 17170, 17186, 4632, 5176, 2]
 
-// Module 17072 (SoundButton)
+// Module 17180 (SoundButton)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4296 */;
-import spring from "spring" /* 4974 */;
-import EmojiDefault from "Emoji" /* 7130 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 11939 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 17078 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4373 */;
+import spring from "spring" /* 5055 */;
+import EmojiDefault from "Emoji" /* 7233 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12068 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 17186 */;
 import noop from "module_19" /* 19 */;
 
 const ReanimatedRexport_mod = ReanimatedRexport2;
@@ -61,14 +61,14 @@ function SoundButtonEmoji(arg0) {
     obj2.transform = items2;
     return obj2;
   };
-  const obj2 = animationConfig(4296);
-  fn.__closure = { animationConfig, withDelay: animationConfig(4296).withDelay, withSpring: animationConfig(4974).withSpring, interpolate: animationConfig(4296).interpolate, SPRING_CONFIG };
+  const obj2 = animationConfig(4373);
+  fn.__closure = { animationConfig, withDelay: animationConfig(4373).withDelay, withSpring: animationConfig(5055).withSpring, interpolate: animationConfig(4373).interpolate, SPRING_CONFIG };
   fn.__workletHash = 13932429225740;
   fn.__initData = __initData;
   const obj4 = { sharedValues, scaleFactors: { pressed: 0.7200000000000001, playing: 1.08 }, playingAnimationDelay: 100, pressedRotationDegrees: -15 };
   closure_129_0 = obj4;
   const animatedStyle = obj2.useAnimatedStyle(fn);
-  const obj3 = { animationConfig, withDelay: animationConfig(4296).withDelay, withSpring: animationConfig(4974).withSpring, interpolate: animationConfig(4296).interpolate, SPRING_CONFIG };
+  const obj3 = { animationConfig, withDelay: animationConfig(4373).withDelay, withSpring: animationConfig(5055).withSpring, interpolate: animationConfig(4373).interpolate, SPRING_CONFIG };
   const fn2 = function o() {
     const pressed = isPlayingSound.sharedValues.pressed;
     const playing = isPlayingSound.sharedValues.playing;
@@ -111,8 +111,8 @@ function SoundButtonEmoji(arg0) {
     obj2.transform = items2;
     return obj2;
   };
-  const obj5 = animationConfig(4296);
-  fn2.__closure = { animationConfig: obj4, withDelay: animationConfig(4296).withDelay, withSpring: animationConfig(4974).withSpring, interpolate: animationConfig(4296).interpolate, SPRING_CONFIG };
+  const obj5 = animationConfig(4373);
+  fn2.__closure = { animationConfig: obj4, withDelay: animationConfig(4373).withDelay, withSpring: animationConfig(5055).withSpring, interpolate: animationConfig(4373).interpolate, SPRING_CONFIG };
   fn2.__workletHash = 13932429225740;
   fn2.__initData = __initData;
   const obj7 = { style: null, children: null };
@@ -120,7 +120,7 @@ function SoundButtonEmoji(arg0) {
   obj7.style = items;
   const obj8 = { style: obj5.useAnimatedStyle(fn2), children: null };
   const obj9 = { fastImageStyle: tmp.emoji, textEmojiStyle: tmp.emoji, src: null, name: null };
-  const obj6 = { animationConfig: obj4, withDelay: animationConfig(4296).withDelay, withSpring: animationConfig(4974).withSpring, interpolate: animationConfig(4296).interpolate, SPRING_CONFIG };
+  const obj6 = { animationConfig: obj4, withDelay: animationConfig(4373).withDelay, withSpring: animationConfig(5055).withSpring, interpolate: animationConfig(4373).interpolate, SPRING_CONFIG };
   obj9.src = getSoundboardEmojiUrlDefault(sound, 24);
   let str = sound.emojiName;
   if (str == null) {
@@ -137,18 +137,18 @@ const jsxProd = fn(21);
 let ReanimatedRexport = ReanimatedRexport_mod;
 let closure_7 = ReanimatedRexport.createAnimatedComponent(View);
 const SPRING_CONFIG = { damping: 10, stiffness: 300, mass: 1 };
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { button: null, buttonPressed: null, buttonDisabled: null, buttonPlaying: null, playingBackground: null, emoji: null, emojiWrapper: null, text: null, textPlaying: null, lock: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
-obj.button = { marginTop: 4, height: fn(17065).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
-let obj2 = { marginTop: 4, height: fn(17065).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+obj.button = { marginTop: 4, height: fn(17173).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
+let obj2 = { marginTop: 4, height: fn(17173).SOUND_BUTTON_HEIGHT, backgroundColor: nativeDefault.colors.CARD_BACKGROUND_DEFAULT, display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED };
 obj.buttonPressed = { backgroundColor: nativeDefault.colors.CARD_PRIMARY_PRESSED_BG };
 obj.buttonDisabled = { opacity: 0.5 };
 let obj4 = { backgroundColor: nativeDefault.colors.CARD_PRIMARY_PRESSED_BG };
 obj.buttonPlaying = { borderStyle: "solid", borderWidth: 2, borderColor: nativeDefault.colors.STATUS_SPEAKING };
 const rect = { position: "absolute", top: 0, bottom: 0, start: 0, end: 0, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG, borderRadius: nativeDefault.radii.lg - 2 };
 obj.playingBackground = rect;
-const PlatformUtils = fn(1115);
+const PlatformUtils = fn(1363);
 let num;
 if (PlatformUtils.isIOS()) {
   num = 24;
@@ -162,7 +162,7 @@ const size1 = { position: "absolute", top: nativeDefault.space.PX_12, end: nativ
 obj.lock = size1;
 let closure_9 = createStyles.createStyles(obj);
 let ReanimatedRexport = ReanimatedRexport_mod;
-let closure_10 = ReanimatedRexport.createAnimatedComponent(fn(5123).PressableOpacity);
+let closure_10 = ReanimatedRexport.createAnimatedComponent(fn(5204).PressableOpacity);
 const __initData = { code: "function SoundButtonTsx1(){const{animationConfig,withDelay,withSpring,interpolate,SPRING_CONFIG}=this.__closure;var _animationConfig$play,_animationConfig$pres,_animationConfig;const isNotPressed=animationConfig.sharedValues.pressed.get()===0;const isPlaying=animationConfig.sharedValues.playing.get()>0;const shouldDoPlayingAnimation=isNotPressed&&isPlaying;const playingAnimationScaleValue=withDelay((_animationConfig$play=animationConfig.playingAnimationDelay)!==null&&_animationConfig$play!==void 0?_animationConfig$play:0,withSpring(interpolate(animationConfig.sharedValues.playing.get(),[0,1],[1,animationConfig.scaleFactors.playing]),SPRING_CONFIG));const pressedAnimationScaleValue=withSpring(interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[1,animationConfig.scaleFactors.pressed]),SPRING_CONFIG);const rotationScaleValue=interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[0,(_animationConfig$pres=(_animationConfig=animationConfig)===null||_animationConfig===void 0?void 0:_animationConfig.pressedRotationDegrees)!==null&&_animationConfig$pres!==void 0?_animationConfig$pres:0]);return{transform:[{scale:shouldDoPlayingAnimation?playingAnimationScaleValue:pressedAnimationScaleValue},{rotate:rotationScaleValue+\"deg\"}]};}" };
 let obj5 = { borderStyle: "solid", borderWidth: 2, borderColor: nativeDefault.colors.STATUS_SPEAKING };
 size = fn(2);

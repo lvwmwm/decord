@@ -1,10 +1,10 @@
-// Module ID: 4972
-// Function ID: 4973
+// Module ID: 5053
+// Function ID: 5054
 // Name: useBackPressHandler
-// Dependencies: [19, 17, 1115, 2]
+// Dependencies: [19, 17, 1363, 2]
 // Exports: default
 
-// Module 4972 (useBackPressHandler)
+// Module 5053 (useBackPressHandler)
 import noop from "module_19" /* 19 */;
 
 const require = fn;

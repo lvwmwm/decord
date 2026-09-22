@@ -1,12 +1,12 @@
-// Module ID: 14768
-// Function ID: 14769
+// Module ID: 14852
+// Function ID: 14853
 // Name: useSafetyHubFetchError
-// Dependencies: [8431, 504, 2]
+// Dependencies: [8548, 504, 2]
 // Exports: useSafetyHubFetchError
 
-// Module 14768 (useSafetyHubFetchError)
+// Module 14852 (useSafetyHubFetchError)
 import initialize from "initialize" /* 504 */;
-import SafetyHubStore from "SafetyHubStore" /* 8431 */;
+import SafetyHubStore from "SafetyHubStore" /* 8548 */;
 
 require = fn;
 const size = fn(2);

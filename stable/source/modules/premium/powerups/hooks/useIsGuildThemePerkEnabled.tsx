@@ -1,13 +1,13 @@
-// Module ID: 16162
-// Function ID: 16163
+// Module ID: 16256
+// Function ID: 16257
 // Name: useIsGuildThemePerkEnabled
-// Dependencies: [1979, 4449, 1074, 504, 4453, 2]
+// Dependencies: [1979, 4525, 1074, 504, 4529, 2]
 // Exports: default
 
-// Module 16162 (useIsGuildThemePerkEnabled)
-import Powerups from "Powerups" /* 4453 */;
+// Module 16256 (useIsGuildThemePerkEnabled)
+import Powerups from "Powerups" /* 4529 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4449 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4525 */;
 
 const require = globalThis.__r;
 

@@ -1,13 +1,13 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 16992
+// Function ID: 16993
 // Name: useMessageRequestTimestampText
-// Dependencies: [4575, 11, 12598, 504, 4153, 7781, 2]
+// Dependencies: [4651, 11, 12727, 504, 4228, 7883, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
-// Module 16880 (useMessageRequestTimestampText)
+// Module 16992 (useMessageRequestTimestampText)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef4153 from "module_4153" /* 4153 */;
-import ReadStateStore from "ReadStateStore" /* 4575 */;
+import _modDef4228 from "module_4228" /* 4228 */;
+import ReadStateStore from "ReadStateStore" /* 4651 */;
 
 const require = globalThis.__r;
 
@@ -30,8 +30,8 @@ export const useMessageRequestTimestampText = function useMessageRequestTimestam
     }
     let str = "";
     if (null != extractTimestampResult) {
-      str = _modDef4153(extractTimestampResult).calendar();
-      const obj6 = _modDef4153(extractTimestampResult);
+      str = _modDef4228(extractTimestampResult).calendar();
+      const obj6 = _modDef4228(extractTimestampResult);
     }
     return str;
   }
@@ -56,8 +56,8 @@ export const useMessageRequestRelativeTimestampText = function useMessageRequest
     }
     let str = "";
     if (null != extractTimestampResult) {
-      str = tmp(7781).getTimestampString(extractTimestampResult);
-      const tmpResult = tmp(7781);
+      str = tmp(7883).getTimestampString(extractTimestampResult);
+      const tmpResult = tmp(7883);
     }
     return str;
   }

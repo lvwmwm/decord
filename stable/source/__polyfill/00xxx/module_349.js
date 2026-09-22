@@ -70,7 +70,7 @@ class ScrollView {
       constructResult = obj.apply(self, items);
     }
     tmp3Result = tmp3(self, constructResult);
-    f107448 = tmp3Result;
+    f107950 = tmp3Result;
     tmp3Result._scrollAnimatedValueAttachment = null;
     map = new Map();
     tmp3Result._stickyHeaderRefs = map;
@@ -90,11 +90,11 @@ class ScrollView {
     tmp3Result._subscriptionKeyboardDidShow = null;
     tmp3Result._subscriptionKeyboardDidHide = null;
     tmp3Result.state = { layoutHeight: null };
-    tmp3Result.getScrollResponder = () => f107448;
-    tmp3Result.getScrollableNode = () => renderElement.findNodeHandle(f107448.getNativeScrollRef());
-    tmp3Result.getInnerViewNode = () => renderElement.findNodeHandle(f107448._innerView.nativeInstance);
-    tmp3Result.getInnerViewRef = () => f107448._innerView.nativeInstance;
-    tmp3Result.getNativeScrollRef = () => f107448._scrollView.nativeInstance;
+    tmp3Result.getScrollResponder = () => f107950;
+    tmp3Result.getScrollableNode = () => renderElement.findNodeHandle(f107950.getNativeScrollRef());
+    tmp3Result.getInnerViewNode = () => renderElement.findNodeHandle(f107950._innerView.nativeInstance);
+    tmp3Result.getInnerViewRef = () => f107950._innerView.nativeInstance;
+    tmp3Result.getNativeScrollRef = () => f107950._scrollView.nativeInstance;
     tmp3Result.scrollTo = (num, arg1, arg2) => {
       if (typeof num === "number") {
         x = arg1;
@@ -105,7 +105,7 @@ class ScrollView {
       } else if (num) {
         ({ y, x, animated } = num);
       }
-      const nativeScrollRef = f107448.getNativeScrollRef();
+      const nativeScrollRef = f107950.getNativeScrollRef();
       if (null != nativeScrollRef) {
         const obj = _modDef350;
         if (!x) {
@@ -121,14 +121,14 @@ class ScrollView {
       if (animated) {
         animated = animated.animated;
       }
-      const nativeScrollRef = f107448.getNativeScrollRef();
+      const nativeScrollRef = f107950.getNativeScrollRef();
       if (null != nativeScrollRef) {
         _modDef350.scrollToEnd(nativeScrollRef, false !== animated);
         const tmp2 = false !== animated;
       }
     };
     tmp3Result.flashScrollIndicators = () => {
-      const nativeScrollRef = f107448.getNativeScrollRef();
+      const nativeScrollRef = f107950.getNativeScrollRef();
       if (null != nativeScrollRef) {
         const result = _modDef350.flashScrollIndicators(nativeScrollRef);
       }
@@ -138,9 +138,9 @@ class ScrollView {
       if (!arg1) {
         num = 0;
       }
-      f107448._additionalScrollOffset = num;
-      f107448._preventNegativeScrollOffset = _preventNegativeScrollOffset;
-      if (null != f107448._innerView.nativeInstance) {
+      f107950._additionalScrollOffset = num;
+      f107950._preventNegativeScrollOffset = _preventNegativeScrollOffset;
+      if (null != f107950._innerView.nativeInstance) {
         if (typeof measureLayout === "number") {
           const obj = measureDefault;
           const tmp4 = nullthrowsDefault;
@@ -153,13 +153,13 @@ class ScrollView {
     tmp3Result.scrollResponderZoomTo = (animated, arg1) => {
       _modDef38(false, "zoomToRect is not implemented");
       if ("animated" in animated) {
-        f107448._animated = animated.animated;
+        f107950._animated = animated.animated;
         delete tmp[tmp2];
       } else if (undefined !== arg1) {
         const _console = console;
         console.warn("`scrollResponderZoomTo` `animated` argument is deprecated. Use `options.animated` instead");
       }
-      const nativeScrollRef = f107448.getNativeScrollRef();
+      const nativeScrollRef = f107950.getNativeScrollRef();
       if (null != nativeScrollRef) {
         _modDef350.zoomToRect(nativeScrollRef, animated, false !== arg1);
         const tmp3Result = _modDef350;
@@ -176,19 +176,19 @@ class ScrollView {
         const _setTimeout = setTimeout;
         const timerId = setTimeout(() => {
           if (typeof scrollTextInputIntoVisibleRect === "function") {
-            if (null != f107448._keyboardMetrics) {
+            if (null != f107950._keyboardMetrics) {
               screenY = obj._keyboardMetrics.screenY;
             }
             const sum = closure_0 - screenY + closure_1 + obj._additionalScrollOffset;
             let bound = sum;
-            if (true === f107448._preventNegativeScrollOffset) {
+            if (true === f107950._preventNegativeScrollOffset) {
               const _Math = Math;
               bound = Math.max(0, sum);
             }
             const point = { x: 0, y: bound, animated: true };
-            f107448.scrollTo(point);
-            f107448._additionalScrollOffset = 0;
-            f107448._preventNegativeScrollOffset = false;
+            f107950.scrollTo(point);
+            f107950._additionalScrollOffset = 0;
+            f107950._preventNegativeScrollOffset = false;
           } else {
             throw new TypeError("Trying to call a non-function");
           }
@@ -210,29 +210,29 @@ class ScrollView {
       }
     };
     tmp3Result._handleScroll = (arg0) => {
-      f107448._observedScrollSinceBecomingResponder = true;
-      if (f107448.props.onScroll) {
+      f107950._observedScrollSinceBecomingResponder = true;
+      if (f107950.props.onScroll) {
         const props = tmp.props;
         props.onScroll(arg0);
       }
     };
     tmp3Result._handleLayout = (nativeEvent) => {
-      if (true === f107448.props.invertStickyHeaders) {
+      if (true === f107950.props.invertStickyHeaders) {
         const obj2 = { layoutHeight: nativeEvent.nativeEvent.layout.height };
         obj.setState(obj2);
       }
-      if (f107448.props.onLayout) {
+      if (f107950.props.onLayout) {
         const props = obj.props;
         props.onLayout(nativeEvent);
       }
     };
     tmp3Result._handleContentOnLayout = (arg0) => {
-      if (f107448.props.onContentSizeChange) {
-        const props = f107448.props;
+      if (f107950.props.onContentSizeChange) {
+        const props = f107950.props;
         props.onContentSizeChange(tmp, tmp2);
       }
     };
-    f107448 = (arg0) => arg0;
+    f107950 = (arg0) => arg0;
     closure_1 = undefined;
     obj1 = {
       getForwardingRef: c2(closure_4[29])((arg0) => {
@@ -240,7 +240,7 @@ class ScrollView {
             return (nativeInstance) => {
               let tmp = null;
               if (null != nativeInstance) {
-                tmp = f107448(nativeInstance);
+                tmp = f107950(nativeInstance);
               }
               obj3.nativeInstance = nativeInstance;
               obj3.publicInstance = tmp;
@@ -258,7 +258,7 @@ class ScrollView {
     };
     closure_1 = obj1;
     tmp3Result._innerView = obj1;
-    f107448 = (arg0) => Object.assign(arg0, { getScrollResponder: f107448.getScrollResponder, getScrollableNode: f107448.getScrollableNode, getInnerViewNode: f107448.getInnerViewNode, getInnerViewRef: f107448.getInnerViewRef, getNativeScrollRef: f107448.getNativeScrollRef, scrollTo: f107448.scrollTo, scrollToEnd: f107448.scrollToEnd, flashScrollIndicators: f107448.flashScrollIndicators, scrollResponderZoomTo: f107448.scrollResponderZoomTo, scrollResponderScrollNativeHandleToKeyboard: f107448.scrollResponderScrollNativeHandleToKeyboard });
+    f107950 = (arg0) => Object.assign(arg0, { getScrollResponder: f107950.getScrollResponder, getScrollableNode: f107950.getScrollableNode, getInnerViewNode: f107950.getInnerViewNode, getInnerViewRef: f107950.getInnerViewRef, getNativeScrollRef: f107950.getNativeScrollRef, scrollTo: f107950.scrollTo, scrollToEnd: f107950.scrollToEnd, flashScrollIndicators: f107950.flashScrollIndicators, scrollResponderZoomTo: f107950.scrollResponderZoomTo, scrollResponderScrollNativeHandleToKeyboard: f107950.scrollResponderScrollNativeHandleToKeyboard });
     closure_1 = undefined;
     obj4 = {
       getForwardingRef: c2(closure_4[29])((arg0) => {
@@ -266,7 +266,7 @@ class ScrollView {
             return (nativeInstance) => {
               let tmp = null;
               if (null != nativeInstance) {
-                tmp = f107448(nativeInstance);
+                tmp = f107950(nativeInstance);
               }
               obj3.nativeInstance = nativeInstance;
               obj3.publicInstance = tmp;
@@ -285,63 +285,63 @@ class ScrollView {
     closure_1 = obj4;
     tmp3Result._scrollView = obj4;
     tmp3Result.scrollResponderKeyboardWillShow = (endCoordinates) => {
-      f107448._keyboardMetrics = endCoordinates.endCoordinates;
-      if (f107448.props.onKeyboardWillShow) {
-        const props = f107448.props;
+      f107950._keyboardMetrics = endCoordinates.endCoordinates;
+      if (f107950.props.onKeyboardWillShow) {
+        const props = f107950.props;
         props.onKeyboardWillShow(endCoordinates);
       }
     };
     tmp3Result.scrollResponderKeyboardWillHide = (arg0) => {
-      f107448._keyboardMetrics = null;
-      if (f107448.props.onKeyboardWillHide) {
+      f107950._keyboardMetrics = null;
+      if (f107950.props.onKeyboardWillHide) {
         const props = tmp.props;
         props.onKeyboardWillHide(arg0);
       }
     };
     tmp3Result.scrollResponderKeyboardDidShow = (endCoordinates) => {
-      f107448._keyboardMetrics = endCoordinates.endCoordinates;
-      if (f107448.props.onKeyboardDidShow) {
-        const props = f107448.props;
+      f107950._keyboardMetrics = endCoordinates.endCoordinates;
+      if (f107950.props.onKeyboardDidShow) {
+        const props = f107950.props;
         props.onKeyboardDidShow(endCoordinates);
       }
     };
     tmp3Result.scrollResponderKeyboardDidHide = (arg0) => {
-      f107448._keyboardMetrics = null;
-      if (f107448.props.onKeyboardDidHide) {
+      f107950._keyboardMetrics = null;
+      if (f107950.props.onKeyboardDidHide) {
         const props = tmp.props;
         props.onKeyboardDidHide(arg0);
       }
     };
     tmp3Result._handleMomentumScrollBegin = (arg0) => {
       const _performance = ScrollView.performance;
-      f107448._lastMomentumScrollBeginTime = _performance.now();
-      if (f107448.props.onMomentumScrollBegin) {
-        const props = f107448.props;
+      f107950._lastMomentumScrollBeginTime = _performance.now();
+      if (f107950.props.onMomentumScrollBegin) {
+        const props = f107950.props;
         const result = props.onMomentumScrollBegin(arg0);
       }
     };
     tmp3Result._handleMomentumScrollEnd = (arg0) => {
       _modDef351.endScroll();
       const _performance = ScrollView.performance;
-      f107448._lastMomentumScrollEndTime = _performance.now();
-      if (f107448.props.onMomentumScrollEnd) {
-        const props = f107448.props;
+      f107950._lastMomentumScrollEndTime = _performance.now();
+      if (f107950.props.onMomentumScrollEnd) {
+        const props = f107950.props;
         props.onMomentumScrollEnd(arg0);
       }
     };
     tmp3Result._handleScrollBeginDrag = (arg0) => {
       _modDef351.beginScroll();
-      if ("on-drag" === f107448.props.keyboardDismissMode) {
+      if ("on-drag" === f107950.props.keyboardDismissMode) {
         dismissKeyboardDefault();
       }
-      if (f107448.props.onScrollBeginDrag) {
+      if (f107950.props.onScrollBeginDrag) {
         const props = tmp4.props;
         props.onScrollBeginDrag(arg0);
       }
     };
     tmp3Result._handleScrollEndDrag = (nativeEvent) => {
       const velocity = nativeEvent.nativeEvent.velocity;
-      let _isAnimatingResult = f107448._isAnimating();
+      let _isAnimatingResult = f107950._isAnimating();
       if (!_isAnimatingResult) {
         let tmp3 = velocity;
         if (velocity) {
@@ -353,29 +353,29 @@ class ScrollView {
       if (!_isAnimatingResult) {
         _modDef351.endScroll();
       }
-      if (f107448.props.onScrollEndDrag) {
+      if (f107950.props.onScrollEndDrag) {
         const props = tmp.props;
         props.onScrollEndDrag(nativeEvent);
       }
     };
     tmp3Result._isAnimating = () => {
       const _performance = ScrollView.performance;
-      return _performance.now() - f107448._lastMomentumScrollEndTime < 16 || f107448._lastMomentumScrollEndTime < f107448._lastMomentumScrollBeginTime;
+      return _performance.now() - f107950._lastMomentumScrollEndTime < 16 || f107950._lastMomentumScrollEndTime < f107950._lastMomentumScrollBeginTime;
     };
     tmp3Result._handleResponderGrant = (arg0) => {
-      f107448._observedScrollSinceBecomingResponder = false;
-      if (f107448.props.onResponderGrant) {
+      f107950._observedScrollSinceBecomingResponder = false;
+      if (f107950.props.onResponderGrant) {
         const props = obj.props;
         props.onResponderGrant(arg0);
       }
-      f107448._becameResponderWhileAnimating = f107448._isAnimating();
+      f107950._becameResponderWhileAnimating = f107950._isAnimating();
     };
     tmp3Result._handleResponderReject = () => {
 
     };
     tmp3Result._handleResponderRelease = (nativeEvent) => {
-      f107448._isTouching = 0 !== nativeEvent.nativeEvent.touches.length;
-      if (f107448.props.onResponderRelease) {
+      f107950._isTouching = 0 !== nativeEvent.nativeEvent.touches.length;
+      if (f107950.props.onResponderRelease) {
         const props = obj.props;
         props.onResponderRelease(nativeEvent);
       }
@@ -407,10 +407,10 @@ class ScrollView {
         tmp3 = importDefault;
       }
     };
-    tmp3Result._handleResponderTerminationRequest = () => !f107448._observedScrollSinceBecomingResponder;
-    tmp3Result._handleScrollShouldSetResponder = () => true !== f107448.props.disableScrollViewPanResponder && f107448._isTouching;
+    tmp3Result._handleResponderTerminationRequest = () => !f107950._observedScrollSinceBecomingResponder;
+    tmp3Result._handleScrollShouldSetResponder = () => true !== f107950.props.disableScrollViewPanResponder && f107950._isTouching;
     tmp3Result._handleStartShouldSetResponder = (target) => {
-      if (true === f107448.props.disableScrollViewPanResponder) {
+      if (true === f107950.props.disableScrollViewPanResponder) {
         return false;
       } else {
         let tmp4 = "handled" !== obj.props.keyboardShouldPersistTaps;
@@ -425,7 +425,7 @@ class ScrollView {
       }
     };
     tmp3Result._handleStartShouldSetResponderCapture = (target) => {
-      if (f107448._isAnimating()) {
+      if (f107950._isAnimating()) {
         return true;
       } else if (true === obj.props.disableScrollViewPanResponder) {
         return false;
@@ -471,16 +471,16 @@ class ScrollView {
       return isTextInputResult;
     };
     tmp3Result._softKeyboardIsDetached = () => {
-      let tmp = null != f107448._keyboardMetrics;
+      let tmp = null != f107950._keyboardMetrics;
       if (tmp) {
-        tmp = 0 === f107448._keyboardMetrics.height;
+        tmp = 0 === f107950._keyboardMetrics.height;
       }
       return tmp;
     };
     tmp3Result._keyboardEventsAreUnreliable = () => get_VersionDefault.Version < 30;
     tmp3Result._handleTouchEnd = (nativeEvent) => {
-      f107448._isTouching = 0 !== nativeEvent.nativeEvent.touches.length;
-      const keyboardShouldPersistTaps = f107448.props.keyboardShouldPersistTaps;
+      f107950._isTouching = 0 !== nativeEvent.nativeEvent.touches.length;
+      const keyboardShouldPersistTaps = f107950.props.keyboardShouldPersistTaps;
       let tmp = !keyboardShouldPersistTaps;
       if (keyboardShouldPersistTaps) {
         tmp = "never" === keyboardShouldPersistTaps;
@@ -490,27 +490,27 @@ class ScrollView {
         _modDef144.blurTextInput(result);
         const tmp2Result = _modDef144;
       }
-      if (f107448.props.onTouchEnd) {
+      if (f107950.props.onTouchEnd) {
         const props = obj.props;
         props.onTouchEnd(nativeEvent);
       }
     };
     tmp3Result._handleTouchCancel = (arg0) => {
-      f107448._isTouching = false;
-      if (f107448.props.onTouchCancel) {
+      f107950._isTouching = false;
+      if (f107950.props.onTouchCancel) {
         const props = tmp.props;
         props.onTouchCancel(arg0);
       }
     };
     tmp3Result._handleTouchStart = (arg0) => {
-      f107448._isTouching = true;
-      if (f107448.props.onTouchStart) {
+      f107950._isTouching = true;
+      if (f107950.props.onTouchStart) {
         const props = tmp.props;
         props.onTouchStart(arg0);
       }
     };
     tmp3Result._handleTouchMove = (arg0) => {
-      if (f107448.props.onTouchMove) {
+      if (f107950.props.onTouchMove) {
         const props = tmp.props;
         props.onTouchMove(arg0);
       }

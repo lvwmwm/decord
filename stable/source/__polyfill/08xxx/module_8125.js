@@ -1,9 +1,9 @@
 // Module ID: 8125
 // Function ID: 8126
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 8125
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/guild_sidebar", width: 24, height: 24, scales: [2, 3], hash: "ff39eeadf9f2f52f7094ca9f3833e97b", name: "img_guild_folder", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/auto_moderation", width: 12, height: 12, scales: [2, 3], hash: "78a34aca822219efd275dbb2e470061d", name: "ic_closed_lock", type: "png" });

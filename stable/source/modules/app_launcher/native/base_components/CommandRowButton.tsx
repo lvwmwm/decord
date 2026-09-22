@@ -1,10 +1,10 @@
-// Module ID: 12109
-// Function ID: 12110
+// Module ID: 12238
+// Function ID: 12239
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12032, 9295, 11997, 7523, 5612, 4975, 1114, 4505, 2]
+// Dependencies: [5, 32, 19, 21, 12161, 9418, 12126, 7626, 5693, 5056, 1114, 4581, 2]
 // Exports: default, useCommandRowSend
 
-// Module 12109 (CommandRowButton)
+// Module 12238 (CommandRowButton)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -16,15 +16,15 @@ const result = size.fileFinishedImporting("modules/app_launcher/native/base_comp
 
 export default function CommandRowIcon(hasOptions) {
   if (hasOptions.hasOptions) {
-    let tmp3Result = tmp3(tmp4(5612).TableRowArrow, {});
+    let tmp3Result = tmp3(tmp4(5693).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: null, onPress: null, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: null };
     const intl = tmp4(1114).intl;
     obj.text = intl.string(tmp4(1114).t.TXNS7S);
     obj.onPress = tmp2;
-    obj.icon = tmp3(tmp4(4505).SendMessageIcon, { size: "sm" });
+    obj.icon = tmp3(tmp4(4581).SendMessageIcon, { size: "sm" });
     obj.disabled = tmp;
-    tmp3Result = tmp3(tmp4(4975).Button, obj);
+    tmp3Result = tmp3(tmp4(5056).Button, obj);
   }
   return tmp3Result;
 };
@@ -76,11 +76,11 @@ export const useCommandRowSend = function useCommandRowSend(command) {
             }
             c3 = 1;
             const obj6 = { command, optionValues: null, context: null, sectionName: null, commandOrigin: null };
-            const obj2 = tmp3(9295);
-            obj6.optionValues = tmp3(11997).parseOptionValuesForSend(commandContext.channel, command, {});
+            const obj2 = tmp3(9418);
+            obj6.optionValues = tmp3(12126).parseOptionValuesForSend(commandContext.channel, command, {});
             obj6.context = commandContext;
             obj6.sectionName = sectionName;
-            obj6.commandOrigin = tmp3(7523).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
+            obj6.commandOrigin = tmp3(7626).CommandOrigin.APP_LAUNCHER_APPLICATION_VIEW;
             dependencyMap = 2;
             c4 = 1;
             const obj7 = { value: obj2.executeAppLauncherCommand(obj6), done: false };

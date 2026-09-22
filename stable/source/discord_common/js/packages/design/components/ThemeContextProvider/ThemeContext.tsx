@@ -1,15 +1,15 @@
-// Module ID: 4284
-// Function ID: 4285
+// Module ID: 4354
+// Function ID: 4355
 // Name: ThemeContext
-// Dependencies: [19, 21, 2]
+// Dependencies: [19, 1085, 21, 2]
 // Exports: UseThemeContext, createThemedContext, useThemeContext
 
-// Module 4284 (ThemeContext)
+// Module 4354 (ThemeContext)
 import noop from "module_19" /* 19 */;
 
 const jsxProd = fn(21);
 ({ Fragment: closure_1, jsx: c2 } = jsxProd);
-let obj = { theme: "light", primaryColor: null, secondaryColor: null, gradient: null, flags: 0, contrast: 1, saturation: 1, density: "compact", disableAdaptiveTheme: false, reduceAdaptiveTheme: false };
+let obj = { theme: fn(1085).ThemeTypes.LIGHT, primaryColor: null, secondaryColor: null, gradient: null, flags: 0, contrast: 1, saturation: 1, density: "compact", disableAdaptiveTheme: false, reduceAdaptiveTheme: false };
 const obj2 = {};
 let json = JSON.stringify(obj);
 let merged = Object.assign(obj);

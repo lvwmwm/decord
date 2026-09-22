@@ -1,18 +1,21 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 16633
+// Function ID: 16634
 // Name: NavigationSpanTracker
-// Dependencies: [1256, 17867, 2]
+// Dependencies: [3, 1254, 16632, 2]
 
-// Module 17866 (NavigationSpanTracker)
-import v1 from "v1" /* 1256 */;
-import NavigationSpanTypes from "NavigationSpanTypes" /* 17867 */;
-import size from "module_2" /* 2 */;
+// Module 16633 (NavigationSpanTracker)
+import LoggerDefault from "Logger" /* 3 */;
+import v1 from "v1" /* 1254 */;
+import NavigationSpanTypes from "NavigationSpanTypes" /* 16632 */;
 
+require = fn;
+let obj = new LoggerDefault("NavTTI");
+obj.enableNativeLogger(true);
 class NavigationSpanTracker {
   constructor() {
-    merged = Object.assign({ active: null, lastBundle: null, listeners: null });
-    set = new Set();
-    merged[2] = set;
+    merged = Object.assign({ active: null, lastBundle: null, listenersBySurface: null });
+    map = new Map();
+    merged[2] = map;
     return merged;
   }
 }
@@ -20,47 +23,151 @@ const prototype = NavigationSpanTracker.prototype;
 prototype["getLastBundle"] = function getLastBundle() {
   return this.lastBundle;
 };
-prototype["subscribe"] = function subscribe(arg0) {
+prototype["getActiveTraceId"] = function getActiveTraceId(definition, navigationKey) {
   const self = this;
-  closure_0 = arg0;
-  let listeners = this.listeners;
-  listeners.add(arg0);
+  const active = this.active;
+  if (null == active) {
+    return null;
+  } else {
+    let traceId = null;
+    if (active.surfaceKey === self.getSurfaceKey(definition, navigationKey)) {
+      traceId = active.traceId;
+    }
+    return traceId;
+  }
+};
+prototype["subscribe"] = function subscribe(definition, destinationKey, arg2) {
+  const self = this;
+  closure_1 = arg2;
+  const surfaceKey = this.getSurfaceKey(definition, destinationKey);
+  let listenersBySurface = this.listenersBySurface;
+  value = listenersBySurface.get(surfaceKey);
+  let set = value;
+  obj = value;
+  if (null == value) {
+    const _Set = Set;
+    set = new Set();
+    const listenersBySurface2 = this.listenersBySurface;
+    const result = listenersBySurface2.set(surfaceKey, set);
+    obj = set;
+  }
+  obj.add(arg2);
+  c0 = true;
   return () => {
-    const listeners = self.listeners;
-    listeners.delete(closure_0);
+    if (c0) {
+      c0 = false;
+      set.delete(closure_1);
+      if (0 === set.size) {
+        const listenersBySurface = self.listenersBySurface;
+        listenersBySurface.delete(surfaceKey);
+      }
+    }
   };
 };
-prototype["beginNavigation"] = function beginNavigation(arg0) {
+prototype["beginNavigation"] = function beginNavigation(definition) {
   const self = this;
   if (null != this.active) {
-    self.flush("interrupted");
+    self.flush("interrupted", { notifySubscribers: false });
   }
   const timestamp = Date.now();
-  const obj = { traceId: null, navigationSpanId: null, spanTtiName: null, destinationKey: null, properties: null, startEpochMs: null, startMonotonicMs: null, deadlineTimer: null };
+  const active = { traceId: null, navigationSpanId: null, surfaceKey: null, definition: null, destinationKey: null, properties: null, startEpochMs: null, startMonotonicMs: null, components: null, firstPaint: null, deadlineTimer: null };
   const nowResult = performance.now();
-  obj.traceId = v1.v4();
-  obj.navigationSpanId = v1.v4();
-  ({ spanTtiName: obj.spanTtiName, destinationKey: obj.destinationKey, properties: obj.properties } = arg0);
-  obj.startEpochMs = timestamp;
-  obj.startMonotonicMs = nowResult;
-  obj.deadlineTimer = setTimeout(() => self.flush("deadline_exceeded"), 30000);
-  self.active = obj;
-  self.publishLive();
+  active.traceId = v1.v4();
+  active.navigationSpanId = v1.v4();
+  active.surfaceKey = self.getSurfaceKey(definition.definition, definition.destinationKey);
+  ({ definition: obj.definition, destinationKey: obj.destinationKey, properties: obj.properties } = definition);
+  active.startEpochMs = timestamp;
+  active.startMonotonicMs = nowResult;
+  active.components = [];
+  active.deadlineTimer = setTimeout(() => self.flush("deadline_exceeded"), 30000);
+  self.active = active;
+  self.publishTraceState();
 };
-prototype["publishLive"] = function publishLive() {
+prototype["recordComponentSpan"] = function recordComponentSpan(trace_id, endMonotonicMs) {
+  const active = this.active;
+  let traceId;
+  if (active != null) {
+    traceId = active.traceId;
+  }
+  if (traceId !== trace_id) {
+    return false;
+  } else {
+    const _Number = Number;
+    if (Number.isFinite(endMonotonicMs.endMonotonicMs)) {
+      const _Math = Math;
+      const _Math2 = Math;
+      const bound = Math.max(0, Math.round(endMonotonicMs.endMonotonicMs - active.startMonotonicMs));
+      const components = active.components;
+      obj = { spanComponentName: active.definition.componentEventName, trace_id, span_id: v1.v4(), parent_span_id: active.navigationSpanId, span_name: endMonotonicMs.spanComponent, end_ms: bound, trace_start_timestamp_ms: active.startEpochMs, measurementSource: endMonotonicMs.measurementSource, lateLayoutMs: null };
+      components.push(obj);
+      if (tmp6) {
+        const obj3 = { spanComponent: endMonotonicMs.spanComponent, atMs: bound };
+        active.firstPaint = obj3;
+      }
+      return true;
+    } else {
+      return false;
+    }
+  }
+};
+prototype["recordLateComponentLayout"] = function recordLateComponentLayout(traceId, arg1, endMonotonicMs) {
+  const active = this.active;
+  traceId = undefined;
+  if (active != null) {
+    traceId = active.traceId;
+  }
+  if (traceId === traceId) {
+    const _Number = Number;
+    if (Number.isFinite(endMonotonicMs)) {
+      let diff = active.components.length - 1;
+      if (0 <= diff) {
+        while (true) {
+          let tmp3 = active.components[diff];
+          let span_name;
+          if (tmp3 != null) {
+            span_name = tmp3.span_name;
+          }
+          if (span_name === arg1) {
+            if (tmp3.measurementSource !== NavigationSpanTypes.ComponentMeasurementSource.ON_LAYOUT) {
+              if (null == tmp3.lateLayoutMs) {
+                break;
+              }
+            }
+          }
+          diff = diff - 1;
+        }
+        const _Math = Math;
+        const _Math2 = Math;
+        tmp3.lateLayoutMs = Math.max(0, Math.round(endMonotonicMs - active.startMonotonicMs));
+        return true;
+      }
+      return false;
+    }
+  }
+  return false;
+};
+prototype["publishTraceState"] = function publishTraceState() {
   const self = this;
   if (null != this.active) {
-    self.lastBundle = self.buildBundle(self.active, self.active.spanTtiName, false, null);
-    self.notify();
+    self.lastBundle = self.buildBundle(self.active, false, null);
+    self.notifySurface(self.active.definition, self.active.destinationKey);
   }
 };
 prototype["flush"] = function flush(arg0) {
+  obj = arg1;
+  if (arg1 === undefined) {
+    obj = {};
+  }
+  let flag = obj.notifySubscribers;
+  if (flag === undefined) {
+    flag = true;
+  }
   const self = this;
-  let str = this.active;
-  if (null != str) {
-    if (null != str.deadlineTimer) {
+  const active = this.active;
+  if (null != active) {
+    if (null != active.deadlineTimer) {
       const _clearTimeout = clearTimeout;
-      clearTimeout(str.deadlineTimer);
+      clearTimeout(active.deadlineTimer);
     }
     self.active = null;
     if ("deadline_exceeded" === arg0) {
@@ -68,80 +175,86 @@ prototype["flush"] = function flush(arg0) {
     } else {
       INTERRUPTED = NavigationSpanTypes.NavigationSpanStatus.INTERRUPTED;
     }
-    const bundle = self.buildBundle(str, str.spanTtiName, true, INTERRUPTED);
+    const bundle = self.buildBundle(active, true, INTERRUPTED);
     self.lastBundle = bundle;
-    const navigation = bundle.navigation;
-    let items = ["event", navigation.spanTtiName];
-    const items1 = [items, ];
-    const _String = String;
-    const items2 = ["settled", String(bundle.settled)];
-    items1[1] = items2;
-    const _Object = Object;
-    const entries = Object.entries(navigation.spanTtiProperties);
-    HermesBuiltin.arraySpread(entries.map((item) => {
-      [tmp, str] = item;
-      const items = [tmp, String(str)];
-      return items;
-    }), 2);
-    const _Math = Math;
-    const items3 = [5];
-    HermesBuiltin.arraySpread(items1.map((item) => {
-      [arr] = item;
-      return arr.length;
-    }), 1);
-    const _Math2 = Math;
-    const applyResult = HermesBuiltin.apply(items3, Math);
-    c0 = applyResult;
-    const padEnd = "field".padEnd;
-    "field".padEnd(applyResult);
-    str = "-";
-    const repeat = "-".repeat;
-    "-".repeat(applyResult);
-    const mapped = items1.map((item) => {
-      [obj, tmp] = item;
-      return "  " + obj.padEnd(c0) + "  " + tmp;
-    });
-    self.notify();
+    const spanTtiProperties = bundle.navigation.spanTtiProperties;
+    const obj2 = { trace_id: bundle.navigation.spanTtiProperties.trace_id, first_paint_ms: spanTtiProperties.first_paint_ms, first_paint_component: null, to_channel_id: null, end_ms: null, span_status: null, warm_message_cache: null, components: null };
+    const firstPaint = bundle.firstPaint;
+    let spanComponent;
+    ({ to_channel_id, end_ms, span_status, warm_message_cache } = spanTtiProperties);
+    if (firstPaint != null) {
+      spanComponent = firstPaint.spanComponent;
+    }
+    if (spanComponent == null) {
+      spanComponent = null;
+    }
+    obj2.first_paint_component = spanComponent;
+    obj2.to_channel_id = to_channel_id;
+    obj2.end_ms = end_ms;
+    obj2.span_status = span_status;
+    obj2.warm_message_cache = warm_message_cache;
+    const components = bundle.components;
+    obj2.components = components.map((span_name) => ({ span_name: span_name.span_name, end_ms: span_name.end_ms, measurement_source: span_name.measurementSource, late_layout_ms: span_name.lateLayoutMs }));
+    obj.info(JSON.stringify(obj2));
+    if (flag) {
+      self.notifySurface(active.definition, active.destinationKey);
+    }
   }
 };
-prototype["notify"] = function notify() {
-  for (const item10006 of tmp) {
-    let item10006Result = item10006();
-    continue;
+prototype["getSurfaceKey"] = function getSurfaceKey(definition, destinationKey) {
+  return "" + definition.rootEventName + ":" + definition.componentEventName + ":" + destinationKey;
+};
+prototype["notifySurface"] = function notifySurface(definition, destinationKey) {
+  const listenersBySurface = this.listenersBySurface;
+  value = listenersBySurface.get(this.getSurfaceKey(definition, destinationKey));
+  if (null != value) {
+    for (const item10013 of value) {
+      let item10013Result = item10013();
+      continue;
+    }
   }
 };
-prototype["buildBundle"] = function buildBundle(active, spanTtiName, settled, INTERRUPTED) {
-  let num = 0;
+prototype["buildBundle"] = function buildBundle(active, settled, INTERRUPTED) {
+  const definition = active.definition;
+  let bound = null;
   ({ startEpochMs, navigationSpanId, traceId } = active);
   if (settled) {
+    const _performance = performance;
     const _Math = Math;
     const _Math2 = Math;
-    const _performance = performance;
-    num = Math.max(0, Math.round(performance.now() - tmp));
+    bound = Math.max(0, Math.round(performance.now() - tmp));
   }
-  const obj = { navigation: null, settled: null };
-  const obj2 = { spanTtiName, spanTtiProperties: null };
-  const obj3 = {};
+  const firstPaint = active.firstPaint;
+  let atMs;
+  if (firstPaint != null) {
+    atMs = firstPaint.atMs;
+  }
+  if (atMs == null) {
+    atMs = null;
+  }
+  const spanTtiProperties = {};
   const merged = Object.assign(active.properties);
-  obj3.trace_id = traceId;
-  obj3.span_id = navigationSpanId;
-  obj3.parent_span_id = null;
-  obj3.span_name = spanTtiName;
-  obj3.start_ms = 0;
-  obj3.end_ms = num;
-  obj3.first_paint_ms = null;
-  obj3.first_contentful_paint_ms = null;
-  obj3.largest_contentful_paint_ms = null;
-  obj3.interactive_ms = null;
-  obj3.trace_start_timestamp_ms = startEpochMs;
-  obj3.span_status = INTERRUPTED;
-  obj2.spanTtiProperties = obj3;
-  obj.navigation = obj2;
-  obj.settled = settled;
-  return obj;
+  spanTtiProperties.trace_id = traceId;
+  spanTtiProperties.span_id = navigationSpanId;
+  spanTtiProperties.parent_span_id = null;
+  spanTtiProperties.span_name = definition.rootEventName;
+  spanTtiProperties.start_ms = 0;
+  spanTtiProperties.end_ms = bound;
+  spanTtiProperties.first_paint_ms = atMs;
+  spanTtiProperties.first_contentful_paint_ms = null;
+  spanTtiProperties.largest_contentful_paint_ms = null;
+  spanTtiProperties.interactive_ms = null;
+  spanTtiProperties.trace_start_timestamp_ms = startEpochMs;
+  spanTtiProperties.span_status = INTERRUPTED;
+  const obj2 = { navigation: { spanTtiName: definition.rootEventName, spanTtiProperties }, components: null, firstPaint, settled };
+  const items = [...active.components];
+  obj2.components = items;
+  return obj2;
 };
-let merged = Object.assign({ active: null, lastBundle: null, listeners: null });
-merged[2] = new Set();
-const result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavigationSpanTracker.tsx");
+let merged = Object.assign({ active: null, lastBundle: null, listenersBySurface: null });
+merged[2] = new Map();
+const size = fn(2);
+let result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavigationSpanTracker.tsx");
 
 export default merged;
+export { NavigationSpanTracker };

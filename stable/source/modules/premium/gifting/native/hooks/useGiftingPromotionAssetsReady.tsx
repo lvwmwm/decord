@@ -1,12 +1,12 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 17067
+// Function ID: 17068
 // Name: useGiftingPromotionAssetsReady
-// Dependencies: [10758, 16955, 2]
+// Dependencies: [10885, 17068, 2]
 // Exports: default
 
-// Module 16954 (useGiftingPromotionAssetsReady)
-import MarketingComponentHooks from "MarketingComponentHooks" /* 10758 */;
-import usePreloadedAssetDefault from "usePreloadedAsset" /* 16955 */;
+// Module 17067 (useGiftingPromotionAssetsReady)
+import MarketingComponentHooks from "MarketingComponentHooks" /* 10885 */;
+import usePreloadedAssetDefault from "usePreloadedAsset" /* 17068 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/native/hooks/useGiftingPromotionAssetsReady.tsx");

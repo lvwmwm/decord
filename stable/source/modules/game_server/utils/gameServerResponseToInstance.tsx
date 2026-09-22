@@ -1,10 +1,10 @@
-// Module ID: 4472
-// Function ID: 4473
+// Module ID: 4548
+// Function ID: 4549
 // Name: gameServerResponseToInstance
 // Dependencies: [2]
 // Exports: default
 
-// Module 4472 (gameServerResponseToInstance)
+// Module 4548 (gameServerResponseToInstance)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_server/utils/gameServerResponseToInstance.tsx");

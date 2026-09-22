@@ -1,12 +1,12 @@
-// Module ID: 16091
-// Function ID: 16092
+// Module ID: 16185
+// Function ID: 16186
 // Name: useEnsureHydratedUsers
-// Dependencies: [19, 5426, 1371, 7311, 2]
+// Dependencies: [19, 5507, 1371, 7414, 2]
 // Exports: useEnsureHydratedUsers
 
-// Module 16091 (useEnsureHydratedUsers)
+// Module 16185 (useEnsureHydratedUsers)
 import noop from "module_19" /* 19 */;
-import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5426 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5507 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = globalThis.__r;

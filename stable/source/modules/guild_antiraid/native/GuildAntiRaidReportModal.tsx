@@ -1,42 +1,43 @@
-// Module ID: 13967
-// Function ID: 13968
+// Module ID: 14052
+// Function ID: 14053
 // Name: GuildAntiRaidReportModal
-// Dependencies: [32, 19, 17, 13968, 21, 4560, 576, 1611, 4556, 4255, 1114, 5687, 5604, 4975, 5624, 11836, 7000, 2]
+// Dependencies: [5, 32, 19, 17, 14053, 21, 4636, 576, 1611, 4632, 4331, 1114, 5768, 5685, 5056, 5705, 11062, 7065, 11965, 7103, 2]
 // Exports: default
 
-// Module 13967 (GuildAntiRaidReportModal)
+// Module 14052 (GuildAntiRaidReportModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import components_Button_Button from "components/Button/Button" /* 4975 */;
-import NavigatorHeader from "NavigatorHeader" /* 5624 */;
-import TableRowGroup from "TableRowGroup" /* 5687 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import components_Button_Button from "components/Button/Button" /* 5056 */;
+import NavigatorHeader from "NavigatorHeader" /* 5705 */;
+import TableRowGroup from "TableRowGroup" /* 5768 */;
+import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function ReportModal(onSubmit) {
   ({ raidTypes: require, onChange: importDefault } = onSubmit);
-  const tmp = closure_12();
+  const tmp = closure_13();
   dependencyMap = tmp;
   const items = [tmp];
-  closure_3 = noop.useCallback((arg0) => React7(Text_Text.Text, { style: formRow.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: React5(arg0) }), items);
+  closure_3 = noop.useCallback((arg0) => closure_2_10(Text_Text.Text, { style: formRow.formRow, variant: "text-md/semibold", color: "interactive-text-active", children: React6(arg0) }), items);
   const obj = { style: tmp.container, children: null };
   const callback = noop.useCallback(() => {
-    require("Linking").openURL(closure_1_6());
+    require("Linking").openURL(closure_1_7());
   }, []);
   const obj2 = { style: tmp.headerSubtitle, variant: "text-sm/medium", color: "text-default", children: null };
   const intl = util.intl;
   obj2.children = intl.format(util.t.Hg8Ee7, { onClick: callback });
-  const items1 = [closure_9(Text_Text.Text, obj2), , ];
+  const items1 = [closure_10(Text_Text.Text, obj2), , ];
   const obj3 = {
     style: tmp.formBody,
-    children: closure_9(TableRowGroup.TableRowGroup, {
+    children: closure_10(TableRowGroup.TableRowGroup, {
       hasIcons: false,
       children: length.map((item, index) => {
         closure_0 = item;
-        return closure_1_9(require("TableCheckboxRow").TableCheckboxRow, {
+        return closure_1_10(require("TableCheckboxRow").TableCheckboxRow, {
           start: 0 === index,
           end: index === length.length - 1,
           label: closure_3(item),
@@ -48,14 +49,14 @@ function ReportModal(onSubmit) {
       })
     })
   };
-  items1[1] = closure_9(View, obj3);
+  items1[1] = closure_10(View, obj3);
   const obj5 = { style: null, children: null };
   const items2 = [tmp.submitButtonContainer, ];
   const obj4 = {
     hasIcons: false,
     children: length.map((item, index) => {
       closure_0 = item;
-      return closure_1_9(require("TableCheckboxRow").TableCheckboxRow, {
+      return closure_1_10(require("TableCheckboxRow").TableCheckboxRow, {
         start: 0 === index,
         end: index === length.length - 1,
         label: closure_3(item),
@@ -72,22 +73,22 @@ function ReportModal(onSubmit) {
   const intl2 = util.intl;
   obj7.text = intl2.string(util.t.geKm7t);
   obj7.onPress = onSubmit.onSubmit;
-  obj5.children = closure_9(components_Button_Button.Button, obj7);
-  items1[2] = closure_9(View, obj5);
+  obj5.children = closure_10(components_Button_Button.Button, obj7);
+  items1[2] = closure_10(View, obj5);
   obj.children = items1;
-  return closure_10(View, obj);
+  return closure_11(View, obj);
 }
 const View = fn(17).View;
-const GuildReportRaidModalConstants = fn(13968);
-({ getReportRaidHelpArticleURL: metroRequire, getReportRaidTypeLabel: closure_7, REPORT_RAID_OPTIONS: closure_8 } = GuildReportRaidModalConstants);
+const GuildReportRaidModalConstants = fn(14053);
+({ getReportRaidHelpArticleURL: closure_7, getReportRaidTypeLabel: closure_8, REPORT_RAID_OPTIONS: closure_9 } = GuildReportRaidModalConstants);
 const jsxProd = fn(21);
-({ jsx: closure_9, jsxs: c10 } = jsxProd);
+({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const REPORT_RAID = "REPORT_RAID";
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 1, paddingHorizontal: 16, paddingVertical: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", paddingTop: 8 }, headerSubtitle: { textAlign: "center", marginTop: 8 }, formBody: { marginTop: 24 }, formRow: { paddingVertical: 2 }, submitButtonContainer: null };
 const rect = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.submitButtonContainer = rect;
-let closure_12 = createStyles.createStyles(obj2);
+let closure_13 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_antiraid/native/GuildAntiRaidReportModal.tsx");
 
@@ -95,9 +96,65 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
   onCloseModal = onCloseModal.onCloseModal;
   const guildId = onCloseModal.guildId;
   first = undefined;
-  _slicedToArray = undefined;
-  [first, _slicedToArray] = noop.useState([]);
-  const items = [onCloseModal, first, guildId];
+  asyncGeneratorStep = undefined;
+  noop = undefined;
+  [first, asyncGeneratorStep] = noop.useState([]);
+  _slicedToArray = guildId(first[16])();
+  noop = noop.useRef(false);
+  const tmp3Result = guildId(first[17])(asyncGeneratorStep(async (arg0, value) => {
+    if (dependencyMap === 2) {
+      dependencyMap = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj4 = { value, done: true };
+        return obj4;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        dependencyMap = 2;
+        if (0 === c1) {
+          if (arg0 === 1) {
+            dependencyMap = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            dependencyMap = 3;
+            const obj5 = { value, done: true };
+            return obj5;
+          } else if (ref.current) {
+            dependencyMap = 3;
+          } else {
+            tmp21.current = true;
+            const result = tmp2(11965).trackReportRaidViewed(guildId, first);
+            const obj2 = tmp2(11965);
+            tmp2(11965).handleReportRaid(guildId);
+            const intl = tmp2(1114).intl;
+            c1 = 1;
+            dependencyMap = 1;
+            const obj6 = { value: closure_4(intl.string(tmp2(1114).t["54qByS"])), done: false };
+            return obj6;
+          }
+        } else if (arg0 === 1) {
+          dependencyMap = 3;
+          throw value;
+        } else if (arg0 !== 2) {
+          closure_128_0();
+        }
+        dependencyMap = 3;
+        const obj = { value, done: true };
+        return obj;
+      } catch (tmp16) {
+        dependencyMap = tmp;
+        throw tmp16;
+      }
+    }
+  }));
+  closure_6 = tmp3Result;
+  const items = [tmp3Result, onCloseModal, first];
   const memo = noop.useMemo(() => {
     const raidTypes = first;
     function onChange(arg0) {
@@ -112,22 +169,18 @@ export default function GuildAntiRaidReportModal(onCloseModal) {
         return found;
       });
     }
-    function onSubmit() {
-      const result = onCloseModal(first[15]).trackReportRaidViewed(onChange, onSubmit);
-      const obj = onCloseModal(first[15]);
-      onCloseModal(first[15]).handleReportRaid(onChange);
-      raidTypes();
-    }
-    let obj = {};
+    const onSubmit = closure_6;
+    const obj = {};
     const obj2 = { ignoreKeyboard: true, title: null, headerLeft: null, render: null };
     const intl = util.intl;
     obj2.title = intl.string(util.t.uYPGsS);
     obj2.headerLeft = NavigatorHeader.getHeaderCloseButton(onCloseModal);
     obj2.render = function render() {
-      return closure_2_9(ReportModal, { raidTypes, onChange, onSubmit });
+      return closure_2_10(ReportModal, { raidTypes, onChange, onSubmit });
     };
     obj[REPORT_RAID] = obj2;
     return obj;
   }, items);
-  return closure_9(onCloseModal(first[16]).Navigator, { screens: memo, initialRouteName: REPORT_RAID, headerStatusBarHeight: guildId(first[7])().top });
+  const tmp3 = guildId(first[17]);
+  return closure_10(onCloseModal(first[19]).Navigator, { screens: memo, initialRouteName: REPORT_RAID, headerStatusBarHeight: guildId(first[8])().top });
 };

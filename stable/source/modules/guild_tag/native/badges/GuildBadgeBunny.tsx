@@ -1,13 +1,13 @@
-// Module ID: 13942
-// Function ID: 13943
+// Module ID: 14027
+// Function ID: 14028
 // Name: GuildBadgeBunny
-// Dependencies: [19, 21, 1256, 13920, 8457, 2]
+// Dependencies: [19, 21, 1254, 14005, 8574, 2]
 // Exports: GuildBadgeBunny
 
-// Module 13942 (GuildBadgeBunny)
-import v1 from "v1" /* 1256 */;
-import inlineStyles from "inlineStyles" /* 8457 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 13920 */;
+// Module 14027 (GuildBadgeBunny)
+import v1 from "v1" /* 1254 */;
+import inlineStyles from "inlineStyles" /* 8574 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14005 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

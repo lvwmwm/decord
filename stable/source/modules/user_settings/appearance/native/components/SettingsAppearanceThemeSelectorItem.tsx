@@ -1,28 +1,28 @@
-// Module ID: 15276
-// Function ID: 15277
+// Module ID: 15359
+// Function ID: 15360
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1183, 15275, 1085, 21, 4560, 576, 4410, 4269, 5125, 1178, 15277, 563, 4262, 15278, 1231, 4277, 5123, 1114, 2]
+// Dependencies: [19, 17, 1181, 15358, 1085, 21, 4636, 576, 4487, 4345, 5206, 1176, 15360, 563, 4338, 15361, 1229, 4355, 5204, 1114, 2]
 // Exports: default
 
-// Module 15276 (SettingsAppearanceThemeSelectorItem)
+// Module 15359 (SettingsAppearanceThemeSelectorItem)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1231 */;
-import useToken from "useToken" /* 4262 */;
-import themes from "themes" /* 4269 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4277 */;
-import utils_ColorDefault from "utils/Color" /* 4410 */;
-import Pressables from "Pressables" /* 5123 */;
-import ThemedGradient from "ThemedGradient" /* 5125 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1229 */;
+import useToken from "useToken" /* 4338 */;
+import themes from "themes" /* 4345 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4355 */;
+import utils_ColorDefault from "utils/Color" /* 4487 */;
+import Pressables from "Pressables" /* 5204 */;
+import ThemedGradient from "ThemedGradient" /* 5206 */;
 import noop from "module_19" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15275 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15358 */;
 
 const ThemedGradientDefault = ThemedGradient;
 
-const native = tmp(1178);
-const _modDef15277 = tmp8(15277);
-const SynchronizeIconNativeDefault = tmp5(15278);
+const native = tmp(1176);
+const _modDef15360 = tmp8(15360);
+const SynchronizeIconNativeDefault = tmp5(15361);
 require = fn;
 function GradientThemeBackground(arg0) {
   ({ item, isThemeLocked } = arg0);
@@ -45,7 +45,7 @@ function GradientThemeBackground(arg0) {
   obj4.mixColorOverride = isThemeDarkResult ? closure_10 : closure_11;
   const items1 = [timestampProducer(ThemedGradientDefault, obj4), ];
   if (isThemeLocked) {
-    const obj6 = { source: _modDef15277, style: tmp4.lock };
+    const obj6 = { source: _modDef15360, style: tmp4.lock };
     isThemeLocked = tmp7(native.Icon, obj6);
   }
   items1[1] = isThemeLocked;
@@ -100,8 +100,8 @@ function CustomThemeBackground(arg0) {
   obj4.customTheme = item;
   const items1 = [timestampProducer(ThemedGradient.CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
-    const obj6 = { source: _modDef15277, style: tmp4.lock };
-    isThemeLocked = tmp7(tmp(1178).Icon, obj6);
+    const obj6 = { source: _modDef15360, style: tmp4.lock };
+    isThemeLocked = tmp7(tmp(1176).Icon, obj6);
   }
   items1[1] = isThemeLocked;
   obj3.children = items1;
@@ -111,20 +111,20 @@ const View = fn(17).View;
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4560);
+let createStyles = fn(4636);
 let obj2 = { rippleColor: { color: nativeDefault.unsafe_rawColors.TRANSPARENT }, themeSelectorItemContainer: { width: SettingsAppearanceConstants.THEME_ITEM_WIDTH, height: SettingsAppearanceConstants.THEME_ITEM_HEIGHT }, themeSelectorItem: null, newRedCircle: null };
 let obj3 = { color: nativeDefault.unsafe_rawColors.TRANSPARENT };
 obj2.themeSelectorItem = { borderRadius: nativeDefault.radii.sm, padding: SettingsAppearanceConstants.THEME_ITEM_PADDING };
 let size = { backgroundColor: nativeDefault.unsafe_rawColors.RED_430, width: 12, height: 12, borderRadius: nativeDefault.radii.sm, position: "absolute", top: 0, right: 0 };
 obj2.newRedCircle = size;
 let closure_8 = createStyles.createStyles(obj2);
-createStyles = fn(4560);
+createStyles = fn(4636);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { themeSelectorGradientBackground: { justifyContent: "center", width: "100%", height: "100%" }, lock: null };
   const internal = nativeDefault.internal;
   const resolveSemanticColor = internal.resolveSemanticColor;
   if (arg0) {
-    let semanticColor = resolveSemanticColor(tmp3.DARKER, tmp(576).colors.INTERACTIVE_TEXT_DEFAULT);
+    let semanticColor = resolveSemanticColor(tmp3.DARK, tmp(576).colors.INTERACTIVE_TEXT_DEFAULT);
   } else {
     semanticColor = resolveSemanticColor(tmp3.LIGHT, tmp(576).colors.INTERACTIVE_TEXT_DEFAULT);
   }
@@ -148,7 +148,7 @@ export default function ThemeSelectorItem(onPress) {
     const obj2 = { item: themePreset };
     let tmp8 = timestampProducer(DefaultThemeBackground, obj2);
     let tmp9 = timestampProducer;
-  } else if (themePreset.type === tmp4(1231).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
+  } else if (themePreset.type === tmp4(1229).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
     const obj3 = { item: themePreset, isThemeLocked: isPreview };
     tmp8 = timestampProducer(CustomThemeBackground, obj3);
     tmp9 = timestampProducer;

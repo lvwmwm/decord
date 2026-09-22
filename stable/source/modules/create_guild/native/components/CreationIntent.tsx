@@ -1,35 +1,35 @@
-// Module ID: 12716
-// Function ID: 12717
+// Module ID: 12845
+// Function ID: 12846
 // Name: CreationIntent
-// Dependencies: [19, 17, 6980, 1074, 21, 4560, 5682, 576, 1483, 4962, 4971, 12687, 1242, 7123, 4556, 1114, 5687, 12328, 5692, 2]
+// Dependencies: [19, 17, 7081, 1074, 21, 4636, 5763, 576, 1483, 5043, 5052, 12816, 1240, 7226, 4632, 1114, 5768, 12457, 5773, 2]
 // Exports: default
 
-// Module 12716 (CreationIntent)
+// Module 12845 (CreationIntent)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import useNavigation from "useNavigation" /* 1483 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 4962 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 4971 */;
-import TableRowGroup from "TableRowGroup" /* 5687 */;
-import native from "native" /* 5692 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7123 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12687 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5043 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5052 */;
+import TableRowGroup from "TableRowGroup" /* 5768 */;
+import native from "native" /* 5773 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7226 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 12816 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const CreateGuildConstants = fn(6980);
+const CreateGuildConstants = fn(7081);
 ({ CreateGuildModalStates: metroRequire, GuildTemplateTriggers: closure_7, NUXGuildTemplatesAnalytics: closure_8 } = CreateGuildConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, AnalyticsLocations: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4560);
-let obj2 = { contentContainer: { flex: 1, marginTop: fn(5682).NAV_BAR_HEIGHT }, scrollContainer: null, headerContainer: null, headerTitle: null, headerDescription: null, sections: null, skipDescription: null };
-let obj3 = { flex: 1, marginTop: fn(5682).NAV_BAR_HEIGHT };
+const createStyles = fn(4636);
+let obj2 = { contentContainer: { flex: 1, marginTop: fn(5763).NAV_BAR_HEIGHT }, scrollContainer: null, headerContainer: null, headerTitle: null, headerDescription: null, sections: null, skipDescription: null };
+let obj3 = { flex: 1, marginTop: fn(5763).NAV_BAR_HEIGHT };
 obj2.scrollContainer = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.headerContainer = { alignItems: "center", paddingVertical: 20, paddingHorizontal: 16 };
 obj2.headerTitle = { textAlign: "center", marginBottom: 8 };
@@ -60,20 +60,20 @@ export default function CreationIntent(arg0) {
         id = tmp5.id;
       }
       const obj5 = { guild_template_name: id };
-      tmp(1242).track(tmp3.CREATE_GUILD_VIEWED, obj5);
-      const tmpResult = tmp(1242);
+      tmp(1240).track(tmp3.CREATE_GUILD_VIEWED, obj5);
+      const tmpResult = tmp(1240);
     } else if (tmp8.IN_APP === tmp7) {
       const obj6 = { type: "Create Guild Step 2", location_section: constants5.CREATE_JOIN_GUILD_MODAL };
-      tmp(1242).track(tmp3.OPEN_MODAL, obj6);
-      const tmpResult3 = tmp(1242);
+      tmp(1240).track(tmp3.OPEN_MODAL, obj6);
+      const tmpResult3 = tmp(1240);
       const obj7 = { location_section: constants5.CREATE_JOIN_GUILD_MODAL, guild_template_name: null };
       let id1;
       if (tmp5 != null) {
         id1 = tmp5.id;
       }
       obj7.guild_template_name = id1;
-      tmp(1242).track(tmp3.CREATE_GUILD_VIEWED, obj7);
-      const tmpResult4 = tmp(1242);
+      tmp(1240).track(tmp3.CREATE_GUILD_VIEWED, obj7);
+      const tmpResult4 = tmp(1240);
     }
   }
   let tmp = closure_13();
@@ -114,7 +114,7 @@ export default function CreationIntent(arg0) {
   const items3 = [closure_12(ref, obj4), , ];
   let obj7 = { style: tmp.sections, children: null };
   const obj8 = { hasIcons: true, children: null };
-  const tmp13 = trigger(12328);
+  const tmp13 = trigger(12457);
   const obj9 = { Icon: null, message: null, onPress: null };
   const tmp14 = native;
   if (closure_14) {
@@ -125,16 +125,16 @@ export default function CreationIntent(arg0) {
       onPress(false);
     };
     const items4 = [tmp8(tmp13, obj9), ];
-    const obj10 = { Icon: tmp2(5692).WorldIllocon, message: null, onPress: null };
+    const obj10 = { Icon: tmp2(5773).WorldIllocon, message: null, onPress: null };
     const intl6 = tmp2(1114).intl;
     obj10.message = intl6.string(tmp2(1114).t.h9Q1lG);
     obj10.onPress = function onPress() {
       onPress(true);
     };
-    items4[1] = tmp8(tmp12(12328), obj10);
+    items4[1] = tmp8(tmp12(12457), obj10);
     obj8.children = items4;
     let tmp16 = obj8;
-    const tmp12Result = tmp12(12328);
+    const tmp12Result = tmp12(12457);
   } else {
     obj9.Icon = tmp14.WorldIllocon;
     const intl3 = tmp2(1114).intl;
@@ -143,16 +143,16 @@ export default function CreationIntent(arg0) {
       onPress(true);
     };
     const items5 = [tmp8(tmp13, obj9), ];
-    const obj11 = { Icon: tmp2(5692).ChairIllocon, message: null, onPress: null };
+    const obj11 = { Icon: tmp2(5773).ChairIllocon, message: null, onPress: null };
     const intl4 = tmp2(1114).intl;
     obj11.message = intl4.string(tmp2(1114).t.uE7zcu);
     obj11.onPress = function onPress() {
       onPress(false);
     };
-    items5[1] = tmp8(tmp12(12328), obj11);
+    items5[1] = tmp8(tmp12(12457), obj11);
     obj8.children = items5;
     tmp16 = obj8;
-    const tmp12Result2 = tmp12(12328);
+    const tmp12Result2 = tmp12(12457);
   }
   obj7.children = closure_12(TableRowGroup.TableRowGroup, tmp16);
   items3[1] = closure_11(ref, obj7);

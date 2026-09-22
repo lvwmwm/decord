@@ -1,12 +1,12 @@
-// Module ID: 4689
-// Function ID: 4690
+// Module ID: 4765
+// Function ID: 4766
 // Name: GameAnalyticsUtils
-// Dependencies: [1931, 4690, 1115, 2]
+// Dependencies: [1931, 4766, 1363, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 4689 (GameAnalyticsUtils)
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4690 */;
+// Module 4765 (GameAnalyticsUtils)
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 4766 */;
 import DetectableGameStore from "DetectableGameStore" /* 1931 */;
 
 require = fn;
@@ -25,7 +25,7 @@ export const removeExecutablePathPrefix = function removeExecutablePathPrefix(ex
 };
 export const getRunningGameAnalytics = function getRunningGameAnalytics(streamApplication) {
   if (null == streamApplication) {
-    return { gameName: "Array", gameId: "call", exe: "useCallback", distributor: "variant", sku: "HermesInternal", gameMetadata: "disabled", rawExePath: "Button" };
+    return { gameName: "fill", gameId: "call", exe: "value", distributor: "rejectWithError", sku: "Array", gameMetadata: "call", rawExePath: "limit" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

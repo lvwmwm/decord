@@ -1,9 +1,9 @@
-// Module ID: 4208
-// Function ID: 4209
+// Module ID: 4284
+// Function ID: 4285
 // Name: BasicPermissionUtils
 // Dependencies: [1086, 2]
 
-// Module 4208 (BasicPermissionUtils)
+// Module 4284 (BasicPermissionUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import size from "module_2" /* 2 */;
 

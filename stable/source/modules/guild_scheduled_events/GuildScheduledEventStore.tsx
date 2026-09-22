@@ -1,10 +1,10 @@
-// Module ID: 7526
-// Function ID: 7527
+// Module ID: 7629
+// Function ID: 7630
 // Name: GuildScheduledEventStore
-// Dependencies: [502, 2021, 1963, 4195, 12, 11, 504, 573, 2]
+// Dependencies: [502, 2021, 1963, 4271, 12, 11, 504, 573, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 7526 (GuildScheduledEventStore)
+// Module 7629 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
@@ -198,7 +198,7 @@ const StaticGuildEventIndexes = {
     return "" + channel_id + "-" + obj.EVENT_UPCOMING;
   }
 };
-const secondaryIndexMap = new fn(4195).SecondaryIndexMap(function scheduledEventIndex(status) {
+const secondaryIndexMap = new fn(4271).SecondaryIndexMap(function scheduledEventIndex(status) {
   ({ guild_id, entity_id, channel_id } = status);
   const items = [guild_id];
   if (null != entity_id) {

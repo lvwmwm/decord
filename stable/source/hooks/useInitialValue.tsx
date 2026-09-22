@@ -1,10 +1,10 @@
-// Module ID: 5598
-// Function ID: 5599
+// Module ID: 5679
+// Function ID: 5680
 // Name: useInitialValue
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 5598 (useInitialValue)
+// Module 5679 (useInitialValue)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

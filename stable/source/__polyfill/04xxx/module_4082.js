@@ -1,110 +1,31 @@
 // Module ID: 4082
 // Function ID: 4083
-// Dependencies: [4021, 4083, 3651, 3654]
+// Dependencies: [4072, 3726]
 // Exports: default
 
 // Module 4082
-import subDays_mod from "subDays" /* 4021 */;
-import subMonths_mod from "subMonths" /* 4083 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
-import module_3654_mod from "module_3654" /* 3654 */;
+import module_4072_mod from "module_4072" /* 4072 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-function _typeof(arg0) {
-  if (typeof Symbol === "function") {
-    let _Symbol = Symbol;
-    if (typeof Symbol.iterator === "symbol") {
-      _typeof = function _typeof(arg0) {
-        return typeof arg0;
-      };
-    }
-    return _typeof(arg0);
-  }
-  _typeof = function _typeof(arg0) {
-    if (arg0) {
-      const _Symbol = Symbol;
-      if (typeof Symbol === "function") {
-        const _Symbol3 = Symbol;
-        if (arg0.constructor === Symbol) {
-          const _Symbol2 = Symbol;
-          let str = "symbol";
-        }
-        return str;
-      }
-    }
-    str = typeof arg0;
-  };
-}
-let subDays = subDays_mod;
-if (!subDays) {
-  const obj = { default: subDays };
+let module_4072 = module_4072_mod;
+if (!module_4072) {
+  const obj = { default: module_4072 };
   let tmp3 = obj;
 } else {
-  tmp3 = subDays;
+  tmp3 = module_4072;
 }
-subDays = tmp3;
-let subMonths = subMonths_mod;
-if (!subMonths) {
-  const obj2 = { default: subMonths };
-  let tmp5 = obj2;
-} else {
-  tmp5 = subMonths;
-}
-subMonths = tmp5;
+module_4072 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
 } else {
-  tmp7 = requiredArgs;
+  tmp5 = requiredArgs;
 }
-requiredArgs = tmp7;
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  const obj4 = { default: module_3654 };
-  let tmp9 = obj4;
-} else {
-  tmp9 = module_3654;
-}
-module_3654 = tmp9;
+requiredArgs = tmp5;
 
-export default function sub(arg0, years) {
-  requiredArgs.default(2, arguments);
-  if (years) {
-    if ("object" === _typeof(years)) {
-      let num = 0;
-      if (years.years) {
-        num = module_3654.default(years.years);
-      }
-      let num2 = 0;
-      if (years.months) {
-        num2 = module_3654.default(years.months);
-      }
-      let num3 = 0;
-      if (years.weeks) {
-        num3 = module_3654.default(years.weeks);
-      }
-      let num4 = 0;
-      if (years.days) {
-        num4 = module_3654.default(years.days);
-      }
-      let num5 = 0;
-      if (years.hours) {
-        num5 = module_3654.default(years.hours);
-      }
-      let num6 = 0;
-      if (years.minutes) {
-        num6 = module_3654.default(years.minutes);
-      }
-      let num7 = 0;
-      if (years.seconds) {
-        num7 = module_3654.default(years.seconds);
-      }
-      const _Date = Date;
-      const sum = num7 + 60 * (num6 + 60 * num5);
-      const date = new Date(subDays.default(subMonths.default(arg0, num2 + 12 * num), num4 + 7 * num3).getTime() - 1000 * sum);
-      return date;
-    }
-  }
-  return new Date(NaN);
+export default function isThisISOWeek(arg0) {
+  requiredArgs.default(1, arguments);
+  return module_4072.default(arg0, Date.now());
 };
 export default exports.default;

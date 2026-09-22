@@ -1,12 +1,12 @@
-// Module ID: 9571
-// Function ID: 9572
+// Module ID: 9695
+// Function ID: 9696
 // Name: useThermalState
-// Dependencies: [1115, 9527, 2]
+// Dependencies: [1363, 9651, 2]
 // Exports: default, getThermalState
 
-// Module 9571 (useThermalState)
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 9527 */;
+// Module 9695 (useThermalState)
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 9651 */;
 import size from "module_2" /* 2 */;
 
 const ThermalStates = { UNHANDLED: -1, [-1]: "UNHANDLED", NOMINAL: 0, [0]: "NOMINAL", FAIR: 1, [1]: "FAIR", SERIOUS: 2, [2]: "SERIOUS", CRITICAL: 3, [3]: "CRITICAL" };
@@ -46,7 +46,7 @@ export default function useThermalState() {
       } else {
         UNHANDLED = obj.UNHANDLED;
       }
-      tmp11Result = tmp11(1115);
+      tmp11Result = tmp11(1363);
     }
     obj3 = PlatformUtils;
     tmp11 = require;
@@ -88,7 +88,7 @@ export const getThermalState = function getThermalState() {
       } else {
         UNHANDLED = obj.UNHANDLED;
       }
-      tmp11Result = tmp11(1115);
+      tmp11Result = tmp11(1363);
     }
     obj3 = PlatformUtils;
     tmp11 = require;

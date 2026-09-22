@@ -1,13 +1,13 @@
-// Module ID: 17068
-// Function ID: 17069
+// Module ID: 17176
+// Function ID: 17177
 // Name: useSortedGuildIdsForSoundboard
-// Dependencies: [19, 4199, 5438, 1371, 1074, 1085, 563, 4218, 2]
+// Dependencies: [19, 4275, 5519, 1371, 1074, 1085, 563, 4294, 2]
 // Exports: useSortedGuildIdsForSoundboard
 
-// Module 17068 (useSortedGuildIdsForSoundboard)
+// Module 17176 (useSortedGuildIdsForSoundboard)
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import SortedGuildStore from "SortedGuildStore" /* 5438 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import SortedGuildStore from "SortedGuildStore" /* 5519 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = globalThis.__r;

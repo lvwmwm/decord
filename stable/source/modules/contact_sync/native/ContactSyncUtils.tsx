@@ -1,23 +1,23 @@
-// Module ID: 12684
-// Function ID: 12685
+// Module ID: 12813
+// Function ID: 12814
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5281, 12683, 12682, 1074, 1116, 4753, 1250, 573, 12685, 1935, 1232, 504, 1384, 2024, 4255, 4763, 2]
+// Dependencies: [5, 17, 5362, 12812, 12811, 1074, 1364, 4829, 1248, 573, 12814, 1935, 1230, 504, 1384, 2024, 4331, 4839, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 12684 (ContactSyncUtils)
+// Module 12813 (ContactSyncUtils)
 import initialize from "initialize" /* 504 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1116 */;
-import SentryUtilsDefault from "SentryUtils" /* 1232 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1250 */;
+import SentryUtilsDefault from "SentryUtils" /* 1230 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1364 */;
 import FlagUtils from "FlagUtils" /* 1384 */;
 import UserSettings from "UserSettings" /* 1935 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import LinkingDefault from "Linking" /* 4255 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4753 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4763 */;
-import ContactSyncManager from "ContactSyncManager" /* 12685 */;
+import LinkingDefault from "Linking" /* 4331 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4829 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+import ContactSyncManager from "ContactSyncManager" /* 12814 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5281 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5362 */;
 
 require = fn;
 let closure_18 = async function _uploadContacts(arg0, value) {
@@ -102,9 +102,9 @@ let closure_18 = async function _uploadContacts(arg0, value) {
   }
 };
 const NativeModules = fn(17).NativeModules;
-const ContactSyncPersistedStore = fn(12683);
+const ContactSyncPersistedStore = fn(12812);
 ({ useContactSyncStore: metroRequire, clearDismissState: closure_7, deleteStoredContacts: closure_8 } = ContactSyncPersistedStore);
-const ContactSyncConstants = fn(12682);
+const ContactSyncConstants = fn(12811);
 ({ CONTACT_SYNC_MODAL_KEY: closure_9, ContactPermissions: c10, ContactSyncSuggestionsSetting: closure_11 } = ContactSyncConstants);
 const Constants = fn(1074);
 ({ Endpoints: closure_12, PlatformTypes: map1, FriendDiscoveryFlags: closure_14, HelpdeskArticles: closure_15 } = Constants);

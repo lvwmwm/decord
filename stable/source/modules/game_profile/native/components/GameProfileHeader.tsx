@@ -1,14 +1,14 @@
-// Module ID: 8720
-// Function ID: 8721
+// Module ID: 8839
+// Function ID: 8840
 // Name: GameProfileHeader
-// Dependencies: [32, 19, 17, 21, 4560, 576, 4296, 8721, 4987, 8722, 4556, 2]
+// Dependencies: [32, 19, 17, 8837, 21, 4636, 576, 4373, 8840, 5068, 8841, 4632, 2]
 // Exports: default
 
-// Module 8720 (GameProfileHeader)
+// Module 8839 (GameProfileHeader)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,15 +19,15 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, artHero: null, artHeroImage: null, artHeroGradient: null, headerContent: null, shadowContainer: null, coverContainer: null, iconContainer: null, image: null, titleContainer: null, textShadow: null };
 const rect = { width: "100%", position: "absolute", top: 0, bottom: -nativeDefault.space.PX_80, left: 0, right: 0 };
 obj2.artHero = rect;
 obj2.artHeroImage = { height: "100%", width: "100%", resizeMode: "cover" };
 obj2.artHeroGradient = { position: "absolute", top: 0, bottom: 0, left: 0, right: 0 };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
-obj2.headerContent = { paddingTop: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: 520, alignSelf: "center", width: "100%" };
-let obj4 = { paddingTop: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: 520, alignSelf: "center", width: "100%" };
+obj2.headerContent = { paddingTop: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: fn(8837).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
+let obj4 = { paddingTop: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "flex-end", maxWidth: fn(8837).MOBILE_GAME_PROFILE_MAX_WIDTH, alignSelf: "center", width: "100%" };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.shadowContainer = { borderRadius: nativeDefault.radii.sm };
 let size = { width: 85, height: 114, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, overflow: "hidden" };
@@ -53,7 +53,7 @@ export default function GameProfileHeader(game) {
     scrollY = obj2.useSharedValue(0);
   }
   obj2 = ReanimatedRexport;
-  const fn = function _() {
+  const fn = function x() {
     return { top: -Math.max(0, -scrollY.get()) };
   };
   fn.__closure = { effectiveScrollY: scrollY };
@@ -67,7 +67,7 @@ export default function GameProfileHeader(game) {
   let joined;
   if (game != null) {
     const genres = game.genres;
-    const mapped = genres.map(tmp3(8721).getGenreText);
+    const mapped = genres.map(tmp3(8840).getGenreText);
     joined = mapped.join(", ");
   }
   let l30Rank;
@@ -169,7 +169,7 @@ export default function GameProfileHeader(game) {
   let tmp18Result3 = null != l30Rank;
   if (tmp18Result3) {
     const obj17 = { rank: l30Rank };
-    tmp18Result3 = tmp18(tmp14(8722), obj17);
+    tmp18Result3 = tmp18(tmp14(8841), obj17);
   }
   const items9 = [tmp18Result3, React5(Text_Text.Text, { variant: "heading-xxl/semibold", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: name }), ];
   let tmp18Result4 = null;
@@ -177,7 +177,7 @@ export default function GameProfileHeader(game) {
     tmp18Result4 = null;
     if ("" !== joined) {
       const obj19 = { variant: "text-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
-      tmp18Result4 = tmp18(tmp3(4556).Text, obj19);
+      tmp18Result4 = tmp18(tmp3(4632).Text, obj19);
     }
   }
   items9[2] = tmp18Result4;

@@ -1,21 +1,21 @@
-// Module ID: 9582
-// Function ID: 9583
+// Module ID: 9706
+// Function ID: 9707
 // Name: SuccessResultModal
-// Dependencies: [19, 17, 1957, 4199, 2011, 1074, 1482, 21, 4560, 576, 8333, 1114, 4763, 7342, 1242, 504, 4527, 4425, 1609, 7123, 9583, 4556, 4975, 2]
+// Dependencies: [19, 17, 1957, 4275, 2011, 1074, 1482, 21, 4636, 576, 8450, 1114, 4839, 7445, 1240, 504, 4603, 4502, 1609, 7226, 9707, 4632, 5056, 2]
 // Exports: default
 
-// Module 9582 (SuccessResultModal)
+// Module 9706 (SuccessResultModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4763 */;
-import transitionToGuild from "transitionToGuild" /* 7342 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+import transitionToGuild from "transitionToGuild" /* 7445 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
 
-const AnalyticsUtilsDefault = tmp(1242);
+const AnalyticsUtilsDefault = tmp(1240);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
@@ -24,7 +24,7 @@ const Constants = fn(1074);
 const AppLauncherRouteName = fn(1482).AppLauncherRouteName;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollView: { flex: 1 }, scrollViewContentContainer: null, inner: null, text: null, footer: null, footerLandscape: null, footerPortrait: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollViewContentContainer = { height: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, alignItems: "center", justifyContent: "center" };
@@ -105,8 +105,8 @@ export default function SuccessResultModal(guild) {
         id3 = tmp.id;
       }
       obj.guild_id = id3;
-      tmp9(1242).track(closure_2_10.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, obj);
-      const tmp9Result = tmp9(1242);
+      tmp9(1240).track(closure_2_10.OAUTH2_AUTHORIZE_SUCCESS_GO_TO_GUILD_CLICKED, obj);
+      const tmp9Result = tmp9(1240);
     }
   }, items1);
   let obj = guild(stateFromStores[10]);

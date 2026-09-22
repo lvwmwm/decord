@@ -1,15 +1,15 @@
-// Module ID: 16721
-// Function ID: 16722
+// Module ID: 16832
+// Function ID: 16833
 // Name: SearchTabsTransitionGroup
-// Dependencies: [19, 21, 1935, 12618, 4296, 4271, 4974, 4978, 16626, 12618, 2]
+// Dependencies: [19, 21, 1935, 12747, 4373, 4347, 5055, 5059, 16730, 12747, 2]
 // Exports: default
 
-// Module 16721 (SearchTabsTransitionGroup)
-import native from "native" /* 4271 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import spring from "spring" /* 4974 */;
-import springPresets from "springPresets" /* 4978 */;
-import Tabs from "Tabs" /* 12618 */;
+// Module 16832 (SearchTabsTransitionGroup)
+import native from "native" /* 4347 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import spring from "spring" /* 5055 */;
+import springPresets from "springPresets" /* 5059 */;
+import Tabs_Tabs from "Tabs/Tabs" /* 12747 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -76,11 +76,11 @@ function AnimatedTabs(state) {
     if (!state) {
       if (toLocaleString > 1000) {
         const _HermesInternal = HermesInternal;
-        let combined = "(" + Tabs.defaultCountFormatter(1000) + "+)";
+        let combined = "(" + Tabs_Tabs.defaultCountFormatter(1000) + "+)";
       }
       return combined;
     }
-    combined = "(" + Tabs.defaultCountFormatter(toLocaleString) + ")";
+    combined = "(" + Tabs_Tabs.defaultCountFormatter(toLocaleString) + ")";
   }, items1);
   context = sharedValue.useContext(tmp(tmp2[8]).SwipeForMemberListContext);
   const fn2 = function h() {

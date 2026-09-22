@@ -1,17 +1,17 @@
-// Module ID: 17489
-// Function ID: 17490
+// Module ID: 17601
+// Function ID: 17602
 // Name: StageChannelRequestToSpeakMessageManager
-// Dependencies: [502, 1957, 4781, 4199, 2011, 1371, 1074, 7118, 1965, 17490, 1089, 7456, 2]
+// Dependencies: [502, 1957, 4857, 4275, 2011, 1371, 1074, 7221, 1965, 17602, 1089, 7559, 2]
 
-// Module 17489 (StageChannelRequestToSpeakMessageManager)
+// Module 17601 (StageChannelRequestToSpeakMessageManager)
 import MessageTypes from "MessageTypes" /* 1089 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import MessageStore from "MessageStore" /* 4781 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import MessageStore from "MessageStore" /* 4857 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
 import UserStore from "UserStore" /* 1371 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 
 require = fn;
 const MessageFlags = fn(1074).MessageFlags;
@@ -35,8 +35,8 @@ StageChannelRequestToSpeakMessageManager.prototype["handleVoiceStateUpdates"] = 
               if (null != requestToSpeakTimestamp) {
                 user = user.getUser(userId);
                 if (null != user) {
-                  const result = tmp11(17490).sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp);
-                  const tmp11Result = tmp11(17490);
+                  const result = tmp11(17602).sendStageRequestToSpeakEphemeralMessage(channelId, user, requestToSpeakTimestamp);
+                  const tmp11Result = tmp11(17602);
                 }
               } else {
                 messages = messages.getMessages(channelId);
@@ -51,8 +51,8 @@ StageChannelRequestToSpeakMessageManager.prototype["handleVoiceStateUpdates"] = 
                   return hasFlagResult;
                 });
                 if (null != findNewestResult) {
-                  closure_1(7456).deleteMessage(channelId, findNewestResult.id, true);
-                  const obj2 = closure_1(7456);
+                  closure_1(7559).deleteMessage(channelId, findNewestResult.id, true);
+                  const obj2 = closure_1(7559);
                 }
               }
             }

@@ -1,42 +1,31 @@
 // Module ID: 4072
 // Function ID: 4073
-// Dependencies: [3654, 3650, 3651]
+// Dependencies: [4073, 3726]
 // Exports: default
 
 // Module 4072
-import module_3654_mod from "module_3654" /* 3654 */;
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import module_4073_mod from "module_4073" /* 4073 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  const obj = { default: module_3654 };
+let module_4073 = module_4073_mod;
+if (!module_4073) {
+  const obj = { default: module_4073 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3654;
+  tmp3 = module_4073;
 }
-module_3654 = tmp3;
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj2 = { default: _typeof };
-  let tmp5 = obj2;
-} else {
-  tmp5 = _typeof;
-}
-_typeof = tmp5;
+module_4073 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
 } else {
-  tmp7 = requiredArgs;
+  tmp5 = requiredArgs;
 }
-requiredArgs = tmp7;
+requiredArgs = tmp5;
 
-export default function setMinutes(module_3654, arg1) {
+export default function isSameISOWeek(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(module_3654);
-  defaultResult1.setMinutes(module_3654.default(arg1));
-  return defaultResult1;
+  return module_4073.default(arg0, arg1, { weekStartsOn: 1 });
 };
 export default exports.default;

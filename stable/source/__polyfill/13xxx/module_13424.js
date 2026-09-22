@@ -1,9 +1,9 @@
 // Module ID: 13424
 // Function ID: 13425
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 13424
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300.5, height: 175, scales: [2, 3], hash: "767971903774f3e283939a2d77b5c958", name: "server_boosts", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ce5302624e28acc38af07d238a4e16fe", name: "BellZIcon", type: "png" });

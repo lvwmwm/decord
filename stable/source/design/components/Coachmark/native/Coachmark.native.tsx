@@ -1,18 +1,18 @@
-// Module ID: 11140
-// Function ID: 11141
+// Module ID: 11273
+// Function ID: 11274
 // Name: Coachmark
-// Dependencies: [109, 32, 19, 17, 21, 4296, 4560, 576, 11136, 4981, 10237, 4971, 4556, 4975, 1114, 5680, 8908, 10236, 1115, 4271, 2]
+// Dependencies: [109, 32, 19, 17, 1074, 21, 4373, 4636, 576, 11269, 5062, 10361, 5052, 4632, 5056, 1114, 5761, 9031, 10360, 1363, 4347, 2]
 // Exports: CoachmarkContainer
 
-// Module 11140 (Coachmark)
+// Module 11273 (Coachmark)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4271 */;
-import setAccessibilityFocus from "setAccessibilityFocus" /* 4971 */;
-import Graphic from "Graphic" /* 10237 */;
+import native from "native" /* 4347 */;
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5052 */;
+import Graphic from "Graphic" /* 10361 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
 
 require = fn;
 class Coachmark {
@@ -27,7 +27,7 @@ class Coachmark {
     imgSource = global.imgSource;
     ({ position, onDismiss, buttonLabel, buttonVariant, buttonIcon, onButtonPress, gradientColor, experimental_withBlurBackground, renderImgComponent } = global);
     ({ buttonShiny, enterExitAnimatedStyles } = global);
-    tmp = closure_14();
+    tmp = closure_15();
     closure_3 = tmp;
     ref = closure_6.useRef(null);
     closure_4 = ref;
@@ -35,11 +35,11 @@ class Coachmark {
     [tmp4, closure_5] = tmp3;
     tmp5 = imgSource;
     tmp6 = renderImgComponent;
-    tmp7 = imgSource(renderImgComponent[8])(tmp4, surfaceMeasurements, targetMeasurements, position, -8 + num);
+    tmp7 = imgSource(renderImgComponent[9])(tmp4, surfaceMeasurements, targetMeasurements, position, -8 + num);
     adjustmentX = tmp7.adjustmentX;
     tmp8 = graphic;
     ({ tooltipX, tooltipY } = tmp7);
-    obj = graphic(renderImgComponent[5]);
+    obj = graphic(renderImgComponent[6]);
     sharedValue = obj.useSharedValue(0);
     closure_6 = sharedValue;
     items = [];
@@ -52,7 +52,7 @@ class Coachmark {
     callback1 = closure_6.useCallback(() => {
       const result = sharedValue.set(0);
     }, items1);
-    obj2 = graphic(renderImgComponent[9]);
+    obj2 = graphic(renderImgComponent[10]);
     buttonPressAnimationProps = obj2.useButtonPressAnimationProps(sharedValue);
     tmp13 = closure_4(buttonPressAnimationProps, closure_3);
     items2 = [, , , ];
@@ -85,10 +85,10 @@ class Coachmark {
         if (str == null) {
           str = "1/1";
         }
-        const size = { height: closure_15[str], width: "auto" };
+        const size = { height: closure_16[str], width: "auto" };
         obj3.style = size;
-        obj2.children = closure_2_10(Graphic.Graphic, obj3);
-        return closure_2_10(React5, obj2);
+        obj2.children = closure_2_11(Graphic.Graphic, obj3);
+        return closure_2_11(React5, obj2);
       } else {
         let tmp2 = null;
         if (null != renderImgComponent) {
@@ -96,12 +96,12 @@ class Coachmark {
         }
         if (null != imgSource) {
           const obj = { source: tmp3, style: closure_3.image };
-          tmp2 = closure_2_10(Image, obj);
+          tmp2 = closure_2_11(Image, obj);
         }
         let tmp7 = null;
         if (null != tmp2) {
           const obj4 = { style: closure_3.bottomMargin, children: tmp2 };
-          tmp7 = closure_2_10(React5, obj4);
+          tmp7 = closure_2_11(React5, obj4);
         }
         return tmp7;
       }
@@ -116,9 +116,9 @@ class Coachmark {
     }
     items4[1] = textOnlyPadding;
     items5 = [, ];
-    items5[0] = tmp17(graphic(renderImgComponent[12]).Text, { style: items4, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title });
+    items5[0] = tmp17(graphic(renderImgComponent[13]).Text, { style: items4, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: title });
     obj23 = { style: tmp.text, variant: "text-sm/medium", color: "text-subtle", children: description };
-    items5[1] = tmp17(tmp8(tmp6[12]).Text, obj23);
+    items5[1] = tmp17(tmp8(tmp6[13]).Text, obj23);
     obj22.children = items5;
     items3[1] = tmp14(tmp16, obj22);
     obj1.children = items3;
@@ -150,7 +150,7 @@ class Coachmark {
           obj26.shiny = buttonShiny;
         }
         obj27 = { children: null };
-        items7[1] = tmp17(tmp8(tmp6[13]).Button, obj26);
+        items7[1] = tmp17(tmp8(tmp6[14]).Button, obj26);
         obj27.children = items7;
         tmp14Result = tmp14(tmp15, obj27);
       }
@@ -158,14 +158,14 @@ class Coachmark {
     obj28 = { children: null };
     items6[1] = tmp19;
     obj29 = { accessibilityRole: "button", accessibilityLabel: null, style: null, onPress: null, onPressIn: null, onPressOut: null, children: null };
-    intl = tmp8(tmp6[14]).intl;
-    obj29.accessibilityLabel = intl.string(tmp8(tmp6[14]).t.cpT0Cq);
+    intl = tmp8(tmp6[15]).intl;
+    obj29.accessibilityLabel = intl.string(tmp8(tmp6[15]).t.cpT0Cq);
     obj29.style = tmp.closeButton;
     obj29.onPress = onDismiss;
     obj29.onPressIn = callback;
     obj29.onPressOut = callback1;
-    obj30 = { size: "xs", color: tmp5(tmp6[7]).colors.ICON_STRONG };
-    obj29.children = tmp17(tmp8(tmp6[15]).XSmallIcon, obj30);
+    obj30 = { size: "xs", color: tmp5(tmp6[8]).colors.ICON_STRONG };
+    obj29.children = tmp17(tmp8(tmp6[16]).XSmallIcon, obj30);
     items6[2] = tmp17(Pressable, obj29);
     obj28.children = items6;
     tmp14Result1 = tmp14(tmp15, obj28);
@@ -174,7 +174,7 @@ class Coachmark {
       obj31.style = tmp.bodyContainer;
       obj31.pressed = sharedValue;
       obj31.children = tmp14Result1;
-      tmp17Result = tmp17(tmp8(tmp6[16]).BackgroundBlurView, obj31);
+      tmp17Result = tmp17(tmp8(tmp6[17]).BackgroundBlurView, obj31);
     } else {
       obj32 = { style: null, children: null };
       items8 = [, ];
@@ -185,8 +185,8 @@ class Coachmark {
         obj33 = { style: null, color: null, backgroundColor: null };
         obj33.style = tmp.gradient;
         obj33.color = gradientColor;
-        obj33.backgroundColor = tmp5(tmp6[7]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT;
-        tmp17Result1 = tmp17(tmp8(tmp6[17]).ExpressiveGradient, obj33);
+        obj33.backgroundColor = tmp5(tmp6[8]).colors.MOBILE_COACHMARK_BACKGROUND_DEFAULT;
+        tmp17Result1 = tmp17(tmp8(tmp6[18]).ExpressiveGradient, obj33);
       }
       items9 = [, ];
       items9[0] = tmp17Result1;
@@ -205,7 +205,7 @@ class Coachmark {
     };
     items10 = [, , ];
     items10[0] = tmp.container;
-    tmp8Result = tmp8(tmp6[18]);
+    tmp8Result = tmp8(tmp6[19]);
     shadow = undefined;
     if (tmp8Result.isIOS()) {
       shadow = tmp.shadow;
@@ -227,14 +227,14 @@ class Coachmark {
     items11 = [, , ];
     items11[0] = tmp17Result2;
     obj36 = {};
-    tmp27 = closure_13;
+    tmp27 = closure_14;
     merged = Object.assign(tmp13);
     obj36.onAccessibilityEscape = onDismiss;
     obj36.accessible = false;
     obj36.onPress = onDismiss;
     items12 = [, ];
     items12[0] = tmp.body;
-    tmp8Result1 = tmp8(tmp6[18]);
+    tmp8Result1 = tmp8(tmp6[19]);
     if (tmp8Result1.isAndroid()) {
       items13 = [, ];
       items13[0] = tmp.shadow;
@@ -261,7 +261,7 @@ class Coachmark {
 }
 function Cursor(arg0) {
   ({ position, adjustmentX } = arg0);
-  const tmp = closure_14();
+  const tmp = closure_15();
   let str = "column";
   if ("top" === position) {
     str = "column-reverse";
@@ -269,18 +269,19 @@ function Cursor(arg0) {
   const obj = { style: null, children: null };
   const items = [tmp.cursorContainer, "top" === position ? { marginTop: -6 } : { marginBottom: -6 }, { flexDirection: str, left: -adjustmentX }];
   obj.style = items;
-  const items1 = [closure_1_10(React5, { style: tmp.cursorHead }), closure_1_10(React5, { style: tmp.cursorSpine })];
+  const items1 = [closure_1_11(React5, { style: tmp.cursorHead }), closure_1_11(React5, { style: tmp.cursorSpine })];
   obj.children = items1;
-  return closure_1_11(React5, obj);
+  return closure_1_12(React5, obj);
 }
 let closure_3 = ["style"];
 get_ActivityIndicator = fn(17);
 ({ View: closure_7, Pressable } = get_ActivityIndicator);
 const Image = get_ActivityIndicator.Image;
+const ThemeTypes = fn(1074).ThemeTypes;
 const jsxProd = fn(21);
-({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-let closure_13 = ReanimatedRexport.createAnimatedComponent(Pressable);
-const createStyles = fn(4560);
+({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
+let closure_14 = ReanimatedRexport.createAnimatedComponent(Pressable);
+const createStyles = fn(4636);
 let obj = { container: { position: "absolute", alignItems: "center" }, shadow: null, body: null, textGap: null, textOnlyPadding: null, bodyBgColor: null, gradient: null, bodyContainer: null, center: null, buttonSpacing: null, text: null, cursorContainer: null, cursorHead: null, cursorSpine: null, image: null, bottomMargin: null, closeButton: null };
 let merged = Object.assign(nativeDefault.shadows.SHADOW_BUTTON_OVERLAY);
 obj.shadow = {};
@@ -309,19 +310,19 @@ let obj9 = { height: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
 obj.bottomMargin = { marginBottom: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
 const rect = { position: "absolute", top: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING, right: nativeDefault.modules.mobile.COACHMARK_BUTTON_SPACING };
 obj.closeButton = rect;
-const value = createStyles.createStyles(obj);
-let closure_15 = { "21/9": 90, "16/9": 90, "6/4": 60, "2/1": 40, "1/1": 40 };
+const __initData = createStyles.createStyles(obj);
+let closure_16 = { "21/9": 90, "16/9": 90, "6/4": 60, "2/1": 40, "1/1": 40 };
 size = fn(2);
 let result = size.fileFinishedImporting("design/components/Coachmark/native/Coachmark.native.tsx");
 
 export { Coachmark };
 export const CoachmarkContainer = function CoachmarkContainer(experimental_withBlurBackground) {
-  let str = "dark";
-  if (!experimental_withBlurBackground.experimental_withBlurBackground) {
-    str = obj.useThemeContext().theme;
+  let DARK = native.useThemeContext().theme;
+  if (experimental_withBlurBackground.experimental_withBlurBackground) {
+    DARK = ThemeTypes.DARK;
   }
-  const obj2 = { theme: str, children: null };
+  const obj2 = { theme: DARK, children: null };
   const merged = Object.assign(experimental_withBlurBackground);
-  obj2.children = closure_1_10(Coachmark, {});
-  return closure_1_10(native.ThemeContextProvider, obj2);
+  obj2.children = closure_1_11(Coachmark, {});
+  return closure_1_11(native.ThemeContextProvider, obj2);
 };

@@ -1,0 +1,14 @@
+// Module ID: 10893
+// Function ID: 10894
+// Name: DATA_LENGTH
+// Dependencies: [1636]
+
+// Module 10893 (DATA_LENGTH)
+import cancelAnimation from "cancelAnimation" /* 1636 */;
+
+const obj = { easeOutQuart: null };
+const Easing = cancelAnimation.Easing;
+obj.easeOutQuart = Easing.bezier(0.25, 1, 0.5, 1);
+
+export const DATA_LENGTH = { SINGLE_ITEM: 1, [1]: "SINGLE_ITEM", DOUBLE_ITEM: 2, [2]: "DOUBLE_ITEM" };
+export const Easing = obj;

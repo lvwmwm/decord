@@ -1,13 +1,13 @@
-// Module ID: 11007
-// Function ID: 11008
+// Module ID: 11140
+// Function ID: 11141
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1074, 21, 4560, 576, 7168, 10807, 1396, 8831, 4556, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 576, 7271, 10934, 1396, 8952, 4632, 2]
 // Exports: default
 
-// Module 11007 (SocialLayerStorefrontGiftProductDetails)
+// Module 11140 (SocialLayerStorefrontGiftProductDetails)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8831 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8952 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 const constants = fn(1074).PriceSetAssignmentPurchaseTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, marginHorizontal: nativeDefault.space.PX_16 }, text: null, appInfo: null, appIcon: null };
 let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, borderWidth: 2, borderColor: nativeDefault.colors.BACKGROUND_BRAND, borderRadius: nativeDefault.radii.lg, marginHorizontal: nativeDefault.space.PX_16 };
 obj2.text = { flex: 1, gap: nativeDefault.space.PX_4 };
@@ -32,9 +32,9 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
   sku = sku.sku;
   let getOrFetchApplication;
   const tmp = closure_9();
-  getOrFetchApplication = getOrFetchApplication(7168).useGetOrFetchApplication(sku.applicationId);
-  let obj = getOrFetchApplication(7168);
-  const userPrice = getOrFetchApplication(10807).useFormattedSKUPrice({ sku, priceSetAssignmentPurchaseType: constants.GIFT }).userPrice;
+  getOrFetchApplication = getOrFetchApplication(7271).useGetOrFetchApplication(sku.applicationId);
+  let obj = getOrFetchApplication(7271);
+  const userPrice = getOrFetchApplication(10934).useFormattedSKUPrice({ sku, priceSetAssignmentPurchaseType: constants.GIFT }).userPrice;
   const items = [getOrFetchApplication];
   const memo = noop.useMemo(() => {
     let applicationIconURL = null;
@@ -61,17 +61,17 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     }
     const items2 = [tmp8Result, ];
     const obj9 = { variant: "text-sm/medium", color: "text-muted", children: getOrFetchApplication.name };
-    items2[1] = tmp8(tmp2(4556).Text, obj9);
+    items2[1] = tmp8(tmp2(4632).Text, obj9);
     obj6.children = items2;
     tmp6Result = tmp6(tmp7, obj6);
   }
-  const items3 = [tmp6Result, closure_7(getOrFetchApplication(4556).Text, { variant: "text-md/semibold", children: sku.name })];
+  const items3 = [tmp6Result, closure_7(getOrFetchApplication(4632).Text, { variant: "text-md/semibold", children: sku.name })];
   obj5.children = items3;
   items1[1] = closure_8(closure_5, obj5);
   let tmp8Result2 = null != userPrice;
   if (tmp8Result2) {
     const obj11 = { variant: "text-md/semibold", children: userPrice };
-    tmp8Result2 = tmp8(tmp2(4556).Text, obj11);
+    tmp8Result2 = tmp8(tmp2(4632).Text, obj11);
   }
   items1[2] = tmp8Result2;
   obj4.children = items1;

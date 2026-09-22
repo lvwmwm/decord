@@ -1,13 +1,13 @@
-// Module ID: 13024
-// Function ID: 13025
+// Module ID: 13154
+// Function ID: 13155
 // Name: useTrackUserProfileActivityAction
-// Dependencies: [19, 8797, 8191, 7162, 504, 8192, 2]
+// Dependencies: [19, 8918, 8307, 7265, 504, 8308, 2]
 // Exports: default
 
-// Module 13024 (useTrackUserProfileActivityAction)
+// Module 13154 (useTrackUserProfileActivityAction)
 import _mod19 from "module_19" /* 19 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8192 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8797 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8308 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8918 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

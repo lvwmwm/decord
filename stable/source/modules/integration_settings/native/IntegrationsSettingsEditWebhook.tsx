@@ -1,36 +1,36 @@
-// Module ID: 16853
-// Function ID: 16854
+// Module ID: 16965
+// Function ID: 16966
 // Name: IntegrationsSettingsEditWebhook
-// Dependencies: [19, 2012, 4199, 4209, 1371, 1074, 21, 4560, 576, 4271, 1115, 7871, 5624, 7864, 1114, 16846, 11334, 1272, 7190, 4905, 4994, 4556, 8599, 4973, 16854, 1396, 6606, 5687, 5605, 4713, 1178, 5028, 1483, 7040, 2]
+// Dependencies: [19, 2012, 4275, 4285, 1371, 1074, 21, 4636, 576, 4347, 1363, 7973, 5705, 7966, 1114, 16958, 11466, 1270, 7292, 4981, 5075, 4632, 8716, 5054, 16966, 1396, 6707, 5768, 5686, 4789, 1176, 5109, 1483, 7143, 2]
 // Exports: default
 
-// Module 16853 (IntegrationsSettingsEditWebhook)
+// Module 16965 (IntegrationsSettingsEditWebhook)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
 import AvatarUtils from "AvatarUtils" /* 1396 */;
 import useNavigation from "useNavigation" /* 1483 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 4905 */;
-import common_AlertDefault from "common/Alert" /* 4994 */;
-import NavScrim from "NavScrim" /* 7040 */;
-import ClipboardUtils from "ClipboardUtils" /* 7190 */;
-import HeaderShared from "HeaderShared" /* 7864 */;
-import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 7871 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11334 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16846 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 4981 */;
+import common_AlertDefault from "common/Alert" /* 5075 */;
+import NavScrim from "NavScrim" /* 7143 */;
+import ClipboardUtils from "ClipboardUtils" /* 7292 */;
+import HeaderShared from "HeaderShared" /* 7966 */;
+import PressableNavigatorModalIconDefault from "PressableNavigatorModalIcon" /* 7973 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11466 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16958 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 import UserStore from "UserStore" /* 1371 */;
 
-const IconLabelBlockDefault = tmp8(16854);
+const IconLabelBlockDefault = tmp8(16966);
 require = fn;
 let closure_3 = fn(2012).GUILD_SELECTABLE_CHANNELS_KEY;
 const Constants = fn(1074);
 ({ Endpoints: closure_7, NON_USER_BOT_DISCRIMINATOR: closure_8, Permissions: closure_9, WebhookTypes: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { form: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, row: null, channelIcon: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.row = { padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
@@ -122,7 +122,7 @@ class EditWebhook extends PureComponent {
         obj2.title = intl.string(navigation(1114).t.N5riYn);
         const intl2 = navigation(1114).intl;
         obj2.body = intl2.string(navigation(1114).t["/4TwKf"]);
-        closure_1_1(4905).show(obj2);
+        closure_1_1(4981).show(obj2);
       });
     };
     applyArgumentsResult.handleDeleteWebhook = function handleDeleteWebhook() {
@@ -261,49 +261,49 @@ prototype["render"] = function render() {
     }
   }
   obj5.errorMessage = first;
-  items1[1] = closure_11(webhookId(6606).TextInput, obj5);
+  items1[1] = closure_11(webhookId(6707).TextInput, obj5);
   const obj6 = { title: null, hasIcons: true, children: null };
   const intl4 = tmp3(1114).intl;
   obj6.title = intl4.string(webhookId(1114).t.GK18KJ);
   const obj7 = { label: null, arrow: true, onPress: null, icon: null };
-  const tmp2Result = closure_11(webhookId(4556).Text, { variant: "text-sm/medium", color: "text-link", children: stringResult });
+  const tmp2Result = closure_11(webhookId(4632).Text, { variant: "text-sm/medium", color: "text-link", children: stringResult });
   const tmp7 = closure_12;
-  obj7.label = webhookId(4713).computeChannelName(channel, UserStore, RelationshipStore);
+  obj7.label = webhookId(4789).computeChannelName(channel, UserStore, RelationshipStore);
   obj7.onPress = self.handleChannelChange;
-  const obj8 = { size: webhookId(1178).Icon.Sizes.CUSTOM, source: null, style: null };
-  const tmp3Result = webhookId(4713);
-  obj8.source = webhookId(5028).getChannelIcon(channel);
+  const obj8 = { size: webhookId(1176).Icon.Sizes.CUSTOM, source: null, style: null };
+  const tmp3Result = webhookId(4789);
+  obj8.source = webhookId(5109).getChannelIcon(channel);
   obj8.style = tmp.channelIcon;
-  obj7.icon = closure_11(webhookId(1178).Icon, obj8);
-  obj6.children = closure_11(webhookId(5605).TableRow, obj7);
-  items1[2] = closure_11(webhookId(5687).TableRowGroup, obj6);
+  obj7.icon = closure_11(webhookId(1176).Icon, obj8);
+  obj6.children = closure_11(webhookId(5686).TableRow, obj7);
+  items1[2] = closure_11(webhookId(5768).TableRowGroup, obj6);
   let tmp2Result4 = null;
   if (null != token) {
     const obj9 = { title: null, hasIcons: false, children: null };
     const intl5 = tmp3(1114).intl;
     obj9.title = intl5.string(tmp3(1114).t.SFdvF1);
     const obj10 = { label: null, onPress: null, trailing: null };
-    const aPIBaseURL = tmp3(1272).getAPIBaseURL(false);
+    const aPIBaseURL = tmp3(1270).getAPIBaseURL(false);
     const _HermesInternal = HermesInternal;
     obj10.label = "" + aPIBaseURL + closure_7.WEBHOOK_INTEGRATION(webhookId, token);
     obj10.onPress = self.handleCopyUrl;
     obj10.trailing = tmp2Result;
-    obj9.children = tmp2(tmp3(5605).TableRow, obj10);
-    tmp2Result4 = tmp2(tmp3(5687).TableRowGroup, obj9);
-    const tmp3Result4 = tmp3(1272);
+    obj9.children = tmp2(tmp3(5686).TableRow, obj10);
+    tmp2Result4 = tmp2(tmp3(5768).TableRowGroup, obj9);
+    const tmp3Result4 = tmp3(1270);
   }
   items1[3] = tmp2Result4;
   const obj11 = { hasIcons: false, children: null };
   const obj12 = { variant: "danger", onPress: self.handleDeleteWebhook, label: null };
   const intl6 = tmp3(1114).intl;
   obj12.label = intl6.string(webhookId(1114).t.oyYWHE);
-  obj11.children = closure_11(webhookId(5605).TableRow, obj12);
-  items1[4] = closure_11(webhookId(5687).TableRowGroup, obj11);
+  obj11.children = closure_11(webhookId(5686).TableRow, obj12);
+  items1[4] = closure_11(webhookId(5768).TableRowGroup, obj11);
   obj2.children = items1;
-  obj.children = tmp7(webhookId(4973).Stack, obj2);
-  return closure_11(webhookId(8599).Form, obj);
+  obj.children = tmp7(webhookId(5054).Stack, obj2);
+  return closure_11(webhookId(8716).Form, obj);
 };
-EditWebhook.contextType = fn(4271).ThemeContext;
+EditWebhook.contextType = fn(4347).ThemeContext;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/integration_settings/native/IntegrationsSettingsEditWebhook.tsx");
 

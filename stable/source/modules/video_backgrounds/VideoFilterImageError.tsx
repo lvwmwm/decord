@@ -1,11 +1,11 @@
-// Module ID: 9105
-// Function ID: 9106
+// Module ID: 9228
+// Function ID: 9229
 // Name: VideoFilterImageError
-// Dependencies: [1272, 1114, 2]
+// Dependencies: [1270, 1114, 2]
 
-// Module 9105 (VideoFilterImageError)
+// Module 9228 (VideoFilterImageError)
 import util from "util" /* 1114 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
 import size from "module_2" /* 2 */;
 
 const constants = { ASSET_SIZE: "BINARY_TYPE_MAX_SIZE" };

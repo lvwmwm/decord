@@ -1,13 +1,13 @@
-// Module ID: 7246
-// Function ID: 7247
+// Module ID: 7352
+// Function ID: 7353
 // Name: isAccessibleChannelOrThreadPath
-// Dependencies: [5, 2013, 7096, 1957, 2015, 1979, 1074, 1964, 7247, 7250, 7259, 7226, 7262, 7264, 7222, 7265, 7266, 4473, 7267, 7224, 1369, 7314, 4573, 4714, 2]
+// Dependencies: [5, 2013, 7199, 1957, 2015, 1979, 1074, 1964, 7347, 7353, 7362, 7329, 7365, 7367, 7325, 7368, 7369, 4549, 7370, 7327, 1369, 7417, 4649, 4790, 2]
 // Exports: default
 
-// Module 7246 (isAccessibleChannelOrThreadPath)
+// Module 7352 (isAccessibleChannelOrThreadPath)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GatedChannelStore from "GatedChannelStore" /* 2013 */;
-import GuildOnboardingStore from "GuildOnboardingStore" /* 7096 */;
+import GuildOnboardingStore from "GuildOnboardingStore" /* 7199 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildRoleStore from "GuildRoleStore" /* 2015 */;
 import GuildStore from "GuildStore" /* 1979 */;

@@ -1,21 +1,21 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 17853
+// Function ID: 17854
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4560, 576, 1611, 38, 17740, 7150, 6627, 4556, 1178, 4975, 4527, 1114, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 1611, 38, 17854, 7253, 6728, 4632, 1176, 5056, 4603, 1114, 2]
 // Exports: default
 
-// Module 17739 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 17853 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
+import native from "native" /* 1176 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import components_Button_Button from "components/Button/Button" /* 4975 */;
-import BottomSheetModal from "BottomSheetModal" /* 6627 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7150 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17740 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import components_Button_Button from "components/Button/Button" /* 5056 */;
+import BottomSheetModal from "BottomSheetModal" /* 6728 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7253 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 17854 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 }, cancel: { alignSelf: "center" } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,9 +1,9 @@
 // Module ID: 1884
 // Function ID: 1885
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 1884
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
 export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 184, height: 184, scales: [1], hash: "0910d1721e6366e2c8c6c1e76a322e5a", name: "no-app-icon", type: "png" });

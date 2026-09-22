@@ -1,10 +1,10 @@
-// Module ID: 17313
-// Function ID: 17314
+// Module ID: 17424
+// Function ID: 17425
 // Name: ExistingUserAgeGateConfirm
-// Dependencies: [5, 32, 19, 17, 1074, 21, 4560, 1483, 7123, 4556, 1114, 2024, 4975, 2]
+// Dependencies: [5, 32, 19, 17, 1074, 21, 4636, 1483, 7226, 4632, 1114, 2024, 5056, 2]
 // Exports: default
 
-// Module 17313 (ExistingUserAgeGateConfirm)
+// Module 17424 (ExistingUserAgeGateConfirm)
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_10 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center", justifyContent: "center" }, header: { textAlign: "center", marginBottom: 8 }, body: { textAlign: "center", lineHeight: 20, marginBottom: 16 }, buttonWrapper: { width: "100%" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/age_gate/native/components/ExistingUserAgeGateConfirm.tsx");
@@ -51,14 +51,14 @@ export default function ExistingUserAgeGateConfirm(age) {
   const obj3 = { style: tmp.header, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = onConfirm(1114).intl;
   obj3.children = intl.format(onConfirm(1114).t.wumolR, { age: age.age });
-  const items = [closure_8(onConfirm(4556).Text, obj3), , ];
+  const items = [closure_8(onConfirm(4632).Text, obj3), , ];
   const obj4 = { style: tmp.body, variant: "text-md/medium", color: "interactive-text-default", children: null };
   const intl2 = onConfirm(1114).intl;
   const obj5 = { helpURL: null };
   const tmp2 = _slicedToArray(noop.useState(false), 2);
   obj5.helpURL = HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.AGE_GATE);
   obj4.children = intl2.format(onConfirm(1114).t.n3QjDE, obj5);
-  items[1] = closure_8(onConfirm(4556).Text, obj4);
+  items[1] = closure_8(onConfirm(4632).Text, obj4);
   const obj7 = { style: tmp.buttonWrapper, children: null };
   const obj8 = { loading: tmp3, disabled: tmp3, text: null, onPress: null, grow: true };
   const intl3 = onConfirm(1114).intl;
@@ -73,8 +73,8 @@ export default function ExistingUserAgeGateConfirm(age) {
     }
     return applyArgumentsResult;
   };
-  obj7.children = closure_8(onConfirm(4975).Button, obj8);
+  obj7.children = closure_8(onConfirm(5056).Button, obj8);
   items[2] = closure_8(View, obj7);
   obj2.children = items;
-  return closure_9(onConfirm(7123).SafeAreaPaddingView, obj2);
+  return closure_9(onConfirm(7226).SafeAreaPaddingView, obj2);
 };

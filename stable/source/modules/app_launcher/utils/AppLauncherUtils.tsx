@@ -1,24 +1,24 @@
-// Module ID: 9295
-// Function ID: 9296
+// Module ID: 9418
+// Function ID: 9419
 // Name: AppLauncherUtils
-// Dependencies: [109, 5, 9296, 1918, 9414, 1074, 4999, 4553, 1114, 8862, 9416, 1115, 1894, 7523, 9417, 7682, 7456, 4904, 1396, 9415, 9423, 7521, 9424, 2]
+// Dependencies: [109, 5, 9419, 1918, 9538, 1074, 5080, 4629, 1114, 8981, 9540, 1363, 1894, 7626, 9541, 7784, 7559, 4980, 1396, 9539, 9547, 7624, 9548, 2]
 // Exports: appLauncherShowsRecommendations, ensureRecommendationSectionsOnlyContainActivities, executeAppLauncherCommand, formatPrimaryEntryPointCommandName, getApplicationDetails, getEmbeddedActivityConfig, getInstallAppProps, getInstallAppPropsFromProfileApplication, getSectionDescription, getSectionName, getShelfBadgeNameIfActive, isAppAvailableInAppLauncher, isApplicationAdSupported, isApplicationMonetizedWithIAP, isEmbeddedApp, isPartnerApplication, isPromotedApplication, isRealApplication
 
-// Module 9295 (AppLauncherUtils)
+// Module 9418 (AppLauncherUtils)
 import util from "util" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
 import Server from "Server" /* 1894 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7521 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8862 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9415 */;
-import getPlatformDefault from "getPlatform" /* 9416 */;
-import ApplicationInstallUtils from "ApplicationInstallUtils" /* 9424 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7624 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8981 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 9539 */;
+import getPlatformDefault from "getPlatform" /* 9540 */;
+import ApplicationInstallUtils from "ApplicationInstallUtils" /* 9548 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9296 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 9419 */;
 import ApplicationRecord from "ApplicationRecord" /* 1918 */;
-import AppLauncherStore from "AppLauncherStore" /* 9414 */;
+import AppLauncherStore from "AppLauncherStore" /* 9538 */;
 
 const require = globalThis.__r;
 
@@ -69,8 +69,8 @@ function getShelfBadgeTypeIfActive(application) {
 }
 let closure_3 = ["fakeAppIconURL"];
 const ApplicationFlags = fn(1074).ApplicationFlags;
-const BuiltInSectionId = fn(4999).BuiltInSectionId;
-const MessageSendLocation = fn(4553).MessageSendLocation;
+const BuiltInSectionId = fn(5080).BuiltInSectionId;
+const MessageSendLocation = fn(4629).MessageSendLocation;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/app_launcher/utils/AppLauncherUtils.tsx");
 

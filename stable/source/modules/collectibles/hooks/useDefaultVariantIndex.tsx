@@ -1,11 +1,11 @@
-// Module ID: 8771
-// Function ID: 8772
+// Module ID: 8891
+// Function ID: 8892
 // Name: useDefaultVariantIndex
-// Dependencies: [7558, 504, 7553, 2]
+// Dependencies: [7660, 504, 7656, 2]
 // Exports: useDefaultVariantIndex
 
-// Module 8771 (useDefaultVariantIndex)
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7558 */;
+// Module 8891 (useDefaultVariantIndex)
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7660 */;
 
 const require = globalThis.__r;
 

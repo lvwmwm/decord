@@ -1,0 +1,80 @@
+// Module ID: 11917
+// Function ID: 11918
+// Name: OrbsRewardBackground
+// Dependencies: [32, 19, 4628, 1895, 21, 504, 1093, 5668, 11918, 8425, 11919, 2]
+// Exports: OrbsRewardBackground
+
+// Module 11917 (OrbsRewardBackground)
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef11918 from "module_11918" /* 11918 */;
+import _slicedToArray from "module_32" /* 32 */;
+import noop from "module_19" /* 19 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import AppStateStore from "AppStateStore" /* 1895 */;
+
+const _modDef11919 = tmp15(11919);
+const require = fn;
+const jsxProd = fn(21);
+({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/virtual_currency/native/OrbsRewardBackground.tsx");
+
+export const OrbsRewardBackground = function OrbsRewardBackground(arg0) {
+  ({ style, onReady } = arg0);
+  importDefault = undefined;
+  dependencyMap = undefined;
+  _slicedToArray = undefined;
+  noop = undefined;
+  const items = [AccessibilityStore];
+  const stateFromStores = onReady(504).useStateFromStores(items, () => useReducedMotion.useReducedMotion);
+  const obj = onReady(504);
+  let tmp = onReady;
+  const items1 = [AppStateStore];
+  const stateFromStores1 = onReady(504).useStateFromStores(items1, () => state.getState());
+  const obj2 = onReady(504);
+  [tmp6, c1] = noop.useState(false);
+  const tmp5 = _slicedToArray(noop.useState(false), 2);
+  [tmp8, c2] = noop.useState(false);
+  const callback = noop.useCallback(() => _undefined(true), []);
+  const callback1 = noop.useCallback(() => _undefined2(true), []);
+  if (!tmp6) {
+    const tmp11 = !stateFromStores;
+  }
+  _slicedToArray = tmp6;
+  noop = obj3.useRef(false);
+  const items2 = [tmp6, onReady];
+  const effect = obj3.useEffect(() => {
+    let tmp = c3;
+    if (c3) {
+      tmp = !ref.current;
+    }
+    if (tmp) {
+      ref.current = true;
+      onReady();
+    }
+  }, items2);
+  const obj4 = { source: null, style: null, resizeMode: "cover", onLoad: null };
+  const obj5 = { uri: null };
+  const tmp13 = closure_8;
+  const tmp14 = closure_7;
+  const tmp7 = _slicedToArray(noop.useState(false), 2);
+  obj5.uri = _modDef11918;
+  obj4.source = obj5;
+  obj4.style = style;
+  obj4.onLoad = callback;
+  const children = [closure_7(FastImageDefault, obj4), ];
+  let tmp14Result = !stateFromStores;
+  if (!stateFromStores) {
+    tmp14Result = stateFromStores1 === onReady(1093).AppStates.ACTIVE;
+  }
+  if (tmp14Result) {
+    const obj6 = { source: null, style: null, resizeMode: "cover", onLoad: null, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
+    const obj7 = { uri: _modDef11919 };
+    obj6.source = obj7;
+    obj6.style = style;
+    obj6.onLoad = callback1;
+    tmp14Result = tmp14(tmp(8425).VideoComponent, obj6);
+  }
+  children[1] = tmp14Result;
+  return tmp13(noop.Fragment, { children });
+};

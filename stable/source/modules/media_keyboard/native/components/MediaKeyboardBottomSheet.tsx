@@ -1,16 +1,16 @@
-// Module ID: 16766
-// Function ID: 16767
+// Module ID: 16877
+// Function ID: 16878
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1607, 1074, 21, 1608, 1115, 4560, 576, 1114, 12084, 4271, 4413, 6627, 4297, 4528, 4529, 1242, 4962, 4971, 4296, 4992, 1611, 4959, 4425, 2]
+// Dependencies: [32, 19, 17, 1607, 1074, 21, 1608, 1363, 4636, 576, 1114, 12213, 4347, 4490, 6728, 4374, 4604, 4605, 1240, 5043, 5052, 4373, 5073, 1611, 5040, 4502, 2]
 
-// Module 16766 (MediaKeyboardBottomSheet)
+// Module 16877 (MediaKeyboardBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import ChatInputUtils from "ChatInputUtils" /* 4425 */;
-import HapticUtils from "HapticUtils" /* 4528 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4529 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import ChatInputUtils from "ChatInputUtils" /* 4502 */;
+import HapticUtils from "HapticUtils" /* 4604 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4605 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -32,9 +32,9 @@ const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const MetaQuestUtils = fn(1608);
 let closure_11 = MetaQuestUtils.isMetaQuest();
-const PlatformUtils = fn(1115);
+const PlatformUtils = fn(1363);
 const IS_IOS = PlatformUtils.isIOS();
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { background: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, borderRadius: nativeDefault.modules.mobile.MOBILE_MEDIA_KEYBOARD_TOP_BORDER_RADIUS } };
 let closure_13 = createStyles.createStyles(obj);
 const __initData = { code: "function MediaKeyboardBottomSheetTsx1(){const{animatedIndex}=this.__closure;return animatedIndex.get()>=0;}" };

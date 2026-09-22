@@ -1,9 +1,9 @@
-// Module ID: 11842
-// Function ID: 11843
+// Module ID: 11971
+// Function ID: 11972
 // Name: GuildSettingsModalMembersStore
 // Dependencies: [2021, 1074, 504, 573, 2]
 
-// Module 11842 (GuildSettingsModalMembersStore)
+// Module 11971 (GuildSettingsModalMembersStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;

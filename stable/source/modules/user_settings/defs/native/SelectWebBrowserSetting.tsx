@@ -1,14 +1,14 @@
-// Module ID: 15479
-// Function ID: 15480
+// Module ID: 15563
+// Function ID: 15564
 // Name: SelectWebBrowserSetting
-// Dependencies: [7976, 4525, 1114, 1093, 1115, 11473, 2]
+// Dependencies: [8079, 4601, 1114, 1093, 1363, 11605, 2]
 // Exports: useWebBrowserSettingOptions
 
-// Module 15479 (SelectWebBrowserSetting)
+// Module 15563 (SelectWebBrowserSetting)
 import util from "util" /* 1114 */;
-import BrowserManager from "BrowserManager" /* 4525 */;
-import SettingsConstants from "SettingsConstants" /* 7976 */;
-import SettingBuilders from "SettingBuilders" /* 11473 */;
+import BrowserManager from "BrowserManager" /* 4601 */;
+import SettingsConstants from "SettingsConstants" /* 8079 */;
+import SettingBuilders from "SettingBuilders" /* 11605 */;
 import size from "module_2" /* 2 */;
 
 function useWebBrowserSettingOptions() {
@@ -33,7 +33,7 @@ function useWebBrowserSettingOptions() {
   if (!browserManagerIsChromeInstalled) {
     return items;
   } else {
-    const tmpResult2 = tmp(1115);
+    const tmpResult2 = tmp(1363);
     const intl3 = tmp(1114).intl;
     const string = intl3.string;
     let t = tmp(1114).t;
@@ -46,7 +46,7 @@ function useWebBrowserSettingOptions() {
     CHROME = tmp(1093).WebBrowserType.CHROME;
     obj5.value = CHROME;
     t = items.push(obj5);
-    isAndroidResult = tmp(1115).isAndroid();
+    isAndroidResult = tmp(1363).isAndroid();
   }
 }
 const radio = SettingBuilders.createRadio({

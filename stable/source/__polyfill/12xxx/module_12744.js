@@ -1,9 +1,9 @@
 // Module ID: 12744
 // Function ID: 12745
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 12744
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hub/native/images", width: 119, height: 83, scales: [2, 3], hash: "0b100afac52015c470ea1ec3ef8acf50", name: "redesign_email_header", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 240, height: 130, scales: [2, 3], hash: "c5a514a204d76328abe2ecbd82735ce3", name: "no_mutual_friends_dark", type: "png" });

@@ -1,9 +1,9 @@
-// Module ID: 4703
-// Function ID: 4704
+// Module ID: 4779
+// Function ID: 4780
 // Name: PopoutWindowStore
 // Dependencies: [504, 573, 2]
 
-// Module 4703 (PopoutWindowStore)
+// Module 4779 (PopoutWindowStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

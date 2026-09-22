@@ -1,9 +1,9 @@
 // Module ID: 11343
 // Function ID: 11344
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 11343
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following/dark", width: 280, height: 120, scales: [2, 3], hash: "9c2cfd53ed0ab3abd70ee33b26a982e5", name: "channel_following_success_2", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "fe0742351cd038dd9567f8c1afd0c1cd", name: "CirclePlusIcon-primary", type: "png" });

@@ -1,7 +1,7 @@
 // Module ID: 1914
 // Function ID: 1915
 // Name: ClipsStore
-// Dependencies: [5, 1915, 502, 5132, 1074, 4607, 4182, 13993, 38, 13678, 4612, 1384, 13994, 13996, 13997, 504, 1908, 573, 2]
+// Dependencies: [5, 1915, 502, 5213, 1074, 4683, 4257, 14078, 38, 13764, 4688, 1384, 14079, 14081, 14082, 504, 1908, 573, 2]
 
 // Module 1914 (ClipsStore)
 import _modDef38 from "module_38" /* 38 */;
@@ -9,12 +9,12 @@ import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FlagUtils from "FlagUtils" /* 1384 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import DiscordNativeDefault from "DiscordNative" /* 4182 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4612 */;
-import isClipsEnabled from "isClipsEnabled" /* 13678 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 13994 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 13996 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 13997 */;
+import DiscordNativeDefault from "DiscordNative" /* 4257 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4688 */;
+import isClipsEnabled from "isClipsEnabled" /* 13764 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 14079 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14081 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14082 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 1915 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -117,31 +117,22 @@ function recordPOVMatches(arg0, arg1) {
   const nextResult = iter.next();
   while (iter !== undefined) {
     let tmp2 = nextResult;
-    let obj = clipPOVOverlap;
-    let clipAttachmentPOVWindow = obj.getClipAttachmentPOVWindow(nextResult);
-    if (null != clipAttachmentPOVWindow) {
-      let iter2 = arg1[Symbol.iterator]();
-      let nextResult1 = iter2.next();
-      while (iter2 !== undefined) {
-        let tmp12 = nextResult1;
-        let tmp14 = require;
-        obj2 = clipPOVOverlap;
-        let clipAttachmentPOVWindow1 = obj2.getClipAttachmentPOVWindow(nextResult1);
-        if (null != clipAttachmentPOVWindow1) {
-          let tmp14Result = tmp14(13994);
-          if (null != tmp14Result.getClipPOVOverlapMilliseconds(tmp8, tmp18)) {
-            let items1 = map.get(tmp2.id);
-            if (items1 == null) {
-              items1 = [];
-            }
-            let items = [];
-            items[HermesBuiltin.arraySpread(items1, 0)] = tmp12;
-            let result = map.set(tmp2.id, items);
-            flag = true;
-          }
+    let iter2 = arg1[Symbol.iterator]();
+    let nextResult1 = iter2.next();
+    while (iter2 !== undefined) {
+      let tmp7 = nextResult1;
+      let obj = clipPOVOverlap;
+      if (null != obj.getClipPOVOverlapMilliseconds(tmp2, nextResult1)) {
+        let items1 = map.get(tmp2.attachmentId);
+        if (items1 == null) {
+          items1 = [];
         }
-        continue;
+        let items = [];
+        items[HermesBuiltin.arraySpread(items1, 0)] = tmp7;
+        let result = map.set(tmp2.attachmentId, items);
+        flag = true;
       }
+      continue;
     }
     continue;
   }
@@ -168,7 +159,26 @@ function trackClipMessage(message) {
     } else if (map1.has(message.id)) {
       return false;
     } else {
-      const result = obj2.set(message.id, found);
+      let tmp3 = (function getClipPOVReferences(message, found) {
+        const items = [];
+        const iter = found[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp2 = nextResult;
+          let obj = clipPOVOverlap;
+          let clipAttachmentPOVWindow = obj.getClipAttachmentPOVWindow(nextResult);
+          if (null != clipAttachmentPOVWindow) {
+            let obj3 = {};
+            let merged = Object.assign(tmp6);
+            ({ id: obj2.messageId, channel_id: obj2.channelId } = message);
+            obj3.attachmentId = tmp2.id;
+            let arr = items.push(obj3);
+          }
+          continue;
+        }
+        return items;
+      })(message, found);
+      const result = obj2.set(message.id, tmp3);
       const message_reference = message.message_reference;
       let message_id;
       if (message_reference != null) {
@@ -206,28 +216,28 @@ function trackClipMessage(message) {
         if (value3 == null) {
           value3 = [];
         }
-        const items = [];
-        HermesBuiltin.arraySpread(found, HermesBuiltin.arraySpread(value3, 0));
+        let items = [];
+        HermesBuiltin.arraySpread(tmp3, HermesBuiltin.arraySpread(value3, 0));
         const result1 = map2.set(message_id1, items);
-        flag3 = recordPOVMatches(items1, found);
-        const tmp12Result = recordPOVMatches(items1, found);
+        flag3 = recordPOVMatches(items1, tmp3);
+        const tmp13Result = recordPOVMatches(items1, tmp3);
       }
       let value4 = map2.get(message.id);
       if (value4 == null) {
         value4 = [];
       }
-      return recordPOVMatches(found, value4) || flag3 || flag2;
+      return recordPOVMatches(tmp3, value4) || flag3 || flag2;
     }
   } else {
     return false;
   }
   obj = DistributedClipsExperimentDefault;
 }
-const ClipsConstants = fn(5132);
+const ClipsConstants = fn(5213);
 ({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: metroRequire, ClipSaveTypes: closure_7, ClipsUserEducationType: closure_8, ClipsLogger: closure_9, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: c10, ClipsHardwareClassification: closure_11, ClipsSaveNoOpReason: closure_12, ClipsLengthSettings, DEFAULT_CLIPS_BITRATE_PERCENT } = ClipsConstants);
 const Constants = fn(1074);
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = Constants);
-const StreamSettingsConstants = fn(4607);
+const StreamSettingsConstants = fn(4683);
 let c16 = "default";
 let c17 = "Discord Clips";
 const dependencyMap = {};
@@ -381,7 +391,7 @@ prototype["isAutoStashEnabled"] = function isAutoStashEnabled() {
 prototype["hasRepliedWithClip"] = function hasRepliedWithClip(arg0) {
   return set1.has(arg0);
 };
-prototype["getMatchingPOVAttachments"] = function getMatchingPOVAttachments(arg0) {
+prototype["getMatchingPOVReferences"] = function getMatchingPOVReferences(arg0) {
   value = map.get(arg0);
   if (value == null) {
     value = closure_36;

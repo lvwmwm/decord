@@ -1,9 +1,9 @@
 // Module ID: 9463
 // Function ID: 9464
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 9463
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_console/images", width: 32, height: 32, scales: [2, 3], hash: "238a115f1ad03e07bad0181bb5c110d4", name: "ic_playstation_device_ps5_32px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MatteLightIcon", width: 60, height: 60, scales: [2, 3], hash: "766fd7e004517bb3fbea8bf5121a6049", name: "MatteLightIcon", type: "png" });

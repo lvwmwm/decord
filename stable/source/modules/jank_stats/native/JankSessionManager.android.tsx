@@ -1,14 +1,14 @@
-// Module ID: 17411
-// Function ID: 17412
+// Module ID: 17523
+// Function ID: 17524
 // Name: JankSessionManager
-// Dependencies: [7460, 1074, 3, 7118, 17412, 1340, 7475, 2]
+// Dependencies: [7563, 1074, 3, 7221, 17524, 1338, 7578, 2]
 
-// Module 17411 (JankSessionManager)
+// Module 17523 (JankSessionManager)
 import LoggerDefault from "Logger" /* 3 */;
-import clientLaunchId from "clientLaunchId" /* 1340 */;
-import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 17412 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7460 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
+import clientLaunchId from "clientLaunchId" /* 1338 */;
+import NativeJankSessionModuleDefault from "NativeJankSessionModule" /* 17524 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 7563 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -48,7 +48,7 @@ prototype["handleAppStateUpdate"] = function handleAppStateUpdate(state) {
 prototype["deliverPendingSessions"] = function deliverPendingSessions() {
   const self = this;
   if (!this._isDelivering) {
-    let obj = self(17412);
+    let obj = self(17524);
     if (null != obj) {
       tmp._isDelivering = true;
       const pendingReports = obj.getPendingReports();

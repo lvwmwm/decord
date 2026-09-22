@@ -1,10 +1,10 @@
-// Module ID: 10077
-// Function ID: 10078
+// Module ID: 10201
+// Function ID: 10202
 // Name: useThrottle
 // Dependencies: [19, 12, 2]
 // Exports: useThrottledState
 
-// Module 10077 (useThrottle)
+// Module 10201 (useThrottle)
 import _mod12 from "module_12" /* 12 */;
 import noop from "module_19" /* 19 */;
 

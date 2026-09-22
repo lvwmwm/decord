@@ -1,35 +1,35 @@
-// Module ID: 14117
-// Function ID: 14118
+// Module ID: 14201
+// Function ID: 14202
 // Name: Avatar
-// Dependencies: [19, 17, 1074, 1179, 21, 4560, 576, 13032, 14106, 14107, 8819, 8158, 14118, 8818, 14108, 4977, 9632, 9633, 2]
+// Dependencies: [19, 17, 1074, 1177, 21, 4636, 576, 13162, 14190, 14191, 8940, 8274, 14202, 8939, 14192, 5058, 9756, 9757, 2]
 
-// Module 14117 (Avatar)
+// Module 14201 (Avatar)
 import nativeDefault from "native" /* 576 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8158 */;
-import ClipView from "ClipView" /* 8819 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13032 */;
-import Status_StatusUtils from "Status/StatusUtils" /* 14106 */;
-import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14107 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8274 */;
+import ClipView from "ClipView" /* 8940 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 13162 */;
+import Status_StatusUtils from "Status/StatusUtils" /* 14190 */;
+import getStatusContainerStyleDefault from "getStatusContainerStyle" /* 14191 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 function getStatusSize(arg0) {
   if (CutoutableAvatarImage.AvatarSizes.XXSMALL !== arg0) {
-    if (tmp(13032).AvatarSizes.XSMALL !== arg0) {
-      if (tmp(13032).AvatarSizes.XSMALL_20 !== arg0) {
-        if (tmp(13032).AvatarSizes.SMALL !== arg0) {
-          if (tmp(13032).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
+    if (tmp(13162).AvatarSizes.XSMALL !== arg0) {
+      if (tmp(13162).AvatarSizes.XSMALL_20 !== arg0) {
+        if (tmp(13162).AvatarSizes.SMALL !== arg0) {
+          if (tmp(13162).AvatarSizes.REFRESH_MEDIUM_32 === arg0) {
             return React5.REFRESH_MEDIUM_10;
           } else {
-            if (tmp(13032).AvatarSizes.NORMAL !== arg0) {
-              if (tmp(13032).AvatarSizes.TABS_22 !== arg0) {
-                if (tmp(13032).AvatarSizes.LARGE !== arg0) {
-                  if (tmp(13032).AvatarSizes.LARGE_48 !== arg0) {
-                    if (tmp(13032).AvatarSizes.XLARGE !== arg0) {
-                      if (tmp(13032).AvatarSizes.XLARGE_72 !== arg0) {
-                        if (tmp(13032).AvatarSizes.XXLARGE !== arg0) {
-                          if (tmp(13032).AvatarSizes.PROFILE !== arg0) {
-                            if (tmp(13032).AvatarSizes.YOUBAR_60 !== arg0) {
+            if (tmp(13162).AvatarSizes.NORMAL !== arg0) {
+              if (tmp(13162).AvatarSizes.TABS_22 !== arg0) {
+                if (tmp(13162).AvatarSizes.LARGE !== arg0) {
+                  if (tmp(13162).AvatarSizes.LARGE_48 !== arg0) {
+                    if (tmp(13162).AvatarSizes.XLARGE !== arg0) {
+                      if (tmp(13162).AvatarSizes.XLARGE_72 !== arg0) {
+                        if (tmp(13162).AvatarSizes.XXLARGE !== arg0) {
+                          if (tmp(13162).AvatarSizes.PROFILE !== arg0) {
+                            if (tmp(13162).AvatarSizes.YOUBAR_60 !== arg0) {
                               return null;
                             }
                           }
@@ -51,11 +51,11 @@ function getStatusSize(arg0) {
 }
 const View = fn(17).View;
 const StatusTypes = fn(1074).StatusTypes;
-const StatusConstants = fn(1179);
+const StatusConstants = fn(1177);
 ({ STATUS_PADDING: metroRequire, StatusSizes: closure_7 } = StatusConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_10 = createStyles.createStyles((NORMAL) => {
   const obj = { status: { position: "absolute", right: -3, bottom: -3 }, speaking: null, stageSpeaking: null, voiceStatus: null, decoration: null, container: null };
   const rect = { position: "absolute", right: -2, bottom: -2, backgroundColor: "transparent", borderWidth: 4, borderColor: nativeDefault.colors.STATUS_SPEAKING };
@@ -313,5 +313,5 @@ export default noop.memo((isMobileOnline) => {
     }
   }
 });
-export const AvatarSizes = fn(13032).AvatarSizes;
+export const AvatarSizes = fn(13162).AvatarSizes;
 export { getStatusSize };

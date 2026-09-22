@@ -1,15 +1,15 @@
-// Module ID: 7187
-// Function ID: 7188
-// Name: guild_boosting/RoleIconUtils
-// Dependencies: [1074, 1115, 4213, 1430, 1396, 2]
+// Module ID: 7290
+// Function ID: 7291
+// Name: RoleIconUtils
+// Dependencies: [1074, 1363, 4289, 1430, 1396, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 7187 (guild_boosting/RoleIconUtils)
+// Module 7290 (RoleIconUtils)
 import AvatarUtils from "AvatarUtils" /* 1396 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1430 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4213 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
 import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import size from "module_2" /* 2 */;
 
 ({ Endpoints: c3, GuildFeatures: closure_4 } = Constants);
@@ -18,19 +18,14 @@ let closure_6 = "" + location.protocol + window.GLOBAL_ENV.API_ENDPOINT;
 let closure_7 = PlatformUtils.isAndroid();
 const result = size.fileFinishedImporting("modules/guild_boosting/RoleIconUtils.tsx");
 
-export const getRoleIconData = function getRoleIconData(role, arg1) {
+export const getRoleIconData = function getRoleIconData(role, size) {
   if (null == role) {
     return null;
   } else {
-    let byName;
-    if (null != role.unicodeEmoji) {
-      const obj = UnicodeEmojisDefault;
-      byName = obj.getByName(UnicodeEmojisDefault.convertSurrogateToName(role.unicodeEmoji, false));
-    }
     ({ id, icon } = role);
-    let tmp4;
+    let combined;
     if (null != icon) {
-      tmp4 = icon;
+      combined = icon;
       if (!icon.startsWith("data:")) {
         let str2 = "png";
         if (AvatarUtils.SUPPORTS_WEBP) {
@@ -38,30 +33,38 @@ export const getRoleIconData = function getRoleIconData(role, arg1) {
         }
         let str3 = "quality=lossless";
         let str5 = "";
-        if (null != arg1) {
-          tmp5(1430);
-          tmp5(1430);
+        if (null != size) {
+          tmp2(1430);
+          tmp2(1430);
           let str7 = "";
-          const text = `size=${tmp9(arg1 * obj3.getDevicePixelRatio())}`;
+          const text = `size=${tmp6(size * obj.getDevicePixelRatio())}`;
           if (!closure_7) {
             str7 = "&quality=lossless";
           }
           str3 = str7;
           str5 = text;
         }
-        let str8 = globalThis;
         const _window = window;
         if (null != window.GLOBAL_ENV.CDN_HOST) {
-          str8 = "/";
-          let combined = "" + closure_5 + "/" + id + "/" + icon + "." + str2 + "?" + str5 + str3;
+          const _HermesInternal2 = HermesInternal;
+          combined = "" + closure_5 + "/" + id + "/" + icon + "." + str2 + "?" + str5 + str3;
         } else {
           const _HermesInternal = HermesInternal;
           combined = "" + closure_6 + React3.ROLE_ICON(id, icon) + "?" + str5;
         }
       }
     }
-    const obj4 = { customIconSrc: tmp4, unicodeEmoji: byName };
-    return obj4;
+    if (null != role.unicodeEmoji) {
+      const obj2 = UnicodeEmojisDefault;
+      const byName = obj2.getByName(UnicodeEmojisDefault.convertSurrogateToName(role.unicodeEmoji, false));
+    }
+    if (null != combined) {
+      const obj4 = { customIconSrc: combined, unicodeEmoji: byName };
+      let tmp23 = obj4;
+    } else {
+      tmp23 = null;
+    }
+    return tmp23;
   }
 };
 export const replaceRoleIconSourceSize = function replaceRoleIconSourceSize(str, arg1) {

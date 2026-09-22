@@ -1,14 +1,14 @@
-// Module ID: 8093
-// Function ID: 8094
+// Module ID: 8198
+// Function ID: 8199
 // Name: ChangeLogActionCreators
-// Dependencies: [5, 4574, 1074, 2010, 573, 1935, 1272, 2]
+// Dependencies: [5, 4650, 1074, 2010, 573, 1935, 1270, 2]
 
-// Module 8093 (ChangeLogActionCreators)
+// Module 8198 (ChangeLogActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
 import UserSettings from "UserSettings" /* 1935 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 4574 */;
+import ChangelogStore from "ChangelogStore" /* 4650 */;
 
 require = fn;
 function cacheBustParam() {
@@ -74,7 +74,7 @@ export default {
         const _HermesInternal = HermesInternal;
         str = "?" + cacheBustParam();
       }
-      const HTTP = closure_0(1272).HTTP;
+      const HTTP = closure_0(1270).HTTP;
       const _HermesInternal2 = HermesInternal;
       yield HTTP.get({ url: "https://cdn.discordapp.com/changelogs/" + MOBILE + "/" + closure_0 + "/" + tmp3 + ".json" + str, rejectWithError: true });
       if (1 === tmp7) {

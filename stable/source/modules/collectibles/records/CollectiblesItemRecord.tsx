@@ -1,16 +1,16 @@
-// Module ID: 7546
-// Function ID: 7547
+// Module ID: 7649
+// Function ID: 7650
 // Name: CollectiblesItemRecord
-// Dependencies: [7547, 1887, 7548, 7549, 7550, 1074, 1889, 2]
-// Exports: createCollectiblesItemsFromServerResponse
+// Dependencies: [7650, 1887, 7651, 7652, 7653, 1074, 1889, 2]
+// Exports: createCollectiblesItemsFromServerResponse, transformProductToCollectiblesItem
 
-// Module 7546 (CollectiblesItemRecord)
+// Module 7649 (CollectiblesItemRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7547 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7650 */;
 import NameplateRecord from "NameplateRecord" /* 1887 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7548 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7549 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7550 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7651 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7652 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7653 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -116,5 +116,19 @@ export const createCollectiblesItemsFromServerResponse = function createCollecti
     }, []);
   }
   return items;
+};
+export const transformProductToCollectiblesItem = function transformProductToCollectiblesItem(type) {
+  if (null != type) {
+    if (0 !== type.items.length) {
+      if (type.type === CollectiblesItemType.CollectiblesItemType.BUNDLE) {
+        ({ items: obj2.items, previewAssets: obj2.previewAssets } = type);
+        let obj = { type: "bundle", items: null, previewAssets: null };
+        const obj3 = { type: "bundle", items: null, previewAssets: null };
+      } else {
+        obj = { type: "single", item: type.items[0] };
+      }
+      return obj;
+    }
+  }
 };
 export { transformSKUToCollectiblesItem };

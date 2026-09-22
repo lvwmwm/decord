@@ -1,9 +1,9 @@
-// Module ID: 17416
-// Function ID: 17417
+// Module ID: 17528
+// Function ID: 17529
 // Name: NativeJSWatchdogModule
 // Dependencies: [17, 2]
 
-// Module 17416 (NativeJSWatchdogModule)
+// Module 17528 (NativeJSWatchdogModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

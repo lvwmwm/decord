@@ -1,15 +1,15 @@
-// Module ID: 11440
-// Function ID: 11441
+// Module ID: 11572
+// Function ID: 11573
 // Name: BlockedPaymentsCountryDisplay
-// Dependencies: [19, 17, 1074, 21, 4560, 576, 4495, 1178, 1114, 2024, 4411, 11441, 11442, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 576, 4571, 1176, 1114, 2024, 4488, 11573, 11574, 2]
 // Exports: default
 
-// Module 11440 (BlockedPaymentsCountryDisplay)
+// Module 11572 (BlockedPaymentsCountryDisplay)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
+import native from "native" /* 1176 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import useThemeDefault from "useTheme" /* 4495 */;
+import useThemeDefault from "useTheme" /* 4571 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { alignItems: "center" }, header: { fontSize: 20, fontWeight: "700", color: nativeDefault.colors.TEXT_SUBTLE, marginBottom: 16 }, image: { marginTop: 38 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -44,9 +44,9 @@ export default function BlockedPaymentsCountryDisplay() {
   const obj6 = { style: tmp.image, source: null };
   const tmp8 = React4;
   if (obj7.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11441);
+    let tmp2Result = tmp2(11573);
   } else {
-    tmp2Result = tmp2(11442);
+    tmp2Result = tmp2(11574);
   }
   obj6.source = tmp2Result;
   items[2] = tmp7(tmp8, obj6);

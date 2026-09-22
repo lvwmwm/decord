@@ -82,8 +82,8 @@ fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "disabled",
       lastTimestamp: null,
-      startTimestamp: true,
-      reduceMotion: "meter"
+      startTimestamp: "film",
+      reduceMotion: "filmklapper"
     };
     let num = obj.velocity;
     if (num == null) {

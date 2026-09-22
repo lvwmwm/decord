@@ -1,17 +1,15 @@
 // Module ID: 6861
 // Function ID: 6862
-// Dependencies: []
+// Dependencies: [6862, 6837]
 
 // Module 6861
+const require = globalThis.__r;
 
-export default function _arrayLikeToArray(arg0, arg1) {
-  let length = arg1;
-  if (tmp) {
-    length = arg0.length;
-  }
-  const ArrayResult = Array(length);
-  for (let num = 0; num < length; num = num + 1) {
-    ArrayResult[num] = arg0[num];
-  }
-  return ArrayResult;
-};
+for (const key10013 in require("module_6862")) {
+  arg5[key10013] = require("module_6862")[key10013];
+  continue;
+}
+for (const key10017 in require("transformLongPressProps")) {
+  arg5[key10017] = require("transformLongPressProps")[key10017];
+  continue;
+}

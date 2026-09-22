@@ -1,31 +1,53 @@
 // Module ID: 3997
 // Function ID: 3998
-// Dependencies: [3998, 3651]
+// Dependencies: [3725, 3883, 3886, 3726]
 // Exports: default
 
 // Module 3997
-import module_3998_mod from "module_3998" /* 3998 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import startOfISOWeek_mod from "startOfISOWeek" /* 3883 */;
+import startOfISOWeekYear_mod from "startOfISOWeekYear" /* 3886 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let module_3998 = module_3998_mod;
-if (!module_3998) {
-  const obj = { default: module_3998 };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = module_3998;
+  tmp3 = _typeof;
 }
-module_3998 = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+_typeof = tmp3;
+let startOfISOWeek = startOfISOWeek_mod;
+if (!startOfISOWeek) {
+  const obj2 = { default: startOfISOWeek };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = startOfISOWeek;
 }
-requiredArgs = tmp5;
+startOfISOWeek = tmp5;
+let startOfISOWeekYear = startOfISOWeekYear_mod;
+if (!startOfISOWeekYear) {
+  const obj3 = { default: startOfISOWeekYear };
+  let tmp7 = obj3;
+} else {
+  tmp7 = startOfISOWeekYear;
+}
+startOfISOWeekYear = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
+let c4 = 604800000;
 
-export default function isSameISOWeek(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  return module_3998.default(arg0, arg1, { weekStartsOn: 1 });
+export default function getISOWeek(arg0) {
+  requiredArgs.default(1, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  const time = startOfISOWeek.default(defaultResult1).getTime();
+  const defaultResult2 = startOfISOWeek.default(defaultResult1);
+  return Math.round((time - startOfISOWeekYear.default(defaultResult1).getTime()) / c4) + 1;
 };
 export default exports.default;

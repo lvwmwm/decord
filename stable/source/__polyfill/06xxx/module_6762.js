@@ -1,17 +1,7 @@
 // Module ID: 6762
 // Function ID: 6763
-// Dependencies: [6763, 6714]
-// Exports: useCompetingGestures
+// Dependencies: []
 
 // Module 6762
-import ComposedGestureName from "ComposedGestureName" /* 6714 */;
-import _mod6763 from "module_6763" /* 6763 */;
 
-require = arg1;
-const dependencyMap = arg6;
-
-export const useCompetingGestures = function useCompetingGestures() {
-  const items = [...arguments];
-  const items1 = [ComposedGestureName.ComposedGestureName.Race, ...items];
-  return _mod6763.useComposedGesture.apply(items1);
-};
+export const State = { UNDETERMINED: 0, FAILED: 1, BEGAN: 2, CANCELLED: 3, ACTIVE: 4, END: 5 };

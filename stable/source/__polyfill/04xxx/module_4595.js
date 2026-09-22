@@ -1,28 +1,9 @@
 // Module ID: 4595
 // Function ID: 4596
-// Dependencies: [552]
+// Dependencies: [1120]
 
 // Module 4595
-import _mod552 from "module_552" /* 552 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default function toFinite(arg0) {
-  if (arg0) {
-    const tmp3 = _mod552(arg0);
-    if (tmp3 !== Infinity) {
-      if (tmp3 !== -Infinity) {
-      }
-    }
-    let num6 = 1;
-    if (tmp3 < 0) {
-      num6 = -1;
-    }
-    const num4 = 179769313486231570000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 * num6;
-  } else {
-    let num = 0;
-    if (0 === arg0) {
-      num = arg0;
-    }
-    return num;
-  }
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "11be77dcd70d75753c8cf2c079b0771e", name: "TrashIcon", type: "png" });

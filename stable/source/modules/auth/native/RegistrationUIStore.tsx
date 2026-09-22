@@ -1,11 +1,11 @@
-// Module ID: 15949
-// Function ID: 15950
+// Module ID: 16043
+// Function ID: 16044
 // Name: RegistrationUIStore
-// Dependencies: [560, 1249, 2]
+// Dependencies: [560, 1247, 2]
 // Exports: clearRegistrationErrorMessage, doesRegistrationHaveIdentityType, resetRegistration, setRegistrationErrors, setSubmitting, updateRegistrationOptions
 
-// Module 15949 (RegistrationUIStore)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1249 */;
+// Module 16043 (RegistrationUIStore)
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1247 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ export const clearRegistrationErrorMessage = function clearRegistrationErrorMess
   let errors = {};
   const merged = Object.assign(errors.getState().errors);
   delete tmp2[tmp];
-  errors(1249).batchUpdates(() => {
+  errors(1247).batchUpdates(() => {
     errors = { errors };
     errors.setState(errors);
   });

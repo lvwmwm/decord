@@ -1,21 +1,21 @@
-// Module ID: 4450
-// Function ID: 4451
+// Module ID: 4526
+// Function ID: 4527
 // Name: GuildPowerupsConstants
-// Dependencies: [1373, 1074, 4451, 4453, 1943, 4454, 1114, 4486, 4487, 4488, 4489, 4473, 2]
+// Dependencies: [1373, 1074, 4527, 4529, 1943, 4530, 1114, 4562, 4563, 4564, 4565, 4549, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 4450 (GuildPowerupsConstants)
+// Module 4526 (GuildPowerupsConstants)
 import util from "util" /* 1114 */;
 import PremiumConstants from "PremiumConstants" /* 1373 */;
 import dismissible_content from "dismissible_content" /* 1943 */;
-import GameServerConstants from "GameServerConstants" /* 4451 */;
-import Powerups from "Powerups" /* 4453 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4454 */;
-import GameServerExperiment from "GameServerExperiment" /* 4473 */;
-import FileUploadPowerupHoldoutExperiment2 from "FileUploadPowerupHoldoutExperiment" /* 4486 */;
-import FileUpload250MbPowerupExperiment from "FileUpload250MbPowerupExperiment" /* 4487 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4488 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 4489 */;
+import GameServerConstants from "GameServerConstants" /* 4527 */;
+import Powerups from "Powerups" /* 4529 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4530 */;
+import GameServerExperiment from "GameServerExperiment" /* 4549 */;
+import FileUploadPowerupHoldoutExperiment2 from "FileUploadPowerupHoldoutExperiment" /* 4562 */;
+import FileUpload250MbPowerupExperiment from "FileUpload250MbPowerupExperiment" /* 4563 */;
+import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 4564 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 4565 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

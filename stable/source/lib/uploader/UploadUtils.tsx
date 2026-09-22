@@ -1,13 +1,13 @@
-// Module ID: 5136
-// Function ID: 5137
+// Module ID: 5217
+// Function ID: 5218
 // Name: uploader/UploadUtils
-// Dependencies: [5128, 1272, 5137, 1351, 2]
+// Dependencies: [5209, 1270, 5218, 1349, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 5136 (uploader/UploadUtils)
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import js_shim_shim from "js_shim/shim" /* 1351 */;
-import Upload from "Upload" /* 5128 */;
+// Module 5217 (uploader/UploadUtils)
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import js_shim_shim from "js_shim/shim" /* 1349 */;
+import Upload from "Upload" /* 5209 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/uploader/UploadUtils.tsx");
@@ -122,12 +122,12 @@ export const canUploadNatively = function canUploadNatively(platform) {
     fileIsInAppDirResult = null != platform.uri;
   }
   if (fileIsInAppDirResult) {
-    fileIsInAppDirResult = tmp(5137).fileIsInAppDir(platform.uri);
-    const tmpResult = tmp(5137);
+    fileIsInAppDirResult = tmp(5218).fileIsInAppDir(platform.uri);
+    const tmpResult = tmp(5218);
   }
   if (fileIsInAppDirResult) {
-    fileIsInAppDirResult = tmp(1351).isLibdiscoreInitialized();
-    const tmpResult2 = tmp(1351);
+    fileIsInAppDirResult = tmp(1349).isLibdiscoreInitialized();
+    const tmpResult2 = tmp(1349);
   }
   return fileIsInAppDirResult;
 };

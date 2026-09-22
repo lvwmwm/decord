@@ -1,12 +1,12 @@
-// Module ID: 7734
-// Function ID: 7735
+// Module ID: 7836
+// Function ID: 7837
 // Name: QuestHomeSearchSession
-// Dependencies: [1256, 7471, 2]
+// Dependencies: [1254, 7574, 2]
 // Exports: clearQuestHomeSearchSession, getCurrentQuestHomeSearchSession, getOrCreateQuestHomeSearchSession
 
-// Module 7734 (QuestHomeSearchSession)
-import v1 from "v1" /* 1256 */;
-import SessionUtils from "SessionUtils" /* 7471 */;
+// Module 7836 (QuestHomeSearchSession)
+import v1 from "v1" /* 1254 */;
+import SessionUtils from "SessionUtils" /* 7574 */;
 import size from "module_2" /* 2 */;
 
 let c2 = null;

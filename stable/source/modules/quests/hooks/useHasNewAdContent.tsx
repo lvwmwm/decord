@@ -1,18 +1,18 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16905
+// Function ID: 16906
 // Name: useHasNewAdContent
-// Dependencies: [32, 15083, 7703, 5444, 1090, 11494, 504, 7699, 5451, 7388, 1943, 2]
+// Dependencies: [32, 15161, 7805, 5525, 1090, 11626, 504, 7801, 5532, 7491, 1943, 2]
 // Exports: default
 
-// Module 16794 (useHasNewAdContent)
+// Module 16905 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1090 */;
-import AdCreativeType from "AdCreativeType" /* 5451 */;
+import AdCreativeType from "AdCreativeType" /* 5532 */;
 import _slicedToArray from "module_32" /* 32 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 15083 */;
-import QuestStore from "QuestStore" /* 7703 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 15161 */;
+import QuestStore from "QuestStore" /* 7805 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5444).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5525).QuestsExperimentLocations;
 const DAY = DurationsDefault.Millis.DAY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/hooks/useHasNewAdContent.tsx");

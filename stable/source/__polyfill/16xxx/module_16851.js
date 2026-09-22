@@ -1,9 +1,0 @@
-// Module ID: 16851
-// Function ID: 16852
-// Dependencies: [1122]
-
-// Module 16851
-import registerAsset from "module_1122" /* 1122 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 292, height: 182, scales: [2, 3], hash: "580ec4f595fa69a80ec70eff21ac3c71", name: "webhook_empty_darker", type: "png" });

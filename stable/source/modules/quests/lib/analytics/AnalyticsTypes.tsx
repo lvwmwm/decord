@@ -1,11 +1,11 @@
-// Module ID: 7728
-// Function ID: 7729
+// Module ID: 7830
+// Function ID: 7831
 // Name: AnalyticsTypes
-// Dependencies: [5447, 2]
+// Dependencies: [5528, 2]
 // Exports: getContentProperties, getQuestContentName, getQuestStatus
 
-// Module 7728 (AnalyticsTypes)
-import QuestTypes from "QuestTypes" /* 5447 */;
+// Module 7830 (AnalyticsTypes)
+import QuestTypes from "QuestTypes" /* 5528 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = Object.keys(QuestTypes.QuestContent);
@@ -61,7 +61,7 @@ export const getContentProperties = function getContentProperties(questContent, 
   obj.row_index = questContentRowIndex;
   return obj;
 };
-export const BountyScrollingType = { AUTO: "AUTO", MANUAL: "MANUAL" };
+export const BountyScrollingType = { MANUAL: "MANUAL" };
 export const HorizontalScrollingDirection = { LEFT: "LEFT", RIGHT: "RIGHT" };
 export const VerticalScrollingDirection = { UP: "UP", DOWN: "DOWN" };
 export const QuestHomeScrollingType = { ARROW: "ARROW", AUTO: "AUTO", MANUAL: "MANUAL" };

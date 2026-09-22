@@ -1,24 +1,24 @@
-// Module ID: 13888
-// Function ID: 13889
+// Module ID: 13973
+// Function ID: 13974
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 4560, 1114, 9244, 5587, 1396, 13887, 4556, 4975, 2]
+// Dependencies: [19, 17, 21, 4636, 1114, 9367, 5668, 1396, 13972, 4632, 5056, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 13888 (ActivateDeviceSuccess)
+// Module 13973 (ActivateDeviceSuccess)
 import util from "util" /* 1114 */;
 import AvatarUtils from "AvatarUtils" /* 1396 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import components_Button_Button from "components/Button/Button" /* 4975 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import scopes2 from "scopes" /* 9244 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13887 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import components_Button_Button from "components/Button/Button" /* 5056 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import scopes2 from "scopes" /* 9367 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 13972 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_7 = createStyles.createStyles({ image: { width: 300, height: 200, alignSelf: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activate_device/native/ActivateDeviceSuccess.tsx");
@@ -53,7 +53,7 @@ export const ActivateDeviceSuccess = function ActivateDeviceSuccess(onComplete) 
   let tmp18Result = null;
   if (null != stringResult) {
     const obj5 = { variant: "text-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: stringResult };
-    tmp18Result = tmp18(tmp19(4556).Text, obj5);
+    tmp18Result = tmp18(tmp19(4632).Text, obj5);
   }
   const obj6 = { children: null };
   items1[1] = tmp18Result;

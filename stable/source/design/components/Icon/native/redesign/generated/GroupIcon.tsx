@@ -1,13 +1,13 @@
-// Module ID: 5089
-// Function ID: 5090
+// Module ID: 5170
+// Function ID: 5171
 // Name: GroupIcon
-// Dependencies: [19, 21, 576, 4261, 5034, 2]
+// Dependencies: [19, 21, 576, 4337, 5115, 2]
 // Exports: GroupIcon
 
-// Module 5089 (GroupIcon)
+// Module 5170 (GroupIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod5034 from "module_5034" /* 5034 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod5115 from "module_5115" /* 5115 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const GroupIcon = function GroupIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5034, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5115, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

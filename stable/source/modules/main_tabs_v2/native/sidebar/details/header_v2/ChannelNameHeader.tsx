@@ -1,23 +1,23 @@
-// Module ID: 16733
-// Function ID: 16734
+// Module ID: 16844
+// Function ID: 16845
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 1957, 1979, 4199, 4600, 1371, 1074, 21, 4560, 576, 504, 1178, 4713, 1483, 4571, 5123, 4556, 1114, 4705, 3483, 10915, 5028, 10904, 7162, 8180, 2]
+// Dependencies: [19, 17, 1957, 1979, 4275, 4676, 1371, 1074, 21, 4636, 576, 504, 1176, 4789, 1483, 4647, 5204, 4632, 1114, 4781, 3526, 11045, 5109, 11031, 7265, 8296, 2]
 
-// Module 16733 (ChannelNameHeader)
+// Module 16844 (ChannelNameHeader)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
-import _modDef3483 from "module_3483" /* 3483 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import transitionToChannel from "transitionToChannel" /* 4571 */;
-import ChannelUtils from "ChannelUtils" /* 4705 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5028 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8180 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10915 */;
+import native from "native" /* 1176 */;
+import _modDef3526 from "module_3526" /* 3526 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import transitionToChannel from "transitionToChannel" /* 4647 */;
+import ChannelUtils from "ChannelUtils" /* 4781 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5109 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11045 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import PresenceStore from "PresenceStore" /* 4600 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import PresenceStore from "PresenceStore" /* 4676 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;
@@ -50,7 +50,7 @@ function DirectMessageIcon(channel) {
   }, items2);
   let tmp9Result = null;
   if (null != stateFromStores) {
-    const obj2 = { avatarDecoration: stateFromStores.avatarDecoration, user: stateFromStores, guildId: "Boolean", size: tmp2(1178).AvatarSizes.NORMAL, status: false, isMobileOnline: null, isVROnline: true, statusStyle: null };
+    const obj2 = { avatarDecoration: stateFromStores.avatarDecoration, user: stateFromStores, guildId: "Boolean", size: tmp2(1176).AvatarSizes.NORMAL, status: false, isMobileOnline: "done", isVROnline: "flowing", statusStyle: "hourglass" };
     let isSystemUserResult;
     if (stateFromStores != null) {
       isSystemUserResult = stateFromStores.isSystemUser();
@@ -63,7 +63,7 @@ function DirectMessageIcon(channel) {
     obj2.isMobileOnline = tmp5;
     obj2.isVROnline = tmp6;
     obj2.statusStyle = tmp.statusStyle;
-    tmp9Result = closure_12(tmp2(1178).Avatar, obj2);
+    tmp9Result = closure_12(tmp2(1176).Avatar, obj2);
   }
   return tmp9Result;
 }
@@ -108,16 +108,16 @@ function ChannelSubtitle(channel) {
       tmp8 = null;
       if ("" !== stateFromStores) {
         const obj2 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, children: stateFromStores };
-        tmp8 = closure_12(tmp(4556).Text, obj2);
+        tmp8 = closure_12(tmp(4632).Text, obj2);
       }
     }
     return tmp8;
   } else if (channel.isGameInvitesChannel()) {
     const intl = tmp(1114).intl;
-    let stringResult = intl.string(_modDef3483["D+2/QP"]);
+    let stringResult = intl.string(_modDef3526["D+2/QP"]);
   } else {
-    stringResult = tmp(4705).channelTypeString(channel);
-    const tmpResult = tmp(4705);
+    stringResult = tmp(4781).channelTypeString(channel);
+    const tmpResult = tmp(4781);
   }
 }
 function ChannelNameHeaderContent(channel) {
@@ -219,7 +219,7 @@ function ChannelNameHeaderContent(channel) {
 function DMChannelNameHeader(channel) {
   channel = channel.channel;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7162)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7265)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = noop.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -231,7 +231,7 @@ function DMChannelNameHeader(channel) {
   let obj = { style: null, onPress: callback, children: closure_12(ChannelNameHeaderContent, { channel }) };
   const items1 = [closure_15().container, channel.containerStyle];
   obj.style = items1;
-  return closure_12(channel(5123).PressableOpacity, obj);
+  return closure_12(channel(5204).PressableOpacity, obj);
 }
 function DefaultChannelNameHeader(arg0) {
   ({ channel, containerStyle } = arg0);
@@ -246,7 +246,7 @@ const Constants = fn(1074);
 ({ Permissions: c10, StatusTypes: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { container: { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" }, channelIcon: { height: 40, width: 40, justifyContent: "center", alignItems: "center" }, channelTypeBox: null, channelData: null, statusStyle: null };
 let obj3 = { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center" };
 obj.channelTypeBox = { borderRadius: nativeDefault.modules.mobile.CHANNEL_NAME_CHANNEL_ICON_RADIUS, borderWidth: nativeDefault.modules.mobile.CHANNEL_NAME_CHANNEL_BORDER_WIDTH, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };

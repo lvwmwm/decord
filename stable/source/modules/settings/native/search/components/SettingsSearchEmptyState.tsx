@@ -1,21 +1,21 @@
-// Module ID: 14704
-// Function ID: 14705
+// Module ID: 14788
+// Function ID: 14789
 // Name: SettingsSearchEmptyState
-// Dependencies: [19, 17, 21, 4560, 4272, 1114, 9766, 4973, 4556, 2]
+// Dependencies: [19, 17, 21, 4636, 4348, 1114, 9890, 5054, 4632, 2]
 
-// Module 14704 (SettingsSearchEmptyState)
+// Module 14788 (SettingsSearchEmptyState)
 import util from "util" /* 1114 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4272 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Stack_Stack from "Stack/Stack" /* 4973 */;
-import NoResultsAlt from "NoResultsAlt" /* 9766 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4348 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Stack_Stack from "Stack/Stack" /* 5054 */;
+import NoResultsAlt from "NoResultsAlt" /* 9890 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_6 = createStyles.createStyles({ container: { paddingTop: 24, justifyContent: "center", alignItems: "center" }, textContainer: { marginTop: 24 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/settings/native/search/components/SettingsSearchEmptyState.tsx");

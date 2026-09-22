@@ -1,15 +1,15 @@
-// Module ID: 14496
-// Function ID: 14497
+// Module ID: 14582
+// Function ID: 14583
 // Name: setOrientationLockState
-// Dependencies: [9516, 4465, 1920, 1085, 9563, 9560, 573, 2]
+// Dependencies: [9640, 4541, 1920, 1085, 9687, 9684, 573, 2]
 
-// Module 14496 (setOrientationLockState)
+// Module 14582 (setOrientationLockState)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import RPCErrorDefault from "RPCError" /* 9560 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9563 */;
-import FramesStore from "FramesStore" /* 9516 */;
+import RPCErrorDefault from "RPCError" /* 9684 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 9687 */;
+import FramesStore from "FramesStore" /* 9640 */;
 
-const TransportTypes = fn(4465).TransportTypes;
+const TransportTypes = fn(4541).TransportTypes;
 const OrientationLockState = fn(1920).OrientationLockState;
 const Constants = fn(1085);
 const RPCErrors = Constants.RPCErrors;

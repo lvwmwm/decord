@@ -1,71 +1,99 @@
 // Module ID: 6827
 // Function ID: 6828
-// Dependencies: [19, 17, 21, 6828, 6829]
+// Dependencies: [19, 6777, 6764]
+// Exports: runCallback, touchEventTypeToCallbackType, useMemoizedGestureCallbacks
 
 // Module 6827
-import _mod6829 from "module_6829" /* 6829 */;
-import noop_mod from "module_19" /* 19 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
-import jsxProd from "jsxProd" /* 21 */;
+import _mod19 from "module_19" /* 19 */;
+import TouchEventType from "TouchEventType" /* 6764 */;
+import _mod6777 from "module_6777" /* 6777 */;
 
-let noop = noop_mod;
-const useMemo = noop.useMemo;
-let noop = noop_mod;
-({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const memoResult = noop.memo(function BottomSheetHandleComponent(style) {
-  style = style.style;
-  const indicatorStyle = style.indicatorStyle;
-  let DEFAULT_ACCESSIBLE = style.accessible;
-  if (DEFAULT_ACCESSIBLE === undefined) {
-    DEFAULT_ACCESSIBLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBLE;
+const useMemo = _mod19.useMemo;
+function getHandler(arg0, onBegin) {
+  if (_mod6777.CALLBACK_TYPE.BEGAN === arg0) {
+    return onBegin.onBegin;
+  } else if (tmp(6777).CALLBACK_TYPE.START === arg0) {
+    return onBegin.onActivate;
+  } else if (tmp(6777).CALLBACK_TYPE.UPDATE === arg0) {
+    return onBegin.onUpdate;
+  } else if (tmp(6777).CALLBACK_TYPE.END === arg0) {
+    return onBegin.onDeactivate;
+  } else if (tmp(6777).CALLBACK_TYPE.FINALIZE === arg0) {
+    return onBegin.onFinalize;
+  } else if (tmp(6777).CALLBACK_TYPE.TOUCHES_DOWN === arg0) {
+    return onBegin.onTouchesDown;
+  } else if (tmp(6777).CALLBACK_TYPE.TOUCHES_MOVE === arg0) {
+    return onBegin.onTouchesMove;
+  } else if (tmp(6777).CALLBACK_TYPE.TOUCHES_UP === arg0) {
+    return onBegin.onTouchesUp;
+  } else if (tmp(6777).CALLBACK_TYPE.TOUCHES_CANCEL === arg0) {
+    return onBegin.onTouchesCancel;
   }
-  let DEFAULT_ACCESSIBILITY_ROLE = style.accessibilityRole;
-  if (DEFAULT_ACCESSIBILITY_ROLE === undefined) {
-    DEFAULT_ACCESSIBILITY_ROLE = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_ROLE;
+}
+getHandler.__closure = { CALLBACK_TYPE: _mod6777.CALLBACK_TYPE };
+getHandler.__workletHash = 8647314057396;
+getHandler.__initData = { code: "function getHandler_Pnpm_eventHandlersUtilsTs1(type,callbacks){const{CALLBACK_TYPE}=this.__closure;switch(type){case CALLBACK_TYPE.BEGAN:return callbacks.onBegin;case CALLBACK_TYPE.START:return callbacks.onActivate;case CALLBACK_TYPE.UPDATE:return callbacks.onUpdate;case CALLBACK_TYPE.END:return callbacks.onDeactivate;case CALLBACK_TYPE.FINALIZE:return callbacks.onFinalize;case CALLBACK_TYPE.TOUCHES_DOWN:return callbacks.onTouchesDown;case CALLBACK_TYPE.TOUCHES_MOVE:return callbacks.onTouchesMove;case CALLBACK_TYPE.TOUCHES_UP:return callbacks.onTouchesUp;case CALLBACK_TYPE.TOUCHES_CANCEL:return callbacks.onTouchesCancel;}}" };
+function touchEventTypeToCallbackType(arg0) {
+  if (TouchEventType.TouchEventType.TOUCHES_DOWN === arg0) {
+    return tmp(6777).CALLBACK_TYPE.TOUCHES_DOWN;
+  } else if (tmp(6764).TouchEventType.TOUCHES_MOVE === arg0) {
+    return tmp(6777).CALLBACK_TYPE.TOUCHES_MOVE;
+  } else if (tmp(6764).TouchEventType.TOUCHES_UP === arg0) {
+    return tmp(6777).CALLBACK_TYPE.TOUCHES_UP;
+  } else if (tmp(6764).TouchEventType.TOUCHES_CANCEL === arg0) {
+    return tmp(6777).CALLBACK_TYPE.TOUCHES_CANCEL;
+  } else {
+    return tmp(6777).CALLBACK_TYPE.UNDEFINED;
   }
-  let DEFAULT_ACCESSIBILITY_LABEL = style.accessibilityLabel;
-  if (DEFAULT_ACCESSIBILITY_LABEL === undefined) {
-    DEFAULT_ACCESSIBILITY_LABEL = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_LABEL;
+}
+let obj = { CALLBACK_TYPE: _mod6777.CALLBACK_TYPE };
+touchEventTypeToCallbackType.__closure = { TouchEventType: TouchEventType.TouchEventType, CALLBACK_TYPE: _mod6777.CALLBACK_TYPE };
+touchEventTypeToCallbackType.__workletHash = 2066229974382;
+touchEventTypeToCallbackType.__initData = { code: "function touchEventTypeToCallbackType_Pnpm_eventHandlersUtilsTs2(eventType){const{TouchEventType,CALLBACK_TYPE}=this.__closure;switch(eventType){case TouchEventType.TOUCHES_DOWN:return CALLBACK_TYPE.TOUCHES_DOWN;case TouchEventType.TOUCHES_MOVE:return CALLBACK_TYPE.TOUCHES_MOVE;case TouchEventType.TOUCHES_UP:return CALLBACK_TYPE.TOUCHES_UP;case TouchEventType.TOUCHES_CANCEL:return CALLBACK_TYPE.TOUCHES_CANCEL;}return CALLBACK_TYPE.UNDEFINED;}" };
+function runCallback(arg0, arg1, arg2) {
+  const tmp = getHandler(arg0, arg1);
+  if (tmp) {
+    tmp(arg2);
   }
-  let DEFAULT_ACCESSIBILITY_HINT = style.accessibilityHint;
-  if (DEFAULT_ACCESSIBILITY_HINT === undefined) {
-    DEFAULT_ACCESSIBILITY_HINT = style(indicatorStyle[3]).DEFAULT_ACCESSIBILITY_HINT;
-  }
-  let items = [style];
-  const items1 = [indicatorStyle];
-  const obj = {
-    style: useMemo(() => {
-      const items = [_mod6829.styles.container, React3.flatten(style)];
-      return items;
-    }, items),
-    accessible: null,
-    accessibilityRole: null,
-    accessibilityLabel: null,
-    accessibilityHint: null,
-    collapsable: true,
-    children: null
-  };
-  const tmp9 = useMemo(() => {
-    const items = [_mod6829.styles.container, React3.flatten(style)];
-    return items;
+}
+runCallback.__closure = { getHandler };
+runCallback.__workletHash = 9892811129293;
+runCallback.__initData = { code: "function runCallback_Pnpm_eventHandlersUtilsTs3(type,callbacks,event){const{getHandler}=this.__closure;const handler=getHandler(type,callbacks);if(!handler){return;}handler(event);}" };
+
+export const useMemoizedGestureCallbacks = function useMemoizedGestureCallbacks(disableReanimated) {
+  const items = [, , , , , , , , ];
+  ({ onActivate: arr[0], onBegin: arr[1], onDeactivate: arr[2], onFinalize: arr[3], onTouchesCancel: arr[4], onTouchesDown: arr[5], onTouchesMove: arr[6], onTouchesUp: arr[7], onUpdate: arr[8] } = disableReanimated);
+  return useMemo(() => {
+    const obj = {};
+    if (disableReanimated.onBegin) {
+      obj.onBegin = tmp.onBegin;
+    }
+    if (disableReanimated.onActivate) {
+      obj.onActivate = tmp.onActivate;
+    }
+    if (disableReanimated.onDeactivate) {
+      obj.onDeactivate = tmp.onDeactivate;
+    }
+    if (disableReanimated.onFinalize) {
+      obj.onFinalize = tmp.onFinalize;
+    }
+    if (disableReanimated.onUpdate) {
+      obj.onUpdate = tmp.onUpdate;
+    }
+    if (disableReanimated.onTouchesDown) {
+      obj.onTouchesDown = tmp.onTouchesDown;
+    }
+    if (disableReanimated.onTouchesMove) {
+      obj.onTouchesMove = tmp.onTouchesMove;
+    }
+    if (disableReanimated.onTouchesUp) {
+      obj.onTouchesUp = tmp.onTouchesUp;
+    }
+    if (disableReanimated.onTouchesCancel) {
+      obj.onTouchesCancel = tmp.onTouchesCancel;
+    }
+    return obj;
   }, items);
-  obj.accessible = DEFAULT_ACCESSIBLE;
-  obj.accessibilityRole = DEFAULT_ACCESSIBILITY_ROLE;
-  obj.accessibilityLabel = DEFAULT_ACCESSIBILITY_LABEL;
-  obj.accessibilityHint = DEFAULT_ACCESSIBILITY_HINT;
-  const items2 = [
-    closure_5(closure_4, {
-      style: useMemo(() => {
-        const items = [_mod6829.styles.indicator, React3.flatten(indicatorStyle)];
-        return items;
-      }, items1)
-    }),
-    style.children
-  ];
-  obj.children = items2;
-  return closure_6(closure_4, obj);
-});
-memoResult.displayName = "BottomSheetHandle";
-
-export default memoResult;
+};
+export { touchEventTypeToCallbackType };
+export { runCallback };

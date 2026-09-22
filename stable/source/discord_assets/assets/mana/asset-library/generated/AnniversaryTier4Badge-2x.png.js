@@ -1,0 +1,12 @@
+// Module ID: 5835
+// Function ID: 5836
+// Dependencies: [2]
+
+// Module 5835
+import size from "module_2" /* 2 */;
+
+const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AnniversaryTier4Badge-2x.png.js");
+
+export default "https://cdn.discordapp.com/assets/content/0b6e02a5c11f242fb16352efd7fb38e637c2d10594f2d99ccd997392eead9219.png";
+export const vanityUrl = "https://cdn.discordapp.com/assets/mana/asset-library/generated/AnniversaryTier4Badge-2x.png";
+export const metadata = { fileBytes: 1861 };

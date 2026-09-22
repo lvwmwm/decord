@@ -1,35 +1,9 @@
 // Module ID: 12875
 // Function ID: 12876
-// Dependencies: [12807, 12828, 12857]
+// Dependencies: [1120]
 
 // Module 12875
-import setupIntegration from "module_12857" /* 12857 */;
+import registerAsset from "module_1120" /* 1120 */;
 
-const weakMap = new WeakMap();
 
-export const functionToStringIntegration = setupIntegration.defineIntegration(() => ({
-  name: "FunctionToString",
-  setupOnce() {
-    toString = Function.prototype.toString;
-    try {
-      const _Function = Function;
-      Function.prototype.toString = function() {
-        const items = [...arguments];
-        const originalFunction = closure_1_0(12807).getOriginalFunction(this);
-        const obj = closure_1_0(12807);
-        let self = this;
-        if (set.has(obj2.getClient())) {
-          self = this;
-          if (undefined !== originalFunction) {
-            self = originalFunction;
-          }
-        }
-        return toString.apply(self, items);
-      };
-    } catch (err) {
-    }
-  },
-  setup(arg0) {
-    const result = weakMap.set(arg0, true);
-  }
-}));
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hub/native/images", width: 120, height: 80, scales: [2, 3], hash: "8a1b4cbcf69c94f39bb256787c4e1df8", name: "search_empty_state", type: "png" });

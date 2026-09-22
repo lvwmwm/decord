@@ -1,13 +1,13 @@
-// Module ID: 16237
-// Function ID: 16238
+// Module ID: 16331
+// Function ID: 16332
 // Name: FavoritesGuildCoachmarkMenuItem
-// Dependencies: [19, 1960, 1074, 1954, 21, 10245, 7156, 504, 1114, 3225, 11132, 2]
+// Dependencies: [19, 1960, 1074, 1954, 21, 10369, 7259, 504, 1114, 3236, 11265, 2]
 // Exports: default
 
-// Module 16237 (FavoritesGuildCoachmarkMenuItem)
+// Module 16331 (FavoritesGuildCoachmarkMenuItem)
 import util from "util" /* 1114 */;
-import _modDef3225 from "module_3225" /* 3225 */;
-import LayerScope from "LayerScope" /* 7156 */;
+import _modDef3236 from "module_3236" /* 3236 */;
+import LayerScope from "LayerScope" /* 7259 */;
 import noop from "module_19" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 1960 */;
 
@@ -34,9 +34,9 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, onDismiss, callback1];
   const memo = onDismiss.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M12 10h1V9h2V7h-2V6h-1V5h-1v1h-1v1H9v2h1v1h1v1h1v-1Z", onButtonPress: "#C7C7C7" };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M15 2V1H9v1h6ZM9 3V2H5v1h4Z", onButtonPress: "#fff" };
     const intl = util.intl;
-    const tmp4 = _modDef3225;
+    const tmp4 = _modDef3236;
     if (stateFromStores) {
       let TWuDTt = tmp4.TWuDTt;
       let tmp6 = tmp3;
@@ -46,10 +46,10 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
     }
     obj.title = intl.string(TWuDTt);
     const intl2 = tmp(1114).intl;
-    obj.description = intl2.string(tmp6(3225).Ztl9ht);
+    obj.description = intl2.string(tmp6(3236).Ztl9ht);
     obj.onDismiss = onDismiss;
     const intl3 = tmp(1114).intl;
-    obj.buttonLabel = intl3.string(tmp6(3225)["+h9aza"]);
+    obj.buttonLabel = intl3.string(tmp6(3236)["+h9aza"]);
     obj.onButtonPress = callback1;
     return obj;
   }, items3);

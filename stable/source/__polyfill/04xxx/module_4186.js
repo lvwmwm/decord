@@ -1,22 +1,12 @@
 // Module ID: 4186
 // Function ID: 4187
-// Dependencies: [19, 4185]
-// Exports: useShallow
+// Dependencies: []
+// Exports: default
 
 // Module 4186
-import noop from "module_19" /* 19 */;
+let closure_0 = { lastWeek: "'\u4E0A\u500B'eeee p", yesterday: "'\u6628\u5929' p", today: "'\u4ECA\u5929' p", tomorrow: "'\u660E\u5929' p", nextWeek: "'\u4E0B\u500B'eeee p", other: "P" };
 
-
-export const useShallow = function useShallow(arg0) {
-  closure_0 = arg0;
-  noop.useRef(undefined);
-  return (arg0) => {
-    let current = closure_0(arg0);
-    if (obj.shallow(ref.current, current)) {
-      current = tmp.current;
-    } else {
-      tmp.current = current;
-    }
-    return current;
-  };
+export default function formatRelative(arg0, arg1, arg2, arg3) {
+  return closure_0[arg0];
 };
+export default exports.default;

@@ -1,9 +1,9 @@
 // Module ID: 14746
 // Function ID: 14747
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 14746
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "0adb5d8e46a592b8a25bfa3c913e2915", name: "pt-BR.messages.0adb5d8e46a592b8a25bfa3c913e2915.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/mfa/native/images", width: 380, height: 290, scales: [1], hash: "e8d550faf4e256dff3cc4faddf07f107", name: "img_keychain", type: "png" });

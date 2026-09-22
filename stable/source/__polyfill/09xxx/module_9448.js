@@ -1,9 +1,9 @@
 // Module ID: 9448
 // Function ID: 9449
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 9448
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "4550be26e4ce88ab0a8f2d917df660a6", name: "ic_xbox_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/upsell", width: 120, height: 80, scales: [2, 3], hash: "ff5825c454c175379e6be98cbe46511a", name: "img_nitro_badge", type: "png" });

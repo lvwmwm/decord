@@ -1,43 +1,50 @@
-// Module ID: 6979
-// Function ID: 6980
+// Module ID: 7080
+// Function ID: 7081
 // Name: JoinServer
-// Dependencies: [19, 17, 6980, 21, 4560, 576, 4556, 1114, 6981, 1483, 1477, 6605, 4975, 2]
+// Dependencies: [19, 17, 7081, 21, 4636, 576, 7082, 4632, 1114, 7084, 1483, 1477, 6706, 5056, 2]
 // Exports: default
 
-// Module 6979 (JoinServer)
+// Module 7080 (JoinServer)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6605 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 6981 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6706 */;
+import useTypeConsolidationTextTransform from "useTypeConsolidationTextTransform" /* 7082 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7084 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 class OrSeparator {
   constructor() {
     tmp = closure_11();
-    obj = { style: tmp.separator, children: null };
-    obj1 = { style: tmp.innerSeparator };
-    items = [, , ];
-    items[0] = jsx(View, obj1);
-    obj5 = { style: tmp.orText, variant: "text-sm/semibold", color: "text-muted", children: null };
-    intl = closure_0(closure_2[7]).intl;
-    obj5.children = intl.string(closure_0(closure_2[7]).t.HEuagM);
-    items[1] = jsx(closure_0(closure_2[6]).Text, obj5);
+    obj = closure_0(closure_2[6]);
+    obj1 = { style: tmp.separator, children: null };
     obj6 = { style: tmp.innerSeparator };
-    items[2] = jsx(View, obj6);
-    obj.children = items;
-    return jsxs(View, obj);
+    typeConsolidationTextTransform = obj.useTypeConsolidationTextTransform("JoinServer");
+    items = [, , ];
+    items[0] = jsx(View, obj6);
+    obj7 = { style: null, variant: "text-sm/semibold", color: "text-muted", children: null };
+    items1 = [, ];
+    items1[0] = tmp.orText;
+    items1[1] = typeConsolidationTextTransform;
+    obj7.style = items1;
+    intl = closure_0(closure_2[8]).intl;
+    obj7.children = intl.string(closure_0(closure_2[8]).t.HEuagM);
+    items[1] = jsx(closure_0(closure_2[7]).Text, obj7);
+    obj8 = { style: tmp.innerSeparator };
+    items[2] = jsx(View, obj8);
+    obj1.children = items;
+    return jsxs(View, obj1);
   }
 }
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
-const CreateGuildConstants = fn(6980);
+const CreateGuildConstants = fn(7081);
 ({ CREATE_GUILD_SMALL_SCREEN_MAX_HEIGHT: metroRequire, CreateGuildModalStates: closure_7 } = CreateGuildConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { growSpacing: { flexGrow: 2, minHeight: nativeDefault.space.PX_24 }, container: null, textInput: null, innerSeparator: null, separator: null, orText: null, header: null, description: null, exampleText: null };
 let obj3 = { flexGrow: 2, minHeight: nativeDefault.space.PX_24 };
 obj2.container = { flexGrow: 2, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
@@ -79,11 +86,11 @@ export default function JoinServer(arg0) {
     const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/bold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp4(1114).intl;
     obj5.children = intl.string(tmp4(1114).t.jlfuFW);
-    const items2 = [closure_8(tmp4(4556).Text, obj5), ];
+    const items2 = [closure_8(tmp4(4632).Text, obj5), ];
     const obj6 = { style: tmp.description, variant: "text-sm/medium", color: "text-default", children: null };
     const intl2 = tmp4(1114).intl;
     obj6.children = intl2.string(tmp4(1114).t.lVvN3A);
-    items2[1] = closure_8(tmp4(4556).Text, obj6);
+    items2[1] = closure_8(tmp4(4632).Text, obj6);
     obj4.children = items2;
     tmp7Result = tmp7(closure_10, obj4);
   }
@@ -110,10 +117,10 @@ export default function JoinServer(arg0) {
     example2: items[1],
     example3: items[2],
     exampleHook(children, arg1) {
-      return closure_1_8(navigation(dependencyMap[6]).Text, { variant: "text-sm/medium", color: "text-default", children }, arg1);
+      return closure_1_8(navigation(dependencyMap[7]).Text, { variant: "text-sm/medium", color: "text-default", children }, arg1);
     }
   });
-  items3[2] = closure_8(navigation(4556).Text, obj9);
+  items3[2] = closure_8(navigation(4632).Text, obj9);
   obj7.children = items3;
   const items4 = [closure_9(closure_4, obj7), ];
   const obj11 = { children: null };
@@ -126,7 +133,7 @@ export default function JoinServer(arg0) {
   obj13.loading = submitting;
   obj13.disabled = submitting;
   obj13.onPress = onDone;
-  items5[1] = closure_8(navigation(4975).Button, obj13);
+  items5[1] = closure_8(navigation(5056).Button, obj13);
   items5[2] = closure_8(OrSeparator, {});
   const obj14 = { size: "lg", variant: "secondary", text: null, accessibilityLabel: null, onPress: null };
   const intl8 = tmp4(1114).intl;
@@ -134,7 +141,7 @@ export default function JoinServer(arg0) {
   const intl9 = tmp4(1114).intl;
   obj14.accessibilityLabel = intl9.string(navigation(1114).t["MOqX/G"]);
   obj14.onPress = callback;
-  items5[3] = closure_8(navigation(4975).Button, obj14);
+  items5[3] = closure_8(navigation(5056).Button, obj14);
   obj11.children = items5;
   items4[1] = closure_9(closure_10, obj11);
   obj2.children = items4;

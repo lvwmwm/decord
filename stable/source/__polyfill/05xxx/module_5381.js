@@ -1,9 +1,9 @@
 // Module ID: 5381
 // Function ID: 5382
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 5381
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "c79a547370020e3c89b0c02086f0c3fe", name: "img_account_sync_tiktok_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "08e89c7c23b84c36ce6ed8da12dbbbbb", name: "img_bungie_light", type: "png" });

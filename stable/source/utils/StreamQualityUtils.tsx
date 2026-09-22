@@ -1,28 +1,28 @@
-// Module ID: 9115
-// Function ID: 9116
+// Module ID: 9238
+// Function ID: 9239
 // Name: StreamQualityUtils
-// Dependencies: [19, 4606, 502, 1979, 4583, 1371, 1074, 4607, 1373, 4585, 1114, 504, 4696, 1242, 2]
+// Dependencies: [19, 4682, 502, 1979, 4659, 1371, 1074, 4683, 1373, 4661, 1114, 504, 4772, 1240, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 9115 (StreamQualityUtils)
+// Module 9238 (StreamQualityUtils)
 import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 4696 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 4772 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4606 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 4682 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const StreamSettingsConstants = fn(4607);
+const StreamSettingsConstants = fn(4683);
 ({ ApplicationStreamFPS: c10, ApplicationStreamResolutions: closure_11, ApplicationStreamSettingRequirements: closure_12, getApplicationFramerate: map1, getApplicationResolution: closure_14 } = StreamSettingsConstants);
 let closure_15 = fn(1373).StreamQualitiesToPremiumType;
-const ResolutionTypes = fn(4585).ResolutionTypes;
+const ResolutionTypes = fn(4661).ResolutionTypes;
 let size = fn(2);
 const result = size.fileFinishedImporting("utils/StreamQualityUtils.tsx");
 

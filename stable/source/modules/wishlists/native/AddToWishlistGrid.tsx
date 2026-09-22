@@ -1,19 +1,19 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 13235
+// Function ID: 13236
 // Name: AddToWishlistGrid
-// Dependencies: [19, 17, 7208, 21, 4560, 13097, 13099, 2]
+// Dependencies: [19, 17, 7311, 21, 4636, 13234, 13236, 2]
 // Exports: default
 
-// Module 13098 (AddToWishlistGrid)
-import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 13097 */;
-import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 13099 */;
+// Module 13235 (AddToWishlistGrid)
+import WishlistAnalyticsContext from "WishlistAnalyticsContext" /* 13234 */;
+import AddToWishlistItemCardDefault from "AddToWishlistItemCard" /* 13236 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
-let closure_5 = createStyles.createStyles({ itemsContainer: { flexDirection: "row", flexWrap: "wrap", gap: fn(7208).WISHLIST_SUGGESTION_CARD_GAP, justifyContent: "flex-start" } });
+const createStyles = fn(4636);
+let closure_5 = createStyles.createStyles({ itemsContainer: { flexDirection: "row", flexWrap: "wrap", gap: fn(7311).WISHLIST_SUGGESTION_CARD_GAP, justifyContent: "flex-start" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/wishlists/native/AddToWishlistGrid.tsx");
 

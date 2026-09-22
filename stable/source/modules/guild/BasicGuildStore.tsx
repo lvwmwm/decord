@@ -1,9 +1,9 @@
-// Module ID: 7956
-// Function ID: 7957
+// Module ID: 8059
+// Function ID: 8060
 // Name: BasicGuildStore
 // Dependencies: [504, 573, 2]
 
-// Module 7956 (BasicGuildStore)
+// Module 8059 (BasicGuildStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 
@@ -30,8 +30,8 @@ prototype["isGuildFetching"] = function isGuildFetching(arg0) {
   }
   return tmp2;
 };
-prototype["getGuildOrStatus"] = function getGuildOrStatus(arg0) {
-  return dependencyMap[arg0];
+prototype["getGuildOrStatus"] = function getGuildOrStatus(guild_id) {
+  return dependencyMap[guild_id];
 };
 prototype["getVersion"] = function getVersion() {
   return closure_0;

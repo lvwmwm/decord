@@ -1,17 +1,17 @@
-// Module ID: 10245
-// Function ID: 10246
+// Module ID: 10369
+// Function ID: 10370
 // Name: FavoritesDismissibleContent
-// Dependencies: [32, 19, 1954, 1943, 7389, 10231, 10229, 10244, 7388, 10243, 2]
+// Dependencies: [32, 19, 1954, 1943, 7492, 10355, 10353, 10368, 7491, 10367, 2]
 // Exports: useFavoritesBetaTagDismissibleContent, useFavoritesMenuItemPopoverDismissibleContent, useShouldRenderFavoritesMenuItemPopover
 
-// Module 10245 (FavoritesDismissibleContent)
+// Module 10369 (FavoritesDismissibleContent)
 import dismissible_content from "dismissible_content" /* 1943 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7388 */;
-import useGetDismissibleContent from "useGetDismissibleContent" /* 7389 */;
-import FavoritesHooks from "FavoritesHooks" /* 10229 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10231 */;
-import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10243 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10244 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7491 */;
+import useGetDismissibleContent from "useGetDismissibleContent" /* 7492 */;
+import FavoritesHooks from "FavoritesHooks" /* 10353 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10355 */;
+import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10367 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10368 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

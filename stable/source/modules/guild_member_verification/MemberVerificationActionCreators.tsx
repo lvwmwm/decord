@@ -1,18 +1,18 @@
-// Module ID: 5547
-// Function ID: 5548
+// Module ID: 5628
+// Function ID: 5629
 // Name: MemberVerificationActionCreators
-// Dependencies: [5, 2014, 2021, 4544, 1371, 1074, 1272, 4545, 573, 5548, 5552, 4384, 5553, 4904, 1114, 4461, 1242, 2]
+// Dependencies: [5, 2014, 2021, 4620, 1371, 1074, 1270, 4621, 573, 5629, 5633, 4461, 5634, 4980, 1114, 4537, 1240, 2]
 // Exports: showCoachmark
 
-// Module 5547 (MemberVerificationActionCreators)
+// Module 5628 (MemberVerificationActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 4545 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 4621 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ImpersonateStore from "ImpersonateStore" /* 2014 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import InviteStore from "InviteStore" /* 4544 */;
+import InviteStore from "InviteStore" /* 4620 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;

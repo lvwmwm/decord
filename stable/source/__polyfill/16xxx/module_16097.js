@@ -1,9 +1,9 @@
 // Module ID: 16097
 // Function ID: 16098
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 16097
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 21, height: 18, scales: [1, 2, 3], hash: "f19353ccef9be27782bf69aac76f0908", name: "ic_invite", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf/native/components/notification", width: 150.5, height: 156, scales: [2, 3], hash: "af47f5760d10cc835b5537c36ba26c7a", name: "redesign_notification_illustration", type: "png" });

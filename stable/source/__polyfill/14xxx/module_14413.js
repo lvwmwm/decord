@@ -1,53 +1,20 @@
 // Module ID: 14413
 // Function ID: 14414
-// Dependencies: []
+// Dependencies: [14404, 14414, 14412, 14415]
 
 // Module 14413
+import _mod14404 from "module_14404" /* 14404 */;
+import _mod14412 from "module_14412" /* 14412 */;
+import _mod14414 from "module_14414" /* 14414 */;
+import _mod14415 from "module_14415" /* 14415 */;
 
-export default (arg0) => {
-  let map = arg0;
-  if (!arg0) {
-    const _Map = Map;
-    map = new Map();
+
+export default _mod14404 ? ((arg0) => typeof arg0 === "symbol") : ((arg0) => {
+  const tmp3 = _mod14414("Symbol");
+  let tmpResultResult = _mod14412(tmp3);
+  if (tmpResultResult) {
+    tmpResultResult = _mod14415(tmp3.prototype, Object(arg0));
+    const tmpResult = _mod14415;
   }
-  return {
-    all: map,
-    on(arg0, arg1) {
-      value = map.get(arg0);
-      if (value) {
-        value.push(arg1);
-      } else {
-        const items = [arg1];
-        const result = map.set(arg0, items);
-      }
-    },
-    off(arg0, arg1) {
-      value = map.get(arg0);
-      if (value) {
-        if (arg1) {
-          value.splice(value.indexOf(arg1) >>> 0, 1);
-        } else {
-          const result = map.set(arg0, []);
-        }
-      }
-    },
-    emit(arg0, arg1) {
-      closure_0 = arg0;
-      closure_1 = arg1;
-      value = map.get(arg0);
-      if (value) {
-        const substr = value.slice();
-        const mapped = substr.map((fn) => {
-          fn(closure_1);
-        });
-      }
-      value2 = map.get("*");
-      if (value2) {
-        const substr1 = value2.slice();
-        const mapped1 = substr1.map((fn) => {
-          fn(closure_0, closure_1);
-        });
-      }
-    }
-  };
-};
+  return tmpResultResult;
+});

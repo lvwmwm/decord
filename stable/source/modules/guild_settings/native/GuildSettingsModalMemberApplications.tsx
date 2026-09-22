@@ -1,17 +1,17 @@
-// Module ID: 16580
-// Function ID: 16581
+// Module ID: 16680
+// Function ID: 16681
 // Name: GuildSettingsModalMemberApplications
-// Dependencies: [19, 17, 5542, 21, 4560, 576, 4404, 4556, 16581, 1396, 5605, 1178, 1611, 16586, 4384, 16587, 504, 1114, 8880, 8233, 7040, 2]
+// Dependencies: [19, 17, 5623, 21, 4636, 576, 4481, 4632, 16681, 1396, 5686, 1176, 1611, 16686, 4461, 16687, 504, 1114, 9003, 8348, 7143, 2]
 
-// Module 16580 (GuildSettingsModalMemberApplications)
+// Module 16680 (GuildSettingsModalMemberApplications)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4384 */;
-import UserUtilsDefault from "UserUtils" /* 4404 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16581 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4461 */;
+import UserUtilsDefault from "UserUtils" /* 4481 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 16681 */;
 import noop from "module_19" /* 19 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5542 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5623 */;
 
 const require = globalThis.__r;
 
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { containerInner: { paddingHorizontal: nativeDefault.space.PX_12, flex: 1, marginTop: 16 }, spinnerContainer: { padding: 32 }, footerSpinner: { paddingVertical: 16 }, spinner: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12, flex: 1, marginTop: 16 };
 obj.spinner = { color: nativeDefault.colors.TEXT_BRAND };
@@ -57,14 +57,14 @@ let closure_12 = noop.memo((joinRequest) => {
         userAvatarSource = AvatarUtilsDefault.getUserAvatarSource(user);
       }
       const obj2 = { arrow: true, icon: null, label: null, onPress: null, start: null, end: null };
-      const obj3 = { source: userAvatarSource, size: joinRequest(1178).AvatarSizes.SMALL };
-      obj2.icon = closure_7(joinRequest(1178).Avatar, obj3);
+      const obj3 = { source: userAvatarSource, size: joinRequest(1176).AvatarSizes.SMALL };
+      obj2.icon = closure_7(joinRequest(1176).Avatar, obj3);
       const obj4 = { user };
       obj2.label = closure_7(closure_11, obj4);
       obj2.onPress = tmp;
       obj2.start = start;
       obj2.end = end;
-      return closure_7(joinRequest(5605).TableRow, obj2);
+      return closure_7(joinRequest(5686).TableRow, obj2);
     }
   }
 });

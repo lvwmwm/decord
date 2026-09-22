@@ -1,14 +1,14 @@
-// Module ID: 10298
-// Function ID: 10299
+// Module ID: 10422
+// Function ID: 10423
 // Name: useComputeEmojiPickerFunctions
-// Dependencies: [32, 19, 5463, 10295, 10299, 4213, 12, 10290, 1933, 2]
+// Dependencies: [32, 19, 5544, 10419, 10423, 4289, 12, 10414, 1933, 2]
 // Exports: default
 
-// Module 10298 (useComputeEmojiPickerFunctions)
+// Module 10422 (useComputeEmojiPickerFunctions)
 import FunctionUtils from "FunctionUtils" /* 1933 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4213 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 10290 */;
-import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 10299 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 10414 */;
+import age_gate_AgeGateUtils from "age_gate/AgeGateUtils" /* 10423 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -204,9 +204,9 @@ function pushNativeCategory(emojiSections) {
   emojiSections = emojiSections.emojiSections;
   emojiSections.push(emojiSections.renderingData);
 }
-const EmojiPickerConstants = fn(5463);
+const EmojiPickerConstants = fn(5544);
 ({ EmojiCategories: hasOwnProperty, EmojiCategoryTypes: metroRequire } = EmojiPickerConstants);
-const constants3 = fn(10295).EmojiPickerRenderingDataType;
+const constants3 = fn(10419).EmojiPickerRenderingDataType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/emoji_picker/native/components/useComputeEmojiPickerFunctions.tsx");
 

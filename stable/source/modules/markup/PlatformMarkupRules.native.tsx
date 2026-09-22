@@ -1,21 +1,21 @@
-// Module ID: 5027
-// Function ID: 5028
+// Module ID: 5108
+// Function ID: 5109
 // Name: PlatformMarkupRules
-// Dependencies: [17, 5028, 5107, 1924, 1114, 4213, 4257, 5122, 5005, 1396, 5006, 5009, 2]
+// Dependencies: [17, 5109, 5188, 1924, 1114, 4289, 4333, 5203, 5086, 1396, 5087, 5090, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
-// Module 5027 (PlatformMarkupRules)
+// Module 5108 (PlatformMarkupRules)
 import _mod17 from "module_17" /* 17 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
 import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 1924 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4213 */;
-import _modDef4257 from "module_4257" /* 4257 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5005 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5006 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5009 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5028 */;
-import useGameMentionData from "useGameMentionData" /* 5107 */;
-import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5122 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4289 */;
+import _modDef4333 from "module_4333" /* 4333 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5086 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5087 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5090 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5109 */;
+import useGameMentionData from "useGameMentionData" /* 5188 */;
+import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 5203 */;
 import size from "module_2" /* 2 */;
 
 const Image = _mod17.Image;
@@ -54,7 +54,7 @@ let obj = {
   silentPrefix: null
 };
 let obj2 = {};
-let merged = Object.assign(_modDef4257.defaultRules.escape);
+let merged = Object.assign(_modDef4333.defaultRules.escape);
 obj2.requiredFirstCharacters = undefined;
 obj2.match = function match(arg0) {
   const INVISIBLE_CHAR_REGEX = MarkupInvisibleUnicode.INVISIBLE_CHAR_REGEX;
@@ -377,15 +377,15 @@ obj.silentPrefix = {
 let result = size.fileFinishedImporting("modules/markup/PlatformMarkupRules.native.tsx");
 
 export default obj;
-export const decorateWithIcon = function decorateWithIcon(str) {
-  let mapped = str;
-  if (null != str) {
-    mapped = str;
-    if (typeof str !== "string") {
+export const decorateWithIcon = function decorateWithIcon(content) {
+  let mapped = content;
+  if (null != content) {
+    mapped = content;
+    if (typeof content !== "string") {
       const _Array = Array;
-      let arr2 = str;
-      if (!(str instanceof Array)) {
-        const items = [str];
+      let arr2 = content;
+      if (!(content instanceof Array)) {
+        const items = [content];
         arr2 = items;
       }
       mapped = arr2.map((type) => {

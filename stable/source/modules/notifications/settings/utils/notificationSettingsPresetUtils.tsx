@@ -1,14 +1,14 @@
-// Module ID: 4744
-// Function ID: 4745
+// Module ID: 4820
+// Function ID: 4821
 // Name: notificationSettingsPresetUtils
-// Dependencies: [1074, 4742, 4745, 1114, 2]
+// Dependencies: [1074, 4818, 4821, 1114, 2]
 // Exports: arePresetSettingsUnset, presetFromSettings, presetName
 
-// Module 4744 (notificationSettingsPresetUtils)
+// Module 4820 (notificationSettingsPresetUtils)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1114 */;
-import ReadStateConstants from "ReadStateConstants" /* 4742 */;
-import _mod4745 from "module_4745" /* 4745 */;
+import ReadStateConstants from "ReadStateConstants" /* 4818 */;
+import _mod4821 from "module_4821" /* 4821 */;
 import size from "module_2" /* 2 */;
 
 const UserNotificationSettings = Constants.UserNotificationSettings;
@@ -19,7 +19,7 @@ const result = size.fileFinishedImporting("modules/notifications/settings/utils/
 export { Presets };
 export const presetFromSettings = function presetFromSettings(unreadSetting, UserGuildSettingsStore) {
   const items = [UserGuildSettingsStore, unreadSetting];
-  const match = _mod4745.match(items);
+  const match = _mod4821.match(items);
   const items1 = [UserNotificationSettings.ALL_MESSAGES, UnreadSetting.ALL_MESSAGES];
   const items2 = [UserNotificationSettings.ONLY_MENTIONS, UnreadSetting.UNSET];
   const withResult = match.with(items1, () => constants.ALL_MESSAGES);
@@ -32,7 +32,7 @@ export const presetFromSettings = function presetFromSettings(unreadSetting, Use
   return match.with(items1, () => constants.ALL_MESSAGES).with(items2, () => constants.MENTIONS).with(items3, () => constants.MENTIONS).with(items4, () => constants.NOTHING).with(items5, () => constants.NOTHING).otherwise(() => constants.CUSTOM);
 };
 export const presetName = function presetName(tmp4Result5) {
-  const match = _mod4745.match(tmp4Result5);
+  const match = _mod4821.match(tmp4Result5);
   const withResult = match.with(obj.ALL_MESSAGES, () => {
     const intl = util.intl;
     return intl.string(util.t.hZrr6k);

@@ -1,10 +1,10 @@
-// Module ID: 9086
-// Function ID: 9087
+// Module ID: 9209
+// Function ID: 9210
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1085, 21, 4560, 576, 1114, 2528, 4556, 4975, 1178, 2]
+// Dependencies: [19, 17, 1085, 21, 4636, 576, 1114, 2528, 4632, 5056, 1176, 2]
 // Exports: default
 
-// Module 9086 (InAppReportsBottomButton)
+// Module 9209 (InAppReportsBottomButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import _modDef2528 from "module_2528" /* 2528 */;
@@ -14,7 +14,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 0, alignSelf: "stretch", paddingBottom: 12 }, paddingHorizontal: { paddingHorizontal: 16 }, divider: { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 }, descriptionText: { lineHeight: 16, textAlign: "center", marginBottom: 12 }, errorText: null };
 let obj3 = { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 };
 obj2.errorText = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: fn(1085).Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
@@ -67,7 +67,7 @@ export default function InAppReportsBottomButton(button) {
       let tmp14Result = null;
       if (null != tmp3) {
         const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-        tmp14Result = tmp14(tmp17(4556).Text, obj4);
+        tmp14Result = tmp14(tmp17(4632).Text, obj4);
       }
       const items1 = [tmp14Result, , ];
       const obj5 = {
@@ -78,11 +78,11 @@ export default function InAppReportsBottomButton(button) {
         text: stringResult2,
         variant: str2
       };
-      items1[1] = React4(tmp17(4975).Button, obj5);
+      items1[1] = React4(tmp17(5056).Button, obj5);
       let tmp14Result2 = null;
       if (hasError) {
         const obj6 = { style: tmp.errorText, children: string2Result };
-        tmp14Result2 = tmp14(tmp17(1178).LegacyText, obj6);
+        tmp14Result2 = tmp14(tmp17(1176).LegacyText, obj6);
       }
       items1[2] = tmp14Result2;
       obj3.children = items1;

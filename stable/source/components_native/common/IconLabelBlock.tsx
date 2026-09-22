@@ -1,14 +1,14 @@
-// Module ID: 16854
-// Function ID: 16855
+// Module ID: 16966
+// Function ID: 16967
 // Name: IconLabelBlock
-// Dependencies: [109, 19, 17, 21, 4560, 576, 4271, 1178, 4556, 10933, 4411, 2]
+// Dependencies: [109, 19, 17, 21, 4636, 576, 4347, 1176, 4632, 11063, 4488, 2]
 
-// Module 16854 (IconLabelBlock)
+// Module 16966 (IconLabelBlock)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
-import shared from "shared" /* 4411 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import IconUploaderDefault from "IconUploader" /* 10933 */;
+import native from "native" /* 1176 */;
+import shared from "shared" /* 4488 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import IconUploaderDefault from "IconUploader" /* 11063 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { wrapper: { alignItems: "center", paddingTop: 26, paddingBottom: 16 }, error: { fontSize: 12, textAlign: "center", alignSelf: "center", marginBottom: 10, color: nativeDefault.unsafe_rawColors.RED_400 }, label: null, iconUploaderWrapper: null, text: null };
 let obj3 = { fontSize: 12, textAlign: "center", alignSelf: "center", marginBottom: 10, color: nativeDefault.unsafe_rawColors.RED_400 };
 obj2.label = { fontSize: 12, marginTop: 20, color: nativeDefault.colors.TEXT_SUBTLE };
@@ -99,7 +99,7 @@ prototype["render"] = function render() {
   obj.children = items1;
   return React6(hasOwnProperty, obj);
 };
-IconLabelBlock.contextType = fn(4271).ThemeContext;
+IconLabelBlock.contextType = fn(4347).ThemeContext;
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/common/IconLabelBlock.tsx");
 

@@ -1,0 +1,9 @@
+// Module ID: 5431
+// Function ID: 5432
+// Dependencies: [1120]
+
+// Module 5431
+import registerAsset from "module_1120" /* 1120 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "576340e1ed4deb81baadbae498cf3ba0", name: "img_account_sync_github_white", type: "png" });

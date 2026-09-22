@@ -1,22 +1,31 @@
 // Module ID: 3919
 // Function ID: 3920
-// Dependencies: [3900, 3655]
-// Exports: default
+// Dependencies: []
+// Exports: getRoundingMethod
 
 // Module 3919
-import _mod3655 from "module_3655" /* 3655 */;
-import assign_mod from "assign" /* 3900 */;
-
-let assign = assign_mod;
-if (!assign) {
-  const obj = { default: assign };
-  let tmp3 = obj;
-} else {
-  tmp3 = assign;
-}
-assign = tmp3;
-
-export default function getDefaultOptions() {
-  return assign.default({}, _mod3655.getDefaultOptions());
+const obj = {
+  ceil: Math.ceil,
+  round: Math.round,
+  floor: Math.floor,
+  trunc(endImportTime) {
+    if (endImportTime < 0) {
+      const _Math2 = Math;
+      let rounded = Math.ceil(endImportTime);
+    } else {
+      const _Math = Math;
+      rounded = Math.floor(endImportTime);
+    }
+    return rounded;
+  }
 };
-export default exports.default;
+const trunc = "trunc";
+
+export const getRoundingMethod = function getRoundingMethod(roundingMethod) {
+  if (roundingMethod) {
+    let tmp3 = tmp[roundingMethod];
+  } else {
+    tmp3 = tmp[trunc];
+  }
+  return tmp3;
+};

@@ -1,9 +1,9 @@
-// Module ID: 1343
-// Function ID: 1344
+// Module ID: 1341
+// Function ID: 1342
 // Name: NativeDeviceModule
 // Dependencies: [17, 2]
 
-// Module 1343 (NativeDeviceModule)
+// Module 1341 (NativeDeviceModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

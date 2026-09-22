@@ -1,23 +1,23 @@
-// Module ID: 7554
-// Function ID: 7555
+// Module ID: 7657
+// Function ID: 7658
 // Name: CollectiblesUtils
-// Dependencies: [7547, 1887, 7548, 7549, 7555, 1076, 1074, 1085, 4218, 1377, 1379, 7556, 7234, 1115, 1889, 12, 1114, 7553, 2]
+// Dependencies: [7650, 1887, 7651, 7652, 7658, 1076, 1074, 1085, 4294, 1377, 1379, 7337, 1363, 1889, 12, 1114, 7656, 2]
 // Exports: canActionOnProduct, extendVariantsProducts, extractPriceByPurchaseTypes, getAnalyticsShopDiscountSource, getAssetDisplayConfig, getAssetForAvatarDecorationProduct, getAvatarDecorations, getAvatarDecorationsFromCategories, getAvatarDecorationsFromPurchases, getBundleItemsPriceSum, getCollectibleTypeLabel, getCollectiblesItemTypeForDisplay, getCollectiblesPrice, getCollectiblesProductPriceComparisons, getDaysRemaining, getDefaultPriceSetAssignmentPurchaseType, getFormattedPriceForCollectiblesProduct, getLogoSize, getNameplates, getNameplatesFromCategories, getNameplatesFromPurchases, getPriceForCollectiblesProduct, getProductDiscount, getProductTypeNameForLogging, getProductsFromCategories, getProfileEffects, getProfileEffectsFromCategories, getProfileEffectsFromPurchases, getProfileFrames, getProfileFramesFromCategories, getProfileFramesFromPurchases, getShopDiscountSource, getStrikeThroughPriceAmountForCollectiblesProduct, groupProfileEffects, isBundleProduct, isCollectiblesGiftCode, isFreeCollectiblesProduct, isPremiumCollectiblesProduct, isPremiumCollectiblesPurchase, isProductNew, removeRewardProductsFilter, shouldHideGiftingForCurrency, shouldShowLimitedTimeBadge, sortProductsByPrice
 
-// Module 7554 (CollectiblesUtils)
+// Module 7657 (CollectiblesUtils)
 import _mod12 from "module_12" /* 12 */;
 import Constants2 from "Constants" /* 1085 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import PerksStateUtils from "PerksStateUtils" /* 1377 */;
 import NameplateRecord from "NameplateRecord" /* 1887 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4218 */;
-import PriceUtils from "PriceUtils" /* 7234 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7547 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7548 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7549 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7553 */;
-import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7555 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4294 */;
+import PriceUtils from "PriceUtils" /* 7337 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7650 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7651 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7652 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7656 */;
+import ShopAssetConfigRecord from "ShopAssetConfigRecord" /* 7658 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1076 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
@@ -66,13 +66,13 @@ function getItemRecordsFromCategories(arr, PROFILE_EFFECT) {
       if (type.type === require("CollectiblesItemType").CollectiblesItemType.VARIANTS_GROUP) {
         if (null != type.variants) {
           const variants = type.variants;
-          let combined = tmp(tmp2[15]).concat(arr, variants.map((item) => {
+          let combined = tmp(tmp2[14]).concat(arr, variants.map((item) => {
             const obj = {};
             const merged = Object.assign(item);
             ({ storeListingId: obj.variantGroupStoreListingId, eligibleOffers: obj.eligibleOffers } = closure_0);
             return obj;
           }));
-          const tmpResult = tmp(tmp2[15]);
+          const tmpResult = tmp(tmp2[14]);
         }
         return combined;
       }
@@ -147,18 +147,14 @@ export const getShopDiscountSource = function getShopDiscountSource(currentUser)
       if (hasItem) {
         let NITRO = obj.NITRO;
       } else {
-        NITRO = null;
-        if (tmp4Result.getIsXboxGamePassPerksEnabled("getShopDiscountSource")) {
-          let hasItem1;
-          if (perkSource != null) {
-            hasItem1 = perkSource.includes(tmp4(1379).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
-          }
-          NITRO = null;
-          if (hasItem1) {
-            NITRO = obj.THIRDPARTY;
-          }
+        let hasItem1;
+        if (perkSource != null) {
+          hasItem1 = perkSource.includes(tmp4(1379).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
         }
-        tmp4Result = tmp4(7556);
+        NITRO = null;
+        if (hasItem1) {
+          NITRO = obj.THIRDPARTY;
+        }
       }
       return NITRO;
     }
@@ -291,7 +287,7 @@ export const getBundleItemsPriceSum = function getBundleItemsPriceSum(bundledPro
         return acc + num;
       }, 0);
     } else {
-      const tmpResult = tmp(1115);
+      const tmpResult = tmp(1363);
     }
     DEFAULT = constants3.DEFAULT;
     obj = require("PlatformUtils");
@@ -400,7 +396,7 @@ export const getProductDiscount = function getProductDiscount(product, hasShopDi
           return acc + num;
         }, 0);
       } else {
-        const tmpResult = tmp(1115);
+        const tmpResult = tmp(1363);
       }
       DEFAULT = constants3.DEFAULT;
       obj = require("PlatformUtils");
@@ -504,13 +500,13 @@ export const extendVariantsProducts = function extendVariantsProducts(items) {
       if (type.type === require("CollectiblesItemType").CollectiblesItemType.VARIANTS_GROUP) {
         if (null != type.variants) {
           const variants = type.variants;
-          let combined = tmp(tmp2[15]).concat(arr, variants.map((item) => {
+          let combined = tmp(tmp2[14]).concat(arr, variants.map((item) => {
             const obj = {};
             const merged = Object.assign(item);
             ({ storeListingId: obj.variantGroupStoreListingId, eligibleOffers: obj.eligibleOffers } = closure_0);
             return obj;
           }));
-          const tmpResult = tmp(tmp2[15]);
+          const tmpResult = tmp(tmp2[14]);
         }
         return combined;
       }
@@ -532,13 +528,13 @@ export const getProductsFromCategories = function getProductsFromCategories(arr,
         if (type.type === require("CollectiblesItemType").CollectiblesItemType.VARIANTS_GROUP) {
           if (null != type.variants) {
             const variants = type.variants;
-            let combined = tmp(tmp2[15]).concat(arr, variants.map((item) => {
+            let combined = tmp(tmp2[14]).concat(arr, variants.map((item) => {
               const obj = {};
               const merged = Object.assign(item);
               ({ storeListingId: obj.variantGroupStoreListingId, eligibleOffers: obj.eligibleOffers } = closure_0);
               return obj;
             }));
-            const tmpResult = tmp(tmp2[15]);
+            const tmpResult = tmp(tmp2[14]);
           }
           return combined;
         }
@@ -780,10 +776,10 @@ export const getStrikeThroughPriceAmountForCollectiblesProduct = function getStr
           return acc + num;
         }, 0);
       } else {
-        const tmp2Result2 = tmp2(1115);
+        const tmp2Result2 = tmp2(1363);
       }
       DEFAULT = constants3.DEFAULT;
-      tmp2Result = tmp2(1115);
+      tmp2Result = tmp2(1363);
     }
   } else if (!c5) {
     const tmp5 = stateFromStores.prices[arg2 ? tmp16.MOBILE_PREMIUM_TIER_2 : tmp16.PREMIUM_TIER_2];

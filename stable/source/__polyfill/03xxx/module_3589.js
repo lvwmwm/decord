@@ -1,9 +1,9 @@
 // Module ID: 3589
 // Function ID: 3590
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 3589
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb25uZWN0ZWRfZGV2aWNlcw==", scales: [1], hash: "fb8974de65f79a6f7ed64a9d6c8826ad", name: "es-ES.messages.fb8974de65f79a6f7ed64a9d6c8826ad.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/private_channels/clean_up_inactive_gdms", scales: [1], hash: "130e925e8a424a9b43d870d884dca58e", name: "CleanUpInactiveGDMs.compiled.messages", type: "jsona" });

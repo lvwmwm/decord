@@ -1,37 +1,37 @@
-// Module ID: 12239
-// Function ID: 12240
+// Module ID: 12368
+// Function ID: 12369
 // Name: ChatInputActions
-// Dependencies: [32, 19, 11966, 1074, 21, 4560, 576, 4980, 7873, 4262, 6625, 4427, 1609, 12240, 7845, 4971, 5151, 1114, 10658, 5087, 10643, 12241, 5106, 10117, 12213, 12215, 7847, 1242, 4296, 8672, 12243, 4267, 12244, 12245, 12249, 2]
+// Dependencies: [32, 19, 12095, 1074, 21, 4636, 576, 5061, 7975, 4338, 6726, 4504, 1609, 12369, 7947, 5052, 5232, 1114, 10782, 5168, 10767, 12370, 5187, 10240, 12342, 12344, 7949, 1240, 4373, 8789, 12372, 4343, 12373, 12374, 12378, 2]
 
-// Module 12239 (ChatInputActions)
+// Module 12368 (ChatInputActions)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import mergeProps from "mergeProps" /* 4267 */;
-import ImageIcon from "ImageIcon" /* 5087 */;
-import AppsIcon from "AppsIcon" /* 5106 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 5151 */;
-import AttachmentIcon from "AttachmentIcon" /* 10117 */;
-import PollsIcon from "PollsIcon" /* 10643 */;
-import CameraIcon from "CameraIcon" /* 10658 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 12213 */;
-import ThreadPlusIcon from "ThreadPlusIcon" /* 12241 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12243 */;
-import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 12244 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import mergeProps from "mergeProps" /* 4343 */;
+import ImageIcon from "ImageIcon" /* 5168 */;
+import AppsIcon from "AppsIcon" /* 5187 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 5232 */;
+import AttachmentIcon from "AttachmentIcon" /* 10240 */;
+import PollsIcon from "PollsIcon" /* 10767 */;
+import CameraIcon from "CameraIcon" /* 10782 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 12342 */;
+import ThreadPlusIcon from "ThreadPlusIcon" /* 12370 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 12372 */;
+import MediaKeyboardButtonIcon from "MediaKeyboardButtonIcon" /* 12373 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const ChatInputConstants = fn(11966);
+const ChatInputConstants = fn(12095);
 ({ ChatInputActionType: hasOwnProperty, ChatInputOmniButtonActionType: metroRequire } = ChatInputConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { actions: { flexDirection: "row", alignItems: "center" }, themedChatInput: { backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG }, buttonWrapper: null, activeBrand: null };
 let obj3 = { backgroundColor: nativeDefault.colors.CARD_SECONDARY_BG };
-obj.buttonWrapper = { maxHeight: fn(4980).SMALL_BUTTON_HEIGHT + fn(4980).SMALL_BUTTON_PADDING };
-let obj4 = { maxHeight: fn(4980).SMALL_BUTTON_HEIGHT + fn(4980).SMALL_BUTTON_PADDING };
+obj.buttonWrapper = { maxHeight: fn(5061).SMALL_BUTTON_HEIGHT + fn(5061).SMALL_BUTTON_PADDING };
+let obj4 = { maxHeight: fn(5061).SMALL_BUTTON_HEIGHT + fn(5061).SMALL_BUTTON_PADDING };
 obj.activeBrand = { tintColor: nativeDefault.colors.CHAT_INPUT_ACTION_ICON_ACTIVE_TINT };
 let closure_10 = createStyles.createStyles(obj);
 let __initData = { code: "function ChatInputActionsTsx1(){return{opacity:1};}" };
@@ -59,7 +59,7 @@ const forwardRefResult = noop.forwardRef((canStartThreads, ref) => {
   const tmp6 = channel(isAppLauncherEnabled[13])(channel);
   closure_15 = tmp6;
   let obj3 = canStartThreads(isAppLauncherEnabled[11]);
-  const canUseScheduledMessages = canStartThreads(isAppLauncherEnabled[14]).useCanUseScheduledMessages();
+  const canSendScheduledMessagesInChannel = canStartThreads(isAppLauncherEnabled[14]).useCanSendScheduledMessagesInChannel(channel);
   let obj4 = canStartThreads(isAppLauncherEnabled[14]);
   [c17, c18] = onPressAction(noop.useState(false), 2);
   const tmp9 = onPressAction(noop.useState(true), 2);
@@ -85,7 +85,7 @@ const forwardRefResult = noop.forwardRef((canStartThreads, ref) => {
       }
     };
   }, []).showActionsImperativeApi);
-  let items = [canPostPolls, canStartThreads, isAppLauncherEnabled, canUpload, tmp6, canUseScheduledMessages, channel.id, onPressAction, onPollsPress, onAttachPress];
+  let items = [canPostPolls, canStartThreads, isAppLauncherEnabled, canUpload, tmp6, canSendScheduledMessagesInChannel, channel.id, onPressAction, onPollsPress, onAttachPress];
   noop.useMemo(() => {
     let result = canUpload;
     if (canUpload) {
@@ -151,7 +151,7 @@ const forwardRefResult = noop.forwardRef((canStartThreads, ref) => {
       obj7.action = onAttachPress;
       items.push(obj7);
     }
-    if (canUseScheduledMessages) {
+    if (canSendScheduledMessagesInChannel) {
       const obj8 = { label: null, IconComponent: null, action: null };
       const intl7 = util.intl;
       obj8.label = intl7.string(util.t["3+ii4F"]);

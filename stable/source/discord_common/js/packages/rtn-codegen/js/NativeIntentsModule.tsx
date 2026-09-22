@@ -1,9 +1,9 @@
-// Module ID: 4694
-// Function ID: 4695
+// Module ID: 4770
+// Function ID: 4771
 // Name: NativeIntentsModule
 // Dependencies: [17, 2]
 
-// Module 4694 (NativeIntentsModule)
+// Module 4770 (NativeIntentsModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

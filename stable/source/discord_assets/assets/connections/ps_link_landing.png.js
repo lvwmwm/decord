@@ -1,8 +1,8 @@
-// Module ID: 9263
-// Function ID: 9264
+// Module ID: 9386
+// Function ID: 9387
 // Dependencies: [2]
 
-// Module 9263
+// Module 9386
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/connections/ps_link_landing.png.js");

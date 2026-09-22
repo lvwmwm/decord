@@ -1,7 +1,7 @@
 // Module ID: 1899
 // Function ID: 1900
 // Name: ZoomedInTelemetry
-// Dependencies: [5, 1900, 1901, 1903, 1905, 1242, 2]
+// Dependencies: [5, 1900, 1901, 1903, 1905, 1240, 2]
 
 // Module 1899 (ZoomedInTelemetry)
 import ZoomedInAnalyticsExperiment from "ZoomedInAnalyticsExperiment" /* 1900 */;

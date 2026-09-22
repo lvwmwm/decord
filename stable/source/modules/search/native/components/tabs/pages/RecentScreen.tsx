@@ -1,25 +1,25 @@
-// Module ID: 16643
-// Function ID: 16644
+// Module ID: 16749
+// Function ID: 16750
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 7281, 12367, 16644, 12343, 7879, 12357, 1074, 21, 5123, 12365, 1114, 4556, 10867, 16645, 4573, 12362, 12344, 504, 1484, 16648, 12342, 14824, 8412, 8414, 16649, 16650, 16653, 2]
+// Dependencies: [32, 5, 19, 7384, 12496, 16750, 12472, 7982, 12486, 1074, 21, 5204, 12494, 1114, 4632, 10994, 16751, 4649, 12491, 12473, 504, 1484, 16754, 12471, 14911, 8529, 8531, 16755, 16756, 16759, 2]
 
-// Module 16643 (RecentScreen)
+// Module 16749 (RecentScreen)
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Pressables from "Pressables" /* 5123 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8412 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8414 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 12342 */;
-import SearchUtils from "SearchUtils" /* 12344 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12362 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12365 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Pressables from "Pressables" /* 5204 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8529 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8531 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 12471 */;
+import SearchUtils from "SearchUtils" /* 12473 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12491 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12494 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 7281 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12367 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 16644 */;
-import SearchQueryStore from "SearchQueryStore" /* 12343 */;
+import SearchMessageStore from "SearchMessageStore" /* 7384 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12496 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 16750 */;
+import SearchQueryStore from "SearchQueryStore" /* 12472 */;
 
 require = fn;
 function ClearAllHistory(searchContext) {
@@ -38,8 +38,8 @@ function ClearAllHistory(searchContext) {
   const obj2 = { variant: "text-sm/semibold", color: "text-brand", children: null };
   const intl2 = searchContext(1114).intl;
   obj2.children = intl2.string(searchContext(1114).t.LFTAUp);
-  obj.children = jsx(searchContext(4556).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
-  return jsx(searchContext(5123).PressableHighlight, {
+  obj.children = jsx(searchContext(4632).Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
+  return jsx(searchContext(5204).PressableHighlight, {
     onPress() {
       return SearchPlatformActionCreatorsDefault.clearSearchHistory(searchContext);
     },
@@ -59,9 +59,9 @@ function ViewAll(onJumpToMedia) {
   obj.children = jsx(Text_Text.Text, { variant: "text-sm/semibold", color: "text-brand", children: null });
   return jsx(Pressables.PressableHighlight, { onPress: onJumpToMedia.onJumpToMedia, accessibilityRole: "button", unstable_pressDelay: 130, accessibilityLabel: null, children: null });
 }
-const SearchConstants = fn(7879);
+const SearchConstants = fn(7982);
 ({ EMPTY_SEARCH_QUERY_STRING: c10, MESSAGE_PLACEHOLDER_ITEM_SIZE: closure_11, SearchListItemTypes: closure_12, SearchTabs: map1 } = SearchConstants);
-const EMPTY_MEDIA_RESULTS = fn(12357).EMPTY_MEDIA_RESULTS;
+const EMPTY_MEDIA_RESULTS = fn(12486).EMPTY_MEDIA_RESULTS;
 const SearchTypes = fn(1074).SearchTypes;
 const jsx = fn(21).jsx;
 let closure_19 = noop.memo((searchContext) => {

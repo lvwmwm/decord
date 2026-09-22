@@ -1,16 +1,16 @@
-// Module ID: 13108
-// Function ID: 13109
+// Module ID: 13245
+// Function ID: 13246
 // Name: useCanDM
-// Dependencies: [7658, 4200, 502, 2021, 4209, 1935, 504, 2]
+// Dependencies: [7760, 4276, 502, 2021, 4285, 1935, 504, 2]
 // Exports: canDm, default
 
-// Module 13108 (useCanDM)
+// Module 13245 (useCanDM)
 import UserSettings from "UserSettings" /* 1935 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7658 */;
-import LurkingStore from "LurkingStore" /* 4200 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7760 */;
+import LurkingStore from "LurkingStore" /* 4276 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 
 const require = globalThis.__r;
 

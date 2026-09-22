@@ -1,23 +1,23 @@
-// Module ID: 8411
-// Function ID: 8412
+// Module ID: 8528
+// Function ID: 8529
 // Name: StageChannelAgeVerificationNotice
-// Dependencies: [19, 17, 1074, 21, 4560, 576, 4773, 1114, 4556, 4249, 2024, 8412, 8414, 4515, 8594, 1178, 5422, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 576, 4849, 1114, 4632, 4325, 2024, 8529, 8531, 4591, 8711, 1176, 5503, 2]
 // Exports: default
 
-// Module 8411 (StageChannelAgeVerificationNotice)
+// Module 8528 (StageChannelAgeVerificationNotice)
 import nativeDefault from "native" /* 576 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4773 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 4849 */;
 import noop from "module_19" /* 19 */;
 
-const native = Text(1178);
-const CircleInformationIcon = Text(4515);
-const Text_Text = Text(4556);
-const WarningIcon2 = Text(8594);
+const native = Text(1176);
+const CircleInformationIcon = Text(4591);
+const Text_Text = Text(4632);
+const WarningIcon2 = Text(8711);
 require = fn;
 function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
   onConfirmPress = onConfirmPress.onConfirmPress;
   closure_1 = closure_8();
-  const isVerifiedTeen = onConfirmPress(4773).useIsVerifiedTeen();
+  const isVerifiedTeen = onConfirmPress(4849).useIsVerifiedTeen();
   const intl = onConfirmPress(1114).intl;
   const format = intl.format;
   const t = onConfirmPress(1114).t;
@@ -29,7 +29,7 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
             color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const tmp = closure_1(4249);
+              const tmp = closure_1(4325);
               tmp(closure_1(2024).getArticleURL(constants.TIGGER_PAWTECT_LEARN_MORE));
               if (onConfirmPress != null) {
                 onConfirmPress();
@@ -48,8 +48,8 @@ function StageChannelAgeVerificationNoticeContent(onConfirmPress) {
             color: "text-default",
             style: closure_1.linkText,
             onPress() {
-              const obj = closure_1(8412);
-              const result = obj.showAgeVerificationGetStartedModal({ entryPoint: onConfirmPress(8414).AgeVerificationModalEntryPoint.START_STAGE_PROMPT });
+              const obj = closure_1(8529);
+              const result = obj.showAgeVerificationGetStartedModal({ entryPoint: onConfirmPress(8531).AgeVerificationModalEntryPoint.START_STAGE_PROMPT });
               if (closure_1_0 != null) {
                 closure_1_0();
               }
@@ -98,7 +98,7 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_16 }, containerWithDivider: null, divider: null, noticeContainer: null, icon: null, linkText: null, contentText: null };
 let obj3 = { marginTop: nativeDefault.space.PX_16 };
 obj2.containerWithDivider = { paddingVertical: nativeDefault.space.PX_16 };

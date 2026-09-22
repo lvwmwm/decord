@@ -1,12 +1,12 @@
-// Module ID: 9666
-// Function ID: 9667
+// Module ID: 9790
+// Function ID: 9791
 // Name: ModeratorOverlayState
-// Dependencies: [1244, 1249, 4184, 2]
+// Dependencies: [1242, 1247, 4259, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 9666 (ModeratorOverlayState)
-import _mod4184 from "module_4184" /* 4184 */;
-import identity from "module_1244" /* 1244 */;
+// Module 9790 (ModeratorOverlayState)
+import _mod4259 from "module_4259" /* 4259 */;
+import identity from "module_1242" /* 1242 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = identity.createWithEqualityFn((arg0, arg1) => {
@@ -17,7 +17,7 @@ let closure_2 = identity.createWithEqualityFn((arg0, arg1) => {
     dismissOverlay(arg0) {
       const overlayDismissedChannelIds = dependencyMap().overlayDismissedChannelIds;
       overlayDismissedChannelIds.add(arg0);
-      overlayDismissedChannelIds(1249).batchUpdates(() => overlayDismissedChannelIds({ overlayDismissedChannelIds }));
+      overlayDismissedChannelIds(1247).batchUpdates(() => overlayDismissedChannelIds({ overlayDismissedChannelIds }));
     }
   };
   return obj;
@@ -26,7 +26,7 @@ const result = size.fileFinishedImporting("modules/stage_channels/native/compone
 
 export const useModeratorOverlayChannelState = function useModeratorOverlayChannelState(id) {
   closure_0 = id;
-  closure_1 = closure_2((dismissOverlay) => dismissOverlay.dismissOverlay, _mod4184.shallow);
-  const items = [!closure_2((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _mod4184.shallow).has(id), () => closure_1(closure_0)];
+  closure_1 = closure_2((dismissOverlay) => dismissOverlay.dismissOverlay, _mod4259.shallow);
+  const items = [!closure_2((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _mod4259.shallow).has(id), () => closure_1(closure_0)];
   return items;
 };

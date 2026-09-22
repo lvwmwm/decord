@@ -1,22 +1,22 @@
-// Module ID: 13282
-// Function ID: 13283
+// Module ID: 13414
+// Function ID: 13415
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 4560, 576, 11399, 11401, 1114, 11375, 4992, 11376, 11396, 11133, 13257, 9407, 2]
+// Dependencies: [32, 19, 17, 21, 4636, 576, 11531, 11533, 1114, 11507, 5073, 11508, 11528, 11266, 13387, 9531, 2]
 // Exports: SafetyToolsButton
 
-// Module 13282 (SafetyToolsButton)
+// Module 13414 (SafetyToolsButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import SafetyWarningUtils from "SafetyWarningUtils" /* 11375 */;
-import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11376 */;
-import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11396 */;
+import SafetyWarningUtils from "SafetyWarningUtils" /* 11507 */;
+import ChannelSafetyWarningsActionCreators from "ChannelSafetyWarningsActionCreators" /* 11508 */;
+import SafetyToolsActionCreators from "SafetyToolsActionCreators" /* 11528 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { safetyToolsButton: { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

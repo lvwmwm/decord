@@ -1,22 +1,22 @@
-// Module ID: 16322
-// Function ID: 16323
+// Module ID: 16417
+// Function ID: 16418
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 2012, 4209, 4741, 4584, 1074, 21, 4560, 576, 13031, 1178, 4556, 1114, 10067, 5587, 4987, 16321, 504, 12, 13713, 2]
+// Dependencies: [19, 17, 2012, 4285, 4817, 4660, 1074, 21, 4636, 576, 13161, 1176, 4632, 1114, 10191, 5668, 5068, 16416, 504, 12, 13799, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 16322 (HomeDrawerGuildVoiceState)
+// Module 16417 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10067 */;
-import AvatarPile from "AvatarPile" /* 13031 */;
+import native from "native" /* 1176 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10191 */;
+import AvatarPile from "AvatarPile" /* 13161 */;
 import noop from "module_19" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 2012 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4741 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4584 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4660 */;
 
 const require = globalThis.__r;
 
@@ -38,7 +38,7 @@ function VoiceUsers(arg0) {
 }
 function LiveTag() {
   const tmp = closure_15();
-  const obj = { style: tmp.tag, children: null };
+  const obj = { style: tmp.tag, importantForAccessibility: "no-hide-descendants", accessibilityElementsHidden: true, children: null };
   const obj2 = { variant: "text-xxs/bold", style: tmp.tagText, lineClamp: 1, children: null };
   const intl = util.intl;
   obj2.children = intl.string(util.t.dI3q4h).toUpperCase();
@@ -50,7 +50,7 @@ const GUILD_VOCAL_CHANNELS_KEY = fn(2012).GUILD_VOCAL_CHANNELS_KEY;
 const ChannelTypes = fn(1074).ChannelTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-let createStyles = fn(4560);
+let createStyles = fn(4636);
 let obj2 = { voiceContainer: { paddingRight: 8, height: 40, gap: 4, justifyContent: "center" }, streamPreviewShadow: null, streamPreview: null, streamPreviewDarkGradient: null, streamPreviewGradient: null, streamPreviewBorder: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_MEDIUM);
 obj2.streamPreviewShadow = { borderRadius: nativeDefault.radii.sm };
@@ -61,7 +61,7 @@ obj2.streamPreviewGradient = { position: "absolute", top: 0, left: 0, right: 0, 
 const rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm };
 obj2.streamPreviewBorder = rect;
 let closure_13 = createStyles.createStyles(obj2);
-createStyles = fn(4560);
+createStyles = fn(4636);
 let obj4 = { tag: null, tagText: null };
 const rect1 = { paddingHorizontal: 4, paddingVertical: 1, borderBottomRightRadius: nativeDefault.radii.xs, overflow: "hidden", justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.RED_400, position: "absolute", top: 0, left: 0 };
 obj4.tag = rect1;
@@ -100,11 +100,11 @@ export const GuildVoiceState = function GuildVoiceState(arg0) {
       const obj6 = { style: tmp.streamPreview, source: null };
       const obj7 = { uri: previewUrl };
       obj6.source = obj7;
-      const items1 = [tmp7(tmp3(5587), obj6), , , , ];
+      const items1 = [tmp7(tmp3(5668), obj6), , , , ];
       const obj8 = { colors: ["rgba(0, 0, 0, 1)", "rgba(0, 0, 0, 0)"], start: { x: 0, y: 0 }, end: { x: 0, y: 1 }, style: tmp.streamPreviewDarkGradient, pointerEvents: "none" };
-      items1[1] = tmp7(tmp3(4987), obj8);
+      items1[1] = tmp7(tmp3(5068), obj8);
       const obj9 = { colors: ["rgba(255, 255, 255, 1)", "rgba(255, 255, 255, 0)"], start: { x: 0, y: 0 }, end: { x: 1, y: 1 }, style: tmp.streamPreviewGradient, pointerEvents: "none" };
-      items1[2] = tmp7(tmp3(4987), obj9);
+      items1[2] = tmp7(tmp3(5068), obj9);
       const obj10 = { style: tmp.streamPreviewBorder, pointerEvents: "none" };
       items1[3] = tmp7(tmp8, obj10);
       items1[4] = tmp7(LiveTag, {});

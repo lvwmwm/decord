@@ -1,22 +1,22 @@
-// Module ID: 12725
-// Function ID: 12726
+// Module ID: 12854
+// Function ID: 12855
 // Name: InviteError
-// Dependencies: [19, 17, 1074, 21, 4560, 576, 4411, 4495, 12726, 12727, 12728, 1114, 4556, 4975, 1396, 1178, 12729, 5584, 2024, 2]
+// Dependencies: [19, 17, 1074, 21, 4636, 576, 4488, 4571, 12855, 12856, 12857, 1114, 4632, 5056, 1396, 1176, 12858, 5665, 2024, 2]
 // Exports: default
 
-// Module 12725 (InviteError)
+// Module 12854 (InviteError)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
+import native from "native" /* 1176 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import shared from "shared" /* 4411 */;
-import useThemeDefault from "useTheme" /* 4495 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import components_Button_Button from "components/Button/Button" /* 4975 */;
-import GuildIcon from "GuildIcon" /* 5584 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 12728 */;
-import _modDef12729 from "module_12729" /* 12729 */;
+import shared from "shared" /* 4488 */;
+import useThemeDefault from "useTheme" /* 4571 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import components_Button_Button from "components/Button/Button" /* 5056 */;
+import GuildIcon from "GuildIcon" /* 5665 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 12857 */;
+import _modDef12858 from "module_12858" /* 12858 */;
 import noop from "module_19" /* 19 */;
 
 const GuildIconDefault = GuildIcon;
@@ -25,7 +25,7 @@ require = fn;
 function InviteErrorBase(invite) {
   ({ onPressClose: require, inviteError } = invite);
   const tmp = closure_11();
-  const tmp4Result = importDefault(shared.isThemeDark(useThemeDefault()) ? 12726 : 12727);
+  const tmp4Result = importDefault(shared.isThemeDark(useThemeDefault()) ? 12855 : 12856);
   let code;
   if (inviteError != null) {
     code = inviteError.code;
@@ -83,7 +83,7 @@ function InviteDisabledError(onPressClose) {
     const obj4 = { children: null };
     const obj5 = { style: tmp.disabledView, children: null };
     const guildIconURL = AvatarUtilsDefault.getGuildIconURL({ id: null, icon: null, size: 64, canAnimate: false });
-    const obj6 = { style: tmp.disabledPauseIcon, source: _modDef12729 };
+    const obj6 = { style: tmp.disabledPauseIcon, source: _modDef12858 };
     const items = [React6(native.Icon, obj6), ];
     const obj7 = { style: tmp.guildIcon, icon: guildIconURL, size: null };
     const obj3 = { id: null, icon: null, size: 64, canAnimate: false };
@@ -116,7 +116,7 @@ const Constants = fn(1074);
 ({ AbortCodes: hasOwnProperty, HelpdeskArticles: metroRequire, InviteStates: closure_7 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { expiredImage: { marginTop: 32, marginBottom: 32 }, expiredTitle: { marginBottom: 8, backgroundColor: "transparent", textAlign: "center" }, expiredBody: { backgroundColor: "transparent", marginBottom: 24 }, disabledView: { justifyContent: "center", alignItems: "center" }, disabledPauseIcon: null, guildIcon: null, disabledTitle: null, disabledBody: null };
 let size = { position: "absolute", alignSelf: "center", tintColor: nativeDefault.colors.WHITE, width: 42, height: 42 };
 obj2.disabledPauseIcon = size;

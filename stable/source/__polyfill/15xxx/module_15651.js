@@ -1,9 +1,9 @@
 // Module ID: 15651
 // Function ID: 15652
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 15651
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "6bdaa502cba91b47ad61952eaeb744a8", name: "th.messages.6bdaa502cba91b47ad61952eaeb744a8.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "45e29ff493e27168e5d63eb6f088968a", name: "WrenchIcon", type: "png" });

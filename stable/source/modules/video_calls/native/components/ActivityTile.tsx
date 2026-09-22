@@ -1,15 +1,15 @@
-// Module ID: 9637
-// Function ID: 9638
+// Module ID: 9761
+// Function ID: 9762
 // Name: ActivityTile
-// Dependencies: [5, 32, 19, 17, 1956, 1371, 1074, 1182, 1920, 21, 1178, 4560, 576, 504, 1369, 7168, 4712, 4404, 9638, 7162, 7182, 9625, 1114, 9537, 9539, 9640, 9536, 5123, 9641, 9657, 4556, 4976, 4271, 2]
+// Dependencies: [5, 32, 19, 17, 1956, 1371, 1074, 1180, 1920, 21, 1176, 4636, 576, 504, 1369, 7271, 4788, 4481, 9762, 7265, 7285, 9749, 1114, 9661, 9663, 9764, 9660, 5204, 9765, 9781, 4632, 5057, 4347, 2]
 // Exports: default
 
-// Module 9637 (ActivityTile)
+// Module 9761 (ActivityTile)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
+import native from "native" /* 1176 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;
-import native2 from "native" /* 4271 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9536 */;
+import native2 from "native" /* 4347 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9660 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -68,7 +68,7 @@ function ActivityTileInner(participant) {
               const obj4 = { applicationId: tmp23.applicationId, activityChannelId: id.id, locationObject: _location.location, analyticsLocations };
               v1 = 1;
               dependencyMap = 1;
-              const obj5 = { value: v1(9539)(obj4), done: false };
+              const obj5 = { value: v1(9663)(obj4), done: false };
               return obj5;
             } else {
               dependencyMap = 3;
@@ -79,8 +79,8 @@ function ActivityTileInner(participant) {
           dependencyMap = 3;
           throw value;
         } else if (arg0 !== 2) {
-          const result = tmp2(9640).setOrientationLockState(closure_128_3);
-          const obj = tmp2(9640);
+          const result = tmp2(9764).setOrientationLockState(closure_128_3);
+          const obj = tmp2(9764);
         }
         dependencyMap = 3;
         const obj6 = { value, done: true };
@@ -216,7 +216,7 @@ function ActivityTileInner(participant) {
           obj.guildId = guildId;
           let tmp5;
           if (!arg1) {
-            const obj2 = { radius: tmp2(1178).AVATAR_SIZE_MAP[tmp4] / 2 + 3, direction: tmp2(1178).CutoutDirection.RIGHT, inset: -6 };
+            const obj2 = { radius: tmp2(1176).AVATAR_SIZE_MAP[tmp4] / 2 + 3, direction: tmp2(1176).CutoutDirection.RIGHT, inset: -6 };
             tmp5 = obj2;
           }
           obj.cutout = tmp5;
@@ -251,9 +251,9 @@ const Constants = fn(1074);
 let ActivityLayoutMode = fn(1920).ActivityLayoutMode;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const XSMALL = fn(1178).AvatarSizes.XSMALL;
-const androidRippleConfig = fn(1182).getThemedRippleConfig({ foreground: true });
-const createStyles = fn(4560);
+const XSMALL = fn(1176).AvatarSizes.XSMALL;
+const androidRippleConfig = fn(1180).getThemedRippleConfig({ foreground: true });
+const createStyles = fn(4636);
 let obj2 = { pressableOpacity: null, activityPreview: null, activityViewContainer: null, titleText: null, subtitleText: null, overflow: null, buttonWrapper: null, buttonPill: null };
 let size = { width: "100%", height: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, justifyContent: "center", alignItems: "center" };
 obj2.pressableOpacity = size;
@@ -263,7 +263,7 @@ let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_H
 obj2.titleText = { fontSize: 16, lineHeight: 24, color: nativeDefault.colors.TEXT_DEFAULT, fontFamily: Fonts.DISPLAY_EXTRABOLD, textAlign: "center", marginLeft: 16, marginRight: 16 };
 obj2.subtitleText = { textAlign: "center", marginLeft: 16, marginRight: 16 };
 let obj4 = { fontSize: 16, lineHeight: 24, color: nativeDefault.colors.TEXT_DEFAULT, fontFamily: Fonts.DISPLAY_EXTRABOLD, textAlign: "center", marginLeft: 16, marginRight: 16 };
-obj2.overflow = { height: fn(1178).AVATAR_SIZE_MAP[XSMALL], backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
+obj2.overflow = { height: fn(1176).AVATAR_SIZE_MAP[XSMALL], backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 obj2.buttonWrapper = { marginTop: 8, alignSelf: "center" };
 obj2.buttonPill = { borderRadius: 100 };
 let closure_14 = createStyles.createStyles(obj2);

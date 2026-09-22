@@ -1,9 +1,37 @@
 // Module ID: 6976
 // Function ID: 6977
-// Dependencies: [1122]
+// Dependencies: [6958, 19, 6977]
+// Exports: useLayoutState
 
 // Module 6976
-import registerAsset from "module_1122" /* 1122 */;
+import _mod6977 from "module_6977" /* 6977 */;
+import _slicedToArray from "module_6958" /* 6958 */;
 
+require = fn;
+const noop = fn(19);
+({ useState: c3, useCallback: closure_4 } = noop);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/auth/native/images", width: 480, height: 413, scales: [2, 3], hash: "b25b2e24db6c14f15201cb7533aed65e", name: "register-background-dark", type: "png" });
+export const useLayoutState = function useLayoutState(arg0) {
+  const tmp = _slicedToArray(React3(arg0), 2);
+  closure_0 = tmp[1];
+  const recyclerViewContext = _mod6977.useRecyclerViewContext();
+  const items = [tmp[0], ];
+  const items1 = [recyclerViewContext];
+  items[1] = React4((arg0, arg1) => {
+    closure_0 = arg0;
+    closure_0((arg0) => {
+      let tmpResult = closure_0;
+      if (typeof closure_0 === "function") {
+        tmpResult = tmp(arg0);
+      }
+      return tmpResult;
+    });
+    if (!arg1) {
+      if (recyclerViewContext != null) {
+        obj.layout();
+      }
+      obj = recyclerViewContext;
+    }
+  }, items1);
+  return items;
+};

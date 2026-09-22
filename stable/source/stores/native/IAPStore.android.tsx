@@ -1,15 +1,15 @@
-// Module ID: 7237
-// Function ID: 7238
+// Module ID: 7340
+// Function ID: 7341
 // Name: IAPStore
-// Dependencies: [7238, 1085, 7234, 4233, 504, 573, 2]
+// Dependencies: [7341, 1085, 7337, 4309, 504, 573, 2]
 
-// Module 7237 (IAPStore)
+// Module 7340 (IAPStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants2 from "Constants" /* 1085 */;
-import BillingUtils from "BillingUtils" /* 4233 */;
-import PriceUtils from "PriceUtils" /* 7234 */;
-import Constants from "Constants" /* 7238 */;
+import BillingUtils from "BillingUtils" /* 4309 */;
+import PriceUtils from "PriceUtils" /* 7337 */;
+import Constants from "Constants" /* 7341 */;
 import size from "module_2" /* 2 */;
 
 function updateProduct(currencyCode) {
@@ -101,6 +101,9 @@ prototype["getProduct"] = function getProduct(arg0) {
 };
 prototype["isBusy"] = function isBusy() {
   return set1.size > 0 || isDowngrading;
+};
+prototype["isInCheckout"] = function isInCheckout() {
+  return false;
 };
 prototype["isPurchasingProduct"] = function isPurchasingProduct(GENERIC_CONSUMABLE) {
   return set1.has(GENERIC_CONSUMABLE);

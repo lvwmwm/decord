@@ -1,13 +1,14 @@
 // Module ID: 1168
 // Function ID: 1169
-// Dependencies: [41, 42, 93, 95, 98, 1169]
-// Exports: formatToMarkdownString
+// Dependencies: [41, 42, 93, 95, 98, 19, 1157]
+// Exports: makeReactFormatter
 
 // Module 1168
-import _mod1169 from "module_1169" /* 1169 */;
-import _classCallCheck_mod from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
+import _mod19 from "module_19" /* 19 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
+import _mod1157 from "module_1157" /* 1157 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -30,73 +31,152 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-function formatToMarkdownString(_1Ww0Hi, arg1) {
-  let tmp = arg2;
-  if (arg2 === undefined) {
-    tmp = _moduleResult;
-  }
-  let first = _1Ww0Hi;
-  if (typeof _1Ww0Hi !== "string") {
+function formatReact(str, arg1, arg2) {
+  let bindFormatValuesResult = str;
+  if (typeof str !== "string") {
     const self = this;
-    first = this.bindFormatValues(tmp, _1Ww0Hi, arg1)[0];
+    bindFormatValuesResult = this.bindFormatValues(arg2, str, arg1);
   }
-  return first;
+  return bindFormatValuesResult;
 }
-let _classCallCheck = _classCallCheck_mod;
-const dependencyMap = {
-  $b(join) {
-    return "**" + join.join("") + "**";
-  },
-  $i(join) {
-    return "*" + join.join("") + "*";
-  },
-  $del(join) {
-    return "~~" + join.join("") + "~~";
-  },
-  $code(join) {
-    return "`" + join.join("") + "`";
-  },
-  $link(join, arg1, arg2) {
-    [tmp] = arg2;
-    return "[" + join.join("") + "](" + tmp + ")";
-  },
-  $p(join) {
-    return join.join("") + "\n\n";
+_possibleConstructorReturn;
+const createElement = _mod19.createElement;
+let obj = { format: formatReact, builder: null };
+function _class() {
+  const self = this;
+  c2(this, _class);
+  const obj = hasOwnProperty(_class);
+  if (closure_7()) {
+    const _Reflect = Reflect;
+    let constructResult = Reflect.construct(obj, arguments, hasOwnProperty(self).constructor);
+  } else {
+    constructResult = obj(...arguments);
   }
-};
-class MarkdownBuilder {
-  constructor() {
-    self = this;
-    tmp = closure_0(this, MarkdownBuilder);
-    tmp2 = c2;
-    obj = c2(MarkdownBuilder);
-    tmp3 = closure_1;
-    if (closure_3()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    tmp3Result = tmp3(self, constructResult);
-    tmp3Result.result = "";
-    return tmp3Result;
-  }
+  const tmp3Result = closure_4(self, constructResult);
+  tmp3Result._nodeKey = 0;
+  tmp3Result.result = [];
+  return tmp3Result;
 }
-_classCallCheck = MarkdownBuilder;
-_inherits(MarkdownBuilder, _mod1169.StringBuilder);
-const entry = {
+_inherits(_class, _mod1157.FormatBuilder);
+let entry = {
   key: "pushRichTextTag",
   value: function pushRichTextTag(arg0, arg1, arg2) {
-    this.result = this.result + dependencyMap[arg0](arg1, "", arg2);
+    const result = this.result;
+    this._nodeKey = +this._nodeKey + 1;
+    result.push(_class[arg0](arg1, "" + this.context.keyPrefix + ".tag-" + +this._nodeKey, arg2));
   }
 };
-const items = [entry];
-const _moduleResult = _createClass(MarkdownBuilder, items);
-const hasOwnProperty = _moduleResult;
+let items = [
+  entry,
+  {
+    key: "pushLiteralText",
+    value: function pushLiteralText(arg0) {
+      const self = this;
+      if (typeof this.result[this.result.length - 1] === "string") {
+        const result = self.result;
+        const diff = self.result.length - 1;
+        result[diff] = result[diff] + arg0;
+      } else {
+        const result1 = self.result;
+        result1.push(arg0);
+      }
+    }
+  },
+  {
+    key: "pushObject",
+    value: function pushObject(arg0) {
+      const result = this.result;
+      result.push(arg0);
+    }
+  },
+  {
+    key: "finish",
+    value: function finish() {
+      return this.result;
+    }
+  }
+];
+obj.builder = _createClass(_class, items);
 
-export { formatToMarkdownString };
-export const markdownFormatter = { format: formatToMarkdownString, builder: _moduleResult };
+export { formatReact };
+export const makeReactFormatter = function makeReactFormatter(arg0) {
+  let obj = { format: formatReact, builder: null };
+  _class = function _class() {
+    const self = this;
+    c2(this, _class);
+    const obj = hasOwnProperty(_class);
+    if (closure_7()) {
+      const _Reflect = Reflect;
+      let constructResult = Reflect.construct(obj, arguments, hasOwnProperty(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    const tmp3Result = closure_4(self, constructResult);
+    tmp3Result._nodeKey = 0;
+    tmp3Result.result = [];
+    return tmp3Result;
+  };
+  _inherits(_class, _class(1157).FormatBuilder);
+  const entry = {
+    key: "pushRichTextTag",
+    value: function pushRichTextTag(arg0, arg1, arg2) {
+      const result = this.result;
+      this._nodeKey = +this._nodeKey + 1;
+      result.push(_class[arg0](arg1, "" + this.context.keyPrefix + ".tag-" + +this._nodeKey, arg2));
+    }
+  };
+  const items = [
+    entry,
+    {
+      key: "pushLiteralText",
+      value: function pushLiteralText(arg0) {
+        const self = this;
+        if (typeof this.result[this.result.length - 1] === "string") {
+          const result = self.result;
+          const diff = self.result.length - 1;
+          result[diff] = result[diff] + arg0;
+        } else {
+          const result1 = self.result;
+          result1.push(arg0);
+        }
+      }
+    },
+    {
+      key: "pushObject",
+      value: function pushObject(arg0) {
+        const result = this.result;
+        result.push(arg0);
+      }
+    },
+    {
+      key: "finish",
+      value: function finish() {
+        return this.result;
+      }
+    }
+  ];
+  obj.builder = _createClass(_class, items);
+  return obj;
+};
+export const DEFAULT_REACT_RICH_TEXT_ELEMENTS = {
+  $b(arg0, key) {
+    return <strong key={arg1}>{arg0}</strong>;
+  },
+  $i(arg0, key) {
+    return <em key={arg1}>{arg0}</em>;
+  },
+  $del(arg0, key) {
+    return <del key={arg1}>{arg0}</del>;
+  },
+  $code(arg0, key) {
+    return <code key={arg1}>{arg0}</code>;
+  },
+  $link(arg0, key, arg2) {
+    [tmp] = arg2;
+    return <a href={tmp} key={arg1}>{arg0}</a>;
+  },
+  $p(arg0, key) {
+    return <p key={arg1}>{arg0}</p>;
+  }
+};
+export const reactFormatter = obj;

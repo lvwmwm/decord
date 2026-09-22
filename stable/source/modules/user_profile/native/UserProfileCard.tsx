@@ -1,23 +1,23 @@
-// Module ID: 7207
-// Function ID: 7208
+// Module ID: 7310
+// Function ID: 7311
 // Name: UserProfileCard
-// Dependencies: [19, 17, 7208, 21, 4560, 576, 5123, 4556, 7209, 2]
+// Dependencies: [19, 17, 7311, 21, 4636, 576, 5204, 4632, 7312, 2]
 // Exports: UserProfileCardRows, UserProfileFormRow, default
 
-// Module 7207 (UserProfileCard)
+// Module 7310 (UserProfileCard)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Pressables from "Pressables" /* 5123 */;
-import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7209 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Pressables from "Pressables" /* 5204 */;
+import ChevronSmallRightIcon from "ChevronSmallRightIcon" /* 7312 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(7208);
+const Constants = fn(7311);
 ({ CARD_ROWS_COLUMN_GAP, CARD_ROWS_ICON_SIZE, CARD_ROWS_ICON_SIZE_VARIANT: closure_4 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { title: { marginBottom: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, titleContent: null, text: null, row: null, rowLabel: null, rowLabelText: null, rowSublabel: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_12, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 obj2.titleContent = { flex: 1, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };

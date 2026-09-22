@@ -1,11 +1,11 @@
-// Module ID: 7319
-// Function ID: 7320
+// Module ID: 7422
+// Function ID: 7423
 // Name: MobileWebHandoffUtils
-// Dependencies: [5, 1074, 1256, 1272, 2]
+// Dependencies: [5, 1074, 1254, 1270, 2]
 
-// Module 7319 (MobileWebHandoffUtils)
-import v1 from "v1" /* 1256 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
+// Module 7422 (MobileWebHandoffUtils)
+import v1 from "v1" /* 1254 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

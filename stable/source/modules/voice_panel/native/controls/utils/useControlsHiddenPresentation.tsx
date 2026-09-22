@@ -1,12 +1,12 @@
-// Module ID: 17181
-// Function ID: 17182
+// Module ID: 17289
+// Function ID: 17290
 // Name: useControlsHiddenPresentation
-// Dependencies: [12277, 4271, 4296, 4974, 2]
+// Dependencies: [12406, 4347, 4373, 5055, 2]
 // Exports: default
 
-// Module 17181 (useControlsHiddenPresentation)
-import spring from "spring" /* 4974 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 12277 */;
+// Module 17289 (useControlsHiddenPresentation)
+import spring from "spring" /* 5055 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 12406 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

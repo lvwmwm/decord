@@ -1,9 +1,9 @@
-// Module ID: 16990
-// Function ID: 16991
+// Module ID: 17099
+// Function ID: 17100
 // Name: ChannelEmojiConstants
 // Dependencies: [2]
 
-// Module 16990 (ChannelEmojiConstants)
+// Module 17099 (ChannelEmojiConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/channel_emoji/ChannelEmojiConstants.tsx");

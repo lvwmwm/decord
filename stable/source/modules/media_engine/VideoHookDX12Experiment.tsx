@@ -1,9 +1,9 @@
-// Module ID: 14010
-// Function ID: 14011
+// Module ID: 14095
+// Function ID: 14096
 // Name: VideoHookDX12Experiment
 // Dependencies: [1433, 2]
 
-// Module 14010 (VideoHookDX12Experiment)
+// Module 14095 (VideoHookDX12Experiment)
 import ApexExperiment from "ApexExperiment" /* 1433 */;
 import size from "module_2" /* 2 */;
 

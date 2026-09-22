@@ -1,25 +1,25 @@
-// Module ID: 12416
-// Function ID: 12417
+// Module ID: 12545
+// Function ID: 12546
 // Name: PushNotificationActionCreators
-// Dependencies: [5, 12417, 502, 1074, 6596, 3, 1099, 1272, 1232, 12421, 510, 4753, 1115, 1250, 1369, 573, 2]
+// Dependencies: [5, 12546, 502, 1074, 12547, 6697, 3, 1099, 1270, 1230, 12550, 510, 4829, 1363, 1248, 1369, 573, 2]
 // Exports: setPushNotificationPermissionEligibleForPrompt, setPushPermissionReactivationSeen, setPushPermissionState, updateNotificationAuthorizationStatus
 
-// Module 12416 (PushNotificationActionCreators)
+// Module 12545 (PushNotificationActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import TokenManagerAll from "TokenManager" /* 1099 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1250 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4753 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4829 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import MultiAccountStore from "MultiAccountStore" /* 12417 */;
+import MultiAccountStore from "MultiAccountStore" /* 12546 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
 function getOrRefreshPushSyncToken() {
   const self = this;
-  const apply = closure_16.apply;
+  const apply = closure_17.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
@@ -27,7 +27,7 @@ function getOrRefreshPushSyncToken() {
   }
   return applyArgumentsResult;
 }
-let closure_16 = async function _getOrRefreshPushSyncToken(arg0) {
+let closure_17 = async function _getOrRefreshPushSyncToken(arg0) {
   let pushSyncToken = arg0;
   c5 = 0;
   c6 = 0;
@@ -86,7 +86,7 @@ let closure_16 = async function _getOrRefreshPushSyncToken(arg0) {
         } else if (1 === tmp8) {
           c4 = 0;
           closure_129_2 = closure_3;
-          closure_130_1(closure_130_3[8]).captureException(closure_129_2);
+          closure_130_1(closure_130_3[9]).captureException(closure_129_2);
           c6 = 3;
           return { value: null, done: true };
         } else if (arg0 === 1) {
@@ -100,7 +100,7 @@ let closure_16 = async function _getOrRefreshPushSyncToken(arg0) {
         } else {
           token2 = value.body.token;
           c4 = 0;
-          closure_130_2(closure_130_3[9]).updatePushSyncToken(closure_129_0.id, token2);
+          closure_130_2(closure_130_3[10]).updatePushSyncToken(closure_129_0.id, token2);
           c6 = 3;
           const obj11 = { value: token2, done: true };
           return obj11;
@@ -119,8 +119,9 @@ let closure_16 = async function _getOrRefreshPushSyncToken(arg0) {
 };
 const Constants = fn(1074);
 ({ DEVICE_TOKEN: closure_7, DEVICE_VOIP_TOKEN: closure_8, Endpoints: closure_9 } = Constants);
-const PushNotificationConstants = fn(6596);
-({ BUNDLE_ID: c10, DEVICE_PUSH_VOIP_PROVIDER: closure_11, getDevicePushProvider: closure_12, IS_QUEST_RELEASE: map1 } = PushNotificationConstants);
+const MAX_PUSH_SYNC_ACCOUNTS = fn(12547).MAX_PUSH_SYNC_ACCOUNTS;
+const PushNotificationConstants = fn(6697);
+({ BUNDLE_ID: closure_11, DEVICE_PUSH_VOIP_PROVIDER: closure_12, getDevicePushProvider: map1, IS_QUEST_RELEASE: closure_14 } = PushNotificationConstants);
 const logger = new LoggerDefault("PushNotificationActionCreators");
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/native/PushNotificationActionCreators.tsx");
@@ -140,23 +141,23 @@ export default {
     } else {
       const request = { url: constants.DEVICES, body: null, oldFormErrors: true, trackedActionData: null, rejectWithError: false };
       if (flag) {
-        let tmp8 = closure_1_11;
+        let tmp8 = closure_1_12;
       } else {
-        tmp8 = closure_1_12();
+        tmp8 = map1();
       }
       const obj2 = { provider: tmp8, token, bypass_server_throttling_supported: null, bundle_id: null };
       const obj = TrackedHTTPUtilsDefault;
-      let isAndroidResult = tmp2(1115).isAndroid();
+      let isAndroidResult = tmp2(1363).isAndroid();
       if (isAndroidResult) {
-        isAndroidResult = !map1;
+        isAndroidResult = !closure_1_14;
       }
       obj2.bypass_server_throttling_supported = isAndroidResult;
       obj2.bundle_id = bundle_id;
       request.body = obj2;
-      const obj3 = { event: tmp2(1250).NetworkActionNames.USER_REGISTER_DEVICE_TOKEN };
+      const obj3 = { event: tmp2(1248).NetworkActionNames.USER_REGISTER_DEVICE_TOKEN };
       request.trackedActionData = obj3;
       syncDeviceResult = obj.post(request);
-      const tmp2Result = tmp2(1115);
+      const tmp2Result = tmp2(1363);
     }
     return syncDeviceResult;
   },
@@ -179,7 +180,8 @@ export default {
         }
         return num;
       });
-      await Promise.all(sorted.map(closure_1_15));
+      const substr = sorted.slice(0, MAX_PUSH_SYNC_ACCOUNTS);
+      await Promise.all(substr.map(closure_1_16));
       if (1 === tmp5) {
         if (arg0 === 1) {
           dependencyMap = 3;
@@ -191,17 +193,17 @@ export default {
           closure_128_1 = value;
           if (closure_128_1.length >= 1) {
             if (null != closure_128_1[0]) {
-              const HTTP = tmp2(1272).HTTP;
+              const HTTP = tmp2(1270).HTTP;
               const request = { url: constants.DEVICES_SYNC, body: null, rejectWithError: false };
               if (closure_129_1) {
-                let tmp9 = closure_1_11;
+                let tmp9 = closure_1_12;
               } else {
-                tmp9 = closure_1_12();
+                tmp9 = closure_1_13();
               }
               const obj7 = { provider: tmp9, token: closure_129_0, push_sync_tokens: closure_128_1.filter(tmp2(1369).isNotNullish), bypass_server_throttling_supported: null, bundle_id: null };
-              let isAndroidResult = tmp2(1115).isAndroid();
+              let isAndroidResult = tmp2(1363).isAndroid();
               if (isAndroidResult) {
-                isAndroidResult = !closure_1_13;
+                isAndroidResult = !closure_1_14;
               }
               obj7.bypass_server_throttling_supported = isAndroidResult;
               obj7.bundle_id = bundle_id;
@@ -219,8 +221,8 @@ export default {
       } else if (arg0 !== 2) {
         closure_128_2 = value;
         if (closure_128_2.body.invalid_push_sync_tokens.length > 0) {
-          const result = v2(12421).invalidatePushSyncTokens(closure_128_2.body.invalid_push_sync_tokens);
-          v2(12421);
+          const result = v2(12550).invalidatePushSyncTokens(closure_128_2.body.invalid_push_sync_tokens);
+          v2(12550);
         }
       }
       return value;
@@ -230,8 +232,8 @@ export default {
     logger.log("Unregistering push notification token: " + token);
     const request = { url: constants.DEVICES, body: null, trackedActionData: null, rejectWithError: false };
     const obj = TrackedHTTPUtilsDefault;
-    request.body = { provider: closure_1_12(), token };
-    const obj2 = { provider: closure_1_12(), token };
+    request.body = { provider: map1(), token };
+    const obj2 = { provider: map1(), token };
     request.trackedActionData = { event: discord_common_AnalyticsUtils.NetworkActionNames.USER_UNREGISTER_DEVICE_TOKEN };
     return obj.delete(request);
   }

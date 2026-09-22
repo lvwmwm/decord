@@ -1,34 +1,34 @@
-// Module ID: 17626
-// Function ID: 17627
+// Module ID: 17738
+// Function ID: 17739
 // Name: GuildSettingsRoleEdit
-// Dependencies: [109, 5, 19, 17, 2016, 502, 2021, 2015, 1979, 9070, 17613, 17608, 1074, 17615, 21, 4560, 576, 4271, 5624, 7377, 1114, 4740, 17617, 12, 1242, 9744, 17627, 4259, 9572, 5597, 5520, 11578, 4904, 1178, 5687, 5605, 17628, 17635, 17637, 17638, 4973, 8599, 1483, 504, 4204, 7040, 2]
+// Dependencies: [109, 5, 19, 17, 2016, 502, 2021, 2015, 1979, 9193, 17725, 17720, 1074, 17727, 21, 4636, 576, 4347, 5705, 7480, 1114, 4816, 17729, 12, 1240, 9868, 17739, 4335, 9696, 5678, 5601, 11706, 4980, 1176, 5768, 5686, 17740, 17749, 17751, 17752, 5054, 8716, 1483, 504, 4280, 7143, 2]
 // Exports: default
 
-// Module 17626 (GuildSettingsRoleEdit)
+// Module 17738 (GuildSettingsRoleEdit)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4204 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4259 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4740 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4904 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5520 */;
-import _modDef5597 from "module_5597" /* 5597 */;
-import TableRow from "TableRow" /* 5605 */;
-import NavigatorHeader from "NavigatorHeader" /* 5624 */;
-import TableRowGroup from "TableRowGroup" /* 5687 */;
-import HeaderActionButton from "HeaderActionButton" /* 7377 */;
-import _modDef9572 from "module_9572" /* 9572 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9744 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11578 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17617 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 17627 */;
-import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 17628 */;
-import GuildSettingsRoleEditPermissionsDefault from "GuildSettingsRoleEditPermissions" /* 17635 */;
-import GuildSettingsRoleMembersDefault from "GuildSettingsRoleMembers" /* 17637 */;
-import GuildSettingsRoleEditConnectionsControlsDefault from "GuildSettingsRoleEditConnectionsControls" /* 17638 */;
+import native from "native" /* 1176 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4816 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5601 */;
+import _modDef5678 from "module_5678" /* 5678 */;
+import TableRow from "TableRow" /* 5686 */;
+import NavigatorHeader from "NavigatorHeader" /* 5705 */;
+import TableRowGroup from "TableRowGroup" /* 5768 */;
+import HeaderActionButton from "HeaderActionButton" /* 7480 */;
+import _modDef9696 from "module_9696" /* 9696 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 9868 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11706 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 17729 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 17739 */;
+import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 17740 */;
+import GuildSettingsRoleEditPermissionsDefault from "GuildSettingsRoleEditPermissions" /* 17749 */;
+import GuildSettingsRoleMembersDefault from "GuildSettingsRoleMembers" /* 17751 */;
+import GuildSettingsRoleEditConnectionsControlsDefault from "GuildSettingsRoleEditConnectionsControls" /* 17752 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -36,21 +36,21 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 import GuildRoleStore from "GuildRoleStore" /* 2015 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9070 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 17613 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9193 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 17725 */;
 
 require = fn;
 let closure_4 = ["guild"];
 const View = fn(17).View;
 const isEveryoneRole = fn(2016).isEveryoneRole;
-const RoleColorsStyle = fn(17613).RoleColorsStyle;
-const constants = fn(17608).GuildSettingsRoleEditSections;
+const RoleColorsStyle = fn(17725).RoleColorsStyle;
+const constants = fn(17720).GuildSettingsRoleEditSections;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_18, DEFAULT_ROLE_COLOR: closure_19, GuildSettingsSections: closure_20 } = Constants);
-const HOLOGRAPHIC_ROLE_COLORS = fn(17615).HOLOGRAPHIC_ROLE_COLORS;
+const HOLOGRAPHIC_ROLE_COLORS = fn(17727).HOLOGRAPHIC_ROLE_COLORS;
 const jsxProd = fn(21);
 ({ jsx: closure_22, jsxs: closure_23, Fragment: closure_24 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 1, paddingTop: 16 }, innerContainer: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, managedRolesWarningContainer: { marginVertical: 8, marginHorizontal: 16 }, form: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.form = { paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
@@ -112,7 +112,7 @@ class GuildSettingsRoleEdit extends PureComponent {
         closure_0 = arg0;
         const navigation = closure_0.props.navigation;
         const id = closure_0.props.role.id;
-        ({ name, permissions, mentionable, hoist } = closure_0.props.role);
+        ({ name, permissions, mentionable, hoist, icon, unicodeEmoji } = closure_0.props.role);
         const effectiveSection = closure_0.getEffectiveSection();
         if (effectiveSection === constants2.PERMISSIONS) {
           const obj2 = { permissions };
@@ -160,7 +160,7 @@ class GuildSettingsRoleEdit extends PureComponent {
               primary_color1 = closure_1_19;
             }
           }
-          const obj4 = { name, color: primary_color1, colors: tmp7, hoist, mentionable };
+          const obj4 = { name, color: primary_color1, colors: tmp7, hoist, mentionable, icon, unicodeEmoji };
         }
         let hasRoleConfigurationChanges = effectiveSection === tmp2.VERIFICATIONS;
         if (hasRoleConfigurationChanges) {
@@ -175,14 +175,14 @@ class GuildSettingsRoleEdit extends PureComponent {
           closure_2 = editedRoleConnectionConfigurationsMap.get(id);
         }
         function success() {
-          applyArgumentsResult(17627).commitSectionChanges(id, effectiveSection);
+          applyArgumentsResult(17739).commitSectionChanges(id, effectiveSection);
           navigation.pop();
           closure_2_0.setState({ submitting: false, formErrors: {} });
-          const obj = applyArgumentsResult(17627);
+          const obj = applyArgumentsResult(17739);
           const obj3 = { key: "ROLE_EDIT_SAVED", content: null, icon: null };
           const intl = applyArgumentsResult(1114).intl;
           obj3.content = intl.string(applyArgumentsResult(1114).t.ulZn1j);
-          obj3.icon = _modDef9572;
+          obj3.icon = _modDef9696;
           ToastActionCreatorsDefault.open(obj3);
           closure_0(true);
         }
@@ -198,7 +198,7 @@ class GuildSettingsRoleEdit extends PureComponent {
           const obj = { key: "ERROR_OCCURRED_TRY_AGAIN", content: null, icon: null };
           const intl = applyArgumentsResult(1114).intl;
           obj.content = intl.string(applyArgumentsResult(1114).t.fEptJP);
-          obj.icon = _modDef5597;
+          obj.icon = _modDef5678;
           ToastActionCreatorsDefault.open(obj);
           closure_0(false);
         }
@@ -268,7 +268,7 @@ class GuildSettingsRoleEdit extends PureComponent {
                 if (null === guild_connections) {
                   v1 = 1;
                   c2 = 1;
-                  const obj6 = { value: tmp4(11578).putRoleConnectionsConfigurations(id.id, role.id, []), done: false };
+                  const obj6 = { value: tmp4(11706).putRoleConnectionsConfigurations(id.id, role.id, []), done: false };
                   return obj6;
                 }
               }
@@ -280,7 +280,7 @@ class GuildSettingsRoleEdit extends PureComponent {
               const obj = { value, done: true };
               return obj;
             }
-            v1(5520).deleteRole(closure_128_1.id, closure_128_2.id);
+            v1(5601).deleteRole(closure_128_1.id, closure_128_2.id);
             closure_128_3.pop();
             c2 = 3;
             return { value: "HermesInternal", done: null };
@@ -328,16 +328,16 @@ class GuildSettingsRoleEdit extends PureComponent {
             const id = closure_2_0.props.role.id;
             const effectiveSection = closure_2_0.getEffectiveSection();
             if (effectiveSection === constants.VERIFICATIONS) {
-              const result = applyArgumentsResult(17627).discardConnectionsChanges(id);
-              const obj2 = applyArgumentsResult(17627);
+              const result = applyArgumentsResult(17739).discardConnectionsChanges(id);
+              const obj2 = applyArgumentsResult(17739);
             } else {
-              const result1 = applyArgumentsResult(17627).discardSectionChanges(id, effectiveSection);
-              const obj = applyArgumentsResult(17627);
+              const result1 = applyArgumentsResult(17739).discardSectionChanges(id, effectiveSection);
+              const obj = applyArgumentsResult(17739);
             }
             closure_0(true);
           };
-          obj2.confirmColor = closure_1_0(1178).ButtonColors.BRAND;
-          closure_1_1(4904).show(obj2);
+          obj2.confirmColor = closure_1_0(1176).ButtonColors.BRAND;
+          closure_1_1(4980).show(obj2);
         });
       } else {
         navigation.pop();
@@ -375,7 +375,7 @@ prototype["updateNavigation"] = function updateNavigation(role, submitting) {
   submitting = this.state.submitting;
   let setOptionsResult = { headerLeft: null, headerRight: null, headerTitle: null };
   const sectionChanges = self.getSectionChanges();
-  setOptionsResult.headerLeft = role(5624).getHeaderConditionalBackButton(self.handleBack);
+  setOptionsResult.headerLeft = role(5705).getHeaderConditionalBackButton(self.handleBack);
   if (submitting) {
     let fn = () => closure_1_22(role(dependencyMap[18]).HeaderSubmittingIndicator, {});
   } else if (sectionChanges) {
@@ -404,23 +404,23 @@ prototype["renderSubScreenButtons"] = function renderSubScreenButtons() {
   obj2.onPress = function onPress() {
     return self.onSubScreenValueChange(constants.PERMISSIONS);
   };
-  const items = [closure_22(self(5605).TableRow, obj2), , ];
+  const items = [closure_22(self(5686).TableRow, obj2), , ];
   const obj3 = { label: null, onPress: null, arrow: true };
   const intl2 = self(1114).intl;
   obj3.label = intl2.string(self(1114).t["5//Muu"]);
   obj3.onPress = function onPress() {
     return self.onSubScreenValueChange(constants.VERIFICATIONS);
   };
-  items[1] = closure_22(self(5605).TableRow, obj3);
+  items[1] = closure_22(self(5686).TableRow, obj3);
   const obj4 = { label: null, onPress: null, arrow: true };
   const intl3 = self(1114).intl;
   obj4.label = intl3.string(self(1114).t.J4ZtH1);
   obj4.onPress = function onPress() {
     return self.onSubScreenValueChange(constants.MEMBERS);
   };
-  items[2] = closure_22(self(5605).TableRow, obj4);
+  items[2] = closure_22(self(5686).TableRow, obj4);
   obj.children = items;
-  return closure_23(self(5687).TableRowGroup, obj);
+  return closure_23(self(5768).TableRowGroup, obj);
 };
 prototype["renderDeleteButton"] = function renderDeleteButton() {
   const obj = { hasIcons: false, children: null };
@@ -494,7 +494,7 @@ prototype["render"] = function render() {
     const obj8 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
     obj7.style = obj8;
     obj7.children = tmp11Result;
-    let tmp22Result = tmp22(tmp24(4973).Stack, obj7);
+    let tmp22Result = tmp22(tmp24(5054).Stack, obj7);
   } else {
     const obj9 = { contentContainerStyle: tmp.form, children: null };
     const obj17 = { spacing: nativeDefault.space.PX_24, children: null };
@@ -520,13 +520,13 @@ prototype["render"] = function render() {
     }
     items[3] = renderDeleteButtonResult;
     obj17.children = items;
-    obj9.children = __initData3(tmp24(4973).Stack, obj17);
-    tmp22Result = tmp22(tmp24(8599).Form, obj9);
+    obj9.children = __initData3(tmp24(5054).Stack, obj17);
+    tmp22Result = tmp22(tmp24(8716).Form, obj9);
   }
   obj6.children = tmp22Result;
   return __initData2(View, obj6);
 };
-GuildSettingsRoleEdit.contextType = fn(4271).ThemeContext;
+GuildSettingsRoleEdit.contextType = fn(4347).ThemeContext;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_settings/roles/native/GuildSettingsRoleEdit.tsx");
 

@@ -1,10 +1,10 @@
-// Module ID: 16579
-// Function ID: 16580
+// Module ID: 16679
+// Function ID: 16680
 // Name: PruneGuildModalActionCreators
-// Dependencies: [5, 1074, 1272, 2]
+// Dependencies: [5, 1074, 1270, 2]
 
-// Module 16579 (PruneGuildModalActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1272 */;
+// Module 16679 (PruneGuildModalActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1270 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -17,8 +17,8 @@ export default {
     closure_0 = arg0;
     asyncGeneratorStep = arg2;
     return (async () => {
-      const HTTP = v3(1272).HTTP;
-      const request = { url: Endpoints.GUILD_PRUNE(closure_0), query: { days: num, include_roles }, oldFormErrors: true, rejectWithError: v3(1272).rejectWithMigratedError() };
+      const HTTP = v3(1270).HTTP;
+      const request = { url: Endpoints.GUILD_PRUNE(closure_0), query: { days: num, include_roles }, oldFormErrors: true, rejectWithError: v3(1270).rejectWithMigratedError() };
       await HTTP.get(request);
       return arg1.body.pruned;
     })();
@@ -51,11 +51,11 @@ export default {
               const obj3 = { value, done: true };
               return obj3;
             } else {
-              const HTTP = v3(1272).HTTP;
+              const HTTP = v3(1270).HTTP;
               const request = { url: Endpoints.GUILD_PRUNE_V2(closure_0), query: null, oldFormErrors: true, rejectWithError: null };
               const obj4 = { days: num, include_roles };
               request.query = obj4;
-              request.rejectWithError = v3(1272).rejectWithMigratedError();
+              request.rejectWithError = v3(1270).rejectWithMigratedError();
               dependencyMap = 1;
               v3 = 1;
               const obj5 = { value: HTTP.get(request), done: false };

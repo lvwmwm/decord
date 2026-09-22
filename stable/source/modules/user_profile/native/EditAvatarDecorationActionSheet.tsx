@@ -1,16 +1,16 @@
-// Module ID: 8159
-// Function ID: 8160
+// Module ID: 8275
+// Function ID: 8276
 // Name: EditAvatarDecorationActionSheet
-// Dependencies: [32, 19, 17, 7558, 7547, 2021, 1074, 21, 4560, 576, 8160, 8170, 8171, 7162, 7182, 1242, 8172, 4271, 7150, 4556, 1114, 8173, 10739, 504, 13172, 8167, 13173, 13178, 13179, 8174, 8258, 1178, 13180, 2]
+// Dependencies: [32, 19, 17, 7660, 7650, 2021, 1074, 21, 4636, 576, 8276, 8286, 8287, 7265, 7285, 1240, 8288, 4347, 7253, 4632, 1114, 8289, 10863, 504, 13302, 8283, 13303, 13308, 13309, 8290, 8373, 1176, 13310, 2]
 // Exports: default
 
-// Module 8159 (EditAvatarDecorationActionSheet)
+// Module 8275 (EditAvatarDecorationActionSheet)
 import nativeDefault from "native" /* 576 */;
-import useShopProductItems from "useShopProductItems" /* 8172 */;
-import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 13173 */;
+import useShopProductItems from "useShopProductItems" /* 8288 */;
+import EditAvatarDecorationSection from "EditAvatarDecorationSection" /* 13303 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7558 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7660 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 
 require = fn;
@@ -91,7 +91,7 @@ function EditAvatarDecorationInner(pendingAvatarSrc) {
 function AvatarDecorationSectionPreview(previewSkuId) {
   ({ user, guildId, pendingAvatarSrc } = previewSkuId);
   let purchase;
-  const tmp4 = purchase(8174)(previewSkuId.previewSkuId);
+  const tmp4 = purchase(8290)(previewSkuId.previewSkuId);
   const product = tmp4.product;
   _require = product;
   purchase = tmp4.purchase;
@@ -130,17 +130,17 @@ function AvatarDecorationSectionPreview(previewSkuId) {
   const tmp = closure_13();
   const tmp6 = closure_11;
   const tmp7 = View;
-  obj3.size = tmp10(1178).AvatarSizes.EDIT_AVATAR_DECORATION;
-  const items1 = [closure_10(purchase(8258), obj3), closure_10(purchase(13180), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
+  obj3.size = tmp10(1176).AvatarSizes.EDIT_AVATAR_DECORATION;
+  const items1 = [closure_10(purchase(8373), obj3), closure_10(purchase(13310), { user, guildId, pendingAvatarSrc, pendingAvatarDecoration: memo })];
   obj.children = items1;
   return tmp6(tmp7, obj);
 }
 const View = fn(17).View;
-const isAvatarDecorationRecord = fn(7547).isAvatarDecorationRecord;
+const isAvatarDecorationRecord = fn(7650).isAvatarDecorationRecord;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, bounceOffset: { position: "absolute", top: -250, height: 250, right: 0, left: 0 }, title: null, avatarDisplayContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj2.title = { alignSelf: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, margin: 25 };
@@ -153,22 +153,22 @@ export default function EditAvatarDecorationActionSheet(arg0) {
   ({ user, guildId, currentAvatarDecoration, isTryItOut, analyticsLocations } = arg0);
   let selectedAvatarDecoration;
   const tmp = closure_13();
-  const tmp4 = selectedAvatarDecoration(8160)({ analyticsLocations, isTryItOut, guildId });
+  const tmp4 = selectedAvatarDecoration(8276)({ analyticsLocations, isTryItOut, guildId });
   const setPendingAvatarDecoration = tmp4.setPendingAvatarDecoration;
-  const pendingAvatarSrc = setPendingAvatarDecoration(8170).getPendingAvatarSrc({ userId: user.id, image: tmp4.pendingAvatar });
+  const pendingAvatarSrc = setPendingAvatarDecoration(8286).getPendingAvatarSrc({ userId: user.id, image: tmp4.pendingAvatar });
   const tmp7 = _slicedToArray(noop.useState(currentAvatarDecoration), 2);
   selectedAvatarDecoration = tmp7[0];
-  let obj = setPendingAvatarDecoration(8170);
+  let obj = setPendingAvatarDecoration(8286);
   const obj2 = { userId: user.id, image: tmp4.pendingAvatar };
-  const obj4 = setPendingAvatarDecoration(8171);
+  const obj4 = setPendingAvatarDecoration(8287);
   if (analyticsLocations == null) {
     analyticsLocations = [];
   }
-  const analyticsLocations2 = selectedAvatarDecoration(7162)(analyticsLocations, tmp2(7182).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
+  const analyticsLocations2 = selectedAvatarDecoration(7265)(analyticsLocations, tmp2(7285).EDIT_AVATAR_DECORATION_SHEET).analyticsLocations;
   const items = [selectedAvatarDecoration, setPendingAvatarDecoration];
   const callback = obj3.useCallback(() => {
-    const obj = first(1242);
-    obj.track(constants.OPEN_POPOUT, { type: first(7182).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true });
+    const obj = first(1240);
+    obj.track(constants.OPEN_POPOUT, { type: first(7285).EDIT_AVATAR_DECORATION_SHEET, is_fullscreen: true });
   }, []);
   const callback1 = obj3.useCallback((arg0) => {
     let purchasedItem = useShopProductItems.getPurchasedItem(arg0, "firstAvatarDecoration");
@@ -187,7 +187,7 @@ export default function EditAvatarDecorationActionSheet(arg0) {
   const obj9 = { variant: "redesign/heading-18/bold", style: tmp.title, accessibilityRole: "header", children: null };
   const intl = tmp5(1114).intl;
   obj9.children = intl.string(setPendingAvatarDecoration(1114).t.HykynS);
-  items1[1] = closure_10(setPendingAvatarDecoration(4556).Text, obj9);
+  items1[1] = closure_10(setPendingAvatarDecoration(4632).Text, obj9);
   items1[2] = closure_10(EditAvatarDecorationInner, { user, guildId, pendingAvatarSrc, selectedAvatarDecoration, setSelectedAvatarDecoration: tmp7[1], isTryItOut });
   obj7.children = items1;
   const items2 = [closure_11(View, obj7), ];
@@ -195,7 +195,7 @@ export default function EditAvatarDecorationActionSheet(arg0) {
   let skuId;
   const obj8 = { style: tmp.bounceOffset };
   const tmp13 = closure_11;
-  const tmp9 = selectedAvatarDecoration(7162);
+  const tmp9 = selectedAvatarDecoration(7265);
   if (currentAvatarDecoration != null) {
     skuId = currentAvatarDecoration.skuId;
   }
@@ -209,10 +209,10 @@ export default function EditAvatarDecorationActionSheet(arg0) {
   obj10.isTryItOut = isTryItOut;
   obj10.onApply = callback1;
   obj10.analyticsLocations = analyticsLocations2;
-  obj10.analyticsSource = selectedAvatarDecoration(7182).EDIT_AVATAR_DECORATION_SHEET;
-  items2[1] = closure_10(selectedAvatarDecoration(8173), obj10);
+  obj10.analyticsSource = selectedAvatarDecoration(7285).EDIT_AVATAR_DECORATION_SHEET;
+  items2[1] = closure_10(selectedAvatarDecoration(8289), obj10);
   obj6.children = items2;
-  obj5.children = tmp13(setPendingAvatarDecoration(7150).BottomSheet, obj6);
-  obj11.children = closure_10(setPendingAvatarDecoration(7162).AnalyticsLocationProvider, obj5);
-  return closure_10(setPendingAvatarDecoration(4271).ThemeContextProvider, obj11);
+  obj5.children = tmp13(setPendingAvatarDecoration(7253).BottomSheet, obj6);
+  obj11.children = closure_10(setPendingAvatarDecoration(7265).AnalyticsLocationProvider, obj5);
+  return closure_10(setPendingAvatarDecoration(4347).ThemeContextProvider, obj11);
 };

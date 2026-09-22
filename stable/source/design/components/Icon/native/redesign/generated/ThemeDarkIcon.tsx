@@ -1,13 +1,13 @@
-// Module ID: 11325
-// Function ID: 11326
+// Module ID: 11457
+// Function ID: 11458
 // Name: ThemeDarkIcon
-// Dependencies: [19, 21, 576, 4261, 11326, 2]
+// Dependencies: [19, 21, 576, 4337, 11458, 2]
 // Exports: ThemeDarkIcon
 
-// Module 11325 (ThemeDarkIcon)
+// Module 11457 (ThemeDarkIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod11326 from "module_11326" /* 11326 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod11458 from "module_11458" /* 11458 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ThemeDarkIcon = function ThemeDarkIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11326, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11458, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

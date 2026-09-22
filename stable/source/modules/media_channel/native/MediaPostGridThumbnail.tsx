@@ -1,12 +1,12 @@
-// Module ID: 12015
-// Function ID: 12016
+// Module ID: 12144
+// Function ID: 12145
 // Name: MediaPostGridThumbnail
-// Dependencies: [19, 17, 21, 12013, 5587, 1115, 2]
+// Dependencies: [19, 17, 21, 12142, 5668, 1363, 2]
 // Exports: default
 
-// Module 12015 (MediaPostGridThumbnail)
-import FastImageDefault from "FastImage" /* 5587 */;
-import ForumPostMedia from "ForumPostMedia" /* 12013 */;
+// Module 12144 (MediaPostGridThumbnail)
+import FastImageDefault from "FastImage" /* 5668 */;
+import ForumPostMedia from "ForumPostMedia" /* 12142 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

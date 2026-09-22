@@ -1,18 +1,16 @@
 // Module ID: 10628
 // Function ID: 10629
-// Dependencies: [41, 42, 93, 95, 98, 10461, 10443, 10444]
+// Dependencies: [41, 42, 93, 95, 98, 10623, 10561, 10563, 10564, 10568]
 
 // Module 10628
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10444 */;
-import now from "now" /* 10461 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10568 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let self = this;
-const SVCasualDateParser = require;
+const FRTimeUnitAgoFormatParser = require;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -32,238 +30,63 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let self2 = this;
-if (this) {
-  self2 = self.__createBinding;
-}
-if (self2) {
-  let __setModuleDefault = self;
-  if (self) {
-    __setModuleDefault = self.__setModuleDefault;
+class FRTimeUnitAgoFormatParser {
+  constructor() {
+    self = this;
+    tmp = c2(this, FRTimeUnitAgoFormatParser);
+    tmp2 = closure_4;
+    obj = closure_4(FRTimeUnitAgoFormatParser);
+    tmp3 = closure_3;
+    if (hasOwnProperty()) {
+      tmp5 = globalThis;
+      _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    return tmp3(self, constructResult);
   }
-  if (__setModuleDefault) {
-    let fn = self;
-    if (self) {
-      fn = self.__importStar;
-    }
-    if (!fn) {
-      fn = function c(arg0) {
-        fn = Object.getOwnPropertyNames;
-        if (!fn) {
-          fn = (obj) => {
-            const items = [];
-            for (const key10005 in arg0) {
-              let _Object = Object;
-              hasOwnProperty = Object.prototype.hasOwnProperty;
-              let call = hasOwnProperty.call;
-              if (typeof call === "unknown") {
-                let hasOwnPropertyResult = hasOwnProperty(key10005);
-              } else {
-                hasOwnPropertyResult = call(arg0, key10005);
-              }
-              if (!hasOwnPropertyResult) {
-                continue;
-              } else {
-                items[items.length] = key10005;
-                continue;
-              }
-              continue;
-            }
-            return items;
-          };
-        }
-        return fn(arg0);
-      };
-      fn = (__esModule) => {
-        if (__esModule) {
-          if (__esModule.__esModule) {
-            return __esModule;
-          }
-        }
-        const obj = {};
-        if (null != __esModule) {
-          const arr = fn(__esModule);
-          for (let num = 0; num < arr.length; num = num + 1) {
-            if ("default" !== arr[num]) {
-              let tmp4 = self2(obj, __esModule, arr[num]);
-            }
-          }
-        }
-        __setModuleDefault(obj, __esModule);
-        return obj;
-      };
-    }
-    const _Object3 = Object;
-    let closure_9 = fn(now);
-    const _RegExp = RegExp;
-    const regExp = new RegExp("(nu|idag|imorgon|\u00F6vermorgon|ig\u00E5r|f\u00F6rrg\u00E5r|i\\s*f\u00F6rrg\u00E5r)(?:\\s*(?:p\u00E5\\s*)?(morgonen?|f\u00F6rmiddagen?|middagen?|eftermiddagen?|kv\u00E4llen?|natten?|midnatt))?(?=\\W|$)", "i");
-    class SVCasualDateParser {
-      constructor() {
-        self = this;
-        tmp = c2(this, SVCasualDateParser);
-        tmp2 = closure_4;
-        obj = closure_4(SVCasualDateParser);
-        tmp3 = closure_3;
-        if (hasOwnProperty()) {
-          tmp7 = globalThis;
-          _Reflect = Reflect;
-          tmp8 = arguments;
-          constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-        } else {
-          tmp4 = arguments;
-          tmp5 = arguments;
-          constructResult = obj(...arguments);
-        }
-        return tmp3(self, constructResult);
+}
+_inherits(FRTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern() {
+    const regExp = new RegExp("(?:les?|la|l'|du|des?)\\s*(" + FRTimeUnitAgoFormatParser(10623).NUMBER_PATTERN + ")?(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?\\s*(" + FRTimeUnitAgoFormatParser(10561).matchAnyPattern(FRTimeUnitAgoFormatParser(10623).TIME_UNIT_DICTIONARY) + ")(?:\\s*(prochaine?s?|derni[e\u00E8]re?s?|pass[\u00E9e]e?s?|pr[\u00E9e]c[\u00E9e]dents?|suivante?s?))?", "i");
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      let num = 1;
+      if (arg1[1]) {
+        num = FRTimeUnitAgoFormatParser(10623).parseNumberPattern(arg1[1]);
       }
+      const obj = {};
+      obj[FRTimeUnitAgoFormatParser(10623).TIME_UNIT_DICTIONARY[arg1[3].toLowerCase(arg1[3])]] = num;
+      const formatted = arg1[2] || arg1[4] || "".toLowerCase();
+      if (formatted) {
+        let isMatch = /derni[eè]re?s?/.test(formatted);
+        if (!isMatch) {
+          isMatch = /pass[ée]e?s?/.test(formatted);
+          const obj3 = /pass[ée]e?s?/;
+        }
+        if (!isMatch) {
+          isMatch = /pr[ée]c[ée]dents?/.test(formatted);
+          const obj4 = /pr[ée]c[ée]dents?/;
+        }
+        let reverseDurationResult = obj;
+        if (isMatch) {
+          reverseDurationResult = tmp3(10563).reverseDuration(obj);
+        }
+        const ParsingComponents = tmp3(10564).ParsingComponents;
+        return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      }
+      const str2 = arg1[2] || arg1[4] || "";
     }
-    _inherits(SVCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
-    const entry = {
-      key: "innerPattern",
-      value: function innerPattern(arg0) {
-            return regExp;
-          }
-    };
-    let items = [entry, ];
-    const entry1 = {
-      key: "innerExtract",
-      value: function innerExtract(refDate, arg1) {
-            refDate = refDate.refDate;
-            const formatted = arg1[1] || "".toLowerCase();
-            const formatted1 = arg1[2] || "".toLowerCase();
-            const parsingComponents = refDate.createParsingComponents();
-            if ("nu" === formatted) {
-              let nowResult = closure_9.now(refDate.reference);
-            } else if ("idag" === formatted) {
-              nowResult = closure_9.today(refDate.reference);
-            } else {
-              if ("imorgon" !== formatted) {
-                if ("imorn" !== formatted) {
-                  if ("ig\u00E5r" === formatted) {
-                    const _Date2 = Date;
-                    const date = new Date(refDate.getTime());
-                    date.setDate(date.getDate() - 1);
-                    SVCasualDateParser(10443).assignSimilarDate(parsingComponents, date);
-                    SVCasualDateParser(10443).implySimilarTime(parsingComponents, date);
-                    nowResult = parsingComponents;
-                  } else if ("f\u00F6rrg\u00E5r" === formatted) {
-                    const _Date = Date;
-                    const date1 = new Date(refDate.getTime());
-                    date1.setDate(date1.getDate() - 2);
-                    SVCasualDateParser(10443).assignSimilarDate(parsingComponents, date1);
-                    SVCasualDateParser(10443).implySimilarTime(parsingComponents, date1);
-                    nowResult = parsingComponents;
-                  } else {
-                    nowResult = parsingComponents;
-                  }
-                }
-              }
-              const _Date3 = Date;
-              const date2 = new Date(refDate.getTime());
-              date2.setDate(date2.getDate() + 1);
-              SVCasualDateParser(10443).assignSimilarDate(parsingComponents, date2);
-              SVCasualDateParser(10443).implySimilarTime(parsingComponents, date2);
-              nowResult = parsingComponents;
-            }
-            switch (formatted1) {
-              case "morgon":
-                nowResult.imply("hour", 6);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-                return nowResult;
-              case "morgonen":
-                nowResult.imply("hour", 6);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-                return nowResult;
-              case "f\u00F6rmiddag":
-                nowResult.imply("hour", 9);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "f\u00F6rmiddagen":
-                nowResult.imply("hour", 9);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "middag":
-                nowResult.imply("hour", 12);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "middagen":
-                nowResult.imply("hour", 12);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "eftermiddag":
-                nowResult.imply("hour", 15);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "eftermiddagen":
-                nowResult.imply("hour", 15);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "kv\u00E4ll":
-                nowResult.imply("hour", 20);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "kv\u00E4llen":
-                nowResult.imply("hour", 20);
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "natt":
-                if ("midnatt" === formatted1) {
-                  nowResult.imply("hour", 0);
-                } else {
-                  nowResult.imply("hour", 2);
-                }
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "natten":
-                if ("midnatt" === formatted1) {
-                  nowResult.imply("hour", 0);
-                } else {
-                  nowResult.imply("hour", 2);
-                }
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-              case "midnatt":
-                if ("midnatt" === formatted1) {
-                  nowResult.imply("hour", 0);
-                } else {
-                  nowResult.imply("hour", 2);
-                }
-                nowResult.imply("minute", 0);
-                nowResult.imply("second", 0);
-                nowResult.imply("millisecond", 0);
-              break;
-            }
-          }
-    };
-    items[1] = entry1;
-    exports.default = _createClass(SVCasualDateParser, items);
-  } else {
-    const _Object2 = Object;
   }
-} else {
-  let _Object = Object;
-}
+];
+
+export default _createClass(FRTimeUnitAgoFormatParser, items);

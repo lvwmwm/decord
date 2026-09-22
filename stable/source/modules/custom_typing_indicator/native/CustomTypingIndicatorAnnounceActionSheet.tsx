@@ -1,12 +1,12 @@
-// Module ID: 11973
-// Function ID: 11974
+// Module ID: 12102
+// Function ID: 12103
 // Name: CustomTypingIndicatorAnnounceActionSheet
-// Dependencies: [19, 17, 1074, 1954, 21, 4560, 576, 7382, 7150, 7123, 7154, 11974, 1379, 11976, 11977, 11978, 11979, 11980, 11981, 11982, 1178, 1114, 4556, 3549, 4975, 2]
+// Dependencies: [19, 17, 1074, 1954, 21, 4636, 576, 7485, 7253, 7226, 7257, 12103, 1379, 12105, 12106, 12107, 12108, 12109, 12110, 12111, 1176, 1114, 4632, 3592, 5056, 2]
 // Exports: default
 
-// Module 11973 (CustomTypingIndicatorAnnounceActionSheet)
+// Module 12102 (CustomTypingIndicatorAnnounceActionSheet)
 import nativeDefault from "native" /* 576 */;
-import openUserSettings from "openUserSettings" /* 7382 */;
+import openUserSettings from "openUserSettings" /* 7485 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ const UserSettingsSections = fn(1074).UserSettingsSections;
 const ContentDismissActionType = fn(1954).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_9 = createStyles.createStyles(() => {
   const obj = { content: { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 }, examples: null, betaBadge: null, title: null, body: null, actions: null, row: null, outerRow: null, innerRow: null, outerStack: null, innerStack: null };
   const obj2 = { alignItems: "center", paddingHorizontal: nativeDefault.space.PX_16 };
@@ -63,7 +63,7 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
   const obj2 = { bottom: true, children: null };
   const obj3 = { style: tmp2.content, children: null };
   const items3 = [
-    closure_7(markAsDismissed(7154).ActionSheetHeaderBar, {
+    closure_7(markAsDismissed(7257).ActionSheetHeaderBar, {
       onPress() {
         const current = ref.current;
         if (current != null) {
@@ -84,10 +84,10 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
   ({ row: arr5[0], outerRow: arr5[1] } = tmp2);
   obj6.style = items4;
   const obj7 = { name: "Cap", suggestion: markAsDismissed(1379).TypingSuggestion.UNSPECIFIED, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, emojiSource: null, style: null };
-  const items5 = [ref(11976), ref(11977), ref(11976)];
+  const items5 = [ref(12105), ref(12106), ref(12105)];
   obj7.emojiSource = items5;
   obj7.style = tmp2.outerStack;
-  obj6.children = closure_7(ref(11974), obj7);
+  obj6.children = closure_7(ref(12103), obj7);
   const items6 = [closure_7(View, obj6), , ];
   const obj8 = { style: null, children: null };
   const items7 = [, ];
@@ -103,56 +103,56 @@ export default function CustomTypingIndicatorAnnounceActionSheet(markAsDismissed
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const tmp6 = ref(11974);
+  const tmp6 = ref(12103);
   obj9.suggestion = markAsDismissed(1379).TypingSuggestion.YAPPING;
   obj9.style = tmp2.innerStack;
-  const items8 = [ref(11978), ref(11979), ref(11978)];
+  const items8 = [ref(12107), ref(12108), ref(12107)];
   obj9.emojiSource = items8;
-  obj8.children = closure_7(ref(11974), obj9);
+  obj8.children = closure_7(ref(12103), obj9);
   items6[1] = closure_7(View, obj8);
   const obj10 = { style: null, children: null };
   const items9 = [, ];
   ({ row: arr10[0], outerRow: arr10[1] } = tmp2);
   obj10.style = items9;
   const obj11 = { name: "Loky", suggestion: null, emojiSize: 24, spacing: 8, textVariant: "text-md/medium", textColor: "text-subtle", lineClamp: 1, style: null, emojiSource: null };
-  const tmp7 = ref(11974);
+  const tmp7 = ref(12103);
   obj11.suggestion = markAsDismissed(1379).TypingSuggestion.OVERSHARING;
   obj11.style = tmp2.outerStack;
-  const items10 = [ref(11980), ref(11981), ref(11982)];
+  const items10 = [ref(12109), ref(12110), ref(12111)];
   obj11.emojiSource = items10;
-  obj10.children = closure_7(ref(11974), obj11);
+  obj10.children = closure_7(ref(12103), obj11);
   items6[2] = closure_7(View, obj10);
   obj5.children = items6;
   items3[1] = closure_8(View, obj5);
   const obj12 = { text: null, color: null, style: null };
   const intl = markAsDismissed(1114).intl;
   obj12.text = intl.string(markAsDismissed(1114).t.oW0eUd);
-  obj12.color = markAsDismissed(1178).BadgeColors.EXPRESSIVE;
+  obj12.color = markAsDismissed(1176).BadgeColors.EXPRESSIVE;
   obj12.style = tmp2.betaBadge;
-  items3[2] = closure_7(markAsDismissed(1178).TextBadge, obj12);
+  items3[2] = closure_7(markAsDismissed(1176).TextBadge, obj12);
   const obj13 = { variant: "heading-lg/medium", style: tmp2.title, color: "text-default", children: null };
   const intl2 = markAsDismissed(1114).intl;
-  obj13.children = intl2.string(ref(3549).uGxDiu);
-  items3[3] = closure_7(markAsDismissed(4556).Text, obj13);
+  obj13.children = intl2.string(ref(3592).uGxDiu);
+  items3[3] = closure_7(markAsDismissed(4632).Text, obj13);
   const obj14 = { variant: "text-md/normal", style: tmp2.body, color: "text-muted", children: null };
   const intl3 = markAsDismissed(1114).intl;
-  obj14.children = intl3.string(ref(3549).yezU3E);
-  items3[4] = closure_7(markAsDismissed(4556).Text, obj14);
+  obj14.children = intl3.string(ref(3592).yezU3E);
+  items3[4] = closure_7(markAsDismissed(4632).Text, obj14);
   const obj15 = { style: tmp2.actions, children: null };
   const obj16 = { text: null, variant: "primary", size: "lg", onPress: null };
   const intl4 = markAsDismissed(1114).intl;
-  obj16.text = intl4.string(ref(3549).TswY68);
+  obj16.text = intl4.string(ref(3592).TswY68);
   obj16.onPress = callback;
-  const items11 = [closure_7(markAsDismissed(4975).Button, obj16), ];
+  const items11 = [closure_7(markAsDismissed(5056).Button, obj16), ];
   const obj17 = { text: null, variant: "secondary", size: "lg", onPress: null };
   const intl5 = markAsDismissed(1114).intl;
   obj17.text = intl5.string(markAsDismissed(1114).t.TulDPl);
   obj17.onPress = callback1;
-  items11[1] = closure_7(markAsDismissed(4975).Button, obj17);
+  items11[1] = closure_7(markAsDismissed(5056).Button, obj17);
   obj15.children = items11;
   items3[5] = closure_8(View, obj15);
   obj3.children = items3;
   obj2.children = closure_8(View, obj3);
-  obj.children = closure_7(markAsDismissed(7123).SafeAreaPaddingView, obj2);
-  return closure_7(markAsDismissed(7150).BottomSheet, obj);
+  obj.children = closure_7(markAsDismissed(7226).SafeAreaPaddingView, obj2);
+  return closure_7(markAsDismissed(7253).BottomSheet, obj);
 };

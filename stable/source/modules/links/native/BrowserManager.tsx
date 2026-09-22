@@ -1,14 +1,14 @@
-// Module ID: 4525
-// Function ID: 4526
+// Module ID: 4601
+// Function ID: 4602
 // Name: BrowserManager
-// Dependencies: [17, 560, 1115, 4526, 1093, 4255, 1369, 2]
+// Dependencies: [17, 560, 1363, 4602, 1093, 4331, 1369, 2]
 // Exports: browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
-// Module 4525 (BrowserManager)
+// Module 4601 (BrowserManager)
 import ConstantsIOS from "ConstantsIOS" /* 1093 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import LinkingDefault from "Linking" /* 4255 */;
-import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4526 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import LinkingDefault from "Linking" /* 4331 */;
+import NativeBrowserManagerModuleDefault from "NativeBrowserManagerModule" /* 4602 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
@@ -78,7 +78,7 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(href, CHROME
   if (selectedBrowser !== ConstantsIOS.WebBrowserType.SAFARI) {
     if (selectedBrowser !== tmp2(1093).WebBrowserType.CHROME) {
       if (selectedBrowser === tmp2(1093).WebBrowserType.IN_APP) {
-        let tmp2Result = tmp2(1115);
+        let tmp2Result = tmp2(1363);
       }
       if (tmp2(1093).WebBrowserType.IN_APP === selectedBrowser) {
         if (tmp2Result4.isAndroid()) {
@@ -145,11 +145,11 @@ export const browserManagerOpenUrl = function browserManagerOpenUrl(href, CHROME
 export const browserManagerSelectBrowser = function browserManagerSelectBrowser(selectedBrowser) {
   if (obj.isAndroid()) {
     if (tmp(1093).WebBrowserType.SAFARI === selectedBrowser) {
-      const browser = NativeBrowserManagerModuleDefault.selectBrowser(tmp(4526).BrowserType.SAFARI);
+      const browser = NativeBrowserManagerModuleDefault.selectBrowser(tmp(4602).BrowserType.SAFARI);
     } else if (tmp(1093).WebBrowserType.IN_APP === selectedBrowser) {
-      const browser1 = NativeBrowserManagerModuleDefault.selectBrowser(tmp(4526).BrowserType.IN_APP);
+      const browser1 = NativeBrowserManagerModuleDefault.selectBrowser(tmp(4602).BrowserType.IN_APP);
     } else if (tmp(1093).WebBrowserType.CHROME === selectedBrowser) {
-      const browser2 = NativeBrowserManagerModuleDefault.selectBrowser(tmp(4526).BrowserType.CHROME);
+      const browser2 = NativeBrowserManagerModuleDefault.selectBrowser(tmp(4602).BrowserType.CHROME);
     }
   } else {
     BrowserManager = NativeModules.BrowserManager;

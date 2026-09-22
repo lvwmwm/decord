@@ -1,10 +1,10 @@
-// Module ID: 14925
-// Function ID: 14926
+// Module ID: 15012
+// Function ID: 15013
 // Name: FamilyCenterAvatarPair
-// Dependencies: [19, 17, 1371, 21, 4560, 576, 563, 1178, 2]
+// Dependencies: [19, 17, 1371, 21, 4636, 576, 563, 1176, 2]
 // Exports: default
 
-// Module 14925 (FamilyCenterAvatarPair)
+// Module 15012 (FamilyCenterAvatarPair)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { avatars: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.round, display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center", padding: 8 }, icon: { height: 24, width: 24, marginHorizontal: 16 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -31,16 +31,16 @@ export default function FamilyCenterAvatarPair(otherUser) {
     tmp5 = null;
     if (undefined !== otherUser) {
       const obj2 = { style: tmp.avatars, children: null };
-      const obj3 = { size: tmp2(1178).AvatarSizes.LARGE_48, user: stateFromStores, guildId: "Array", avatarDecoration: stateFromStores.avatarDecoration };
-      const items1 = [React4(tmp2(1178).Avatar, obj3), , ];
+      const obj3 = { size: tmp2(1176).AvatarSizes.LARGE_48, user: stateFromStores, guildId: "Array", avatarDecoration: stateFromStores.avatarDecoration };
+      const items1 = [React4(tmp2(1176).Avatar, obj3), , ];
       const obj4 = { style: null, size: null, source: null };
       const items2 = [tmp.icon, iconStyles];
       obj4.style = items2;
-      obj4.size = tmp2(1178).Icon.Sizes.EXTRA_SMALL;
+      obj4.size = tmp2(1176).Icon.Sizes.EXTRA_SMALL;
       obj4.source = iconSrc;
-      items1[1] = React4(tmp2(1178).Icon, obj4);
-      const obj5 = { size: tmp2(1178).AvatarSizes.LARGE_48, user: otherUser, guildId: "Array", avatarDecoration: otherUser.avatarDecoration };
-      items1[2] = React4(tmp2(1178).Avatar, obj5);
+      items1[1] = React4(tmp2(1176).Icon, obj4);
+      const obj5 = { size: tmp2(1176).AvatarSizes.LARGE_48, user: otherUser, guildId: "Array", avatarDecoration: otherUser.avatarDecoration };
+      items1[2] = React4(tmp2(1176).Avatar, obj5);
       obj2.children = items1;
       tmp5 = hasOwnProperty(View, obj2);
     }

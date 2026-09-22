@@ -1,16 +1,16 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 15955
+// Function ID: 15956
 // Name: ManageSponsoredContentScreen
-// Dependencies: [19, 17, 1074, 21, 1187, 2070, 1935, 7201, 1114, 4560, 576, 5687, 2024, 2]
+// Dependencies: [19, 17, 1074, 21, 1185, 2070, 1935, 7303, 1114, 4636, 576, 5768, 2024, 2]
 // Exports: default
 
-// Module 15865 (ManageSponsoredContentScreen)
+// Module 15955 (ManageSponsoredContentScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import UserSettings from "UserSettings" /* 1935 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
 import _modDef2070 from "module_2070" /* 2070 */;
-import TableRowGroup from "TableRowGroup" /* 5687 */;
+import TableRowGroup from "TableRowGroup" /* 5768 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -38,17 +38,17 @@ function AdTopicRow(adTopic) {
     const items = [...set];
     AdTopicOptOuts2.updateSetting(items);
   };
-  return closure_5(adTopic(7201).TableSwitchRow, obj);
+  return closure_5(adTopic(7303).TableSwitchRow, obj);
 }
 const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let obj = {};
-obj[fn(1187).AdTopic.REAL_MONEY_GAMING] = _modDef2070.pmIitA;
+obj[fn(1185).AdTopic.REAL_MONEY_GAMING] = _modDef2070.pmIitA;
 const keys = Object.keys(obj);
 let closure_8 = keys.map(Number);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj3 = { content: { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 } };
 let closure_10 = createStyles.createStyles(obj3);
 const size = fn(2);
@@ -58,7 +58,7 @@ export default function ManageSponsoredContentScreen() {
   obj = { style: closure_10().content, children: null };
   const obj2 = { hasIcons: false, description: null };
   const intl = util.intl;
-  const obj3 = { helpdeskArticle: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
+  const obj3 = { helpdeskArticle: HelpdeskUtilsDefault.getArticleURL(HelpdeskArticles.MANAGE_SPONSORED_CONTENT) };
   obj2.description = intl.format(_modDef2070["z/MfaY"], obj3);
   const items = [hasOwnProperty(TableRowGroup.TableRowGroup, obj2), ];
   const obj5 = { hasIcons: false, title: null, children: null };

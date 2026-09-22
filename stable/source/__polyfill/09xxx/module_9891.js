@@ -1,9 +1,9 @@
 // Module ID: 9891
 // Function ID: 9892
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 9891
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "032ba055130436392254ce3ba39e9456", name: "gmail", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 160, height: 160, scales: [2, 3], hash: "9e9c2d9cc8f1fa482e39489caafdfd7e", name: "img_no_results_dark_theme", type: "png" });

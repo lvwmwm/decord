@@ -1,13 +1,13 @@
-// Module ID: 8725
-// Function ID: 8726
+// Module ID: 8844
+// Function ID: 8845
 // Name: GameProfileMediaSources
-// Dependencies: [1430, 4802, 1929, 2]
+// Dependencies: [1430, 4878, 1929, 2]
 // Exports: buildMediaEntries, buildMediaViewerSources, getCarouselPreviewPixelSize
 
-// Module 8725 (GameProfileMediaSources)
+// Module 8844 (GameProfileMediaSources)
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1430 */;
 import ImageProxyUtils from "ImageProxyUtils" /* 1929 */;
-import StoreUtils from "StoreUtils" /* 4802 */;
+import StoreUtils from "StoreUtils" /* 4878 */;
 import size from "module_2" /* 2 */;
 
 let c2 = 366;

@@ -1,12 +1,12 @@
-// Module ID: 11709
-// Function ID: 11710
+// Module ID: 11837
+// Function ID: 11838
 // Name: SavedMessageHelpers
-// Dependencies: [5, 11665, 1074, 7855, 7850, 7853, 7182, 11710, 11711, 4904, 1114, 7860, 7861, 4259, 6610, 4523, 11712, 2]
+// Dependencies: [5, 11793, 1074, 7957, 7952, 7955, 7285, 11838, 11839, 4980, 1114, 7962, 7963, 4335, 6711, 4599, 11840, 2]
 // Exports: addOrUpdateSavedMessage, removeSavedMessage
 
-// Module 11709 (SavedMessageHelpers)
+// Module 11837 (SavedMessageHelpers)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11665 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11793 */;
 
 const require = fn;
 let closure_6 = async function _addOrUpdateSavedMessage(arg0) {
@@ -84,9 +84,9 @@ let closure_6 = async function _addOrUpdateSavedMessage(arg0) {
                             if (code === constants.TOO_MANY_SAVED_MESSAGES) {
                               closure_0 = tmp5;
                               if (obj.isForLaterLimitUpgradable("addOrUpdateSavedMessage")) {
-                                const items = [tmp8(7182).FOR_LATER_ROADBLOCK];
-                                tmp8(11711)(tmp5, items);
-                                const tmp8Result = tmp8(11711);
+                                const items = [tmp8(7285).FOR_LATER_ROADBLOCK];
+                                tmp8(11839)(tmp5, items);
+                                const tmp8Result = tmp8(11839);
                               } else {
                                 const obj2 = { title: null, body: null, confirmText: null, cancelText: null, onCancel: null };
                                 const intl2 = tmp6(1114).intl;
@@ -94,24 +94,24 @@ let closure_6 = async function _addOrUpdateSavedMessage(arg0) {
                                 const intl3 = tmp6(1114).intl;
                                 const t = tmp6(1114).t;
                                 const obj3 = { max: null };
-                                const tmp8Result2 = tmp8(4904);
+                                const tmp8Result2 = tmp8(4980);
                                 const tmp9 = tmp5 ? t.Anr1Dg : t["1zVbEG"];
-                                obj3.max = tmp6(7855).getForLaterLimit("addOrUpdateSavedMessage", tmp5);
+                                obj3.max = tmp6(7957).getForLaterLimit("addOrUpdateSavedMessage", tmp5);
                                 obj2.body = intl3.formatToPlainString(tmp9, obj3);
                                 const intl4 = tmp6(1114).intl;
                                 obj2.confirmText = intl4.string(tmp6(1114).t.BddRzS);
                                 const intl5 = tmp6(1114).intl;
                                 obj2.cancelText = intl5.string(tmp6(1114).t.ZGbTcy);
                                 obj2.onCancel = function onCancel() {
-                                  const SavedMessageSortTypes = displayToast(7861).SavedMessageSortTypes;
-                                  return displayToast(7860).showForLaterModal(closure_0 ? SavedMessageSortTypes.REMINDER : SavedMessageSortTypes.BOOKMARK);
+                                  const SavedMessageSortTypes = displayToast(7963).SavedMessageSortTypes;
+                                  return displayToast(7962).showForLaterModal(closure_0 ? SavedMessageSortTypes.REMINDER : SavedMessageSortTypes.BOOKMARK);
                                 };
                                 tmp8Result2.show(obj2);
-                                const tmp6Result = tmp6(7855);
+                                const tmp6Result = tmp6(7957);
                               }
                               return null;
                             } else {
-                              const obj4 = { key: "SAVED_MESSAGE_CREATE_ERROR", IconComponent: closure_0(6610).CircleErrorIcon, content: null };
+                              const obj4 = { key: "SAVED_MESSAGE_CREATE_ERROR", IconComponent: closure_0(6711).CircleErrorIcon, content: null };
                               let message;
                               if (error != null) {
                                 const body2 = error.body;
@@ -124,7 +124,7 @@ let closure_6 = async function _addOrUpdateSavedMessage(arg0) {
                                 message = intl.string(tmp15(1114).t.R0RpRX);
                               }
                               obj4.content = message;
-                              closure_1(4259).open(obj4);
+                              closure_1(4335).open(obj4);
                               return null;
                             }
                           }),
@@ -174,7 +174,7 @@ let closure_6 = async function _addOrUpdateSavedMessage(arg0) {
 let closure_7 = async function _removeSavedMessage() {
   closure_130_0(closure_130_2[7]);
   await closure_130_0(closure_130_2[7]).deleteSavedMessage(closure_129_2).catch((error) => {
-    const obj2 = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: closure_1_0(6610).CircleErrorIcon, content: null };
+    const obj2 = { key: "SAVED_MESSAGE_REMOVE_ERROR", IconComponent: closure_1_0(6711).CircleErrorIcon, content: null };
     let message;
     if (error != null) {
       const body = error.body;
@@ -187,7 +187,7 @@ let closure_7 = async function _removeSavedMessage() {
       message = intl.string(tmp2(1114).t.R0RpRX);
     }
     obj2.content = message;
-    closure_1_1(4259).open(obj2);
+    closure_1_1(4335).open(obj2);
     return null;
   });
   if (null != arg1) {

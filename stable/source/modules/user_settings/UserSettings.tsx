@@ -1,18 +1,18 @@
 // Module ID: 1935
 // Function ID: 1936
 // Name: UserSettings
-// Dependencies: [1936, 1084, 1937, 1074, 1938, 1939, 1218, 1187, 558, 7880, 12, 504, 5423, 7299, 1226, 2]
+// Dependencies: [1936, 1084, 1937, 1074, 1938, 1939, 1216, 1185, 558, 7983, 12, 504, 5504, 7402, 1224, 2]
 // Exports: explicitContentFromProto, explicitContentToProto, goreContentFromProto, goreContentToProto
 
 // Module 1935 (UserSettings)
 import _mod12 from "module_12" /* 12 */;
 import initialize from "initialize" /* 504 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1187 */;
-import wrappers from "wrappers" /* 1218 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5423 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7299 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7880 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
+import wrappers from "wrappers" /* 1216 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5504 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7402 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 7983 */;
 import UserSettingsOverridesStore from "UserSettingsOverridesStore" /* 1936 */;
 
 require = fn;
@@ -1072,8 +1072,8 @@ const result4 = UserSettingDefinitions.wrapSettingWithSelectiveSyncing(UserSetti
 fn(1939);
 let items = [ListDensityMode.AUTO, , ];
 const obj83 = { comparator: discord_common_shallowEqualDefault };
-items[1] = fn(7880).ChannelListLayoutTypes.COZY;
-items[2] = fn(7880).ChannelListLayoutTypes.COMPACT;
+items[1] = fn(7983).ChannelListLayoutTypes.COZY;
+items[2] = fn(7983).ChannelListLayoutTypes.COMPACT;
 const set1 = new Set(items);
 UserSettingDefinitions = fn(1939);
 const defineProtoSettingResult72 = UserSettingDefinitions.defineProtoSetting("localization", "timezoneOffset", (value) => {
@@ -1093,7 +1093,7 @@ const defineProtoSettingResult72 = UserSettingDefinitions.defineProtoSetting("lo
   }
   return Int32Value.create({ value });
 });
-const items1 = [fn(7880).MessagePreviewTypes.ALL, fn(7880).MessagePreviewTypes.UNREADS, fn(7880).MessagePreviewTypes.NONE];
+const items1 = [fn(7983).MessagePreviewTypes.ALL, fn(7983).MessagePreviewTypes.UNREADS, fn(7983).MessagePreviewTypes.NONE];
 const set2 = new Set(items1);
 UserSettingDefinitions = fn(1939);
 const defineProtoSettingResult73 = UserSettingDefinitions.defineProtoSetting("appearance", "channelListLayout", (value) => {
@@ -1310,7 +1310,7 @@ obj107.isEligible = function isEligible() {
 obj107.useIsEligible = function useIsEligible() {
   return RegionalFeatureConfigUtils.useIsSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
-obj107.ineligibleDefault = fn(1187).GuildActivityStatusRestrictionDefault.OFF;
+obj107.ineligibleDefault = fn(1185).GuildActivityStatusRestrictionDefault.OFF;
 obj107.eligibleDefault = function eligibleDefault() {
   return preloaded_user_settings.GuildActivityStatusRestrictionDefault.ON_FOR_LARGE_GUILDS;
 };
@@ -1337,7 +1337,7 @@ obj110.isEligible = function isEligible() {
 obj110.useIsEligible = function useIsEligible() {
   return RegionalFeatureConfigUtils.useIsSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.GUILD_ACTIVITY_STATUS);
 };
-obj110.ineligibleDefault = fn(1187).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
+obj110.ineligibleDefault = fn(1185).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
 obj110.eligibleDefault = function eligibleDefault() {
   return preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS;
 };
@@ -1446,7 +1446,7 @@ const defineProtoSettingResult88 = UserSettingDefinitions.defineProtoSetting("ap
   return AUTO;
 }, (arg0) => arg0);
 UserSettingDefinitions = fn(1939);
-const defineProtoSettingResult89 = UserSettingDefinitions.defineProtoSetting("appearance", "defaultGuildThemePreference", fn(1226).resolveDefaultGuildThemePreference, (arg0) => arg0);
+const defineProtoSettingResult89 = UserSettingDefinitions.defineProtoSetting("appearance", "defaultGuildThemePreference", fn(1224).resolveDefaultGuildThemePreference, (arg0) => arg0);
 UserSettingDefinitions = fn(1939);
 const defineProtoSettingResult90 = UserSettingDefinitions.defineProtoSetting("appearance", "launchPadMode", (arg0) => {
   let LAUNCH_PAD_DISABLED = arg0;
@@ -1483,9 +1483,9 @@ UserSettingDefinitions = fn(1939);
 const defineProtoSettingResult94 = UserSettingDefinitions.defineProtoSetting("appearance", "uiDensity", (arg0) => {
   let DEFAULT = arg0;
   if (arg0 === preloaded_user_settings.UIDensity.UNSET_UI_DENSITY) {
-    DEFAULT = tmp(1187).UIDensity.DEFAULT;
+    DEFAULT = tmp(1185).UIDensity.DEFAULT;
   } else if (DEFAULT == null) {
-    DEFAULT = tmp(1187).UIDensity.DEFAULT;
+    DEFAULT = tmp(1185).UIDensity.DEFAULT;
   }
   return DEFAULT;
 }, (arg0) => arg0);

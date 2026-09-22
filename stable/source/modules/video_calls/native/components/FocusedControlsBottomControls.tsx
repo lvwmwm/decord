@@ -1,20 +1,20 @@
-// Module ID: 9697
-// Function ID: 9698
+// Module ID: 9821
+// Function ID: 9822
 // Name: FocusedControlsBottomControls
-// Dependencies: [32, 19, 17, 9473, 9474, 1074, 21, 1115, 4560, 576, 5524, 1178, 1611, 4296, 9698, 1093, 1114, 7154, 4380, 1943, 4561, 6655, 9700, 1477, 9504, 1109, 4271, 4965, 4411, 9701, 2]
+// Dependencies: [32, 19, 17, 9597, 9598, 1074, 21, 1363, 4636, 576, 5605, 1176, 1611, 4373, 9822, 1093, 1114, 7257, 4457, 1943, 4637, 6756, 9824, 1477, 9628, 1109, 4347, 5046, 4488, 9825, 2]
 // Exports: default
 
-// Module 9697 (FocusedControlsBottomControls)
+// Module 9821 (FocusedControlsBottomControls)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1093 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import timing from "timing" /* 4561 */;
-import TooltipActionCreatorsDefault from "TooltipActionCreators" /* 9700 */;
-import CallPTTButton from "CallPTTButton" /* 9701 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import timing from "timing" /* 4637 */;
+import TooltipActionCreatorsDefault from "TooltipActionCreators" /* 9824 */;
+import CallPTTButton from "CallPTTButton" /* 9825 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import TextStyles from "TextStyles" /* 5524 */;
+import TextStyles from "TextStyles" /* 5605 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 const CallPTTButtonDefault = CallPTTButton;
@@ -63,8 +63,8 @@ function FocusedControlsExpanded(availableHeight) {
 function FocusedControlsBottomDrawerTooltip(positionY) {
   positionY = positionY.positionY;
   const tmp = closure_18();
-  const canShowTooltip = positionY(9698).useCanShowTooltip(positionY(1093).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
-  positionY(4296);
+  const canShowTooltip = positionY(9822).useCanShowTooltip(positionY(1093).TooltipNames.SCREENSHARE_SWIPE_UP_CONTROLS, true);
+  positionY(4373);
   const fn = function o() {
     return { opacity: 1 - Math.min(-1 * positionY.get() / c15, 1) };
   };
@@ -74,11 +74,11 @@ function FocusedControlsBottomDrawerTooltip(positionY) {
   let tmp7 = null;
   if (canShowTooltip) {
     const obj3 = { style: tmp6, children: null };
-    const obj7 = { style: tmp.tooltipStyle, arrowPosition: tmp2(1178).TooltipArrowPositions.CENTER, arrowDirection: tmp2(1178).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle: null, labelStyle: null, label: null };
+    const obj7 = { style: tmp.tooltipStyle, arrowPosition: tmp2(1176).TooltipArrowPositions.CENTER, arrowDirection: tmp2(1176).TooltipArrowDirections.DOWN, arrowWidth: 8, arrowHeight: 4, containerStyle: null, labelStyle: null, label: null };
     ({ containerStyle: obj4.containerStyle, labelStyle: obj4.labelStyle } = tmp);
     const intl = tmp2(1114).intl;
     obj7.label = intl.string(tmp2(1114).t.zYzy2i);
-    obj3.children = closure_13(tmp2(1178).Tooltip, obj7);
+    obj3.children = closure_13(tmp2(1176).Tooltip, obj7);
     tmp7 = closure_13(ReanimatedRexportDefault.View, obj3);
   }
   return tmp7;
@@ -97,15 +97,15 @@ function FocusedControlsAboveActionBarView(positionY) {
   fn.__initData = __initData3;
   const obj3 = { accessible: true, onPress: onPressHeader, accessibilityRole: "button", accessibilityLabel: "Group DM", accessibilityHint: "Press to start a new conversation", accessibilityState: { expanded: isExpanded }, children: null };
   const obj4 = { style: tmp.aboveActionBarContainer, children: null };
-  const animatedStyle = positionY(4296).useAnimatedStyle(fn);
-  const items = [closure_13(FocusedControlsBottomDrawerTooltip, { positionY }), closure_13(positionY(7154).ActionSheetHeaderBar, {}), ];
+  const animatedStyle = positionY(4373).useAnimatedStyle(fn);
+  const items = [closure_13(FocusedControlsBottomDrawerTooltip, { positionY }), closure_13(positionY(7257).ActionSheetHeaderBar, {}), ];
   let tmp4Result = null != aboveActionBar;
   if (tmp4Result) {
     obj5 = { style: null, children: null };
     const items1 = [tmp.aboveActionBarChildrenContainer, animatedStyle];
     obj5.style = items1;
     obj5.children = aboveActionBar;
-    tmp4Result = tmp4(offsetY(4296).View, obj5);
+    tmp4Result = tmp4(offsetY(4373).View, obj5);
   }
   items[2] = tmp4Result;
   obj4.children = items;
@@ -634,9 +634,9 @@ class FocusedControlsBottomDrawer {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, TouchableWithoutFeedback: metroRequire, ScrollView: closure_7, StyleSheet } = get_ActivityIndicator);
-const ChannelCallStore = fn(9473);
+const ChannelCallStore = fn(9597);
 ({ clearFocusTimer: closure_8, resetFocusTimer: closure_9 } = ChannelCallStore);
-const ChannelCallConstants = fn(9474);
+const ChannelCallConstants = fn(9598);
 ({ BOX_MODE_THRESHOLD_WIDTH: c10, BOX_MODE_ACTIONSHEET_HEIGHT: closure_11 } = ChannelCallConstants);
 const Constants = fn(1074);
 ({ ComponentActions: closure_12, Fonts } = Constants);
@@ -649,7 +649,7 @@ function EXTENDED_CONTROLS_OFFSET_Y(arg0) {
 function EXTENDED_CONTROLS_LANDSCAPE_OFFSET_Y(arg0) {
 
 }
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { bottomDrawerContainer: null, visualEffectView: null, visualEffectViewBackground: null, expandedControlsContainer: null, aboveActionBarContainer: null, aboveActionBarChildrenContainer: null, ptbButton: null, tooltipStyle: null, containerStyle: null, labelStyle: null };
 const rect = { position: "absolute", left: 0, right: 0, bottom: 0, borderRadius: nativeDefault.radii.sm };
 obj2.bottomDrawerContainer = rect;
@@ -668,8 +668,8 @@ obj2.containerStyle = { paddingHorizontal: 8, paddingVertical: 4 };
 const merged1 = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.unsafe_rawColors.WHITE, 12, { uppercase: true }));
 obj2.labelStyle = {};
 const collapsedCategories = createStyles.createStyles(obj2);
-let obj5 = { easing: fn(1178).STANDARD_EASING, duration: 250 };
-let obj6 = { easing: fn(1178).STANDARD_EASING, duration: 400 };
+let obj5 = { easing: fn(1176).STANDARD_EASING, duration: 250 };
+let obj6 = { easing: fn(1176).STANDARD_EASING, duration: 400 };
 const __initData = { code: "function FocusedControlsBottomControlsTsx1(){const{positionY,EXPANDED_DRAWER_SHOW_POSITION}=this.__closure;const opacity=Math.min(positionY.get()*-1/EXPANDED_DRAWER_SHOW_POSITION,1);return{opacity:opacity,pointerEvents:opacity===0?'none':'auto'};}" };
 const __initData2 = { code: "function FocusedControlsBottomControlsTsx2(){const{positionY,EXPANDED_DRAWER_SHOW_POSITION}=this.__closure;return{opacity:1-Math.min(positionY.get()*-1/EXPANDED_DRAWER_SHOW_POSITION,1)};}" };
 const __initData3 = { code: "function FocusedControlsBottomControlsTsx3(){const{offsetY,EXPANDED_DRAWER_SHOW_POSITION,positionY}=this.__closure;const maxHeightRange=offsetY/3-EXPANDED_DRAWER_SHOW_POSITION;const opacity=2-Math.max(Math.abs(positionY.get())/maxHeightRange,0);return{opacity:opacity};}" };

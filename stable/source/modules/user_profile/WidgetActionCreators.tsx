@@ -1,11 +1,11 @@
-// Module ID: 7628
-// Function ID: 7629
+// Module ID: 7730
+// Function ID: 7731
 // Name: WidgetActionCreators
-// Dependencies: [5, 1371, 1074, 573, 1272, 7629, 1232, 2]
+// Dependencies: [5, 1371, 1074, 573, 1270, 7731, 1230, 2]
 
-// Module 7628 (WidgetActionCreators)
+// Module 7730 (WidgetActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -208,17 +208,17 @@ export default {
     ({ onProgress: importDefault, signal: dependencyMap } = obj);
     return (async () => {
       closure_1 = tmp2;
-      const HTTP2 = closure_0(1272).HTTP;
+      const HTTP2 = closure_0(1270).HTTP;
       const request = { url: constants.USER_PROFILE_WIDGET_CLIP_UPLOAD, body: { file_size: closure_0.size }, rejectWithError: true };
       await HTTP2.post(request);
       const body = arg1.body;
       const upload_url = body.upload_url;
       const upload_filename = body.upload_filename;
-      const HTTP = closure_0(1272).HTTP;
+      const HTTP = closure_0(1270).HTTP;
       const request1 = {
         url: upload_url,
         body: closure_129_0,
-        headers: { "Content-Type": closure_0(7629).WIDGET_CLIP_CONTENT_TYPE },
+        headers: { "Content-Type": closure_0(7731).WIDGET_CLIP_CONTENT_TYPE },
         onRequestProgress(direction) {
           let tmp = "upload" === direction.direction;
           if (tmp) {

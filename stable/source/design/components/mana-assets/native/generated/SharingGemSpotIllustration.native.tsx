@@ -1,13 +1,13 @@
-// Module ID: 6451
-// Function ID: 6452
+// Module ID: 6552
+// Function ID: 6553
 // Name: SharingGemSpotIllustration
-// Dependencies: [21, 5587, 6452, 2]
+// Dependencies: [21, 5668, 6553, 2]
 // Exports: SharingGemSpotIllustration
 
-// Module 6451 (SharingGemSpotIllustration)
+// Module 6552 (SharingGemSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6452 from "module_6452" /* 6452 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6553 from "module_6553" /* 6553 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const SharingGemSpotIllustration = function SharingGemSpotIllustration(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6452 };
+  const obj2 = { uri: _modDef6553 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

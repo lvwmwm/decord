@@ -1,22 +1,22 @@
-// Module ID: 8854
-// Function ID: 8855
+// Module ID: 8973
+// Function ID: 8974
 // Name: collectibles/CollectiblesUtils
-// Dependencies: [1074, 7234, 4231, 7237, 7554, 4218, 7553, 8197, 8855, 2]
+// Dependencies: [1074, 7337, 4307, 7340, 7657, 4294, 7656, 8313, 8974, 2]
 // Exports: createOrbProfileBadge, extractPriceByPurchaseTypes, filterGPlaySyncedCategories, filterHiddenCategories, getCollectibleGoogleSkuId, getFormattedPriceForCollectiblesProduct, isGPlaySynced
 
-// Module 8854 (collectibles/CollectiblesUtils)
+// Module 8973 (collectibles/CollectiblesUtils)
 import Constants from "Constants" /* 1074 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4218 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 4231 */;
-import IAPStoreDefault from "IAPStore" /* 7237 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7553 */;
-import types from "types" /* 8197 */;
-import _modDef8855 from "module_8855" /* 8855 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4294 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 4307 */;
+import IAPStoreDefault from "IAPStore" /* 7340 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7656 */;
+import types from "types" /* 8313 */;
+import _modDef8974 from "module_8974" /* 8974 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
-const CollectiblesUtils = tmp(7554);
+const CollectiblesUtils = tmp(7657);
 function hasAtLeastOneGPlaySynced(nextResult) {
   const products = nextResult.products;
   return products.filter((variants) => {
@@ -142,16 +142,16 @@ export const getFormattedPriceForCollectiblesProduct = function getFormattedPric
         result = null;
       }
     } else {
-      result = tmp7(7554).extractPriceByPurchaseTypes(googleSkuIds, DEFAULT);
-      const tmp7Result = tmp7(7554);
+      result = tmp7(7657).extractPriceByPurchaseTypes(googleSkuIds, DEFAULT);
+      const tmp7Result = tmp7(7657);
     }
     if (null == result) {
       return null;
     } else if (null != result.priceString) {
       let priceString = result.priceString;
     } else {
-      priceString = tmp7(7234).formatPrice(result.amount, result.currency);
-      const tmp7Result2 = tmp7(7234);
+      priceString = tmp7(7337).formatPrice(result.amount, result.currency);
+      const tmp7Result2 = tmp7(7337);
     }
     obj = BillingPlatformUtils;
   }
@@ -335,5 +335,5 @@ export const filterHiddenCategories = function filterHiddenCategories(arr) {
   });
 };
 export const createOrbProfileBadge = function createOrbProfileBadge() {
-  return { id: types.OrbBadges.ORB_PROFILE_BADGE, icon: types.OrbBadges.ORB_PROFILE_BADGE, iconSrc: _modDef8855, description: "", isPreviewMode: true };
+  return { id: types.OrbBadges.ORB_PROFILE_BADGE, icon: types.OrbBadges.ORB_PROFILE_BADGE, iconSrc: _modDef8974, description: "", isPreviewMode: true };
 };

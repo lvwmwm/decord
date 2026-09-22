@@ -1,17 +1,17 @@
-// Module ID: 1272
-// Function ID: 1273
+// Module ID: 1270
+// Function ID: 1271
 // Name: HTTPUtils
-// Dependencies: [4, 1273, 559, 1326, 1327, 2, 1328, 1329]
+// Dependencies: [4, 1271, 559, 1324, 1325, 2, 1326, 1327]
 // Exports: getAPIBaseURL, getRateLimitFloorMs, isRateLimitedStatus, makeRateLimitedResponse, parseRetryAfter, rejectWithMigratedError, setAwaitOnline, setRejectWithMigratedError, setRequestPatch
 
-// Module 1272 (HTTPUtils)
+// Module 1270 (HTTPUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import BackoffDefault from "Backoff" /* 559 */;
-import _createForOfIteratorHelperDefault from "_createForOfIteratorHelper" /* 1273 */;
-import V8APIError from "V8APIError" /* 1326 */;
-import convertSkemaError from "convertSkemaError" /* 1327 */;
-import stringifyErrors from "stringifyErrors" /* 1328 */;
-import discord_common_V6OrEarlierAPIError from "discord_common/V6OrEarlierAPIError" /* 1329 */;
+import _createForOfIteratorHelperDefault from "_createForOfIteratorHelper" /* 1271 */;
+import V8APIError from "V8APIError" /* 1324 */;
+import convertSkemaError from "convertSkemaError" /* 1325 */;
+import stringifyErrors from "stringifyErrors" /* 1326 */;
+import discord_common_V6OrEarlierAPIError from "discord_common/V6OrEarlierAPIError" /* 1327 */;
 import size from "module_2" /* 2 */;
 
 function sendRequest(method, signal, arg2, fn, fn2, cause) {
@@ -215,11 +215,11 @@ function sendRequest(method, signal, arg2, fn, fn2, cause) {
                 if (body2 != null) {
                   code = body2.code;
                 }
-                if (code === method(1326).INVALID_FORM_BODY_ERROR_CODE) {
+                if (code === method(1324).INVALID_FORM_BODY_ERROR_CODE) {
                   const errors = response.body.errors;
                   if (null != errors) {
-                    response.body = tmp17(1327).convertSkemaError(errors);
-                    const tmp17Result = tmp17(1327);
+                    response.body = tmp17(1325).convertSkemaError(errors);
+                    const tmp17Result = tmp17(1325);
                   }
                 }
                 tmp17 = method;

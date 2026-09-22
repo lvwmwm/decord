@@ -1,17 +1,17 @@
-// Module ID: 14102
-// Function ID: 14103
+// Module ID: 14186
+// Function ID: 14187
 // Name: ThumbnailImage
-// Dependencies: [19, 17, 21, 1115, 14103, 2]
+// Dependencies: [19, 17, 21, 1363, 14187, 2]
 // Exports: default
 
-// Module 14102 (ThumbnailImage)
+// Module 14186 (ThumbnailImage)
 import noop from "module_19" /* 19 */;
 
 let _default = fn(17).Image;
 const jsx = fn(21).jsx;
-const PlatformUtils = fn(1115);
+const PlatformUtils = fn(1363);
 if (PlatformUtils.isAndroid()) {
-  _default = fn(14103).default;
+  _default = fn(14187).default;
 }
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/ThumbnailImage/native/ThumbnailImage.tsx");

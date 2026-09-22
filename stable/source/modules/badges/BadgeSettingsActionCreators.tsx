@@ -1,10 +1,10 @@
-// Module ID: 14609
-// Function ID: 14610
+// Module ID: 14694
+// Function ID: 14695
 // Name: BadgeSettingsActionCreators
-// Dependencies: [5, 1074, 1272, 573, 1232, 2]
+// Dependencies: [5, 1074, 1270, 1230, 2]
 // Exports: updateBadgeSettings
 
-// Module 14609 (BadgeSettingsActionCreators)
+// Module 14694 (BadgeSettingsActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -16,8 +16,8 @@ let closure_5 = async function _updateBadgeSettings(arg0, value) {
     if (arg0 === 1) {
       throw value;
     } else if (arg0 === 2) {
-      const obj2 = { value, done: true };
-      return obj2;
+      const obj3 = { value, done: true };
+      return obj3;
     } else {
       return { value: "HermesInternal", done: null };
     }
@@ -30,8 +30,8 @@ let closure_5 = async function _updateBadgeSettings(arg0, value) {
           throw value;
         } else if (arg0 === 2) {
           c6 = 3;
-          const obj3 = { value, done: true };
-          return obj3;
+          const obj4 = { value, done: true };
+          return obj4;
         } else {
           closure_2 = tmp3;
           closure_1 = tmp7;
@@ -39,7 +39,6 @@ let closure_5 = async function _updateBadgeSettings(arg0, value) {
           closure_129_1 = undefined;
           ({ displayOrder: closure_129_0, hiddenBadges: closure_129_1 } = closure_0);
           closure_129_2 = undefined;
-          closure_129_3 = undefined;
           c5 = 1;
           c6 = 1;
           return { value: "PX_16", done: true };
@@ -85,8 +84,8 @@ let closure_5 = async function _updateBadgeSettings(arg0, value) {
         }
       } else if (2 === tmp7) {
         c4 = 0;
-        closure_129_4 = closure_3;
-        closure_130_1(closure_130_2[4]).captureException(closure_129_4);
+        closure_129_3 = closure_3;
+        closure_130_1(closure_130_2[3]).captureException(closure_129_3);
         c6 = 3;
         return { value: false, done: true };
       } else if (arg0 === 1) {
@@ -95,21 +94,18 @@ let closure_5 = async function _updateBadgeSettings(arg0, value) {
       } else if (arg0 === 2) {
         c4 = 0;
         c6 = 3;
-        const obj12 = { value, done: true };
-        return obj12;
+        const obj = { value, done: true };
+        return obj;
       } else {
-        closure_129_3 = value;
-        const obj13 = { type: "BADGE_SETTINGS_UPDATE", settings: closure_129_3.body };
-        closure_130_1(closure_130_2[3]).dispatch(obj13);
         c4 = 0;
         c6 = 3;
         return { value: true, done: true };
       }
-    } catch (tmp43) {
-      closure_3 = tmp43;
+    } catch (tmp37) {
+      closure_3 = tmp37;
       if (tmp4 === c4) {
         c6 = tmp2;
-        throw tmp43;
+        throw tmp37;
       } else {
         c5 = tmp;
       }

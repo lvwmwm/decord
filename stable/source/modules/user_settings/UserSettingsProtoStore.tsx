@@ -1,19 +1,19 @@
-// Module ID: 1221
-// Function ID: 1222
+// Module ID: 1219
+// Function ID: 1220
 // Name: UserSettingsProtoStore
-// Dependencies: [1084, 1187, 1222, 38, 1223, 1225, 12, 504, 1217, 1226, 573, 2]
+// Dependencies: [1084, 1185, 1220, 38, 1221, 1223, 12, 504, 1215, 1224, 573, 2]
 
-// Module 1221 (UserSettingsProtoStore)
+// Module 1219 (UserSettingsProtoStore)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1187 */;
-import timestamp from "timestamp" /* 1217 */;
-import frecency_user_settings from "frecency_user_settings" /* 1222 */;
-import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1223 */;
-import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1225 */;
-import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1226 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
+import timestamp from "timestamp" /* 1215 */;
+import frecency_user_settings from "frecency_user_settings" /* 1220 */;
+import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1221 */;
+import UserSettingsMigrationsByTypeDefault from "UserSettingsMigrationsByType" /* 1223 */;
+import GuildThemeSourcePreferenceUtils from "GuildThemeSourcePreferenceUtils" /* 1224 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1084 */;
 import size from "module_2" /* 2 */;
 
@@ -102,12 +102,12 @@ prototype["initialize"] = function initialize(arg0) {
           }
           if (null != protoToSave) {
             if (null != tmp.offlineEditDataVersion) {
-              const b64ToProtoResult1 = tmp3(1223).b64ToProto(ProtoClass.ProtoClass, protoToSave);
+              const b64ToProtoResult1 = tmp3(1221).b64ToProto(ProtoClass.ProtoClass, protoToSave);
               if (null != b64ToProtoResult1) {
                 ProtoClass.editInfo.protoToSave = b64ToProtoResult1;
                 ProtoClass.editInfo.offlineEditDataVersion = tmp.offlineEditDataVersion;
               }
-              const tmp3Result = tmp3(1223);
+              const tmp3Result = tmp3(1221);
             }
           }
         }
@@ -322,12 +322,12 @@ const userSettingsProtoStore = new UserSettingsProtoStore(DispatcherDefault, {
             }
             if (null != protoToSave) {
               if (null != tmp.offlineEditDataVersion) {
-                const b64ToProtoResult1 = tmp3(1223).b64ToProto(ProtoClass.ProtoClass, protoToSave);
+                const b64ToProtoResult1 = tmp3(1221).b64ToProto(ProtoClass.ProtoClass, protoToSave);
                 if (null != b64ToProtoResult1) {
                   ProtoClass.editInfo.protoToSave = b64ToProtoResult1;
                   ProtoClass.editInfo.offlineEditDataVersion = tmp.offlineEditDataVersion;
                 }
-                const tmp3Result = tmp3(1223);
+                const tmp3Result = tmp3(1221);
               }
             }
           }

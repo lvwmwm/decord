@@ -1,11 +1,11 @@
-// Module ID: 12068
-// Function ID: 12069
+// Module ID: 12197
+// Function ID: 12198
 // Name: OnboardingAppsRocket
-// Dependencies: [19, 21, 8457, 2]
+// Dependencies: [19, 21, 8574, 2]
 // Exports: default
 
-// Module 12068 (OnboardingAppsRocket)
-import inlineStyles from "inlineStyles" /* 8457 */;
+// Module 12197 (OnboardingAppsRocket)
+import inlineStyles from "inlineStyles" /* 8574 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

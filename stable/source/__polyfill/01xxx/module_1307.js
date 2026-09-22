@@ -4,4 +4,4 @@
 
 // Module 1307
 
-export default Math.abs;
+export default Math.max;

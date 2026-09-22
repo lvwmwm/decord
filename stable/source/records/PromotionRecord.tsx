@@ -1,12 +1,12 @@
-// Module ID: 10671
-// Function ID: 10672
+// Module ID: 10795
+// Function ID: 10796
 // Name: PromotionRecord
-// Dependencies: [1386, 10672, 10702, 1384, 2]
+// Dependencies: [1386, 10796, 10826, 1384, 2]
 
-// Module 10671 (PromotionRecord)
+// Module 10795 (PromotionRecord)
 import FlagUtils from "FlagUtils" /* 1384 */;
 import Record from "Record" /* 1386 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 10672 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 10796 */;
 
 require = fn;
 let PromotionRecord;
@@ -222,10 +222,10 @@ prototype["isCountryRestricted"] = function isCountryRestricted(arg0) {
     return !allowedCountries.includes(arg0);
   } else {
     const promotionType = self.promotionType;
-    if (tmp(10702).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
-      if (tmp(10702).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
-        if (tmp(10702).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
-          if (tmp(10702).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
+    if (tmp(10826).PromotionTypes.THIRD_PARTY_INBOUND !== promotionType) {
+      if (tmp(10826).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT !== promotionType) {
+        if (tmp(10826).PromotionTypes.THIRD_PARTY_OUTBOUND !== promotionType) {
+          if (tmp(10826).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING !== promotionType) {
             return false;
           }
         }

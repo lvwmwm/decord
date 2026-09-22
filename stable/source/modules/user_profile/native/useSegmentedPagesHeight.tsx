@@ -1,13 +1,13 @@
-// Module ID: 13074
-// Function ID: 13075
+// Module ID: 13211
+// Function ID: 13212
 // Name: useSegmentedPagesHeight
-// Dependencies: [32, 19, 4296, 1477, 1611, 2]
+// Dependencies: [32, 19, 4373, 1477, 1611, 2]
 // Exports: usePageHeights, usePagerFillHeight, usePagesHeightStyle
 
-// Module 13074 (useSegmentedPagesHeight)
+// Module 13211 (useSegmentedPagesHeight)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

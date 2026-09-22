@@ -1,12 +1,12 @@
-// Module ID: 4428
-// Function ID: 4429
+// Module ID: 4505
+// Function ID: 4506
 // Name: PortalKeyboardUIStore
-// Dependencies: [4429, 4431, 1256, 2]
+// Dependencies: [4506, 4508, 1254, 2]
 // Exports: closePortalKeyboard, closePortalKeyboardIfUnhandled, closePortalKeyboardRequest, handlePortalKeyboardOpen, isPortalKeyboardOpenForChannel, openPortalKeyboard, registerPortalKeyboardRenderer
 
-// Module 4428 (PortalKeyboardUIStore)
-import ZustandStore from "ZustandStore" /* 4429 */;
-import PortalKeyboard from "PortalKeyboard" /* 4431 */;
+// Module 4505 (PortalKeyboardUIStore)
+import ZustandStore from "ZustandStore" /* 4506 */;
+import PortalKeyboard from "PortalKeyboard" /* 4508 */;
 import size from "module_2" /* 2 */;
 
 const zustandStore = ZustandStore.createZustandStore(() => ({ keyboard: null, state: PortalKeyboard.PortalKeyboardState.EMPTY, renderers: [] }));
@@ -47,11 +47,11 @@ export const openPortalKeyboard = function openPortalKeyboard(type, channelId, c
   }
   if (!tmp3) {
     const obj2 = { keyboard: null, state: null };
-    const obj3 = { id: tmp5(1256).v4(), type, channelId, chatInputRef };
+    const obj3 = { id: tmp5(1254).v4(), type, channelId, chatInputRef };
     obj2.keyboard = obj3;
-    obj2.state = tmp5(4431).PortalKeyboardState.REQUEST_OPEN;
+    obj2.state = tmp5(4508).PortalKeyboardState.REQUEST_OPEN;
     zustandStore.setState(obj2);
-    const tmp5Result = tmp5(1256);
+    const tmp5Result = tmp5(1254);
   }
 };
 export const registerPortalKeyboardRenderer = function registerPortalKeyboardRenderer(id) {
@@ -120,7 +120,7 @@ export const closePortalKeyboardIfUnhandled = function closePortalKeyboardIfUnha
 export const closePortalKeyboardRequest = function closePortalKeyboardRequest() {
   const field = zustandStore.getField("state");
   if (tmp4) {
-    const obj2 = { state: tmp2(4431).PortalKeyboardState.REQUEST_CLOSE };
+    const obj2 = { state: tmp2(4508).PortalKeyboardState.REQUEST_CLOSE };
     zustandStore.setState(obj2);
   }
 };

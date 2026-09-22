@@ -1,13 +1,13 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15682
+// Function ID: 15683
 // Name: CompassIcon
-// Dependencies: [19, 21, 576, 4261, 15597, 2]
+// Dependencies: [19, 21, 576, 4337, 15683, 2]
 // Exports: CompassIcon
 
-// Module 15596 (CompassIcon)
+// Module 15682 (CompassIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod15597 from "module_15597" /* 15597 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod15683 from "module_15683" /* 15683 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const CompassIcon = function CompassIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15597, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15683, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

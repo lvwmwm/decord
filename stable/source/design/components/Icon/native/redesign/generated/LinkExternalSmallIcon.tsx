@@ -1,13 +1,13 @@
-// Module ID: 8584
-// Function ID: 8585
+// Module ID: 8701
+// Function ID: 8702
 // Name: LinkExternalSmallIcon
-// Dependencies: [19, 21, 576, 4261, 8585, 2]
+// Dependencies: [19, 21, 576, 4337, 8702, 2]
 // Exports: LinkExternalSmallIcon
 
-// Module 8584 (LinkExternalSmallIcon)
+// Module 8701 (LinkExternalSmallIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod8585 from "module_8585" /* 8585 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod8702 from "module_8702" /* 8702 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const LinkExternalSmallIcon = function LinkExternalSmallIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8585, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8702, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

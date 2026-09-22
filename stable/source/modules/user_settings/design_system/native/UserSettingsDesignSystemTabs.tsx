@@ -1,12 +1,12 @@
-// Module ID: 15778
-// Function ID: 15779
+// Module ID: 15868
+// Function ID: 15869
 // Name: UserSettingsDesignSystemTabs
-// Dependencies: [32, 19, 17, 21, 4560, 576, 4556, 4262, 4409, 9798, 4973, 12618, 12763, 12620, 4975, 7201, 2]
+// Dependencies: [32, 19, 17, 21, 4636, 576, 4632, 4338, 4486, 9922, 5054, 12747, 12892, 12749, 5056, 7303, 2]
 // Exports: default
 
-// Module 15778 (UserSettingsDesignSystemTabs)
+// Module 15868 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4556 */;
+import Text_Text from "Text/Text" /* 4632 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsxs: closure_7, jsx: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { margin: 16, flex: 1, alignItems: "center" }, item: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: nativeDefault.colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -82,11 +82,11 @@ export default function UserSettingsDesignSystemTabs() {
   const tmp18 = first;
   items1[1] = require("ColorUtils").hexWithOpacity(token, 0);
   const obj4 = { style: tmp11.container, onLayout: callback, children: null };
-  const items2 = [closure_8(require("Tabs").Tabs, { state: segmentedControlState, grow: first1 }), ];
+  const items2 = [closure_8(require("Tabs/Tabs").Tabs, { state: segmentedControlState, grow: first1 }), ];
   let tmp20Result = first2;
   if (first2) {
     const obj5 = { state: segmentedControlState, colors: items1 };
-    tmp20Result = tmp20(tmp18(12763), obj5);
+    tmp20Result = tmp20(tmp18(12892), obj5);
   }
   const obj6 = { children: null };
   const obj7 = { spacing: 24, children: null };

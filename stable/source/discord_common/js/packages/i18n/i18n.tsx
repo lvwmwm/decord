@@ -1,47 +1,47 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17345
+// Function ID: 17346
 // Name: i18n/i18n
-// Dependencies: [17235, 17244, 17245, 17246, 17247, 17248, 17249, 17250, 17251, 17252, 17253, 17254, 17255, 17256, 17257, 17258, 17259, 17260, 17261, 17262, 17263, 17264, 17265, 17266, 17267, 17268, 17269, 17270, 17271, 17272, 568, 17276, 17277, 1338, 2]
+// Dependencies: [17346, 17355, 17356, 17357, 17358, 17359, 17360, 17361, 17362, 17363, 17364, 17365, 17366, 17367, 17368, 17369, 17370, 17371, 17372, 17373, 17374, 17375, 17376, 17377, 17378, 17379, 17380, 17381, 17382, 17383, 568, 17387, 17388, 1336, 2]
 
-// Module 17234 (i18n/i18n)
-import getSystemLocale from "getSystemLocale" /* 1338 */;
-import _modDef17235 from "module_17235" /* 17235 */;
-import _mod17276 from "module_17276" /* 17276 */;
-import parse from "parse" /* 17277 */;
+// Module 17345 (i18n/i18n)
+import getSystemLocale from "getSystemLocale" /* 1336 */;
+import _modDef17346 from "module_17346" /* 17346 */;
+import _mod17387 from "module_17387" /* 17387 */;
+import parse from "parse" /* 17388 */;
 
 require = fn;
-global.IntlMessageFormat = _modDef17235;
-const module_17244 = fn(17244);
-const module_17245 = fn(17245);
-const module_17246 = fn(17246);
-const module_17247 = fn(17247);
-const module_17248 = fn(17248);
-const module_17249 = fn(17249);
-const module_17250 = fn(17250);
-const module_17251 = fn(17251);
-const module_17252 = fn(17252);
-const module_17253 = fn(17253);
-const module_17254 = fn(17254);
-const module_17255 = fn(17255);
-const module_17256 = fn(17256);
-const module_17257 = fn(17257);
-const module_17258 = fn(17258);
-const module_17259 = fn(17259);
-const module_17260 = fn(17260);
-const module_17261 = fn(17261);
-const module_17262 = fn(17262);
-const module_17263 = fn(17263);
-const module_17264 = fn(17264);
-const module_17265 = fn(17265);
-const module_17266 = fn(17266);
-const module_17267 = fn(17267);
-const module_17268 = fn(17268);
-const module_17269 = fn(17269);
-const module_17270 = fn(17270);
-const module_17271 = fn(17271);
+global.IntlMessageFormat = _modDef17346;
+const module_17355 = fn(17355);
+const module_17356 = fn(17356);
+const module_17357 = fn(17357);
+const module_17358 = fn(17358);
+const module_17359 = fn(17359);
+const module_17360 = fn(17360);
+const module_17361 = fn(17361);
+const module_17362 = fn(17362);
+const module_17363 = fn(17363);
+const module_17364 = fn(17364);
+const module_17365 = fn(17365);
+const module_17366 = fn(17366);
+const module_17367 = fn(17367);
+const module_17368 = fn(17368);
+const module_17369 = fn(17369);
+const module_17370 = fn(17370);
+const module_17371 = fn(17371);
+const module_17372 = fn(17372);
+const module_17373 = fn(17373);
+const module_17374 = fn(17374);
+const module_17375 = fn(17375);
+const module_17376 = fn(17376);
+const module_17377 = fn(17377);
+const module_17378 = fn(17378);
+const module_17379 = fn(17379);
+const module_17380 = fn(17380);
+const module_17381 = fn(17381);
+const module_17382 = fn(17382);
 delete tmp2[tmp];
 if (typeof Intl === "undefined") {
-  fn(17272);
+  fn(17383);
 }
 const React2 = "en-US";
 class Provider {
@@ -139,10 +139,10 @@ _instance_members_initializer_I18N_ = function() {
       return _createProxy(obj3);
     } else {
       try {
-        return self(17277).getMessage(tmp4, locale);
+        return self(17388).getMessage(tmp4, locale);
       } catch (err) {
         if (typeof tmp3[tmp2] === "string") {
-          return self(17277).getMessage(tmp7, tmp);
+          return self(17388).getMessage(tmp7, tmp);
         } else {
           return "";
         }
@@ -342,5 +342,5 @@ prototype["_fetchMessages"] = function _fetchMessages(c2) {
 const size = fn(2);
 let result = size.fileFinishedImporting("../discord_common/js/packages/i18n/i18n.tsx");
 
-export const getSystemLocale = fn(1338).getSystemLocale;
+export const getSystemLocale = fn(1336).getSystemLocale;
 export { I18N };

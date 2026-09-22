@@ -1,11 +1,11 @@
-// Module ID: 11116
-// Function ID: 11117
+// Module ID: 11249
+// Function ID: 11250
 // Name: UserProfileGradientContainer
-// Dependencies: [19, 21, 8240, 4987, 2]
+// Dependencies: [19, 21, 8355, 5068, 2]
 
-// Module 11116 (UserProfileGradientContainer)
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8240 */;
+// Module 11249 (UserProfileGradientContainer)
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8355 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,9 +1,9 @@
 // Module ID: 8750
 // Function ID: 8751
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 8750
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "ec67305879cbfc8d1c27dd7c85d614f6", name: "ic_community_guild_badge_dark_24px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "aa9c26c29990ba7a6584e51ab5c56efa", name: "debug", type: "png" });

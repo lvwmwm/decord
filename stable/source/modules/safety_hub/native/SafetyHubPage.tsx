@@ -1,29 +1,34 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 14855
+// Function ID: 14856
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 8431, 8420, 1074, 21, 6593, 11888, 504, 1178, 1114, 4556, 4975, 4560, 576, 14772, 11915, 11887, 14768, 4992, 11886, 1242, 7602, 7607, 4527, 14773, 1896, 14774, 14776, 2]
+// Dependencies: [19, 17, 8548, 8537, 1074, 21, 6694, 12017, 8710, 1176, 5056, 1114, 504, 2978, 4632, 14856, 1379, 14857, 4636, 576, 14858, 12044, 12016, 14852, 5073, 12015, 1240, 7704, 7709, 4603, 14859, 1896, 14860, 14862, 2]
 // Exports: default
 
-// Module 14771 (SafetyHubPage)
+// Module 14855 (SafetyHubPage)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import util from "util" /* 1114 */;
+import native from "native" /* 1176 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import user from "user" /* 1379 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6593 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 7602 */;
-import MetricEvents from "MetricEvents" /* 7607 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 11886 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 11888 */;
+import _modDef2978 from "module_2978" /* 2978 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import components_Button_Button from "components/Button/Button" /* 5056 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6694 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 7704 */;
+import MetricEvents from "MetricEvents" /* 7709 */;
+import ManualReviewActionCreators from "ManualReviewActionCreators" /* 8710 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12015 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12017 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 14856 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 14857 */;
 import noop from "module_19" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8431 */;
+import SafetyHubStore from "SafetyHubStore" /* 8548 */;
 
 const require = globalThis.__r;
 
-const util = hyh4ls(1114);
-const native = hyh4ls(1178);
-const components_Button_Button = hyh4ls(4975);
 require = fn;
 function handleLogInClick() {
   AuthenticationActionCreatorsDefault.closeSuspendedUser();
@@ -31,20 +36,98 @@ function handleLogInClick() {
 function handleRetryClick() {
   AutomatedUnderageAppealModalActionCreatorsDefault.openV2("");
 }
-function AutomatedUnderageAppealStatus() {
-  let hyh4ls = require;
-  let formatResult = dependencyMap;
+function handleManualReviewClick() {
+  const result = ManualReviewActionCreators.handleManualReviewCta();
+}
+function RetryBanner() {
+  const obj = { messageType: native.HelpMessageTypes.ERROR, button: null, children: null };
+  const obj2 = { variant: "secondary", size: "sm", text: null, onPress: null };
+  const intl = util.intl;
+  obj2.text = intl.string(util.t.IcA9iD);
+  obj2.onPress = handleRetryClick;
+  obj.button = closure_1_12(components_Button_Button.Button, obj2);
+  const intl2 = util.intl;
+  obj.children = intl2.string(util.t.dqbMbn);
+  return closure_1_12(native.HelpMessage, obj);
+}
+function AgeCheckLoadingBanner() {
   const items = [SafetyHubStore];
-  const stateFromStores = initialize.useStateFromStores(items, () => uiStore.getAgeCheckStatus());
-  initialize;
-  [][0] = SafetyHubStore;
+  const stateFromStores = initialize.useStateFromStores(items, () => isExpressiveModalV2Enabled.getIsExpressiveModalV2Enabled());
+  const obj2 = { messageType: native.HelpMessageTypes.INFO, children: null };
+  const intl = util.intl;
+  const t = util.t;
+  obj2.children = intl.string(stateFromStores ? t.PU8nMu : t["nhhy/R"]);
+  return closure_1_12(native.HelpMessage, obj2);
+}
+function ManualReviewBanner() {
+  const obj = { messageType: native.HelpMessageTypes.ERROR, button: null, children: null };
+  const obj2 = { variant: "secondary", size: "sm", text: null, onPress: null };
+  const intl = util.intl;
+  obj2.text = intl.string(util.t.NkTGsC);
+  obj2.onPress = handleManualReviewClick;
+  obj.button = closure_1_12(components_Button_Button.Button, obj2);
+  const intl2 = util.intl;
+  obj.children = intl2.string(util.t.VTgFYh);
+  return closure_1_12(native.HelpMessage, obj);
+}
+function ManualOrAutomatedReviewBanner() {
+  const obj = { messageType: native.HelpMessageTypes.ERROR, button: null, children: null };
+  const obj2 = { variant: "secondary", size: "sm", text: null, onPress: null };
+  const intl = util.intl;
+  obj2.text = intl.string(util.t.IcA9iD);
+  obj2.onPress = handleRetryClick;
+  obj.button = closure_1_12(components_Button_Button.Button, obj2);
+  const intl2 = util.intl;
+  obj.children = intl2.format(_modDef2978.vPoM8y, {
+    manualReviewHook(children, arg1) {
+      return closure_1_12(Text_Text.Text, { onPress, variant: "text-sm/normal", color: "text-link", children }, arg1);
+    }
+  });
+  return closure_1_12(native.HelpMessage, obj);
+}
+function AgeCheckFailureBanner(status) {
+  const availableAgeVerificationMethods = useAvailableAgeVerificationMethods.useAvailableAgeVerificationMethods();
+  const methods = availableAgeVerificationMethods.methods;
+  if (availableAgeVerificationMethods.loading) {
+    let tmp6Result = closure_1_12(AgeCheckLoadingBanner, {});
+  } else {
+    if (null == methods) {
+      let tmp3 = status.status === AgeCheckStatus.UNDERAGE_MANUAL_REVIEW;
+    } else {
+      tmp3 = 0 === methods.length;
+    }
+    if (tmp3) {
+      tmp6Result = closure_1_12(ManualReviewBanner, {});
+    } else {
+      let everyResult;
+      if (methods != null) {
+        everyResult = methods.every((method) => method.method === user.AgeAssuranceMethod.GOOGLE_WALLET);
+      }
+      if (everyResult) {
+        tmp6Result = tmp6(ManualOrAutomatedReviewBanner, {});
+      } else {
+        tmp6Result = tmp6(RetryBanner, {});
+      }
+    }
+  }
+  return tmp6Result;
+}
+function AutomatedUnderageAppealStatus() {
+  const items = [SafetyHubStore];
+  const stateFromStores = initialize.useStateFromStores(items, () => SafetyHubStore.getAgeCheckStatus());
+  const items1 = [SafetyHubStore];
+  const stateFromStores1 = initialize.useStateFromStores(items1, () => SafetyHubStore.getIsManualReviewFallbackEnabled());
+  useShouldShowInitialGoogleWalletBanner;
   if (stateFromStores === AgeCheckStatus.NONE) {
-    return null;
-  } else if (stateFromStores === tmp5.SUCCESS) {
-    const obj2 = { messageType: native.HelpMessageTypes.SUCCESS, children: null };
-    const intl10 = util.intl;
-    hyh4ls = util.t.hyh4ls;
-    const obj3 = {
+    let tmp22 = null;
+    if (tmp6) {
+      tmp22 = closure_1_12(ManualOrAutomatedReviewBanner, {});
+    }
+    let tmp10 = tmp22;
+  } else if (stateFromStores === tmp7.SUCCESS) {
+    const obj3 = { messageType: tmp(1176).HelpMessageTypes.SUCCESS, children: null };
+    const intl6 = tmp(1114).intl;
+    const obj4 = {
       loginHook(children) {
           return closure_1_12(Text_Text.Text, {
             variant: "text-sm/medium",
@@ -56,90 +139,76 @@ function AutomatedUnderageAppealStatus() {
           });
         }
     };
-    formatResult = intl10.format(hyh4ls, obj3);
-    obj2.children = formatResult;
-    let tmp18Result = closure_1_12(native.HelpMessage, obj2);
-  } else if (stateFromStores === tmp5.VERIFIED) {
-    const obj4 = { messageType: native.HelpMessageTypes.SUCCESS, button: null, children: null };
-    const obj5 = { variant: "secondary", size: "sm", text: null, onPress: null };
-    const intl8 = util.intl;
-    obj5.text = intl8.string(util.t["2jvQ6K"]);
-    obj5.onPress = handleLogInClick;
-    obj4.button = closure_1_12(components_Button_Button.Button, obj5);
-    const intl9 = util.intl;
-    obj4.children = intl9.string(util.t["2Qe65J"]);
-    tmp18Result = closure_1_12(native.HelpMessage, obj4);
-  } else if (stateFromStores === tmp5.VERIFIED_OTHER_VIOLATIONS_REMAIN) {
-    const obj6 = { messageType: native.HelpMessageTypes.SUCCESS, children: null };
-    const intl7 = util.intl;
-    obj6.children = intl7.string(util.t.Ie7p1Q);
-    tmp18Result = closure_1_12(native.HelpMessage, obj6);
-  } else if (stateFromStores === tmp5.ERROR) {
-    const obj7 = { messageType: native.HelpMessageTypes.ERROR, children: null };
-    const intl6 = util.intl;
-    obj7.children = intl6.string(util.t["4sILBU"]);
-    tmp18Result = closure_1_12(native.HelpMessage, obj7);
-  } else if (stateFromStores === tmp5.FAILURE) {
-    const obj8 = { messageType: native.HelpMessageTypes.ERROR, children: null };
-    const intl5 = util.intl;
-    obj8.children = intl5.string(util.t["40R63o"]);
-    tmp18Result = closure_1_12(native.HelpMessage, obj8);
-  } else if (stateFromStores === tmp5.UNDERAGE) {
-    const obj9 = { messageType: native.HelpMessageTypes.ERROR, button: null, children: null };
-    const obj10 = { variant: "secondary", size: "sm", text: null, onPress: null };
-    const intl3 = util.intl;
-    obj10.text = intl3.string(util.t.IcA9iD);
-    obj10.onPress = handleRetryClick;
-    obj9.button = closure_1_12(components_Button_Button.Button, obj10);
-    const intl4 = util.intl;
-    obj9.children = intl4.string(util.t.dqbMbn);
-    tmp18Result = closure_1_12(native.HelpMessage, obj9);
-  } else if (stateFromStores === tmp5.UNDERAGE_MANUAL_REVIEW) {
-    const obj11 = { messageType: native.HelpMessageTypes.ERROR, button: null, children: null };
-    const obj12 = { variant: "secondary", size: "sm", text: null, onPress: null };
-    const intl = util.intl;
-    obj12.text = intl.string(util.t.NkTGsC);
-    obj12.onPress = handleRetryClick;
-    obj11.button = closure_1_12(components_Button_Button.Button, obj12);
-    const intl2 = util.intl;
-    obj11.children = intl2.string(util.t.VTgFYh);
-    tmp18Result = closure_1_12(native.HelpMessage, obj11);
+    obj3.children = intl6.format(tmp(1114).t.hyh4ls, obj4);
+    tmp10 = closure_1_12(tmp(1176).HelpMessage, obj3);
+  } else if (stateFromStores === tmp7.VERIFIED) {
+    const obj5 = { messageType: tmp(1176).HelpMessageTypes.SUCCESS, button: null, children: null };
+    const obj6 = { variant: "secondary", size: "sm", text: null, onPress: null };
+    const intl4 = tmp(1114).intl;
+    obj6.text = intl4.string(tmp(1114).t["2jvQ6K"]);
+    obj6.onPress = handleLogInClick;
+    obj5.button = closure_1_12(tmp(5056).Button, obj6);
+    const intl5 = tmp(1114).intl;
+    obj5.children = intl5.string(tmp(1114).t["2Qe65J"]);
+    tmp10 = closure_1_12(tmp(1176).HelpMessage, obj5);
+  } else if (stateFromStores === tmp7.VERIFIED_OTHER_VIOLATIONS_REMAIN) {
+    const obj7 = { messageType: tmp(1176).HelpMessageTypes.SUCCESS, children: null };
+    const intl3 = tmp(1114).intl;
+    obj7.children = intl3.string(tmp(1114).t.Ie7p1Q);
+    tmp10 = closure_1_12(tmp(1176).HelpMessage, obj7);
+  } else if (stateFromStores === tmp7.ERROR) {
+    const obj8 = { messageType: tmp(1176).HelpMessageTypes.ERROR, children: null };
+    const intl2 = tmp(1114).intl;
+    obj8.children = intl2.string(tmp(1114).t["4sILBU"]);
+    tmp10 = closure_1_12(tmp(1176).HelpMessage, obj8);
+  } else if (stateFromStores === tmp7.FAILURE) {
+    const obj9 = { messageType: tmp(1176).HelpMessageTypes.ERROR, children: null };
+    const intl = tmp(1114).intl;
+    obj9.children = intl.string(tmp(1114).t["40R63o"]);
+    tmp10 = closure_1_12(tmp(1176).HelpMessage, obj9);
   } else {
-    const obj13 = { messageType: native.HelpMessageTypes.INFO, children: null };
-    const intl11 = util.intl;
-    const t = util.t;
-    obj13.children = intl11.string(tmp4 ? t.PU8nMu : t["nhhy/R"]);
-    tmp18Result = closure_1_12(native.HelpMessage, obj13);
+    if (stateFromStores !== tmp7.UNDERAGE) {
+      if (stateFromStores !== tmp7.UNDERAGE_MANUAL_REVIEW) {
+        tmp10 = closure_1_12(AgeCheckLoadingBanner, {});
+      }
+    }
+    if (stateFromStores1) {
+      const obj10 = { status: stateFromStores };
+      let tmp11Result = tmp11(AgeCheckFailureBanner, obj10);
+    } else {
+      tmp11Result = tmp11(RetryBanner, {});
+    }
   }
+  return tmp10;
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ActivityIndicator: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const AgeCheckStatus = fn(8420).AgeCheckStatus;
+const AgeCheckStatus = fn(8537).AgeCheckStatus;
 const Constants = fn(1074);
 ({ AnalyticEvents: c10, Routes: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_12 }, loadingIndicator: { display: "flex", justifyContent: "center", alignItems: "center" }, body: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_12 };
 obj2.body = { gap: nativeDefault.space.PX_8 };
-let closure_17 = createStyles.createStyles(obj2);
+let closure_23 = createStyles.createStyles(obj2);
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/safety_hub/native/SafetyHubPage.tsx");
+let result = size.fileFinishedImporting("modules/safety_hub/native/SafetyHubPage.tsx");
 
 export default function SafetyHubPage(visible) {
   visible = visible.visible;
   importDefault = undefined;
   let safetyHubFetchError;
-  const tmp = closure_17();
+  const tmp = closure_23();
   const tmp2 = importDefault;
   const tmp4 = require("useSafetyHubLoading")();
   const tmp5 = visible;
-  importDefault = visible(safetyHubFetchError[16]).useSafetyHubInitialized();
-  const obj = visible(safetyHubFetchError[16]);
-  const state = visible(safetyHubFetchError[17]).useSafetyHubAccountStanding();
-  let obj2 = visible(safetyHubFetchError[17]);
-  safetyHubFetchError = visible(safetyHubFetchError[18]).useSafetyHubFetchError();
+  importDefault = visible(safetyHubFetchError[21]).useSafetyHubInitialized();
+  const obj = visible(safetyHubFetchError[21]);
+  const state = visible(safetyHubFetchError[22]).useSafetyHubAccountStanding();
+  let obj2 = visible(safetyHubFetchError[22]);
+  safetyHubFetchError = visible(safetyHubFetchError[23]).useSafetyHubFetchError();
   require("useMountEffect")(() => {
     const safetyHubData = SafetyHubActionCreatorsAll.getSafetyHubData();
     if (closure_1) {
@@ -153,7 +222,7 @@ export default function SafetyHubPage(visible) {
   const effect = noop.useEffect(() => {
     if (visible) {
       if (null != safetyHubFetchError) {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14773, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(14859, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     ActionSheetActionCreatorsDefault.hideActionSheet("SafetyHubErrorActionSheet");
@@ -170,9 +239,9 @@ export default function SafetyHubPage(visible) {
     if (null == safetyHubFetchError) {
       let obj5 = { style: tmp.container, children: null };
       const obj6 = { style: tmp.body, children: null };
-      const items2 = [closure_12(AutomatedUnderageAppealStatus, {}), closure_12(tmp2(tmp3[27]), {})];
+      const items2 = [closure_12(AutomatedUnderageAppealStatus, {}), closure_12(tmp2(tmp3[32]), {})];
       obj6.children = items2;
-      const items3 = [closure_13(closure_5, obj6), closure_12(tmp5(tmp3[28]).ConnectedSafetyHubViolationsContainer, {})];
+      const items3 = [closure_13(closure_5, obj6), closure_12(tmp5(tmp3[33]).ConnectedSafetyHubViolationsContainer, {})];
       obj5.children = items3;
       tmp9 = closure_13(closure_7, obj5);
     }

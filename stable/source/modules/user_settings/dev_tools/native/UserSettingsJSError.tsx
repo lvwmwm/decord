@@ -1,11 +1,11 @@
-// Module ID: 15683
-// Function ID: 15684
+// Module ID: 15771
+// Function ID: 15772
 // Name: UserSettingsJSError
-// Dependencies: [19, 21, 4556, 2]
+// Dependencies: [19, 21, 4632, 2]
 // Exports: default
 
-// Module 15683 (UserSettingsJSError)
-import Text_Text from "Text/Text" /* 4556 */;
+// Module 15771 (UserSettingsJSError)
+import Text_Text from "Text/Text" /* 4632 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

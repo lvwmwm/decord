@@ -1,9 +1,9 @@
-// Module ID: 13242
-// Function ID: 13243
+// Module ID: 13372
+// Function ID: 13373
 // Name: MessageActivityInviteCoverImageStore
 // Dependencies: [1437, 504, 573, 2]
 
-// Module 13242 (MessageActivityInviteCoverImageStore)
+// Module 13372 (MessageActivityInviteCoverImageStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import privDefault from "priv" /* 1437 */;

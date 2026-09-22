@@ -1,11 +1,11 @@
-// Module ID: 10001
-// Function ID: 10002
+// Module ID: 10125
+// Function ID: 10126
 // Name: WindowsEffectsExperiment
-// Dependencies: [1236, 1433, 504, 2]
+// Dependencies: [1234, 1433, 504, 2]
 // Exports: getWindowsAudioEffectsExperimentConfig, useWindowsAudioEffectsExperimentConfig
 
-// Module 10001 (WindowsEffectsExperiment)
-import ApexExperimentStore from "ApexExperimentStore" /* 1236 */;
+// Module 10125 (WindowsEffectsExperiment)
+import ApexExperimentStore from "ApexExperimentStore" /* 1234 */;
 
 const require = fn;
 const obj = { preferSystemEffects: false };

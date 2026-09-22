@@ -1,18 +1,18 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15212
+// Function ID: 15213
 // Name: QuestProgressIndicator
-// Dependencies: [19, 17, 4552, 21, 4296, 8457, 4560, 576, 504, 4561, 5123, 1114, 5529, 15135, 11775, 2]
+// Dependencies: [19, 17, 4628, 21, 4373, 8574, 4636, 576, 504, 4637, 5204, 1114, 5610, 15213, 11903, 2]
 
-// Module 15134 (QuestProgressIndicator)
+// Module 15212 (QuestProgressIndicator)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import timing from "timing" /* 4561 */;
-import inlineStyles from "inlineStyles" /* 8457 */;
+import timing from "timing" /* 4637 */;
+import inlineStyles from "inlineStyles" /* 8574 */;
 import noop_mod from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 import jsxProd from "jsxProd" /* 21 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import createStyles from "createStyles" /* 4560 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import createStyles from "createStyles" /* 4636 */;
 import size from "module_2" /* 2 */;
 
 let noop = noop_mod;

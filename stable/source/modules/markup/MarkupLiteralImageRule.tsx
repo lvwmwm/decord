@@ -1,16 +1,16 @@
-// Module ID: 9022
-// Function ID: 9023
+// Module ID: 9145
+// Function ID: 9146
 // Name: MarkupLiteralImageRule
-// Dependencies: [4257, 4996, 2]
+// Dependencies: [4333, 5077, 2]
 
-// Module 9022 (MarkupLiteralImageRule)
-import _modDef4257 from "module_4257" /* 4257 */;
-import MarkupTypes from "MarkupTypes" /* 4996 */;
+// Module 9145 (MarkupLiteralImageRule)
+import _modDef4333 from "module_4333" /* 4333 */;
+import MarkupTypes from "MarkupTypes" /* 5077 */;
 
 require = fn;
 const obj = {};
-const merged = Object.assign(_modDef4257.defaultRules.image);
-obj.order = _modDef4257.defaultRules.link.order - 0.5;
+const merged = Object.assign(_modDef4333.defaultRules.image);
+obj.order = _modDef4333.defaultRules.link.order - 0.5;
 obj.requiredFirstCharacters = ["!"];
 obj.parse = function parse(content) {
   return { type: MarkupTypes.AST_KEY.TEXT, content: content[0] };

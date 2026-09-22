@@ -1,9 +1,9 @@
-// Module ID: 13650
-// Function ID: 13651
+// Module ID: 13736
+// Function ID: 13737
 // Name: ActionBatcher
 // Dependencies: [573, 2]
 
-// Module 13650 (ActionBatcher)
+// Module 13736 (ActionBatcher)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 13111
+// Function ID: 13112
 // Name: MediaModalYoutubeEmbedError
-// Dependencies: [19, 17, 21, 4560, 576, 9607, 4556, 1114, 4975, 4255, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 9731, 4632, 1114, 5056, 4331, 2]
 
-// Module 12981 (MediaModalYoutubeEmbedError)
+// Module 13111 (MediaModalYoutubeEmbedError)
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4255 */;
+import LinkingDefault from "Linking" /* 4331 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { container: { backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND, padding: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center", flex: 1 }, text: null };
 let obj3 = { backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND, padding: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center", flex: 1 };
 obj.text = { marginBottom: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_16 };
@@ -25,18 +25,18 @@ export default noop.memo(function MediaModalYoutubeEmbedError(videoId) {
   videoId = videoId.videoId;
   const tmp = closure_6();
   const obj = { style: tmp.container, children: null };
-  const items = [closure_4(videoId(9607).StreamFailed, { resizeMode: "contain" }), , ];
+  const items = [closure_4(videoId(9731).StreamFailed, { resizeMode: "contain" }), , ];
   const obj2 = { style: tmp.text, variant: "text-md/semibold", color: "text-overlay-light", children: null };
   const intl = videoId(1114).intl;
   obj2.children = intl.string(videoId(1114).t.u7vKPs);
-  items[1] = closure_4(videoId(4556).Text, obj2);
+  items[1] = closure_4(videoId(4632).Text, obj2);
   const obj3 = { text: null, variant: "primary-overlay", shrink: true, grow: false, onPress: null };
   const intl2 = videoId(1114).intl;
   obj3.text = intl2.string(videoId(1114).t.LLpxJ5);
   obj3.onPress = function onPress() {
     LinkingDefault.openURL("https://youtube.com/watch?v=" + videoId);
   };
-  items[2] = closure_4(videoId(4975).Button, obj3);
+  items[2] = closure_4(videoId(5056).Button, obj3);
   obj.children = items;
   return closure_5(View, obj);
 });

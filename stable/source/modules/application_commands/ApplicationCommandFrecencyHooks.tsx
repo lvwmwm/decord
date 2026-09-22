@@ -1,17 +1,17 @@
-// Module ID: 9305
-// Function ID: 9306
+// Module ID: 9428
+// Function ID: 9429
 // Name: ApplicationCommandFrecencyHooks
-// Dependencies: [19, 9298, 1084, 1940, 504, 2]
+// Dependencies: [19, 9421, 1084, 1940, 504, 2]
 // Exports: useTopCommands, useTopRealCommands
 
-// Module 9305 (ApplicationCommandFrecencyHooks)
+// Module 9428 (ApplicationCommandFrecencyHooks)
 import noop from "module_19" /* 19 */;
-import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 9298 */;
+import ApplicationCommandFrecencyStore_mod from "ApplicationCommandFrecencyStore" /* 9421 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-let ApplicationCommandFrecencyStore = fn(9298);
+let ApplicationCommandFrecencyStore = fn(9421);
 ({ getFilteredTopCommands: c3, getTopRealCommands: closure_4 } = ApplicationCommandFrecencyStore);
 let ApplicationCommandFrecencyStore = ApplicationCommandFrecencyStore_mod;
 const UserSettingsTypes = fn(1084).UserSettingsTypes;

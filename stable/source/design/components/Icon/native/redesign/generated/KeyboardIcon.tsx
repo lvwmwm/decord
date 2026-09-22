@@ -1,13 +1,13 @@
-// Module ID: 11251
-// Function ID: 11252
+// Module ID: 11383
+// Function ID: 11384
 // Name: KeyboardIcon
-// Dependencies: [19, 21, 576, 4261, 11252, 2]
+// Dependencies: [19, 21, 576, 4337, 11384, 2]
 // Exports: KeyboardIcon
 
-// Module 11251 (KeyboardIcon)
+// Module 11383 (KeyboardIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod11252 from "module_11252" /* 11252 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod11384 from "module_11384" /* 11384 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const KeyboardIcon = function KeyboardIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11252, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11384, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

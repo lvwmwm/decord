@@ -1,18 +1,18 @@
-// Module ID: 14916
-// Function ID: 14917
+// Module ID: 15003
+// Function ID: 15004
 // Name: FamilyCenterLinkingBanner
-// Dependencies: [19, 17, 21, 4560, 576, 8652, 11924, 1114, 2396, 14917, 4556, 14879, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 8769, 12053, 1114, 2396, 15004, 4632, 14966, 2]
 // Exports: default
 
-// Module 14916 (FamilyCenterLinkingBanner)
+// Module 15003 (FamilyCenterLinkingBanner)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import _modDef2396 from "module_2396" /* 2396 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8652 */;
-import useAgeSpecificText from "useAgeSpecificText" /* 11924 */;
-import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 14879 */;
-import _modDef14917 from "module_14917" /* 14917 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 8769 */;
+import useAgeSpecificText from "useAgeSpecificText" /* 12053 */;
+import FamilyCenterBannerButton from "FamilyCenterBannerButton" /* 14966 */;
+import _modDef15004 from "module_15004" /* 15004 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -65,7 +65,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-let createStyles = fn(4560);
+let createStyles = fn(4636);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: nativeDefault.space.PX_16, paddingTop: 0, paddingBottom: nativeDefault.space.PX_16, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2, overflow: "hidden" }, content: null, art: null, header: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: nativeDefault.space.PX_16, paddingTop: 0, paddingBottom: nativeDefault.space.PX_16, alignItems: "center", borderRadius: nativeDefault.radii.md, elevation: 2, overflow: "hidden" };
 obj2.content = { padding: nativeDefault.space.PX_16 };
@@ -74,17 +74,17 @@ obj2.art = size;
 let obj4 = { padding: nativeDefault.space.PX_16 };
 obj2.header = { marginBottom: nativeDefault.space.PX_8 };
 let closure_7 = createStyles.createStyles(obj2);
-createStyles = fn(4560);
+createStyles = fn(4636);
 const obj6 = { container: null };
 let obj5 = { marginBottom: nativeDefault.space.PX_8 };
 obj6.container = { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, width: "100%" };
 let closure_8 = createStyles.createStyles(obj6);
-createStyles = fn(4560);
+createStyles = fn(4636);
 const obj9 = { container: null };
 const obj8 = { marginTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, width: "100%" };
 obj9.container = { width: "100%", paddingHorizontal: nativeDefault.space.PX_16 };
 let closure_10 = createStyles.createStyles(obj9);
-createStyles = fn(4560);
+createStyles = fn(4636);
 const obj12 = { row: { display: "flex", flexDirection: "row", alignItems: "flex-start" }, gap: { marginBottom: 12 }, circle: null, rowContent: null };
 const size1 = { display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", overflow: "hidden", width: 32, height: 32, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_NORMAL };
 obj12.circle = size1;
@@ -107,7 +107,7 @@ export default function FamilyCenterLinkingBanner() {
   const obj3 = { style: tmp.container, children: null };
   const obj4 = { source: null, style: null, resizeMethod: "resize" };
   const ageSpecificText1 = obj2.useAgeSpecificText(intl3.format(_modDef2396.yMnoDl, { link: "https://support.discord.com/hc/articles/14155060633623" }), intl4.string(_modDef2396.JsAEDi));
-  obj4.source = _modDef14917;
+  obj4.source = _modDef15004;
   obj4.style = tmp.art;
   const items = [hasOwnProperty(React4, obj4), , ];
   const obj5 = { style: tmp.content, children: null };

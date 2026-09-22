@@ -1,22 +1,22 @@
-// Module ID: 9124
-// Function ID: 9125
+// Module ID: 9247
+// Function ID: 9248
 // Name: FormComponents
-// Dependencies: [19, 4600, 21, 4560, 576, 5589, 5687, 9125, 1178, 7162, 9126, 9137, 9180, 4794, 9182, 8180, 504, 7738, 9184, 9185, 9187, 4556, 1114, 5605, 4975, 9188, 9189, 4404, 9190, 9218, 2]
+// Dependencies: [19, 4676, 21, 4636, 576, 5670, 5768, 9248, 1176, 7265, 9249, 9260, 9303, 4870, 9305, 8296, 504, 7840, 9307, 9308, 9310, 4632, 1114, 5686, 5056, 9311, 9312, 4481, 9313, 9341, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 9124 (FormComponents)
+// Module 9247 (FormComponents)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import NativeViewDefault from "NativeView" /* 5589 */;
-import TableRowGroup from "TableRowGroup" /* 5687 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7738 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8180 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 9125 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 9188 */;
+import native from "native" /* 1176 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import NativeViewDefault from "NativeView" /* 5670 */;
+import TableRowGroup from "TableRowGroup" /* 5768 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 7840 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9248 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 9311 */;
 import noop from "module_19" /* 19 */;
-import PresenceStore from "PresenceStore" /* 4600 */;
+import PresenceStore from "PresenceStore" /* 4676 */;
 
 require = fn;
 function VoiceBadges(arg0) {
@@ -28,8 +28,8 @@ function VoiceBadges(arg0) {
     const obj2 = { style: tmp.iconWrapper, children: null };
     const obj3 = { state: muteDeafenIconState, size: native.IconSizes.SMALL, style: tmp.icon };
     obj2.children = hasOwnProperty(VoiceStateIcons.MuteDeafenIcon, obj3);
-    tmp6 = hasOwnProperty(tmp3(5589), obj2);
-    const tmp3Result = tmp3(5589);
+    tmp6 = hasOwnProperty(tmp3(5670), obj2);
+    const tmp3Result = tmp3(5670);
   }
   const items = [tmp6, ];
   let tmp10 = null;
@@ -37,8 +37,8 @@ function VoiceBadges(arg0) {
     const obj4 = { style: tmp.iconWrapper, children: null };
     const obj5 = { state: videoIconState, size: native.IconSizes.SMALL, style: tmp.icon };
     obj4.children = hasOwnProperty(VoiceStateIcons.VideoIcon, obj5);
-    tmp10 = hasOwnProperty(tmp3(5589), obj4);
-    const tmp3Result2 = tmp3(5589);
+    tmp10 = hasOwnProperty(tmp3(5670), obj4);
+    const tmp3Result2 = tmp3(5670);
   }
   items[1] = tmp10;
   obj.children = items;
@@ -46,7 +46,7 @@ function VoiceBadges(arg0) {
 }
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { marginHorizontal: 16 }, voiceBadgesContainer: { flexDirection: "row" }, iconWrapper: { marginLeft: 8, padding: 6, backgroundColor: nativeDefault.colors.MOBILE_VOICE_PANEL_BADGE_BACKGROUND, borderRadius: nativeDefault.radii.round }, icon: null, notConnectedAvatar: null, memberRow: null, trailingContainer: null };
 let size = { width: 16, height: 16, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 obj2.icon = size;

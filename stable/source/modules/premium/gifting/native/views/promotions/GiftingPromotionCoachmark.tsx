@@ -1,19 +1,19 @@
-// Module ID: 16930
-// Function ID: 16931
+// Module ID: 17042
+// Function ID: 17043
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 4552, 10670, 1074, 1954, 21, 4560, 576, 1115, 504, 10758, 16931, 8273, 4527, 7162, 7182, 10666, 7150, 8814, 5587, 4556, 4975, 11035, 1114, 2]
+// Dependencies: [19, 17, 4628, 10794, 1074, 1954, 21, 4636, 576, 1363, 504, 10885, 17043, 8390, 4603, 7265, 7285, 10790, 7253, 8935, 5668, 4632, 5056, 11168, 1114, 2]
 // Exports: default
 
-// Module 16930 (GiftingPromotionCoachmark)
+// Module 17042 (GiftingPromotionCoachmark)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7162 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7182 */;
-import usePreviousDefault from "usePrevious" /* 8273 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 10666 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7265 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
+import usePreviousDefault from "usePrevious" /* 8390 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 10790 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
-import PromotionsStore from "PromotionsStore" /* 10670 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import PromotionsStore from "PromotionsStore" /* 10794 */;
 
 require = fn;
 const View = fn(17).View;
@@ -22,18 +22,18 @@ const Constants = fn(1074);
 const ContentDismissActionType = fn(1954).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { alignItems: "center", padding: nativeDefault.space.PX_16 }, textContainer: null, text: null, countdownBadge: null, countdownBadgeText: null, imageShared: null, imageWrapperAndroid: null };
 let obj3 = { alignItems: "center", padding: nativeDefault.space.PX_16 };
 obj2.textContainer = { gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_24 };
 obj2.text = { textAlign: "center" };
 let obj4 = { gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_24 };
 obj2.countdownBadge = { flexDirection: "row", alignSelf: "center", borderRadius: nativeDefault.radii.round, paddingHorizontal: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_24, backgroundColor: nativeDefault.colors.BACKGROUND_BRAND };
-let PlatformUtils = fn(1115);
+let PlatformUtils = fn(1363);
 PlatformUtils = PlatformUtils.isAndroid();
 const space = nativeDefault.space;
 let obj7 = { lineHeight: PlatformUtils ? space.PX_12 : space.PX_16, paddingVertical: null };
-PlatformUtils = fn(1115);
+PlatformUtils = fn(1363);
 let PX_4;
 if (PlatformUtils.isAndroid()) {
   PX_4 = nativeDefault.space.PX_4;
@@ -62,8 +62,8 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   if (coachmarkComponent != null) {
     asset = coachmarkComponent.asset;
   }
-  const themeAndReducedMotionAwareAssetUrl = markAsDismissed(10758).useThemeAndReducedMotionAwareAssetUrl(asset);
-  let obj2 = markAsDismissed(10758);
+  const themeAndReducedMotionAwareAssetUrl = markAsDismissed(10885).useThemeAndReducedMotionAwareAssetUrl(asset);
+  let obj2 = markAsDismissed(10885);
   const items1 = [PromotionsStore];
   const stateFromStores1 = markAsDismissed(504).useStateFromStores(items1, () => giftPromotion.getGiftPromotion());
   const tmp2Result = markAsDismissed(504);
@@ -71,7 +71,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
   if (stateFromStores1 != null) {
     endDate = stateFromStores1.endDate;
   }
-  const str = markAsDismissed(16931).useTickingFormattedLimitedOfferTimeLeft(endDate);
+  const str = markAsDismissed(17043).useTickingFormattedLimitedOfferTimeLeft(endDate);
   importDefault = tmp9;
   const tmp11 = usePreviousDefault(null != stateFromStores1);
   dependencyMap = tmp11;
@@ -94,7 +94,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       markAsDismissed(ContentDismissActionType.AUTO_DISMISS);
     }
   }, items2);
-  const tmp2Result3 = markAsDismissed(16931);
+  const tmp2Result3 = markAsDismissed(17043);
   analyticsLocations = useAnalyticsLocationsDefault(AnalyticsLocationDefault.GIFTING_PROMOTION_COACHMARK).analyticsLocations;
   const items3 = [analyticsLocations, markAsDismissed];
   let tmp18Result3 = null;
@@ -113,24 +113,24 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       if (tmp18Result) {
         const obj5 = { style: tmp.countdownBadge, children: null };
         const obj6 = { variant: "text-xs/bold", color: "text-overlay-light", style: tmp.countdownBadgeText, children: str.toUpperCase() };
-        obj5.children = tmp18(tmp2(4556).Text, obj6);
+        obj5.children = tmp18(tmp2(4632).Text, obj6);
         tmp18Result = tmp18(tmp21, obj5);
       }
       items4[1] = tmp18Result;
       const obj7 = { style: tmp.textContainer, children: null };
       const obj8 = { style: tmp.text, variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: coachmarkComponent.header };
-      const items5 = [tmp18(tmp2(4556).Text, obj8), ];
+      const items5 = [tmp18(tmp2(4632).Heading, obj8), ];
       const obj9 = { style: tmp.text, variant: "text-md/normal", color: "text-default", children: coachmarkComponent.body };
-      items5[1] = tmp18(tmp2(4556).Text, obj9);
+      items5[1] = tmp18(tmp2(4632).Text, obj9);
       obj7.children = items5;
       items4[2] = tmp20(tmp21, obj7);
       const obj10 = { grow: true, icon: null, text: null, onPress: null };
       const obj11 = { size: "sm", color: tmp10(576).colors.WHITE };
-      obj10.icon = tmp18(tmp2(11035).GiftIcon, obj11);
+      obj10.icon = tmp18(tmp2(11168).GiftIcon, obj11);
       const intl = tmp2(1114).intl;
       obj10.text = intl.string(tmp2(1114).t.Ve9Ge6);
       obj10.onPress = tmp16;
-      items4[3] = tmp18(tmp2(4975).Button, obj10);
+      items4[3] = tmp18(tmp2(5056).Button, obj10);
       obj4.children = items4;
       obj3.children = tmp20(tmp21, obj4);
       tmp18Result3 = tmp18(tmp19, obj3);
@@ -142,7 +142,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
           ({ imageShared: arr5[0], imageWrapperAndroid: arr5[1] } = tmp);
           obj12.style = items6;
           const obj13 = { url: themeAndReducedMotionAwareAssetUrl, style: tmp.imageShared, autoplay: true };
-          obj12.children = tmp18(tmp2(8814).APNGPlayer, obj13);
+          obj12.children = tmp18(tmp2(8935).APNGPlayer, obj13);
           let tmp18Result4 = tmp18(tmp21, obj12);
         }
       }
@@ -150,8 +150,8 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
       const obj15 = { uri: themeAndReducedMotionAwareAssetUrl };
       obj14.source = obj15;
       obj14.style = tmp.imageShared;
-      tmp18Result4 = tmp18(tmp10(5587), obj14);
-      tmp2Result4 = tmp2(1115);
+      tmp18Result4 = tmp18(tmp10(5668), obj14);
+      tmp2Result4 = tmp2(1363);
     }
   }
   return tmp18Result3;

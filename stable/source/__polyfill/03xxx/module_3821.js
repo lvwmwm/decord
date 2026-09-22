@@ -1,39 +1,16 @@
 // Module ID: 3821
 // Function ID: 3822
-// Dependencies: [3822, 3823, 3651]
-// Exports: default
+// Dependencies: [2030]
 
 // Module 3821
-import _typeof_mod from "module_3822" /* 3822 */;
-import _typeof_mod from "module_3823" /* 3823 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import module_2030 from "module_2030" /* 2030 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
-}
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj2 = { default: _typeof };
-  let tmp5 = obj2;
+if (!module_2030) {
+  const obj2 = { default: module_2030 };
+  let obj = obj2;
 } else {
-  tmp5 = _typeof;
+  obj = module_2030;
 }
-_typeof = tmp5;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
-} else {
-  tmp7 = requiredArgs;
-}
-requiredArgs = tmp7;
 
-export default function clamp(arg0, arg1) {
-  ({ start, end } = arg1);
-  requiredArgs.default(2, arguments);
-  const items = [arg0, start];
-  const items1 = [_typeof.default(items), end];
-  return _typeof.default(items1);
-};
+export default { date: obj.default({ formats: { full: "EEEE d. MMMM y", long: "d. MMMM y", medium: "d. MMM y", short: "dd.MM.y" }, defaultWidth: "full" }), time: obj.default({ formats: { full: "'kl'. HH:mm:ss zzzz", long: "HH:mm:ss z", medium: "HH:mm:ss", short: "HH:mm" }, defaultWidth: "full" }), dateTime: obj.default({ formats: { full: "{{date}} 'kl.' {{time}}", long: "{{date}} 'kl.' {{time}}", medium: "{{date}} {{time}}", short: "{{date}} {{time}}" }, defaultWidth: "full" }) };
 export default exports.default;

@@ -1,18 +1,18 @@
-// Module ID: 9188
-// Function ID: 9189
+// Module ID: 9311
+// Function ID: 9312
 // Name: CallActionCreators
-// Dependencies: [1957, 4209, 1371, 1074, 5411, 1272, 1242, 4904, 1114, 9048, 9180, 573, 2]
+// Dependencies: [1957, 4285, 1371, 1074, 5492, 1270, 1240, 4980, 1114, 9171, 9303, 573, 2]
 
-// Module 9188 (CallActionCreators)
+// Module 9311 (CallActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4904 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5411 */;
-import useCanRing from "useCanRing" /* 9180 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5492 */;
+import useCanRing from "useCanRing" /* 9303 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = globalThis.__r;
@@ -86,7 +86,7 @@ export default {
       const CALLABLE = constants2.CALLABLE;
       const result = useCanRing.canRingUsersInChannel(channel);
       if (result) {
-        const HTTP = tmp3(1272).HTTP;
+        const HTTP = tmp3(1270).HTTP;
         const request = { url: timestampProducer.CALL_RING(channelId), body: null, oldFormErrors: true, rejectWithError: true };
         const obj3 = { recipients: items, analytics_location: gdm_invite };
         request.body = obj3;

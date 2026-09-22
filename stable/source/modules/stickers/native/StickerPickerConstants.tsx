@@ -1,11 +1,11 @@
-// Module ID: 10278
-// Function ID: 10279
+// Module ID: 10402
+// Function ID: 10403
 // Name: StickerPickerConstants
-// Dependencies: [1219, 5268, 2]
+// Dependencies: [1217, 5349, 2]
 
-// Module 10278 (StickerPickerConstants)
-import StickersTypes from "StickersTypes" /* 5268 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1219 */;
+// Module 10402 (StickerPickerConstants)
+import StickersTypes from "StickersTypes" /* 5349 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1217 */;
 import size from "module_2" /* 2 */;
 
 const PADDING_VERTICAL = ExpressionPickerConstants.PADDING_VERTICAL;

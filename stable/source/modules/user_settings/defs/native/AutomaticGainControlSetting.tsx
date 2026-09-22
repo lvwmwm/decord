@@ -1,26 +1,26 @@
-// Module ID: 15262
-// Function ID: 15263
+// Module ID: 15343
+// Function ID: 15344
 // Name: AutomaticGainControlSetting
-// Dependencies: [1908, 7976, 504, 1114, 11473, 9998, 2]
+// Dependencies: [1908, 8079, 504, 1114, 11605, 10122, 2]
 
-// Module 15262 (AutomaticGainControlSetting)
+// Module 15343 (AutomaticGainControlSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1114 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
 
 require = fn;
-const SettingBuilders = fn(11473);
+const SettingBuilders = fn(11605);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.cUMdH0);
   },
-  parent: fn(7976).MobileUserSettings.VOICE,
+  parent: fn(8079).MobileUserSettings.VOICE,
   useValue: function useAutomaticGainControlSettingValue() {
     const items = [MediaEngineStore];
     return initialize.useStateFromStores(items, () => automaticGainControl.getAutomaticGainControl());
   },
-  onValueChange: fn(9998).handleAutomaticGainControlChange,
+  onValueChange: fn(10122).handleAutomaticGainControlChange,
   useDescription: function useAutomaticGainControlSettingDescription() {
     const intl = util.intl;
     return intl.string(util.t["6EjbvA"]);

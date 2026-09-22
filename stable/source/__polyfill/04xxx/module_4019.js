@@ -1,11 +1,11 @@
 // Module ID: 4019
 // Function ID: 4020
-// Dependencies: [3650, 3651]
+// Dependencies: [3725, 3726]
 // Exports: default
 
 // Module 4019
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,20 +24,10 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isWithinInterval(arg0, start) {
+export default function isAfter(arg0, arg1) {
   requiredArgs.default(2, arguments);
-  const time = _typeof.default(arg0).getTime();
   const defaultResult1 = _typeof.default(arg0);
-  const time1 = _typeof.default(start.start).getTime();
-  const defaultResult2 = _typeof.default(start.start);
-  const time2 = _typeof.default(start.end).getTime();
-  if (time1 <= time2) {
-    return time >= time1 && time <= time2;
-  } else {
-    const _RangeError = RangeError;
-    const rangeError = new RangeError("Invalid interval");
-    throw rangeError;
-  }
-  const defaultResult3 = _typeof.default(start.end);
+  const time = defaultResult1.getTime();
+  return time > _typeof.default(arg1).getTime();
 };
 export default exports.default;

@@ -1,13 +1,13 @@
-// Module ID: 6275
-// Function ID: 6276
+// Module ID: 6376
+// Function ID: 6377
 // Name: NitroLogoCardSpotIllustration
-// Dependencies: [21, 5587, 6276, 2]
+// Dependencies: [21, 5668, 6377, 2]
 // Exports: NitroLogoCardSpotIllustration
 
-// Module 6275 (NitroLogoCardSpotIllustration)
+// Module 6376 (NitroLogoCardSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6276 from "module_6276" /* 6276 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6377 from "module_6377" /* 6377 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const NitroLogoCardSpotIllustration = function NitroLogoCardSpotIllustrat
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6276 };
+  const obj2 = { uri: _modDef6377 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,15 +1,16 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17940
+// Function ID: 17941
 // Name: ForwardGuildBreadcrumbManager
-// Dependencies: [1074, 17828, 7118, 17426, 2]
+// Dependencies: [8059, 1979, 1074, 17531, 17941, 7221, 17538, 2]
 
-// Module 17827 (ForwardGuildBreadcrumbManager)
-import Constants from "Constants" /* 1074 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17426 */;
-import BasicGuildActionCreators from "BasicGuildActionCreators" /* 17828 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
-import size from "module_2" /* 2 */;
+// Module 17940 (ForwardGuildBreadcrumbManager)
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 17538 */;
+import BasicGuildActionCreators from "BasicGuildActionCreators" /* 17941 */;
+import BasicGuildStore from "BasicGuildStore" /* 8059 */;
+import GuildStore from "GuildStore" /* 1979 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 
+require = fn;
 function fetchForwardReferencedGuilds(message_reference) {
   message_reference = message_reference.message_reference;
   let type;
@@ -18,21 +19,30 @@ function fetchForwardReferencedGuilds(message_reference) {
   }
   if (type === MessageReferenceTypes.FORWARD) {
     const guild_id = message_reference.message_reference.guild_id;
-    if (null != guild_id) {
-      const basicGuild = BasicGuildActionCreators.fetchBasicGuild(guild_id);
+    let tmp2 = null != guild_id;
+    if (tmp2) {
+      tmp2 = null == GuildStore.getGuild(guild_id);
+    }
+    if (tmp2) {
+      tmp2 = null == BasicGuildStore.getGuildOrStatus(guild_id);
+    }
+    if (tmp2) {
+      const result = guild_id(17531).queueMessageLinkFetch(() => BasicGuildActionCreators.fetchBasicGuild(guild_id));
+      const obj = guild_id(17531);
     }
   }
 }
-const MessageReferenceTypes = Constants.MessageReferenceTypes;
+const MessageReferenceTypes = fn(1074).MessageReferenceTypes;
 class ForwardGuildBreadcrumbManager extends tmp6 {
   constructor() {
     tmp3 = new ForwardGuildBreadcrumbManager(tmp2, tmp, new.target);
-    tmp4 = closure_1(closure_2[3])(tmp3, fetchForwardReferencedGuilds);
+    tmp4 = closure_1(closure_2[6])(tmp3, fetchForwardReferencedGuilds);
     return tmp3;
   }
 }
 const tmp5 = new tmp(tmp4, tmp3, tmp2, Object, defineProperty, ForwardGuildBreadcrumbManager, importDefault);
 setupLoadFromMessageManagerHandlersDefault(tmp5, fetchForwardReferencedGuilds);
-const result = size.fileFinishedImporting("modules/forwarding/ForwardGuildBreadcrumbManager.tsx");
+const size = fn(2);
+let result = size.fileFinishedImporting("modules/forwarding/ForwardGuildBreadcrumbManager.tsx");
 
 export default tmp5;

@@ -1,15 +1,15 @@
-// Module ID: 7661
-// Function ID: 7662
+// Module ID: 7763
+// Function ID: 7764
 // Name: UserSearchUtils
-// Dependencies: [7662, 2021, 4209, 1074, 1925, 4404, 2]
+// Dependencies: [7764, 2021, 4285, 1074, 1925, 4481, 2]
 // Exports: cleanString, getNames, getRelationshipType
 
-// Module 7661 (UserSearchUtils)
+// Module 7763 (UserSearchUtils)
 import StringUtils from "StringUtils" /* 1925 */;
-import UserUtilsDefault from "UserUtils" /* 4404 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 7662 */;
+import UserUtilsDefault from "UserUtils" /* 4481 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 7764 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 
 require = fn;
 const RelationshipTypes = fn(1074).RelationshipTypes;

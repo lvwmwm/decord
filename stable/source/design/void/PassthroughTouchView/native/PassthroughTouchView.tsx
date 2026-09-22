@@ -1,11 +1,11 @@
-// Module ID: 14121
-// Function ID: 14122
+// Module ID: 14205
+// Function ID: 14206
 // Name: PassthroughTouchView
-// Dependencies: [19, 21, 14122, 2]
+// Dependencies: [19, 21, 14206, 2]
 // Exports: default
 
-// Module 14121 (PassthroughTouchView)
-import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 14122 */;
+// Module 14205 (PassthroughTouchView)
+import PassthroughTouchNativeComponentDefault from "PassthroughTouchNativeComponent" /* 14206 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;

@@ -1,19 +1,19 @@
-// Module ID: 10936
-// Function ID: 10937
+// Module ID: 11066
+// Function ID: 11067
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 8381, 8632, 1074, 21, 4560, 4992, 1272, 12, 576, 10937, 7039, 1178, 10954, 10955, 1114, 5624, 1250, 7000, 2]
+// Dependencies: [5, 32, 19, 17, 8498, 8749, 1074, 21, 4636, 5073, 1270, 12, 576, 11067, 7142, 1176, 11084, 11085, 1114, 5705, 1248, 7103, 2]
 
-// Module 10936 (GroupDMInviteManagementScreen)
+// Module 11066 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1250 */;
-import NavigatorHeader from "NavigatorHeader" /* 5624 */;
-import InstantInviteDefault from "InstantInvite" /* 10937 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
+import NavigatorHeader from "NavigatorHeader" /* 5705 */;
+import InstantInviteDefault from "InstantInvite" /* 11067 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import InviteRecord from "InviteRecord" /* 8381 */;
+import InviteRecord from "InviteRecord" /* 8498 */;
 
 require = fn;
 function GroupDMInviteManagement(channelId) {
@@ -24,7 +24,7 @@ function GroupDMInviteManagement(channelId) {
   [first, dependencyMap] = noop.useState([]);
   const tmp3 = _slicedToArray(noop.useState(true), 2);
   closure_3 = tmp3[1];
-  first(4992)(() => {
+  first(5073)(() => {
     closure_0 = async function _fetchInvites(arg0, value) {
       if (v3 === 2) {
         v3 = 3;
@@ -121,14 +121,14 @@ function GroupDMInviteManagement(channelId) {
   [][0] = first;
   const callback = noop.useCallback((code) => code.code, []);
   if (tmp3[0]) {
-    let tmp14 = jsx(channelId(7039).SceneLoadingIndicator, {});
+    let tmp14 = jsx(channelId(7142).SceneLoadingIndicator, {});
   } else if (0 === first.length) {
-    let obj2 = { lightSource: tmp4(10954), darkSource: tmp4(10955), title: null, body: null };
+    let obj2 = { lightSource: tmp4(11084), darkSource: tmp4(11085), title: null, body: null };
     const intl = channelId(1114).intl;
     obj2.title = intl.string(channelId(1114).t["+nLJkZ"]);
     const intl2 = channelId(1114).intl;
     obj2.body = intl2.string(channelId(1114).t.F53CAc);
-    tmp14 = jsx(channelId(1178).EmptyState, { lightSource: tmp4(10954), darkSource: tmp4(10955), title: null, body: null });
+    tmp14 = jsx(channelId(1176).EmptyState, { lightSource: tmp4(11084), darkSource: tmp4(11085), title: null, body: null });
   } else {
     let obj = { style: tmp.list, data: memo, keyExtractor: callback, renderItem: tmp11, initialNumToRender: 10, windowSize: tmp7[0] };
     tmp14 = <closure_7 style={tmp.list} data={memo} keyExtractor={callback} renderItem={tmp11} initialNumToRender={10} windowSize={tmp7[0]} />;
@@ -137,11 +137,11 @@ function GroupDMInviteManagement(channelId) {
 }
 get_ActivityIndicator = fn(17);
 ({ Platform, View: metroRequire, FlatList: closure_7 } = get_ActivityIndicator);
-const ChannelSettingsStore = fn(8632);
+const ChannelSettingsStore = fn(8749);
 const Constants = fn(1074);
 ({ ChannelSettingsSections: closure_9, Endpoints: c10 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_12 = createStyles.createStyles({ list: { paddingTop: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/instant_invite/native/components/GroupDMInviteManagementScreen.tsx");
@@ -163,5 +163,5 @@ export default noop.memo(function GroupDMInviteManagementScreen(channelId) {
     obj[constants.INSTANT_INVITES_MANAGEMENT] = obj2;
     return obj;
   }, items);
-  return jsx(channelId(7000).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
+  return jsx(channelId(7103).Navigator, { screens: memo, initialRouteName: constants.INSTANT_INVITES_MANAGEMENT });
 });

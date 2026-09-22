@@ -1,22 +1,22 @@
-// Module ID: 12231
-// Function ID: 12232
+// Module ID: 12360
+// Function ID: 12361
 // Name: ImageInputActionSheet
-// Dependencies: [19, 17, 7829, 21, 4560, 576, 12230, 4425, 4527, 7198, 4556, 1178, 7200, 1114, 12232, 2]
+// Dependencies: [19, 17, 7931, 21, 4636, 576, 12359, 4502, 4603, 7300, 4632, 1176, 7302, 1114, 12361, 2]
 // Exports: default
 
-// Module 12231 (ImageInputActionSheet)
+// Module 12360 (ImageInputActionSheet)
 import nativeDefault from "native" /* 576 */;
-import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12232 */;
+import EditPollCreationImageAltTextModalActionCreators from "EditPollCreationImageAltTextModalActionCreators" /* 12361 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_5 = fn(7829).POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY;
+let closure_5 = fn(7931).POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { emojiContainer: { flexDirection: "row", alignItems: "center", marginHorizontal: 24 }, emojiIcon: { marginRight: 12, borderRadius: nativeDefault.radii.sm } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);

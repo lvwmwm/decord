@@ -1,12 +1,12 @@
-// Module ID: 7832
-// Function ID: 7833
+// Module ID: 7934
+// Function ID: 7935
 // Name: PoggermodeUtils
-// Dependencies: [7679, 575, 2]
+// Dependencies: [7781, 575, 2]
 // Exports: getComboPercentage, getComboScore, getComboShakeIntensity, getComboStyles
 
-// Module 7832 (PoggermodeUtils)
+// Module 7934 (PoggermodeUtils)
 import shims from "shims" /* 575 */;
-import PoggermodeConstants from "PoggermodeConstants" /* 7679 */;
+import PoggermodeConstants from "PoggermodeConstants" /* 7781 */;
 import size from "module_2" /* 2 */;
 
 ({ ShakeLevel: c2, SHAKE_STEPS: c3, SHAKE_STEP_DIVIDER: closure_4 } = PoggermodeConstants);

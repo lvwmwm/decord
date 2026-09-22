@@ -1,10 +1,10 @@
-// Module ID: 14182
-// Function ID: 14183
+// Module ID: 14268
+// Function ID: 14269
 // Name: Badge/Badge
-// Dependencies: [19, 17, 2025, 1074, 1180, 21, 4560, 576, 1115, 4411, 504, 4556, 1880, 8618, 2]
+// Dependencies: [19, 17, 2025, 1074, 1178, 21, 4636, 576, 1363, 4488, 504, 4632, 1880, 8735, 2]
 // Exports: MaskedBadge
 
-// Module 14182 (Badge/Badge)
+// Module 14268 (Badge/Badge)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2025 */;
@@ -132,45 +132,36 @@ class Badge {
   }
 }
 const View = fn(17).View;
-const BadgeConstants = fn(1180);
+const BadgeConstants = fn(1178);
 ({ BADGE_MASK_SIZE: metroRequire, BADGE_MASK_UNREAD_SIZE: closure_7, BADGE_PADDING, BADGE_SIZE } = BadgeConstants);
 const BADGE_SIZE_UNREAD = BadgeConstants.BADGE_SIZE_UNREAD;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { badgeMask: { position: "absolute", bottom: -BADGE_PADDING, right: -BADGE_PADDING, padding: BADGE_PADDING, zIndex: 1 }, badge: { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: nativeDefault.space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" }, badgeText: null, experimentalBadgeText: null, noCount: null, unread: null, mention: null, lowImportanceMention: null, eventsMentionBadge: null };
 let obj4 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: nativeDefault.colors.WHITE, fontSize: 12, lineHeight: null, fontFamily: null, textAlign: "center", textAlignVertical: null };
-let PlatformUtils = fn(1115);
+let PlatformUtils = fn(1363);
 PlatformUtils = PlatformUtils.isAndroid();
 const space = nativeDefault.space;
 obj4.lineHeight = PlatformUtils ? space.PX_12 : space.PX_16;
 obj4.fontFamily = fn(1074).Fonts.PRIMARY_BOLD;
-PlatformUtils = fn(1115);
+PlatformUtils = fn(1363);
 let str;
 if (PlatformUtils.isAndroid()) {
   str = "center";
 }
 obj4.textAlignVertical = str;
 obj2.badgeText = obj4;
-const obj7 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: nativeDefault.colors.WHITE };
-PlatformUtils = fn(1115);
-if (PlatformUtils.isAndroid()) {
-  const obj9 = { lineHeight: nativeDefault.space.PX_12, textAlignVertical: "center" };
-  let obj10 = obj9;
-} else {
-  obj10 = {};
-}
-const merged = Object.assign(obj10);
-obj7.textAlign = "center";
-obj2.experimentalBadgeText = obj7;
+let obj3 = { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: nativeDefault.space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+obj2.experimentalBadgeText = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: nativeDefault.colors.WHITE, textAlign: "center" };
 let size = { width: 5, height: 5, borderRadius: 2.5, backgroundColor: nativeDefault.colors.WHITE };
 obj2.noCount = size;
-let obj3 = { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: nativeDefault.space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" };
+const obj7 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: nativeDefault.colors.WHITE, textAlign: "center" };
 obj2.unread = { backgroundColor: nativeDefault.colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
-const obj11 = { backgroundColor: nativeDefault.colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
+const obj8 = { backgroundColor: nativeDefault.colors.MOBILE_LEGACY_BUTTON_SECONDARY_BORDER_DEFAULT };
 obj2.mention = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
-const obj12 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
+const obj9 = { backgroundColor: nativeDefault.colors.BACKGROUND_FEEDBACK_NOTIFICATION };
 obj2.lowImportanceMention = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-const obj13 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
+const obj10 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 obj2.eventsMentionBadge = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 let closure_11 = createStyles.createStyles(obj2);
 size = fn(2);

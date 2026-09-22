@@ -1,15 +1,15 @@
-// Module ID: 4600
-// Function ID: 4601
+// Module ID: 4676
+// Function ID: 4677
 // Name: PresenceStore
-// Dependencies: [502, 1371, 1074, 4601, 12, 1332, 11, 504, 573, 2]
+// Dependencies: [502, 1371, 1074, 4677, 12, 1330, 11, 504, 573, 2]
 
-// Module 4600 (PresenceStore)
+// Module 4676 (PresenceStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import _modDef1332 from "module_1332" /* 1332 */;
-import hasRichActivityDefault from "hasRichActivity" /* 4601 */;
+import _modDef1330 from "module_1330" /* 1330 */;
+import hasRichActivityDefault from "hasRichActivity" /* 4677 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -49,7 +49,7 @@ function sortActivity(type, type2) {
       num3 = 1;
     }
     let num4 = 0;
-    if (tmp3(4601)(type)) {
+    if (tmp3(4677)(type)) {
       num4 = 1;
     }
     diff = num3 - num4;
@@ -292,7 +292,7 @@ function updatePresence(arg0) {
       let activities2 = sorted;
       if (null != tmp7[guildId]) {
         activities2 = sorted;
-        if (_modDef1332(tmp25.activities, sorted)) {
+        if (_modDef1330(tmp25.activities, sorted)) {
           activities2 = tmp25.activities;
         }
       }

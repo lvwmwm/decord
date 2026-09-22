@@ -1,25 +1,25 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17415
+// Function ID: 17416
 // Name: AcceptInviteManager
-// Dependencies: [502, 1957, 2021, 1979, 4544, 4199, 7671, 1074, 7735, 1100, 4527, 4763, 17305, 1896, 7118, 17306, 573, 8744, 2]
+// Dependencies: [502, 1957, 2021, 1979, 4620, 4275, 7773, 1074, 7837, 1100, 4603, 4839, 17416, 1896, 7221, 17417, 573, 8864, 2]
 
-// Module 17304 (AcceptInviteManager)
+// Module 17415 (AcceptInviteManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4763 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7735 */;
-import FriendInviteUtils from "FriendInviteUtils" /* 17306 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 7837 */;
+import FriendInviteUtils from "FriendInviteUtils" /* 17417 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import InviteStore from "InviteStore" /* 4544 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
+import InviteStore from "InviteStore" /* 4620 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 
 require = fn;
-const ACCEPT_INVITE_MODAL_KEY = fn(7671).ACCEPT_INVITE_MODAL_KEY;
+const ACCEPT_INVITE_MODAL_KEY = fn(7773).ACCEPT_INVITE_MODAL_KEY;
 const Constants = fn(1074);
 ({ InviteStates: c10, Permissions: closure_11, Routes: closure_12 } = Constants);
 const prototype = function AcceptInviteManager() {
@@ -80,7 +80,7 @@ const prototype = function AcceptInviteManager() {
               }
               const obj = { location: str };
               FriendInviteUtils.acceptFriendInvite(invite, obj);
-              DispatcherDefault.wait(() => set(8744).clearDisplayedInvite());
+              DispatcherDefault.wait(() => set(8864).clearDisplayedInvite());
               flag = false;
             }
           }
@@ -132,12 +132,12 @@ const prototype = function AcceptInviteManager() {
           tmp39 = require;
         }
         if (flag2) {
-          DispatcherDefault.wait(() => set(8744).clearDisplayedInvite());
+          DispatcherDefault.wait(() => set(8864).clearDisplayedInvite());
           flag = false;
         } else {
           ActionSheetActionCreatorsDefault.hideActionSheet();
           const obj4 = { code, isRegistration: applyArgumentsResult._isRegistration, deeplinkAttemptId, inviteInstanceId };
-          ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(17305, dependencyMap.paths), obj4, ACCEPT_INVITE_MODAL_KEY);
+          ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(17416, dependencyMap.paths), obj4, ACCEPT_INVITE_MODAL_KEY);
           flag = false;
         }
       }

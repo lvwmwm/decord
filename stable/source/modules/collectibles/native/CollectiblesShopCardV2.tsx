@@ -1,19 +1,19 @@
-// Module ID: 8770
-// Function ID: 8771
+// Module ID: 8890
+// Function ID: 8891
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1183, 7542, 1076, 21, 4560, 576, 8771, 7553, 8772, 8179, 8775, 8776, 1114, 4259, 7162, 8833, 8835, 8836, 504, 4411, 5123, 7554, 1889, 8668, 4556, 8838, 8840, 8842, 8843, 8845, 8850, 8853, 8773, 4527, 8177, 4218, 8848, 8875, 8876, 1256, 2]
+// Dependencies: [19, 17, 1181, 7645, 1076, 21, 4636, 576, 8891, 7656, 8892, 8295, 8895, 8896, 1114, 4335, 7265, 8954, 8956, 504, 4488, 5204, 7657, 4632, 8957, 8959, 8961, 8785, 8962, 8964, 8969, 8972, 8893, 4603, 8293, 4294, 8967, 8994, 8995, 1254, 2]
 
-// Module 8770 (CollectiblesShopCardV2)
+// Module 8890 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import v1 from "v1" /* 1256 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4259 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8177 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8773 */;
+import v1 from "v1" /* 1254 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8293 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8893 */;
 import noop from "module_19" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7542 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7645 */;
 
 require = fn;
 function CollectiblesShopCardInternalV2(product) {
@@ -73,9 +73,9 @@ function CollectiblesShopCardInternalV2(product) {
   const callback1 = shouldShowWishlistNUXActionSheet.useCallback(() => {
     ToastActionCreatorsDefault.open({ key: "WISHLIST_ERROR", content });
   }, items1);
-  const tmp2Result11 = require("CollectiblesWishlistUtils");
+  const tmp2Result9 = require("CollectiblesWishlistUtils");
   trackShopCardClick = require("useTrackShopCardClick").useTrackShopCardClick({ product, analyticsLocations: require("useAnalyticsLocations")().analyticsLocations });
-  const tmp2Result12 = require("useTrackShopCardClick");
+  const tmp2Result10 = require("useTrackShopCardClick");
   const wishlistButtonState = require("useWishlistButtonState").useWishlistButtonState({ userId: currentUser.id, skuId: selectedProduct.skuId, onAddSuccess: callback, onError: callback1 });
   isWishlisted = wishlistButtonState.isWishlisted;
   ({ isBusy, handleToggle } = wishlistButtonState);
@@ -115,15 +115,13 @@ function CollectiblesShopCardInternalV2(product) {
     }
   }, items3);
   const obj6 = { userId: currentUser.id, skuId: selectedProduct.skuId, onAddSuccess: callback, onError: callback1 };
-  const tmp2Result13 = require("useWishlistButtonState");
-  const isProfileFramesEarlyAccessPhase = require("useCanPurchaseFrames").useIsProfileFramesEarlyAccessPhase("CollectiblesShopCardV2");
-  const tmp2Result14 = require("useCanPurchaseFrames");
+  const tmp2Result11 = require("useWishlistButtonState");
   const items4 = [c5];
-  let stateFromStores = require("initialize").useStateFromStores(items4, () => product(selectedProduct[21]).isThemeDark(content.theme));
-  const tmp2Result15 = require("initialize");
+  let stateFromStores = require("initialize").useStateFromStores(items4, () => product(selectedProduct[20]).isThemeDark(content.theme));
+  const tmp2Result12 = require("initialize");
   const items5 = [trackShopCardClick];
   if (unpublishedAt == null) {
-    unpublishedAt = tmp2Result16.useStateFromStores(items5, () => {
+    unpublishedAt = tmp2Result13.useStateFromStores(items5, () => {
       const category = CollectiblesCategoryStore.getCategory(product.categorySkuId);
       let unpublishedAt;
       if (category != null) {
@@ -149,30 +147,23 @@ function CollectiblesShopCardInternalV2(product) {
   };
   const items6 = [tmp.card, obj5, cardStyle];
   obj7.style = items6;
-  tmp2Result16 = require("initialize");
+  require("CollectiblesUtils");
   const badgeOverride = product.badgeOverride;
-  const result1 = require("CollectiblesUtils").shouldShowLimitedTimeBadge(unpublishedAt);
-  const tmp2Result17 = require("CollectiblesUtils");
-  const productType = require("CollectiblesProductUtils").getProductType(product);
-  let tmp28 = productType === tmp2(tmp3[24]).CollectiblesItemType.PROFILE_FRAME;
-  if (tmp28) {
-    tmp28 = isProfileFramesEarlyAccessPhase;
-  }
   if (product.hideBadge) {
     if (null != null) {
       const obj9 = { style: tmp.topRowOverlay, children: null };
       const items7 = [null, ];
       if (!tmp17) {
         const obj10 = { style: tmp.wishlistButton, isWishlisted, onPress: handleToggle, busy: isBusy, disabled: tmp19, accessibilityHidden: true, onTrackPress: trackShopCardClick };
-        tmp18 = closure_9(tmp2(tmp3[31]).WishlistButtonBase, obj10);
+        tmp18 = closure_9(tmp2(tmp3[29]).WishlistButtonBase, obj10);
       }
       items7[1] = tmp18;
       obj9.children = items7;
-      let tmp25Result = tmp25(showWishlistNUXActionSheet, obj9);
+      let tmp24Result = tmp24(showWishlistNUXActionSheet, obj9);
     } else {
-      tmp25Result = null;
+      tmp24Result = null;
     }
-    const items8 = [tmp25Result, , ];
+    const items8 = [tmp24Result, , ];
     const obj11 = { solidBackground, product, isPurchased: null, isDisabled: null, disableBundleStaticBackground: null, muteBundleStaticBackground: null, cardWidth: null };
     if (!tmp16) {
       tmp16 = "partiallyOwnedBundle" === collectibleProductState;
@@ -182,62 +173,48 @@ function CollectiblesShopCardInternalV2(product) {
     obj11.disableBundleStaticBackground = disableBundleStaticBackground;
     obj11.muteBundleStaticBackground = muteBundleStaticBackground;
     obj11.cardWidth = cardWidth;
-    items8[1] = closure_9(tmp9(tmp3[32]), obj11);
+    items8[1] = closure_9(tmp9(tmp3[30]), obj11);
     const obj12 = { product, collectibleProductState, preferVCPrice, isDisabled, hidePrice: flag };
-    items8[2] = closure_9(tmp9(tmp3[33]), obj12);
+    items8[2] = closure_9(tmp9(tmp3[31]), obj12);
     obj7.children = items8;
-    return tmp25(tmp2(tmp3[22]).PressableOpacity, obj7);
-  } else if (tmp28) {
+    return tmp24(tmp2(tmp3[21]).PressableOpacity, obj7);
+  } else if (null != badgeOverride) {
     const items9 = [tmp.badgePill, ];
-    const obj13 = { style: null, accessibilityLabel: null, children: null };
+    const obj13 = { style: null, children: null };
     items9[1] = stateFromStores ? tmp.badgePillDarkMode : tmp.badgePillLightMode;
     obj13.style = items9;
-    const intl4 = tmp2(tmp3[14]).intl;
-    obj13.accessibilityLabel = intl4.string(tmp2(tmp3[14]).t["1m6qcO"]);
-    let str3 = "white";
-    if (stateFromStores) {
-      str3 = "black";
-    }
-    const obj14 = { size: "xs", color: str3 };
-    stateFromStores = tmp36(tmp2(tmp3[25]).NitroWheelIcon, obj14);
-    obj13.children = stateFromStores;
-    let tmp34Result = tmp36(showWishlistNUXActionSheet, obj13);
-  } else if (null != badgeOverride) {
-    const items10 = [tmp.badgePill, ];
-    const obj15 = { style: null, children: null };
-    items10[1] = stateFromStores ? tmp.badgePillDarkMode : tmp.badgePillLightMode;
-    obj15.style = items10;
     let str2 = "text-overlay-light";
     if (stateFromStores) {
       str2 = "text-overlay-dark";
     }
-    const obj16 = { variant: "text-xs/bold", color: str2, allowFontScaling: false, style: tmp.badgeOverrideText, lineClamp: 1, children: badgeOverride };
-    obj15.children = closure_9(tmp2(tmp3[26]).Text, obj16);
-    tmp34Result = tmp34(showWishlistNUXActionSheet, obj15);
+    const obj14 = { variant: "text-xs/bold", color: str2, allowFontScaling: false, style: tmp.badgeOverrideText, lineClamp: 1, children: badgeOverride };
+    stateFromStores = tmp32(tmp2(tmp3[23]).Text, obj14);
+    obj13.children = stateFromStores;
+    let tmp32Result = tmp32(showWishlistNUXActionSheet, obj13);
   } else {
-    if (tmp2Result19.isDynamicProduct(selectedProduct)) {
-      const obj17 = { icon: tmp2(tmp3[28]).DiceIcon, accessibilityLabel: null, isDark: null };
+    if (tmp2Result15.isDynamicProduct(selectedProduct)) {
+      const obj15 = { icon: tmp2(tmp3[25]).DiceIcon, accessibilityLabel: null, isDark: null };
       const intl3 = tmp2(tmp3[14]).intl;
-      obj17.accessibilityLabel = intl3.string(tmp2(tmp3[14]).t["+drfVi"]);
-      obj17.isDark = stateFromStores;
-      tmp34Result = closure_9(tmp2(tmp3[27]).IconBadgePill, obj17);
-    } else if (result1) {
-      const obj18 = { unpublishedAt, style: tmp.badge };
-      tmp34Result = closure_9(tmp9(tmp3[29]), obj18);
+      obj15.accessibilityLabel = intl3.string(tmp2(tmp3[14]).t["+drfVi"]);
+      obj15.isDark = stateFromStores;
+      tmp32Result = closure_9(tmp2(tmp3[24]).IconBadgePill, obj15);
+    } else if (tmp26) {
+      const obj16 = { unpublishedAt, style: tmp.badge };
+      tmp32Result = closure_9(tmp9(tmp3[26]), obj16);
     } else if ("nitroClaim" === collectibleProductState) {
-      tmp34Result = closure_9(tmp2(tmp3[25]).NitroWheelIcon, { color: "mobile-text-heading-primary" });
+      tmp32Result = closure_9(tmp2(tmp3[27]).NitroWheelIcon, { color: "mobile-text-heading-primary" });
     } else {
-      tmp34Result = null;
-      if (tmp2Result20.isOrbsExclusiveProduct(selectedProduct)) {
-        const obj19 = { icon: tmp2(tmp3[30]).OrbsIcon, accessibilityLabel: null, isDark: null };
+      tmp32Result = null;
+      if (tmp2Result16.isOrbsExclusiveProduct(selectedProduct)) {
+        const obj17 = { icon: tmp2(tmp3[28]).OrbsIcon, accessibilityLabel: null, isDark: null };
         const intl2 = tmp2(tmp3[14]).intl;
-        obj19.accessibilityLabel = intl2.string(tmp2(tmp3[14]).t["0TmQRG"]);
-        obj19.isDark = stateFromStores;
-        tmp34Result = closure_9(tmp2(tmp3[27]).IconBadgePill, obj19);
+        obj17.accessibilityLabel = intl2.string(tmp2(tmp3[14]).t["0TmQRG"]);
+        obj17.isDark = stateFromStores;
+        tmp32Result = closure_9(tmp2(tmp3[24]).IconBadgePill, obj17);
       }
-      tmp2Result20 = tmp2(tmp3[9]);
+      tmp2Result16 = tmp2(tmp3[9]);
     }
-    tmp2Result19 = tmp2(tmp3[9]);
+    tmp2Result15 = tmp2(tmp3[9]);
   }
 }
 function CollectiblesShopCardV2Inner(product) {
@@ -262,8 +239,8 @@ function CollectiblesShopCardV2Inner(product) {
   let obj3 = require("CollectiblesAnalyticsContext");
   const currentUser = require("useCurrentUser").useCurrentUser();
   const obj4 = require("useCurrentUser");
-  const canUseCollectiblesResult = defaultVariantIndex(analyticsLocations[37]).canUseCollectibles(currentUser);
-  const obj5 = defaultVariantIndex(analyticsLocations[37]);
+  const canUseCollectiblesResult = defaultVariantIndex(analyticsLocations[35]).canUseCollectibles(currentUser);
+  const obj5 = defaultVariantIndex(analyticsLocations[35]);
   const productPurchaseState = require("useProductPurchaseState").useProductPurchaseState(selectedProduct);
   const isPurchased = productPurchaseState.isPurchased;
   const isPartiallyOwnedBundle = productPurchaseState.isPartiallyOwnedBundle;
@@ -322,7 +299,7 @@ let num = 170;
 if (PixelRatio.getFontScale() >= 1.78) {
   num = 302;
 }
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { card: null, topRowOverlay: null, badge: null, badgePill: null, badgeOverrideText: null, badgePillDarkMode: null, badgePillLightMode: null, wishlistButton: null };
 let size = { position: "relative", height: num, width: 150, display: "flex", borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.sm, overflow: "hidden" };
 obj.card = size;

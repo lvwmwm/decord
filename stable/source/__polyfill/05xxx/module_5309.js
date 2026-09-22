@@ -1,9 +1,26 @@
 // Module ID: 5309
 // Function ID: 5310
-// Dependencies: [1122]
+// Dependencies: [5294]
 
 // Module 5309
-import registerAsset from "module_1122" /* 1122 */;
+import _mod5294 from "module_5294" /* 5294 */;
 
+require = arg1;
+const dependencyMap = arg6;
+let c2 = 0;
+let c3 = "<?xpacket begin";
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "e0157f8261da28670f8ce7828f01db25", name: "img_account_sync_skype_white", type: "svg" });
+export default {
+  isXMLFile(dataView) {
+    let tmp = dataView;
+    if (tmp) {
+      tmp = _mod5294.getStringFromDataView(dataView, c2, length.length) === length;
+    }
+    return tmp;
+  },
+  findOffsets(byteLength) {
+    const xmpChunks = [];
+    xmpChunks.push({ dataOffset, length: byteLength.byteLength });
+    return { xmpChunks };
+  }
+};

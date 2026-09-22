@@ -1,11 +1,11 @@
-// Module ID: 11329
-// Function ID: 11330
+// Module ID: 11461
+// Function ID: 11462
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 4560, 576, 4556, 1114, 4975, 11330, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 4632, 1114, 5056, 11462, 2]
 
-// Module 11329 (AnnouncementChannelLurkerBar)
+// Module 11461 (AnnouncementChannelLurkerBar)
 import nativeDefault from "native" /* 576 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11330 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11462 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,7 +41,7 @@ class AnnouncementChannelLurkerBar {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { wrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, paddingTop: 8 }, text: { textAlign: "center", marginBottom: 8 } };
 const hasOwnProperty = createStyles.createStyles(obj2);
 const size = fn(2);

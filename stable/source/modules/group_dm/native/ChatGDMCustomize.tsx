@@ -1,9 +1,9 @@
-// Module ID: 10931
-// Function ID: 10932
+// Module ID: 11061
+// Function ID: 11062
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 1957, 1074, 21, 4560, 576, 6981, 504, 4713, 5598, 1396, 10932, 4573, 1114, 4259, 6610, 10933, 5123, 4556, 6606, 4975, 10935, 2]
+// Dependencies: [5, 32, 19, 17, 1957, 1074, 21, 4636, 576, 7084, 504, 4789, 5679, 1396, 11062, 4649, 1114, 4335, 6711, 11063, 5204, 4632, 6707, 5056, 11065, 2]
 
-// Module 10931 (ChatGDMCustomize)
+// Module 11061 (ChatGDMCustomize)
 import nativeDefault from "native" /* 576 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -17,7 +17,7 @@ const MAX_CHANNEL_NAME_LENGTH = fn(1074).MAX_CHANNEL_NAME_LENGTH;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const CLEARED_ICON = "CLEARED_ICON";
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { container: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, iconUploader: null, iconClear: null, textInput: null, rateLimitedContainer: null, rateLimitedText: null };
 let obj3 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.iconUploader = { marginTop: nativeDefault.space.PX_24, alignSelf: "center" };

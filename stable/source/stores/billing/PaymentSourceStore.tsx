@@ -1,12 +1,12 @@
-// Module ID: 4221
-// Function ID: 4222
+// Module ID: 4297
+// Function ID: 4298
 // Name: PaymentSourceStore
-// Dependencies: [4222, 504, 573, 2]
+// Dependencies: [4298, 504, 573, 2]
 
-// Module 4221 (PaymentSourceStore)
+// Module 4297 (PaymentSourceStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4222 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 4298 */;
 
 function handlePaymentSourceUpdate(paymentSource) {
   paymentSource = paymentSource.paymentSource;
@@ -26,6 +26,7 @@ function handlePaymentSourceUpdate(paymentSource) {
 const dependencyMap = {};
 let c2 = null;
 let c3 = false;
+let c4 = false;
 const Store = initializeDefault.Store;
 class PaymentSourceStore extends Store {
 }
@@ -61,6 +62,12 @@ Object.defineProperty(prototype, "defaultPaymentSource", {
 Object.defineProperty(prototype, "hasFetchedPaymentSources", {
   get: function hasFetchedPaymentSources() {
     return c3;
+  },
+  set: undefined
+});
+Object.defineProperty(prototype, "paymentSourceFetchError", {
+  get: function paymentSourceFetchError() {
+    return c4;
   },
   set: undefined
 });
@@ -100,6 +107,10 @@ const paymentSourceStore = new PaymentSourceStore(DispatcherDefault, {
       id = paymentSources[0].id;
     }
     c3 = true;
+    c4 = false;
+  },
+  BILLING_PAYMENT_SOURCES_FETCH_FAIL: function handlePaymentSourceFetchFail() {
+    c4 = true;
   },
   BILLING_PAYMENT_SOURCE_REMOVE_SUCCESS: function handlePaymentSourceRemove(id) {
     const merged = Object.assign(closure_1);
@@ -119,6 +130,7 @@ const paymentSourceStore = new PaymentSourceStore(DispatcherDefault, {
     closure_1 = {};
     c2 = null;
     c3 = false;
+    c4 = false;
   }
 });
 const size = fn(2);

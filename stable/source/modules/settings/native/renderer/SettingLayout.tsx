@@ -1,15 +1,15 @@
-// Module ID: 14692
-// Function ID: 14693
+// Module ID: 14776
+// Function ID: 14777
 // Name: SettingLayout
-// Dependencies: [19, 11474, 21, 14693, 14706, 2]
+// Dependencies: [19, 11606, 21, 14777, 14790, 2]
 
-// Module 14692 (SettingLayout)
-import SettingListRenderer from "SettingListRenderer" /* 14693 */;
-import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14706 */;
+// Module 14776 (SettingLayout)
+import SettingListRenderer from "SettingListRenderer" /* 14777 */;
+import SettingSegmentedControlRendererDefault from "SettingSegmentedControlRenderer" /* 14790 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const NodeType = fn(11474).NodeType;
+const NodeType = fn(11606).NodeType;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingLayout.tsx");

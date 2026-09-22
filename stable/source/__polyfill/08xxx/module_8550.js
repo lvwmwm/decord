@@ -1,81 +1,21 @@
 // Module ID: 8550
 // Function ID: 8551
-// Dependencies: [41, 42, 93, 95, 98, 19, 21, 8551, 8472, 8481]
+// Dependencies: [514, 8551, 8552, 584]
 
 // Module 8550
-import _possibleConstructorReturnDefault from "_possibleConstructorReturn" /* 93 */;
-import _modDef8481 from "module_8481" /* 8481 */;
-import _modDef8551 from "module_8551" /* 8551 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
-import noop from "module_19" /* 19 */;
+import _mod514 from "module_514" /* 514 */;
+import baseIteratee from "baseIteratee" /* 584 */;
 
-const Rect = fn;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
+
+export default function createAggregator(arg0, arg1) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  return (arg0, arg1) => {
+    if (_mod514(arg0)) {
+      let tmpResult = tmp(8551);
     } else {
-      callResult = call(constructResult);
+      tmpResult = tmp(8552);
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-_possibleConstructorReturnDefault;
-const jsx = fn(21).jsx;
-class Rect {
-  constructor() {
-    self = this;
-    tmp = closure_3(this, Rect);
-    tmp2 = hasOwnProperty;
-    obj = hasOwnProperty(Rect);
-    tmp3 = closure_4;
-    if (closure_7()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(Rect, _modDef8481);
-const entry = {
-  key: "render",
-  value: function render() {
-    const self = this;
-    const props = this.props;
-    const size = { x: props.x, y: props.y, width: props.width, height: props.height, rx: props.rx, ry: props.ry };
-    const obj = {
-      ref(arg0) {
-        return self.refMethod(arg0);
-      }
-    };
-    const merged = Object.assign(Rect(8472).withoutXY(this, props));
-    const merged1 = Object.assign(size);
-    return <tmp ref={function ref(arg0) {
-      return self.refMethod(arg0);
-    }} />;
-  }
+    return tmpResult(arg0, closure_0, baseIteratee(arg1, 2), closure_1 ? closure_1() : {});
+  };
 };
-const items = [entry];
-const importDefaultResultResult = _createClass(Rect, items);
-importDefaultResultResult.displayName = "Rect";
-importDefaultResultResult.defaultProps = { x: 0, y: 0, width: 0, height: 0 };
-
-export default importDefaultResultResult;

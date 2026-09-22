@@ -1,10 +1,10 @@
-// Module ID: 7578
-// Function ID: 7579
+// Module ID: 7680
+// Function ID: 7681
 // Name: GameServerHostingBannerBlockRecord
-// Dependencies: [7573, 2]
+// Dependencies: [7675, 2]
 
-// Module 7578 (GameServerHostingBannerBlockRecord)
-import ShopBlockType from "ShopBlockType" /* 7573 */;
+// Module 7680 (GameServerHostingBannerBlockRecord)
+import ShopBlockType from "ShopBlockType" /* 7675 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function GameServerHostingBannerBlockRecord(is_dismissible) {

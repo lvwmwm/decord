@@ -1,18 +1,18 @@
-// Module ID: 16314
-// Function ID: 16315
+// Module ID: 16409
+// Function ID: 16410
 // Name: useFavoritesGuildUnreads
-// Dependencies: [5506, 4201, 1957, 7636, 4199, 4575, 4741, 504, 11, 2]
+// Dependencies: [5587, 4277, 1957, 7738, 4275, 4651, 4817, 504, 11, 2]
 // Exports: default
 
-// Module 16314 (useFavoritesGuildUnreads)
+// Module 16409 (useFavoritesGuildUnreads)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5506 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4201 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5587 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4277 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7636 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import ReadStateStore from "ReadStateStore" /* 4575 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4741 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7738 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import ReadStateStore from "ReadStateStore" /* 4651 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
 
 const require = globalThis.__r;
 

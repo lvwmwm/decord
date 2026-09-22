@@ -1,22 +1,22 @@
-// Module ID: 7933
-// Function ID: 7934
+// Module ID: 8036
+// Function ID: 8037
 // Name: RowGenerator
-// Dependencies: [1183, 7934, 7935, 12, 7936, 7938, 13252, 13253, 1369, 2]
+// Dependencies: [1181, 8037, 8038, 12, 8039, 8041, 13382, 13383, 1369, 2]
 
-// Module 7933 (RowGenerator)
+// Module 8036 (RowGenerator)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;
-import BlockedGroup from "BlockedGroup" /* 7936 */;
-import MessageWithContent from "MessageWithContent" /* 7938 */;
-import Separator from "Separator" /* 13252 */;
-import Loading from "Loading" /* 13253 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
+import BlockedGroup from "BlockedGroup" /* 8039 */;
+import MessageWithContent from "MessageWithContent" /* 8041 */;
+import Separator from "Separator" /* 13382 */;
+import Loading from "Loading" /* 13383 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
 
 require = fn;
-const RowGeneratorConstants = fn(7934);
+const RowGeneratorConstants = fn(8037);
 ({ RowType: closure_4, SeparatorType: hasOwnProperty, LoadingType: metroRequire } = RowGeneratorConstants);
 let obj = { constrainedWidth: 0, animatingStickerMessageId: null, forcedTheme: null, shouldObscureSpoiler: true, shouldDisableInteractiveComponents: true };
-let merged = Object.assign(fn(7935).DEFAULT_OPTIONS);
+let merged = Object.assign(fn(8038).DEFAULT_OPTIONS);
 class RowManager {
   constructor() {
     merged = Object.assign({ options: null });

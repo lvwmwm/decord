@@ -1,29 +1,29 @@
-// Module ID: 16514
-// Function ID: 16515
+// Module ID: 16608
+// Function ID: 16609
 // Name: ICYMICustomStatusRow
-// Dependencies: [32, 19, 17, 1371, 8336, 21, 576, 4560, 16455, 1178, 11250, 4556, 1114, 7873, 4409, 504, 4794, 9182, 10885, 10900, 1115, 5123, 4518, 10255, 11739, 8763, 11, 1090, 16511, 4404, 7641, 16515, 8819, 2]
+// Dependencies: [32, 19, 17, 1371, 8453, 21, 576, 4636, 16549, 1176, 11382, 4632, 1114, 7975, 4486, 504, 4870, 9305, 11012, 11027, 1363, 5204, 4594, 10379, 11867, 8883, 11, 1090, 16605, 4481, 7743, 16609, 8940, 2]
 // Exports: default
 
-// Module 16514 (ICYMICustomStatusRow)
+// Module 16608 (ICYMICustomStatusRow)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
-import TrashIcon from "TrashIcon" /* 4518 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Pressables from "Pressables" /* 5123 */;
-import ReactionIcon from "ReactionIcon" /* 8763 */;
-import PencilIcon from "PencilIcon" /* 10255 */;
-import _modDef11250 from "module_11250" /* 11250 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 11739 */;
+import native from "native" /* 1176 */;
+import TrashIcon from "TrashIcon" /* 4594 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Pressables from "Pressables" /* 5204 */;
+import ReactionIcon from "ReactionIcon" /* 8883 */;
+import PencilIcon from "PencilIcon" /* 10379 */;
+import _modDef11382 from "module_11382" /* 11382 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 11867 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
-import ICYMIStore from "ICYMIStore" /* 8336 */;
+import ICYMIStore from "ICYMIStore" /* 8453 */;
 
 require = fn;
 function UploadPlaceholder() {
   const obj = { style: closure_13(false).uploadContainer, children: null };
-  const items = [React6(native.Icon, { source: _modDef11250, size: native.IconSizes.SMALL }), ];
+  const items = [React6(native.Icon, { source: _modDef11382, size: native.IconSizes.SMALL }), ];
   const obj3 = { variant: "text-md/normal", color: "text-strong", children: null };
   const intl = util.intl;
   obj3.children = intl.string(util.t["3UB9ad"]);
@@ -35,12 +35,12 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9, Fragment: c10 } = jsxProd);
 const PX_8 = nativeDefault.space.PX_8;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_12 = createStyles.createStyles((backgroundColor) => {
   const obj = { background: { backgroundColor, overflow: "hidden" } };
   return obj;
 });
-const createICYMIStyles = fn(16455);
+const createICYMIStyles = fn(16549);
 let closure_13 = createICYMIStyles.createICYMIStyles((gap, arg1) => {
   let num = 56;
   if (!arg1) {

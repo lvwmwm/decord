@@ -1,13 +1,13 @@
-// Module ID: 16859
-// Function ID: 16860
+// Module ID: 16971
+// Function ID: 16972
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 1957, 21, 4560, 576, 8631, 5685, 1114, 1967, 5688, 16820, 7093, 4556, 5687, 5587, 16860, 16861, 504, 2]
+// Dependencies: [32, 19, 17, 1957, 21, 4636, 576, 8748, 5766, 1114, 1967, 5769, 16932, 7196, 4632, 5768, 5668, 16972, 16973, 504, 2]
 // Exports: default
 
-// Module 16859 (ChannelSettingsChangeDefaultForumLayout)
+// Module 16971 (ChannelSettingsChangeDefaultForumLayout)
 import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8631 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8748 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
@@ -82,7 +82,7 @@ class ChannelSettingsChangeDefaultForumLayout {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 }, description: null, thumbnailImagePortrait: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 };
 obj2.description = { paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_16 };

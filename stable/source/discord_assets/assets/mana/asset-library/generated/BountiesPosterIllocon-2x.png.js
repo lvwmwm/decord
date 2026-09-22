@@ -1,8 +1,8 @@
-// Module ID: 5806
-// Function ID: 5807
+// Module ID: 5907
+// Function ID: 5908
 // Dependencies: [2]
 
-// Module 5806
+// Module 5907
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BountiesPosterIllocon-2x.png.js");

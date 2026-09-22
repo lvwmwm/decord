@@ -1,16 +1,16 @@
-// Module ID: 9588
-// Function ID: 9589
+// Module ID: 9712
+// Function ID: 9713
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [1957, 1979, 4199, 4579, 1920, 1074, 9508, 504, 1114, 2]
+// Dependencies: [1957, 1979, 4275, 4655, 1920, 1074, 9632, 504, 1114, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 9588 (getEmbeddedActivityLaunchability)
+// Module 9712 (getEmbeddedActivityLaunchability)
 import util from "util" /* 1114 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9508 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 9632 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import VoiceStateStore from "VoiceStateStore" /* 4579 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import VoiceStateStore from "VoiceStateStore" /* 4655 */;
 
 const require = globalThis.__r;
 

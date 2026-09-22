@@ -1,20 +1,20 @@
-// Module ID: 16358
-// Function ID: 16359
+// Module ID: 16453
+// Function ID: 16454
 // Name: UnreadBars
-// Dependencies: [19, 17, 4552, 1074, 21, 4560, 5524, 576, 4409, 4271, 4528, 4529, 1178, 1114, 504, 12427, 2]
+// Dependencies: [19, 17, 4628, 1074, 21, 4636, 5605, 576, 4486, 4347, 4604, 4605, 1176, 1114, 504, 12556, 2]
 // Exports: default
 
-// Module 16358 (UnreadBars)
+// Module 16453 (UnreadBars)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
-import HapticUtils from "HapticUtils" /* 4528 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4529 */;
-import TransitionGroup from "TransitionGroup" /* 12427 */;
+import native from "native" /* 1176 */;
+import HapticUtils from "HapticUtils" /* 4604 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4605 */;
+import TransitionGroup from "TransitionGroup" /* 12556 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
-import TextStyles from "TextStyles" /* 5524 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import TextStyles from "TextStyles" /* 5605 */;
 
 const require = globalThis.__r;
 
@@ -23,16 +23,16 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, Animated: hasOwnProperty, TouchableWithoutFeedback: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { unreadText: null, unread: null, mention: null };
 let merged = Object.assign(TextStyles(fn(1074).Fonts.DISPLAY_SEMIBOLD, nativeDefault.unsafe_rawColors.WHITE, 12, { uppercase: true }));
 obj2.unreadText = {};
 let obj4 = { margin: 8, height: 24, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md, backgroundColor: null };
-let ColorUtils = fn(4409);
+let ColorUtils = fn(4486);
 obj4.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.PRIMARY_400, 0.9);
 obj2.unread = obj4;
 const obj6 = { backgroundColor: null };
-ColorUtils = fn(4409);
+ColorUtils = fn(4486);
 obj6.backgroundColor = ColorUtils.hexWithOpacity(nativeDefault.unsafe_rawColors.RED_400, 0.9);
 obj2.mention = obj6;
 let closure_10 = createStyles.createLegacyClassComponentStyles(obj2);
@@ -161,7 +161,7 @@ prototype["render"] = function render() {
   return React6(timestampProducer, obj);
 };
 UnreadBar.defaultProps = { bottom: false };
-UnreadBar.contextType = fn(4271).ThemeContext;
+UnreadBar.contextType = fn(4347).ThemeContext;
 const size = fn(2);
 let result = size.fileFinishedImporting("components_native/common/UnreadBars.tsx");
 

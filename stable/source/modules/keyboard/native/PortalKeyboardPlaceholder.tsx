@@ -1,19 +1,19 @@
-// Module ID: 12256
-// Function ID: 12257
+// Module ID: 12385
+// Function ID: 12386
 // Name: PortalKeyboardPlaceholder
-// Dependencies: [19, 17, 21, 4560, 1115, 576, 1609, 1611, 6945, 1477, 5579, 7873, 4427, 1877, 2]
+// Dependencies: [19, 17, 21, 4636, 1363, 576, 1609, 1611, 7046, 1477, 5660, 7975, 4504, 1877, 2]
 
-// Module 12256 (PortalKeyboardPlaceholder)
+// Module 12385 (PortalKeyboardPlaceholder)
 import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
 import KeyboardTypes from "KeyboardTypes" /* 1609 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
 import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 1877 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4427 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5579 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 6945 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 7873 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4504 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5660 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7046 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 7975 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -30,7 +30,7 @@ function PortalKeyboardPlaceholderInner(keyboardType) {
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet: closure_4 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_6 = createStyles.createStyles((arg0, arg1, arg2, arg3) => {
   let absoluteFillObject = null;
   if (obj.isIOS()) {

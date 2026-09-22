@@ -1,12 +1,12 @@
 // Module ID: 2004
 // Function ID: 2005
 // Name: StartupData
-// Dependencies: [17, 1115, 2005, 2]
+// Dependencies: [17, 1363, 2005, 2]
 // Exports: getUserId, setUserId
 
 // Module 2004 (StartupData)
 import _mod17 from "module_17" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import NativeAppDatabaseModuleDefault from "NativeAppDatabaseModule" /* 2005 */;
 import size from "module_2" /* 2 */;
 

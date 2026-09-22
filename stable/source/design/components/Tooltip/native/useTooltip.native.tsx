@@ -1,13 +1,13 @@
-// Module ID: 11133
-// Function ID: 11134
+// Module ID: 11266
+// Function ID: 11267
 // Name: useTooltip
-// Dependencies: [32, 5, 19, 21, 3, 1256, 7157, 11134, 1477, 11138, 2]
+// Dependencies: [32, 5, 19, 21, 3, 1254, 7260, 11267, 1477, 11271, 2]
 // Exports: useTooltip, useTooltipHelper
 
-// Module 11133 (useTooltip)
+// Module 11266 (useTooltip)
 import LoggerDefault from "Logger" /* 3 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1477 */;
-import AnimatedTooltip from "AnimatedTooltip" /* 11134 */;
+import AnimatedTooltip from "AnimatedTooltip" /* 11267 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
@@ -59,8 +59,8 @@ export const useTooltip = function useTooltip(ref, memo) {
     memo = arg0;
     closure_1 = async function _measureHelper(arg0, arg1) {
       closure_129_0 = ref;
-      const measurements = memo(11138).getMeasurements(surfaceRef.surfaceRef, memo);
-      const items = [measurements, memo(11138).getMeasurements(closure_1, memo)];
+      const measurements = memo(11271).getMeasurements(surfaceRef.surfaceRef, memo);
+      const items = [measurements, memo(11271).getMeasurements(closure_1, memo)];
       await Promise.all(items);
       if (1 === tmp7) {
         c4 = 0;
@@ -133,8 +133,8 @@ export const useTooltipHelper = function useTooltipHelper(ref, targetRef, callba
     memo = arg0;
     closure_1 = async function _measureHelper(arg0, arg1) {
       closure_129_0 = ref;
-      const measurements = memo(11138).getMeasurements(surfaceRef.surfaceRef, memo);
-      const items = [measurements, memo(11138).getMeasurements(closure_1, memo)];
+      const measurements = memo(11271).getMeasurements(surfaceRef.surfaceRef, memo);
+      const items = [measurements, memo(11271).getMeasurements(closure_1, memo)];
       await Promise.all(items);
       if (1 === tmp7) {
         c4 = 0;

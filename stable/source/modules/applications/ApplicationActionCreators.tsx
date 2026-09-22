@@ -1,14 +1,14 @@
-// Module ID: 7163
-// Function ID: 7164
+// Module ID: 7266
+// Function ID: 7267
 // Name: ApplicationActionCreators
-// Dependencies: [5, 7164, 1918, 4788, 1074, 573, 1272, 504, 2]
+// Dependencies: [5, 7267, 1918, 4864, 1074, 573, 1270, 504, 2]
 // Exports: useApplicationWithLoggedOutContext
 
-// Module 7163 (ApplicationActionCreators)
+// Module 7266 (ApplicationActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7164 */;
+import ApplicationDirectoryApplicationsStore from "ApplicationDirectoryApplicationsStore" /* 7267 */;
 import ApplicationRecord from "ApplicationRecord" /* 1918 */;
-import ApplicationStore from "ApplicationStore" /* 4788 */;
+import ApplicationStore from "ApplicationStore" /* 4864 */;
 
 const require = globalThis.__r;
 
@@ -171,8 +171,8 @@ export default {
   createApplication(arg0) {
     ({ name: require, guildId: importDefault, type: dependencyMap, teamId: asyncGeneratorStep } = arg0);
     return (async () => {
-      const HTTP = tmp5(1272).HTTP;
-      const request = { url: constants.APPLICATIONS, body: { name, type, guild_id, team_id }, rejectWithError: tmp5(1272).rejectWithMigratedError() };
+      const HTTP = tmp5(1270).HTTP;
+      const request = { url: constants.APPLICATIONS, body: { name, type, guild_id, team_id }, rejectWithError: tmp5(1270).rejectWithMigratedError() };
       await HTTP.post(request);
       const body = arg1.body;
       let tmp8 = null != closure_129_1;
@@ -195,13 +195,13 @@ export default {
     const includeTeam = obj.includeTeam;
     closure_2 = Object.assign(obj, Object.assign({ includeTeam: 0 }));
     return (async () => {
-      const HTTP = tmp5(1272).HTTP;
+      const HTTP = tmp5(1270).HTTP;
       const request = { url: closure_1_7.GUILD_APPLICATIONS(tmp5), query: null, rejectWithError: null };
       const obj4 = {};
       const merged = Object.assign(closure_2);
       obj4.include_team = includeTeam;
       request.query = obj4;
-      request.rejectWithError = tmp5(1272).rejectWithMigratedError();
+      request.rejectWithError = tmp5(1270).rejectWithMigratedError();
       await HTTP.get(request);
       const body = arg1.body;
       tmp2(573).dispatch({ type: "APPLICATIONS_FETCH_SUCCESS", applications: body });
@@ -225,8 +225,8 @@ export default {
   transferApplication(arg0) {
     ({ applicationId: require, teamId: importDefault } = arg0);
     return (async () => {
-      const HTTP = tmp5(1272).HTTP;
-      const request = { url: closure_1_7.APPLICATION_OWNER_TRANSFER(_require), body: { team_id }, rejectWithError: tmp5(1272).rejectWithMigratedError() };
+      const HTTP = tmp5(1270).HTTP;
+      const request = { url: closure_1_7.APPLICATION_OWNER_TRANSFER(_require), body: { team_id }, rejectWithError: tmp5(1270).rejectWithMigratedError() };
       await HTTP.post(request);
       const body = arg1.body;
       tmp2(573).dispatch({ type: "APPLICATION_FETCH_SUCCESS", application: body });

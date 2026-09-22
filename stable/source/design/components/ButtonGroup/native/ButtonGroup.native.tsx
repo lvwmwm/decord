@@ -1,16 +1,16 @@
-// Module ID: 5433
-// Function ID: 5434
+// Module ID: 5514
+// Function ID: 5515
 // Name: ButtonGroup
-// Dependencies: [19, 21, 4560, 4973, 2]
+// Dependencies: [19, 21, 4636, 5054, 2]
 // Exports: ButtonGroup
 
-// Module 5433 (ButtonGroup)
-import Stack_Stack from "Stack/Stack" /* 4973 */;
+// Module 5514 (ButtonGroup)
+import Stack_Stack from "Stack/Stack" /* 5054 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_3 = createStyles.createStyles({ container: { paddingVertical: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/ButtonGroup/native/ButtonGroup.native.tsx");

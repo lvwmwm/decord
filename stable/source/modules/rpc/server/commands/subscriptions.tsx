@@ -1,10 +1,10 @@
-// Module ID: 14504
-// Function ID: 14505
+// Module ID: 14590
+// Function ID: 14591
 // Name: subscriptions
-// Dependencies: [5, 1074, 9560, 14505, 1242, 14506, 2]
+// Dependencies: [5, 1074, 9684, 14591, 1240, 14592, 2]
 
-// Module 14504 (subscriptions)
-import RPCErrorDefault from "RPCError" /* 9560 */;
+// Module 14590 (subscriptions)
+import RPCErrorDefault from "RPCError" /* 9684 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -51,9 +51,9 @@ export default {
                 if (null == events.events[event]) {
                   const obj4 = { errorCode: constants2.INVALID_EVENT };
                   const _HermesInternal = HermesInternal;
-                  const tmp352 = new v0(9560)(obj4, "Invalid event: " + event);
+                  const tmp352 = new v0(9684)(obj4, "Invalid event: " + event);
                   throw tmp352;
-                } else if (v0(14505)(importDefault.authorization.scopes, tmp66.scope)) {
+                } else if (v0(14591)(importDefault.authorization.scopes, tmp66.scope)) {
                   const obj5 = { event, scope: null, application_id: null, socket_scope: null };
                   if (typeof tmp66.scope === "object") {
                     const _JSON = JSON;
@@ -64,17 +64,17 @@ export default {
                   obj5.scope = scope;
                   obj5.application_id = importDefault.application.id;
                   obj5.socket_scope = importDefault.authorization.scopes.toString();
-                  tmp71(1242).track(constants.RPC_SUBSCRIPTION_REQUESTED, obj5);
+                  tmp71(1240).track(constants.RPC_SUBSCRIPTION_REQUESTED, obj5);
                   if (null != tmp66.validation) {
                     dependencyMap = 1;
                     c3 = 1;
                     const obj7 = { value: obj13.getJoi(), done: false };
                     return obj7;
                   }
-                  const tmp71Result = tmp71(1242);
+                  const tmp71Result = tmp71(1240);
                 } else {
                   const obj8 = { errorCode: constants2.INVALID_PERMISSIONS };
-                  const tmp10 = new tmp71(9560)(obj8, "Not authenticated or invalid scope");
+                  const tmp10 = new tmp71(9684)(obj8, "Not authenticated or invalid scope");
                   throw tmp10;
                 }
                 obj13 = events;
@@ -90,13 +90,13 @@ export default {
               closure_128_1 = value;
               if (null != closure_128_1.validate(closure_129_3, closure_128_0.validation(closure_128_1), { convert: false }).error) {
                 const obj9 = { errorCode: constants2.INVALID_PAYLOAD };
-                const tmp63 = new v0(9560)(obj9, "Invalid subscription parameters provided");
+                const tmp63 = new v0(9684)(obj9, "Invalid subscription parameters provided");
                 throw tmp63;
               }
             }
             const obj10 = { args: closure_129_3, socket: closure_129_1 };
             closure_128_2 = closure_128_0.handler(obj10);
-            initialSubscriptionPayload = tmp2(14506).getInitialSubscriptionPayload(closure_129_1, closure_129_2, closure_129_3);
+            initialSubscriptionPayload = tmp2(14592).getInitialSubscriptionPayload(closure_129_1, closure_129_2, closure_129_3);
             const promise = new Promise((fn) => {
               setImmediate(() => {
                 closure_2_0.addSubscription(v0, closure_2_2, closure_2_3, closure_1_2);

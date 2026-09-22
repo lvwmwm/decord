@@ -1,10 +1,10 @@
-// Module ID: 11404
-// Function ID: 11405
+// Module ID: 11536
+// Function ID: 11537
 // Name: SafetyToolsActionSheetWrapper
-// Dependencies: [19, 1957, 21, 504, 7150, 11405, 2]
+// Dependencies: [19, 1957, 21, 504, 7253, 11537, 2]
 // Exports: default
 
-// Module 11404 (SafetyToolsActionSheetWrapper)
+// Module 11536 (SafetyToolsActionSheetWrapper)
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 

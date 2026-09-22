@@ -1,23 +1,23 @@
-// Module ID: 8431
-// Function ID: 8432
+// Module ID: 8548
+// Function ID: 8549
 // Name: SafetyHubStore
-// Dependencies: [8420, 8421, 8432, 504, 573, 2]
+// Dependencies: [8537, 8538, 8549, 504, 573, 2]
 
-// Module 8431 (SafetyHubStore)
+// Module 8548 (SafetyHubStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SafetyHubModels from "SafetyHubModels" /* 8421 */;
-import _modDef8432 from "module_8432" /* 8432 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8420 */;
+import SafetyHubModels from "SafetyHubModels" /* 8538 */;
+import _modDef8549 from "module_8549" /* 8549 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8537 */;
 import size from "module_2" /* 2 */;
 
 function handleSafetyHubRequestAgeVerificationResetModalAction(arg0) {
   if (arg0 == null) {
     throw new TypeError("Cannot destructure 'undefined' or 'null'.");
   } else {
-    c24 = "";
+    c25 = "";
     error = null;
-    c27 = false;
+    c28 = false;
   }
 }
 function reset() {
@@ -31,8 +31,8 @@ function reset() {
   showExpressiveModalSubtitleAlt = false;
   manualReviewFallbackEnabled = false;
   NONE = AgeCheckStatus.NONE;
-  c25 = 0;
-  c29 = null;
+  c26 = 0;
+  c30 = null;
 }
 const AgeCheckStatus = SafetyHubConstants.AgeCheckStatus;
 const AppealIngestionSignal = SafetyHubConstants.AppealIngestionSignal;
@@ -49,17 +49,18 @@ let appealEligibility = [];
 const expressiveModalV2Enabled = false;
 let showExpressiveModalSubtitleAlt = false;
 let manualReviewFallbackEnabled = false;
-let c19 = false;
+const manualReviewDecidedUnderage = false;
+let c20 = false;
 let signal = AppealIngestionSignal.DIDNT_VIOLATE_POLICY;
 let userInput = "";
 const username = "";
-let c24 = "";
-let c25 = 0;
+let c25 = "";
+let c26 = 0;
 let error = null;
-let c27 = false;
+let c28 = false;
 let NONE = AgeCheckStatus.NONE;
-let c29 = null;
-let closure_30 = { [SuspendedAgeCheckStatus.PENDING]: AgeCheckStatus.LOADING, [SuspendedAgeCheckStatus.UNBANNED]: AgeCheckStatus.VERIFIED, [SuspendedAgeCheckStatus.VERIFIED_OTHER_VIOLATIONS_REMAIN]: AgeCheckStatus.VERIFIED_OTHER_VIOLATIONS_REMAIN, [SuspendedAgeCheckStatus.UNDERAGE]: AgeCheckStatus.UNDERAGE, [SuspendedAgeCheckStatus.UNDERAGE_MANUAL_REVIEW]: AgeCheckStatus.UNDERAGE_MANUAL_REVIEW };
+let c30 = null;
+let closure_31 = { [SuspendedAgeCheckStatus.PENDING]: AgeCheckStatus.LOADING, [SuspendedAgeCheckStatus.UNBANNED]: AgeCheckStatus.VERIFIED, [SuspendedAgeCheckStatus.VERIFIED_OTHER_VIOLATIONS_REMAIN]: AgeCheckStatus.VERIFIED_OTHER_VIOLATIONS_REMAIN, [SuspendedAgeCheckStatus.UNDERAGE]: AgeCheckStatus.UNDERAGE, [SuspendedAgeCheckStatus.UNDERAGE_MANUAL_REVIEW]: AgeCheckStatus.UNDERAGE_MANUAL_REVIEW };
 const Store = initializeDefault.Store;
 class SafetyHubStore extends Store {
 }
@@ -106,6 +107,9 @@ prototype["getShowExpressiveModalSubtitleAlt"] = function getShowExpressiveModal
 prototype["getIsManualReviewFallbackEnabled"] = function getIsManualReviewFallbackEnabled() {
   return manualReviewFallbackEnabled;
 };
+prototype["getIsManualReviewDecidedUnderage"] = function getIsManualReviewDecidedUnderage() {
+  return manualReviewDecidedUnderage;
+};
 prototype["getAppealSignal"] = function getAppealSignal() {
   return signal;
 };
@@ -113,7 +117,7 @@ prototype["getFreeTextAppealReason"] = function getFreeTextAppealReason() {
   return userInput;
 };
 prototype["getIsSubmitting"] = function getIsSubmitting() {
-  return c19;
+  return c20;
 };
 prototype["getSubmitError"] = function getSubmitError() {
   return error;
@@ -122,22 +126,22 @@ prototype["getUsername"] = function getUsername() {
   return username;
 };
 prototype["getAgeVerificationWebviewUrl"] = function getAgeVerificationWebviewUrl() {
-  return c24;
+  return c25;
 };
 prototype["getAgeVerificationError"] = function getAgeVerificationError() {
   return error;
 };
 prototype["getIsLoadingAgeVerification"] = function getIsLoadingAgeVerification() {
-  return c27;
+  return c28;
 };
 prototype["getAgeCheckStatus"] = function getAgeCheckStatus() {
   return NONE;
 };
 prototype["getAgeCheckError"] = function getAgeCheckError() {
-  return c29;
+  return c30;
 };
 prototype["getAgeCheckAttempts"] = function getAgeCheckAttempts() {
-  return c25;
+  return c26;
 };
 SafetyHubStore.displayName = "SafetyHubStore";
 const safetyHubStore = new SafetyHubStore(DispatcherDefault, {
@@ -145,8 +149,8 @@ const safetyHubStore = new SafetyHubStore(DispatcherDefault, {
     c9 = true;
   },
   SAFETY_HUB_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
-    ({ classifications, accountStanding, isDsaEligible, isAppealEligible, username, appealEligibility, expressiveModalV2Enabled, showExpressiveModalSubtitleAlt, manualReviewFallbackEnabled } = arg0);
-    closure_6 = _modDef8432(classifications, "id");
+    ({ classifications, accountStanding, isDsaEligible, isAppealEligible, username, appealEligibility, expressiveModalV2Enabled, showExpressiveModalSubtitleAlt, manualReviewFallbackEnabled, manualReviewDecidedUnderage } = arg0);
+    closure_6 = _modDef8549(classifications, "id");
     c9 = false;
     c10 = true;
     error = null;
@@ -193,37 +197,37 @@ const safetyHubStore = new SafetyHubStore(DispatcherDefault, {
     if (arg0 == null) {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
-      c19 = true;
+      c20 = true;
       error = null;
     }
   },
   SAFETY_HUB_REQUEST_REVIEW_SUCCESS: function handleSafetyHubRequestReviewSuccess(arg0) {
-    c19 = false;
+    c20 = false;
     error = null;
     dependencyMap[arg0.classificationId].appeal_status = { status: SafetyHubModels.AppealStatusType.REVIEW_PENDING };
   },
   SAFETY_HUB_REQUEST_REVIEW_FAILURE: function handleSafetyHubRequestReviewFailure(error) {
-    c19 = false;
+    c20 = false;
     error = error.error;
   },
   SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_START: function handleSafetyHubRequestAgeVerificationStart(arg0) {
     if (arg0 == null) {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
-      c24 = "";
+      c25 = "";
       error = null;
-      c27 = true;
+      c28 = true;
     }
   },
   SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: function handleSafetyHubRequestAgeVerificationSuccess(verificationWebviewUrl) {
-    c24 = verificationWebviewUrl.verificationWebviewUrl;
+    c25 = verificationWebviewUrl.verificationWebviewUrl;
     error = null;
-    c27 = false;
+    c28 = false;
   },
   SAFETY_HUB_REQUEST_AUTOMATED_UNDERAGE_APPEAL_FAILURE: function handleSafetyHubRequestAgeVerificationFailure(error) {
-    c24 = "";
+    c25 = "";
     error = error.error;
-    c27 = false;
+    c28 = false;
   },
   SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_OPEN: handleSafetyHubRequestAgeVerificationResetModalAction,
   SAFETY_HUB_AUTOMATED_UNDERAGE_APPEAL_MODAL_CLOSE: handleSafetyHubRequestAgeVerificationResetModalAction,
@@ -257,7 +261,7 @@ const safetyHubStore = new SafetyHubStore(DispatcherDefault, {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
       NONE = AgeCheckStatus.LOADING;
-      c29 = null;
+      c30 = null;
     }
   },
   SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_START: function handleSafetyHubCheckAgeVerificationStart(arg0) {
@@ -265,24 +269,24 @@ const safetyHubStore = new SafetyHubStore(DispatcherDefault, {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
       NONE = AgeCheckStatus.LOADING;
-      c29 = null;
-      c25 = c25 + 1;
+      c30 = null;
+      c26 = c26 + 1;
     }
   },
   SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS: function handleSafetyHubCheckAgeVerificationCheckSuccess(success) {
     if (success.success) {
       let FAILURE = AgeCheckStatus.SUCCESS;
-    } else if (c25 < hasOwnProperty) {
+    } else if (c26 < hasOwnProperty) {
       FAILURE = AgeCheckStatus.LOADING;
     } else {
       FAILURE = AgeCheckStatus.FAILURE;
     }
     NONE = FAILURE;
-    c29 = null;
+    c30 = null;
   },
   SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_SUCCESS_V2: function handleSafetyHubCheckAgeVerificationCheckSuccessV2(arg0) {
-    NONE = closure_30[arg0.status];
-    c29 = null;
+    NONE = closure_31[arg0.status];
+    c30 = null;
   },
   SAFETY_HUB_CHECK_AUTOMATED_UNDERAGE_APPEAL_FAILURE: function handleSafetyHubCheckAgeVerificationFailure(error) {
     NONE = AgeCheckStatus.ERROR;
@@ -293,8 +297,8 @@ const safetyHubStore = new SafetyHubStore(DispatcherDefault, {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
       NONE = AgeCheckStatus.NONE;
-      c25 = 0;
-      c29 = null;
+      c26 = 0;
+      c30 = null;
     }
   },
   LOGOUT: reset,

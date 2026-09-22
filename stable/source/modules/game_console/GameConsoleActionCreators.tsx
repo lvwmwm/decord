@@ -1,21 +1,21 @@
-// Module ID: 9454
-// Function ID: 9455
+// Module ID: 9578
+// Function ID: 9579
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 4583, 4578, 4577, 1074, 1242, 573, 4904, 1114, 9098, 9455, 1272, 1232, 9456, 9457, 9460, 2]
+// Dependencies: [5, 4659, 4654, 4653, 1074, 1240, 573, 4980, 1114, 9221, 9579, 1270, 1230, 9580, 9581, 9584, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 9454 (GameConsoleActionCreators)
+// Module 9578 (GameConsoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 9098 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 9455 */;
-import ConsoleCommands from "ConsoleCommands" /* 9456 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9457 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 9221 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 9579 */;
+import ConsoleCommands from "ConsoleCommands" /* 9580 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 9581 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
-import SessionsStore from "SessionsStore" /* 4578 */;
-import GameConsoleStore from "GameConsoleStore" /* 4577 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
+import SessionsStore from "SessionsStore" /* 4654 */;
+import GameConsoleStore from "GameConsoleStore" /* 4653 */;
 
 require = fn;
 function disconnectRemote() {
@@ -132,7 +132,7 @@ let closure_13 = async function _getConnectNonce(arg0, value) {
             CREATE_NEW_CALL = ConsoleHandoffType.ConsoleHandoffType.CREATE_NEW_CALL;
             tmp21 = require;
           }
-          const HTTP = tmp21(1272).HTTP;
+          const HTTP = tmp21(1270).HTTP;
           const request = { url: constants.CONNECT_REQUEST_CREATE, body: null, rejectWithError: false };
           const obj5 = { analytics_properties: null };
           const obj6 = { handoff_type: CREATE_NEW_CALL };

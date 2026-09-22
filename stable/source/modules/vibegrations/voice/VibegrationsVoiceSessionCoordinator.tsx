@@ -1,24 +1,24 @@
-// Module ID: 14462
-// Function ID: 14463
+// Module ID: 14548
+// Function ID: 14549
 // Name: VibegrationsVoiceSessionCoordinator
-// Dependencies: [14463, 9516, 502, 1908, 4583, 1371, 4579, 1074, 4585, 9560, 13829, 1256, 9095, 14464, 14465, 2]
+// Dependencies: [14549, 9640, 502, 1908, 4659, 1371, 4655, 1074, 4661, 9684, 13915, 1254, 9218, 14550, 14551, 2]
 
-// Module 14462 (VibegrationsVoiceSessionCoordinator)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9095 */;
-import RPCErrorDefault from "RPCError" /* 9560 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13829 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14465 */;
-import FrameVisibilityStore from "FrameVisibilityStore" /* 14463 */;
-import FramesStore from "FramesStore" /* 9516 */;
+// Module 14548 (VibegrationsVoiceSessionCoordinator)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9218 */;
+import RPCErrorDefault from "RPCError" /* 9684 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 13915 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 14551 */;
+import FrameVisibilityStore from "FrameVisibilityStore" /* 14549 */;
+import FramesStore from "FramesStore" /* 9640 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
 import UserStore from "UserStore" /* 1371 */;
-import VoiceStateStore from "VoiceStateStore" /* 4579 */;
+import VoiceStateStore from "VoiceStateStore" /* 4655 */;
 
 let obj2 = fn;
 const RPCErrors = fn(1074).RPCErrors;
-const Constants = fn(4585);
+const Constants = fn(4661);
 ({ Features: closure_11, MediaEngineContextTypes: closure_12 } = Constants);
 let closure_13 = { x: 0, y: 0, z: -1 };
 class VibegrationsVoiceSessionCoordinator {
@@ -147,7 +147,7 @@ prototype["start"] = function start(id) {
         }
         focusSequence = num;
       }
-      const obj = { id: obj2(1256).v4(), socketId: id.id, frameId, applicationId, channelId: connectedRTCConnection.channelId, rtcConnectionId: connectedRTCConnection.getRTCConnectionId(), mediaEngineConnectionId, spatialEnabled: false, focusSequence, backgrounded: !FrameVisibilityStore.isFrameVisible(frameId), pooled: FrameVisibilityStore.isFramePooled(frameId), sources: [], appliedUserIds: null, updateTimer: null };
+      const obj = { id: obj2(1254).v4(), socketId: id.id, frameId, applicationId, channelId: connectedRTCConnection.channelId, rtcConnectionId: connectedRTCConnection.getRTCConnectionId(), mediaEngineConnectionId, spatialEnabled: false, focusSequence, backgrounded: !FrameVisibilityStore.isFrameVisible(frameId), pooled: FrameVisibilityStore.isFramePooled(frameId), sources: [], appliedUserIds: null, updateTimer: null };
       const _Set = Set;
       const set = new Set();
       obj.appliedUserIds = set;
@@ -163,7 +163,7 @@ prototype["start"] = function start(id) {
         const tmp19 = new RPCErrorDefault(obj2, "The voice connection is unavailable");
         throw tmp19;
       }
-      const obj3 = obj2(1256);
+      const obj3 = obj2(1254);
       obj4 = FrameVisibilityStore;
     }
   }
@@ -294,7 +294,7 @@ prototype["update"] = function update(id, id, arg2, arr) {
             if (!set.has(user_id)) {
               obj.add(user_id);
               obj2 = { userId: user_id, position: null };
-              obj2.position = obj2(14464).toListenerRelativePosition(closure_0, user_id.position);
+              obj2.position = obj2(14550).toListenerRelativePosition(closure_0, user_id.position);
               return obj2;
             }
             obj = set;

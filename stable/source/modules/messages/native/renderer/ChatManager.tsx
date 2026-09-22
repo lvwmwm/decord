@@ -1,12 +1,12 @@
-// Module ID: 11543
-// Function ID: 11544
+// Module ID: 11671
+// Function ID: 11672
 // Name: ChatManager
-// Dependencies: [7934, 11544, 1332, 2]
+// Dependencies: [8037, 11672, 1330, 2]
 
-// Module 11543 (ChatManager)
-import _modDef1332 from "module_1332" /* 1332 */;
-import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 11544 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 7934 */;
+// Module 11671 (ChatManager)
+import _modDef1330 from "module_1330" /* 1330 */;
+import getEmbeddedActivityKeyDefault from "getEmbeddedActivityKey" /* 11672 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8037 */;
 import size from "module_2" /* 2 */;
 
 ({ Changeset: c2, RowType: c3 } = RowGeneratorConstants);
@@ -167,7 +167,7 @@ prototype["determineChangeType"] = function determineChangeType(forceRender) {
             hasItem = updateMessageIds.has(message.id);
           }
           if (!hasItem) {
-            INSERT = _modDef1332(tmp, message) ? tmp5.NOOP : tmp5.UPDATE;
+            INSERT = _modDef1330(tmp, message) ? tmp5.NOOP : tmp5.UPDATE;
           }
         }
         INSERT = constants.UPDATE;

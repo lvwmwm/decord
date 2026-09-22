@@ -1,12 +1,12 @@
-// Module ID: 9041
-// Function ID: 9042
+// Module ID: 9164
+// Function ID: 9165
 // Name: InAppReportsChannelPreview
-// Dependencies: [19, 17, 1979, 21, 4560, 576, 504, 4409, 4556, 1114, 5584, 2]
+// Dependencies: [19, 17, 1979, 21, 4636, 576, 504, 4486, 4632, 1114, 5665, 2]
 // Exports: default
 
-// Module 9041 (InAppReportsChannelPreview)
+// Module 9164 (InAppReportsChannelPreview)
 import nativeDefault from "native" /* 576 */;
-import GuildIconDefault from "GuildIcon" /* 5584 */;
+import GuildIconDefault from "GuildIcon" /* 5665 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 1979 */;
 
@@ -14,7 +14,7 @@ const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { alignSelf: "stretch", marginHorizontal: 16, marginBottom: 16 }, borderColor: { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, title: { lineHeight: 16, marginBottom: 8 }, itemContainer: null, guildInfo: null, guildName: null, topic: null };
 let obj3 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
 obj2.itemContainer = { minHeight: 40, borderRadius: nativeDefault.radii.sm, borderWidth: 1, padding: 8 };
@@ -33,27 +33,27 @@ export default function ChannelPreview(stageInstance) {
   if (null != stateFromStores) {
     if (null != stageInstance) {
       const obj2 = { style: tmp.container, children: null };
-      const tmp2Result = tmp2(4409);
+      const tmp2Result = tmp2(4486);
       const obj3 = { style: tmp.title, accessibilityRole: "header", variant: "text-xs/bold", children: null };
       const intl = tmp2(1114).intl;
       obj3.children = intl.string(tmp2(1114).t.InbJ8x);
-      const items1 = [closure_5(tmp2(4556).Text, obj3), ];
+      const items1 = [closure_5(tmp2(4632).Text, obj3), ];
       const obj4 = { style: null, children: null };
       const items2 = [tmp.itemContainer, ];
-      const obj5 = { borderColor: tmp2(4409).hexWithOpacity(tmp.borderColor.color, 0.08) };
+      const obj5 = { borderColor: tmp2(4486).hexWithOpacity(tmp.borderColor.color, 0.08) };
       items2[1] = obj5;
       obj4.style = items2;
       const obj6 = { style: tmp.guildInfo, children: null };
       const obj7 = { guild: stateFromStores, size: null, selected: false };
-      const hexWithOpacityResult = tmp2(4409).hexWithOpacity(tmp.borderColor.color, 0.08);
-      obj7.size = tmp2(5584).GuildIconSizes.XXSMALL;
+      const hexWithOpacityResult = tmp2(4486).hexWithOpacity(tmp.borderColor.color, 0.08);
+      obj7.size = tmp2(5665).GuildIconSizes.XXSMALL;
       const items3 = [closure_5(GuildIconDefault, obj7), ];
       const obj8 = { style: tmp.guildName, variant: "text-sm/medium", color: "text-default", children: stateFromStores.name };
-      items3[1] = closure_5(tmp2(4556).Text, obj8);
+      items3[1] = closure_5(tmp2(4632).Text, obj8);
       obj6.children = items3;
       const items4 = [closure_6(View, obj6), ];
       const obj9 = { style: tmp.topic, variant: "text-md/bold", color: "mobile-text-heading-primary", children: stageInstance.topic };
-      items4[1] = closure_5(tmp2(4556).Text, obj9);
+      items4[1] = closure_5(tmp2(4632).Text, obj9);
       obj4.children = items4;
       items1[1] = closure_6(View, obj4);
       obj2.children = items1;

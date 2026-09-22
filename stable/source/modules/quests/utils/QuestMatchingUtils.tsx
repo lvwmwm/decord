@@ -1,16 +1,16 @@
-// Module ID: 11520
-// Function ID: 11521
+// Module ID: 11652
+// Function ID: 11653
 // Name: QuestMatchingUtils
-// Dependencies: [32, 4788, 11462, 5444, 1074, 1920, 7724, 7699, 7722, 11521, 2]
+// Dependencies: [32, 4864, 11594, 5525, 1074, 1920, 7826, 7801, 7824, 11653, 2]
 // Exports: allPlayOnDesktopQuestsByApplicationId, getEligibleQuestsForApplicationId, getQuestApplicationIdsForRunningGame, getQuestByApplicationId, getQuestsFromActivities
 
-// Module 11520 (QuestMatchingUtils)
-import QuestDataUtils from "QuestDataUtils" /* 7699 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 7724 */;
-import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 11521 */;
+// Module 11652 (QuestMatchingUtils)
+import QuestDataUtils from "QuestDataUtils" /* 7801 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 7826 */;
+import getApplicationIdsForGameDefault from "getApplicationIdsForGame" /* 11653 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ApplicationStore from "ApplicationStore" /* 4788 */;
-import LocalActivityStore from "LocalActivityStore" /* 11462 */;
+import ApplicationStore from "ApplicationStore" /* 4864 */;
+import LocalActivityStore from "LocalActivityStore" /* 11594 */;
 
 require = fn;
 function questMatchesActivity(arg0, id) {
@@ -80,7 +80,7 @@ function questMatchesApplicationId(arg0, quest) {
   const allApplicationIds = QuestTaskUtils.getAllApplicationIds(quest);
   return null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
 }
-const QuestConstants = fn(5444);
+const QuestConstants = fn(5525);
 ({ DISCORD_APPLICATION_ID: metroRequire, PLAY_ACTIVITY_CLOUD_GAMING_QUEST_ID: closure_7, PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID: closure_8 } = QuestConstants);
 const ActivityGamePlatforms = fn(1074).ActivityGamePlatforms;
 let closure_10 = fn(1920).XBOX_ACTIVITY_APPLICATION_ID;
@@ -113,13 +113,13 @@ export const allPlayOnDesktopQuestsByApplicationId = function allPlayOnDesktopQu
     const allApplicationIds = QuestTaskUtils.getAllApplicationIds(quest);
     let hasPlayOnDesktopTaskResult = null != allApplicationIds && allApplicationIds.some((item) => item === closure_0);
     if (hasPlayOnDesktopTaskResult) {
-      hasPlayOnDesktopTaskResult = !tmp(7699).isQuestExpired(quest);
-      const tmpResult = tmp(7699);
+      hasPlayOnDesktopTaskResult = !tmp(7801).isQuestExpired(quest);
+      const tmpResult = tmp(7801);
     }
     if (hasPlayOnDesktopTaskResult) {
       const obj2 = { quest };
-      hasPlayOnDesktopTaskResult = tmp(7724).hasPlayOnDesktopTask(obj2);
-      const tmpResult2 = tmp(7724);
+      hasPlayOnDesktopTaskResult = tmp(7826).hasPlayOnDesktopTask(obj2);
+      const tmpResult2 = tmp(7826);
     }
     return hasPlayOnDesktopTaskResult;
   });
@@ -154,12 +154,12 @@ export const getEligibleQuestsForApplicationId = function getEligibleQuestsForAp
       const activityApplicationId = QuestTaskUtils.getActivityApplicationId(userStatus);
       let canLaunchActivityResult = null != userStatus;
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = tmp(7722).canLaunchActivity(userStatus);
-        const tmpResult = tmp(7722);
+        canLaunchActivityResult = tmp(7824).canLaunchActivity(userStatus);
+        const tmpResult = tmp(7824);
       }
       if (canLaunchActivityResult) {
-        canLaunchActivityResult = !tmp(7699).isQuestExpired(userStatus);
-        const tmpResult2 = tmp(7699);
+        canLaunchActivityResult = !tmp(7801).isQuestExpired(userStatus);
+        const tmpResult2 = tmp(7801);
       }
       if (canLaunchActivityResult) {
         canLaunchActivityResult = activityApplicationId === closure_0;

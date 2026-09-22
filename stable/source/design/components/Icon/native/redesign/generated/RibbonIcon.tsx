@@ -1,13 +1,13 @@
-// Module ID: 8920
-// Function ID: 8921
+// Module ID: 9043
+// Function ID: 9044
 // Name: RibbonIcon
-// Dependencies: [19, 21, 576, 4261, 8921, 2]
+// Dependencies: [19, 21, 576, 4337, 9044, 2]
 // Exports: RibbonIcon
 
-// Module 8920 (RibbonIcon)
+// Module 9043 (RibbonIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod8921 from "module_8921" /* 8921 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod9044 from "module_9044" /* 9044 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const RibbonIcon = function RibbonIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8921, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9044, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

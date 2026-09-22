@@ -1,15 +1,15 @@
-// Module ID: 10933
-// Function ID: 10934
+// Module ID: 11063
+// Function ID: 11064
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1074, 21, 4560, 5138, 5584, 1396, 10934, 5123, 1114, 2]
+// Dependencies: [5, 19, 17, 1074, 21, 4636, 5219, 5665, 1396, 11064, 5204, 1114, 2]
 // Exports: default
 
-// Module 10933 (IconUploader)
+// Module 11063 (IconUploader)
 import util from "util" /* 1114 */;
 import AvatarUtils from "AvatarUtils" /* 1396 */;
-import Pressables from "Pressables" /* 5123 */;
-import GuildIcon from "GuildIcon" /* 5584 */;
-import _modDef10934 from "module_10934" /* 10934 */;
+import Pressables from "Pressables" /* 5204 */;
+import GuildIcon from "GuildIcon" /* 5665 */;
+import _modDef11064 from "module_11064" /* 11064 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 const UPLOAD_MEDIUM_SIZE = fn(1074).UPLOAD_MEDIUM_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_11 = createStyles.createStyles({ uploadIcon: { position: "absolute", right: -7, top: -7 }, avatar: { height: 64, width: 64, borderRadius: 32 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/common/IconUploader.tsx");
@@ -128,7 +128,7 @@ export default function IconUploader(disabled) {
   const items1 = [tmp7, ];
   let tmp16 = null;
   if (!flag) {
-    let obj5 = { style: tmp.uploadIcon, source: _modDef10934 };
+    let obj5 = { style: tmp.uploadIcon, source: _modDef11064 };
     tmp16 = closure_8(closure_6, obj5);
   }
   items1[1] = tmp16;

@@ -1,12 +1,12 @@
-// Module ID: 7709
-// Function ID: 7710
+// Module ID: 7811
+// Function ID: 7812
 // Name: getQuestLogger
-// Dependencies: [1347, 1085, 3, 2]
+// Dependencies: [1345, 1085, 3, 2]
 // Exports: getQuestLogger
 
-// Module 7709 (getQuestLogger)
+// Module 7811 (getQuestLogger)
 import LoggerDefault from "Logger" /* 3 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1347 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1345 */;
 
 const NOOP = fn(1085).NOOP;
 const size = fn(2);

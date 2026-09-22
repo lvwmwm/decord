@@ -1,73 +1,102 @@
 // Module ID: 6823
 // Function ID: 6824
-// Dependencies: [19, 21, 6632, 1636, 6628, 6824]
+// Dependencies: []
+// Exports: containsDuplicates, isComposedGesture, prepareRelations
 
 // Module 6823
-import jsxProd from "jsxProd" /* 21 */;
-import value22 from "value2" /* 6628 */;
-import _mod6824 from "module_6824" /* 6824 */;
-import noop_mod from "module_19" /* 19 */;
 
-let noop = noop_mod;
-({ useCallback: c3, useMemo: closure_4, useRef: hasOwnProperty, memo } = noop);
-let noop = noop_mod;
-const jsx = jsxProd.jsx;
-const __initData = { code: "function pnpm_BottomSheetFooterTsx1(){const{animatedFooterPosition,animatedKeyboardState,KEYBOARD_STATE,bottomInset}=this.__closure;let footerTranslateY=animatedFooterPosition.get();if(animatedKeyboardState.get()!==KEYBOARD_STATE.SHOWN){footerTranslateY=footerTranslateY-bottomInset;}return{transform:[{translateY:Math.max(0,footerTranslateY)}]};}" };
-const memoResult = memo(function BottomSheetFooterComponent(animatedFooterPosition) {
-  animatedFooterPosition = animatedFooterPosition.animatedFooterPosition;
-  let num = animatedFooterPosition.bottomInset;
-  if (num === undefined) {
-    num = 0;
-  }
-  const style = animatedFooterPosition.style;
-  const children = animatedFooterPosition.children;
-  let animatedStyle;
-  const tmp = animatedStyle(null);
-  const bottomSheetInternal = animatedFooterPosition(style[2]).useBottomSheetInternal();
-  const animatedFooterHeight = bottomSheetInternal.animatedFooterHeight;
-  const animatedKeyboardState = bottomSheetInternal.animatedKeyboardState;
-  let obj = animatedFooterPosition(style[2]);
-  const tmp2 = style;
-  const fn = function c() {
-    value = animatedFooterPosition.get();
-    value2 = animatedKeyboardState.get();
-    let diff = value;
-    if (value2 !== value22.KEYBOARD_STATE.SHOWN) {
-      diff = value - num;
+export const isComposedGesture = function isComposedGesture(gesture) {
+  return "handlerTags" in gesture;
+};
+export const prepareRelations = function prepareRelations(config, handlerTag) {
+  const simultaneousWith1 = config.simultaneousWith;
+  closure_0 = handlerTag;
+  if (simultaneousWith1) {
+    const _Array = Array;
+    if (Array.isArray(simultaneousWith1)) {
+      const item = simultaneousWith1.forEach(function processSingleGesture(externalSimultaneousHandlers) {
+        if ("handlerTags" in externalSimultaneousHandlers) {
+          let prop = externalSimultaneousHandlers.externalSimultaneousHandlers;
+        } else {
+          prop = externalSimultaneousHandlers.gestureRelations.simultaneousHandlers;
+        }
+        if (!prop.includes(closure_0)) {
+          prop.push(closure_0);
+        }
+      });
+    } else {
+      if ("handlerTags" in simultaneousWith1) {
+        let prop = simultaneousWith1.externalSimultaneousHandlers;
+      } else {
+        prop = simultaneousWith1.gestureRelations.simultaneousHandlers;
+      }
+      if (!prop.includes(handlerTag)) {
+        prop.push(handlerTag);
+      }
     }
-    const obj = { transform: null };
-    const items = [{ translateY: Math.max(0, diff) }];
-    obj.transform = items;
-    return obj;
-  };
-  const obj2 = animatedFooterPosition(style[3]);
-  fn.__closure = { animatedFooterPosition, animatedKeyboardState, KEYBOARD_STATE: animatedFooterPosition(style[4]).KEYBOARD_STATE, bottomInset: num };
-  fn.__workletHash = 5322275157644;
-  fn.__initData = __initData;
-  let items = [num, animatedKeyboardState, animatedFooterPosition];
-  animatedStyle = obj2.useAnimatedStyle(fn, items);
-  const items1 = [style, animatedStyle];
-  const items2 = [animatedFooterHeight];
-  const obj3 = { animatedFooterPosition, animatedKeyboardState, KEYBOARD_STATE: animatedFooterPosition(style[4]).KEYBOARD_STATE, bottomInset: num };
-  const items3 = [animatedFooterHeight];
-  const tmp5 = animatedKeyboardState(() => {
-    const items = [_mod6824.styles.container, style, animatedStyle];
-    return items;
-  }, items1);
-  const tmp6 = animatedFooterHeight((nativeEvent) => {
-    const result = animatedFooterHeight.set(nativeEvent.nativeEvent.layout.height);
-  }, items2);
-  const tmp7 = animatedFooterHeight((height) => {
-    const result = animatedFooterHeight.set(height.height);
-  }, items3);
-  const boundingClientRect = animatedFooterPosition(style[2]).useBoundingClientRect(tmp, tmp7);
-  let tmp9 = null;
-  if (null !== children) {
-    const obj5 = { ref: tmp, onLayout: tmp6, style: tmp5, children };
-    tmp9 = jsx(num(tmp2[3]).View, { ref: tmp, onLayout: tmp6, style: tmp5, children });
   }
-  return tmp9;
-});
-memoResult.displayName = "BottomSheetFooter";
-
-export const BottomSheetFooter = memoResult;
+  const simultaneousWith = config.simultaneousWith;
+  if (simultaneousWith) {
+    const _Array2 = Array;
+    if (Array.isArray(simultaneousWith)) {
+      let flatMapResult = simultaneousWith.flatMap((handlerTags) => {
+        if ("handlerTags" in handlerTags) {
+          handlerTags = handlerTags.handlerTags;
+        } else {
+          handlerTags = [handlerTags.handlerTag];
+        }
+        return handlerTags;
+      });
+    } else if ("handlerTags" in simultaneousWith) {
+      flatMapResult = simultaneousWith.handlerTags;
+    } else {
+      flatMapResult = [simultaneousWith.handlerTag];
+    }
+  } else {
+    const obj = { simultaneousHandlers: [], waitFor: null, blocksHandlers: null };
+    const requireToFail = config.requireToFail;
+    if (requireToFail) {
+      const _Array3 = Array;
+      if (Array.isArray(requireToFail)) {
+        let flatMapResult1 = requireToFail.flatMap((handlerTags) => {
+          if ("handlerTags" in handlerTags) {
+            handlerTags = handlerTags.handlerTags;
+          } else {
+            handlerTags = [handlerTags.handlerTag];
+          }
+          return handlerTags;
+        });
+      } else if ("handlerTags" in requireToFail) {
+        flatMapResult1 = requireToFail.handlerTags;
+      } else {
+        flatMapResult1 = [requireToFail.handlerTag];
+      }
+    } else {
+      obj.waitFor = [];
+      const block = config.block;
+      if (block) {
+        const _Array4 = Array;
+        if (Array.isArray(block)) {
+          let flatMapResult2 = block.flatMap((handlerTags) => {
+            if ("handlerTags" in handlerTags) {
+              handlerTags = handlerTags.handlerTags;
+            } else {
+              handlerTags = [handlerTags.handlerTag];
+            }
+            return handlerTags;
+          });
+        } else if ("handlerTags" in block) {
+          flatMapResult2 = block.handlerTags;
+        } else {
+          flatMapResult2 = [block.handlerTag];
+        }
+      } else {
+        obj.blocksHandlers = [];
+        return obj;
+      }
+    }
+  }
+};
+export const containsDuplicates = function containsDuplicates(flatMapResult) {
+  return new Set(flatMapResult).size !== flatMapResult.length;
+};

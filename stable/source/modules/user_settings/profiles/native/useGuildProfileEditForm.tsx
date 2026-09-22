@@ -1,22 +1,22 @@
-// Module ID: 14649
-// Function ID: 14650
+// Module ID: 14734
+// Function ID: 14735
 // Name: useGuildProfileEditForm
-// Dependencies: [109, 5, 19, 8161, 7621, 1979, 5438, 1371, 1074, 504, 11876, 4447, 573, 9216, 14650, 11091, 6988, 14608, 8168, 4461, 1114, 2]
+// Dependencies: [109, 5, 19, 8277, 7723, 1979, 5519, 1371, 1074, 504, 12005, 1952, 573, 9339, 14735, 11224, 7091, 14693, 8284, 4537, 1114, 2]
 // Exports: default
 
-// Module 14649 (useGuildProfileEditForm)
+// Module 14734 (useGuildProfileEditForm)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8161 */;
-import UserProfileStore from "UserProfileStore" /* 7621 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8277 */;
+import UserProfileStore from "UserProfileStore" /* 7723 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import SortedGuildStore from "SortedGuildStore" /* 5438 */;
+import SortedGuildStore from "SortedGuildStore" /* 5519 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = fn;
 let closure_3 = ["bannerOriginalMd5"];
-const IGNORE_GUILD_IDS = fn(8161).IGNORE_GUILD_IDS;
+const IGNORE_GUILD_IDS = fn(8277).IGNORE_GUILD_IDS;
 const FormStates = fn(1074).FormStates;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/profiles/native/useGuildProfileEditForm.tsx");
@@ -68,7 +68,7 @@ export default function useGuildProfileEditForm() {
   const merged1 = Object.assign(stateFromStoresObject.errors);
   const memo = pendingThemeColors.useMemo(() => {
     const delayedCall = new stateFromStores(pendingNickname[11]).DelayedCall(200, () => {
-      pendingAvatar(573).wait(stateFromStores(9216).resetAllPending);
+      pendingAvatar(573).wait(stateFromStores(9339).resetAllPending);
     });
     return delayedCall;
   }, []);

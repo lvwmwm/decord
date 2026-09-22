@@ -1,12 +1,12 @@
-// Module ID: 14812
-// Function ID: 14813
+// Module ID: 14898
+// Function ID: 14899
 // Name: IgnoredUserRow
-// Dependencies: [19, 1371, 21, 9048, 7162, 5605, 1178, 1114, 8180, 4975, 504, 2]
+// Dependencies: [19, 1371, 21, 9171, 7265, 5686, 1176, 1114, 8296, 5056, 504, 2]
 // Exports: default
 
-// Module 14812 (IgnoredUserRow)
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8180 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9048 */;
+// Module 14898 (IgnoredUserRow)
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9171 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -14,8 +14,8 @@ const require = fn;
 function IgnoredUserRow(userRecord) {
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7162)().analyticsLocations;
-  const obj = { icon: jsx(userRecord(1178).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1178).AvatarSizes.REFRESH_MEDIUM_32 }), label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
+  analyticsLocations = analyticsLocations(7265)().analyticsLocations;
+  const obj = { icon: jsx(userRecord(1176).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1176).AvatarSizes.REFRESH_MEDIUM_32 }), label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null };
   let tmp4 = null != userRecord;
   if (tmp4) {
     let username = userRecord.globalName;
@@ -57,8 +57,8 @@ function IgnoredUserRow(userRecord) {
   obj4.onPress = function onPress() {
     RelationshipActionCreatorsDefault.unignoreUser(userRecord.id, "ignored-users-list-mobile");
   };
-  obj.trailing = jsx(userRecord(4975).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
-  return jsx(userRecord(5605).TableRow, { icon: jsx(userRecord(1178).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1178).AvatarSizes.REFRESH_MEDIUM_32 }), label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null });
+  obj.trailing = jsx(userRecord(5056).Button, { size: "sm", variant: "secondary", text: null, onPress: null });
+  return jsx(userRecord(5686).TableRow, { icon: jsx(userRecord(1176).Avatar, { source: userRecord.getAvatarSource(undefined), size: userRecord(1176).AvatarSizes.REFRESH_MEDIUM_32 }), label: null, subLabel: null, labelLineClamp: 1, subLabelLineClamp: 1, accessibilityRole: "button", accessibilityActions: null, onAccessibilityAction: null, onPress: null, trailing: null });
 }
 const jsx = fn(21).jsx;
 const size = fn(2);

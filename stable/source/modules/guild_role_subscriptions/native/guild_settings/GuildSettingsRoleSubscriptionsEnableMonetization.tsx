@@ -1,12 +1,12 @@
-// Module ID: 17721
-// Function ID: 17722
+// Module ID: 17835
+// Function ID: 17836
 // Name: GuildSettingsRoleSubscriptionsEnableMonetization
-// Dependencies: [19, 1979, 21, 504, 17683, 16537, 1114, 2]
+// Dependencies: [19, 1979, 21, 504, 17797, 16637, 1114, 2]
 // Exports: default
 
-// Module 17721 (GuildSettingsRoleSubscriptionsEnableMonetization)
-import UnavailableNoticeDefault from "UnavailableNotice" /* 16537 */;
-import PlaceholderDefault from "Placeholder" /* 17683 */;
+// Module 17835 (GuildSettingsRoleSubscriptionsEnableMonetization)
+import UnavailableNoticeDefault from "UnavailableNotice" /* 16637 */;
+import PlaceholderDefault from "Placeholder" /* 17797 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 1979 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 7301
-// Function ID: 7302
+// Module ID: 7404
+// Function ID: 7405
 // Name: SensitiveMediaGoreRedactionSettingsUtils
-// Dependencies: [19, 1371, 1074, 1187, 5423, 7299, 1935, 2]
+// Dependencies: [19, 1371, 1074, 1185, 5504, 7402, 1935, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 7301 (SensitiveMediaGoreRedactionSettingsUtils)
-import preloaded_user_settings from "preloaded_user_settings" /* 1187 */;
+// Module 7404 (SensitiveMediaGoreRedactionSettingsUtils)
+import preloaded_user_settings from "preloaded_user_settings" /* 1185 */;
 import UserSettings from "UserSettings" /* 1935 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7299 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 7402 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -37,10 +37,10 @@ function resolveGoreSettingWithDefaults(isFriend) {
     }
     if (isDm) {
       if (!flag) {
-        let BLUR2 = tmp4(1187).ExplicitContentRedaction.BLOCK;
+        let BLUR2 = tmp4(1185).ExplicitContentRedaction.BLOCK;
       }
     }
-    ExplicitContentRedaction = tmp4(1187).ExplicitContentRedaction;
+    ExplicitContentRedaction = tmp4(1185).ExplicitContentRedaction;
     BLUR2 = ExplicitContentRedaction.BLUR;
   } else {
     let nsfwAllowed;
@@ -57,10 +57,10 @@ function resolveGoreSettingWithDefaults(isFriend) {
         flag6 = false;
       }
       if (!flag5) {
-        const ExplicitContentRedaction3 = tmp4(1187).ExplicitContentRedaction;
+        const ExplicitContentRedaction3 = tmp4(1185).ExplicitContentRedaction;
         let BLUR = flag5 ? ExplicitContentRedaction3.BLOCK : ExplicitContentRedaction3.BLUR;
       }
-      BLUR = tmp4(1187).ExplicitContentRedaction.BLUR;
+      BLUR = tmp4(1185).ExplicitContentRedaction.BLUR;
     } else {
       let flag3 = isDm;
       if (isDm === undefined) {
@@ -72,11 +72,11 @@ function resolveGoreSettingWithDefaults(isFriend) {
       }
       if (flag3) {
         if (flag4) {
-          let SHOW = tmp4(1187).ExplicitContentRedaction.SHOW;
+          let SHOW = tmp4(1185).ExplicitContentRedaction.SHOW;
         }
         return SHOW;
       }
-      const ExplicitContentRedaction2 = tmp4(1187).ExplicitContentRedaction;
+      const ExplicitContentRedaction2 = tmp4(1185).ExplicitContentRedaction;
       SHOW = flag3 ? ExplicitContentRedaction2.BLOCK : ExplicitContentRedaction2.SHOW;
     }
   }

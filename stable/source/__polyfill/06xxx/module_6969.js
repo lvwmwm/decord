@@ -1,9 +1,16 @@
 // Module ID: 6969
 // Function ID: 6970
-// Dependencies: [1122]
+// Dependencies: [6970, 6971]
 
 // Module 6969
-import registerAsset from "module_1122" /* 1122 */;
+import _mod6970 from "module_6970" /* 6970 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "14a4fdad987e2761599ba055042fdafa", name: "EyeSlashIcon", type: "png" });
+export default function toPropertyKey(arg0) {
+  const tmp = _mod6970(arg0, "string");
+  let text = tmp;
+  if ("symbol" != obj.default(tmp)) {
+    text = `${tmp}`;
+  }
+  return text;
+};

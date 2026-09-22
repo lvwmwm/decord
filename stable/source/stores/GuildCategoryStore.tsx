@@ -1,12 +1,12 @@
-// Module ID: 7111
-// Function ID: 7112
+// Module ID: 7214
+// Function ID: 7215
 // Name: GuildCategoryStore
-// Dependencies: [1960, 502, 1957, 2012, 1979, 1074, 7112, 504, 573, 2]
+// Dependencies: [1960, 502, 1957, 2012, 1979, 1074, 7215, 504, 573, 2]
 
-// Module 7111 (GuildCategoryStore)
+// Module 7214 (GuildCategoryStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7112 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7215 */;
 import FavoriteStore from "FavoriteStore" /* 1960 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;

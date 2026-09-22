@@ -1,9 +1,16 @@
 // Module ID: 14109
 // Function ID: 14110
-// Dependencies: [1122]
+// Dependencies: [14102]
 
 // Module 14109
-import registerAsset from "module_1122" /* 1122 */;
+import _mod14102 from "module_14102" /* 14102 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "12a800ef241b26f28e2697e2835bd1ab", name: "StatusStreaming", type: "png" });
+export default (arg0, arg1) => {
+  const tmp = _mod14102(arg0, arg1);
+  let version = null;
+  if (tmp) {
+    version = tmp.version;
+  }
+  return version;
+};

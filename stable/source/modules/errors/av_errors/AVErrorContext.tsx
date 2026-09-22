@@ -1,16 +1,16 @@
-// Module ID: 17837
-// Function ID: 17838
+// Module ID: 17950
+// Function ID: 17951
 // Name: AVErrorContext
-// Dependencies: [1908, 4583, 2011, 4599, 4615, 4612, 2]
+// Dependencies: [1908, 4659, 2011, 4675, 4691, 4688, 2]
 // Exports: getCommonErrorContext, getStreamErrorContext, getVoiceChannelErrorContext
 
-// Module 17837 (AVErrorContext)
-import StreamKeyUtils from "StreamKeyUtils" /* 4612 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4615 */;
+// Module 17950 (AVErrorContext)
+import StreamKeyUtils from "StreamKeyUtils" /* 4688 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4691 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4599 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4675 */;
 
 require = fn;
 const size = fn(2);

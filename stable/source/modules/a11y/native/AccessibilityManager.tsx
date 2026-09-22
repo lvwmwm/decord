@@ -1,24 +1,24 @@
-// Module ID: 14437
-// Function ID: 14438
+// Module ID: 14523
+// Function ID: 14524
 // Name: AccessibilityManager
-// Dependencies: [5, 17, 4552, 1074, 1186, 14438, 573, 1242, 14441, 11359, 14439, 4408, 4411, 2]
+// Dependencies: [5, 17, 4628, 1074, 1184, 14524, 573, 1240, 14527, 11491, 14525, 4485, 4488, 2]
 
-// Module 14437 (AccessibilityManager)
+// Module 14523 (AccessibilityManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 4408 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11359 */;
-import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14438 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14439 */;
-import updateSaturation from "updateSaturation" /* 14441 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4485 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11491 */;
+import AccessibilitySystemFeaturesDefault from "AccessibilitySystemFeatures" /* 14524 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 14525 */;
+import updateSaturation from "updateSaturation" /* 14527 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ AccessibilityInfo: closure_4, Appearance: hasOwnProperty } = get_ActivityIndicator);
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const SystemTheme = fn(1186).SystemTheme;
+const SystemTheme = fn(1184).SystemTheme;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/a11y/native/AccessibilityManager.tsx");
 

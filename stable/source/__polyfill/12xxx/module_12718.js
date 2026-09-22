@@ -1,9 +1,9 @@
 // Module ID: 12718
 // Function ID: 12719
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 12718
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 161, height: 105, scales: [1, 2, 3], hash: "15df55e98006c5e50dacb86d466b47d8", name: "invite-wumpus-ticket", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "de8b19411fa51d311a8da8e41361a538", name: "BoostGemSlashIcon", type: "png" });

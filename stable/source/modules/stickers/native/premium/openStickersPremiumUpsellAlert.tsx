@@ -1,13 +1,13 @@
-// Module ID: 10412
-// Function ID: 10413
+// Module ID: 10536
+// Function ID: 10537
 // Name: openStickersPremiumUpsellAlert
-// Dependencies: [5, 19, 1074, 21, 1242, 7257, 4884, 4905, 10413, 1896, 2]
+// Dependencies: [5, 19, 1074, 21, 1240, 7360, 4960, 4981, 10537, 1896, 2]
 // Exports: default
 
-// Module 10412 (openStickersPremiumUpsellAlert)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 4884 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7257 */;
+// Module 10536 (openStickersPremiumUpsellAlert)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 4960 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7360 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -71,7 +71,8 @@ let closure_7 = async function _openStickersPremiumUpsellAlert(_location) {
                         return closure_3_6(closure_0, obj);
                       };
                     });
-                  }
+                  },
+            isDismissable: true
           };
           closure_130_1(closure_130_2[7]).openLazy(obj8);
           c4 = 3;

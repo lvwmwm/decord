@@ -1,20 +1,20 @@
-// Module ID: 16089
-// Function ID: 16090
+// Module ID: 16183
+// Function ID: 16184
 // Name: HappeningNowCardVoice
-// Dependencies: [19, 17, 7659, 1371, 4579, 15297, 1074, 21, 4560, 1242, 9542, 1896, 16072, 15298, 5101, 13043, 16082, 8074, 504, 12, 1369, 4712, 1114, 2]
+// Dependencies: [19, 17, 7761, 1371, 4655, 15380, 1074, 21, 4636, 1240, 9666, 1896, 16166, 15381, 5182, 13173, 16176, 8178, 504, 12, 1369, 4788, 1114, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 16089 (HappeningNowCardVoice)
+// Module 16183 (HappeningNowCardVoice)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4712 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
 import noop from "module_19" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7659 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7761 */;
 import UserStore from "UserStore" /* 1371 */;
-import VoiceStateStore from "VoiceStateStore" /* 4579 */;
+import VoiceStateStore from "VoiceStateStore" /* 4655 */;
 
 const require = globalThis.__r;
 
@@ -38,11 +38,11 @@ function formatVoiceActivityTitle(stateFromStoresArray, guildId) {
   }
 }
 const View = fn(17).View;
-let closure_8 = fn(15297).HappeningNowCardTrackingType;
+let closure_8 = fn(15380).HappeningNowCardTrackingType;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_12 = createStyles.createStyles({ content: { flexShrink: 1 }, avatars: { marginRight: 12 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardVoice.tsx");

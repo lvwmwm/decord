@@ -1,9 +1,9 @@
 // Module ID: 14754
 // Function ID: 14755
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 14754
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "360b2c07246727484bba8070a9bd17d9", name: "zh-CN.messages.360b2c07246727484bba8070a9bd17d9.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/mfa/native/images", width: 762, height: 525, scales: [1], hash: "685e4a9eb5133a148de7ce27d400a483", name: "img_register_header", type: "png" });

@@ -1,67 +1,28 @@
 // Module ID: 8504
 // Function ID: 8505
-// Dependencies: [41, 42, 93, 95, 98, 8473, 8496]
+// Dependencies: [521, 518, 543, 616]
 
 // Module 8504
-import _modDef8496 from "module_8496" /* 8496 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import _mod521 from "module_521" /* 521 */;
 
-const FeDisplacementMap = arg1;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
+
+export default function isIterateeCall(arg0, num, arg2) {
+  if (_mod521(arg2)) {
+    if (typeof num === "number") {
+      let tmp5 = tmp(518)(arg2) && tmp(543)(num, arg2.length);
+      const tmp4 = tmp(518)(arg2) && tmp(543)(num, arg2.length);
     } else {
-      callResult = call(constructResult);
+      tmp5 = typeof num === "string";
+      if (typeof num === "string") {
+        tmp5 = num in arg2;
+      }
     }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class FeDisplacementMap {
-  constructor() {
-    self = this;
-    tmp = c2(this, FeDisplacementMap);
-    tmp2 = closure_4;
-    obj = closure_4(FeDisplacementMap);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
+    let tmp6 = tmp5;
+    if (tmp6) {
+      tmp6 = tmp(616)(arg2[num], arg0);
     }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FeDisplacementMap, _modDef8496);
-const entry = {
-  key: "render",
-  value: function render() {
-    const result = FeDisplacementMap(8473).warnUnimplementedFilter();
-    return null;
+    return tmp6;
+  } else {
+    return false;
   }
 };
-const items = [entry];
-const importDefaultResultResult = _createClass(FeDisplacementMap, items);
-importDefaultResultResult.displayName = "FeDisplacementMap";
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = {};
-
-export default importDefaultResultResult;

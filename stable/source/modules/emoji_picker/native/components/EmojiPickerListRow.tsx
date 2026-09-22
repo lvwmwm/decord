@@ -1,19 +1,19 @@
-// Module ID: 10315
-// Function ID: 10316
+// Module ID: 10439
+// Function ID: 10440
 // Name: EmojiPickerListRow
-// Dependencies: [19, 17, 1183, 10295, 1219, 21, 4560, 576, 1115, 672, 1396, 5095, 5123, 5587, 4411, 7131, 7132, 1178, 10316, 2]
+// Dependencies: [19, 17, 1181, 10419, 1217, 21, 4636, 576, 1363, 672, 1396, 5176, 5204, 5668, 4488, 7234, 7235, 1176, 10440, 2]
 
-// Module 10315 (EmojiPickerListRow)
+// Module 10439 (EmojiPickerListRow)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import PlatformUtils2 from "PlatformUtils" /* 1115 */;
+import PlatformUtils2 from "PlatformUtils" /* 1363 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import LockIcon from "LockIcon" /* 5095 */;
-import Pressables from "Pressables" /* 5123 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 10316 */;
+import LockIcon from "LockIcon" /* 5176 */;
+import Pressables from "Pressables" /* 5204 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import EmojiPickerListRowViewDefault from "EmojiPickerListRowView" /* 10440 */;
 import noop from "module_19" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
 
 require = fn;
 function EmojiItemLockedOverlay() {
@@ -110,14 +110,14 @@ class EmojiItem {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
-const EmojiPickerListConstants = fn(10295);
+const EmojiPickerListConstants = fn(10419);
 const IMAGE_SIZE = EmojiPickerListConstants.IMAGE_SIZE;
-const PADDING_VERTICAL = fn(1219).PADDING_VERTICAL;
+const PADDING_VERTICAL = fn(1217).PADDING_VERTICAL;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { image: { height: IMAGE_SIZE, width: IMAGE_SIZE }, surrogatesFrame: { height: IMAGE_SIZE, width: IMAGE_SIZE, alignItems: "center", justifyContent: "center" }, disabledOverlay: { borderRadius: nativeDefault.radii.sm, overflow: "hidden" }, surrogates: null, row: null, lockContainer: null, lock: null };
-const PlatformUtils = fn(1115);
+const PlatformUtils = fn(1363);
 let num = 28;
 if (PlatformUtils.isAndroid()) {
   num = 26;

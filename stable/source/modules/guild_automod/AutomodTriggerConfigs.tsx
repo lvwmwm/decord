@@ -1,16 +1,16 @@
-// Module ID: 17546
-// Function ID: 17547
+// Module ID: 17658
+// Function ID: 17659
 // Name: AutomodTriggerConfigs
-// Dependencies: [19, 11867, 1114, 16836, 10105, 2]
+// Dependencies: [19, 11996, 1114, 16948, 10228, 2]
 // Exports: checkTriggerTypeForFlag, getAvailableActionTypes, getDefaultTriggerMetadataForTriggerType, useAvailableTriggerTypes, validateRuleByTriggerConfigOrThrow
 
-// Module 17546 (AutomodTriggerConfigs)
+// Module 17658 (AutomodTriggerConfigs)
 import util from "util" /* 1114 */;
-import guild_automod_ExperimentUtils from "guild_automod/ExperimentUtils" /* 10105 */;
+import guild_automod_ExperimentUtils from "guild_automod/ExperimentUtils" /* 10228 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const Constants = fn(11867);
+const Constants = fn(11996);
 ({ AutomodActionType, AutomodEventType, AutomodTriggerType } = Constants);
 const mentionTotalLimit = Constants.MENTION_SPAM_LIMIT_DEFAULT;
 let obj = { NEW: "new", RECOMMENDED: "recommended", BETA: "beta", ALPHA: "alpha" };
@@ -163,8 +163,16 @@ obj9.flags = new Set(items11);
 const set19 = new Set(items11);
 obj9.defaultActionTypes = new Set();
 obj2[AutomodTriggerType.SERVER_POLICY] = obj9;
-const obj10 = { MEMBERS: "members", CONTENT: "content" };
-const obj11 = { [obj10.MEMBERS]: items12, [obj10.CONTENT]: items13 };
+const obj10 = { type: AutomodTriggerType.APPLICATION, perGuildMaxCount: 0, availableActionTypes: null, flags: null, defaultActionTypes: null };
+const set20 = new Set();
+obj10.availableActionTypes = new Set();
+const set21 = new Set();
+obj10.flags = new Set();
+const set22 = new Set();
+obj10.defaultActionTypes = new Set();
+obj2[AutomodTriggerType.APPLICATION] = obj10;
+const obj11 = { MEMBERS: "members", CONTENT: "content" };
+const obj12 = { [obj11.MEMBERS]: items12, [obj11.CONTENT]: items13 };
 items12 = [obj2[AutomodTriggerType.USER_PROFILE]];
 items13 = [obj2[AutomodTriggerType.SERVER_POLICY], obj2[AutomodTriggerType.MENTION_SPAM], obj2[AutomodTriggerType.ML_SPAM], obj2[AutomodTriggerType.DEFAULT_KEYWORD_LIST], obj2[AutomodTriggerType.KEYWORD]];
 const size = fn(2);
@@ -172,8 +180,8 @@ const result = size.fileFinishedImporting("modules/guild_automod/AutomodTriggerC
 
 export const AutomodTriggerConfigFlags = obj;
 export const triggerConfigs = obj2;
-export const AutomodTriggerCategory = obj10;
-export const AUTOMOD_RULE_CONFIGS_BY_CATEGORY = obj11;
+export const AutomodTriggerCategory = obj11;
+export const AUTOMOD_RULE_CONFIGS_BY_CATEGORY = obj12;
 export const checkTriggerTypeForFlag = function checkTriggerTypeForFlag(arg0, arg1) {
   const flags = obj2[arg0].flags;
   return flags.has(arg1);
@@ -210,12 +218,12 @@ export const validateRuleByTriggerConfigOrThrow = function validateRuleByTrigger
   }
 };
 export const useAvailableTriggerTypes = function useAvailableTriggerTypes(arg0) {
-  isUserProfileRuleEnabled = isUserProfileRuleEnabled(16836).useIsUserProfileRuleEnabled(arg0);
+  isUserProfileRuleEnabled = isUserProfileRuleEnabled(16948).useIsUserProfileRuleEnabled(arg0);
   const items = [isUserProfileRuleEnabled];
   return noop.useMemo(() => {
-    const keys = Object.keys(obj11);
+    const keys = Object.keys(obj12);
     return keys.reduce((acc, item) => {
-      const found = obj11[item].filter((type) => {
+      const found = obj12[item].filter((type) => {
         let tmp2 = type.type !== constants.SERVER_POLICY;
         if (tmp2) {
           let tmp3 = type.type === tmp.USER_PROFILE;

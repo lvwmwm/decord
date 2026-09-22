@@ -1,17 +1,17 @@
-// Module ID: 12027
-// Function ID: 12028
+// Module ID: 12156
+// Function ID: 12157
 // Name: ForumPostMessageContent
-// Dependencies: [19, 21, 4560, 12028, 4556, 2]
+// Dependencies: [19, 21, 4636, 12157, 4632, 2]
 // Exports: default
 
-// Module 12027 (ForumPostMessageContent)
-import Text_Text from "Text/Text" /* 4556 */;
-import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12028 */;
+// Module 12156 (ForumPostMessageContent)
+import Text_Text from "Text/Text" /* 4632 */;
+import useNativeForumPostContentDefault from "useNativeForumPostContent" /* 12157 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_4 = createStyles.createStyles({ text: { alignSelf: "flex-start" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/forums/native/posts/ForumPostMessageContent.tsx");

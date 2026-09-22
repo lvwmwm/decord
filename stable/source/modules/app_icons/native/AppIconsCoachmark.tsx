@@ -1,16 +1,16 @@
-// Module ID: 16928
-// Function ID: 16929
+// Module ID: 17040
+// Function ID: 17041
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1371, 1954, 21, 4560, 576, 504, 4218, 4527, 7150, 16929, 1178, 9969, 4556, 1114, 4975, 13367, 2]
+// Dependencies: [19, 17, 1371, 1954, 21, 4636, 576, 504, 4294, 4603, 7253, 17041, 1176, 10093, 4632, 1114, 5056, 13540, 2]
 // Exports: default
 
-// Module 16928 (AppIconsCoachmark)
+// Module 17040 (AppIconsCoachmark)
 import nativeDefault from "native" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4218 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import _modDef9969 from "module_9969" /* 9969 */;
-import AppIconUtils from "AppIconUtils" /* 13367 */;
-import _modDef16929 from "module_16929" /* 16929 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4294 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import _modDef10093 from "module_10093" /* 10093 */;
+import AppIconUtils from "AppIconUtils" /* 13540 */;
+import _modDef17041 from "module_17041" /* 17041 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const ContentDismissActionType = fn(1954).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { padding: nativeDefault.space.PX_16, paddingBottom: 0 }, info: { alignItems: "center" }, image: { alignSelf: "center", marginBottom: 20 }, nitroWheel: { marginRight: 8 }, titleContainer: { display: "flex", flexDirection: "row", alignItems: "center" }, subtitle: { marginTop: 8, textAlign: "center" }, footer: null };
 let obj3 = { padding: nativeDefault.space.PX_16, paddingBottom: 0 };
 obj2.footer = { marginTop: 20, gap: nativeDefault.space.PX_8 };
@@ -50,14 +50,14 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   };
   const obj4 = { style: tmp.info, children: null };
   const isPremiumResult = PremiumUtilsDefault.isPremium(stateFromStores);
-  const items2 = [closure_8(closure_4, { source: _modDef16929, style: tmp.image }), , ];
+  const items2 = [closure_8(closure_4, { source: _modDef17041, style: tmp.image }), , ];
   const obj6 = { style: tmp.titleContainer, children: null };
-  const obj5 = { source: _modDef16929, style: tmp.image };
-  const items3 = [closure_8(markAsDismissed(1178).Icon, { source: _modDef9969, size: markAsDismissed(1178).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
+  const obj5 = { source: _modDef17041, style: tmp.image };
+  const items3 = [closure_8(markAsDismissed(1176).Icon, { source: _modDef10093, size: markAsDismissed(1176).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true }), ];
   const obj8 = { variant: "heading-xl/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = markAsDismissed(1114).intl;
   obj8.children = intl.string(markAsDismissed(1114).t.EfA4Cq);
-  items3[1] = closure_8(markAsDismissed(4556).Text, obj8);
+  items3[1] = closure_8(markAsDismissed(4632).Text, obj8);
   obj6.children = items3;
   items2[1] = closure_9(closure_5, obj6);
   const obj9 = { variant: "text-md/normal", color: "text-default", style: tmp.subtitle, children: null };
@@ -70,7 +70,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     stringResult = string(t.D0XzaS);
   }
   obj9.children = stringResult;
-  items2[2] = closure_8(markAsDismissed(4556).Text, obj9);
+  items2[2] = closure_8(markAsDismissed(4632).Text, obj9);
   obj4.children = items2;
   const items4 = [closure_9(closure_5, obj4), ];
   const obj10 = { style: tmp.footer, children: null };
@@ -84,14 +84,14 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     }
     const result = AppIconUtils.navigateToAppIconSettings();
   };
-  const items5 = [closure_8(markAsDismissed(4975).Button, obj11), ];
+  const items5 = [closure_8(markAsDismissed(5056).Button, obj11), ];
   const obj12 = { variant: "secondary", text: null, onPress: null };
   const intl4 = tmp2(1114).intl;
   obj12.text = intl4.string(markAsDismissed(1114).t.iSrIIZ);
   obj12.onPress = callback;
-  items5[1] = closure_8(markAsDismissed(4975).Button, obj12);
+  items5[1] = closure_8(markAsDismissed(5056).Button, obj12);
   obj10.children = items5;
   items4[1] = closure_9(closure_5, obj10);
   obj3.children = items4;
-  return closure_9(markAsDismissed(7150).BottomSheet, obj3);
+  return closure_9(markAsDismissed(7253).BottomSheet, obj3);
 };

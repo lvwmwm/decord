@@ -1,12 +1,12 @@
-// Module ID: 12500
-// Function ID: 12501
+// Module ID: 12629
+// Function ID: 12630
 // Name: useGuildPowerupRollbackEnabled
-// Dependencies: [4487, 4453, 2]
+// Dependencies: [4563, 4529, 2]
 // Exports: default, isGuildPowerupRollbackEnabled
 
-// Module 12500 (useGuildPowerupRollbackEnabled)
-import Powerups from "Powerups" /* 4453 */;
-import FileUpload250MbPowerupExperiment from "FileUpload250MbPowerupExperiment" /* 4487 */;
+// Module 12629 (useGuildPowerupRollbackEnabled)
+import Powerups from "Powerups" /* 4529 */;
+import FileUpload250MbPowerupExperiment from "FileUpload250MbPowerupExperiment" /* 4563 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx");

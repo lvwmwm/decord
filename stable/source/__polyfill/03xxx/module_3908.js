@@ -1,116 +1,60 @@
 // Module ID: 3908
 // Function ID: 3909
-// Dependencies: [3650, 3832, 3893, 3654]
+// Dependencies: [3726]
 // Exports: default
 
 // Module 3908
-import _typeof_mod from "module_3650" /* 3650 */;
-import module_3832_mod from "module_3832" /* 3832 */;
-import module_3893_mod from "module_3893" /* 3893 */;
-import module_3654_mod from "module_3654" /* 3654 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+function _typeof(arg0) {
+  if (typeof Symbol === "function") {
+    let _Symbol = Symbol;
+    if (typeof Symbol.iterator === "symbol") {
+      _typeof = function _typeof(arg0) {
+        return typeof arg0;
+      };
+    }
+    return _typeof(arg0);
+  }
+  _typeof = function _typeof(arg0) {
+    if (arg0) {
+      const _Symbol = Symbol;
+      if (typeof Symbol === "function") {
+        const _Symbol3 = Symbol;
+        if (arg0.constructor === Symbol) {
+          const _Symbol2 = Symbol;
+          let str = "symbol";
+        }
+        return str;
+      }
+    }
+    str = typeof arg0;
+  };
+}
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj = { default: requiredArgs };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = requiredArgs;
 }
-_typeof = tmp3;
-let module_3832 = module_3832_mod;
-if (!module_3832) {
-  const obj2 = { default: module_3832 };
-  let tmp5 = obj2;
-} else {
-  tmp5 = module_3832;
-}
-module_3832 = tmp5;
-let module_3893 = module_3893_mod;
-if (!module_3893) {
-  const obj3 = { default: module_3893 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3893;
-}
-module_3893 = tmp7;
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  const obj4 = { default: module_3654 };
-  let tmp9 = obj4;
-} else {
-  tmp9 = module_3654;
-}
-module_3654 = tmp9;
+requiredArgs = tmp3;
 
-export default function formatRFC3339(arg0, fractionDigits) {
-  if (arguments.length < 1) {
-    const _TypeError = TypeError;
-    const concat2 = "1 arguments required, but only ".concat;
-    const typeError = new TypeError("1 arguments required, but only ".concat(arguments.length, " present"));
-    throw typeError;
-  } else {
-    const defaultResult = _typeof.default(arg0);
-    if (module_3832.default(defaultResult)) {
-      fractionDigits = undefined;
-      if (null != fractionDigits) {
-        fractionDigits = fractionDigits.fractionDigits;
-      }
-      let num2 = 0;
-      if (null !== fractionDigits) {
-        num2 = 0;
-        if (undefined !== fractionDigits) {
-          num2 = fractionDigits;
-        }
-      }
-      const NumberResult = Number(num2);
-      if (NumberResult >= 0) {
-        if (NumberResult <= 3) {
-          const defaultResult1 = module_3893.default(defaultResult.getDate(), 2);
-          const fullYear = defaultResult.getFullYear();
-          const defaultResult2 = module_3893.default(defaultResult.getMonth() + 1, 2);
-          const defaultResult3 = module_3893.default(defaultResult.getHours(), 2);
-          let str4 = "";
-          const defaultResult4 = module_3893.default(defaultResult.getMinutes(), 2);
-          if (NumberResult > 0) {
-            const _Math = Math;
-            const _Math2 = Math;
-            const milliseconds = defaultResult.getMilliseconds();
-            str4 = `.${obj.default(tmp20(tmp19 * Math.pow(10, tmp8 - 3)), tmp8)}`;
-          }
-          const timezoneOffset = defaultResult.getTimezoneOffset();
-          let str6 = "Z";
-          if (0 !== timezoneOffset) {
-            const _Math3 = Math;
-            const absolute = Math.abs(timezoneOffset);
-            let str7 = "-";
-            const defaultResult6 = obj.default(module_3654.default(absolute / 60), 2);
-            if (timezoneOffset < 0) {
-              str7 = "+";
-            }
-            const combined = "".concat(str7);
-            const combined1 = combined.concat(defaultResult6, ":");
-            str6 = combined1.concat(obj.default(absolute % 60, 2));
-            const defaultResult7 = obj.default(absolute % 60, 2);
-          }
-          const concat = "".concat;
-          const combined2 = "".concat(fullYear, "-");
-          const combined3 = combined2.concat(defaultResult2, "-");
-          const combined4 = combined3.concat(defaultResult1, "T");
-          const combined5 = combined4.concat(defaultResult3, ":");
-          const combined6 = combined5.concat(defaultResult4, ":");
-          const combined7 = combined6.concat(module_3893.default(defaultResult.getSeconds(), 2));
-          const combined8 = combined7.concat(str4);
-          return combined8.concat(str6);
-        }
-      }
-      const _RangeError2 = RangeError;
-      const rangeError = new RangeError("fractionDigits must be between 0 and 3 inclusively");
-      throw rangeError;
+export default function isDate(arg0) {
+  requiredArgs.default(1, arguments);
+  let tmp2 = arg0 instanceof Date;
+  if (!tmp2) {
+    const tmp4 = "object" === _typeof(arg0);
+    if (!tmp4) {
+      tmp2 = tmp4;
     } else {
-      const _RangeError = RangeError;
-      const rangeError1 = new RangeError("Invalid time value");
-      throw rangeError1;
+      const _Object = Object;
+      let str2 = Object.prototype.toString;
+      const call = str2.call;
+      str2 = "[object Date]";
+      const tmp5 = typeof call === "unknown" ? str2() : call(arg0);
     }
   }
+  return tmp2;
 };
 export default exports.default;

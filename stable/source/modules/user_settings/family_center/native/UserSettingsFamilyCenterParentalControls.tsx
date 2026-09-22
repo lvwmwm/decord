@@ -1,14 +1,14 @@
-// Module ID: 14932
-// Function ID: 14933
+// Module ID: 15019
+// Function ID: 15020
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1074, 7538, 21, 4560, 576, 1483, 7162, 7182, 6994, 7594, 14896, 14914, 1114, 2396, 7864, 14933, 14934, 9798, 7539, 7123, 14935, 9799, 12620, 2]
+// Dependencies: [32, 19, 17, 1074, 7641, 21, 4636, 576, 1483, 7265, 7285, 7097, 7696, 14983, 15001, 1114, 2396, 7966, 15020, 15021, 9922, 7642, 7226, 15022, 9923, 12749, 2]
 // Exports: default
 
-// Module 14932 (UserSettingsFamilyCenterParentalControls)
+// Module 15019 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import _modDef2396 from "module_2396" /* 2396 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7539 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7642 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,10 +18,10 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const UserSettingsSections = fn(1074).UserSettingsSections;
-const FamilyCenterSubPages = fn(7538).FamilyCenterSubPages;
+const FamilyCenterSubPages = fn(7641).FamilyCenterSubPages;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj2 = { container: { display: "flex", flex: 1 }, segmentedControlContainer: { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, content: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.content = { paddingBottom: nativeDefault.space.PX_16 };
@@ -107,7 +107,7 @@ export default function FamilyCenterParentalControlsSettings() {
         }
       }
     }
-    stackNavigation.setOptions({ title: "transform", headerRight: "call" });
+    stackNavigation.setOptions({ title: "Array", headerRight: "PX_16" });
   }, items1);
   if (isFamilyCenterV3Enabled) {
     isFamilyCenterV3Enabled = selectedSubPage === items2.SCREEN_TIME_CONTROLS;

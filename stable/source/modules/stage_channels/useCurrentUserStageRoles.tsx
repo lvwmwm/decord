@@ -1,12 +1,12 @@
-// Module ID: 9676
-// Function ID: 9677
+// Module ID: 9800
+// Function ID: 9801
 // Name: useCurrentUserStageRoles
-// Dependencies: [502, 5421, 504, 2]
+// Dependencies: [502, 5502, 504, 2]
 // Exports: default
 
-// Module 9676 (useCurrentUserStageRoles)
+// Module 9800 (useCurrentUserStageRoles)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5421 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5502 */;
 
 const require = globalThis.__r;
 

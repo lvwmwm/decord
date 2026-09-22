@@ -1,16 +1,16 @@
-// Module ID: 8048
-// Function ID: 8049
+// Module ID: 8152
+// Function ID: 8153
 // Name: PremiumGroupInviteEmbed
-// Dependencies: [4232, 4560, 576, 7947, 8049, 8050, 1114, 3063, 2]
+// Dependencies: [4308, 4636, 576, 8050, 8153, 8154, 1114, 3074, 2]
 // Exports: createPremiumGroupInviteEmbed
 
-// Module 8048 (PremiumGroupInviteEmbed)
+// Module 8152 (PremiumGroupInviteEmbed)
 import nativeDefault from "native" /* 576 */;
-import createStyles from "createStyles" /* 4560 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 7947 */;
-import _modDef8049 from "module_8049" /* 8049 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 8050 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 4232 */;
+import createStyles from "createStyles" /* 4636 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8050 */;
+import _modDef8153 from "module_8153" /* 8153 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 8154 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 4308 */;
 import size from "module_2" /* 2 */;
 
 ({ HELP_CENTER_LINK: c3, PremiumGroupInviteState: closure_4 } = PremiumGroupConstants);
@@ -23,7 +23,7 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
     ({ backgroundColor, headerTextColor, bodyTextColor, linkTextColor, betaPillTextColor, betaPillBackgroundColor } = createStyles.createNativeStyleProperties(obj2)(theme));
     const tmp9 = createStyles.createNativeStyleProperties(obj2)(theme);
     const author = message.author;
-    const assetUriForEmbed = renderer_EmbedUtils.getAssetUriForEmbed(_modDef8049);
+    const assetUriForEmbed = renderer_EmbedUtils.getAssetUriForEmbed(_modDef8153);
     const obj3 = { sender: author, channel, isSender: id === author.id, inviteState: constants.UNKNOWN };
     const premiumGroupInviteEmbedText = PremiumGroupUtils.getPremiumGroupInviteEmbedText(obj3);
     if (null != premiumGroupInviteEmbedText) {
@@ -34,7 +34,7 @@ export const createPremiumGroupInviteEmbed = function createPremiumGroupInviteEm
       obj.learnMoreLinkOnClick = obj5;
       const obj8 = { headerText: header, headerColor: headerTextColor, backgroundColor, borderColor: backgroundColor, headerImageUrl: assetUriForEmbed, betaPillText: null, betaPillTextColor: null, betaPillBackgroundColor: null, bodyText: null, bodyTextColor: null, learnMoreLink: null };
       const intl2 = tmp6(1114).intl;
-      const formatToPartsResult = intl.formatToParts(tmp8(3063)["9VTnfI"], obj);
+      const formatToPartsResult = intl.formatToParts(tmp8(3074)["9VTnfI"], obj);
       obj8.betaPillText = intl2.string(tmp6(1114).t.oW0eUd).toUpperCase();
       obj8.betaPillTextColor = betaPillTextColor;
       obj8.betaPillBackgroundColor = betaPillBackgroundColor;

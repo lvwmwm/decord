@@ -1,27 +1,27 @@
-// Module ID: 16267
-// Function ID: 16268
+// Module ID: 16361
+// Function ID: 16362
 // Name: GuildUpsellChannelList
-// Dependencies: [19, 17, 15623, 16268, 1074, 21, 4560, 576, 1114, 5692, 13718, 16269, 504, 1242, 12712, 4556, 5607, 4975, 15103, 16270, 2]
+// Dependencies: [19, 17, 15709, 16362, 1074, 21, 4636, 576, 1114, 5773, 13804, 16363, 504, 1240, 12841, 4632, 5688, 5056, 15181, 16364, 2]
 // Exports: default
 
-// Module 16267 (GuildUpsellChannelList)
+// Module 16361 (GuildUpsellChannelList)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import components_Button_Button from "components/Button/Button" /* 4975 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import components_Button_Button from "components/Button/Button" /* 5056 */;
 import noop from "module_19" /* 19 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15623 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 15709 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-let closure_8 = fn(16268).MAX_DISPLAYED_UPSELL_GUILDS;
+let closure_8 = fn(16362).MAX_DISPLAYED_UPSELL_GUILDS;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.PANEL_BG }, header: null, headerTitle: null, listContainer: null, subheaderWrapper: null, createDescription: null, templateScroll: null, templateRow: null, templateCard: null, templateIconWrapper: null, templateTitle: null, buttonGroup: null, descriptionSpacing: null, joinSection: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.PANEL_BG };
 obj2.header = { height: 56, flexDirection: "row", alignItems: "center", marginHorizontal: nativeDefault.space.PX_16 };
@@ -48,11 +48,11 @@ const obj12 = { marginBottom: nativeDefault.space.PX_8 };
 obj2.joinSection = { gap: nativeDefault.space.PX_4 };
 let closure_12 = createStyles.createStyles(obj2);
 const obj13 = { gap: nativeDefault.space.PX_4 };
-let items = [{ id: "hangout", title: fn(1114).t.ScXySs, description: fn(1114).t.DSCqxM, Icon: fn(5692).BumpingFistsSpotIllustration }, , ];
-const obj14 = { id: "hangout", title: fn(1114).t.ScXySs, description: fn(1114).t.DSCqxM, Icon: fn(5692).BumpingFistsSpotIllustration };
-items[1] = { id: "gaming", title: fn(1114).t["F+MTAZ"], description: fn(1114).t.srNlJw, Icon: fn(5692).ChatControllersSpotIllustration };
-const obj15 = { id: "gaming", title: fn(1114).t["F+MTAZ"], description: fn(1114).t.srNlJw, Icon: fn(5692).ChatControllersSpotIllustration };
-items[2] = { id: "hobbies", title: fn(1114).t["0Ka6B5"], description: fn(1114).t["5oGAp/"], Icon: fn(5692).MiniaturesSpotIllustration };
+let items = [{ id: "hangout", title: fn(1114).t.ScXySs, description: fn(1114).t.DSCqxM, Icon: fn(5773).BumpingFistsSpotIllustration }, , ];
+const obj14 = { id: "hangout", title: fn(1114).t.ScXySs, description: fn(1114).t.DSCqxM, Icon: fn(5773).BumpingFistsSpotIllustration };
+items[1] = { id: "gaming", title: fn(1114).t["F+MTAZ"], description: fn(1114).t.srNlJw, Icon: fn(5773).ChatControllersSpotIllustration };
+const obj15 = { id: "gaming", title: fn(1114).t["F+MTAZ"], description: fn(1114).t.srNlJw, Icon: fn(5773).ChatControllersSpotIllustration };
+items[2] = { id: "hobbies", title: fn(1114).t["0Ka6B5"], description: fn(1114).t["5oGAp/"], Icon: fn(5773).MiniaturesSpotIllustration };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/game_community_upsell/native/GuildUpsellChannelList.tsx");
 
@@ -134,11 +134,11 @@ export default function GuildUpsellChannelList(style) {
       const obj9 = { variant: "heading-md/bold", color: "mobile-text-heading-primary", children: null };
       const intl5 = tmp5(1114).intl;
       obj9.children = intl5.string(tmp5(1114).t.rJRote);
-      const items2 = [tmp4(tmp5(4556).Text, obj9), ];
+      const items2 = [tmp4(tmp5(4632).Text, obj9), ];
       const obj10 = { variant: "text-sm/medium", color: "text-subtle", style: tmp3.descriptionSpacing, children: null };
       const intl6 = tmp5(1114).intl;
       obj10.children = intl6.string(tmp5(1114).t.pJT2DK);
-      items2[1] = tmp4(tmp5(4556).Text, obj10);
+      items2[1] = tmp4(tmp5(4632).Text, obj10);
       obj8.children = items2;
       tmpResult = tmp(tmp2, obj8);
     }

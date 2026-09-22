@@ -1,22 +1,22 @@
-// Module ID: 14553
-// Function ID: 14554
+// Module ID: 14639
+// Function ID: 14640
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4210, 502, 1957, 4781, 1074, 14554, 3, 1090, 510, 4153, 4242, 7752, 7456, 573, 11752, 11681, 1896, 1898, 5272, 9947, 2]
+// Dependencies: [5, 32, 4286, 502, 1957, 4857, 1074, 14640, 3, 1090, 510, 4228, 4318, 7854, 7559, 573, 11880, 11809, 1896, 1898, 5353, 10071, 2]
 
-// Module 14553 (LocalMessageCacheManager)
+// Module 14639 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1090 */;
-import _modDef4153 from "module_4153" /* 4153 */;
-import DateUtils from "DateUtils" /* 4242 */;
-import UploadActionCreatorsDefault from "UploadActionCreators" /* 11752 */;
+import _modDef4228 from "module_4228" /* 4228 */;
+import DateUtils from "DateUtils" /* 4318 */;
+import UploadActionCreatorsDefault from "UploadActionCreators" /* 11880 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import MessageRecord from "MessageRecord" /* 4210 */;
+import MessageRecord from "MessageRecord" /* 4286 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import MessageStore from "MessageStore" /* 4781 */;
+import MessageStore from "MessageStore" /* 4857 */;
 import LifecycleManager from "LifecycleManager" /* 1898 */;
 
 require = fn;
@@ -45,8 +45,8 @@ function getAllCachedMessages() {
 }
 function messageTimestampIsInInterval(arg0, arg1) {
   if (null != arg0) {
-    const tmp4 = _modDef4153();
-    const tmp5 = _modDef4153(arg0);
+    const tmp4 = _modDef4228();
+    const tmp5 = _modDef4228(arg0);
     return DateUtils.isWithinInterval(tmp4, tmp5, arg1);
   } else {
     return false;
@@ -55,10 +55,10 @@ function messageTimestampIsInInterval(arg0, arg1) {
 function createFailedMessage(channel_id) {
   channel_id = channel_id.channel_id;
   ({ content, tts, state } = channel_id);
-  const tmp3 = file(7752)({ channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED });
+  const tmp3 = file(7854)({ channelId: channel_id, content, tts, state: MessageStates.SEND_FAILED });
   const id = tmp3;
   ({ timestamp: tmp3.timestamp, file } = channel_id);
-  file(7456).receiveMessage(channel_id, tmp3, true, { isHydratingExpiredPendingMessage: state === MessageStates.SENDING });
+  file(7559).receiveMessage(channel_id, tmp3, true, { isHydratingExpiredPendingMessage: state === MessageStates.SENDING });
   if (null != file) {
     file(573).wait(() => UploadActionCreatorsDefault.restoreFailedUpload(id.id, file));
     const tmpResult = file(573);
@@ -243,7 +243,7 @@ let closure_25 = async function _rehydrateFailedMessages(arg0, value) {
   }
 };
 const MessageStates = fn(1074).MessageStates;
-const MutexUtils = fn(14554);
+const MutexUtils = fn(14640);
 let closure_10 = MutexUtils.createLock();
 let closure_11 = new LoggerDefault("LocalMessageCacheManager");
 const LocalMessageCacheManagerMessageCacheKey = "LocalMessageCacheManagerMessageCacheKey";
@@ -964,7 +964,7 @@ prototype["_initialize"] = function _initialize() {
                 c6 = 1;
                 closure_131_1 = tmp10;
                 channel_id = closure_131_1.channel_id;
-                let obj9 = values(5272);
+                let obj9 = values(5353);
                 value = obj9.get(channel_id);
                 dependencyMap = value;
                 if (value == null) {

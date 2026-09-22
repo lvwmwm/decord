@@ -1,18 +1,18 @@
-// Module ID: 16075
-// Function ID: 16076
+// Module ID: 16169
+// Function ID: 16170
 // Name: HappeningNowCardUnifiedVC
-// Dependencies: [19, 1956, 4582, 4209, 21, 16076, 16088, 16089, 563, 16066, 2]
+// Dependencies: [19, 1956, 4658, 4285, 21, 16170, 16182, 16183, 563, 16160, 2]
 // Exports: default, useCallActivityData
 
-// Module 16075 (HappeningNowCardUnifiedVC)
-import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 16066 */;
-import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 16076 */;
-import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16088 */;
-import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16089 */;
+// Module 16169 (HappeningNowCardUnifiedVC)
+import findActivityWithMostParticipantsDefault from "findActivityWithMostParticipants" /* 16160 */;
+import HappeningNowCardActivityDefault from "HappeningNowCardActivity" /* 16170 */;
+import HappeningNowCardEmbeddedActivityDefault from "HappeningNowCardEmbeddedActivity" /* 16182 */;
+import HappeningNowCardVoiceDefault from "HappeningNowCardVoice" /* 16183 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4582 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 
 const require = globalThis.__r;
 

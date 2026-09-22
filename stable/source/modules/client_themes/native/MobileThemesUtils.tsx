@@ -1,18 +1,18 @@
-// Module ID: 4492
-// Function ID: 4493
+// Module ID: 4568
+// Function ID: 4569
 // Name: MobileThemesUtils
-// Dependencies: [1183, 4493, 1228, 1230, 1114, 2626, 1231, 4494, 504, 2]
+// Dependencies: [1181, 4569, 1226, 1228, 1114, 2626, 1229, 4570, 504, 2]
 // Exports: getAllMobileThemes, getCustomBackgroundGradient, useAllMobileThemes, useCustomBackgroundGradient, usePerModeCustomBackgroundGradient, useSavedCustomTheme
 
-// Module 4492 (MobileThemesUtils)
+// Module 4568 (MobileThemesUtils)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1114 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1231 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1229 */;
 import _modDef2626 from "module_2626" /* 2626 */;
-import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4494 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
-import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4493 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1228 */;
+import useCustomThemeDisplaySettings from "useCustomThemeDisplaySettings" /* 4570 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
+import SavedCustomThemeStore from "SavedCustomThemeStore" /* 4569 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1226 */;
 
 const require = globalThis.__r;
 
@@ -21,7 +21,7 @@ function getCustomThemesName() {
   const intl = util.intl;
   return intl.string(_modDef2626.yl1iMm);
 }
-const ClientThemesConstants = fn(1230);
+const ClientThemesConstants = fn(1228);
 ({ BACKGROUND_GRADIENT_PRESETS_MOBILE: metroRequire, REFRESH_STANDARD_BACKGROUND_THEMES: closure_7 } = ClientThemesConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/client_themes/native/MobileThemesUtils.tsx");
@@ -101,7 +101,7 @@ export const useAllMobileThemes = function useAllMobileThemes(mode) {
   const customThemeDisplaySettings = require("useCustomThemeDisplaySettings").useCustomThemeDisplaySettings(tmp4);
   let stateFromStores1 = null;
   if (undefined !== customThemeDisplaySettings) {
-    const obj2 = { type: tmp(1231).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: null, customThemeSettings: null };
+    const obj2 = { type: tmp(1229).ClientThemeType.CUSTOM_BACKGROUND_GRADIENT, getName: getCustomThemesName, theme: null, customThemeSettings: null };
     ({ baseTheme: obj3.theme, customTheme: obj3.customThemeSettings } = customThemeDisplaySettings);
     stateFromStores1 = obj2;
   }

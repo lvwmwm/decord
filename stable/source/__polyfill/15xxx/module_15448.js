@@ -1,9 +1,9 @@
 // Module ID: 15448
 // Function ID: 15449
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 15448
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "894cceea2dd5b523936930d1d7e333c5", name: "pl", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3feea67804381f17d046d28e82abf627", name: "EmojiAngryFaceWithHornsIcon", type: "png" });

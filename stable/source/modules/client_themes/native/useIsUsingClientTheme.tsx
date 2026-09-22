@@ -1,11 +1,11 @@
-// Module ID: 7874
-// Function ID: 7875
+// Module ID: 7976
+// Function ID: 7977
 // Name: useIsUsingClientTheme
-// Dependencies: [7875, 2]
+// Dependencies: [7977, 2]
 // Exports: default
 
-// Module 7874 (useIsUsingClientTheme)
-import useActiveTheme from "useActiveTheme" /* 7875 */;
+// Module 7976 (useIsUsingClientTheme)
+import useActiveTheme from "useActiveTheme" /* 7977 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/client_themes/native/useIsUsingClientTheme.tsx");

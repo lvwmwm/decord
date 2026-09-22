@@ -1,13 +1,13 @@
-// Module ID: 17878
-// Function ID: 17879
+// Module ID: 17988
+// Function ID: 17989
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 1483, 17879, 1114, 2690, 17870, 4973, 6606, 2]
+// Dependencies: [32, 19, 21, 1483, 17989, 1114, 2690, 17980, 5054, 6707, 2]
 // Exports: default
 
-// Module 17878 (EnterEmailScreen)
+// Module 17988 (EnterEmailScreen)
 import _modDef2690 from "module_2690" /* 2690 */;
-import types from "types" /* 17870 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 17879 */;
+import types from "types" /* 17980 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 17989 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

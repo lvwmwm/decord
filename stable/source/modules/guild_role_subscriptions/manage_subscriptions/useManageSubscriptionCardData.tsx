@@ -1,14 +1,14 @@
-// Module ID: 15226
-// Function ID: 15227
+// Module ID: 15307
+// Function ID: 15308
 // Name: useManageSubscriptionCardData
-// Dependencies: [32, 19, 1979, 4193, 1074, 4153, 7234, 1114, 15217, 504, 15215, 2]
+// Dependencies: [32, 19, 1979, 4269, 1074, 4228, 7337, 1114, 15298, 504, 15296, 2]
 // Exports: default
 
-// Module 15226 (useManageSubscriptionCardData)
+// Module 15307 (useManageSubscriptionCardData)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4193 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4269 */;
 
 const require = globalThis.__r;
 

@@ -1,10 +1,10 @@
-// Module ID: 7103
-// Function ID: 7104
+// Module ID: 7206
+// Function ID: 7207
 // Name: LandingAssetUtils
 // Dependencies: [2]
 // Exports: default
 
-// Module 7103 (LandingAssetUtils)
+// Module 7206 (LandingAssetUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_onboarding/LandingAssetUtils.tsx");

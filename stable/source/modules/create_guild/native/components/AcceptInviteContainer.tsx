@@ -1,24 +1,25 @@
-// Module ID: 12720
-// Function ID: 12721
+// Module ID: 12849
+// Function ID: 12850
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 2021, 1979, 4544, 4187, 21, 4560, 576, 1483, 504, 5624, 1384, 7095, 1896, 7735, 9704, 7315, 8379, 10299, 12721, 7123, 4271, 2]
+// Dependencies: [5, 19, 2021, 1979, 4620, 1074, 4262, 21, 4636, 576, 1483, 504, 5705, 1384, 7198, 1896, 7837, 9828, 7418, 8496, 10423, 12850, 7226, 4347, 2]
 // Exports: default
 
-// Module 12720 (AcceptInviteContainer)
+// Module 12849 (AcceptInviteContainer)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5624 */;
+import NavigatorHeader from "NavigatorHeader" /* 5705 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import InviteStore from "InviteStore" /* 4544 */;
+import InviteStore from "InviteStore" /* 4620 */;
 
 require = fn;
-const GuildMemberFlags = fn(4187).GuildMemberFlags;
+const ThemeTypes = fn(1074).ThemeTypes;
+const GuildMemberFlags = fn(4262).GuildMemberFlags;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { flex: { flex: 1 }, paddingContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
-let closure_10 = createStyles.createStyles(obj2);
+let closure_11 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/create_guild/native/components/AcceptInviteContainer.tsx");
 
@@ -30,11 +31,11 @@ export default function AcceptInviteContainer(code) {
   let stateFromStoresObject;
   let callback;
   const isRegistration = merged.isRegistration;
-  const tmp2 = closure_10();
-  const navigation = code(inviteInstanceId[9]).useNavigation();
-  let obj = code(inviteInstanceId[9]);
+  const tmp2 = closure_11();
+  const navigation = code(inviteInstanceId[10]).useNavigation();
+  let obj = code(inviteInstanceId[10]);
   const items = [InviteStore, stateFromStoresObject, callback];
-  stateFromStoresObject = code(inviteInstanceId[10]).useStateFromStoresObject(items, () => {
+  stateFromStoresObject = code(inviteInstanceId[11]).useStateFromStoresObject(items, () => {
     const invite = InviteStore.getInvite(code);
     let guild;
     const inviteError = InviteStore.getInviteError(code);
@@ -134,10 +135,10 @@ export default function AcceptInviteContainer(code) {
                 if (!obj5.hasFlag(v0, constants.COMPLETED_ONBOARDING)) {
                   inviteInstanceId = 1;
                   c3 = 1;
-                  const obj4 = { value: tmp10(tmp11[14])(tmp11[13], tmp11.paths), done: false };
+                  const obj4 = { value: tmp10(tmp11[15])(tmp11[14], tmp11.paths), done: false };
                   return obj4;
                 }
-                obj5 = v0(inviteInstanceId[12]);
+                obj5 = v0(inviteInstanceId[13]);
                 tmp10 = v0;
               }
             }
@@ -252,7 +253,7 @@ export default function AcceptInviteContainer(code) {
                               return { value: "HermesInternal", done: null };
                             } else {
                               closure_1();
-                              const result = tmp11(tmp12[16]).transitionToEventDetailsFromInvite(prop);
+                              const result = tmp11(tmp12[17]).transitionToEventDetailsFromInvite(prop);
                               c6 = 3;
                               const obj6 = { value: undefined, done: true };
                               return obj6;
@@ -267,13 +268,13 @@ export default function AcceptInviteContainer(code) {
                                 c4 = 1;
                                 c5 = 2;
                                 c6 = 1;
-                                const obj7 = { value: v1(tmp12[17]).performRoleSubscriptionUpsellRedirect(id), done: false };
+                                const obj7 = { value: v1(tmp12[18]).performRoleSubscriptionUpsellRedirect(id), done: false };
                                 return obj7;
                               }
                             }
-                            tmp11Result2 = tmp11(tmp12[15]);
+                            tmp11Result2 = tmp11(tmp12[16]);
                           }
-                          obj2 = closure_2_0(closure_2_2[15]);
+                          obj2 = closure_2_0(closure_2_2[16]);
                         } else {
                           closure_1();
                         }
@@ -296,7 +297,7 @@ export default function AcceptInviteContainer(code) {
                       closure_1();
                       const _setTimeout = setTimeout;
                       const timerId = setTimeout(() => {
-                        closure_1(closure_2[18]).transitionToInvite(closure_1_0);
+                        closure_1(closure_2[19]).transitionToInvite(closure_1_0);
                       }, 1);
                     } else {
                       closure_1();
@@ -343,8 +344,8 @@ export default function AcceptInviteContainer(code) {
                   obj5.callback = function callback(arg0) {
                     v1(arg0);
                   };
-                  obj5 = v1(tmp23[18]).acceptInvite(obj5);
-                  const obj11 = v1(tmp23[18]);
+                  obj5 = v1(tmp23[19]).acceptInvite(obj5);
+                  const obj11 = v1(tmp23[19]);
                 }
               }
               v1 = 1;
@@ -352,7 +353,7 @@ export default function AcceptInviteContainer(code) {
               const obj9 = { value: callback(), done: false };
               return obj9;
             }
-            obj10 = tmp2(inviteInstanceId[19]);
+            obj10 = tmp2(inviteInstanceId[20]);
             tmp23 = inviteInstanceId;
           }
         } else if (arg0 === 1) {
@@ -373,14 +374,16 @@ export default function AcceptInviteContainer(code) {
       }
     }
   }), items3);
-  let obj2 = code(inviteInstanceId[10]);
+  let obj2 = code(inviteInstanceId[11]);
   let obj3 = { code, onPressClose, onPressJoin: callback1 };
   const merged1 = Object.assign(merged);
   const merged2 = Object.assign(stateFromStoresObject);
-  const tmp8 = onPressClose(inviteInstanceId[20]);
-  let obj4 = { style: null, bottom: true, children: jsx(code(inviteInstanceId[22]).ThemeContextProvider, { theme: "darker", children: jsx(onPressClose(inviteInstanceId[20]), { code, onPressClose, onPressJoin: callback1 }) }) };
+  const tmp8 = onPressClose(inviteInstanceId[21]);
+  let obj4 = { style: null, bottom: true, children: null };
   const items4 = [, ];
   ({ flex: arr5[0], paddingContainer: arr5[1] } = tmp2);
   obj4.style = items4;
-  return jsx(code(inviteInstanceId[21]).SafeAreaPaddingView, { style: null, bottom: true, children: jsx(code(inviteInstanceId[22]).ThemeContextProvider, { theme: "darker", children: jsx(onPressClose(inviteInstanceId[20]), { code, onPressClose, onPressJoin: callback1 }) }) });
+  const tmp11 = jsx(onPressClose(inviteInstanceId[21]), { code, onPressClose, onPressJoin: callback1 });
+  obj4.children = jsx(code(inviteInstanceId[23]).ThemeContextProvider, { theme: ThemeTypes.DARK, children: jsx(onPressClose(inviteInstanceId[21]), { code, onPressClose, onPressJoin: callback1 }) });
+  return jsx(code(inviteInstanceId[22]).SafeAreaPaddingView, { style: null, bottom: true, children: null });
 };

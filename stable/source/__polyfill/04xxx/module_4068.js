@@ -1,42 +1,31 @@
 // Module ID: 4068
 // Function ID: 4069
-// Dependencies: [3654, 3650, 3651]
+// Dependencies: [3725, 3726]
 // Exports: default
 
 // Module 4068
-import module_3654_mod from "module_3654" /* 3654 */;
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  const obj = { default: module_3654 };
-  let tmp3 = obj;
-} else {
-  tmp3 = module_3654;
-}
-module_3654 = tmp3;
 let _typeof = _typeof_mod;
 if (!_typeof) {
-  const obj2 = { default: _typeof };
-  let tmp5 = obj2;
+  const obj = { default: _typeof };
+  let tmp3 = obj;
 } else {
-  tmp5 = _typeof;
+  tmp3 = _typeof;
 }
-_typeof = tmp5;
+_typeof = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj3 = { default: requiredArgs };
-  let tmp7 = obj3;
+  const obj2 = { default: requiredArgs };
+  let tmp5 = obj2;
 } else {
-  tmp7 = requiredArgs;
+  tmp5 = requiredArgs;
 }
-requiredArgs = tmp7;
+requiredArgs = tmp5;
 
-export default function setHours(module_3654, uTCMinutes) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(module_3654);
-  defaultResult1.setHours(module_3654.default(uTCMinutes));
-  return defaultResult1;
+export default function isMonday(arg0) {
+  requiredArgs.default(1, arguments);
+  return 1 === _typeof.default(arg0).getDay();
 };
 export default exports.default;

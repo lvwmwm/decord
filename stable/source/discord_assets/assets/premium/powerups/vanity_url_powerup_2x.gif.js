@@ -1,8 +1,8 @@
-// Module ID: 16178
-// Function ID: 16179
+// Module ID: 16272
+// Function ID: 16273
 // Dependencies: [2]
 
-// Module 16178
+// Module 16272
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/powerups/vanity_url_powerup_2x.gif.js");

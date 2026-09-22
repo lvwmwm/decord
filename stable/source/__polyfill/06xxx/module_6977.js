@@ -1,9 +1,18 @@
 // Module ID: 6977
 // Function ID: 6978
-// Dependencies: [1122]
+// Dependencies: [19]
+// Exports: useFlashListContext, useRecyclerViewContext
 
 // Module 6977
-import registerAsset from "module_1122" /* 1122 */;
+import noop from "module_19" /* 19 */;
 
+const useContext = noop.useContext;
+const context = noop.createContext(undefined);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/auth/native/images", width: 375, height: 413, scales: [2, 3], hash: "9dd921dedb90562e62ae59d45a63666c", name: "register-background-light", type: "png" });
+export const RecyclerViewContextProvider = context.Provider;
+export const useRecyclerViewContext = function useRecyclerViewContext() {
+  return useContext(context);
+};
+export const useFlashListContext = function useFlashListContext() {
+  return useContext(context);
+};

@@ -1,0 +1,64 @@
+// Module ID: 16630
+// Function ID: 16631
+// Name: NavTTIView
+// Dependencies: [109, 19, 17, 21, 16631, 16635, 2]
+// Exports: NavTTIView
+
+// Module 16630 (NavTTIView)
+import useComponentRenderSpan from "useComponentRenderSpan" /* 16631 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import noop from "module_19" /* 19 */;
+
+require = fn;
+function IncludedNavTTIView(onLayout) {
+  onLayout = onLayout.onLayout;
+  ({ spanComponent, children } = onLayout);
+  const merged = Object.assign(onLayout, Object.assign({ spanComponent: 0, onLayout: 0, children: 0 }));
+  const onLayout2 = useComponentRenderSpan.useComponentRenderSpan(spanComponent).onLayout;
+  const items = [onLayout2, onLayout];
+  const obj2 = {};
+  const callback = noop.useCallback((arg0) => {
+    if (onLayout2 != null) {
+      tmp(arg0);
+    }
+    if (onLayout != null) {
+      tmp3(arg0);
+    }
+  }, items);
+  const merged1 = Object.assign(merged);
+  if (null != onLayout2) {
+    onLayout = callback;
+  }
+  obj2.onLayout = onLayout;
+  obj2.children = children;
+  return <View />;
+}
+let closure_2 = ["tracking"];
+let closure_3 = ["tracking", "spanComponent"];
+const View = fn(17).View;
+const jsx = fn(21).jsx;
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/tti_analytics/native/navigation/NavTTIView.tsx");
+
+export const NavTTIView = function NavTTIView(tracking) {
+  if ("exclude" === tracking.tracking) {
+    const tracking2 = tracking.tracking;
+    const obj2 = {};
+    const merged = Object.assign(_objectWithoutProperties(tracking, closure_2));
+    return <View />;
+  } else {
+    tracking = tracking.tracking;
+    const tmp3 = _objectWithoutProperties(tracking, closure_3);
+    if (obj.isNavigationTTIEnabled()) {
+      const obj3 = {};
+      const merged1 = Object.assign(tmp3);
+      obj3.spanComponent = tracking.spanComponent;
+      let tmp6Result = tmp6(IncludedNavTTIView, obj3);
+    } else {
+      const obj4 = {};
+      const merged2 = Object.assign(tmp3);
+      tmp6Result = tmp6(View, obj4);
+    }
+    return tmp6Result;
+  }
+};

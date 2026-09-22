@@ -1,27 +1,27 @@
-// Module ID: 17090
-// Function ID: 17091
+// Module ID: 17198
+// Function ID: 17199
 // Name: VoicePanelPIPUtils
-// Dependencies: [4576, 4582, 502, 12277, 17091, 4581, 12278, 4974, 9628, 13988, 576, 2]
+// Dependencies: [4652, 4658, 502, 12406, 17199, 4657, 12407, 5055, 9752, 14073, 576, 2]
 // Exports: calculatePIPPositionFromVelocity, computePIPParticipantToShow, computePIPSize, getClampedPIPPosition, getPIPMode, getVoicePanelPIPBorderRadius, layoutTransition
 
-// Module 17090 (VoicePanelPIPUtils)
+// Module 17198 (VoicePanelPIPUtils)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 4974 */;
-import participantHasVideo from "participantHasVideo" /* 9628 */;
-import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 13988 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4576 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4582 */;
+import spring from "spring" /* 5055 */;
+import participantHasVideo from "participantHasVideo" /* 9752 */;
+import isActivityParticipantCurrentUserCurrentSession from "isActivityParticipantCurrentUserCurrentSession" /* 14073 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
-const VoicePanelConstants = fn(12277);
+const VoicePanelConstants = fn(12406);
 ({ SECONDARY_PIP_TOP_MARGIN: hasOwnProperty, VoicePanelModes: metroRequire } = VoicePanelConstants);
-const VoicePanelPIPConstants = fn(17091);
+const VoicePanelPIPConstants = fn(17199);
 ({ VoicePanelPIPModes: closure_7, PIPReferenceDimensions } = VoicePanelPIPConstants);
 const SquarePIPReferenceDimensions = VoicePanelPIPConstants.SquarePIPReferenceDimensions;
 const SquareActivityPIPReferenceDimensions = VoicePanelPIPConstants.SquareActivityPIPReferenceDimensions;
-const ParticipantTypes = fn(4581).ParticipantTypes;
-const MorphablePanelConstants = fn(12278);
+const ParticipantTypes = fn(4657).ParticipantTypes;
+const MorphablePanelConstants = fn(12407);
 const MIN_PIP_TOSS_VELOCITY = MorphablePanelConstants.MIN_PIP_TOSS_VELOCITY;
 const PIP_WINDOW_OFFSET = MorphablePanelConstants.PIP_WINDOW_OFFSET;
 const set = new Set();
@@ -42,7 +42,7 @@ function layoutTransition(originX) {
   obj.initialValues = { originX: originX.currentOriginX, originY: originX.currentOriginY, width: originX.currentWidth, height: originX.currentHeight };
   return obj;
 }
-layoutTransition.__closure = { withSpring: fn(4974).withSpring, PIP_LAYOUT_PHYSICS };
+layoutTransition.__closure = { withSpring: fn(5055).withSpring, PIP_LAYOUT_PHYSICS };
 layoutTransition.__workletHash = 16735009420384;
 layoutTransition.__initData = { code: "function layoutTransition_VoicePanelPIPUtilsTsx2(values){const{withSpring,PIP_LAYOUT_PHYSICS}=this.__closure;return{animations:{originX:withSpring(values.targetOriginX,PIP_LAYOUT_PHYSICS),originY:withSpring(values.targetOriginY,PIP_LAYOUT_PHYSICS),width:withSpring(values.targetWidth,PIP_LAYOUT_PHYSICS),height:withSpring(values.targetHeight,PIP_LAYOUT_PHYSICS)},initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight}};}" };
 function getPIPWindowDimensions(width, left) {

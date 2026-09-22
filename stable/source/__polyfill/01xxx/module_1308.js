@@ -4,4 +4,4 @@
 
 // Module 1308
 
-export default Math.floor;
+export default Math.min;

@@ -1,16 +1,16 @@
-// Module ID: 7135
-// Function ID: 7136
+// Module ID: 7238
+// Function ID: 7239
 // Name: DropdownOptionsActionSheet
-// Dependencies: [19, 17, 5459, 7100, 1374, 21, 4560, 563, 7130, 1396, 1178, 1114, 4556, 7136, 1611, 4527, 7149, 7150, 6627, 4975, 2]
+// Dependencies: [19, 17, 5540, 7203, 1374, 21, 4636, 563, 7233, 1396, 1176, 1114, 4632, 7239, 1611, 4603, 7252, 7253, 6728, 5056, 2]
 // Exports: default
 
-// Module 7135 (DropdownOptionsActionSheet)
+// Module 7238 (DropdownOptionsActionSheet)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5459 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7100 */;
+import EmojiStore from "EmojiStore" /* 5540 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7203 */;
 
 require = fn;
 function DropdownOptionRow(option) {
@@ -101,7 +101,7 @@ const View = fn(17).View;
 const EMOJI_URL_BASE_SIZE = fn(1374).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_10 = createStyles.createStyles({ optionTextEmoji: { fontSize: 24, lineHeight: 24, paddingTop: 5 }, optionImageEmoji: { height: 24, width: 24 }, newBadge: { fontWeight: "bold" }, labelRow: { display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }, closeButtonWrapper: { marginTop: 16, marginHorizontal: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding/native/DropdownOptionsActionSheet.tsx");
@@ -119,7 +119,7 @@ export default function DropdownOptionsActionSheet(arg0) {
     const obj3 = { title: null };
     const intl = tmp3(1114).intl;
     obj3.title = intl.string(tmp3(1114).t.E2ICbC);
-    const obj4 = { scrollable: true, header: closure_8(tmp3(7149).BottomSheetTitleHeader, obj3), children: null };
+    const obj4 = { scrollable: true, header: closure_8(tmp3(7252).BottomSheetTitleHeader, obj3), children: null };
     const obj5 = { contentContainerStyle: null, children: null };
     const obj6 = { paddingBottom: useSafeAreaInsetsDefault().bottom };
     obj5.contentContainerStyle = obj6;
@@ -128,15 +128,15 @@ export default function DropdownOptionsActionSheet(arg0) {
     obj7.accessibilityLabel = intl2.string(tmp3(1114).t.E2ICbC);
     const options = stateFromStores.options;
     obj7.children = options.map((option) => React6(DropdownOptionRow, { option, responses, onSelect, canBeNew: Boolean(dependencyMap) }, option.id));
-    const items2 = [closure_8(tmp3(1178).CardSection, obj7), ];
+    const items2 = [closure_8(tmp3(1176).CardSection, obj7), ];
     const obj8 = { style: tmp.closeButtonWrapper, children: null };
     const obj9 = { onPress: tmp5, text: null, grow: true };
     const intl3 = tmp3(1114).intl;
     obj9.text = intl3.string(tmp3(1114).t.cpT0Cq);
-    obj8.children = closure_8(tmp3(4975).Button, obj9);
+    obj8.children = closure_8(tmp3(5056).Button, obj9);
     items2[1] = closure_8(responses, obj8);
     obj5.children = items2;
-    obj4.children = closure_9(tmp3(6627).BottomSheetScrollView, obj5);
-    return closure_8(tmp3(7150).BottomSheet, obj4);
+    obj4.children = closure_9(tmp3(6728).BottomSheetScrollView, obj5);
+    return closure_8(tmp3(7253).BottomSheet, obj4);
   }
 };

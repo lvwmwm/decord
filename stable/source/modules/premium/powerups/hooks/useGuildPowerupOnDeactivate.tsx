@@ -1,11 +1,11 @@
-// Module ID: 12545
-// Function ID: 12546
+// Module ID: 12674
+// Function ID: 12675
 // Name: useGuildPowerupOnDeactivate
-// Dependencies: [19, 12540, 2]
+// Dependencies: [19, 12669, 2]
 // Exports: default
 
-// Module 12545 (useGuildPowerupOnDeactivate)
-import useGuildPowerupOnToggleDefault from "useGuildPowerupOnToggle" /* 12540 */;
+// Module 12674 (useGuildPowerupOnDeactivate)
+import useGuildPowerupOnToggleDefault from "useGuildPowerupOnToggle" /* 12669 */;
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

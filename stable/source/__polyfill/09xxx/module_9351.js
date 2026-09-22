@@ -1,9 +1,9 @@
 // Module ID: 9351
 // Function ID: 9352
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 9351
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/BlushIcon", width: 60, height: 60, scales: [2, 3], hash: "def0b6d35103453cf4894471df6b84ad", name: "BlushIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "80139ae0e2b501617462c705b80c97d5", name: "ScreenStreamIcon", type: "png" });

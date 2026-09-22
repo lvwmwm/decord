@@ -1,8 +1,8 @@
-// Module ID: 6362
-// Function ID: 6363
+// Module ID: 6463
+// Function ID: 6464
 // Dependencies: [2]
 
-// Module 6362
+// Module 6463
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PrivacyShieldLaptopBannerSpotIllustration-2x.png.js");

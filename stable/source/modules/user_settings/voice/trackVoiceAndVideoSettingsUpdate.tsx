@@ -1,12 +1,12 @@
-// Module ID: 9100
-// Function ID: 9101
+// Module ID: 9223
+// Function ID: 9224
 // Name: trackVoiceAndVideoSettingsUpdate
-// Dependencies: [1074, 1242, 2]
+// Dependencies: [1074, 1240, 2]
 // Exports: default
 
-// Module 9100 (trackVoiceAndVideoSettingsUpdate)
+// Module 9223 (trackVoiceAndVideoSettingsUpdate)
 import Constants from "Constants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

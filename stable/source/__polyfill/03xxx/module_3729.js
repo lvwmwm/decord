@@ -4,9 +4,29 @@
 // Exports: default
 
 // Module 3729
-let closure_0 = { lastWeek: "'\uC9C0\uB09C' eeee p", yesterday: "'\uC5B4\uC81C' p", today: "'\uC624\uB298' p", tomorrow: "'\uB0B4\uC77C' p", nextWeek: "'\uB2E4\uC74C' eeee p", other: "P" };
 
-export default function formatRelative(arg0, arg1, arg2, arg3) {
-  return closure_0[arg0];
+export default function toInteger(arg0) {
+  if (null !== arg0) {
+    if (true !== arg0) {
+      if (false !== arg0) {
+        const _Number = Number;
+        const NumberResult = Number(arg0);
+        const _isNaN = isNaN;
+        if (isNaN(NumberResult)) {
+          return NumberResult;
+        } else {
+          if (NumberResult < 0) {
+            const _Math2 = Math;
+            let rounded = Math.ceil(NumberResult);
+          } else {
+            const _Math = Math;
+            rounded = Math.floor(NumberResult);
+          }
+          return rounded;
+        }
+      }
+    }
+  }
+  return NaN;
 };
 export default exports.default;

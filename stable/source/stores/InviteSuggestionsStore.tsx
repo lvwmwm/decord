@@ -1,18 +1,20 @@
-// Module ID: 9839
-// Function ID: 9840
+// Module ID: 9963
+// Function ID: 9964
 // Name: InviteSuggestionsStore
-// Dependencies: [9840, 7659, 1957, 4199, 4209, 1074, 7736, 9828, 5518, 1369, 504, 573, 2]
+// Dependencies: [9964, 7761, 1957, 5507, 2021, 4275, 4285, 1074, 7838, 9952, 5599, 1369, 504, 573, 2]
 
-// Module 9839 (InviteSuggestionsStore)
+// Module 9963 (InviteSuggestionsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5518 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 9828 */;
-import QuickSwitcherStore from "QuickSwitcherStore" /* 9840 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7659 */;
+import autocompleter_sortByMatchScoreDefault from "autocompleter/sortByMatchScore" /* 5599 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 9952 */;
+import QuickSwitcherStore from "QuickSwitcherStore" /* 9964 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7761 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import GuildMemberRequesterStore from "GuildMemberRequesterStore" /* 5507 */;
+import GuildMemberStore from "GuildMemberStore" /* 2021 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 
 require = fn;
 function compareRowsByMatchScore(score, score2) {
@@ -27,61 +29,37 @@ function compareRowsByMatchScore(score, score2) {
   }
   return num;
 }
-function _computeRows(query) {
-  set = new Set();
-  if (channel != null) {
-    const type = channel.type;
-  }
-  let tmp = null == guild;
-  if (!tmp) {
-    tmp = inviteTargetType === InviteTargetTypes.EMBEDDED_APPLICATION;
-  }
-  if (!tmp) {
-    tmp = type === constants.GUILD_VOICE;
-  }
+function getOmitGuildId() {
   let id = null;
-  if (!tmp) {
-    id = guild.id;
+  if (null != user) {
+    id = null;
+    if (inviteTargetType !== InviteTargetTypes.EMBEDDED_APPLICATION) {
+      let type;
+      if (channel != null) {
+        type = channel.type;
+      }
+      id = null;
+      if (type !== constants.GUILD_VOICE) {
+        id = user.id;
+      }
+    }
   }
-  const mostRecentDMedUser = set1(9828).getMostRecentDMedUser(set, id);
-  let isBlockedOrIgnoredResult = null == mostRecentDMedUser;
-  if (!isBlockedOrIgnoredResult) {
-    isBlockedOrIgnoredResult = RelationshipStore.isBlockedOrIgnored(mostRecentDMedUser.id);
-  }
-  if (!isBlockedOrIgnoredResult) {
-    set.add(mostRecentDMedUser.id);
-  }
-  const userAffinities = UserAffinitiesV2Store.getUserAffinities();
-  for (const item10040 of userAffinities) {
-    let addResult1 = set.add(item10040.otherUserId);
-    continue;
-  }
-  set1 = new Set();
-  if (inviteTargetType === InviteTargetTypes.EMBEDDED_APPLICATION) {
-    const channelHistory = QuickSwitcherStore.getChannelHistory();
-    const mapped = channelHistory.map((item) => channel.getChannel(item));
-    const found = mapped.filter(set1(1369).isNotNullish);
-    const found1 = found.filter((type) => type.type === constants.GUILD_TEXT);
-    const found2 = found1.filter((item) => PermissionStore.can(constants2.SEND_MESSAGES, item));
-    const substr = found2.slice(0, 3);
-    const item = substr.forEach((id) => set1.add(id.id));
-  }
-  const obj2 = set1(9828);
-  return set1(9828).generateRowsForQuery({ query, omitUserIds: set, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: id, suggestedChannelIds: set1, inviteTargetType });
+  return id;
 }
 const Constants = fn(1074);
-({ ChannelTypes: closure_14, Permissions: closure_15 } = Constants);
-const InviteTargetTypes = fn(7736).InviteTargetTypes;
+({ ChannelTypes: closure_16, Permissions: closure_17 } = Constants);
+const InviteTargetTypes = fn(7838).InviteTargetTypes;
 let set = new Set();
 let rows = [];
 let map = new Map();
 let counts = { numFriends: 0, numDms: 0, numGroupDms: 0, numChannels: 0 };
+let query = "";
 const Store = initializeDefault.Store;
 class InviteSuggestionsStore extends Store {
 }
 const prototype = InviteSuggestionsStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(ChannelStore, PermissionStore, QuickSwitcherStore, RelationshipStore, UserAffinitiesV2Store);
+  this.waitFor(ChannelStore, GuildMemberRequesterStore, GuildMemberStore, PermissionStore, QuickSwitcherStore, RelationshipStore, UserAffinitiesV2Store);
 };
 prototype["getInviteSuggestionRows"] = function getInviteSuggestionRows() {
   return rows;
@@ -102,35 +80,222 @@ prototype["getSelectedInviteMetadata"] = function getSelectedInviteMetadata(row)
 };
 InviteSuggestionsStore.displayName = "InviteSuggestionsStore";
 const inviteSuggestionsStore = new InviteSuggestionsStore(DispatcherDefault, {
-  LOAD_INVITE_SUGGESTIONS: function refreshInviteSuggestions(guild) {
-    ({ omitUserIds, channel, inviteTargetType } = guild);
-    guild = null;
-    if (null != channel) {
-      guild = guild.guild;
-    }
-    applicationId = guild.applicationId;
+  LOAD_INVITE_SUGGESTIONS: function refreshInviteSuggestions(arg0) {
+    ({ inviteTargetType, guild: closure_1_5, channel: closure_1_6, applicationId: closure_1_7 } = arg0);
+    query = "";
     const blockedOrIgnoredIDs = RelationshipStore.getBlockedOrIgnoredIDs();
     const usersAlreadyJoined = InstantInviteUtils.getUsersAlreadyJoined({ channel, applicationId, inviteTargetType });
     const items = [...usersAlreadyJoined];
     set = new Set(items);
-    closure_4 = false;
-    const tmp5 = _computeRows("");
-    rows = tmp5.rows;
+    closure_4 = "" !== query;
+    const tmp4 = (function _computeRows(query) {
+      set = new Set();
+      const tmp = closure_25();
+      const mostRecentDMedUser = set1(9952).getMostRecentDMedUser(omitUserIds, tmp);
+      let isBlockedOrIgnoredResult = null == mostRecentDMedUser;
+      if (!isBlockedOrIgnoredResult) {
+        isBlockedOrIgnoredResult = blockedOrIgnored.isBlockedOrIgnored(mostRecentDMedUser.id);
+      }
+      if (!isBlockedOrIgnoredResult) {
+        set.add(mostRecentDMedUser.id);
+      }
+      userAffinities = userAffinities.getUserAffinities();
+      for (const item10031 of userAffinities) {
+        let addResult1 = set.add(item10031.otherUserId);
+        continue;
+      }
+      set1 = new Set();
+      if (inviteTargetType === constants.EMBEDDED_APPLICATION) {
+        channelHistory = channelHistory.getChannelHistory();
+        const mapped = channelHistory.map((item) => channel.getChannel(item));
+        const found = mapped.filter(set1(1369).isNotNullish);
+        const found1 = found.filter((type) => type.type === constants.GUILD_TEXT);
+        const found2 = found1.filter((item) => closure_1_14.can(constants2.SEND_MESSAGES, item));
+        const substr = found2.slice(0, 3);
+        const item = substr.forEach((id) => set1.add(id.id));
+      }
+      const obj2 = set1(9952);
+      return set1(9952).generateRowsForQuery({ query, omitUserIds, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: tmp, suggestedChannelIds: set1, inviteTargetType });
+    })(query);
+    rows = tmp4.rows;
+    if (closure_4) {
+      const sorted = rows.sort(compareRowsByMatchScore);
+    }
     map = new Map();
     const item = rows.forEach((item, index) => {
       const result = map.set(item, { index });
     });
-    counts = tmp5.counts;
+    (function requestMembership(rows) {
+      const tmp = getOmitGuildId();
+      if (null != tmp) {
+        const iter = rows[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp5 = nextResult;
+          let tmp6 = id;
+          let tmp8 = nextResult.type !== id(9952).RowTypes.DM;
+          if (tmp8) {
+            tmp8 = tmp5.type !== tmp6(9952).RowTypes.FRIEND;
+          }
+          if (!tmp8) {
+            let member = GuildMemberRequesterStore.requestMember(tmp, tmp5.item.id);
+          }
+          continue;
+        }
+      }
+    })(rows);
+    counts = tmp4.counts;
   },
   INVITE_SUGGESTIONS_SEARCH: function handleSearch(query) {
     query = query.query;
     closure_4 = "" !== query;
-    rows = _computeRows(query).rows;
-    const sorted = rows.sort(compareRowsByMatchScore);
+    ({ rows, counts } = (function _computeRows(query) {
+      set = new Set();
+      const tmp = closure_25();
+      const mostRecentDMedUser = set1(9952).getMostRecentDMedUser(omitUserIds, tmp);
+      let isBlockedOrIgnoredResult = null == mostRecentDMedUser;
+      if (!isBlockedOrIgnoredResult) {
+        isBlockedOrIgnoredResult = blockedOrIgnored.isBlockedOrIgnored(mostRecentDMedUser.id);
+      }
+      if (!isBlockedOrIgnoredResult) {
+        set.add(mostRecentDMedUser.id);
+      }
+      userAffinities = userAffinities.getUserAffinities();
+      for (const item10031 of userAffinities) {
+        let addResult1 = set.add(item10031.otherUserId);
+        continue;
+      }
+      set1 = new Set();
+      if (inviteTargetType === constants.EMBEDDED_APPLICATION) {
+        channelHistory = channelHistory.getChannelHistory();
+        const mapped = channelHistory.map((item) => channel.getChannel(item));
+        const found = mapped.filter(set1(1369).isNotNullish);
+        const found1 = found.filter((type) => type.type === constants.GUILD_TEXT);
+        const found2 = found1.filter((item) => closure_1_14.can(constants2.SEND_MESSAGES, item));
+        const substr = found2.slice(0, 3);
+        const item = substr.forEach((id) => set1.add(id.id));
+      }
+      const obj2 = set1(9952);
+      return set1(9952).generateRowsForQuery({ query, omitUserIds, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: tmp, suggestedChannelIds: set1, inviteTargetType });
+    })(query));
+    if (closure_4) {
+      const sorted = rows.sort(compareRowsByMatchScore);
+    }
     map = new Map();
     const item = rows.forEach((item, index) => {
       const result = map.set(item, { index });
     });
+    (function requestMembership(rows) {
+      const tmp = getOmitGuildId();
+      if (null != tmp) {
+        const iter = rows[Symbol.iterator]();
+        const nextResult = iter.next();
+        while (iter !== undefined) {
+          let tmp5 = nextResult;
+          let tmp6 = id;
+          let tmp8 = nextResult.type !== id(9952).RowTypes.DM;
+          if (tmp8) {
+            tmp8 = tmp5.type !== tmp6(9952).RowTypes.FRIEND;
+          }
+          if (!tmp8) {
+            let member = GuildMemberRequesterStore.requestMember(tmp, tmp5.item.id);
+          }
+          continue;
+        }
+      }
+    })(rows);
+  },
+  GUILD_MEMBERS_CHUNK_BATCH: function handleGuildMembersChunkBatch(chunks) {
+    chunks = chunks.chunks;
+    set = undefined;
+    let id = null;
+    if (null != user) {
+      id = null;
+      if (inviteTargetType !== InviteTargetTypes.EMBEDDED_APPLICATION) {
+        let type;
+        if (channel != null) {
+          type = channel.type;
+        }
+        id = null;
+        if (type !== constants.GUILD_VOICE) {
+          id = user.id;
+        }
+      }
+    }
+    if (null == id) {
+      return false;
+    } else {
+      const _Set = Set;
+      set = new Set(rows.map((item) => item.item.id));
+      if (chunks.some((guildId) => {
+        let someResult = guildId.guildId === id;
+        if (someResult) {
+          const members = guildId.members;
+          someResult = members.some((user) => set.has(user.user.id));
+        }
+        return someResult;
+      })) {
+        closure_4 = "" !== query;
+        ({ rows, counts } = (function _computeRows(query) {
+          set = new Set();
+          const tmp = closure_25();
+          const mostRecentDMedUser = set1(9952).getMostRecentDMedUser(omitUserIds, tmp);
+          let isBlockedOrIgnoredResult = null == mostRecentDMedUser;
+          if (!isBlockedOrIgnoredResult) {
+            isBlockedOrIgnoredResult = blockedOrIgnored.isBlockedOrIgnored(mostRecentDMedUser.id);
+          }
+          if (!isBlockedOrIgnoredResult) {
+            set.add(mostRecentDMedUser.id);
+          }
+          userAffinities = userAffinities.getUserAffinities();
+          for (const item10031 of userAffinities) {
+            let addResult1 = set.add(item10031.otherUserId);
+            continue;
+          }
+          set1 = new Set();
+          if (inviteTargetType === constants.EMBEDDED_APPLICATION) {
+            channelHistory = channelHistory.getChannelHistory();
+            const mapped = channelHistory.map((item) => channel.getChannel(item));
+            const found = mapped.filter(set1(1369).isNotNullish);
+            const found1 = found.filter((type) => type.type === constants.GUILD_TEXT);
+            const found2 = found1.filter((item) => closure_1_14.can(constants2.SEND_MESSAGES, item));
+            const substr = found2.slice(0, 3);
+            const item = substr.forEach((id) => set1.add(id.id));
+          }
+          const obj2 = set1(9952);
+          return set1(9952).generateRowsForQuery({ query, omitUserIds, suggestedUserIds: set, maxRowsWithoutQuery: 100, omitGuildId: tmp, suggestedChannelIds: set1, inviteTargetType });
+        })(query));
+        if (closure_4) {
+          const sorted = rows.sort(compareRowsByMatchScore);
+        }
+        const _Map = Map;
+        map = new Map();
+        let item = rows.forEach((item, index) => {
+          const result = map.set(item, { index });
+        });
+        (function requestMembership(rows) {
+          const tmp = getOmitGuildId();
+          if (null != tmp) {
+            const iter = rows[Symbol.iterator]();
+            const nextResult = iter.next();
+            while (iter !== undefined) {
+              let tmp5 = nextResult;
+              let tmp6 = id;
+              let tmp8 = nextResult.type !== id(9952).RowTypes.DM;
+              if (tmp8) {
+                tmp8 = tmp5.type !== tmp6(9952).RowTypes.FRIEND;
+              }
+              if (!tmp8) {
+                let member = GuildMemberRequesterStore.requestMember(tmp, tmp5.item.id);
+              }
+              continue;
+            }
+          }
+        })(rows);
+      } else {
+        return false;
+      }
+    }
   }
 });
 const size = fn(2);

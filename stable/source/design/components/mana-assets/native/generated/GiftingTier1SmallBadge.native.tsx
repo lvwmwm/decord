@@ -1,13 +1,13 @@
-// Module ID: 6155
-// Function ID: 6156
+// Module ID: 6256
+// Function ID: 6257
 // Name: GiftingTier1SmallBadge
-// Dependencies: [21, 5587, 6156, 2]
+// Dependencies: [21, 5668, 6257, 2]
 // Exports: GiftingTier1SmallBadge
 
-// Module 6155 (GiftingTier1SmallBadge)
+// Module 6256 (GiftingTier1SmallBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6156 from "module_6156" /* 6156 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6257 from "module_6257" /* 6257 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GiftingTier1SmallBadge = function GiftingTier1SmallBadge(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6156 };
+  const obj2 = { uri: _modDef6257 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,9 +1,18 @@
 // Module ID: 5321
 // Function ID: 5322
-// Dependencies: [1122]
+// Dependencies: [5319]
 
 // Module 5321
-import registerAsset from "module_1122" /* 1122 */;
+import _mod5319 from "module_5319" /* 5319 */;
 
+require = arg1;
+const dependencyMap = arg6;
+const obj = { 1: "InteroperabilityIndex", 2: null, 4096: "RelatedImageFileFormat", 4097: "RelatedImageWidth", 4098: "RelatedImageHeight" };
+obj[2] = {
+  name: "InteroperabilityVersion",
+  description(value) {
+    return _mod5319.getStringValue(value);
+  }
+};
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "5f8b57af5ab5fdfa6cf52708c91c3adb", name: "img_account_sync_reddit_white", type: "svg" });
+export default obj;

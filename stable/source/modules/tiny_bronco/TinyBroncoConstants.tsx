@@ -1,14 +1,16 @@
-// Module ID: 14686
-// Function ID: 14687
+// Module ID: 14770
+// Function ID: 14771
 // Name: TinyBroncoConstants
 // Dependencies: [2]
 
-// Module 14686 (TinyBroncoConstants)
+// Module 14770 (TinyBroncoConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tiny_bronco/TinyBroncoConstants.tsx");
 
 export const TINY_BRONCO_BLOG_URL = "https://discord.com/blog/safer-for-teens-same-discord-for-adults";
-export const TINY_BRONCO_SUPPORT_ARTICLE_ID = "42178056096663#h_01M0XEC24HG29RFJ4C04NM3SXM";
+export const TINY_BRONCO_ARTICLE_ID = "42178056096663#h_01M0XEC24HG29RFJ4C04NM3SXM";
 export const TINY_BRONCO_SETTINGS_LOCATION = "AccountStatusSettings";
-export const TINY_BRONCO_ANNOUNCEMENT_EXCLUDED_COUNTRIES = new Set(["GB", "AU"]);
+export const TINY_BRONCO_CHANNEL_LOCATION = "ChannelWarning";
+export const TINY_BRONCO_SERVER_LOCATION = "ServerWarning";
+export const TINY_BRONCO_NSFW_SERVER_LOCATION = "NsfwServerWarning";

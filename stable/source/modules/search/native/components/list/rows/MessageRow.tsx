@@ -1,23 +1,23 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16783
+// Function ID: 16784
 // Name: MessageRow
-// Dependencies: [19, 17, 4552, 1960, 1957, 1979, 4741, 1074, 21, 4560, 576, 504, 5028, 4713, 1178, 4556, 10150, 10396, 9444, 4404, 8182, 16673, 13291, 16674, 4793, 7962, 7329, 16655, 1114, 10114, 7880, 2]
+// Dependencies: [19, 17, 4628, 1960, 1957, 1979, 4817, 1074, 21, 4636, 576, 504, 5109, 4789, 1176, 4632, 10273, 10520, 9568, 4481, 8298, 16784, 13423, 16785, 4869, 8065, 7432, 16761, 1114, 10237, 7983, 2]
 
-// Module 16672 (MessageRow)
+// Module 16783 (MessageRow)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
-import UserUtilsDefault from "UserUtils" /* 4404 */;
-import useChannelNameDefault from "useChannelName" /* 4713 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 4793 */;
+import native from "native" /* 1176 */;
+import UserUtilsDefault from "UserUtils" /* 4481 */;
+import useChannelNameDefault from "useChannelName" /* 4789 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 4869 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 import FavoriteStore from "FavoriteStore" /* 1960 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4741 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
 
-const PollBadgeDefault = tmp5(16674);
+const PollBadgeDefault = tmp5(16785);
 require = fn;
 function GuildChannelMessageRowHeader(channel) {
   channel = channel.channel;
@@ -33,29 +33,29 @@ function GuildChannelMessageRowHeader(channel) {
     return rulesChannelId;
   });
   const obj = channel(504);
-  const channelIcon = channel(5028).getChannelIcon(channel, { isRulesChannel: stateFromStores === channel.id });
+  const channelIcon = channel(5109).getChannelIcon(channel, { isRulesChannel: stateFromStores === channel.id });
   const obj4 = { style: tmp.header, children: null };
-  const obj2 = channel(5028);
+  const obj2 = channel(5109);
   const obj3 = { isRulesChannel: stateFromStores === channel.id };
   const tmp7 = useChannelNameDefault(channel);
   const tmp8 = closure_12;
   const tmp9 = closure_4;
-  const items1 = [closure_11(channel(1178).Icon, { source: channelIcon, size: channel(1178).Icon.Sizes.REFRESH_SMALL_16, style: tmp.channelIcon }), closure_11(channel(4556).Text, { lineClamp: 1, variant: "text-sm/semibold", color: "interactive-text-default", children: tmp7 }), , , ];
+  const items1 = [closure_11(channel(1176).Icon, { source: channelIcon, size: channel(1176).Icon.Sizes.REFRESH_SMALL_16, style: tmp.channelIcon }), closure_11(channel(4632).Text, { lineClamp: 1, variant: "text-sm/semibold", color: "interactive-text-default", children: tmp7 }), , , ];
   if (muted) {
-    const obj6 = { source: tmp6(10150), size: tmp2(1178).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
-    muted = tmp10(tmp2(1178).Icon, obj6);
+    const obj6 = { source: tmp6(10273), size: tmp2(1176).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    muted = tmp10(tmp2(1176).Icon, obj6);
   }
   items1[2] = muted;
   if (isFavorite) {
-    const obj7 = { source: tmp6(10396), size: tmp2(1178).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
-    isFavorite = tmp10(tmp2(1178).Icon, obj7);
+    const obj7 = { source: tmp6(10520), size: tmp2(1176).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    isFavorite = tmp10(tmp2(1176).Icon, obj7);
   }
   items1[3] = isFavorite;
   let isSystemDMResult = channel.isSystemDM();
   if (isSystemDMResult) {
-    const obj8 = { type: tmp6(9444).Types.SYSTEM_DM, verified: true };
-    isSystemDMResult = tmp10(tmp6(9444), obj8);
-    const tmp6Result = tmp6(9444);
+    const obj8 = { type: tmp6(9568).Types.SYSTEM_DM, verified: true };
+    isSystemDMResult = tmp10(tmp6(9568), obj8);
+    const tmp6Result = tmp6(9568);
   }
   items1[4] = isSystemDMResult;
   obj4.children = items1;
@@ -79,35 +79,35 @@ function PrivateChannelMessageRowLabel(message) {
       const item = recipients.forEach((item) => message(closure_1_2[20]).getUser(item));
     }
   }, items1);
-  const searchMessageTimestamp = message(16673).useSearchMessageTimestamp(message, channel);
+  const searchMessageTimestamp = message(16784).useSearchMessageTimestamp(message, channel);
   const obj2 = { style: tmp.labelContainer, children: null };
   const obj3 = { style: tmp.authorRow, children: null };
   ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
-  const items2 = [closure_11(message(4556).Text, { lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: memo }), , ];
+  const items2 = [closure_11(message(4632).Text, { lineClamp: 1, variant: "text-md/semibold", color: "interactive-text-active", children: memo }), , ];
   if (muted) {
-    const obj4 = { source: channel(10150), size: tmp4(1178).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
-    muted = tmp9(tmp4(1178).Icon, obj4);
+    const obj4 = { source: channel(10273), size: tmp4(1176).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    muted = tmp9(tmp4(1176).Icon, obj4);
   }
   items2[1] = muted;
   let isSystemDMResult = channel.isSystemDM();
   if (isSystemDMResult) {
-    const obj5 = { type: channel(9444).Types.SYSTEM_DM, verified: true };
-    isSystemDMResult = tmp9(channel(9444), obj5);
-    const tmp13 = channel(9444);
+    const obj5 = { type: channel(9568).Types.SYSTEM_DM, verified: true };
+    isSystemDMResult = tmp9(channel(9568), obj5);
+    const tmp13 = channel(9568);
   }
   items2[2] = isSystemDMResult;
   obj3.children = items2;
-  const items3 = [closure_12(closure_4, obj3), closure_11(message(4556).Text, { variant: "text-xs/medium", color: "interactive-text-active", lineClamp: 1, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp }), , ];
+  const items3 = [closure_12(closure_4, obj3), closure_11(message(4632).Text, { variant: "text-xs/medium", color: "interactive-text-active", lineClamp: 1, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp }), , ];
   let tmp9Result = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const obj7 = { size: "xs", style: tmp.suppressNotificationsIcon };
-    tmp9Result = tmp9(tmp4(13291).BellZIcon, obj7);
+    tmp9Result = tmp9(tmp4(13423).BellZIcon, obj7);
   }
   items3[2] = tmp9Result;
   let tmp9Result2 = null;
   if (message.isPoll()) {
     const obj8 = { style: tmp.pollBadge };
-    tmp9Result2 = tmp9(channel(16674), obj8);
+    tmp9Result2 = tmp9(channel(16785), obj8);
   }
   items3[3] = tmp9Result2;
   obj2.children = items3;
@@ -123,11 +123,11 @@ function GuildChannelMessageRowLabel(arg0) {
     if (null != colorString) {
       const obj2 = { color: colorString };
     }
-    const processColorStringsArray = tmp2(7962).useProcessColorStringsArray(colorStrings);
-    const tmp2Result3 = tmp2(7962);
+    const processColorStringsArray = tmp2(8065).useProcessColorStringsArray(colorStrings);
+    const tmp2Result3 = tmp2(8065);
     const isRoleStyleAndRoleColorsEligibleForERC = tmp2Result3.useIsRoleStyleAndRoleColorsEligibleForERC(channel.guild_id, message.author.id, stateFromStores, processColorStringsArray);
-    const tmp2Result = tmp2(7962);
-    const searchMessageTimestamp = tmp2(16673).useSearchMessageTimestamp(message, channel);
+    const tmp2Result = tmp2(8065);
+    const searchMessageTimestamp = tmp2(16784).useSearchMessageTimestamp(message, channel);
     const obj3 = { style: tmp.labelContainer, children: null };
     const obj4 = { style: tmp.authorRow, children: null };
     let tmp18 = "dot" === stateFromStores;
@@ -137,7 +137,7 @@ function GuildChannelMessageRowLabel(arg0) {
     }
     if (tmp18) {
       const obj5 = { size: "small", color: colorString, colors: colorStrings };
-      tmp18 = closure_1_11(tmp2(1178).RoleDot, obj5);
+      tmp18 = closure_1_11(tmp2(1176).RoleDot, obj5);
     }
     const items1 = [tmp18, ];
     const obj6 = { variant: "text-sm/semibold", color: "interactive-text-active", lineClamp: 1, style: {}, gradientColors: null, children: null };
@@ -147,15 +147,15 @@ function GuildChannelMessageRowLabel(arg0) {
     }
     obj6.gradientColors = tmp22;
     obj6.children = tmp7;
-    items1[1] = closure_1_11(tmp2(4556).Text, obj6);
+    items1[1] = closure_1_11(tmp2(4632).Text, obj6);
     obj4.children = items1;
     const items2 = [closure_1_12(React4, obj4), , , ];
     const obj7 = { variant: "text-xs/medium", color: "text-default", lineClamp: 1, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
-    items2[1] = closure_1_11(tmp2(4556).Text, obj7);
+    items2[1] = closure_1_11(tmp2(4632).Text, obj7);
     let tmp21Result = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
       const obj8 = { size: "xs", style: tmp.suppressNotificationsIcon };
-      tmp21Result = tmp21(tmp2(13291).BellZIcon, obj8);
+      tmp21Result = tmp21(tmp2(13423).BellZIcon, obj8);
     }
     items2[2] = tmp21Result;
     let tmp21Result2 = null;
@@ -173,7 +173,7 @@ get_ActivityIndicator = fn(17);
 const MessageFlags = fn(1074).MessageFlags;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { channelIcon: { marginRight: 5, alignSelf: "center" }, channelStatus: { marginLeft: 5, alignSelf: "center", tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, labelContainer: { flexDirection: "row", width: "100%", marginBottom: 2, alignItems: "center" }, authorRow: { flexShrink: 1, minWidth: 0, flexDirection: "row" }, timestamp: { marginLeft: 8 }, header: { flexDirection: "row", marginRight: 16, marginBottom: 12 }, body: { alignItems: "flex-start" }, pollBadge: { marginLeft: 8 }, suppressNotificationsIcon: { marginLeft: 4 }, spoilerText: { fontStyle: "italic" } };
 let closure_13 = createStyles.createStyles(obj);
 let obj3 = { marginLeft: 5, alignSelf: "center", tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };

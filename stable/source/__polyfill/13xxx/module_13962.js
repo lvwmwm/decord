@@ -1,9 +1,0 @@
-// Module ID: 13962
-// Function ID: 13963
-// Dependencies: [1122]
-
-// Module 13962
-import registerAsset from "module_1122" /* 1122 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 161, height: 160, scales: [1], hash: "b002cec8fdbd5414b4068fe272d35071", name: "phibi_1", type: "png" });

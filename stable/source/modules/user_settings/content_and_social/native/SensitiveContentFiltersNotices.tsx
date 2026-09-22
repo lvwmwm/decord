@@ -1,36 +1,43 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 14908
+// Function ID: 14909
 // Name: SensitiveContentFiltersNotices
-// Dependencies: [19, 8400, 21, 7301, 14690, 1114, 4255, 2024, 8412, 8414, 2]
+// Dependencies: [19, 8517, 21, 14906, 7404, 14774, 1114, 4331, 2024, 8529, 8531, 2]
 // Exports: SensitiveContentFiltersAgeVerificationNotice, SensitiveContentFiltersTeenNotice
 
-// Module 14820 (SensitiveContentFiltersNotices)
+// Module 14908 (SensitiveContentFiltersNotices)
 import util from "util" /* 1114 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import LinkingDefault from "Linking" /* 4255 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8412 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14690 */;
+import LinkingDefault from "Linking" /* 4331 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8529 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 14774 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const SafetySettingsNoticeType = fn(8400).SafetySettingsNoticeType;
+const SafetySettingsNoticeType = fn(8517).SafetySettingsNoticeType;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/SensitiveContentFiltersNotices.tsx");
 
 export const SensitiveContentFiltersTeenNotice = function SensitiveContentFiltersTeenNotice() {
+  const isTinyBroncoSettingsNoticeEnabled = require("TinyBroncoSettingsNoticesLazy").useIsTinyBroncoSettingsNoticeEnabled();
+  let obj = require("TinyBroncoSettingsNoticesLazy");
   _require = require("SensitiveMediaGoreRedactionSettingsUtils").useSensitiveContentFilterHelpArticle();
-  const obj2 = { label: null, labelHook: null, noticeType: null };
-  let obj = require("SensitiveMediaGoreRedactionSettingsUtils");
-  obj2.label = require("util").t.EUo0yj;
-  obj2.labelHook = function labelHook() {
-    const obj = LinkingDefault;
-    obj.openURL(HelpdeskUtilsDefault.getArticleURL(closure_0));
-  };
-  obj2.noticeType = SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE;
-  return jsx(SafetySettingsNoticeDefault, { label: null, labelHook: null, noticeType: null });
+  if (isTinyBroncoSettingsNoticeEnabled) {
+    let tmp4Result = tmp4(tmp(14906).ContentFiltersTeenNotice, {});
+  } else {
+    const obj3 = {
+      label: tmp(1114).t.EUo0yj,
+      labelHook() {
+          const obj = LinkingDefault;
+          obj.openURL(HelpdeskUtilsDefault.getArticleURL(closure_0));
+        },
+      noticeType: SafetySettingsNoticeType.SENSITIVE_CONTENT_FILTER_TEEN_NOTICE
+    };
+    tmp4Result = tmp4(SafetySettingsNoticeDefault, obj3);
+  }
+  return tmp4Result;
 };
 export const SensitiveContentFiltersAgeVerificationNotice = function SensitiveContentFiltersAgeVerificationNotice() {
   let obj = {

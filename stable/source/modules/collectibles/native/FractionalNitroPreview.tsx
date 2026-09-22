@@ -1,18 +1,17 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 13277
+// Function ID: 13278
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1074, 21, 4560, 576, 1114, 4987, 5587, 13146, 13147, 7133, 4556, 2]
+// Dependencies: [19, 17, 1074, 1373, 21, 4636, 576, 1114, 5211, 4294, 5068, 5668, 13278, 13279, 7236, 4632, 2]
 // Exports: FractionalNitroPreview
 
-// Module 13145 (FractionalNitroPreview)
+// Module 13277 (FractionalNitroPreview)
 import nativeDefault from "native" /* 576 */;
-import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7133 */;
-import _modDef13146 from "module_13146" /* 13146 */;
-import NitroIconDefault from "NitroIcon" /* 13147 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7236 */;
+import _modDef13278 from "module_13278" /* 13278 */;
+import NitroIconDefault from "NitroIcon" /* 13279 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -20,45 +19,60 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const VerticalGradient = fn(1074).VerticalGradient;
+const PremiumTypes = fn(1373).PremiumTypes;
 const jsxProd = fn(21);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
+const createStyles = fn(4636);
 let obj2 = { container: { flexDirection: "column", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24, borderRadius: nativeDefault.radii.lg, overflow: "hidden", alignSelf: "center", gap: nativeDefault.space.PX_16 }, gradient: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }, headerImage: { width: 211, height: 157, resizeMode: "cover" }, nitroIconContainer: { alignSelf: "flex-start" }, benefits: null, benefitRow: null };
 let obj3 = { flexDirection: "column", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24, borderRadius: nativeDefault.radii.lg, overflow: "hidden", alignSelf: "center", gap: nativeDefault.space.PX_16 };
 obj2.benefits = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_8 };
 let obj4 = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_8 };
 obj2.benefitRow = { display: "flex", flexDirection: "row", gap: nativeDefault.space.PX_8, alignItems: "center" };
-let closure_7 = createStyles.createStyles(obj2);
+let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/native/FractionalNitroPreview.tsx");
 
 export const FractionalNitroPreview = function FractionalNitroPreview() {
-  const tmp = closure_7();
+  const tmp = closure_8();
   _require = tmp;
-  let items = [require("util").t.E1NP2x, require("util").t.kpMomJ, require("util").t.xT1Vfn, require("util").t.myyAEr, require("util").t.zTk8Ul];
-  let obj = { style: tmp.container, children: null };
-  const items1 = [closure_5(LinearGradientDefault, { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient }), , , ];
-  let obj3 = { source: null, style: null };
-  const obj4 = { uri: _modDef13146 };
-  obj3.source = obj4;
-  obj3.style = tmp.headerImage;
-  items1[1] = closure_5(FastImageDefault, obj3);
-  const obj2 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
-  items1[2] = closure_5(View, { style: tmp.nitroIconContainer, children: closure_5(NitroIconDefault, {}) });
-  const obj5 = { style: tmp.nitroIconContainer, children: closure_5(NitroIconDefault, {}) };
-  items1[3] = closure_5(View, {
+  const intl = require("util").intl;
+  let items = [intl.string(require("util").t.E1NP2x), , , , ];
+  const intl2 = require("util").intl;
+  items[1] = intl2.string(require("util").t.kpMomJ);
+  const obj2 = { legacyCopy: null, rolloutCopy: null };
+  const intl3 = require("util").intl;
+  obj2.legacyCopy = intl3.string(require("util").t.xT1Vfn);
+  const intl4 = require("util").intl;
+  const obj3 = { maxFileSize: null };
+  let obj = require("NitroFileUploadExperiments");
+  obj3.maxFileSize = require("PremiumUtils").getMaxFileSizeForPremiumType(PremiumTypes.TIER_2, { useSpace: false });
+  obj2.rolloutCopy = intl4.formatToPlainString(require("util").t.IDAfOy, obj3);
+  items[2] = obj.getNitroFileUploadRolloutCopy(obj2);
+  const intl5 = require("util").intl;
+  items[3] = intl5.string(require("util").t.myyAEr);
+  const intl6 = require("util").intl;
+  items[4] = intl6.string(require("util").t.zTk8Ul);
+  const obj5 = { style: tmp.container, children: null };
+  const items1 = [closure_6(LinearGradientDefault, { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient }), , , ];
+  const obj7 = { source: null, style: null };
+  const obj8 = { uri: null };
+  const obj4 = require("PremiumUtils");
+  const obj6 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
+  obj8.uri = _modDef13278;
+  obj7.source = obj8;
+  obj7.style = tmp.headerImage;
+  items1[1] = closure_6(FastImageDefault, obj7);
+  items1[2] = closure_6(View, { style: tmp.nitroIconContainer, children: closure_6(NitroIconDefault, {}) });
+  const obj9 = { style: tmp.nitroIconContainer, children: closure_6(NitroIconDefault, {}) };
+  items1[3] = closure_6(View, {
     style: tmp.benefits,
-    children: items.map((item, index) => {
+    children: items.map((children, index) => {
       const obj = { style: benefitRow.benefitRow, children: null };
-      const items = [hasOwnProperty(CheckmarkSmallIcon.CheckmarkSmallIcon, { color: nativeDefault.colors.WHITE }), ];
-      const obj3 = { variant: "text-sm/medium", color: "text-overlay-light", children: null };
-      const intl = util.intl;
-      obj3.children = intl.string(item);
-      items[1] = hasOwnProperty(Text_Text.Text, obj3);
+      const items = [timestampProducer(CheckmarkSmallIcon.CheckmarkSmallIcon, { color: nativeDefault.colors.WHITE }), timestampProducer(Text_Text.Text, { variant: "text-sm/medium", color: "text-overlay-light", children })];
       obj.children = items;
-      return timestampProducer(View, obj, index);
+      return React5(View, obj, index);
     })
   });
-  obj.children = items1;
-  return closure_6(View, obj);
+  obj5.children = items1;
+  return closure_7(View, obj5);
 };

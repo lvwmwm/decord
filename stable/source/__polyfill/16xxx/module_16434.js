@@ -1,9 +1,9 @@
 // Module ID: 16434
 // Function ID: 16435
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 16434
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 23, height: 29, scales: [1, 2], hash: "9b2d7ede4e6a66812c53739302a187c3", name: "ic_update_profile", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "9055490a5df5abd5b4d009687b826923", name: "ic_guild_voice_24px", type: "png" });

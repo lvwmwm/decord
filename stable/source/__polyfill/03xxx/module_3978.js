@@ -1,21 +1,20 @@
 // Module ID: 3978
 // Function ID: 3979
-// Dependencies: [3650, 3651, 3654]
+// Dependencies: [3976, 3726]
 // Exports: default
 
 // Module 3978
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
-import module_3654_mod from "module_3654" /* 3654 */;
+import module_3976_mod from "module_3976" /* 3976 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+let module_3976 = module_3976_mod;
+if (!module_3976) {
+  const obj = { default: module_3976 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_3976;
 }
-_typeof = tmp3;
+module_3976 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,30 +23,9 @@ if (!requiredArgs) {
   tmp5 = requiredArgs;
 }
 requiredArgs = tmp5;
-let module_3654 = module_3654_mod;
-if (!module_3654) {
-  const obj3 = { default: module_3654 };
-  let tmp7 = obj3;
-} else {
-  tmp7 = module_3654;
-}
-module_3654 = tmp7;
 
-export default function setUTCISODay(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = module_3654.default(arg1);
-  let diff = defaultResult1;
-  if (defaultResult1 % 7 === 0) {
-    diff = defaultResult1 - 7;
-  }
-  const defaultResult2 = _typeof.default(arg0);
-  let num = 0;
-  const uTCDay = defaultResult2.getUTCDay();
-  if ((diff % 7 + 7) % 7 < 1) {
-    num = 7;
-  }
-  const diff1 = num + diff - uTCDay;
-  defaultResult2.setUTCDate(defaultResult2.getUTCDate() + diff1);
-  return defaultResult2;
+export default function formatDistanceToNowStrict(arg0, arg1) {
+  requiredArgs.default(1, arguments);
+  return module_3976.default(arg0, Date.now(), arg1);
 };
 export default exports.default;

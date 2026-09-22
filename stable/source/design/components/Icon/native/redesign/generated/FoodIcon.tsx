@@ -1,13 +1,13 @@
-// Module ID: 10357
-// Function ID: 10358
+// Module ID: 10481
+// Function ID: 10482
 // Name: FoodIcon
-// Dependencies: [19, 21, 576, 4261, 10358, 2]
+// Dependencies: [19, 21, 576, 4337, 10482, 2]
 // Exports: FoodIcon
 
-// Module 10357 (FoodIcon)
+// Module 10481 (FoodIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod10358 from "module_10358" /* 10358 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod10482 from "module_10482" /* 10482 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const FoodIcon = function FoodIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10358, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10482, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

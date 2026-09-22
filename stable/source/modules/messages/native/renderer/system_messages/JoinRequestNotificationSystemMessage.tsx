@@ -1,15 +1,15 @@
-// Module ID: 8046
-// Function ID: 8047
+// Module ID: 8150
+// Function ID: 8151
 // Name: JoinRequestNotificationSystemMessage
-// Dependencies: [5542, 4382, 1979, 1371, 1074, 1114, 11, 7965, 2]
+// Dependencies: [5623, 4459, 1979, 1371, 1074, 1114, 11, 8068, 2]
 // Exports: createJoinRequestNotificationSystemMessage
 
-// Module 8046 (JoinRequestNotificationSystemMessage)
+// Module 8150 (JoinRequestNotificationSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1114 */;
-import createCommonMessageDefault from "createCommonMessage" /* 7965 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5542 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4382 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8068 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 5623 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4459 */;
 import GuildStore from "GuildStore" /* 1979 */;
 import UserStore from "UserStore" /* 1371 */;
 

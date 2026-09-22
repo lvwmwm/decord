@@ -1,22 +1,13 @@
 // Module ID: 14409
 // Function ID: 14410
-// Dependencies: [17, 14410]
-// Exports: default
+// Dependencies: [14393, 14410]
 
 // Module 14409
+import _mod14393 from "module_14393" /* 14393 */;
 import _mod14410 from "module_14410" /* 14410 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
 
+let closure_2 = _mod14393({}.hasOwnProperty);
 
-export default function getReactNativeDimensions() {
-  try {
-    const Dimensions = get_ActivityIndicator.Dimensions;
-    try {
-      const Dimensions2 = get_ActivityIndicator.Dimensions;
-      value = Dimensions2.get("window");
-      return _mod14410.getReactNativeDimensionsWithDimensions(tmp2, value);
-    } catch (err) {
-    }
-  } catch (err) {
-  }
-};
+export default Object.hasOwn || (function hasOwn(arg0, arg1) {
+  return closure_2(_mod14410(arg0), arg1);
+});

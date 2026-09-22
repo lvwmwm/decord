@@ -1,9 +1,9 @@
-// Module ID: 16598
-// Function ID: 16599
+// Module ID: 16699
+// Function ID: 16700
 // Name: VibegrationsWebSocket
 // Dependencies: [2]
 
-// Module 16598 (VibegrationsWebSocket)
+// Module 16699 (VibegrationsWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsWebSocket.tsx");
@@ -149,6 +149,24 @@ prototype["sendDebugStatusRequest"] = function sendDebugStatusRequest() {
       const socket = self.socket;
       const _JSON = JSON;
       socket.send(JSON.stringify({ type: "debug_status_request" }));
+    }
+  }
+  const error = new Error("WebSocket not open");
+  throw error;
+};
+prototype["sendForceCompaction"] = function sendForceCompaction(flag) {
+  if (flag === undefined) {
+    flag = false;
+  }
+  const self = this;
+  if (null != this.socket) {
+    const _WebSocket = WebSocket;
+    if (self.socket.readyState === WebSocket.OPEN) {
+      const socket = self.socket;
+      const tmp2 = flag ? { settle_pending: true } : {};
+      const obj = { type: "force_compaction" };
+      const merged = Object.assign(tmp2);
+      socket.send(JSON.stringify(obj));
     }
   }
   const error = new Error("WebSocket not open");

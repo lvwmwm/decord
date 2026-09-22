@@ -1,33 +1,33 @@
-// Module ID: 4710
-// Function ID: 4711
+// Module ID: 4786
+// Function ID: 4787
 // Name: MediaFormatTesters
-// Dependencies: [32, 1115, 4711, 2]
+// Dependencies: [32, 1363, 4787, 2]
 // Exports: isAnimatedImageUrl, isAudioFile, isImageContentType, isImageFile, isImageUrl, isRiveFile, isVideoContentType, isVideoFile, isVideoUrl, isWebPlayerVideoFile, isWebPlayerVideoUrl, urlMatchesFileExtension
 
-// Module 4710 (MediaFormatTesters)
-import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 4711 */;
+// Module 4786 (MediaFormatTesters)
+import WebViewWebmSupportTest from "WebViewWebmSupportTest" /* 4787 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
 const re3 = /\.(png|jpe?g|jfif|webp|gif|heic|heif|dng|avif)$/i;
 const re4 = /\.(webp|gif|avif)$/i;
-let PlatformUtils = fn(1115);
+let PlatformUtils = fn(1363);
 if (PlatformUtils.isIOS()) {
   let tmp2 = /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
 } else {
-  tmp2 = fn(1115).isAndroid() ? /\.(mp3|m4a|wav|ogg|opus|flac)$/i : /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
-  let obj2 = fn(1115);
+  tmp2 = fn(1363).isAndroid() ? /\.(mp3|m4a|wav|ogg|opus|flac)$/i : /\.(mp3|m4a|wav|aif|aiff|ogg|opus|flac)$/i;
+  let obj2 = fn(1363);
 }
 const regex = tmp2;
 const re6 = /\.(webm)$/i;
 const re7 = /\.(riv)$/i;
-PlatformUtils = fn(1115);
+PlatformUtils = fn(1363);
 if (PlatformUtils.isIOS()) {
   let tmp4 = /\.(mp4|mov|qt)$/i;
 } else {
-  fn(1115).isAndroid();
+  fn(1363).isAndroid();
   tmp4 = /\.(mp4|webm|mov|qt)$/i;
-  const obj4 = fn(1115);
+  const obj4 = fn(1363);
 }
 const re8 = tmp4;
 function urlMatchesFileExtension(sourceURI, GIF_RE_IOS) {

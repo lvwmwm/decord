@@ -1,14 +1,14 @@
-// Module ID: 12368
-// Function ID: 12369
+// Module ID: 12497
+// Function ID: 12498
 // Name: SearchMemberTabStore
-// Dependencies: [1957, 1074, 9841, 4204, 5519, 504, 573, 2]
+// Dependencies: [1957, 1074, 9965, 4280, 5600, 504, 573, 2]
 
-// Module 12368 (SearchMemberTabStore)
+// Module 12497 (SearchMemberTabStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4204 */;
-import GuildUtilsDefault from "GuildUtils" /* 5519 */;
-import sortByMatchScoreDefault from "sortByMatchScore" /* 9841 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4280 */;
+import GuildUtilsDefault from "GuildUtils" /* 5600 */;
+import sortByMatchScoreDefault from "sortByMatchScore" /* 9965 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 
 const require = fn;
@@ -162,7 +162,7 @@ const searchGuildMemberTabStoreImpl = new SearchGuildMemberTabStoreImpl(Dispatch
             searchGuildMemberTabStoreImpl.emitChange();
           }
         };
-        let items = [obj2(9841).AutocompleterResultTypes.USER];
+        let items = [obj2(9965).AutocompleterResultTypes.USER];
         const tmp42 = new sortByMatchScoreDefault(obj2.onAutocompleterResultsChange, items, 50);
         obj2.autocompleter = tmp42;
         const autocompleter = obj2.autocompleter;

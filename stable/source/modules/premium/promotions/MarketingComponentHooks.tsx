@@ -1,15 +1,15 @@
-// Module ID: 10758
-// Function ID: 10759
+// Module ID: 10885
+// Function ID: 10886
 // Name: MarketingComponentHooks
-// Dependencies: [4552, 4495, 504, 4269, 2]
+// Dependencies: [4628, 4571, 504, 4345, 2]
 // Exports: useThemeAndReducedMotionAwareAssetUrl
 
-// Module 10758 (MarketingComponentHooks)
+// Module 10885 (MarketingComponentHooks)
 import initialize from "initialize" /* 504 */;
-import useThemeDefault from "useTheme" /* 4495 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import useThemeDefault from "useTheme" /* 4571 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 
-const themes = tmp3(4269);
+const themes = tmp3(4345);
 require = fn;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/promotions/MarketingComponentHooks.tsx");

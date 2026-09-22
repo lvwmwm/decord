@@ -1,31 +1,31 @@
-// Module ID: 8853
-// Function ID: 8854
+// Module ID: 8972
+// Function ID: 8973
 // Name: CollectiblesShopCardCardDetailsV2
-// Dependencies: [19, 17, 7237, 1074, 21, 4560, 576, 8771, 7553, 8854, 7554, 8856, 8867, 4556, 1114, 8843, 1115, 8868, 8668, 8179, 8836, 1889, 4218, 4262, 4409, 8870, 504, 4987, 8871, 2]
+// Dependencies: [19, 17, 7340, 1074, 21, 4636, 576, 8891, 7656, 8973, 7657, 8975, 8986, 4632, 1114, 8962, 1363, 8987, 8785, 8295, 4294, 4338, 4486, 8989, 504, 5068, 8990, 2]
 
-// Module 8853 (CollectiblesShopCardCardDetailsV2)
+// Module 8972 (CollectiblesShopCardCardDetailsV2)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4218 */;
-import useToken from "useToken" /* 4262 */;
-import ColorUtils from "ColorUtils" /* 4409 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7553 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7554 */;
-import useCurrentUser from "useCurrentUser" /* 8179 */;
-import useCanPurchaseFrames from "useCanPurchaseFrames" /* 8836 */;
-import getProductName from "getProductName" /* 8870 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4294 */;
+import useToken from "useToken" /* 4338 */;
+import ColorUtils from "ColorUtils" /* 4486 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7656 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7657 */;
+import useCurrentUser from "useCurrentUser" /* 8295 */;
+import getProductName from "getProductName" /* 8989 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7237 */;
+import IAPStore from "IAPStore" /* 7340 */;
 
+const CollectiblesShopCardVariantsDefault = tmp4(8990);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ CurrencyCodes: metroRequire, VerticalGradient: closure_7 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { regularMetadataContainer: null, assetName: null, priceVariantsContainer: null, priceDescription: null, text: null, discountPercentage: null, wheelIcon: null, androidTextPadding: null };
 let size = { position: "absolute", height: "45%", width: "100%", padding: 10, flex: 1, bottom: 0, overflow: "hidden", borderBottomLeftRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm, display: "flex", flexDirection: "column", justifyContent: "flex-end" };
 obj.regularMetadataContainer = size;
@@ -210,45 +210,33 @@ export default noop.memo(function CardDetailsV2(arg0) {
   ({ collectibleProductState, preferVCPrice, isDisabled } = arg0);
   const tmp = closure_10();
   const currentUser = useCurrentUser.useCurrentUser();
-  let isProfileFramesEarlyAccessPhase = useCanPurchaseFrames.useIsProfileFramesEarlyAccessPhase("CollectiblesShopCardCardDetailsV2");
-  if (isProfileFramesEarlyAccessPhase) {
-    const productType = tmp2(7553).getProductType(product);
-    isProfileFramesEarlyAccessPhase = productType === tmp2(1889).CollectiblesItemType.PROFILE_FRAME;
-    const tmp2Result = tmp2(7553);
-  }
-  const tmp8 = PremiumUtilsDefault.canUseShopDiscounts(currentUser) || isProfileFramesEarlyAccessPhase;
+  const canUseShopDiscountsResult = PremiumUtilsDefault.canUseShopDiscounts(currentUser);
   const shopDiscountSource = CollectiblesUtils.getShopDiscountSource(currentUser);
-  const tmp2Result9 = CollectiblesUtils;
-  const token = useToken.useToken(tmp7(576).colors.BACKGROUND_BASE_LOW);
-  const tmp2Result10 = useToken;
-  const tmp2Result11 = ColorUtils;
-  const tmp2Result12 = ColorUtils;
-  const hexToRgbaStringResult = tmp2Result11.hexToRgbaString(ColorUtils.hexWithOpacity(token, 0.9));
-  const tmp2Result13 = ColorUtils;
-  const tmp2Result14 = ColorUtils;
-  const hexToRgbaStringResult1 = tmp2Result13.hexToRgbaString(ColorUtils.hexWithOpacity(token, 0));
+  const token = useToken.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
+  const obj5 = ColorUtils;
+  const hexToRgbaStringResult = obj5.hexToRgbaString(ColorUtils.hexWithOpacity(token, 0.9));
+  const obj7 = ColorUtils;
+  const hexToRgbaStringResult1 = obj7.hexToRgbaString(ColorUtils.hexWithOpacity(token, 0));
   const cardProductName = getProductName.getCardProductName(product);
-  const tmp2Result15 = getProductName;
   const items = [IAPStore];
   const stateFromStores = initialize.useStateFromStores(items, () => fetchingGoogleSkus.isFetchingGoogleSkus());
-  const obj3 = { style: null, colors: null, locations: [0, 0.4, 1], start: constants2.START, end: constants2.END, children: null };
+  const obj11 = { style: null, colors: null, locations: [0, 0.4, 1], start: constants2.START, end: constants2.END, children: null };
   const items1 = [tmp.regularMetadataContainer];
-  obj3.style = items1;
+  obj11.style = items1;
   const items2 = [hexToRgbaStringResult1, hexToRgbaStringResult, token];
-  obj3.colors = items2;
-  const tmp2Result16 = initialize;
+  obj11.colors = items2;
   const items3 = [React6(Text_Text.Text, { style: tmp.assetName, variant: "heading-sm/bold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: cardProductName }), ];
-  let tmp15Result = !hidePrice;
+  let tmp12Result = !hidePrice;
   if (!hidePrice) {
-    const obj6 = { style: tmp.priceVariantsContainer, children: null };
-    const obj7 = { product, hasShopDiscount: tmp8, discountSource: shopDiscountSource, styles: tmp, collectibleProductState, isFetchingGoogleSkus: stateFromStores, preferVCPrice, isDisabled };
-    const items4 = [tmp17(memoResult, obj7), ];
-    const obj8 = { product };
-    items4[1] = tmp17(tmp7(8871), obj8);
-    obj6.children = items4;
-    tmp15Result = tmp15(View, obj6);
+    const obj13 = { style: tmp.priceVariantsContainer, children: null };
+    const obj14 = { product, hasShopDiscount: canUseShopDiscountsResult, discountSource: shopDiscountSource, styles: tmp, collectibleProductState, isFetchingGoogleSkus: stateFromStores, preferVCPrice, isDisabled };
+    const items4 = [tmp14(memoResult, obj14), ];
+    const obj15 = { product };
+    items4[1] = tmp14(CollectiblesShopCardVariantsDefault, obj15);
+    obj13.children = items4;
+    tmp12Result = tmp12(View, obj13);
   }
-  items3[1] = tmp15Result;
-  obj3.children = items3;
-  return React7(LinearGradientDefault, obj3);
+  items3[1] = tmp12Result;
+  obj11.children = items3;
+  return React7(LinearGradientDefault, obj11);
 });

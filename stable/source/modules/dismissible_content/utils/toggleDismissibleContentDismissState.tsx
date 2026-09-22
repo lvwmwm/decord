@@ -1,13 +1,13 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 15705
+// Function ID: 15706
 // Name: toggleDismissibleContentDismissState
-// Dependencies: [19, 4381, 10242, 1955, 1945, 1940, 11, 504, 4380, 1090, 1944, 2]
+// Dependencies: [19, 4458, 10366, 1955, 1945, 1940, 11, 504, 4457, 1090, 1944, 2]
 // Exports: default
 
-// Module 15619 (toggleDismissibleContentDismissState)
+// Module 15705 (toggleDismissibleContentDismissState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _mod19 from "module_19" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4381 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ const UserSettingsProtoActionCreators = obj(1940);
 const DismissibleContentTypes = obj(1944);
 const DismissibleContentUtils = obj(1945);
 const VersionedDismissibleContentUtils = obj(1955);
-const DismissibleContentFrameworkActionCreators = obj(10242);
+const DismissibleContentFrameworkActionCreators = obj(10366);
 _mod19.useCallback;
 let result = size.fileFinishedImporting("modules/dismissible_content/utils/toggleDismissibleContentDismissState.tsx");
 

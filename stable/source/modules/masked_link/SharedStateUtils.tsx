@@ -1,11 +1,11 @@
-// Module ID: 12955
-// Function ID: 12956
+// Module ID: 13085
+// Function ID: 13086
 // Name: SharedStateUtils
-// Dependencies: [32, 19, 8374, 2]
+// Dependencies: [32, 19, 8491, 2]
 // Exports: useModalState, useUrlParts
 
-// Module 12955 (SharedStateUtils)
-import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8374 */;
+// Module 13085 (SharedStateUtils)
+import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 8491 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -55,10 +55,10 @@ export const useModalState = function useModalState(url) {
     if (first) {
       trustUrl(str);
     }
-    if (onClose != null) {
-      tmp4();
-    }
     onConfirm();
+    if (onClose != null) {
+      onClose();
+    }
   }, items1);
   url = {
     protocol,
@@ -69,10 +69,10 @@ export const useModalState = function useModalState(url) {
     setShouldTrustUrl: tmp[1],
     handleConfirm: callback,
     handleCancel: obj.useCallback(() => {
-      if (onClose != null) {
-        tmp();
-      }
       onCancel();
+      if (onClose != null) {
+        onClose();
+      }
     }, items2)
   };
   return url;

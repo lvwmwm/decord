@@ -1,7 +1,7 @@
 // Module ID: 1931
 // Function ID: 1932
 // Name: DetectableGameStore
-// Dependencies: [1918, 1074, 1350, 1090, 1932, 510, 1115, 1934, 504, 11, 1369, 1894, 1242, 1935, 573, 2]
+// Dependencies: [1918, 1074, 1348, 1090, 1932, 510, 1363, 1934, 504, 11, 1369, 1894, 1240, 1935, 573, 2]
 
 // Module 1931 (DetectableGameStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -10,14 +10,14 @@ import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
 import DurationsDefault from "Durations" /* 1090 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import ApplicationConstants from "ApplicationConstants" /* 1350 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import ApplicationConstants from "ApplicationConstants" /* 1348 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;
 import ApplicationRecord from "ApplicationRecord" /* 1918 */;
 import CachedEntriesMapDefault from "CachedEntriesMap" /* 1932 */;
 import GameDetectionTypes from "GameDetectionTypes" /* 1934 */;
 import UserSettings from "UserSettings" /* 1935 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

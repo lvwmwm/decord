@@ -1,13 +1,13 @@
-// Module ID: 6165
-// Function ID: 6166
+// Module ID: 6266
+// Function ID: 6267
 // Name: GiftingTier4LargeBadge
-// Dependencies: [21, 5587, 6166, 2]
+// Dependencies: [21, 5668, 6267, 2]
 // Exports: GiftingTier4LargeBadge
 
-// Module 6165 (GiftingTier4LargeBadge)
+// Module 6266 (GiftingTier4LargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6166 from "module_6166" /* 6166 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6267 from "module_6267" /* 6267 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GiftingTier4LargeBadge = function GiftingTier4LargeBadge(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6166 };
+  const obj2 = { uri: _modDef6267 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

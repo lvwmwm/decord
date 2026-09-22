@@ -1,0 +1,166 @@
+// Module ID: 7289
+// Function ID: 7290
+// Name: useRoleIconProps
+// Dependencies: [19, 2015, 1979, 504, 7290, 2]
+// Exports: computeRoleIconRole, getRoleIconProps, useRoleIconProps, useRoleIconPropsForPreview
+
+// Module 7289 (useRoleIconProps)
+import RoleIconUtils from "RoleIconUtils" /* 7290 */;
+import noop from "module_19" /* 19 */;
+import GuildRoleStore from "GuildRoleStore" /* 2015 */;
+import GuildStore from "GuildStore" /* 1979 */;
+
+const require = globalThis.__r;
+
+require = fn;
+const size = fn(2);
+const result = size.fileFinishedImporting("modules/roles/useRoleIconProps.tsx");
+
+export const useRoleIconProps = function useRoleIconProps(guildId) {
+  guildId = guildId.guildId;
+  const roleId = guildId.roleId;
+  let num = guildId.size;
+  if (num === undefined) {
+    num = 20;
+  }
+  let role = guildId.role;
+  let guild = guildId.guild;
+  const items = [guild, role];
+  const items1 = [guildId, roleId, role, guild];
+  const stateFromStores = guildId(roleId[3]).useStateFromStores(items, () => {
+    let tmp3 = role;
+    if (GuildStore !== undefined) {
+      if (obj2 !== undefined) {
+        if (guild == null) {
+          guild = GuildStore.getGuild(tmp);
+        }
+        if (tmp3 == null) {
+          role = undefined;
+          if (null != tmp) {
+            if (null != tmp2) {
+              role = obj2.getRole(tmp, tmp2);
+            }
+          }
+          tmp3 = role;
+        }
+        let tmp7;
+        if (null != guild) {
+          if (null != tmp3) {
+            if (obj3.canGuildUseRoleIcons(guild, tmp3)) {
+              tmp7 = tmp3;
+            }
+            obj3 = RoleIconUtils;
+          }
+        }
+        return tmp7;
+      }
+    }
+  }, items1);
+  const items2 = [stateFromStores, num];
+  return num.useMemo(() => {
+    let tmp3;
+    if (null != stateFromStores) {
+      const roleIconData = RoleIconUtils.getRoleIconData(tmp, tmp2);
+      if (null != roleIconData) {
+        const obj3 = { src: roleIconData.customIconSrc, name: null, roleId: null, size: null, unicodeEmoji: null };
+        ({ name: obj2.name, id: obj2.roleId } = tmp);
+        obj3.size = tmp2;
+        obj3.unicodeEmoji = roleIconData.unicodeEmoji;
+        tmp3 = obj3;
+      }
+    }
+    return tmp3;
+  }, items2);
+};
+export const getRoleIconProps = function getRoleIconProps(roleIconRole, size) {
+  if (null != roleIconRole) {
+    const roleIconData = RoleIconUtils.getRoleIconData(roleIconRole, size);
+    if (null != roleIconData) {
+      const obj3 = { src: roleIconData.customIconSrc, name: null, roleId: null, size: null, unicodeEmoji: null };
+      ({ name: obj2.name, id: obj2.roleId } = roleIconRole);
+      obj3.size = size;
+      obj3.unicodeEmoji = roleIconData.unicodeEmoji;
+      return obj3;
+    }
+  }
+};
+export const useRoleIconPropsForPreview = function useRoleIconPropsForPreview(guildId, role) {
+  _require = guildId;
+  dependencyMap = role;
+  const items = [GuildStore, GuildRoleStore];
+  const items1 = [guildId, role];
+  const stateFromStores = require("initialize").useStateFromStores(items, () => {
+    ({ guildId, roleId, role, guild } = { guildId, role });
+    if (GuildStore !== undefined) {
+      if (obj3 !== undefined) {
+        if (guild == null) {
+          guild = GuildStore.getGuild(guildId);
+        }
+        if (role == null) {
+          let role1;
+          if (null != guildId) {
+            if (null != roleId) {
+              role1 = obj3.getRole(guildId, roleId);
+            }
+          }
+          role = role1;
+        }
+        let tmp3;
+        if (null != guild) {
+          if (null != role) {
+            if (obj4.canGuildUseRoleIcons(guild, role)) {
+              tmp3 = role;
+            }
+            obj4 = RoleIconUtils;
+          }
+        }
+        return tmp3;
+      }
+    }
+  }, items1);
+  const items2 = [stateFromStores];
+  return stateFromStores.useMemo(() => {
+    let tmp2;
+    if (null != stateFromStores) {
+      const roleIconData = RoleIconUtils.getRoleIconData(tmp, undefined);
+      if (null != roleIconData) {
+        const obj3 = { src: roleIconData.customIconSrc, name: null, roleId: null, size: "Array", unicodeEmoji: 0 };
+        ({ name: obj2.name, id: obj2.roleId } = tmp);
+        obj3.unicodeEmoji = roleIconData.unicodeEmoji;
+        tmp2 = obj3;
+      }
+    }
+    return tmp2;
+  }, items2);
+};
+export const computeRoleIconRole = function computeRoleIconRole(arg0) {
+  ({ guildId, roleId, role, guild } = arg0);
+  let obj = arg1;
+  if (arg1 === undefined) {
+    obj = GuildStore;
+  }
+  let obj2 = arg2;
+  if (arg2 === undefined) {
+    obj2 = GuildRoleStore;
+  }
+  if (guild == null) {
+    guild = obj.getGuild(guildId);
+  }
+  if (role == null) {
+    let role1;
+    if (null != guildId) {
+      if (null != roleId) {
+        role1 = obj2.getRole(guildId, roleId);
+      }
+    }
+    role = role1;
+  }
+  if (null != guild) {
+    if (null != role) {
+      if (obj3.canGuildUseRoleIcons(guild, role)) {
+        return role;
+      }
+      obj3 = RoleIconUtils;
+    }
+  }
+};

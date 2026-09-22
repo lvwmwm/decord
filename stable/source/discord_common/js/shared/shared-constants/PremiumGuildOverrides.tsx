@@ -1,9 +1,9 @@
-// Module ID: 4456
-// Function ID: 4457
+// Module ID: 4532
+// Function ID: 4533
 // Name: PremiumGuildOverrides
 // Dependencies: [2]
 
-// Module 4456 (PremiumGuildOverrides)
+// Module 4532 (PremiumGuildOverrides)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/PremiumGuildOverrides.tsx");

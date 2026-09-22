@@ -1,13 +1,13 @@
-// Module ID: 9786
-// Function ID: 9787
+// Module ID: 9910
+// Function ID: 9911
 // Name: useGuildScheduledEventUserCount
-// Dependencies: [19, 7526, 504, 9787, 2]
+// Dependencies: [19, 7629, 504, 9911, 2]
 // Exports: default
 
-// Module 9786 (useGuildScheduledEventUserCount)
+// Module 9910 (useGuildScheduledEventUserCount)
 import _mod19 from "module_19" /* 19 */;
-import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9787 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7526 */;
+import GuildScheduledEventManagerDefault from "GuildScheduledEventManager" /* 9911 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7629 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 5017
-// Function ID: 5018
+// Module ID: 5098
+// Function ID: 5099
 // Name: SoundmojiRenderingExperiment
 // Dependencies: [1433, 2]
 // Exports: getSoundmojiRenderingExperiment, useSoundmojiRenderingExperiment
 
-// Module 5017 (SoundmojiRenderingExperiment)
+// Module 5098 (SoundmojiRenderingExperiment)
 import ApexExperiment from "ApexExperiment" /* 1433 */;
 import size from "module_2" /* 2 */;
 

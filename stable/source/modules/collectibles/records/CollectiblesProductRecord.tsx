@@ -1,16 +1,16 @@
-// Module ID: 7544
-// Function ID: 7545
+// Module ID: 7647
+// Function ID: 7648
 // Name: CollectiblesProductRecord
-// Dependencies: [32, 7545, 7546, 7551, 1076, 1074, 5513, 1889, 2]
+// Dependencies: [32, 7648, 7649, 7654, 1076, 1074, 5594, 1889, 2]
 
-// Module 7544 (CollectiblesProductRecord)
-import getPricesFromServerDefault from "getPricesFromServer" /* 5513 */;
+// Module 7647 (CollectiblesProductRecord)
+import getPricesFromServerDefault from "getPricesFromServer" /* 5594 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7545 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7551 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7648 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7654 */;
 
 const require = fn;
-const CollectiblesItemRecord = fn(7546);
+const CollectiblesItemRecord = fn(7649);
 ({ createCollectiblesItemsFromServerResponse: hasOwnProperty, transformSKUToCollectiblesItem: metroRequire } = CollectiblesItemRecord);
 let closure_7 = fn(1076).REWARD_CATEGORY_AND_REWARD_SKU_IDS;
 const Constants = fn(1074);
@@ -177,7 +177,7 @@ CollectiblesProductRecord["fromStorefrontProductRecord"] = function fromStorefro
               }
               ({ items, item } = obj);
               first = _slicedToArray(tenantMetadata.selectedOptions, 1)[0];
-              const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "Button", type: "Array", premiumType: "call", items: false, categorySkuId: false, isCategoryReward: false, prices: false, previewAssets: false, googleSkuIds: false, eligibleOffers: false, variants: false, bundledProducts: false, isFirstParty: false };
+              const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: null, variantValue: null, storeListingId: null, skuId: null, name: null, summary: null, styles: "Button", type: "Array", premiumType: "w", items: "SUMMARIES_ENABLED_BY_USER", categorySkuId: "FileUpIcon", isCategoryReward: "woman_swimming_medium_skin_tone", prices: "REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE", previewAssets: "isArray", googleSkuIds: "isArray", eligibleOffers: "MODERATE_STAGE_CHANNEL_PERMISSIONS", variants: "activeViewType", bundledProducts: "sgL8sI", isFirstParty: "e" };
               let str;
               if (first != null) {
                 str = first.optionValue;

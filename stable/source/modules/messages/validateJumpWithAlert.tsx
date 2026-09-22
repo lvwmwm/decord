@@ -1,16 +1,16 @@
-// Module ID: 13289
-// Function ID: 13290
+// Module ID: 13421
+// Function ID: 13422
 // Name: validateJumpWithAlert
-// Dependencies: [1957, 4199, 4209, 1074, 4904, 1114, 7507, 2]
+// Dependencies: [1957, 4275, 4285, 1074, 4980, 1114, 7610, 2]
 // Exports: default
 
-// Module 13289 (validateJumpWithAlert)
+// Module 13421 (validateJumpWithAlert)
 import util from "util" /* 1114 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 4904 */;
-import isSpam from "isSpam" /* 7507 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 4980 */;
+import isSpam from "isSpam" /* 7610 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 
 require = fn;
 const Permissions = fn(1074).Permissions;

@@ -1,20 +1,20 @@
 // Module ID: 4005
 // Function ID: 4006
-// Dependencies: [3650, 3651]
+// Dependencies: [4004, 3726]
 // Exports: default
 
 // Module 4005
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import module_4004_mod from "module_4004" /* 4004 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+let module_4004 = module_4004_mod;
+if (!module_4004) {
+  const obj = { default: module_4004 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_4004;
 }
-_typeof = tmp3;
+module_4004 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,10 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isSameYear(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const fullYear = defaultResult1.getFullYear();
-  return fullYear === _typeof.default(arg1).getFullYear();
+export default function getUnixTime(arg0) {
+  requiredArgs.default(1, arguments);
+  return Math.floor(module_4004.default(arg0) / 1000);
 };
 export default exports.default;

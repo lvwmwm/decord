@@ -1,21 +1,21 @@
-// Module ID: 6605
-// Function ID: 6606
+// Module ID: 6706
+// Function ID: 6707
 // Name: FreeFormInputGroup
-// Dependencies: [19, 17, 21, 4560, 1115, 5686, 6606, 1178, 6938, 6939, 6941, 4556, 2]
+// Dependencies: [19, 17, 21, 4636, 1363, 5767, 6707, 1176, 7039, 7040, 7042, 4632, 2]
 
-// Module 6605 (FreeFormInputGroup)
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import RedesignCompat from "RedesignCompat" /* 5686 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 6938 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 6939 */;
-import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 6941 */;
+// Module 6706 (FreeFormInputGroup)
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import RedesignCompat from "RedesignCompat" /* 5767 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 7039 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 7040 */;
+import FreeFormErrorLabelDefault from "FreeFormErrorLabel" /* 7042 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_7 = createStyles.createStyles({ label: { marginBottom: 8 }, input: { flexGrow: 1, marginBottom: 8 }, error: { marginBottom: 8 }, hint: { marginBottom: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/void/Form/native/FreeFormInputGroup.tsx");
@@ -45,8 +45,8 @@ export default noop.forwardRef((accessibilityLabel, ref) => {
   const id = noop.useId();
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
-    const obj3 = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, isClearable: clearButtonVisibility !== tmp8(1178).ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
-    return hasOwnProperty(tmp8(6606).TextInput, obj3);
+    const obj3 = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, isClearable: clearButtonVisibility !== tmp8(1176).ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
+    return hasOwnProperty(tmp8(6707).TextInput, obj3);
   } else {
     const obj4 = { style, children: null };
     let tmp14 = null;
@@ -61,7 +61,7 @@ export default noop.forwardRef((accessibilityLabel, ref) => {
       if (null == label) {
         const tmp23 = label;
       } else {
-        const tmp8Result = tmp8(1115);
+        const tmp8Result = tmp8(1363);
       }
       accessibilityLabel = tmp23;
     }
@@ -84,7 +84,7 @@ export default noop.forwardRef((accessibilityLabel, ref) => {
     let tmp17Result2 = null;
     if (null != hint) {
       const obj8 = { style: tmp2.hint, variant: "text-xs/medium", color: "text-muted", children: hint };
-      tmp17Result2 = tmp17(tmp8(4556).Text, obj8);
+      tmp17Result2 = tmp17(tmp8(4632).Text, obj8);
     }
     items[3] = tmp17Result2;
     obj4.children = items;

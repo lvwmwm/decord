@@ -1,13 +1,13 @@
-// Module ID: 7539
-// Function ID: 7540
+// Module ID: 7642
+// Function ID: 7643
 // Name: FamilyCenterActionCreators
-// Dependencies: [5, 7540, 7538, 1074, 7541, 573, 1272, 1242, 1941, 1187, 1223, 2]
+// Dependencies: [5, 7643, 7641, 1074, 7644, 573, 1270, 1240, 1941, 1185, 1221, 2]
 // Exports: getLinkCodeForCurrentUser, removeLinkForUserId, shareIarWithParents, updateLinkForUserId
 
-// Module 7539 (FamilyCenterActionCreators)
+// Module 7642 (FamilyCenterActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7540 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 7643 */;
 
 const require = globalThis.__r;
 
@@ -382,7 +382,7 @@ let closure_15 = async function _shareIarWithParents(arg0, value) {
     }
   }
 };
-const FamilyCenterAction = fn(7538).FamilyCenterAction;
+const FamilyCenterAction = fn(7641).FamilyCenterAction;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7 } = Constants);
 const size = fn(2);
@@ -657,8 +657,8 @@ export default {
     return (async () => {
       const code = tmp2;
       const recipient_id = tmp5;
-      const HTTP = recipient_id(1272).HTTP;
-      const request = { url: constants.FAMILY_CENTER_LINKED_USERS, body: { recipient_id, code }, rejectWithError: recipient_id(1272).rejectWithMigratedError() };
+      const HTTP = recipient_id(1270).HTTP;
+      const request = { url: constants.FAMILY_CENTER_LINKED_USERS, body: { recipient_id, code }, rejectWithError: recipient_id(1270).rejectWithMigratedError() };
       await HTTP.post(request);
       const body = arg1.body;
       closure_128_1 = { linkedUsers: body.linked_users, users: body.users };
@@ -955,21 +955,21 @@ export default {
               return obj3;
             } else {
               let settings2;
-              const protoFieldClass = tmp5(1941).getProtoFieldClass(tmp5(1187).PreloadedUserSettings, tmp2);
+              const protoFieldClass = tmp5(1941).getProtoFieldClass(tmp5(1185).PreloadedUserSettings, tmp2);
               settings = settings.getSettings(tmp5);
               let tmp13;
               if (settings != null) {
                 tmp13 = settings[tmp36];
               }
               const tmp33Result = tmp5(1941);
-              const modifiedProto = tmp33Result.createModifiedProto(tmp13, closure_2, protoFieldClass, tmp33(1187).PreloadedUserSettings, tmp36);
+              const modifiedProto = tmp33Result.createModifiedProto(tmp13, closure_2, protoFieldClass, tmp33(1185).PreloadedUserSettings, tmp36);
               if (null != modifiedProto) {
-                const HTTP = tmp33(1272).HTTP;
+                const HTTP = tmp33(1270).HTTP;
                 const request = { url: closure_1_7.FAMILY_CENTER_TEEN_SETTINGS(tmp5), body: null, rejectWithError: null };
-                const obj4 = { settings: tmp33(1223).protoToB64(tmp33(1187).PreloadedUserSettings, modifiedProto) };
+                const obj4 = { settings: tmp33(1221).protoToB64(tmp33(1185).PreloadedUserSettings, modifiedProto) };
                 request.body = obj4;
-                const tmp33Result3 = tmp33(1223);
-                request.rejectWithError = tmp33(1272).rejectWithMigratedError();
+                const tmp33Result3 = tmp33(1221);
+                request.rejectWithError = tmp33(1270).rejectWithMigratedError();
                 dependencyMap = 1;
                 c3 = 1;
                 const obj5 = { value: HTTP.patch(request), done: false };

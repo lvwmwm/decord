@@ -1,13 +1,13 @@
-// Module ID: 5899
-// Function ID: 5900
+// Module ID: 6000
+// Function ID: 6001
 // Name: DevSdkTallAbstractUI
-// Dependencies: [21, 5587, 5900, 2]
+// Dependencies: [21, 5668, 6001, 2]
 // Exports: DevSdkTallAbstractUI
 
-// Module 5899 (DevSdkTallAbstractUI)
+// Module 6000 (DevSdkTallAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef5900 from "module_5900" /* 5900 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6001 from "module_6001" /* 6001 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const DevSdkTallAbstractUI = function DevSdkTallAbstractUI(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5900 };
+  const obj2 = { uri: _modDef6001 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

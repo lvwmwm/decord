@@ -1,28 +1,28 @@
-// Module ID: 4582
-// Function ID: 4583
+// Module ID: 4658
+// Function ID: 4659
 // Name: ApplicationStreamingStore
-// Dependencies: [4577, 1915, 502, 1957, 1979, 1908, 4199, 4583, 2011, 4579, 1074, 4602, 1090, 4612, 13831, 13832, 13833, 1896, 7726, 504, 13804, 573, 2]
+// Dependencies: [4653, 1915, 502, 1957, 1979, 1908, 4275, 4659, 2011, 4655, 1074, 4678, 1090, 4688, 13917, 13918, 13919, 1896, 7828, 504, 13890, 573, 2]
 
-// Module 4582 (ApplicationStreamingStore)
+// Module 4658 (ApplicationStreamingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import DurationsDefault from "Durations" /* 1090 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4612 */;
-import StreamPermissionUtils from "StreamPermissionUtils" /* 7726 */;
-import canSpectateDefault from "canSpectate" /* 13804 */;
-import windowSourceMatchesDefault from "windowSourceMatches" /* 13831 */;
-import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 13832 */;
-import GameConsoleStore from "GameConsoleStore" /* 4577 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4688 */;
+import StreamPermissionUtils from "StreamPermissionUtils" /* 7828 */;
+import canSpectateDefault from "canSpectate" /* 13890 */;
+import windowSourceMatchesDefault from "windowSourceMatches" /* 13917 */;
+import getTitleFromPickedStreamContentDefault from "getTitleFromPickedStreamContent" /* 13918 */;
+import GameConsoleStore from "GameConsoleStore" /* 4653 */;
 import RunningGameStore from "RunningGameStore" /* 1915 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildStore from "GuildStore" /* 1979 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import VoiceStateStore from "VoiceStateStore" /* 4579 */;
+import VoiceStateStore from "VoiceStateStore" /* 4655 */;
 
 require = fn;
 function reset() {
@@ -52,7 +52,7 @@ function handleStreamUpdate(streamKey) {
 }
 const Constants = fn(1074);
 ({ ApplicationStreamStates: closure_18, RTCConnectionStates: closure_19, ApplicationStreamDeleteReasons: closure_20, NULL_STRING_GUILD_ID: closure_21, BasicPermissions: closure_22 } = Constants);
-const StreamTypes = fn(4602).StreamTypes;
+const StreamTypes = fn(4678).StreamTypes;
 const selfStreamParticipantsHidden = {};
 let intent = null;
 let closure_27 = 10 * DurationsDefault.Millis.SECOND;
@@ -253,10 +253,10 @@ prototype["getAnyStreamForUser"] = function getAnyStreamForUser(userId) {
     return null;
   }
 };
-prototype["getAnyDiscoverableStreamForUser"] = function getAnyDiscoverableStreamForUser(id) {
+prototype["getAnyDiscoverableStreamForUser"] = function getAnyDiscoverableStreamForUser(userId) {
   if (canSpectateDefault(MediaEngineStore)) {
     let tmp4 = null;
-    if (null != streamsByUserAndGuild[id]) {
+    if (null != streamsByUserAndGuild[userId]) {
       const _Object = Object;
       const values = Object.values(tmp3);
       let found = values.find((channelId) => {
@@ -677,7 +677,7 @@ const applicationStreamingStore = new ApplicationStreamingStore(DispatcherDefaul
   STREAM_START: function handleStreamStart(arg0) {
     ({ streamType, guildId, channelId, pid, sourceId } = arg0);
     ({ sourceName, sourceIcon, previewDisabled } = arg0);
-    const obj = sourceId(4612);
+    const obj = sourceId(4688);
     const encodeStreamKeyResult = obj.encodeStreamKey({ streamType, guildId, channelId, ownerId: AuthenticationStore.getId() });
     let startsWithResult;
     if (sourceId != null) {
@@ -755,11 +755,11 @@ const applicationStreamingStore = new ApplicationStreamingStore(DispatcherDefaul
         FAILED = tmp22.FAILED;
       } else if (reason === tmp3.SAFETY_GUILD_RATE_LIMITED) {
         guildId = StreamKeyUtils.decodeStreamKey(streamKey).guildId;
-        asyncRequireImpl(13833, dependencyMap.paths).then((result) => {
+        asyncRequireImpl(13919, dependencyMap.paths).then((result) => {
           result.default(guildId);
         });
         FAILED = tmp22.ENDED;
-        const promise = asyncRequireImpl(13833, dependencyMap.paths);
+        const promise = asyncRequireImpl(13919, dependencyMap.paths);
       } else {
         if (tmp9) {
           FAILED = tmp22.FAILED;

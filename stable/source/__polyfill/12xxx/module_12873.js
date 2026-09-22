@@ -1,19 +1,9 @@
 // Module ID: 12873
 // Function ID: 12874
-// Dependencies: [12872]
-// Exports: getTraceMetaTags
+// Dependencies: [1120]
 
 // Module 12873
-import _mod12872 from "module_12872" /* 12872 */;
+import registerAsset from "module_1120" /* 1120 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const getTraceMetaTags = function getTraceMetaTags() {
-  const entries = Object.entries(_mod12872.getTraceData());
-  const mapped = entries.map((item) => {
-    [tmp, tmp2] = item;
-    return "<meta name=\"" + tmp + "\" content=\"" + tmp2 + "\"/>";
-  });
-  return mapped.join("\n");
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hub/native/images", width: 119, height: 83, scales: [2, 3], hash: "0b100afac52015c470ea1ec3ef8acf50", name: "redesign_email_header", type: "png" });

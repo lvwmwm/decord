@@ -1,23 +1,23 @@
-// Module ID: 15261
-// Function ID: 15262
+// Module ID: 15342
+// Function ID: 15343
 // Name: SidechainCompressionSetting
-// Dependencies: [1908, 7976, 4585, 504, 11473, 1114, 9095, 2]
+// Dependencies: [1908, 8079, 4661, 504, 11605, 1114, 9218, 2]
 
-// Module 15261 (SidechainCompressionSetting)
+// Module 15342 (SidechainCompressionSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1114 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9095 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9218 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
 
 require = fn;
-const Features = fn(4585).Features;
-const SettingBuilders = fn(11473);
+const Features = fn(4661).Features;
+const SettingBuilders = fn(11605);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["/jwMtn"]);
   },
-  parent: fn(7976).MobileUserSettings.VOICE,
+  parent: fn(8079).MobileUserSettings.VOICE,
   usePredicate() {
     return MediaEngineStore.supports(Features.SIDECHAIN_COMPRESSION);
   },

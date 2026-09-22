@@ -1,12 +1,12 @@
-// Module ID: 14099
-// Function ID: 14100
+// Module ID: 14183
+// Function ID: 14184
 // Name: Collapsible
-// Dependencies: [32, 19, 17, 21, 4560, 576, 4296, 4974, 2]
+// Dependencies: [32, 19, 17, 21, 4636, 576, 4373, 5055, 2]
 // Exports: default
 
-// Module 14099 (Collapsible)
+// Module 14183 (Collapsible)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 4974 */;
+import spring from "spring" /* 5055 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const EXPAND_SPRING = { stiffness: 150, overshootClamping: true };
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj2 = { collapsible: { position: "relative", overflow: "hidden" }, collapsibleContent: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH } };
 let closure_9 = createStyles.createStyles(obj2);
 const __initData = { code: "function CollapsibleTsx1(){const{withSpring,totalHeight,EXPAND_SPRING}=this.__closure;return{height:withSpring(totalHeight,EXPAND_SPRING)};}" };

@@ -1,41 +1,41 @@
-// Module ID: 11687
-// Function ID: 11688
+// Module ID: 11815
+// Function ID: 11816
 // Name: ForwardModal
-// Dependencies: [5, 32, 19, 17, 7596, 8336, 1957, 4781, 8361, 11688, 10865, 21, 4560, 576, 1477, 10986, 504, 11686, 11685, 5630, 11689, 4259, 1114, 1369, 11690, 4906, 11691, 9947, 4571, 11692, 11693, 4705, 4528, 4529, 4258, 7190, 1115, 10988, 7377, 4503, 5125, 10989, 11696, 11000, 2]
+// Dependencies: [5, 32, 19, 17, 7698, 8453, 1957, 4857, 8478, 11816, 10992, 21, 4636, 576, 1477, 11117, 504, 11814, 11813, 5711, 11817, 4335, 1114, 1369, 11818, 4982, 11819, 10071, 4647, 11820, 11821, 4781, 4604, 4605, 4334, 7292, 1363, 11119, 7480, 4579, 5206, 11120, 11824, 11131, 2]
 // Exports: default
 
-// Module 11687 (ForwardModal)
+// Module 11815 (ForwardModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import ToastUtils from "ToastUtils" /* 4258 */;
-import LinkIcon from "LinkIcon" /* 4503 */;
-import HapticUtils from "HapticUtils" /* 4528 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4529 */;
-import ChannelUtils from "ChannelUtils" /* 4705 */;
-import ClipboardUtils from "ClipboardUtils" /* 7190 */;
-import HeaderActionButton from "HeaderActionButton" /* 7377 */;
-import formatResults from "formatResults" /* 10986 */;
-import ForwardModalUtils from "ForwardModalUtils" /* 11685 */;
-import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11686 */;
-import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11689 */;
+import ToastUtils from "ToastUtils" /* 4334 */;
+import LinkIcon from "LinkIcon" /* 4579 */;
+import HapticUtils from "HapticUtils" /* 4604 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4605 */;
+import ChannelUtils from "ChannelUtils" /* 4781 */;
+import ClipboardUtils from "ClipboardUtils" /* 7292 */;
+import HeaderActionButton from "HeaderActionButton" /* 7480 */;
+import formatResults from "formatResults" /* 11117 */;
+import ForwardModalUtils from "ForwardModalUtils" /* 11813 */;
+import ForwardingAnalyticsUtils from "ForwardingAnalyticsUtils" /* 11814 */;
+import ForwardDestinationUtils from "ForwardDestinationUtils" /* 11817 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7596 */;
-import ICYMIStore from "ICYMIStore" /* 8336 */;
+import ConversationsStore from "ConversationsStore" /* 7698 */;
+import ICYMIStore from "ICYMIStore" /* 8453 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import MessageStore from "MessageStore" /* 4781 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 8361 */;
+import MessageStore from "MessageStore" /* 4857 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 8478 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const MAX_DESTINATION_COUNT = fn(11688).MAX_DESTINATION_COUNT;
-let UserRowModes = fn(10865).UserRowModes;
+const MAX_DESTINATION_COUNT = fn(11816).MAX_DESTINATION_COUNT;
+let UserRowModes = fn(10992).UserRowModes;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 1, display: "flex", backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND } };
 let closure_16 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -235,7 +235,7 @@ export default function ForwardModal(message) {
                 if (forwardOptions(source[24])(message, closure_129_1)) {
                   const promise = new Promise((arg0) => {
                     closure_0 = arg0;
-                    closure_1_0(4906).openAlert("staff-to-non-staff-forward", ref2(forwardOptions(11691), {
+                    closure_1_0(4982).openAlert("staff-to-non-staff-forward", ref2(forwardOptions(11819), {
                       onConfirm() {
                         return closure_0(true);
                       },

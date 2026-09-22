@@ -1,16 +1,19 @@
-// Module ID: 14455
-// Function ID: 14456
+// Module ID: 14541
+// Function ID: 14542
 // Name: DeclarativeNotificationSettingsRedesignExperiment
 // Dependencies: [1433, 2]
-// Exports: useIsDeclarativeNotificationSettingsRedesignEnabled
+// Exports: isDeclarativeNotificationSettingsRedesignEnabled, useIsDeclarativeNotificationSettingsRedesignEnabled
 
-// Module 14455 (DeclarativeNotificationSettingsRedesignExperiment)
+// Module 14541 (DeclarativeNotificationSettingsRedesignExperiment)
 import ApexExperiment from "ApexExperiment" /* 1433 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = ApexExperiment.createApexExperiment({ name: "2026-09-declarative-notification-settings-redesign", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } });
 const result = size.fileFinishedImporting("modules/notifications/DeclarativeNotificationSettingsRedesignExperiment.tsx");
 
+export const isDeclarativeNotificationSettingsRedesignEnabled = function isDeclarativeNotificationSettingsRedesignEnabled(getAssignedNotifSettingsAndMappings) {
+  return closure_0.getConfig({ location: getAssignedNotifSettingsAndMappings }).enabled;
+};
 export const useIsDeclarativeNotificationSettingsRedesignEnabled = function useIsDeclarativeNotificationSettingsRedesignEnabled(location) {
   return closure_0.useConfig({ location }).enabled;
 };

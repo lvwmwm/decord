@@ -1,12 +1,12 @@
-// Module ID: 12794
-// Function ID: 12795
+// Module ID: 12923
+// Function ID: 12924
 // Name: KeybindRouterStore
-// Dependencies: [1074, 4386, 4399, 1244, 1249, 2]
+// Dependencies: [1074, 4463, 4476, 1242, 1247, 2]
 
-// Module 12794 (KeybindRouterStore)
-import matchPathCompat from "matchPathCompat" /* 4386 */;
+// Module 12923 (KeybindRouterStore)
+import matchPathCompat from "matchPathCompat" /* 4463 */;
 import Constants from "Constants" /* 1074 */;
-import identity from "module_1244" /* 1244 */;
+import identity from "module_1242" /* 1242 */;
 import size from "module_2" /* 2 */;
 
 function getMatchData(pathname) {
@@ -16,10 +16,10 @@ function getMatchData(pathname) {
     str2 = "";
   }
   const obj2 = { path: null };
-  const RouteParam = tmp(4399).RouteParam;
+  const RouteParam = tmp(4476).RouteParam;
   const obj = matchPathCompat;
   const obj3 = React2;
-  const RouteParam2 = tmp(4399).RouteParam;
+  const RouteParam2 = tmp(4476).RouteParam;
   obj2.path = React2.CHANNEL(RouteParam.guildId(), RouteParam2.channelId({ optional: true }), ":messageId?");
   const matchPathResult = obj.matchPath(str2, obj2);
   if (null != matchPathResult) {
@@ -39,9 +39,9 @@ function getMatchData(pathname) {
       str = "";
     }
     const obj5 = { path: null };
-    const RouteParam3 = tmp(4399).RouteParam;
+    const RouteParam3 = tmp(4476).RouteParam;
     obj5.path = obj3.GUILD_BOOSTING_MARKETING(RouteParam3.guildId());
-    const matchPathResult1 = tmp(4386).matchPath(str, obj5);
+    const matchPathResult1 = tmp(4463).matchPath(str, obj5);
     if (null != matchPathResult1) {
       const obj6 = { guildId: matchPathResult1.params.guildId, channelId: null };
       let obj7 = obj6;
@@ -63,13 +63,13 @@ const withEqualityFn = identity.createWithEqualityFn((arg0) => {
     updatePath(path) {
       ({ guildId: closure_1, channelId: closure_2 } = getMatchData(path));
       const tmp = getMatchData(path);
-      path(1249).batchUpdates(() => path({ path, guildId, channelId }));
+      path(1247).batchUpdates(() => path({ path, guildId, channelId }));
     },
     resetPath(pathname) {
       const basePath = pathname;
       ({ guildId: closure_1, channelId: closure_2 } = getMatchData(pathname));
       const tmp = getMatchData(pathname);
-      basePath(1249).batchUpdates(() => basePath({ path: null, guildId, channelId, basePath }));
+      basePath(1247).batchUpdates(() => basePath({ path: null, guildId, channelId, basePath }));
     }
   };
 });

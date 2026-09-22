@@ -1,24 +1,24 @@
-// Module ID: 9990
-// Function ID: 9991
+// Module ID: 10114
+// Function ID: 10115
 // Name: UserSettingsVoiceOutputOptions
-// Dependencies: [19, 17, 4582, 502, 1908, 4585, 21, 4560, 504, 38, 9095, 9984, 1114, 5605, 9991, 2]
+// Dependencies: [19, 17, 4658, 502, 1908, 4661, 21, 4636, 504, 38, 9218, 10108, 1114, 5686, 10115, 2]
 // Exports: default
 
-// Module 9990 (UserSettingsVoiceOutputOptions)
+// Module 10114 (UserSettingsVoiceOutputOptions)
 import _modDef38 from "module_38" /* 38 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9095 */;
-import VolumeSliderDefault from "VolumeSlider" /* 9991 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9218 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10115 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4582 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
 
 const require = fn;
 const View = fn(17).View;
-const MediaEngineContextTypes = fn(4585).MediaEngineContextTypes;
+const MediaEngineContextTypes = fn(4661).MediaEngineContextTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_11 = createStyles.createStyles({ slider: { marginTop: 4 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/voice/native/UserSettingsVoiceOutputOptions.tsx");
@@ -76,7 +76,7 @@ export default function UserSettingsVoiceOutputOptions() {
   obj7.accessibilityLabel = intl3.string(stateFromStores1(1114).t.xPHVBs);
   obj6.children = closure_9(VolumeSliderDefault, obj7);
   obj5.subLabel = closure_9(View, obj6);
-  const items4 = [closure_9(stateFromStores1(5605).TableRow, obj5), ];
+  const items4 = [closure_9(stateFromStores1(5686).TableRow, obj5), ];
   let tmp9Result = null != stateFromStores1;
   if (tmp9Result) {
     const obj8 = { label: null, subLabel: null };
@@ -88,10 +88,10 @@ export default function UserSettingsVoiceOutputOptions() {
     obj10.accessibilityLabel = intl5.string(tmp2(1114).t.pEAl4b);
     obj9.children = tmp9(VolumeSliderDefault, obj10);
     obj8.subLabel = tmp9(tmp10, obj9);
-    tmp9Result = tmp9(tmp2(5605).TableRow, obj8);
+    tmp9Result = tmp9(tmp2(5686).TableRow, obj8);
     const tmp11Result = VolumeSliderDefault;
   }
   items4[1] = tmp9Result;
   obj4.children = items4;
-  return tmp8(stateFromStores1(9984).UserSettingsTableRowGroup, obj4);
+  return tmp8(stateFromStores1(10108).UserSettingsTableRowGroup, obj4);
 };

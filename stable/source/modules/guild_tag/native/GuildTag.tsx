@@ -1,33 +1,33 @@
-// Module ID: 9190
-// Function ID: 9191
+// Module ID: 9313
+// Function ID: 9314
 // Name: GuildTag
-// Dependencies: [19, 17, 1371, 7945, 21, 4560, 576, 1115, 1114, 4556, 5123, 504, 8166, 4527, 9191, 1896, 2]
+// Dependencies: [19, 17, 1371, 8048, 21, 4636, 576, 1363, 1114, 4632, 5204, 504, 8282, 4603, 9314, 1896, 2]
 
-// Module 9190 (GuildTag)
+// Module 9313 (GuildTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import GuildTagUtils from "GuildTagUtils" /* 8166 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import GuildTagUtils from "GuildTagUtils" /* 8282 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const GuildTagBadgeSize = fn(7945).GuildTagBadgeSize;
+const GuildTagBadgeSize = fn(8048).GuildTagBadgeSize;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { container: { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG, borderRadius: 4, paddingHorizontal: 4, paddingVertical: 1, columnGap: 2 }, tag: null };
-let PlatformUtils = fn(1115);
+let PlatformUtils = fn(1363);
 let num = 16;
 if (PlatformUtils.isAndroid()) {
   num = 14;
 }
 let obj4 = { lineHeight: num, textAlignVertical: null, overflow: "hidden" };
-PlatformUtils = fn(1115);
+PlatformUtils = fn(1363);
 let str;
 if (PlatformUtils.isAndroid()) {
   str = "center";

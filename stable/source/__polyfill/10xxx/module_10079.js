@@ -1,0 +1,9 @@
+// Module ID: 10079
+// Function ID: 10080
+// Dependencies: [1120]
+
+// Module 10079
+import registerAsset from "module_1120" /* 1120 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "a421bef75ae00154373ea36b10c7c903", name: "Camera", type: "lottie" });

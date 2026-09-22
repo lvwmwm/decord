@@ -1,22 +1,22 @@
-// Module ID: 5127
-// Function ID: 5128
+// Module ID: 5208
+// Function ID: 5209
 // Name: CloudUpload
-// Dependencies: [109, 5, 32, 4559, 1185, 4609, 1074, 3, 1272, 5128, 5136, 1090, 559, 5169, 12, 1461, 5138, 5171, 5172, 5157, 5173, 5174, 5178, 5179, 1232, 5137, 5129, 5180, 5181, 1896, 5266, 1242, 2]
+// Dependencies: [109, 5, 32, 4635, 1183, 4685, 1074, 3, 1270, 5209, 5217, 1090, 559, 5250, 12, 1461, 5219, 5252, 5253, 5238, 5254, 5255, 5259, 5260, 1230, 5218, 5210, 5261, 5262, 1896, 5347, 1240, 2]
 
-// Module 5127 (CloudUpload)
+// Module 5208 (CloudUpload)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DurationsDefault from "Durations" /* 1090 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import Upload2 from "Upload" /* 5128 */;
-import InlineUploaderDefault from "InlineUploader" /* 5169 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import Upload2 from "Upload" /* 5209 */;
+import InlineUploaderDefault from "InlineUploader" /* 5250 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
-import DevSettingsStore from "DevSettingsStore" /* 4559 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1185 */;
-import NetworkStore from "NetworkStore" /* 4609 */;
+import DevSettingsStore from "DevSettingsStore" /* 4635 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1183 */;
+import NetworkStore from "NetworkStore" /* 4685 */;
 
 const Upload = Upload2;
 
@@ -173,29 +173,29 @@ let closure_16 = function UploadAnalytics() {
 let CloudUpload;
 class CloudUpload extends tmp5 {
   constructor(arg0, arg1, arg2, arg3) {
-    tmp5 = new CloudUpload(global, tmp4, tmp3, new.target, global, new.target, tmp2, CloudUpload, tmp);
-    closure_0 = tmp5;
-    tmp5.status = closure_15.NOT_STARTED;
-    tmp5.loaded = 0;
-    tmp5.reactNativeFilePrepped = false;
+    obj = new CloudUpload(global, tmp4, tmp3, new.target, global, new.target, tmp2, CloudUpload, tmp);
+    closure_0 = obj;
+    obj.status = closure_15.NOT_STARTED;
+    obj.loaded = 0;
+    obj.reactNativeFilePrepped = false;
     if (typeof closure_16 === "function") {
-      tmp7 = fn;
+      tmp6 = fn;
       merged = Object.assign({ timing: null, uploadResumptionCount: 0, uploadResumptionPosition: 0 });
       merged[0] = {};
-      tmp5.uploadAnalytics = merged;
-      tmp5.uploadAttempts = 0;
-      tmp5._aborted = false;
-      tmp9 = null;
-      tmp5._originalMd5 = null;
-      tmp5.createResumeAwareProgressFn = function createResumeAwareProgressFn(arg0) {
+      obj.uploadAnalytics = merged;
+      obj.uploadAttempts = 0;
+      obj._aborted = false;
+      tmp8 = null;
+      obj._originalMd5 = null;
+      obj.createResumeAwareProgressFn = function createResumeAwareProgressFn(arg0) {
         closure_0 = arg0;
         return (loaded) => {
           const sum = loaded.loaded + closure_0;
-          closure_0.emit("progress", sum, loaded.total + closure_0, sum - closure_0.loaded);
-          closure_0.loaded = sum;
+          obj.emit("progress", sum, loaded.total + closure_0, sum - obj.loaded);
+          obj.loaded = sum;
         };
       };
-      tmp5.channelId = fn;
+      obj.channelId = fn;
       file = global.file;
       num = undefined;
       if (file != null) {
@@ -204,7 +204,7 @@ class CloudUpload extends tmp5 {
       if (num == null) {
         num = 0;
       }
-      tmp5.preCompressionSize = num;
+      obj.preCompressionSize = num;
       file2 = global.file;
       num2 = undefined;
       if (file2 != null) {
@@ -213,58 +213,47 @@ class CloudUpload extends tmp5 {
       if (num2 == null) {
         num2 = 0;
       }
-      tmp10 = importDefault;
-      tmp11 = importAll;
-      tmp5.currentSize = num2;
-      tmp5.reactNativeFileIndex = importDefault;
+      tmp9 = importDefault;
+      tmp10 = importAll;
+      obj.currentSize = num2;
+      obj.reactNativeFileIndex = importDefault;
       if (null != importAll) {
-        tmp5.allowOptimization = importAll;
+        obj.allowOptimization = importAll;
       }
-      tmp12 = closure_0;
-      tmp13 = closure_2;
-      tmp14 = global.platform === closure_0(closure_2[9]).UploadPlatform.WEB && null != global.compressionMetadata;
+      tmp11 = closure_0;
+      tmp12 = closure_2;
+      tmp13 = global.platform === closure_0(closure_2[9]).UploadPlatform.WEB && null != global.compressionMetadata;
+      if (tmp13) {
+        obj.mimeType = global.compressionMetadata.originalContentType;
+        obj.preCompressionSize = global.compressionMetadata.preCompressionSize;
+      }
+      tmp14 = global.platform === tmp11(tmp12[9]).UploadPlatform.WEB && null != global.originalMd5;
       if (tmp14) {
-        tmp5.mimeType = global.compressionMetadata.originalContentType;
-        tmp5.preCompressionSize = global.compressionMetadata.preCompressionSize;
+        obj._originalMd5 = global.originalMd5;
       }
-      tmp15 = global.platform === tmp12(tmp13[9]).UploadPlatform.WEB && null != global.originalMd5;
-      if (tmp15) {
-        tmp5._originalMd5 = global.originalMd5;
-      }
-      if (global.platform === tmp12(tmp13[9]).UploadPlatform.WEB) {
-        if (null != global.heicConversionAnalytics) {
-          ({ convertedMimeType, conversionFailureReason, compressTimeMs } = global.heicConversionAnalytics);
-          if (null != convertedMimeType) {
-            tmp5.uploadAnalytics.convertedMimeType = convertedMimeType;
-          }
-          if (null != conversionFailureReason) {
-            tmp5.uploadAnalytics.conversionFailureReason = conversionFailureReason;
-          }
-          tmp5.uploadAnalytics.timing.compressTimeMs = compressTimeMs;
-        }
-      }
+      result = obj.applyItemConversionAnalytics();
       tmp16 = globalThis;
       _AbortController = AbortController;
       tmp17 = new.target;
       tmp18 = new.target;
       abortController = new AbortController();
       tmp20 = abortController;
-      tmp5._abortController = abortController;
-      if (null == tmp5.origin) {
+      obj._abortController = abortController;
+      if (null == obj.origin) {
         tmp21 = new.target;
         tmp22 = new.target;
-        defaultHttpClient = new tmp12(tmp13[10]).DefaultHttpClient();
+        defaultHttpClient = new tmp11(tmp12[10]).DefaultHttpClient();
         tmp24 = defaultHttpClient;
-        tmp5._uploadHttpClient = defaultHttpClient;
-        tmp5._libdiscoreEnabled = false;
-        return tmp5;
+        obj._uploadHttpClient = defaultHttpClient;
+        obj._libdiscoreEnabled = false;
+        return obj;
       } else {
-        if (typeof tmp5.origin === "string") {
-          origin = tmp5.origin;
+        if (typeof obj.origin === "string") {
+          origin = obj.origin;
         } else {
-          origin = tmp12(tmp13[9]).UploadOrigin[tmp5.origin];
+          origin = tmp11(tmp12[9]).UploadOrigin[obj.origin];
         }
-        tmp5.uploadAnalytics.origin = origin;
+        obj.uploadAnalytics.origin = origin;
       }
     } else {
       str = "Trying to call a non-function";
@@ -284,18 +273,19 @@ class CloudUpload extends tmp5 {
       merged = Object.assign({ timing: null, uploadResumptionCount: 0, uploadResumptionPosition: 0 });
       merged[0] = {};
       self.uploadAnalytics = merged;
+      result = self.applyItemConversionAnalytics();
       num = 0;
       self.uploadAttempts = 0;
       flag = false;
       self._aborted = false;
-      tmp2 = globalThis;
+      tmp3 = globalThis;
       _AbortController = AbortController;
-      tmp3 = new.target;
       tmp4 = new.target;
+      tmp5 = new.target;
       abortController = new AbortController();
-      tmp6 = abortController;
+      tmp7 = abortController;
       self._abortController = abortController;
-      tmp7 = closure_20;
+      tmp8 = closure_20;
       return super.resetState();
     } else {
       str = "Trying to call a non-function";
@@ -430,7 +420,7 @@ prototype["getResumePosition"] = function getResumePosition(responseUrl) {
       }
       currentSize = v1.currentSize;
     }).catch((error) => {
-      if (error instanceof c0(1272).HTTPResponseError) {
+      if (error instanceof c0(1270).HTTPResponseError) {
         if (308 === error.status) {
           let str = error.headers.range;
           if (str == null) {
@@ -1022,20 +1012,14 @@ prototype["upload"] = function upload() {
                     }
                     if (tmp130) {
                       closure_3 = closure_133_0;
-                      const obj14 = status(5157);
+                      const obj14 = status(5238);
                       c8 = 3;
                       c9 = 1;
-                      const obj10 = { value: status(5157).fromBlob(file).catch(() => null), done: false };
+                      const obj10 = { value: status(5238).fromBlob(file).catch(() => null), done: false };
                       return obj10;
                     }
                   }
-                  if (null != closure_132_3.convertedMimeType) {
-                    closure_133_0.uploadAnalytics.convertedMimeType = closure_132_3.convertedMimeType;
-                  }
-                  if (null != closure_132_3.conversionFailureReason) {
-                    closure_133_0.uploadAnalytics.conversionFailureReason = closure_132_3.conversionFailureReason;
-                  }
-                  closure_133_0.uploadAnalytics.timing.compressTimeMs = closure_132_3.compressTimeMs;
+                  const result = closure_133_0.applyConversionAnalytics(closure_132_3.analytics);
                 }
               }
             } else {
@@ -1072,10 +1056,10 @@ prototype["upload"] = function upload() {
                     }
                     closure_133_0.uploadAnalytics.timing.compressTimeMs = closure_132_4.compressTimeMs;
                   }
-                  const uploadPayload = v0(5173).default.getUploadPayload(closure_133_0);
+                  const uploadPayload = v0(5254).default.getUploadPayload(closure_133_0);
                   c8 = 5;
                   c9 = 1;
-                  const _default = v0(5173).default;
+                  const _default = v0(5254).default;
                 }
               } else if (5 === tmp9) {
                 if (arg0 === 1) {
@@ -1087,14 +1071,14 @@ prototype["upload"] = function upload() {
                   return obj12;
                 } else {
                   closure_132_5 = value;
-                  uploadTarget = v0(5174).getUploadTarget(closure_133_0.item.target);
+                  uploadTarget = v0(5255).getUploadTarget(closure_133_0.item.target);
                   if (null != closure_132_5.filename) {
                     if ("" !== closure_132_5.filename) {
                       const currentSize2 = closure_133_0.currentSize;
                       if (0 !== closure_133_0.currentSize) {
-                        kestrelConfig = v0(5179).getKestrelConfig({ location: "CloudUpload.upload.postCompressionCheck" });
-                        const obj6 = v0(5179);
-                        effectiveKestrelLimit = v0(5179).getEffectiveKestrelLimit(kestrelConfig, uploadTarget.getMaxFileSize(closure_133_0.channelId));
+                        kestrelConfig = v0(5260).getKestrelConfig({ location: "CloudUpload.upload.postCompressionCheck" });
+                        const obj6 = v0(5260);
+                        effectiveKestrelLimit = v0(5260).getEffectiveKestrelLimit(kestrelConfig, uploadTarget.getMaxFileSize(closure_133_0.channelId));
                         const currentSize = closure_133_0.currentSize;
                         v0 = currentSize;
                         if (currentSize == null) {
@@ -1103,7 +1087,7 @@ prototype["upload"] = function upload() {
                         if (v0 > effectiveKestrelLimit) {
                           closure_133_0.handleError(constants.ENTITY_TOO_LARGE);
                         } else {
-                          if (tmp224.get("upload_fail_50")) {
+                          if (tmp213.get("upload_fail_50")) {
                             const _Math = Math;
                             if (Math.random() < 0.5) {
                               const _setTimeout = setTimeout;
@@ -1135,7 +1119,7 @@ prototype["upload"] = function upload() {
                           };
                           return obj15;
                         }
-                        const obj7 = v0(5179);
+                        const obj7 = v0(5260);
                       } else {
                         closure_133_0.handleError(constants.ENTITY_EMPTY);
                       }
@@ -1150,7 +1134,7 @@ prototype["upload"] = function upload() {
                 }
               } else if (6 === tmp9) {
                 c6 = 0;
-                closure_132_11 = tmp224;
+                closure_132_11 = tmp213;
                 let code;
                 if (closure_132_11 != null) {
                   const body = closure_132_11.body;
@@ -1171,8 +1155,8 @@ prototype["upload"] = function upload() {
                   }
                   const _HermesInternal2 = HermesInternal;
                   logger.error("Requesting upload url failed with code " + dependencyMap + " for " + closure_133_0.id);
-                  status(1232).captureException(closure_132_11);
-                  let obj4 = status(1232);
+                  status(1230).captureException(closure_132_11);
+                  let obj4 = status(1230);
                 }
                 closure_133_0.handleError(closure_132_10);
                 c9 = 3;
@@ -1180,7 +1164,7 @@ prototype["upload"] = function upload() {
                 return obj17;
               } else if (7 === tmp9) {
                 c6 = 0;
-                closure_132_12 = tmp224;
+                closure_132_12 = tmp213;
                 if (closure_133_0.isCancelled()) {
                   closure_133_0.handleComplete(closure_132_12);
                 } else {
@@ -1237,16 +1221,16 @@ prototype["upload"] = function upload() {
               tmp141 = tmp144;
             }
             if (!tmp141) {
-              closure_133_0.mimeType = v0(5171).heicMimeType(file);
-              const obj13 = v0(5171);
+              closure_133_0.mimeType = v0(5252).heicMimeType(file);
+              const obj13 = v0(5252);
             }
           }
           if (closure_133_0.isCancelled()) {
             obj18.handleComplete(closure_133_0.id);
           } else if (obj18.allowOptimization) {
-            if (closure_133_0.item.platform === v0(5128).UploadPlatform.WEB) {
+            if (closure_133_0.item.platform === v0(5209).UploadPlatform.WEB) {
               if (!closure_132_0) {
-                if (true !== closure_133_0.item.heicConversionEvaluated) {
+                if (true !== closure_133_0.item.imageConversionEvaluated) {
                   c8 = 4;
                   c9 = 1;
                   const obj22 = { value: CloudUpload.tryConvertToWebP(closure_133_0.item.file, () => v0._aborted, closure_133_0.id), done: false };
@@ -1261,11 +1245,11 @@ prototype["upload"] = function upload() {
         } else {
           closure_132_0 = false;
           if (closure_133_0.allowOptimization) {
-            if (closure_133_0.item.platform === v0(5128).UploadPlatform.WEB) {
-              if (true !== closure_133_0.item.heicConversionEvaluated) {
+            if (closure_133_0.item.platform === v0(5209).UploadPlatform.WEB) {
+              if (true !== closure_133_0.item.imageConversionEvaluated) {
                 if (null != closure_133_0.item.file) {
                   if (obj25.isHeicFile(closure_133_0.item.file)) {
-                    const HeicUploadConversionExperiment = v0(5172).HeicUploadConversionExperiment;
+                    const HeicUploadConversionExperiment = v0(5253).HeicUploadConversionExperiment;
                     config = HeicUploadConversionExperiment.getConfig({ location: "CloudUpload.tryConvertHeicToJpeg" });
                     if (config.enabled) {
                       file = closure_133_0.item.file;
@@ -1275,17 +1259,17 @@ prototype["upload"] = function upload() {
                       return obj23;
                     }
                   }
-                  obj25 = v0(5171);
+                  obj25 = v0(5252);
                 }
               }
             }
           }
         }
-      } catch (tmp224) {
+      } catch (tmp213) {
         if (tmp4 === c6) {
           c9 = tmp2;
-          throw tmp224;
-        } else if (tmp === tmp226) {
+          throw tmp213;
+        } else if (tmp === tmp215) {
           c8 = tmp6;
         } else {
           c8 = tmp5;
@@ -1363,7 +1347,7 @@ prototype["reactNativeCompressAndExtractData"] = function reactNativeCompressAnd
               const obj7 = { value: self, done: true };
               return obj7;
             }
-            obj17 = size(5174);
+            obj17 = size(5255);
           }
         } else {
           if (1 === tmp5) {
@@ -1440,7 +1424,7 @@ prototype["reactNativeCompressAndExtractData"] = function reactNativeCompressAnd
                         if (fileSize == null) {
                           c3 = 2;
                           c4 = 1;
-                          const obj9 = { value: size(5129).getFileData(uri), done: false };
+                          const obj9 = { value: size(5210).getFileData(uri), done: false };
                           return obj9;
                         }
                       }
@@ -1692,8 +1676,8 @@ CloudUpload["tryConvertHeicToJpeg"] = function tryConvertHeicToJpeg(file, arg1, 
   closure_3 = quality;
   closure_4 = maxFileSizeBytes;
   return (async (arg0, value) => {
-    if (c6 === 2) {
-      c6 = 3;
+    if (c5 === 2) {
+      c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp6 === 3) {
       if (arg0 === 1) {
@@ -1706,107 +1690,81 @@ CloudUpload["tryConvertHeicToJpeg"] = function tryConvertHeicToJpeg(file, arg1, 
       }
     } else {
       try {
-        c6 = 2;
-        if (0 === c5) {
+        c5 = 2;
+        if (0 === c4) {
           if (arg0 === 1) {
-            c6 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c6 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            c5 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            closure_1 = tmp7;
-            closure_129_0 = undefined;
-            closure_129_1 = undefined;
-            closure_129_2 = undefined;
-            closure_129_3 = undefined;
+            closure_0 = tmp7;
+            let convertFileToJpeg;
+            closure_128_1 = undefined;
             if (null != closure_0) {
-              if (!closure_1()) {
-                c4 = 1;
-                c5 = 2;
-                c6 = 1;
-                const obj5 = { value: UNKNOWN_ERROR(tmp3[29])(tmp3[30], tmp3.paths), done: false };
-                return obj5;
+              if (!tmp3()) {
+                c3 = 1;
+                c4 = 2;
+                c5 = 1;
+                const obj4 = { value: closure_0(tmp30[29])(tmp30[30], tmp30.paths), done: false };
+                return obj4;
               }
             }
-            c6 = 3;
+            c5 = 3;
             return { value: null, done: true };
           }
         } else if (1 === tmp7) {
-          c4 = 0;
-          closure_129_4 = closure_3;
-          const _HermesInternal3 = HermesInternal;
-          logger.warn("heic conversion threw for " + closure_130_2 + ":", closure_129_4);
-          c6 = 3;
-          const obj6 = { value: { convertedFile: null, convertedMimeType: null, conversionFailureReason: "unknown_error", compressTimeMs: 0 }, done: true };
+          c3 = 0;
+          closure_128_2 = tmp30;
+          const _HermesInternal = HermesInternal;
+          logger.warn("heic conversion threw for " + closure_129_2 + ":", closure_128_2);
+          const obj5 = { convertedFile: null, analytics: { convertedMimeType: null, conversionFailureReason: "unknown_error", compressTimeMs: 0 } };
+          c5 = 3;
+          const obj6 = { value: obj5, done: true };
           return obj6;
         } else if (2 === tmp7) {
           if (arg0 === 1) {
-            c6 = 3;
+            c5 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c4 = 0;
-            c6 = 3;
+            c3 = 0;
+            c5 = 3;
             const obj7 = { value, done: true };
             return obj7;
           } else {
-            closure_129_0 = value;
-            closure_129_1 = closure_129_0.maybeConvertHeicToJpeg;
-            closure_129_2 = closure_129_0.HeicConversionFailureReason;
-            c5 = 3;
-            c6 = 1;
-            const obj8 = { value: closure_129_1(closure_130_0, closure_130_3, closure_130_4), done: false };
+            convertFileToJpeg = value.convertFileToJpeg;
+            c4 = 3;
+            c5 = 1;
+            const obj8 = { value: convertFileToJpeg(closure_129_0, "heic", closure_129_3, closure_129_4), done: false };
             return obj8;
           }
         } else if (arg0 === 1) {
-          c6 = 3;
+          c5 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c4 = 0;
-          c6 = 3;
+          c3 = 0;
+          c5 = 3;
           const obj9 = { value, done: true };
           return obj9;
         } else {
-          closure_129_3 = value;
-          let tmp10 = null;
-          if (!closure_130_1()) {
-            tmp10 = null;
-            if (null != closure_129_3) {
-              if (!closure_129_3.success) {
-                const _HermesInternal = HermesInternal;
-                logger.log("heic conversion skipped for " + closure_130_2 + ": " + closure_129_3.reason);
-                const reason = closure_129_3.reason;
-                UNKNOWN_ERROR = reason;
-                if (reason == null) {
-                  UNKNOWN_ERROR = closure_129_2.UNKNOWN_ERROR;
-                }
-                const obj = { convertedFile: null, convertedMimeType: null, conversionFailureReason: UNKNOWN_ERROR, compressTimeMs: closure_129_3.compressTimeMs };
-              }
-              const _HermesInternal2 = HermesInternal;
-              logger.log("heic conversion worked for " + closure_130_2 + ": " + closure_129_3.sizeBefore + " -> " + closure_129_3.sizeAfter + " bytes");
-              const obj10 = { convertedFile: null, convertedMimeType: "image/jpeg", conversionFailureReason: null, compressTimeMs: null };
-              const _File = File;
-              const items = [closure_129_3.convertedBlob];
-              const obj11 = { type: "image/jpeg", lastModified: closure_130_0.lastModified };
-              file = new File(items, UNKNOWN_ERROR(tmp3[17]).renameToJpegExtension(closure_130_0.name), obj11);
-              obj10.convertedFile = file;
-              obj10.compressTimeMs = closure_129_3.compressTimeMs;
-              const obj3 = UNKNOWN_ERROR(tmp3[17]);
-            }
+          closure_128_1 = value;
+          let tmp11 = null;
+          if (!closure_129_1()) {
+            tmp11 = closure_128_1;
           }
-          c4 = 0;
-          c6 = 3;
-          const obj12 = { value: tmp10, done: true };
-          return obj12;
+          c3 = 0;
+          c5 = 3;
+          const obj = { value: tmp11, done: true };
+          return obj;
         }
-      } catch (tmp68) {
-        closure_3 = tmp68;
-        if (tmp4 === c4) {
-          c6 = tmp2;
-          throw tmp68;
+      } catch (tmp30) {
+        if (tmp4 === c3) {
+          c5 = tmp2;
+          throw tmp30;
         } else {
-          c5 = tmp;
+          c4 = tmp;
         }
       }
     }
@@ -1852,6 +1810,34 @@ prototype["removeFromMsgDraft"] = function removeFromMsgDraft() {
 prototype["isCancelled"] = function isCancelled() {
   return this.status === obj.CANCELED || this.status === tmp.REMOVED_FROM_MSG_DRAFT;
 };
+prototype["applyConversionAnalytics"] = function applyConversionAnalytics(analytics) {
+  const self = this;
+  ({ convertedMimeType, conversionFailureReason, imageCompressionQuality, imageEncoderType } = analytics);
+  if (null != convertedMimeType) {
+    self.uploadAnalytics.convertedMimeType = convertedMimeType;
+  }
+  if (null != conversionFailureReason) {
+    self.uploadAnalytics.conversionFailureReason = conversionFailureReason;
+  }
+  self.uploadAnalytics.timing.compressTimeMs = analytics.compressTimeMs;
+  if (null != imageCompressionQuality) {
+    self.uploadAnalytics.imageCompressionQuality = imageCompressionQuality;
+  }
+  if (null != imageEncoderType) {
+    self.uploadAnalytics.imageEncoderType = imageEncoderType;
+  }
+};
+prototype["applyItemConversionAnalytics"] = function applyItemConversionAnalytics() {
+  const self = this;
+  const item = this.item;
+  let tmp = item.platform === Upload2.UploadPlatform.WEB;
+  if (tmp) {
+    tmp = null != item.imageConversionAnalytics;
+  }
+  if (tmp) {
+    const result = self.applyConversionAnalytics(item.imageConversionAnalytics);
+  }
+};
 prototype["delete"] = function delete() {
   const self = this;
   return (async (arg0, value) => {
@@ -1879,10 +1865,10 @@ prototype["delete"] = function delete() {
             const obj4 = { value, done: true };
             return obj4;
           } else if (null != self.uploadedFilename) {
-            const uploadTarget = v3(5174).getUploadTarget(tmp17.item.target);
+            const uploadTarget = v3(5255).getUploadTarget(tmp17.item.target);
             dependencyMap = 1;
             const deleteUploadURL = uploadTarget.getDeleteUploadURL(tmp17.uploadedFilename);
-            const HTTP = v3(1272).HTTP;
+            const HTTP = v3(1270).HTTP;
             c1 = 2;
             v3 = 1;
             const obj5 = { value: HTTP.del(deleteUploadURL), done: false };

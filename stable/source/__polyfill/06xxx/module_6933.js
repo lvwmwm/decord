@@ -1,184 +1,336 @@
 // Module ID: 6933
 // Function ID: 6934
-// Dependencies: [32, 19, 21, 6934, 1636, 6632, 6655, 6935]
+// Dependencies: [32, 109, 19, 21, 6934, 6733, 4509, 6935, 6745, 6730]
 
 // Module 6933
-import cancelAnimation from "cancelAnimation" /* 1636 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6655 */;
-import _mod6935 from "module_6935" /* 6935 */;
+import normalizeSnapPoint from "normalizeSnapPoint" /* 6745 */;
+import id from "id" /* 6935 */;
 import _slicedToArray from "module_32" /* 32 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop_mod from "module_19" /* 19 */;
 
 require = fn;
+let closure_3 = ["name", "stackBehavior", "enableDismissOnClose", "onDismiss", "onAnimate", "index", "snapPoints", "enablePanDownToClose", "animateOnMount", "containerComponent", "onChange", "children"];
 let noop = fn(19);
-({ useCallback: closure_4, useEffect: hasOwnProperty, useMemo: metroRequire, useRef: closure_7, useState: closure_8, memo } = noop);
+({ useCallback: metroRequire, useImperativeHandle: closure_7, useMemo: closure_8, useRef: closure_9, useState: c10, createElement: closure_11, forwardRef, memo } = noop);
 let noop = noop_mod;
 const jsx = fn(21).jsx;
-let closure_10 = { code: "function pnpm_BottomSheetBackdropTsx1(){const{runOnJS,handleOnPress}=this.__closure;runOnJS(handleOnPress)();}" };
-let __initData = { code: "function pnpm_BottomSheetBackdropTsx2(){const{interpolate,animatedIndex,disappearsOnIndex,appearsOnIndex,opacity,Extrapolation}=this.__closure;return{opacity:interpolate(animatedIndex.value,[-1,disappearsOnIndex,appearsOnIndex],[0,0,opacity],Extrapolation.CLAMP)};}" };
-let __initData2 = { code: "function pnpm_BottomSheetBackdropTsx3(){const{animatedIndex,disappearsOnIndex}=this.__closure;return Math.round(animatedIndex.value)<=disappearsOnIndex;}" };
-let closure_13 = { code: "function pnpm_BottomSheetBackdropTsx4(shouldDisableTouchability,previous){const{runOnJS,handleContainerTouchability}=this.__closure;if(shouldDisableTouchability===previous){return;}runOnJS(handleContainerTouchability)(shouldDisableTouchability);}" };
-const memoResult = memo((animatedIndex) => {
-  animatedIndex = animatedIndex.animatedIndex;
-  ({ opacity, appearsOnIndex, disappearsOnIndex, enableTouchThrough, pressBehavior } = animatedIndex);
-  if (pressBehavior === undefined) {
-    pressBehavior = animatedIndex(onPress[3]).DEFAULT_PRESS_BEHAVIOR;
+let closure_14 = { mount: false, data: "PX_16" };
+const memoResult = memo(forwardRef(function BottomSheetModalComponent(name, arg1) {
+  _require = arg1;
+  name = name.name;
+  let DEFAULT_STACK_BEHAVIOR = name.stackBehavior;
+  if (undefined === DEFAULT_STACK_BEHAVIOR) {
+    DEFAULT_STACK_BEHAVIOR = require("DEFAULT_STACK_BEHAVIOR").DEFAULT_STACK_BEHAVIOR;
   }
-  onPress = animatedIndex.onPress;
-  const style = animatedIndex.style;
-  ({ ViewComponent, children } = animatedIndex);
-  if (ViewComponent === undefined) {
-    ViewComponent = pressBehavior(onPress[4]).View;
+  let DEFAULT_ENABLE_DISMISS_ON_CLOSE = name.enableDismissOnClose;
+  if (undefined === DEFAULT_ENABLE_DISMISS_ON_CLOSE) {
+    DEFAULT_ENABLE_DISMISS_ON_CLOSE = require("DEFAULT_STACK_BEHAVIOR").DEFAULT_ENABLE_DISMISS_ON_CLOSE;
   }
-  let DEFAULT_ACCESSIBLE = animatedIndex.accessible;
-  if (DEFAULT_ACCESSIBLE === undefined) {
-    DEFAULT_ACCESSIBLE = animatedIndex(onPress[3]).DEFAULT_ACCESSIBLE;
+  const onDismiss = name.onDismiss;
+  const onAnimate = name.onAnimate;
+  const index = name.index;
+  let num = 0;
+  if (undefined !== index) {
+    num = index;
   }
-  let DEFAULT_ACCESSIBILITY_ROLE = animatedIndex.accessibilityRole;
-  if (DEFAULT_ACCESSIBILITY_ROLE === undefined) {
-    DEFAULT_ACCESSIBILITY_ROLE = animatedIndex(onPress[3]).DEFAULT_ACCESSIBILITY_ROLE;
+  let enablePanDownToClose = name.enablePanDownToClose;
+  let tmp5 = undefined === enablePanDownToClose;
+  if (!tmp5) {
+    tmp5 = enablePanDownToClose;
   }
-  let DEFAULT_ACCESSIBILITY_LABEL = animatedIndex.accessibilityLabel;
-  if (DEFAULT_ACCESSIBILITY_LABEL === undefined) {
-    DEFAULT_ACCESSIBILITY_LABEL = animatedIndex(onPress[3]).DEFAULT_ACCESSIBILITY_LABEL;
+  enablePanDownToClose = tmp5;
+  const animateOnMount = name.animateOnMount;
+  let Fragment = name.containerComponent;
+  if (undefined === Fragment) {
+    Fragment = willUnmountSheet.Fragment;
   }
-  let DEFAULT_ACCESSIBILITY_HINT = animatedIndex.accessibilityHint;
-  if (DEFAULT_ACCESSIBILITY_HINT === undefined) {
-    DEFAULT_ACCESSIBILITY_HINT = animatedIndex(onPress[3]).DEFAULT_ACCESSIBILITY_HINT;
+  const onChange = name.onChange;
+  const children = name.children;
+  const tmp8 = onAnimate(name, DEFAULT_ENABLE_DISMISS_ON_CLOSE);
+  const tmp9 = onDismiss(mountSheet(closure_14), 2);
+  const first = tmp9[0];
+  const mount = first.mount;
+  closure_9 = tmp9[1];
+  const bottomSheetModalInternal = require("module_6733").useBottomSheetModalInternal();
+  ({ hostName, mountSheet } = bottomSheetModalInternal);
+  const unmountSheet = bottomSheetModalInternal.unmountSheet;
+  willUnmountSheet = bottomSheetModalInternal.willUnmountSheet;
+  ({ containerHeight, containerOffset } = bottomSheetModalInternal);
+  let obj = require("module_6733");
+  const tmp11 = _require;
+  const removePortal = require("Portal").usePortal(hostName).removePortal;
+  const tmp15 = closure_9(null);
+  closure_14 = tmp15;
+  let num2 = -1;
+  if (!(undefined === animateOnMount || animateOnMount)) {
+    num2 = num;
   }
-  opacity = undefined;
-  appearsOnIndex = undefined;
-  disappearsOnIndex = undefined;
-  __initData = undefined;
-  __initData2 = undefined;
-  let animatedStyle;
-  const bottomSheet = animatedIndex(onPress[5]).useBottomSheet();
-  const snapToIndex = bottomSheet.snapToIndex;
-  const close = bottomSheet.close;
-  const ref = opacity(false);
-  if (opacity == null) {
-    opacity = tmp13(tmp14[3]).DEFAULT_OPACITY;
-  }
-  if (appearsOnIndex == null) {
-    appearsOnIndex = tmp13(tmp14[3]).DEFAULT_APPEARS_ON_INDEX;
-  }
-  if (disappearsOnIndex == null) {
-    disappearsOnIndex = tmp13(tmp14[3]).DEFAULT_DISAPPEARS_ON_INDEX;
-  }
-  if (enableTouchThrough == null) {
-    enableTouchThrough = tmp13(tmp14[3]).DEFAULT_ENABLE_TOUCH_THROUGH;
-  }
-  let str = "auto";
-  if (enableTouchThrough) {
-    str = "none";
-  }
-  const tmp17 = style(appearsOnIndex(str), 2);
-  let items = [snapToIndex, close, disappearsOnIndex, pressBehavior, onPress];
-  const tmp18 = snapToIndex(() => {
-    if (onPress != null) {
-      tmp();
+  closure_9(num2);
+  closure_9(null);
+  closure_9(-1);
+  closure_18 = tmp14(false);
+  closure_9(false);
+  const tmp14Result = closure_9(false);
+  tmp14Result.current = mount;
+  let items = [name];
+  const tmp17 = onChange(() => {
+    let combined = name;
+    if (!name) {
+      const _HermesInternal = HermesInternal;
+      combined = "bottom-sheet-modal-" + id.id();
     }
-    if ("close" === pressBehavior) {
-      close();
-    } else if ("collapse" === tmp3) {
-      snapToIndex(disappearsOnIndex);
-    } else if (typeof tmp3 === "number") {
-      snapToIndex(tmp3);
-    }
+    return combined;
   }, items);
-  __initData = tmp18;
-  const tmp19 = snapToIndex((arg0) => {
-    if (ref.current) {
-      let str = "auto";
-      if (arg0) {
-        str = "none";
-      }
-      __initData(str);
+  closure_21 = tmp17;
+  function resetVariables() {
+    normalizeSnapPoint.print({ component: memoResult.name, method: resetVariables.name });
+    closure_15.current = -1;
+    closure_17.current = -1;
+    closure_18.current = false;
+    closure_20.current = false;
+    closure_19.current = false;
+  }
+  const tmp18 = num(resetVariables, []);
+  closure_22 = tmp18;
+  let items1 = [tmp17, tmp18, unmountSheet, removePortal, onDismiss];
+  const tmp19 = num(function unmount() {
+    closure_22();
+    unmountSheet(closure_21);
+    removePortal(closure_21);
+    if (ref5.current) {
+      closure_9(closure_14);
     }
-  }, []);
-  __initData2 = tmp19;
-  let items1 = [tmp18];
-  let obj = animatedIndex(onPress[5]);
-  const tmp20 = ref(() => {
-    const Gesture = LegacyBaseButton.Gesture;
-    const fn = function n() {
-      animatedIndex(onPress[4]).runOnJS(handleOnPress)();
-    };
-    const TapResult = Gesture.Tap();
-    fn.__closure = { runOnJS: cancelAnimation.runOnJS, handleOnPress };
-    fn.__workletHash = 10704059633145;
-    fn.__initData = __initData;
-    return TapResult.onEnd(fn);
+    if (onDismiss) {
+      onDismiss();
+    }
   }, items1);
-  class P {
-    constructor() {
-      obj = { opacity: null };
-      obj2 = closure_0(closure_2[4]);
-      items = [-1];
-      items[1] = closure_9;
-      items[2] = DEFAULT_APPEARS_ON_INDEX;
-      items1 = [0, 0];
-      items1[2] = DEFAULT_OPACITY;
-      obj.opacity = obj2.interpolate(animatedIndex.value, items, items1, closure_0(closure_2[4]).Extrapolation.CLAMP);
-      return obj;
+  closure_23 = tmp19;
+  let snapToIndex = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        snapToIndex = current.snapToIndex;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items, 0);
+        HermesBuiltin.apply(items1, current);
+      }
     }
-  }
-  const tmp13Result = animatedIndex(onPress[4]);
-  P.__closure = { interpolate: animatedIndex(onPress[4]).interpolate, animatedIndex, disappearsOnIndex, appearsOnIndex, opacity, Extrapolation: animatedIndex(onPress[4]).Extrapolation };
-  P.__workletHash = 7085425846204;
-  P.__initData = __initData;
-  const items2 = [animatedIndex, appearsOnIndex, disappearsOnIndex, opacity];
-  animatedStyle = tmp13Result.useAnimatedStyle(P, items2);
-  const items3 = [style, animatedStyle];
-  const obj2 = { interpolate: animatedIndex(onPress[4]).interpolate, animatedIndex, disappearsOnIndex, appearsOnIndex, opacity, Extrapolation: animatedIndex(onPress[4]).Extrapolation };
-  const tmp22 = ref(() => {
-    const items = [_mod6935.styles.backdrop, style, animatedStyle];
-    return items;
-  }, items3);
-  class H {
-    constructor() {
-      return Math.round(animatedIndex.value) <= closure_9;
-    }
-  }
-  H.__closure = { animatedIndex, disappearsOnIndex };
-  H.__workletHash = 17177056692744;
-  H.__initData = __initData2;
-  let fn = function k(arg0, arg1) {
-    if (arg0 !== arg1) {
-      cancelAnimation.runOnJS(closure_12)(arg0);
-    }
-  };
-  const tmp13Result2 = animatedIndex(onPress[4]);
-  fn.__closure = { runOnJS: animatedIndex(onPress[4]).runOnJS, handleContainerTouchability: tmp19 };
-  fn.__workletHash = 17426135168622;
-  fn.__initData = animatedStyle;
-  const items4 = [disappearsOnIndex];
-  const animatedReaction = tmp13Result2.useAnimatedReaction(H, fn, items4);
-  close(() => {
-    closure_6.current = true;
-    return () => {
-      ref.current = false;
-    };
   }, []);
-  const obj4 = { style: tmp22, pointerEvents: tmp17[0], accessible: DEFAULT_ACCESSIBLE, accessibilityRole: DEFAULT_ACCESSIBILITY_ROLE, accessibilityLabel: DEFAULT_ACCESSIBILITY_LABEL, accessibilityHint: null, children: null };
-  if (!DEFAULT_ACCESSIBILITY_HINT) {
-    let str2 = "move";
-    if (typeof pressBehavior === "string") {
-      str2 = pressBehavior;
+  let snapToPosition = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        snapToPosition = current.snapToPosition;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items, 0);
+        HermesBuiltin.apply(items1, current);
+      }
     }
-    const _HermesInternal = HermesInternal;
-    DEFAULT_ACCESSIBILITY_HINT = "Tap to " + str2 + " the Bottom Sheet";
+  }, []);
+  let setToIndex = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        setToIndex = current.setToIndex;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items, 0);
+        HermesBuiltin.apply(items1, current);
+      }
+    }
+  }, []);
+  let setToPosition = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        setToPosition = current.setToPosition;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items, 0);
+        HermesBuiltin.apply(items1, current);
+      }
+    }
+  }, []);
+  let expand = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        expand = current.expand;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items, 0);
+        HermesBuiltin.apply(items1, current);
+      }
+    }
+  }, []);
+  let collapse = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        collapse = current.collapse;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items, 0);
+        HermesBuiltin.apply(items1, current);
+      }
+    }
+  }, []);
+  let close = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        close = current.close;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items, 0);
+        HermesBuiltin.apply(items1, current);
+      }
+    }
+  }, []);
+  let forceClose = num(() => {
+    const items = [...arguments];
+    if (!closure_18.current) {
+      const current = closure_14.current;
+      if (current != null) {
+        forceClose = current.forceClose;
+        const items1 = [];
+        HermesBuiltin.arraySpread(items, 0);
+        HermesBuiltin.apply(items1, current);
+      }
+    }
+  }, []);
+  const items2 = [tmp17, DEFAULT_STACK_BEHAVIOR, mountSheet];
+  const present = num(function handlePresent(data) {
+    const animationFrame = requestAnimationFrame(() => {
+      closure_9({ mount: true, data });
+      mountSheet(closure_21, data, DEFAULT_STACK_BEHAVIOR);
+    });
+  }, items2);
+  const items3 = [willUnmountSheet, tmp19, tmp17, tmp5];
+  const dismiss = num(function handleDismiss(arg0) {
+    let tmp3 = -1 !== ref.current;
+    if (!tmp3) {
+      tmp3 = false !== closure_18.current;
+    }
+    if (!tmp3) {
+      tmp3 = tmp;
+    }
+    if (tmp3) {
+      if (tmp) {
+        willUnmountSheet(closure_21);
+        closure_19.current = true;
+        const current = closure_14.current;
+        if (current != null) {
+          current.forceClose(arg0);
+        }
+      } else if (closure_18.current) {
+        closure_23();
+      }
+    }
+  }, items3);
+  const items4 = [num];
+  const minimize = num(function handleMinimize() {
+    if (!closure_18.current) {
+      tmp.current = true;
+      if (-1 === ref.current) {
+        closure_17.current = num;
+      } else {
+        closure_17.current = tmp2.current;
+      }
+      const current = closure_14.current;
+      if (current != null) {
+        current.close();
+      }
+    }
+  }, items4);
+  const restore = num(function handleRestore() {
+    let current = closure_18.current;
+    if (current) {
+      current = !ref4.current;
+    }
+    if (current) {
+      closure_18.current = false;
+      const current2 = closure_14.current;
+      if (current2 != null) {
+        current2.snapToIndex(ref3.current);
+      }
+    }
+  }, []);
+  const items5 = [tmp17, tmp19, willUnmountSheet];
+  const obj2 = require("Portal");
+  const tmp21 = num(function handlePortalRender(fn) {
+    if (ref5.current) {
+      fn();
+    }
+  }, []);
+  const items6 = [onChange];
+  const items7 = [onAnimate];
+  const tmp20 = num(function handlePortalOnUnmount() {
+    let tmp = -1 === ref.current;
+    if (tmp) {
+      tmp = false === closure_18.current;
+    }
+    if (!tmp) {
+      closure_20.current = false;
+      closure_19.current = true;
+      if (closure_18.current) {
+        closure_23();
+      } else {
+        willUnmountSheet(closure_21);
+        const current = closure_14.current;
+        if (current != null) {
+          current.close();
+        }
+      }
+    }
+  }, items5);
+  const items8 = [DEFAULT_ENABLE_DISMISS_ON_CLOSE, tmp19];
+  const tmp22 = num(function handleBottomSheetOnChange(current, arg1, arg2) {
+    closure_15.current = current;
+    closure_16.current = null;
+    if (onChange) {
+      tmp(current, arg1, arg2);
+    }
+  }, items6);
+  const tmp23 = num((arg0, current, arg2, arg3, arg4) => {
+    closure_16.current = current;
+    if (onAnimate) {
+      tmp(arg0, current, arg2, arg3, arg4);
+    }
+  }, items7);
+  enablePanDownToClose(arg1, () => ({ snapToIndex, snapToPosition, setToIndex, setToPosition, expand, collapse, close, forceClose, dismiss, present, minimize, restore }));
+  let tmp27Result2 = null;
+  if (mount) {
+    const obj3 = { name: tmp17, hostName, handleOnMount: tmp21, handleOnUpdate: tmp21, handleOnUnmount: tmp20, children: null };
+    const obj4 = {};
+    const merged = Object.assign(tmp8);
+    obj4.ref = tmp15;
+    obj4.key = tmp17;
+    obj4.index = num;
+    obj4.snapPoints = name.snapPoints;
+    obj4.enablePanDownToClose = tmp5;
+    obj4.animateOnMount = tmp6;
+    obj4.containerHeight = containerHeight;
+    obj4.containerOffset = containerOffset;
+    obj4.onChange = tmp22;
+    obj4.onClose = tmp24;
+    obj4.onAnimate = tmp23;
+    obj4.$modal = true;
+    let tmp27Result = children;
+    if (typeof children === "function") {
+      const obj5 = { data: first.data };
+      tmp27Result = tmp27(children, obj5);
+    }
+    const obj6 = { children: unmountSheet(name(tmp12[9]), obj4, tmp27Result) };
+    obj3.children = removePortal(Fragment, obj6, tmp17);
+    tmp27Result2 = tmp27(tmp11(tmp12[6]).Portal, obj3, tmp17);
+    const tmp30 = name(tmp12[9]);
   }
-  obj4.accessibilityHint = DEFAULT_ACCESSIBILITY_HINT;
-  obj4.children = children;
-  const tmp25Result = disappearsOnIndex(ViewComponent, obj4);
-  let tmp25Result2 = tmp25Result;
-  if ("none" !== pressBehavior) {
-    const obj5 = { gesture: tmp20, children: tmp25Result };
-    tmp25Result2 = tmp25(tmp13(tmp14[6]).GestureDetector, obj5);
-  }
-  return tmp25Result2;
-});
-memoResult.displayName = "BottomSheetBackdrop";
+  return tmp27Result2;
+}));
+memoResult.displayName = "BottomSheetModal";
 
-export const BottomSheetBackdrop = memoResult;
+export default memoResult;

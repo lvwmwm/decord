@@ -1,9 +1,42 @@
 // Module ID: 5327
 // Function ID: 5328
-// Dependencies: [1122]
+// Dependencies: [5328]
 
 // Module 5327
-import registerAsset from "module_1122" /* 1122 */;
+import _modDef5328 from "module_5328" /* 5328 */;
 
+importDefault = arg2;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "8db07373f3f919fb237f49a66c873b13", name: "img_account_sync_twitter_white", type: "png" });
+export default {
+  decode(arg0, buffer) {
+    value = _modDef5328.get();
+    if (undefined !== value) {
+      if (undefined !== arg0) {
+        try {
+          const decoder = new value(arg0);
+          const _DataView = DataView;
+          if (buffer instanceof DataView) {
+            buffer = buffer.buffer;
+          } else {
+            const _Uint8Array = Uint8Array;
+            buffer = Uint8Array.from(buffer);
+          }
+          decoder.decode(buffer);
+        } catch (err) {
+        }
+      }
+    }
+    const mapped = buffer.map((item) => String.fromCharCode(item));
+    return (function decodeAsciiValue(arg0) {
+      try {
+        const _decodeURIComponent = decodeURIComponent;
+        const _escape = escape;
+        return decodeURIComponent(escape(arg0));
+      } catch (err) {
+        return tmp;
+      }
+    })(mapped.join(""));
+  },
+  TAG_HEADER_SIZE: 5
+};

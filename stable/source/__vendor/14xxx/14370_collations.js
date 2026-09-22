@@ -1,0 +1,30 @@
+// Module ID: 14370
+// Function ID: 14371
+// Name: collations
+// Dependencies: [14371]
+// Exports: getSupportedCollations
+
+// Module 14370 (collations)
+import _mod14371 from "module_14371" /* 14371 */;
+
+require = arg1;
+const dependencyMap = arg6;
+
+export const getSupportedCollations = function getSupportedCollations(locale) {
+  closure_0 = locale;
+  const collations = _mod14371.collations;
+  return collations.filter((item) => (function isSupported(item, arg1) {
+    let str = arg1;
+    if (undefined === arg1) {
+      str = "en";
+    }
+    try {
+      const _Intl = Intl;
+      const concat = "".concat;
+      const combined = "".concat(str, "-u-co-");
+      return Intl.Collator(combined.concat(item)).resolvedOptions().collation === item;
+    } catch (err) {
+      return false;
+    }
+  })(item, closure_0));
+};

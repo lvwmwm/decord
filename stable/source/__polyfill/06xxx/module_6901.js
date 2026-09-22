@@ -1,21 +1,19 @@
 // Module ID: 6901
 // Function ID: 6902
-// Dependencies: [19]
-// Exports: useUnmountFlag
+// Dependencies: [19, 6740]
+// Exports: useBottomSheetGestureHandlers
 
 // Module 6901
-import noop from "module_19" /* 19 */;
+import _mod19 from "module_19" /* 19 */;
+import _mod6740 from "module_6740" /* 6740 */;
 
-({ useRef: closure_0, useLayoutEffect: closure_1 } = noop);
+const useContext = _mod19.useContext;
 
-export const useUnmountFlag = () => {
-  const tmp = React(false);
-  closure_0 = tmp;
-  framebus(() => {
-    closure_0.current = false;
-    return () => {
-      closure_1_0.current = true;
-    };
-  }, []);
-  return tmp;
+export const useBottomSheetGestureHandlers = () => {
+  const tmp = useContext(_mod6740.BottomSheetGestureHandlersContext);
+  if (null === tmp) {
+    throw "'useBottomSheetGestureHandlers' cannot be used out of the BottomSheet!";
+  } else {
+    return tmp;
+  }
 };

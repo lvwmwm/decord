@@ -1,15 +1,15 @@
-// Module ID: 4262
-// Function ID: 4263
+// Module ID: 4338
+// Function ID: 4339
 // Name: useToken
-// Dependencies: [576, 4263, 12, 4271, 2]
+// Dependencies: [576, 4339, 12, 4347, 2]
 // Exports: useToken
 
-// Module 4262 (useToken)
+// Module 4338 (useToken)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4271 */;
+import native from "native" /* 4347 */;
 
-const SemanticColorContext = obj(4263);
+const SemanticColorContext = obj(4339);
 require = fn;
 const map = new Map();
 const keys = Object.keys(nativeDefault.colors);
@@ -20,12 +20,13 @@ let closure_4 = Object.fromEntries(keys.map((item) => {
 const size = fn(2);
 let result = size.fileFinishedImporting("design/tokens/native/useToken.tsx");
 
-export const useToken = function useToken(BACKGROUND_BASE_LOW, theme) {
+export const useToken = function useToken(BACKGROUND_BASE_LOW, DARK) {
+  let theme = DARK;
   let obj = require;
   let result = dependencyMap;
   const themeContext = native.useThemeContext();
   let tmp3 = null;
-  if (theme == null) {
+  if (DARK == null) {
     theme = themeContext.theme;
   }
   if (tmp3 == BACKGROUND_BASE_LOW) {

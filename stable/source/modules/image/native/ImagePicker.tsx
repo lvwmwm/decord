@@ -1,16 +1,16 @@
-// Module ID: 5150
-// Function ID: 5151
+// Module ID: 5231
+// Function ID: 5232
 // Name: ImagePicker
-// Dependencies: [1183, 1085, 1115, 5151, 5152, 576, 5154, 1114, 2]
+// Dependencies: [1181, 1085, 1363, 5232, 5233, 576, 5235, 1114, 2]
 
-// Module 5150 (ImagePicker)
+// Module 5231 (ImagePicker)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import ImagePickerUtils from "ImagePickerUtils" /* 5151 */;
-import launchCamera from "launchCamera" /* 5152 */;
-import openPickerDefault from "openPicker" /* 5154 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import ImagePickerUtils from "ImagePickerUtils" /* 5232 */;
+import launchCamera from "launchCamera" /* 5233 */;
+import openPickerDefault from "openPicker" /* 5235 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
 
 require = fn;
 const ThemeTypes = fn(1085).ThemeTypes;

@@ -1,27 +1,40 @@
 // Module ID: 3893
 // Function ID: 3894
-// Dependencies: []
+// Dependencies: [3729, 3873, 3726]
 // Exports: default
 
 // Module 3893
+import module_3729_mod from "module_3729" /* 3729 */;
+import module_3873_mod from "module_3873" /* 3873 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-export default function addLeadingZeros(arg0, arg1) {
-  let length;
-  let str = "";
-  if (arg0 < 0) {
-    str = "-";
-  }
-  const str1 = Math.abs(arg0).toString();
-  let tmp = str1;
-  let tmp2 = str1;
-  if (str1.length < arg1) {
-    do {
-      let text = `0${tmp}`;
-      tmp = text;
-      tmp2 = text;
-      length = `0${tmp}`.length;
-    } while (length < arg1);
-  }
-  return str + tmp2;
+let module_3729 = module_3729_mod;
+if (!module_3729) {
+  const obj = { default: module_3729 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_3729;
+}
+module_3729 = tmp3;
+let module_3873 = module_3873_mod;
+if (!module_3873) {
+  const obj2 = { default: module_3873 };
+  let tmp5 = obj2;
+} else {
+  tmp5 = module_3873;
+}
+module_3873 = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
+
+export default function addWeeks(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  return module_3873.default(arg0, 7 * module_3729.default(arg1));
 };
 export default exports.default;

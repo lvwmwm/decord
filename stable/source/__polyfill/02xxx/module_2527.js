@@ -1,9 +1,9 @@
 // Module ID: 2527
 // Function ID: 2528
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 2527
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
 export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/file_upload", scales: [1], hash: "23b8cc9c9f2f7ce0243fa024f7324767", name: "NitroFileUpload.compiled.messages", type: "jsona" });

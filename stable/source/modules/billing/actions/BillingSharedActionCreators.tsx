@@ -1,17 +1,17 @@
-// Module ID: 4885
-// Function ID: 4886
+// Module ID: 4961
+// Function ID: 4962
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 4222, 4886, 1074, 1272, 4240, 573, 1114, 1242, 4461, 4233, 2]
+// Dependencies: [5, 4298, 4962, 1074, 1270, 4316, 573, 1114, 1240, 4537, 4309, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 4885 (BillingSharedActionCreators)
+// Module 4961 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1114 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4461 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4537 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 4222 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 4298 */;
 
 require = fn;
 let closure_8 = async function _validatePaymentSourceBillingAddress(arg0, value) {
@@ -233,7 +233,7 @@ let closure_10 = async function _createPaymentSource(arg0, value) {
     }
   }
 };
-const StripeErrorTypes = fn(4886).StripeErrorTypes;
+const StripeErrorTypes = fn(4962).StripeErrorTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7 } = Constants);
 const size = fn(2);
@@ -319,8 +319,8 @@ export const dispatchConfirmationError = function dispatchConfirmationError(type
     const merged2 = Object.assign(tmp12);
     const merged3 = Object.assign(obj.extra);
     obj9.extra = obj14;
-    const result = tmp15(4233).captureBillingException(error1, obj9);
-    const tmp15Result = tmp15(4233);
+    const result = tmp15(4309).captureBillingException(error1, obj9);
+    const tmp15Result = tmp15(4309);
   }
   return error1;
 };

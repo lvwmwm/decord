@@ -1,18 +1,18 @@
-// Module ID: 5689
-// Function ID: 5690
+// Module ID: 5770
+// Function ID: 5771
 // Name: FormRadio
-// Dependencies: [19, 21, 4560, 576, 4279, 4296, 4974, 4978, 2]
+// Dependencies: [19, 21, 4636, 576, 4357, 4373, 5055, 5059, 2]
 // Exports: FormRadio
 
-// Module 5689 (FormRadio)
+// Module 5770 (FormRadio)
 import nativeDefault from "native" /* 576 */;
-import spring from "spring" /* 4974 */;
-import springPresets from "springPresets" /* 4978 */;
+import spring from "spring" /* 5055 */;
+import springPresets from "springPresets" /* 5059 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_5 = createStyles.createStyles(() => {
   const CONTROL_RADIO_ICON_SIZE_DEFAULT = nativeDefault.modules.mobile.CONTROL_RADIO_ICON_SIZE_DEFAULT;
   const CONTROL_RADIO_ICON_DOT_SIZE_DEFAULT = nativeDefault.modules.mobile.CONTROL_RADIO_ICON_DOT_SIZE_DEFAULT;

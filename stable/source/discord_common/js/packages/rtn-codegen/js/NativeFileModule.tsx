@@ -1,9 +1,9 @@
-// Module ID: 1152
-// Function ID: 1153
+// Module ID: 1150
+// Function ID: 1151
 // Name: NativeFileModule
 // Dependencies: [17, 2]
 
-// Module 1152 (NativeFileModule)
+// Module 1150 (NativeFileModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

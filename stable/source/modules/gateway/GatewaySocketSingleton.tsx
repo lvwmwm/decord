@@ -1,19 +1,19 @@
-// Module ID: 13632
-// Function ID: 13633
+// Module ID: 13718
+// Function ID: 13719
 // Name: GatewaySocketSingleton
-// Dependencies: [13633, 502, 3, 13634, 13674, 13677, 11305, 1242, 7757, 1115, 4182, 1461, 573, 2]
+// Dependencies: [13719, 502, 3, 13720, 13760, 13763, 11437, 1240, 7859, 1363, 4257, 1461, 573, 2]
 
-// Module 13632 (GatewaySocketSingleton)
+// Module 13718 (GatewaySocketSingleton)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import DiscordNativeDefault from "DiscordNative" /* 4182 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7757 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 11305 */;
-import GatewaySocketDefault from "GatewaySocket" /* 13634 */;
-import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 13674 */;
-import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 13677 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13633 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import DiscordNativeDefault from "DiscordNative" /* 4257 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 7859 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 11437 */;
+import GatewaySocketDefault from "GatewaySocket" /* 13720 */;
+import LocalPresenceStateManagerDefault from "LocalPresenceStateManager" /* 13760 */;
+import LocalVoiceStateManagerDefault from "LocalVoiceStateManager" /* 13763 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13719 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import NetworkUtils_mod from "NetworkUtils" /* 1461 */;
 
@@ -55,7 +55,7 @@ socket.handleIdentify = () => {
   }
   const obj2 = { hasToken: null != token };
 };
-const PlatformUtils = fn(1115);
+const PlatformUtils = fn(1363);
 if (PlatformUtils.isDesktop()) {
   const powerMonitor = DiscordNativeDefault.powerMonitor;
   powerMonitor.on("resume", () => {

@@ -1,9 +1,9 @@
 // Module ID: 2785
 // Function ID: 2786
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 2785
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
 export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/notifications_inbox", scales: [1], hash: "979ffd23ac7c056952037af41549f09b", name: "NotificationsInbox.compiled.messages", type: "jsona" });

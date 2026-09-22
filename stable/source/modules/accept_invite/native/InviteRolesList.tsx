@@ -1,19 +1,19 @@
-// Module ID: 12724
-// Function ID: 12725
+// Module ID: 12853
+// Function ID: 12854
 // Name: InviteRolesList
-// Dependencies: [19, 17, 21, 4560, 2019, 4973, 4556, 1114, 10952, 2]
+// Dependencies: [19, 17, 21, 4636, 2019, 5054, 4632, 1114, 11082, 2]
 // Exports: default
 
-// Module 12724 (InviteRolesList)
+// Module 12853 (InviteRolesList)
 import GuildRoleUtils from "GuildRoleUtils" /* 2019 */;
-import RolePillDefault from "RolePill" /* 10952 */;
+import RolePillDefault from "RolePill" /* 11082 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_7 = createStyles.createStyles({ rolesRow: { flexDirection: "row", flexWrap: "wrap", justifyContent: "center", gap: 4 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/accept_invite/native/InviteRolesList.tsx");
@@ -44,11 +44,11 @@ export default function InviteRolesList(invite) {
       const obj2 = { variant: "text-sm/semibold", color: "text-default", children: null };
       const intl = guild(1114).intl;
       obj2.children = intl.string(guild(1114).t.stcSfI);
-      const items1 = [closure_5(guild(4556).Text, obj2), ];
+      const items1 = [closure_5(guild(4632).Text, obj2), ];
       const obj3 = { style: tmp.rolesRow, children: memo.map((role) => hasOwnProperty(RolePillDefault, { role, guildId: guild.id }, role.id)) };
       items1[1] = closure_5(View, obj3);
       obj.children = items1;
-      tmp2 = closure_6(guild(4973).Stack, obj);
+      tmp2 = closure_6(guild(5054).Stack, obj);
     }
   }
   return tmp2;

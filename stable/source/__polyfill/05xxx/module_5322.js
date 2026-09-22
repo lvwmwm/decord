@@ -1,9 +1,18 @@
 // Module ID: 5322
 // Function ID: 5323
-// Dependencies: [1122]
+// Dependencies: [5319]
 
 // Module 5322
-import registerAsset from "module_1122" /* 1122 */;
+import _mod5319 from "module_5319" /* 5319 */;
 
+require = arg1;
+const dependencyMap = arg6;
+const obj = { 45056: null, 45057: "NumberOfImages", 45058: "MPEntry", 45059: "ImageUIDList", 45060: "TotalFrames" };
+obj[45056] = {
+  name: "MPFVersion",
+  description(value) {
+    return _mod5319.getStringValue(value);
+  }
+};
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "322f5aec10ee0e2c3d6aad9844b5f00f", name: "img_account_sync_facebook_light_and_dark", type: "png" });
+export default obj;

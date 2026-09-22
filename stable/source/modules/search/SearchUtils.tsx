@@ -1,31 +1,31 @@
-// Module ID: 12344
-// Function ID: 12345
+// Module ID: 12473
+// Function ID: 12474
 // Name: SearchUtils
-// Dependencies: [32, 1957, 2012, 4772, 4209, 2011, 1371, 7879, 1074, 4153, 1114, 12345, 11, 12350, 12, 12351, 4713, 4404, 2]
+// Dependencies: [32, 1957, 2012, 4848, 4285, 2011, 1371, 7982, 1074, 4228, 1114, 12474, 11, 12479, 12, 12480, 4789, 4481, 2]
 // Exports: clearTokenCache, filterHasAnswer, getAutocompleteMode, getChannelActiveAgoTimestamp, getChannelDisplayName, getChannelIdFromSearchContext, getChannelPlaceholderName, getFlattenedAutocompleteResults, getGuildIdFromSearchContext, getIndexingErrorText, getNonTokenQuery, getQueryContentString, getQueryFromTokens, getSearchContextId, getSearchHistoryStateId, getSearchOptionAnswer, getSearchQueryFromTokens, getSearchTabFetchId, getSelectionScope, getTabTitle, isGuildLikeSearchContext, queryHasFilter, quoteChannelName, refreshSearchTokens, removeInvalidPrivateChannelSearchTokens, searchModeToSearchQueryParams, searchQueryParamsToSearchMode, setIncludeNSFW, showDatePicker, tokenizeQuery
 
-// Module 12344 (SearchUtils)
+// Module 12473 (SearchUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1114 */;
-import _modDef4153 from "module_4153" /* 4153 */;
-import UserUtilsDefault from "UserUtils" /* 4404 */;
-import useChannelName from "useChannelName" /* 4713 */;
-import SearchTokens from "SearchTokens" /* 12345 */;
-import QueryTokenizerDefault from "QueryTokenizer" /* 12350 */;
-import SearchActionCreatorsDefault from "SearchActionCreators" /* 12351 */;
+import _modDef4228 from "module_4228" /* 4228 */;
+import UserUtilsDefault from "UserUtils" /* 4481 */;
+import useChannelName from "useChannelName" /* 4789 */;
+import SearchTokens from "SearchTokens" /* 12474 */;
+import QueryTokenizerDefault from "QueryTokenizer" /* 12479 */;
+import SearchActionCreatorsDefault from "SearchActionCreators" /* 12480 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildChannelStore from "GuildChannelStore" /* 2012 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 4772 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 4848 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const SearchTokensDefault = SearchTokens;
 
 require = fn;
-const SearchTabs = fn(7879).SearchTabs;
+const SearchTabs = fn(7982).SearchTabs;
 const Constants = fn(1074);
 ({ SearchTypes: c10, SearchTokenTypes } = Constants);
 ({ SearchPopoutModes: closure_12, IS_SEARCH_ANSWER_TOKEN: map1, IS_SEARCH_FILTER_TOKEN: closure_14, SearchModes: closure_15, ME } = Constants);
@@ -90,7 +90,7 @@ export const getSearchTabFetchId = function getSearchTabFetchId(searchContext, M
   return "" + channelId + "-" + MEDIA + "-" + searchResultsQuery;
 };
 export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestamp(arg0) {
-  const diffResult = _modDef4153().diff(_modDef4153(arg0), "s");
+  const diffResult = _modDef4228().diff(_modDef4228(arg0), "s");
   if (diffResult > c17) {
     const _Math5 = Math;
     const rounded = Math.round(diffResult / tmp3);
@@ -128,7 +128,7 @@ export const getChannelActiveAgoTimestamp = function getChannelActiveAgoTimestam
     const intl = util.intl;
     return intl.string(util.t["5Ldpkc"]);
   }
-  const obj = _modDef4153();
+  const obj = _modDef4228();
 };
 export const getIndexingErrorText = function getIndexingErrorText(searchContext) {
   const type = searchContext.type;
@@ -481,7 +481,7 @@ export const getAutocompleteMode = function getAutocompleteMode(cursorScope, tok
       }
     }
     let tmp4;
-    if (currentToken.type === tmp3(12350).NON_TOKEN_TYPE) {
+    if (currentToken.type === tmp3(12479).NON_TOKEN_TYPE) {
       tmp4 = currentToken;
     }
     obj7 = { type: constants2.FILTER_ALL, filter: null, token: tmp4 };

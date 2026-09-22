@@ -1,7 +1,7 @@
 // Module ID: 1918
 // Function ID: 1919
 // Name: ApplicationRecord
-// Dependencies: [1386, 1919, 1385, 1920, 1350, 1086, 1921, 1396, 1923, 11, 2]
+// Dependencies: [1386, 1919, 1385, 1920, 1348, 1086, 1921, 1396, 1923, 11, 2]
 
 // Module 1918 (ApplicationRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -29,7 +29,7 @@ function createExecutable(os) {
 }
 const Constants = fn(1920);
 ({ END_GAME_APPLICATION_ID, POKER_NIGHT_APPLICATION_ID } = Constants);
-const ApplicationTypes = fn(1350).ApplicationTypes;
+const ApplicationTypes = fn(1348).ApplicationTypes;
 let closure_7 = { [POKER_NIGHT_APPLICATION_ID]: 7, [END_GAME_APPLICATION_ID]: 12 };
 let BasicApplicationRecord;
 class BasicApplicationRecord extends tmp2 {

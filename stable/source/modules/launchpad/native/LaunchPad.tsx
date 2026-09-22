@@ -1,36 +1,36 @@
-// Module ID: 16971
-// Function ID: 16972
+// Module ID: 17085
+// Function ID: 17086
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 4251, 7525, 7328, 5506, 1961, 502, 1957, 7720, 7636, 1979, 13757, 4575, 5438, 4741, 4579, 1074, 21, 576, 4560, 5123, 4556, 504, 4296, 4425, 7050, 1114, 13015, 9782, 15578, 1115, 14584, 10971, 9850, 4417, 9851, 9841, 1477, 1611, 9842, 12793, 1242, 16972, 16979, 15746, 16998, 16999, 2]
+// Dependencies: [32, 19, 17, 4327, 7628, 7431, 5587, 1961, 502, 1957, 7822, 7738, 1979, 13843, 4651, 5519, 4817, 4655, 1074, 21, 576, 4636, 5204, 4632, 504, 4373, 4502, 7153, 1114, 13145, 9906, 15664, 1363, 14669, 11102, 9974, 4494, 9975, 9965, 1477, 1611, 9966, 12922, 1240, 17086, 17093, 15834, 17106, 17107, 2]
 
-// Module 16971 (LaunchPad)
+// Module 17085 (LaunchPad)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import ChatInputUtils from "ChatInputUtils" /* 4425 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Pressables from "Pressables" /* 5123 */;
-import AutocompleterDefault from "Autocompleter" /* 9842 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9850 */;
-import hideLaunchPadDefault from "hideLaunchPad" /* 10971 */;
-import RouteManagerDefault from "RouteManager" /* 12793 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 14584 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import ChatInputUtils from "ChatInputUtils" /* 4502 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Pressables from "Pressables" /* 5204 */;
+import AutocompleterDefault from "Autocompleter" /* 9966 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9974 */;
+import hideLaunchPadDefault from "hideLaunchPad" /* 11102 */;
+import RouteManagerDefault from "RouteManager" /* 12922 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 14669 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4251 */;
-import ChannelListStore from "ChannelListStore" /* 7525 */;
-import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 7328 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5506 */;
+import ActionSheetStore from "ActionSheetStore" /* 4327 */;
+import ChannelListStore from "ChannelListStore" /* 7628 */;
+import NavigationHistoryStore_mod from "NavigationHistoryStore" /* 7431 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5587 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7720 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7636 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7822 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7738 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 13757 */;
-import ReadStateStore from "ReadStateStore" /* 4575 */;
-import SortedGuildStore from "SortedGuildStore" /* 5438 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4741 */;
-import VoiceStateStore from "VoiceStateStore" /* 4579 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 13843 */;
+import ReadStateStore from "ReadStateStore" /* 4651 */;
+import SortedGuildStore from "SortedGuildStore" /* 5519 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
+import VoiceStateStore from "VoiceStateStore" /* 4655 */;
 
 const require = globalThis.__r;
 
@@ -67,7 +67,7 @@ function createAndAppendChannel(item10022, set, items) {
   }
 }
 const View = fn(17).View;
-let NavigationHistoryStore = fn(7328);
+let NavigationHistoryStore = fn(7431);
 ({ CHANNEL_PREFIX: closure_8, getIdFromHistoryItem: closure_9, GUILD_PREFIX: c10 } = NavigationHistoryStore);
 let NavigationHistoryStore = NavigationHistoryStore_mod;
 const ChannelRecord = fn(1961);
@@ -77,7 +77,7 @@ const Constants = fn(1074);
 const jsxProd = fn(21);
 ({ jsx: closure_27, jsxs: closure_28 } = jsxProd);
 const md = nativeDefault.radii.md;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { wrapper: { flexGrow: 0, marginHorizontal: 16, marginBottom: 16, flexShrink: 1, borderRadius: 24, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", justifyContent: "flex-start", alignItems: "stretch", overflow: "hidden" }, launchPadContent: { flex: -1, overflow: "hidden", borderBottomLeftRadius: 24, borderBottomRightRadius: 24 }, header: { paddingHorizontal: 16, paddingTop: 16, flexDirection: "row", flexShrink: 0, flexGrow: 0 }, subheader: { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", alignSelf: "center", paddingStart: 8 }, tabs: null, tab: null, tabSelected: null };
 let obj3 = { flexGrow: 0, marginHorizontal: 16, marginBottom: 16, flexShrink: 1, borderRadius: 24, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", justifyContent: "flex-start", alignItems: "stretch", overflow: "hidden" };
 obj.tabs = { marginStart: 8, flexDirection: "row", flexShrink: 0, backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: md, padding: 5, alignItems: "stretch", justifyContent: "center", gap: 5, borderWidth: 1, borderColor: nativeDefault.colors.INPUT_BORDER_DEFAULT };
@@ -279,7 +279,7 @@ let closure_35 = noop.memo((tab) => {
   return closure_28(sharedValue, obj6);
 });
 let closure_37 = [];
-let items = [fn(9841).AutocompleterResultTypes.GUILD, fn(9841).AutocompleterResultTypes.TEXT_CHANNEL, fn(9841).AutocompleterResultTypes.GROUP_DM, fn(9841).AutocompleterResultTypes.VOICE_CHANNEL, fn(9841).AutocompleterResultTypes.USER];
+let items = [fn(9965).AutocompleterResultTypes.GUILD, fn(9965).AutocompleterResultTypes.TEXT_CHANNEL, fn(9965).AutocompleterResultTypes.GROUP_DM, fn(9965).AutocompleterResultTypes.VOICE_CHANNEL, fn(9965).AutocompleterResultTypes.USER];
 const __initData3 = { code: "function LaunchPadTsx3(){const{sharedState}=this.__closure;return sharedState.get()===0;}" };
 const __initData4 = { code: "function LaunchPadTsx4(hidden,prevHidden){const{runOnJS,clearQuery,cancelTimeout}=this.__closure;if(hidden===prevHidden)return;if(hidden&&hidden!==prevHidden){runOnJS(clearQuery)();}else if(!hidden&&hidden!==prevHidden){runOnJS(cancelTimeout)();}}" };
 let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };

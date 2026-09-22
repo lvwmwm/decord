@@ -1,16 +1,16 @@
-// Module ID: 9047
-// Function ID: 9048
+// Module ID: 9170
+// Function ID: 9171
 // Name: InAppReportsIgnoreUserElement
-// Dependencies: [19, 1957, 4209, 1074, 21, 504, 4712, 4740, 9048, 9057, 1114, 6968, 2]
+// Dependencies: [19, 1957, 4285, 1074, 21, 504, 4788, 4816, 9171, 9180, 1114, 7069, 2]
 // Exports: default
 
-// Module 9047 (InAppReportsIgnoreUserElement)
-import NicknameUtilsDefault from "NicknameUtils" /* 4712 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4740 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9048 */;
+// Module 9170 (InAppReportsIgnoreUserElement)
+import NicknameUtilsDefault from "NicknameUtils" /* 4788 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4816 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 9171 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 
 const require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;

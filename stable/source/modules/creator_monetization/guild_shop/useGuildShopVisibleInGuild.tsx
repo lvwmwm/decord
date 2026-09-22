@@ -1,15 +1,15 @@
-// Module ID: 7262
-// Function ID: 7263
+// Module ID: 7365
+// Function ID: 7366
 // Name: useGuildShopVisibleInGuild
-// Dependencies: [1074, 7258, 7250, 7263, 7253, 2]
+// Dependencies: [1074, 7361, 7353, 7366, 7356, 2]
 // Exports: isGuildShopVisibleInGuild, useGuildShopVisibleInGuild
 
-// Module 7262 (useGuildShopVisibleInGuild)
+// Module 7365 (useGuildShopVisibleInGuild)
 import Constants from "Constants" /* 1074 */;
-import useRoleSubscriptionsVisibleInGuild from "useRoleSubscriptionsVisibleInGuild" /* 7250 */;
-import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7253 */;
-import GuildProductsEligibility from "GuildProductsEligibility" /* 7258 */;
-import useGuildShopPreviewVisible from "useGuildShopPreviewVisible" /* 7263 */;
+import useRoleSubscriptionsVisibleInGuild from "useRoleSubscriptionsVisibleInGuild" /* 7353 */;
+import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 7356 */;
+import GuildProductsEligibility from "GuildProductsEligibility" /* 7361 */;
+import useGuildShopPreviewVisible from "useGuildShopPreviewVisible" /* 7366 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;

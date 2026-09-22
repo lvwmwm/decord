@@ -1,8 +1,8 @@
-// Module ID: 6154
-// Function ID: 6155
+// Module ID: 6255
+// Function ID: 6256
 // Dependencies: [2]
 
-// Module 6154
+// Module 6255
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftingTier1LargeBadge-2x.png.js");

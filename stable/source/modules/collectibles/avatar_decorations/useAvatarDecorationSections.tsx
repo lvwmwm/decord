@@ -1,15 +1,15 @@
-// Module ID: 13172
-// Function ID: 13173
+// Module ID: 13302
+// Function ID: 13303
 // Name: useAvatarDecorationSections
-// Dependencies: [32, 19, 7542, 7558, 563, 7554, 1114, 2]
+// Dependencies: [32, 19, 7645, 7660, 563, 7657, 1114, 2]
 // Exports: default
 
-// Module 13172 (useAvatarDecorationSections)
+// Module 13302 (useAvatarDecorationSections)
 import util from "util" /* 1114 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7554 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7657 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7542 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7558 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7645 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7660 */;
 
 require = fn;
 const useMemo = fn(19).useMemo;

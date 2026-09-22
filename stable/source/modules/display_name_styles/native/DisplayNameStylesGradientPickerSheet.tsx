@@ -1,14 +1,14 @@
-// Module ID: 15352
-// Function ID: 15353
+// Module ID: 15435
+// Function ID: 15436
 // Name: DisplayNameStylesGradientPickerSheet
-// Dependencies: [32, 19, 17, 1074, 21, 4560, 576, 10907, 1388, 15348, 4528, 1242, 4527, 14598, 7150, 7149, 4975, 1114, 4987, 1091, 15353, 12, 5123, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4636, 576, 11034, 1388, 15431, 4604, 1240, 4603, 14683, 7253, 7252, 5056, 1114, 5068, 1091, 15436, 12, 5204, 2]
 // Exports: default
 
-// Module 15352 (DisplayNameStylesGradientPickerSheet)
+// Module 15435 (DisplayNameStylesGradientPickerSheet)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import HapticUtils from "HapticUtils" /* 4528 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import HapticUtils from "HapticUtils" /* 4604 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { body: { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 }, gradientContainer: null, dropperContainer: null, dropper: null, gradient: null, optionContainer: null, swatchWrapper: null, pressable: null, selected: null, option: null };
 let obj3 = { paddingVertical: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.space.PX_12, flexGrow: 1, justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16 };
 obj2.gradientContainer = { flexDirection: "row", justifyContent: "center", alignItems: "center", paddingHorizontal: nativeDefault.space.PX_8 };

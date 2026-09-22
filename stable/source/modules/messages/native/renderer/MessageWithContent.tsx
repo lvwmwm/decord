@@ -1,17 +1,17 @@
-// Module ID: 7938
-// Function ID: 7939
+// Module ID: 8041
+// Function ID: 8042
 // Name: MessageWithContent
-// Dependencies: [7939, 7934, 7941, 1114, 8109, 2]
+// Dependencies: [8042, 8037, 8044, 1114, 8225, 2]
 // Exports: generateMessageRowData
 
-// Module 7938 (MessageWithContent)
+// Module 8041 (MessageWithContent)
 import util from "util" /* 1114 */;
-import createMessageContentDefault from "createMessageContent" /* 7941 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8109 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 7939 */;
+import createMessageContentDefault from "createMessageContent" /* 8044 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8225 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8042 */;
 
 require = fn;
-const RowType = fn(7934).RowType;
+const RowType = fn(8037).RowType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/renderer/MessageWithContent.tsx");
 
@@ -43,8 +43,8 @@ export const generateMessageRowData = function generateMessageRowData(canShowIma
   obj.alwaysShowAddReaction = tmp3;
   if (overrideBackgroundHighlight == null) {
     const obj3 = { message, theme, isEditing, isAutomodBlockedMessage: null != GuildAutomodMessageStore.getMessage(message.id) };
-    overrideBackgroundHighlight = tmp4(8109).createBackgroundHighlight(obj3);
-    const tmp4Result = tmp4(8109);
+    overrideBackgroundHighlight = tmp4(8225).createBackgroundHighlight(obj3);
+    const tmp4Result = tmp4(8225);
   }
   obj.backgroundHighlight = overrideBackgroundHighlight;
   let canReply = options.enableSwipeActions;

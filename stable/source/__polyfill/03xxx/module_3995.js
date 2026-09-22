@@ -1,20 +1,20 @@
 // Module ID: 3995
 // Function ID: 3996
-// Dependencies: [3996, 3651]
+// Dependencies: [3725, 3726]
 // Exports: default
 
 // Module 3995
-import startOfHour_mod from "startOfHour" /* 3996 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let startOfHour = startOfHour_mod;
-if (!startOfHour) {
-  const obj = { default: startOfHour };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = startOfHour;
+  tmp3 = _typeof;
 }
-startOfHour = tmp3;
+_typeof = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,10 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isSameHour(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = startOfHour.default(arg0);
-  const time = defaultResult1.getTime();
-  return time === startOfHour.default(arg1).getTime();
+export default function getHours(arg0) {
+  requiredArgs.default(1, arguments);
+  return _typeof.default(arg0).getHours();
 };
 export default exports.default;

@@ -1,20 +1,20 @@
-// Module ID: 8624
-// Function ID: 8625
+// Module ID: 8741
+// Function ID: 8742
 // Name: StageBlockedUsersActionSheet
-// Dependencies: [32, 19, 17, 4209, 5421, 5414, 21, 4560, 576, 504, 1114, 1178, 8625, 4556, 4527, 8626, 7123, 4975, 7150, 7072, 2]
+// Dependencies: [32, 19, 17, 4285, 5502, 5495, 21, 4636, 576, 504, 1114, 1176, 8742, 4632, 4603, 8743, 7226, 5056, 7253, 7175, 2]
 // Exports: default
 
-// Module 8624 (StageBlockedUsersActionSheet)
+// Module 8741 (StageBlockedUsersActionSheet)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import native from "native" /* 1178 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
+import native from "native" /* 1176 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5421 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5502 */;
 
 require = fn;
 function RestrictedUser(guildId) {
@@ -45,8 +45,8 @@ function RestrictedUser(guildId) {
     const obj6 = { style: null, children: null };
     const items3 = [tmp.iconContainer];
     obj6.style = items3;
-    const obj7 = { style: tmp.icon, source: user(8625), color: user(576).unsafe_rawColors.WHITE };
-    obj6.children = tmp11(tmp2(1178).Icon, obj7);
+    const obj7 = { style: tmp.icon, source: user(8742), color: user(576).unsafe_rawColors.WHITE };
+    obj6.children = tmp11(tmp2(1176).Icon, obj7);
     speaker = tmp11(tmp10, obj6);
   }
   items2[1] = speaker;
@@ -62,7 +62,7 @@ function RestrictedUser(guildId) {
     const obj10 = { variant: "text-sm/medium", color: "text-default", children: null };
     const items6 = ["#", participant.user.discriminator];
     obj10.children = items6;
-    tmp9Result = tmp9(tmp2(4556).Text, obj10);
+    tmp9Result = tmp9(tmp2(4632).Text, obj10);
   }
   items5[1] = tmp9Result;
   obj8.children = items5;
@@ -140,10 +140,10 @@ function StageBlockedUsersActionSheetHeader(arg0) {
   }
 }
 const View = fn(17).View;
-let closure_8 = fn(5414).STAGE_BLOCKED_USERS_SHEET_KEY;
+let closure_8 = fn(5495).STAGE_BLOCKED_USERS_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { paddingHorizontal: 16 }, header: { padding: 16 }, title: { marginTop: 16, marginBottom: 8, textAlign: "center" }, description: { textAlign: "center", marginBottom: 16 }, buttons: { width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: 16, paddingVertical: 8 }, userContainer: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", marginVertical: 8, width: "100%" }, avatarContainer: { position: "relative", padding: 8, paddingTop: 0, paddingBottom: 4, marginEnd: 12 }, avatar: { opacity: 0.5 }, iconContainer: null, icon: null, flex: null, blocked: null, ignored: null };
 let size = { position: "absolute", top: -4, right: 4, height: 16, width: 16, alignItems: "center", justifyContent: "center", borderRadius: 8, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 obj2.iconContainer = size;
@@ -164,9 +164,9 @@ export default function StageBlockedUsersActionSheet(channel) {
   const tmp = closure_11();
   const tmp2 = items1(noop.useState(0), 2);
   dependencyMap = tmp2[1];
-  const stageBlockedUsers = channel(8626).useStageBlockedUsers(channel.id);
-  const obj = channel(8626);
-  const stageIgnoredUsers = channel(8626).useStageIgnoredUsers(channel.id);
+  const stageBlockedUsers = channel(8743).useStageBlockedUsers(channel.id);
+  const obj = channel(8743);
+  const stageIgnoredUsers = channel(8743).useStageIgnoredUsers(channel.id);
   const callback = noop.useCallback((nativeEvent) => {
     dependencyMap(nativeEvent.nativeEvent.layout.height);
   }, []);
@@ -178,21 +178,21 @@ export default function StageBlockedUsersActionSheet(channel) {
     onAccept(channel);
     ActionSheetActionCreatorsDefault.hideActionSheet(closure_8);
   };
-  const items = [closure_9(channel(4975).Button, obj4), ];
+  const items = [closure_9(channel(5056).Button, obj4), ];
   const obj5 = { variant: "secondary", text: null, onPress: null };
   const intl2 = channel(1114).intl;
   obj5.text = intl2.string(channel(1114).t.CZGqeT);
   obj5.onPress = function handleDismiss() {
-    onAccept(4527).hideActionSheet(closure_1_8);
+    onAccept(4603).hideActionSheet(closure_1_8);
   };
-  items[1] = closure_9(channel(4975).Button, obj5);
+  items[1] = closure_9(channel(5056).Button, obj5);
   obj3.children = items;
   items1 = [];
-  const obj2 = channel(8626);
+  const obj2 = channel(8743);
   HermesBuiltin.arraySpread(stageIgnoredUsers, HermesBuiltin.arraySpread(stageBlockedUsers, 0));
-  const obj6 = { scrollable: true, header: closure_9(StageBlockedUsersActionSheetHeader, { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length }), footer: closure_10(channel(7123).SafeAreaPaddingView, obj3), children: null };
+  const obj6 = { scrollable: true, header: closure_9(StageBlockedUsersActionSheetHeader, { blockedUserCount: stageBlockedUsers.length, ignoredUserCount: stageIgnoredUsers.length }), footer: closure_10(channel(7226).SafeAreaPaddingView, obj3), children: null };
   const obj7 = { inActionSheet: true, contentContainerStyle: tmp.container, accessibilityLabel: null, sections: null, renderItem: null, itemSize: null };
-  const tmp4 = closure_10(channel(7123).SafeAreaPaddingView, obj3);
+  const tmp4 = closure_10(channel(7226).SafeAreaPaddingView, obj3);
   const intl3 = channel(1114).intl;
   obj7.accessibilityLabel = intl3.string(channel(1114).t["3VoRLH"]);
   const items2 = [items1.length];
@@ -203,7 +203,7 @@ export default function StageBlockedUsersActionSheet(channel) {
   obj7.itemSize = function itemSize() {
     return 48;
   };
-  const items3 = [closure_9(onAccept(7072), obj7), closure_9(View, { style: { height: tmp2[0] } })];
+  const items3 = [closure_9(onAccept(7175), obj7), closure_9(View, { style: { height: tmp2[0] } })];
   obj6.children = items3;
-  return closure_10(channel(7150).BottomSheet, obj6);
+  return closure_10(channel(7253).BottomSheet, obj6);
 };

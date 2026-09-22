@@ -1,10 +1,10 @@
 // Module ID: 10586
 // Function ID: 10587
-// Dependencies: [41, 42, 93, 95, 98, 10461, 10444]
+// Dependencies: [41, 42, 93, 95, 98, 10585, 10568]
 
 // Module 10586
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10444 */;
-import now from "now" /* 10461 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10568 */;
+import now from "now" /* 10585 */;
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
@@ -47,7 +47,7 @@ if (self2) {
       fn = self.__importStar;
     }
     if (!fn) {
-      fn = function o(arg0) {
+      fn = function c(arg0) {
         fn = Object.getOwnPropertyNames;
         if (!fn) {
           fn = (obj) => {
@@ -95,12 +95,13 @@ if (self2) {
     }
     const _Object3 = Object;
     let closure_7 = fn(now);
-    class ESCasualDateParser {
+    const re8 = /(?:this)?\s{0,3}(morning|afternoon|evening|night|midnight|midday|noon)(?=\W|$)/i;
+    class ENCasualTimeParser {
       constructor() {
         self = this;
-        tmp = closure_0(this, ESCasualDateParser);
+        tmp = closure_0(this, ENCasualTimeParser);
         tmp2 = c2;
-        obj = c2(ESCasualDateParser);
+        obj = c2(ENCasualTimeParser);
         tmp3 = closure_1;
         if (closure_3()) {
           tmp7 = globalThis;
@@ -115,34 +116,45 @@ if (self2) {
         return tmp3(self, constructResult);
       }
     }
-    _classCallCheck = ESCasualDateParser;
-    _inherits(ESCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+    _classCallCheck = ENCasualTimeParser;
+    _inherits(ENCasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
     const entry = {
       key: "innerPattern",
-      value: function innerPattern(arg0) {
-            return /(ahora|hoy|mañana|ayer)(?=\W|$)/i;
+      value: function innerPattern() {
+            return re8;
           }
     };
     let items = [entry, ];
     const entry1 = {
       key: "innerExtract",
       value: function innerExtract(reference, arg1) {
-            const formatted = arg1[0].toLowerCase();
-            if ("ahora" === formatted) {
-              return closure_7.now(reference.reference);
-            } else if ("hoy" === formatted) {
-              return closure_7.today(reference.reference);
-            } else if ("ma\u00F1ana" === formatted) {
-              return closure_7.tomorrow(reference.reference);
-            } else if ("ayer" === formatted) {
-              return closure_7.yesterday(reference.reference);
+            const formatted = arg1[1].toLowerCase();
+            if ("afternoon" === formatted) {
+              let afternoonResult = closure_7.afternoon(reference.reference);
             } else {
-              return tmp2;
+              if ("evening" !== formatted) {
+                if ("night" !== formatted) {
+                  if ("midnight" === formatted) {
+                    afternoonResult = closure_7.midnight(reference.reference);
+                  } else if ("morning" === formatted) {
+                    afternoonResult = closure_7.morning(reference.reference);
+                  } else if ("noon" === formatted) {
+                    afternoonResult = closure_7.noon(reference.reference);
+                  } else {
+                    afternoonResult = null;
+                  }
+                }
+              }
+              afternoonResult = closure_7.evening(reference.reference);
             }
+            if (afternoonResult) {
+              afternoonResult.addTag("parser/ENCasualTimeParser");
+            }
+            return afternoonResult;
           }
     };
     items[1] = entry1;
-    exports.default = _createClass(ESCasualDateParser, items);
+    exports.default = _createClass(ENCasualTimeParser, items);
   } else {
     const _Object2 = Object;
   }

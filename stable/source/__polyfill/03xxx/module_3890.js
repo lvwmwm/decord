@@ -1,53 +1,41 @@
 // Module ID: 3890
 // Function ID: 3891
-// Dependencies: [3650, 3653, 3891, 3651]
+// Dependencies: [3729, 3880, 3726]
 // Exports: default
 
 // Module 3890
-import _typeof_mod from "module_3650" /* 3650 */;
-import startOfUTCWeek_mod from "startOfUTCWeek" /* 3653 */;
-import startOfUTCWeekYear_mod from "startOfUTCWeekYear" /* 3891 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import module_3729_mod from "module_3729" /* 3729 */;
+import module_3880_mod from "module_3880" /* 3880 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+let module_3729 = module_3729_mod;
+if (!module_3729) {
+  const obj = { default: module_3729 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_3729;
 }
-_typeof = tmp3;
-let startOfUTCWeek = startOfUTCWeek_mod;
-if (!startOfUTCWeek) {
-  const obj2 = { default: startOfUTCWeek };
+module_3729 = tmp3;
+let module_3880 = module_3880_mod;
+if (!module_3880) {
+  const obj2 = { default: module_3880 };
   let tmp5 = obj2;
 } else {
-  tmp5 = startOfUTCWeek;
+  tmp5 = module_3880;
 }
-startOfUTCWeek = tmp5;
-let startOfUTCWeekYear = startOfUTCWeekYear_mod;
-if (!startOfUTCWeekYear) {
-  const obj3 = { default: startOfUTCWeekYear };
-  let tmp7 = obj3;
-} else {
-  tmp7 = startOfUTCWeekYear;
-}
-startOfUTCWeekYear = tmp7;
+module_3880 = tmp5;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
-  const obj4 = { default: requiredArgs };
-  let tmp9 = obj4;
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
 } else {
-  tmp9 = requiredArgs;
+  tmp7 = requiredArgs;
 }
-requiredArgs = tmp9;
-let c4 = 604800000;
+requiredArgs = tmp7;
+let c3 = 60000;
 
-export default function getUTCWeek(arg0, arg1) {
-  requiredArgs.default(1, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const time = startOfUTCWeek.default(defaultResult1, arg1).getTime();
-  const defaultResult2 = startOfUTCWeek.default(defaultResult1, arg1);
-  return Math.round((time - startOfUTCWeekYear.default(defaultResult1, arg1).getTime()) / c4) + 1;
+export default function addMinutes(interval, arg1) {
+  requiredArgs.default(2, arguments);
+  return module_3880.default(interval, module_3729.default(arg1) * c3);
 };
 export default exports.default;

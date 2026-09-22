@@ -1,11 +1,11 @@
 // Module ID: 1449
 // Function ID: 1450
-// Dependencies: [1316, 1444, 1450, 1284, 1288, 1452, 1454]
+// Dependencies: [1314, 1444, 1450, 1282, 1286, 1452, 1454]
 
 // Module 1449
-import _mod1284 from "module_1284" /* 1284 */;
-import _mod1288 from "module_1288" /* 1288 */;
-import callBoundIntrinsic from "callBoundIntrinsic" /* 1316 */;
+import _mod1282 from "module_1282" /* 1282 */;
+import _mod1286 from "module_1286" /* 1286 */;
+import callBoundIntrinsic from "callBoundIntrinsic" /* 1314 */;
 import _mod1444 from "module_1444" /* 1444 */;
 import availableTypedArrays from "availableTypedArrays" /* 1450 */;
 import _mod1452 from "module_1452" /* 1452 */;
@@ -34,22 +34,22 @@ let closure_7 = callBoundIntrinsic("Array.prototype.indexOf", true) || (function
 });
 let closure_8 = Object.create(null);
 if (tmp) {
-  if (_mod1284) {
-    if (_mod1288) {
+  if (_mod1282) {
+    if (_mod1286) {
       _mod1452(tmp2, (arg0) => {
         const tmp = new global[arg0]();
         if (Symbol.toStringTag in tmp) {
-          if (_mod1288) {
-            const tmp4 = tmp2(1288)(tmp);
+          if (_mod1286) {
+            const tmp4 = tmp2(1286)(tmp);
             const _Symbol = Symbol;
-            const tmp5 = tmp2(1284)(tmp4, Symbol.toStringTag);
+            const tmp5 = tmp2(1282)(tmp4, Symbol.toStringTag);
             let tmp6 = tmp5;
             if (!tmp5) {
               tmp6 = tmp5;
               if (tmp4) {
                 const _Symbol2 = Symbol;
-                tmp6 = tmp2(1284)(tmp2(1288)(tmp4), Symbol.toStringTag);
-                const tmp7 = tmp2(1288)(tmp4);
+                tmp6 = tmp2(1282)(tmp2(1286)(tmp4), Symbol.toStringTag);
+                const tmp7 = tmp2(1286)(tmp4);
               }
             }
             const text = `$${arg0}`;
@@ -63,7 +63,7 @@ if (tmp) {
         if (typeof obj === "object") {
           if (closure_3) {
             let tmp14 = null;
-            if (require("module_1284")) {
+            if (require("module_1282")) {
               closure_129_0 = obj;
               closure_129_1 = false;
               require("module_1452")(closure_8, (fn, arg1) => {

@@ -1,9 +1,0 @@
-// Module ID: 13793
-// Function ID: 13794
-// Dependencies: [1122]
-
-// Module 13793
-import registerAsset from "module_1122" /* 1122 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/user_profile", width: 24, height: 24, scales: [2, 3], hash: "48bef4d1edd4b10e6493d22c68a2543a", name: "ic_video_disabled_dark", type: "png" });

@@ -1,12 +1,12 @@
-// Module ID: 11430
-// Function ID: 11431
+// Module ID: 11562
+// Function ID: 11563
 // Name: BuildOverrideStore
-// Dependencies: [1362, 573, 504, 2]
+// Dependencies: [1360, 573, 504, 2]
 
-// Module 11430 (BuildOverrideStore)
+// Module 11562 (BuildOverrideStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1362 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1360 */;
 
 require = fn;
 let obj = { NotResolved: 0, [0]: "NotResolved", Resolving: 1, [1]: "Resolving", Resolved: 2, [2]: "Resolved", Invalid: 3, [3]: "Invalid" };
@@ -42,11 +42,11 @@ prototype["getBuildOverride"] = function getBuildOverride(url) {
       obj3.state = obj.Resolving;
       obj2[url] = obj3;
       obj4 = obj2;
-      const buildOverrideMeta = tmp(1362).getBuildOverrideMeta(validateURLResult.url);
+      const buildOverrideMeta = tmp(1360).getBuildOverrideMeta(validateURLResult.url);
       buildOverrideMeta.then((override) => {
         DispatcherDefault.dispatch({ type: "BUILD_OVERRIDE_RESOLVED", url, override });
       });
-      const tmpResult = tmp(1362);
+      const tmpResult = tmp(1360);
     } else {
       obj4 = {};
       const merged1 = Object.assign(obj4);

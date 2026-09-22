@@ -1,29 +1,9 @@
 // Module ID: 8993
 // Function ID: 8994
-// Dependencies: [8994]
-// Exports: default
+// Dependencies: [1120]
 
 // Module 8993
-import _mod8994 from "module_8994" /* 8994 */;
+import registerAsset from "module_1120" /* 1120 */;
 
-let fn = this;
-if (this) {
-  fn = this.__importDefault;
-}
-if (!fn) {
-  fn = (__esModule) => {
-    if (!__esModule) {
-      const obj = { default: __esModule };
-      let tmp = obj;
-    } else {
-      tmp = __esModule;
-    }
-    return tmp;
-  };
-}
-const mergeDefs = fn(_mod8994);
 
-export default function default_1() {
-  return mergeDefs.default();
-};
-export default exports.default;
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d6d04f6fd100db0e028d8a7cb876c1d6", name: "PlusSmallIcon", type: "png" });

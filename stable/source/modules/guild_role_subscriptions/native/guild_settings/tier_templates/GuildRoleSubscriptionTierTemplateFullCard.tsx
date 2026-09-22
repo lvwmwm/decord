@@ -1,17 +1,17 @@
-// Module ID: 17787
-// Function ID: 17788
+// Module ID: 17901
+// Function ID: 17902
 // Name: GuildRoleSubscriptionTierTemplateFullCard
-// Dependencies: [19, 17, 21, 4560, 576, 1178, 16121, 4556, 15240, 1611, 7150, 17788, 6627, 1114, 17789, 10351, 17790, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 1176, 16215, 4632, 15321, 7082, 1611, 7253, 17902, 6728, 1114, 17903, 10475, 17904, 2]
 // Exports: default
 
-// Module 17787 (GuildRoleSubscriptionTierTemplateFullCard)
+// Module 17901 (GuildRoleSubscriptionTierTemplateFullCard)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
+import native from "native" /* 1176 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15240 */;
-import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16121 */;
-import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 17790 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 15321 */;
+import GuildRoleSubscriptionGatedChannelIconDefault from "GuildRoleSubscriptionGatedChannelIcon" /* 16215 */;
+import GuildRoleSubscriptionTierTemplateUtils from "GuildRoleSubscriptionTierTemplateUtils" /* 17904 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -54,7 +54,7 @@ function BenefitSection(arg0) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1, padding: 16 }, subscriptionPlanTextStyle: null, descriptionPlanTextStyle: null, content: null, separator: null, benefitRowContainer: null, benefitTextContainer: null, benefitDescription: null, channelTitle: null, channelIcon: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, flex: 1, padding: 16 };
 obj2.subscriptionPlanTextStyle = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY };
@@ -77,36 +77,43 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
   ({ guildId, handleSelectTemplateInPreview } = template);
   const tmp = closure_7();
   _require = tmp;
+  const typeConsolidationEyebrow = require("useTypeConsolidationTextTransform").useTypeConsolidationEyebrow("TierTemplateFullCard", "text-xs/bold");
   const first = template.listings[0];
   ({ channels, additional_perks } = first);
   ({ image, name, role_color } = first);
-  let obj = { scrollable: true, startExpanded: true, children: null };
-  let obj2 = { style: tmp.container, children: null };
+  let obj2 = { scrollable: true, startExpanded: true, children: null };
+  let obj3 = { style: tmp.container, children: null };
   let items = [closure_4(require("GuildRoleSubscriptionTierTemplateBasicInfo").GuildRoleSubscriptionTierTemplateBasicInfo, { template, handleSelectTemplateInPreview, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: true }), closure_4(View, { style: tmp.separator }), ];
-  const obj5 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: { paddingBottom: 32 + useSafeAreaInsetsDefault().bottom }, children: null };
-  const obj7 = { variant: "text-sm/bold", color: "text-default", style: { textTransform: "uppercase" }, children: null };
+  const obj6 = { scrollsToTop: false, style: tmp.content, contentContainerStyle: null, children: null };
+  let obj = require("useTypeConsolidationTextTransform");
+  let obj4 = { template, handleSelectTemplateInPreview, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: true };
+  const obj5 = { style: tmp.separator };
+  obj6.contentContainerStyle = { paddingBottom: 32 + useSafeAreaInsetsDefault().bottom };
+  const obj8 = { variant: "text-sm/bold", color: "text-default", style: null, children: null };
+  const items1 = [{ textTransform: "uppercase" }, typeConsolidationEyebrow.style];
+  obj8.style = items1;
   const intl = require("util").intl;
-  obj7.children = intl.string(require("util").t.CjC5XZ);
-  const items1 = [closure_4(require("Text/Text").Text, obj7), closure_4(require("native").Spacer, { size: 4 }), , , , , , , , , ];
-  const obj8 = { variant: "text-sm/normal", color: "text-muted", children: null };
+  obj8.children = intl.string(require("util").t.CjC5XZ);
+  const items2 = [closure_4(require("Text/Text").Text, obj8), closure_4(require("native").Spacer, { size: 4 }), , , , , , , , , ];
+  const obj9 = { variant: "text-sm/normal", color: "text-muted", children: null };
   const intl2 = require("util").intl;
-  obj8.children = intl2.string(require("util").t.bCb3c8);
-  items1[2] = closure_4(require("Text/Text").Text, obj8);
-  items1[3] = closure_4(require("native").Spacer, { size: 24 });
-  const obj9 = { variant: "text-xs/bold", color: "text-default", style: { textTransform: "uppercase" }, children: null };
+  obj9.children = intl2.string(require("util").t.bCb3c8);
+  items2[2] = closure_4(require("Text/Text").Text, obj9);
+  items2[3] = closure_4(require("native").Spacer, { size: 24 });
+  const obj10 = { variant: typeConsolidationEyebrow.variant, color: "text-default", style: null, children: null };
+  const items3 = [{ textTransform: "uppercase" }, typeConsolidationEyebrow.style];
+  obj10.style = items3;
   const intl3 = require("util").intl;
-  obj9.children = intl3.string(require("util").t.ZKyfEo);
-  items1[4] = closure_4(require("Text/Text").Text, obj9);
-  items1[5] = closure_4(require("native").Spacer, { size: 8 });
-  items1[6] = closure_4(require("GuildRoleSubscriptionTierTemplateRolePreview").GuildRoleSubscriptionRolePreview, { roleColor: role_color, roleImage: image, roleName: name, guildId });
-  items1[7] = closure_4(SectionSeparator, {});
-  const obj10 = { sectionTitle: null, children: null };
+  obj10.children = intl3.string(require("util").t.ZKyfEo);
+  items2[4] = closure_4(require("Text/Text").Text, obj10);
+  items2[5] = closure_4(require("native").Spacer, { size: 8 });
+  items2[6] = closure_4(require("GuildRoleSubscriptionTierTemplateRolePreview").GuildRoleSubscriptionRolePreview, { roleColor: role_color, roleImage: image, roleName: name, guildId });
+  items2[7] = closure_4(SectionSeparator, {});
+  const obj11 = { sectionTitle: null, children: null };
   const intl4 = require("util").intl;
-  obj10.sectionTitle = intl4.string(require("util").t.Ofvpfs);
-  let obj3 = { template, handleSelectTemplateInPreview, subscriptionPlanTextStyle: tmp.subscriptionPlanTextStyle, descriptionTextStyle: tmp.descriptionPlanTextStyle, closeActionSheet: true };
-  let obj4 = { style: tmp.separator };
-  const obj6 = { paddingBottom: 32 + useSafeAreaInsetsDefault().bottom };
-  obj10.children = closure_4(require("LayoutUtils").GappedList, {
+  obj11.sectionTitle = intl4.string(require("util").t.Ofvpfs);
+  const obj7 = { paddingBottom: 32 + useSafeAreaInsetsDefault().bottom };
+  obj11.children = closure_4(require("LayoutUtils").GappedList, {
     gap: 14,
     children: channels.map((children) => {
       const obj2 = { style: closure_0.channelTitle, children: null };
@@ -117,12 +124,12 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
       return React4(BenefitRow, { title: timestampProducer(View, obj2), description: children.description }, children.id);
     })
   });
-  items1[8] = closure_4(BenefitSection, obj10);
-  items1[9] = closure_4(SectionSeparator, {});
-  const obj12 = { sectionTitle: null, children: null };
+  items2[8] = closure_4(BenefitSection, obj11);
+  items2[9] = closure_4(SectionSeparator, {});
+  const obj13 = { sectionTitle: null, children: null };
   const intl5 = require("util").intl;
-  obj12.sectionTitle = intl5.string(require("util").t.w7KA8R);
-  const obj11 = {
+  obj13.sectionTitle = intl5.string(require("util").t.w7KA8R);
+  const obj12 = {
     gap: 14,
     children: channels.map((children) => {
       const obj2 = { style: closure_0.channelTitle, children: null };
@@ -133,11 +140,11 @@ export default function GuildRoleSubscriptionTierTemplateFullCard(template) {
       return React4(BenefitRow, { title: timestampProducer(View, obj2), description: children.description }, children.id);
     })
   };
-  obj12.children = closure_4(require("LayoutUtils").GappedList, { gap: 14, children: additional_perks.map((children, index) => closure_1_4(BenefitRow, { title: closure_1_4(closure_0(dependencyMap[7]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.name }) }, index)) });
-  items1[10] = closure_4(BenefitSection, obj12);
-  obj5.children = items1;
-  items[2] = closure_6(require("BottomSheetModal").BottomSheetScrollView, obj5);
-  obj2.children = items;
-  obj.children = closure_6(View, obj2);
-  return closure_4(require("Sheet/BottomSheet").BottomSheet, obj);
+  obj13.children = closure_4(require("LayoutUtils").GappedList, { gap: 14, children: additional_perks.map((children, index) => closure_1_4(BenefitRow, { title: closure_1_4(closure_0(dependencyMap[7]).Text, { variant: "text-md/medium", color: "mobile-text-heading-primary", children: children.name }) }, index)) });
+  items2[10] = closure_4(BenefitSection, obj13);
+  obj6.children = items2;
+  items[2] = closure_6(require("BottomSheetModal").BottomSheetScrollView, obj6);
+  obj3.children = items;
+  obj2.children = closure_6(View, obj3);
+  return closure_4(require("Sheet/BottomSheet").BottomSheet, obj2);
 };

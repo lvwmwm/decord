@@ -1,120 +1,54 @@
 // Module ID: 6953
 // Function ID: 6954
-// Dependencies: []
-// Exports: decode, encode
+// Dependencies: [6954, 6955, 6956, 7015, 7016, 7017, 7018, 7022, 7023, 6976, 7024, 7025, 7020, 7019, 7026, 6977, 7027]
 
 // Module 6953
+import ErrorMessages from "ErrorMessages" /* 6955 */;
+import FlashList from "FlashList" /* 6956 */;
+import _mod6976 from "module_6976" /* 6976 */;
+import _mod6977 from "module_6977" /* 6977 */;
+import _mod7015 from "module_7015" /* 7015 */;
+import RenderTargetOptions from "RenderTargetOptions" /* 7016 */;
+import _modDef7017 from "module_7017" /* 7017 */;
+import _mod7018 from "module_7018" /* 7018 */;
+import Cancellable from "Cancellable" /* 7019 */;
+import JSFPSMonitor from "JSFPSMonitor" /* 7020 */;
+import _mod7022 from "module_7022" /* 7022 */;
+import runScrollBenchmark from "runScrollBenchmark" /* 7023 */;
+import _mod7024 from "module_7024" /* 7024 */;
+import _mod7025 from "module_7025" /* 7025 */;
+import _modDef7026 from "module_7026" /* 7026 */;
+import LayoutCommitObserver from "LayoutCommitObserver" /* 7027 */;
+import get_ActivityIndicator from "module_6954" /* 6954 */;
 
-export const encode = (arg0) => {
-  let sum3;
-  let buffer = arg0;
-  if (!Buffer.isBuffer(arg0)) {
-    const _Buffer = Buffer;
-    buffer = new Buffer(arg0);
-  }
-  const rounded = Math.floor(buffer.length / 5);
-  let sum = rounded;
-  if (buffer.length % 5 !== 0) {
-    sum = rounded + 1;
-  }
-  const buffer1 = new Buffer(8 * sum);
-  let num2 = 0;
-  let num3 = 0;
-  let num4 = 0;
-  let num5 = 0;
-  if (0 < buffer.length) {
-    do {
-      let tmp6 = buffer[num4];
-      if (3 < num2) {
-        let sum1 = num4 + 1;
-        let num6 = 0;
-        let tmp16 = tmp6 & 255 >> num2;
-        if (sum1 < buffer.length) {
-          num6 = buffer[sum1];
-        }
-        let result = (num2 + 5) % 8;
-        let tmp13 = tmp16 << result | num6 >> 8 - result;
-        let tmp14 = result;
-        sum3 = sum1;
-      } else {
-        let sum2 = num2 + 5;
-        let tmp11 = tmp6 >> 8 - sum2 & 31;
-        let result1 = sum2 % 8;
-        tmp13 = tmp11;
-        tmp14 = result1;
-        sum3 = num4;
-        if (0 === result1) {
-          sum3 = num4 + 1;
-          tmp13 = tmp11;
-          tmp14 = result1;
-        }
-      }
-      let charCodeAt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567".charCodeAt;
-      buffer1[num3] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567".charCodeAt(tmp13);
-      num3 = num3 + 1;
-      num2 = tmp14;
-      num4 = sum3;
-      num5 = num3;
-    } while (sum3 < buffer.length);
-  }
-  if (num5 < buffer1.length) {
-    do {
-      buffer1[num5] = 61;
-      num5 = num5 + 1;
-      length = buffer1.length;
-    } while (num5 < length);
-  }
-  return buffer1;
-};
-export const decode = (arg0) => {
-  let buffer = arg0;
-  if (!Buffer.isBuffer(arg0)) {
-    const _Buffer = Buffer;
-    buffer = new Buffer(arg0);
-  }
-  const buffer1 = new Buffer(Math.ceil(5 * buffer.length / 8));
-  let num = 0;
-  if (0 < buffer.length) {
-    let num7 = 0;
-    let num8 = 0;
-    let num9 = 0;
-    num = 0;
-    if (61 != buffer[0]) {
-      const diff = buffer[num7] - 48;
-      while (diff < length.length) {
-        let tmp14 = length[diff];
-        if (num9 <= 3) {
-          let result = (num9 + 5) % 8;
-          if (0 === result) {
-            buffer1[num8] = tmp4 | tmp14;
-            let sum = num8 + 1;
-            let result1 = result;
-            let num10 = 0;
-          } else {
-            num10 = tmp4 | 255 & tmp14 << 8 - result;
-            sum = num8;
-            result1 = result;
-          }
-        } else {
-          result1 = (num9 + 5) % 8;
-          buffer1[num8] = tmp4 | 255 & tmp14 >>> result1;
-          sum = num8 + 1;
-          num10 = 255 & tmp14 << 8 - result1;
-        }
-        let sum1 = num7 + 1;
-        num = sum;
-        if (sum1 < buffer.length) {
-          num7 = sum1;
-          num8 = sum;
-          num9 = result1;
-          tmp4 = num10;
-          num = sum;
-        }
-      }
-      const _Error = Error;
-      const error = new Error("Invalid input - it is not base32 encoded string");
-      throw error;
-    }
-  }
-  return buffer1.slice(0, num);
-};
+if (get_ActivityIndicator.isNewArch()) {
+  exports.FlashList = FlashList.FlashList;
+  exports.FlashListRef = _mod7015.FlashListRef;
+  exports.FlashListProps = RenderTargetOptions.FlashListProps;
+  exports.ListRenderItem = RenderTargetOptions.ListRenderItem;
+  exports.ListRenderItemInfo = RenderTargetOptions.ListRenderItemInfo;
+  exports.RenderTarget = RenderTargetOptions.RenderTarget;
+  exports.RenderTargetOptions = RenderTargetOptions.RenderTargetOptions;
+  exports.AnimatedFlashList = _modDef7017;
+  exports.useBenchmark = _mod7018.useBenchmark;
+  exports.BenchmarkParams = _mod7018.BenchmarkParams;
+  exports.BenchmarkResult = _mod7018.BenchmarkResult;
+  exports.useDataMultiplier = _mod7022.useDataMultiplier;
+  exports.useFlatListBenchmark = runScrollBenchmark.useFlatListBenchmark;
+  exports.FlatListBenchmarkParams = runScrollBenchmark.FlatListBenchmarkParams;
+  exports.useLayoutState = _mod6976.useLayoutState;
+  exports.useRecyclingState = _mod7024.useRecyclingState;
+  exports.useMappingHelper = _mod7025.useMappingHelper;
+  exports.JSFPSMonitor = JSFPSMonitor.JSFPSMonitor;
+  exports.JSFPSResult = JSFPSMonitor.JSFPSResult;
+  exports.autoScroll = Cancellable.autoScroll;
+  exports.Cancellable = Cancellable.Cancellable;
+  exports.ViewToken = _modDef7026;
+  exports.useFlashListContext = _mod6977.useFlashListContext;
+  exports.LayoutCommitObserver = LayoutCommitObserver.LayoutCommitObserver;
+  exports.LayoutCommitObserverProps = LayoutCommitObserver.LayoutCommitObserverProps;
+} else {
+  const _Error = Error;
+  const error = new Error(ErrorMessages.ErrorMessages.flashListV2OnlySupportsNewArchitecture);
+  throw error;
+}

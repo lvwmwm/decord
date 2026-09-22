@@ -1,14 +1,14 @@
-// Module ID: 16525
-// Function ID: 16526
+// Module ID: 16619
+// Function ID: 16620
 // Name: AppFreezer
-// Dependencies: [19, 8291, 21, 5589, 4923, 2]
+// Dependencies: [19, 8408, 21, 5670, 5011, 2]
 // Exports: default
 
-// Module 16525 (AppFreezer)
-import Suspender from "Suspender" /* 4923 */;
-import NativeViewDefault from "NativeView" /* 5589 */;
+// Module 16619 (AppFreezer)
+import Suspender from "Suspender" /* 5011 */;
+import NativeViewDefault from "NativeView" /* 5670 */;
 import noop from "module_19" /* 19 */;
-import AppFreezeStore from "AppFreezeStore" /* 8291 */;
+import AppFreezeStore from "AppFreezeStore" /* 8408 */;
 
 require = fn;
 const jsx = fn(21).jsx;

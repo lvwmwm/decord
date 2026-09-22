@@ -1,16 +1,16 @@
-// Module ID: 9291
-// Function ID: 9292
+// Module ID: 9414
+// Function ID: 9415
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 4560, 576, 1396, 9251, 4497, 1114, 9292, 5587, 4556, 9294, 5687, 5605, 1178, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 1396, 9374, 4573, 1114, 9415, 5668, 4632, 9417, 5768, 5686, 1176, 2]
 // Exports: default
 
-// Module 9291 (IntegrationTypeSelector)
+// Module 9414 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import UserPlusIcon from "UserPlusIcon" /* 4497 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9251 */;
-import ServerIcon from "ServerIcon" /* 9292 */;
+import UserPlusIcon from "UserPlusIcon" /* 4573 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9374 */;
+import ServerIcon from "ServerIcon" /* 9415 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { alignItems: "center", flexDirection: "column" }, header: { justifyContent: "center", alignItems: "center", gap: 16, marginTop: 24, marginBottom: 32, width: "100%" }, rows: { alignSelf: "stretch", borderRadius: nativeDefault.radii.sm }, divider: null, learnMore: null, descriptionContainer: null, descriptionMainContainer: null, appIcon: null, appIconMask: null, loadingIcon: null };
 let obj3 = { alignSelf: "stretch", borderRadius: nativeDefault.radii.sm };
 obj2.divider = { height: StyleSheet.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: -1 * StyleSheet.hairlineWidth };

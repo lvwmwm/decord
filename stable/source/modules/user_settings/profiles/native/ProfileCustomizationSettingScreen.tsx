@@ -1,23 +1,23 @@
-// Module ID: 14589
-// Function ID: 14590
+// Module ID: 14674
+// Function ID: 14675
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 9214, 8161, 1084, 1074, 21, 4560, 1114, 14590, 14648, 4262, 576, 1483, 6994, 9798, 10928, 6984, 4425, 14607, 14649, 563, 4740, 9216, 5624, 7864, 1484, 12618, 12620, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9337, 8277, 1084, 1074, 21, 4636, 1114, 14675, 14733, 4338, 576, 1483, 7097, 9922, 11058, 7087, 4502, 14692, 14734, 563, 4816, 9339, 5705, 7966, 1484, 12747, 12749, 2]
 
-// Module 14589 (ProfileCustomizationSettingScreen)
+// Module 14674 (ProfileCustomizationSettingScreen)
 import util from "util" /* 1114 */;
-import ChatInputUtils from "ChatInputUtils" /* 4425 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4740 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 6984 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9216 */;
-import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 10928 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14590 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14648 */;
+import ChatInputUtils from "ChatInputUtils" /* 4502 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4816 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7087 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9339 */;
+import maybeShowDiscardChangesAlertDefault from "maybeShowDiscardChangesAlert" /* 11058 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 14675 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 14733 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9214 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8161 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9337 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8277 */;
 
 const require = globalThis.__r;
 
@@ -30,7 +30,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: map1, AnalyticsSections: closure_14 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_17 = createStyles.createStyles({ container: { height: "100%" }, controls: { paddingTop: 4 } });
 let items = [
   {
@@ -237,7 +237,7 @@ export default noop.memo(() => {
   }, items5);
   const obj6 = { style: tmp.container, onLayout: callback1, children: null };
   const tmp2Result4 = require("Link");
-  const items6 = [closure_15(handleSubmit2, { style: tmp.controls, children: closure_15(require("Tabs").Tabs, { state: segmentedControlState }) }), closure_15(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState })];
+  const items6 = [closure_15(handleSubmit2, { style: tmp.controls, children: closure_15(require("Tabs/Tabs").Tabs, { state: segmentedControlState }) }), closure_15(require("SegmentedControlPages").SegmentedControlPages, { state: segmentedControlState })];
   obj6.children = items6;
   return closure_16(handleSubmit2, obj6);
 });

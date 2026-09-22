@@ -1,27 +1,27 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 17105
+// Function ID: 17106
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 4552, 2025, 1957, 4600, 11969, 4741, 1074, 4742, 21, 4560, 576, 16980, 4573, 4982, 504, 11, 7641, 16981, 5123, 16982, 16984, 1178, 8260, 16985, 4404, 10114, 7880, 16987, 16346, 15320, 2]
+// Dependencies: [19, 4628, 2025, 1957, 4676, 12098, 4817, 1074, 4818, 21, 4636, 576, 16772, 4649, 5063, 504, 11, 7743, 17094, 5204, 16773, 17095, 1176, 8375, 16775, 4481, 10237, 7983, 17096, 16441, 15403, 2]
 
-// Module 16997 (LaunchPadSearchResultUser)
+// Module 17105 (LaunchPadSearchResultUser)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4573 */;
-import isStreamingDefault from "isStreaming" /* 8260 */;
-import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16346 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 16980 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 16981 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 16982 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 16984 */;
-import renderChannelContentDefault from "renderChannelContent" /* 16985 */;
-import shared_renderChannelBadgeDefault from "shared/renderChannelBadge" /* 16987 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4649 */;
+import isStreamingDefault from "isStreaming" /* 8375 */;
+import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 16441 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 16772 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 16773 */;
+import renderChannelContentDefault from "renderChannelContent" /* 16775 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 17094 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 17095 */;
+import shared_renderChannelBadgeDefault from "shared/renderChannelBadge" /* 17096 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 import LocaleStore from "LocaleStore" /* 2025 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import PresenceStore from "PresenceStore" /* 4600 */;
-import TypingStore from "TypingStore" /* 11969 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4741 */;
+import PresenceStore from "PresenceStore" /* 4676 */;
+import TypingStore from "TypingStore" /* 12098 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
 
 require = fn;
 function UserResult(user) {
@@ -51,8 +51,8 @@ function UserResult(user) {
     obj2.recipientIds = items;
     ChannelActionCreatorsDefault.openPrivateChannel(obj2);
   }, items);
-  const fontScale = user(4982).useFontScale();
-  const obj = user(4982);
+  const fontScale = user(5063).useFontScale();
+  const obj = user(5063);
   const items1 = [LocaleStore];
   const stateFromStores = user(504).useStateFromStores(items1, () => locale.locale);
   let obj2 = user(504);
@@ -70,8 +70,8 @@ function UserResult(user) {
   }
   let relativeTimestamp = null;
   if (null != extractTimestampResult) {
-    relativeTimestamp = tmp6(7641).getRelativeTimestamp(extractTimestampResult);
-    const tmp6Result = tmp6(7641);
+    relativeTimestamp = tmp6(7743).getRelativeTimestamp(extractTimestampResult);
+    const tmp6Result = tmp6(7743);
   }
   let str = "text-muted";
   if (unread) {
@@ -86,7 +86,7 @@ function UserResult(user) {
   obj5.style = items4;
   const tmp2Result5 = renderChannelPressableWrapperDefault;
   const items5 = [closure_12(UnreadBadgeDefault, { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES }), , ];
-  const obj7 = { user, guildId: "e", isMobileOnline, isVROnline, status: false, streaming: false, style: null, size: null, animate: null, typing: null, autoStatusCutout: null };
+  const obj7 = { user, guildId: "e", isMobileOnline, isVROnline, status: null, streaming: "87baeefdf7c0d9a1502798941428fe60", style: "zh-TW.messages.87baeefdf7c0d9a1502798941428fe60.compiled.messages", size: "jsona", animate: "play_in_dm", typing: null, autoStatusCutout: "soundboard-footer" };
   let tmp19 = null;
   if (!user.isSystemUser()) {
     tmp19 = null;
@@ -108,22 +108,22 @@ function UserResult(user) {
   }
   obj7.animate = tmp21;
   obj7.typing = flag2;
-  items5[1] = closure_12(user(1178).Avatar, obj7);
+  items5[1] = closure_12(user(1176).Avatar, obj7);
   const obj6 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
   const tmp16 = closure_14;
   const tmp17 = closure_13;
   const tmp18 = UnreadSetting;
   const tmp2Result6 = renderChannelWrapperDefault;
   if (comparator == null) {
-    comparator = tmp2(4404).getUserTag(user);
-    const tmp2Result8 = tmp2(4404);
+    comparator = tmp2(4481).getUserTag(user);
+    const tmp2Result8 = tmp2(4481);
   }
   const obj8 = { name: comparator, subtitle: null, unread: null, resolvedUnreadSetting: null, muted: null, lastMessageTimestampString: null, mentionCount: null, mentionBadge: null };
   let tmp14Result;
   if (null != lastMessage) {
     if (null != channel) {
-      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: tmp6(7880).ChannelListLayoutTypes.COMPACT };
-      tmp14Result = tmp14(tmp6(10114).ChannelRowPreview, obj9);
+      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: tmp6(7983).ChannelListLayoutTypes.COMPACT };
+      tmp14Result = tmp14(tmp6(10237).ChannelRowPreview, obj9);
     }
   }
   const obj10 = { children: null };
@@ -137,7 +137,7 @@ function UserResult(user) {
   items5[2] = renderChannelContentDefault(obj8);
   obj10.children = items5;
   obj5.children = tmp2Result6(tmp16(tmp17, obj10), { fontScale });
-  return tmp2Result5(closure_12(user(5123).PressableHighlight, obj5));
+  return tmp2Result5(closure_12(user(5204).PressableHighlight, obj5));
 }
 function UserResultWithChannel(arg0) {
   ({ user: require, channel } = arg0);
@@ -150,7 +150,7 @@ function UserResultWithChannel(arg0) {
   const obj4 = {};
   const merged = Object.assign(arg0);
   obj4.channel = channel;
-  obj4.lastMessage = channel(15320)(channel, { unread });
+  obj4.lastMessage = channel(15403)(channel, { unread });
   obj4.unread = unread;
   obj4.mentionCount = mentionCount;
   obj4.muted = stateFromStores;
@@ -158,10 +158,10 @@ function UserResultWithChannel(arg0) {
   return closure_12(UserResult, obj4);
 }
 const StatusTypes = fn(1074).StatusTypes;
-const UnreadSetting = fn(4742).UnreadSetting;
+const UnreadSetting = fn(4818).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: closure_12, Fragment: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { pressable: { flex: 1 }, pressableUnderlayColor: { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE } };
 let closure_15 = createStyles.createStyles(obj);
 let obj3 = { backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_ACTIVE };

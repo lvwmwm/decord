@@ -1,9 +1,31 @@
 // Module ID: 5298
 // Function ID: 5299
-// Dependencies: [1122]
+// Dependencies: [5299, 5297]
 
 // Module 5298
-import registerAsset from "module_1122" /* 1122 */;
+import _modDef5297 from "module_5297" /* 5297 */;
+import _modDef5299 from "module_5299" /* 5299 */;
 
+importDefault = arg2;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "5e997bb5d78793341cb727497a38fe6f", name: "img_account_sync_bluesky_light_and_dark", type: "svg" });
+export default {
+  isTiffFile(byteLength) {
+    let tmp = byteLength;
+    if (tmp) {
+      tmp = byteLength.byteLength >= 4;
+    }
+    if (tmp) {
+      const uint16 = byteLength.getUint16(0);
+      tmp = byteLength.getUint16(2, uint16 === _modDef5299.LITTLE_ENDIAN) === 42;
+    }
+    return tmp;
+  },
+  findTiffOffsets() {
+    if (_modDef5297.USE_EXIF) {
+      return { hasAppMarkers: true, tiffHeaderOffset: 0 };
+    } else {
+      return {};
+    }
+  }
+};

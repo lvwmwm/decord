@@ -1,16 +1,16 @@
-// Module ID: 13157
-// Function ID: 13158
+// Module ID: 13289
+// Function ID: 13290
 // Name: OrbCheckoutModalContext
-// Dependencies: [19, 1371, 5510, 21, 1256, 504, 4218, 11285, 7231, 11047, 7553, 4233, 8864, 2]
+// Dependencies: [19, 1371, 5591, 21, 1254, 504, 4294, 11417, 7334, 11180, 7656, 4309, 8983, 2]
 // Exports: OrbCheckoutModalContextProvider, useOrbCheckoutModalContext
 
-// Module 13157 (OrbCheckoutModalContext)
+// Module 13289 (OrbCheckoutModalContext)
 import jsxProd from "jsxProd" /* 21 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7553 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7656 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
-import SKUStore from "SKUStore" /* 5510 */;
-import v1 from "v1" /* 1256 */;
+import SKUStore from "SKUStore" /* 5591 */;
+import v1 from "v1" /* 1254 */;
 import size from "module_2" /* 2 */;
 
 function useOrbCheckoutModalContextProvider(skuId) {
@@ -101,7 +101,7 @@ function useOrbCheckoutModalContextProvider(skuId) {
 }
 ({ useContext: c3, useCallback: closure_4, useMemo: hasOwnProperty, createContext } = noop);
 const jsx = jsxProd.jsx;
-let obj = { skuId: "123", skuProductLine: null, skuApplicationId: "r", loadId: "PX_16", analyticsLocations: null, analyticsSourceLocation: null, isRedeeming: null, orbRedemptionError: "", orbProductContext: null, onRedeemVirtualCurrency: null };
+let obj = { skuId: "123", skuProductLine: null, skuApplicationId: "r", loadId: "PX_16", analyticsLocations: null, analyticsSourceLocation: null, isRedeeming: null, orbRedemptionError: "lg", orbProductContext: null, onRedeemVirtualCurrency: true };
 obj.loadId = v1.v4();
 obj.analyticsLocations = [];
 obj.onRedeemVirtualCurrency = function onRedeemVirtualCurrency() {

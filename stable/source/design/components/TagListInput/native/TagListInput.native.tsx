@@ -1,18 +1,18 @@
-// Module ID: 9761
-// Function ID: 9762
+// Module ID: 9885
+// Function ID: 9886
 // Name: TagListInput
-// Dependencies: [32, 19, 17, 21, 4560, 576, 4556, 4296, 4974, 4978, 5664, 4987, 6615, 4982, 6622, 6624, 4268, 6626, 5598, 6627, 9762, 9763, 1114, 9764, 4272, 6621, 7051, 2]
+// Dependencies: [32, 19, 17, 21, 4636, 576, 4632, 4373, 5055, 5059, 5745, 5068, 6716, 5063, 6723, 6725, 4344, 6727, 5679, 6728, 9886, 9887, 1114, 9888, 4348, 6722, 7154, 2]
 
-// Module 9761 (TagListInput)
+// Module 9885 (TagListInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4272 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4296 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import spring from "spring" /* 4974 */;
-import springPresets from "springPresets" /* 4978 */;
-import LinearGradientDefault from "LinearGradient" /* 4987 */;
-import _modDef5664 from "module_5664" /* 5664 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4348 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4373 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import spring from "spring" /* 5055 */;
+import springPresets from "springPresets" /* 5059 */;
+import LinearGradientDefault from "LinearGradient" /* 5068 */;
+import _modDef5745 from "module_5745" /* 5745 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire, StyleSheet: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-let createStyles = fn(4560);
+let createStyles = fn(4636);
 let closure_10 = createStyles.createStyles(() => {
   const obj = { placeholder: { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT }, iconContainer: null, iconLeft: null, scrollViewContent: null, horizontalScrollViewContent: null, inputInner: null, horizontalInputInner: null, searchInput: null, horizontalSearchInput: null };
   const obj2 = { color: nativeDefault.colors.INPUT_PLACEHOLDER_TEXT_DEFAULT };
@@ -45,7 +45,7 @@ let closure_10 = createStyles.createStyles(() => {
 let closure_11 = { x: 0, y: 0.5 };
 let closure_12 = { x: 1, y: 0.5 };
 let closure_13 = ["transparent", "black"];
-createStyles = fn(4560);
+createStyles = fn(4636);
 let closure_14 = createStyles.createStyles(() => {
   const obj = { fill: { flex: 1 }, mask: null, leadingFade: null, leadingCover: null, maskRemainder: null };
   const obj2 = {};
@@ -356,7 +356,7 @@ export default noop.memo(function TagListInput(accessibilityHint) {
       obj2.children = items2;
       obj.maskElement = React7(hasOwnProperty, obj2);
       obj.children = children;
-      tmp = React6(_modDef5664, obj);
+      tmp = React6(_modDef5745, obj);
     }
     return tmp;
   }, items5);

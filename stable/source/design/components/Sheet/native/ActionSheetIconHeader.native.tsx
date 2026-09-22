@@ -1,18 +1,18 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 11136
+// Function ID: 11137
 // Name: ActionSheetIconHeader
-// Dependencies: [19, 17, 21, 4560, 4556, 2]
+// Dependencies: [19, 17, 21, 4636, 4632, 2]
 // Exports: ActionSheetIconHeader
 
-// Module 11003 (ActionSheetIconHeader)
-import Text_Text from "Text/Text" /* 4556 */;
+// Module 11136 (ActionSheetIconHeader)
+import Text_Text from "Text/Text" /* 4632 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_5 = createStyles.createStyles({ container: { paddingVertical: 0, flexDirection: "row", alignItems: "center", gap: 12 }, titles: { justifyContent: "center", flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Sheet/native/ActionSheetIconHeader.native.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 12250
-// Function ID: 12251
+// Module ID: 12379
+// Function ID: 12380
 // Name: ChatInputActionButtonTransitionItem
-// Dependencies: [19, 17, 11966, 21, 4271, 4296, 4561, 12251, 2]
+// Dependencies: [19, 17, 12095, 21, 4347, 4373, 4637, 12380, 2]
 // Exports: default, interactivityProps
 
-// Module 12250 (ChatInputActionButtonTransitionItem)
-import native from "native" /* 4271 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4296 */;
-import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12251 */;
+// Module 12379 (ChatInputActionButtonTransitionItem)
+import native from "native" /* 4347 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4373 */;
+import useChatInputFloatingBounceDefault from "useChatInputFloatingBounce" /* 12380 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,21 +24,21 @@ function FadeTransitionItem(state) {
   const items = [state, sharedValue, cleanup];
   const effect = noop.useEffect(() => {
     if (state === native.TransitionStates.YEETED) {
-      const tmpResult = tmp(4561);
+      const tmpResult = tmp(4637);
       const fn = function t(arg0) {
         if (true === arg0) {
           state(sharedValue[5]).runOnJS(cleanup)();
           const obj = state(sharedValue[5]);
         }
       };
-      let obj = { runOnJS: tmp(4296).runOnJS, cleanup };
+      let obj = { runOnJS: tmp(4373).runOnJS, cleanup };
       fn.__closure = obj;
       fn.__workletHash = 10965161938750;
       fn.__initData = __initData;
       const result = sharedValue.set(tmpResult.withTiming(0, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings", fn));
     } else {
-      const result1 = sharedValue.set(tmp(4561).withTiming(1, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings"));
-      const tmpResult2 = tmp(4561);
+      const result1 = sharedValue.set(tmp(4637).withTiming(1, CHAT_INPUT_TIMING_CONFIG, "respect-motion-settings"));
+      const tmpResult2 = tmp(4637);
     }
   }, items);
   let obj = state(sharedValue[5]);
@@ -92,7 +92,7 @@ function BounceTransitionItem(state) {
   return jsx(ReanimatedRexportDefault.View, { style: null });
 }
 const StyleSheet = fn(17).StyleSheet;
-const CHAT_INPUT_TIMING_CONFIG = fn(11966).CHAT_INPUT_TIMING_CONFIG;
+const CHAT_INPUT_TIMING_CONFIG = fn(12095).CHAT_INPUT_TIMING_CONFIG;
 const jsx = fn(21).jsx;
 const styles = StyleSheet.create({ transitionItem: { position: "absolute" }, transitionItemCentered: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" } });
 let closure_7 = { code: "function ChatInputActionButtonTransitionItemTsx1(finished){const{runOnJS,cleanup}=this.__closure;if(finished===true){runOnJS(cleanup)();}}" };

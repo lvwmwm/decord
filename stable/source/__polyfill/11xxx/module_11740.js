@@ -1,9 +1,9 @@
 // Module ID: 11740
 // Function ID: 11741
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 11740
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4efa5140d546996fe7cb2ba013410d48", name: "ArrowAngleLeftUpIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/shared_components/user_list/images", width: 24, height: 24, scales: [2, 3, 4], hash: "b49ac54ee052ec8e0d12b9dcde20cf19", name: "icon-settings", type: "png" });

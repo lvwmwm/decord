@@ -1,21 +1,21 @@
-// Module ID: 16881
-// Function ID: 16882
+// Module ID: 16993
+// Function ID: 16994
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4209, 1074, 21, 4560, 5524, 576, 12598, 504, 1242, 1114, 7889, 4899, 1178, 2]
+// Dependencies: [19, 17, 4285, 1074, 21, 4636, 5605, 576, 12727, 504, 1240, 1114, 7992, 4975, 1176, 2]
 
-// Module 16881 (MessageRequestPreview)
+// Module 16993 (MessageRequestPreview)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
-import TextStyles_mod from "TextStyles" /* 5524 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
+import TextStyles_mod from "TextStyles" /* 5605 */;
 
 const require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
 ({ Fonts, AnalyticEvents: metroRequire, MessageFlags: closure_7 } = Constants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { systemContent: null, messageContent: null };
 let obj3 = { fontStyle: "italic" };
 let TextStyles = TextStyles_mod;
@@ -34,10 +34,10 @@ const result = size.fileFinishedImporting("modules/message_request/native/Messag
 export default noop.memo(function MessageRequestPreview(channel) {
   channel = channel.channel;
   const tmp = closure_9();
-  const messageRequestPreview = channel(12598).useMessageRequestPreview(channel);
+  const messageRequestPreview = channel(12727).useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
-  let obj = channel(12598);
+  let obj = channel(12727);
   const items = [RelationshipStore];
   const items1 = [message];
   const stateFromStoresObject = channel(504).useStateFromStoresObject(items, () => {
@@ -91,7 +91,7 @@ export default noop.memo(function MessageRequestPreview(channel) {
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(7889)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(7992)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
@@ -128,7 +128,7 @@ export default noop.memo(function MessageRequestPreview(channel) {
         }
         stringResult = stringResult1;
         flag = false;
-        tmp2Result = tmp2(4899);
+        tmp2Result = tmp2(4975);
       } else {
         const intl = tmp2(1114).intl;
         stringResult = intl.string(tmp2(1114).t["0KfDxM"]);
@@ -136,6 +136,6 @@ export default noop.memo(function MessageRequestPreview(channel) {
       }
     }
   }
-  let obj3 = { style: channel.style, children: jsx(channel(1178).LegacyText, { style: flag ? tmp.messageContent : tmp.systemContent, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult }) };
-  return <View style={arg0.style}>{jsx(channel(1178).LegacyText, { style: flag ? tmp.messageContent : tmp.systemContent, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult })}</View>;
+  let obj3 = { style: channel.style, children: jsx(channel(1176).LegacyText, { style: flag ? tmp.messageContent : tmp.systemContent, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult }) };
+  return <View style={arg0.style}>{jsx(channel(1176).LegacyText, { style: flag ? tmp.messageContent : tmp.systemContent, numberOfLines: 3, ellipsizeMode: "tail", children: stringResult })}</View>;
 });

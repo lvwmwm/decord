@@ -1,22 +1,22 @@
-// Module ID: 12112
-// Function ID: 12113
+// Module ID: 12241
+// Function ID: 12242
 // Name: ExpandableList
-// Dependencies: [32, 19, 17, 21, 4560, 8273, 4296, 4561, 4564, 5605, 1114, 4556, 2]
+// Dependencies: [32, 19, 17, 21, 4636, 8390, 4373, 4637, 4640, 5686, 1114, 4632, 2]
 // Exports: default
 
-// Module 12112 (ExpandableList)
-import timing from "timing" /* 4561 */;
-import timingPresets from "timingPresets" /* 4564 */;
-import usePreviousDefault from "usePrevious" /* 8273 */;
+// Module 12241 (ExpandableList)
+import timing from "timing" /* 4637 */;
+import timingPresets from "timingPresets" /* 4640 */;
+import usePreviousDefault from "usePrevious" /* 8390 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const ReanimatedRexportDefault = tmp4(4296);
+const ReanimatedRexportDefault = tmp4(4373);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_9 = createStyles.createStyles({ animatedListContainer: { overflow: "hidden" }, expandCTALabelContainer: { alignItems: "center" } });
 let closure_10 = { code: "function ExpandableListTsx1(){const{expanded,collapsedListHeight,remainingListHeight}=this.__closure;if(expanded&&collapsedListHeight.get()!==0&&remainingListHeight.get()!==0){return collapsedListHeight.get()+remainingListHeight.get();}return collapsedListHeight.get();}" };
 let closure_11 = { code: "function ExpandableListTsx2(){const{collapsedListHeight,withTiming,containerHeight,timingStandard}=this.__closure;if(collapsedListHeight.get()!==0){return{height:withTiming(containerHeight.get(),timingStandard)};}else{return{};}}" };
@@ -68,10 +68,10 @@ export default function ExpandableList(onExpand) {
   if (null == showsExpandCTAOverride) {
     showsExpandCTAOverride = items.length > bound;
   }
-  sharedValue = memo1(4296).useSharedValue(0);
-  let obj3 = memo1(4296);
-  sharedValue1 = memo1(4296).useSharedValue(0);
-  const obj4 = memo1(4296);
+  sharedValue = memo1(4373).useSharedValue(0);
+  let obj3 = memo1(4373);
+  sharedValue1 = memo1(4373).useSharedValue(0);
+  const obj4 = memo1(4373);
   class C {
     constructor() {
       if (closure_5) {
@@ -93,12 +93,12 @@ export default function ExpandableList(onExpand) {
   C.__closure = { expanded: first, collapsedListHeight: sharedValue, remainingListHeight: sharedValue1 };
   C.__workletHash = 17033418452229;
   C.__initData = sharedValue1;
-  derivedValue = memo1(4296).useDerivedValue(C);
+  derivedValue = memo1(4373).useDerivedValue(C);
   const items3 = [items, bound];
   const memo = obj.useMemo(() => memo1.slice(0, bound), items3);
   const items4 = [items, bound];
   memo1 = obj.useMemo(() => memo1.slice(bound, memo1.length), items4);
-  const obj5 = memo1(4296);
+  const obj5 = memo1(4373);
   class A {
     constructor() {
       if (0 !== closure_9.get()) {
@@ -116,8 +116,8 @@ export default function ExpandableList(onExpand) {
       return obj;
     }
   }
-  const obj6 = memo1(4296);
-  A.__closure = { collapsedListHeight: sharedValue, withTiming: memo1(4561).withTiming, containerHeight: derivedValue, timingStandard: memo1(4564).timingStandard };
+  const obj6 = memo1(4373);
+  A.__closure = { collapsedListHeight: sharedValue, withTiming: memo1(4637).withTiming, containerHeight: derivedValue, timingStandard: memo1(4640).timingStandard };
   A.__workletHash = 2086836441465;
   A.__initData = derivedValue;
   const animatedStyle = obj6.useAnimatedStyle(A);
@@ -191,7 +191,7 @@ export default function ExpandableList(onExpand) {
     }
     obj14 = { children: null };
     const obj15 = { color: "text-brand", variant: "text-md/semibold", children: stringResult1 };
-    obj13.children = tmp16(tmp9(4556).Text, obj15);
+    obj13.children = tmp16(tmp9(4632).Text, obj15);
     obj13 = tmp16(tmp17, obj13);
     obj12.label = obj13;
     obj12.onPress = function onPress() {
@@ -205,7 +205,7 @@ export default function ExpandableList(onExpand) {
         tmp4(obj);
       }
     };
-    obj12 = tmp16(tmp9(5605).TableRow, obj12);
+    obj12 = tmp16(tmp9(5686).TableRow, obj12);
     obj14.children = obj12;
     tmp16(tmp17, obj14);
   }

@@ -1,14 +1,14 @@
-// Module ID: 15499
-// Function ID: 15500
+// Module ID: 15584
+// Function ID: 15585
 // Name: FriendStreamNotificationsSetting
-// Dependencies: [7976, 11473, 1114, 1935, 15500, 2]
+// Dependencies: [8079, 11605, 1114, 1935, 15585, 2]
 
-// Module 15499 (FriendStreamNotificationsSetting)
+// Module 15584 (FriendStreamNotificationsSetting)
 import util from "util" /* 1114 */;
 import UserSettings from "UserSettings" /* 1935 */;
-import SettingsConstants from "SettingsConstants" /* 7976 */;
-import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 15500 */;
-import SettingBuilders from "SettingBuilders" /* 11473 */;
+import SettingsConstants from "SettingsConstants" /* 8079 */;
+import GoLiveNotificationUtils from "GoLiveNotificationUtils" /* 15585 */;
+import SettingBuilders from "SettingBuilders" /* 11605 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

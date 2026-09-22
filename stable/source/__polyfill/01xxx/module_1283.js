@@ -4,4 +4,4 @@
 
 // Module 1283
 
-export default TypeError;
+export default Object.getOwnPropertyDescriptor;

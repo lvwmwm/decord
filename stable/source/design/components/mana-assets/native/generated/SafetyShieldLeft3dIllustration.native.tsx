@@ -1,13 +1,13 @@
-// Module ID: 6403
-// Function ID: 6404
+// Module ID: 6504
+// Function ID: 6505
 // Name: SafetyShieldLeft3dIllustration
-// Dependencies: [21, 5587, 6404, 2]
+// Dependencies: [21, 5668, 6505, 2]
 // Exports: SafetyShieldLeft3dIllustration
 
-// Module 6403 (SafetyShieldLeft3dIllustration)
+// Module 6504 (SafetyShieldLeft3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6404 from "module_6404" /* 6404 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6505 from "module_6505" /* 6505 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const SafetyShieldLeft3dIllustration = function SafetyShieldLeft3dIllustr
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6404 };
+  const obj2 = { uri: _modDef6505 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

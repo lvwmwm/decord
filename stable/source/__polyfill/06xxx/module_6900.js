@@ -1,40 +1,16 @@
 // Module ID: 6900
 // Function ID: 6901
 // Dependencies: []
+// Exports: snapPoint
 
 // Module 6900
-function asyncGeneratorStep(arg0, fn, fn2, arg3, arg4, arg5, arg6) {
-  try {
-    const iter = arg0[arg5](arg6);
-    value = iter.value;
-    if (iter.done) {
-      fn(value);
-    } else {
-      const resolved = Promise.resolve(value);
-      resolved.then(arg3, arg4);
-    }
-  } catch (tmp13) {
-    fn2(tmp13);
-  }
-}
-
-export default function _asyncToGenerator(arg0) {
-  closure_0 = arg0;
-  return function() {
-    const self = this;
-    closure_1 = arguments;
-    return new Promise((arg0, arg1) => {
-      _self = arg0;
-      closure_1 = arg1;
-      function _next(arg0) {
-        self(applyResult, closure_0, closure_1, _next, _throw, "next", arg0);
-      }
-      function _throw(arg0) {
-        self(applyResult, closure_0, closure_1, _next, _throw, "throw", arg0);
-      }
-      const applyResult = _self.apply(self, closure_1);
-      closure_2 = applyResult;
-      asyncGeneratorStep(applyResult, arg0, arg1, _next, _throw, "next", undefined);
-    });
-  };
+const fn = function t(arg0, arg1, arr) {
+  closure_0 = arg0 + 0.2 * arg1;
+  closure_1 = min.apply(null, arr.map((item) => Math.abs(closure_0 - item)));
+  return arr.filter((item) => Math.abs(closure_0 - item) === closure_1)[0];
 };
+fn.__closure = {};
+fn.__workletHash = 8913698095371;
+fn.__initData = { code: "function pnpm_snapPointTs1(value,velocity,points){const point=value+0.2*velocity;const deltas=points.map(function(p){return Math.abs(point-p);});const minDelta=Math.min.apply(null,deltas);return points.filter(function(p){return Math.abs(point-p)===minDelta;})[0];}" };
+
+export const snapPoint = fn;

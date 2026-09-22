@@ -1,15 +1,15 @@
 // Module ID: 2026
 // Function ID: 2027
 // Name: IntlLoaderStore
-// Dependencies: [5, 1244, 2027, 1114, 2037, 1155, 3645, 4120, 4151, 4153, 1232, 2]
+// Dependencies: [5, 1242, 2027, 1114, 2037, 1153, 3720, 4195, 4226, 4228, 1230, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 2026 (IntlLoaderStore)
 import util from "util" /* 1114 */;
 import _modDef2027 from "module_2027" /* 2027 */;
-import bg from "bg" /* 3645 */;
-import formatjs from "formatjs" /* 4120 */;
-import moment from "moment" /* 4151 */;
+import bg from "bg" /* 3720 */;
+import formatjs from "formatjs" /* 4195 */;
+import moment from "moment" /* 4226 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -90,7 +90,7 @@ let closure_5 = async function _setAppLocale(arg0, value) {
                   } else {
                     c1 = 2;
                     dependencyMap = 1;
-                    const obj8 = { value: closure_0(1155).loadAllMessagesInLocale(closure_128_0), done: false };
+                    const obj8 = { value: closure_0(1153).loadAllMessagesInLocale(closure_128_0), done: false };
                     return obj8;
                   }
                 } else if (arg0 === 1) {
@@ -344,21 +344,21 @@ let closure_8 = async function _setMomentLocale(arg0, value) {
     }
   }
 };
-const identity = fn(1244);
+const identity = fn(1242);
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
   let obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
-    error: "call",
+    error: "accessible",
     localeData: _modDef2027,
     setLoadingStarted(inProgressLocale) {
       return closure_0({ isLoading: true, inProgressLocale });
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "call" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "accessible" });
       }
     },
     setLoadingFailed(error, arg1) {

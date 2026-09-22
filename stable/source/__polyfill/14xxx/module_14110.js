@@ -1,9 +1,17 @@
 // Module ID: 14110
 // Function ID: 14111
-// Dependencies: [1122]
+// Dependencies: [14102]
 
 // Module 14110
-import registerAsset from "module_1122" /* 1122 */;
+import _mod14102 from "module_14102" /* 14102 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 36, height: 24, scales: [2, 3], hash: "48a492306912f6e40271e3f606596ed0", name: "StatusVROnline", type: "png" });
+export default (str, arg1) => {
+  const tmp = _mod14102;
+  const tmpResult = tmp(str.trim().replace(/^[=v]+/, ""), arg1);
+  let version = null;
+  if (tmpResult) {
+    version = tmpResult.version;
+  }
+  return version;
+};

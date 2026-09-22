@@ -1,9 +1,9 @@
 // Module ID: 10069
 // Function ID: 10070
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 10069
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "4231d943574087a463ee922a711ec0bb", name: "ic_mobile_device", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [1, 2, 3], hash: "87c2408460473066b05c992e498cb968", name: "header_arrow_right", type: "png" });

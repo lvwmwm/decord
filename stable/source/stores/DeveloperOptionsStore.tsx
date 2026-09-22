@@ -1,9 +1,9 @@
-// Module ID: 1347
-// Function ID: 1348
+// Module ID: 1345
+// Function ID: 1346
 // Name: DeveloperOptionsStore
-// Dependencies: [1074, 559, 1090, 1272, 1099, 1348, 510, 1232, 504, 573, 2]
+// Dependencies: [1074, 559, 1090, 1270, 1099, 1346, 510, 1230, 504, 573, 2]
 
-// Module 1347 (DeveloperOptionsStore)
+// Module 1345 (DeveloperOptionsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
@@ -13,7 +13,7 @@ import size from "module_2" /* 2 */;
 
 const UserFlags = Constants.UserFlags;
 function refreshSourceMapCookie() {
-  const HTTP = url(1272).HTTP;
+  const HTTP = url(1270).HTTP;
   obj = { url, headers: null, oldFormErrors: true, rejectWithError: true };
   const obj2 = { Authorization: importDefaultResult1(1099).getToken() };
   obj.headers = obj2;
@@ -51,7 +51,7 @@ let closure_5 = {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
         timeout = null;
-        const HTTP = url(1272).HTTP;
+        const HTTP = url(1270).HTTP;
         obj = { url, headers: null, oldFormErrors: true, rejectWithError: true };
         const obj2 = { Authorization: importDefaultResult1(1099).getToken() };
         obj.headers = obj2;

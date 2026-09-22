@@ -1,13 +1,13 @@
-// Module ID: 5767
-// Function ID: 5768
+// Module ID: 5868
+// Function ID: 5869
 // Name: AvatarLokyExample
-// Dependencies: [21, 5587, 5768, 2]
+// Dependencies: [21, 5668, 5869, 2]
 // Exports: AvatarLokyExample
 
-// Module 5767 (AvatarLokyExample)
+// Module 5868 (AvatarLokyExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef5768 from "module_5768" /* 5768 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef5869 from "module_5869" /* 5869 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AvatarLokyExample = function AvatarLokyExample(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5768 };
+  const obj2 = { uri: _modDef5869 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,15 +1,15 @@
-// Module ID: 4574
-// Function ID: 4575
+// Module ID: 4650
+// Function ID: 4651
 // Name: ChangelogStore
-// Dependencies: [2025, 1221, 2010, 510, 1935, 504, 573, 2]
+// Dependencies: [2025, 1219, 2010, 510, 1935, 504, 573, 2]
 
-// Module 4574 (ChangelogStore)
+// Module 4650 (ChangelogStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import UserSettings from "UserSettings" /* 1935 */;
 import LocaleStore from "LocaleStore" /* 2025 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
 
 require = fn;
 function handleUserSettingsProtoStoreChange() {

@@ -1,20 +1,20 @@
-// Module ID: 16521
-// Function ID: 16522
+// Module ID: 16615
+// Function ID: 16616
 // Name: ICYMIHeader
-// Dependencies: [19, 17, 21, 16455, 576, 4556, 1114, 2]
+// Dependencies: [19, 17, 21, 16549, 576, 4632, 1114, 2]
 // Exports: default
 
-// Module 16521 (ICYMIHeader)
+// Module 16615 (ICYMIHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
+import Text_Text from "Text/Text" /* 4632 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createICYMIStyles = fn(16455);
+const createICYMIStyles = fn(16549);
 let closure_7 = createICYMIStyles.createICYMIStyles((margin) => {
   const obj = { text: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: margin.margin }, separator: null };
   const size = { height: 1, width: "100%", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: nativeDefault.space.PX_16 };

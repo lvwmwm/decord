@@ -1,8 +1,7 @@
 // Module ID: 14369
 // Function ID: 14370
-// Dependencies: [17]
+// Dependencies: []
 
 // Module 14369
-import _mod17 from "module_17" /* 17 */;
 
-const parsed = parseInt(_mod17.Platform.Version, 10);
+export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

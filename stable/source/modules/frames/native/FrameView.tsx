@@ -1,17 +1,17 @@
-// Module ID: 16618
-// Function ID: 16619
+// Module ID: 16720
+// Function ID: 16721
 // Name: FrameView
-// Dependencies: [32, 19, 9516, 9517, 1920, 21, 7163, 573, 9574, 16619, 9641, 16620, 16621, 9656, 504, 2]
+// Dependencies: [32, 19, 9640, 9641, 1920, 21, 7266, 573, 9698, 16721, 9765, 16722, 16723, 9780, 504, 2]
 // Exports: InlineFrameView
 
-// Module 16618 (FrameView)
+// Module 16720 (FrameView)
 import initialize from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9574 */;
-import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 16619 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9698 */;
+import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 16721 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9516 */;
+import FramesStore from "FramesStore" /* 9640 */;
 
 require = fn;
 function FrameViewInner(frame) {
@@ -41,9 +41,8 @@ function FrameViewInner(frame) {
   const baseActivityView = frame(setIsResetting[10]).useBaseActivityView({ orientationLockState: orientationLock, showLoadingIndicator: first, setShowLoadingStateForLockingOrientation: tmp3[1], application: data, setOrientationLockState: callback1 });
   setIsResetting = baseActivityView.setIsResetting;
   ({ isResetting, isLandscape } = baseActivityView);
-  const merged = Object.assign(layoutMode(tmp2[11])(frame.data));
-  const obj3 = { wakeLockKey: "FrameActivities", showLoadingIndicator: first, isResetting, children: null };
-  const obj4 = {
+  const obj2 = { wakeLockKey: "FrameActivities", showLoadingIndicator: first, isResetting, children: null };
+  const obj3 = {
     onActivityCrash() {
       setIsResetting(true);
       const timerId = setTimeout(() => setIsResetting(false), 0);
@@ -51,31 +50,32 @@ function FrameViewInner(frame) {
     applicationId: frame.applicationId,
     frameId: frame.id,
     activityUrl: frame.data.url,
-    queryParams: { instance_id: "example-cl-instance", platform: ActivityPlatform.MOBILE, discord_proxy_ticket: frame.data.proxyTicket },
-    onLoadError: callback,
+    queryParams: null,
+    onLoadError: null,
     allowPopups: null,
     referrerPolicy: "origin",
     isPipOrGridMode: null,
     webViewKey: null,
     safeAreasConfig: null
   };
-  const obj2 = { instance_id: "example-cl-instance", platform: ActivityPlatform.MOBILE, discord_proxy_ticket: frame.data.proxyTicket };
   const tmpResult = frame(setIsResetting[10]);
-  const tmp11 = layoutMode(setIsResetting[12]);
-  obj4.allowPopups = frame(setIsResetting[13]).allowPopups(data);
-  obj4.isPipOrGridMode = layoutMode === constants.PIP;
-  obj4.webViewKey = frame(setIsResetting[8]).FRAME_WEB_VIEW_KEY;
+  obj3.queryParams = layoutMode(setIsResetting[12])(frame, ActivityPlatform.MOBILE);
+  obj3.onLoadError = callback;
+  const tmp10 = layoutMode(setIsResetting[11]);
+  obj3.allowPopups = frame(setIsResetting[13]).allowPopups(data);
+  obj3.isPipOrGridMode = layoutMode === constants.PIP;
+  obj3.webViewKey = frame(setIsResetting[8]).FRAME_WEB_VIEW_KEY;
   if (isLandscape) {
     landscapeSafeAreasConfig = frame.landscapeSafeAreasConfig;
   }
-  obj4.safeAreasConfig = landscapeSafeAreasConfig;
-  obj3.children = <tmp11 onActivityCrash={function onActivityCrash() {
+  obj3.safeAreasConfig = landscapeSafeAreasConfig;
+  obj2.children = <tmp10 onActivityCrash={function onActivityCrash() {
     setIsResetting(true);
     const timerId = setTimeout(() => setIsResetting(false), 0);
-  }} applicationId={frame.applicationId} frameId={frame.id} activityUrl={frame.data.url} queryParams={{ instance_id: "example-cl-instance", platform: ActivityPlatform.MOBILE, discord_proxy_ticket: frame.data.proxyTicket }} onLoadError={callback} allowPopups={null} referrerPolicy="origin" isPipOrGridMode={null} webViewKey={null} safeAreasConfig={null} />;
+  }} applicationId={frame.applicationId} frameId={frame.id} activityUrl={frame.data.url} queryParams={null} onLoadError={null} allowPopups={null} referrerPolicy="origin" isPipOrGridMode={null} webViewKey={null} safeAreasConfig={null} />;
   return jsx(frame(setIsResetting[10]).BaseActivityView, { wakeLockKey: "FrameActivities", showLoadingIndicator: first, isResetting, children: null });
 }
-const FramesConstants = fn(9517);
+const FramesConstants = fn(9641);
 ({ asLaunched: metroRequire, FrameLayoutModes: closure_7 } = FramesConstants);
 const ActivityPlatform = fn(1920).ActivityPlatform;
 const jsx = fn(21).jsx;

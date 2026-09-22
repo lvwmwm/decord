@@ -1,17 +1,17 @@
-// Module ID: 9473
-// Function ID: 9474
+// Module ID: 9597
+// Function ID: 9598
 // Name: ChannelCallStore
-// Dependencies: [19, 1956, 9474, 1920, 4581, 4447, 8333, 560, 1249, 573, 4761, 12, 9475, 9476, 9477, 504, 9478, 2]
+// Dependencies: [19, 1956, 9598, 1920, 4657, 1952, 8450, 560, 1247, 573, 4837, 12, 9599, 9600, 9601, 504, 9602, 2]
 // Exports: clearFocusTimer, resetChannelCallStore, resetFocus, resetFocusTimer, setFocus, setVoiceChatDrawerState, toggleFocus, useChannelCallOrientationHandlers, useIsVoiceChatFocused
 
-// Module 9473 (ChannelCallStore)
+// Module 9597 (ChannelCallStore)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1249 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4761 */;
-import DeviceOrientation from "DeviceOrientation" /* 8333 */;
-import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 9475 */;
-import useSelectedParticipantDefault from "useSelectedParticipant" /* 9476 */;
-import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 9478 */;
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1247 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4837 */;
+import DeviceOrientation from "DeviceOrientation" /* 8450 */;
+import useIsPrivateAudioOnlyCallDefault from "useIsPrivateAudioOnlyCall" /* 9599 */;
+import useSelectedParticipantDefault from "useSelectedParticipant" /* 9600 */;
+import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 9602 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
 import apply from "module_12" /* 12 */;
@@ -19,16 +19,16 @@ import apply from "module_12" /* 12 */;
 const require = globalThis.__r;
 
 require = fn;
-const ChannelCallConstants = fn(9474);
+const ChannelCallConstants = fn(9598);
 ({ VoiceCallOverlayType, VoiceChatDrawerState } = ChannelCallConstants);
 const OrientationLockState = fn(1920).OrientationLockState;
-const ParticipantTypes = fn(4581).ParticipantTypes;
-const timeout = new fn(4447).Timeout();
+const ParticipantTypes = fn(4657).ParticipantTypes;
+const timeout = new fn(1952).Timeout();
 let obj = { focus: true, pipFocus: false, isGestureEnabled: true, voiceChatDrawerState: VoiceChatDrawerState.CLOSED, voiceCallOverlayLayoutStates: null };
 let obj2 = {};
-let size = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8333).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
+let size = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8450).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
 obj2[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8333).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
+const size1 = { x: "Array", y: "flexDirection", width: "y", height: "HermesInternal", screenOrientation: fn(8450).OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: true, isInitialized: true, isVisible: null };
 obj2[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 obj.voiceCallOverlayLayoutStates = obj2;
 let closure_9 = Object.freeze(obj);
@@ -44,7 +44,7 @@ export const setFocus = function setFocus(focus) {
 };
 export const toggleFocus = function toggleFocus() {
   const focus = obj3.getState().focus;
-  focus(1249).batchUpdates(() => obj3.setState({ focus: !focus, pipFocus: false }));
+  focus(1247).batchUpdates(() => obj3.setState({ focus: !focus, pipFocus: false }));
 };
 export const resetFocusTimer = function resetFocusTimer() {
   timeout.stop();
@@ -75,7 +75,7 @@ export const setVoiceChatDrawerState = function setVoiceChatDrawerState(embedded
 };
 export const togglePipFocus = apply.throttle(() => {
   const pipFocus = obj3.getState().pipFocus;
-  pipFocus(1249).batchUpdates(() => obj3.setState({ pipFocus: !pipFocus }));
+  pipFocus(1247).batchUpdates(() => obj3.setState({ pipFocus: !pipFocus }));
 }, 300);
 export const useIsVoiceChatFocused = function useIsVoiceChatFocused() {
   const voiceChatDrawerState = obj3().voiceChatDrawerState;

@@ -1,24 +1,24 @@
-// Module ID: 9845
-// Function ID: 9846
+// Module ID: 9969
+// Function ID: 9970
 // Name: UserSearchManager
-// Dependencies: [1961, 1385, 1957, 2021, 4209, 1371, 1074, 4404, 1384, 1256, 7118, 9846, 1369, 1232, 12, 11, 2]
+// Dependencies: [1961, 1385, 1957, 2021, 4285, 1371, 1074, 4481, 1384, 1254, 7221, 9970, 1369, 1230, 12, 11, 2]
 
-// Module 9845 (UserSearchManager)
+// Module 9969 (UserSearchManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1074 */;
-import SentryUtilsDefault from "SentryUtils" /* 1232 */;
+import SentryUtilsDefault from "SentryUtils" /* 1230 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;
 import FlagUtilsAll from "FlagUtils" /* 1384 */;
 import ChannelRecord from "ChannelRecord" /* 1961 */;
-import UserUtilsDefault from "UserUtils" /* 4404 */;
-import UserSearchWorkerManager from "UserSearchWorkerManager" /* 9846 */;
+import UserUtilsDefault from "UserUtils" /* 4481 */;
+import UserSearchWorkerManager from "UserSearchWorkerManager" /* 9970 */;
 import UserRecord from "UserRecord" /* 1385 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 import UserStore from "UserStore" /* 1371 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 import size from "module_2" /* 2 */;
 
 function getTransformedUser(user) {
@@ -956,7 +956,7 @@ prototype2["getUserSearchContext"] = function getUserSearchContext(parseUserResu
       }
     };
     obj._worker = _worker;
-    obj._uuid = obj(1256).v4();
+    obj._uuid = obj(1254).v4();
     obj._callback = parseUserResults;
     obj._limit = num;
     obj._currentQuery = null;

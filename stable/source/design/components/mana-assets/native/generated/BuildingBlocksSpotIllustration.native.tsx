@@ -1,13 +1,13 @@
-// Module ID: 5815
-// Function ID: 5816
+// Module ID: 5916
+// Function ID: 5917
 // Name: BuildingBlocksSpotIllustration
-// Dependencies: [21, 5587, 5816, 2]
+// Dependencies: [21, 5668, 5917, 2]
 // Exports: BuildingBlocksSpotIllustration
 
-// Module 5815 (BuildingBlocksSpotIllustration)
+// Module 5916 (BuildingBlocksSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef5816 from "module_5816" /* 5816 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef5917 from "module_5917" /* 5917 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const BuildingBlocksSpotIllustration = function BuildingBlocksSpotIllustr
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5816 };
+  const obj2 = { uri: _modDef5917 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

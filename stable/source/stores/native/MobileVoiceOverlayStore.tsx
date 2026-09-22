@@ -1,15 +1,15 @@
-// Module ID: 9985
-// Function ID: 9986
+// Module ID: 10109
+// Function ID: 10110
 // Name: MobileVoiceOverlayStore
-// Dependencies: [1074, 1242, 1115, 1608, 504, 573, 2]
+// Dependencies: [1074, 1240, 1363, 1608, 504, 573, 2]
 // Exports: isMobileOverlaySupported
 
-// Module 9985 (MobileVoiceOverlayStore)
+// Module 10109 (MobileVoiceOverlayStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1608 */;
 import size from "module_2" /* 2 */;
 

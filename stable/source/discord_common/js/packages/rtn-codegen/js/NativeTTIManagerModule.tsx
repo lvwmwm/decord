@@ -1,9 +1,9 @@
-// Module ID: 4424
-// Function ID: 4425
+// Module ID: 4501
+// Function ID: 4502
 // Name: NativeTTIManagerModule
 // Dependencies: [17, 2]
 
-// Module 4424 (NativeTTIManagerModule)
+// Module 4501 (NativeTTIManagerModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

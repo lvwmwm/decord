@@ -1,14 +1,14 @@
-// Module ID: 15097
-// Function ID: 15098
+// Module ID: 15175
+// Function ID: 15176
 // Name: QuestDockUtils
-// Dependencies: [17, 15098, 1090, 4974, 2]
+// Dependencies: [17, 15176, 1090, 5055, 2]
 // Exports: dimensionsLayoutTransition, getQuestDockClosedWidth, getQuestDockCollapsedWidth, getQuestDockExpandedHeightLimits, getQuestDockExpandedWidth, isSoftDismissed, roundToNearestPixel
 
-// Module 15097 (QuestDockUtils)
+// Module 15175 (QuestDockUtils)
 import _mod17 from "module_17" /* 17 */;
 import DurationsDefault from "Durations" /* 1090 */;
-import spring from "spring" /* 4974 */;
-import QuestDockConstants from "QuestDockConstants" /* 15098 */;
+import spring from "spring" /* 5055 */;
+import QuestDockConstants from "QuestDockConstants" /* 15176 */;
 import size from "module_2" /* 2 */;
 
 const PixelRatio = _mod17.PixelRatio;
@@ -24,8 +24,8 @@ function roundToNearestPixel(arg0) {
 roundToNearestPixel.__closure = { PIXEL_DENSITY: value };
 roundToNearestPixel.__workletHash = 9602449563120;
 roundToNearestPixel.__initData = { code: "function roundToNearestPixel_QuestDockUtilsTsx1(position){const{PIXEL_DENSITY}=this.__closure;return Math.round(position*PIXEL_DENSITY)/PIXEL_DENSITY;}" };
-function getQuestDockExpandedHeightLimits(windowHeight, top, minExpandedContentHeight) {
-  return { minHeight: QUEST_DOCK_COLLAPSED_HEIGHT, maxHeight: Math.min(minExpandedContentHeight, windowHeight - top) };
+function getQuestDockExpandedHeightLimits(height, top, expandedHeight) {
+  return { minHeight: QUEST_DOCK_COLLAPSED_HEIGHT, maxHeight: Math.min(expandedHeight, height - top) };
 }
 getQuestDockExpandedHeightLimits.__closure = { QUEST_DOCK_COLLAPSED_HEIGHT };
 getQuestDockExpandedHeightLimits.__workletHash = 880847803554;

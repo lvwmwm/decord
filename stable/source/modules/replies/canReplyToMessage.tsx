@@ -1,15 +1,15 @@
-// Module ID: 7977
-// Function ID: 7978
+// Module ID: 8080
+// Function ID: 8081
 // Name: canReplyToMessage
-// Dependencies: [32, 4199, 1371, 1074, 1085, 1089, 7269, 7978, 504, 2]
+// Dependencies: [32, 4275, 1371, 1074, 1085, 1089, 7372, 8081, 504, 2]
 // Exports: canReplyToMessage, useCanReplyToMessage
 
-// Module 7977 (canReplyToMessage)
+// Module 8080 (canReplyToMessage)
 import MessageTypes from "MessageTypes" /* 1089 */;
-import ThreadHooks from "ThreadHooks" /* 7269 */;
-import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 7978 */;
+import ThreadHooks from "ThreadHooks" /* 7372 */;
+import useUserCommunicationDisabled from "useUserCommunicationDisabled" /* 8081 */;
 import _slicedToArray from "module_32" /* 32 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = globalThis.__r;

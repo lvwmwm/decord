@@ -1,21 +1,21 @@
-// Module ID: 11157
-// Function ID: 11158
+// Module ID: 11290
+// Function ID: 11291
 // Name: UserProfilePrimaryInfo
-// Dependencies: [19, 17, 8184, 7208, 1074, 7945, 8195, 21, 4560, 576, 10904, 10905, 9444, 5123, 11158, 4556, 11160, 7729, 4418, 11192, 1114, 11194, 8185, 11195, 7382, 1925, 4259, 8243, 11197, 11198, 11202, 5447, 1242, 7728, 1115, 11203, 11204, 11205, 1477, 8166, 9190, 4404, 2]
+// Dependencies: [19, 17, 8300, 7311, 1074, 8048, 8311, 21, 4636, 576, 11031, 11032, 9568, 5204, 11291, 4632, 11293, 7831, 4495, 11325, 1114, 11327, 8301, 11328, 7485, 1925, 4335, 8358, 11329, 11330, 11334, 5528, 1240, 7830, 1363, 11335, 11336, 11337, 1477, 8282, 9313, 4481, 2]
 // Exports: default
 
-// Module 11157 (UserProfilePrimaryInfo)
+// Module 11290 (UserProfilePrimaryInfo)
 import nativeDefault from "native" /* 576 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4259 */;
-import UserUtilsDefault from "UserUtils" /* 4404 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Pressables from "Pressables" /* 5123 */;
-import GuildTagUtils from "GuildTagUtils" /* 8166 */;
-import BadgeId from "BadgeId" /* 8185 */;
-import GuildTagDefault from "GuildTag" /* 9190 */;
-import BotTagDefault from "BotTag" /* 9444 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10904 */;
-import BadgeUtils from "BadgeUtils" /* 11204 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
+import UserUtilsDefault from "UserUtils" /* 4481 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Pressables from "Pressables" /* 5204 */;
+import GuildTagUtils from "GuildTagUtils" /* 8282 */;
+import BadgeId from "BadgeId" /* 8301 */;
+import GuildTagDefault from "GuildTag" /* 9313 */;
+import BotTagDefault from "BotTag" /* 9568 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11031 */;
+import BadgeUtils from "BadgeUtils" /* 11336 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -294,22 +294,22 @@ function ProfileBadge(source) {
               obj.content = tmp10;
               obj.icon = source;
               ToastActionCreatorsDefault.open(obj);
-              if (tmp3 === tmp5(8243).QUEST_COMPLETED_BADGE) {
-                if (tmp5Result7.shouldMigrateToAdAnalyticsInterface(tmp5(11197).AdAnalyticsInterfaceExperimentStep.STEP_4_VIEWED_NON_IMPRESSION, "quest_completed_badge_toast")) {
-                  const obj2 = { type: tmp5(11202).AdUserActionType.VIEW_INTERNAL_SURFACE_IMPRESSION, surfaceId: tmp5(5447).QuestContent.QUEST_BADGE, isTargeted: false };
-                  tmp5(11198).captureAdUserAction(obj2);
-                  const tmp5Result8 = tmp5(11198);
+              if (tmp3 === tmp5(8358).QUEST_COMPLETED_BADGE) {
+                if (tmp5Result7.shouldMigrateToAdAnalyticsInterface(tmp5(11329).AdAnalyticsInterfaceExperimentStep.STEP_4_VIEWED_NON_IMPRESSION, "quest_completed_badge_toast")) {
+                  const obj2 = { type: tmp5(11334).AdUserActionType.VIEW_INTERNAL_SURFACE_IMPRESSION, surfaceId: tmp5(5528).QuestContent.QUEST_BADGE, isTargeted: false };
+                  tmp5(11330).captureAdUserAction(obj2);
+                  const tmp5Result8 = tmp5(11330);
                 } else {
                   const obj3 = {};
-                  const tmp11Result = tmp11(1242);
-                  const merged = Object.assign(tmp5(7728).getContentProperties(tmp5(5447).QuestContent.QUEST_BADGE));
+                  const tmp11Result = tmp11(1240);
+                  const merged = Object.assign(tmp5(7830).getContentProperties(tmp5(5528).QuestContent.QUEST_BADGE));
                   let advertisingId = null;
                   if (null != closure_5) {
                     advertisingId = null;
                     if (tmp5Result10.isIOS()) {
                       advertisingId = tmp19.advertisingId;
                     }
-                    tmp5Result10 = tmp5(1115);
+                    tmp5Result10 = tmp5(1363);
                   }
                   obj3.apple_advertising_id = advertisingId;
                   let advertisingId1 = null;
@@ -318,19 +318,19 @@ function ProfileBadge(source) {
                     if (tmp5Result11.isAndroid()) {
                       advertisingId1 = tmp19.advertisingId;
                     }
-                    tmp5Result11 = tmp5(1115);
+                    tmp5Result11 = tmp5(1363);
                   }
                   obj3.android_advertising_id = advertisingId1;
                   obj3.is_targeted = false;
                   tmp11Result.track(constants.QUEST_CONTENT_VIEWED, obj3);
-                  const tmp5Result9 = tmp5(7728);
+                  const tmp5Result9 = tmp5(7830);
                 }
-                tmp5Result7 = tmp5(11197);
+                tmp5Result7 = tmp5(11329);
               }
             } else {
               const obj5 = { screen: constants2.PREMIUM_GIFTING, params: {} };
-              tmp5(7382).openUserSettings(obj5);
-              const tmp5Result12 = tmp5(7382);
+              tmp5(7485).openUserSettings(obj5);
+              const tmp5Result12 = tmp5(7485);
             }
             tmp3 = id;
           } else {
@@ -607,16 +607,16 @@ function GuildTag(style) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const getBadgeName = fn(8184).getBadgeName;
-let Constants = fn(7208);
+const getBadgeName = fn(8300).getBadgeName;
+let Constants = fn(7311);
 ({ DIVIDER_DOT: closure_7, PROFILE_SIDE_PADDING: closure_8, UserProfileThemeTypes } = Constants);
 Constants = fn(1074);
 ({ AnalyticEvents: c10, UserSettingsSections: closure_11 } = Constants);
-const GuildTagBadgeSize = fn(7945).GuildTagBadgeSize;
-const DEFAULT_PREMIUM_BADGE_ID = fn(8195).DEFAULT_PREMIUM_BADGE_ID;
+const GuildTagBadgeSize = fn(8048).GuildTagBadgeSize;
+const DEFAULT_PREMIUM_BADGE_ID = fn(8311).DEFAULT_PREMIUM_BADGE_ID;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14, Fragment: closure_15 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flexDirection: "column" }, displayName: { flexDirection: "row", alignItems: "center", columnGap: 4 }, displayNameText: { flexShrink: 1, minWidth: 0 }, details: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, detailsText: { flexDirection: "row", flexWrap: "wrap", alignContent: "center", paddingVertical: 2 }, botTag: { marginLeft: 4 }, guildTag: { alignSelf: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, columnGap: 4 }, transparentBackground: { backgroundColor: "transparent" }, badge: { resizeMode: "contain" }, badges: { alignSelf: "center", flexDirection: "column", justifyContent: "flex-start", rowGap: 8 }, badgeRow: null, limitedBadgeRow: null };
 let obj3 = { alignSelf: "center", justifyContent: "center", borderRadius: nativeDefault.radii.sm, columnGap: 4 };
 obj2.badgeRow = { borderRadius: nativeDefault.radii.sm, paddingVertical: 2, justifyContent: "flex-start", flexDirection: "row", marginRight: "auto", columnGap: 4 };

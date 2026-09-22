@@ -1,18 +1,18 @@
-// Module ID: 10029
-// Function ID: 10030
+// Module ID: 10153
+// Function ID: 10154
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 21, 4560, 576, 9598, 6655, 9599, 4556, 1114, 4975, 9957, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 9722, 6756, 9723, 4632, 1114, 5056, 10081, 2]
 // Exports: default
 
-// Module 10029 (ScreenshareParticipant)
+// Module 10153 (ScreenshareParticipant)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import components_Button_Button from "components/Button/Button" /* 4975 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6655 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9598 */;
-import _modDef9599 from "module_9599" /* 9599 */;
-import useScreenshareUtils from "useScreenshareUtils" /* 9957 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import components_Button_Button from "components/Button/Button" /* 5056 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6756 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 9722 */;
+import _modDef9723 from "module_9723" /* 9723 */;
+import useScreenshareUtils from "useScreenshareUtils" /* 10081 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { alignItems: "center", justifyContent: "center", flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, image: { marginBottom: 12 }, title: { textAlign: "center", marginBottom: 8 }, description: { lineHeight: 18, textAlign: "center", marginBottom: 16 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -52,7 +52,7 @@ export default function ScreenshareParticipant(participant) {
   const items2 = [tmp4.container, participant.containerStyle];
   obj2.style = items2;
   const tmp3 = useParticipantTileTapGestureDefault({ onSingleTapStart: callback, onDoubleTapStart: callback1 });
-  const items3 = [timestampProducer(hasOwnProperty, { source: _modDef9599, style: tmp4.image }), , , ];
+  const items3 = [timestampProducer(hasOwnProperty, { source: _modDef9723, style: tmp4.image }), , , ];
   const obj4 = { style: tmp4.title, accessibilityRole: "header", variant: "heading-lg/extrabold", color: "mobile-text-heading-primary", children: null };
   const intl = util.intl;
   obj4.children = intl.string(util.t.gMOwov);

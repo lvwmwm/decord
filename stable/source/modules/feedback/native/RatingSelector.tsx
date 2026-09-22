@@ -1,24 +1,24 @@
-// Module ID: 11635
-// Function ID: 11636
+// Module ID: 11763
+// Function ID: 11764
 // Name: RatingSelector
-// Dependencies: [19, 17, 11631, 21, 4560, 11636, 11637, 1114, 11641, 11642, 11646, 11647, 8601, 5123, 2]
+// Dependencies: [19, 17, 11759, 21, 4636, 11764, 11765, 1114, 11769, 11770, 11774, 11775, 8718, 5204, 2]
 // Exports: default
 
-// Module 11635 (RatingSelector)
-import _modDef11636 from "module_11636" /* 11636 */;
-import _modDef11641 from "module_11641" /* 11641 */;
-import _modDef11646 from "module_11646" /* 11646 */;
+// Module 11763 (RatingSelector)
+import _modDef11764 from "module_11764" /* 11764 */;
+import _modDef11769 from "module_11769" /* 11769 */;
+import _modDef11774 from "module_11774" /* 11774 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
-const Constants = fn(11631);
+const Constants = fn(11759);
 ({ DEFAULT_RATINGS: hasOwnProperty, FeedbackRating: metroRequire } = Constants);
 const jsx = fn(21).jsx;
-let createStyles = fn(4560);
+let createStyles = fn(4636);
 let closure_8 = createStyles.createStyles({ ratings: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, rating: {}, emoji: { width: 64, height: 64, marginVertical: 24, marginHorizontal: 12 } });
-createStyles = fn(4560);
+createStyles = fn(4636);
 let closure_9 = createStyles.createStyles({ ratings: { flexDirection: "column", alignItems: "flex-start", justifyContent: "flex-start", gap: 16, marginBottom: 12 }, rating: { width: "100%" }, emoji: { width: 32, height: 32 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/feedback/native/RatingSelector.tsx");
@@ -38,9 +38,9 @@ export default function RatingSelector(ratingOptions) {
   closure_3 = tmp2;
   let obj = {};
   let obj2 = { source: null, getLabel: null, rating: null };
-  let obj3 = { selected: _modDef11636, normal: null };
+  let obj3 = { selected: _modDef11764, normal: null };
   tmp = closure_9();
-  obj3.normal = textLabels(11637).useFeedbackModalSadDesaturatedSource();
+  obj3.normal = textLabels(11765).useFeedbackModalSadDesaturatedSource();
   obj2.source = obj3;
   obj2.getLabel = function getLabel() {
     const intl = textLabels(1114).intl;
@@ -49,9 +49,9 @@ export default function RatingSelector(ratingOptions) {
   obj2.rating = constants.BAD;
   obj[constants.BAD] = obj2;
   let obj5 = { source: null, getLabel: null, rating: null };
-  let obj6 = { selected: _modDef11641, normal: null };
-  let obj4 = textLabels(11637);
-  obj6.normal = textLabels(11642).useFeedbackModalNeutralDesaturatedSource();
+  let obj6 = { selected: _modDef11769, normal: null };
+  let obj4 = textLabels(11765);
+  obj6.normal = textLabels(11770).useFeedbackModalNeutralDesaturatedSource();
   obj5.source = obj6;
   obj5.getLabel = function getLabel() {
     const intl = textLabels(1114).intl;
@@ -60,9 +60,9 @@ export default function RatingSelector(ratingOptions) {
   obj5.rating = constants.NEUTRAL;
   obj[constants.NEUTRAL] = obj5;
   const obj8 = { source: null, getLabel: null, rating: null };
-  const obj9 = { selected: _modDef11646, normal: null };
-  let obj7 = textLabels(11642);
-  obj9.normal = textLabels(11647).useFeedbackModalHappyDesaturatedSource();
+  const obj9 = { selected: _modDef11774, normal: null };
+  let obj7 = textLabels(11770);
+  obj9.normal = textLabels(11775).useFeedbackModalHappyDesaturatedSource();
   obj8.source = obj9;
   obj8.getLabel = function getLabel() {
     const intl = textLabels(1114).intl;
@@ -72,7 +72,7 @@ export default function RatingSelector(ratingOptions) {
   obj[constants.GOOD] = obj8;
   closure_129_0 = obj;
   const mapped = ratingOptions.map((item) => textLabels[item]);
-  const obj10 = textLabels(11647);
+  const obj10 = textLabels(11775);
   return <closure_3 style={tmp2.ratings}>{mapped.map((rating) => {
     rating = rating.rating;
     ({ selected, normal } = rating.source);
@@ -92,7 +92,7 @@ export default function RatingSelector(ratingOptions) {
       obj4.source = normal;
       obj2.icon = <closure_1_4 style={closure_3.emoji} source={null} />;
       obj2.label = tmp[rating];
-      obj.children = jsx(textLabels(8601).RowButton, { accessibilityRole: "button", accessibilityLabel: getLabel(), accessibilityState: null, onPress: null, icon: null, label: null });
+      obj.children = jsx(textLabels(8718).RowButton, { accessibilityRole: "button", accessibilityLabel: getLabel(), accessibilityState: null, onPress: null, icon: null, label: null });
       let tmp14Result = <closure_3 key={rating} style={closure_3.rating}>{null}</closure_3>;
     } else {
       const obj5 = { accessibilityRole: "button", accessibilityLabel: getLabel(), accessibilityState: null, onPress: null, children: null };
@@ -108,7 +108,7 @@ export default function RatingSelector(ratingOptions) {
       }
       obj7.source = tmp2;
       obj5.children = <closure_1_4 style={closure_3.emoji} source={null} />;
-      tmp14Result = jsx(textLabels(5123).PressableOpacity, { accessibilityRole: "button", accessibilityLabel: getLabel(), accessibilityState: null, onPress: null, children: null }, rating);
+      tmp14Result = jsx(textLabels(5204).PressableOpacity, { accessibilityRole: "button", accessibilityLabel: getLabel(), accessibilityState: null, onPress: null, children: null }, rating);
     }
     return tmp14Result;
   })}</closure_3>;

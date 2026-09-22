@@ -1,9 +1,9 @@
 // Module ID: 12461
 // Function ID: 12462
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 12461
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/community", width: 56, height: 65, scales: [1, 2, 3], hash: "260617da8a2932d3af6bc2abf2ba2716", name: "rejected-alert", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/create_guild/native/images", width: 48, height: 48, scales: [2, 3], hash: "893aae6cf122fe5e14fe174c0b878442", name: "img_friends", type: "png" });

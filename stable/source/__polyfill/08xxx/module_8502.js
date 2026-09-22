@@ -1,67 +1,32 @@
 // Module ID: 8502
 // Function ID: 8503
-// Dependencies: [41, 42, 93, 95, 98, 8473, 8496]
+// Dependencies: [8503, 8504, 8505, 4746]
 
 // Module 8502
-import _modDef8496 from "module_8496" /* 8496 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import baseFlatten from "baseFlatten" /* 4746 */;
+import baseRest from "baseRest" /* 8503 */;
+import _mod8504 from "module_8504" /* 8504 */;
+import baseOrderBy from "baseOrderBy" /* 8505 */;
 
-const FeConvolveMatrix = arg1;
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const call = valueOf.call;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    if (typeof call === "unknown") {
-      let callResult = valueOf();
-    } else {
-      callResult = call(constructResult);
-    }
-    closure_0 = !callResult;
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-class FeConvolveMatrix {
-  constructor() {
-    self = this;
-    tmp = c2(this, FeConvolveMatrix);
-    tmp2 = closure_4;
-    obj = closure_4(FeConvolveMatrix);
-    tmp3 = closure_3;
-    if (hasOwnProperty()) {
-      tmp7 = globalThis;
-      _Reflect = Reflect;
-      tmp8 = arguments;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
-    } else {
-      tmp4 = arguments;
-      tmp5 = arguments;
-      constructResult = obj(...arguments);
-    }
-    return tmp3(self, constructResult);
-  }
-}
-_inherits(FeConvolveMatrix, _modDef8496);
-const entry = {
-  key: "render",
-  value: function render() {
-    const result = FeConvolveMatrix(8473).warnUnimplementedFilter();
-    return null;
-  }
-};
-const items = [entry];
-const importDefaultResultResult = _createClass(FeConvolveMatrix, items);
-importDefaultResultResult.displayName = "FeConvolveMatrix";
-const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
-importDefaultResultResult.defaultProps = {};
 
-export default importDefaultResultResult;
+export default baseRest((arg0, arg1) => {
+  if (null == arg0) {
+    return [];
+  } else {
+    if (arg1.length > 1) {
+      if (_mod8504(arg0, arg1[0], arg1[1])) {
+        let items = [];
+      }
+      return baseOrderBy(arg0, baseFlatten(items, 1), []);
+    }
+    let tmp3 = length > 2;
+    if (tmp3) {
+      tmp3 = _mod8504(arg1[0], arg1[1], arg1[2]);
+    }
+    items = arg1;
+    if (tmp3) {
+      const items1 = [arg1[0]];
+      items = items1;
+    }
+  }
+});

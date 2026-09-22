@@ -1,22 +1,22 @@
-// Module ID: 17378
-// Function ID: 17379
+// Module ID: 17490
+// Function ID: 17491
 // Name: GuildRoomSpatialAudioManager
-// Dependencies: [32, 4476, 1236, 502, 1957, 1908, 4583, 4718, 7118, 17379, 9095, 4760, 2]
+// Dependencies: [32, 4552, 1234, 502, 1957, 1908, 4659, 4794, 7221, 17491, 9218, 4836, 2]
 
-// Module 17378 (GuildRoomSpatialAudioManager)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9095 */;
-import GuildRoomSpatialAudio from "GuildRoomSpatialAudio" /* 17379 */;
+// Module 17490 (GuildRoomSpatialAudioManager)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9218 */;
+import GuildRoomSpatialAudio from "GuildRoomSpatialAudio" /* 17491 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ExperimentStore from "ExperimentStore" /* 4476 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1236 */;
+import ExperimentStore from "ExperimentStore" /* 4552 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1234 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4583 */;
-import GuildRoomStore from "GuildRoomStore" /* 4718 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4659 */;
+import GuildRoomStore from "GuildRoomStore" /* 4794 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 
-const GuildRoomsExperiment = tmp(4760);
+const GuildRoomsExperiment = tmp(4836);
 require = fn;
 class GuildRoomSpatialAudioManager extends tmp2 {
   constructor() {

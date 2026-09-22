@@ -1,11 +1,11 @@
-// Module ID: 1359
-// Function ID: 1360
+// Module ID: 1357
+// Function ID: 1358
 // Name: ProcessUtils
-// Dependencies: [17, 1360, 2]
+// Dependencies: [17, 1358, 2]
 
-// Module 1359 (ProcessUtils)
+// Module 1357 (ProcessUtils)
 import _mod17 from "module_17" /* 17 */;
-import ProcessUtilsBase from "ProcessUtilsBase" /* 1360 */;
+import ProcessUtilsBase from "ProcessUtilsBase" /* 1358 */;
 import size from "module_2" /* 2 */;
 
 let closure_1 = function getHermesInstrumentedStatsSummary() {

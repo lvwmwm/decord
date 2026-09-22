@@ -1,13 +1,13 @@
-// Module ID: 9967
-// Function ID: 9968
+// Module ID: 10091
+// Function ID: 10092
 // Name: ImageSparkleIcon
-// Dependencies: [19, 21, 576, 4261, 9968, 2]
+// Dependencies: [19, 21, 576, 4337, 10092, 2]
 // Exports: ImageSparkleIcon
 
-// Module 9967 (ImageSparkleIcon)
+// Module 10091 (ImageSparkleIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod9968 from "module_9968" /* 9968 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod10092 from "module_10092" /* 10092 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ImageSparkleIcon = function ImageSparkleIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9968, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10092, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,20 +1,20 @@
-// Module ID: 16698
-// Function ID: 16699
+// Module ID: 16809
+// Function ID: 16810
 // Name: BaseMessagesScreen
-// Dependencies: [19, 7281, 12343, 7878, 21, 12362, 504, 12344, 16686, 16699, 12342, 16700, 16701, 16641, 16653, 2]
+// Dependencies: [19, 7384, 12472, 7981, 21, 12491, 504, 12473, 16797, 16810, 12471, 16811, 16812, 16747, 16759, 2]
 // Exports: default, trackMessageItemPress
 
-// Module 16698 (BaseMessagesScreen)
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12342 */;
-import SearchUtils from "SearchUtils" /* 12344 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12362 */;
-import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 16700 */;
+// Module 16809 (BaseMessagesScreen)
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12471 */;
+import SearchUtils from "SearchUtils" /* 12473 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12491 */;
+import SearchHistoricalIndexingHeaderDefault from "SearchHistoricalIndexingHeader" /* 16811 */;
 import noop from "module_19" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 7281 */;
-import SearchQueryStore from "SearchQueryStore" /* 12343 */;
+import SearchMessageStore from "SearchMessageStore" /* 7384 */;
+import SearchQueryStore from "SearchQueryStore" /* 12472 */;
 
 require = fn;
-const constants = fn(7878).SearchResultContentEntityTypes;
+const constants = fn(7981).SearchResultContentEntityTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/BaseMessagesScreen.tsx");

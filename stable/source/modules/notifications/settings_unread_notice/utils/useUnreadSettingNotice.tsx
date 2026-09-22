@@ -1,11 +1,11 @@
-// Module ID: 11416
-// Function ID: 11417
+// Module ID: 11548
+// Function ID: 11549
 // Name: useUnreadSettingNotice
-// Dependencies: [32, 19, 1961, 10152, 504, 11417, 2]
+// Dependencies: [32, 19, 1961, 10275, 504, 11549, 2]
 // Exports: default
 
-// Module 11416 (useUnreadSettingNotice)
-import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 11417 */;
+// Module 11548 (useUnreadSettingNotice)
+import UnreadSettingNoticeStore2Default from "UnreadSettingNoticeStore2" /* 11549 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

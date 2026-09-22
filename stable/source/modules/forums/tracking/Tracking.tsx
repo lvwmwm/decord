@@ -1,25 +1,25 @@
-// Module ID: 7767
-// Function ID: 7768
+// Module ID: 7869
+// Function ID: 7870
 // Name: tracking/Tracking
-// Dependencies: [1957, 4901, 7277, 7768, 1074, 4740, 7769, 1242, 7774, 1115, 7775, 2]
+// Dependencies: [1957, 4977, 7380, 7870, 1074, 4816, 7871, 1240, 7876, 1363, 7877, 2]
 // Exports: maybeTrackForumNewPostDraftCreated, trackForumAddMediaToOriginalPostClicked, trackForumChannelMediaUploaderClicked, trackForumChannelSeenBatch, trackForumCreateNewPostClick, trackForumCreateNewPostKeybindUsed, trackForumCreateNewPostStarted, trackForumEnableAutomodClicked, trackForumLayoutUpdated, trackForumMorePostsLoaded, trackForumNewPostCleared, trackForumOnboardingClicked, trackForumPostClicked, trackForumPostCreated, trackForumPostLinkCopied, trackForumPostSidebarViewed, trackForumPreviewPostClicked, trackForumScrolled, trackForumSearchCleared, trackForumSearched, trackForumSortOrderUpdated, trackForumTagFilterClicked, trackForumUpsellModalClicked, trackForumUpsellModalViewed, trackMobileForumComposerDismissed, trackMobileForumComposerOpened
 
-// Module 7767 (tracking/Tracking)
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4740 */;
-import TrackingUtils from "TrackingUtils" /* 7769 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7774 */;
-import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7775 */;
+// Module 7869 (tracking/Tracking)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4816 */;
+import TrackingUtils from "TrackingUtils" /* 7871 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 7876 */;
+import trackChannelOpenedClickstreamDefault from "trackChannelOpenedClickstream" /* 7877 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import DraftStore from "DraftStore" /* 4901 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7277 */;
-import ForumSearchStore from "ForumSearchStore" /* 7768 */;
+import DraftStore from "DraftStore" /* 4977 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 7380 */;
+import ForumSearchStore from "ForumSearchStore" /* 7870 */;
 
 const AppAnalyticsUtilsDefault = AppAnalyticsUtils;
 
 require = fn;
-const DraftType = fn(4901).DraftType;
+const DraftType = fn(4977).DraftType;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, AnalyticsSections: closure_9 } = Constants);
 let size = fn(2);

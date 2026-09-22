@@ -1,14 +1,14 @@
-// Module ID: 10216
-// Function ID: 10217
+// Module ID: 10340
+// Function ID: 10341
 // Name: BugReporterFeatureActionSheet
-// Dependencies: [32, 19, 17, 21, 4560, 576, 4556, 10192, 5605, 4527, 5689, 6981, 12, 5517, 7049, 10217, 7150, 7149, 1114, 7050, 7055, 2]
+// Dependencies: [32, 19, 17, 21, 4636, 576, 4632, 5769, 10315, 4603, 7084, 12, 5598, 7152, 10341, 7253, 7252, 1114, 7153, 7158, 2]
 // Exports: default
 
-// Module 10216 (BugReporterFeatureActionSheet)
+// Module 10340 (BugReporterFeatureActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { list: { paddingHorizontal: nativeDefault.space.PX_12 }, searchBar: null, sectionHeader: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_12 };
 obj.searchBar = { paddingHorizontal: nativeDefault.space.PX_12 };
@@ -35,20 +35,16 @@ let closure_10 = noop.memo((item) => {
   item = item.item;
   const setFeature = item.setFeature;
   ({ feature, start, end } = item);
-  const featureId = item(10192).getFeatureId(item);
-  const obj = item(10192);
-  const featureId1 = item(10192).getFeatureId(feature);
-  const obj3 = {
-    start,
-    end,
-    label: item.name,
-    onPress() {
-      setFeature(item);
-      ActionSheetActionCreatorsDefault.hideActionSheet();
-    },
-    trailing: closure_6(item(5689).FormRadio, { selected: featureId === featureId1 })
+  const obj = { start, end, value: item(10315).getFeatureId(item), label: item.name, legacyCompat_selected: null, legacyCompat_onPress: null };
+  const obj2 = item(10315);
+  const featureId = item(10315).getFeatureId(item);
+  const obj3 = item(10315);
+  obj.legacyCompat_selected = featureId === item(10315).getFeatureId(feature);
+  obj.legacyCompat_onPress = function legacyCompat_onPress() {
+    setFeature(item);
+    ActionSheetActionCreatorsDefault.hideActionSheet();
   };
-  return closure_6(item(5605).TableRow, obj3);
+  return closure_6(item(5769).TableRadioRow, obj);
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/bug_reporter/native/components/BugReporterFeatureActionSheet.tsx");
@@ -67,7 +63,7 @@ export default function BugReporterFeatureActionSheet(features) {
     const found = features.filter((asana_inbox_id) => {
       let tmp = null != asana_inbox_id.asana_inbox_id;
       if (tmp) {
-        let isEmptyResult = feature(setFeature[12]).isEmpty(first);
+        let isEmptyResult = feature(setFeature[11]).isEmpty(first);
         if (!isEmptyResult) {
           let str3;
           const formatted = str.toLowerCase();
@@ -77,8 +73,8 @@ export default function BugReporterFeatureActionSheet(features) {
           if (str3 == null) {
             str3 = "";
           }
-          isEmptyResult = tmp2(tmp3[13])(formatted, str3);
-          const tmp2Result = tmp2(tmp3[13]);
+          isEmptyResult = tmp2(tmp3[12])(formatted, str3);
+          const tmp2Result = tmp2(tmp3[12]);
         }
         if (!isEmptyResult) {
           let str5;
@@ -89,11 +85,11 @@ export default function BugReporterFeatureActionSheet(features) {
           if (str5 == null) {
             str5 = "";
           }
-          isEmptyResult = tmp2(tmp3[13])(formatted1, str5);
-          const tmp2Result2 = tmp2(tmp3[13]);
+          isEmptyResult = tmp2(tmp3[12])(formatted1, str5);
+          const tmp2Result2 = tmp2(tmp3[12]);
         }
         tmp = isEmptyResult;
-        const obj = feature(setFeature[12]);
+        const obj = feature(setFeature[11]);
       }
       return tmp;
     });
@@ -111,7 +107,7 @@ export default function BugReporterFeatureActionSheet(features) {
     return obj2;
   }, items1);
   items = memo.items;
-  const tmp6 = feature(setFeature[15])();
+  const tmp6 = feature(setFeature[14])();
   const height = tmp6;
   const items2 = [items, setFeature, feature];
   const items3 = [tmp6, items];
@@ -119,15 +115,15 @@ export default function BugReporterFeatureActionSheet(features) {
   const callback1 = items.useCallback((arg0) => timestampProducer(closure_9, { title: items[arg0].title, height }), items3);
   let obj = { scrollable: true, startExpanded: true, header: null, children: null };
   let obj2 = { title: null };
-  const intl = features(setFeature[18]).intl;
-  obj2.title = intl.string(features(setFeature[18]).t["77VVd8"]);
-  obj.header = closure_6(features(setFeature[17]).BottomSheetTitleHeader, obj2);
-  const tmp5 = feature(setFeature[14])();
-  const items4 = [closure_6(height, { style: tmp.searchBar, children: closure_6(features(setFeature[19]).SearchField, { size: "md", onChange: tmp2[1] }) }), ];
+  const intl = features(setFeature[17]).intl;
+  obj2.title = intl.string(features(setFeature[17]).t["77VVd8"]);
+  obj.header = closure_6(features(setFeature[16]).BottomSheetTitleHeader, obj2);
+  const tmp5 = feature(setFeature[13])();
+  const items4 = [closure_6(height, { style: tmp.searchBar, children: closure_6(features(setFeature[18]).SearchField, { size: "md", onChange: tmp2[1] }) }), ];
   const obj4 = { style: tmp.list, inActionSheet: true, sections: memo.sections, itemSize: tmp5, estimatedListSize: "windowSize", renderItem: callback, renderSectionHeader: callback1, sectionHeaderSize: tmp6, insetEnd: null };
-  const obj3 = { style: tmp.searchBar, children: closure_6(features(setFeature[19]).SearchField, { size: "md", onChange: tmp2[1] }) };
-  obj4.insetEnd = feature(setFeature[5]).space.PX_16 + feature(setFeature[11])().insets.bottom;
-  items4[1] = closure_6(feature(setFeature[20]), obj4);
+  const obj3 = { style: tmp.searchBar, children: closure_6(features(setFeature[18]).SearchField, { size: "md", onChange: tmp2[1] }) };
+  obj4.insetEnd = feature(setFeature[5]).space.PX_16 + feature(setFeature[10])().insets.bottom;
+  items4[1] = closure_6(feature(setFeature[19]), obj4);
   obj.children = items4;
-  return closure_7(features(setFeature[16]).BottomSheet, obj);
+  return closure_7(features(setFeature[15]).BottomSheet, obj);
 };

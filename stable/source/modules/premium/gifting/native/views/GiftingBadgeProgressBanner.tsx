@@ -1,23 +1,23 @@
-// Module ID: 10761
-// Function ID: 10762
+// Module ID: 10888
+// Function ID: 10889
 // Name: GiftingBadgeProgressBanner
-// Dependencies: [19, 17, 21, 4560, 576, 7162, 8774, 1250, 10754, 4556, 1114, 2492, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 7265, 8894, 1248, 10881, 4632, 1114, 2492, 2]
 // Exports: default
 
-// Module 10761 (GiftingBadgeProgressBanner)
+// Module 10888 (GiftingBadgeProgressBanner)
 import nativeDefault from "native" /* 576 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1250 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1248 */;
 import _modDef2492 from "module_2492" /* 2492 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7162 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 8774 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7265 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 8894 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: null, iconContainer: null };
 const merged = Object.assign(nativeDefault.shadows.SHADOW_LOW);
 obj2.container = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderStyle: "solid", borderColor: nativeDefault.colors.BORDER_MUTED };
@@ -47,7 +47,7 @@ export default function GiftingBadgeProgressBanner(arg0) {
   let tmp10Result = null != nextTierIcon;
   if (tmp10Result) {
     const obj4 = { icon: nextTierIcon, size: 24 };
-    tmp10Result = tmp10(tmp2(10754), obj4);
+    tmp10Result = tmp10(tmp2(10881), obj4);
   }
   obj3.children = tmp10Result;
   const items2 = [React4(View, obj3), ];

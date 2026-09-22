@@ -1,18 +1,18 @@
-// Module ID: 7150
-// Function ID: 7151
+// Module ID: 7253
+// Function ID: 7254
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 19, 17, 7151, 21, 4560, 576, 1115, 1611, 4962, 6627, 5682, 4987, 1093, 4296, 7152, 4279, 7153, 4992, 7154, 7155, 7040, 1477, 4413, 7156, 4271, 2]
+// Dependencies: [32, 19, 17, 7254, 21, 4636, 576, 1363, 1611, 5043, 6728, 5763, 5068, 1093, 4373, 7255, 4357, 7256, 5073, 7257, 7258, 7143, 1477, 4490, 7259, 4347, 2]
 
-// Module 7150 (Sheet/BottomSheet)
+// Module 7253 (Sheet/BottomSheet)
 import nativeDefault from "native" /* 576 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 4962 */;
-import BottomSheetModal from "BottomSheetModal" /* 6627 */;
-import NavScrim from "NavScrim" /* 7040 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 7154 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 7155 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5043 */;
+import BottomSheetModal from "BottomSheetModal" /* 6728 */;
+import NavScrim from "NavScrim" /* 7143 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 7257 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 7258 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -32,11 +32,11 @@ function GradientBackground(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: hasOwnProperty, View: metroRequire, Platform } = get_ActivityIndicator);
-const ActionSheetConstants = fn(7151);
+const ActionSheetConstants = fn(7254);
 ({ ACTION_SHEET_START_HEIGHT_RATIO: closure_7, ACTION_SHEET_MAX_WIDTH: closure_8, ACTION_SHEET_SPRING_CONFIG: closure_9, ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION: c10, ACTION_SHEET_GRADIENT_BORDER_WIDTH: closure_11, ACTION_SHEET_GRADIENT_BORDER_RADIUS: closure_12, ACTION_SHEET_BORDER_RADIUS: map1, ACTION_SHEET_INNER_BORDER_RADIUS: closure_14, ACTION_SHEET_MINIMUM_BOTTOM_PADDING: closure_15 } = ActionSheetConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_18 = createStyles.createStyles((arg0) => {
   let num = arg1;
   if (arg1 === undefined) {
@@ -133,7 +133,7 @@ let closure_19 = noop.forwardRef((windowDimensions, ref) => {
     const merged1 = Object.assign(merged);
     obj3.enableDynamicSizing = true;
     if (maxDynamicContentSize == null) {
-      maxDynamicContentSize = height - tmp4(5682).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
+      maxDynamicContentSize = height - tmp4(5763).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
     }
     obj3.maxDynamicContentSize = maxDynamicContentSize;
     obj3.ref = ref;
@@ -141,7 +141,7 @@ let closure_19 = noop.forwardRef((windowDimensions, ref) => {
     const obj4 = { bounces: false, keyboardShouldPersistTaps, style: scrollViewStyle, children: null };
     const obj5 = { onLayout: callback, style: wrapperStyle, children };
     obj4.children = value2(timestampProducer, obj5);
-    obj3.children = value2(tmp4(6627).BottomSheetScrollView, obj4);
+    obj3.children = value2(tmp4(6728).BottomSheetScrollView, obj4);
     return value2(BottomSheetModalDefault, obj3);
   }
   items = [];
@@ -166,7 +166,7 @@ let closure_20 = noop.forwardRef((windowDimensions, ref) => {
     maxHeight = contentHeight;
   }
   if (maxHeight == null) {
-    maxHeight = height - tmp5(5682).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
+    maxHeight = height - tmp5(5763).NAV_BAR_HEIGHT_MULTILINE - useSafeAreaInsetsDefault().top;
   }
   let items = [hasEverExpanded, isScreenReaderEnabled, maxHeight, startHeight];
   const memo = noop.useMemo(() => {
@@ -213,8 +213,8 @@ let closure_20 = noop.forwardRef((windowDimensions, ref) => {
   let tmp10Result = tmp11;
   if (null != borderGradient) {
     const obj4 = { style: tmp2.gradient, start: tmp5(1093).VerticalGradient.START, end: tmp5(1093).VerticalGradient.END, colors: borderGradient, children: tmp11 };
-    tmp10Result = tmp10(tmp3(4987), obj4);
-    const tmp3Result2 = tmp3(4987);
+    tmp10Result = tmp10(tmp3(5068), obj4);
+    const tmp3Result2 = tmp3(5068);
   }
   const items3 = [tmp10Result, extraContent];
   obj3.children = items3;

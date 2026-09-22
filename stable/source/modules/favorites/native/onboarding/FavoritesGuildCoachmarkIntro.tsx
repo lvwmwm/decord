@@ -1,18 +1,18 @@
-// Module ID: 16316
-// Function ID: 16317
+// Module ID: 16411
+// Function ID: 16412
 // Name: FavoritesGuildCoachmarkIntro
-// Dependencies: [32, 19, 16287, 1074, 1954, 21, 4296, 10238, 16311, 1114, 3225, 16317, 11132, 2]
+// Dependencies: [32, 19, 16382, 1074, 1954, 21, 4373, 10362, 16406, 1114, 3236, 16412, 11265, 2]
 // Exports: default
 
-// Module 16316 (FavoritesGuildCoachmarkIntro)
+// Module 16411 (FavoritesGuildCoachmarkIntro)
 import util from "util" /* 1114 */;
-import _modDef3225 from "module_3225" /* 3225 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10238 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16311 */;
+import _modDef3236 from "module_3236" /* 3236 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import FavoritesGuildAnalytics from "FavoritesGuildAnalytics" /* 10362 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 16406 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16287 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 16382 */;
 
 require = fn;
 const FAVORITES = fn(1074).FAVORITES;
@@ -62,15 +62,15 @@ export default function FavoritesGuildCoachmarkIntro(markAsDismissed) {
   const memo = onDismiss.useMemo(() => {
     const obj = { visible, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: null, buttonLabel: null, onButtonPress: null };
     const intl = util.intl;
-    obj.title = intl.string(_modDef3225["bu/mLv"]);
+    obj.title = intl.string(_modDef3236["bu/mLv"]);
     const intl2 = util.intl;
-    obj.description = intl2.string(_modDef3225.kxQJ7q);
+    obj.description = intl2.string(_modDef3236.kxQJ7q);
     obj.onDismiss = onDismiss;
     obj.renderImgComponent = function renderImgComponent() {
       return closure_1_8(scrollPosition(visible[11]), {});
     };
     const intl3 = util.intl;
-    obj.buttonLabel = intl3.string(_modDef3225["vN/KQ9"]);
+    obj.buttonLabel = intl3.string(_modDef3236["vN/KQ9"]);
     obj.onButtonPress = callback1;
     return obj;
   }, items2);

@@ -1,13 +1,13 @@
-// Module ID: 7979
-// Function ID: 7980
+// Module ID: 8082
+// Function ID: 8083
 // Name: RemoveRecipientSystemMessage
-// Dependencies: [1961, 1957, 1371, 7961, 7963, 1114, 7965, 2]
+// Dependencies: [1961, 1957, 1371, 8064, 8066, 1114, 8068, 2]
 // Exports: createRemoveRecipientSystemMessage
 
-// Module 7979 (RemoveRecipientSystemMessage)
+// Module 8082 (RemoveRecipientSystemMessage)
 import ChannelRecord from "ChannelRecord" /* 1961 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 7961 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 7963 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8064 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8066 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import UserStore from "UserStore" /* 1371 */;
 import size from "module_2" /* 2 */;
@@ -35,16 +35,16 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
       formatToPartsResult = formatToParts(t["Qn5+Lf"], obj2);
     }
     const obj3 = { content: formatToPartsResult };
-    const merged = Object.assign(tmp8(7965)(message));
+    const merged = Object.assign(tmp8(8068)(message));
     return obj3;
   } else {
     const user = UserStore.getUser(first);
-    const userAuthorWithProcessedColor = tmp5(7961).getUserAuthorWithProcessedColor(user, channel);
+    const userAuthorWithProcessedColor = tmp5(8064).getUserAuthorWithProcessedColor(user, channel);
     const obj4 = {};
     const merged1 = Object.assign(obj2);
     obj4.otherUsername = userAuthorWithProcessedColor.nick;
     const obj5 = { userId: first, message, author: userAuthorWithProcessedColor, roleStyle };
-    obj4.otherUsernameOnClick = tmp8(7963)(obj5);
+    obj4.otherUsernameOnClick = tmp8(8066)(obj5);
     const intl2 = tmp5(1114).intl;
     const formatToParts2 = intl2.formatToParts;
     const t2 = tmp5(1114).t;
@@ -54,7 +54,7 @@ export const createRemoveRecipientSystemMessage = function createRemoveRecipient
       formatToParts2Result = formatToParts2(t2.QtZ0RD, obj4);
     }
     const obj6 = { content: formatToParts2Result };
-    const merged2 = Object.assign(tmp8(7965)(message));
+    const merged2 = Object.assign(tmp8(8068)(message));
     return obj6;
   }
 };

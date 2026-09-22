@@ -1,12 +1,12 @@
-// Module ID: 14792
-// Function ID: 14793
+// Module ID: 14878
+// Function ID: 14879
 // Name: TwoFASetupEnterCode
-// Dependencies: [32, 19, 1895, 14786, 21, 4560, 14789, 1483, 504, 6951, 14683, 1114, 14785, 7123, 1178, 14793, 5586, 2]
+// Dependencies: [32, 19, 1895, 14872, 21, 4636, 14875, 1483, 504, 7052, 14767, 1114, 14871, 7226, 1176, 14879, 5667, 2]
 // Exports: default
 
-// Module 14792 (TwoFASetupEnterCode)
-import MFAUtils from "MFAUtils" /* 6951 */;
-import MFAActionCreatorsDefault from "MFAActionCreators" /* 14683 */;
+// Module 14878 (TwoFASetupEnterCode)
+import MFAUtils from "MFAUtils" /* 7052 */;
+import MFAActionCreatorsDefault from "MFAActionCreators" /* 14767 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1895 */;
@@ -14,10 +14,10 @@ import AppStateStore from "AppStateStore" /* 1895 */;
 const require = globalThis.__r;
 
 require = fn;
-const TwoFAModalSetupSections = fn(14786).TwoFAModalSetupSections;
+const TwoFAModalSetupSections = fn(14872).TwoFAModalSetupSections;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_9 = createStyles.createStyles({ container: { flex: 1, justifyContent: "center", alignItems: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/account/native/mfa_modal_flow/TwoFASetupEnterCode.tsx");

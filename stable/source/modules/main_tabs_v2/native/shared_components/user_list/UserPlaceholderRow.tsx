@@ -1,21 +1,21 @@
-// Module ID: 9835
-// Function ID: 9836
+// Module ID: 9959
+// Function ID: 9960
 // Name: UserPlaceholderRow
-// Dependencies: [19, 17, 4552, 21, 4560, 576, 4296, 504, 4561, 4564, 2]
+// Dependencies: [19, 17, 4628, 21, 4636, 576, 4373, 504, 4637, 4640, 2]
 
-// Module 9835 (UserPlaceholderRow)
+// Module 9959 (UserPlaceholderRow)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import timing from "timing" /* 4561 */;
-import timingPresets from "timingPresets" /* 4564 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import timing from "timing" /* 4637 */;
+import timingPresets from "timingPresets" /* 4640 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_8 = createStyles.createStyles((height) => {
   const obj = { row: { paddingHorizontal: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", height }, rowInner: null, rowHeaderWrapper: null, placeholderAvatar: null, placeholderText: null };
   const obj2 = { paddingHorizontal: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", height };
@@ -43,8 +43,8 @@ export default noop.memo(function UserPlaceholderRow(animate) {
   let sharedValue;
   flag = undefined;
   const tmp3 = closure_8(height);
-  sharedValue = sharedValue(4296).useSharedValue(1);
-  let obj = sharedValue(4296);
+  sharedValue = sharedValue(4373).useSharedValue(1);
+  let obj = sharedValue(4373);
   const tmp4 = sharedValue;
   const items = [AccessibilityStore];
   if (flag) {
@@ -70,7 +70,7 @@ export default noop.memo(function UserPlaceholderRow(animate) {
   fn.__closure = { opacity: sharedValue };
   fn.__workletHash = 10137317865125;
   fn.__initData = __initData;
-  const animatedStyle = tmp4(4296).useAnimatedStyle(fn);
+  const animatedStyle = tmp4(4373).useAnimatedStyle(fn);
   let obj3 = { style: null, collapsable: false, children: null };
   const items2 = [tmp3.row, animatedStyle];
   obj3.style = items2;
@@ -88,5 +88,5 @@ export default noop.memo(function UserPlaceholderRow(animate) {
   obj5.children = closure_6(View, obj6);
   items3[1] = closure_6(View, obj5);
   obj3.children = items3;
-  return closure_7(flag(4296).View, obj3);
+  return closure_7(flag(4373).View, obj3);
 });

@@ -1,27 +1,27 @@
-// Module ID: 16844
-// Function ID: 16845
+// Module ID: 16956
+// Function ID: 16957
 // Name: IntegrationsSettingsWebhooksOverview
-// Dependencies: [5, 19, 1957, 2012, 1979, 4199, 1371, 16845, 1074, 21, 4560, 576, 1483, 1396, 5605, 1178, 1114, 11, 4404, 504, 16846, 8601, 16847, 4271, 2024, 4556, 16849, 5687, 8599, 4973, 7040, 2]
+// Dependencies: [5, 19, 1957, 2012, 1979, 4275, 1371, 16957, 1074, 21, 4636, 576, 1483, 1396, 5686, 1176, 1114, 11, 4481, 504, 16958, 8718, 16959, 4347, 2024, 4632, 16961, 5768, 8716, 5054, 7143, 2]
 // Exports: default
 
-// Module 16844 (IntegrationsSettingsWebhooksOverview)
+// Module 16956 (IntegrationsSettingsWebhooksOverview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import AvatarUtils from "AvatarUtils" /* 1396 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2024 */;
-import Stack_Stack from "Stack/Stack" /* 4973 */;
-import NavScrim from "NavScrim" /* 7040 */;
-import Form from "Form" /* 8599 */;
-import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16846 */;
+import Stack_Stack from "Stack/Stack" /* 5054 */;
+import NavScrim from "NavScrim" /* 7143 */;
+import Form from "Form" /* 8716 */;
+import WebhooksActionCreatorsDefault from "WebhooksActionCreators" /* 16958 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildChannelStore_mod from "GuildChannelStore" /* 2012 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 import UserStore from "UserStore" /* 1371 */;
-import WebhooksStore from "WebhooksStore" /* 16845 */;
+import WebhooksStore from "WebhooksStore" /* 16957 */;
 
 require = fn;
 function WebhookItem(avatar) {
@@ -181,7 +181,7 @@ const Constants = fn(1074);
 ({ HelpdeskArticles: map1, ChannelSettingsSections: closure_14, NON_USER_BOT_DISCRIMINATOR: closure_15, Permissions: closure_16, WebhookTypes: closure_17 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_18, Fragment: closure_19, jsxs: closure_20 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { form: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, content: null, hint: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.content = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING };
@@ -213,7 +213,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   }
   let dkHRkE = dependencyMap;
   const helpText = self.getHelpText();
-  const items = [closure_18(webhookType(4556).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
+  const items = [closure_18(webhookType(4632).Text, { variant: "text-sm/medium", color: "text-muted", children: helpText }), , ];
   let tmp4Result = webhookType === constants3.INCOMING;
   if (tmp4Result) {
     let obj = { guild: self.props.guild, channel: self.props.channel };
@@ -221,7 +221,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
   }
   items[1] = tmp4Result;
   if (0 === found.length) {
-    const obj2 = { Illustration: tmp5(16849).WebhookEmpty, title: null };
+    const obj2 = { Illustration: tmp5(16961).WebhookEmpty, title: null };
     if (webhookType === constants3.CHANNEL_FOLLOWER) {
       const intl2 = tmp5(1114).intl;
       dkHRkE = tmp5(1114).t.dkHRkE;
@@ -231,7 +231,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
       stringResult = intl.string(tmp5(1114).t["4JAVI+"]);
     }
     obj2.title = stringResult;
-    tmp4(tmp5(1178).EmptyState, obj2);
+    tmp4(tmp5(1176).EmptyState, obj2);
   } else {
     const obj3 = {
       hasIcons: true,
@@ -243,7 +243,7 @@ prototype["renderWebhooks"] = function renderWebhooks() {
         })
     };
     const obj4 = { children: null };
-    items[2] = tmp4(tmp5(5687).TableRowGroup, obj3);
+    items[2] = tmp4(tmp5(5768).TableRowGroup, obj3);
     obj4.children = items;
     return closure_20(closure_19, obj4);
   }
@@ -256,7 +256,7 @@ prototype["render"] = function render() {
   obj.children = items;
   return closure_1_20(closure_1_19, obj);
 };
-WebhooksOverview.contextType = fn(4271).ThemeContext;
+WebhooksOverview.contextType = fn(4347).ThemeContext;
 let closure_26 = [];
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/integration_settings/native/IntegrationsSettingsWebhooksOverview.tsx");

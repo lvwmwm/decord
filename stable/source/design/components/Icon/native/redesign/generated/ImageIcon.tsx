@@ -1,13 +1,13 @@
-// Module ID: 5087
-// Function ID: 5088
+// Module ID: 5168
+// Function ID: 5169
 // Name: ImageIcon
-// Dependencies: [19, 21, 576, 4261, 5052, 2]
+// Dependencies: [19, 21, 576, 4337, 5133, 2]
 // Exports: ImageIcon
 
-// Module 5087 (ImageIcon)
+// Module 5168 (ImageIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod5052 from "module_5052" /* 5052 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod5133 from "module_5133" /* 5133 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ImageIcon = function ImageIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5052, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5133, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

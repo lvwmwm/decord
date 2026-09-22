@@ -1,19 +1,19 @@
-// Module ID: 12680
-// Function ID: 12681
+// Module ID: 12809
+// Function ID: 12810
 // Name: ContactSyncModalActionCreators
-// Dependencies: [5, 5281, 1371, 12681, 12683, 12682, 1074, 4770, 12684, 12686, 1242, 12688, 1114, 4905, 4259, 9572, 7045, 4461, 4763, 12689, 1896, 9826, 1093, 12708, 2]
+// Dependencies: [5, 5362, 1371, 12810, 12812, 12811, 1074, 4846, 12813, 12815, 1240, 12817, 1114, 4981, 4335, 9696, 7148, 4537, 4839, 12818, 1896, 9950, 1093, 12837, 2]
 // Exports: bulkAddFriendSuggestions, goBackToLanding, handlePhoneVerificationComplete, openContactSyncModal, openContactSyncModalDeeplink, openContactSyncModalOnboarding, refreshContactSyncPermissionStatus, startContactSync, submitPhone, upsellDismissed, verifyPhone, verifyPhoneWithPassword
 
-// Module 12680 (ContactSyncModalActionCreators)
+// Module 12809 (ContactSyncModalActionCreators)
 import ConstantsIOS from "ConstantsIOS" /* 1093 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4763 */;
-import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7045 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9826 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12684 */;
-import ContactSyncAnalyticsUtils from "ContactSyncAnalyticsUtils" /* 12686 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 4839 */;
+import PhoneActionCreatorsDefault from "PhoneActionCreators" /* 7148 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9950 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12813 */;
+import ContactSyncAnalyticsUtils from "ContactSyncAnalyticsUtils" /* 12815 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5281 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5362 */;
 import UserStore from "UserStore" /* 1371 */;
 
 const require = globalThis.__r;
@@ -532,7 +532,7 @@ function closeContactSyncModal(skip) {
     }
     const tmp16 = closure_15();
     let obj2 = { num_contacts_found: friendsFound, num_contacts_added: friendsAdded };
-    flag2(12686).trackFlowEnd(flag, obj2);
+    flag2(12815).trackFlowEnd(flag, obj2);
     if (tmp16) {
       onComplete(flag);
     } else {
@@ -541,7 +541,7 @@ function closeContactSyncModal(skip) {
         back(closure_2[18]).popWithKey(closure_1_20);
       }, 0);
     }
-    const obj3 = flag2(12686);
+    const obj3 = flag2(12815);
   } else {
     flag2 = flag;
     if (flag === undefined) {
@@ -554,18 +554,18 @@ function closeContactSyncModal(skip) {
     dependencyMap = tmp2;
     if (!back) {
       const obj4 = { num_contacts_found: friendsFound, num_contacts_added: friendsAdded };
-      flag2(12686).trackFlowEnd(flag2, obj4);
-      const obj = flag2(12686);
+      flag2(12815).trackFlowEnd(flag2, obj4);
+      const obj = flag2(12815);
     }
     if (tmp2) {
-      let updateAnimation = back(4763).updateAnimation;
+      let updateAnimation = back(4839).updateAnimation;
       let ModalAnimation = flag2(1093).ModalAnimation;
       if (back) {
         updateAnimation(tmp9, ModalAnimation.SLIDE_IN_OUT_REVERSE);
       } else {
         updateAnimation(tmp9, ModalAnimation.SLIDE_IN_OUT);
       }
-      const tmp8 = back(4763);
+      const tmp8 = back(4839);
     }
     const _setTimeout = setTimeout;
     const timerId1 = setTimeout(() => {
@@ -575,28 +575,28 @@ function closeContactSyncModal(skip) {
         const ModalAnimation = ConstantsIOS.ModalAnimation;
         if (back) {
           updateAnimation(tmp3, ModalAnimation.SLIDE_IN_OUT_REVERSE);
-          const result = tmp7(12708).previousOnboardingStep();
-          const tmp7Result = tmp7(12708);
+          const result = tmp7(12837).previousOnboardingStep();
+          const tmp7Result = tmp7(12837);
         } else {
           updateAnimation(tmp3, ModalAnimation.SLIDE_IN_OUT);
           const obj2 = { skip: flag2 };
-          tmp7(12708).nextOnboardingStep(obj2);
-          const tmp7Result2 = tmp7(12708);
+          tmp7(12837).nextOnboardingStep(obj2);
+          const tmp7Result2 = tmp7(12837);
         }
         const tmpResult = ModalActionCreatorsDefault;
       }
     }, 0);
   }
 }
-const ContactSyncModalStore = fn(12681);
+const ContactSyncModalStore = fn(12810);
 ({ setError: metroRequire, setPermissionState: closure_7, setSuggestions: closure_8, setPhone: closure_9, setPhoneToken: c10, setName: closure_11, useContactSyncModalStore: closure_12, ContactSyncModes: map1, initialize: closure_14, getIsOnboarding: closure_15 } = ContactSyncModalStore);
-const ContactSyncPersistedStore = fn(12683);
+const ContactSyncPersistedStore = fn(12812);
 ({ deleteStoredContacts: closure_16, setStoredContacts: closure_17 } = ContactSyncPersistedStore);
-const ContactSyncConstants = fn(12682);
+const ContactSyncConstants = fn(12811);
 ({ ContactPermissions: closure_18, ContactSyncScenes: closure_19, CONTACT_SYNC_MODAL_KEY: closure_20 } = ContactSyncConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_21, PlatformTypes: closure_22 } = Constants);
-const NativePermissionConstants = fn(4770);
+const NativePermissionConstants = fn(4846);
 ({ NativePermissionStates: closure_23, NativePermissionTypes: closure_24 } = NativePermissionConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/contact_sync/native/ContactSyncModalActionCreators.tsx");
@@ -668,12 +668,12 @@ export const openContactSyncModal = function openContactSyncModal(initialRoutes,
   }
   if (FRIENDS_ADD_FRIENDS_MODAL) {
     const obj2 = { location: FRIENDS_ADD_FRIENDS_MODAL };
-    tmp(12686).trackFlowStart(obj2);
-    const tmpResult = tmp(12686);
+    tmp(12815).trackFlowStart(obj2);
+    const tmpResult = tmp(12815);
   }
   const tmp2 = dependencyMap;
   const obj3 = { initialRoutes: initialRoutes.initialRoutes, openSettingsSheet: initialRoutes.openSettings, customLandingPage: initialRoutes.customLandingPage };
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12689, tmp2.paths), { initialRoutes: initialRoutes.initialRoutes, openSettingsSheet: initialRoutes.openSettings, customLandingPage: initialRoutes.customLandingPage }, closure_1_20).then(arg2);
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12818, tmp2.paths), { initialRoutes: initialRoutes.initialRoutes, openSettingsSheet: initialRoutes.openSettings, customLandingPage: initialRoutes.customLandingPage }, closure_1_20).then(arg2);
 };
 export const openContactSyncModalOnboarding = function openContactSyncModalOnboarding() {
   let flag = arg0;
@@ -710,7 +710,7 @@ export const openContactSyncModalDeeplink = function openContactSyncModalDeeplin
   ContactSyncAnalyticsUtils.trackFlowStart({ location: { page: "Deep Link" } });
   const tmpResult = ContactSyncAnalyticsUtils;
   const obj3 = { initialRoutes: obj.initialRoutes, openSettingsSheet: obj.openSettings, customLandingPage: obj.customLandingPage };
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12689, tmp2.paths), { initialRoutes: obj.initialRoutes, openSettingsSheet: obj.openSettings, customLandingPage: obj.customLandingPage }, closure_1_20).then(undefined);
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12818, tmp2.paths), { initialRoutes: obj.initialRoutes, openSettingsSheet: obj.openSettings, customLandingPage: obj.customLandingPage }, closure_1_20).then(undefined);
 };
 export const refreshContactSyncPermissionStatus = function refreshContactSyncPermissionStatus() {
   const result = ContactSyncUtils.checkContactPermissions();

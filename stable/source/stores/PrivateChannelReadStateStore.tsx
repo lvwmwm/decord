@@ -1,17 +1,17 @@
-// Module ID: 13757
-// Function ID: 13758
+// Module ID: 13843
+// Function ID: 13844
 // Name: PrivateChannelReadStateStore
-// Dependencies: [1961, 1957, 4575, 2011, 7218, 1933, 504, 573, 2]
+// Dependencies: [1961, 1957, 4651, 2011, 7321, 1933, 504, 573, 2]
 
-// Module 13757 (PrivateChannelReadStateStore)
+// Module 13843 (PrivateChannelReadStateStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FunctionUtils from "FunctionUtils" /* 1933 */;
 import ChannelRecord from "ChannelRecord" /* 1961 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import ReadStateStore from "ReadStateStore" /* 4575 */;
+import ReadStateStore from "ReadStateStore" /* 4651 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7218 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7321 */;
 import size from "module_2" /* 2 */;
 
 function rebuildUnreads() {

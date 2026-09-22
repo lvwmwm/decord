@@ -1,9 +1,9 @@
 // Module ID: 17776
 // Function ID: 17777
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 17776
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 40, height: 40, scales: [2, 3], hash: "4b2e500a83e119218e6e2834f09f9cd5", name: "ic_add_tier_40px", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 375, height: 180, scales: [2, 3], hash: "ed3a2617f9b5f5cc8eac96d446f7dd22", name: "intro_header_darker", type: "png" });

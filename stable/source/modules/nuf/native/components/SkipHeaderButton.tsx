@@ -1,18 +1,18 @@
-// Module ID: 12700
-// Function ID: 12701
+// Module ID: 12829
+// Function ID: 12830
 // Name: SkipHeaderButton
-// Dependencies: [19, 21, 4560, 576, 1114, 7864, 2]
+// Dependencies: [19, 21, 4636, 576, 1114, 7966, 2]
 // Exports: default
 
-// Module 12700 (SkipHeaderButton)
+// Module 12829 (SkipHeaderButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import HeaderShared from "HeaderShared" /* 7864 */;
+import HeaderShared from "HeaderShared" /* 7966 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj2 = { button: { color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT }, insideNavigatorButton: { paddingRight: 16 } };
 let closure_3 = createStyles.createStyles(obj2);
 const size = fn(2);

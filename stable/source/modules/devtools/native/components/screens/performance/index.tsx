@@ -1,16 +1,16 @@
-// Module ID: 15731
-// Function ID: 15732
+// Module ID: 15819
+// Function ID: 15820
 // Name: FRAME_BUDGET_MS
-// Dependencies: [2, 15732, 15733, 15734, 15735, 15736, 15737, 15738, 15739]
+// Dependencies: [2, 15820, 15821, 15822, 15823, 15824, 15825, 15826, 15827]
 
-// Module 15731 (FRAME_BUDGET_MS)
-import startFrameMonitor from "startFrameMonitor" /* 15733 */;
-import useMountTimerDefault from "useMountTimer" /* 15734 */;
-import useFrameMonitorDefault from "useFrameMonitor" /* 15735 */;
-import useBenchmarkResultsDefault from "useBenchmarkResults" /* 15736 */;
-import BenchmarkResultsListDefault from "BenchmarkResultsList" /* 15737 */;
-import ScrollBenchmarkDefault from "ScrollBenchmark" /* 15738 */;
-import MountMeasureDefault from "MountMeasure" /* 15739 */;
+// Module 15819 (FRAME_BUDGET_MS)
+import startFrameMonitor from "startFrameMonitor" /* 15821 */;
+import useMountTimerDefault from "useMountTimer" /* 15822 */;
+import useFrameMonitorDefault from "useFrameMonitor" /* 15823 */;
+import useBenchmarkResultsDefault from "useBenchmarkResults" /* 15824 */;
+import BenchmarkResultsListDefault from "BenchmarkResultsList" /* 15825 */;
+import ScrollBenchmarkDefault from "ScrollBenchmark" /* 15826 */;
+import MountMeasureDefault from "MountMeasure" /* 15827 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

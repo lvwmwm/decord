@@ -1,7 +1,7 @@
 // Module ID: 1873
 // Function ID: 1874
 // Name: KeyboardStateDebugging
-// Dependencies: [3, 1116, 2]
+// Dependencies: [3, 1364, 2]
 
 // Module 1873 (KeyboardStateDebugging)
 import LoggerDefault from "Logger" /* 3 */;

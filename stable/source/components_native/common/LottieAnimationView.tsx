@@ -1,10 +1,10 @@
-// Module ID: 5529
-// Function ID: 5530
+// Module ID: 5610
+// Function ID: 5611
 // Name: LottieAnimationView
-// Dependencies: [109, 19, 17, 21, 5530, 2]
+// Dependencies: [109, 19, 17, 21, 5611, 2]
 
-// Module 5529 (LottieAnimationView)
-import _modDef5530 from "module_5530" /* 5530 */;
+// Module 5610 (LottieAnimationView)
+import _modDef5611 from "module_5611" /* 5611 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -71,7 +71,7 @@ prototype["render"] = function render() {
   obj3.style = items1;
   const tmp = _objectWithoutProperties(props, closure_2);
   const merged = Object.assign(tmp);
-  obj2.children = jsx(_modDef5530, { ref: this.setRef, source, style: null });
+  obj2.children = jsx(_modDef5611, { ref: this.setRef, source, style: null });
   return <View style={null} collapsable={props.collapsable}>{null}</View>;
 };
 LottieAnimationView.defaultProps = { autoPlay: true, loop: true, collapsable: false };

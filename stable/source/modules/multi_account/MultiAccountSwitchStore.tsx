@@ -1,16 +1,16 @@
-// Module ID: 13633
-// Function ID: 13634
+// Module ID: 13719
+// Function ID: 13720
 // Name: MultiAccountSwitchStore
-// Dependencies: [12417, 1074, 3, 15, 1099, 1242, 504, 573, 2]
+// Dependencies: [12546, 1074, 3, 15, 1099, 1240, 504, 573, 2]
 
-// Module 13633 (MultiAccountSwitchStore)
+// Module 13719 (MultiAccountSwitchStore)
 import LoggerDefault from "Logger" /* 3 */;
 import fast_connect from "fast_connect" /* 15 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import TokenManagerAll from "TokenManager" /* 1099 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import MultiAccountStore from "MultiAccountStore" /* 12417 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import MultiAccountStore from "MultiAccountStore" /* 12546 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
@@ -94,8 +94,8 @@ const multiAccountSwitchStore = new MultiAccountSwitchStore(DispatcherDefault, {
           obj3.is_user_mismatch = tmp8;
           logger.log("Token mismatch on account switch connection open", obj3);
           const obj5 = id2(15);
-          token2(1242).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_READY_MISMATCH, obj3);
-          const obj6 = token2(1242);
+          token2(1240).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_READY_MISMATCH, obj3);
+          const obj6 = token2(1240);
         }
       }
       let tmp26 = from_user_id !== user.id;
@@ -104,7 +104,7 @@ const multiAccountSwitchStore = new MultiAccountSwitchStore(DispatcherDefault, {
       obj7.linked_user_ids = users1.map((id) => id.id);
       obj7.has_ever_connected = has_ever_connected;
       obj7.switch_origin = switch_origin;
-      let tmp35 = token2(1242);
+      let tmp35 = token2(1240);
       const track = tmp35.track;
       let obj9 = AnalyticEvents;
       if (tmp26) {
@@ -174,8 +174,8 @@ const multiAccountSwitchStore = new MultiAccountSwitchStore(DispatcherDefault, {
             obj13.is_already_corrupted = tmp46;
             logger.log("setToken about to introduce per-user token collision", obj13);
             const obj17 = id2(15);
-            token2(1242).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION_WRITE, obj13);
-            const obj12 = token2(1242);
+            token2(1240).track(AnalyticEvents.MULTI_ACCOUNT_SWITCH_TOKEN_COLLISION_WRITE, obj13);
+            const obj12 = token2(1240);
           }
           obj11 = MultiAccountStore;
         }

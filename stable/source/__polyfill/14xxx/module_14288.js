@@ -1,33 +1,25 @@
 // Module ID: 14288
 // Function ID: 14289
-// Dependencies: [14203, 14289]
-// Exports: getSupportedNumberingSystems
+// Dependencies: []
+// Exports: default
 
 // Module 14288
-const require = globalThis.__r;
+const weakMap = new WeakMap();
 
-const require = arg1;
-const dependencyMap = arg6;
-
-export const getSupportedNumberingSystems = function getSupportedNumberingSystems(locale) {
-  _require = locale;
-  const numberingSystemNames = require("numberingSystemNames").numberingSystemNames;
-  return numberingSystemNames.filter((item) => (function isSupportedNumberingSystem(item, arg1) {
-    let str = arg1;
-    if (undefined === arg1) {
-      str = "en";
-    }
-    try {
-      const concat = "".concat;
-      const combined = "".concat(str, "-u-nu-");
-      const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(combined.concat(item));
-      if (memoizedNumberFormat.resolvedOptions().numberingSystem !== item) {
-        if ("123" === memoizedNumberFormat.format(123)) {
-          return false;
-        }
-      }
-      return true;
-    } catch (err) {
-    }
-  })(item, closure_0));
+export default function getInternalSlots(arg0, arg1) {
+  let items = arg1;
+  if (undefined === arg1) {
+    items = [];
+  }
+  value = weakMap.get(arg0);
+  if (!value) {
+    const _Object = Object;
+    const obj2 = Object.create(null, items.reduce((acc, item) => {
+      acc[item] = { enumerable: false, writable: true, configurable: true };
+      return acc;
+    }, {}));
+    const result = weakMap.set(arg0, obj2);
+    value = obj2;
+  }
+  return value;
 };

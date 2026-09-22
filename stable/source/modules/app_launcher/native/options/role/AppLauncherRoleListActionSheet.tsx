@@ -1,16 +1,16 @@
-// Module ID: 12185
-// Function ID: 12186
+// Module ID: 12314
+// Function ID: 12315
 // Name: AppLauncherRoleListActionSheet
-// Dependencies: [32, 19, 7128, 2016, 2015, 1074, 21, 12183, 9758, 504, 7129, 5605, 4556, 5089, 5517, 4527, 12170, 12171, 2]
+// Dependencies: [32, 19, 7231, 2016, 2015, 1074, 21, 12312, 9882, 504, 7232, 5686, 4632, 5170, 5598, 4603, 12299, 12300, 2]
 // Exports: default
 
-// Module 12185 (AppLauncherRoleListActionSheet)
-import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7129 */;
-import ShieldUserIcon from "ShieldUserIcon" /* 9758 */;
-import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12183 */;
+// Module 12314 (AppLauncherRoleListActionSheet)
+import GuildRoleMemberActionCreatorsAll from "GuildRoleMemberActionCreators" /* 7232 */;
+import ShieldUserIcon from "ShieldUserIcon" /* 9882 */;
+import AppLauncherOptionIconDefault from "AppLauncherOptionIcon" /* 12312 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7128 */;
+import GuildRoleMemberCountStore from "GuildRoleMemberCountStore" /* 7231 */;
 import GuildRoleStore from "GuildRoleStore" /* 2015 */;
 
 const require = globalThis.__r;

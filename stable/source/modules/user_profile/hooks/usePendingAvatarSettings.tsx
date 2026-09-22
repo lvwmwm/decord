@@ -1,14 +1,14 @@
-// Module ID: 8160
-// Function ID: 8161
+// Module ID: 8276
+// Function ID: 8277
 // Name: usePendingAvatarSettings
-// Dependencies: [19, 8161, 8164, 563, 8165, 8167, 8168, 2]
+// Dependencies: [19, 8277, 8280, 563, 8281, 8283, 8284, 2]
 // Exports: default
 
-// Module 8160 (usePendingAvatarSettings)
+// Module 8276 (usePendingAvatarSettings)
 import _mod19 from "module_19" /* 19 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8165 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8167 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8161 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8281 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8283 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8277 */;
 import size from "module_2" /* 2 */;
 
 _mod19.useCallback;
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("modules/user_profile/hooks/usePendingAv
 export default function usePendingAvatarSettings(isTryItOut) {
   isTryItOut = isTryItOut.isTryItOut;
   const guildId = isTryItOut.guildId;
-  const tmp2 = guildId(8164)(isTryItOut.analyticsLocations);
+  const tmp2 = guildId(8280)(isTryItOut.analyticsLocations);
   dependencyMap = tmp2;
   const items = [UserProfileSettingsStore];
   const stateFromStoresObject = isTryItOut(563).useStateFromStoresObject(items, () => {
@@ -55,11 +55,11 @@ export default function usePendingAvatarSettings(isTryItOut) {
   }, items2);
   let obj2 = { pendingAvatar, pendingAvatarDecoration, pendingErrors, setPendingAvatar: null, setPendingAvatarDecoration: null };
   if (isTryItOut) {
-    setTryItOutAvatar = tmp3(8168).setTryItOutAvatar;
+    setTryItOutAvatar = tmp3(8284).setTryItOutAvatar;
   }
   obj2.setPendingAvatar = setTryItOutAvatar;
   if (isTryItOut) {
-    setTryItOutAvatarDecoration = tmp3(8168).setTryItOutAvatarDecoration;
+    setTryItOutAvatarDecoration = tmp3(8284).setTryItOutAvatarDecoration;
   }
   obj2.setPendingAvatarDecoration = setTryItOutAvatarDecoration;
   return obj2;

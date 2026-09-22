@@ -1,21 +1,21 @@
-// Module ID: 15251
-// Function ID: 15252
+// Module ID: 15332
+// Function ID: 15333
 // Name: InputModeSetting
-// Dependencies: [1908, 7976, 4585, 504, 1114, 11473, 9988, 2]
+// Dependencies: [1908, 8079, 4661, 504, 1114, 11605, 10112, 2]
 
-// Module 15251 (InputModeSetting)
+// Module 15332 (InputModeSetting)
 import util from "util" /* 1114 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
 
 require = fn;
-const InputModes = fn(4585).InputModes;
-const SettingBuilders = fn(11473);
+const InputModes = fn(4661).InputModes;
+const SettingBuilders = fn(11605);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["pS+K2L"]);
   },
-  parent: fn(7976).MobileUserSettings.VOICE,
+  parent: fn(8079).MobileUserSettings.VOICE,
   useTrailing: function useInputModeSettingTrailing() {
     const items = [MediaEngineStore];
     if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
@@ -27,7 +27,7 @@ const pressable = SettingBuilders.createPressable({
     }
     return stringResult;
   },
-  onPress: fn(9988).handleInputModePress,
+  onPress: fn(10112).handleInputModePress,
   useSearchTerms() {
     const intl = util.intl;
     const items = [intl.string(util.t.nuFtHH)];

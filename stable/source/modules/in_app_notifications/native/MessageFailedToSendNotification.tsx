@@ -1,18 +1,18 @@
-// Module ID: 10184
-// Function ID: 10185
+// Module ID: 10307
+// Function ID: 10308
 // Name: MessageFailedToSendNotification
-// Dependencies: [19, 17, 21, 4560, 576, 1114, 4571, 4491, 10175, 10185, 10112, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 1114, 4647, 4567, 10298, 10308, 10235, 2]
 
-// Module 10184 (MessageFailedToSendNotification)
+// Module 10307 (MessageFailedToSendNotification)
 import nativeDefault from "native" /* 576 */;
-import Client from "Client" /* 4491 */;
-import transitionToChannel from "transitionToChannel" /* 4571 */;
+import Client from "Client" /* 4567 */;
+import transitionToChannel from "transitionToChannel" /* 4647 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { iconContainer: null };
 let size = { width: 40, height: 40, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, display: "flex", justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md };
 obj.iconContainer = size;
@@ -36,14 +36,14 @@ export default noop.memo(function MessageFailedToSendNotification(notification) 
   const obj2 = { icon: null, children: null, header: null, onPress: null, notification: null };
   const obj3 = { style: closure_6().iconContainer, children: null };
   const tmp = closure_6();
-  obj3.children = jsx(channelId(10185).RetryIcon, { size: "md", color: messageId(576).colors.ICON_SUBTLE });
+  obj3.children = jsx(channelId(10308).RetryIcon, { size: "md", color: messageId(576).colors.ICON_SUBTLE });
   obj2.icon = <View style={closure_6().iconContainer}>{null}</View>;
   const obj5 = { text: null };
   const intl2 = channelId(1114).intl;
   obj5.text = intl2.string(channelId(1114).t.xxRPOT);
-  obj2.children = jsx(channelId(10112).SystemMessageText, { text: null });
+  obj2.children = jsx(channelId(10235).SystemMessageText, { text: null });
   obj2.header = obj;
   obj2.onPress = callback;
   obj2.notification = notification;
-  return jsx(channelId(10175).NotificationPressable, { icon: null, children: null, header: null, onPress: null, notification: null });
+  return jsx(channelId(10298).NotificationPressable, { icon: null, children: null, header: null, onPress: null, notification: null });
 });

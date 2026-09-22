@@ -1,16 +1,16 @@
-// Module ID: 11245
-// Function ID: 11246
+// Module ID: 11377
+// Function ID: 11378
 // Name: AddImageDescriptionModal
-// Dependencies: [32, 19, 17, 4901, 4900, 21, 4560, 576, 504, 1477, 1483, 6981, 11151, 7864, 1114, 9313, 11244, 7085, 10929, 2]
+// Dependencies: [32, 19, 17, 4977, 4976, 21, 4636, 576, 504, 1477, 1483, 7084, 11284, 7966, 1114, 9436, 11376, 7188, 11059, 2]
 // Exports: default
 
-// Module 11245 (AddImageDescriptionModal)
+// Module 11377 (AddImageDescriptionModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10929 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11059 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 4900 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 4976 */;
 
 require = fn;
 function AddDescription(id) {
@@ -70,9 +70,9 @@ function AddDescription(id) {
           const obj2 = {};
           const merged = Object.assign(dependencyMap);
           obj2.description = ref.current;
-          id(9313).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
-          const obj = id(9313);
-          id(11244).close();
+          id(9436).update(closure_1_0, closure_1_1, ChannelMessage.ChannelMessage, obj2);
+          const obj = id(9436);
+          id(11376).close();
         });
         let merged = Object.assign(arg0);
         return renderHeaderTextButton({});
@@ -104,10 +104,10 @@ function AddDescription(id) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const DraftType = fn(4901).DraftType;
+const DraftType = fn(4977).DraftType;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { contentContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, imageContainer: null, image: null, placeholderText: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.imageContainer = { alignItems: "center", borderRadius: nativeDefault.radii.sm };

@@ -1,13 +1,15 @@
 // Module ID: 14407
 // Function ID: 14408
-// Dependencies: [17, 14408]
-// Exports: default
+// Dependencies: [14386]
 
 // Module 14407
-import _mod14408 from "module_14408" /* 14408 */;
-import get_ActivityIndicator from "module_17" /* 17 */;
+import _mod14386 from "module_14386" /* 14386 */;
 
+const tmp = _mod14386.navigator && _mod14386.navigator.userAgent;
+let str = "";
+if (tmp) {
+  const _String = String;
+  str = String(tmp);
+}
 
-export default function getReactNativeVersion() {
-  return _mod14408.getReactNativeVersionWithModules(get_ActivityIndicator.Platform.constants);
-};
+export default str;

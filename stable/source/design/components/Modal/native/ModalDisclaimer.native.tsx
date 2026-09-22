@@ -1,17 +1,17 @@
-// Module ID: 14179
-// Function ID: 14180
+// Module ID: 14265
+// Function ID: 14266
 // Name: ModalDisclaimer
-// Dependencies: [19, 17, 21, 4560, 4556, 2]
+// Dependencies: [19, 17, 21, 4636, 4632, 2]
 // Exports: ModalDisclaimer
 
-// Module 14179 (ModalDisclaimer)
-import Text_Text from "Text/Text" /* 4556 */;
+// Module 14265 (ModalDisclaimer)
+import Text_Text from "Text/Text" /* 4632 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_4 = createStyles.createStyles({ container: { flexDirection: "column", alignItems: "center" }, disclaimer: { marginBottom: 12 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Modal/native/ModalDisclaimer.native.tsx");

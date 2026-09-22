@@ -1,10 +1,10 @@
-// Module ID: 8189
-// Function ID: 8190
+// Module ID: 8305
+// Function ID: 8306
 // Name: preloadUserBannerImage
 // Dependencies: [1396, 1935, 2]
 // Exports: default
 
-// Module 8189 (preloadUserBannerImage)
+// Module 8305 (preloadUserBannerImage)
 import AvatarUtils from "AvatarUtils" /* 1396 */;
 import UserSettings from "UserSettings" /* 1935 */;
 import size from "module_2" /* 2 */;

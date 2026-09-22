@@ -1,8 +1,8 @@
-// Module ID: 12554
-// Function ID: 12555
+// Module ID: 12683
+// Function ID: 12684
 // Dependencies: [2]
 
-// Module 12554
+// Module 12683
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/powerups/badge-packs/group-static.png.js");

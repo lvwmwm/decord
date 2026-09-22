@@ -1,9 +1,9 @@
 // Module ID: 2059
 // Function ID: 2060
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 2059
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
 export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/ZGVzaWdu", scales: [1], hash: "ee62e95bc18a38403f157023d9ffdb0a", name: "pt-BR.messages.ee62e95bc18a38403f157023d9ffdb0a.compiled.messages", type: "jsona" });

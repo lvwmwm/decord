@@ -1,10 +1,10 @@
-// Module ID: 7229
-// Function ID: 7230
+// Module ID: 7332
+// Function ID: 7333
 // Name: SocialLayerStorefrontConstants
 // Dependencies: [1383, 2]
 // Exports: getChannelsGameShopPrefix, isGameShopPath
 
-// Module 7229 (SocialLayerStorefrontConstants)
+// Module 7332 (SocialLayerStorefrontConstants)
 import UserStoreConstants from "UserStoreConstants" /* 1383 */;
 import size from "module_2" /* 2 */;
 
@@ -27,6 +27,7 @@ export const SOCIAL_LAYER_GIFT_CODE_CLAIM_MODAL_TYPE = "Social Layer Gift Code C
 export const SOCIAL_LAYER_STOREFRONT_PRODUCT_DETAILS_MODAL_TYPE = "Social Layer Storefront Product Details Modal";
 export const MARVEL_RIVALS_APPLICATION_ID = "1346069614634864772";
 export const SOCIAL_LAYER_DAYS_TO_CLAIM_ITEM = 14;
+export const SOCIAL_LAYER_COMMERCE_PARTNER_DOCUMENTATION_URL = "https://docs.discord.com/partners/commerce/overview";
 export const getChannelsGameShopPrefix = function getChannelsGameShopPrefix(arg0) {
   return "/channels/" + arg0 + "/game-shop";
 };

@@ -1,20 +1,9 @@
 // Module ID: 12888
 // Function ID: 12889
-// Dependencies: []
-// Exports: severityLevelFromString
+// Dependencies: [1120]
 
 // Module 12888
+import registerAsset from "module_1120" /* 1120 */;
 
-export const severityLevelFromString = function severityLevelFromString(arg0) {
-  let str = "warning";
-  if ("warn" !== arg0) {
-    const items = ["fatal", "error", "warning", "log", "info", "debug"];
-    let str2 = "log";
-    if (items.includes(arg0)) {
-      str2 = arg0;
-    }
-    str = str2;
-  }
-  return str;
-};
-export const validSeverityLevels = ["fatal", "error", "warning", "log", "info", "debug"];
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hub/native/images", width: 200, height: 139.5, scales: [2, 3], hash: "42c68794718ccb3cc57c33bf57ed6d23", name: "hub-header", type: "png" });

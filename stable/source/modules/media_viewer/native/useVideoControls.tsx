@@ -1,43 +1,41 @@
-// Module ID: 8271
-// Function ID: 8272
+// Module ID: 8380
+// Function ID: 8381
 // Name: useVideoControls
-// Dependencies: [32, 19, 4552, 21, 560, 1249, 8272, 4560, 504, 8263, 8273, 8264, 8274, 2]
+// Dependencies: [32, 19, 4628, 21, 560, 1247, 8381, 4636, 504, 8382, 8390, 8383, 8378, 8391, 2]
 // Exports: default, initVideoStateStore, setMuted, setPausedState, setVideoStateControls, toggleMuted, tryPauseCurrentVideo, unpauseCurrentVideoIfNeeded
 
-// Module 8271 (useVideoControls)
-import ReactBatchUpdates from "ReactBatchUpdates" /* 1249 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8263 */;
-import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8272 */;
+// Module 8380 (useVideoControls)
+import ReactBatchUpdates from "ReactBatchUpdates" /* 1247 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8378 */;
+import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8381 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const jsx = fn(21).jsx;
 const module_560 = fn(560);
-const obj4 = module_560.create(() => ({ controls: "PX_16", paused: true }));
-const createStyles = fn(4560);
+let obj4 = module_560.create(() => ({ controls: "PX_16", paused: true }));
+const createStyles = fn(4636);
 let closure_8 = createStyles.createStyles({ slider: { marginBottom: 8 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/media_viewer/native/useVideoControls.tsx");
 
-export default function useVideoControls(arg0, portal, controls) {
-  _require = arg0;
+export default function useVideoControls(index, portal, controls) {
+  _require = index;
   importDefault = controls;
   const tmp = closure_8();
   const tmp2 = _require;
   const items = [useReducedMotion];
   stateFromStores = require("initialize").useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const tmp5 = _slicedToArray(state.useState(false), 2);
+  const tmp5 = _slicedToArray(mediaItemHasSpoiler.useState(false), 2);
   _slicedToArray = tmp6;
-  const MediaViewerSourcesStore = require("useMediaViewerSources").MediaViewerSourcesStore;
-  state = MediaViewerSourcesStore.useState((spoilerIndexes) => {
-    spoilerIndexes = spoilerIndexes.spoilerIndexes;
-    return spoilerIndexes.has(closure_0);
-  });
-  const tmp9 = require("usePrevious")(arg0);
+  let obj = require("initialize");
+  const obj2 = mediaItemHasSpoiler;
+  mediaItemHasSpoiler = require("useMediaItemHasSpoiler").useMediaItemHasSpoiler(index);
+  const tmp9 = require("usePrevious")(index);
   useReducedMotion = tmp9;
   let result = null != controls;
   if (result) {
@@ -50,15 +48,15 @@ export default function useVideoControls(arg0, portal, controls) {
   }
   const tmp11 = require("usePrevious")(videoURI);
   closure_7 = tmp11;
-  const items1 = [controls, videoURI, stateFromStores, tmp11, state, tmp9, arg0];
-  const effect = state.useEffect(() => {
+  const items1 = [controls, videoURI, stateFromStores, tmp11, mediaItemHasSpoiler, tmp9, index];
+  const effect = obj2.useEffect(() => {
     if (closure_5 !== closure_0) {
       if (null != tmp) {
         if (null != videoURI) {
           if (closure_7 !== tmp3) {
             controls.seek(0);
-            let tmp6 = state;
-            if (!state) {
+            let tmp6 = mediaItemHasSpoiler;
+            if (!mediaItemHasSpoiler) {
               tmp6 = stateFromStores;
             }
             controls.pause(tmp6);
@@ -68,12 +66,12 @@ export default function useVideoControls(arg0, portal, controls) {
       }
     }
   }, items1);
-  [][0] = arg0;
+  [][0] = index;
   if (result) {
-    const obj3 = { style: tmp.slider, controls, paused: tmp5[0], setPaused: tmp6, onPlayPress: tmp13 };
-    return videoURI(tmp8(tmp3[12]), obj3, videoURI);
+    obj4 = { style: tmp.slider, controls, paused: tmp5[0], setPaused: tmp6, onPlayPress: tmp13 };
+    return videoURI(tmp8(tmp3[13]), obj4, videoURI);
   }
-  let obj = require("initialize");
+  const obj3 = require("useMediaItemHasSpoiler");
 };
 export const useVideoStateStore = obj4;
 export const initVideoStateStore = function initVideoStateStore() {

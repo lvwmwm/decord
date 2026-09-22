@@ -1,12 +1,12 @@
-// Module ID: 17722
-// Function ID: 17723
+// Module ID: 17836
+// Function ID: 17837
 // Name: GuildSettingsRoleSubscriptionsGroupEdit
-// Dependencies: [5, 32, 19, 17, 1350, 21, 1483, 15215, 17723, 17682, 6981, 17724, 12, 5624, 7377, 1114, 4258, 576, 17726, 17731, 17737, 2]
+// Dependencies: [5, 32, 19, 17, 1348, 21, 1483, 15296, 17837, 17796, 7084, 17838, 12, 5705, 7480, 1114, 4334, 576, 17840, 17845, 17851, 2]
 // Exports: default
 
-// Module 17722 (GuildSettingsRoleSubscriptionsGroupEdit)
-import ToastUtils from "ToastUtils" /* 4258 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 17737 */;
+// Module 17836 (GuildSettingsRoleSubscriptionsGroupEdit)
+import ToastUtils from "ToastUtils" /* 4334 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 17851 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -201,7 +201,7 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
   return error(first1, obj6);
 }
 const ScrollView = fn(17).ScrollView;
-const ApplicationTypes = fn(1350).ApplicationTypes;
+const ApplicationTypes = fn(1348).ApplicationTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
 const size = fn(2);

@@ -1,31 +1,31 @@
-// Module ID: 4773
-// Function ID: 4774
+// Module ID: 4849
+// Function ID: 4850
 // Name: AgeVerificationUtils
-// Dependencies: [5, 32, 19, 4774, 4775, 502, 4781, 1371, 8454, 8413, 1074, 1098, 8400, 8414, 5424, 5423, 1894, 504, 8437, 11932, 573, 8412, 8405, 8418, 8273, 1114, 2946, 13767, 2]
+// Dependencies: [5, 32, 19, 4850, 4851, 502, 4857, 1371, 8571, 8530, 1074, 1098, 8517, 8531, 5505, 1894, 504, 5504, 8554, 12061, 573, 8529, 8522, 8535, 8390, 1114, 2946, 13853, 2]
 // Exports: ageGateSourceHasLightboxBackdrop, getAgeVerificationGetStartedSubtitle, getAgeVerificationGetStartedTitle, isAgeVerificationMessageWithConnectToTeenCta, isAgeVerificationMessageWithManualReviewCta, isAgeVerificationMessageWithRetryCta, isAgeVerified, isAssignedByDiscord, isFullscreenAgeVerificationEntryPoint, isVerifiedAdult, isVerifiedTeen, maybePerformReactiveCheck, shouldShowTiggerPawtect, useInitiateAgeVerification, useInitiateAgeVerificationV2, useIsAgeVerified, useIsAssignedByDiscord, useIsExplicitlyVerifiedAdult, useIsVerifiedAdult, useIsVerifiedTeen, useMaybePerformReactiveCheckForSource, useShouldShowTiggerPawtect, useShowAssignedAgeGroupSettings, useWatchAgeVerificationStatusChange
 
-// Module 4773 (AgeVerificationUtils)
+// Module 4849 (AgeVerificationUtils)
 import initialize from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1114 */;
 import Server from "Server" /* 1894 */;
 import _modDef2946 from "module_2946" /* 2946 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5423 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5424 */;
-import usePreviousDefault from "usePrevious" /* 8273 */;
-import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8418 */;
-import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8437 */;
-import FamilyCenterConnectionPrereqExperiment2 from "FamilyCenterConnectionPrereqExperiment" /* 11932 */;
-import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 13767 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5504 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5505 */;
+import usePreviousDefault from "usePrevious" /* 8390 */;
+import AgeVerificationURLActionCreators from "AgeVerificationURLActionCreators" /* 8535 */;
+import ManualAgeAssuranceFallbackExperiment from "ManualAgeAssuranceFallbackExperiment" /* 8554 */;
+import FamilyCenterConnectionPrereqExperiment2 from "FamilyCenterConnectionPrereqExperiment" /* 12061 */;
+import ReactiveCheckActionCreators from "ReactiveCheckActionCreators" /* 13853 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 4774 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 4775 */;
+import FamilyCenterPendingConnectionStore from "FamilyCenterPendingConnectionStore" /* 4850 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 4851 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MessageStore from "MessageStore" /* 4781 */;
+import MessageStore from "MessageStore" /* 4857 */;
 import UserStore from "UserStore" /* 1371 */;
-import AgeVerificationStore from "AgeVerificationStore" /* 8454 */;
+import AgeVerificationStore from "AgeVerificationStore" /* 8571 */;
 
 const require = globalThis.__r;
 
@@ -207,7 +207,7 @@ function useShouldCallReactiveCheck() {
   }
   _require = tmp5;
   obj = require("initialize");
-  const isFeatureAgeGated = require("RegionalFeatureConfigUtils").useIsFeatureAgeGated(tmp(5424).AgeGatedFeature.REACTIVE_CHECK);
+  const isFeatureAgeGated = require("RegionalFeatureConfigUtils").useIsFeatureAgeGated(tmp(5505).AgeGatedFeature.REACTIVE_CHECK);
   const tmpResult = require("RegionalFeatureConfigUtils");
   const items1 = [AgeVerificationStore];
   const items2 = [tmp5, isFeatureAgeGated];
@@ -239,7 +239,7 @@ function shouldCallReactiveCheck() {
   }
   let tmp7 = !tmp5;
   if (!tmp5) {
-    let isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5424).AgeGatedFeature.REACTIVE_CHECK);
+    let isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5505).AgeGatedFeature.REACTIVE_CHECK);
     if (isFeatureAgeGatedResult) {
       isFeatureAgeGatedResult = AgeVerificationStore.shouldCallReactiveCheck();
     }
@@ -300,13 +300,13 @@ let closure_24 = async function _maybePerformReactiveCheck(arg0, value) {
     }
   }
 };
-fn(8413).FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS;
+fn(8530).FULLSCREEN_AGE_VERIFICATION_ENTRY_POINTS;
 const Constants = fn(1074);
 ({ AbortCodes: map1, MessageEmbedTypes: closure_14 } = Constants);
 const AgeGateConstants = fn(1098);
 ({ AgeGateSource, REACTIVE_CHECK_AGE_GATE_SOURCES: closure_15 } = AgeGateConstants);
-const SafetyToastType = fn(8400).SafetyToastType;
-let items = [fn(8414).AgeVerificationModalEntryPoint.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, fn(8414).AgeVerificationModalEntryPoint.START_STAGE_PROMPT, fn(8414).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND];
+const SafetyToastType = fn(8517).SafetyToastType;
+let items = [fn(8531).AgeVerificationModalEntryPoint.STAGE_CHANNEL_AGE_VERIFICATION_PROMPT, fn(8531).AgeVerificationModalEntryPoint.START_STAGE_PROMPT, fn(8531).AgeVerificationModalEntryPoint.STAGE_CHANNEL_RAISE_HAND];
 const set = new Set(items);
 let items1 = [, , , , , ];
 ({ NSFW_SERVER: arr2[0], NSFW_SERVER_INVITE: arr2[1], NSFW_SERVER_INVITE_EMBED: arr2[2], LARGE_GUILD: arr2[3], JOIN_LARGE_GUILD_UNDERAGE: arr2[4], ACCESS_LARGE_GUILD_UNDERAGE: arr2[5] } = AgeGateSource);
@@ -325,33 +325,24 @@ export const shouldShowTiggerPawtect = function shouldShowTiggerPawtect() {
   if (currentUser != null) {
     prop = currentUser.ageVerificationStatus;
   }
-  let tmp5 = prop !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
-  if (tmp5) {
-    const isFeatureAgeGatedResult = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5424).AgeGatedFeature.REACTIVE_CHECK);
-    let tmp8 = !isFeatureAgeGatedResult;
-    if (isFeatureAgeGatedResult) {
-      tmp8 = prop !== tmp3(1894).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-    }
-    tmp5 = tmp8;
-  }
-  return tmp5;
+  return !(prop === Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT || prop === Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT);
 };
 export const useShouldShowTiggerPawtect = function useShouldShowTiggerPawtect() {
   const items = [UserStore];
   const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let isFeatureAgeGated = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
-  if (isFeatureAgeGated) {
-    let prop;
-    if (stateFromStores != null) {
-      prop = stateFromStores.ageVerificationStatus;
-    }
-    isFeatureAgeGated = prop === tmp(1894).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-  }
-  let prop1;
+  let prop;
   if (stateFromStores != null) {
-    prop1 = stateFromStores.ageVerificationStatus;
+    prop = stateFromStores.ageVerificationStatus;
   }
-  return prop1 !== Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT && !isFeatureAgeGated;
+  let tmp5 = prop === tmp(1894).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
+  if (!tmp5) {
+    let prop1;
+    if (stateFromStores != null) {
+      prop1 = stateFromStores.ageVerificationStatus;
+    }
+    tmp5 = prop1 === tmp(1894).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
+  }
+  return !tmp5;
 };
 export const isVerifiedTeen = function isVerifiedTeen() {
   const currentUser = UserStore.getCurrentUser();
@@ -378,29 +369,24 @@ export const isVerifiedAdult = function isVerifiedAdult() {
   if (currentUser != null) {
     prop = currentUser.ageVerificationStatus;
   }
-  let tmp5 = prop === Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
-  if (!tmp5) {
-    tmp5 = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5424).AgeGatedFeature.REACTIVE_CHECK) && prop === tmp3(1894).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-    const tmp7 = RegionalFeatureConfigStore.isFeatureAgeGated(tmp3(5424).AgeGatedFeature.REACTIVE_CHECK) && prop === tmp3(1894).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-  }
-  return tmp5;
+  return prop === Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT || prop === Server.AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
 };
 export const useIsVerifiedAdult = function useIsVerifiedAdult() {
   const items = [UserStore];
   const stateFromStores = initialize.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let isFeatureAgeGated = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK);
-  if (isFeatureAgeGated) {
-    let prop;
-    if (stateFromStores != null) {
-      prop = stateFromStores.ageVerificationStatus;
-    }
-    isFeatureAgeGated = prop === tmp(1894).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
-  }
-  let prop1;
+  let prop;
   if (stateFromStores != null) {
-    prop1 = stateFromStores.ageVerificationStatus;
+    prop = stateFromStores.ageVerificationStatus;
   }
-  return prop1 === Server.AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT || isFeatureAgeGated;
+  let tmp5 = prop === tmp(1894).AgeVerificationStatusUkAndAusOnly.VERIFIED_ADULT;
+  if (!tmp5) {
+    let prop1;
+    if (stateFromStores != null) {
+      prop1 = stateFromStores.ageVerificationStatus;
+    }
+    tmp5 = prop1 === tmp(1894).AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT;
+  }
+  return tmp5;
 };
 export const useIsExplicitlyVerifiedAdult = function useIsExplicitlyVerifiedAdult() {
   const items = [UserStore];
@@ -702,11 +688,11 @@ export const getAgeVerificationGetStartedSubtitle = function getAgeVerificationG
   return stringResult;
 };
 export { useShouldCallReactiveCheck };
-export const useMaybePerformReactiveCheckForSource = function useMaybePerformReactiveCheckForSource(NSFW_SERVER) {
-  closure_0 = NSFW_SERVER;
+export const useMaybePerformReactiveCheckForSource = function useMaybePerformReactiveCheckForSource(arg0) {
+  closure_0 = arg0;
   const tmp = useShouldCallReactiveCheck();
   closure_1 = tmp;
-  const items = [tmp, NSFW_SERVER];
+  const items = [tmp, arg0];
   const effect = noop.useEffect(() => {
     let hasItem = closure_1;
     if (closure_1) {

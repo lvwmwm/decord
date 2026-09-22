@@ -1,28 +1,59 @@
 // Module ID: 4144
 // Function ID: 4145
-// Dependencies: []
+// Dependencies: [3729, 3725, 3873, 3996, 3726]
+// Exports: default
 
 // Module 4144
-if (Intl.ListFormat) {
-  const _Intl = Intl;
-  if (typeof Intl.ListFormat.__addLocaleData === "function") {
-    const _Intl2 = Intl;
-    const obj2 = { data: null, locale: "th" };
-    const obj3 = { conjunction: null, disjunction: null, unit: null };
-    const obj4 = { long: { end: "{0} \u0E41\u0E25\u0E30{1}", middle: "{0} {1}", pair: "{0}\u0E41\u0E25\u0E30{1}", start: "{0} {1}" }, narrow: { end: "{0} \u0E41\u0E25\u0E30{1}", middle: "{0} {1}", pair: "{0}\u0E41\u0E25\u0E30{1}", start: "{0} {1}" }, short: { end: "{0} \u0E41\u0E25\u0E30{1}", middle: "{0} {1}", pair: "{0}\u0E41\u0E25\u0E30{1}", start: "{0} {1}" } };
-    obj3.conjunction = obj4;
-    const obj5 = { long: { end: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", middle: "{0}, {1}", pair: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", middle: "{0}, {1}", pair: "{0}\u0E2B\u0E23\u0E37\u0E2D{1}", start: "{0}, {1}" }, short: { end: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", middle: "{0}, {1}", pair: "{0}\u0E2B\u0E23\u0E37\u0E2D{1}", start: "{0}, {1}" } };
-    obj3.disjunction = obj5;
-    const obj6 = { long: { end: "{0} \u0E41\u0E25\u0E30 {1}", middle: "{0} {1}", pair: "{0} \u0E41\u0E25\u0E30 {1}", start: "{0} {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} \u0E41\u0E25\u0E30 {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" } };
-    obj3.unit = obj6;
-    obj2.data = obj3;
-    ListFormat.__addLocaleData(obj2);
-  }
+import module_3729_mod from "module_3729" /* 3729 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import module_3873_mod from "module_3873" /* 3873 */;
+import module_3996_mod from "module_3996" /* 3996 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
+
+let module_3729 = module_3729_mod;
+if (!module_3729) {
+  const obj = { default: module_3729 };
+  let tmp3 = obj;
+} else {
+  tmp3 = module_3729;
 }
-let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
-if (!prop) {
-  prop = [];
+module_3729 = tmp3;
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj2 = { default: _typeof };
+  let tmp5 = obj2;
+} else {
+  tmp5 = _typeof;
 }
-globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
-const obj = { data: { conjunction: { long: { end: "{0} \u0E41\u0E25\u0E30{1}", middle: "{0} {1}", pair: "{0}\u0E41\u0E25\u0E30{1}", start: "{0} {1}" }, narrow: { end: "{0} \u0E41\u0E25\u0E30{1}", middle: "{0} {1}", pair: "{0}\u0E41\u0E25\u0E30{1}", start: "{0} {1}" }, short: { end: "{0} \u0E41\u0E25\u0E30{1}", middle: "{0} {1}", pair: "{0}\u0E41\u0E25\u0E30{1}", start: "{0} {1}" } }, disjunction: { long: { end: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", middle: "{0}, {1}", pair: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", start: "{0}, {1}" }, narrow: { end: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", middle: "{0}, {1}", pair: "{0}\u0E2B\u0E23\u0E37\u0E2D{1}", start: "{0}, {1}" }, short: { end: "{0} \u0E2B\u0E23\u0E37\u0E2D {1}", middle: "{0}, {1}", pair: "{0}\u0E2B\u0E23\u0E37\u0E2D{1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} \u0E41\u0E25\u0E30 {1}", middle: "{0} {1}", pair: "{0} \u0E41\u0E25\u0E30 {1}", start: "{0} {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0} \u0E41\u0E25\u0E30 {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" } } }, locale: "th" };
-prop.push(obj);
+_typeof = tmp5;
+let module_3873 = module_3873_mod;
+if (!module_3873) {
+  const obj3 = { default: module_3873 };
+  let tmp7 = obj3;
+} else {
+  tmp7 = module_3873;
+}
+module_3873 = tmp7;
+let module_3996 = module_3996_mod;
+if (!module_3996) {
+  const obj4 = { default: module_3996 };
+  let tmp9 = obj4;
+} else {
+  tmp9 = module_3996;
+}
+module_3996 = tmp9;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj5 = { default: requiredArgs };
+  let tmp11 = obj5;
+} else {
+  tmp11 = requiredArgs;
+}
+requiredArgs = tmp11;
+
+export default function setISODay(arg0, arg1) {
+  requiredArgs.default(2, arguments);
+  const defaultResult1 = _typeof.default(arg0);
+  return module_3873.default(defaultResult1, module_3729.default(arg1) - module_3996.default(defaultResult1));
+};
+export default exports.default;

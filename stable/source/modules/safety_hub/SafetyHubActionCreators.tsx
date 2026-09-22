@@ -1,15 +1,15 @@
-// Module ID: 11886
-// Function ID: 11887
+// Module ID: 12015
+// Function ID: 12016
 // Name: SafetyHubActionCreators
-// Dependencies: [5, 502, 8431, 8420, 1074, 573, 1272, 4710, 8419, 2]
+// Dependencies: [5, 502, 8548, 8537, 1074, 573, 1270, 4786, 8536, 2]
 // Exports: getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification, resetAgeCheckStatus
 
-// Module 11886 (SafetyHubActionCreators)
+// Module 12015 (SafetyHubActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubStore from "SafetyHubStore" /* 8431 */;
+import SafetyHubStore from "SafetyHubStore" /* 8548 */;
 
 require = fn;
 function getSafetyHubData() {
@@ -71,7 +71,7 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
             const obj4 = require("HTTPUtils");
           }
           postResult.then((body) => {
-            ({ classifications, guild_classifications, appeal_eligibility, expressive_modal_v2_enabled, show_expressive_modal_subtitle_alt, manual_review_fallback_enabled, account_standing, is_dsa_eligible, username, is_appeal_eligible } = body.body);
+            ({ classifications, guild_classifications, appeal_eligibility, expressive_modal_v2_enabled, show_expressive_modal_subtitle_alt, manual_review_fallback_enabled, manual_review_decided_underage, account_standing, is_dsa_eligible, username, is_appeal_eligible } = body.body);
             const mapped = classifications.map((flagged_content) => {
               if (null != flagged_content.flagged_content) {
                 if (flagged_content.flagged_content.length > 0) {
@@ -100,7 +100,7 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
             if (guild_classifications == null) {
               guild_classifications = [];
             }
-            let obj = { type: "SAFETY_HUB_FETCH_SUCCESS", classifications: mapped.concat(guild_classifications), accountStanding: account_standing, isDsaEligible: is_dsa_eligible, username, isAppealEligible: is_appeal_eligible, appealEligibility: null, expressiveModalV2Enabled: null, showExpressiveModalSubtitleAlt: null, manualReviewFallbackEnabled: null };
+            let obj = { type: "SAFETY_HUB_FETCH_SUCCESS", classifications: mapped.concat(guild_classifications), accountStanding: account_standing, isDsaEligible: is_dsa_eligible, username, isAppealEligible: is_appeal_eligible, appealEligibility: null, expressiveModalV2Enabled: null, showExpressiveModalSubtitleAlt: null, manualReviewFallbackEnabled: null, manualReviewDecidedUnderage: null };
             if (appeal_eligibility == null) {
               appeal_eligibility = [];
             }
@@ -117,6 +117,10 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
               manual_review_fallback_enabled = false;
             }
             obj.manualReviewFallbackEnabled = manual_review_fallback_enabled;
+            if (manual_review_decided_underage == null) {
+              manual_review_decided_underage = false;
+            }
+            obj.manualReviewDecidedUnderage = manual_review_decided_underage;
             closure_1_1(573).dispatch(obj);
           }).catch((error) => {
             let str;
@@ -134,7 +138,7 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
           c1 = 1;
           c0 = 1;
           const nextPromise = postResult.then((body) => {
-            ({ classifications, guild_classifications, appeal_eligibility, expressive_modal_v2_enabled, show_expressive_modal_subtitle_alt, manual_review_fallback_enabled, account_standing, is_dsa_eligible, username, is_appeal_eligible } = body.body);
+            ({ classifications, guild_classifications, appeal_eligibility, expressive_modal_v2_enabled, show_expressive_modal_subtitle_alt, manual_review_fallback_enabled, manual_review_decided_underage, account_standing, is_dsa_eligible, username, is_appeal_eligible } = body.body);
             const mapped = classifications.map((flagged_content) => {
               if (null != flagged_content.flagged_content) {
                 if (flagged_content.flagged_content.length > 0) {
@@ -163,7 +167,7 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
             if (guild_classifications == null) {
               guild_classifications = [];
             }
-            let obj = { type: "SAFETY_HUB_FETCH_SUCCESS", classifications: mapped.concat(guild_classifications), accountStanding: account_standing, isDsaEligible: is_dsa_eligible, username, isAppealEligible: is_appeal_eligible, appealEligibility: null, expressiveModalV2Enabled: null, showExpressiveModalSubtitleAlt: null, manualReviewFallbackEnabled: null };
+            let obj = { type: "SAFETY_HUB_FETCH_SUCCESS", classifications: mapped.concat(guild_classifications), accountStanding: account_standing, isDsaEligible: is_dsa_eligible, username, isAppealEligible: is_appeal_eligible, appealEligibility: null, expressiveModalV2Enabled: null, showExpressiveModalSubtitleAlt: null, manualReviewFallbackEnabled: null, manualReviewDecidedUnderage: null };
             if (appeal_eligibility == null) {
               appeal_eligibility = [];
             }
@@ -180,6 +184,10 @@ let closure_11 = async function _getSafetyHubData(arg0, value) {
               manual_review_fallback_enabled = false;
             }
             obj.manualReviewFallbackEnabled = manual_review_fallback_enabled;
+            if (manual_review_decided_underage == null) {
+              manual_review_decided_underage = false;
+            }
+            obj.manualReviewDecidedUnderage = manual_review_decided_underage;
             closure_1_1(573).dispatch(obj);
           });
         }
@@ -275,7 +283,7 @@ let closure_12 = async function _getSafetyHubDataForClassification(classificatio
                       items = [first];
                     }
                     found.flagged_content = items;
-                    obj3 = classificationId(8419);
+                    obj3 = classificationId(8536);
                   }
                 }
                 const obj2 = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: found, accountStanding: account_standing, isDsaEligible: is_dsa_eligible, username, isAppealEligible: is_appeal_eligible };
@@ -324,7 +332,7 @@ let closure_12 = async function _getSafetyHubDataForClassification(classificatio
                       items = [first];
                     }
                     found.flagged_content = items;
-                    obj3 = classificationId(8419);
+                    obj3 = classificationId(8536);
                   }
                 }
                 const obj2 = { type: "SAFETY_HUB_FETCH_CLASSIFICATION_SUCCESS", classification: found, accountStanding: account_standing, isDsaEligible: is_dsa_eligible, username, isAppealEligible: is_appeal_eligible };
@@ -713,7 +721,7 @@ let closure_18 = async function _checkSuspendedUserAgeVerificationV(requested_at
     }
   })();
 };
-const SafetyHubConstants = fn(8420);
+const SafetyHubConstants = fn(8537);
 ({ AGE_CHECK_POLL_INTERVAL_MS: metroRequire, AGE_CHECK_MAX_POLL_ATTEMPTS: closure_7, SuspendedAgeCheckStatus: closure_8 } = SafetyHubConstants);
 const Endpoints = fn(1074).Endpoints;
 const size = fn(2);

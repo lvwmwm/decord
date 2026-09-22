@@ -1,16 +1,16 @@
-// Module ID: 9515
-// Function ID: 9516
+// Module ID: 9639
+// Function ID: 9640
 // Name: _launchFrame
-// Dependencies: [5, 9516, 9517, 9511, 9519, 573, 9510, 9520, 9533, 9573, 2]
-// Exports: attachFrameIframe, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
+// Dependencies: [5, 9640, 9641, 9635, 9643, 573, 9634, 9644, 9656, 9697, 2]
+// Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 9515 (_launchFrame)
+// Module 9639 (_launchFrame)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9510 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9519 */;
-import getFramesManagerDefault from "getFramesManager" /* 9573 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9634 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9643 */;
+import getFramesManagerDefault from "getFramesManager" /* 9697 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FramesStore from "FramesStore" /* 9516 */;
+import FramesStore from "FramesStore" /* 9640 */;
 
 require = fn;
 let closure_11 = async function _launchFrame(arg0, value) {
@@ -45,12 +45,13 @@ let closure_11 = async function _launchFrame(arg0, value) {
           closure_129_2 = undefined;
           closure_129_3 = undefined;
           closure_129_4 = undefined;
-          ({ applicationId: closure_129_0, surface: closure_129_1, customId: closure_129_2, referrerId: closure_129_3, analyticsContext: closure_129_4 } = closure_0);
           closure_129_5 = undefined;
+          ({ applicationId: closure_129_0, surface: closure_129_1, customId: closure_129_2, referrerId: closure_129_3, analyticsContext: closure_129_4, hostWindowKey: closure_129_5 } = closure_0);
+          closure_129_6 = undefined;
           let frame;
-          closure_129_7 = undefined;
           closure_129_8 = undefined;
           closure_129_9 = undefined;
+          closure_129_10 = undefined;
           c5 = 1;
           c6 = 1;
           return { value: "PX_16", done: true };
@@ -64,16 +65,16 @@ let closure_11 = async function _launchFrame(arg0, value) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          closure_129_5 = closure_130_9(closure_129_0, closure_129_1);
-          frame = closure_130_4.getFrame(closure_129_5);
+          closure_129_6 = closure_130_9(closure_129_0, closure_129_1);
+          frame = closure_130_4.getFrame(closure_129_6);
           if (null != frame) {
             if (frame.intent === closure_130_5.MAIN) {
-              closure_130_14(closure_129_5);
-              const obj7 = { frameId: closure_129_5, layoutMode: closure_130_6.FOCUSED };
+              closure_130_14(closure_129_6);
+              const obj7 = { frameId: closure_129_6, layoutMode: closure_130_6.FOCUSED };
               closure_130_15(obj7);
             }
             c6 = 3;
-            const obj10 = { value: closure_129_5, done: true };
+            const obj10 = { value: closure_129_6, done: true };
             return obj10;
           } else {
             if (closure_130_8(closure_129_1) === closure_130_5.MAIN) {
@@ -81,7 +82,7 @@ let closure_11 = async function _launchFrame(arg0, value) {
               closure_130_12();
               const obj8 = closure_130_0(closure_130_2[4]);
             }
-            const obj12 = { type: "FRAME_LAUNCH_START", applicationId: closure_129_0, frameId: closure_129_5, surface: closure_129_1 };
+            const obj12 = { type: "FRAME_LAUNCH_START", applicationId: closure_129_0, frameId: closure_129_6, surface: closure_129_1 };
             closure_130_1(closure_130_2[5]).dispatch(obj12);
             c4 = 1;
             const obj9 = closure_130_1(closure_130_2[5]);
@@ -93,11 +94,11 @@ let closure_11 = async function _launchFrame(arg0, value) {
         }
       } else if (2 === tmp7) {
         c4 = 0;
-        closure_129_10 = closure_3;
-        closure_129_8 = closure_130_1(closure_130_2[7])();
+        closure_129_11 = closure_3;
+        closure_129_9 = closure_130_1(closure_130_2[7])();
         c5 = 3;
         c6 = 1;
-        const obj14 = { value: closure_130_0(closure_130_2[8]).getActivityLaunchErrorInfo(closure_129_10, closure_129_0), done: false };
+        const obj14 = { value: closure_130_0(closure_130_2[8]).getActivityLaunchErrorInfo(closure_129_11, closure_129_0), done: false };
         return obj14;
       } else if (3 === tmp7) {
         if (arg0 === 1) {
@@ -108,11 +109,11 @@ let closure_11 = async function _launchFrame(arg0, value) {
           const obj15 = { value, done: true };
           return obj15;
         } else {
-          closure_129_9 = value;
-          closure_129_8.showLaunchErrorModal(closure_129_9.message);
-          const obj16 = { type: "FRAME_LAUNCH_FAIL", applicationId: closure_129_0, frameId: closure_129_5, error: closure_129_10 };
+          closure_129_10 = value;
+          closure_129_9.showLaunchErrorModal(closure_129_10.message);
+          const obj16 = { type: "FRAME_LAUNCH_FAIL", applicationId: closure_129_0, frameId: closure_129_6, error: closure_129_11, analyticsContext: closure_129_4 };
           closure_130_1(closure_130_2[5]).dispatch(obj16);
-          throw closure_129_10;
+          throw closure_129_11;
         }
       } else if (arg0 === 1) {
         c6 = 3;
@@ -123,19 +124,19 @@ let closure_11 = async function _launchFrame(arg0, value) {
         const obj17 = { value, done: true };
         return obj17;
       } else {
-        closure_129_7 = value;
-        const obj19 = { type: "FRAME_LAUNCH", applicationId: closure_129_0, frameId: closure_129_5, surface: closure_129_1, proxyTicket: closure_129_7, customId: closure_129_2, referrerId: closure_129_3, analyticsContext: closure_129_4 };
+        closure_129_8 = value;
+        const obj19 = { type: "FRAME_LAUNCH", applicationId: closure_129_0, frameId: closure_129_6, surface: closure_129_1, proxyTicket: closure_129_8, customId: closure_129_2, referrerId: closure_129_3, analyticsContext: closure_129_4, hostWindowKey: closure_129_5 };
         closure_130_1(closure_130_2[5]).dispatch(obj19);
         c4 = 0;
         c6 = 3;
-        const obj = { value: closure_129_5, done: true };
+        const obj = { value: closure_129_6, done: true };
         return obj;
       }
-    } catch (tmp65) {
-      closure_3 = tmp65;
+    } catch (tmp66) {
+      closure_3 = tmp66;
       if (tmp4 === c4) {
         c6 = tmp2;
-        throw tmp65;
+        throw tmp66;
       } else {
         c5 = tmp;
       }
@@ -319,9 +320,9 @@ let closure_16 = async function _refreshProxyTicket(arg0, value) {
     }
   }
 };
-const FramesConstants = fn(9517);
+const FramesConstants = fn(9641);
 ({ FrameIntent: hasOwnProperty, FrameLayoutModes: metroRequire, getChannelIdForSurface: closure_7, getFrameIntentForSurface: closure_8, makeFrameId: closure_9 } = FramesConstants);
-const ActivityPanelModes = fn(9511).ActivityPanelModes;
+const ActivityPanelModes = fn(9635).ActivityPanelModes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 
@@ -358,6 +359,12 @@ export const attachFrameIframe = function attachFrameIframe(frameId, iframeId) {
 };
 export const detachFrameIframe = function detachFrameIframe(frameId, iframeId) {
   DispatcherDefault.dispatch({ type: "FRAME_IFRAME_UNMOUNT", frameId, iframeId });
+};
+export const attachFrameHostWindow = function attachFrameHostWindow(frameId, windowKey) {
+  DispatcherDefault.dispatch({ type: "FRAME_HOST_WINDOW_MOUNT", frameId, windowKey });
+};
+export const detachFrameHostWindow = function detachFrameHostWindow(frameId, windowKey) {
+  DispatcherDefault.dispatch({ type: "FRAME_HOST_WINDOW_UNMOUNT", frameId, windowKey });
 };
 export const refreshProxyTicket = function refreshProxyTicket() {
   const self = this;

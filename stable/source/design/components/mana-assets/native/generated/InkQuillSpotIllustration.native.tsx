@@ -1,13 +1,13 @@
-// Module ID: 6211
-// Function ID: 6212
+// Module ID: 6312
+// Function ID: 6313
 // Name: InkQuillSpotIllustration
-// Dependencies: [21, 5587, 6212, 2]
+// Dependencies: [21, 5668, 6313, 2]
 // Exports: InkQuillSpotIllustration
 
-// Module 6211 (InkQuillSpotIllustration)
+// Module 6312 (InkQuillSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6212 from "module_6212" /* 6212 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6313 from "module_6313" /* 6313 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const InkQuillSpotIllustration = function InkQuillSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6212 };
+  const obj2 = { uri: _modDef6313 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

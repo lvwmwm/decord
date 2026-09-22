@@ -1,24 +1,24 @@
-// Module ID: 7280
-// Function ID: 7281
+// Module ID: 7383
+// Function ID: 7384
 // Name: ChannelSectionStore
-// Dependencies: [4476, 7281, 1961, 1957, 1979, 4199, 2011, 4381, 1371, 1074, 1964, 1085, 7282, 7283, 1109, 11, 4801, 504, 1433, 573, 2]
+// Dependencies: [4552, 7384, 1961, 1957, 1979, 4275, 2011, 4458, 1371, 1074, 1964, 1085, 7385, 7386, 1109, 11, 4877, 504, 1433, 573, 2]
 // Exports: isViewChannelSidebar
 
-// Module 7280 (ChannelSectionStore)
+// Module 7383 (ChannelSectionStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
 import ApexExperiment from "ApexExperiment" /* 1433 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 7282 */;
-import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 7283 */;
-import ExperimentStore from "ExperimentStore" /* 4476 */;
-import SearchMessageStore from "SearchMessageStore" /* 7281 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 7385 */;
+import FriendsSidebarExperimentDefault from "FriendsSidebarExperiment" /* 7386 */;
+import ExperimentStore from "ExperimentStore" /* 4552 */;
+import SearchMessageStore from "SearchMessageStore" /* 7384 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import GuildStore from "GuildStore" /* 1979 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4381 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;
@@ -500,7 +500,15 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
     let flag = null != guildSidebars[arg0.guildId];
     if (flag) {
       delete tmp[tmp2];
+      let hasSearchStateResult = null != searchContextId;
+      if (hasSearchStateResult) {
+        hasSearchStateResult = SearchMessageStore.hasSearchState(searchContextId);
+      }
       flag = true;
+      if (hasSearchStateResult !== c24) {
+        c24 = hasSearchStateResult;
+        flag = true;
+      }
     }
     return flag;
   },
@@ -568,7 +576,7 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
         if (sidebars[channelId] != null) {
           type = tmp10.type;
         }
-        if (type === tmp(7282).SidebarType.VIEW_CHANNEL) {
+        if (type === tmp(7385).SidebarType.VIEW_CHANNEL) {
           if (tmp10.channelId === channelId) {
             return flag;
           }
@@ -578,8 +586,8 @@ const channelSectionStore = new ChannelSectionStore(DispatcherDefault, {
         if (null != channel) {
           flag2 = flag;
           if (isChannelChatInSidebar(channel.type)) {
-            const obj = { type: tmp(7282).SidebarType.VIEW_CHANNEL, channelId, details: null };
-            const obj2 = { type: tmp(7282).ViewChannelDetailType.CHAT, initialMessageId: messageId };
+            const obj = { type: tmp(7385).SidebarType.VIEW_CHANNEL, channelId, details: null };
+            const obj2 = { type: tmp(7385).ViewChannelDetailType.CHAT, initialMessageId: messageId };
             obj.details = obj2;
             sidebars[channelId] = obj;
             flag2 = true;

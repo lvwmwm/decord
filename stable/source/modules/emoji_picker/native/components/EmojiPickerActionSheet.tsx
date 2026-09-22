@@ -1,32 +1,32 @@
-// Module ID: 11127
-// Function ID: 11128
+// Module ID: 11260
+// Function ID: 11261
 // Name: EmojiPickerActionSheet
-// Dependencies: [32, 19, 17, 1371, 10295, 1074, 1374, 21, 4560, 576, 7763, 4296, 10290, 6981, 1611, 1115, 7162, 7182, 10293, 4527, 11126, 11128, 4556, 1114, 7050, 11130, 4218, 11141, 1896, 4528, 4529, 10280, 7150, 4432, 10294, 10333, 10352, 2]
+// Dependencies: [32, 19, 17, 1371, 10419, 1074, 1374, 21, 4636, 576, 7865, 4373, 10414, 7084, 1611, 1363, 7265, 7285, 10417, 4603, 11259, 11261, 4632, 1114, 7153, 11263, 4294, 11274, 1896, 4604, 4605, 10404, 7253, 4509, 10418, 10457, 10476, 2]
 // Exports: default
 
-// Module 11127 (EmojiPickerActionSheet)
+// Module 11260 (EmojiPickerActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import SearchField from "SearchField" /* 7050 */;
-import EmojiPickerUtils from "EmojiPickerUtils" /* 10290 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11126 */;
-import DoubleTapReminderToast from "DoubleTapReminderToast" /* 11128 */;
-import BurstReactionToggleDefault from "BurstReactionToggle" /* 11130 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import SearchField from "SearchField" /* 7153 */;
+import EmojiPickerUtils from "EmojiPickerUtils" /* 10414 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11259 */;
+import DoubleTapReminderToast from "DoubleTapReminderToast" /* 11261 */;
+import BurstReactionToggleDefault from "BurstReactionToggle" /* 11263 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;
 const View = fn(17).View;
-const EmojiPickerSource = fn(10295).EmojiPickerSource;
+const EmojiPickerSource = fn(10419).EmojiPickerSource;
 const EXPRESSION_FOOTER_HEIGHT = fn(1074).EXPRESSION_FOOTER_HEIGHT;
 let EmojiIntention = fn(1374).EmojiIntention;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const EmojiPickerActionSheet = "EmojiPickerActionSheet";
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { header: { flexDirection: "column" }, searchContainer: { display: "flex", flexDirection: "row", marginBottom: -nativeDefault.space.PX_16 }, content: null, background: null, headerText: null, headerSpacer: null, burstReaction: null };
 let obj3 = { display: "flex", flexDirection: "row", marginBottom: -nativeDefault.space.PX_16 };
 obj2.content = { paddingHorizontal: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_EXPRESSION_PICKER_BACKGROUND_DEFAULT };

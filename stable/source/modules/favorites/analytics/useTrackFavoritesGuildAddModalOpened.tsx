@@ -1,11 +1,11 @@
-// Module ID: 10985
-// Function ID: 10986
+// Module ID: 11116
+// Function ID: 11117
 // Name: useTrackFavoritesGuildAddModalOpened
-// Dependencies: [19, 1074, 1242, 2]
+// Dependencies: [19, 1074, 1240, 2]
 // Exports: default
 
-// Module 10985 (useTrackFavoritesGuildAddModalOpened)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+// Module 11116 (useTrackFavoritesGuildAddModalOpened)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import noop from "module_19" /* 19 */;
 
 const AnalyticEvents = fn(1074).AnalyticEvents;

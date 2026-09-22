@@ -1,9 +1,9 @@
 // Module ID: 11582
 // Function ID: 11583
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 11582
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 52, height: 54, scales: [1], hash: "952194349b0f8cbc08a58b40dbb32cb2", name: "connections-profile-steam-tf2", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 380, height: 242, scales: [1], hash: "20a937ca7af234a5d3bd2269cf0e9463", name: "confetti", type: "png" });

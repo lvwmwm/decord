@@ -1,9 +1,9 @@
 // Module ID: 15060
 // Function ID: 15061
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 15060
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "d6f5a76861191f4dd121da59ef71950f", name: "ArrowSmallUpIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "24a38b74eed4b16cf7662ebd8e1be84d", name: "ic_message_retry", type: "png" });

@@ -1,19 +1,19 @@
-// Module ID: 14591
-// Function ID: 14592
+// Module ID: 14676
+// Function ID: 14677
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 8193, 9214, 7208, 1074, 1084, 14592, 21, 6989, 14593, 4218, 7162, 7182, 14594, 4527, 14595, 1896, 8168, 8165, 8167, 1114, 8242, 14606, 8163, 6625, 6981, 576, 11151, 14607, 10739, 11876, 8187, 11115, 11971, 8170, 8243, 13071, 11203, 504, 8198, 8228, 8239, 14610, 4556, 4271, 11116, 14611, 11117, 11157, 14616, 14617, 14622, 14626, 14628, 14629, 14633, 14637, 14642, 14643, 14646, 14647, 2]
+// Dependencies: [19, 17, 8309, 9337, 7311, 1074, 1084, 14677, 21, 7092, 14678, 4294, 7265, 7285, 14679, 4603, 14680, 1896, 8284, 8281, 8283, 1114, 8357, 14691, 8279, 6726, 7084, 576, 11284, 14692, 10863, 12005, 8303, 11248, 12100, 8286, 8358, 11335, 504, 8314, 13207, 8343, 8354, 14695, 4632, 4347, 11249, 14696, 11250, 11290, 14701, 14702, 14707, 14711, 14713, 14714, 14718, 14722, 14727, 14728, 14731, 14732, 2]
 // Exports: default
 
-// Module 14591 (UserProfileEditForm)
+// Module 14676 (UserProfileEditForm)
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8167 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8198 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 13071 */;
-import _modDef14593 from "module_14593" /* 14593 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8283 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8314 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 13207 */;
+import _modDef14678 from "module_14678" /* 14678 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8193 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9214 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8309 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9337 */;
 
 require = fn;
 function EditUserProfileBanner(user) {
@@ -45,12 +45,12 @@ function EditUserProfileBanner(user) {
     const obj2 = { user, analyticsLocations, onBannerChange: null, showRemoveBanner: null, isTryItOut: null };
     obj = ActionSheetActionCreatorsDefault;
     if (isTryItOut) {
-      let fn = tmp2(8168).setTryItOutBanner;
+      let fn = tmp2(8284).setTryItOutBanner;
     } else {
       fn = (banner) => user(isTryItOut[19]).setPendingChanges({ banner });
     }
     obj2.onBannerChange = fn;
-    const tmp3 = asyncRequireImpl(14595, dependencyMap.paths);
+    const tmp3 = asyncRequireImpl(14680, dependencyMap.paths);
     const tmp4 = isTryItOut;
     let banner;
     if (displayProfile != null) {
@@ -68,14 +68,14 @@ function EditUserProfileBanner(user) {
 }
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const FLOATING_UPSELL_HEIGHT = fn(7208).FLOATING_UPSELL_HEIGHT;
+const FLOATING_UPSELL_HEIGHT = fn(7311).FLOATING_UPSELL_HEIGHT;
 const Constants = fn(1074);
 ({ DISPLAY_NAME_MAX_LENGTH: closure_9, PRONOUNS_MAX_LENGTH: c10 } = Constants);
 let closure_11 = fn(1084).ProfileCustomizationScrollPositions;
-const constants = fn(14592).UserProfileEditAutoFocusElement;
+const constants = fn(14677).UserProfileEditAutoFocusElement;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { assetOrigin: fn(6989).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14593, staticImageUri: _modDef14593, description: "", originalAsset: "call" };
+let obj = { assetOrigin: fn(7092).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14678, staticImageUri: _modDef14678, description: "", originalAsset: "ti" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 
@@ -135,18 +135,16 @@ export default function UserProfileEditForm(currentUser) {
   const pendingAvatarSrc = str(pendingBadgeHiddenBadges[35]).getPendingAvatarSrc({ userId: str.id, image: pendingAvatar });
   const tmp19 = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[36])(tmp16Result, pendingLegacyUsernameDisabled);
   noop = tmp19;
-  const items1 = [tmp19, pendingBadgeDisplayOrder, pendingBadgeHiddenBadges];
-  const memo = obj2.useMemo(() => PendingBadgeSettings.applyPendingBadgeSettingsToProfileBadges(closure_3, { pendingBadgeDisplayOrder, pendingBadgeHiddenBadges }), items1);
   const obj9 = { userId: str.id, image: pendingAvatar };
   const tmp5Result8 = str(pendingBadgeHiddenBadges[35]);
-  isBadgeManagementEnabled = str(pendingBadgeHiddenBadges[38]).useIsBadgeManagementEnabled({ location: "UserProfileEditForm" });
-  const tmp5Result9 = str(pendingBadgeHiddenBadges[38]);
+  isBadgeManagementEnabled = str(pendingBadgeHiddenBadges[37]).useIsBadgeManagementEnabled({ location: "UserProfileEditForm" });
+  const tmp5Result9 = str(pendingBadgeHiddenBadges[37]);
+  const items1 = [stateFromStoresArray];
+  stateFromStores = str(pendingBadgeHiddenBadges[38]).useStateFromStores(items1, () => BadgeDirectoryStore.hasCatalogFor(str.id));
+  const tmp5Result10 = str(pendingBadgeHiddenBadges[38]);
   const items2 = [stateFromStoresArray];
-  stateFromStores = str(pendingBadgeHiddenBadges[39]).useStateFromStores(items2, () => BadgeDirectoryStore.hasCatalogFor(str.id));
-  const tmp5Result10 = str(pendingBadgeHiddenBadges[39]);
-  const items3 = [stateFromStoresArray];
-  stateFromStoresArray = str(pendingBadgeHiddenBadges[39]).useStateFromStoresArray(items3, () => BadgeDirectoryStore.getBadges(str.id));
-  const items4 = [str.id, isBadgeManagementEnabled];
+  stateFromStoresArray = str(pendingBadgeHiddenBadges[38]).useStateFromStoresArray(items2, () => BadgeDirectoryStore.getBadges(str.id));
+  const items3 = [str.id, isBadgeManagementEnabled];
   const effect = obj2.useEffect(() => {
     if (isBadgeManagementEnabled) {
       if (!tmp2) {
@@ -154,7 +152,9 @@ export default function UserProfileEditForm(currentUser) {
       }
       tmp2 = BadgeDirectoryStore.hasCatalogFor(str.id) && !BadgeDirectoryStore.isCatalogStaleFor(str.id);
     }
-  }, items4);
+  }, items3);
+  const items4 = [tmp19, stateFromStoresArray, pendingBadgeDisplayOrder, pendingBadgeHiddenBadges];
+  const memo = obj2.useMemo(() => PendingBadgeSettings.getPendingProfileBadges(closure_3, stateFromStoresArray, { pendingBadgeDisplayOrder, pendingBadgeHiddenBadges }), items4);
   const items5 = [stateFromStores, stateFromStoresArray, pendingBadgeDisplayOrder, pendingBadgeHiddenBadges];
   const memo1 = obj2.useMemo(() => {
     let found = null;
@@ -169,7 +169,7 @@ export default function UserProfileEditForm(currentUser) {
   if (stateFromStores) {
     someResult = stateFromStoresArray.some((owned) => owned.owned);
   }
-  const tmp5Result11 = str(pendingBadgeHiddenBadges[39]);
+  const tmp5Result11 = str(pendingBadgeHiddenBadges[38]);
   let result = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[11]).canUsePremiumProfileCustomization(str);
   let legacyUsername;
   if (tmp16Result != null) {
@@ -285,7 +285,6 @@ export default function UserProfileEditForm(currentUser) {
   items11[2] = { paddingTop: 0, paddingBottom: sum1 };
   obj19.containerStyle = items11;
   const obj18 = { user: str, disabled: isSubmitting, disableStatus: null != isTryItOut, statusStyle: obj11, isTryItOut, autoStartEditFlow: autoFocusElement === constants.AVATAR };
-  const tmp46 = constants;
   const tmpResult12 = pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[46]);
   const items12 = [closure_13(pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[48]), { customStatusActivity, hasCustomProfileTheme: null != primaryColor, style: tmp3.customStatusBubble, emojiOnlyStyle: tmp3.emojiOnlyCustomStatusBubble, editEnabled: true }), , ];
   const obj21 = { user: str, displayName: pendingGlobalName, badges: memo, catalogBadges: memo1, pronouns: null, badgeContainerBackground: null, displayNameAccessibilityRole: "header", pendingDisplayNameStyles: null };
@@ -360,7 +359,7 @@ export default function UserProfileEditForm(currentUser) {
   items14[3] = closure_13(pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[50]), obj27);
   let tmp41Result7 = !isTryItOut;
   if (!isTryItOut) {
-    const obj28 = { badges: memo, catalogBadges: memo1, ownsAnyBadge: someResult };
+    const obj28 = { badges: memo, catalogBadges: memo1, ownsAnyBadge: someResult, autoOpen: autoFocusElement === tmp46.BADGES };
     tmp41Result7 = tmp41(tmp(tmp2[52]), obj28);
   }
   items14[4] = tmp41Result7;
@@ -377,7 +376,7 @@ export default function UserProfileEditForm(currentUser) {
   obj29.onChange = function onChange(bio) {
     return str(pendingBadgeHiddenBadges[19]).setPendingChanges({ bio });
   };
-  obj29.autoFocus = autoFocusElement === tmp46.BIO;
+  obj29.autoFocus = autoFocusElement === constants.BIO;
   obj29.maxLength = bioMaxLength;
   obj29.isDisabled = isSubmitting;
   items14[5] = closure_13(pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[50]), obj29);
@@ -437,7 +436,7 @@ export default function UserProfileEditForm(currentUser) {
     children: closure_13(pendingBadgeDisplayOrder(pendingBadgeHiddenBadges[59]), { user: str, disabled: isSubmitting, tagStyle: { backgroundColor: containerBackground }, pendingPrimaryGuildId })
   };
   items14[12] = closure_13(stateFromStores, obj34);
-  let tmp41Result9 = null != legacyUsername;
+  let tmp41Result9 = null != legacyUsername && !isBadgeManagementEnabled;
   if (tmp41Result9) {
     const obj36 = { legacyUsername, pendingLegacyUsernameDisabled };
     tmp41Result9 = tmp41(tmp(tmp2[60]), obj36);

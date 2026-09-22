@@ -1,20 +1,20 @@
-// Module ID: 13359
-// Function ID: 13360
+// Module ID: 13511
+// Function ID: 13512
 // Name: PromotionUtils
-// Dependencies: [5, 1221, 10671, 10670, 1373, 1074, 1920, 4411, 1272, 1115, 1242, 1384, 1943, 11, 1945, 10702, 2]
+// Dependencies: [5, 1219, 10795, 10794, 1373, 1074, 1920, 4488, 1270, 1363, 1240, 1384, 1943, 11, 1945, 10826, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 13359 (PromotionUtils)
+// Module 13511 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
+import PlatformUtils from "PlatformUtils" /* 1363 */;
 import FlagUtils from "FlagUtils" /* 1384 */;
 import dismissible_content from "dismissible_content" /* 1943 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 1945 */;
-import constants from "constants" /* 10702 */;
+import constants from "constants" /* 10826 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
-import PromotionRecord from "PromotionRecord" /* 10671 */;
-import PromotionsStore from "PromotionsStore" /* 10670 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import PromotionRecord from "PromotionRecord" /* 10795 */;
+import PromotionsStore from "PromotionsStore" /* 10794 */;
 
 require = fn;
 function claimedOutboundPromotionCodeFromServer(code) {

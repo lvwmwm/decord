@@ -1,17 +1,17 @@
-// Module ID: 12160
-// Function ID: 12161
+// Module ID: 12289
+// Function ID: 12290
 // Name: ApplicationCommandValidators
-// Dependencies: [2025, 4900, 1894, 9420, 38, 1114, 9418, 7521, 9421, 2]
+// Dependencies: [2025, 4976, 1894, 9544, 38, 1114, 9542, 7624, 9545, 2]
 
-// Module 12160 (ApplicationCommandValidators)
+// Module 12289 (ApplicationCommandValidators)
 import _modDef38 from "module_38" /* 38 */;
 import util from "util" /* 1114 */;
 import Server from "Server" /* 1894 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7521 */;
-import ApplicationCommandOptionUtilsAll from "ApplicationCommandOptionUtils" /* 9418 */;
-import ApplicationCommandChoiceUtils from "ApplicationCommandChoiceUtils" /* 9420 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7624 */;
+import ApplicationCommandOptionUtilsAll from "ApplicationCommandOptionUtils" /* 9542 */;
+import ApplicationCommandChoiceUtils from "ApplicationCommandChoiceUtils" /* 9544 */;
 import LocaleStore from "LocaleStore" /* 2025 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 4900 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 4976 */;
 
 require = fn;
 function validateNumericOptionRange(NumberResult, minValue, _8Y5zsp, CyRLmH, VD3Q_S) {
@@ -76,14 +76,14 @@ export default {
       return { success: false };
     }
     if (null != type2.choices) {
-      const obj = { success: null != tmp3(9420).findChoiceStringValue(type2.choices, surrogate) };
+      const obj = { success: null != tmp3(9544).findChoiceStringValue(type2.choices, surrogate) };
       return obj;
     } else {
       if (type2.autocomplete) {
         if (null != tmp3Result2.findAutocompleteChoiceStringValue(id, type2.name, surrogate)) {
           return { success: true };
         }
-        tmp3Result2 = tmp3(9420);
+        tmp3Result2 = tmp3(9544);
       }
       if (undefined !== type2.minLength) {
         if (null == surrogate) {
@@ -154,14 +154,14 @@ export default {
     if (null != trimmed) {
       if (0 !== trimmed.length) {
         if (null != type2.choices) {
-          const obj = { success: null != tmp3(9420).findChoiceNumberValue(type2.choices, trimmed) };
+          const obj = { success: null != tmp3(9544).findChoiceNumberValue(type2.choices, trimmed) };
           return obj;
         } else {
           if (type2.autocomplete) {
             if (null != tmp3Result2.findAutocompleteChoiceNumberValue(id, type2.name, trimmed)) {
               return { success: true };
             }
-            tmp3Result2 = tmp3(9420);
+            tmp3Result2 = tmp3(9544);
           }
           const _Number = Number;
           const NumberResult = Number(ApplicationCommandOptionUtilsAll.normalizeNumericString(LocaleStore.locale, trimmed));
@@ -193,14 +193,14 @@ export default {
     if (null != trimmed) {
       if (0 !== trimmed.length) {
         if (null != type2.choices) {
-          const obj = { success: null != tmp3(9420).findChoiceNumberValue(type2.choices, trimmed) };
+          const obj = { success: null != tmp3(9544).findChoiceNumberValue(type2.choices, trimmed) };
           return obj;
         } else {
           if (type2.autocomplete) {
             if (null != tmp3Result2.findAutocompleteChoiceNumberValue(id, type2.name, trimmed)) {
               return { success: true };
             }
-            tmp3Result2 = tmp3(9420);
+            tmp3Result2 = tmp3(9544);
           }
           const _Number = Number;
           const NumberResult = Number(ApplicationCommandOptionUtilsAll.normalizeNumericString(LocaleStore.locale, trimmed));
@@ -226,7 +226,7 @@ export default {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmpResult = tmp(9421);
+        const tmpResult = tmp(9545);
         const applicationCommandOption = tmpResult.resolveApplicationCommandOption(type.text, id, id2, { allowRoles: false });
         type = undefined;
         if (applicationCommandOption != null) {
@@ -247,7 +247,7 @@ export default {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const applicationCommandOption = tmp(9421).resolveApplicationCommandOption(type.text, id, id2);
+        const applicationCommandOption = tmp(9545).resolveApplicationCommandOption(type.text, id, id2);
         type = undefined;
         if (applicationCommandOption != null) {
           type = applicationCommandOption.type;
@@ -267,7 +267,7 @@ export default {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const tmp3Result = tmp3(9421);
+        const tmp3Result = tmp3(9545);
         const applicationCommandOption = tmp3Result.resolveApplicationCommandOption(type.text, id, id2, { allowUsers: false });
         type = undefined;
         if (applicationCommandOption != null) {
@@ -296,7 +296,7 @@ export default {
       if (obj2.isSnowflake(type.text)) {
         return { success: true };
       } else {
-        const applicationCommandOption = tmp4(9421).resolveApplicationCommandOption(type.text, id, id2);
+        const applicationCommandOption = tmp4(9545).resolveApplicationCommandOption(type.text, id, id2);
         let tmp10 = null != applicationCommandOption;
         if (tmp10) {
           let tmp11 = "userMention" === applicationCommandOption.type;

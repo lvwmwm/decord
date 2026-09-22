@@ -1,13 +1,13 @@
-// Module ID: 5749
-// Function ID: 5750
+// Module ID: 5850
+// Function ID: 5851
 // Name: AppsButtonSpotIllustration
-// Dependencies: [21, 5587, 5750, 2]
+// Dependencies: [21, 5668, 5851, 2]
 // Exports: AppsButtonSpotIllustration
 
-// Module 5749 (AppsButtonSpotIllustration)
+// Module 5850 (AppsButtonSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef5750 from "module_5750" /* 5750 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef5851 from "module_5851" /* 5851 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AppsButtonSpotIllustration = function AppsButtonSpotIllustration(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef5750 };
+  const obj2 = { uri: _modDef5851 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

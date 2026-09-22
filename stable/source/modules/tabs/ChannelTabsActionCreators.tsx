@@ -1,18 +1,18 @@
-// Module ID: 10994
-// Function ID: 10995
+// Module ID: 11125
+// Function ID: 11126
 // Name: ChannelTabsActionCreators
-// Dependencies: [1957, 2011, 4381, 10995, 1074, 1964, 4761, 1100, 4571, 573, 2]
+// Dependencies: [1957, 2011, 4458, 11126, 1074, 1964, 4837, 1100, 4647, 573, 2]
 // Exports: closeChannelTab, cycleChannelTab, goBackInActiveTab, goForwardInActiveTab, moveChannelTab, navigateToRoute, openChannelTab, openDuplicateTab, selectChannelTab, setChannelTabPinned, setChannelTabsEnabled
 
-// Module 10994 (ChannelTabsActionCreators)
+// Module 11125 (ChannelTabsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1100 */;
-import transitionToChannel from "transitionToChannel" /* 4571 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4761 */;
+import transitionToChannel from "transitionToChannel" /* 4647 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4837 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4381 */;
-import ChannelTabsStore from "ChannelTabsStore" /* 10995 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4458 */;
+import ChannelTabsStore from "ChannelTabsStore" /* 11126 */;
 
 require = fn;
 function navigateToTabLocation(found) {
@@ -52,8 +52,8 @@ function openChannelTabActive(id, guildId) {
     if (SelectedChannelStore.getCurrentlySelectedChannelId() !== id) {
       const channel1 = ChannelStore.getChannel(id);
       if (tmp18) {
-        tmp15(4761).updateChatOpen(id, true);
-        const tmp15Result = tmp15(4761);
+        tmp15(4837).updateChatOpen(id, true);
+        const tmp15Result = tmp15(4837);
       }
       if (null != guildId) {
         router_utils.transitionTo(Routes.CHANNEL(guildId, id), { openChannel: true });
@@ -113,8 +113,8 @@ function navigateActiveTabHistory(arg0) {
               const channel = obj13.getChannel(channelId);
               const tmp35 = importDefault;
               if (tmp8) {
-                tmp35(4761).updateChatOpen(channelId, true);
-                const tmp35Result = tmp35(4761);
+                tmp35(4837).updateChatOpen(channelId, true);
+                const tmp35Result = tmp35(4837);
               }
               if (null != guildId) {
                 router_utils.transitionTo(Routes.CHANNEL(guildId, channelId), { openChannel: true });

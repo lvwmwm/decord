@@ -1,13 +1,13 @@
-// Module ID: 8191
-// Function ID: 8192
+// Module ID: 8307
+// Function ID: 8308
 // Name: UserProfileAnalyticsContext
-// Dependencies: [19, 21, 7162, 8192, 1256, 2]
+// Dependencies: [19, 21, 7265, 8308, 1254, 2]
 // Exports: UserProfileAnalyticsProvider, useCreateUserProfileAnalyticsContext, useUserProfileAnalyticsContext
 
-// Module 8191 (UserProfileAnalyticsContext)
-import v1 from "v1" /* 1256 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7162 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8192 */;
+// Module 8307 (UserProfileAnalyticsContext)
+import v1 from "v1" /* 1254 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7265 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8308 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -108,7 +108,7 @@ export const useCreateUserProfileAnalyticsContext = function useCreateUserProfil
 };
 export const useUserProfileAnalyticsContext = function useUserProfileAnalyticsContext() {
   const context = noop.useContext(closure_5);
-  analyticsLocations = analyticsLocations(7162)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7265)().analyticsLocations;
   let obj = { context, trackUserProfileAction: null, trackUserProfileEditAction: null, trackUserProfileEditSaved: null, trackUserProfileWishlistAction: null };
   const items = [context, analyticsLocations];
   obj.trackUserProfileAction = noop.useCallback((arg0) => {

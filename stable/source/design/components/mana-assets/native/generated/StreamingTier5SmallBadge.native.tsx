@@ -1,13 +1,13 @@
-// Module ID: 6511
-// Function ID: 6512
+// Module ID: 6612
+// Function ID: 6613
 // Name: StreamingTier5SmallBadge
-// Dependencies: [21, 5587, 6512, 2]
+// Dependencies: [21, 5668, 6613, 2]
 // Exports: StreamingTier5SmallBadge
 
-// Module 6511 (StreamingTier5SmallBadge)
+// Module 6612 (StreamingTier5SmallBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6512 from "module_6512" /* 6512 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6613 from "module_6613" /* 6613 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const StreamingTier5SmallBadge = function StreamingTier5SmallBadge(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6512 };
+  const obj2 = { uri: _modDef6613 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

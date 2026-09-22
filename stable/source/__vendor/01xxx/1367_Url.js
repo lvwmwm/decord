@@ -1,11 +1,11 @@
 // Module ID: 1367
 // Function ID: 1368
 // Name: Url
-// Dependencies: [1275, 1368]
+// Dependencies: [1273, 1368]
 // Exports: format, parse, resolve, resolveObject
 
 // Module 1367 (Url)
-import _mod1275 from "module_1275" /* 1275 */;
+import _mod1273 from "module_1273" /* 1273 */;
 import decode from "decode" /* 1368 */;
 
 require = arg1;

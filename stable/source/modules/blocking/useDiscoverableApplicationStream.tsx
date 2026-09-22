@@ -1,36 +1,36 @@
-// Module ID: 10883
-// Function ID: 10884
+// Module ID: 11010
+// Function ID: 11011
 // Name: useDiscoverableApplicationStream
-// Dependencies: [4582, 4209, 1074, 504, 2]
+// Dependencies: [4658, 4285, 1074, 504, 2]
 // Exports: default
 
-// Module 10883 (useDiscoverableApplicationStream)
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4582 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
+// Module 11010 (useDiscoverableApplicationStream)
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4658 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-function getDiscoverableApplicationStream(id, items) {
+function getDiscoverableApplicationStream(userId, items) {
   let tmp = items;
   if (items === undefined) {
     items = [ApplicationStreamingStore, RelationshipStore];
     tmp = items;
   }
   [obj, obj2] = tmp;
-  if (null != id) {
-    let NONE = obj2.getRelationshipType(id);
+  if (null != userId) {
+    let NONE = obj2.getRelationshipType(userId);
   } else {
     NONE = RelationshipTypes.NONE;
   }
   let anyDiscoverableStreamForUser = null;
-  if (null != id) {
-    anyDiscoverableStreamForUser = obj.getAnyDiscoverableStreamForUser(id);
+  if (null != userId) {
+    anyDiscoverableStreamForUser = obj.getAnyDiscoverableStreamForUser(userId);
   }
   let tmp6 = null;
   if (NONE !== RelationshipTypes.BLOCKED) {
     tmp6 = null;
-    if (null != id) {
+    if (null != userId) {
       tmp6 = anyDiscoverableStreamForUser;
     }
   }

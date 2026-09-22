@@ -1,9 +1,9 @@
 // Module ID: 14141
 // Function ID: 14142
-// Dependencies: [1122]
+// Dependencies: [14140]
 
 // Module 14141
-import registerAsset from "module_1122" /* 1122 */;
+import _mod14140 from "module_14140" /* 14140 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/LottieIcon/native/generated/lotties", scales: [1], hash: "e6321d3eee6babc8e6acf553c6eec250", name: "ServerTab", type: "lottie" });
+export default (arg0, arg1, arg2) => _mod14140(arg0, arg1, ">", arg2);

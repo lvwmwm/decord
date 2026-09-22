@@ -1,8 +1,8 @@
-// Module ID: 5778
-// Function ID: 5779
+// Module ID: 5879
+// Function ID: 5880
 // Dependencies: [2]
 
-// Module 5778
+// Module 5879
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarSpellcastExample-2x.png.js");

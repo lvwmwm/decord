@@ -1,12 +1,12 @@
-// Module ID: 8776
-// Function ID: 8777
+// Module ID: 8896
+// Function ID: 8897
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7621, 502, 1954, 504, 4380, 1943, 1945, 4527, 8777, 1896, 2]
+// Dependencies: [19, 7723, 502, 1954, 504, 4457, 1943, 1945, 4603, 8897, 1896, 2]
 // Exports: default, useHasNeverWishlisted
 
-// Module 8776 (useWishlistNUXActionSheet)
+// Module 8896 (useWishlistNUXActionSheet)
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7621 */;
+import UserProfileStore from "UserProfileStore" /* 7723 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,16 @@
-// Module ID: 11836
-// Function ID: 11837
+// Module ID: 11965
+// Function ID: 11966
 // Name: GuildAntiRaidActionCreators
-// Dependencies: [5, 1979, 8017, 1074, 1242, 4740, 9069, 4153, 1272, 10107, 2]
+// Dependencies: [5, 1979, 8120, 1074, 1240, 4816, 9192, 4228, 1270, 10230, 2]
 // Exports: handleReportRaid, handleResolveRaid, setGuildIncidentActions, setGuildRaidAlerts, trackReportRaidViewed
 
-// Module 11836 (GuildAntiRaidActionCreators)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import _modDef4153 from "module_4153" /* 4153 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4740 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9069 */;
-import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 10107 */;
+// Module 11965 (GuildAntiRaidActionCreators)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import _modDef4228 from "module_4228" /* 4228 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4816 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9192 */;
+import getGuildSafetyAlertsChannelIdDefault from "getGuildSafetyAlertsChannelId" /* 10230 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import GuildStore from "GuildStore" /* 1979 */;
 
@@ -95,9 +95,9 @@ let closure_10 = async function _setGuildIncidentActions() {
   }
   let toISOStringResult = null;
   if (tmp5) {
-    _modDef4153();
-    toISOStringResult = _modDef4153().add(tmp8, "hours").toISOString();
-    _modDef4153().add(tmp8, "hours");
+    _modDef4228();
+    toISOStringResult = _modDef4228().add(tmp8, "hours").toISOString();
+    _modDef4228().add(tmp8, "hours");
   }
   let tmp12 = null;
   if (closure_1) {
@@ -246,22 +246,22 @@ let closure_12 = async function _handleReportRaid(arg0, value) {
     }
   }
 };
-const DEFAULT_LOCKDOWN_DURATION = fn(8017).DEFAULT_LOCKDOWN_DURATION;
+const DEFAULT_LOCKDOWN_DURATION = fn(8120).DEFAULT_LOCKDOWN_DURATION;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, Endpoints: closure_7, GuildFeatures: closure_8 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_antiraid/GuildAntiRaidActionCreators.tsx");
 
-export const trackReportRaidViewed = function trackReportRaidViewed(onChange, onSubmit) {
-  let items = onSubmit;
-  if (onSubmit === undefined) {
+export const trackReportRaidViewed = function trackReportRaidViewed(guildId, arg1) {
+  let items = arg1;
+  if (arg1 === undefined) {
     items = [];
   }
   if (0 !== items.length) {
     const obj2 = {};
     const obj = AnalyticsUtilsDefault;
-    const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(onChange));
-    obj2.guild_id = onChange;
+    const merged = Object.assign(AppAnalyticsUtils.collectGuildAnalyticsMetadata(guildId));
+    obj2.guild_id = guildId;
     obj2.raid_types = items;
     obj.track(constants.GUILD_RAID_REPORTED, obj2);
   }

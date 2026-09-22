@@ -1,12 +1,12 @@
-// Module ID: 15979
-// Function ID: 15980
+// Module ID: 16073
+// Function ID: 16074
 // Name: components/MFA
-// Dependencies: [19, 502, 21, 12, 1483, 6944, 504, 6593, 15669, 1116, 576, 2]
+// Dependencies: [19, 502, 21, 12, 1483, 7045, 504, 6694, 15757, 1364, 576, 2]
 // Exports: default
 
-// Module 15979 (components/MFA)
+// Module 16073 (components/MFA)
 import _modDef12 from "module_12" /* 12 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6593 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6694 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -27,7 +27,7 @@ export default function ConnectedMFA() {
   ({ inContainer, isMultiAccount } = obj);
   const navigation = isMultiAccount(1483).useNavigation();
   if (inContainer) {
-    inContainer = navigation(6944)();
+    inContainer = navigation(7045)();
   }
   const obj2 = isMultiAccount(1483);
   const items = [AuthenticationStore];
@@ -60,14 +60,14 @@ export default function ConnectedMFA() {
       tmp13 = obj4;
     }
     obj3.headerRightContainerStyle = tmp13;
-    return jsx(tmp(15669).MFAModal, obj3);
+    return jsx(tmp(15757).MFAModal, obj3);
   } else {
-    const tmpResult2 = tmp(1116);
+    const tmpResult2 = tmp(1364);
     tmp4(576).space;
-    const isAndroidResult = tmp(1116).isAndroid();
+    const isAndroidResult = tmp(1364).isAndroid();
     const space = { paddingLeft: null, paddingTop: null };
-    space.paddingLeft = tmp(1116).isAndroid() ? space.PX_8 : space.PX_16;
+    space.paddingLeft = tmp(1364).isAndroid() ? space.PX_8 : space.PX_16;
     space.paddingTop = tmp4(576).space.PX_12;
-    const tmp11 = tmp(1116).isAndroid() ? space.PX_8 : space.PX_16;
+    const tmp11 = tmp(1364).isAndroid() ? space.PX_8 : space.PX_16;
   }
 };

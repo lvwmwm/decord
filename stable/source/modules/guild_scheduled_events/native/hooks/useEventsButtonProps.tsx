@@ -1,21 +1,21 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 12507
+// Function ID: 12508
 // Name: useEventsButtonProps
-// Dependencies: [19, 4575, 4741, 4742, 504, 9668, 5057, 5569, 9704, 4527, 12379, 1896, 1114, 12383, 2]
+// Dependencies: [19, 4651, 4817, 4818, 504, 9792, 5138, 5650, 9828, 4603, 12508, 1896, 1114, 12512, 2]
 // Exports: default
 
-// Module 12378 (useEventsButtonProps)
+// Module 12507 (useEventsButtonProps)
 import asyncRequireImpl from "asyncRequireImpl" /* 1896 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 9668 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import useGuildScheduledEventsDefault from "useGuildScheduledEvents" /* 9792 */;
 import noop from "module_19" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4575 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4741 */;
+import ReadStateStore from "ReadStateStore" /* 4651 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4817 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ReadStateTypes = fn(4742).ReadStateTypes;
+const ReadStateTypes = fn(4818).ReadStateTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/hooks/useEventsButtonProps.tsx");
 
@@ -33,17 +33,17 @@ export default function useEventsButtonProps(id) {
   const items4 = [id.id];
   const handlePress = noop.useCallback(() => {
     if (obj.shouldShowMembershipVerificationGate(user.id)) {
-      let result = tmp(5569).openMemberVerificationModal(tmp3.id);
-      const tmpResult = tmp(5569);
+      let result = tmp(5650).openMemberVerificationModal(tmp3.id);
+      const tmpResult = tmp(5650);
     } else {
-      result = tmp(9704).openGuildEventListActionSheet(tmp3);
-      const tmpResult2 = tmp(9704);
+      result = tmp(9828).openGuildEventListActionSheet(tmp3);
+      const tmpResult2 = tmp(9828);
     }
     return result;
   }, items3);
   const handleLongPress = noop.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequireImpl(12379, dependencyMap.paths), "UpcomingEventsLongPress-" + user.id, { guildId: user.id });
+    obj.openLazy(asyncRequireImpl(12508, dependencyMap.paths), "UpcomingEventsLongPress-" + user.id, { guildId: user.id });
   }, items4);
   if (arr4.length > 0) {
     const intl2 = tmp(1114).intl;
@@ -53,13 +53,13 @@ export default function useEventsButtonProps(id) {
     const intl = tmp(1114).intl;
     name = intl.string(tmp(1114).t.tlopTM);
   }
-  let mode = tmp(12383).ChannelModes.DEFAULT;
+  let mode = tmp(12512).ChannelModes.DEFAULT;
   let tmp8 = hasUnread;
   if (hasUnread) {
     tmp8 = !eventsMuted;
   }
   if (tmp8) {
-    mode = tmp(12383).ChannelModes.UNREAD_IMPORTANT;
+    mode = tmp(12512).ChannelModes.UNREAD_IMPORTANT;
   }
   return { hasUnread, mentionCount, mode, name, eventsMuted, handlePress, handleLongPress };
 };

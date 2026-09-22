@@ -1,11 +1,11 @@
-// Module ID: 7180
-// Function ID: 7181
+// Module ID: 7283
+// Function ID: 7284
 // Name: useStartProviderConnection
-// Dependencies: [5, 19, 7181, 4255, 2]
+// Dependencies: [5, 19, 7284, 4331, 2]
 // Exports: useStartProviderConnection
 
-// Module 7180 (useStartProviderConnection)
-import LinkingDefault from "Linking" /* 4255 */;
+// Module 7283 (useStartProviderConnection)
+import LinkingDefault from "Linking" /* 4331 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 10964
-// Function ID: 10965
+// Module ID: 11095
+// Function ID: 11096
 // Name: MessageRequestActionCreators
-// Dependencies: [5, 1074, 1272, 10965, 573, 6593, 2]
+// Dependencies: [5, 1074, 1270, 11096, 573, 6694, 2]
 // Exports: acceptMessageRequest, clearMessageRequestState, fetchUserCountryCode, markAsMessageRequest, rejectMessageRequest, rejectMessageRequestBatch
 
-// Module 10964 (MessageRequestActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6593 */;
-import MessageRequestTypes from "MessageRequestTypes" /* 10965 */;
+// Module 11095 (MessageRequestActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6694 */;
+import MessageRequestTypes from "MessageRequestTypes" /* 11096 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

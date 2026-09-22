@@ -1,29 +1,29 @@
-// Module ID: 16092
-// Function ID: 16093
+// Module ID: 16186
+// Function ID: 16187
 // Name: HappeningNowCardActiveChannel
-// Dependencies: [19, 17, 13709, 1957, 11969, 1371, 15297, 1074, 21, 4560, 504, 11, 1369, 12, 16091, 1242, 1100, 4713, 1114, 5028, 15298, 16085, 2]
+// Dependencies: [19, 17, 13795, 1957, 12098, 1371, 15380, 1074, 21, 4636, 504, 11, 1369, 12, 16185, 1240, 1100, 4789, 1114, 5109, 15381, 16179, 2]
 
-// Module 16092 (HappeningNowCardActiveChannel)
+// Module 16186 (HappeningNowCardActiveChannel)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import router_utils from "router_utils" /* 1100 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
 import GlobalUtils from "GlobalUtils" /* 1369 */;
 import noop from "module_19" /* 19 */;
-import ActiveChannelsStore from "ActiveChannelsStore" /* 13709 */;
+import ActiveChannelsStore from "ActiveChannelsStore" /* 13795 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import TypingStore from "TypingStore" /* 11969 */;
+import TypingStore from "TypingStore" /* 12098 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;
 const View = fn(17).View;
-const MAX_STORED_MESSAGES = fn(13709).MAX_STORED_MESSAGES;
-let closure_10 = fn(15297).HappeningNowCardTrackingType;
+const MAX_STORED_MESSAGES = fn(13795).MAX_STORED_MESSAGES;
+let closure_10 = fn(15380).HappeningNowCardTrackingType;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, Routes: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_15 = createStyles.createStyles({ content: { flexShrink: 1, marginLeft: 4, gap: 2 }, avatarsWrapper: { marginBottom: 2 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/happening_now/HappeningNowCardActiveChannel.tsx");

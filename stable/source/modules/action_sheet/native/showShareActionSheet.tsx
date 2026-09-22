@@ -1,15 +1,15 @@
-// Module ID: 8362
-// Function ID: 8363
+// Module ID: 8479
+// Function ID: 8480
 // Name: showShareActionSheet
-// Dependencies: [17, 1116, 8363, 8364, 8367, 1232, 2]
+// Dependencies: [17, 1364, 8480, 8481, 8484, 1230, 2]
 // Exports: showShareActionSheet
 
-// Module 8362 (showShareActionSheet)
+// Module 8479 (showShareActionSheet)
 import _mod17 from "module_17" /* 17 */;
-import SentryUtilsDefault from "SentryUtils" /* 1232 */;
-import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 8363 */;
-import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8364 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1116 */;
+import SentryUtilsDefault from "SentryUtils" /* 1230 */;
+import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 8480 */;
+import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8481 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ export const showShareActionSheet = function showShareActionSheet(source, PREMIU
     let mediaShareParams = require("ShowShareActionSheetUtils").getMediaShareParams(source.source);
     const obj2 = require("ShowShareActionSheetUtils");
   } else {
-    mediaShareParams = { mediaFallbackUrl: "transform", mediaStagingOptions: "call" };
+    mediaShareParams = { mediaFallbackUrl: "Array", mediaStagingOptions: "PX_16" };
   }
   ({ mediaFallbackUrl, mediaStagingOptions } = mediaShareParams);
   if (null == source.source) {

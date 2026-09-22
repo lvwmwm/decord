@@ -1,9 +1,9 @@
 // Module ID: 3480
 // Function ID: 3481
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 3480
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conversations", scales: [1], hash: "8e7c46ba423edaf69778fd849d9ff2b9", name: "Conversations.compiled.messages", type: "jsona" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "987e63ad24b2406783d9878b5a3c3d57", name: "pl.messages.987e63ad24b2406783d9878b5a3c3d57.compiled.messages", type: "jsona" });

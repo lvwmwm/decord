@@ -1,8 +1,8 @@
-// Module ID: 6226
-// Function ID: 6227
+// Module ID: 6327
+// Function ID: 6328
 // Dependencies: [2]
 
-// Module 6226
+// Module 6327
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/LogoHandSpotIllustration-2x.png.js");

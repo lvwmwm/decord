@@ -1,13 +1,13 @@
-// Module ID: 12308
-// Function ID: 12309
+// Module ID: 12437
+// Function ID: 12438
 // Name: GuildDirectoryUtils
-// Dependencies: [12309, 38, 12, 2]
+// Dependencies: [12438, 38, 12, 2]
 // Exports: guildDirectoryEntryFromServer, orderByDateAdded, orderByTotalMemberCount, rankByDateAdded, rankGuildEntries
 
-// Module 12308 (GuildDirectoryUtils)
+// Module 12437 (GuildDirectoryUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12309 */;
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 12438 */;
 import size from "module_2" /* 2 */;
 
 const DirectoryEntryTypes = GuildDirectoryConstants.DirectoryEntryTypes;

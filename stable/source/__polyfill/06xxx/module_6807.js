@@ -1,99 +1,188 @@
 // Module ID: 6807
 // Function ID: 6808
-// Dependencies: [32, 19, 17, 6635, 1636]
-// Exports: useBottomSheetContentContainerStyle
+// Dependencies: [6777, 6764, 6761, 6799, 6762, 6763]
+// Exports: useAnimatedGesture
 
 // Module 6807
-import cancelAnimation from "cancelAnimation" /* 1636 */;
-import _slicedToArray from "module_32" /* 32 */;
-
-const require = globalThis.__r;
+import tagMessage from "tagMessage" /* 6761 */;
+import _mod6762 from "module_6762" /* 6762 */;
+import _mod6763 from "module_6763" /* 6763 */;
+import TouchEventType from "TouchEventType" /* 6764 */;
+import _mod6777 from "module_6777" /* 6777 */;
 
 require = fn;
-const noop = fn(19);
-({ useMemo: c3, useState: closure_4 } = noop);
-get_ActivityIndicator = fn(17);
-({ Platform: hasOwnProperty, StyleSheet: metroRequire } = get_ActivityIndicator);
-const __initData = { code: "function pnpm_useBottomSheetContentContainerStyleTs1(){const{animatedFooterHeight}=this.__closure;return animatedFooterHeight.get();}" };
-const __initData2 = { code: "function pnpm_useBottomSheetContentContainerStyleTs2(result,previousFooterHeight){const{enableFooterMarginAdjustment,runOnJS,setFooterHeight,Platform,animatedContentHeight}=this.__closure;if(!enableFooterMarginAdjustment){return;}runOnJS(setFooterHeight)(result);if(Platform.OS==='web'){if(result&&!previousFooterHeight){const contentHeight=animatedContentHeight.get();animatedContentHeight.set(contentHeight+result);}}}" };
-
-export const useBottomSheetContentContainerStyle = function useBottomSheetContentContainerStyle(flag, contentContainerStyle) {
-  _require = flag;
-  dependencyMap = contentContainerStyle;
-  const tmp = first(animatedFooterHeight(0), 2);
-  first = tmp[0];
-  closure_3 = tmp3;
-  const bottomSheetInternal = require("module_6635").useBottomSheetInternal();
-  animatedFooterHeight = bottomSheetInternal.animatedFooterHeight;
-  const animatedContentHeight = bottomSheetInternal.animatedContentHeight;
-  let items = [contentContainerStyle];
-  const tmp5 = closure_3(() => {
-    if (closure_1) {
-      const _Array = Array;
-      let applyResult = tmp;
-      if (Array.isArray(tmp)) {
-        compose = compose.compose;
-        const items = [];
-        HermesBuiltin.arraySpread(tmp, 0);
-        applyResult = HermesBuiltin.apply(items, compose);
-      }
-      let obj = applyResult;
-    } else {
-      obj = {};
+const dependencyMap = arg6;
+function getHandler(arg0, onBegin) {
+  if (_mod6777.CALLBACK_TYPE.BEGAN === arg0) {
+    return onBegin.onBegin;
+  } else if (tmp(6777).CALLBACK_TYPE.START === arg0) {
+    return onBegin.onStart;
+  } else if (tmp(6777).CALLBACK_TYPE.UPDATE === arg0) {
+    return onBegin.onUpdate;
+  } else if (tmp(6777).CALLBACK_TYPE.CHANGE === arg0) {
+    return onBegin.onChange;
+  } else if (tmp(6777).CALLBACK_TYPE.END === arg0) {
+    return onBegin.onEnd;
+  } else if (tmp(6777).CALLBACK_TYPE.FINALIZE === arg0) {
+    return onBegin.onFinalize;
+  } else if (tmp(6777).CALLBACK_TYPE.TOUCHES_DOWN === arg0) {
+    return onBegin.onTouchesDown;
+  } else if (tmp(6777).CALLBACK_TYPE.TOUCHES_MOVE === arg0) {
+    return onBegin.onTouchesMove;
+  } else if (tmp(6777).CALLBACK_TYPE.TOUCHES_UP === arg0) {
+    return onBegin.onTouchesUp;
+  } else if (tmp(6777).CALLBACK_TYPE.TOUCHES_CANCEL === arg0) {
+    return onBegin.onTouchesCancelled;
+  }
+}
+getHandler.__closure = { CALLBACK_TYPE: fn(6777).CALLBACK_TYPE };
+getHandler.__workletHash = 611602598219;
+getHandler.__initData = { code: "function getHandler_Pnpm_useAnimatedGestureTs1(type,gesture){const{CALLBACK_TYPE}=this.__closure;switch(type){case CALLBACK_TYPE.BEGAN:return gesture.onBegin;case CALLBACK_TYPE.START:return gesture.onStart;case CALLBACK_TYPE.UPDATE:return gesture.onUpdate;case CALLBACK_TYPE.CHANGE:return gesture.onChange;case CALLBACK_TYPE.END:return gesture.onEnd;case CALLBACK_TYPE.FINALIZE:return gesture.onFinalize;case CALLBACK_TYPE.TOUCHES_DOWN:return gesture.onTouchesDown;case CALLBACK_TYPE.TOUCHES_MOVE:return gesture.onTouchesMove;case CALLBACK_TYPE.TOUCHES_UP:return gesture.onTouchesUp;case CALLBACK_TYPE.TOUCHES_CANCEL:return gesture.onTouchesCancelled;}}" };
+function touchEventTypeToCallbackType(arg0) {
+  if (TouchEventType.TouchEventType.TOUCHES_DOWN === arg0) {
+    return tmp(6777).CALLBACK_TYPE.TOUCHES_DOWN;
+  } else if (tmp(6764).TouchEventType.TOUCHES_MOVE === arg0) {
+    return tmp(6777).CALLBACK_TYPE.TOUCHES_MOVE;
+  } else if (tmp(6764).TouchEventType.TOUCHES_UP === arg0) {
+    return tmp(6777).CALLBACK_TYPE.TOUCHES_UP;
+  } else if (tmp(6764).TouchEventType.TOUCHES_CANCEL === arg0) {
+    return tmp(6777).CALLBACK_TYPE.TOUCHES_CANCEL;
+  } else {
+    return tmp(6777).CALLBACK_TYPE.UNDEFINED;
+  }
+}
+let obj = { CALLBACK_TYPE: fn(6777).CALLBACK_TYPE };
+touchEventTypeToCallbackType.__closure = { TouchEventType: fn(6764).TouchEventType, CALLBACK_TYPE: fn(6777).CALLBACK_TYPE };
+touchEventTypeToCallbackType.__workletHash = 12322546845125;
+touchEventTypeToCallbackType.__initData = { code: "function touchEventTypeToCallbackType_Pnpm_useAnimatedGestureTs2(eventType){const{TouchEventType,CALLBACK_TYPE}=this.__closure;switch(eventType){case TouchEventType.TOUCHES_DOWN:return CALLBACK_TYPE.TOUCHES_DOWN;case TouchEventType.TOUCHES_MOVE:return CALLBACK_TYPE.TOUCHES_MOVE;case TouchEventType.TOUCHES_UP:return CALLBACK_TYPE.TOUCHES_UP;case TouchEventType.TOUCHES_CANCEL:return CALLBACK_TYPE.TOUCHES_CANCEL;}return CALLBACK_TYPE.UNDEFINED;}" };
+function runWorklet(END, arg1, handlerTag) {
+  const substr = [...arguments].slice();
+  const tmp2 = getHandler(END, arg1);
+  if (arg1.isWorklet[END]) {
+    if (tmp2 != null) {
+      const items = [handlerTag];
+      HermesBuiltin.arraySpread(substr, 1);
+      HermesBuiltin.apply(items, undefined);
     }
-    return obj;
-  }, items);
-  Platform = tmp5;
-  const items1 = [first, flag, tmp5];
-  let obj = require("module_6635");
-  const tmp6 = closure_3(() => {
-    if (closure_0) {
-      let num = 0;
-      if (tmp) {
-        num = 0;
-        if (typeof tmp === "object") {
-          ({ paddingBottom, padding, paddingVertical } = tmp);
-          if (undefined === paddingBottom) {
-            if (undefined === paddingVertical) {
-              num = 0;
-              if (tmp2) {
-                num = padding;
+  } else if (tmp2) {
+    const _console = console;
+    console.warn(tagMessage.tagMessage("Animated gesture callback must be a worklet"));
+  }
+}
+const obj2 = { TouchEventType: fn(6764).TouchEventType, CALLBACK_TYPE: fn(6777).CALLBACK_TYPE };
+runWorklet.__closure = { getHandler, tagMessage: fn(6761).tagMessage };
+runWorklet.__workletHash = 6506685255530;
+runWorklet.__initData = { code: "function runWorklet_Pnpm_useAnimatedGestureTs3(type,gesture,event,...args){const{getHandler,tagMessage}=this.__closure;const handler=getHandler(type,gesture);if(gesture.isWorklet[type]){handler===null||handler===void 0||handler(event,...args);}else if(handler){console.warn(tagMessage('Animated gesture callback must be a worklet'));}}" };
+function isStateChangeEvent(oldState) {
+  return null != oldState.oldState;
+}
+isStateChangeEvent.__closure = {};
+isStateChangeEvent.__workletHash = 8201524245094;
+isStateChangeEvent.__initData = { code: "function isStateChangeEvent_Pnpm_useAnimatedGestureTs4(event){return event.oldState!=null;}" };
+function isTouchEvent(eventType) {
+  return null != eventType.eventType;
+}
+isTouchEvent.__closure = {};
+isTouchEvent.__workletHash = 6575076970903;
+isTouchEvent.__initData = { code: "function isTouchEvent_Pnpm_useAnimatedGestureTs5(event){return event.eventType!=null;}" };
+const __initData = { code: "function pnpm_useAnimatedGestureTs6(event){const{sharedHandlersCallbacks,isStateChangeEvent,State,runWorklet,CALLBACK_TYPE,lastUpdateEvent,isTouchEvent,stateControllers,GestureStateManager,TouchEventType,touchEventTypeToCallbackType}=this.__closure;const currentCallback=sharedHandlersCallbacks.value;if(!currentCallback){return;}for(let i=0;i<currentCallback.length;i++){const gesture=currentCallback[i];if(event.handlerTag!==gesture.handlerTag){continue;}if(isStateChangeEvent(event)){if(event.oldState===State.UNDETERMINED&&event.state===State.BEGAN){runWorklet(CALLBACK_TYPE.BEGAN,gesture,event);}else if((event.oldState===State.BEGAN||event.oldState===State.UNDETERMINED)&&event.state===State.ACTIVE){runWorklet(CALLBACK_TYPE.START,gesture,event);lastUpdateEvent.value[gesture.handlerTag]=undefined;}else if(event.oldState!==event.state&&event.state===State.END){if(event.oldState===State.ACTIVE){runWorklet(CALLBACK_TYPE.END,gesture,event,true);}runWorklet(CALLBACK_TYPE.FINALIZE,gesture,event,true);}else if((event.state===State.FAILED||event.state===State.CANCELLED)&&event.state!==event.oldState){if(event.oldState===State.ACTIVE){runWorklet(CALLBACK_TYPE.END,gesture,event,false);}runWorklet(CALLBACK_TYPE.FINALIZE,gesture,event,false);}}else if(isTouchEvent(event)){if(!stateControllers[i]||stateControllers[i].handlerTag!==event.handlerTag){stateControllers[i]=GestureStateManager.create(event.handlerTag);}if(event.eventType!==TouchEventType.UNDETERMINED){runWorklet(touchEventTypeToCallbackType(event.eventType),gesture,event,stateControllers[i]);}}else{runWorklet(CALLBACK_TYPE.UPDATE,gesture,event);if(gesture.onChange&&gesture.changeEventCalculator){var _gesture$changeEventC;runWorklet(CALLBACK_TYPE.CHANGE,gesture,(_gesture$changeEventC=gesture.changeEventCalculator)===null||_gesture$changeEventC===void 0?void 0:_gesture$changeEventC.call(gesture,event,lastUpdateEvent.value[gesture.handlerTag]));lastUpdateEvent.value[gesture.handlerTag]=event;}}}}" };
+
+export const useAnimatedGesture = function useAnimatedGesture(current2, needsToReattachResult) {
+  if (sharedValue(sharedValue1[3]).Reanimated) {
+    const Reanimated = tmp(tmp2[3]).Reanimated;
+    sharedValue = Reanimated.useSharedValue(null);
+    const Reanimated2 = tmp(tmp2[3]).Reanimated;
+    sharedValue1 = Reanimated2.useSharedValue([]);
+    const items = [];
+    const fn = function s(handlerTag) {
+      value = sharedValue.value;
+      if (value) {
+        for (let num = 0; num < value.length; num = num + 1) {
+          let tmp2 = value[num];
+          if (handlerTag.handlerTag === tmp2.handlerTag) {
+            if (typeof isStateChangeEvent === "function") {
+              if (null != handlerTag.oldState) {
+                let tmp15 = require;
+                if (handlerTag.oldState === _mod6762.State.UNDETERMINED) {
+                  if (handlerTag.state === tmp15(6762).State.BEGAN) {
+                    let tmp38 = runWorklet(tmp15(6777).CALLBACK_TYPE.BEGAN, tmp2, handlerTag);
+                  }
+                }
+                if (handlerTag.oldState === tmp15(6762).State.BEGAN) {
+                  if (handlerTag.state === tmp15(6762).State.ACTIVE) {
+                    let tmp18 = runWorklet(tmp15(6777).CALLBACK_TYPE.START, tmp2, handlerTag);
+                    sharedValue1.value[tmp2.handlerTag] = undefined;
+                  }
+                }
+                if (handlerTag.oldState !== handlerTag.state) {
+                  if (handlerTag.state === tmp15(6762).State.END) {
+                    if (handlerTag.oldState === tmp15(6762).State.ACTIVE) {
+                      let flag3 = true;
+                      let tmp32 = runWorklet(tmp15(6777).CALLBACK_TYPE.END, tmp2, handlerTag, true);
+                    }
+                    let flag4 = true;
+                    let tmp36 = runWorklet(tmp15(6777).CALLBACK_TYPE.FINALIZE, tmp2, handlerTag, true);
+                  }
+                }
+                let tmp20 = handlerTag.state !== tmp15(6762).State.FAILED;
+                if (tmp20) {
+                  tmp20 = handlerTag.state !== tmp15(6762).State.CANCELLED;
+                }
+                if (!tmp20) {
+                  tmp20 = handlerTag.state === handlerTag.oldState;
+                }
+                if (!tmp20) {
+                  if (handlerTag.oldState === tmp15(6762).State.ACTIVE) {
+                    let flag = false;
+                    let tmp24 = runWorklet(tmp15(6777).CALLBACK_TYPE.END, tmp2, handlerTag, false);
+                  }
+                  let flag2 = false;
+                  let tmp28 = runWorklet(tmp15(6777).CALLBACK_TYPE.FINALIZE, tmp2, handlerTag, false);
+                }
+              } else if (typeof isTouchEvent === "function") {
+                if (null != handlerTag.eventType) {
+                  let tmp9 = items;
+                  let tmp10 = items[num] && tmp9[num].handlerTag === handlerTag.handlerTag;
+                  if (!tmp10) {
+                    let GestureStateManager = _mod6763.GestureStateManager;
+                    tmp9[num] = GestureStateManager.create(handlerTag.handlerTag);
+                  }
+                  if (handlerTag.eventType !== TouchEventType.TouchEventType.UNDETERMINED) {
+                    let tmp49 = runWorklet(touchEventTypeToCallbackType(handlerTag.eventType), tmp2, handlerTag, tmp9[num]);
+                  }
+                } else {
+                  let tmp41 = runWorklet;
+                  let tmp42 = require;
+                  let tmp44 = runWorklet(_mod6777.CALLBACK_TYPE.UPDATE, tmp2, handlerTag);
+                  let tmp4 = tmp2.onChange && tmp2.changeEventCalculator;
+                  if (tmp4) {
+                    let changeEventCalculator = tmp2.changeEventCalculator;
+                    let result;
+                    if (changeEventCalculator != null) {
+                      result = changeEventCalculator(handlerTag, sharedValue1.value[tmp2.handlerTag]);
+                    }
+                    let tmp41Result = tmp41(tmp42(6777).CALLBACK_TYPE.CHANGE, tmp2, result);
+                    sharedValue1.value[tmp2.handlerTag] = handlerTag;
+                  }
+                }
+              } else {
+                let str2 = "Trying to call a non-function";
+                throw new TypeError("Trying to call a non-function");
               }
-              tmp2 = undefined !== padding && typeof padding === "number";
             } else {
-              num = paddingVertical;
+              let str = "Trying to call a non-function";
+              throw new TypeError("Trying to call a non-function");
             }
-          } else {
-            num = paddingBottom;
           }
         }
       }
-      const items = [tmp, ];
-      const obj = { paddingBottom: num + first, overflow: "visible" };
-      items[1] = obj;
-      return items;
-    } else {
-      return tmp;
-    }
-  }, items1);
-  class H {
-    constructor() {
-      return animatedFooterHeight.get();
-    }
+    };
+    const obj = { sharedHandlersCallbacks: sharedValue, isStateChangeEvent, State: tmp(tmp2[4]).State, runWorklet, CALLBACK_TYPE: tmp(tmp2[0]).CALLBACK_TYPE, lastUpdateEvent: sharedValue1, isTouchEvent, stateControllers: items, GestureStateManager: tmp(tmp2[5]).GestureStateManager, TouchEventType: tmp(tmp2[1]).TouchEventType, touchEventTypeToCallbackType };
+    fn.__closure = obj;
+    fn.__workletHash = 11751547526080;
+    fn.__initData = __initData;
+    const Reanimated3 = tmp(tmp2[3]).Reanimated;
+    current2.animatedEventHandler = Reanimated3.useEvent(fn, ["onGestureHandlerStateChange", "onGestureHandlerEvent"], needsToReattachResult);
+    current2.animatedHandlers = sharedValue;
   }
-  H.__closure = { animatedFooterHeight };
-  H.__workletHash = 10172145694310;
-  H.__initData = __initData;
-  const fn = function f(arg0, arg1) {
-    if (closure_0) {
-      cancelAnimation.runOnJS(closure_3)(arg0);
-    }
-  };
-  const obj2 = require("cancelAnimation");
-  fn.__closure = { enableFooterMarginAdjustment: flag, runOnJS: require("cancelAnimation").runOnJS, setFooterHeight: tmp[1], Platform, animatedContentHeight };
-  fn.__workletHash = 1149497927090;
-  fn.__initData = __initData2;
-  const items2 = [animatedFooterHeight, animatedContentHeight, flag];
-  const animatedReaction = obj2.useAnimatedReaction(H, fn, items2);
-  return tmp6;
 };

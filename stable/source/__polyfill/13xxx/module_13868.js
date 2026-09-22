@@ -1,9 +1,9 @@
 // Module ID: 13868
 // Function ID: 13869
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 13868
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 120, height: 100, scales: [1, 2, 3], hash: "0abf9581567470a391d7233deb0a4631", name: "img_remote_auth_loaded", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/nuf_channels/native/images", width: 275.5, height: 78, scales: [2, 3], hash: "b55be157bc31f9c933d8fe113de3e547", name: "voice_channels", type: "png" });

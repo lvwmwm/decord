@@ -1,15 +1,15 @@
-// Module ID: 9297
-// Function ID: 9298
+// Module ID: 9420
+// Function ID: 9421
 // Name: ApplicationFrecencyStore
-// Dependencies: [1956, 1221, 1350, 1084, 1894, 4597, 12, 504, 573, 2]
+// Dependencies: [1956, 1219, 1348, 1084, 1894, 4673, 12, 504, 573, 2]
 
-// Module 9297 (ApplicationFrecencyStore)
+// Module 9420 (ApplicationFrecencyStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import FrecencyDefault from "Frecency" /* 4597 */;
+import FrecencyDefault from "Frecency" /* 4673 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 1956 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
 
 function handleUserSettingsProtoStoreChange() {
   const applicationFrecency = UserSettingsProtoStore.frecencyWithoutFetchingLatest.applicationFrecency;
@@ -42,7 +42,7 @@ let obj = {
   afterCompute() {
 
   },
-  numFrequentlyItems: fn(1350).FREQUENCY_ITEM_LIMIT
+  numFrequentlyItems: fn(1348).FREQUENCY_ITEM_LIMIT
 };
 let closure_7 = new FrecencyDefault({
   computeBonus() {
@@ -54,7 +54,7 @@ let closure_7 = new FrecencyDefault({
   afterCompute() {
 
   },
-  numFrequentlyItems: fn(1350).FREQUENCY_ITEM_LIMIT
+  numFrequentlyItems: fn(1348).FREQUENCY_ITEM_LIMIT
 });
 const PersistedStore = initializeDefault.PersistedStore;
 class ApplicationFrecencyStore extends PersistedStore {

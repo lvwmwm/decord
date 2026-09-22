@@ -1,12 +1,12 @@
-// Module ID: 14845
-// Function ID: 14846
+// Module ID: 14932
+// Function ID: 14933
 // Name: useIsStaffOrDeveloperSettingPredicate
-// Dependencies: [7720, 504, 2]
+// Dependencies: [7822, 504, 2]
 // Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 14845 (useIsStaffOrDeveloperSettingPredicate)
+// Module 14932 (useIsStaffOrDeveloperSettingPredicate)
 import initialize from "initialize" /* 504 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7720 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 7822 */;
 
 require = fn;
 const size = fn(2);

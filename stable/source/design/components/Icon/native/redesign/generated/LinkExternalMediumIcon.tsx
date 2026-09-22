@@ -1,13 +1,13 @@
-// Module ID: 9084
-// Function ID: 9085
+// Module ID: 9207
+// Function ID: 9208
 // Name: LinkExternalMediumIcon
-// Dependencies: [19, 21, 576, 4261, 9085, 2]
+// Dependencies: [19, 21, 576, 4337, 9208, 2]
 // Exports: LinkExternalMediumIcon
 
-// Module 9084 (LinkExternalMediumIcon)
+// Module 9207 (LinkExternalMediumIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod9085 from "module_9085" /* 9085 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod9208 from "module_9208" /* 9208 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const LinkExternalMediumIcon = function LinkExternalMediumIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9085, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9208, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

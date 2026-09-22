@@ -1,24 +1,24 @@
-// Module ID: 12340
-// Function ID: 12341
+// Module ID: 12469
+// Function ID: 12470
 // Name: GuildDirectoryPlaceholderRow
-// Dependencies: [19, 17, 21, 4560, 576, 5441, 12341, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 5522, 12470, 2]
 
-// Module 12340 (GuildDirectoryPlaceholderRow)
+// Module 12469 (GuildDirectoryPlaceholderRow)
 import nativeDefault from "native" /* 576 */;
-import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 12341 */;
+import getChatPlaceholderRowWidthDefault from "getChatPlaceholderRowWidth" /* 12470 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { row: { flexDirection: "row", padding: 16 }, rowInner: { flex: 1 }, placeholderAvatar: null, placeholderText: null, placeholderBody: null };
-let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.sm, overflow: "hidden", marginRight: 16, backgroundColor: fn(5441).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+let size = { width: 40, height: 40, borderRadius: nativeDefault.radii.sm, overflow: "hidden", marginRight: 16, backgroundColor: fn(5522).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 obj.placeholderAvatar = size;
-obj.placeholderText = { height: 15, borderRadius: 5, backgroundColor: fn(5441).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+obj.placeholderText = { height: 15, borderRadius: 5, backgroundColor: fn(5522).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 obj.placeholderBody = { width: "100%", marginTop: 10 };
 let closure_5 = createStyles.createStyles(obj);
-let obj3 = { height: 15, borderRadius: 5, backgroundColor: fn(5441).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
+let obj3 = { height: 15, borderRadius: 5, backgroundColor: fn(5522).DARK_PRIMARY_500_LIGHT_PRIMARY_230 };
 size = fn(2);
 const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryPlaceholderRow.tsx");
 

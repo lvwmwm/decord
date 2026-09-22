@@ -1,13 +1,13 @@
-// Module ID: 5095
-// Function ID: 5096
+// Module ID: 5176
+// Function ID: 5177
 // Name: LockIcon
-// Dependencies: [19, 21, 576, 4261, 5068, 2]
+// Dependencies: [19, 21, 576, 4337, 5149, 2]
 // Exports: LockIcon
 
-// Module 5095 (LockIcon)
+// Module 5176 (LockIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod5068 from "module_5068" /* 5068 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod5149 from "module_5149" /* 5149 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const LockIcon = function LockIcon(WHITE) {
   }
   const merged = Object.assign(WHITE, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5068, color: INTERACTIVE_ICON_DEFAULT, style: WHITE.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5149, color: INTERACTIVE_ICON_DEFAULT, style: WHITE.style });
 };

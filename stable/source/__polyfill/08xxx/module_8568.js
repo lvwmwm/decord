@@ -1,12 +1,9 @@
 // Module ID: 8568
 // Function ID: 8569
-// Dependencies: [26, 65]
+// Dependencies: [1120]
 
 // Module 8568
-import _mod26 from "module_26" /* 26 */;
-import module_65 from "module_65" /* 65 */;
+import registerAsset from "module_1120" /* 1120 */;
 
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGSvgView", validAttributes: { bbWidth: true, bbHeight: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true, color: _mod26.colorAttribute, pointerEvents: true, hitSlop: true } };
 
-export default module_65.get("RNSVGSvgView", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "b04e363869889767a126da0fcdcaf9c8", name: "AppleNeutralIcon", type: "png" });

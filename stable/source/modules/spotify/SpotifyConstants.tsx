@@ -1,11 +1,11 @@
-// Module ID: 8341
-// Function ID: 8342
+// Module ID: 8458
+// Function ID: 8459
 // Name: SpotifyConstants
-// Dependencies: [1074, 5283, 1115, 2]
+// Dependencies: [1074, 5364, 1363, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
-// Module 8341 (SpotifyConstants)
-import Platforms from "Platforms" /* 5283 */;
+// Module 8458 (SpotifyConstants)
+import Platforms from "Platforms" /* 5364 */;
 
 const spotify = "spotify";
 let c1 = "spotify:";
@@ -58,7 +58,7 @@ const obj2 = {
   APP_STORE: null,
   IOS_APP_STORE: "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8"
 };
-const PlatformUtils = fn(1115);
+const PlatformUtils = fn(1363);
 let str = "https://itunes.apple.com/us/app/spotify-music/id324684580?mt=8";
 if (PlatformUtils.isAndroid()) {
   str = "https://play.google.com/store/apps/details?id=com.spotify.music&hl=en_US&gl=US";

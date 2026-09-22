@@ -1,11 +1,11 @@
-// Module ID: 8226
-// Function ID: 8227
+// Module ID: 8341
+// Function ID: 8342
 // Name: FramePreviewOverrideFrame
-// Dependencies: [19, 17, 8223, 7208, 21, 4560, 5587, 2]
+// Dependencies: [19, 17, 8338, 7311, 21, 4636, 5668, 2]
 // Exports: default
 
-// Module 8226 (FramePreviewOverrideFrame)
-import FastImageDefault from "FastImage" /* 5587 */;
+// Module 8341 (FramePreviewOverrideFrame)
+import FastImageDefault from "FastImage" /* 5668 */;
 import noop from "module_19" /* 19 */;
 
 function OverrideProfileFrameLayer(layer) {
@@ -111,11 +111,11 @@ function OverrideProfileFrameLayer(layer) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
-const ProfileFrameConstants = fn(8223);
+const ProfileFrameConstants = fn(8338);
 ({ PROFILE_FRAME_RESPONSIVE_RAIL_MIN_ASPECT_RATIO: closure_4, PROFILE_FRAME_Z_INDEX: hasOwnProperty } = ProfileFrameConstants);
-const UserProfileThemeTypes = fn(7208).UserProfileThemeTypes;
+const UserProfileThemeTypes = fn(7311).UserProfileThemeTypes;
 let jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: null, layer: null };
 let obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);

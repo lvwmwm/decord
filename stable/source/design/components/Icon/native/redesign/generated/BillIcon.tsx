@@ -1,13 +1,13 @@
-// Module ID: 12140
-// Function ID: 12141
+// Module ID: 12269
+// Function ID: 12270
 // Name: BillIcon
-// Dependencies: [19, 21, 576, 4261, 12141, 2]
+// Dependencies: [19, 21, 576, 4337, 12270, 2]
 // Exports: BillIcon
 
-// Module 12140 (BillIcon)
+// Module 12269 (BillIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4261 */;
-import _mod12141 from "module_12141" /* 12141 */;
+import BaseIconImage from "BaseIconImage" /* 4337 */;
+import _mod12270 from "module_12270" /* 12270 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BillIcon = function BillIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12141, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12270, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

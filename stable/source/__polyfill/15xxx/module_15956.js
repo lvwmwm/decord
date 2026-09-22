@@ -1,9 +1,0 @@
-// Module ID: 15956
-// Function ID: 15957
-// Dependencies: [1122]
-
-// Module 15956
-import registerAsset from "module_1122" /* 1122 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 20, height: 20, scales: [1, 2], hash: "a29a6c52d3f111d84d3e5afb9287492b", name: "ic_add_circle", type: "png" });

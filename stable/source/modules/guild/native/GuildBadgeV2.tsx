@@ -1,20 +1,20 @@
-// Module ID: 8746
-// Function ID: 8747
+// Module ID: 8866
+// Function ID: 8867
 // Name: GuildBadgeV2
-// Dependencies: [19, 21, 4560, 1178, 4411, 8747, 8749, 8748, 2]
+// Dependencies: [19, 21, 4636, 1176, 4488, 8867, 8869, 8868, 2]
 // Exports: default, hasGuildBadge
 
-// Module 8746 (GuildBadgeV2)
-import native from "native" /* 1178 */;
-import shared from "shared" /* 4411 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8747 */;
-import BadgeCategory from "BadgeCategory" /* 8748 */;
-import GuildTraits from "GuildTraits" /* 8749 */;
+// Module 8866 (GuildBadgeV2)
+import native from "native" /* 1176 */;
+import shared from "shared" /* 4488 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 8867 */;
+import BadgeCategory from "BadgeCategory" /* 8868 */;
+import GuildTraits from "GuildTraits" /* 8869 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let closure_3 = createStyles.createStyles({ icon: { marginRight: 8 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild/native/GuildBadgeV2.tsx");
@@ -29,12 +29,12 @@ export default function GuildBadgeV2(arg0) {
   if (null == guild) {
     return null;
   } else {
-    const guildBadgeImageSource = tmp5(8747).getGuildBadgeImageSource(guild, tmp8);
+    const guildBadgeImageSource = tmp5(8867).getGuildBadgeImageSource(guild, tmp8);
     let tmp10 = null;
     if (null != guildBadgeImageSource) {
       const obj = { size, source: guildBadgeImageSource, style: tmp4.icon, disableColor: true };
       const merged1 = Object.assign(merged);
-      tmp10 = jsx(tmp5(1178).Icon, { size, source: guildBadgeImageSource, style: tmp4.icon, disableColor: true });
+      tmp10 = jsx(tmp5(1176).Icon, { size, source: guildBadgeImageSource, style: tmp4.icon, disableColor: true });
     }
     return tmp10;
   }

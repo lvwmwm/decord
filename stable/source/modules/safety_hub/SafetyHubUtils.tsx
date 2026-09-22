@@ -1,15 +1,15 @@
-// Module ID: 8419
-// Function ID: 8420
+// Module ID: 8536
+// Function ID: 8537
 // Name: SafetyHubUtils
-// Dependencies: [502, 8420, 1074, 4153, 4710, 1114, 8421, 504, 2]
+// Dependencies: [502, 8537, 1074, 4228, 4786, 1114, 8538, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 8419 (SafetyHubUtils)
+// Module 8536 (SafetyHubUtils)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1114 */;
-import _modDef4153 from "module_4153" /* 4153 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4710 */;
-import SafetyHubModels from "SafetyHubModels" /* 8421 */;
+import _modDef4228 from "module_4228" /* 4228 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4786 */;
+import SafetyHubModels from "SafetyHubModels" /* 8538 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
@@ -47,7 +47,7 @@ function parseMessageEmbedForProps(fields) {
     return obj;
   }
 }
-const SafetyHubConstants = fn(8420);
+const SafetyHubConstants = fn(8537);
 ({ AppealIngestionSignal: closure_4, SafetySystemNotificationCtaType: hasOwnProperty, SafetySystemNotificationEmbedKeys: metroRequire } = SafetyHubConstants);
 const Constants = fn(1074);
 ({ AbortCodes: closure_7, MessageAttachmentFlags: closure_8 } = Constants);
@@ -55,7 +55,7 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export const getClassificationRelativeIncidentTime = function getClassificationRelativeIncidentTime(timestamp) {
-  return _modDef4153().to(_modDef4153(timestamp));
+  return _modDef4228().to(_modDef4228(timestamp));
 };
 export const getSpoilerFlagsForAttachment = function getSpoilerFlagsForAttachment(filename) {
   if (obj.isImageFile(filename.filename)) {

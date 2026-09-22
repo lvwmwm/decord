@@ -1,12 +1,12 @@
-// Module ID: 15338
-// Function ID: 15339
+// Module ID: 15421
+// Function ID: 15422
 // Name: useDisplayNameStylesPendingName
-// Dependencies: [8161, 2021, 4404, 504, 2]
+// Dependencies: [8277, 2021, 4481, 504, 2]
 // Exports: useDisplayNameStylesPendingName
 
-// Module 15338 (useDisplayNameStylesPendingName)
-import UserUtilsDefault from "UserUtils" /* 4404 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8161 */;
+// Module 15421 (useDisplayNameStylesPendingName)
+import UserUtilsDefault from "UserUtils" /* 4481 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8277 */;
 import GuildMemberStore from "GuildMemberStore" /* 2021 */;
 
 const require = globalThis.__r;

@@ -1,15 +1,15 @@
-// Module ID: 11128
-// Function ID: 11129
+// Module ID: 11261
+// Function ID: 11262
 // Name: DoubleTapReminderToast
-// Dependencies: [19, 1954, 21, 4560, 576, 4556, 1114, 4380, 1943, 1935, 7969, 4259, 11129, 2]
+// Dependencies: [19, 1954, 21, 4636, 576, 4632, 1114, 4457, 1943, 1935, 8072, 4335, 11262, 2]
 // Exports: maybeShowDoubleTapReminderToast
 
-// Module 11128 (DoubleTapReminderToast)
+// Module 11261 (DoubleTapReminderToast)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4259 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 11129 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4335 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import DoubleTapEmojiUpdatedToast from "DoubleTapEmojiUpdatedToast" /* 11262 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ function DoubleTapReminderContent(emoji) {
 }
 const ContentDismissActionType = fn(1954).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { toastText: { marginRight: nativeDefault.space.PX_12, marginVertical: nativeDefault.space.PX_8 } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -43,14 +43,14 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
     if (flag == null) {
       flag = false;
     }
-    const result = tmp(7969).disambiguatedEmojiFromSettingsValue(setting);
+    const result = tmp(8072).disambiguatedEmojiFromSettingsValue(setting);
     let areEmojisEqualResult = !flag;
     if (!flag) {
       areEmojisEqualResult = null != result;
     }
     if (areEmojisEqualResult) {
-      areEmojisEqualResult = tmp(7969).areEmojisEqual(result, emoji);
-      const tmpResult3 = tmp(7969);
+      areEmojisEqualResult = tmp(8072).areEmojisEqual(result, emoji);
+      const tmpResult3 = tmp(8072);
     }
     if (areEmojisEqualResult) {
       const obj2 = {
@@ -65,9 +65,9 @@ export const maybeShowDoubleTapReminderToast = function maybeShowDoubleTapRemind
       };
       ToastActionCreatorsDefault.open(obj2);
       const obj3 = { dismissAction: ContentDismissActionType.AUTO_DISMISS, forceTrack: true };
-      const result1 = tmp(4380).UNSAFE_markDismissibleContentAsDismissed(tmp(1943).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj3);
-      const tmpResult4 = tmp(4380);
+      const result1 = tmp(4457).UNSAFE_markDismissibleContentAsDismissed(tmp(1943).DismissibleContent.DOUBLE_TAP_TO_REACT_REMINDER, obj3);
+      const tmpResult4 = tmp(4457);
     }
-    const tmpResult = tmp(7969);
+    const tmpResult = tmp(8072);
   }
 };

@@ -1,16 +1,9 @@
 // Module ID: 8302
 // Function ID: 8303
-// Dependencies: []
+// Dependencies: [1120]
 
 // Module 8302
-const re0 = /[|\\{}()[\]^$+*?.-]/g;
+import registerAsset from "module_1120" /* 1120 */;
 
-export default (str) => {
-  if (typeof str !== "string") {
-    const _TypeError = TypeError;
-    const typeError = new TypeError("Expected a string");
-    throw typeError;
-  } else {
-    return str.replace(re0, "\\$&");
-  }
-};
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "dc61f45d0cc4d873f94fb631a2db066a", name: "CircleCheckIcon", type: "png" });

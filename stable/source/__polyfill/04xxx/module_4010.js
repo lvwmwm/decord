@@ -1,31 +1,49 @@
 // Module ID: 4010
 // Function ID: 4011
-// Dependencies: [4002, 3651]
+// Dependencies: [3914, 4011, 3941, 3726]
 // Exports: default
 
 // Module 4010
-import module_4002_mod from "module_4002" /* 4002 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import differenceInCalendarWeeks_mod from "differenceInCalendarWeeks" /* 3914 */;
+import lastDayOfMonth_mod from "lastDayOfMonth" /* 4011 */;
+import startOfMonth_mod from "startOfMonth" /* 3941 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let module_4002 = module_4002_mod;
-if (!module_4002) {
-  const obj = { default: module_4002 };
+let differenceInCalendarWeeks = differenceInCalendarWeeks_mod;
+if (!differenceInCalendarWeeks) {
+  const obj = { default: differenceInCalendarWeeks };
   let tmp3 = obj;
 } else {
-  tmp3 = module_4002;
+  tmp3 = differenceInCalendarWeeks;
 }
-module_4002 = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+differenceInCalendarWeeks = tmp3;
+let lastDayOfMonth = lastDayOfMonth_mod;
+if (!lastDayOfMonth) {
+  const obj2 = { default: lastDayOfMonth };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = lastDayOfMonth;
 }
-requiredArgs = tmp5;
+lastDayOfMonth = tmp5;
+let startOfMonth = startOfMonth_mod;
+if (!startOfMonth) {
+  const obj3 = { default: startOfMonth };
+  let tmp7 = obj3;
+} else {
+  tmp7 = startOfMonth;
+}
+startOfMonth = tmp7;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj4 = { default: requiredArgs };
+  let tmp9 = obj4;
+} else {
+  tmp9 = requiredArgs;
+}
+requiredArgs = tmp9;
 
-export default function isThisQuarter(arg0) {
+export default function getWeeksInMonth(arg0, arg1) {
   requiredArgs.default(1, arguments);
-  return module_4002.default(Date.now(), arg0);
+  return differenceInCalendarWeeks.default(lastDayOfMonth.default(arg0), startOfMonth.default(arg0), arg1) + 1;
 };
 export default exports.default;

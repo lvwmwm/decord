@@ -1,15 +1,15 @@
-// Module ID: 4494
-// Function ID: 4495
+// Module ID: 4570
+// Function ID: 4571
 // Name: useCustomThemeDisplaySettings
-// Dependencies: [32, 1228, 504, 1229, 2]
+// Dependencies: [32, 1226, 504, 1227, 2]
 // Exports: useCustomThemeDisplaySettings
 
-// Module 4494 (useCustomThemeDisplaySettings)
+// Module 4570 (useCustomThemeDisplaySettings)
 import initialize from "initialize" /* 504 */;
 import _slicedToArray from "module_32" /* 32 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1228 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1226 */;
 
-const ClientThemesUtils = tmp(1229);
+const ClientThemesUtils = tmp(1227);
 require = fn;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/client_themes/native/useCustomThemeDisplaySettings.tsx");

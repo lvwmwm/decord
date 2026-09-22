@@ -1,15 +1,15 @@
-// Module ID: 7875
-// Function ID: 7876
+// Module ID: 7977
+// Function ID: 7978
 // Name: useActiveTheme
-// Dependencies: [1185, 4379, 1228, 1186, 504, 4416, 2]
+// Dependencies: [1183, 4456, 1226, 1184, 504, 4493, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 7875 (useActiveTheme)
+// Module 7977 (useActiveTheme)
 import initialize from "initialize" /* 504 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4416 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1185 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4379 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1228 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 4493 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1183 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4456 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1226 */;
 
 require = fn;
 function useActiveThemeType() {
@@ -45,7 +45,7 @@ function useActiveThemeType() {
   }
   return DEFAULT;
 }
-const ThemeConstants = fn(1186);
+const ThemeConstants = fn(1184);
 ({ SystemThemeState: metroRequire, ActiveThemeType: closure_7 } = ThemeConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/client_themes/native/useActiveTheme.tsx");

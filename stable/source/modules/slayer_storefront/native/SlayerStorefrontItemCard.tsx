@@ -1,20 +1,20 @@
-// Module ID: 8831
-// Function ID: 8832
+// Module ID: 8952
+// Function ID: 8953
 // Name: SlayerStorefrontItemCard
-// Dependencies: [19, 17, 21, 4560, 576, 7226, 8832, 7552, 5587, 4987, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 7329, 8953, 7655, 5668, 5068, 2]
 // Exports: default
 
-// Module 8831 (SlayerStorefrontItemCard)
+// Module 8952 (SlayerStorefrontItemCard)
 import nativeDefault from "native" /* 576 */;
-import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7226 */;
-import tinycolorDefault from "tinycolor" /* 7552 */;
+import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 7329 */;
+import tinycolorDefault from "tinycolor" /* 7655 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ImageBackground: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { cardContainer: { borderRadius: nativeDefault.radii.md, overflow: "hidden", shadowColor: "#000", shadowOffset: { width: 0, height: 4 }, shadowOpacity: 0.3, shadowRadius: 8, elevation: 8 }, cardImageBackground: { width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }, cardImage: { width: "100%", height: "100%", resizeMode: "cover" } };
 let closure_7 = createStyles.createStyles(obj2);
 let size = fn(2);

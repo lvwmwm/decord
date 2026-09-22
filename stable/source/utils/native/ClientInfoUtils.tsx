@@ -1,40 +1,24 @@
-// Module ID: 1364
-// Function ID: 1365
+// Module ID: 1362
+// Function ID: 1363
 // Name: ClientInfoUtils
-// Dependencies: [17, 1115, 1344, 2]
+// Dependencies: [1342, 2]
 // Exports: getBuildNumberLabel, getConstants
 
-// Module 1364 (ClientInfoUtils)
-import _mod17 from "module_17" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import NativeClientInfoModuleDefault from "NativeClientInfoModule" /* 1344 */;
+// Module 1362 (ClientInfoUtils)
+import NativeClientInfoModuleDefault from "NativeClientInfoModule" /* 1342 */;
 import size from "module_2" /* 2 */;
 
-const NativeModules = _mod17.NativeModules;
 const result = size.fileFinishedImporting("utils/native/ClientInfoUtils.tsx");
 
 export const getConstants = function getConstants() {
-  if (obj.isAndroid()) {
-    if (null === NativeClientInfoModuleDefault) {
-      const _Error = Error;
-      const error = new Error("Turbo module RTNClientInfoManager is undefined for Android");
-      throw error;
-    } else {
-      return tmp3(1344).getConstants();
-    }
-    tmp3 = importDefault;
-  } else {
-    const InfoDictionaryManager = NativeModules.InfoDictionaryManager;
-    return InfoDictionaryManager.getConstants();
-  }
-  obj = PlatformUtils;
+  return NativeClientInfoModuleDefault.getConstants();
 };
 export const getBuildNumberLabel = function getBuildNumberLabel() {
   const items = ["0", "123456", "1234567890"];
-  let str = "6410";
-  if (items.includes("6410")) {
+  let str = "6461";
+  if (items.includes("6461")) {
     const _HermesInternal = HermesInternal;
-    str = "dev (" + "6410" + ")";
+    str = "dev (" + "6461" + ")";
   }
   return str;
 };

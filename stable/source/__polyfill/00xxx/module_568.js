@@ -358,7 +358,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: "r", type: "GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET", listener: "a" };
+          obj = { fired: false, wrapFn: "a", target: 1157628778, type: 204655, listener: 200280 };
           obj.target = this;
           obj.type = global;
           obj.listener = require;
@@ -383,7 +383,7 @@ if (null) {
         } else {
           self = this;
           tmp6 = global;
-          obj = { fired: false, wrapFn: "a", target: "r", type: "GIFT_CARD_MOBILE_CONSUMPTION_UNAVAILABLE_HALFSHEET", listener: "a" };
+          obj = { fired: false, wrapFn: "a", target: 1157628778, type: 204655, listener: 200280 };
           obj.target = this;
           obj.type = global;
           obj.listener = require;

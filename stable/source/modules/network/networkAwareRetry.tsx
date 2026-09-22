@@ -1,10 +1,10 @@
-// Module ID: 13839
-// Function ID: 13840
+// Module ID: 13925
+// Function ID: 13926
 // Name: networkAwareRetry
-// Dependencies: [5, 502, 4447, 1461, 2]
+// Dependencies: [5, 502, 1952, 1461, 2]
 // Exports: default
 
-// Module 13839 (networkAwareRetry)
+// Module 13925 (networkAwareRetry)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 

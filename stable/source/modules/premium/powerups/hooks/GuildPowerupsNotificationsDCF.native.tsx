@@ -1,14 +1,14 @@
-// Module ID: 12505
-// Function ID: 12506
+// Module ID: 12634
+// Function ID: 12635
 // Name: GuildPowerupsNotificationsDCF
-// Dependencies: [7388, 1943, 12499, 12506, 2]
+// Dependencies: [7491, 1943, 12628, 12635, 2]
 // Exports: useBoostToUnlockCoachmarkDCF, useExpiringPowerupCoachmarkDCF, useGameServerPricingCoachmarkDCF, useGuildPowerupNotificationDCF, useNewGamesCoachmarkDC, useNewPerkAvailableCoachmarkDCF, usePerksCoachmarkDCF
 
-// Module 12505 (GuildPowerupsNotificationsDCF)
+// Module 12634 (GuildPowerupsNotificationsDCF)
 import dismissible_content from "dismissible_content" /* 1943 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7388 */;
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12499 */;
-import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12506 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7491 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 12628 */;
+import BoostToUnlockMobileCoachmarkExperimentDefault from "BoostToUnlockMobileCoachmarkExperiment" /* 12635 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/GuildPowerupsNotificationsDCF.native.tsx");
@@ -59,11 +59,15 @@ export function useGameServerPricingCoachmarkDCF() {
   return items;
 }
 export const useBoostToUnlockCoachmarkDCF = function useBoostToUnlockCoachmarkDCF(arg0, id, GUILD_HEADER_TOOLTIPS) {
+  let _location = "useBoostToUnlockCoachmarkDCF-ineligible";
+  if (arg0) {
+    _location = "useBoostToUnlockCoachmarkDCF-eligible";
+  }
   const obj = BoostToUnlockMobileCoachmarkExperimentDefault;
   let prop = null;
   if (arg0) {
     prop = null;
-    if (obj.useConfig({ location: "useBoostToUnlockCoachmarkDCF" }).showCoachmark) {
+    if (obj.useConfig({ location: _location }).showCoachmark) {
       prop = tmp2(1943).DismissibleContent.BOOST_TO_UNLOCK_COACHMARK;
     }
   }

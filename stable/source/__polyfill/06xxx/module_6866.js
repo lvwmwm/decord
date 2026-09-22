@@ -1,13 +1,17 @@
 // Module ID: 6866
 // Function ID: 6867
-// Dependencies: []
+// Dependencies: [6864, 6815]
+// Exports: useSimultaneousGestures
 
 // Module 6866
+import ComposedGestureName from "ComposedGestureName" /* 6815 */;
+import _mod6864 from "module_6864" /* 6864 */;
 
-export default function _classCallCheck(arg0, arg1) {
-  if (!(arg0 instanceof arg1)) {
-    const _TypeError = TypeError;
-    const typeError = new TypeError("Cannot call a class as a function");
-    throw typeError;
-  }
+require = arg1;
+const dependencyMap = arg6;
+
+export const useSimultaneousGestures = function useSimultaneousGestures() {
+  const items = [...arguments];
+  const items1 = [ComposedGestureName.ComposedGestureName.Simultaneous, ...items];
+  return _mod6864.useComposedGesture.apply(items1);
 };

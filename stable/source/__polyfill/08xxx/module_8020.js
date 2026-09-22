@@ -1,9 +1,19 @@
 // Module ID: 8020
 // Function ID: 8021
-// Dependencies: [1122]
+// Dependencies: []
+// Exports: debounce
 
 // Module 8020
-import registerAsset from "module_1122" /* 1122 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "cf48a47923589f64877ce012e03ba342", name: "SettingsInfoIcon", type: "png" });
+export function debounce(arg0, arg1) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  return function() {
+    const self = this;
+    closure_0 = [...arguments];
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      closure_0.apply(self, closure_0);
+    }, self);
+  };
+}

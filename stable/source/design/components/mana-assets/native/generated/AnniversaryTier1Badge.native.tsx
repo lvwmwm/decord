@@ -1,0 +1,40 @@
+// Module ID: 5828
+// Function ID: 5829
+// Name: AnniversaryTier1Badge
+// Dependencies: [21, 5668, 5829, 2]
+// Exports: AnniversaryTier1Badge
+
+// Module 5828 (AnniversaryTier1Badge)
+import jsxProd from "jsxProd" /* 21 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef5829 from "module_5829" /* 5829 */;
+import size from "module_2" /* 2 */;
+
+const jsx = jsxProd.jsx;
+const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AnniversaryTier1Badge.native.tsx");
+
+export const AnniversaryTier1Badge = function AnniversaryTier1Badge(width) {
+  let num = width.width;
+  ({ accessible, accessibilityLabel, resizeMode } = width);
+  if (num === undefined) {
+    num = 24;
+  }
+  let num2 = width.height;
+  if (num2 === undefined) {
+    num2 = 24;
+  }
+  let num3 = width.scale;
+  if (num3 === undefined) {
+    num3 = 1;
+  }
+  const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
+  const obj2 = { uri: _modDef5829 };
+  obj.source = obj2;
+  const size = { width: num * num3, height: num2 * num3 };
+  const items = [size];
+  obj.style = items;
+  obj.accessible = accessible;
+  obj.accessibilityLabel = accessibilityLabel;
+  obj.resizeMode = resizeMode;
+  return jsx(FastImageDefault, { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null });
+};

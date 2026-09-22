@@ -1,10 +1,10 @@
-// Module ID: 8932
-// Function ID: 8933
+// Module ID: 9055
+// Function ID: 9056
 // Name: resolvedValuesFromUserApplicationIdentityProfile
-// Dependencies: [2, 8933, 8934, 8935, 8938, 9016, 9017]
+// Dependencies: [2, 9056, 9057, 9058, 9061, 9139, 9140]
 
-// Module 8932 (resolvedValuesFromUserApplicationIdentityProfile)
-import discord_common_resolvedValuesFromUserApplicationIdentityProfile from "discord_common/resolvedValuesFromUserApplicationIdentityProfile" /* 9017 */;
+// Module 9055 (resolvedValuesFromUserApplicationIdentityProfile)
+import discord_common_resolvedValuesFromUserApplicationIdentityProfile from "discord_common/resolvedValuesFromUserApplicationIdentityProfile" /* 9140 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

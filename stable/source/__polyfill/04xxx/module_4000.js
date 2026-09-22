@@ -1,20 +1,20 @@
 // Module ID: 4000
 // Function ID: 4001
-// Dependencies: [3859, 3651]
+// Dependencies: [3725, 3726]
 // Exports: default
 
 // Module 4000
-import startOfMinute_mod from "startOfMinute" /* 3859 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let startOfMinute = startOfMinute_mod;
-if (!startOfMinute) {
-  const obj = { default: startOfMinute };
+let _typeof = _typeof_mod;
+if (!_typeof) {
+  const obj = { default: _typeof };
   let tmp3 = obj;
 } else {
-  tmp3 = startOfMinute;
+  tmp3 = _typeof;
 }
-startOfMinute = tmp3;
+_typeof = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,10 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isSameMinute(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = startOfMinute.default(arg0);
-  const time = defaultResult1.getTime();
-  return time === startOfMinute.default(arg1).getTime();
+export default function getMinutes(arg0) {
+  requiredArgs.default(1, arguments);
+  return _typeof.default(arg0).getMinutes();
 };
 export default exports.default;

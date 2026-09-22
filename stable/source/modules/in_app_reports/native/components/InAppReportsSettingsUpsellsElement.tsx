@@ -1,17 +1,17 @@
-// Module ID: 9081
-// Function ID: 9082
+// Module ID: 9204
+// Function ID: 9205
 // Name: InAppReportsSettingsUpsellsElement
-// Dependencies: [32, 19, 17, 1957, 1074, 21, 4560, 576, 4992, 8639, 9057, 7380, 504, 8646, 5687, 1114, 4556, 7382, 4740, 2]
+// Dependencies: [32, 19, 17, 1957, 1074, 21, 4636, 576, 5073, 8756, 9180, 7483, 504, 8763, 5768, 1114, 4632, 7485, 4816, 2]
 // Exports: default
 
-// Module 9081 (InAppReportsSettingsUpsellsElement)
+// Module 9204 (InAppReportsSettingsUpsellsElement)
 import nativeDefault from "native" /* 576 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4740 */;
-import useMountEffectDefault from "useMountEffect" /* 4992 */;
-import SettingsIcon from "SettingsIcon" /* 7380 */;
-import openUserSettings from "openUserSettings" /* 7382 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8639 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 9057 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4816 */;
+import useMountEffectDefault from "useMountEffect" /* 5073 */;
+import SettingsIcon from "SettingsIcon" /* 7483 */;
+import openUserSettings from "openUserSettings" /* 7485 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 8756 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 9180 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
@@ -44,7 +44,7 @@ const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, UserSettingsSections: closure_8 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16 }, settingsContainer: null, goToSettingsText: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.settingsContainer = { width: "100%", marginBottom: nativeDefault.space.PX_8 };

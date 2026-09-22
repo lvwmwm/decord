@@ -1,14 +1,14 @@
-// Module ID: 17006
-// Function ID: 17007
+// Module ID: 17114
+// Function ID: 17115
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 1957, 1371, 4581, 21, 4560, 576, 9604, 4515, 4556, 1114, 504, 1178, 9611, 4262, 17007, 9622, 17008, 9616, 2]
+// Dependencies: [32, 19, 17, 1957, 1371, 4657, 21, 4636, 576, 9728, 4591, 4632, 1114, 504, 1176, 9735, 4338, 17115, 9746, 17116, 9740, 2]
 
-// Module 17006 (ExternalPipViewVideo)
+// Module 17114 (ExternalPipViewVideo)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import ExternalPipDefault from "ExternalPip" /* 9616 */;
-import VideoActionCreators from "VideoActionCreators" /* 17007 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17008 */;
+import ExternalPipDefault from "ExternalPip" /* 9740 */;
+import VideoActionCreators from "VideoActionCreators" /* 17115 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17116 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
@@ -21,11 +21,11 @@ function ExternalPipViewVideoUnavailable(wasStream) {
   const obj = { style: tmp.unavailable, children: null };
   if (wasStream) {
     const obj2 = { style: tmp.unavaiableImage };
-    let tmp4Result = tmp4(tmp5(9604).StreamEnded, obj2);
+    let tmp4Result = tmp4(tmp5(9728).StreamEnded, obj2);
     let tmp8 = tmp4;
     let tmp10 = tmp5;
   } else {
-    tmp4Result = tmp4(tmp5(4515).CircleInformationIcon, {});
+    tmp4Result = tmp4(tmp5(4591).CircleInformationIcon, {});
     tmp8 = tmp4;
     tmp10 = tmp5;
   }
@@ -38,7 +38,7 @@ function ExternalPipViewVideoUnavailable(wasStream) {
     result = intl.string(tmp10(1114).t.Nzo5nz);
   }
   obj3.children = result;
-  items[1] = tmp8(tmp10(4556).Text, obj3);
+  items[1] = tmp8(tmp10(4632).Text, obj3);
   obj.children = items;
   return closure_1_12(timestampProducer, obj);
 }
@@ -52,8 +52,8 @@ function ExternalPipViewVideoUser(arg0) {
   const obj2 = { style: tmp.user, children: null };
   let tmp7Result = null;
   if (null != stateFromStores) {
-    const obj3 = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: tmp6, size: tmp2(1178).AvatarSizes.XXLARGE, animate: speaking, speaking };
-    tmp7Result = tmp7(tmp2(1178).Avatar, obj3);
+    const obj3 = { user: stateFromStores, avatarDecoration: stateFromStores.avatarDecoration, guildId: tmp6, size: tmp2(1176).AvatarSizes.XXLARGE, animate: speaking, speaking };
+    tmp7Result = tmp7(tmp2(1176).Avatar, obj3);
   }
   obj2.children = tmp7Result;
   return closure_11(closure_6, obj2);
@@ -63,7 +63,7 @@ function ExternalPipViewVideoStream(streamId) {
   first = 300;
   _slicedToArray = undefined;
   noop = undefined;
-  const surfaceDirectRendererExperiment = streamId(9611).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
+  const surfaceDirectRendererExperiment = streamId(9735).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
   [first, _slicedToArray] = noop.useState(undefined);
   const tmp4 = _slicedToArray(noop.useState(false), 2);
   noop = tmp4[1];
@@ -95,8 +95,8 @@ function ExternalPipViewVideoStream(streamId) {
     items[1] = { opacity: num };
     return items;
   }, items2);
-  let obj = streamId(9611);
-  const token = streamId(4262).useToken(first(576).colors.TEXT_FEEDBACK_INFO);
+  let obj = streamId(9735);
+  const token = streamId(4338).useToken(first(576).colors.TEXT_FEEDBACK_INFO);
   value = closure_7.get();
   _slicedToArray = value;
   const items3 = [streamId, value];
@@ -107,7 +107,7 @@ function ExternalPipViewVideoStream(streamId) {
       VideoActionCreators.updateVideoSize(tmp, size, 1);
     }
   }, items3);
-  const children = [closure_11(first(9622), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [closure_11(first(9746), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp14Result = null;
   if (null == first) {
     tmp14Result = null;
@@ -123,10 +123,10 @@ function ExternalPipViewVideoStream(streamId) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, StyleSheet, View: metroRequire, PixelRatio: closure_7 } = get_ActivityIndicator);
-const ParticipantTypes = fn(4581).ParticipantTypes;
+const ParticipantTypes = fn(4657).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { container: null, video: null, videoUnavailableWrap: null, videoUnavailableSpinner: null, unavailable: null, unavailableText: null, unavaiableImage: null, user: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

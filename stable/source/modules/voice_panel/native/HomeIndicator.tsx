@@ -1,9 +1,9 @@
-// Module ID: 9489
-// Function ID: 9490
+// Module ID: 9613
+// Function ID: 9614
 // Name: HomeIndicator
-// Dependencies: [19, 17, 560, 1249, 1115, 1623, 2]
+// Dependencies: [19, 17, 560, 1247, 1363, 1623, 2]
 
-// Module 9489 (HomeIndicator)
+// Module 9613 (HomeIndicator)
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -62,8 +62,8 @@ HomeIndicator["_updatePropsStack"] = function _updatePropsStack() {
     const prefersHidden = obj.prefersHidden;
     const autoHideHomeIndicator = tmp;
     const prefersDeferringSystemGestures = obj.prefersDeferringSystemGestures;
-    autoHideHomeIndicator(1249).batchUpdates(() => state.setState({ autoHideHomeIndicator }));
-    const obj2 = autoHideHomeIndicator(1249);
+    autoHideHomeIndicator(1247).batchUpdates(() => state.setState({ autoHideHomeIndicator }));
+    const obj2 = autoHideHomeIndicator(1247);
     const tmp2 = undefined !== prefersDeferringSystemGestures && prefersDeferringSystemGestures;
     if (obj3.isAndroid()) {
       const result = closure_1(1623).setNavigationBarVisible(!tmp);

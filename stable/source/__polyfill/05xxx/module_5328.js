@@ -1,9 +1,14 @@
 // Module ID: 5328
 // Function ID: 5329
-// Dependencies: [1122]
+// Dependencies: []
 
 // Module 5328
-import registerAsset from "module_1122" /* 1122 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "51c56027f271f175240f0fff23cdb627", name: "img_account_sync_twitter_light_and_dark", type: "svg" });
+export default {
+  get() {
+    if (typeof TextDecoder !== "undefined") {
+      const _TextDecoder = TextDecoder;
+      return TextDecoder;
+    }
+  }
+};

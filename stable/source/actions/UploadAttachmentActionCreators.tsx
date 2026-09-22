@@ -1,9 +1,9 @@
-// Module ID: 9313
-// Function ID: 9314
+// Module ID: 9436
+// Function ID: 9437
 // Name: UploadAttachmentActionCreators
-// Dependencies: [573, 9314, 2]
+// Dependencies: [573, 9437, 2]
 
-// Module 9313 (UploadAttachmentActionCreators)
+// Module 9436 (UploadAttachmentActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
@@ -16,12 +16,12 @@ export default {
   addFiles(draftType) {
     ({ files, channelId } = draftType);
     draftType = draftType.draftType;
-    if (files.some(channelId(9314).itemNeedsHeicPreConversion)) {
+    if (files.some(channelId(9437).itemNeedsImagePreConversion)) {
       function dispatch(files) {
         DispatcherDefault.dispatch({ type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files, draftType });
       }
-      Promise.all(files.map(channelId(9314).maybePreConvertHeicItem)).then(dispatch);
-      const allPromises = Promise.all(files.map(channelId(9314).maybePreConvertHeicItem));
+      Promise.all(files.map(channelId(9437).maybePreConvertImageItem)).then(dispatch);
+      const allPromises = Promise.all(files.map(channelId(9437).maybePreConvertImageItem));
     } else {
       const obj2 = { type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files, draftType };
       draftType(573).dispatch(obj2);
@@ -32,14 +32,14 @@ export default {
     ({ file, channelId } = draftType);
     draftType = draftType.draftType;
     const allowOptimization = draftType.allowOptimization;
-    if (obj.itemNeedsHeicPreConversion(file)) {
+    if (obj.itemNeedsImagePreConversion(file)) {
       function dispatch(result) {
         const obj2 = { type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files: null, draftType, allowOptimization };
         const items = [result];
         obj2.files = items;
         DispatcherDefault.dispatch(obj2);
       }
-      const result = channelId(tmp2[1]).maybePreConvertHeicItem(file);
+      const result = channelId(tmp2[1]).maybePreConvertImageItem(file);
       result.then(dispatch);
       const tmpResult = channelId(tmp2[1]);
     } else {

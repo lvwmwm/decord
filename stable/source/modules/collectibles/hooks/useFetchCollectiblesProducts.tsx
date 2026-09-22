@@ -1,15 +1,15 @@
-// Module ID: 8879
-// Function ID: 8880
+// Module ID: 15153
+// Function ID: 15154
 // Name: useFetchCollectiblesProducts
-// Dependencies: [32, 19, 5510, 7542, 1074, 563, 1889, 7541, 2]
+// Dependencies: [32, 19, 5591, 7645, 1074, 563, 1889, 7644, 2]
 // Exports: useFetchCollectiblesProducts
 
-// Module 8879 (useFetchCollectiblesProducts)
+// Module 15153 (useFetchCollectiblesProducts)
 import CollectiblesItemType from "CollectiblesItemType" /* 1889 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7541 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7644 */;
 import _slicedToArray from "module_32" /* 32 */;
-import SKUStore from "SKUStore" /* 5510 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7542 */;
+import SKUStore from "SKUStore" /* 5591 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7645 */;
 
 const require = globalThis.__r;
 
@@ -19,23 +19,23 @@ const SKUProductLines = fn(1074).SKUProductLines;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useFetchCollectiblesProducts.tsx");
 
-export const useFetchCollectiblesProducts = function useFetchCollectiblesProducts(gameProfileShopCollection, arg1) {
-  _require = gameProfileShopCollection;
+export const useFetchCollectiblesProducts = function useFetchCollectiblesProducts(arg0, arg1) {
+  _require = arg0;
   dependencyMap = arg1;
   const items = [stateFromStoresArray2];
-  const stateFromStoresArray = require("useStateFromStores").useStateFromStoresArray(items, () => gameProfileShopCollection.map((item) => stateFromStoresArray2.get(item)));
+  const stateFromStoresArray = require("useStateFromStores").useStateFromStoresArray(items, () => closure_0.map((item) => stateFromStoresArray2.get(item)));
   let obj = require("useStateFromStores");
   const items1 = [stateFromStoresArray3];
-  const stateFromStoresArray1 = require("useStateFromStores").useStateFromStoresArray(items1, () => gameProfileShopCollection.map((item) => product.getProduct(item)));
+  const stateFromStoresArray1 = require("useStateFromStores").useStateFromStoresArray(items1, () => closure_0.map((item) => product.getProduct(item)));
   let obj2 = require("useStateFromStores");
   const items2 = [stateFromStoresArray3];
-  stateFromStoresArray2 = require("useStateFromStores").useStateFromStoresArray(items2, () => gameProfileShopCollection.map((item) => productFetch.getProductFetch(item)));
+  stateFromStoresArray2 = require("useStateFromStores").useStateFromStoresArray(items2, () => closure_0.map((item) => productFetch.getProductFetch(item)));
   const obj4 = require("useStateFromStores");
   const items3 = [stateFromStoresArray3];
-  stateFromStoresArray3 = require("useStateFromStores").useStateFromStoresArray(items3, () => gameProfileShopCollection.map((item) => productFetchBackedOff.isProductFetchBackedOff(item)));
-  const items4 = [gameProfileShopCollection, stateFromStoresArray, stateFromStoresArray2, stateFromStoresArray1, arg1, stateFromStoresArray3];
+  stateFromStoresArray3 = require("useStateFromStores").useStateFromStoresArray(items3, () => closure_0.map((item) => productFetchBackedOff.isProductFetchBackedOff(item)));
+  const items4 = [arg0, stateFromStoresArray, stateFromStoresArray2, stateFromStoresArray1, arg1, stateFromStoresArray3];
   stateFromStoresArray1(() => {
-    const entries = gameProfileShopCollection.entries();
+    const entries = closure_0.entries();
     while (tmp2 !== undefined) {
       let tmp5 = _slicedToArray(tmp3, 2);
       [tmp6, tmp8] = tmp5;

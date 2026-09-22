@@ -1,13 +1,13 @@
-// Module ID: 11516
-// Function ID: 11517
+// Module ID: 11648
+// Function ID: 11649
 // Name: AppStoreOverlayAboutSection
-// Dependencies: [32, 19, 17, 21, 576, 4560, 1114, 4556, 2]
+// Dependencies: [32, 19, 17, 21, 576, 4636, 1114, 4632, 2]
 // Exports: default
 
-// Module 11516 (AppStoreOverlayAboutSection)
+// Module 11648 (AppStoreOverlayAboutSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
+import Text_Text from "Text/Text" /* 4632 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const rect = { top: nativeDefault.space.PX_12, bottom: nativeDefault.space.PX_12, left: nativeDefault.space.PX_12, right: nativeDefault.space.PX_12 };
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { aboutSection: { borderRadius: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.CARD_SECONDARY_BACKGROUND_DEFAULT, padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 } };
 let closure_9 = createStyles.createStyles(obj);
 const size = fn(2);
@@ -54,7 +54,7 @@ export default function AppStoreOverlayAboutSection(children) {
     obj3.accessibilityState = obj4;
     obj3.onPress = callback1;
     const obj5 = { variant: "text-sm/medium", color: "text-link", children: stringResult };
-    obj3.children = tmp13(tmp8(4556).Text, obj5);
+    obj3.children = tmp13(tmp8(4632).Text, obj5);
     tmp13Result = tmp13(React4, obj3);
   }
   items1[2] = tmp13Result;

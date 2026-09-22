@@ -1,15 +1,15 @@
-// Module ID: 8863
-// Function ID: 8864
+// Module ID: 8982
+// Function ID: 8983
 // Name: TestModeStore
-// Dependencies: [1184, 1221, 7397, 504, 1935, 573, 2]
+// Dependencies: [1182, 1219, 7500, 504, 1935, 573, 2]
 
-// Module 8863 (TestModeStore)
+// Module 8982 (TestModeStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import UserSettings from "UserSettings" /* 1935 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1184 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
-import LibraryApplicationStore from "LibraryApplicationStore" /* 7397 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1182 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
+import LibraryApplicationStore from "LibraryApplicationStore" /* 7500 */;
 
 require = fn;
 function reset() {

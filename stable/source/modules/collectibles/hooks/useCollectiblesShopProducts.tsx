@@ -1,20 +1,20 @@
-// Module ID: 13112
-// Function ID: 13113
+// Module ID: 8999
+// Function ID: 9000
 // Name: useCollectiblesShopProducts
-// Dependencies: [32, 19, 13113, 8221, 7543, 7544, 13114, 504, 7541, 8220, 13115, 2]
+// Dependencies: [32, 19, 9000, 8336, 7646, 7647, 9001, 504, 7644, 8335, 9002, 2]
 // Exports: useCollectiblesShopProduct, useCollectiblesShopProducts, useFetchResolvedAbsent
 
-// Module 13112 (useCollectiblesShopProducts)
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7541 */;
-import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8220 */;
-import CollectiblesShopManager2 from "CollectiblesShopManager" /* 13114 */;
-import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 13115 */;
+// Module 8999 (useCollectiblesShopProducts)
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7644 */;
+import StorefrontProductActionCreators from "StorefrontProductActionCreators" /* 8335 */;
+import CollectiblesShopManager2 from "CollectiblesShopManager" /* 9001 */;
+import StorefrontCollectionActionCreators from "StorefrontCollectionActionCreators" /* 9002 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 13113 */;
-import StorefrontProductStore from "StorefrontProductStore" /* 8221 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7543 */;
-import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7544 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 9000 */;
+import StorefrontProductStore from "StorefrontProductStore" /* 8336 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7646 */;
+import CollectiblesProductRecord from "CollectiblesProductRecord" /* 7647 */;
 
 const require = globalThis.__r;
 
@@ -353,8 +353,8 @@ export const useCollectiblesShopProduct = function useCollectiblesShopProduct(sk
     }, items10)
   };
 };
-export const useCollectiblesShopProducts = function useCollectiblesShopProducts(arg0) {
-  _require = arg0;
+export const useCollectiblesShopProducts = function useCollectiblesShopProducts(skuIds, arg1) {
+  _require = skuIds;
   let obj = arg1;
   if (arg1 === undefined) {
     obj = {};
@@ -369,8 +369,8 @@ export const useCollectiblesShopProducts = function useCollectiblesShopProducts(
   }
   let memo;
   let stateFromStoresObject1;
-  let items = [arg0];
-  memo = memo.useMemo(() => closure_0.filter((item) => "" !== item), items);
+  let items = [skuIds];
+  memo = memo.useMemo(() => skuIds.filter((item) => "" !== item), items);
   const items1 = [memo.join(",")];
   const effect = memo.useEffect(() => {
     if (memo.length > 0) {

@@ -1,15 +1,15 @@
-// Module ID: 14465
-// Function ID: 14466
+// Module ID: 14551
+// Function ID: 14552
 // Name: validateEmbeddedAppFrame
-// Dependencies: [9516, 14466, 4465, 1074, 9517, 9565, 8862, 9560, 2]
+// Dependencies: [9640, 14552, 4541, 1074, 9641, 9689, 8981, 9684, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14465 (validateEmbeddedAppFrame)
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8862 */;
-import RPCErrorDefault from "RPCError" /* 9560 */;
-import RPCHelpers from "RPCHelpers" /* 9565 */;
-import FramesStore from "FramesStore" /* 9516 */;
-import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14466 */;
+// Module 14551 (validateEmbeddedAppFrame)
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 8981 */;
+import RPCErrorDefault from "RPCError" /* 9684 */;
+import RPCHelpers from "RPCHelpers" /* 9689 */;
+import FramesStore from "FramesStore" /* 9640 */;
+import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14552 */;
 
 require = fn;
 function validateEmbeddedAppFrame(transport) {
@@ -25,20 +25,23 @@ function validateEmbeddedAppFrame(transport) {
       let tmp13 = null;
       if (null != tmp35) {
         const type = tmp35.surface.type;
-        if (constants3.APP_CHANNEL === type) {
-          const obj5 = { channelId: tmp35.surface.channelId, guildId: tmp35.surface.guildId };
-          tmp13 = obj5;
-        } else {
-          tmp13 = null;
-          if (tmp12.MAIN === type) {
-            if (tmp35.applicationId === VibegrationsBuilderPreviewStore.getBuilderPreviewApplicationId()) {
-              let obj6 = { channelId: "transform", guildId: "call" };
+        if (constants3.APP_CHANNEL !== type) {
+          if (tmp12.VOICE_CHANNEL !== type) {
+            if (tmp12.MAIN === type) {
+              if (tmp35.applicationId === VibegrationsBuilderPreviewStore.getBuilderPreviewApplicationId()) {
+                let obj5 = { channelId: "Array", guildId: "PX_16" };
+              } else {
+                obj5 = null;
+              }
+              tmp13 = obj5;
             } else {
-              obj6 = null;
+              const surface = tmp35.surface;
+              tmp13 = null;
             }
-            tmp13 = obj6;
           }
         }
+        const obj6 = { channelId: tmp35.surface.channelId, guildId: tmp35.surface.guildId };
+        tmp13 = obj6;
       }
       if (null == tmp13) {
         const obj7 = { errorCode: constants2.UNAUTHORIZED_FOR_APPLICATION };
@@ -57,18 +60,18 @@ function validateEmbeddedAppFrame(transport) {
   }
   obj3 = ApplicationFlagUtils;
 }
-const TransportTypes = fn(4465).TransportTypes;
+const TransportTypes = fn(4541).TransportTypes;
 const Constants = fn(1074);
 ({ ApplicationFlags: metroRequire, RPCErrors: closure_7 } = Constants);
-const FramesConstants = fn(9517);
+const FramesConstants = fn(9641);
 ({ asLaunched: closure_8, EmbeddedSurfaceType: closure_9 } = FramesConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateEmbeddedAppFrame.tsx");
 
 export default validateEmbeddedAppFrame;
-export const tryValidateEmbeddedAppFrame = function tryValidateEmbeddedAppFrame(socket) {
+export const tryValidateEmbeddedAppFrame = function tryValidateEmbeddedAppFrame(transport) {
   try {
-    return validateEmbeddedAppFrame(socket);
+    return validateEmbeddedAppFrame(transport);
   } catch (tmp3) {
     if (tmp3 instanceof RPCErrorDefault) {
       return null;

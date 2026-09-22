@@ -1,9 +1,13 @@
 // Module ID: 5037
 // Function ID: 5038
-// Dependencies: [1122]
+// Dependencies: [17, 65]
 
 // Module 5037
-import registerAsset from "module_1122" /* 1122 */;
+import _mod17 from "module_17" /* 17 */;
+import module_65 from "module_65" /* 65 */;
 
+const codegenNativeComponent = _mod17.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSFullWindowOverlay", validAttributes: { accessibilityContainerViewIsModal: true } };
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "38e1b93a52067f9cce24c90cbb1af007", name: "StageIcon", type: "png" });
+export default module_65.get("RNSFullWindowOverlay", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

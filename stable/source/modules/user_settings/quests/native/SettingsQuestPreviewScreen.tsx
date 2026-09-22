@@ -1,20 +1,20 @@
-// Module ID: 15174
-// Function ID: 15175
+// Module ID: 15252
+// Function ID: 15253
 // Name: SettingsQuestPreviewScreen
-// Dependencies: [32, 19, 17, 7703, 1183, 21, 576, 4560, 1484, 504, 15175, 15177, 1114, 9798, 11281, 573, 15178, 9799, 12620, 15184, 2]
+// Dependencies: [32, 19, 17, 7805, 1181, 21, 576, 4636, 1484, 504, 15253, 15255, 1114, 9922, 11413, 573, 15256, 9923, 12749, 15262, 2]
 // Exports: default
 
-// Module 15174 (SettingsQuestPreviewScreen)
+// Module 15252 (SettingsQuestPreviewScreen)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import QuestActionCreators from "QuestActionCreators" /* 11281 */;
-import QuestCardPreview from "QuestCardPreview" /* 15175 */;
-import QuestEmbedPreview from "QuestEmbedPreview" /* 15177 */;
+import QuestActionCreators from "QuestActionCreators" /* 11413 */;
+import QuestCardPreview from "QuestCardPreview" /* 15253 */;
+import QuestEmbedPreview from "QuestEmbedPreview" /* 15255 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import QuestStore from "QuestStore" /* 7703 */;
-import ThemeStore from "ThemeStore" /* 1183 */;
+import QuestStore from "QuestStore" /* 7805 */;
+import ThemeStore from "ThemeStore" /* 1181 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -22,7 +22,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, controlBarContainer: { paddingHorizontal: PX_16, paddingTop: PX_16 / 2, paddingBottom: PX_16 }, segmentedControlContainer: { paddingHorizontal: PX_16 }, pagesContainer: { flex: 1, width: "100%" }, activityIndicator: null, allSectionsContainer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 let obj4 = { paddingHorizontal: PX_16, paddingTop: PX_16 / 2, paddingBottom: PX_16 };

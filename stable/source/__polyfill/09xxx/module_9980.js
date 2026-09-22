@@ -1,9 +1,9 @@
 // Module ID: 9980
 // Function ID: 9981
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 9980
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls", width: 24, height: 24, scales: [2, 3], hash: "c9f854c83b9079fe0ab040df65e3caf2", name: "nav_header_disconnect", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 251, height: 147, scales: [2, 3], hash: "7e87039ca280115f9b6a52cb6bc7dc5e", name: "img_app_crash_dark", type: "png" });

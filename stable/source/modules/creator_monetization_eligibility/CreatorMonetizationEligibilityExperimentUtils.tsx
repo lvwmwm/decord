@@ -1,13 +1,13 @@
-// Module ID: 7261
-// Function ID: 7262
+// Module ID: 7364
+// Function ID: 7365
 // Name: CreatorMonetizationEligibilityExperimentUtils
-// Dependencies: [1371, 4220, 1074, 504, 2]
+// Dependencies: [1371, 4296, 1074, 504, 2]
 // Exports: isExpeditedMonetizationOnboardingGuild, isRavenOnboardingGuild, isUserInCreatorMonetizationEligibleCountry, isWhitegloveOnboardingGuild, useIsExpeditedOnboardingGuild, useIsRavenOnboardingGuild, useIsUserInCreatorMonetizationEligibleCountry, useIsWhitegloveOnboardingGuild
 
-// Module 7261 (CreatorMonetizationEligibilityExperimentUtils)
+// Module 7364 (CreatorMonetizationEligibilityExperimentUtils)
 import initialize from "initialize" /* 504 */;
 import UserStore from "UserStore" /* 1371 */;
-import BillingInfoStore from "BillingInfoStore" /* 4220 */;
+import BillingInfoStore from "BillingInfoStore" /* 4296 */;
 
 require = fn;
 const GuildFeatures = fn(1074).GuildFeatures;

@@ -1,20 +1,20 @@
-// Module ID: 12083
-// Function ID: 12084
+// Module ID: 12212
+// Function ID: 12213
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 9690, 21, 1115, 4560, 576, 8908, 4962, 4296, 12084, 4271, 7153, 12085, 504, 6627, 4528, 10094, 1874, 4992, 4262, 1611, 1477, 4432, 4413, 4959, 10280, 7040, 2]
+// Dependencies: [32, 19, 17, 9814, 21, 1363, 4636, 576, 9031, 5043, 4373, 12213, 4347, 7256, 12214, 504, 6728, 4604, 10218, 1874, 5073, 4338, 1611, 1477, 4509, 4490, 5040, 10404, 7143, 2]
 
-// Module 12083 (PortalKeyboardBottomSheet)
+// Module 12212 (PortalKeyboardBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1874 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import HapticUtils from "HapticUtils" /* 4528 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 4962 */;
-import BottomSheetModal from "BottomSheetModal" /* 6627 */;
-import native from "native" /* 8908 */;
-import isChannelFocused from "isChannelFocused" /* 10094 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import HapticUtils from "HapticUtils" /* 4604 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5043 */;
+import BottomSheetModal from "BottomSheetModal" /* 6728 */;
+import native from "native" /* 9031 */;
+import isChannelFocused from "isChannelFocused" /* 10218 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9690 */;
+import NativeMenuStore from "NativeMenuStore" /* 9814 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
@@ -44,11 +44,11 @@ get_ActivityIndicator = fn(17);
 ({ Platform, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const PlatformUtils = fn(1115);
+const PlatformUtils = fn(1363);
 let closure_9 = PlatformUtils.isIOS();
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { container: { position: "absolute", top: 0, left: 0 }, background: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, overflow: "hidden" }, headerContainer: null, headerContainerScreenReaderEnabled: null, roundingView: null };
-let size = { borderTopLeftRadius: nativeDefault.radii.none, borderTopRightRadius: nativeDefault.radii.none, width: "100%", height: fn(8908).ACTION_SHEET_DRAG_HANDLE_HEIGHT, marginBottom: -fn(8908).ACTION_SHEET_DRAG_HANDLE_HEIGHT };
+let size = { borderTopLeftRadius: nativeDefault.radii.none, borderTopRightRadius: nativeDefault.radii.none, width: "100%", height: fn(9031).ACTION_SHEET_DRAG_HANDLE_HEIGHT, marginBottom: -fn(9031).ACTION_SHEET_DRAG_HANDLE_HEIGHT };
 obj.headerContainer = size;
 let obj4 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, overflow: "hidden" };
 obj.headerContainerScreenReaderEnabled = { marginBottom: -nativeDefault.space.PX_8 };

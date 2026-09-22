@@ -1,9 +1,9 @@
 // Module ID: 16077
 // Function ID: 16078
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 16077
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/images", width: 64, height: 64, scales: [1], hash: "cfc308b460ac1d3ba90f4c87676a03fe", name: "game-empty-state", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 151, height: 119, scales: [2, 3], hash: "2a93fa6b4a038d5a151d558000723423", name: "img_wump_trash_darker", type: "png" });

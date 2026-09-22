@@ -1,10 +1,10 @@
-// Module ID: 9530
-// Function ID: 9531
+// Module ID: 9654
+// Function ID: 9655
 // Name: pendingFrameLaunch
 // Dependencies: [2]
-// Exports: consumePendingFrameLaunch, discardPendingFrameLaunch, stashPendingFrameLaunch
+// Exports: consumePendingFrameLaunch, stashPendingFrameLaunch
 
-// Module 9530 (pendingFrameLaunch)
+// Module 9654 (pendingFrameLaunch)
 import size from "module_2" /* 2 */;
 
 let closure_0 = {};
@@ -18,7 +18,4 @@ export const consumePendingFrameLaunch = function consumePendingFrameLaunch(appl
     delete tmp[tmp2];
     return tmp3;
   }
-};
-export const discardPendingFrameLaunch = function discardPendingFrameLaunch(applicationId) {
-  delete tmp2[tmp];
 };

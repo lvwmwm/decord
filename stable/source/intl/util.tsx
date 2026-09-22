@@ -1,11 +1,11 @@
-// Module ID: 1118
-// Function ID: 1119
+// Module ID: 1116
+// Function ID: 1117
 // Name: intl/util
-// Dependencies: [19, 1119, 1155, 1177, 2]
+// Dependencies: [19, 1117, 1153, 1175, 2]
 // Exports: getAvailableLocales, getLanguages, getNormalizedLocale, useSyncMessages
 
-// Module 1118 (intl/util)
-import _mod1155 from "module_1155" /* 1155 */;
+// Module 1116 (intl/util)
+import _mod1153 from "module_1153" /* 1153 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,12 +15,12 @@ const size = fn(2);
 const result = size.fileFinishedImporting("intl/util.tsx");
 
 export const getAvailableLocales = function getAvailableLocales() {
-  _require = require("module_1119").default;
-  const found = require("module_1177").filter((enabled) => enabled.enabled);
+  _require = require("module_1117").default;
+  const found = require("module_1175").filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => {
     code = code.code;
     const obj = { value: code, name: code.name, localizedName: null };
-    const obj2 = _mod1155;
+    const obj2 = _mod1153;
     obj.localizedName = closure_0[obj2.runtimeHashMessageKey(obj2, code)];
     return obj;
   });
@@ -39,10 +39,10 @@ export const getAvailableLocales = function getAvailableLocales() {
   });
 };
 export const getLanguages = function getLanguages() {
-  return require("module_1177");
+  return require("module_1175");
 };
 export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) {
-  const found = require("module_1177").filter((enabled) => enabled.enabled);
+  const found = require("module_1175").filter((enabled) => enabled.enabled);
   const mapped = found.map((code) => code.code);
   if (mapped.includes(Language)) {
     return Language;
@@ -70,7 +70,7 @@ export const getNormalizedLocale = function getNormalizedLocale(Language, arg1) 
     }
     return found2;
   }
-  const arr = require("module_1177");
+  const arr = require("module_1175");
 };
 export const useSyncMessages = function useSyncMessages(arg0, arg1) {
   closure_0 = arg0;

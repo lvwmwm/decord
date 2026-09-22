@@ -1,26 +1,26 @@
-// Module ID: 12480
-// Function ID: 12481
+// Module ID: 12609
+// Function ID: 12610
 // Name: GuildProgressActionSheet
-// Dependencies: [5, 19, 17, 9070, 2012, 12473, 1074, 21, 4560, 576, 504, 12478, 4258, 1242, 12481, 12482, 9826, 6232, 1114, 9069, 5138, 5812, 4571, 4527, 1109, 6348, 12483, 7182, 5802, 4556, 4975, 5123, 7198, 1178, 2]
+// Dependencies: [5, 19, 17, 9193, 2012, 12602, 1074, 21, 4636, 576, 504, 12607, 4334, 1240, 12610, 12611, 9950, 6333, 1114, 9192, 5219, 5913, 4647, 4603, 1109, 6449, 12612, 7285, 5903, 4632, 5056, 5204, 7300, 1176, 2]
 // Exports: default
 
-// Module 12480 (GuildProgressActionSheet)
+// Module 12609 (GuildProgressActionSheet)
 import nativeDefault from "native" /* 576 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1109 */;
-import native from "native" /* 1178 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1242 */;
-import ToastUtils from "ToastUtils" /* 4258 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import transitionToChannel from "transitionToChannel" /* 4571 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7182 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9826 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 12478 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12481 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12483 */;
+import native from "native" /* 1176 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1240 */;
+import ToastUtils from "ToastUtils" /* 4334 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import transitionToChannel from "transitionToChannel" /* 4647 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7285 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 9950 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12607 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 12610 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 12612 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9070 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9193 */;
 import GuildChannelStore from "GuildChannelStore" /* 2012 */;
 
 const require = globalThis.__r;
@@ -41,13 +41,13 @@ class GuildProgressHeader {
   }
 }
 const View = fn(17).View;
-const GuildProgressConstants = fn(12473);
+const GuildProgressConstants = fn(12602);
 ({ AnalyticsSetupTypes: closure_8, AnalyticsActions: closure_9 } = GuildProgressConstants);
 const Constants = fn(1074);
 ({ UPLOAD_MEDIUM_SIZE: c10, AnalyticEvents: closure_11, ComponentActions: closure_12, InstantInviteSources: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { padding: 16 }, header: { alignItems: "center", paddingTop: 8, paddingBottom: 16 }, headerTitle: { marginBottom: 8, textAlign: "center" }, headerSubtitle: { fontSize: 14, fontWeight: "500", color: nativeDefault.colors.TEXT_SUBTLE }, footer: { marginTop: 4 }, center: { alignItems: "center" } };
 const value = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -82,14 +82,14 @@ export default function GuildProgressActionSheet(guild) {
             return obj3;
           } else {
             let base64;
-            tmp5(9069).init(View);
-            const obj6 = tmp5(9069);
-            tmp2(12478).hideActionSheet(id.id);
-            const obj7 = tmp2(12478);
+            tmp5(9192).init(View);
+            const obj6 = tmp5(9192);
+            tmp2(12607).hideActionSheet(id.id);
+            const obj7 = tmp2(12607);
             const obj4 = { size };
             dependencyMap = 1;
             c3 = 1;
-            const obj5 = { value: tmp5(5138).openImagePicker(obj4), done: false };
+            const obj5 = { value: tmp5(5219).openImagePicker(obj4), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -102,8 +102,8 @@ export default function GuildProgressActionSheet(guild) {
         } else {
           base64 = value.base64;
           if (null != base64) {
-            tmp5(9069).updateIcon(closure_129_5, base64);
-            const obj = tmp5(9069);
+            tmp5(9192).updateIcon(closure_129_5, base64);
+            const obj = tmp5(9192);
           }
           c3 = 3;
           return { value: "HermesInternal", done: null };
@@ -157,7 +157,7 @@ export default function GuildProgressActionSheet(guild) {
   };
   let obj5 = { uri: null };
   let obj3 = guild(numFinished[10]);
-  obj5.uri = require("module_6232");
+  obj5.uri = require("module_6333");
   obj4.source = obj5;
   const intl = guild(numFinished[18]).intl;
   obj4.title = intl.string(guild(numFinished[18]).t.q9n0Ta);
@@ -186,7 +186,7 @@ export default function GuildProgressActionSheet(guild) {
   };
   let obj7 = { uri: null };
   const tmp14 = closure_14(require("ProgressItem"), obj4);
-  obj7.uri = require("module_5812");
+  obj7.uri = require("module_5913");
   obj6.source = obj7;
   const intl2 = guild(numFinished[18]).intl;
   obj6.title = intl2.string(guild(numFinished[18]).t.DWB2YZ);
@@ -216,7 +216,7 @@ export default function GuildProgressActionSheet(guild) {
   };
   let obj9 = { uri: null };
   const tmp16 = closure_14(require("ProgressItem"), obj6);
-  obj9.uri = require("module_6348");
+  obj9.uri = require("module_6449");
   obj8.source = obj9;
   const intl3 = guild(numFinished[18]).intl;
   obj8.title = intl3.string(guild(numFinished[18]).t.dNktpr);

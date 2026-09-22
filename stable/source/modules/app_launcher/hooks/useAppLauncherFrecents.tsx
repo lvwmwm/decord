@@ -1,16 +1,16 @@
-// Module ID: 12123
-// Function ID: 12124
+// Module ID: 12252
+// Function ID: 12253
 // Name: useAppLauncherFrecents
-// Dependencies: [19, 7107, 1371, 12124, 1920, 4999, 1894, 9422, 504, 7170, 8340, 12125, 9412, 9295, 9577, 2]
+// Dependencies: [19, 7210, 1371, 12253, 1920, 5080, 1894, 9546, 504, 7273, 8457, 12254, 9536, 9418, 9701, 2]
 // Exports: default, useAppLauncherFrecentApps
 
-// Module 12123 (useAppLauncherFrecents)
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7170 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9422 */;
+// Module 12252 (useAppLauncherFrecents)
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7273 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 9546 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7107 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7210 */;
 import UserStore from "UserStore" /* 1371 */;
-import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 12124 */;
+import AppLauncherLastUsedCommandStore from "AppLauncherLastUsedCommandStore" /* 12253 */;
 
 const require = fn;
 function useFrecentApps(onlyActivityApps) {
@@ -101,9 +101,9 @@ function useFrecentApps(onlyActivityApps) {
     return found2;
   }, items5);
 }
-const FetchState = fn(7107).FetchState;
+const FetchState = fn(7210).FetchState;
 const WATCH_YOUTUBE_PROD_APP_ID = fn(1920).WATCH_YOUTUBE_PROD_APP_ID;
-const ApplicationCommandConstants = fn(4999);
+const ApplicationCommandConstants = fn(5080);
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
 let filters = { commandTypes: null };
 let items = [fn(1894).ApplicationCommandType.CHAT, fn(1894).ApplicationCommandType.PRIMARY_ENTRY_POINT];

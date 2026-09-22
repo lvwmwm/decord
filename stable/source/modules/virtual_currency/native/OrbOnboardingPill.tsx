@@ -1,14 +1,14 @@
-// Module ID: 15699
-// Function ID: 15700
+// Module ID: 15787
+// Function ID: 15788
 // Name: OrbOnboardingPill
-// Dependencies: [19, 21, 5123, 8843, 4556, 1114, 4560, 576, 2]
+// Dependencies: [19, 21, 5204, 8962, 4632, 1114, 4636, 576, 2]
 
-// Module 15699 (OrbOnboardingPill)
+// Module 15787 (OrbOnboardingPill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Pressables from "Pressables" /* 5123 */;
-import OrbsIcon from "OrbsIcon" /* 8843 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Pressables from "Pressables" /* 5204 */;
+import OrbsIcon from "OrbsIcon" /* 8962 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -41,7 +41,7 @@ class OrbOnboardingPill {
 const jsxProd = fn(21);
 ({ jsx: c2, jsxs: c3 } = jsxProd);
 OrbOnboardingPill.displayName = "OrbOnboardingPill";
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { height: 36, borderRadius: nativeDefault.radii.round, justifyContent: "center", alignItems: "center", flexDirection: "row", paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_4, backgroundColor: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_BACKGROUND, flexShrink: 0, gap: 4 } };
 const React4 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,9 +1,9 @@
 // Module ID: 1425
 // Function ID: 1426
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 1425
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
 export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/group_dms", width: 96, height: 96, scales: [1], hash: "3cb840d03313467838d658bbec801fcd", name: "icon7", type: "png" });

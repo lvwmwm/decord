@@ -1,9 +1,9 @@
 // Module ID: 15354
 // Function ID: 15355
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 15354
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ce6df62bb592b89e09867505a632d8fe", name: "EyeDropperIcon", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "86d4e70a86169368d49d086c67a043a3", name: "ThemeLightIcon", type: "png" });

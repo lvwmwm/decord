@@ -1,9 +1,31 @@
 // Module ID: 5302
 // Function ID: 5303
-// Dependencies: [1122]
+// Dependencies: [5303]
 
 // Module 5302
-import registerAsset from "module_1122" /* 1122 */;
+import findOffsets from "findOffsets" /* 5303 */;
 
+require = arg1;
+const dependencyMap = arg6;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "141e24b0bc4cfc4d58d1cb3b5e32f1dc", name: "img_bungie_white", type: "png" });
+export default {
+  isHeicFile(getUint32) {
+    if (getUint32) {
+      try {
+        let parseBoxResult = findOffsets.parseBox(getUint32, 0);
+        if (parseBoxResult) {
+          const items = ["heic", "heix", "hevc", "hevx", "heim", "heis", "hevm", "hevs", "mif1"];
+          parseBoxResult = -1 !== items.indexOf(parseBoxResult.majorBrand);
+        }
+        return parseBoxResult;
+      } catch (err) {
+        return false;
+      }
+    } else {
+      return false;
+    }
+  },
+  findHeicOffsets(byteLength) {
+    return findOffsets.findOffsets(byteLength);
+  }
+};

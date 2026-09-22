@@ -1,16 +1,16 @@
-// Module ID: 15220
-// Function ID: 15221
+// Module ID: 15301
+// Function ID: 15302
 // Name: FormSeparator
-// Dependencies: [19, 17, 21, 4560, 576, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 2]
 // Exports: default
 
-// Module 15220 (FormSeparator)
+// Module 15301 (FormSeparator)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj2 = { container: { alignSelf: "stretch" }, margins: { marginTop: 16 }, separator: null };
 let size = { width: "100%", height: 1, backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
 obj2.separator = size;

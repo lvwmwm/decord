@@ -1,14 +1,14 @@
-// Module ID: 13818
-// Function ID: 13819
+// Module ID: 13904
+// Function ID: 13905
 // Name: NativeMuteManager
-// Dependencies: [9089, 1908, 3, 4447, 573, 9095, 1910, 2]
+// Dependencies: [9212, 1908, 3, 1952, 573, 9218, 1910, 2]
 
-// Module 13818 (NativeMuteManager)
+// Module 13904 (NativeMuteManager)
 import LoggerDefault from "Logger" /* 3 */;
 import inject from "inject" /* 1910 */;
-import Timers from "Timers" /* 4447 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9095 */;
-import AudioRouteStore from "AudioRouteStore" /* 9089 */;
+import Timers from "Timers" /* 1952 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9218 */;
+import AudioRouteStore from "AudioRouteStore" /* 9212 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
 import Dispatcher from "Dispatcher" /* 573 */;
 
@@ -86,7 +86,7 @@ let closure_129_0 = obj;
 obj.ignoreForNativeUnmute = false;
 obj.needToUnmuteNative = false;
 obj.ignoreForAudioRouteChange = false;
-let timeout = new fn(4447).Timeout();
+let timeout = new fn(1952).Timeout();
 obj.audioRouteChangeIgnoreTimer = timeout;
 obj.AUDIO_ROUTE_CHANGE_IGNORE_DURATION_MS = 300;
 obj.handleAudioRouteChange = function handleAudioRouteChange() {

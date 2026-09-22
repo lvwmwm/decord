@@ -1,10 +1,10 @@
-// Module ID: 16131
-// Function ID: 16132
+// Module ID: 16225
+// Function ID: 16226
 // Name: useInitRef
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 16131 (useInitRef)
+// Module 16225 (useInitRef)
 import _mod19 from "module_19" /* 19 */;
 import size from "module_2" /* 2 */;
 

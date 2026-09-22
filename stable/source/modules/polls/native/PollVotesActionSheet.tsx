@@ -1,29 +1,29 @@
-// Module ID: 11721
-// Function ID: 11722
+// Module ID: 11849
+// Function ID: 11850
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 4552, 5459, 1957, 4781, 1371, 21, 4560, 576, 504, 1396, 7130, 1114, 5123, 4556, 7761, 6655, 11722, 7162, 11728, 11261, 7763, 4712, 4404, 5605, 1178, 9809, 8180, 4296, 4561, 8880, 4495, 4411, 11729, 11730, 7182, 4527, 7150, 2]
+// Dependencies: [32, 5, 19, 17, 4628, 5540, 1957, 4857, 1371, 21, 4636, 576, 504, 1396, 7233, 1114, 5204, 4632, 7863, 6756, 11850, 7265, 11856, 11393, 7865, 4788, 4481, 5686, 1176, 9933, 8296, 4373, 4637, 9003, 4571, 4488, 11857, 11858, 7285, 4603, 7253, 2]
 // Exports: default
 
-// Module 11721 (PollVotesActionSheet)
+// Module 11849 (PollVotesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1396 */;
-import useThemeDefault from "useTheme" /* 4495 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import timing from "timing" /* 4561 */;
-import Pressables from "Pressables" /* 5123 */;
-import EmojiDefault from "Emoji" /* 7130 */;
-import PollsUtils from "PollsUtils" /* 7761 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8180 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 11722 */;
+import useThemeDefault from "useTheme" /* 4571 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import timing from "timing" /* 4637 */;
+import Pressables from "Pressables" /* 5204 */;
+import EmojiDefault from "Emoji" /* 7233 */;
+import PollsUtils from "PollsUtils" /* 7863 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8296 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 11850 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
-import EmojiStore from "EmojiStore" /* 5459 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
+import EmojiStore from "EmojiStore" /* 5540 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import MessageStore from "MessageStore" /* 4781 */;
+import MessageStore from "MessageStore" /* 4857 */;
 import UserStore from "UserStore" /* 1371 */;
 
 require = fn;
@@ -316,9 +316,9 @@ function NoResults() {
   const tmp6 = React5;
   const tmp8 = timestampProducer;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(11729);
+    let tmp2Result = tmp2(11857);
   } else {
-    tmp2Result = tmp2(11730);
+    tmp2Result = tmp2(11858);
   }
   obj2.source = tmp2Result;
   const items = [closure_1_14(tmp8, obj2), , ];
@@ -337,7 +337,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { headerText: { textAlign: "center", paddingHorizontal: 16 }, subheaderText: { textAlign: "center", marginTop: 2, paddingHorizontal: 16 }, answerScroll: { marginTop: 24 }, answerScrollContainer: { gap: 4, paddingHorizontal: 16 }, answerName: { marginTop: 16, marginHorizontal: 16, marginBottom: 8 }, list: { paddingHorizontal: 16 }, answerButton: { padding: 8, flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.radii.xs, maxWidth: 200 }, answerSelected: null, answerEmoji: null, answerText: null, emojiText: null, emojiImage: null, noResultsContainer: null, noResultsImage: null, noResultsTitle: null, noResultsSubtitle: null };
 let obj3 = { padding: 8, flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.radii.xs, maxWidth: 200 };
 obj.answerSelected = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -392,7 +392,7 @@ let closure_18 = noop.forwardRef((answer, ref) => {
   let tmp11 = null;
   if (null != answer.poll_media.text) {
     const obj4 = { style: tmp.answerText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-    tmp11 = closure_1_14(tmp3(4556).Text, obj4);
+    tmp11 = closure_1_14(tmp3(4632).Text, obj4);
   }
   items2[1] = tmp11;
   const obj5 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: null };

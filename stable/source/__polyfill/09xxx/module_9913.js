@@ -1,9 +1,9 @@
 // Module ID: 9913
 // Function ID: 9914
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 9913
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "c96b5baebc148eb3fd1d195aba65f577", name: "ic_stage_music_disabled", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_scheduled_events/native/images", width: 20, height: 20, scales: [1, 2, 3], hash: "3db3f02153afc41647b2d1efd43e1f34", name: "ic_event_calendar", type: "png" });

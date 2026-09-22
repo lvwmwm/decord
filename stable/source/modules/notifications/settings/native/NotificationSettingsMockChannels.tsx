@@ -1,25 +1,25 @@
-// Module ID: 10169
-// Function ID: 10170
+// Module ID: 10292
+// Function ID: 10293
 // Name: NotificationSettingsMockChannels
-// Dependencies: [19, 17, 4742, 21, 4560, 576, 1114, 10170, 5080, 4556, 1178, 2]
+// Dependencies: [19, 17, 4818, 21, 4636, 576, 1114, 10293, 5161, 4632, 1176, 2]
 // Exports: default
 
-// Module 10169 (NotificationSettingsMockChannels)
+// Module 10292 (NotificationSettingsMockChannels)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 1178 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import TextIcon from "TextIcon" /* 5080 */;
-import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 10170 */;
+import native from "native" /* 1176 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import TextIcon from "TextIcon" /* 5161 */;
+import StaticChannelIndicatorDefault from "StaticChannelIndicator" /* 10293 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const UnreadSetting = fn(4742).UnreadSetting;
+const UnreadSetting = fn(4818).UnreadSetting;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, overflow: "hidden", borderRadius: 10, paddingVertical: 8 }, channel: { display: "flex", flexDirection: "row", alignItems: "center", paddingVertical: 4, justifyContent: "space-between", paddingRight: 12 }, channelName: { display: "flex", flexDirection: "row", alignItems: "center" } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

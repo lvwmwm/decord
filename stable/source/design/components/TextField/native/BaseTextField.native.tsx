@@ -1,13 +1,13 @@
-// Module ID: 6623
-// Function ID: 6624
+// Module ID: 6724
+// Function ID: 6725
 // Name: BaseTextField
-// Dependencies: [19, 21, 1115, 6621, 4268, 6624, 4267, 2]
+// Dependencies: [19, 21, 1363, 6722, 4344, 6725, 4343, 2]
 
-// Module 6623 (BaseTextField)
-import mergeProps from "mergeProps" /* 4267 */;
-import useFocus from "useFocus" /* 4268 */;
-import InputFieldContainer from "InputFieldContainer" /* 6621 */;
-import NativeTextInput from "NativeTextInput" /* 6624 */;
+// Module 6724 (BaseTextField)
+import mergeProps from "mergeProps" /* 4343 */;
+import useFocus from "useFocus" /* 4344 */;
+import InputFieldContainer from "InputFieldContainer" /* 6722 */;
+import NativeTextInput from "NativeTextInput" /* 6725 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -36,17 +36,17 @@ export const BaseTextField = noop.forwardRef((size, ref2) => {
       str = autoComplete;
     }
     const obj5 = { autoComplete: str, secureTextEntry: null, keyboardType: null };
-    tmpResult = tmp(1115);
-    const tmpResult5 = tmp(1115);
-    obj5.secureTextEntry = tmp(1115).isAndroid() || secureTextEntry;
-    const tmp7 = tmp(1115).isAndroid() || secureTextEntry;
+    tmpResult = tmp(1363);
+    const tmpResult5 = tmp(1363);
+    obj5.secureTextEntry = tmp(1363).isAndroid() || secureTextEntry;
+    const tmp7 = tmp(1363).isAndroid() || secureTextEntry;
     let str2 = "visible-password";
     if (!tmpResult6.isAndroid()) {
       str2 = keyboardType;
     }
     obj5.keyboardType = str2;
     tmp6 = obj5;
-    tmpResult6 = tmp(1115);
+    tmpResult6 = tmp(1363);
   }
   const onChangeText = size.onChangeText;
   const items = [onChangeText];

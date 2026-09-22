@@ -1,16 +1,16 @@
-// Module ID: 16613
-// Function ID: 16614
+// Module ID: 16715
+// Function ID: 16716
 // Name: VibegrationsSettingsRequestCard
-// Dependencies: [19, 17, 16592, 21, 4560, 576, 504, 4527, 16614, 4556, 1114, 3547, 4975, 2]
+// Dependencies: [19, 17, 16692, 21, 4636, 576, 504, 4603, 16716, 4632, 1114, 3590, 5056, 2]
 // Exports: default
 
-// Module 16613 (VibegrationsSettingsRequestCard)
+// Module 16715 (VibegrationsSettingsRequestCard)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4527 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16614 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 4603 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import VibegrationsSettingsSheet from "VibegrationsSettingsSheet" /* 16716 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 16592 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 16692 */;
 
 const VibegrationsSettingsSheetDefault = VibegrationsSettingsSheet;
 
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, chips: null, chip: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderRadius: nativeDefault.radii.md, padding: nativeDefault.space.PX_12, marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.chips = { flexDirection: "row", flexWrap: "wrap", gap: nativeDefault.space.PX_4 };
@@ -52,13 +52,13 @@ export default function VibegrationsSettingsRequestCard(projectId) {
   const items1 = [projectId, request];
   let obj2 = { style: tmp.card, children: null };
   const callback = noop.useCallback(() => {
-    const obj2 = { content: timestampProducer(VibegrationsSettingsSheetDefault, { projectId, scopeKeys: request.keys, note: request.note, notifyAgent: true }), key: VibegrationsSettingsSheet.VIBEGRATIONS_SETTINGS_SHEET_KEY };
+    const obj2 = { content: timestampProducer(VibegrationsSettingsSheetDefault, { projectId, scopeKeys: request.keys, note: request.note, notifyAgent: true, isPreview: true }), key: VibegrationsSettingsSheet.VIBEGRATIONS_SETTINGS_SHEET_KEY };
     ActionSheetActionCreators.showActionSheet(obj2);
   }, items1);
   const obj3 = { variant: "text-xs/semibold", color: "text-muted", children: null };
   const intl = tmp2(1114).intl;
-  obj3.children = intl.string(request(3547).wgDhiQ);
-  const items2 = [closure_6(projectId(4556).Text, obj3), , , ];
+  obj3.children = intl.string(request(3590).wgDhiQ);
+  const items2 = [closure_6(projectId(4632).Text, obj3), , , ];
   if (null != request.note) {
     if ("" !== request.note) {
       let note = request.note;
@@ -79,11 +79,11 @@ export default function VibegrationsSettingsRequestCard(projectId) {
     items2[2] = tmp7Result;
     const obj6 = { variant: "secondary", size: "sm", onPress: callback, text: null };
     const intl3 = tmp2(1114).intl;
-    obj6.text = intl3.string(tmp8(3547)["KO2xN+"]);
-    items2[3] = tmp7(tmp2(4975).Button, obj6);
+    obj6.text = intl3.string(tmp8(3590)["KO2xN+"]);
+    items2[3] = tmp7(tmp2(5056).Button, obj6);
     obj2.children = items2;
     return closure_7(tmp6, obj2);
   }
   const intl2 = tmp2(1114).intl;
-  note = intl2.string(tmp8(3547)["V+DBhs"]);
+  note = intl2.string(tmp8(3590)["V+DBhs"]);
 };

@@ -1,16 +1,22 @@
 // Module ID: 4953
 // Function ID: 4954
-// Dependencies: [17, 106, 65]
+// Dependencies: [4936]
 
 // Module 4953
-import _mod17 from "module_17" /* 17 */;
-import weakSet from "weakSet" /* 106 */;
-import module_65 from "module_65" /* 65 */;
+import _mod4936 from "module_4936" /* 4936 */;
 
-const codegenNativeComponent = _mod17.codegenNativeComponent;
-const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSTabsBottomAccessory", directEventTypes: { topEnvironmentChange: { registrationName: "onEnvironmentChange" } }, validAttributes: null };
-const merged = Object.assign(weakSet.ConditionallyIgnoredEventHandlers({ onEnvironmentChange: true }));
-__INTERNAL_VIEW_CONFIG.validAttributes = {};
 
-export default module_65.get("RNSTabsBottomAccessory", () => obj);
-export { __INTERNAL_VIEW_CONFIG };
+export default function isFullyPopulatedPropertyDescriptor(IsAccessorDescriptor, arg1) {
+  let tmp = _mod4936(arg1);
+  if (tmp) {
+    tmp = "[[Enumerable]]" in arg1;
+  }
+  if (tmp) {
+    tmp = "[[Configurable]]" in arg1;
+  }
+  if (tmp) {
+    tmp = IsAccessorDescriptor.IsAccessorDescriptor(arg1) || IsAccessorDescriptor.IsDataDescriptor(arg1);
+    const tmp3 = IsAccessorDescriptor.IsAccessorDescriptor(arg1) || IsAccessorDescriptor.IsDataDescriptor(arg1);
+  }
+  return tmp;
+};

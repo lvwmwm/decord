@@ -1,15 +1,15 @@
-// Module ID: 8631
-// Function ID: 8632
+// Module ID: 8748
+// Function ID: 8749
 // Name: ChannelSettingsActionCreators
-// Dependencies: [5, 8632, 1957, 1074, 573, 4418, 7765, 1272, 7323, 2]
+// Dependencies: [5, 8749, 1957, 1074, 573, 4495, 7867, 1270, 7426, 2]
 // Exports: deleteChannel, init, open, removeLinkedLobby, saveChannel, selectPermissionOverwrite, setSection, updateChannel, updateVoiceChannelStatus
 
-// Module 8631 (ChannelSettingsActionCreators)
+// Module 8748 (ChannelSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import RootNavigationRef from "RootNavigationRef" /* 4418 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import RootNavigationRef from "RootNavigationRef" /* 4495 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 8632 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 8749 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 
 require = fn;
@@ -124,8 +124,16 @@ let closure_9 = async function _saveChannel(arg0, value) {
           return obj4;
         } else {
           channel = closure_131_5.getChannel(closure_130_0);
+          let isGameInvitesChannelResult;
+          if (channel != null) {
+            isGameInvitesChannelResult = obj12.isGameInvitesChannel();
+          }
+          if (isGameInvitesChannelResult) {
+            closure_130_12 = undefined;
+          }
           closure_131_1(closure_131_2[4]).dispatch({ type: "CHANNEL_SETTINGS_SUBMIT" });
-          const obj10 = closure_131_1(closure_131_2[4]);
+          obj12 = channel;
+          const obj6 = closure_131_1(closure_131_2[4]);
           c4 = 2;
           c5 = 1;
           const obj5 = { value: closure_131_1(closure_131_2[6]).unarchiveThreadIfNecessary(closure_130_0), done: false };
@@ -136,13 +144,13 @@ let closure_9 = async function _saveChannel(arg0, value) {
         throw value;
       } else if (arg0 === 2) {
         c5 = 3;
-        const obj6 = { value, done: true };
-        return obj6;
+        const obj8 = { value, done: true };
+        return obj8;
       } else {
         let HTTP = closure_131_0(closure_131_2[7]).HTTP;
         let then = HTTP.patch;
         let request = { url: closure_131_6.CHANNEL(closure_130_0), body: null, oldFormErrors: true, rejectWithError: null };
-        let obj7 = { name: closure_130_1, type: closure_130_2, position: closure_130_3, topic: closure_130_4, bitrate: closure_130_5, user_limit: closure_130_6, nsfw: closure_130_7, flags: closure_130_8, permission_overwrites: closure_130_9, rate_limit_per_user: closure_130_10, default_thread_rate_limit_per_user: closure_130_11, default_auto_archive_duration: closure_130_12, template: closure_130_13, rtc_region: closure_130_15, video_quality_mode: closure_130_16, auto_archive_duration: closure_130_17, locked: closure_130_18, invitable: closure_130_19, default_reaction_emoji: null, available_tags: null, default_sort_order: null, default_forum_layout: null, default_tag_setting: null, icon_emoji: null, theme_color: null, application_id: null };
+        let obj9 = { name: closure_130_1, type: closure_130_2, position: closure_130_3, topic: closure_130_4, bitrate: closure_130_5, user_limit: closure_130_6, nsfw: closure_130_7, flags: closure_130_8, permission_overwrites: closure_130_9, rate_limit_per_user: closure_130_10, default_thread_rate_limit_per_user: closure_130_11, default_auto_archive_duration: closure_130_12, template: closure_130_13, rtc_region: closure_130_15, video_quality_mode: closure_130_16, auto_archive_duration: closure_130_17, locked: closure_130_18, invitable: closure_130_19, default_reaction_emoji: null, available_tags: null, default_sort_order: null, default_forum_layout: null, default_tag_setting: null, icon_emoji: null, theme_color: null, application_id: null };
         if (null != closure_130_14) {
           let emojiId;
           if (closure_130_14 != null) {
@@ -158,27 +166,27 @@ let closure_9 = async function _saveChannel(arg0, value) {
         } else if (null === closure_130_14) {
           tmp8 = null;
         }
-        obj7.default_reaction_emoji = tmp8;
+        obj9.default_reaction_emoji = tmp8;
         let mapped;
         if (closure_130_20 != null) {
           mapped = arr.map((id) => ({ id: id.id, name: id.name, emoji_id: id.emojiId, emoji_name: id.emojiName, moderated: id.moderated }));
         }
-        obj7.available_tags = mapped;
-        obj7.default_sort_order = closure_130_21;
-        obj7.default_forum_layout = closure_130_22;
-        obj7.default_tag_setting = closure_130_23;
+        obj9.available_tags = mapped;
+        obj9.default_sort_order = closure_130_21;
+        obj9.default_forum_layout = closure_130_22;
+        obj9.default_tag_setting = closure_130_23;
         if (null != closure_130_24) {
-          const obj8 = { id: closure_130_24.id, name: closure_130_24.name };
-          let tmp22 = obj8;
+          const obj10 = { id: closure_130_24.id, name: closure_130_24.name };
+          let tmp22 = obj10;
         } else if (null === closure_130_24) {
           tmp22 = null;
         }
-        obj7.icon_emoji = tmp22;
-        obj7.theme_color = closure_130_25;
-        obj7.application_id = closure_130_26;
-        request.body = obj7;
-        obj7 = closure_131_0(closure_131_2[7]);
-        request.rejectWithError = obj7.rejectWithMigratedError();
+        obj9.icon_emoji = tmp22;
+        obj9.theme_color = closure_130_25;
+        obj9.application_id = closure_130_26;
+        request.body = obj9;
+        obj9 = closure_131_0(closure_131_2[7]);
+        request.rejectWithError = obj9.rejectWithMigratedError();
         HTTP = then(request);
         then = HTTP.then;
         request = then((arg0) => {
@@ -197,8 +205,8 @@ let closure_9 = async function _saveChannel(arg0, value) {
             obj4 = guildId;
           }
           if (!tmp5) {
-            const result = closure_1(7323).checkGuildTemplateDirty(guildId);
-            const tmpResult = closure_1(7323);
+            const result = closure_1(7426).checkGuildTemplateDirty(guildId);
+            const tmpResult = closure_1(7426);
           }
           return arg0;
         }, (body) => {
@@ -208,9 +216,9 @@ let closure_9 = async function _saveChannel(arg0, value) {
         c5 = 3;
         arr = closure_130_20;
       }
-    } catch (tmp32) {
+    } catch (tmp41) {
       c5 = tmp;
-      throw tmp32;
+      throw tmp41;
     }
   }
 };

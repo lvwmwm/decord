@@ -1,15 +1,15 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 9496
+// Function ID: 9497
 // Name: NativePaymentHooks
-// Dependencies: [5, 32, 19, 7237, 3, 504, 12, 9373, 4233, 2]
-// Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useNativeIAPPayments, useResubscribeSubscription
+// Dependencies: [5, 32, 19, 7340, 3, 504, 12, 9497, 4309, 2]
+// Exports: useCancelSubscription, useCreateSubscription, useGoogleSkuIds, useMobileStoreFront, useNativeIAPPayments, useResubscribeSubscription
 
-// Module 9372 (NativePaymentHooks)
+// Module 9496 (NativePaymentHooks)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import IAPStore from "IAPStore" /* 7237 */;
+import IAPStore from "IAPStore" /* 7340 */;
 
 const require = fn;
 function notSupported() {
@@ -73,7 +73,7 @@ function useGoogleSkuIds(arg0, arg1) {
                       ref = 1;
                       v2 = 2;
                       c5 = 1;
-                      const obj7 = { value: closure_2_0(9373).loadInAppSkus(differenceResult), done: false };
+                      const obj7 = { value: closure_2_0(9497).loadInAppSkus(differenceResult), done: false };
                       return obj7;
                     }
                   }
@@ -89,8 +89,8 @@ function useGoogleSkuIds(arg0, arg1) {
               closure_128_1 = closure_2;
               logger.error("Unable to fetch product IDs from google play store: ", closure_128_1);
               v2("Unable to fetch");
-              const result = closure_2_0(4233).captureBillingException(closure_128_1);
-              const obj3 = closure_2_0(4233);
+              const result = closure_2_0(4309).captureBillingException(closure_128_1);
+              const obj3 = closure_2_0(4309);
             } else if (arg0 === 1) {
               c5 = 3;
               throw value;
@@ -144,14 +144,18 @@ function useCreateSubscription(arg0) {
     return obj;
   }
 }
+function useMobileStoreFront() {
+  return null;
+}
 let closure_7 = new LoggerDefault("NativePaymentHooks.android.tsx");
-let closure_8 = { nativePaymentsConnected: true, storeFront: null };
+let closure_8 = { nativePaymentsConnected: true, storeFront: null, canMakePayments: true };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/payments/native/hooks/NativePaymentHooks.android.tsx");
 
-export default { useNativeIAPPayments, useGoogleSkuIds, useCreateSubscription, useCancelSubscription, useResubscribeSubscription };
+export default { useNativeIAPPayments, useGoogleSkuIds, useCreateSubscription, useCancelSubscription, useResubscribeSubscription, useMobileStoreFront };
 export { useNativeIAPPayments };
 export { useGoogleSkuIds };
 export { useResubscribeSubscription };
 export { useCancelSubscription };
 export { useCreateSubscription };
+export { useMobileStoreFront };

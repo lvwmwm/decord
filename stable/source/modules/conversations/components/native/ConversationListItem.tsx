@@ -1,41 +1,32 @@
-// Module ID: 7927
-// Function ID: 7928
+// Module ID: 8030
+// Function ID: 8031
 // Name: ConversationListItem
-// Dependencies: [19, 17, 7596, 7598, 1074, 21, 4560, 576, 1483, 4262, 672, 504, 7908, 7924, 7910, 5607, 4556, 1114, 7928, 7929, 7932, 4987, 2]
+// Dependencies: [19, 17, 7698, 7700, 1074, 21, 4636, 576, 1483, 504, 8011, 8027, 8013, 5688, 4632, 1114, 5745, 5068, 8031, 8032, 8035, 2]
 
-// Module 7927 (ConversationListItem)
+// Module 8030 (ConversationListItem)
 import nativeDefault from "native" /* 576 */;
-import _modDef672 from "module_672" /* 672 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 7908 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 7910 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 7924 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 7929 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 7932 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 8011 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8013 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8027 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 8032 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 8035 */;
 import noop from "module_19" /* 19 */;
-import ConversationsStore from "ConversationsStore" /* 7596 */;
+import ConversationsStore from "ConversationsStore" /* 7698 */;
 
 require = fn;
 function ConversationListItemBase(conversation) {
   conversation = conversation.conversation;
-  let token;
   let stateFromStores;
-  const tmp = closure_11();
-  const navigation = conversation(token[8]).useNavigation();
-  let obj = conversation(token[8]);
-  token = conversation(token[9]).useToken(navigation(token[7]).colors.BACKGROUND_SURFACE_HIGH);
-  let items = [token];
-  const memo = stateFromStores.useMemo(() => {
-    const obj = _modDef672(token);
-    const items = [_modDef672(token).alpha(0).hex(), token];
-    return items;
-  }, items);
-  const obj2 = conversation(token[9]);
-  const items1 = [ConversationsStore];
-  const items2 = [, ];
-  ({ channelId: arr3[0], id: arr3[1] } = conversation);
-  stateFromStores = conversation(token[11]).useStateFromStores(items1, () => ConversationsStore.getHydratedMessages(conversation.channelId, conversation.id), items2);
-  const items3 = [stateFromStores];
-  const memo1 = stateFromStores.useMemo(() => {
+  const tmp = closure_12();
+  const navigation = conversation(stateFromStores[8]).useNavigation();
+  let obj = conversation(stateFromStores[8]);
+  const tmp2 = stateFromStores;
+  const items = [ConversationsStore];
+  const items1 = [, ];
+  ({ channelId: arr2[0], id: arr2[1] } = conversation);
+  stateFromStores = conversation(stateFromStores[9]).useStateFromStores(items, () => ConversationsStore.getHydratedMessages(conversation.channelId, conversation.id), items1);
+  const items2 = [stateFromStores];
+  const memo = noop.useMemo(() => {
     let substr;
     if (stateFromStores != null) {
       substr = stateFromStores.slice(0, closure_6);
@@ -44,29 +35,40 @@ function ConversationListItemBase(conversation) {
       substr = null;
     }
     return substr;
-  }, items3);
-  const items4 = [navigation, , , , ];
-  ({ channelId: arr6[1], guildId: arr6[2], id: arr6[3], title: arr6[4] } = conversation);
-  const callback = stateFromStores.useCallback(() => {
+  }, items2);
+  const items3 = [navigation, , , , ];
+  ({ channelId: arr5[1], guildId: arr5[2], id: arr5[3], title: arr5[4] } = conversation);
+  const callback = noop.useCallback(() => {
     const conversationMessages = ConversationsActionCreators.fetchConversationMessages(conversation.channelId, conversation.guildId, conversation.id, { includeReactions: true, includeMessageReferences: true });
     navigation.navigate(ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS, { channelId: conversation.channelId, guildId: conversation.guildId, conversationId: conversation.id, title: conversation.title });
     const ConversationsAnalytics = ConversationsAnalytics2.ConversationsAnalytics;
     const result = ConversationsAnalytics.trackTopicsUnitClicked({ channelId: conversation.channelId, conversationId: conversation.id, isFocusMode: false });
-  }, items4);
-  const obj4 = { style: tmp.card, onPress: callback, accessibilityLabel: conversation.title, children: null };
-  const obj5 = { style: tmp.headerContainer, children: null };
-  const items5 = [closure_8(conversation(token[16]).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp.title, children: conversation.title }), ];
-  const obj7 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: tmp.timestamp, children: null };
-  const intl = conversation(token[17]).intl;
-  obj7.children = intl.formatToPlainString(conversation(token[17]).t.poZZGL, { count: conversation.messageCount });
-  items5[1] = closure_8(conversation(token[16]).Text, obj7);
-  obj5.children = items5;
-  const items6 = [closure_9(View, obj5), , ];
-  const obj9 = { style: tmp.previews, children: null };
-  if (null == memo1) {
-    let mapped = tmp11(tmp4(tmp2[18]), {});
+  }, items3);
+  const obj3 = { style: tmp.card, onPress: callback, accessibilityLabel: conversation.title, children: null };
+  const obj4 = { style: tmp.headerContainer, children: null };
+  const items4 = [closure_8(conversation(stateFromStores[14]).Text, { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp.title, children: conversation.title }), ];
+  const obj6 = { variant: "text-sm/medium", color: "text-muted", lineClamp: 1, style: tmp.timestamp, children: null };
+  const intl = conversation(stateFromStores[15]).intl;
+  obj6.children = intl.formatToPlainString(conversation(stateFromStores[15]).t.poZZGL, { count: conversation.messageCount });
+  items4[1] = closure_8(conversation(stateFromStores[14]).Text, obj6);
+  obj4.children = items4;
+  const items5 = [closure_9(closure_4, obj4), ];
+  const obj8 = { style: tmp.previewsMask, maskElement: null, children: null };
+  const obj9 = { style: tmp.maskColumn, children: null };
+  const obj2 = conversation(stateFromStores[9]);
+  const obj5 = { variant: "text-md/semibold", color: "text-default", lineClamp: 1, style: tmp.title, children: conversation.title };
+  const obj7 = { count: conversation.messageCount };
+  const tmp6 = closure_9;
+  const tmp7 = closure_4;
+  const tmp9 = navigation;
+  const items6 = [closure_8(navigation(stateFromStores[17]), { colors, style: tmp.maskOpaque }), closure_8(navigation(stateFromStores[17]), { colors: colors2, start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.maskFade })];
+  obj9.children = items6;
+  obj8.maskElement = closure_9(closure_4, obj9);
+  const obj12 = { style: tmp.previews, children: null };
+  if (null == memo) {
+    let mapped = tmp8(tmp9(tmp2[18]), {});
   } else {
-    mapped = memo1.map((blocked) => {
+    mapped = memo.map((blocked) => {
       if (!blocked.blocked) {
         if (!blocked.ignored) {
           const obj = { message: blocked, guildId: null, channelId: null };
@@ -82,28 +84,36 @@ function ConversationListItemBase(conversation) {
       tmp6Result = React6(ConversationPreviewBlockedMessageDefault, { reason: str }, blocked.id);
     });
   }
-  obj9.children = mapped;
-  items6[1] = closure_8(View, obj9);
-  items6[2] = closure_8(navigation(token[21]), { style: tmp.bottomFade, start: VerticalGradient.START, end: VerticalGradient.END, colors: memo, locations });
-  obj4.children = items6;
-  return closure_9(conversation(token[15]).Card, obj4);
+  obj12.children = mapped;
+  obj8.children = closure_8(tmp7, obj12);
+  items5[1] = closure_8(navigation(stateFromStores[16]), obj8);
+  obj3.children = items5;
+  return tmp6(conversation(stateFromStores[13]).Card, obj3);
 }
-const View = fn(17).View;
-let closure_6 = fn(7598).MOBILE_PREVIEW_MESSAGE_COUNT;
+get_ActivityIndicator = fn(17);
+({ View: closure_4, StyleSheet } = get_ActivityIndicator);
+let closure_6 = fn(7700).MOBILE_PREVIEW_MESSAGE_COUNT;
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const locations = [0, 0.8];
-const createStyles = fn(4560);
-let obj = { card: { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 232, overflow: "hidden" }, title: { flexShrink: 1, minWidth: 0 }, timestamp: { flexShrink: 0 }, headerContainer: null, previews: null, bottomFade: null };
-const obj3 = { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 232, overflow: "hidden" };
+const colors = ["black", "black"];
+const colors2 = ["black", "transparent"];
+const createStyles = fn(4636);
+let obj = { card: { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, height: 232, overflow: "hidden", paddingBottom: 0 }, title: { flexShrink: 1, minWidth: 0 }, timestamp: { flexShrink: 0 }, headerContainer: null, previewsMask: null, previews: null, maskColumn: null, maskOpaque: null, maskFade: null };
+let obj3 = { marginBottom: nativeDefault.space.PX_12, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, height: 232, overflow: "hidden", paddingBottom: 0 };
 obj.headerContainer = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
 let obj4 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_8 };
-obj.previews = { marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_16 };
-const rect = { position: "absolute", left: 0, right: 0, bottom: -nativeDefault.space.PX_4, height: nativeDefault.space.PX_64, zIndex: 1 };
-obj.bottomFade = rect;
-let closure_11 = createStyles.createStyles(obj);
-let obj5 = { marginTop: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_16 };
+obj.previewsMask = { flex: 1, marginTop: nativeDefault.space.PX_8 };
+let obj5 = { flex: 1, marginTop: nativeDefault.space.PX_8 };
+obj.previews = { gap: nativeDefault.space.PX_16 };
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj.maskColumn = {};
+obj.maskOpaque = { flex: 1 };
+let obj6 = { gap: nativeDefault.space.PX_16 };
+let obj7 = {};
+obj.maskFade = { height: nativeDefault.space.PX_64 };
+let closure_12 = createStyles.createStyles(obj);
+let obj8 = { height: nativeDefault.space.PX_64 };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/conversations/components/native/ConversationListItem.tsx");
 

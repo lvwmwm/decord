@@ -1,18 +1,18 @@
-// Module ID: 14627
-// Function ID: 14628
+// Module ID: 14712
+// Function ID: 14713
 // Name: EditProfileThemeActionSheet
-// Dependencies: [19, 21, 4560, 576, 7198, 7149, 1114, 1178, 5687, 5605, 4527, 2]
+// Dependencies: [19, 21, 4636, 576, 7300, 7252, 1114, 1176, 5768, 5686, 4603, 2]
 // Exports: default
 
-// Module 14627 (EditProfileThemeActionSheet)
+// Module 14712 (EditProfileThemeActionSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4527 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4603 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 const obj2 = { nitroWheel: null, titleWrapper: null, titleContainer: null };
 let size = { tintColor: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, marginLeft: 4, width: 20, height: 20 };
 obj2.nitroWheel = size;
@@ -29,9 +29,9 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
   const obj3 = { title: null, trailing: null, titleWrapperStyle: null, titleContainerStyle: null };
   const intl = onResetTheme(1114).intl;
   obj3.title = intl.string(onResetTheme(1114).t.DMeO2X);
-  obj3.trailing = closure_3(onResetTheme(1178).NitroWheel, { style: tmp.nitroWheel });
+  obj3.trailing = closure_3(onResetTheme(1176).NitroWheel, { style: tmp.nitroWheel });
   ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
-  const items = [closure_3(onResetTheme(7149).BottomSheetTitleHeader, obj3), ];
+  const items = [closure_3(onResetTheme(7252).BottomSheetTitleHeader, obj3), ];
   const obj5 = { hasIcons: false, children: null };
   const obj9 = { label: null, subLabel: null, onPress: null };
   const intl2 = onResetTheme(1114).intl;
@@ -42,8 +42,8 @@ export default function EditProfileThemeActionSheet(onResetTheme) {
     onResetTheme();
     ActionSheetActionCreatorsDefault.hideActionSheet();
   };
-  obj5.children = closure_3(onResetTheme(5605).TableRow, obj9);
-  items[1] = closure_3(onResetTheme(5687).TableRowGroup, obj5);
+  obj5.children = closure_3(onResetTheme(5686).TableRow, obj9);
+  items[1] = closure_3(onResetTheme(5768).TableRowGroup, obj5);
   obj.children = items;
-  return closure_4(onResetTheme(7198).ActionSheet, obj);
+  return closure_4(onResetTheme(7300).ActionSheet, obj);
 };

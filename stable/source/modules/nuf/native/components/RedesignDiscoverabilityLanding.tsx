@@ -1,19 +1,19 @@
-// Module ID: 17456
-// Function ID: 17457
+// Module ID: 17568
+// Function ID: 17569
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4560, 576, 1611, 5682, 4556, 1114, 5587, 12754, 12684, 4975, 2]
+// Dependencies: [19, 17, 21, 4636, 576, 1611, 5763, 4632, 1114, 5668, 12883, 12813, 5056, 2]
 // Exports: default
 
-// Module 17456 (RedesignDiscoverabilityLanding)
+// Module 17568 (RedesignDiscoverabilityLanding)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1611 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import components_Button_Button from "components/Button/Button" /* 4975 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import NavigatorConstants from "NavigatorConstants" /* 5682 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 12684 */;
-import _modDef12754 from "module_12754" /* 12754 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import components_Button_Button from "components/Button/Button" /* 5056 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import NavigatorConstants from "NavigatorConstants" /* 5763 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 12813 */;
+import _modDef12883 from "module_12883" /* 12883 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, topContainer: null, growContainer: null, image: null, title: null, subtitle: null, info: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.topContainer = { paddingTop: nativeDefault.space.PX_16 };
@@ -52,7 +52,7 @@ export default function RedesignDiscoverabilityLanding(onNext) {
   const obj6 = { resizeMode: "contain", style: tmp.image, source: null };
   const obj2 = { flexGrow: 2, paddingTop: NavigatorConstants.NAV_BAR_HEIGHT + 32, paddingBottom: useSafeAreaInsetsDefault().bottom + 16, paddingHorizontal: nativeDefault.space.PX_16 };
   const obj3 = { style: tmp.topContainer };
-  obj6.source = _modDef12754;
+  obj6.source = _modDef12883;
   items[3] = hasOwnProperty(FastImageDefault, obj6);
   const obj7 = { style: tmp.info, variant: "text-sm/medium", color: "text-default", children: null };
   const intl3 = util.intl;

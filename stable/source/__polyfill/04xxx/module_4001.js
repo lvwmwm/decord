@@ -1,11 +1,11 @@
 // Module ID: 4001
 // Function ID: 4002
-// Dependencies: [3650, 3651]
+// Dependencies: [3725, 3726]
 // Exports: default
 
 // Module 4001
-import _typeof_mod from "module_3650" /* 3650 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import _typeof_mod from "module_3725" /* 3725 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,16 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isSameMonth(arg0, arg1) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = _typeof.default(arg0);
-  const defaultResult2 = _typeof.default(arg1);
-  const fullYear = defaultResult1.getFullYear();
-  let tmp3 = fullYear === defaultResult2.getFullYear();
-  if (tmp3) {
-    const month = defaultResult1.getMonth();
-    tmp3 = month === defaultResult2.getMonth();
-  }
-  return tmp3;
+export default function getMonth(arg0) {
+  requiredArgs.default(1, arguments);
+  return _typeof.default(arg0).getMonth();
 };
 export default exports.default;

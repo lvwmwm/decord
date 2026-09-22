@@ -1,30 +1,30 @@
-// Module ID: 16906
-// Function ID: 16907
+// Module ID: 17018
+// Function ID: 17019
 // Name: SettingsNavigator
-// Dependencies: [32, 19, 17, 2025, 14694, 1074, 21, 7914, 4560, 576, 15409, 1178, 4556, 1484, 13414, 16907, 6995, 563, 7162, 7182, 14696, 7475, 14697, 7000, 14175, 4262, 5123, 1114, 16406, 16908, 14585, 16909, 38, 2]
+// Dependencies: [32, 19, 17, 2025, 14778, 1074, 21, 8017, 4636, 576, 15492, 1176, 4632, 1484, 13542, 17019, 7098, 563, 7265, 7285, 14780, 7578, 14781, 7103, 14261, 4338, 5204, 1114, 16500, 17020, 14670, 17021, 38, 2]
 
-// Module 16906 (SettingsNavigator)
+// Module 17018 (SettingsNavigator)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import Text_Text from "Text/Text" /* 4556 */;
-import Pressables from "Pressables" /* 5123 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 6995 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14696 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 15409 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 16406 */;
+import Text_Text from "Text/Text" /* 4632 */;
+import Pressables from "Pressables" /* 5204 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7098 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 14780 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 15492 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 16500 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2025 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14694 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 14778 */;
 
 const require = globalThis.__r;
 
 require = fn;
 function SettingHeaderBadge(badge) {
   if (badge.badge.badgeType === SettingRendererTypes.SettingsBadgeType.BETA) {
-    const obj = { size: tmp(1178).BetaSizes.SMALL };
-    return closure_1_10(tmp(1178).BetaTag, obj);
+    const obj = { size: tmp(1176).BetaSizes.SMALL };
+    return closure_1_10(tmp(1176).BetaTag, obj);
   }
 }
 function LeftAlignedHeaderTitle(children) {
@@ -51,9 +51,9 @@ const Constants = fn(1074);
 ({ AnalyticsPages: closure_8, UserSettingsSections: closure_9 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const NativeStackNavigator = fn(7914);
+const NativeStackNavigator = fn(8017);
 let closure_12 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { statusBarSpacer: { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, headerContainer: null, headerContainerRow: null, headerTitleWithBadge: null, backIcon: null };
 let obj4 = { flex: 1, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 obj.headerContainer = { width: "100%", paddingHorizontal: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };

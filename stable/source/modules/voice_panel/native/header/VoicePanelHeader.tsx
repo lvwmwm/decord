@@ -1,31 +1,31 @@
-// Module ID: 17103
-// Function ID: 17104
+// Module ID: 17211
+// Function ID: 17212
 // Name: VoicePanelHeader
-// Dependencies: [32, 19, 17, 4576, 4476, 9905, 502, 1957, 1908, 4209, 5419, 1371, 12277, 12280, 12275, 4581, 1085, 21, 4560, 576, 4296, 4974, 7073, 4964, 5589, 12276, 10038, 504, 9907, 17038, 1114, 9916, 9918, 9919, 4962, 17040, 17104, 4713, 4262, 12281, 4561, 17105, 17060, 17106, 5630, 17107, 9095, 9176, 9137, 4271, 16531, 17108, 11159, 17110, 9218, 1094, 17121, 10036, 17131, 17132, 2]
+// Dependencies: [32, 19, 17, 4652, 4552, 10029, 502, 1957, 1908, 4285, 5500, 1371, 12406, 12409, 12404, 4657, 1085, 21, 4636, 576, 4373, 5055, 7176, 5045, 5670, 12405, 10162, 504, 10031, 17146, 1114, 10040, 10042, 10043, 5043, 17148, 17212, 4789, 4338, 12410, 4637, 17213, 17168, 17214, 5711, 17215, 9218, 9299, 9260, 4347, 16625, 17216, 11292, 17218, 9341, 1094, 17229, 10160, 17239, 17240, 2]
 
-// Module 17103 (VoicePanelHeader)
+// Module 17211 (VoicePanelHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1114 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4296 */;
-import timing from "timing" /* 4561 */;
-import useChannelName from "useChannelName" /* 4713 */;
-import StageMusicActionCreators from "StageMusicActionCreators" /* 9919 */;
-import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10038 */;
-import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12281 */;
-import useStableParticipant from "useStableParticipant" /* 17107 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4373 */;
+import timing from "timing" /* 4637 */;
+import useChannelName from "useChannelName" /* 4789 */;
+import StageMusicActionCreators from "StageMusicActionCreators" /* 10043 */;
+import useMyCurrentStageChannelRoleDefault from "useMyCurrentStageChannelRole" /* 10162 */;
+import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 12410 */;
+import useStableParticipant from "useStableParticipant" /* 17215 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4576 */;
-import ExperimentStore from "ExperimentStore" /* 4476 */;
-import StageMusicStore from "StageMusicStore" /* 9905 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4652 */;
+import ExperimentStore from "ExperimentStore" /* 4552 */;
+import StageMusicStore from "StageMusicStore" /* 10029 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
 import MediaEngineStore from "MediaEngineStore" /* 1908 */;
-import RelationshipStore from "RelationshipStore" /* 4209 */;
-import SpeakingStore from "SpeakingStore" /* 5419 */;
+import RelationshipStore from "RelationshipStore" /* 4285 */;
+import SpeakingStore from "SpeakingStore" /* 5500 */;
 import UserStore from "UserStore" /* 1371 */;
 
-const spring = tmp3(4974);
+const spring = tmp3(5055);
 require = fn;
 function MusicMuteButton(channelId) {
   channelId = channelId.channelId;
@@ -51,30 +51,30 @@ function MusicMuteButton(channelId) {
       }
       const obj3 = {
         accessibilityLabel: stringResult,
-        icon: tmp(stateFromStores ? 9916 : 9918),
+        icon: tmp(stateFromStores ? 10040 : 10042),
         onPress() {
               return StageMusicActionCreators.updateStageMusicMuted(!stateFromStores);
             }
       };
-      closure_23(tmp(17038), obj3);
-      const tmpResult = tmp(17038);
+      closure_23(tmp(17146), obj3);
+      const tmpResult = tmp(17146);
     }
   }
   return tmp6;
 }
 get_ActivityIndicator = fn(17);
 const StyleSheet = get_ActivityIndicator.StyleSheet;
-const VoicePanelConstants = fn(12277);
+const VoicePanelConstants = fn(12406);
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
 ({ UI_SHOW_HIDE_PHYSICS: closure_16, VoicePanelModes: closure_17, DRAWER_SPRING_PHYSICS_GESTURE_ACTIVE: closure_18 } = VoicePanelConstants);
-const EDGE_GUTTER = fn(12280).EDGE_GUTTER;
-const VoicePanelControlsModes = fn(12275).VoicePanelControlsModes;
-const ParticipantTypes = fn(4581).ParticipantTypes;
+const EDGE_GUTTER = fn(12409).EDGE_GUTTER;
+const VoicePanelControlsModes = fn(12404).VoicePanelControlsModes;
+const ParticipantTypes = fn(4657).ParticipantTypes;
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_23, jsxs: closure_24 } = jsxProd);
 const OPACITY_TIMING = { duration: 300 };
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { headerWrapper: { zIndex: 1, position: "absolute", top: 0, left: 0, width: "100%", paddingBottom: EDGE_GUTTER, overflow: "hidden" }, blurStyles: null, leftWrapper: null, rightWrapper: null, headerOuter: null, headerInner: null, headerContentWrapper: null, stroke: null, strokeAlt: null, strokeContainer: null, focusedSpeakingDotWrapper: null, focusedSpeakingDot: null, shieldIconMargin: null };
 let obj3 = {};
 let merged = Object.assign(StyleSheet.absoluteFillObject);
@@ -516,7 +516,7 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
           }
           obj2 = MediaEngineStore;
         }
-        tmp10Result = tmp10(17107);
+        tmp10Result = tmp10(17215);
       }
       obj3 = useStableParticipant;
     }
@@ -567,11 +567,11 @@ export default noop.memo(function VoicePanelHeader(wrapperOffset) {
       flag = isUserSecureFramesVerified;
     }
   }
-  let MIDNIGHT;
+  let ONYX;
   if (tmp38Result10) {
-    MIDNIGHT = ThemeTypes.MIDNIGHT;
+    ONYX = ThemeTypes.ONYX;
   }
-  const obj20 = { theme: MIDNIGHT, children: null };
+  const obj20 = { theme: ONYX, children: null };
   const obj21 = { style: null, pointerEvents: "box-none", layout, children: null };
   const items6 = [tmp.headerWrapper, animatedStyle];
   obj21.style = items6;

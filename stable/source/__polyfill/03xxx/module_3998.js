@@ -1,33 +1,43 @@
 // Module ID: 3998
 // Function ID: 3999
-// Dependencies: [3809, 3651]
+// Dependencies: [3886, 3893, 3726]
 // Exports: default
 
 // Module 3998
-import startOfWeek_mod from "startOfWeek" /* 3809 */;
-import requiredArgs_mod from "requiredArgs" /* 3651 */;
+import startOfISOWeekYear_mod from "startOfISOWeekYear" /* 3886 */;
+import module_3893_mod from "module_3893" /* 3893 */;
+import requiredArgs_mod from "requiredArgs" /* 3726 */;
 
-let startOfWeek = startOfWeek_mod;
-if (!startOfWeek) {
-  const obj = { default: startOfWeek };
+let startOfISOWeekYear = startOfISOWeekYear_mod;
+if (!startOfISOWeekYear) {
+  const obj = { default: startOfISOWeekYear };
   let tmp3 = obj;
 } else {
-  tmp3 = startOfWeek;
+  tmp3 = startOfISOWeekYear;
 }
-startOfWeek = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+startOfISOWeekYear = tmp3;
+let module_3893 = module_3893_mod;
+if (!module_3893) {
+  const obj2 = { default: module_3893 };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = module_3893;
 }
-requiredArgs = tmp5;
+module_3893 = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
+let c3 = 604800000;
 
-export default function isSameWeek(arg0, arg1, arg2) {
-  requiredArgs.default(2, arguments);
-  const defaultResult1 = startOfWeek.default(arg0, arg2);
-  const time = defaultResult1.getTime();
-  return time === startOfWeek.default(arg1, arg2).getTime();
+export default function getISOWeeksInYear(arg0) {
+  requiredArgs.default(1, arguments);
+  const defaultResult1 = startOfISOWeekYear.default(arg0);
+  const defaultResult2 = startOfISOWeekYear.default(module_3893.default(defaultResult1, 60));
+  return Math.round((startOfISOWeekYear.default(module_3893.default(defaultResult1, 60)).valueOf() - defaultResult1.valueOf()) / c3);
 };
 export default exports.default;

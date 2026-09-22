@@ -1,9 +1,9 @@
-// Module ID: 1344
-// Function ID: 1345
+// Module ID: 1342
+// Function ID: 1343
 // Name: NativeClientInfoModule
 // Dependencies: [17, 2]
 
-// Module 1344 (NativeClientInfoModule)
+// Module 1342 (NativeClientInfoModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

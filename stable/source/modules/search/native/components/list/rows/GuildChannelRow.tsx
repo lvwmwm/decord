@@ -1,15 +1,15 @@
-// Module ID: 16662
-// Function ID: 16663
+// Module ID: 16768
+// Function ID: 16769
 // Name: GuildChannelRow
-// Dependencies: [19, 17, 7879, 21, 4560, 576, 4713, 16663, 5028, 16665, 16655, 2]
+// Dependencies: [19, 17, 7982, 21, 4636, 576, 4789, 16769, 5109, 16771, 16761, 2]
 
-// Module 16662 (GuildChannelRow)
+// Module 16768 (GuildChannelRow)
 import nativeDefault from "native" /* 576 */;
-import useChannelNameDefault from "useChannelName" /* 4713 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 5028 */;
-import SearchListRow from "SearchListRow" /* 16655 */;
-import ChannelContent from "ChannelContent" /* 16663 */;
-import guild_channels_ChannelItem from "guild_channels/ChannelItem" /* 16665 */;
+import useChannelNameDefault from "useChannelName" /* 4789 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 5109 */;
+import SearchListRow from "SearchListRow" /* 16761 */;
+import ChannelContent from "ChannelContent" /* 16769 */;
+import renderChannelItem from "renderChannelItem" /* 16771 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,9 +23,9 @@ function GuildChannelLabel(channel) {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const layout = fn(7879).CHANNEL_LIST_SEARCH_LAYOUT;
+const layout = fn(7982).CHANNEL_LIST_SEARCH_LAYOUT;
 const jsx = fn(21).jsx;
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { container: { paddingVertical: 10 }, content: { flexDirection: "row", alignItems: "center" }, iconContainer: { marginRight: 0 }, simpleIcon: null };
 let size = { width: 20, height: 20, marginRight: 8, tintColor: nativeDefault.colors.TEXT_MUTED };
 obj.simpleIcon = size;
@@ -38,7 +38,7 @@ export default noop.memo(function GuildChannelRow(channel) {
   ({ subtitle, trailing, extras, onPress, voiceStates } = channel);
   const merged = Object.assign(channel, Object.assign({ channel: 0, subtitle: 0, trailing: 0, extras: 0, onPress: 0, voiceStates: 0 }));
   const tmp2 = closure_7();
-  const channelAccessibilityProps = guild_channels_ChannelItem.getChannelAccessibilityProps({ channel, unread: false, mentionCount: 0, voiceStates });
+  const channelAccessibilityProps = renderChannelItem.getChannelAccessibilityProps({ channel, unread: false, mentionCount: 0, voiceStates });
   const obj2 = { style: tmp2.simpleIcon, source: null };
   obj2.source = utils_ChannelUtils.getSimpleChannelIcon(channel);
   const obj6 = {};

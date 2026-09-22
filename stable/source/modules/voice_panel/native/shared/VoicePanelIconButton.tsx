@@ -1,11 +1,11 @@
-// Module ID: 17038
-// Function ID: 17039
+// Module ID: 17146
+// Function ID: 17147
 // Name: VoicePanelIconButton
-// Dependencies: [19, 21, 7073, 8098, 2]
+// Dependencies: [19, 21, 7176, 8202, 2]
 
-// Module 17038 (VoicePanelIconButton)
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7073 */;
-import IconButton from "IconButton" /* 8098 */;
+// Module 17146 (VoicePanelIconButton)
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7176 */;
+import IconButton from "IconButton" /* 8202 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

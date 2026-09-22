@@ -1,9 +1,9 @@
 // Module ID: 5392
 // Function ID: 5393
-// Dependencies: [1122]
+// Dependencies: [1120]
 
 // Module 5392
-import registerAsset from "module_1122" /* 1122 */;
+import registerAsset from "module_1120" /* 1120 */;
 
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 500, height: 500, scales: [1], hash: "df9cdfb6f7f1a0f370383360cce3dd97", name: "img_account_sync_crunchyroll_light_and_dark", type: "png" });
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "25ba997e1d3e8344c193637ad6eeccd3", name: "img_account_sync_league_of_legends_white", type: "png" });

@@ -1,18 +1,18 @@
-// Module ID: 5444
-// Function ID: 5445
+// Module ID: 5525
+// Function ID: 5526
 // Name: QuestConstants
-// Dependencies: [5445, 1090, 5446, 1272, 5447, 5451, 5452, 12, 2, 5453]
+// Dependencies: [5526, 1090, 5527, 1270, 5528, 5532, 5533, 12, 2, 5534]
 // Exports: getQuestHomeFilterOptionItem
 
-// Module 5444 (QuestConstants)
+// Module 5525 (QuestConstants)
 import DurationsDefault from "Durations" /* 1090 */;
-import QuestVariants from "QuestVariants" /* 5445 */;
-import Quests from "Quests" /* 5446 */;
-import QuestTypes from "QuestTypes" /* 5447 */;
-import AdCreativeType from "AdCreativeType" /* 5451 */;
-import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5452 */;
-import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 5453 */;
-import HTTPUtils_mod from "HTTPUtils" /* 1272 */;
+import QuestVariants from "QuestVariants" /* 5526 */;
+import Quests from "Quests" /* 5527 */;
+import QuestTypes from "QuestTypes" /* 5528 */;
+import AdCreativeType from "AdCreativeType" /* 5532 */;
+import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 5533 */;
+import DismissibleQuestContentFlags from "DismissibleQuestContentFlags" /* 5534 */;
+import HTTPUtils_mod from "HTTPUtils" /* 1270 */;
 import apply from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ if (-1 !== HTTPUtils.indexOf("localhost")) {
   str2 = "https://cdn.discordapp.com/";
 }
 const text = `${str2}quests/`;
-const items1 = [QuestTypes.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA, QuestTypes.AdPlacement.MOBILE_HOME_DOCK_AREA, QuestTypes.AdPlacement.QUEST_HOME_BANNER_DESKTOP, QuestTypes.AdPlacement.QUEST_HOME_MOBILE_CAROUSEL, QuestTypes.AdPlacement.VIDEO_MODAL_MOBILE];
+const items1 = [QuestTypes.AdPlacement.DESKTOP_ACCOUNT_PANEL_AREA, QuestTypes.AdPlacement.MOBILE_HOME_DOCK_AREA, QuestTypes.AdPlacement.QUEST_HOME_BANNER_DESKTOP, QuestTypes.AdPlacement.VIDEO_MODAL_MOBILE];
 const set = new Set(items);
 const items2 = [AdCreativeType.AdCreativeType.NO_FILL];
 const set1 = new Set(items1);
@@ -71,6 +71,7 @@ export const QuestTaskPlatform = { CONSOLE: "CONSOLE", DESKTOP: "DESKTOP" };
 export const QuestAuthMethod = { IN_GAME: "in_game", WEB: "web" };
 export const QUEST_SPLIT_MODAL_PANEL_WIDTH = 454;
 export const QUEST_HERO_ASSET_ASPECT_RATIO = 3.5675675675675675;
+export const DEFAULT_PORTRAIT_ASPECT_RATIO = 0.5625;
 export const CDN_URL_BASE = str2;
 export const QUESTS_CDN_URL_BASE = text;
 export const QuestDockMode = { COLLAPSED: "collapsed", EXPANDED: "expanded", CLOSED: "closed", SOFT_DISMISSED: "soft-dismissed", RESET_TO_PREVIOUS: "reset-to-previous" };
@@ -88,6 +89,8 @@ export const PLAY_ACTIVITY_SOCIAL_ENTRY_APPLICATION_ID = "1402418703554842694";
 export const DEFAULT_VIRTUAL_CURRENCY_QUEST_HOME_HERO_ID = "1496993616537587813";
 export const DEFAULT_GENERIC_QUEST_HOME_HERO_ID = "1496993616537587812";
 export const DEFAULT_PLACEHOLDER_ENTRYPOINT_BOUNTY_ID = "1514687533122982012";
+export const BOUNTY_ORB_AMOUNT = 50;
+export const BOUNTY_CTA_TIMER_MILLISECONDS = 0;
 export const BILLABLE_PLACEMENTS = set1;
 export const NON_BILLABLE_CREATIVE_TYPES = set2;
 export const ACTIVE_NOW_SOCIAL_ENTRY_POINT_ALLOWED_TASK_TYPES = set3;

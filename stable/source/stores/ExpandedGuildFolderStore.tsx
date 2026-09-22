@@ -1,12 +1,12 @@
-// Module ID: 5439
-// Function ID: 5440
+// Module ID: 5520
+// Function ID: 5521
 // Name: ExpandedGuildFolderStore
-// Dependencies: [1221, 504, 573, 2]
+// Dependencies: [1219, 504, 573, 2]
 
-// Module 5439 (ExpandedGuildFolderStore)
+// Module 5520 (ExpandedGuildFolderStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1221 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1219 */;
 
 let set = new Set();
 const PersistedStore = initializeDefault.PersistedStore;

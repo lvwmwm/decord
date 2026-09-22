@@ -1,18 +1,18 @@
-// Module ID: 11692
-// Function ID: 11693
+// Module ID: 11820
+// Function ID: 11821
 // Name: ForwardActionCreators
-// Dependencies: [32, 5, 1957, 4199, 1074, 4553, 8349, 7682, 1096, 7684, 1384, 7456, 11689, 4803, 2]
+// Dependencies: [32, 5, 1957, 4275, 1074, 4629, 8466, 7784, 1096, 7786, 1384, 7559, 11817, 4879, 2]
 
-// Module 11692 (ForwardActionCreators)
-import allSettledDefault from "allSettled" /* 4803 */;
+// Module 11820 (ForwardActionCreators)
+import allSettledDefault from "allSettled" /* 4879 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ChannelStore from "ChannelStore" /* 1957 */;
-import PermissionStore from "PermissionStore" /* 4199 */;
+import PermissionStore from "PermissionStore" /* 4275 */;
 
 const require = fn;
 const MessageFlags = fn(1074).MessageFlags;
-const MessageSendLocation = fn(4553).MessageSendLocation;
+const MessageSendLocation = fn(4629).MessageSendLocation;
 let obj = {
   sendForward(messageRecord, alsoForwardToChannelId, arg2) {
     closure_0 = messageRecord;
@@ -54,7 +54,7 @@ let obj = {
                 prop = tmp73.isICYMIGameContentForwarding;
               }
               if (prop) {
-                let guild_id = tmp2(8349).GAME_CONTENT_GUILD_ID;
+                let guild_id = tmp2(8466).GAME_CONTENT_GUILD_ID;
               } else if (channel1 != null) {
                 guild_id = channel1.guild_id;
               }
@@ -70,7 +70,7 @@ let obj = {
                 const error1 = new Error("Unable to find destination channel for message");
                 throw error1;
               } else {
-                const parsed = alsoForwardToChannelId(7682).parse(channel, "");
+                const parsed = alsoForwardToChannelId(7784).parse(channel, "");
                 const obj7 = { guild_id, channel_id: null, message_id: null, type: null, forward_only: null };
                 ({ channel_id: obj16.channel_id, id: obj16.message_id } = tmp71);
                 obj7.type = tmp2(1096).MessageReferenceTypes.FORWARD;
@@ -97,7 +97,7 @@ let obj = {
                 closure_128_2 = withMessage;
                 let num9 = 0;
                 if (null != withMessage) {
-                  const tmp39 = v3(alsoForwardToChannelId(7684)(withMessage), 2);
+                  const tmp39 = v3(alsoForwardToChannelId(7786)(withMessage), 2);
                   num9 = 0;
                   if (tmp39[0]) {
                     closure_128_2 = tmp39[1];
@@ -107,7 +107,7 @@ let obj = {
                     const obj9 = tmp2(1384);
                   }
                 }
-                const obj10 = alsoForwardToChannelId(7456);
+                const obj10 = alsoForwardToChannelId(7559);
                 const obj12 = { messageReference: obj7, location: constants2.FORWARDING, eagerDispatch: false, flags: num9 };
                 dependencyMap = 1;
                 v3 = 1;
@@ -131,16 +131,16 @@ let obj = {
                   result = "" === closure_128_2;
                 }
                 if (!result) {
-                  result = tmp2(11689).isRatelimitedInChannel(closure_128_0, PermissionStore);
-                  const obj2 = tmp2(11689);
+                  result = tmp2(11817).isRatelimitedInChannel(closure_128_0, PermissionStore);
+                  const obj2 = tmp2(11817);
                 }
                 if (!result) {
-                  const obj3 = alsoForwardToChannelId(7456);
+                  const obj3 = alsoForwardToChannelId(7559);
                   const id = closure_128_0.id;
                   const obj25 = { location: constants2.FORWARDING, flags: closure_128_1 };
                   dependencyMap = 2;
                   v3 = 1;
-                  const obj26 = { value: obj3.sendMessage(id, alsoForwardToChannelId(7682).parse(closure_128_0, closure_128_2), false, obj25), done: false };
+                  const obj26 = { value: obj3.sendMessage(id, alsoForwardToChannelId(7784).parse(closure_128_0, closure_128_2), false, obj25), done: false };
                   return obj26;
                 }
               }

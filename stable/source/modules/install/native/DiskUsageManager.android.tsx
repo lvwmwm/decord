@@ -1,10 +1,10 @@
-// Module ID: 17409
-// Function ID: 17410
+// Module ID: 15661
+// Function ID: 15662
 // Name: DiskUsageManager
-// Dependencies: [7118, 2]
+// Dependencies: [7221, 2]
 
-// Module 17409 (DiskUsageManager)
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7118 */;
+// Module 15661 (DiskUsageManager)
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7221 */;
 
 class DiskUsageManager extends tmp2 {
   constructor() {
@@ -19,6 +19,9 @@ class DiskUsageManager extends tmp2 {
   }
 }
 const prototype = DiskUsageManager.prototype;
+prototype["clearCaches"] = function clearCaches() {
+
+};
 prototype["_initialize"] = function _initialize() {
 
 };

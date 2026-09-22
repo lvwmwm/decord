@@ -1,12 +1,12 @@
-// Module ID: 10869
-// Function ID: 10870
+// Module ID: 10996
+// Function ID: 10997
 // Name: SearchableUserListActions
-// Dependencies: [19, 17, 21, 10870, 5687, 5605, 2]
+// Dependencies: [19, 17, 21, 10997, 5768, 5686, 2]
 // Exports: useUserListActionsProps
 
-// Module 10869 (SearchableUserListActions)
-import TableRow from "TableRow" /* 5605 */;
-import TableRowGroup from "TableRowGroup" /* 5687 */;
+// Module 10996 (SearchableUserListActions)
+import TableRow from "TableRow" /* 5686 */;
+import TableRowGroup from "TableRowGroup" /* 5768 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,7 +40,7 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_co
 export const useUserListActionsProps = function useUserListActionsProps(actions) {
   actions = actions.actions;
   const style = actions.style;
-  const tmp = style(10870)();
+  const tmp = style(10997)();
   dependencyMap = tmp;
   const items = [actions, tmp, style];
   return noop.useMemo(() => {

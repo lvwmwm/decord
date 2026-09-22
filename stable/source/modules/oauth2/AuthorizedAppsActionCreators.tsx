@@ -1,14 +1,14 @@
-// Module ID: 7170
-// Function ID: 7171
+// Module ID: 7273
+// Function ID: 7274
 // Name: AuthorizedAppsActionCreators
-// Dependencies: [5, 7107, 1074, 4447, 573, 1272, 2]
+// Dependencies: [5, 7210, 1074, 1952, 573, 1270, 2]
 
-// Module 7170 (AuthorizedAppsActionCreators)
+// Module 7273 (AuthorizedAppsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import HTTPUtils from "HTTPUtils" /* 1272 */;
-import Timers from "Timers" /* 4447 */;
+import HTTPUtils from "HTTPUtils" /* 1270 */;
+import Timers from "Timers" /* 1952 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7107 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7210 */;
 
 require = fn;
 function tokensToAppTokensMap(arg0, arr) {
@@ -110,9 +110,9 @@ let closure_10 = async function _fetchAuthorizedApps(application_ids) {
     }
   })();
 };
-const FetchState = fn(7107).FetchState;
+const FetchState = fn(7210).FetchState;
 const Endpoints = fn(1074).Endpoints;
-const batchInvocationManager = new fn(4447).BatchInvocationManager(fetchAuthorizedApps, {
+const batchInvocationManager = new fn(1952).BatchInvocationManager(fetchAuthorizedApps, {
   predicate(arg0) {
     return AuthorizedAppsStore.getFetchStateForApplication(arg0) !== FetchState.FETCHING;
   },
@@ -128,15 +128,15 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/oauth2/AuthorizedAppsActionCreators.tsx");
 
 export default {
-  fetch(arg0) {
+  fetch(candidates) {
     if (AuthorizedAppsStore.getFetchState() !== FetchState.FETCHING) {
-      if (null != arg0) {
-        batchInvocationManager.queue(arg0).catch((error) => {
+      if (null != candidates) {
+        batchInvocationManager.queue(candidates).catch((error) => {
           if (!(error instanceof Timers.BatchInvocationManagerResetError)) {
             throw error;
           }
         });
-        const queueResult = batchInvocationManager.queue(arg0);
+        const queueResult = batchInvocationManager.queue(candidates);
       } else {
         batchInvocationManager.reset();
         const obj2 = { type: "USER_AUTHORIZED_APPS_REQUEST", request: { type: "full" } };

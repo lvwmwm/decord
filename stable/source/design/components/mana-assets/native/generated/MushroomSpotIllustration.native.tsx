@@ -1,13 +1,13 @@
-// Module ID: 6251
-// Function ID: 6252
+// Module ID: 6352
+// Function ID: 6353
 // Name: MushroomSpotIllustration
-// Dependencies: [21, 5587, 6252, 2]
+// Dependencies: [21, 5668, 6353, 2]
 // Exports: MushroomSpotIllustration
 
-// Module 6251 (MushroomSpotIllustration)
+// Module 6352 (MushroomSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6252 from "module_6252" /* 6252 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6353 from "module_6353" /* 6353 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const MushroomSpotIllustration = function MushroomSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6252 };
+  const obj2 = { uri: _modDef6353 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

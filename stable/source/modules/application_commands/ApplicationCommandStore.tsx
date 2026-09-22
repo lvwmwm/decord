@@ -1,14 +1,14 @@
-// Module ID: 7780
-// Function ID: 7781
+// Module ID: 7882
+// Function ID: 7883
 // Name: ApplicationCommandStore
-// Dependencies: [32, 7280, 2011, 7521, 504, 573, 2]
+// Dependencies: [32, 7383, 2011, 7624, 504, 573, 2]
 
-// Module 7780 (ApplicationCommandStore)
+// Module 7882 (ApplicationCommandStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7521 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7624 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7280 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7383 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2011 */;
 
 require = fn;
@@ -137,7 +137,7 @@ function handleUpdateOptionStates(channelId) {
           }
         }
       } else {
-        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "r", length: "HermesInternal" };
+        obj[tmp9] = { hasValue: false, isActive: false, lastValidationResult: null, optionValue: null, location: "channel", length: "Reflect" };
         if (tmp.activeOptionName === tmp9) {
           tmp.activeOptionName = null;
         }

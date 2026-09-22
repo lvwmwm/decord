@@ -1,14 +1,14 @@
-// Module ID: 5441
-// Function ID: 5442
+// Module ID: 5522
+// Function ID: 5523
 // Name: LegacyTokens
-// Dependencies: [17, 4560, 4411, 576, 4409, 2]
+// Dependencies: [17, 4636, 4488, 576, 4486, 2]
 
-// Module 5441 (LegacyTokens)
+// Module 5522 (LegacyTokens)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import ColorUtils from "ColorUtils" /* 4409 */;
-import shared from "shared" /* 4411 */;
-import createStyles_mod from "createStyles" /* 4560 */;
+import ColorUtils from "ColorUtils" /* 4486 */;
+import shared from "shared" /* 4488 */;
+import createStyles_mod from "createStyles" /* 4636 */;
 import size from "module_2" /* 2 */;
 
 const Platform = _mod17.Platform;

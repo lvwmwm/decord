@@ -1,33 +1,33 @@
-// Module ID: 12386
-// Function ID: 12387
+// Module ID: 12515
+// Function ID: 12516
 // Name: SelectDoubleTapEmojiRow
-// Dependencies: [19, 17, 4552, 7151, 1374, 21, 4560, 1115, 576, 504, 5123, 7130, 1396, 10290, 1477, 4217, 7969, 11126, 7763, 8763, 2]
+// Dependencies: [19, 17, 4628, 7254, 1374, 21, 4636, 1363, 576, 504, 5204, 7233, 1396, 10414, 1477, 4293, 8072, 11259, 7865, 8883, 2]
 
-// Module 12386 (SelectDoubleTapEmojiRow)
+// Module 12515 (SelectDoubleTapEmojiRow)
 import nativeDefault from "native" /* 576 */;
-import EmojiDefault from "Emoji" /* 7130 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 7763 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11126 */;
+import EmojiDefault from "Emoji" /* 7233 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 7865 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11259 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4552 */;
+import AccessibilityStore from "AccessibilityStore" /* 4628 */;
 
 const AvatarUtilsDefault = tmp8(1396);
 require = fn;
 const View = fn(17).View;
-const ACTION_SHEET_MAX_WIDTH = fn(7151).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7254).ACTION_SHEET_MAX_WIDTH;
 const EmojiConstants = fn(1374);
 ({ EMOJI_URL_BASE_SIZE: closure_7, EmojiIntention: closure_8 } = EmojiConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4560);
+const createStyles = fn(4636);
 let obj = { emoji: { width: 24, height: 24 }, customEmoji: { width: 24, height: 24 }, textEmoji: null, emojiRow: null, emojiPressable: null, selectedEmojiPressable: null, emojiWrapper: null, selectedEmojiWrapper: null, chooseEmojiButton: null, customReactionOverlay: null, selectedCustomReactionIcon: null };
-let PlatformUtils = fn(1115);
+let PlatformUtils = fn(1363);
 let num = 20;
 if (PlatformUtils.isIOS()) {
   num = 24;
 }
 let obj3 = { fontSize: num, lineHeight: null, textAlign: "center", color: null };
-PlatformUtils = fn(1115);
+PlatformUtils = fn(1363);
 let num2;
 if (PlatformUtils.isIOS()) {
   num2 = 28;
@@ -104,7 +104,7 @@ let closure_13 = noop.memo((emoji) => {
   obj4.src = url;
   obj3.children = closure_9(EmojiDefault, obj4);
   obj2.children = closure_9(tmp6, obj3);
-  return closure_9(emoji(5123).PressableOpacity, obj2);
+  return closure_9(emoji(5204).PressableOpacity, obj2);
 });
 const obj11 = { color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT };
 size = fn(2);

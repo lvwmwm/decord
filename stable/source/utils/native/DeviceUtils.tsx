@@ -1,44 +1,30 @@
-// Module ID: 4539
-// Function ID: 4540
+// Module ID: 4615
+// Function ID: 4616
 // Name: DeviceUtils
-// Dependencies: [17, 1115, 1343, 510, 2]
+// Dependencies: [1341, 1363, 510, 2]
 // Exports: getDevice, getDeviceBrand, getDeviceInfo, getDeviceManufacturer, getDeviceMediaPerformanceClass, getDeviceModel, getDeviceProduct, getIsRunningOnSimulator, getMaxCpuFreq, getRamSize, getSmallestScreenWidthDp, getSocName, getSystemVersion, getSystemVersionMajor, getSystemVersionMinor, getTimeZone, isGestureNavigationEnabled, isIpadOS, isOrientationLockSupported
 
-// Module 4539 (DeviceUtils)
-import _mod17 from "module_17" /* 17 */;
-import NativeDeviceModuleDefault from "NativeDeviceModule" /* 1343 */;
-import PlatformUtils from "PlatformUtils" /* 1115 */;
-import size from "module_2" /* 2 */;
+// Module 4615 (DeviceUtils)
+import NativeDeviceModule from "NativeDeviceModule" /* 1341 */;
 
-if (PlatformUtils.isAndroid()) {
-  const importDefaultResult = NativeDeviceModuleDefault;
-  let constants;
-  if (importDefaultResult != null) {
-    constants = importDefaultResult.getConstants();
-  }
-  let DCDDeviceManager = constants;
-} else {
-  DCDDeviceManager = _mod17.NativeModules.DCDDeviceManager;
-}
+const require = fn;
+const constants = NativeDeviceModule.getConstants();
 let closure_4 = null;
 const mediaPerformanceClass = "mediaPerformanceClass";
-function getSystemVersion() {
-  return DCDDeviceManager.systemVersion;
-}
-function getDevice() {
-  return DCDDeviceManager.device;
-}
+const size = fn(2);
 let result = size.fileFinishedImporting("utils/native/DeviceUtils.tsx");
 
 export const isIpadOS = function isIpadOS() {
-  return "iPad" === DCDDeviceManager.deviceModel;
+  return "iPad" === closure_3.deviceModel;
 };
 export const isGestureNavigationEnabled = function isGestureNavigationEnabled() {
-  return DCDDeviceManager.isGestureNavigationEnabled;
+  return closure_3.isGestureNavigationEnabled;
 };
-export { getSystemVersion };
+export const getSystemVersion = function getSystemVersion() {
+  return closure_3.systemVersion;
+};
 export const getSystemVersionMajor = function getSystemVersionMajor() {
-  const match = DCDDeviceManager.systemVersion.match(/\d+/);
+  const match = closure_3.systemVersion.match(/\d+/);
   if (null == match) {
     return 0;
   } else {
@@ -53,7 +39,7 @@ export const getSystemVersionMajor = function getSystemVersionMajor() {
   }
 };
 export const getSystemVersionMinor = function getSystemVersionMinor() {
-  const match = DCDDeviceManager.systemVersion.match(/\d+/g);
+  const match = closure_3.systemVersion.match(/\d+/g);
   if (null != match) {
     if (match.length >= 2) {
       const _Number = Number;
@@ -68,9 +54,11 @@ export const getSystemVersionMinor = function getSystemVersionMinor() {
   }
   return 0;
 };
-export { getDevice };
+export const getDevice = function getDevice() {
+  return closure_3.device;
+};
 export const getDeviceInfo = function getDeviceInfo() {
-  const device = DCDDeviceManager.device;
+  const device = closure_3.device;
   if (obj.isAndroid()) {
     let text = `${device + " (" + tmp.deviceModel})`;
   } else {
@@ -89,7 +77,7 @@ export const getDeviceMediaPerformanceClass = function getDeviceMediaPerformance
       tmp5 = null == value;
     }
     if (tmp5) {
-      mediaPerformanceClass2 = NativeDeviceModuleDefault.getMediaPerformanceClass();
+      mediaPerformanceClass2 = NativeDeviceModule.getMediaPerformanceClass();
       const Storage2 = tmp(510).Storage;
       const result = Storage2.set(mediaPerformanceClass, mediaPerformanceClass2);
     }
@@ -98,32 +86,32 @@ export const getDeviceMediaPerformanceClass = function getDeviceMediaPerformance
   return tmp3;
 };
 export const getDeviceModel = function getDeviceModel() {
-  return DCDDeviceManager.deviceModel;
+  return closure_3.deviceModel;
 };
 export const getDeviceBrand = function getDeviceBrand() {
-  return DCDDeviceManager.deviceBrand;
+  return closure_3.deviceBrand;
 };
 export const getDeviceProduct = function getDeviceProduct() {
-  return DCDDeviceManager.deviceProduct;
+  return closure_3.deviceProduct;
 };
 export const getDeviceManufacturer = function getDeviceManufacturer() {
-  return DCDDeviceManager.deviceManufacturer;
+  return closure_3.deviceManufacturer;
 };
 export const getSmallestScreenWidthDp = function getSmallestScreenWidthDp() {
-  return DCDDeviceManager.smallestScreenWidth;
+  return closure_3.smallestScreenWidth;
 };
 export const isOrientationLockSupported = function isOrientationLockSupported() {
-  let flag = DCDDeviceManager.isOrientationLockSupported;
+  let flag = closure_3.isOrientationLockSupported;
   if (flag == null) {
     flag = true;
   }
   return flag;
 };
 export const getSocName = function getSocName() {
-  return DCDDeviceManager.socName;
+  return closure_3.socName;
 };
 export const getRamSize = function getRamSize() {
-  const ramSize = DCDDeviceManager.ramSize;
+  const ramSize = closure_3.ramSize;
   let parsed;
   if ("" !== ramSize) {
     const _parseFloat = parseFloat;
@@ -132,7 +120,7 @@ export const getRamSize = function getRamSize() {
   return parsed;
 };
 export const getMaxCpuFreq = function getMaxCpuFreq() {
-  const maxCpuFreq = DCDDeviceManager.maxCpuFreq;
+  const maxCpuFreq = closure_3.maxCpuFreq;
   let parsed;
   if ("" !== maxCpuFreq) {
     const _parseFloat = parseFloat;
@@ -141,8 +129,8 @@ export const getMaxCpuFreq = function getMaxCpuFreq() {
   return parsed;
 };
 export const getTimeZone = function getTimeZone() {
-  return DCDDeviceManager.timeZone;
+  return closure_3.timeZone;
 };
 export const getIsRunningOnSimulator = function getIsRunningOnSimulator() {
-  return DCDDeviceManager.isRunningOnSimulator;
+  return closure_3.isRunningOnSimulator;
 };

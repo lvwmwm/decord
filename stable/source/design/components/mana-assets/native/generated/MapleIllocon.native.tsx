@@ -1,13 +1,13 @@
-// Module ID: 6235
-// Function ID: 6236
+// Module ID: 6336
+// Function ID: 6337
 // Name: MapleIllocon
-// Dependencies: [21, 5587, 6236, 2]
+// Dependencies: [21, 5668, 6337, 2]
 // Exports: MapleIllocon
 
-// Module 6235 (MapleIllocon)
+// Module 6336 (MapleIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5587 */;
-import _modDef6236 from "module_6236" /* 6236 */;
+import FastImageDefault from "FastImage" /* 5668 */;
+import _modDef6337 from "module_6337" /* 6337 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const MapleIllocon = function MapleIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6236 };
+  const obj2 = { uri: _modDef6337 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

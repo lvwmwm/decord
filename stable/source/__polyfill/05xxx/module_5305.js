@@ -1,9 +1,10 @@
 // Module ID: 5305
 // Function ID: 5306
-// Dependencies: [1122]
+// Dependencies: []
+// Exports: get64BitValue
 
 // Module 5305
-import registerAsset from "module_1122" /* 1122 */;
 
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "a9a658fd475f7a20d9e2c83953494ec4", name: "img_bungie_white", type: "svg" });
+export const get64BitValue = function get64BitValue(getUint32, sum4) {
+  return getUint32.getUint32(sum4 + 4);
+};
