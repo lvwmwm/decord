@@ -1,12 +1,12 @@
-// Module ID: 16192
-// Function ID: 16193
+// Module ID: 16245
+// Function ID: 16246
 // Name: useAdPersonalizationTogglesDisabled
-// Dependencies: [13957, 504, 2]
+// Dependencies: [14042, 504, 2]
 // Exports: useAdPersonalizationTogglesDisabled
 
-// Module 16192 (useAdPersonalizationTogglesDisabled)
+// Module 16245 (useAdPersonalizationTogglesDisabled)
 import initialize from "initialize" /* 504 */;
-import AdPersonalizationStore from "AdPersonalizationStore" /* 13957 */;
+import AdPersonalizationStore from "AdPersonalizationStore" /* 14042 */;
 
 require = fn;
 const size = fn(2);

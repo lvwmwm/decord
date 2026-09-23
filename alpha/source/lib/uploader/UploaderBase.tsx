@@ -1,17 +1,17 @@
-// Module ID: 8085
-// Function ID: 8086
+// Module ID: 8167
+// Function ID: 8168
 // Name: UploaderBase
-// Dependencies: [5, 1074, 4750, 3, 568, 12, 5394, 5354, 5355, 2]
+// Dependencies: [5, 1074, 4820, 3, 568, 12, 5478, 5438, 5439, 2]
 
-// Module 8085 (UploaderBase)
+// Module 8167 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 5354 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 5438 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
 const AbortCodes = fn(1074).AbortCodes;
-const FileUploadErrorTypes = fn(4750).FileUploadErrorTypes;
+const FileUploadErrorTypes = fn(4820).FileUploadErrorTypes;
 const logger = new LoggerDefault("UploaderBase.tsx");
 const EventEmitter = fn(568).EventEmitter;
 class UploaderBase extends EventEmitter {

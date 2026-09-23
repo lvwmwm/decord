@@ -1,10 +1,10 @@
-// Module ID: 7635
-// Function ID: 7636
+// Module ID: 7718
+// Function ID: 7719
 // Name: OverlayTrackingUtils
 // Dependencies: [2]
 // Exports: useAnyOverlayRendering, useAnyOverlayRenderingLocked, useOverlayLockState, useOverlayTrackedGames
 
-// Module 7635 (OverlayTrackingUtils)
+// Module 7718 (OverlayTrackingUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/overlay/OverlayTrackingUtils.native.tsx");

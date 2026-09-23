@@ -1,13 +1,13 @@
-// Module ID: 9100
-// Function ID: 9101
+// Module ID: 9171
+// Function ID: 9172
 // Name: CutoutBackgroundContext
-// Dependencies: [19, 21, 672, 9101, 576, 4458, 2]
+// Dependencies: [19, 21, 672, 9172, 576, 4524, 2]
 // Exports: CutoutBackgroundProvider, useCutoutBackgroundColor
 
-// Module 9100 (CutoutBackgroundContext)
+// Module 9171 (CutoutBackgroundContext)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
-import shared_colors from "shared/colors" /* 9101 */;
+import shared_colors from "shared/colors" /* 9172 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

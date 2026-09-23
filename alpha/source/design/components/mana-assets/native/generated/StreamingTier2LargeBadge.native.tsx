@@ -1,13 +1,13 @@
-// Module ID: 6740
-// Function ID: 6741
+// Module ID: 6824
+// Function ID: 6825
 // Name: StreamingTier2LargeBadge
-// Dependencies: [21, 5806, 6741, 2]
+// Dependencies: [21, 5890, 6825, 2]
 // Exports: StreamingTier2LargeBadge
 
-// Module 6740 (StreamingTier2LargeBadge)
+// Module 6824 (StreamingTier2LargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6741 from "module_6741" /* 6741 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6825 from "module_6825" /* 6825 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const StreamingTier2LargeBadge = function StreamingTier2LargeBadge(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6741 };
+  const obj2 = { uri: _modDef6825 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

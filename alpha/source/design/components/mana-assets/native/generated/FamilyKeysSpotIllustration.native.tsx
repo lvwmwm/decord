@@ -1,13 +1,13 @@
-// Module ID: 6224
-// Function ID: 6225
+// Module ID: 6308
+// Function ID: 6309
 // Name: FamilyKeysSpotIllustration
-// Dependencies: [21, 5806, 6225, 2]
+// Dependencies: [21, 5890, 6309, 2]
 // Exports: FamilyKeysSpotIllustration
 
-// Module 6224 (FamilyKeysSpotIllustration)
+// Module 6308 (FamilyKeysSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6225 from "module_6225" /* 6225 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6309 from "module_6309" /* 6309 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const FamilyKeysSpotIllustration = function FamilyKeysSpotIllustration(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6225 };
+  const obj2 = { uri: _modDef6309 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

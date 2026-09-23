@@ -1,15 +1,15 @@
-// Module ID: 11950
-// Function ID: 11951
+// Module ID: 12026
+// Function ID: 12027
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 4757, 576, 7228, 4493, 5186, 5190, 4753, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 7312, 4559, 5270, 5274, 4823, 2]
 // Exports: default
 
-// Module 11950 (ShareFooterLayout)
+// Module 12026 (ShareFooterLayout)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4493 */;
-import spring from "spring" /* 5186 */;
-import springPresets from "springPresets" /* 5190 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7228 */;
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4559 */;
+import spring from "spring" /* 5270 */;
+import springPresets from "springPresets" /* 5274 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7312 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 const obj2 = { footer: { display: "flex", flexDirection: "column", flexShrink: 0, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE }, footerSeparator: null, warningWrapper: null, chatRow: null };
 let obj3 = { display: "flex", flexDirection: "column", flexShrink: 0, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGHEST, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
 obj2.footerSeparator = { marginHorizontal: -nativeDefault.space.PX_16, borderBottomWidth: 1, borderBottomColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -67,7 +67,7 @@ export default function ShareFooterLayout(arg0) {
   let tmp12 = null != warningText;
   if (tmp12) {
     const obj8 = { variant: "text-sm/normal", color: "text-feedback-warning", children: warningText };
-    tmp12 = closure_4(tmp4(4753).Text, obj8);
+    tmp12 = closure_4(tmp4(4823).Text, obj8);
   }
   items4[1] = tmp12;
   obj6.children = items4;

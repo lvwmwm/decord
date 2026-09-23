@@ -1,13 +1,13 @@
-// Module ID: 6724
-// Function ID: 6725
+// Module ID: 6808
+// Function ID: 6809
 // Name: SpiderIllocon
-// Dependencies: [21, 5806, 6725, 2]
+// Dependencies: [21, 5890, 6809, 2]
 // Exports: SpiderIllocon
 
-// Module 6724 (SpiderIllocon)
+// Module 6808 (SpiderIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6725 from "module_6725" /* 6725 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6809 from "module_6809" /* 6809 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const SpiderIllocon = function SpiderIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6725 };
+  const obj2 = { uri: _modDef6809 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

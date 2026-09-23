@@ -1,13 +1,13 @@
-// Module ID: 18348
-// Function ID: 18349
+// Module ID: 18417
+// Function ID: 18418
 // Name: AgeVerificationScreen
-// Dependencies: [19, 17, 1372, 1074, 21, 4757, 1255, 18341, 504, 8864, 18335, 1978, 8688, 18344, 5911, 1115, 2776, 3034, 8686, 2108, 14462, 6836, 4753, 8866, 2]
+// Dependencies: [19, 17, 1372, 1074, 21, 4827, 1255, 18410, 504, 8935, 18404, 1978, 8759, 18413, 5995, 1115, 2778, 3036, 8757, 2108, 14542, 6920, 4823, 8937, 2]
 // Exports: default
 
-// Module 18348 (AgeVerificationScreen)
+// Module 18417 (AgeVerificationScreen)
 import Server from "Server" /* 1978 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8688 */;
-import types from "types" /* 18335 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8759 */;
+import types from "types" /* 18404 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -15,7 +15,7 @@ require = fn;
 const Pressable = fn(17).Pressable;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_8 = createStyles.createStyles({ helpLink: { textAlign: "center" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/safety_flows/native/tasks/AgeVerificationScreen.tsx");

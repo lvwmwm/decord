@@ -1,16 +1,16 @@
-// Module ID: 9579
-// Function ID: 9580
+// Module ID: 9652
+// Function ID: 9653
 // Name: _launchFrame
-// Dependencies: [5, 9318, 9319, 9321, 9580, 573, 9599, 9581, 9628, 9629, 2]
+// Dependencies: [5, 9389, 9390, 9392, 9653, 573, 9672, 9654, 9701, 9702, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameLayoutModes, setFramePrefersPictureInPictureOnNavigateAway, updateFramePanelMode
 
-// Module 9579 (_launchFrame)
+// Module 9652 (_launchFrame)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9580 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9599 */;
-import getFramesManagerDefault from "getFramesManager" /* 9629 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 9653 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9672 */;
+import getFramesManagerDefault from "getFramesManager" /* 9702 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import FramesStore from "FramesStore" /* 9318 */;
+import FramesStore from "FramesStore" /* 9389 */;
 
 require = fn;
 let closure_11 = async function _launchFrame(arg0, value) {
@@ -320,9 +320,9 @@ let closure_16 = async function _refreshProxyTicket(arg0, value) {
     }
   }
 };
-const FramesConstants = fn(9319);
+const FramesConstants = fn(9390);
 ({ FrameIntent: hasOwnProperty, FrameLayoutModes: metroRequire, getChannelIdForSurface: closure_7, getFrameIntentForSurface: closure_8, makeFrameId: closure_9 } = FramesConstants);
-const ActivityPanelModes = fn(9321).ActivityPanelModes;
+const ActivityPanelModes = fn(9392).ActivityPanelModes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/frames/FramesActionCreators.shared.tsx");
 

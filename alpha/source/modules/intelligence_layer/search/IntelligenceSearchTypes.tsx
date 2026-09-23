@@ -1,12 +1,11 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 12699
+// Function ID: 12700
 // Name: IntelligenceSearchTypes
 // Dependencies: [2]
 
-// Module 13987 (IntelligenceSearchTypes)
+// Module 12699 (IntelligenceSearchTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/IntelligenceSearchTypes.tsx");
 
 export const IntelligenceSearchStatus = { LOADING: "loading", LOADED: "loaded", EMPTY: "empty", NOT_QUALIFIED: "not_qualified", ERROR: "error" };
-export const IntelligenceSearchEmptyTreatment = { NONE: "none", DEFER: "defer", EMPTY_SCREEN: "empty_screen", HAS_ANSWER: "has_answer" };

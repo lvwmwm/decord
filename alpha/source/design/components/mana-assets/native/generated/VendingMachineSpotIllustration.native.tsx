@@ -1,13 +1,13 @@
-// Module ID: 6796
-// Function ID: 6797
+// Module ID: 6880
+// Function ID: 6881
 // Name: VendingMachineSpotIllustration
-// Dependencies: [21, 5806, 6797, 2]
+// Dependencies: [21, 5890, 6881, 2]
 // Exports: VendingMachineSpotIllustration
 
-// Module 6796 (VendingMachineSpotIllustration)
+// Module 6880 (VendingMachineSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6797 from "module_6797" /* 6797 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6881 from "module_6881" /* 6881 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const VendingMachineSpotIllustration = function VendingMachineSpotIllustr
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6797 };
+  const obj2 = { uri: _modDef6881 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

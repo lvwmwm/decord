@@ -1,17 +1,17 @@
-// Module ID: 13360
-// Function ID: 13361
+// Module ID: 13442
+// Function ID: 13443
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 4406, 1074, 21, 4757, 576, 12877, 7446, 5899, 1177, 4753, 13361, 7415, 4909, 10009, 4454, 4724, 7444, 7396, 1115, 2]
+// Dependencies: [5, 32, 19, 17, 4472, 1074, 21, 4827, 576, 12959, 7530, 5983, 1177, 4823, 13443, 7499, 4979, 10082, 4520, 4794, 7528, 7480, 1115, 2]
 // Exports: default
 
-// Module 13360 (UserProfileGameFriendActionSheet)
+// Module 13442 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12877 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12959 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 
 require = fn;
 function GameFriendApplicationRow(application) {
@@ -45,7 +45,7 @@ get_ActivityIndicator = fn(17);
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { applicationNameWrapper: { flexDirection: "row", justifyContent: "flex-start", alignItems: "center", gap: 12 }, gameIcon: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.sm };
 obj2.gameIcon = size;

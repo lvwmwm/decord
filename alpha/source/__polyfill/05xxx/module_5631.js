@@ -1,0 +1,9 @@
+// Module ID: 5631
+// Function ID: 5632
+// Dependencies: [1121]
+
+// Module 5631
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "51c56027f271f175240f0fff23cdb627", name: "img_account_sync_twitter_light_and_dark", type: "svg" });

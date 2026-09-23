@@ -1,17 +1,17 @@
-// Module ID: 15859
-// Function ID: 15860
+// Module ID: 15913
+// Function ID: 15914
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 4757, 15860, 4468, 1115, 5185, 576, 4753, 4653, 5826, 15861, 2]
+// Dependencies: [5, 32, 19, 21, 4827, 15914, 4534, 1115, 5269, 576, 4823, 4723, 5910, 15915, 2]
 // Exports: default, useDiskUsageMeasurement
 
-// Module 15859 (CacheActionsDiskUsageSection)
+// Module 15913 (CacheActionsDiskUsageSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import Stack_Stack from "Stack/Stack" /* 5185 */;
-import Card from "Card" /* 5826 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 15860 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15861 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import Stack_Stack from "Stack/Stack" /* 5269 */;
+import Card from "Card" /* 5910 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 15914 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 15915 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -24,8 +24,8 @@ function SizeRow(bytes) {
   const items = [timestampProducer(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", style: iter.label, children: bytes.label }), ];
   const obj3 = { variant: "text-sm/semibold", tabularNumbers: true, style: iter.value, children: null };
   if (null != bytes) {
-    let formatKbSizeResult = tmp2(4653).formatKbSize(bytes);
-    const tmp2Result = tmp2(4653);
+    let formatKbSizeResult = tmp2(4723).formatKbSize(bytes);
+    const tmp2Result = tmp2(4723);
   } else {
     const intl = tmp2(1115).intl;
     formatKbSizeResult = intl.string(tmp2(1115).t.Yrz9rv);
@@ -76,7 +76,7 @@ function DiskUsageResults(report) {
   const obj5 = { variant: "heading-sm/semibold", children: null };
   const intl15 = obj(1115).intl;
   obj5.children = intl15.string(obj(1115).t.CoudPr);
-  const items1 = [closure_6(obj(4753).Heading, obj5), , ];
+  const items1 = [closure_6(obj(4823).Heading, obj5), , ];
   const roots = report.roots;
   items1[1] = roots.map((bytes) => {
     const root = bytes.root;
@@ -99,17 +99,17 @@ function DiskUsageResults(report) {
     const intl16 = tmp(1115).intl;
     ({ errorCount: obj7.errors, unmeasuredRootCount: obj7.unavailable } = report);
     obj6.children = intl16.formatToPlainString(tmp(1115).t.kt7tAT, { errors: null, unavailable: null });
-    tmp4Result = closure_6(tmp(4753).Text, obj6);
+    tmp4Result = closure_6(tmp(4823).Text, obj6);
     const obj13 = { errors: null, unavailable: null };
   }
   items1[2] = tmp4Result;
-  items[2] = closure_7(obj(5185).Stack, { children: items1 });
+  items[2] = closure_7(obj(5269).Stack, { children: items1 });
   obj2.children = items;
-  return closure_7(obj(5185).Stack, obj2);
+  return closure_7(obj(5269).Stack, obj2);
 }
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_8 = createStyles.createStyles({ label: { flex: 1 }, value: { flexShrink: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/defs/native/CacheActionsDiskUsageSection.tsx");
@@ -125,7 +125,7 @@ export default function CacheActionsDiskUsageSection(state) {
     const obj2 = { variant: "text-sm/normal", children: null };
     const intl2 = tmp2(1115).intl;
     obj2.children = intl2.string(tmp2(1115).t.Ynmbie);
-    tmp4Result = tmp4(tmp2(4753).Text, obj2);
+    tmp4Result = tmp4(tmp2(4823).Text, obj2);
   }
   const items1 = [tmp4Result, , ];
   let tmp4Result4 = "error" === state.status;
@@ -133,7 +133,7 @@ export default function CacheActionsDiskUsageSection(state) {
     const obj3 = { variant: "text-sm/normal", color: "text-feedback-critical", children: null };
     const intl3 = tmp2(1115).intl;
     obj3.children = intl3.string(tmp2(1115).t["hj/3qI"]);
-    tmp4Result4 = tmp4(tmp2(4753).Text, obj3);
+    tmp4Result4 = tmp4(tmp2(4823).Text, obj3);
   }
   items1[1] = tmp4Result4;
   let tmp4Result5 = "success" === state.status;

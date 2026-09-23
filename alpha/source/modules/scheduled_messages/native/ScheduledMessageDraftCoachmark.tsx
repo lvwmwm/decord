@@ -1,12 +1,12 @@
-// Module ID: 12690
-// Function ID: 12691
+// Module ID: 12772
+// Function ID: 12773
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [19, 17, 2039, 21, 4757, 1115, 12477, 11398, 2]
+// Dependencies: [19, 17, 2039, 21, 4827, 1115, 12553, 11474, 2]
 // Exports: default
 
-// Module 12690 (ScheduledMessageDraftCoachmark)
+// Module 12772 (ScheduledMessageDraftCoachmark)
 import util from "util" /* 1115 */;
-import useCoachmark from "useCoachmark" /* 11398 */;
+import useCoachmark from "useCoachmark" /* 11474 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ function AttachedCoachmark(buttonRef) {
 const Image = fn(17).Image;
 const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_7 = createStyles.createStyles({ image: { width: 100, height: 80 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/scheduled_messages/native/ScheduledMessageDraftCoachmark.tsx");

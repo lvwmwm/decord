@@ -1,17 +1,17 @@
 // Module ID: 1998
 // Function ID: 1999
 // Name: ClipsStore
-// Dependencies: [5, 1999, 502, 5350, 1074, 4804, 4377, 14266, 1385, 14267, 14269, 14270, 504, 1992, 573, 2]
+// Dependencies: [5, 1999, 502, 5434, 1074, 4874, 4443, 14349, 1385, 14350, 14352, 14353, 504, 1992, 573, 2]
 
 // Module 1998 (ClipsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import DiscordNativeDefault from "DiscordNative" /* 4377 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 14267 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14269 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14270 */;
+import DiscordNativeDefault from "DiscordNative" /* 4443 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 14350 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 14352 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 14353 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import RunningGameStore from "RunningGameStore" /* 1999 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -244,11 +244,11 @@ function trackClipMessage(message) {
   }
   obj = DistributedClipsExperimentDefault;
 }
-const ClipsConstants = fn(5350);
+const ClipsConstants = fn(5434);
 ({ CLIPS_HARDWARE_CLASSIFICATION_VERSION: metroRequire, ClipSaveTypes: closure_7, ClipsUserEducationType: closure_8, ClipsLogger: closure_9, MAX_SIMULTANEOUS_SAVE_CLIP_OPERATIONS: c10, ClipsHardwareClassification: closure_11, ClipsSaveNoOpReason: closure_12, ClipsLengthSettings, DEFAULT_CLIPS_BITRATE_PERCENT } = ClipsConstants);
 const Constants = fn(1074);
 ({ MessageAttachmentFlags: map1, MessageReferenceTypes: closure_14, VoiceFlags: closure_15 } = Constants);
-const StreamSettingsConstants = fn(4804);
+const StreamSettingsConstants = fn(4874);
 let c16 = "default";
 let c17 = "Discord Clips";
 const dependencyMap = {};

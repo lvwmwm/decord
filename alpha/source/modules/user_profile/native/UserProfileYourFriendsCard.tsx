@@ -1,16 +1,16 @@
-// Module ID: 17286
-// Function ID: 17287
+// Module ID: 17355
+// Function ID: 17356
 // Name: UserProfileYourFriendsCard
-// Dependencies: [32, 19, 17, 7898, 4406, 1372, 1074, 21, 1177, 4757, 504, 13361, 10110, 12, 1370, 5824, 4753, 1115, 2]
+// Dependencies: [32, 19, 17, 7980, 4472, 1372, 1074, 21, 1177, 4827, 504, 13443, 10190, 12, 1370, 5908, 4823, 1115, 2]
 // Exports: default
 
-// Module 17286 (UserProfileYourFriendsCard)
+// Module 17355 (UserProfileYourFriendsCard)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7898 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7980 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const jsx = fn(21).jsx;
 let closure_11 = Object.freeze({ direction: fn(1177).CutoutDirection.RIGHT, inset: -4 });
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_12 = createStyles.createStyles({ facepile: { flexDirection: "row", alignItems: "center" }, avatars: { flexDirection: "row" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileYourFriendsCard.tsx");
@@ -44,7 +44,7 @@ export default function UserProfileYourFriendsCard(navigateToFriends) {
   let obj2 = require("initialize");
   const gameRelationshipsByType = require("GameRelationshipStoreHooks").useGameRelationshipsByType(RelationshipTypes.FRIEND);
   const effect = stateFromStoresArray1.useEffect(() => {
-    const userAffinitiesV2 = closure_0(10110).fetchUserAffinitiesV2();
+    const userAffinitiesV2 = closure_0(10190).fetchUserAffinitiesV2();
   }, []);
   const items2 = [stateFromStoresArray, stateFromStoresArray1, gameRelationshipsByType];
   const effect1 = stateFromStoresArray1.useEffect(() => {

@@ -1,0 +1,114 @@
+// Module ID: 4577
+// Function ID: 4578
+// Name: defaultOnError
+// Dependencies: [109, 19, 21, 4578, 4579, 4581, 4555]
+// Exports: RiveView
+
+// Module 4577 (defaultOnError)
+import RiveErrorType from "RiveErrorType" /* 4578 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+
+const require = globalThis.__r;
+
+require = fn;
+let closure_2 = ["onError", "hybridRef"];
+const noop = fn(19);
+({ useEffect: closure_4, useRef: hasOwnProperty } = noop);
+const jsx = fn(21).jsx;
+function defaultOnError(message) {
+  return console.error("[" + RiveErrorType.RiveErrorType[message.type] + "] " + message.message);
+}
+
+export const RiveView = function RiveView(arg0) {
+  const cResult = require("c").c(16);
+  if (cResult[0] !== arg0) {
+    ({ onError, hybridRef } = arg0);
+    _require = hybridRef;
+    const tmp9 = _objectWithoutProperties(arg0, closure_2);
+    cResult[0] = arg0;
+    cResult[1] = onError;
+    cResult[2] = tmp9;
+    cResult[3] = hybridRef;
+    let tmp5 = tmp9;
+    let tmp4 = onError;
+  } else {
+    tmp4 = cResult[1];
+    tmp5 = cResult[2];
+    _require = cResult[3];
+  }
+  if (tmp4 == null) {
+    tmp4 = defaultOnError;
+  }
+  dependencyMap = closure_5(null);
+  if (cResult[4] === Symbol.for("react.memo_cache_sentinel")) {
+    const fn = function y() {
+      return () => {
+        if (ref.current) {
+          closure_0(ref[5]).callDispose(tmp.current);
+          tmp.current = null;
+          const obj = closure_0(ref[5]);
+        }
+      };
+    };
+    const items = [];
+    cResult[4] = fn;
+    cResult[5] = items;
+    let tmp11 = items;
+    let tmp10 = fn;
+  } else {
+    tmp10 = cResult[4];
+    tmp11 = cResult[5];
+  }
+  closure_4(tmp10, tmp11);
+  if (cResult[6] !== tmp6) {
+    const fn2 = function b(current) {
+      closure_1.current = current;
+      let f;
+      if (closure_0 != null) {
+        f = obj.f;
+      }
+      if (f) {
+        obj.f(current);
+      }
+    };
+    cResult[6] = tmp6;
+    cResult[7] = fn2;
+    let tmp13 = fn2;
+  } else {
+    tmp13 = cResult[7];
+  }
+  if (cResult[8] !== tmp4) {
+    const obj2 = { f: tmp4 };
+    cResult[8] = tmp4;
+    cResult[9] = obj2;
+    let tmp14 = obj2;
+  } else {
+    tmp14 = cResult[9];
+  }
+  if (cResult[10] !== tmp13) {
+    const obj3 = { f: tmp13 };
+    cResult[10] = tmp13;
+    cResult[11] = obj3;
+    let tmp15 = obj3;
+  } else {
+    tmp15 = cResult[11];
+  }
+  if (cResult[12] === tmp5) {
+    if (cResult[13] === tmp14) {
+      if (cResult[14] === tmp15) {
+        let tmp16 = cResult[15];
+      }
+      return tmp16;
+    }
+  }
+  const obj4 = {};
+  const merged = Object.assign(tmp5);
+  obj4.onError = tmp14;
+  obj4.hybridRef = tmp15;
+  const tmp18 = jsx(require("NitroRiveView").NitroRiveView, {});
+  cResult[12] = tmp5;
+  cResult[13] = tmp14;
+  cResult[14] = tmp15;
+  cResult[15] = tmp18;
+  tmp16 = tmp18;
+};

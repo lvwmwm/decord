@@ -1,15 +1,15 @@
-// Module ID: 16878
-// Function ID: 16879
+// Module ID: 16930
+// Function ID: 16931
 // Name: MainTabsContentScrim
-// Dependencies: [17, 21, 4757, 576, 4493, 2]
+// Dependencies: [17, 21, 4827, 576, 4559, 2]
 // Exports: MainTabsContentScrim
 
-// Module 16878 (MainTabsContentScrim)
+// Module 16930 (MainTabsContentScrim)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
-import createStyles from "createStyles" /* 4757 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+import createStyles from "createStyles" /* 4827 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -34,13 +34,13 @@ export const MainTabsContentScrim = function MainTabsContentScrim(translateX) {
     obj.opacity = ReanimatedRexport.interpolate(value, items, [0, 0.5], ReanimatedRexport.Extrapolation.CLAMP);
     return obj;
   };
-  let obj = translateX(4493);
-  fn.__closure = { interpolate: translateX(4493).interpolate, translateX, maxWidth, Extrapolation: translateX(4493).Extrapolation };
+  let obj = translateX(4559);
+  fn.__closure = { interpolate: translateX(4559).interpolate, translateX, maxWidth, Extrapolation: translateX(4559).Extrapolation };
   fn.__workletHash = 7933670426250;
   fn.__initData = __initData;
   const animatedStyle = obj.useAnimatedStyle(fn);
   const obj3 = { style: null, pointerEvents: "none" };
   let items = [tmp.scrim, animatedStyle];
   obj3.style = items;
-  return jsx(maxWidth(4493).View, { style: null, pointerEvents: "none" });
+  return jsx(maxWidth(4559).View, { style: null, pointerEvents: "none" });
 };

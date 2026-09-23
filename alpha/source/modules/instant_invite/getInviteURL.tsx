@@ -1,10 +1,10 @@
-// Module ID: 8004
-// Function ID: 8005
+// Module ID: 8086
+// Function ID: 8087
 // Name: getInviteURL
 // Dependencies: [2]
 // Exports: default
 
-// Module 8004 (getInviteURL)
+// Module 8086 (getInviteURL)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/instant_invite/getInviteURL.tsx");

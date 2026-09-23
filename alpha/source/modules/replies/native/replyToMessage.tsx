@@ -1,18 +1,18 @@
-// Module ID: 11935
-// Function ID: 11936
+// Module ID: 12011
+// Function ID: 12012
 // Name: replyToMessage
-// Dependencies: [7920, 1372, 7919, 1074, 1241, 11922, 7701, 11924, 4937, 2]
+// Dependencies: [8002, 1372, 8001, 1074, 1241, 11998, 7784, 12000, 5007, 2]
 // Exports: default
 
-// Module 11935 (replyToMessage)
+// Module 12011 (replyToMessage)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4937 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7701 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 11922 */;
-import PendingReplyActionCreators from "PendingReplyActionCreators" /* 11924 */;
-import EditMessageStore from "EditMessageStore" /* 7920 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5007 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7784 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 11998 */;
+import PendingReplyActionCreators from "PendingReplyActionCreators" /* 12000 */;
+import EditMessageStore from "EditMessageStore" /* 8002 */;
 import UserStore from "UserStore" /* 1372 */;
-import PendingReplyStore from "PendingReplyStore" /* 7919 */;
+import PendingReplyStore from "PendingReplyStore" /* 8001 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;

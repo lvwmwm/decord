@@ -1,10 +1,10 @@
-// Module ID: 17186
-// Function ID: 17187
+// Module ID: 17260
+// Function ID: 17261
 // Name: PlaceholderUtils
 // Dependencies: [2]
 // Exports: getAdjustedPlaceholderCount
 
-// Module 17186 (PlaceholderUtils)
+// Module 17260 (PlaceholderUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/PlaceholderUtils.tsx");

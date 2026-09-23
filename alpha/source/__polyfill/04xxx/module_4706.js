@@ -1,9 +1,21 @@
 // Module ID: 4706
 // Function ID: 4707
-// Dependencies: [1121]
+// Dependencies: [19, 4703]
+// Exports: usePortalState
 
 // Module 4706
-import registerAsset from "module_1121" /* 1121 */;
+import _mod19 from "module_19" /* 19 */;
+import _mod4703 from "module_4703" /* 4703 */;
 
+const useContext = _mod19.useContext;
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "69ad990cd3c9b3023cf6437375e2fe6f", name: "DownloadIcon", type: "png" });
+export const usePortalState = (arg0) => {
+  const tmp = useContext(_mod4703.PortalStateContext);
+  if (null === tmp) {
+    const _Error = Error;
+    const error = new Error("'PortalStateContext' cannot be null, please add 'PortalProvider' to the root component.");
+    throw error;
+  } else {
+    return tmp[arg0] || [];
+  }
+};

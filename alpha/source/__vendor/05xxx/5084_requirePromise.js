@@ -1,0 +1,14 @@
+// Module ID: 5084
+// Function ID: 5085
+// Name: requirePromise
+// Dependencies: []
+
+// Module 5084 (requirePromise)
+
+export default function requirePromise() {
+  if (typeof Promise !== "function") {
+    const _TypeError = TypeError;
+    const typeError = new TypeError("`Promise.allSettled` requires a global `Promise` be available.");
+    throw typeError;
+  }
+};

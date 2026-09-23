@@ -1,15 +1,15 @@
-// Module ID: 4458
-// Function ID: 4459
+// Module ID: 4524
+// Function ID: 4525
 // Name: useToken
-// Dependencies: [576, 4459, 12, 4467, 2]
+// Dependencies: [576, 4525, 12, 4533, 2]
 // Exports: useToken
 
-// Module 4458 (useToken)
+// Module 4524 (useToken)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4467 */;
+import native from "native" /* 4533 */;
 
-const SemanticColorContext = obj(4459);
+const SemanticColorContext = obj(4525);
 require = fn;
 const map = new Map();
 const keys = Object.keys(nativeDefault.colors);

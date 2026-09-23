@@ -1,21 +1,21 @@
-// Module ID: 8882
-// Function ID: 8883
+// Module ID: 8953
+// Function ID: 8954
 // Name: FormDivider
-// Dependencies: [19, 17, 1074, 21, 4757, 576, 4467, 7431, 4606, 5905, 2]
+// Dependencies: [19, 17, 1074, 21, 4827, 576, 4533, 7515, 4676, 5989, 2]
 // Exports: default
 
-// Module 8882 (FormDivider)
+// Module 8953 (FormDivider)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4467 */;
-import RedesignCompat from "RedesignCompat" /* 5905 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7431 */;
+import native from "native" /* 4533 */;
+import RedesignCompat from "RedesignCompat" /* 5989 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7515 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, StyleSheet: hasOwnProperty, Platform } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_7 = createStyles.createStyles(() => {
   const obj = { divider: {}, dividerOuter: { marginLeft: 0, height: hasOwnProperty.hairlineWidth, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginTop: -1 * hasOwnProperty.hairlineWidth }, dividerHasIcon: { marginLeft: 56 } };
   return obj;
@@ -41,9 +41,9 @@ export default function Divider(arg0) {
   const profileThemeValues = obj2.useProfileThemeValues(theme);
   let tmp7 = null;
   if (tmp6) {
-    const obj3 = { backgroundColor: tmp2(4606).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity) };
+    const obj3 = { backgroundColor: tmp2(4676).hexOpacityToRgba(obj2[theme], profileThemeValues.dividerOpacity) };
     tmp7 = obj3;
-    const tmp2Result = tmp2(4606);
+    const tmp2Result = tmp2(4676);
   }
   let tmp10Result = null;
   if (!noop.useContext(RedesignCompat.RedesignCompatContext)) {

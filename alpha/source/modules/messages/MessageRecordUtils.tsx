@@ -1,24 +1,24 @@
-// Module ID: 4979
-// Function ID: 4980
+// Module ID: 5049
+// Function ID: 5050
 // Name: MessageRecordUtils
-// Dependencies: [4980, 4407, 1386, 502, 4406, 1372, 1074, 4981, 4740, 4989, 11, 4994, 4995, 5101, 4348, 5102, 5104, 2]
+// Dependencies: [5050, 4473, 1386, 502, 4472, 1372, 1074, 5051, 4810, 5073, 11, 5078, 5079, 5185, 4414, 5186, 5188, 2]
 // Exports: canEditMessageWithStickers, hasEphemeralAppearance, updateMessageRecord, updateServerMessage
 
-// Module 4979 (MessageRecordUtils)
+// Module 5049 (MessageRecordUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import findCodedLinksDefault from "findCodedLinks" /* 4740 */;
-import useMessageAuthor from "useMessageAuthor" /* 4989 */;
-import isMessageMentioned from "isMessageMentioned" /* 4994 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 4995 */;
-import transformMessagPollDefault from "transformMessagPoll" /* 5101 */;
-import EmbedUtils from "EmbedUtils" /* 5102 */;
-import StickersUtils from "StickersUtils" /* 5104 */;
-import InteractionRecord from "InteractionRecord" /* 4980 */;
-import MessageRecord_mod from "MessageRecord" /* 4407 */;
+import _modDef4414 from "module_4414" /* 4414 */;
+import findCodedLinksDefault from "findCodedLinks" /* 4810 */;
+import useMessageAuthor from "useMessageAuthor" /* 5073 */;
+import isMessageMentioned from "isMessageMentioned" /* 5078 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 5079 */;
+import transformMessagPollDefault from "transformMessagPoll" /* 5185 */;
+import EmbedUtils from "EmbedUtils" /* 5186 */;
+import StickersUtils from "StickersUtils" /* 5188 */;
+import InteractionRecord from "InteractionRecord" /* 5050 */;
+import MessageRecord_mod from "MessageRecord" /* 4473 */;
 import UserRecord from "UserRecord" /* 1386 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -197,11 +197,11 @@ function createMessageRecord(message, arg1) {
     if (null != call.ended_timestamp) {
       const _Date = Date;
       const date = new Date(call.ended_timestamp);
-      tmp39Result = _modDef4348(date);
+      tmp39Result = _modDef4414(date);
     }
     let durationResult = null;
     if (null != tmp39Result) {
-      durationResult = _modDef4348.duration(tmp39Result.diff(tmp35));
+      durationResult = _modDef4414.duration(tmp39Result.diff(tmp35));
     }
     const obj11 = { participants: call.participants, endedTimestamp: tmp39Result, duration: durationResult };
     tmp36 = obj11;
@@ -298,7 +298,7 @@ function createMessageRecord(message, arg1) {
     return obj;
   });
 }
-let MessageRecord = fn(4407);
+let MessageRecord = fn(4473);
 ({ MessageSnapshotRecord: closure_4, MinimalMessageRecord: hasOwnProperty } = MessageRecord);
 let MessageRecord = MessageRecord_mod;
 const Constants = fn(1074);
@@ -335,11 +335,11 @@ export const updateMessageRecord = function updateMessageRecord(message, message
         if (null != call.ended_timestamp) {
           const _Date = Date;
           const date = new Date(call.ended_timestamp);
-          tmp = _modDef4348(date);
+          tmp = _modDef4414(date);
         }
         let durationResult = null;
         if (null != tmp) {
-          durationResult = _modDef4348.duration(tmp.diff(tmp46));
+          durationResult = _modDef4414.duration(tmp.diff(tmp46));
         }
         const obj3 = { participants: call.participants, endedTimestamp: tmp, duration: durationResult };
         tmp13 = obj3;

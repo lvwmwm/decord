@@ -1,9 +1,9 @@
-// Module ID: 11939
-// Function ID: 11940
+// Module ID: 12015
+// Function ID: 12016
 // Name: ForwardConstants
 // Dependencies: [2]
 
-// Module 11939 (ForwardConstants)
+// Module 12015 (ForwardConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/forwarding/ForwardConstants.tsx");

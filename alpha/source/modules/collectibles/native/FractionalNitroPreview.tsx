@@ -1,17 +1,17 @@
-// Module ID: 13453
-// Function ID: 13454
+// Module ID: 13535
+// Function ID: 13536
 // Name: FractionalNitroPreview
-// Dependencies: [19, 17, 1074, 1374, 21, 4757, 576, 1115, 5348, 4415, 5199, 5806, 13454, 13455, 7380, 4753, 2]
+// Dependencies: [19, 17, 1074, 1374, 21, 4827, 576, 1115, 5432, 4481, 5283, 5890, 13536, 13537, 7464, 4823, 2]
 // Exports: FractionalNitroPreview
 
-// Module 13453 (FractionalNitroPreview)
+// Module 13535 (FractionalNitroPreview)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import LinearGradientDefault from "LinearGradient" /* 5199 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7380 */;
-import _modDef13454 from "module_13454" /* 13454 */;
-import NitroIconDefault from "NitroIcon" /* 13455 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import LinearGradientDefault from "LinearGradient" /* 5283 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import CheckmarkSmallIcon from "CheckmarkSmallIcon" /* 7464 */;
+import _modDef13536 from "module_13536" /* 13536 */;
+import NitroIconDefault from "NitroIcon" /* 13537 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ const VerticalGradient = fn(1074).VerticalGradient;
 const PremiumTypes = fn(1374).PremiumTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { flexDirection: "column", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24, borderRadius: nativeDefault.radii.lg, overflow: "hidden", alignSelf: "center", gap: nativeDefault.space.PX_16 }, gradient: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }, headerImage: { width: 211, height: 157, resizeMode: "cover" }, nitroIconContainer: { alignSelf: "flex-start" }, benefits: null, benefitRow: null };
 let obj3 = { flexDirection: "column", alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24, borderRadius: nativeDefault.radii.lg, overflow: "hidden", alignSelf: "center", gap: nativeDefault.space.PX_16 };
 obj2.benefits = { display: "flex", flexDirection: "column", gap: nativeDefault.space.PX_8 };
@@ -58,7 +58,7 @@ export const FractionalNitroPreview = function FractionalNitroPreview() {
   const obj8 = { uri: null };
   const obj4 = require("PremiumUtils");
   const obj6 = { colors: ["#000000", "#36266d"], start: VerticalGradient.START, end: VerticalGradient.END, style: tmp.gradient };
-  obj8.uri = _modDef13454;
+  obj8.uri = _modDef13536;
   obj7.source = obj8;
   obj7.style = tmp.headerImage;
   items1[1] = closure_6(FastImageDefault, obj7);

@@ -1,11 +1,11 @@
-// Module ID: 16354
-// Function ID: 16355
+// Module ID: 16407
+// Function ID: 16408
 // Name: JankChatPanelReporter
-// Dependencies: [19, 21, 16355, 16358, 2]
+// Dependencies: [19, 21, 16408, 16411, 2]
 // Exports: default
 
-// Module 16354 (JankChatPanelReporter)
-import getJankScreenName from "getJankScreenName" /* 16355 */;
+// Module 16407 (JankChatPanelReporter)
+import getJankScreenName from "getJankScreenName" /* 16408 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,6 +26,6 @@ export default function JankChatPanelReporter(channelId) {
     ({ channelId, showCreateThread } = ref.current);
     return getJankScreenName.getChatPanelScreenName(channelId, showCreateThread);
   }, []);
-  const obj = { position: translateX, openAt: 0, closedAt: maxWidth, resolveOpenName: callback, resolveClosedName: channelId(16355).getPanelListScreenName };
-  return jsx(showCreateThread(16358), { position: translateX, openAt: 0, closedAt: maxWidth, resolveOpenName: callback, resolveClosedName: channelId(16355).getPanelListScreenName });
+  const obj = { position: translateX, openAt: 0, closedAt: maxWidth, resolveOpenName: callback, resolveClosedName: channelId(16408).getPanelListScreenName };
+  return jsx(showCreateThread(16411), { position: translateX, openAt: 0, closedAt: maxWidth, resolveOpenName: callback, resolveClosedName: channelId(16408).getPanelListScreenName });
 };

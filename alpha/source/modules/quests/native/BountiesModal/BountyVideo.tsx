@@ -1,15 +1,15 @@
-// Module ID: 15310
-// Function ID: 15311
+// Module ID: 15362
+// Function ID: 15363
 // Name: BountyVideo
-// Dependencies: [32, 19, 17, 21, 1365, 11552, 576, 4757, 15311, 4493, 4458, 4758, 4761, 15301, 15312, 15322, 5806, 1115, 15323, 15325, 15327, 11363, 2]
+// Dependencies: [32, 19, 17, 21, 1365, 11628, 576, 4827, 15363, 4559, 4524, 4828, 4831, 15353, 15364, 15374, 5890, 1115, 15375, 15377, 15379, 11439, 2]
 // Exports: BountyVideo
 
-// Module 15310 (BountyVideo)
+// Module 15362 (BountyVideo)
 import nativeDefault from "native" /* 576 */;
-import timing from "timing" /* 4758 */;
-import timingPresets from "timingPresets" /* 4761 */;
-import AssetUtils from "AssetUtils" /* 11552 */;
-import BountiesModalProgress from "BountiesModalProgress" /* 15311 */;
+import timing from "timing" /* 4828 */;
+import timingPresets from "timingPresets" /* 4831 */;
+import AssetUtils from "AssetUtils" /* 11628 */;
+import BountiesModalProgress from "BountiesModalProgress" /* 15363 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,7 +21,7 @@ const jsxProd = fn(21);
 const PlatformUtils = fn(1365);
 let closure_13 = { top: 48, bottom: 16, left: 16, right: 16 };
 const lg = nativeDefault.radii.lg;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_15 = createStyles.createStyles(() => {
   const obj = { videoContainer: null, leftRow: null, progress: null, poster: null };
   const obj2 = {};

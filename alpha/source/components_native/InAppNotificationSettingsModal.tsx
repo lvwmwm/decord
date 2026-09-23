@@ -1,20 +1,20 @@
-// Module ID: 10401
-// Function ID: 10402
+// Module ID: 10480
+// Function ID: 10481
 // Name: InAppNotificationSettingsModal
-// Dependencies: [19, 2046, 2042, 4406, 4938, 1372, 1074, 21, 7366, 7361, 4910, 8876, 1115, 10402, 7627, 504, 5843, 7247, 2]
+// Dependencies: [19, 2046, 2042, 4472, 5008, 1372, 1074, 21, 7450, 7445, 4980, 8947, 1115, 10481, 7710, 504, 5927, 7331, 2]
 
-// Module 10401 (InAppNotificationSettingsModal)
+// Module 10480 (InAppNotificationSettingsModal)
 import util from "util" /* 1115 */;
-import useChannelName from "useChannelName" /* 4910 */;
-import NavigatorHeader from "NavigatorHeader" /* 5843 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
-import Form from "Form" /* 8876 */;
-import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 10402 */;
+import useChannelName from "useChannelName" /* 4980 */;
+import NavigatorHeader from "NavigatorHeader" /* 5927 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7445 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7450 */;
+import Form from "Form" /* 8947 */;
+import ChannelSettingsNotificationsDefault from "ChannelSettingsNotifications" /* 10481 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4938 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -48,11 +48,12 @@ class InAppNotificationSettingsScreen extends PureComponent {
     applyArgumentsResult.handleGroupDMMute = function handleGroupDMMute() {
       ({ channel, isMuted } = applyArgumentsResult.props);
       if (null != channel) {
-        const obj = NotificationSettingsModalActionCreatorsDefault;
-        const guildId = channel.getGuildId();
-        const obj2 = { muted: !isMuted };
+        const obj2 = { guildId: channel.getGuildId(), channelId: channel.id, settings: null, label: null };
+        const obj3 = { muted: !isMuted };
+        obj2.settings = obj3;
         const NotificationLabel = NotificationSettingsUtils.NotificationLabel;
-        const result = obj.updateChannelOverrideSettings(guildId, channel.id, obj2, NotificationLabel.muted(!isMuted));
+        obj2.label = NotificationLabel.muted(!isMuted);
+        const result = NotificationSettingsModalActionCreatorsDefault.updateChannelOverrideSettings(obj2);
       }
     };
     applyArgumentsResult.handleOpenUserSettings = function handleOpenUserSettings() {
@@ -146,11 +147,11 @@ export default noop.memo((channelId) => {
         obj.title = intl.string(channelId(1115).t.h850Ss);
         let channelName = null;
         if (null != closure_0) {
-          const tmp3Result = channelId(4910);
+          const tmp3Result = channelId(4980);
           channelName = tmp3Result.computeChannelName(tmp, UserStore, RelationshipStore, true);
         }
         obj.subtitle = channelName;
-        return closure_2_11(channelId(5843).NavigatorHeader, obj);
+        return closure_2_11(channelId(5927).NavigatorHeader, obj);
       },
       headerLeft: NavigatorHeader.getHeaderCloseButton(onClose),
       render() {
@@ -160,5 +161,5 @@ export default noop.memo((channelId) => {
     obj.IN_APP_NOTIFICATION_SETTINGS = obj2;
     return obj;
   }, items);
-  return closure_11(channelId(7247).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
+  return closure_11(channelId(7331).Navigator, { screens, initialRouteName: "IN_APP_NOTIFICATION_SETTINGS" });
 });

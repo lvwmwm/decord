@@ -1,18 +1,18 @@
-// Module ID: 10924
-// Function ID: 10925
+// Module ID: 11000
+// Function ID: 11001
 // Name: MediaKeyboardEmptyState
-// Dependencies: [19, 17, 4966, 21, 4757, 576, 4753, 5187, 7625, 1115, 10925, 10919, 10926, 2]
+// Dependencies: [19, 17, 5036, 21, 4827, 576, 4823, 5271, 7708, 1115, 11001, 10995, 11002, 2]
 // Exports: getMediaEmptyStateComponentOrNull
 
-// Module 10924 (MediaKeyboardEmptyState)
+// Module 11000 (MediaKeyboardEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import components_Button_Button from "components/Button/Button" /* 5187 */;
-import SettingsIcon from "SettingsIcon" /* 7625 */;
-import CameraIcon from "CameraIcon" /* 10919 */;
-import _modDef10925 from "module_10925" /* 10925 */;
-import _modDef10926 from "module_10926" /* 10926 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import components_Button_Button from "components/Button/Button" /* 5271 */;
+import SettingsIcon from "SettingsIcon" /* 7708 */;
+import CameraIcon from "CameraIcon" /* 10995 */;
+import _modDef11001 from "module_11001" /* 11001 */;
+import _modDef11002 from "module_11002" /* 11002 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -32,10 +32,10 @@ class MediaKeyboardEmptyState {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: c3, View: closure_4 } = get_ActivityIndicator);
-const NativePermissionStatus = fn(4966).NativePermissionStatus;
+const NativePermissionStatus = fn(5036).NativePermissionStatus;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" }, label: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_8, marginVertical: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center" };
 obj2.label = { textAlign: "center", marginVertical: nativeDefault.space.PX_16 };
@@ -57,7 +57,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           const intl3 = util.intl;
           obj2.actionLabel = intl3.string(util.t.JuXTi6);
           obj2.actionPress = tmp2;
-          obj2.imageSource = _modDef10925;
+          obj2.imageSource = _modDef11001;
           const intl4 = util.intl;
           obj2.label = intl4.string(util.t["5g7NcN"]);
           return timestampProducer(MediaKeyboardEmptyState, obj2);
@@ -66,7 +66,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
           const intl = util.intl;
           obj.actionLabel = intl.string(util.t.tpoWUd);
           obj.actionPress = tmp;
-          obj.imageSource = _modDef10926;
+          obj.imageSource = _modDef11002;
           const intl2 = util.intl;
           obj.label = intl2.string(util.t.YOvRBZ);
           return timestampProducer(MediaKeyboardEmptyState, obj);
@@ -78,7 +78,7 @@ export const getMediaEmptyStateComponentOrNull = function getMediaEmptyStateComp
   const intl5 = util.intl;
   obj3.actionLabel = intl5.string(util.t["457oeG"]);
   obj3.actionPress = photosEmpty.onPressPrivacySettings;
-  obj3.imageSource = _modDef10925;
+  obj3.imageSource = _modDef11001;
   const intl6 = util.intl;
   obj3.label = intl6.string(util.t["8p9jGu"]);
   return timestampProducer(MediaKeyboardEmptyState, obj3);

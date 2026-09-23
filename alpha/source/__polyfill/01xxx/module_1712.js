@@ -82,8 +82,8 @@ fn = function n(userConfig, callback) {
       initialVelocity: 0,
       current: "disabled",
       lastTimestamp: null,
-      startTimestamp: true,
-      reduceMotion: "/assets/images/native/premium/illustrations"
+      startTimestamp: -2.25,
+      reduceMotion: 150
     };
     let num = obj.velocity;
     if (num == null) {

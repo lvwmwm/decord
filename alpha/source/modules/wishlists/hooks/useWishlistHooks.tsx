@@ -1,19 +1,19 @@
-// Module ID: 9061
-// Function ID: 9062
+// Module ID: 9132
+// Function ID: 9133
 // Name: useWishlistHooks
-// Dependencies: [32, 19, 7860, 502, 1372, 9062, 9063, 504, 9068, 12, 9069, 8460, 9075, 9080, 2]
+// Dependencies: [32, 19, 7943, 502, 1372, 9133, 9134, 504, 9139, 12, 9140, 8531, 9146, 9151, 2]
 // Exports: useCurrentUserWishlist, useFetchWishlistAndProfileInfoForUser, useFetchWishlists, useIsSkuInWishlist, useShouldShowWishlistInDMGifting
 
-// Module 9061 (useWishlistHooks)
+// Module 9132 (useWishlistHooks)
 import _mod12 from "module_12" /* 12 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8460 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9068 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8531 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9139 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7860 */;
+import UserProfileStore from "UserProfileStore" /* 7943 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import UserStore from "UserStore" /* 1372 */;
-import WishlistStore from "WishlistStore" /* 9062 */;
+import WishlistStore from "WishlistStore" /* 9133 */;
 
 const require = globalThis.__r;
 
@@ -107,7 +107,7 @@ function useFetchWishlist(wishlistId) {
   return obj4;
 }
 let useEffect = fn(19).useEffect;
-const getWishlistSkuIds = fn(9063).getWishlistSkuIds;
+const getWishlistSkuIds = fn(9134).getWishlistSkuIds;
 const WishlistFetchSource = { USER_PROFILE: "user_profile" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/wishlists/hooks/useWishlistHooks.tsx");

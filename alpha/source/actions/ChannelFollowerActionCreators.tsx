@@ -1,9 +1,9 @@
-// Module ID: 11599
-// Function ID: 11600
+// Module ID: 11675
+// Function ID: 11676
 // Name: ChannelFollowerActionCreators
 // Dependencies: [5, 1074, 1271, 573, 2]
 
-// Module 11599 (ChannelFollowerActionCreators)
+// Module 11675 (ChannelFollowerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

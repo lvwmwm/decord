@@ -1,16 +1,16 @@
-// Module ID: 16528
-// Function ID: 16529
+// Module ID: 16580
+// Function ID: 16581
 // Name: ServerPreviewBannerControls
-// Dependencies: [19, 17, 1074, 21, 4757, 576, 7587, 8183, 5848, 1115, 16529, 2]
+// Dependencies: [19, 17, 1074, 21, 4827, 576, 7670, 8265, 5932, 1115, 16581, 2]
 // Exports: default
 
-// Module 16528 (ServerPreviewBannerControls)
+// Module 16580 (ServerPreviewBannerControls)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef5848 from "module_5848" /* 5848 */;
-import transitionToGuild from "transitionToGuild" /* 7587 */;
-import IconButton from "IconButton" /* 8183 */;
-import ServerPreviewPillDefault from "ServerPreviewPill" /* 16529 */;
+import _modDef5932 from "module_5932" /* 5932 */;
+import transitionToGuild from "transitionToGuild" /* 7670 */;
+import IconButton from "IconButton" /* 8265 */;
+import ServerPreviewPillDefault from "ServerPreviewPill" /* 16581 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ const View = fn(17).View;
 const MOBILE_GUILD_UPSELL_LIST = fn(1074).MOBILE_GUILD_UPSELL_LIST;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { row: null };
 const rect = { position: "absolute", top: nativeDefault.space.PX_16, left: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj2.row = rect;
@@ -31,7 +31,7 @@ export default function ServerPreviewBannerControls() {
   const callback = noop.useCallback(() => {
     transitionToGuild.transitionToGuild(MOBILE_GUILD_UPSELL_LIST);
   }, []);
-  const obj2 = { size: "md", variant: "secondary-overlay", icon: _modDef5848, onPress: callback, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
+  const obj2 = { size: "md", variant: "secondary-overlay", icon: _modDef5932, onPress: callback, accessibilityLabel: null, maxFontSizeMultiplier: 1.5 };
   const intl = util.intl;
   obj2.accessibilityLabel = intl.string(util.t["13/7kX"]);
   const items = [timestampProducer(IconButton.IconButton, obj2), timestampProducer(ServerPreviewPillDefault, {})];

@@ -1,9 +1,9 @@
-// Module ID: 13462
-// Function ID: 13463
+// Module ID: 13544
+// Function ID: 13545
 // Name: MobileNitroUpsellInShopPdpExperiment
 // Dependencies: [1434, 2]
 
-// Module 13462 (MobileNitroUpsellInShopPdpExperiment)
+// Module 13544 (MobileNitroUpsellInShopPdpExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 18201
-// Function ID: 18202
+// Module ID: 18270
+// Function ID: 18271
 // Name: FormImagePicker
-// Dependencies: [5, 19, 17, 21, 4757, 576, 5356, 1431, 10017, 1115, 5806, 18202, 10514, 4753, 5187, 2]
+// Dependencies: [5, 19, 17, 21, 4827, 576, 5440, 1431, 10090, 1115, 5890, 18271, 10593, 4823, 5271, 2]
 // Exports: default
 
-// Module 18201 (FormImagePicker)
+// Module 18270 (FormImagePicker)
 import nativeDefault from "native" /* 576 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 5356 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 10017 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 5440 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 10090 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -188,7 +188,7 @@ class ImagePickerIcon {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { imageSelectionRow: { flexDirection: "row", justifyContent: "space-between", marginHorizontal: 16 }, buttonColumn: { flex: 1, flexDirection: "column", marginEnd: 16 }, imageDescription: { flexWrap: "wrap", marginBottom: 16 }, image: { alignSelf: "center", width: 84, height: 84 }, imageCentered: { alignSelf: "center", width: 20, height: 20 }, imageCircle: { borderRadius: 42 }, imageSquircle: { borderRadius: nativeDefault.radii.sm }, imageContainerEmpty: null, editImageIcon: null, standaloneIcon: null, disabled: null };
 let obj3 = { borderRadius: nativeDefault.radii.sm };
 obj2.imageContainerEmpty = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
@@ -219,8 +219,8 @@ export default function FormImagePicker(children) {
   const obj = { style: tmp2.imageSelectionRow, children: null };
   const obj2 = { style: tmp2.buttonColumn, children: null };
   const items = [
-    closure_6(tmp6(4753).Text, { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: children.description }),
-    closure_6(tmp6(5187).Button, {
+    closure_6(tmp6(4823).Text, { style: tmp2.imageDescription, variant: "text-sm/medium", color: "text-default", children: children.description }),
+    closure_6(tmp6(5271).Button, {
       text: stringResult,
       variant: "secondary",
       onPress() {

@@ -1,13 +1,13 @@
-// Module ID: 14173
-// Function ID: 14174
+// Module ID: 14255
+// Function ID: 14256
 // Name: FormStyles
-// Dependencies: [1074, 4757, 5743, 576, 2]
+// Dependencies: [1074, 4827, 5827, 576, 2]
 
-// Module 14173 (FormStyles)
+// Module 14255 (FormStyles)
 import nativeDefault from "native" /* 576 */;
 import Constants from "Constants" /* 1074 */;
-import createStyles from "createStyles" /* 4757 */;
-import TextStyles_mod from "TextStyles" /* 5743 */;
+import createStyles from "createStyles" /* 4827 */;
+import TextStyles_mod from "TextStyles" /* 5827 */;
 import size from "module_2" /* 2 */;
 
 const Fonts = Constants.Fonts;

@@ -1,11 +1,11 @@
-// Module ID: 17824
-// Function ID: 17825
+// Module ID: 17893
+// Function ID: 17894
 // Name: InstantInviteManager
-// Dependencies: [7365, 4455, 1115, 2]
+// Dependencies: [7449, 4521, 1115, 2]
 
-// Module 17824 (InstantInviteManager)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4455 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+// Module 17893 (InstantInviteManager)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4521 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7449 */;
 
 let require = fn;
 const prototype = function InstantInviteManager() {

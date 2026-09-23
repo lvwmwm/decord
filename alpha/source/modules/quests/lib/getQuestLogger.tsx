@@ -1,10 +1,10 @@
-// Module ID: 7948
-// Function ID: 7949
+// Module ID: 8030
+// Function ID: 8031
 // Name: getQuestLogger
 // Dependencies: [1346, 1085, 3, 2]
 // Exports: getQuestLogger
 
-// Module 7948 (getQuestLogger)
+// Module 8030 (getQuestLogger)
 import LoggerDefault from "Logger" /* 3 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1346 */;
 

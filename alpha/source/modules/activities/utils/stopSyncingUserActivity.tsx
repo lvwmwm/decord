@@ -1,10 +1,10 @@
-// Module ID: 13900
-// Function ID: 13901
+// Module ID: 13985
+// Function ID: 13986
 // Name: stopSyncingUserActivity
 // Dependencies: [573, 2]
 // Exports: default
 
-// Module 13900 (stopSyncingUserActivity)
+// Module 13985 (stopSyncingUserActivity)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 

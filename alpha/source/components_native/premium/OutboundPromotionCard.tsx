@@ -1,18 +1,18 @@
-// Module ID: 13829
-// Function ID: 13830
+// Module ID: 13914
+// Function ID: 13915
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1074, 21, 4757, 576, 5660, 7397, 7396, 1115, 4753, 4747, 4691, 13698, 13830, 5110, 13831, 1980, 13696, 5187, 4724, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4827, 576, 5744, 7481, 7480, 1115, 4823, 4817, 4761, 13783, 13915, 5194, 13916, 1980, 13781, 5271, 4794, 2]
 // Exports: default
 
-// Module 13829 (OutboundPromotionCard)
+// Module 13914 (OutboundPromotionCard)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4747 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5110 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4817 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5194 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7480 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7481 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -33,9 +33,9 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { card: { flex: 1, flexDirection: "column", paddingHorizontal: fn(1074).USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING, paddingVertical: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, marginTop: 8 }, mainContainer: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }, textContainer: { flexDirection: "row", flexShrink: 1, alignItems: "center" }, imageContainer: null, image: null, title: null, subText: null, claimButton: null, moreDetails: null, termsAndConditionsText: null, buttonContainer: null };
-let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5660).DARK_BLACK_500_LIGHT_PRIMARY_100 };
+let size = { width: 32, height: 32, marginRight: 8, borderRadius: nativeDefault.radii.xs, alignItems: "center", justifyContent: "center", backgroundColor: fn(5744).DARK_BLACK_500_LIGHT_PRIMARY_100 };
 obj2.imageContainer = size;
 obj2.image = { width: 28, height: 28, resizeMode: "contain" };
 obj2.title = { lineHeight: 20 };

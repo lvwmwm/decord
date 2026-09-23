@@ -1,10 +1,10 @@
-// Module ID: 17220
-// Function ID: 17221
+// Module ID: 17289
+// Function ID: 17290
 // Name: ChannelDetailsTopicGradient
-// Dependencies: [19, 4458, 576, 672, 2]
+// Dependencies: [19, 4524, 576, 672, 2]
 // Exports: useChannelTopicGradientBackground
 
-// Module 17220 (ChannelDetailsTopicGradient)
+// Module 17289 (ChannelDetailsTopicGradient)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import noop from "module_19" /* 19 */;
@@ -14,7 +14,7 @@ const size = fn(2);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/sidebar/details/ChannelDetailsTopicGradient.tsx");
 
 export const useChannelTopicGradientBackground = function useChannelTopicGradientBackground() {
-  token = token(4458).useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+  token = token(4524).useToken(nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   return noop.useMemo(() => {
     const obj = _modDef672(token);

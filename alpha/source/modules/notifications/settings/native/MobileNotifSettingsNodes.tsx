@@ -1,25 +1,25 @@
-// Module ID: 16264
-// Function ID: 16265
+// Module ID: 16317
+// Function ID: 16318
 // Name: MobileNotifSettingsNodes
-// Dependencies: [11729, 1115, 2808, 13952, 14731, 16265, 16266, 14736, 15774, 2]
+// Dependencies: [11805, 1115, 2810, 14037, 14811, 16318, 16319, 14816, 15828, 2]
 
-// Module 16264 (MobileNotifSettingsNodes)
+// Module 16317 (MobileNotifSettingsNodes)
 import util from "util" /* 1115 */;
-import _modDef2808 from "module_2808" /* 2808 */;
-import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 13952 */;
-import NotifSettings from "NotifSettings" /* 14731 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14736 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 15774 */;
-import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 16265 */;
-import useIsNotifSettingDisabledDefault from "useIsNotifSettingDisabled" /* 16266 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11729 */;
+import _modDef2810 from "module_2810" /* 2810 */;
+import settings_NotifSettingsUtils from "settings/NotifSettingsUtils" /* 14037 */;
+import NotifSettings from "NotifSettings" /* 14811 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 14816 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 15828 */;
+import NotifSettingsActionCreators from "NotifSettingsActionCreators" /* 16318 */;
+import useIsNotifSettingDisabledDefault from "useIsNotifSettingDisabled" /* 16319 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11805 */;
 import size from "module_2" /* 2 */;
 
 let SettingBuilders = SettingBuilders_mod;
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.wv4QHR);
+    return intl.string(_modDef2810.wv4QHR);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.REACTIONS);
@@ -39,7 +39,7 @@ let SettingBuilders = SettingBuilders_mod;
 const obj = {
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.wv4QHR);
+    return intl.string(_modDef2810.wv4QHR);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.REACTIONS);
@@ -58,7 +58,7 @@ const obj = {
 const toggle1 = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.n0Wp6j);
+    return intl.string(_modDef2810.n0Wp6j);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.MISSED_MESSAGES_LOW);
@@ -78,7 +78,7 @@ let SettingBuilders = SettingBuilders_mod;
 const obj2 = {
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.n0Wp6j);
+    return intl.string(_modDef2810.n0Wp6j);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.MISSED_MESSAGES_LOW);
@@ -97,7 +97,7 @@ const obj2 = {
 const toggle2 = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.n0Wp6j);
+    return intl.string(_modDef2810.n0Wp6j);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.MISSED_MESSAGES_DEFAULT);
@@ -117,7 +117,7 @@ let SettingBuilders = SettingBuilders_mod;
 const obj3 = {
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.n0Wp6j);
+    return intl.string(_modDef2810.n0Wp6j);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.MISSED_MESSAGES_DEFAULT);
@@ -136,7 +136,7 @@ const obj3 = {
 const toggle3 = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.Iy9grw);
+    return intl.string(_modDef2810.Iy9grw);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.VOICE_ACTIVITY_LOW);
@@ -156,7 +156,7 @@ let SettingBuilders = SettingBuilders_mod;
 const obj4 = {
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.Iy9grw);
+    return intl.string(_modDef2810.Iy9grw);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.VOICE_ACTIVITY_LOW);
@@ -175,7 +175,7 @@ const obj4 = {
 const toggle4 = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.Iy9grw);
+    return intl.string(_modDef2810.Iy9grw);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.VOICE_ACTIVITY_DEFAULT);
@@ -195,7 +195,7 @@ let SettingBuilders = SettingBuilders_mod;
 const obj5 = {
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808.Iy9grw);
+    return intl.string(_modDef2810.Iy9grw);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.VOICE_ACTIVITY_DEFAULT);
@@ -214,7 +214,7 @@ const obj5 = {
 const toggle5 = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808["9EDo+/"]);
+    return intl.string(_modDef2810["9EDo+/"]);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.GAMING_LOW);
@@ -234,7 +234,7 @@ let SettingBuilders = SettingBuilders_mod;
 const obj6 = {
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808["9EDo+/"]);
+    return intl.string(_modDef2810["9EDo+/"]);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.GAMING_LOW);
@@ -253,7 +253,7 @@ const obj6 = {
 const toggle6 = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2808["9EDo+/"]);
+    return intl.string(_modDef2810["9EDo+/"]);
   },
   useValue() {
     return settings_NotifSettingsUtils.useNotifSettingToggleValue(NotifSettings.NotifSettings.GAMING_DEFAULT);

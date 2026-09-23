@@ -1,11 +1,11 @@
-// Module ID: 13823
-// Function ID: 13824
+// Module ID: 13908
+// Function ID: 13909
 // Name: BoostGemPixel
-// Dependencies: [19, 21, 8732, 2]
+// Dependencies: [19, 21, 8803, 2]
 // Exports: default
 
-// Module 13823 (BoostGemPixel)
-import inlineStyles from "inlineStyles" /* 8732 */;
+// Module 13908 (BoostGemPixel)
+import inlineStyles from "inlineStyles" /* 8803 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

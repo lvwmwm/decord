@@ -1,28 +1,28 @@
-// Module ID: 15576
-// Function ID: 15577
+// Module ID: 15630
+// Function ID: 15631
 // Name: SettingsAppearanceActivityCardItem
-// Dependencies: [19, 17, 2109, 15577, 21, 4493, 1177, 4757, 576, 563, 9099, 5806, 4753, 1881, 15578, 15579, 15580, 2]
+// Dependencies: [19, 17, 2109, 15631, 21, 4559, 1177, 4827, 576, 563, 9170, 5890, 4823, 1881, 15632, 15633, 15634, 2]
 // Exports: default
 
-// Module 15576 (SettingsAppearanceActivityCardItem)
+// Module 15630 (SettingsAppearanceActivityCardItem)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ClipViewDefault from "ClipView" /* 9099 */;
+import ClipViewDefault from "ClipView" /* 9170 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, StyleSheet } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15577);
+const HappeningNowConstants = fn(15631);
 ({ HAPPENING_NOW_BADGE_SIZE, HAPPENING_NOW_CONTENT_HEIGHT, HAPPENING_NOW_CARD_HEIGHT, HAPPENING_NOW_CARD_MARGIN_RIGHT, HAPPENING_NOW_CARD_PADDING, HAPPENING_NOW_CARD_PADDING_RIGHT } = HappeningNowConstants);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let closure_7 = ReanimatedRexport.createAnimatedComponent(fn(1177).Icon);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { card: { borderRadius: nativeDefault.radii.lg, borderWidth: StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" }, cardBadgeWrapper: { position: "absolute", top: 0, right: 0 }, cardImage: null, cardBadge: null, cardImageAssetContainer: null, cardImageAssetBackground: null, cardImageAsset: null, shiftedAvatar: null, userCounter: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg, borderWidth: StyleSheet.hairlineWidth, padding: HAPPENING_NOW_CARD_PADDING, paddingRight: HAPPENING_NOW_CARD_PADDING_RIGHT, marginRight: HAPPENING_NOW_CARD_MARGIN_RIGHT, height: HAPPENING_NOW_CARD_HEIGHT, flexDirection: "row", alignItems: "center" };
 obj.cardImage = { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, position: "relative" };
@@ -73,7 +73,7 @@ export default function ActivityCardItem(arg0) {
       const obj2 = { style: shiftedAvatar, children: null };
       if (index !== diff) {
         const obj3 = { cutouts: null, children: null };
-        const point = { shape: tmp3(9099).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] + 4 };
+        const point = { shape: tmp3(9170).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] - 4 - 2, y: -2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp3(undefined, 1177).AvatarSizes.XSMALL_20] + 4 };
         const items = [point];
         obj3.cutouts = items;
         obj3.children = tmp5;

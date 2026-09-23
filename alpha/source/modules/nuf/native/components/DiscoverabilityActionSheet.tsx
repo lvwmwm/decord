@@ -1,20 +1,20 @@
-// Module ID: 13006
-// Function ID: 13007
+// Module ID: 13088
+// Function ID: 13089
 // Name: DiscoverabilityActionSheet
-// Dependencies: [19, 17, 12934, 1074, 21, 4757, 576, 8876, 1115, 4753, 12937, 7444, 2]
+// Dependencies: [19, 17, 13016, 1074, 21, 4827, 576, 8947, 1115, 4823, 13019, 7528, 2]
 // Exports: default
 
-// Module 13006 (DiscoverabilityActionSheet)
+// Module 13088 (DiscoverabilityActionSheet)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
-const ContactSyncModalStore = fn(12934);
+const ContactSyncModalStore = fn(13016);
 ({ useContactSyncModalStore: closure_4, setAllowSync: hasOwnProperty, setAllowPhone: metroRequire, setAllowEmail: closure_7 } = ContactSyncModalStore);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingBottom: 16 }, formRow: null, syncRow: null, formText: null, info: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, paddingBottom: 16 };
 obj2.formRow = { marginTop: 8, paddingVertical: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };

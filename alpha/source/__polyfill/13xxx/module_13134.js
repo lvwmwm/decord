@@ -1,112 +1,58 @@
 // Module ID: 13134
 // Function ID: 13135
-// Dependencies: [32, 109, 13135, 13110]
+// Dependencies: [13135, 13136, 13139]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 13134
-import extractRequestData from "extractRequestData" /* 13135 */;
-import _slicedToArray from "module_32" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import setupIntegration from "module_13110" /* 13110 */;
+import _mod13135 from "module_13135" /* 13135 */;
 
-let closure_4 = ["ip", "user"];
-let obj = { include: { cookies: true, data: true, headers: true, ip: false, query_string: true, url: true, user: { id: true, username: true, email: true } }, transactionNamingScheme: "methodPath" };
+require = arg1;
+const dependencyMap = {};
+let closure_3 = {};
 
-export const requestDataIntegration = setupIntegration.defineIntegration(() => {
-  obj = arg0;
-  if (arg0 === undefined) {
-    obj = {};
-  }
-  let obj2 = {};
-  const merged = Object.assign(obj);
-  const merged1 = Object.assign(obj);
-  let obj3 = {};
-  const merged2 = Object.assign(obj.include);
-  const merged3 = Object.assign(obj.include);
-  if (obj.include) {
-    if (typeof obj.include.user === "boolean") {
-      let user = obj.include.user;
+export const addHandler = function addHandler(arg0, arg1) {
+  dependencyMap[arg0] = dependencyMap[arg0] || [];
+  dependencyMap[arg0].push(arg1);
+};
+export const maybeInstrument = function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp2[arg0] = true;
+    try {
+      fn();
+    } catch (tmp5) {
+      if (_mod13135.DEBUG_BUILD) {
+        const logger = tmp6(13136).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + tmp, tmp5);
+      }
+      tmp6 = require;
     }
-    obj3.user = user;
-    obj2.include = obj3;
-    const obj4 = {
-      name: "RequestData",
-      processEvent(sdkProcessingMetadata) {
-          let prop = sdkProcessingMetadata.sdkProcessingMetadata;
-          if (undefined === prop) {
-            prop = {};
-          }
-          ({ request, normalizedRequest } = prop);
-          const tmp = (function convertReqDataIntegrationOptsToAddReqDataOpts(include) {
-            include = include.include;
-            const user = include.user;
-            const items = ["method"];
-            const entries = Object.entries(closure_1_3(include, closure_1_4));
-            while (tmp2 !== undefined) {
-              let tmp5 = closure_1_2(tmp3, 2);
-              let first = tmp5[0];
-              if (tmp5[1]) {
-                let arr = items.push(first);
-              }
-              continue;
-            }
-            let flag = true;
-            if (undefined !== user) {
-              flag = user;
-              if (typeof user !== "boolean") {
-                const items1 = [];
-                const _Object = Object;
-                const entries1 = Object.entries(user);
-                flag = items1;
-                for (const item10032 of entries1) {
-                  let tmp11 = closure_1_2(item10032, 2);
-                  let first1 = tmp11[0];
-                  if (tmp11[1]) {
-                    let arr2 = items1.push(first1);
-                  }
-                  continue;
-                }
-              }
-            }
-            const include2 = { ip: include.ip, user: flag, request: null, transaction: null };
-            let tmp15;
-            if (0 !== items.length) {
-              tmp15 = items;
-            }
-            include2.request = tmp15;
-            include2.transaction = include.transactionNamingScheme;
-            return { include: include2 };
-          })(obj2);
-          if (normalizedRequest) {
-            let tmp5;
-            if (request) {
-              let ip = request.ip;
-              if (!ip) {
-                ip = request.socket && request.socket.remoteAddress;
-                const tmp6 = request.socket && request.socket.remoteAddress;
-              }
-              tmp5 = ip;
-            }
-            let user;
-            if (request) {
-              user = request.user;
-            }
-            const obj3 = extractRequestData;
-            obj = { ipAddress: tmp5, user };
-            const result = obj3.addNormalizedRequestDataToEvent(sdkProcessingMetadata, normalizedRequest, obj, tmp);
-            return sdkProcessingMetadata;
-          } else {
-            let result1 = sdkProcessingMetadata;
-            if (request) {
-              obj2 = extractRequestData;
-              result1 = obj2.addRequestDataToEvent(sdkProcessingMetadata, request, tmp);
-            }
-            return result1;
-          }
-        }
-    };
-    return obj4;
   }
-  user = {};
-  const merged4 = Object.assign(obj.include.user);
-  const merged5 = Object.assign(obj.include || {}.user);
-});
+};
+export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    dependencyMap[item] = undefined;
+  });
+};
+export const triggerHandlers = function triggerHandlers(arg0, arg1) {
+  let tmp8 = arg0;
+  if (arg0) {
+    tmp8 = dependencyMap[arg0];
+  }
+  if (tmp8) {
+    const iter = tmp8[Symbol.iterator]();
+    if (iter !== undefined) {
+      try {
+        tmp15(arg1);
+      } catch (tmp18) {
+        if (_mod13135.DEBUG_BUILD) {
+          const logger = tmp19(13136).logger;
+          logger.error(tmp2 + tmp6 + tmp3 + tmp19(13139).getFunctionName(tmp7) + tmp4, tmp18);
+          const tmp19Result = tmp19(13139);
+        }
+      }
+    }
+    const nextResult = iter.next();
+  }
+};

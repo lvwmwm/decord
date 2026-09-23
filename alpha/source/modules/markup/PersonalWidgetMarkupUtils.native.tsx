@@ -1,14 +1,14 @@
-// Module ID: 8943
-// Function ID: 8944
+// Module ID: 9014
+// Function ID: 9015
 // Name: PersonalWidgetMarkupUtils
-// Dependencies: [5209, 12, 5210, 4748, 8249, 2]
+// Dependencies: [5293, 12, 5294, 4818, 8331, 2]
 
-// Module 8943 (PersonalWidgetMarkupUtils)
-import MarkupReactRulesDefault from "MarkupReactRules" /* 4748 */;
-import MarkupRulesDefault from "MarkupRules" /* 5210 */;
-import combineMarkupRules from "combineMarkupRules" /* 5209 */;
+// Module 9014 (PersonalWidgetMarkupUtils)
+import MarkupReactRulesDefault from "MarkupReactRules" /* 4818 */;
+import MarkupRulesDefault from "MarkupRules" /* 5294 */;
+import combineMarkupRules from "combineMarkupRules" /* 5293 */;
 import apply from "module_12" /* 12 */;
-import MarkupParser from "MarkupParser" /* 8249 */;
+import MarkupParser from "MarkupParser" /* 8331 */;
 
 const items = [apply.pick(MarkupRulesDefault.RULES, ["escape", "text", "strong", "em", "u", "url", "autolink", "emoji", "invisibleUnicode"]), MarkupReactRulesDefault()];
 const reactParserForResult = MarkupParser.reactParserFor(combineMarkupRules(items));

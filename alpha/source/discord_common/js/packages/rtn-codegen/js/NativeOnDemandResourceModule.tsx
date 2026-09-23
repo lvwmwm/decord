@@ -1,9 +1,9 @@
-// Module ID: 17848
-// Function ID: 17849
+// Module ID: 17917
+// Function ID: 17918
 // Name: NativeOnDemandResourceModule
 // Dependencies: [17, 2]
 
-// Module 17848 (NativeOnDemandResourceModule)
+// Module 17917 (NativeOnDemandResourceModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

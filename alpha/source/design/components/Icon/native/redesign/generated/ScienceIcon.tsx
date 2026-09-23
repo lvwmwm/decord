@@ -1,13 +1,13 @@
-// Module ID: 16829
-// Function ID: 16830
+// Module ID: 16881
+// Function ID: 16882
 // Name: ScienceIcon
-// Dependencies: [19, 21, 576, 4457, 12069, 2]
+// Dependencies: [19, 21, 576, 4523, 12146, 2]
 // Exports: ScienceIcon
 
-// Module 16829 (ScienceIcon)
+// Module 16881 (ScienceIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod12069 from "module_12069" /* 12069 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod12146 from "module_12146" /* 12146 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ScienceIcon = function ScienceIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12069, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12146, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

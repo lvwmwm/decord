@@ -1,9 +1,9 @@
-// Module ID: 4403
-// Function ID: 4404
+// Module ID: 4469
+// Function ID: 4470
 // Name: AppChannelPermissions
 // Dependencies: [1074, 1086, 2]
 
-// Module 4403 (AppChannelPermissions)
+// Module 4469 (AppChannelPermissions)
 import Constants from "Constants" /* 1074 */;
 import "BigFlagUtils";
 import BigFlagUtils from "BigFlagUtils" /* 1086 */;

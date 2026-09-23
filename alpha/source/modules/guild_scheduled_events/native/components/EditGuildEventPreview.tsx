@@ -1,16 +1,16 @@
-// Module ID: 9871
-// Function ID: 9872
+// Module ID: 9944
+// Function ID: 9945
 // Name: EditGuildEventPreview
-// Dependencies: [19, 17, 2042, 1074, 21, 4757, 576, 1364, 504, 4910, 9796, 9872, 4753, 1115, 9873, 1177, 9874, 9795, 7370, 9875, 5187, 9759, 5110, 9891, 1980, 2]
+// Dependencies: [19, 17, 2042, 1074, 21, 4827, 576, 1364, 504, 4980, 9869, 9945, 4823, 1115, 9946, 1177, 9947, 9868, 7454, 9948, 5271, 9832, 5194, 9964, 1980, 2]
 // Exports: default
 
-// Module 9871 (EditGuildEventPreview)
+// Module 9944 (EditGuildEventPreview)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5110 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9795 */;
-import guildEventDetailsParser from "guildEventDetailsParser" /* 9874 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5194 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9868 */;
+import guildEventDetailsParser from "guildEventDetailsParser" /* 9947 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 
@@ -24,7 +24,7 @@ function PreviewBody(event) {
   let items = [eventLocationIconSource];
   const items1 = [channel_id];
   const stateFromStores = require("initialize").useStateFromStores(items, () => ChannelStore.getChannel(channel_id), items1);
-  const tmp6 = channel_id(4910)(stateFromStores);
+  const tmp6 = channel_id(4980)(stateFromStores);
   dependencyMap = tmp6;
   let obj = require("initialize");
   const tmp5 = channel_id;
@@ -47,7 +47,7 @@ function PreviewBody(event) {
     const intl2 = tmp2(1115).intl;
     const obj6 = { channelName: null };
     const obj7 = { channel: stateFromStores };
-    obj6.channelName = tmp5(9873)(obj7);
+    obj6.channelName = tmp5(9946)(obj7);
     formatToPlainStringResult = intl2.formatToPlainString(tmp2(1115).t.sxcQPE, obj6);
   }
   obj5.accessibilityLabel = formatToPlainStringResult;
@@ -96,7 +96,7 @@ function PreviewBody(event) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { flex: 1, padding: 16, paddingBottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", overflow: "visible" }, centered: { flexDirection: "column", alignItems: "center", justifyContent: "center" }, centerContainer: { flexGrow: 0, width: "100%" }, flex: { flex: 1, overflow: "visible" }, header: { alignItems: "center", paddingBottom: 24 }, headerTitle: { marginTop: 16, marginBottom: 8 }, headerSubtitle: { textAlign: "center" }, eventContainer: null, channelContainer: null, channelIcon: null, buttonContainer: null, error: null };
 let obj3 = { flex: 1, padding: 16, paddingBottom: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%", overflow: "visible" };
 obj2.eventContainer = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, marginBottom: 24, borderColor: nativeDefault.colors.BORDER_SUBTLE, borderWidth: 1, borderRadius: nativeDefault.radii.sm, shadowOpacity: 0.2, elevation: 2, shadowRadius: 16, shadowOffset: { height: 8, width: 0 }, overflow: "visible" };

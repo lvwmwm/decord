@@ -1,16 +1,16 @@
-// Module ID: 16176
-// Function ID: 16177
+// Module ID: 16229
+// Function ID: 16230
 // Name: ShopFlashList
-// Dependencies: [19, 21, 4757, 576, 16147, 9002, 1177, 8505, 1115, 2]
+// Dependencies: [19, 21, 4827, 576, 16200, 9073, 1177, 8576, 1115, 2]
 // Exports: default
 
-// Module 16176 (ShopFlashList)
+// Module 16229 (ShopFlashList)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import generated_NoResults from "generated/NoResults" /* 8505 */;
-import _mod9002 from "module_9002" /* 9002 */;
-import useScrollToInitialIndexOnce from "useScrollToInitialIndexOnce" /* 16147 */;
+import generated_NoResults from "generated/NoResults" /* 8576 */;
+import _mod9073 from "module_9073" /* 9073 */;
+import useScrollToInitialIndexOnce from "useScrollToInitialIndexOnce" /* 16200 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ function ShopEmptyState() {
   return jsx(native.EmptyState, { style: { marginTop: 42 }, Illustration: generated_NoResults.NoResults, body: null });
 }
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 const obj2 = { contentContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
 let closure_4 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -38,5 +38,5 @@ export default function ShopFlashList(initialScrollIndex) {
   }
   const obj = useScrollToInitialIndexOnce;
   const scrollToInitialIndexOnce = obj.useScrollToInitialIndexOnce({ shouldScroll: tmp5, initialScrollIndex, flashListRef: ref, afterMs: useScrollToInitialIndexOnce.INITIAL_SCROLL_DELAY_MS });
-  return jsx(_mod9002.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent: ShopEmptyState, initialScrollIndex, getItemType, contentContainerStyle: tmp2.contentContainer });
+  return jsx(_mod9073.FlashList, { ref, data, renderItem, showsVerticalScrollIndicator: false, ListEmptyComponent: ShopEmptyState, initialScrollIndex, getItemType, contentContainerStyle: tmp2.contentContainer });
 };

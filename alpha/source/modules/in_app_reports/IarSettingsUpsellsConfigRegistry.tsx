@@ -1,21 +1,21 @@
-// Module ID: 8923
-// Function ID: 8924
+// Module ID: 8994
+// Function ID: 8995
 // Name: IarSettingsUpsellsConfigRegistry
-// Dependencies: [19, 8913, 8924, 8925, 8926, 1370, 2]
+// Dependencies: [19, 8984, 8995, 8996, 8997, 1370, 2]
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs
 
-// Module 8923 (IarSettingsUpsellsConfigRegistry)
+// Module 8994 (IarSettingsUpsellsConfigRegistry)
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 8924 */;
-import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 8925 */;
-import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 8926 */;
+import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 8995 */;
+import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 8996 */;
+import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 8997 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const SettingsUpsellsConfigRegistry = {};
-SettingsUpsellsConfigRegistry[fn(8913).SettingsUpsells.SAFETY_DM_SPAM_FILTER] = IarSettingsUpsellsConfigDmSpamFilterDefault;
-SettingsUpsellsConfigRegistry[fn(8913).SettingsUpsells.SAFETY_SC_FILTERS_SEXUAL_MEDIA] = IarSettingsUpsellsConfigScFiltersSexualMediaDefault;
-SettingsUpsellsConfigRegistry[fn(8913).SettingsUpsells.SAFETY_SC_FILTERS_GRAPHIC_MEDIA] = IarSettingsUpsellsConfigScFiltersGraphicMediaDefault;
+SettingsUpsellsConfigRegistry[fn(8984).SettingsUpsells.SAFETY_DM_SPAM_FILTER] = IarSettingsUpsellsConfigDmSpamFilterDefault;
+SettingsUpsellsConfigRegistry[fn(8984).SettingsUpsells.SAFETY_SC_FILTERS_SEXUAL_MEDIA] = IarSettingsUpsellsConfigScFiltersSexualMediaDefault;
+SettingsUpsellsConfigRegistry[fn(8984).SettingsUpsells.SAFETY_SC_FILTERS_GRAPHIC_MEDIA] = IarSettingsUpsellsConfigScFiltersGraphicMediaDefault;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_reports/IarSettingsUpsellsConfigRegistry.tsx");
 

@@ -1,13 +1,13 @@
-// Module ID: 17180
-// Function ID: 17181
+// Module ID: 17254
+// Function ID: 17255
 // Name: useSearchMessages
-// Dependencies: [7525, 12597, 504, 12598, 2]
+// Dependencies: [7609, 12673, 504, 12674, 2]
 // Exports: useSearchMessages
 
-// Module 17180 (useSearchMessages)
-import SearchUtils from "SearchUtils" /* 12598 */;
-import SearchMessageStore from "SearchMessageStore" /* 7525 */;
-import SearchQueryStore from "SearchQueryStore" /* 12597 */;
+// Module 17254 (useSearchMessages)
+import SearchUtils from "SearchUtils" /* 12674 */;
+import SearchMessageStore from "SearchMessageStore" /* 7609 */;
+import SearchQueryStore from "SearchQueryStore" /* 12673 */;
 
 const require = globalThis.__r;
 

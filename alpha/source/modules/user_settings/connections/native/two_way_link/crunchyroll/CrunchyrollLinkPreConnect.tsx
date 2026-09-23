@@ -1,19 +1,19 @@
-// Module ID: 9395
-// Function ID: 9396
+// Module ID: 9466
+// Function ID: 9467
 // Name: CrunchyrollLinkPreConnect
-// Dependencies: [19, 9392, 1074, 8613, 21, 4757, 1484, 9361, 9396, 1115, 2]
+// Dependencies: [19, 9463, 1074, 8684, 21, 4827, 1484, 9432, 9467, 1115, 2]
 // Exports: default
 
-// Module 9395 (CrunchyrollLinkPreConnect)
-import _modDef9396 from "module_9396" /* 9396 */;
+// Module 9466 (CrunchyrollLinkPreConnect)
+import _modDef9467 from "module_9467" /* 9467 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
-let closure_4 = fn(9392).CrunchyrollLinkModalScenes;
+let closure_4 = fn(9463).CrunchyrollLinkModalScenes;
 const PlatformTypes = fn(1074).PlatformTypes;
-const redirectDestination = fn(8613).CRUNCHYROLL_LINK_DEST_ORIGIN;
+const redirectDestination = fn(8684).CRUNCHYROLL_LINK_DEST_ORIGIN;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_8 = createStyles.createStyles({ image: { width: 152, height: 123 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/connections/native/two_way_link/crunchyroll/CrunchyrollLinkPreConnect.tsx");
@@ -29,11 +29,11 @@ export default function CrunchyrollLinkPreConnect() {
   const callback1 = noop.useCallback(() => {
     navigation.push(constants.ERROR);
   }, items1);
-  const obj2 = { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: _modDef9396, imgStyle: tmp.image, title: null, body: null, redirectDestination: null };
+  const obj2 = { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: _modDef9467, imgStyle: tmp.image, title: null, body: null, redirectDestination: null };
   const intl = navigation(1115).intl;
   obj2.title = intl.string(navigation(1115).t.siPkNp);
   const intl2 = navigation(1115).intl;
   obj2.body = intl2.string(navigation(1115).t.oS4NEH);
   obj2.redirectDestination = redirectDestination;
-  return jsx(navigation(9361).TwoWayLinkPreConnect, { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: _modDef9396, imgStyle: tmp.image, title: null, body: null, redirectDestination: null });
+  return jsx(navigation(9432).TwoWayLinkPreConnect, { platformType: PlatformTypes.CRUNCHYROLL, onError: callback1, onNext: callback, img: _modDef9467, imgStyle: tmp.image, title: null, body: null, redirectDestination: null });
 };

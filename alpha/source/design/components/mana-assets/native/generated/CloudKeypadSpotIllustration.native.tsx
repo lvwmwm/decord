@@ -1,13 +1,13 @@
-// Module ID: 6088
-// Function ID: 6089
+// Module ID: 6172
+// Function ID: 6173
 // Name: CloudKeypadSpotIllustration
-// Dependencies: [21, 5806, 6089, 2]
+// Dependencies: [21, 5890, 6173, 2]
 // Exports: CloudKeypadSpotIllustration
 
-// Module 6088 (CloudKeypadSpotIllustration)
+// Module 6172 (CloudKeypadSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6089 from "module_6089" /* 6089 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6173 from "module_6173" /* 6173 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const CloudKeypadSpotIllustration = function CloudKeypadSpotIllustration(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6089 };
+  const obj2 = { uri: _modDef6173 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

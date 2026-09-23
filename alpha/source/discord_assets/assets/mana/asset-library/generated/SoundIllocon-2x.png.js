@@ -1,8 +1,8 @@
-// Module ID: 6719
-// Function ID: 6720
+// Module ID: 6803
+// Function ID: 6804
 // Dependencies: [2]
 
-// Module 6719
+// Module 6803
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SoundIllocon-2x.png.js");

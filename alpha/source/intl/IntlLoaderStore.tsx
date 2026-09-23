@@ -1,15 +1,15 @@
 // Module ID: 2110
 // Function ID: 2111
 // Name: IntlLoaderStore
-// Dependencies: [5, 1882, 1243, 2111, 1115, 2121, 1154, 3840, 4315, 4346, 4348, 1231, 2]
+// Dependencies: [5, 1882, 1243, 2111, 1115, 2121, 1154, 3906, 4381, 4412, 4414, 1231, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
 // Module 2110 (IntlLoaderStore)
 import util from "util" /* 1115 */;
 import _modDef2111 from "module_2111" /* 2111 */;
-import bg from "bg" /* 3840 */;
-import formatjs from "formatjs" /* 4315 */;
-import moment from "moment" /* 4346 */;
+import bg from "bg" /* 3906 */;
+import formatjs from "formatjs" /* 4381 */;
+import moment from "moment" /* 4412 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import module_1882 from "module_1882" /* 1882 */;
 
@@ -351,7 +351,7 @@ const identity = fn(1243);
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
-  let obj = {
+  return {
     isLoading: false,
     inProgressLocale: "Boolean",
     error: "padding",
@@ -374,7 +374,6 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       closure_0({ localeData });
     }
   };
-  return obj;
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("intl/IntlLoaderStore.tsx");

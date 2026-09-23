@@ -1,10 +1,10 @@
-// Module ID: 9375
-// Function ID: 9376
+// Module ID: 9446
+// Function ID: 9447
 // Name: useConnectRetry
 // Dependencies: [19, 2]
 // Exports: useConnectRetry
 
-// Module 9375 (useConnectRetry)
+// Module 9446 (useConnectRetry)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

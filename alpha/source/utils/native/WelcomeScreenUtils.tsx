@@ -1,32 +1,32 @@
-// Module ID: 12910
-// Function ID: 12911
+// Module ID: 12992
+// Function ID: 12993
 // Name: WelcomeScreenUtils
-// Dependencies: [19, 12911, 4394, 2064, 4589, 12912, 504, 12913, 4724, 12914, 1980, 2]
+// Dependencies: [19, 12993, 4460, 2064, 4659, 12994, 504, 12995, 4794, 12996, 1980, 2]
 // Exports: openWelcomeActionSheet, useShowWelcomeModal
 
-// Module 12910 (WelcomeScreenUtils)
+// Module 12992 (WelcomeScreenUtils)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 12913 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import WelcomeScreenActionCreators from "WelcomeScreenActionCreators" /* 12995 */;
 import noop from "module_19" /* 19 */;
-import WelcomeScreenStore from "WelcomeScreenStore" /* 12911 */;
-import GuildChannelStore from "GuildChannelStore" /* 4394 */;
+import WelcomeScreenStore from "WelcomeScreenStore" /* 12993 */;
+import GuildChannelStore from "GuildChannelStore" /* 4460 */;
 import GuildStore from "GuildStore" /* 2064 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const NO_WELCOME_SCREEN = fn(12911).NO_WELCOME_SCREEN;
-let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "flex" };
+const NO_WELCOME_SCREEN = fn(12993).NO_WELCOME_SCREEN;
+let closure_8 = { welcomeScreenModalVisible: false, shouldFetchGuildId: "r" };
 const size = fn(2);
 const result = size.fileFinishedImporting("utils/native/WelcomeScreenUtils.tsx");
 
 export const useShowWelcomeModal = function useShowWelcomeModal(guildId, channelId) {
   _require = guildId;
   importDefault = channelId;
-  welcomeModalChannelId = require("module_4589").useLocation().welcomeModalChannelId;
+  welcomeModalChannelId = require("module_4659").useLocation().welcomeModalChannelId;
   noop = require("useWelcomeScreenEnabled")(channelId, guildId);
-  let obj = require("module_4589");
+  let obj = require("module_4659");
   const items = [GuildStore, shouldFetchGuildId, GuildChannelStore];
   const stateFromStoresObject = require("initialize").useStateFromStoresObject(items, () => {
     if (closure_3) {
@@ -82,5 +82,5 @@ export const useShowWelcomeModal = function useShowWelcomeModal(guildId, channel
 export const openWelcomeActionSheet = function openWelcomeActionSheet(onHide) {
   const guildId = onHide.guildId;
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequireImpl(12914, dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
+  obj.openLazy(asyncRequireImpl(12996, dependencyMap.paths), "GuildWelcomeActionSheet" + guildId, { guildId, onHide: onHide.onHide });
 };

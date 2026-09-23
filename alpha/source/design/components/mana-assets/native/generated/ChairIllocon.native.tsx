@@ -1,13 +1,13 @@
-// Module ID: 6074
-// Function ID: 6075
+// Module ID: 6158
+// Function ID: 6159
 // Name: ChairIllocon
-// Dependencies: [21, 5806, 6075, 2]
+// Dependencies: [21, 5890, 6159, 2]
 // Exports: ChairIllocon
 
-// Module 6074 (ChairIllocon)
+// Module 6158 (ChairIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6075 from "module_6075" /* 6075 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6159 from "module_6159" /* 6159 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const ChairIllocon = function ChairIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6075 };
+  const obj2 = { uri: _modDef6159 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

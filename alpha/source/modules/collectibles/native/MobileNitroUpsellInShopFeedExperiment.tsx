@@ -1,9 +1,9 @@
-// Module ID: 16144
-// Function ID: 16145
+// Module ID: 16197
+// Function ID: 16198
 // Name: MobileNitroUpsellInShopFeedExperiment
 // Dependencies: [1435, 2]
 
-// Module 16144 (MobileNitroUpsellInShopFeedExperiment)
+// Module 16197 (MobileNitroUpsellInShopFeedExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const obj = { GET_NITRO: "getNitro", LEARN_MORE: "learnMore" };

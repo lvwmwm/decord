@@ -1,10 +1,10 @@
-// Module ID: 13458
-// Function ID: 13459
+// Module ID: 13540
+// Function ID: 13541
 // Name: useProductDescription
 // Dependencies: [19, 1115, 1973, 2]
 // Exports: useProductDescription
 
-// Module 13458 (useProductDescription)
+// Module 13540 (useProductDescription)
 import _mod19 from "module_19" /* 19 */;
 import util from "util" /* 1115 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;

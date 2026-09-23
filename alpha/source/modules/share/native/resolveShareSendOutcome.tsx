@@ -1,11 +1,11 @@
-// Module ID: 14177
-// Function ID: 14178
+// Module ID: 14259
+// Function ID: 14260
 // Name: resolveShareSendOutcome
-// Dependencies: [11253, 2]
+// Dependencies: [11329, 2]
 // Exports: getShareUploadError, pairDestinationsWithChannels, resolveShareSendOutcome, withoutSentDestinations
 
-// Module 14177 (resolveShareSendOutcome)
-import formatResults from "formatResults" /* 11253 */;
+// Module 14259 (resolveShareSendOutcome)
+import formatResults from "formatResults" /* 11329 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/share/native/resolveShareSendOutcome.tsx");
@@ -38,7 +38,7 @@ export const withoutSentDestinations = function withoutSentDestinations(arr, arr
     return items;
   } else {
     const _Set = Set;
-    set = new Set(arr2.map(set(11253).destinationKey));
+    set = new Set(arr2.map(set(11329).destinationKey));
     return arr.filter((item) => !set.has(formatResults.destinationKey(item)));
   }
 };

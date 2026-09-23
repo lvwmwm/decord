@@ -1,32 +1,32 @@
-// Module ID: 15223
-// Function ID: 15224
+// Module ID: 15275
+// Function ID: 15276
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7354, 1074, 21, 576, 4757, 9339, 9173, 9551, 4711, 1612, 504, 1484, 1485, 7417, 4753, 1115, 5906, 1397, 5824, 12313, 7237, 7242, 2]
+// Dependencies: [19, 17, 7438, 1074, 21, 576, 4827, 9410, 9244, 9624, 4781, 1612, 504, 1484, 1485, 7501, 4823, 1115, 5990, 1397, 5908, 12389, 7321, 7326, 2]
 // Exports: DisclosureIcon, default
 
-// Module 15223 (UserSettingsAuthedApps)
+// Module 15275 (UserSettingsAuthedApps)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import TableRowGroup from "TableRowGroup" /* 5906 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7237 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7242 */;
-import applications from "applications" /* 9339 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import TableRowGroup from "TableRowGroup" /* 5990 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7321 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7326 */;
+import applications from "applications" /* 9410 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7354 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7438 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ActivityIndicator: hasOwnProperty, FlatList: metroRequire } = get_ActivityIndicator);
-const FetchState = fn(7354).FetchState;
+const FetchState = fn(7438).FetchState;
 const Constants = fn(1074);
 ({ AnalyticsPages: closure_9, UserSettingsSections: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 const PX_24 = nativeDefault.space.PX_24;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { spinner: { padding: 16 }, emptyText: { marginTop: 24 }, emptyContainer: { padding: 16 }, container: { paddingHorizontal: 16, paddingTop: nativeDefault.space.PX_24 }, headerDescription: { marginTop: 12 }, appListHeader: { marginTop: 24 } };
 let closure_15 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -121,13 +121,13 @@ export const DisclosureIcon = function DisclosureIcon(disclosure) {
   return noop.useMemo(() => {
     if (applications.ApplicationDisclosureType.IP_LOCATION === disclosure) {
       const obj2 = { style, size: "xs" };
-      return closure_2_11(tmp2(9173).GlobeEarthIcon, obj2);
-    } else if (tmp2(9339).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
+      return closure_2_11(tmp2(9244).GlobeEarthIcon, obj2);
+    } else if (tmp2(9410).ApplicationDisclosureType.DISPLAYS_ADVERTISEMENTS === tmp) {
       const obj3 = { style, size: "xs" };
-      return closure_2_11(tmp2(9551).EmbedIcon, obj3);
+      return closure_2_11(tmp2(9624).EmbedIcon, obj3);
     } else {
       const obj = { style, size: "xs" };
-      return closure_2_11(tmp2(4711).CircleInformationIcon, obj);
+      return closure_2_11(tmp2(4781).CircleInformationIcon, obj);
     }
     tmp = disclosure;
   }, items);

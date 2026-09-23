@@ -1,0 +1,9 @@
+// Module ID: 5643
+// Function ID: 5644
+// Dependencies: [1121]
+
+// Module 5643
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "cfcfafbb4f4daed7fd4c8d1f431ce58f", name: "img_account_sync_xbox_light", type: "png" });

@@ -1,9 +1,9 @@
-// Module ID: 12326
-// Function ID: 12327
+// Module ID: 12402
+// Function ID: 12403
 // Name: SearchAppsRequestSource
 // Dependencies: [2]
 
-// Module 12326 (SearchAppsRequestSource)
+// Module 12402 (SearchAppsRequestSource)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/SearchAppsRequestSource.tsx");

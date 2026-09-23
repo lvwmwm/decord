@@ -1,19 +1,19 @@
-// Module ID: 10080
-// Function ID: 10081
+// Module ID: 10160
+// Function ID: 10161
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 7771, 21, 4757, 504, 9794, 4724, 5115, 1115, 4753, 2]
+// Dependencies: [5, 19, 7854, 21, 4827, 504, 9867, 4794, 5199, 1115, 4823, 2]
 // Exports: default
 
-// Module 10080 (DeleteEventAlert)
+// Module 10160 (DeleteEventAlert)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7771 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7854 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_6 = createStyles.createStyles({ contentText: { textAlign: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/DeleteEventAlert.tsx");
@@ -48,7 +48,7 @@ export default function DeleteEventAlert(eventException) {
             return obj4;
           } else {
             closure_0 = tmp4;
-            const obj8 = v1(9794);
+            const obj8 = v1(9867);
             if (GuildScheduledEventStore) {
               v1 = 2;
               dependencyMap = 1;
@@ -79,7 +79,7 @@ export default function DeleteEventAlert(eventException) {
             const obj = { value, done: true };
             return obj;
           }
-          v1(4724).hideActionSheet();
+          v1(4794).hideActionSheet();
           dependencyMap = 3;
           return { value: "HermesInternal", done: null };
         }

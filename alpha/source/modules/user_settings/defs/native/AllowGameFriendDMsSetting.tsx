@@ -1,14 +1,14 @@
-// Module ID: 16223
-// Function ID: 16224
+// Module ID: 16276
+// Function ID: 16277
 // Name: AllowGameFriendDMsSetting
-// Dependencies: [8237, 11729, 1115, 2020, 16224, 2]
+// Dependencies: [8319, 11805, 1115, 2020, 16277, 2]
 
-// Module 16223 (AllowGameFriendDMsSetting)
+// Module 16276 (AllowGameFriendDMsSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import SettingsConstants from "SettingsConstants" /* 8237 */;
-import useIsAllowGameFriendDMsSettingVisible from "useIsAllowGameFriendDMsSettingVisible" /* 16224 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
+import SettingsConstants from "SettingsConstants" /* 8319 */;
+import useIsAllowGameFriendDMsSettingVisible from "useIsAllowGameFriendDMsSettingVisible" /* 16277 */;
+import SettingBuilders from "SettingBuilders" /* 11805 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

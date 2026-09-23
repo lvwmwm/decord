@@ -1,9 +1,9 @@
-// Module ID: 9320
-// Function ID: 9321
+// Module ID: 9391
+// Function ID: 9392
 // Name: EmbeddedSurfaceType
 // Dependencies: [2]
 
-// Module 9320 (EmbeddedSurfaceType)
+// Module 9391 (EmbeddedSurfaceType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/EmbeddedSurfaceType.tsx");

@@ -1,8 +1,8 @@
-// Module ID: 5997
-// Function ID: 5998
+// Module ID: 6081
+// Function ID: 6082
 // Dependencies: [2]
 
-// Module 5997
+// Module 6081
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AvatarClydeExample-2x.png.js");

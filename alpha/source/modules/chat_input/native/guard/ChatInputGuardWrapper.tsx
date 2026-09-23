@@ -1,31 +1,31 @@
-// Module ID: 12691
-// Function ID: 12692
+// Module ID: 12773
+// Function ID: 12774
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 4397, 2046, 2105, 2064, 5632, 4406, 1372, 12219, 1074, 7290, 21, 504, 5271, 4383, 4402, 12692, 12693, 11633, 11632, 12694, 12695, 4937, 10009, 4960, 7289, 1980, 7292, 5840, 11824, 11492, 12697, 12707, 12706, 4711, 1115, 12709, 12712, 12713, 12714, 12718, 12719, 12722, 12723, 9889, 12725, 2]
+// Dependencies: [19, 4463, 2046, 2105, 2064, 5716, 4472, 1372, 12295, 1074, 7374, 21, 504, 5355, 4449, 4468, 12774, 12775, 11709, 11708, 12776, 12777, 5007, 10082, 5030, 7373, 1980, 7376, 5924, 11900, 11568, 12779, 12789, 12788, 4781, 1115, 12791, 12794, 12795, 12796, 12800, 12801, 12804, 12805, 9962, 12807, 2]
 // Exports: default
 
-// Module 12691 (ChatInputGuardWrapper)
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4383 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4402 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4937 */;
-import MemberVerificationUtils from "MemberVerificationUtils" /* 5271 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 11492 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11824 */;
+// Module 12773 (ChatInputGuardWrapper)
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4449 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4468 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5007 */;
+import MemberVerificationUtils from "MemberVerificationUtils" /* 5355 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10082 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 11568 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 11900 */;
 import noop from "module_19" /* 19 */;
-import LurkingStore from "LurkingStore" /* 4397 */;
+import LurkingStore from "LurkingStore" /* 4463 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5632 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5716 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const isThread = fn(2046).isThread;
-const TextAreaCta = fn(12219).TextAreaCta;
+const TextAreaCta = fn(12295).TextAreaCta;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, ChannelTypes: closure_12, VerificationCriteria: map1 } = Constants);
-let closure_14 = fn(7290).PHONE_VERIFICATION_MODAL_KEY;
+let closure_14 = fn(7374).PHONE_VERIFICATION_MODAL_KEY;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/chat_input/native/guard/ChatInputGuardWrapper.tsx");

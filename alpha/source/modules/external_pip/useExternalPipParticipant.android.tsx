@@ -1,19 +1,19 @@
-// Module ID: 17480
-// Function ID: 17481
+// Module ID: 17549
+// Function ID: 17550
 // Name: useExternalPipParticipant
-// Dependencies: [32, 19, 4773, 502, 1992, 4780, 4778, 504, 2]
+// Dependencies: [32, 19, 4843, 502, 1992, 4850, 4848, 504, 2]
 // Exports: default
 
-// Module 17480 (useExternalPipParticipant)
+// Module 17549 (useExternalPipParticipant)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4773 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4843 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
 
 const require = fn;
-const CallConstants = fn(4778);
+const CallConstants = fn(4848);
 ({ isStreamParticipant: closure_8, ParticipantTypes: closure_9 } = CallConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/external_pip/useExternalPipParticipant.android.tsx");

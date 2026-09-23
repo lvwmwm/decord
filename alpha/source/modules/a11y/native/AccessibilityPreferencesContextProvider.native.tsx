@@ -1,12 +1,12 @@
-// Module ID: 14857
-// Function ID: 14858
+// Module ID: 14937
+// Function ID: 14938
 // Name: AccessibilityPreferencesContextProvider
-// Dependencies: [19, 4749, 21, 504, 4477, 2]
+// Dependencies: [19, 4819, 21, 504, 4543, 2]
 // Exports: default
 
-// Module 14857 (AccessibilityPreferencesContextProvider)
+// Module 14937 (AccessibilityPreferencesContextProvider)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4749 */;
+import AccessibilityStore from "AccessibilityStore" /* 4819 */;
 
 const require = fn;
 const jsx = fn(21).jsx;

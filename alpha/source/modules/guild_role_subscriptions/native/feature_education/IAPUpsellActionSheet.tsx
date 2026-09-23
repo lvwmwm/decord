@@ -1,10 +1,10 @@
-// Module ID: 16594
-// Function ID: 16595
+// Module ID: 16646
+// Function ID: 16647
 // Name: IAPUpsellActionSheet
-// Dependencies: [19, 1074, 2049, 2039, 21, 16595, 16596, 1115, 1101, 2]
+// Dependencies: [19, 1074, 2049, 2039, 21, 16647, 16648, 1115, 1101, 2]
 // Exports: default
 
-// Module 16594 (IAPUpsellActionSheet)
+// Module 16646 (IAPUpsellActionSheet)
 import router_utils from "router_utils" /* 1101 */;
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;
@@ -19,7 +19,7 @@ const result = size.fileFinishedImporting("modules/guild_role_subscriptions/nati
 
 export default function IAPUpsellActionSheet(arg0) {
   ({ guildId: require, markAsDismissed } = arg0);
-  const obj = { imageSource: markAsDismissed(16596), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null };
+  const obj = { imageSource: markAsDismissed(16648), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null };
   const intl = util.intl;
   obj.header = intl.string(util.t.rBw4cE);
   const intl2 = util.intl;
@@ -31,5 +31,5 @@ export default function IAPUpsellActionSheet(arg0) {
     markAsDismissed(ContentDismissActionType.UNKNOWN);
   };
   obj.markAsDismissed = markAsDismissed;
-  return jsx(markAsDismissed(16595), { imageSource: markAsDismissed(16596), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null });
+  return jsx(markAsDismissed(16647), { imageSource: markAsDismissed(16648), header: null, body: null, cta: null, onCTAPress: null, markAsDismissed: null });
 };

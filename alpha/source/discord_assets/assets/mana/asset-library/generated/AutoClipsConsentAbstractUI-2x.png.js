@@ -1,8 +1,8 @@
-// Module ID: 5991
-// Function ID: 5992
+// Module ID: 6075
+// Function ID: 6076
 // Dependencies: [2]
 
-// Module 5991
+// Module 6075
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AutoClipsConsentAbstractUI-2x.png.js");

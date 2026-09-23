@@ -1,21 +1,21 @@
-// Module ID: 18207
-// Function ID: 18208
+// Module ID: 18276
+// Function ID: 18277
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 4757, 576, 1612, 38, 18208, 7397, 6871, 4753, 1177, 5187, 4724, 1115, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 1612, 38, 18277, 7481, 6955, 4823, 1177, 5271, 4794, 1115, 2]
 // Exports: default
 
-// Module 18207 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 18276 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import components_Button_Button from "components/Button/Button" /* 5187 */;
-import BottomSheetModal from "BottomSheetModal" /* 6871 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18208 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import components_Button_Button from "components/Button/Button" /* 5271 */;
+import BottomSheetModal from "BottomSheetModal" /* 6955 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7481 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 18277 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ get_ActivityIndicator = fn(17);
 ({ TouchableOpacity: c3, View: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 24 }, cancel: { alignSelf: "center" } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

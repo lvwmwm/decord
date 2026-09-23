@@ -1,28 +1,28 @@
-// Module ID: 15400
-// Function ID: 15401
+// Module ID: 15452
+// Function ID: 15453
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 15370, 1074, 21, 4757, 576, 15401, 12040, 7957, 15371, 8542, 4493, 5186, 1612, 7320, 15402, 7370, 15405, 15432, 12024, 11742, 12035, 5666, 11469, 2]
+// Dependencies: [32, 19, 17, 15422, 1074, 21, 4827, 576, 15453, 12117, 8039, 15423, 8613, 4559, 5270, 1612, 7404, 15454, 7454, 15457, 15484, 12101, 11818, 12112, 5750, 11545, 2]
 
-// Module 15400 (VideoQuestModal)
+// Module 15452 (VideoQuestModal)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
-import spring from "spring" /* 5186 */;
-import AnalyticsActions from "AnalyticsActions" /* 7957 */;
-import QuestUtils from "QuestUtils" /* 12024 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 12040 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+import spring from "spring" /* 5270 */;
+import AnalyticsActions from "AnalyticsActions" /* 8039 */;
+import QuestUtils from "QuestUtils" /* 12101 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 12117 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet } = get_ActivityIndicator);
-let closure_6 = fn(15370).QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
+let closure_6 = fn(15422).QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let closure_10 = { mass: 1.9, damping: 18, stiffness: 80, overshootClamping: true };
 const VideoQuestModalSteps = { WATCH_VIDEO: 0, [0]: "WATCH_VIDEO", POST_WATCH_VIDEO: 1, [1]: "POST_WATCH_VIDEO" };
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { root: { backgroundColor: nativeDefault.colors.BACKGROUND_SCRIM }, pillarboxed: { alignSelf: "center" }, wrapper: { flexDirection: "column", flexGrow: 1, flexShrink: 1, zIndex: 1 }, contentWrapper: { flex: 1 }, contentBackground: null, modalContentWrapper: null, backgroundWrapper: null };
 let obj5 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

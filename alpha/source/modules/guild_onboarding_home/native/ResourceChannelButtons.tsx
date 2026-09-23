@@ -1,12 +1,12 @@
-// Module ID: 12540
-// Function ID: 12541
+// Module ID: 12616
+// Function ID: 12617
 // Name: ResourceChannelButtons
-// Dependencies: [32, 19, 17, 21, 4757, 576, 1485, 12541, 12542, 5187, 1177, 11834, 12544, 2]
+// Dependencies: [32, 19, 17, 21, 4827, 576, 1485, 12617, 12618, 5271, 1177, 11910, 12620, 2]
 // Exports: default
 
-// Module 12540 (ResourceChannelButtons)
+// Module 12616 (ResourceChannelButtons)
 import nativeDefault from "native" /* 576 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12542 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 12618 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -14,7 +14,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 const obj2 = { wrapper: { display: "flex", flexDirection: "row", padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, buttonWrapper: { flex: 1 }, spacer: { width: 8 }, iconColor: null };
 let obj3 = { display: "flex", flexDirection: "row", padding: 12, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.iconColor = { color: nativeDefault.colors.WHITE };

@@ -1,13 +1,13 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12424
+// Function ID: 12425
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 1074, 21, 4757, 576, 9409, 8460, 1397, 12340, 5341, 12349, 1978, 12343, 4753, 1115, 12313, 5831, 2]
+// Dependencies: [19, 17, 1074, 21, 4827, 576, 9480, 8531, 1397, 12416, 5425, 12425, 1978, 12419, 4823, 1115, 12389, 5915, 2]
 // Exports: default
 
-// Module 12348 (RecommendationsBannerCard)
+// Module 12424 (RecommendationsBannerCard)
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8460 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8531 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const EMPTY_STRING_SNOWFLAKE_ID = fn(1074).EMPTY_STRING_SNOWFLAKE_ID;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, width: "100%", overflow: "hidden" }, banner: { width: "100%", height: 106, overflow: "hidden" }, appDetailsContainer: null, appDetails: null, appIconContainer: null, notifsContainer: null, badge: null, promotedLabelWrapper: null };
 const obj3 = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_APP_LAUNCHER_CARD_DEFAULT, width: "100%", overflow: "hidden" };
 obj2.appDetailsContainer = { padding: nativeDefault.space.PX_16, flexDirection: "row", alignItems: "center", justifyContent: "space-between" };
@@ -40,10 +40,10 @@ export default function RecommendationsBannerCard(application) {
   }
   const tmp = closure_8();
   if (!showsPromoted) {
-    showsPromoted = application(9409).isPromotedApplication(application);
-    const obj = application(9409);
+    showsPromoted = application(9480).isPromotedApplication(application);
+    const obj = application(9480);
   }
-  const shelfBadgeTypeIfActive = application(9409).getShelfBadgeTypeIfActive(application);
+  const shelfBadgeTypeIfActive = application(9480).getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
   if (bot != null) {
@@ -61,11 +61,11 @@ export default function RecommendationsBannerCard(application) {
     }
     maybeFetchUserProfileDefault(id);
   }, items);
-  const obj2 = application(9409);
+  const obj2 = application(9480);
   const applicationIconSource = AvatarUtilsDefault.getApplicationIconSource({ id: application.id, icon: application.icon, bot: application.bot, botIconFirst: true });
   if (isLandscape) {
     const obj5 = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    let tmp12Result2 = closure_6(tmp4(12340).BaseAppRow, obj5);
+    let tmp12Result2 = closure_6(tmp4(12416).BaseAppRow, obj5);
   } else {
     const items1 = [tmp.container, , ];
     let num = 8;
@@ -85,8 +85,8 @@ export default function RecommendationsBannerCard(application) {
     obj7.onPress = onPress;
     const obj9 = { style: tmp.banner, children: null };
     const obj10 = { applicationBot: application.bot, applicationEmbedded: null, applicationId: null, applicationIcon: null, overrideImageUrl: null };
-    const tmp10Result = tmp10(12349);
-    obj10.applicationEmbedded = tmp4(9409).isEmbeddedApp(application);
+    const tmp10Result = tmp10(12425);
+    obj10.applicationEmbedded = tmp4(9480).isEmbeddedApp(application);
     ({ id: obj8.applicationId, icon } = application);
     obj10.applicationIcon = icon;
     obj10.overrideImageUrl = application.overrideImageUrl;
@@ -94,13 +94,13 @@ export default function RecommendationsBannerCard(application) {
     if (showsPromoted) {
       const obj11 = { style: tmp.notifsContainer, children: null };
       const obj12 = { labelType: shelfBadgeTypeIfActive, replacementStyles: tmp.badge };
-      const items3 = [tmp14(tmp10(12343), obj12), ];
+      const items3 = [tmp14(tmp10(12419), obj12), ];
       if (showsPromoted) {
         const obj13 = { style: tmp.promotedLabelWrapper, children: null };
         const obj14 = { variant: "text-xxs/medium", color: "mobile-text-heading-primary", children: null };
         const intl = tmp4(1115).intl;
         obj14.children = intl.string(tmp4(1115).t["/eVltv"]);
-        obj13.children = tmp14(tmp4(4753).Text, obj14);
+        obj13.children = tmp14(tmp4(4823).Text, obj14);
         showsPromoted = tmp14(tmp13, obj13);
       }
       items3[1] = showsPromoted;
@@ -116,22 +116,22 @@ export default function RecommendationsBannerCard(application) {
     let tmp14Result = null != applicationIconSource;
     if (tmp14Result) {
       const obj16 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp14Result = tmp14(tmp10(12313), obj16);
+      tmp14Result = tmp14(tmp10(12389), obj16);
     }
     const items5 = [tmp14Result, , ];
     const obj17 = { style: tmp.appDetails, children: null };
     const obj18 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-    const items6 = [closure_6(tmp4(4753).Text, obj18), ];
+    const items6 = [closure_6(tmp4(4823).Text, obj18), ];
     const obj19 = { variant: "text-sm/normal", color: "text-subtle", lineClamp: 1, children: application.description };
-    items6[1] = closure_6(tmp4(4753).Text, obj19);
+    items6[1] = closure_6(tmp4(4823).Text, obj19);
     obj17.children = items6;
     items5[1] = closure_7(View, obj17);
-    items5[2] = closure_6(tmp4(5831).TableRowArrow, {});
+    items5[2] = closure_6(tmp4(5915).TableRowArrow, {});
     obj15.children = items5;
     items4[1] = closure_7(View, obj15);
     obj7.children = items4;
-    tmp12Result2 = tmp12(tmp4(5341).PressableOpacity, obj7);
-    const tmp4Result = tmp4(9409);
+    tmp12Result2 = tmp12(tmp4(5425).PressableOpacity, obj7);
+    const tmp4Result = tmp4(9480);
   }
   return tmp12Result2;
 };

@@ -1,11 +1,11 @@
-// Module ID: 17620
-// Function ID: 17621
+// Module ID: 17689
+// Function ID: 17690
 // Name: ActivityAccessibilityLayer
-// Dependencies: [32, 19, 17, 12530, 21, 4757, 5181, 1115, 5169, 5172, 2]
+// Dependencies: [32, 19, 17, 12606, 21, 4827, 5265, 1115, 5253, 5256, 2]
 // Exports: default
 
-// Module 17620 (ActivityAccessibilityLayer)
-import setAccessibilityFocus from "setAccessibilityFocus" /* 5181 */;
+// Module 17689 (ActivityAccessibilityLayer)
+import setAccessibilityFocus from "setAccessibilityFocus" /* 5265 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -74,10 +74,10 @@ function FocusedActivityAccessibilityLayer(activityName) {
 }
 get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, StyleSheet: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const IS_IOS = fn(12530).IS_IOS;
+const IS_IOS = fn(12606).IS_IOS;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_10 = createStyles.createStyles({ fill: { flex: 1 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/voice_panel/native/card/ActivityAccessibilityLayer.tsx");

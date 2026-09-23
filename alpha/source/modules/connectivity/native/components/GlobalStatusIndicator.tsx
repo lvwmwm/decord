@@ -1,18 +1,18 @@
-// Module ID: 9778
-// Function ID: 9779
+// Module ID: 9851
+// Function ID: 9852
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 4448, 4773, 9779, 2042, 4780, 21, 9775, 504, 9684, 4964, 1115, 9780, 4493, 9773, 2]
+// Dependencies: [19, 17, 4514, 4843, 9852, 2042, 4850, 21, 9848, 504, 9757, 5034, 1115, 9853, 4559, 9846, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 9778 (GlobalStatusIndicator)
-import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4964 */;
+// Module 9851 (GlobalStatusIndicator)
+import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5034 */;
 import noop from "module_19" /* 19 */;
-import ActionSheetStore from "ActionSheetStore" /* 4448 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4773 */;
-import NativeMenuStore from "NativeMenuStore" /* 9779 */;
+import ActionSheetStore from "ActionSheetStore" /* 4514 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4843 */;
+import NativeMenuStore from "NativeMenuStore" /* 9852 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);

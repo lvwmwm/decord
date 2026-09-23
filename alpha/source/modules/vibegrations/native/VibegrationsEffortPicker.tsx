@@ -1,17 +1,17 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 17008
+// Function ID: 17009
 // Name: VibegrationsEffortPicker
-// Dependencies: [109, 32, 19, 17, 21, 16952, 1115, 3678, 5185, 576, 5904, 5907, 16953, 4753, 5906, 5824, 7447, 7444, 7396, 2]
+// Dependencies: [109, 32, 19, 17, 21, 17004, 1115, 3712, 5269, 576, 5988, 5991, 17005, 4823, 5990, 5908, 7531, 7528, 7480, 2]
 // Exports: VibegrationsEffortPickerSheet, describeVibegrationsEffort
 
-// Module 16956 (VibegrationsEffortPicker)
+// Module 17008 (VibegrationsEffortPicker)
 import util from "util" /* 1115 */;
-import _modDef3678 from "module_3678" /* 3678 */;
-import TableRadioRow from "TableRadioRow" /* 5907 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7444 */;
-import VibegrationsEffortPresets from "VibegrationsEffortPresets" /* 16952 */;
-import VibegrationsModelLabels from "VibegrationsModelLabels" /* 16953 */;
+import _modDef3712 from "module_3712" /* 3712 */;
+import TableRadioRow from "TableRadioRow" /* 5991 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7480 */;
+import ActionSheet from "ActionSheet" /* 7528 */;
+import VibegrationsEffortPresets from "VibegrationsEffortPresets" /* 17004 */;
+import VibegrationsModelLabels from "VibegrationsModelLabels" /* 17005 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -57,10 +57,10 @@ class VibegrationsEffortPicker {
       onChange(arg0) {
             const tmp3 = VibegrationsEffortPresets.VIBEGRATIONS_EFFORT_PRESETS[Number(undefined, arg0)];
             if (null != tmp3) {
-              const result = tmp(16952).vibegrationsPresetTier(tmp3);
+              const result = tmp(17004).vibegrationsPresetTier(tmp3);
               const tmp15 = _objectWithoutProperties(result, closure_3);
               const tmp16 = closure_1_3;
-              const tmpResult = tmp(16952);
+              const tmpResult = tmp(17004);
               let tmp7 = tmp15;
               if (true === result.fast) {
                 model = result.model;
@@ -78,8 +78,8 @@ class VibegrationsEffortPicker {
                   tmp7 = obj;
                 }
               }
-              tmp16(tmp(16952).vibegrationsSettingsForTier(tmp7));
-              const tmpResult2 = tmp(16952);
+              tmp16(tmp(17004).vibegrationsSettingsForTier(tmp7));
+              const tmpResult2 = tmp(17004);
             }
           },
       title: null,
@@ -292,7 +292,7 @@ export const VibegrationsEffortPickerSheet = function VibegrationsEffortPickerSh
   const obj = { header: null, children: null };
   const obj2 = { title: null };
   const intl = util.intl;
-  obj2.title = intl.string(_modDef3678.GDs9Vq);
+  obj2.title = intl.string(_modDef3712.GDs9Vq);
   obj.header = React6(BottomSheetTitleHeader.BottomSheetTitleHeader, obj2);
   obj.children = React6(View, { children: React6(VibegrationsEffortPicker, { settings: tmp[0], choices: choices.choices, disabled: false, onChange: callback, hideTitle: true }) });
   return React6(ActionSheet.ActionSheet, obj);

@@ -1,37 +1,9 @@
 // Module ID: 13116
 // Function ID: 13117
-// Dependencies: [13082, 13054, 13081]
-// Exports: initAndBind, setCurrentClient
+// Dependencies: [1121]
 
 // Module 13116
-import _mod13054 from "module_13054" /* 13054 */;
-import _mod13081 from "module_13081" /* 13081 */;
-import _mod13082 from "module_13082" /* 13082 */;
+import registerAsset from "module_1121" /* 1121 */;
 
-require = arg1;
-const dependencyMap = arg6;
 
-export const initAndBind = function initAndBind(arg0, debug) {
-  if (true === debug.debug) {
-    const obj = _mod13054;
-    if (_mod13082.DEBUG_BUILD) {
-      const logger = obj.logger;
-      logger.enable();
-    } else {
-      obj.consoleSandbox(() => {
-        console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.");
-      });
-    }
-  }
-  const currentScope = _mod13081.getCurrentScope();
-  currentScope.update(debug.initialScope);
-  const obj4 = new arg0(debug);
-  const currentScope1 = _mod13081.getCurrentScope();
-  currentScope1.setClient(obj4);
-  obj4.init();
-  return obj4;
-};
-export const setCurrentClient = function setCurrentClient(arg0) {
-  const currentScope = _mod13081.getCurrentScope();
-  currentScope.setClient(arg0);
-};
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "9a553b5676f66b916dad899877998f41", name: "ic_home", type: "png" });

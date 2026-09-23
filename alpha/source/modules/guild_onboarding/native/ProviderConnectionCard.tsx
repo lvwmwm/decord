@@ -1,15 +1,15 @@
-// Module ID: 7425
-// Function ID: 7426
+// Module ID: 7509
+// Function ID: 7510
 // Name: ProviderConnectionCard
-// Dependencies: [5, 19, 1074, 21, 4691, 5502, 1115, 7426, 7427, 1241, 4937, 1397, 4608, 1177, 4699, 7424, 2]
+// Dependencies: [5, 19, 1074, 21, 4761, 5586, 1115, 7510, 7511, 1241, 5007, 1397, 4678, 1177, 4769, 7508, 2]
 // Exports: default
 
-// Module 7425 (ProviderConnectionCard)
+// Module 7509 (ProviderConnectionCard)
 import native from "native" /* 1177 */;
 import AvatarUtils from "AvatarUtils" /* 1397 */;
-import shared from "shared" /* 4608 */;
-import LinkIcon from "LinkIcon" /* 4699 */;
-import PlatformsDefault from "Platforms" /* 5502 */;
+import shared from "shared" /* 4678 */;
+import LinkIcon from "LinkIcon" /* 4769 */;
+import PlatformsDefault from "Platforms" /* 5586 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -76,7 +76,7 @@ export default function ProviderConnectionCard(connection) {
             } else {
               const obj4 = {};
               const obj5 = v3(1241);
-              const merged = Object.assign(provider_id(4937).collectGuildAnalyticsMetadata(guildId));
+              const merged = Object.assign(provider_id(5007).collectGuildAnalyticsMetadata(guildId));
               obj4.connection_type = "provider";
               provider_id = connection.provider_id;
               if (provider_id == null) {

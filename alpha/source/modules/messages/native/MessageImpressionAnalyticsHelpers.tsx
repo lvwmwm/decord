@@ -1,16 +1,16 @@
-// Module ID: 11571
-// Function ID: 11572
+// Module ID: 11647
+// Function ID: 11648
 // Name: MessageImpressionAnalyticsHelpers
-// Dependencies: [19, 4741, 4781, 1074, 7928, 7981, 11572, 7511, 4745, 7980, 11573, 11574, 4742, 2]
+// Dependencies: [19, 4811, 4851, 1074, 8010, 8063, 11648, 7595, 4815, 8062, 11649, 11650, 4812, 2]
 // Exports: handleAnnouncementMessageViewTracking, handleOfficialMessageViewTracking, handleRichPresenceInviteEmbedViewTracking, handleVoiceInviteEmbedViewTracking, useShouldTrackAnnouncementMessageViews, useShouldTrackOfficialMessageViews, useShouldTrackRichPresenceInviteEmbedViews, useShouldTrackVoiceInviteEmbedViews
 
-// Module 11571 (MessageImpressionAnalyticsHelpers)
-import CodedLink from "CodedLink" /* 4745 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 7980 */;
-import MessageViewTrackingManager from "MessageViewTrackingManager" /* 11572 */;
+// Module 11647 (MessageImpressionAnalyticsHelpers)
+import CodedLink from "CodedLink" /* 4815 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8062 */;
+import MessageViewTrackingManager from "MessageViewTrackingManager" /* 11648 */;
 import noop from "module_19" /* 19 */;
-import InviteStore from "InviteStore" /* 4741 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4781 */;
+import InviteStore from "InviteStore" /* 4811 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4851 */;
 
 const require = globalThis.__r;
 
@@ -23,8 +23,8 @@ function getVoiceInviteEmbedRenderInfo(state) {
           if (obj5.getInviteType(state) !== InviteTypes.GUILD) {
             return null;
           } else {
-            const guildInviteExtendedType = tmp7(7980).getGuildInviteExtendedType(state);
-            if (guildInviteExtendedType !== tmp7(7980).GuildInviteExtendedType.VOICE_CHANNEL) {
+            const guildInviteExtendedType = tmp7(8062).getGuildInviteExtendedType(state);
+            if (guildInviteExtendedType !== tmp7(8062).GuildInviteExtendedType.VOICE_CHANNEL) {
               return null;
             } else {
               const guild = state.guild;
@@ -35,18 +35,18 @@ function getVoiceInviteEmbedRenderInfo(state) {
               let tmp4 = null;
               if (null != id) {
                 const obj = { guildId: id, location: "mobile_invite_embed_impression" };
-                let enabled = tmp7(11573).getVoiceChannelListInviteExperiment(obj).enabled;
+                let enabled = tmp7(11649).getVoiceChannelListInviteExperiment(obj).enabled;
                 if (enabled) {
-                  enabled = tmp7(11574).canShowVoiceChannelListInviteEmbed(state);
-                  const tmp7Result4 = tmp7(11574);
+                  enabled = tmp7(11650).canShowVoiceChannelListInviteEmbed(state);
+                  const tmp7Result4 = tmp7(11650);
                 }
                 const obj2 = { treatmentRendered: enabled };
                 tmp4 = obj2;
-                const tmp7Result3 = tmp7(11573);
+                const tmp7Result3 = tmp7(11649);
               }
               return tmp4;
             }
-            const tmp7Result = tmp7(7980);
+            const tmp7Result = tmp7(8062);
           }
           obj5 = InviteTypeUtils;
         }
@@ -57,8 +57,8 @@ function getVoiceInviteEmbedRenderInfo(state) {
 }
 const Constants = fn(1074);
 ({ ChannelTypes: metroRequire, GuildFeatures: closure_7, InviteStates: closure_8, MessageFlags: closure_9 } = Constants);
-const LinkType = fn(7928).LinkType;
-const InviteTypes = fn(7981).InviteTypes;
+const LinkType = fn(8010).LinkType;
+const InviteTypes = fn(8063).InviteTypes;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/MessageImpressionAnalyticsHelpers.tsx");
 
@@ -303,14 +303,14 @@ export const handleVoiceInviteEmbedViewTracking = function handleVoiceInviteEmbe
                 }
                 let obj = { type: null, messageId: null, channelId: null, guildId: null, inviteCode: null, inviteGuildId: null, inviteChannelId: null, inviteInstanceId: null, treatmentRendered: null, hasActiveStream: null };
                 let tmp20 = someResult;
-                obj.type = tmp7(11572).MessageViewTrackingType.VOICE_INVITE_EMBED;
+                obj.type = tmp7(11648).MessageViewTrackingType.VOICE_INVITE_EMBED;
                 obj.messageId = message.id;
                 obj.channelId = id.id;
                 obj.guildId = guildId;
                 obj.inviteCode = tmp6.code;
                 obj.inviteGuildId = tmp13;
                 obj.inviteChannelId = tmp10;
-                let tmp7Result = tmp7(4742);
+                let tmp7Result = tmp7(4812);
                 let inviteInstanceId = tmp7Result.getInviteInstanceId(tmp6.code, message.id);
                 if (inviteInstanceId == null) {
                   inviteInstanceId = null;

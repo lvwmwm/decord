@@ -1,18 +1,18 @@
-// Module ID: 8856
-// Function ID: 8857
+// Module ID: 8927
+// Function ID: 8928
 // Name: AgeVerificationGetStartedModal
-// Dependencies: [19, 21, 4757, 576, 4960, 5843, 8857, 8862, 8863, 8845, 1255, 8688, 7247, 1115, 2]
+// Dependencies: [19, 21, 4827, 576, 5030, 5927, 8928, 8933, 8934, 8916, 1255, 8759, 7331, 1115, 2]
 // Exports: default
 
-// Module 8856 (AgeVerificationGetStartedModal)
+// Module 8927 (AgeVerificationGetStartedModal)
 import nativeDefault from "native" /* 576 */;
-import NavigatorHeader from "NavigatorHeader" /* 5843 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8688 */;
+import NavigatorHeader from "NavigatorHeader" /* 5927 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8759 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { headerStyle: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, shadowColor: "transparent" } };
 let closure_5 = createStyles.createStyles(obj2);
 let obj4 = { INTRO: "INTRO", RETRY: "RETRY", EXPRESSIVE_INTRO: "EXPRESSIVE_INTRO", GOOGLE_WALLET_VERIFICATION: "GOOGLE_WALLET_VERIFICATION" };

@@ -1,28 +1,28 @@
-// Module ID: 8122
-// Function ID: 8123
+// Module ID: 8204
+// Function ID: 8205
 // Name: ChannelActions
-// Dependencies: [19, 17, 5726, 2046, 2042, 4776, 8123, 1074, 8124, 21, 4757, 8127, 576, 8129, 5321, 8131, 8132, 8150, 504, 7513, 8151, 8152, 7516, 5276, 13565, 4964, 1115, 13571, 7298, 12558, 8146, 1364, 4623, 12557, 12616, 11727, 1110, 4615, 11911, 5293, 11235, 13572, 13569, 4967, 13573, 13575, 2]
+// Dependencies: [19, 17, 5810, 2046, 2042, 4846, 8205, 1074, 8206, 21, 4827, 8209, 576, 8211, 5405, 8213, 8214, 8232, 504, 7597, 8233, 8234, 7600, 5360, 13647, 5034, 1115, 13653, 7382, 12634, 8228, 1364, 4693, 12633, 12692, 11803, 1110, 4685, 11987, 5377, 11311, 13654, 13651, 5037, 13655, 13657, 2]
 // Exports: default
 
-// Module 8122 (ChannelActions)
+// Module 8204 (ChannelActions)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 4964 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 5321 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 8127 */;
-import PhoneHangUpIcon from "PhoneHangUpIcon" /* 8129 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 8146 */;
-import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 11235 */;
-import useSearchContext from "useSearchContext" /* 12557 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12558 */;
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12616 */;
-import IconActionButtonDefault from "IconActionButton" /* 13569 */;
-import ConversationCoachmark from "ConversationCoachmark" /* 13572 */;
-import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 13575 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5034 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 5405 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 8209 */;
+import PhoneHangUpIcon from "PhoneHangUpIcon" /* 8211 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 8228 */;
+import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 11311 */;
+import useSearchContext from "useSearchContext" /* 12633 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 12634 */;
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12692 */;
+import IconActionButtonDefault from "IconActionButton" /* 13651 */;
+import ConversationCoachmark from "ConversationCoachmark" /* 13654 */;
+import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 13657 */;
 import noop from "module_19" /* 19 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 5726 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 5810 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import VoiceStateStore from "VoiceStateStore" /* 4776 */;
+import VoiceStateStore from "VoiceStateStore" /* 4846 */;
 
 require = fn;
 function JoinCallIcon() {
@@ -148,11 +148,11 @@ function ChannelActionButtons(channel) {
             onPress() {
                       closure_8(channel.id, true, "initial");
                       if (obj2.isIOS()) {
-                        const chatInputRef = tmp2(4623).getChatInputRef(obj.id, screenIndex);
+                        const chatInputRef = tmp2(4693).getChatInputRef(obj.id, screenIndex);
                         if (chatInputRef != null) {
                           chatInputRef.blur();
                         }
-                        const tmp2Result = tmp2(4623);
+                        const tmp2Result = tmp2(4693);
                       }
                       obj2 = PlatformUtils;
                       const guildId = obj.getGuildId();
@@ -166,7 +166,7 @@ function ChannelActionButtons(channel) {
                         const obj4 = { source: "channel-header-search", channelId: obj.id, screenIndex };
                         ComponentDispatch.dispatch(constants3.SHOW_CHANNEL_DETAILS, obj4);
                       } else {
-                        const rootNavigationRef = tmp2(4615).getRootNavigationRef();
+                        const rootNavigationRef = tmp2(4685).getRootNavigationRef();
                         if (null != rootNavigationRef) {
                           if (rootNavigationRef.isReady()) {
                             const obj5 = { channelId: obj.id, search: true, source: "channel-header-search" };
@@ -330,7 +330,7 @@ function WrappedChannelNavButtons(channelId) {
   ({ screenIndex, showCreateThread } = channelId);
   const items = [ChannelStore];
   const stateFromStores = channelId(504).useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  channelId(4967);
+  channelId(5037);
   let tmp4 = null;
   if (null != stateFromStores) {
     tmp4 = null;
@@ -346,13 +346,13 @@ function WrappedChannelNavButtons(channelId) {
 }
 const View = fn(17).View;
 const THREADED_CHANNEL_TYPES = fn(2046).THREADED_CHANNEL_TYPES;
-let closure_8 = fn(8123).setIsChannelDetailsSearchActive;
+let closure_8 = fn(8205).setIsChannelDetailsSearchActive;
 const Constants = fn(1074);
 ({ ChannelTypes: closure_9, ChannelTypesSets: c10, ComponentActions: closure_11 } = Constants);
-let closure_12 = fn(8124).SearchEntrypointAnalyticsLocations;
+let closure_12 = fn(8206).SearchEntrypointAnalyticsLocations;
 const jsx = fn(21).jsx;
 const createElement = fn(19).createElement;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_15 = createStyles.createStyles({ actionWrapper: { flexShrink: 0, flexDirection: "row", alignItems: "center" } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/channel/ChannelActions.tsx");
@@ -389,7 +389,7 @@ export default function ChannelActions(channelId) {
   const obj3 = { style: containerStyle, children: null };
   if (obj2.useHasForumSearchQuery(channelId)) {
     const obj4 = { channelId };
-    let tmp4Result = tmp4(tmp(13573).ForumChannelCloseSearchButton, obj4);
+    let tmp4Result = tmp4(tmp(13655).ForumChannelCloseSearchButton, obj4);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {

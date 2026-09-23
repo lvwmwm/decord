@@ -1,13 +1,13 @@
-// Module ID: 10192
-// Function ID: 10193
+// Module ID: 10272
+// Function ID: 10273
 // Name: HandRequestSpeakListIcon
-// Dependencies: [19, 21, 576, 4457, 10193, 2]
+// Dependencies: [19, 21, 576, 4523, 10273, 2]
 // Exports: HandRequestSpeakListIcon
 
-// Module 10192 (HandRequestSpeakListIcon)
+// Module 10272 (HandRequestSpeakListIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod10193 from "module_10193" /* 10193 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod10273 from "module_10273" /* 10273 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const HandRequestSpeakListIcon = function HandRequestSpeakListIcon(color)
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10193, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10273, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,17 +1,17 @@
-// Module ID: 18264
-// Function ID: 18265
+// Module ID: 18333
+// Function ID: 18334
 // Name: NotificationSettingChannelOverrides
-// Dependencies: [32, 19, 17, 2046, 7358, 4406, 1372, 1074, 21, 4757, 576, 504, 7228, 7359, 4910, 5736, 1115, 4468, 7296, 5824, 5830, 5241, 11135, 7297, 1177, 8505, 7302, 2]
+// Dependencies: [32, 19, 17, 2046, 7442, 4472, 1372, 1074, 21, 4827, 576, 504, 7312, 7443, 4980, 5820, 1115, 4534, 7380, 5908, 5914, 5325, 11211, 7381, 1177, 8576, 7386, 2]
 
-// Module 18264 (NotificationSettingChannelOverrides)
+// Module 18333 (NotificationSettingChannelOverrides)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4468 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7359 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4534 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7443 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7358 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7442 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ const Constants = fn(1074);
 ({ ChannelTypes: c10, NotificationSettingsSections: closure_11 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { container: { marginHorizontal: nativeDefault.space.PX_8, flex: 1 }, searchContainer: null };
 let obj3 = { marginHorizontal: nativeDefault.space.PX_8, flex: 1 };
 obj.searchContainer = { paddingVertical: nativeDefault.space.PX_16 };

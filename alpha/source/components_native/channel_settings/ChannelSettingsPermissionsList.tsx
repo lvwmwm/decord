@@ -1,12 +1,12 @@
-// Module ID: 17308
-// Function ID: 17309
+// Module ID: 17377
+// Function ID: 17378
 // Name: ChannelSettingsPermissionsList
-// Dependencies: [32, 19, 17, 2042, 2105, 2099, 1372, 1074, 21, 4757, 576, 504, 5736, 1484, 1612, 7296, 4770, 4401, 5824, 10534, 1978, 11213, 7297, 1115, 7302, 1177, 8505, 2]
+// Dependencies: [32, 19, 17, 2042, 2105, 2099, 1372, 1074, 21, 4827, 576, 504, 5820, 1484, 1612, 7380, 4840, 4467, 5908, 10613, 1978, 11289, 7381, 1115, 7386, 1177, 8576, 2]
 
-// Module 17308 (ChannelSettingsPermissionsList)
+// Module 17377 (ChannelSettingsPermissionsList)
 import nativeDefault from "native" /* 576 */;
 import Server from "Server" /* 1978 */;
-import fuzzysearchDefault from "fuzzysearch" /* 5736 */;
+import fuzzysearchDefault from "fuzzysearch" /* 5820 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
@@ -21,7 +21,7 @@ const Constants = fn(1074);
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
 let closure_15 = { rows: [], sections: [] };
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_12, flex: 1 }, containerSearchBar: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, paddingHorizontal: nativeDefault.space.PX_12, flex: 1 };
 obj.containerSearchBar = { paddingVertical: nativeDefault.space.PX_8 };

@@ -1,15 +1,15 @@
-// Module ID: 16133
-// Function ID: 16134
+// Module ID: 16186
+// Function ID: 16187
 // Name: UserSettingsDesignSystemAIShimmer
-// Dependencies: [32, 19, 17, 21, 4757, 5187, 5185, 5826, 4753, 14413, 2]
+// Dependencies: [32, 19, 17, 21, 4827, 5271, 5269, 5910, 4823, 14493, 2]
 // Exports: default
 
-// Module 16133 (UserSettingsDesignSystemAIShimmer)
-import Text_Text from "Text/Text" /* 4753 */;
-import Stack_Stack from "Stack/Stack" /* 5185 */;
-import components_Button_Button from "components/Button/Button" /* 5187 */;
-import Card from "Card" /* 5826 */;
-import AIShimmer from "AIShimmer" /* 14413 */;
+// Module 16186 (UserSettingsDesignSystemAIShimmer)
+import Text_Text from "Text/Text" /* 4823 */;
+import Stack_Stack from "Stack/Stack" /* 5269 */;
+import components_Button_Button from "components/Button/Button" /* 5271 */;
+import Card from "Card" /* 5910 */;
+import AIShimmer from "AIShimmer" /* 14493 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -42,7 +42,7 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_8 = createStyles.createStyles({ container: { padding: 16 }, buttonRow: { flexDirection: "row", flexWrap: "wrap", gap: 8 }, stage: { minHeight: 28, justifyContent: "center" } });
 const text = ["Reading the channel", "Finding the highlights", "Writing it up"];
 const options = ["text-xs/normal", "text-sm/normal", "text-md/normal", "text-lg/semibold"];

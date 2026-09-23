@@ -1,15 +1,15 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 15668
+// Function ID: 15669
 // Name: RoleColorsSetting
-// Dependencies: [19, 4749, 8237, 504, 14723, 1115, 11729, 2]
+// Dependencies: [19, 4819, 8319, 504, 14803, 1115, 11805, 2]
 // Exports: onRoleColorSettingValueChange, useRoleColorSettingOptions, useRoleColorSettingValue
 
-// Module 15614 (RoleColorsSetting)
+// Module 15668 (RoleColorsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14723 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 14803 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4749 */;
+import AccessibilityStore from "AccessibilityStore" /* 4819 */;
 
 require = fn;
 function useRoleColorSettingValue() {
@@ -36,13 +36,13 @@ function useRoleColorSettingOptions() {
     return items;
   }, []);
 }
-const SettingBuilders = fn(11729);
+const SettingBuilders = fn(11805);
 const radio = SettingBuilders.createRadio({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.uSOPWm);
   },
-  parent: fn(8237).MobileUserSettings.ACCESSIBILITY,
+  parent: fn(8319).MobileUserSettings.ACCESSIBILITY,
   useValue: useRoleColorSettingValue,
   onValueChange: onRoleColorSettingValueChange,
   useOptions: useRoleColorSettingOptions

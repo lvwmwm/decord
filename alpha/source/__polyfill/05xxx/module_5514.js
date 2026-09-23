@@ -1,9 +1,0 @@
-// Module ID: 5514
-// Function ID: 5515
-// Dependencies: [1121]
-
-// Module 5514
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "f2fc96c4a753dd0c5dd02646aa2a518c", name: "img_account_sync_battlenet_white", type: "svg" });

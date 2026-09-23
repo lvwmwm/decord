@@ -1,16 +1,16 @@
-// Module ID: 11153
-// Function ID: 11154
+// Module ID: 11229
+// Function ID: 11230
 // Name: ActivityStatusText
-// Dependencies: [19, 21, 4757, 4753, 2]
+// Dependencies: [19, 21, 4827, 4823, 2]
 // Exports: default
 
-// Module 11153 (ActivityStatusText)
-import Text_Text from "Text/Text" /* 4753 */;
+// Module 11229 (ActivityStatusText)
+import Text_Text from "Text/Text" /* 4823 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_3 = createStyles.createStyles({ text: { flexShrink: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activity_status/native/ActivityStatusText.tsx");

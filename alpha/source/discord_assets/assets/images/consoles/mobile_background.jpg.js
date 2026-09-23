@@ -1,8 +1,8 @@
-// Module ID: 14162
-// Function ID: 14163
+// Module ID: 14244
+// Function ID: 14245
 // Dependencies: [2]
 
-// Module 14162
+// Module 14244
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/images/consoles/mobile_background.jpg.js");

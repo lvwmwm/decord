@@ -1,29 +1,29 @@
-// Module ID: 16111
-// Function ID: 16112
+// Module ID: 16164
+// Function ID: 16165
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 4757, 576, 5826, 5185, 6850, 5310, 14456, 7397, 7396, 7332, 4753, 5300, 6851, 7297, 8183, 7625, 6857, 5187, 4724, 7211, 2]
+// Dependencies: [32, 19, 17, 21, 4827, 576, 5910, 5269, 6934, 5394, 14536, 7481, 7480, 7416, 4823, 5384, 6935, 7381, 8265, 7708, 6941, 5271, 4794, 7295, 2]
 // Exports: default
 
-// Module 16111 (UserSettingsDesignSystemTextInput)
+// Module 16164 (UserSettingsDesignSystemTextInput)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import Stack_Stack from "Stack/Stack" /* 5185 */;
-import components_Button_Button from "components/Button/Button" /* 5187 */;
-import TextIcon from "TextIcon" /* 5300 */;
-import AtIcon from "AtIcon" /* 5310 */;
-import Card from "Card" /* 5826 */;
-import TextInput from "TextInput" /* 6850 */;
-import Input from "Input" /* 6851 */;
-import TextField from "TextField" /* 6857 */;
-import SplitTextInput from "SplitTextInput" /* 7211 */;
-import SearchField from "SearchField" /* 7297 */;
-import TextArea from "TextArea" /* 7332 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import SettingsIcon from "SettingsIcon" /* 7625 */;
-import IconButton from "IconButton" /* 8183 */;
-import GhostInput from "GhostInput" /* 14456 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import Stack_Stack from "Stack/Stack" /* 5269 */;
+import components_Button_Button from "components/Button/Button" /* 5271 */;
+import TextIcon from "TextIcon" /* 5384 */;
+import AtIcon from "AtIcon" /* 5394 */;
+import Card from "Card" /* 5910 */;
+import TextInput from "TextInput" /* 6934 */;
+import Input from "Input" /* 6935 */;
+import TextField from "TextField" /* 6941 */;
+import SplitTextInput from "SplitTextInput" /* 7295 */;
+import SearchField from "SearchField" /* 7381 */;
+import TextArea from "TextArea" /* 7416 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7480 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7481 */;
+import SettingsIcon from "SettingsIcon" /* 7708 */;
+import IconButton from "IconButton" /* 8265 */;
+import GhostInput from "GhostInput" /* 14536 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -137,7 +137,7 @@ function CustomAttachmentExample() {
 const ScrollView = fn(17).ScrollView;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { padding: 16 }, sample: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.xl } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);

@@ -1,19 +1,19 @@
-// Module ID: 14900
-// Function ID: 14901
+// Module ID: 14980
+// Function ID: 14981
 // Name: UserProfileEditFormControls
-// Dependencies: [32, 19, 17, 21, 4757, 576, 4753, 8945, 1177, 1115, 6851, 5341, 5831, 1364, 7448, 2]
+// Dependencies: [32, 19, 17, 21, 4827, 576, 4823, 9016, 1177, 1115, 6935, 5425, 5915, 1364, 7532, 2]
 // Exports: UserProfileEditFormButton, UserProfileEditFormLabelBadges, UserProfileEditFormSwitch
 
-// Module 14900 (UserProfileEditFormControls)
+// Module 14980 (UserProfileEditFormControls)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import Pressables from "Pressables" /* 5341 */;
-import Input from "Input" /* 6851 */;
-import FormSwitch from "FormSwitch" /* 7448 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8945 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import Pressables from "Pressables" /* 5425 */;
+import Input from "Input" /* 6935 */;
+import FormSwitch from "FormSwitch" /* 7532 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 9016 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -35,7 +35,7 @@ get_ActivityIndicator = fn(17);
 ({ Pressable: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { button: { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: nativeDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: nativeDefault.radii.md }, buttonDisabled: { opacity: 0.5 }, buttonTextContainer: { flexGrow: 1, flexShrink: 1, flexDirection: "column" }, formControlText: { marginRight: "auto", flexShrink: 1 }, labelTrailing: null, newBadge: null };
 let obj3 = { flexGrow: 1, flexShrink: 1, flexDirection: "row", alignItems: "center", gap: 12, padding: 12, borderColor: nativeDefault.colors.BORDER_STRONG, borderWidth: 1, borderRadius: nativeDefault.radii.md };
 obj2.labelTrailing = { flexDirection: "row", alignItems: "center", marginLeft: nativeDefault.space.PX_4, gap: nativeDefault.space.PX_4 };
@@ -129,7 +129,7 @@ export const UserProfileEditFormButton = function UserProfileEditFormButton(load
   items1[2] = trailing;
   let tmp2Result2 = !flag2;
   if (!flag2) {
-    tmp2Result2 = tmp2(tmp3(5831).TableRowArrow, {});
+    tmp2Result2 = tmp2(tmp3(5915).TableRowArrow, {});
   }
   items1[3] = tmp2Result2;
   obj2.children = items1;
@@ -153,7 +153,7 @@ export const UserProfileEditFormSwitch = function UserProfileEditFormSwitch(arg0
     closure_2(value);
   }, items);
   if (isAndroidResult) {
-    let PressableHighlight = tmp2(5341).PressableHighlight;
+    let PressableHighlight = tmp2(5425).PressableHighlight;
   } else {
     PressableHighlight = React4;
   }

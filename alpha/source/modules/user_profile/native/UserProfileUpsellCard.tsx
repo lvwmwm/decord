@@ -1,13 +1,13 @@
-// Module ID: 14904
-// Function ID: 14905
+// Module ID: 14984
+// Function ID: 14985
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7455, 7677, 21, 4757, 576, 1177, 8945, 4753, 5199, 1094, 2]
+// Dependencies: [19, 17, 7539, 7760, 21, 4827, 576, 1177, 9016, 4823, 5283, 1094, 2]
 // Exports: default
 
-// Module 14904 (UserProfileUpsellCard)
+// Module 14984 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 576 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
-import LinearGradientDefault from "LinearGradient" /* 5199 */;
+import LinearGradientDefault from "LinearGradient" /* 5283 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,14 +15,14 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: c3, ScrollView: closure_4 } = get_ActivityIndicator);
-const Gradients = fn(7677).Gradients;
+const Gradients = fn(7760).Gradients;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { upsellButton: { marginTop: 8, flexShrink: 0, borderRadius: nativeDefault.radii.round, gap: 4 }, titleContainer: { flexDirection: "row", alignItems: "center", gap: 4, marginBottom: 4 }, linearGradient: { width: "100%", height: "100%", position: "absolute", overflow: "hidden" }, outer: null, scroll: null, inner: null };
 let obj3 = { marginTop: 8, flexShrink: 0, borderRadius: nativeDefault.radii.round, gap: 4 };
-obj2.outer = { marginHorizontal: fn(7455).PROFILE_SIDE_PADDING - 1 };
-let obj4 = { marginHorizontal: fn(7455).PROFILE_SIDE_PADDING - 1 };
+obj2.outer = { marginHorizontal: fn(7539).PROFILE_SIDE_PADDING - 1 };
+let obj4 = { marginHorizontal: fn(7539).PROFILE_SIDE_PADDING - 1 };
 obj2.scroll = { borderRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 obj2.inner = { paddingVertical: 12, paddingHorizontal: 14 };
 let closure_8 = createStyles.createStyles(obj2);
@@ -46,9 +46,9 @@ export default function UserProfileUpsellCard(headerText) {
   if (null != headerText) {
     const obj3 = { style: tmp.titleContainer, children: null };
     const obj4 = { color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, size: "xs" };
-    const items3 = [tmp2(tmp3(8945).NitroWheelIcon, obj4), ];
+    const items3 = [tmp2(tmp3(9016).NitroWheelIcon, obj4), ];
     const obj5 = { variant: "heading-sm/bold", children: headerText };
-    items3[1] = tmp2(tmp3(4753).Text, obj5);
+    items3[1] = tmp2(tmp3(4823).Text, obj5);
     obj3.children = items3;
     tmp6Result = tmp6(closure_3, obj3);
   }

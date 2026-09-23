@@ -1,12 +1,12 @@
-// Module ID: 13421
-// Function ID: 13422
+// Module ID: 13503
+// Function ID: 13504
 // Name: useShopThisLookMarketing
-// Dependencies: [32, 8488, 7633, 2028, 2]
+// Dependencies: [32, 8559, 7716, 2028, 2]
 // Exports: useShopThisLookMarketing
 
-// Module 13421 (useShopThisLookMarketing)
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7633 */;
-import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 8488 */;
+// Module 13503 (useShopThisLookMarketing)
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7716 */;
+import useMaybeFetchEquippedCollectibleProducts from "useMaybeFetchEquippedCollectibleProducts" /* 8559 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 const dismissible_content = tmp(2028);

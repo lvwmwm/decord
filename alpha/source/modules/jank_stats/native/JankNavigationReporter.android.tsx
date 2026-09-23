@@ -1,20 +1,20 @@
-// Module ID: 17827
-// Function ID: 17828
+// Module ID: 17896
+// Function ID: 17897
 // Name: JankNavigationReporter
-// Dependencies: [4615, 16359, 16355, 16360, 4617, 2]
+// Dependencies: [4685, 16412, 16408, 16413, 4687, 2]
 
-// Module 17827 (JankNavigationReporter)
-import RootNavigationRef from "RootNavigationRef" /* 4615 */;
-import getJankScreenName from "getJankScreenName" /* 16355 */;
-import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16359 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 16360 */;
+// Module 17896 (JankNavigationReporter)
+import RootNavigationRef from "RootNavigationRef" /* 4685 */;
+import getJankScreenName from "getJankScreenName" /* 16408 */;
+import NativeJankStatsModuleDefault from "NativeJankStatsModule" /* 16412 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 16413 */;
 import size from "module_2" /* 2 */;
 
 const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "flex" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "r" });
   }
 }
 const prototype = JankNavigationReporter.prototype;
@@ -87,8 +87,8 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
     }
     let isChatLockedOpen = name === getJankScreenName.CHAT_PANEL_ROUTE;
     if (isChatLockedOpen) {
-      isChatLockedOpen = tmp4(4617).getChatLayout().isChatLockedOpen;
-      const tmp4Result = tmp4(4617);
+      isChatLockedOpen = tmp4(4687).getChatLayout().isChatLockedOpen;
+      const tmp4Result = tmp4(4687);
     }
     tmp2 = isChatLockedOpen;
     tmp4 = require;
@@ -97,4 +97,4 @@ prototype["shouldSettleInJS"] = function shouldSettleInJS(focusedRoute) {
 };
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.android.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "flex" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "r" });

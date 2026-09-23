@@ -1,10 +1,10 @@
-// Module ID: 18393
-// Function ID: 18394
+// Module ID: 18462
+// Function ID: 18463
 // Name: AppCrashedFatalReport
 // Dependencies: [17, 2]
 // Exports: init
 
-// Module 18393 (AppCrashedFatalReport)
+// Module 18462 (AppCrashedFatalReport)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 11187
-// Function ID: 11188
+// Module ID: 11263
+// Function ID: 11264
 // Name: UserCircleIcon
-// Dependencies: [19, 21, 576, 4457, 11188, 2]
+// Dependencies: [19, 21, 576, 4523, 11264, 2]
 // Exports: UserCircleIcon
 
-// Module 11187 (UserCircleIcon)
+// Module 11263 (UserCircleIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod11188 from "module_11188" /* 11188 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod11264 from "module_11264" /* 11264 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const UserCircleIcon = function UserCircleIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11188, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11264, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

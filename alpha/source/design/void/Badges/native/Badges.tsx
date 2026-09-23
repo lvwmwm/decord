@@ -1,18 +1,18 @@
-// Module ID: 14468
-// Function ID: 14469
+// Module ID: 14548
+// Function ID: 14549
 // Name: Badges/Badges
-// Dependencies: [19, 17, 21, 4757, 576, 4753, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 4823, 2]
 // Exports: TextBadge
 
-// Module 14468 (Badges/Badges)
+// Module 14548 (Badges/Badges)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4753 */;
+import Text_Text from "Text/Text" /* 4823 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-let createStyles = fn(4757);
+let createStyles = fn(4827);
 let obj2 = { base: { borderRadius: nativeDefault.radii.sm, paddingHorizontal: 4, paddingVertical: 2 }, danger: null, info: null, brand: null, expressive: null };
 const obj3 = { borderRadius: nativeDefault.radii.sm, paddingHorizontal: 4, paddingVertical: 2 };
 obj2.danger = { backgroundColor: nativeDefault.colors.BADGE_NOTIFICATION_BACKGROUND };
@@ -23,7 +23,7 @@ obj2.brand = { backgroundColor: nativeDefault.unsafe_rawColors.BRAND_260 };
 const obj6 = { backgroundColor: nativeDefault.unsafe_rawColors.BRAND_260 };
 obj2.expressive = { backgroundColor: nativeDefault.colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
 let closure_4 = createStyles.createStyles(obj2);
-createStyles = fn(4757);
+createStyles = fn(4827);
 const obj9 = { text: { textAlign: "center", textTransform: "uppercase" }, dangerText: null, infoText: null, brandText: null, expressiveText: null };
 const obj7 = { backgroundColor: nativeDefault.colors.CONTROL_EXPRESSIVE_BACKGROUND_DEFAULT };
 obj9.dangerText = { color: nativeDefault.colors.WHITE };

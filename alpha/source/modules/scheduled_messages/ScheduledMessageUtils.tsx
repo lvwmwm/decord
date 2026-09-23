@@ -1,22 +1,22 @@
-// Module ID: 8091
-// Function ID: 8092
+// Module ID: 8173
+// Function ID: 8174
 // Name: ScheduledMessageUtils
-// Dependencies: [32, 4396, 1372, 1074, 1374, 8092, 3, 38, 1434, 7923, 1385, 1241, 504, 4348, 1115, 11, 1969, 4979, 8093, 1370, 2]
+// Dependencies: [32, 4462, 1372, 1074, 1374, 8174, 3, 38, 1434, 8005, 1385, 1241, 504, 4414, 1115, 11, 1969, 5049, 8175, 1370, 2]
 // Exports: canSendScheduledMessagesInChannel, canUseScheduledMessages, convertServerScheduledMessageCreateArgs, convertServerScheduledMessageSend, getDefaultScheduledTime, getEarliestScheduledTime, getLatestScheduledTime, getMessageForState, getPresetScheduledTimes, getScheduledMessagesLimit, getScheduledTimeError, parseContentAndFlagsForSilentMessage, trackScheduledMessageTimePickerOpened, unparseContentAndFlagsForSilentMessage, useCanSendScheduledMessagesInChannel, useCanUseScheduledMessages, useScheduledMessagesLimit
 
-// Module 8091 (ScheduledMessageUtils)
+// Module 8173 (ScheduledMessageUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4979 */;
-import parseContentForSuppressNotifications from "parseContentForSuppressNotifications" /* 7923 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8093 */;
+import _modDef4414 from "module_4414" /* 4414 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5049 */;
+import parseContentForSuppressNotifications from "parseContentForSuppressNotifications" /* 8005 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8175 */;
 import _slicedToArray from "module_32" /* 32 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ require = fn;
 const Constants = fn(1074);
 ({ AnalyticEvents: metroRequire, MessageFlags: closure_7, Permissions: closure_8 } = Constants);
 const PremiumTypes = fn(1374).PremiumTypes;
-const ScheduledMessagesConstants = fn(8092);
+const ScheduledMessagesConstants = fn(8174);
 ({ MAX_SCHEDULE_TIME_AFTER_CREATION_SECONDS: c10, MAX_SCHEDULE_TIME_INTO_FUTURE_SECONDS: closure_11, MAX_SCHEDULED_MESSAGES_PER_USER: closure_12, MIN_SCHEDULE_TIME_INTO_FUTURE_SECONDS: map1 } = ScheduledMessagesConstants);
 class ScheduledMessagesConfig {
   constructor(arg0, arg1) {
@@ -152,15 +152,15 @@ export const canSendScheduledMessagesInChannel = function canSendScheduledMessag
   return enabled;
 };
 export const getPresetScheduledTimes = function getPresetScheduledTimes() {
-  const addResult = _modDef4348().add(map1, "seconds");
-  const obj = _modDef4348();
-  const obj2 = _modDef4348();
-  const result = _modDef4348().startOf("day").set("hours", 9);
-  const startOfResult = _modDef4348().startOf("day");
-  const obj5 = _modDef4348();
-  const result1 = _modDef4348().startOf("day").set("hours", 13);
+  const addResult = _modDef4414().add(map1, "seconds");
+  const obj = _modDef4414();
+  const obj2 = _modDef4414();
+  const result = _modDef4414().startOf("day").set("hours", 9);
+  const startOfResult = _modDef4414().startOf("day");
+  const obj5 = _modDef4414();
+  const result1 = _modDef4414().startOf("day").set("hours", 13);
   const obj3 = { label: null, value: null };
-  const startOfResult1 = _modDef4348().startOf("day");
+  const startOfResult1 = _modDef4414().startOf("day");
   const intl = util.intl;
   const string = intl.string;
   const t = util.t;
@@ -195,16 +195,16 @@ export const getPresetScheduledTimes = function getPresetScheduledTimes() {
   const intl3 = tmp6(1115).intl;
   obj6.label = intl3.string(tmp6(1115).t["+P5MmK"]);
   isAfterResult1 = result1.isAfter(addResult);
-  const obj11 = _modDef4348();
-  const startOfResult2 = _modDef4348().startOf("isoWeek");
-  obj6.value = _modDef4348().startOf("isoWeek").add(1, "week").set("hours", 9);
+  const obj11 = _modDef4414();
+  const startOfResult2 = _modDef4414().startOf("isoWeek");
+  obj6.value = _modDef4414().startOf("isoWeek").add(1, "week").set("hours", 9);
   items[2] = obj6;
   return items;
 };
 export const getDefaultScheduledTime = function getDefaultScheduledTime() {
-  const obj = _modDef4348();
-  const addResult = _modDef4348().startOf("hour").add(1, "hour");
-  const startOfResult = _modDef4348().startOf("hour");
+  const obj = _modDef4414();
+  const addResult = _modDef4414().startOf("hour").add(1, "hour");
+  const startOfResult = _modDef4414().startOf("hour");
   let addResult1 = addResult;
   if (addResult.isBefore(obj4.add(map1, "seconds"))) {
     addResult1 = addResult.add(1, "hour");
@@ -216,38 +216,38 @@ export const getScheduledTimeError = function getScheduledTimeError(isBefore, ar
     const intl2 = util.intl;
     let stringResult = intl2.string(util.t["w/fgvh"]);
   } else {
-    const addResult = tmp(4348)().add(closure_1_11, "seconds");
+    const addResult = tmp(4414)().add(closure_1_11, "seconds");
     let minResult = addResult;
     if (null != arg1) {
-      const tmpResult = tmp(4348);
+      const tmpResult = tmp(4414);
       const tmpResult3 = tmp(11);
       const tmpResultResult = tmpResult(tmp(11).extractTimestamp(arg1));
-      minResult = tmp(4348).min(addResult, tmpResultResult.add(closure_1_10, "seconds"));
-      const tmpResult4 = tmp(4348);
+      minResult = tmp(4414).min(addResult, tmpResultResult.add(closure_1_10, "seconds"));
+      const tmpResult4 = tmp(4414);
     }
     stringResult = null;
     if (isBefore.isAfter(minResult)) {
       const intl = util.intl;
       stringResult = intl.string(util.t.Nt0tz7);
     }
-    const obj2 = tmp(4348)();
+    const obj2 = tmp(4414)();
   }
   return stringResult;
 };
 export const getEarliestScheduledTime = function getEarliestScheduledTime() {
-  return _modDef4348().add(map1, "seconds");
+  return _modDef4414().add(map1, "seconds");
 };
 export const getLatestScheduledTime = function getLatestScheduledTime(arg0) {
-  const addResult = _modDef4348().add(closure_1_11, "seconds");
+  const addResult = _modDef4414().add(closure_1_11, "seconds");
   if (null == arg0) {
     return addResult;
   } else {
-    const tmpResult = tmp(4348);
+    const tmpResult = tmp(4414);
     const tmpResult3 = tmp(11);
     const tmpResultResult = tmpResult(tmp(11).extractTimestamp(arg0));
-    return tmp(4348).min(addResult, tmpResultResult.add(closure_1_10, "seconds"));
+    return tmp(4414).min(addResult, tmpResultResult.add(closure_1_10, "seconds"));
   }
-  const obj = _modDef4348();
+  const obj = _modDef4414();
 };
 export const getScheduledMessagesLimit = function getScheduledMessagesLimit(ScheduledMessagesCreateRoadblock) {
   const obj2 = { location: ScheduledMessagesCreateRoadblock };
@@ -296,27 +296,27 @@ export const getMessageForState = function getMessageForState(state) {
     const intl6 = tmp(1115).intl;
     obj.stateMessage = intl6.string(tmp(1115).t.Fn6Odn);
     return obj;
-  } else if (tmp(8093).ScheduledMessageSendState.ERROR_CHANNEL_NOT_FOUND === state) {
+  } else if (tmp(8175).ScheduledMessageSendState.ERROR_CHANNEL_NOT_FOUND === state) {
     const obj2 = { isError: true, stateMessage: null };
     const intl5 = tmp(1115).intl;
     obj2.stateMessage = intl5.string(tmp(1115).t.v5O2dK);
     return obj2;
-  } else if (tmp(8093).ScheduledMessageSendState.ERROR_USER_NOT_FOUND === state) {
+  } else if (tmp(8175).ScheduledMessageSendState.ERROR_USER_NOT_FOUND === state) {
     const obj3 = { isError: true, stateMessage: null };
     const intl4 = tmp(1115).intl;
     obj3.stateMessage = intl4.string(tmp(1115).t.j8uIfG);
     return obj3;
-  } else if (tmp(8093).ScheduledMessageSendState.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES === state) {
+  } else if (tmp(8175).ScheduledMessageSendState.ERROR_USER_CANNOT_USE_SCHEDULED_MESSAGES === state) {
     const obj4 = { isError: true, stateMessage: null };
     const intl3 = tmp(1115).intl;
     obj4.stateMessage = intl3.string(tmp(1115).t["w6zHX/"]);
     return obj4;
-  } else if (tmp(8093).ScheduledMessageSendState.ERROR_SEND_FAILED === state) {
+  } else if (tmp(8175).ScheduledMessageSendState.ERROR_SEND_FAILED === state) {
     const obj5 = { isError: true, stateMessage: null };
     const intl2 = tmp(1115).intl;
     obj5.stateMessage = intl2.string(tmp(1115).t.pflV7z);
     return obj5;
-  } else if (tmp(8093).ScheduledMessageSendState.ERROR_SCHEDULED_MESSAGES_DISABLED === state) {
+  } else if (tmp(8175).ScheduledMessageSendState.ERROR_SCHEDULED_MESSAGES_DISABLED === state) {
     const obj6 = { isError: true, stateMessage: null };
     const intl = tmp(1115).intl;
     obj6.stateMessage = intl.string(tmp(1115).t.j8uIfG);

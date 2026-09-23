@@ -1,8 +1,8 @@
-// Module ID: 6689
-// Function ID: 6690
+// Module ID: 6773
+// Function ID: 6774
 // Dependencies: [2]
 
-// Module 6689
+// Module 6773
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerTagAbstractUI-2x.png.js");

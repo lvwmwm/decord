@@ -1,14 +1,14 @@
-// Module ID: 15796
-// Function ID: 15797
+// Module ID: 15850
+// Function ID: 15851
 // Name: ServerTrendingNotificationSetting
-// Dependencies: [8237, 11729, 1115, 2020, 15797, 2]
+// Dependencies: [8319, 11805, 1115, 2020, 15851, 2]
 
-// Module 15796 (ServerTrendingNotificationSetting)
+// Module 15850 (ServerTrendingNotificationSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import SettingsConstants from "SettingsConstants" /* 8237 */;
-import ServerTrendingNotificationUtils from "ServerTrendingNotificationUtils" /* 15797 */;
-import SettingBuilders from "SettingBuilders" /* 11729 */;
+import SettingsConstants from "SettingsConstants" /* 8319 */;
+import ServerTrendingNotificationUtils from "ServerTrendingNotificationUtils" /* 15851 */;
+import SettingBuilders from "SettingBuilders" /* 11805 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

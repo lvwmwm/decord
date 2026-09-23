@@ -1,14 +1,15 @@
-// Module ID: 13667
-// Function ID: 13668
+// Module ID: 13752
+// Function ID: 13753
 // Name: PremiumBillingInfo
-// Dependencies: [32, 19, 17, 1074, 21, 4757, 576, 4428, 4753, 1115, 4415, 13664, 7409, 7429, 7649, 13668, 2]
+// Dependencies: [32, 19, 17, 1074, 21, 4827, 576, 4494, 4823, 1115, 4481, 13749, 7493, 7513, 13753, 7732, 2]
 // Exports: default
 
-// Module 13667 (PremiumBillingInfo)
+// Module 13752 (PremiumBillingInfo)
 import nativeDefault from "native" /* 576 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7409 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 13664 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7493 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7513 */;
+import PremiumSubscriptionInvoice from "PremiumSubscriptionInvoice" /* 13749 */;
+import BillingInformation from "BillingInformation" /* 13753 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -45,7 +46,7 @@ const Constants = fn(1074);
 ({ SubscriptionStatusTypes: hasOwnProperty, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { title: { paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, externalSubtext: { marginTop: 8, paddingHorizontal: USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING }, billingContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, padding: 16, marginTop: 8 }, billingRenewalInfo: { marginTop: 4 }, billingManageGoogle: { marginTop: 8 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -55,42 +56,38 @@ export default function PremiumBillingInfo(subscription) {
   subscription = subscription.subscription;
   const tmp = closure_8();
   const obj = PremiumSubscriptionInvoice;
-  const first = _slicedToArray(obj.useFetchSubscriptionInvoicePreview({ subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: useAnalyticsLocationsDefault(), analyticsLocation: AnalyticsLocationDefault.PREMIUM_BILLING_INFO }), 1)[0];
-  PremiumSubscriptionInvoice;
-  if (null == first) {
+  const obj2 = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: useAnalyticsLocationsDefault(), analyticsLocation: AnalyticsLocationDefault.PREMIUM_BILLING_INFO };
+  const first = _slicedToArray(PremiumSubscriptionInvoice.useGetSubscriptionInvoice({ subscriptionId: subscription.id, preventFetch: subscription.status !== constants.PAST_DUE }), 1)[0];
+  BillingInformation;
+  if (null == _slicedToArray(obj.useFetchSubscriptionInvoicePreview(obj2), 1)[0]) {
     return null;
   } else {
-    const externalManagementMessage = tmp2(7649).getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
-    const obj3 = { style: subscription.style, children: null };
-    const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
+    const externalManagementMessage = tmp2(7732).getExternalManagementMessage(subscription, { shouldAllowExternalManagement: true });
+    const obj5 = { style: subscription.style, children: null };
+    const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "eyebrow", color: "text-default", children: null };
     const intl = tmp2(1115).intl;
-    obj4.children = intl.string(tmp2(1115).t.Sb6wI1);
-    const items = [timestampProducer(tmp2(4753).Text, obj4), , ];
-    const obj5 = { style: tmp.billingContainer, children: null };
-    const obj6 = { variant: "text-md/semibold", children: null };
+    obj6.children = intl.string(tmp2(1115).t.Sb6wI1);
+    const items = [timestampProducer(tmp2(4823).Text, obj6), , ];
+    const obj7 = { style: tmp.billingContainer, children: null };
+    const obj8 = { variant: "text-md/semibold", children: null };
     const intl2 = tmp2(1115).intl;
-    obj6.children = intl2.string(tmp2(1115).t.KXQjfc);
-    const items1 = [timestampProducer(tmp2(4753).Text, obj6), , ];
-    const obj7 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: null };
-    const tmp10 = View;
-    const tmp11 = timestampProducer;
-    const tmp2Result = tmp2(7649);
-    const tmp9 = React5;
-    obj7.children = tmp2(13668).getBillingInformationStringNative(subscription, first, tmp6);
-    items1[1] = timestampProducer(tmp2(4753).Text, obj7);
-    const obj8 = { style: tmp.billingManageGoogle, subscription };
-    items1[2] = timestampProducer(GoogleManagementLink, obj8);
-    obj5.children = items1;
-    items[1] = React5(View, obj5);
+    obj8.children = intl2.string(tmp2(1115).t.KXQjfc);
+    const items1 = [timestampProducer(tmp2(4823).Text, obj8), , ];
+    const obj9 = { style: tmp.billingRenewalInfo, variant: "text-sm/medium", children: tmp6 };
+    items1[1] = timestampProducer(tmp2(4823).Text, obj9);
+    const obj10 = { style: tmp.billingManageGoogle, subscription };
+    items1[2] = timestampProducer(GoogleManagementLink, obj10);
+    obj7.children = items1;
+    items[1] = React5(View, obj7);
     let tmp11Result = null;
     if (null != externalManagementMessage) {
-      const obj9 = { style: tmp.externalSubtext, variant: "text-sm/medium", children: externalManagementMessage };
-      tmp11Result = tmp11(tmp2(4753).Text, obj9);
+      const obj11 = { style: tmp.externalSubtext, variant: "text-sm/medium", children: externalManagementMessage };
+      tmp11Result = timestampProducer(tmp2(4823).Text, obj11);
     }
     items[2] = tmp11Result;
-    obj3.children = items;
-    return tmp9(tmp10, obj3);
+    obj5.children = items;
+    return React5(View, obj5);
   }
-  const obj2 = { subscriptionId: subscription.id, renewal: true, applyEntitlements: true, analyticsLocations: useAnalyticsLocationsDefault(), analyticsLocation: AnalyticsLocationDefault.PREMIUM_BILLING_INFO };
+  const obj4 = { subscriptionId: subscription.id, preventFetch: subscription.status !== constants.PAST_DUE };
 };
 export { GoogleManagementLink };

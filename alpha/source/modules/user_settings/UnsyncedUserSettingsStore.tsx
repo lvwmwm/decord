@@ -197,16 +197,6 @@ Object.defineProperty(prototype, "disableVoiceChannelChangeAlert", {
   },
   set: undefined
 });
-Object.defineProperty(prototype, "disableHardwareMuteSilenceAlert", {
-  get: function disableHardwareMuteSilenceAlert() {
-    let flag = closure_12.disableHardwareMuteSilenceAlert;
-    if (flag == null) {
-      flag = false;
-    }
-    return flag;
-  },
-  set: undefined
-});
 Object.defineProperty(prototype, "disableEmbeddedActivityPopOutAlert", {
   get: function disableEmbeddedActivityPopOutAlert() {
     let flag = closure_12.disableEmbeddedActivityPopOutAlert;
@@ -362,7 +352,7 @@ const items = [
     value = Storage.get("UserSettingsStore");
     const Storage2 = Storage3.Storage;
     Storage2.remove("UserSettingsStore");
-    return _modDef12.pick(value, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHardwareMuteSilenceAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations");
+    return _modDef12.pick(value, "dataSavingMode", "videoUploadQuality", "lowQualityImageMode", "useSystemTheme", "expressionPickerWidth", "disableVoiceChannelChangeAlert", "disableHideSelfStreamAndVideoConfirmationAlert", "pushUpsellDismissed", "disableEmbeddedActivityPopOutAlert", "disableActivityHardwareAccelerationPrompt", "disableInviteWithTextChannelActivityLaunch", "disableActivityHostLeftNitroUpsell", "disableCallUserConfirmationPrompt", "disableApplicationSubscriptionCancellationSurvey", "enableAndroidChatListAnimations");
   },
   (arg0) => {
     delete tmp[tmp2];

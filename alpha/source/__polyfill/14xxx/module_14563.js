@@ -1,10 +1,6 @@
 // Module ID: 14563
 // Function ID: 14564
-// Dependencies: []
-// Exports: shouldPolyfill
+// Dependencies: [14564]
 
 // Module 14563
-
-export const shouldPolyfill = function shouldPolyfill() {
-  return !("supportedValuesOf" in Intl);
-};
+Object.defineProperty(Intl, "Locale", { value: fn(14564).Locale, writable: true, enumerable: false, configurable: true });

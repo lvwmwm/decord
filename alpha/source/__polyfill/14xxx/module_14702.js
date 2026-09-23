@@ -1,47 +1,46 @@
 // Module ID: 14702
 // Function ID: 14703
-// Dependencies: []
-// Exports: default
+// Dependencies: [14689, 14667]
 
 // Module 14702
+import _mod14689 from "module_14689" /* 14689 */;
 
-export default (createSocket) => {
-  ({ host, port } = createSocket);
-  if (null != createSocket.createSocket) {
-    let tmp7 = typeof host === "string";
-    if (typeof host === "string") {
-      tmp7 = host;
-    }
-    if (tmp7) {
-      tmp7 = "" !== host;
-    }
-    if (tmp7) {
-      let tmp13 = typeof port === "number";
-      if (typeof port === "number") {
-        tmp13 = port >= 1;
-      }
-      if (tmp13) {
-        tmp13 = port <= 65535;
-      }
-      if (tmp13) {
-        if (typeof tmp !== "function") {
-          const _Error4 = Error;
-          const error = new Error("invalid onCommand handler");
-          throw error;
-        }
+const re2 = /#|\.prototype\./;
+function isForced(arg0, arg1) {
+  if (typeof fn === "function") {
+    const _String = String;
+    const str3 = String(arg0).replace(re2, ".");
+    const tmp5 = tmp[str3.toLowerCase(str3)];
+    let tmp7 = tmp5 === P;
+    if (!tmp7) {
+      if (tmp5 === N) {
+        tmp7 = tmp9;
       } else {
-        const _Error3 = Error;
-        const error1 = new Error("invalid port");
-        throw error1;
+        let tmp11Result = dependencyMap;
+        if (_mod14689(arg1)) {
+          tmp11Result = tmp11(14667);
+          let tmp11ResultResult = tmp11Result(arg1);
+        } else {
+          tmp11ResultResult = arg1;
+        }
+        tmp11 = require;
       }
-    } else {
-      const _Error2 = Error;
-      const error2 = new Error("invalid host");
-      throw error2;
     }
+    return tmp7;
   } else {
-    const _Error = Error;
-    const error3 = new Error("invalid createSocket function");
-    throw error3;
+    throw new TypeError("Trying to call a non-function");
   }
+}
+const normalize = (arg0) => {
+  const str = String(arg0);
+  return String(arg0).replace(re2, ".").toLowerCase();
 };
+isForced.normalize = normalize;
+const data = {};
+isForced.data = data;
+isForced.NATIVE = "N";
+const N = "N";
+isForced.POLYFILL = "P";
+const P = "P";
+
+export default isForced;

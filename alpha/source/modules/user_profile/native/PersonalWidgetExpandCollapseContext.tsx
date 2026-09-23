@@ -1,10 +1,10 @@
-// Module ID: 8942
-// Function ID: 8943
+// Module ID: 9013
+// Function ID: 9014
 // Name: PersonalWidgetExpandCollapseContext
 // Dependencies: [32, 19, 21, 2]
 // Exports: PersonalWidgetExpandCollapseProvider, usePersonalWidgetExpandCollapse, usePersonalWidgetFieldClamp
 
-// Module 8942 (PersonalWidgetExpandCollapseContext)
+// Module 9013 (PersonalWidgetExpandCollapseContext)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

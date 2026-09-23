@@ -1,16 +1,16 @@
-// Module ID: 5824
-// Function ID: 5825
+// Module ID: 5908
+// Function ID: 5909
 // Name: TableRow
-// Dependencies: [19, 17, 21, 4757, 576, 5825, 4458, 5826, 5821, 5830, 5831, 5833, 5194, 1364, 5834, 4753, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 5909, 4524, 5910, 5905, 5914, 5915, 5917, 5278, 1364, 5918, 4823, 2]
 
-// Module 5824 (TableRow)
+// Module 5908 (TableRow)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useToken from "useToken" /* 4458 */;
-import useFontScale from "useFontScale" /* 5194 */;
-import TableRowGroupContext from "TableRowGroupContext" /* 5825 */;
-import Card from "Card" /* 5826 */;
-import TableRowTrailingText from "TableRowTrailingText" /* 5833 */;
+import useToken from "useToken" /* 4524 */;
+import useFontScale from "useFontScale" /* 5278 */;
+import TableRowGroupContext from "TableRowGroupContext" /* 5909 */;
+import Card from "Card" /* 5910 */;
+import TableRowTrailingText from "TableRowTrailingText" /* 5917 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -225,7 +225,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
 const React7 = { padding: 0 };
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_10 = createStyles.createStyles((arg0, arg1, arg2) => {
   const obj = { padding: nativeDefault.modules.mobile.TABLE_ROW_PADDING, minHeight: nativeDefault.modules.mobile.TABLE_ROW_HEIGHT, flexDirection: "row", alignItems: "center", opacity: null, borderRadius: null };
   let num = 1;
@@ -282,9 +282,9 @@ let closure_10 = createStyles.createStyles((arg0, arg1, arg2) => {
   obj2.dragHandle = { marginEnd: 8 };
   return obj2;
 });
-TableRow.Icon = fn(5830).TableRowIcon;
-TableRow.Arrow = fn(5831).TableRowArrow;
-TableRow.TrailingText = fn(5833).TableRowTrailingText;
+TableRow.Icon = fn(5914).TableRowIcon;
+TableRow.Arrow = fn(5915).TableRowArrow;
+TableRow.TrailingText = fn(5917).TableRowTrailingText;
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRow.native.tsx");
 

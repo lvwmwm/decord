@@ -1,17 +1,17 @@
-// Module ID: 15342
-// Function ID: 15343
+// Module ID: 15394
+// Function ID: 15395
 // Name: QuestHomeEmptyState
-// Dependencies: [19, 17, 1074, 21, 4757, 576, 1115, 4458, 4617, 7370, 1364, 4753, 15343, 5199, 2]
+// Dependencies: [19, 17, 1074, 21, 4827, 576, 1115, 4524, 4687, 7454, 1364, 4823, 15395, 5283, 2]
 // Exports: default
 
-// Module 15342 (QuestHomeEmptyState)
+// Module 15394 (QuestHomeEmptyState)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import useToken from "useToken" /* 4458 */;
-import useChatLayoutDefault from "useChatLayout" /* 4617 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7370 */;
+import useToken from "useToken" /* 4524 */;
+import useChatLayoutDefault from "useChatLayout" /* 4687 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7454 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ get_ActivityIndicator = fn(17);
 const VerticalGradient = fn(1074).VerticalGradient;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { flex: 1 }, emptyStateContainer: { justifyContent: "center", alignItems: "center", flex: 1 }, emptyStateContentContainer: { top: -55, paddingHorizontal: nativeDefault.space.PX_32 }, emptyStateContentTitle: { textAlign: "center" }, emptyStateContentDescription: { textAlign: "center", marginTop: 4 }, emptyImage: { flex: 1, width: "100%", aspectRatio: 1.6375545851528384, minWidth: "100%", position: "absolute", bottom: 0, zIndex: -1 }, gradient: { height: 22, width: "100%", position: "absolute", bottom: 0 }, actionWrapper: { marginTop: 16, alignSelf: "center" } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -57,13 +57,13 @@ export default function QuestHomeEmptyState(subtitle) {
   let tmp11Result = null;
   if (!useChatLayoutDefault().isChatLockedOpen) {
     const obj10 = { children: null };
-    const obj11 = { style: tmp5.emptyImage, source: tmp7(15343), resizeMode: "cover" };
+    const obj11 = { style: tmp5.emptyImage, source: tmp7(15395), resizeMode: "cover" };
     const items2 = [tmp9(React4, obj11), ];
     const obj22 = { style: tmp5.gradient, end: null, start: null, colors: null };
     ({ END: obj12.end, START: obj12.start } = VerticalGradient);
     const items3 = ["rgba(0, 0, 0, 0)", token];
     obj22.colors = items3;
-    items2[1] = tmp9(tmp7(5199), obj22);
+    items2[1] = tmp9(tmp7(5283), obj22);
     obj10.children = items2;
     tmp11Result = tmp11(React6, obj10);
   }

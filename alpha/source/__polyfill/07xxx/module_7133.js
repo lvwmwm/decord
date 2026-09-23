@@ -1,34 +1,49 @@
 // Module ID: 7133
 // Function ID: 7134
-// Dependencies: [7131]
+// Dependencies: [19, 1637]
+// Exports: useReactiveSharedValue
 
 // Module 7133
-import _mod7131 from "module_7131" /* 7131 */;
+import noop from "module_19" /* 19 */;
 
+const require = globalThis.__r;
 
-export default function _superPropBase(arg0, key10009) {
-  hasOwnProperty = {}.hasOwnProperty;
-  const call = hasOwnProperty.call;
-  let tmp = arg0;
-  if (!(typeof call === "unknown" ? hasOwnProperty(key10009) : call(arg0, key10009))) {
-    let tmp4 = _mod7131(arg0);
-    tmp = tmp4;
-    if (null !== tmp4) {
-      while (true) {
-        let hasOwnProperty2 = {}.hasOwnProperty;
-        let call2 = hasOwnProperty2.call;
-        tmp = tmp4;
-        if (typeof call2 === "unknown" ? hasOwnProperty2(key10009) : call2(tmp4, key10009)) {
-          break;
-        } else {
-          tmp4 = _mod7131(tmp4);
-          tmp = tmp4;
-          if (null === tmp4) {
-            break;
-          }
-        }
+({ useEffect: c2, useRef: c3 } = noop);
+
+export const useReactiveSharedValue = (current) => {
+  const tmp = closure_3(null);
+  const tmp2 = closure_3(null);
+  _require = tmp2;
+  let tmp3 = current;
+  if (current) {
+    tmp3 = typeof current === "object";
+  }
+  if (tmp3) {
+    tmp3 = "value" in current;
+  }
+  if (!tmp3) {
+    if (null === tmp2.current) {
+      tmp.current = current;
+      if (typeof current === "object") {
+        const obj2 = {};
+        const merged = Object.assign(current);
+        let mutable = require("cancelAnimation").makeMutable(obj2);
+        let obj = require("cancelAnimation");
+      } else {
+        mutable = require("cancelAnimation").makeMutable(current);
+        const obj3 = require("cancelAnimation");
       }
+      tmp2.current = mutable;
+    } else if (tmp.current !== current) {
+      tmp2.current.value = current;
     }
   }
-  return tmp;
+  closure_2(() => () => {
+    if (ref.current) {
+      ref(dependencyMap[1]).cancelAnimation(tmp.current);
+      const obj = ref(dependencyMap[1]);
+    }
+  }, []);
+  current = tmp2.current;
+  return current;
 };

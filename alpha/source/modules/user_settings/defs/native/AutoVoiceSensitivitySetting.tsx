@@ -1,22 +1,22 @@
-// Module ID: 15530
-// Function ID: 15531
+// Module ID: 15584
+// Function ID: 15585
 // Name: AutoVoiceSensitivitySetting
-// Dependencies: [1992, 8237, 504, 9917, 11729, 1115, 2]
+// Dependencies: [1992, 8319, 504, 9990, 11805, 1115, 2]
 
-// Module 15530 (AutoVoiceSensitivitySetting)
+// Module 15584 (AutoVoiceSensitivitySetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9917 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9990 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 require = fn;
-const SettingBuilders = fn(11729);
+const SettingBuilders = fn(11805);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.Z4oaN0);
   },
-  parent: fn(8237).MobileUserSettings.VOICE,
+  parent: fn(8319).MobileUserSettings.VOICE,
   useValue: function useAutoVoiceSensitivitySettingValue() {
     const items = [MediaEngineStore];
     return initialize.useStateFromStores(items, () => modeOptions.getModeOptions().autoThreshold);

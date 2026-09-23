@@ -1,10 +1,10 @@
-// Module ID: 17078
-// Function ID: 17079
+// Module ID: 17136
+// Function ID: 17137
 // Name: VibegrationsDebugJson
 // Dependencies: [2]
 // Exports: extractLogJson
 
-// Module 17078 (VibegrationsDebugJson)
+// Module 17136 (VibegrationsDebugJson)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsDebugJson.tsx");

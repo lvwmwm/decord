@@ -1,8 +1,8 @@
-// Module ID: 4930
-// Function ID: 4931
+// Module ID: 5000
+// Function ID: 5001
 // Dependencies: [2]
 
-// Module 4930
+// Module 5000
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/guild-room/guild-room-bg-2.webp.js");

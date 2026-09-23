@@ -1,9 +1,9 @@
-// Module ID: 5366
-// Function ID: 5367
+// Module ID: 5450
+// Function ID: 5451
 // Name: NativeDeviceSettingsModule
 // Dependencies: [17, 2]
 
-// Module 5366 (NativeDeviceSettingsModule)
+// Module 5450 (NativeDeviceSettingsModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

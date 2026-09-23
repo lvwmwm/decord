@@ -1,13 +1,13 @@
-// Module ID: 15379
-// Function ID: 15380
+// Module ID: 15431
+// Function ID: 15432
 // Name: WreathIcon
-// Dependencies: [19, 21, 576, 4457, 15380, 2]
+// Dependencies: [19, 21, 576, 4523, 15432, 2]
 // Exports: default
 
-// Module 15379 (WreathIcon)
+// Module 15431 (WreathIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod15380 from "module_15380" /* 15380 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod15432 from "module_15432" /* 15432 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export default function WreathIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15380, color: INTERACTIVE_TEXT_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15432, color: INTERACTIVE_TEXT_DEFAULT, style: color.style });
 };

@@ -1,12 +1,12 @@
-// Module ID: 11795
-// Function ID: 11796
+// Module ID: 11871
+// Function ID: 11872
 // Name: useChannelLoading
-// Dependencies: [32, 19, 11796, 11522, 5205, 2]
+// Dependencies: [32, 19, 11872, 11598, 5289, 2]
 // Exports: default
 
-// Module 11795 (useChannelLoading)
-import hooks_useMountEffectDefault from "hooks/useMountEffect" /* 5205 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 11522 */;
+// Module 11871 (useChannelLoading)
+import hooks_useMountEffectDefault from "hooks/useMountEffect" /* 5289 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 11598 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

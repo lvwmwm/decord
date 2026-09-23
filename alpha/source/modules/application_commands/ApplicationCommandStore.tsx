@@ -1,14 +1,14 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8107
+// Function ID: 8108
 // Name: ApplicationCommandStore
-// Dependencies: [32, 7524, 2096, 7766, 504, 573, 2]
+// Dependencies: [32, 7608, 2096, 7849, 504, 573, 2]
 
-// Module 8025 (ApplicationCommandStore)
+// Module 8107 (ApplicationCommandStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7766 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 7849 */;
 import _slicedToArray from "module_32" /* 32 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7524 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7608 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 
 require = fn;

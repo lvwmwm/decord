@@ -1,8 +1,8 @@
-// Module ID: 6805
-// Function ID: 6806
+// Module ID: 6889
+// Function ID: 6890
 // Dependencies: [2]
 
-// Module 6805
+// Module 6889
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VoiceFiltersSpotIllustration-2x.png.js");

@@ -1,9 +1,9 @@
-// Module ID: 5237
-// Function ID: 5238
+// Module ID: 5321
+// Function ID: 5322
 // Name: MarkupHeadingRule
 // Dependencies: [1929, 2]
 
-// Module 5237 (MarkupHeadingRule)
+// Module 5321 (MarkupHeadingRule)
 import _mod1929 from "module_1929" /* 1929 */;
 
 const _modDef1929 = _mod1929;

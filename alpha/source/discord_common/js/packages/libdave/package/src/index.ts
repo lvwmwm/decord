@@ -1,13 +1,13 @@
-// Module ID: 9962
-// Function ID: 9963
+// Module ID: 10035
+// Function ID: 10036
 // Name: generateDisplayableCode
-// Dependencies: [2, 9963, 9964, 9965, 9974]
+// Dependencies: [2, 10036, 10037, 10038, 10047]
 
-// Module 9962 (generateDisplayableCode)
-import DisplayableCode from "DisplayableCode" /* 9963 */;
-import KeyFingerprint from "KeyFingerprint" /* 9964 */;
-import PairwiseFingerprint from "PairwiseFingerprint" /* 9965 */;
-import KeySerialization from "KeySerialization" /* 9974 */;
+// Module 10035 (generateDisplayableCode)
+import DisplayableCode from "DisplayableCode" /* 10036 */;
+import KeyFingerprint from "KeyFingerprint" /* 10037 */;
+import PairwiseFingerprint from "PairwiseFingerprint" /* 10038 */;
+import KeySerialization from "KeySerialization" /* 10047 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/libdave/package/src/index.ts");

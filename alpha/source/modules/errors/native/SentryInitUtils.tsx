@@ -1,7 +1,7 @@
 // Module ID: 1232
 // Function ID: 1233
 // Name: SentryInitUtils
-// Dependencies: [5, 17, 1074, 1085, 675, 3, 1233, 1101, 1241, 14357, 5085, 5090, 1357, 1231, 1363, 5086, 1364, 4736, 1609, 1358, 1344, 2]
+// Dependencies: [5, 17, 1074, 1085, 675, 3, 1233, 1101, 1241, 14437, 5169, 5174, 1357, 1231, 1363, 5170, 1364, 4806, 1609, 1358, 1344, 2]
 // Exports: initSentry
 
 // Module 1232 (SentryInitUtils)
@@ -11,7 +11,7 @@ import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1233 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ClientInfoUtilsAll from "ClientInfoUtils" /* 1363 */;
-import MetricEvents from "MetricEvents" /* 5090 */;
+import MetricEvents from "MetricEvents" /* 5174 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -542,7 +542,7 @@ function trackCrash(event, hint, arg2) {
     tmp25(1231).markCrashHandled(event_id2);
     const tmp25Result = tmp25(1231);
   }
-  const AppCrashedReasons = tmp11(14357).AppCrashedReasons;
+  const AppCrashedReasons = tmp11(14437).AppCrashedReasons;
   const tmp41 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
   const obj6 = { name: MetricEvents.MetricEvents.APP_CRASHED, tags: null };
   items = ["reason:" + tmp41, ];
@@ -551,7 +551,7 @@ function trackCrash(event, hint, arg2) {
   }
   items[1] = "level:" + level;
   obj6.tags = items;
-  tmp26(5085).increment(obj6, true);
+  tmp26(5169).increment(obj6, true);
 }
 const NativeModules = fn(17).NativeModules;
 const Constants = fn(1074);
@@ -632,7 +632,7 @@ export const initSentry = function initSentry() {
           if (tmp14Result11.isAndroid()) {
             str2 = "android";
           }
-          const obj3 = { tunnel: `/error-reporting-proxy/${str2}`, autoInitializeNativeSdk: false, beforeSend, dist: "6481", dsn: SentryStaffDsn, environment: ReleaseChannel, tracesSampleRate: 0, sampleRate: 1, ignoreErrors, release: "discord_android@348.1.0-2+348201", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
+          const obj3 = { tunnel: `/error-reporting-proxy/${str2}`, autoInitializeNativeSdk: false, beforeSend, dist: "6493", dsn: SentryStaffDsn, environment: ReleaseChannel, tracesSampleRate: 0, sampleRate: 1, ignoreErrors, release: "discord_android@348.2.0-2+348202", tracePropagationTargets: null, integrations: null, beforeBreadcrumb: null };
           items = [PRIMARY_DOMAIN];
           obj3.tracePropagationTargets = items;
           const items1 = [registerSpanErrorInstrumentation, , ];
@@ -664,7 +664,7 @@ export const initSentry = function initSentry() {
           };
           tmp14Result10.init(obj3);
           const tmp14Result13 = require("module_675");
-          require("module_675").setTag("buildNumber", "6481");
+          require("module_675").setTag("buildNumber", "6493");
           const tmp14Result14 = require("module_675");
           require("module_675").setTag("appVersion", constants.Version);
           const tmp14Result15 = require("module_675");

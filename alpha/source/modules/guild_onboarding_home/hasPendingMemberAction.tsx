@@ -1,20 +1,20 @@
-// Module ID: 4943
-// Function ID: 4944
+// Module ID: 5013
+// Function ID: 5014
 // Name: hasPendingMemberAction
-// Dependencies: [2042, 2105, 2064, 4944, 4945, 1074, 4382, 4946, 1385, 2]
+// Dependencies: [2042, 2105, 2064, 5014, 5015, 1074, 4448, 5016, 1385, 2]
 // Exports: hasPendingMemberAction
 
-// Module 4943 (hasPendingMemberAction)
+// Module 5013 (hasPendingMemberAction)
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 4946 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 5016 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 4944 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 4945 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5014 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 5015 */;
 
 const GuildFeatures = fn(1074).GuildFeatures;
-const GuildMemberFlags = fn(4382).GuildMemberFlags;
+const GuildMemberFlags = fn(4448).GuildMemberFlags;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/hasPendingMemberAction.tsx");
 

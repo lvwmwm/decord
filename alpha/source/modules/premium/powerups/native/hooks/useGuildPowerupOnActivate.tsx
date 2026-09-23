@@ -1,20 +1,20 @@
-// Module ID: 12793
-// Function ID: 12794
+// Module ID: 12875
+// Function ID: 12876
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 2064, 4651, 4646, 12794, 504, 12795, 7409, 12796, 4650, 4724, 12775, 5653, 7648, 4960, 7657, 2]
+// Dependencies: [19, 2064, 4721, 4716, 12876, 504, 12877, 7493, 12878, 4720, 4794, 12857, 5737, 7731, 5030, 7740, 2]
 // Exports: default
 
-// Module 12793 (useGuildPowerupOnActivate)
-import GuildBoostingUtils from "GuildBoostingUtils" /* 4650 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5653 */;
+// Module 12875 (useGuildPowerupOnActivate)
+import GuildBoostingUtils from "GuildBoostingUtils" /* 4720 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5737 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4651 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4721 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const GuildPowerupsConstants = fn(4646);
+const GuildPowerupsConstants = fn(4716);
 ({ BoostPurchaseIntent: metroRequire, GuildPowerupType: closure_7 } = GuildPowerupsConstants);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnActivate.tsx");
@@ -72,7 +72,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
               analyticsLocations,
               guildId: tmp.id,
               onBack() {
-                        return PERK(4960).popWithKey(diff(7657).PREMIUM_KEY);
+                        return PERK(5030).popWithKey(diff(7740).PREMIUM_KEY);
                       },
               onPaymentSuccess() {
                         const availableGuildBoostSlots = GuildBoostingUtils.getAvailableGuildBoostSlots(GuildBoostSlotStore.boostSlots);
@@ -92,7 +92,7 @@ export default function useGuildPowerupOnActivate(arg0, arg1) {
                         }
                       },
               onPaymentDismiss() {
-                        return PERK(4960).popWithKey(diff(7657).PREMIUM_KEY);
+                        return PERK(5030).popWithKey(diff(7740).PREMIUM_KEY);
                       }
             };
             const result = tmp17(tmp18[13]).launchGuildBoostFlowOrAlert(obj3);

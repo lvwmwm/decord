@@ -1,12 +1,12 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 17006
+// Function ID: 17007
 // Name: VibegrationsArchivePicker
-// Dependencies: [5, 13366, 11493, 5277, 1115, 3678, 2]
+// Dependencies: [5, 13448, 11569, 5361, 1115, 3712, 2]
 // Exports: describeVibegrationsArchiveRejection, pickVibegrationsArchive, sendVibegrationsArchiveImport
 
-// Module 16954 (VibegrationsArchivePicker)
-import _modDef3678 from "module_3678" /* 3678 */;
-import FilePickerUtils from "FilePickerUtils" /* 11493 */;
+// Module 17006 (VibegrationsArchivePicker)
+import _modDef3712 from "module_3712" /* 3712 */;
+import FilePickerUtils from "FilePickerUtils" /* 11569 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -95,7 +95,7 @@ let closure_9 = async function _sendVibegrationsArchiveImport(arg0, value) {
     }
   }
 };
-const VibegrationsConnectionStore = fn(13366);
+const VibegrationsConnectionStore = fn(13448);
 ({ ensureConnection: closure_4, sendUserMessage: hasOwnProperty, uploadAttachmentBytes: metroRequire } = VibegrationsConnectionStore);
 let closure_7 = ["zip", "tar", "gz", "tgz", "rar"];
 const size = fn(2);
@@ -116,10 +116,10 @@ export const describeVibegrationsArchiveRejection = function describeVibegration
   if (!obj.isVibegrationsAttachmentWithinLimit(bytes.bytes.size, bytes.contentType)) {
     const intl = tmp(1115).intl;
     const obj2 = { size: null };
-    const tmpResult = tmp(5277);
-    obj2.size = tmpResult.formatVibegrationsAttachmentLimit(tmp(5277).vibegrationsAttachmentLimit(bytes.contentType));
-    formatToPlainStringResult = intl.formatToPlainString(_modDef3678.AzziHF, obj2);
-    const tmpResult2 = tmp(5277);
+    const tmpResult = tmp(5361);
+    obj2.size = tmpResult.formatVibegrationsAttachmentLimit(tmp(5361).vibegrationsAttachmentLimit(bytes.contentType));
+    formatToPlainStringResult = intl.formatToPlainString(_modDef3712.AzziHF, obj2);
+    const tmpResult2 = tmp(5361);
   }
   return formatToPlainStringResult;
 };

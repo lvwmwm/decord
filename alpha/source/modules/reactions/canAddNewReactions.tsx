@@ -1,12 +1,12 @@
-// Module ID: 8233
-// Function ID: 8234
+// Module ID: 8315
+// Function ID: 8316
 // Name: canAddNewReactions
-// Dependencies: [5632, 4396, 1074, 2]
+// Dependencies: [5716, 4462, 1074, 2]
 // Exports: default
 
-// Module 8233 (canAddNewReactions)
-import GuildVerificationStore from "GuildVerificationStore" /* 5632 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
+// Module 8315 (canAddNewReactions)
+import GuildVerificationStore from "GuildVerificationStore" /* 5716 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
 
 const Permissions = fn(1074).Permissions;
 const size = fn(2);

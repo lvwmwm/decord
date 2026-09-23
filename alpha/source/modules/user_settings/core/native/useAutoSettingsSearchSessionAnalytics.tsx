@@ -1,16 +1,16 @@
-// Module ID: 17386
-// Function ID: 17387
+// Module ID: 17455
+// Function ID: 17456
 // Name: useAutoSettingsSearchSessionAnalytics
-// Dependencies: [19, 1979, 14973, 504, 1094, 8547, 5204, 7243, 2]
+// Dependencies: [19, 1979, 15050, 504, 1094, 8618, 5288, 7327, 2]
 // Exports: useAutoSettingsSearchSessionAnalytics
 
-// Module 17386 (useAutoSettingsSearchSessionAnalytics)
-import useMountEffectDefault from "useMountEffect" /* 5204 */;
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7243 */;
-import usePreviousDefault from "usePrevious" /* 8547 */;
+// Module 17455 (useAutoSettingsSearchSessionAnalytics)
+import useMountEffectDefault from "useMountEffect" /* 5288 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7327 */;
+import usePreviousDefault from "usePrevious" /* 8618 */;
 import noop from "module_19" /* 19 */;
 import AppStateStore from "AppStateStore" /* 1979 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14973 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15050 */;
 
 const require = fn;
 const size = fn(2);

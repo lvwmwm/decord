@@ -1,11 +1,11 @@
-// Module ID: 9575
-// Function ID: 9576
+// Module ID: 9648
+// Function ID: 9649
 // Name: ThermalUtils
-// Dependencies: [17, 9576, 1364, 4736, 560, 1248, 2]
+// Dependencies: [17, 9649, 1364, 4806, 560, 1248, 2]
 
-// Module 9575 (ThermalUtils)
+// Module 9648 (ThermalUtils)
 import _mod17 from "module_17" /* 17 */;
-import NativeDeviceThermalStateModuleDefault from "NativeDeviceThermalStateModule" /* 9576 */;
+import NativeDeviceThermalStateModuleDefault from "NativeDeviceThermalStateModule" /* 9649 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

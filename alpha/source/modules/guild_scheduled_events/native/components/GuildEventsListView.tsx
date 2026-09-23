@@ -1,14 +1,14 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 10148
+// Function ID: 10149
 // Name: GuildEventsListView
-// Dependencies: [19, 17, 21, 576, 1612, 6871, 10069, 10070, 11, 2]
+// Dependencies: [19, 17, 21, 576, 1612, 6955, 10149, 10150, 11, 2]
 // Exports: default
 
-// Module 10068 (GuildEventsListView)
+// Module 10148 (GuildEventsListView)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
-import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 10069 */;
-import GuildEventCardDefault from "GuildEventCard" /* 10070 */;
+import GuildEventsNoContentDefault from "GuildEventsNoContent" /* 10149 */;
+import GuildEventCardDefault from "GuildEventCard" /* 10150 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;

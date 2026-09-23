@@ -1,13 +1,13 @@
-// Module ID: 4758
-// Function ID: 4759
+// Module ID: 4828
+// Function ID: 4829
 // Name: timing
-// Dependencies: [4759, 4760, 4493, 2]
+// Dependencies: [4829, 4830, 4559, 2]
 // Exports: withTiming
 
-// Module 4758 (timing)
-import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 4759 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 4760 */;
+// Module 4828 (timing)
+import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 4829 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 4830 */;
 import size from "module_2" /* 2 */;
 
 const CONFIG_NEVER_ANIMATE_TIMING = ReanimatedConstants.CONFIG_NEVER_ANIMATE_TIMING;
@@ -26,7 +26,7 @@ function withTiming(value, timingStandard, fn, fn2) {
       }
       const obj2 = {};
       const merged = Object.assign(obj);
-      obj2.reduceMotion = tmp(4493).ReduceMotion.Never;
+      obj2.reduceMotion = tmp(4559).ReduceMotion.Never;
       tmp7 = obj2;
     }
     let tmp5 = tmp7;

@@ -1,20 +1,20 @@
-// Module ID: 7497
-// Function ID: 7498
+// Module ID: 7581
+// Function ID: 7582
 // Name: CreatorMonetizationRestrictionsHooks
-// Dependencies: [19, 4389, 2064, 1074, 7498, 7499, 504, 4388, 2]
+// Dependencies: [19, 4455, 2064, 1074, 7582, 7583, 504, 4454, 2]
 // Exports: useIsMonetizationReapplicationDisabled, useShouldHideGuildPurchaseEntryPoints, useShouldRestrictUpdatingCreatorMonetizationSettings
 
-// Module 7497 (CreatorMonetizationRestrictionsHooks)
-import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 7498 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7499 */;
+// Module 7581 (CreatorMonetizationRestrictionsHooks)
+import useUnmountAbortSignalDefault from "useUnmountAbortSignal" /* 7582 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7583 */;
 import noop from "module_19" /* 19 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4389 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4455 */;
 import GuildStore from "GuildStore" /* 2064 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const FetchState = fn(4389).FetchState;
+const FetchState = fn(4455).FetchState;
 const Constants = fn(1074);
 ({ EMPTY_STRING_SNOWFLAKE_ID: closure_8, GuildFeatures: closure_9 } = Constants);
 const size = fn(2);
@@ -99,8 +99,8 @@ export const useShouldHideGuildPurchaseEntryPoints = function useShouldHideGuild
     }
     let result = flag;
   } else {
-    result = tmp(4388).isRestrictedFromShowingGuildPurchaseEntryPoints(stateFromStoresArray);
-    const tmpResult4 = tmp(4388);
+    result = tmp(4454).isRestrictedFromShowingGuildPurchaseEntryPoints(stateFromStoresArray);
+    const tmpResult4 = tmp(4454);
   }
 };
 export const useShouldRestrictUpdatingCreatorMonetizationSettings = function useShouldRestrictUpdatingCreatorMonetizationSettings(guildId) {
@@ -165,8 +165,8 @@ export const useShouldRestrictUpdatingCreatorMonetizationSettings = function use
     }
     let result = flag;
   } else {
-    result = tmp(4388).isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray);
-    const tmpResult4 = tmp(4388);
+    result = tmp(4454).isRestrictedFromUpdatingCreatorMonetizationSettings(stateFromStoresArray);
+    const tmpResult4 = tmp(4454);
   }
   if (stateFromStores != null) {
     const features2 = stateFromStores.features;

@@ -1,10 +1,10 @@
-// Module ID: 9609
-// Function ID: 9610
+// Module ID: 9682
+// Function ID: 9683
 // Name: confirmActivityLaunchChecks
-// Dependencies: [5, 2042, 2041, 1074, 9610, 9603, 573, 4657, 4385, 9612, 9581, 9613, 9140, 9615, 2]
+// Dependencies: [5, 2042, 2041, 1074, 9683, 9676, 573, 4727, 4451, 9685, 9654, 9686, 9211, 9688, 2]
 // Exports: confirmActivityLaunchChecks
 
-// Module 9609 (confirmActivityLaunchChecks)
+// Module 9682 (confirmActivityLaunchChecks)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
@@ -174,13 +174,13 @@ let closure_9 = async function _confirmActivityChange(arg0, value) {
               if (value != null) {
                 _location = value.location;
               }
-              channel = channel.getChannel(closure_1_0(4385).getEmbeddedActivityLocationChannelId(_location));
+              channel = channel.getChannel(closure_1_0(4451).getEmbeddedActivityLocationChannelId(_location));
               if (null != value) {
                 if (null != channel) {
                   if (dependencyMap != null) {
                     dependencyMap();
                   }
-                  shouldClosePopout(9612)(tmp, channel, () => {
+                  shouldClosePopout(9685)(tmp, channel, () => {
                     value(c2[10])().leaveActivity({ location: value.location, applicationId: closure_2_0.id, shouldClosePopout });
                     closure_0(true);
                   }, () => closure_0(false));

@@ -1,9 +1,9 @@
-// Module ID: 8157
-// Function ID: 8158
+// Module ID: 8239
+// Function ID: 8240
 // Name: ConversationsAnalytics
 // Dependencies: [2042, 1074, 1241, 2]
 
-// Module 8157 (ConversationsAnalytics)
+// Module 8239 (ConversationsAnalytics)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 7811
-// Function ID: 7812
+// Module ID: 7894
+// Function ID: 7895
 // Name: CollectiblesMarketingBannerRecord
-// Dependencies: [7810, 2]
+// Dependencies: [7893, 2]
 
-// Module 7811 (CollectiblesMarketingBannerRecord)
-import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7810 */;
+// Module 7894 (CollectiblesMarketingBannerRecord)
+import CollectiblesMarketingType from "CollectiblesMarketingType" /* 7893 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function CollectiblesMarketingBannerRecord(arg0) {

@@ -1,13 +1,13 @@
-// Module ID: 10505
-// Function ID: 10506
+// Module ID: 10584
+// Function ID: 10585
 // Name: StarOutlineIcon
-// Dependencies: [19, 21, 576, 4457, 10506, 2]
+// Dependencies: [19, 21, 576, 4523, 10585, 2]
 // Exports: StarOutlineIcon
 
-// Module 10505 (StarOutlineIcon)
+// Module 10584 (StarOutlineIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod10506 from "module_10506" /* 10506 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod10585 from "module_10585" /* 10585 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const StarOutlineIcon = function StarOutlineIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10506, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10585, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

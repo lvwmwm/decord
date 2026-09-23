@@ -1,29 +1,29 @@
-// Module ID: 9631
-// Function ID: 9632
+// Module ID: 9704
+// Function ID: 9705
 // Name: LocalActivityStore
-// Dependencies: [32, 2041, 4984, 1999, 9632, 5499, 1220, 4779, 2042, 2016, 9635, 2096, 4775, 1074, 2020, 9636, 12, 9637, 4887, 1331, 9638, 1385, 504, 573, 2]
+// Dependencies: [32, 2041, 5054, 1999, 9705, 5583, 1220, 4849, 2042, 2016, 9708, 2096, 4845, 1074, 2020, 9709, 12, 9710, 4957, 1331, 9711, 1385, 504, 573, 2]
 
-// Module 9631 (LocalActivityStore)
+// Module 9704 (LocalActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import _modDef1331 from "module_1331" /* 1331 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import ActivityFlagUtils from "ActivityFlagUtils" /* 9638 */;
+import ActivityFlagUtils from "ActivityFlagUtils" /* 9711 */;
 import _slicedToArray from "module_32" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
-import ApplicationStore from "ApplicationStore" /* 4984 */;
+import ApplicationStore from "ApplicationStore" /* 5054 */;
 import RunningGameStore from "RunningGameStore" /* 1999 */;
-import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 9632 */;
-import SpotifyStore from "SpotifyStore" /* 5499 */;
+import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 9705 */;
+import SpotifyStore from "SpotifyStore" /* 5583 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4779 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4849 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 import DetectableGameStore from "DetectableGameStore" /* 2016 */;
-import ExternalStreamingStore from "ExternalStreamingStore" /* 9635 */;
+import ExternalStreamingStore from "ExternalStreamingStore" /* 9708 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
-import SessionsStore from "SessionsStore" /* 4775 */;
+import SessionsStore from "SessionsStore" /* 4845 */;
 
 require = fn;
 function updateActivities() {
@@ -45,8 +45,8 @@ function updateActivities() {
     tmp4 = tmp5;
   }
   if (tmp4) {
-    items.push(tmp(9636).getActivityFromCustomStatus(setting));
-    const tmpResult = tmp(9636);
+    items.push(tmp(9709).getActivityFromCustomStatus(setting));
+    const tmpResult = tmp(9709);
   }
   const items1 = [...FirstPartyRichPresenceStore.getActivities()];
   items.push.apply(items1);
@@ -120,7 +120,7 @@ function updateActivities() {
     let hasItem = set.has(tmp26.name);
     if (!hasItem) {
       const items2 = [];
-      const tmpResult3 = tmp(9637);
+      const tmpResult3 = tmp(9710);
       HermesBuiltin.arraySpread(SessionsStore.getRemoteActivities(), HermesBuiltin.arraySpread(items, 0));
       hasItem = tmpResult3.doesGameHaveRichPresence(tmp26, items2);
       const arraySpreadResult = HermesBuiltin.arraySpread(items, 0);
@@ -148,9 +148,9 @@ function updateActivities() {
           }
           const obj3 = { start: start2 };
           obj2.timestamps = obj3;
-          const merged1 = Object.assign(tmp(4887).maybeAddAdditionalGameMetadata(tmp26));
+          const merged1 = Object.assign(tmp(4957).maybeAddAdditionalGameMetadata(tmp26));
           items.push(obj2);
-          const tmpResult4 = tmp(4887);
+          const tmpResult4 = tmp(4957);
         }
       }
     }
@@ -347,7 +347,7 @@ const localActivityStore = new LocalActivityStore(DispatcherDefault, {
           num2 = 0;
         }
         let hasFlagResult = obj3.hasFlag(num2, constants.INSTANCE);
-        let tmp13Result = tmp13(9638);
+        let tmp13Result = tmp13(9711);
         let activityFlags = obj2.computeActivityFlags(tmp15, hasFlagResult, tmp10.platform === constants2.EMBEDDED, tmp13Result.isContextlessEmbeddedActivity(tmp10), tmp11);
         if (activityFlags !== tmp12) {
           items = [tmp8, , ];

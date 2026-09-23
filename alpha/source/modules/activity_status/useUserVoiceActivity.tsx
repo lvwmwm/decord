@@ -1,13 +1,13 @@
-// Module ID: 11147
-// Function ID: 11148
+// Module ID: 11223
+// Function ID: 11224
 // Name: useUserVoiceActivity
-// Dependencies: [2042, 4396, 4776, 1085, 504, 2]
+// Dependencies: [2042, 4462, 4846, 1085, 504, 2]
 // Exports: canViewUserVoiceChannel, default, getUserVoiceState
 
-// Module 11147 (useUserVoiceActivity)
+// Module 11223 (useUserVoiceActivity)
 import ChannelStore from "ChannelStore" /* 2042 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
-import VoiceStateStore from "VoiceStateStore" /* 4776 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
+import VoiceStateStore from "VoiceStateStore" /* 4846 */;
 
 const require = fn;
 function getVisibleUserVoiceActivity(arg0, arg1) {

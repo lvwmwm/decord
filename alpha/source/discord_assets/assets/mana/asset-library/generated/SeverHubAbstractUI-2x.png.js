@@ -1,8 +1,8 @@
-// Module ID: 6691
-// Function ID: 6692
+// Module ID: 6775
+// Function ID: 6776
 // Dependencies: [2]
 
-// Module 6691
+// Module 6775
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SeverHubAbstractUI-2x.png.js");

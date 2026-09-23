@@ -1,10 +1,10 @@
-// Module ID: 16059
-// Function ID: 16060
+// Module ID: 16112
+// Function ID: 16113
 // Name: useBenchmarkResults
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 16059 (useBenchmarkResults)
+// Module 16112 (useBenchmarkResults)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

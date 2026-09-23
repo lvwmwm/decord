@@ -1,13 +1,13 @@
-// Module ID: 6780
-// Function ID: 6781
+// Module ID: 6864
+// Function ID: 6865
 // Name: TabletSpotIllustration
-// Dependencies: [21, 5806, 6781, 2]
+// Dependencies: [21, 5890, 6865, 2]
 // Exports: TabletSpotIllustration
 
-// Module 6780 (TabletSpotIllustration)
+// Module 6864 (TabletSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6781 from "module_6781" /* 6781 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6865 from "module_6865" /* 6865 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const TabletSpotIllustration = function TabletSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6781 };
+  const obj2 = { uri: _modDef6865 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

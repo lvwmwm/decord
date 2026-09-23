@@ -1,27 +1,27 @@
-// Module ID: 11934
-// Function ID: 11935
+// Module ID: 12010
+// Function ID: 12011
 // Name: EditAttachmentActionSheet
-// Dependencies: [5, 32, 19, 4977, 4750, 1074, 21, 8443, 8541, 1385, 1115, 4468, 7701, 7444, 7396, 5185, 576, 4753, 7332, 5823, 5187, 2]
+// Dependencies: [5, 32, 19, 5047, 4820, 1074, 21, 8514, 8612, 1385, 1115, 4534, 7784, 7528, 7480, 5269, 576, 4823, 7416, 5907, 5271, 2]
 // Exports: default
 
-// Module 11934 (EditAttachmentActionSheet)
+// Module 12010 (EditAttachmentActionSheet)
 import util from "util" /* 1115 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4468 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import Stack_Stack from "Stack/Stack" /* 5185 */;
-import components_Button_Button from "components/Button/Button" /* 5187 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 5823 */;
-import TextArea from "TextArea" /* 7332 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7444 */;
-import useBottomSheetRef from "useBottomSheetRef" /* 8443 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4534 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import Stack_Stack from "Stack/Stack" /* 5269 */;
+import components_Button_Button from "components/Button/Button" /* 5271 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 5907 */;
+import TextArea from "TextArea" /* 7416 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7480 */;
+import ActionSheet from "ActionSheet" /* 7528 */;
+import useBottomSheetRef from "useBottomSheetRef" /* 8514 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MessageStore from "MessageStore" /* 4977 */;
+import MessageStore from "MessageStore" /* 5047 */;
 
 require = fn;
-let closure_7 = fn(4750).LEGACY_SPOILER_ATTACHMENT_PREFIX;
+let closure_7 = fn(4820).LEGACY_SPOILER_ATTACHMENT_PREFIX;
 const MessageAttachmentFlags = fn(1074).MessageAttachmentFlags;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
@@ -150,7 +150,7 @@ export default function EditAttachmentActionSheet(arg0) {
   const tmp7Result3 = first1(first2.useState(false), 2);
   first2 = tmp7Result3[0];
   closure_6 = tmp7Result3[1];
-  const tmp5 = attachment(8541)(attachment);
+  const tmp5 = attachment(8612)(attachment);
   [tmp17, c7] = first1(first2.useState(), 2);
   let intl = tmp(1115).intl;
   let stringResult = intl.string(util.t.Y8ujqr);
@@ -183,7 +183,7 @@ export default function EditAttachmentActionSheet(arg0) {
   let tmp19Result = null;
   if (null != tmp17) {
     const obj7 = { variant: "text-sm/medium", color: "text-feedback-critical", children: tmp17 };
-    tmp19Result = tmp19(tmp(4753).Text, obj7);
+    tmp19Result = tmp19(tmp(4823).Text, obj7);
   }
   items[3] = tmp19Result;
   const obj8 = { variant: "primary", text: null, onPress: null, loading: null, disabled: null };

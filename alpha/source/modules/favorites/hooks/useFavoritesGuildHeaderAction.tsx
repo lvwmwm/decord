@@ -1,14 +1,14 @@
-// Module ID: 16501
-// Function ID: 16502
+// Module ID: 16553
+// Function ID: 16554
 // Name: useFavoritesGuildHeaderAction
-// Dependencies: [19, 1074, 10488, 1101, 1115, 3324, 2]
+// Dependencies: [19, 1074, 10567, 1101, 1115, 3358, 2]
 // Exports: default
 
-// Module 16501 (useFavoritesGuildHeaderAction)
+// Module 16553 (useFavoritesGuildHeaderAction)
 import router_utils from "router_utils" /* 1101 */;
 import util from "util" /* 1115 */;
-import _modDef3324 from "module_3324" /* 3324 */;
-import FavoritesHooks from "FavoritesHooks" /* 10488 */;
+import _modDef3358 from "module_3358" /* 3358 */;
+import FavoritesHooks from "FavoritesHooks" /* 10567 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -24,7 +24,7 @@ export default function useFavoritesGuildHeaderAction() {
   }, []);
   const intl = util.intl;
   if (hasAccess) {
-    let ojM1xJ = _modDef3324.G9fGlP;
+    let ojM1xJ = _modDef3358.G9fGlP;
   } else {
     ojM1xJ = util.t.ojM1xJ;
   }

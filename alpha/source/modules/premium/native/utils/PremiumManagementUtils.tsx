@@ -1,17 +1,17 @@
-// Module ID: 7649
-// Function ID: 7650
+// Module ID: 7732
+// Function ID: 7733
 // Name: PremiumManagementUtils
-// Dependencies: [1074, 1085, 21, 3, 5110, 1115, 1364, 1609, 7650, 7653, 2]
+// Dependencies: [1074, 1085, 21, 3, 5194, 1115, 1364, 1609, 7733, 7736, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
-// Module 7649 (PremiumManagementUtils)
+// Module 7732 (PremiumManagementUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import jsxProd from "jsxProd" /* 21 */;
 import Constants from "Constants" /* 1074 */;
 import Constants2 from "Constants" /* 1085 */;
 import util from "util" /* 1115 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5110 */;
-import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 7650 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5194 */;
+import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 7733 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -106,7 +106,7 @@ export const getExternalManagementMessage = function getExternalManagementMessag
                 const intl3 = tmp13(1115).intl;
                 const t = tmp13(1115).t;
                 obj2.text = intl3.string(tmp8 ? t.tqSSSA : t["olSp/D"]);
-                jsx(tmp13(7653).LinkButton, {
+                jsx(tmp13(7736).LinkButton, {
                   containerStyle: { justifyContent: "flex-start" },
                   onPress() {
                                   if (null != c0) {

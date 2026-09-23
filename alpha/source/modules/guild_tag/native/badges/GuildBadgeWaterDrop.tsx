@@ -1,12 +1,12 @@
-// Module ID: 14195
-// Function ID: 14196
+// Module ID: 14277
+// Function ID: 14278
 // Name: GuildBadgeWaterDrop
-// Dependencies: [19, 21, 14193, 8732, 2]
+// Dependencies: [19, 21, 14275, 8803, 2]
 // Exports: GuildBadgeWaterDrop
 
-// Module 14195 (GuildBadgeWaterDrop)
-import inlineStyles from "inlineStyles" /* 8732 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14193 */;
+// Module 14277 (GuildBadgeWaterDrop)
+import inlineStyles from "inlineStyles" /* 8803 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14275 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

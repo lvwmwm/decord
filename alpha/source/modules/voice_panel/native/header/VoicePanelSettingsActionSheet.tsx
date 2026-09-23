@@ -1,18 +1,18 @@
-// Module ID: 17585
-// Function ID: 17586
+// Module ID: 17655
+// Function ID: 17656
 // Name: VoicePanelSettingsActionSheet
-// Dependencies: [19, 21, 4757, 7397, 6871, 7370, 17586, 2]
+// Dependencies: [19, 21, 4827, 7481, 6955, 7454, 17656, 2]
 
-// Module 17585 (VoicePanelSettingsActionSheet)
-import BottomSheetModal from "BottomSheetModal" /* 6871 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7370 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7397 */;
-import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 17586 */;
+// Module 17655 (VoicePanelSettingsActionSheet)
+import BottomSheetModal from "BottomSheetModal" /* 6955 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7454 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7481 */;
+import VoicePanelSettingsOverviewDefault from "VoicePanelSettingsOverview" /* 17656 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_4 = createStyles.createStyles({ wrapper: { gap: 24 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/header/VoicePanelSettingsActionSheet.tsx");

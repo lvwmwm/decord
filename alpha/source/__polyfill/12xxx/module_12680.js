@@ -1,9 +1,0 @@
-// Module ID: 12680
-// Function ID: 12681
-// Dependencies: [1121]
-
-// Module 12680
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "0cbd606a7d77f46a42c156cab0771b02", name: "ic_mention_24px", type: "png" });

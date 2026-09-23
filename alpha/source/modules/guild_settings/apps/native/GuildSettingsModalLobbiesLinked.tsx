@@ -1,12 +1,12 @@
-// Module ID: 18047
-// Function ID: 18048
+// Module ID: 18116
+// Function ID: 18117
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4406, 1372, 1074, 21, 1484, 7415, 5906, 5824, 4910, 5241, 4458, 576, 17940, 12, 8876, 5185, 7287, 2]
+// Dependencies: [19, 4472, 1372, 1074, 21, 1484, 7499, 5990, 5908, 4980, 5325, 4524, 576, 18009, 12, 8947, 5269, 7371, 2]
 // Exports: default
 
-// Module 18047 (GuildSettingsModalLobbiesLinked)
+// Module 18116 (GuildSettingsModalLobbiesLinked)
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ function SyncingToGamesItem(channels) {
   dependencyMap = channels(1484).useNavigation();
   let obj = channels(1484);
   const tmp = channels;
-  const getOrFetchApplication = channels(7415).useGetOrFetchApplication(channels.applicationId);
+  const getOrFetchApplication = channels(7499).useGetOrFetchApplication(channels.applicationId);
   let tmp5Result = null;
   if (0 !== channels.length) {
     let name;
@@ -30,11 +30,11 @@ function SyncingToGamesItem(channels) {
       hasIcons: true,
       children: channels.map((id) => {
           const channel = id;
-          let obj = { label: channels(4910).computeChannelName(id, UserStore, RelationshipStore), icon: null, arrow: true, onPress: null };
+          let obj = { label: channels(4980).computeChannelName(id, UserStore, RelationshipStore), icon: null, arrow: true, onPress: null };
           const obj3 = { IconComponent: null };
-          const obj2 = channels(4910);
-          obj3.IconComponent = channels(5241).getChannelIconComponent(id);
-          obj.icon = closure_1_6(channels(5824).TableRow.Icon, obj3);
+          const obj2 = channels(4980);
+          obj3.IconComponent = channels(5325).getChannelIconComponent(id);
+          obj.icon = closure_1_6(channels(5908).TableRow.Icon, obj3);
           obj.onPress = function onPress() {
             const obj = { channel, numScreensToPop: null };
             let num = 1;
@@ -47,10 +47,10 @@ function SyncingToGamesItem(channels) {
             obj.numScreensToPop = num;
             closure_2.push(GuildSettingsSections.EDIT_LINKED_LOBBY, obj);
           };
-          return closure_1_6(channels(5824).TableRow, obj, id.id);
+          return closure_1_6(channels(5908).TableRow, obj, id.id);
         })
     };
-    tmp5Result = closure_6(tmp(5906).TableRowGroup, obj3);
+    tmp5Result = closure_6(tmp(5990).TableRowGroup, obj3);
   }
   return tmp5Result;
 }

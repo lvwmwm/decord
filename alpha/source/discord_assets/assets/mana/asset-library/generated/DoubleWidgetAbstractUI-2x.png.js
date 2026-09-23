@@ -1,8 +1,8 @@
-// Module ID: 6177
-// Function ID: 6178
+// Module ID: 6261
+// Function ID: 6262
 // Dependencies: [2]
 
-// Module 6177
+// Module 6261
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DoubleWidgetAbstractUI-2x.png.js");

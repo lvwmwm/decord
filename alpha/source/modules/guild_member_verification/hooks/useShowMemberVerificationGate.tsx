@@ -1,11 +1,11 @@
-// Module ID: 5270
-// Function ID: 5271
+// Module ID: 5354
+// Function ID: 5355
 // Name: useShowMemberVerificationGate
-// Dependencies: [2105, 2064, 1372, 5271, 504, 2]
+// Dependencies: [2105, 2064, 1372, 5355, 504, 2]
 // Exports: useShowMemberVerificationGate
 
-// Module 5270 (useShowMemberVerificationGate)
-import MemberVerificationUtils from "MemberVerificationUtils" /* 5271 */;
+// Module 5354 (useShowMemberVerificationGate)
+import MemberVerificationUtils from "MemberVerificationUtils" /* 5355 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildStore from "GuildStore" /* 2064 */;
 import UserStore from "UserStore" /* 1372 */;

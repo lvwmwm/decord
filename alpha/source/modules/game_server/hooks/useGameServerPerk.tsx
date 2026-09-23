@@ -1,21 +1,21 @@
-// Module ID: 12834
-// Function ID: 12835
+// Module ID: 12916
+// Function ID: 12917
 // Name: useGameServerPerk
-// Dependencies: [19, 4666, 4647, 4646, 4669, 504, 12835, 1115, 2936, 12836, 2]
+// Dependencies: [19, 4736, 4717, 4716, 4739, 504, 12917, 1115, 2938, 12918, 2]
 // Exports: default
 
-// Module 12834 (useGameServerPerk)
+// Module 12916 (useGameServerPerk)
 import util from "util" /* 1115 */;
-import _modDef2936 from "module_2936" /* 2936 */;
-import _modDef12836 from "module_12836" /* 12836 */;
+import _modDef2938 from "module_2938" /* 2938 */;
+import _modDef12918 from "module_12918" /* 12918 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4666 */;
+import GameServerStore from "GameServerStore" /* 4736 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_5 = fn(4647).GAME_SERVER_POWERUP_SKU_ID;
-const GuildPowerupType = fn(4646).GuildPowerupType;
+let closure_5 = fn(4717).GAME_SERVER_POWERUP_SKU_ID;
+const GuildPowerupType = fn(4716).GuildPowerupType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_server/hooks/useGameServerPerk.tsx");
 
@@ -36,15 +36,15 @@ export default function useGameServerPerk(guildId) {
       if (null != stateFromStores) {
         const obj = { skuId, title: null, description: null, cost: null, dependencies: null, type: null, animatedImageUrl: null, staticImageUrl: null };
         const intl = util.intl;
-        obj.title = intl.string(_modDef2936["B3OfL/"]);
+        obj.title = intl.string(_modDef2938["B3OfL/"]);
         const intl2 = util.intl;
         const obj2 = { gameName, gameName2 };
-        obj.description = intl2.format(_modDef2936["+UqyGU"], obj2);
+        obj.description = intl2.format(_modDef2938["+UqyGU"], obj2);
         obj.cost = tmp2;
         obj.dependencies = [];
         obj.type = GuildPowerupType.PERK;
-        obj.animatedImageUrl = _modDef12836;
-        obj.staticImageUrl = _modDef12836;
+        obj.animatedImageUrl = _modDef12918;
+        obj.staticImageUrl = _modDef12918;
         tmp = obj;
       }
     }

@@ -1,8 +1,8 @@
-// Module ID: 6833
-// Function ID: 6834
+// Module ID: 6917
+// Function ID: 6918
 // Dependencies: [2]
 
-// Module 6833
+// Module 6917
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WumpusWishlistingSpotIllustration-2x.png.js");

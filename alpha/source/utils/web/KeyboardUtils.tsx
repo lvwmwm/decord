@@ -1,14 +1,14 @@
-// Module ID: 14340
-// Function ID: 14341
+// Module ID: 14421
+// Function ID: 14422
 // Name: utils/KeyboardUtils
-// Dependencies: [32, 7749, 1364, 12, 14341, 14342, 14343, 1370, 2]
+// Dependencies: [32, 7832, 1364, 12, 14422, 14423, 14424, 1370, 2]
 // Exports: areKeyCombosEqual, codeToKey, getEnv, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toKeyNames, toString
 
-// Module 14340 (utils/KeyboardUtils)
+// Module 14421 (utils/KeyboardUtils)
 import PlatformUtils2 from "PlatformUtils" /* 1364 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import keyCodeDefault from "keyCode" /* 14341 */;
-import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 14342 */;
+import keyCodeDefault from "keyCode" /* 14422 */;
+import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 14423 */;
 import _slicedToArray from "module_32" /* 32 */;
 import apply_mod from "module_12" /* 12 */;
 
@@ -21,7 +21,7 @@ function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
   }
   const BACKTICK_CODES = KeyboardLayoutMapUtils.BACKTICK_CODES;
   if (BACKTICK_CODES.has(keyCode)) {
-    const layoutMap = tmp2(14342).getLayoutMap();
+    const layoutMap = tmp2(14423).getLayoutMap();
     value = layoutMap.get("Backquote");
     if (key === value) {
       let str7 = "plus";
@@ -31,7 +31,7 @@ function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
       return str7;
     } else {
       const obj = { key: value, code: "Backquote", keyCode };
-      const exactKeyboardEventMatchFromAny = tmp2(14342).getExactKeyboardEventMatchFromAny(obj);
+      const exactKeyboardEventMatchFromAny = tmp2(14423).getExactKeyboardEventMatchFromAny(obj);
       if ("\\" === key) {
         let tmp6 = key;
         return tmp6;
@@ -49,9 +49,9 @@ function getCodeToKeyLanguageCorrection(keyCode, key, arg2) {
         str5 = key;
       }
       tmp6 = str5;
-      const tmp2Result2 = tmp2(14342);
+      const tmp2Result2 = tmp2(14423);
     }
-    const tmp2Result = tmp2(14342);
+    const tmp2Result = tmp2(14423);
   } else {
     return key;
   }
@@ -193,7 +193,7 @@ function toPrettyKey(str) {
   }
   return str;
 }
-const KeyboardConstants = fn(7749);
+const KeyboardConstants = fn(7832);
 ({ KeyboardDeviceTypes: hasOwnProperty, LinuxKeyToCode } = KeyboardConstants);
 const MacosKeyToCode = KeyboardConstants.MacosKeyToCode;
 const WindowsKeyToCode = KeyboardConstants.WindowsKeyToCode;
@@ -487,7 +487,7 @@ export const toCombo = function toCombo(shortcut) {
     }
     const str2 = shortcut.replace(/numpad plus/i, "");
     const str4 = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus");
-    const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, KEYBOARD_KEY(14343).modKey).split("+");
+    const parts = shortcut.replace(/numpad plus/i, "").replace(/NUMPAD \+/i, "numpad plus").replace(/mod/i, KEYBOARD_KEY(14424).modKey).split("+");
     const mapped = parts.map((item) => item.trim().replace("plus", "+"));
     return mapped.reduce((arr, item) => {
       let tmp3 = keyToCode((function toUglyKey(item) {

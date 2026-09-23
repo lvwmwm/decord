@@ -1,19 +1,7 @@
 // Module ID: 14646
 // Function ID: 14647
-// Dependencies: [14598, 14605]
+// Dependencies: []
 
 // Module 14646
-import _mod14598 from "module_14598" /* 14598 */;
-import _mod14605 from "module_14605" /* 14605 */;
 
-let closure_2 = _mod14598("keys");
-
-export default (arg0) => {
-  let tmp2 = closure_2[arg0];
-  if (!tmp2) {
-    const tmp5 = _mod14605(arg0);
-    tmp[arg0] = tmp5;
-    tmp2 = tmp5;
-  }
-  return tmp2;
-};
+export const calendars = ["buddhist", "chinese", "coptic", "dangi", "ethioaa", "ethiopic", "gregory", "hebrew", "indian", "islamic", "islamic-civil", "islamic-rgsa", "islamic-tbla", "islamic-umalqura", "islamicc", "iso8601", "japanese", "persian", "roc"];

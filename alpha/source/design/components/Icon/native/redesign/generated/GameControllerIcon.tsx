@@ -1,13 +1,13 @@
-// Module ID: 9354
-// Function ID: 9355
+// Module ID: 9425
+// Function ID: 9426
 // Name: GameControllerIcon
-// Dependencies: [19, 21, 576, 4457, 8411, 2]
+// Dependencies: [19, 21, 576, 4523, 8493, 2]
 // Exports: GameControllerIcon
 
-// Module 9354 (GameControllerIcon)
+// Module 9425 (GameControllerIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod8411 from "module_8411" /* 8411 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod8493 from "module_8493" /* 8493 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const GameControllerIcon = function GameControllerIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8411, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8493, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

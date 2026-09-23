@@ -1,10 +1,10 @@
-// Module ID: 16208
-// Function ID: 16209
+// Module ID: 16261
+// Function ID: 16262
 // Name: DefultGuildsRestrictedSetting
 // Dependencies: [2020, 2]
 // Exports: useDefaultGuildsRestricted
 
-// Module 16208 (DefultGuildsRestrictedSetting)
+// Module 16261 (DefultGuildsRestrictedSetting)
 import UserSettings from "UserSettings" /* 2020 */;
 import size from "module_2" /* 2 */;
 

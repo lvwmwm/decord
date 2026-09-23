@@ -1,13 +1,13 @@
-// Module ID: 6322
-// Function ID: 6323
+// Module ID: 6406
+// Function ID: 6407
 // Name: GameDiversityTier8LargeBadge
-// Dependencies: [21, 5806, 6323, 2]
+// Dependencies: [21, 5890, 6407, 2]
 // Exports: GameDiversityTier8LargeBadge
 
-// Module 6322 (GameDiversityTier8LargeBadge)
+// Module 6406 (GameDiversityTier8LargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6323 from "module_6323" /* 6323 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6407 from "module_6407" /* 6407 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GameDiversityTier8LargeBadge = function GameDiversityTier8LargeBadg
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6323 };
+  const obj2 = { uri: _modDef6407 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,29 +1,29 @@
-// Module ID: 7770
-// Function ID: 7771
+// Module ID: 7853
+// Function ID: 7854
 // Name: ChannelListStore
-// Dependencies: [2041, 2097, 7771, 5725, 4398, 1220, 502, 7364, 2042, 7772, 4396, 4772, 2096, 4938, 1084, 7773, 12, 1370, 4385, 11, 504, 573, 2]
+// Dependencies: [2041, 2097, 7854, 5809, 4464, 1220, 502, 7448, 2042, 7855, 4462, 4842, 2096, 5008, 1084, 7856, 12, 1370, 4451, 11, 504, 573, 2]
 
-// Module 7770 (ChannelListStore)
+// Module 7853 (ChannelListStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4385 */;
-import ChannelListStateDefault from "ChannelListState" /* 7773 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4451 */;
+import ChannelListStateDefault from "ChannelListState" /* 7856 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
 import GatedChannelStore from "GatedChannelStore" /* 2097 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7771 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4398 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7854 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5809 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4464 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7364 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7448 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7772 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
-import ReadStateStore from "ReadStateStore" /* 4772 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7855 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
+import ReadStateStore from "ReadStateStore" /* 4842 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4938 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
 
 require = fn;
 function handleReset() {

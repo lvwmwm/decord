@@ -1,9 +1,42 @@
 // Module ID: 5535
 // Function ID: 5536
-// Dependencies: [1121]
+// Dependencies: [5521, 5536, 5537, 5516]
 
 // Module 5535
-import registerAsset from "module_1121" /* 1121 */;
+import _modDef5521 from "module_5521" /* 5521 */;
+import get0thIfdOffset from "get0thIfdOffset" /* 5536 */;
+import IFD_TYPE_0TH from "IFD_TYPE_0TH" /* 5537 */;
 
+require = arg1;
+importDefault = arg2;
+const dependencyMap = arg6;
+let c3 = "Exif IFD Pointer";
+let c4 = "GPS Info IFD Pointer";
+let c5 = "Interoperability IFD Pointer";
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "98be8451aca35f74c79e6384bee97580", name: "img_account_sync_steam_light", type: "svg" });
+export default {
+  read(getUint16, c5, arg2) {
+    const byteOrder = _modDef5521.getByteOrder(getUint16, c5);
+    const obj2 = get0thIfdOffset;
+    const ifd = obj2.readIfd(getUint16, IFD_TYPE_0TH.IFD_TYPE_0TH, c5, get0thIfdOffset.get0thIfdOffset(getUint16, c5, byteOrder), byteOrder, arg2);
+    let objectAssignResult = ifd;
+    if (undefined !== ifd[c3]) {
+      const tmp3Result6 = tmp3(5536);
+      objectAssignResult = tmp3(5516).objectAssign(ifd, tmp3Result6.readIfd(getUint16, tmp3(5537).IFD_TYPE_EXIF, c5, c5 + ifd[tmp5].value, byteOrder, arg2));
+      const tmp3Result = tmp3(5516);
+    }
+    let objectAssignResult3 = objectAssignResult;
+    if (undefined !== objectAssignResult[c4]) {
+      const tmp3Result8 = tmp3(5536);
+      objectAssignResult3 = tmp3(5516).objectAssign(objectAssignResult, tmp3Result8.readIfd(getUint16, tmp3(5537).IFD_TYPE_GPS, c5, c5 + objectAssignResult[tmp12].value, byteOrder, arg2));
+      const tmp3Result7 = tmp3(5516);
+    }
+    let objectAssignResult4 = objectAssignResult3;
+    if (undefined !== objectAssignResult3[c5]) {
+      const tmp3Result10 = tmp3(5536);
+      objectAssignResult4 = tmp3(5516).objectAssign(objectAssignResult3, tmp3Result10.readIfd(getUint16, tmp3(5537).IFD_TYPE_INTEROPERABILITY, c5, c5 + objectAssignResult3[tmp19].value, byteOrder, arg2));
+      const tmp3Result9 = tmp3(5516);
+    }
+    return { tags: objectAssignResult4, byteOrder };
+  }
+};

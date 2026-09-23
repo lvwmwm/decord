@@ -1,12 +1,12 @@
-// Module ID: 4569
-// Function ID: 4570
+// Module ID: 4639
+// Function ID: 4640
 // Name: TeenScreenTimeRive
-// Dependencies: [109, 19, 21, 4487, 4570, 4542, 2]
+// Dependencies: [109, 19, 21, 4553, 4640, 4608, 2]
 
-// Module 4569 (TeenScreenTimeRive)
-import BaseRive from "BaseRive" /* 4487 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4542 */;
-import _modDef4570 from "module_4570" /* 4570 */;
+// Module 4639 (TeenScreenTimeRive)
+import BaseRive from "BaseRive" /* 4553 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4608 */;
+import _modDef4640 from "module_4640" /* 4640 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 
@@ -28,7 +28,7 @@ let closure_8 = noop.forwardRef(function TeenScreenTimeRiveInner(defaultViewMode
   }
   const tmp2 = _objectWithoutProperties(defaultViewModelInstance, closure_3);
   const merged = Object.assign(tmp2);
-  return jsx(BaseRive.BaseRive, { ref, src: _modDef4570, artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
+  return jsx(BaseRive.BaseRive, { ref, src: _modDef4640, artboard: str, artboardProperties, artboardViewModelInstances, defaultViewModelInstance: tmp, stateMachine: defaultViewModelInstance.stateMachine });
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/Rive/native/generated/TeenScreenTimeRive.tsx");

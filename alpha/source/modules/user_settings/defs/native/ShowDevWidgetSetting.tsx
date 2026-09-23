@@ -1,21 +1,21 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 15919
+// Function ID: 15920
 // Name: ShowDevWidgetSetting
-// Dependencies: [7958, 15866, 504, 11729, 15867, 15127, 2]
+// Dependencies: [8040, 15920, 504, 11805, 15921, 15179, 2]
 
-// Module 15865 (ShowDevWidgetSetting)
+// Module 15919 (ShowDevWidgetSetting)
 import initialize from "initialize" /* 504 */;
-import DevToolsActionCreators from "DevToolsActionCreators" /* 15866 */;
-import DevToolsSettingsStore from "DevToolsSettingsStore" /* 7958 */;
+import DevToolsActionCreators from "DevToolsActionCreators" /* 15920 */;
+import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8040 */;
 
 require = fn;
-const SettingBuilders = fn(11729);
+const SettingBuilders = fn(11805);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     return "Show Dev Tools Widget";
   },
   parent: null,
-  IconComponent: fn(15867).StaffBadgeIcon,
+  IconComponent: fn(15921).StaffBadgeIcon,
   onValueChange: function handleShowDevWidgetSettingToggle(showDevWidget) {
     const result = DevToolsActionCreators.updateDevToolsSettings({ showDevWidget });
   },
@@ -23,7 +23,7 @@ const toggle = SettingBuilders.createToggle({
     const items = [DevToolsSettingsStore];
     return initialize.useStateFromStores(items, () => showDevWidget.showDevWidget);
   },
-  usePredicate: fn(15127).useStaffOrDeveloperSettingPredicate
+  usePredicate: fn(15179).useStaffOrDeveloperSettingPredicate
 });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/defs/native/ShowDevWidgetSetting.tsx");

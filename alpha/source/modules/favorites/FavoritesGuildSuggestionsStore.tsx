@@ -1,10 +1,10 @@
-// Module ID: 16552
-// Function ID: 16553
+// Module ID: 16604
+// Function ID: 16605
 // Name: FavoritesGuildSuggestionsStore
-// Dependencies: [32, 19, 2034, 1074, 2039, 560, 10488, 7633, 2028, 2]
+// Dependencies: [32, 19, 2034, 1074, 2039, 560, 10567, 7716, 2028, 2]
 // Exports: setFavoritesGuildSuggestions, useFavoritesGuildSuggestionCount, useFavoritesGuildSuggestions, useFavoritesGuildSuggestionsDismissal, useFavoritesGuildSuggestionsVisibility, useHasFavoritesGuildSuggestions
 
-// Module 16552 (FavoritesGuildSuggestionsStore)
+// Module 16604 (FavoritesGuildSuggestionsStore)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 2034 */;

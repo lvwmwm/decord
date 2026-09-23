@@ -1,23 +1,23 @@
-// Module ID: 16278
-// Function ID: 16279
+// Module ID: 16331
+// Function ID: 16332
 // Name: ScreenRecordingActionSheet
-// Dependencies: [19, 17, 16274, 21, 4757, 576, 4753, 5187, 4724, 5341, 5899, 4747, 7444, 2]
+// Dependencies: [19, 17, 16327, 21, 4827, 576, 4823, 5271, 4794, 5425, 5983, 4817, 7528, 2]
 // Exports: default
 
-// Module 16278 (ScreenRecordingActionSheet)
+// Module 16331 (ScreenRecordingActionSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 4747 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 4817 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const useScreenRecordingStore = fn(16274).useScreenRecordingStore;
+const useScreenRecordingStore = fn(16327).useScreenRecordingStore;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { justifyContent: "center", alignItems: "center", gap: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.xl }, closeButton: null, buttonContainer: null };
 const rect = { position: "absolute", top: nativeDefault.space.PX_8, right: nativeDefault.space.PX_8 };
 obj2.closeButton = rect;
@@ -144,5 +144,5 @@ export default function ScreenRecordingActionSheet() {
   if (tmp3) {
     children = tmp11;
   }
-  return closure_5(tmp9(7444).ActionSheet, { children });
+  return closure_5(tmp9(7528).ActionSheet, { children });
 };

@@ -1,9 +1,9 @@
-// Module ID: 4771
-// Function ID: 4772
+// Module ID: 4841
+// Function ID: 4842
 // Name: ChangelogStore
 // Dependencies: [2109, 1220, 2095, 510, 2020, 504, 573, 2]
 
-// Module 4771 (ChangelogStore)
+// Module 4841 (ChangelogStore)
 import initializeDefault from "initialize" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

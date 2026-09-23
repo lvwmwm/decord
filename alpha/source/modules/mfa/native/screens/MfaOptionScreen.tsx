@@ -1,16 +1,16 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 16018
+// Function ID: 16019
 // Name: MfaOptionScreen
-// Dependencies: [19, 17, 21, 7189, 15965, 7370, 5185, 4753, 15966, 7220, 2]
+// Dependencies: [19, 17, 21, 7273, 16019, 7454, 5269, 4823, 16020, 7304, 2]
 // Exports: default
 
-// Module 15964 (MfaOptionScreen)
-import Text_Text from "Text/Text" /* 4753 */;
-import Stack_Stack from "Stack/Stack" /* 5185 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7189 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7220 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7370 */;
-import MfaScreenUtilsDefault from "MfaScreenUtils" /* 15965 */;
+// Module 16018 (MfaOptionScreen)
+import Text_Text from "Text/Text" /* 4823 */;
+import Stack_Stack from "Stack/Stack" /* 5269 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7273 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7304 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7454 */;
+import MfaScreenUtilsDefault from "MfaScreenUtils" /* 16019 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -40,13 +40,13 @@ export default function MFAOptionScreen(arg0) {
   let tmp10Result = null != subtitle;
   if (tmp10Result) {
     const obj4 = { variant: "heading-sm/normal", color: "text-default", children: subtitle };
-    tmp10Result = tmp10(tmp8(4753).Text, obj4);
+    tmp10Result = tmp10(tmp8(4823).Text, obj4);
   }
   items[2] = tmp10Result;
   let tmp10Result4 = null != error;
   if (tmp10Result4) {
     const obj5 = { variant: "text-sm/normal", color: "text-feedback-critical", children: error };
-    tmp10Result4 = tmp10(tmp8(4753).Text, obj5);
+    tmp10Result4 = tmp10(tmp8(4823).Text, obj5);
   }
   let tmp10Result5 = type === mfaMethod;
   const obj6 = { children: null };
@@ -59,7 +59,7 @@ export default function MFAOptionScreen(arg0) {
   const items3 = [submit, ];
   if (tmp10Result5) {
     const obj8 = { props: screenProps };
-    tmp10Result5 = tmp10(tmp(15966), obj8);
+    tmp10Result5 = tmp10(tmp(16020), obj8);
   }
   items3[1] = tmp10Result5;
   obj7.children = items3;

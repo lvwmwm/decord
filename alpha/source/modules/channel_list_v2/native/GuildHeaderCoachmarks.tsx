@@ -1,14 +1,14 @@
-// Module ID: 16506
-// Function ID: 16507
+// Module ID: 16558
+// Function ID: 16559
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4396, 1074, 2039, 21, 504, 16507, 16508, 16510, 12771, 16517, 12762, 12763, 2028, 7633, 12759, 16518, 16519, 16521, 2]
+// Dependencies: [32, 19, 4462, 1074, 2039, 21, 504, 16559, 16560, 16562, 12853, 16569, 12844, 12845, 2028, 7716, 12841, 16570, 16571, 16573, 2]
 // Exports: default
 
-// Module 16506 (GuildHeaderCoachmarks)
+// Module 16558 (GuildHeaderCoachmarks)
 import dismissible_content from "dismissible_content" /* 2028 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
 
 require = fn;
 const Permissions = fn(1074).Permissions;

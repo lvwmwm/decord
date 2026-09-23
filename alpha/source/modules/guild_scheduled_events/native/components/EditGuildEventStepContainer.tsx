@@ -1,11 +1,11 @@
-// Module ID: 9799
-// Function ID: 9800
+// Module ID: 9872
+// Function ID: 9873
 // Name: EditGuildEventStepContainer
-// Dependencies: [32, 19, 17, 21, 4757, 576, 7228, 2]
+// Dependencies: [32, 19, 17, 21, 4827, 576, 7312, 2]
 
-// Module 9799 (EditGuildEventStepContainer)
+// Module 9872 (EditGuildEventStepContainer)
 import nativeDefault from "native" /* 576 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7228 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7312 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { container: { flex: 1, paddingHorizontal: 0, paddingVertical: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "column", height: "100%" }, flex: { flex: 1 }, scroller: { paddingHorizontal: 16 }, buttonContainer: null };
 const rect = { position: "absolute", bottom: 0, left: 0, right: 0, paddingHorizontal: 16, paddingVertical: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.buttonContainer = rect;

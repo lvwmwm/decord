@@ -1,11 +1,11 @@
 // Module ID: 4189
 // Function ID: 4190
-// Dependencies: [3845, 3846]
+// Dependencies: [3911, 3912]
 // Exports: default
 
 // Module 4189
-import _typeof_mod from "module_3845" /* 3845 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import _typeof_mod from "module_3911" /* 3911 */;
+import requiredArgs_mod from "requiredArgs" /* 3912 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,9 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isPast(arg0) {
+export default function getSeconds(arg0) {
   requiredArgs.default(1, arguments);
-  const time = _typeof.default(arg0).getTime();
-  return time < Date.now();
+  return _typeof.default(arg0).getSeconds();
 };
 export default exports.default;

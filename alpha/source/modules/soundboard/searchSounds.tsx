@@ -1,15 +1,15 @@
-// Module ID: 7588
-// Function ID: 7589
+// Module ID: 7671
+// Function ID: 7672
 // Name: searchSounds
-// Dependencies: [5678, 1074, 551, 1241, 4410, 5736, 7589, 2]
+// Dependencies: [5762, 1074, 551, 1241, 4476, 5820, 7672, 2]
 // Exports: searchSounds, trackSearchResultViewed, trackSearchStart
 
-// Module 7588 (searchSounds)
+// Module 7671 (searchSounds)
 import debounceDefault from "debounce" /* 551 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4410 */;
-import SoundboardUtils from "SoundboardUtils" /* 7589 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4476 */;
+import SoundboardUtils from "SoundboardUtils" /* 7672 */;
+import EmojiStore from "EmojiStore" /* 5762 */;
 
 require = fn;
 function trackSearchStart(location_stack, channel_id) {

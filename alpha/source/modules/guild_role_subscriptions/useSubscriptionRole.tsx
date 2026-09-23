@@ -1,10 +1,10 @@
-// Module ID: 15510
-// Function ID: 15511
+// Module ID: 15564
+// Function ID: 15565
 // Name: useSubscriptionRole
-// Dependencies: [2099, 15493, 504, 2]
+// Dependencies: [2099, 15547, 504, 2]
 // Exports: default
 
-// Module 15510 (useSubscriptionRole)
+// Module 15564 (useSubscriptionRole)
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
 
 const require = globalThis.__r;

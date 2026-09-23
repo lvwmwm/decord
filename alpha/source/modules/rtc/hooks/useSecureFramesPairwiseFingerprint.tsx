@@ -1,16 +1,16 @@
-// Module ID: 9982
-// Function ID: 9983
+// Module ID: 10055
+// Function ID: 10056
 // Name: useSecureFramesPairwiseFingerprint
-// Dependencies: [32, 5, 19, 502, 1992, 4780, 9978, 4782, 206, 504, 38, 9983, 2]
+// Dependencies: [32, 5, 19, 502, 1992, 4850, 10051, 4852, 206, 504, 38, 10056, 2]
 // Exports: useSecureFramesPairwiseFingerprint
 
-// Module 9982 (useSecureFramesPairwiseFingerprint)
+// Module 10055 (useSecureFramesPairwiseFingerprint)
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
 
 const require = fn;
 let closure_12 = async function _computeNativeDisplayPair(arg0, value) {
@@ -86,8 +86,8 @@ let closure_12 = async function _computeNativeDisplayPair(arg0, value) {
     }
   }
 };
-let closure_9 = fn(9978).SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION;
-const Features = fn(4782).Features;
+let closure_9 = fn(10051).SECURE_FRAMES_GENERATE_FINGERPRINT_VERSION;
+const Features = fn(4852).Features;
 const SecureFramesPairwiseFingerprintMode = { FROZEN: "frozen", LIVE: "live" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rtc/hooks/useSecureFramesPairwiseFingerprint.tsx");

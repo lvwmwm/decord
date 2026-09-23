@@ -1,15 +1,15 @@
-// Module ID: 12424
-// Function ID: 12425
+// Module ID: 12500
+// Function ID: 12501
 // Name: AppLauncherList
-// Dependencies: [19, 17, 21, 4757, 1612, 12359, 4463, 1177, 12425, 1115, 7297, 2]
+// Dependencies: [19, 17, 21, 4827, 1612, 12435, 4529, 1177, 12501, 1115, 7381, 2]
 // Exports: AppLauncherListEmptyState, AppLauncherListSearchBar
 
-// Module 12424 (AppLauncherList)
+// Module 12500 (AppLauncherList)
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import mergeProps from "mergeProps" /* 4463 */;
-import SearchField from "SearchField" /* 7297 */;
-import _modDef12425 from "module_12425" /* 12425 */;
+import mergeProps from "mergeProps" /* 4529 */;
+import SearchField from "SearchField" /* 7381 */;
+import _modDef12501 from "module_12501" /* 12501 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_6 = createStyles.createStyles({ searchBarContainer: { marginBottom: 16 }, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start" }, emptyStateImage: { flex: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/base_components/AppLauncherList.tsx");
@@ -34,16 +34,16 @@ export const AppLauncherList = noop.forwardRef((contentContainerStyle, arg1) => 
   const obj = require("AppLauncherFlashList");
   const merged = Object.assign(contentContainerStyle);
   ({ onScroll: obj2.animatedOnScroll, gestureRef: obj2.simultaneousHandlers, animatedProps: obj2.animatedProps } = appLauncherFlashListProps);
-  return jsx(appLauncherFlashListProps(12359), { contentContainerStyle: null, scrollIndicatorInsets: { bottom }, ref: memo });
+  return jsx(appLauncherFlashListProps(12435), { contentContainerStyle: null, scrollIndicatorInsets: { bottom }, ref: memo });
 });
 export const AppLauncherListEmptyState = function AppLauncherListEmptyState() {
   const tmp = closure_6();
-  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12425, darkSource: _modDef12425, title: null, body: null };
+  const obj = { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12501, darkSource: _modDef12501, title: null, body: null };
   const intl = util.intl;
   obj.title = intl.string(util.t.vYocDz);
   const intl2 = util.intl;
   obj.body = intl2.string(util.t.V6nAfF);
-  return jsx(native.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12425, darkSource: _modDef12425, title: null, body: null });
+  return jsx(native.EmptyState, { style: tmp.emptyState, imageStyle: tmp.emptyStateImage, lightSource: _modDef12501, darkSource: _modDef12501, title: null, body: null });
 };
 export const AppLauncherListSearchBar = function AppLauncherListSearchBar(arg0) {
   const obj = { style: closure_6().searchBarContainer, children: null };

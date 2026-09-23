@@ -1,8 +1,8 @@
-// Module ID: 6381
-// Function ID: 6382
+// Module ID: 6465
+// Function ID: 6466
 // Dependencies: [2]
 
-// Module 6381
+// Module 6465
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GiftCardRight3dIllustration-2x.png.js");

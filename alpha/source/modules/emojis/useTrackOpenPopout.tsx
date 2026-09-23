@@ -1,14 +1,14 @@
-// Module ID: 10597
-// Function ID: 10598
+// Module ID: 10673
+// Function ID: 10674
 // Name: useTrackOpenPopout
-// Dependencies: [19, 2042, 2096, 1375, 1074, 4937, 5204, 10598, 1241, 2]
+// Dependencies: [19, 2042, 2096, 1375, 1074, 5007, 5288, 10674, 1241, 2]
 // Exports: useTrackOpenPopout
 
-// Module 10597 (useTrackOpenPopout)
+// Module 10673 (useTrackOpenPopout)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 4937 */;
-import useMountEffectDefault from "useMountEffect" /* 5204 */;
-import emojis_EmojiActionCreators from "emojis/EmojiActionCreators" /* 10598 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5007 */;
+import useMountEffectDefault from "useMountEffect" /* 5288 */;
+import emojis_EmojiActionCreators from "emojis/EmojiActionCreators" /* 10674 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;

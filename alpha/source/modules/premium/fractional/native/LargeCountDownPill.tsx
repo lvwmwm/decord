@@ -1,16 +1,16 @@
-// Module ID: 13736
-// Function ID: 13737
+// Module ID: 13821
+// Function ID: 13822
 // Name: LargeCountDownPill
-// Dependencies: [17, 21, 4757, 576, 4455, 1115, 4711, 4753, 2]
+// Dependencies: [17, 21, 4827, 576, 4521, 1115, 4781, 4823, 2]
 // Exports: default
 
-// Module 13736 (LargeCountDownPill)
+// Module 13821 (LargeCountDownPill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4455 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4521 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4757 */;
+import createStyles from "createStyles" /* 4827 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ export default function LargeCountDownPill(countdownText) {
       const intl = util.intl;
       obj2.content = intl.string(util.t["Mv4E/M"]);
       obj2.icon = function icon() {
-        return closure_2_5(closure_0(4711).CircleInformationIcon, { style: closure_1_0.iconStyle, color: nativeDefault.colors.STATUS_WARNING });
+        return closure_2_5(closure_0(4781).CircleInformationIcon, { style: closure_1_0.iconStyle, color: nativeDefault.colors.STATUS_WARNING });
       };
       obj2.iconColor = nativeDefault.colors.STATUS_WARNING;
       ToastActionCreatorsDefault.open(obj2);

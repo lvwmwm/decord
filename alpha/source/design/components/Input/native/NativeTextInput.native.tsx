@@ -1,10 +1,10 @@
-// Module ID: 6868
-// Function ID: 6869
+// Module ID: 6952
+// Function ID: 6953
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1480, 1074, 21, 6869, 5204, 5172, 6870, 4467, 4460, 2]
+// Dependencies: [19, 17, 1480, 1074, 21, 6953, 5288, 5256, 6954, 4533, 4526, 2]
 // Exports: useKeyboardBlurring
 
-// Module 6868 (NativeTextInput)
+// Module 6952 (NativeTextInput)
 import noop from "module_19" /* 19 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1480 */;
 

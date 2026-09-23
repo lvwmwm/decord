@@ -1,17 +1,17 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 16025
+// Function ID: 16026
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 15969, 4753, 1115, 7189, 15964, 15970, 15967, 2]
+// Dependencies: [5, 32, 19, 21, 16023, 4823, 1115, 7273, 16018, 16024, 16021, 2]
 // Exports: default
 
-// Module 15971 (BackupScreen)
+// Module 16025 (BackupScreen)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7189 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 15964 */;
-import buttonDefault from "button" /* 15967 */;
-import MFA from "MFA" /* 15969 */;
-import ClipboardCopyInputDefault from "ClipboardCopyInput" /* 15970 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7273 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 16018 */;
+import buttonDefault from "button" /* 16021 */;
+import MFA from "MFA" /* 16023 */;
+import ClipboardCopyInputDefault from "ClipboardCopyInput" /* 16024 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -163,7 +163,7 @@ export default function BackupScreen(finish) {
     tmp5 = tmp10;
   }
   if (!tmp5) {
-    tmp5 = first.length < tmp16(15969).BACKUP_CODE_MIN_LENGTH;
+    tmp5 = first.length < tmp16(16023).BACKUP_CODE_MIN_LENGTH;
   }
   if (!tmp5) {
     tmp5 = first1 > 0;

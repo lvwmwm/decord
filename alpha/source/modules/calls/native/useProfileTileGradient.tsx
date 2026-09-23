@@ -1,11 +1,11 @@
-// Module ID: 8524
-// Function ID: 8525
+// Module ID: 8595
+// Function ID: 8596
 // Name: useProfileTileGradient
-// Dependencies: [32, 19, 8459, 8525, 8460, 8526, 2]
+// Dependencies: [32, 19, 8530, 8596, 8531, 8597, 2]
 // Exports: default
 
-// Module 8524 (useProfileTileGradient)
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8460 */;
+// Module 8595 (useProfileTileGradient)
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8531 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

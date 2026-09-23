@@ -1,14 +1,14 @@
-// Module ID: 16296
-// Function ID: 16297
+// Module ID: 16349
+// Function ID: 16350
 // Name: RegistrationUtils
-// Dependencies: [19, 4741, 9024, 16288, 16289, 1074, 21, 1241, 16285, 5850, 2]
+// Dependencies: [19, 4811, 9095, 16341, 16342, 1074, 21, 1241, 16338, 5934, 2]
 // Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 16296 (RegistrationUtils)
+// Module 16349 (RegistrationUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import noop from "module_19" /* 19 */;
-import InviteStore from "InviteStore" /* 4741 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 9024 */;
+import InviteStore from "InviteStore" /* 4811 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 9095 */;
 
 const require = globalThis.__r;
 
@@ -85,9 +85,9 @@ function trackRegTransition(overrideRegistrationOptions) {
   obj2.to_step = toStep;
   AnalyticsUtilsDefault.track(AnalyticEvents.REGISTER_TRANSITION, obj2);
 }
-const RegistrationUIStore = fn(16288);
+const RegistrationUIStore = fn(16341);
 ({ clearRegistrationErrorMessage: metroRequire, useRegistrationUIStore: closure_7 } = RegistrationUIStore);
-const RegistrationConstants = fn(16289);
+const RegistrationConstants = fn(16342);
 ({ RegisterTransitionSteps: closure_8, RegistrationTransitionActionTypes: closure_9 } = RegistrationConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsx = fn(21).jsx;
@@ -158,7 +158,7 @@ export const BackButtonWithTracking = function BackButtonWithTracking(arg0) {
       tmp();
     }
   };
-  return jsx(require("module_5850").HeaderBackButton, {});
+  return jsx(require("module_5934").HeaderBackButton, {});
 };
 export const getCommonErrorDetails = function getCommonErrorDetails(error_code) {
   if (-1 === error_code) {

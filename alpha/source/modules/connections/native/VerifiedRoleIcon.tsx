@@ -1,17 +1,17 @@
-// Module ID: 7450
-// Function ID: 7451
+// Module ID: 7534
+// Function ID: 7535
 // Name: VerifiedRoleIcon
-// Dependencies: [19, 17, 1074, 21, 576, 4757, 7451, 7433, 7452, 4699, 2]
+// Dependencies: [19, 17, 1074, 21, 576, 4827, 7535, 7517, 7536, 4769, 2]
 // Exports: default
 
-// Module 7450 (VerifiedRoleIcon)
+// Module 7534 (VerifiedRoleIcon)
 import nativeDefault from "native" /* 576 */;
-import useRoleIconProps from "useRoleIconProps" /* 7433 */;
-import getHigherContrastColor from "getHigherContrastColor" /* 7451 */;
-import RoleIconDefault from "RoleIcon" /* 7452 */;
+import useRoleIconProps from "useRoleIconProps" /* 7517 */;
+import getHigherContrastColor from "getHigherContrastColor" /* 7535 */;
+import RoleIconDefault from "RoleIcon" /* 7536 */;
 import noop from "module_19" /* 19 */;
 
-const LinkIcon = tmp3(4699);
+const LinkIcon = tmp3(4769);
 require = fn;
 const View = fn(17).View;
 const Constants = fn(1074);
@@ -19,7 +19,7 @@ const Constants = fn(1074);
 const jsx = fn(21).jsx;
 const WHITE = nativeDefault.unsafe_rawColors.WHITE;
 const PRIMARY_630 = nativeDefault.unsafe_rawColors.PRIMARY_630;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { iconContainer: { alignItems: "center", justifyContent: "center", borderRadius: nativeDefault.radii.round } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);

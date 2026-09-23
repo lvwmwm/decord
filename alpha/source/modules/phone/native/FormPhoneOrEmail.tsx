@@ -1,13 +1,13 @@
-// Module ID: 7293
-// Function ID: 7294
+// Module ID: 7377
+// Function ID: 7378
 // Name: FormPhoneOrEmail
-// Dependencies: [19, 17, 21, 4757, 576, 5341, 1115, 4753, 7208, 7183, 7184, 7186, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 5425, 1115, 4823, 7292, 7267, 7268, 7270, 2]
 
-// Module 7293 (FormPhoneOrEmail)
+// Module 7377 (FormPhoneOrEmail)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import Pressables from "Pressables" /* 5341 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import Pressables from "Pressables" /* 5425 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ function CountryCodeSelector(alpha2) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { label: { marginBottom: 8 }, input: { flexGrow: 1, marginBottom: 8 }, error: { marginBottom: 8 }, hint: { marginBottom: 8 }, selectorOuterContainer: { overflow: "hidden" }, selectorContainer: { flex: 1, flexDirection: "row" }, selectorPressable: { justifyContent: "center" }, selectorText: { alignSelf: "center" }, separator: { borderLeftWidth: 1, borderLeftColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED, marginHorizontal: 12, marginVertical: -4 } };
 let closure_7 = createStyles.createStyles(obj);
 let obj3 = { borderLeftWidth: 1, borderLeftColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED, marginHorizontal: 12, marginVertical: -4 };

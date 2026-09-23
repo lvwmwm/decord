@@ -1,10 +1,10 @@
-// Module ID: 7210
-// Function ID: 7211
+// Module ID: 7294
+// Function ID: 7295
 // Name: hooks/useStableCallback
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 7210 (hooks/useStableCallback)
+// Module 7294 (hooks/useStableCallback)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

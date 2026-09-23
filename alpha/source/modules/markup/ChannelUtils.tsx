@@ -1,10 +1,10 @@
-// Module ID: 5221
-// Function ID: 5222
+// Module ID: 5305
+// Function ID: 5306
 // Name: markup/ChannelUtils
 // Dependencies: [2046, 2]
 // Exports: isChannelTypeMentionable
 
-// Module 5221 (markup/ChannelUtils)
+// Module 5305 (markup/ChannelUtils)
 import ChannelRecord from "ChannelRecord" /* 2046 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 6436
-// Function ID: 6437
+// Module ID: 6520
+// Function ID: 6521
 // Name: HeartIllocon
-// Dependencies: [21, 5806, 6437, 2]
+// Dependencies: [21, 5890, 6521, 2]
 // Exports: HeartIllocon
 
-// Module 6436 (HeartIllocon)
+// Module 6520 (HeartIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6437 from "module_6437" /* 6437 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6521 from "module_6521" /* 6521 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const HeartIllocon = function HeartIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6437 };
+  const obj2 = { uri: _modDef6521 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

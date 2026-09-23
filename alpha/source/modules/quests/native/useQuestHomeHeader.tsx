@@ -1,18 +1,18 @@
-// Module ID: 15282
-// Function ID: 15283
+// Module ID: 15334
+// Function ID: 15335
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 5663, 1074, 1076, 21, 4757, 576, 15279, 4753, 1115, 9135, 4724, 11373, 1980, 1241, 7429, 7786, 11362, 15283, 8184, 15284, 1484, 13243, 2]
+// Dependencies: [19, 17, 5747, 1074, 1076, 21, 4827, 576, 15331, 4823, 1115, 9206, 4794, 11449, 1980, 1241, 7513, 7869, 11438, 15335, 8266, 15336, 1484, 13325, 2]
 // Exports: default
 
-// Module 15282 (useQuestHomeHeader)
+// Module 15334 (useQuestHomeHeader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import QuestsIcon from "QuestsIcon" /* 15279 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7513 */;
+import QuestsIcon from "QuestsIcon" /* 15331 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -33,12 +33,12 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   let balance;
   const tmp2 = closure_10();
   const tmp3 = balance;
-  balance = balance(9135).useFetchVirtualCurrencyBalance().balance;
+  balance = balance(9206).useFetchVirtualCurrencyBalance().balance;
   [][0] = balance;
   let obj2 = { style: tmp2.headerRightContainer, children: null };
   if (isVirtualCurrencyEnabled) {
     let obj3 = { balance, onPress: tmp5 };
-    isVirtualCurrencyEnabled = closure_8(tmp3(11362).BalanceWidgetPillButton, obj3);
+    isVirtualCurrencyEnabled = closure_8(tmp3(11438).BalanceWidgetPillButton, obj3);
   }
   let items = [isVirtualCurrencyEnabled, ];
   const merged1 = Object.assign(merged);
@@ -69,7 +69,7 @@ function FiltersButton(setSelectedSortMethod) {
   }
   const items = [setSelectedSortMethod, setSelectedFilters, selectedFilters, selectedSortMethod];
   const callback = selectedSortMethod.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15283, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters });
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15335, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters });
   }, items);
   const obj = { icon: closure_8(setSelectedSortMethod(tmp3[21]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: null, scaleAmountInPx: 4 };
   const intl = setSelectedSortMethod(tmp3[10]).intl;
@@ -77,12 +77,12 @@ function FiltersButton(setSelectedSortMethod) {
   return closure_8(setSelectedSortMethod(tmp3[20]).BaseIconButton, obj);
 }
 const View = fn(17).View;
-const QuestHomeSortMethods = fn(5663).QuestHomeSortMethods;
+const QuestHomeSortMethods = fn(5747).QuestHomeSortMethods;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 let closure_7 = fn(1076).CollectiblesMobileShopScreen;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { headerTitleContainer: { width: "100%", flexDirection: "row", alignItems: "center", marginTop: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 }, headerTitle: { flexShrink: 1 }, headerRightContainer: null };
 let obj3 = { width: "100%", flexDirection: "row", alignItems: "center", marginTop: nativeDefault.space.PX_8, paddingLeft: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_8 };
 obj2.headerRightContainer = { flexDirection: "row", justifyContent: "flex-end", alignItems: "center", gap: nativeDefault.space.PX_8, marginTop: nativeDefault.space.PX_8 };

@@ -1,10 +1,10 @@
-// Module ID: 8640
-// Function ID: 8641
+// Module ID: 8711
+// Function ID: 8712
 // Name: MobileMediaViewerShareExperiment
 // Dependencies: [1434, 2]
 // Exports: getMobileMediaViewerShareExperimentEnabled, useMobileMediaViewerShareExperimentEnabled
 
-// Module 8640 (MobileMediaViewerShareExperiment)
+// Module 8711 (MobileMediaViewerShareExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 16373
-// Function ID: 16374
+// Module ID: 16426
+// Function ID: 16427
 // Name: HomeDrawerSubtitleStore
 // Dependencies: [560, 2]
 
-// Module 16373 (HomeDrawerSubtitleStore)
+// Module 16426 (HomeDrawerSubtitleStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

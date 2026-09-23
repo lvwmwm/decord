@@ -1,11 +1,11 @@
-// Module ID: 7912
-// Function ID: 7913
+// Module ID: 7994
+// Function ID: 7995
 // Name: AppStartInfo
-// Dependencies: [32, 5, 7913, 4621, 2]
+// Dependencies: [32, 5, 7995, 4691, 2]
 
-// Module 7912 (AppStartInfo)
-import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4621 */;
-import NativeTTIModuleDefault from "NativeTTIModule" /* 7913 */;
+// Module 7994 (AppStartInfo)
+import NativeTTIManagerModuleDefault from "NativeTTIManagerModule" /* 4691 */;
+import NativeTTIModuleDefault from "NativeTTIModule" /* 7995 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

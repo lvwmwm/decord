@@ -1,16 +1,16 @@
-// Module ID: 10906
-// Function ID: 10907
+// Module ID: 10982
+// Function ID: 10983
 // Name: MediaKeyboardBottomSheetHeaderSimple
-// Dependencies: [19, 17, 1608, 21, 4757, 576, 10907, 2]
+// Dependencies: [19, 17, 1608, 21, 4827, 576, 10983, 2]
 
-// Module 10906 (MediaKeyboardBottomSheetHeaderSimple)
+// Module 10982 (MediaKeyboardBottomSheetHeaderSimple)
 import nativeDefault from "native" /* 576 */;
-import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10907 */;
+import MediaKeyboardBottomSheetHandleDefault from "MediaKeyboardBottomSheetHandle" /* 10983 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 const obj = { headerHandleOnlyWrap: { height: fn(1608).HEADER_HANDLE_HEIGHT, paddingBottom: nativeDefault.space.PX_4 } };
 let closure_4 = createStyles.createStyles(obj);
 const obj3 = { height: fn(1608).HEADER_HANDLE_HEIGHT, paddingBottom: nativeDefault.space.PX_4 };

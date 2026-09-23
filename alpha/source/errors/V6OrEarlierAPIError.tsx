@@ -1,9 +1,9 @@
-// Module ID: 4438
-// Function ID: 4439
+// Module ID: 4504
+// Function ID: 4505
 // Name: errors/V6OrEarlierAPIError
 // Dependencies: [1074, 1271, 1115, 2]
 
-// Module 4438 (errors/V6OrEarlierAPIError)
+// Module 4504 (errors/V6OrEarlierAPIError)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;

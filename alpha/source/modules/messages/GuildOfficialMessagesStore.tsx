@@ -1,17 +1,17 @@
-// Module ID: 13997
-// Function ID: 13998
+// Module ID: 14078
+// Function ID: 14079
 // Name: GuildOfficialMessagesStore
-// Dependencies: [2042, 2105, 2064, 4406, 1372, 1074, 4979, 1385, 504, 573, 2]
+// Dependencies: [2042, 2105, 2064, 4472, 1372, 1074, 5049, 1385, 504, 573, 2]
 
-// Module 13997 (GuildOfficialMessagesStore)
+// Module 14078 (GuildOfficialMessagesStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 4979 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5049 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -280,7 +280,7 @@ obj = {
             let tmp5 = null != tmp4;
             if (tmp5) {
               if (null == tmp4.messages[message.id]) {
-                const messageRecord = tmp23(4979).createMessageRecord(message);
+                const messageRecord = tmp23(5049).createMessageRecord(message);
                 if (null != obj[guildId]) {
                   obj = {};
                   const merged = Object.assign(obj);
@@ -297,7 +297,7 @@ obj = {
                   const merged3 = Object.assign(obj3);
                   obj[guildId] = obj2;
                 }
-                const tmp23Result = tmp23(4979);
+                const tmp23Result = tmp23(5049);
               }
               tmp5 = tmp6;
             }
@@ -327,23 +327,23 @@ obj = {
       } else if (null == obj[guildId]) {
         return false;
       } else if (null == message.author) {
-        if (null != tmp45) {
-          const updateMessageRecordResult = MessageRecordUtils.updateMessageRecord(tmp45, message);
+        if (null != tmp42) {
+          const updateMessageRecordResult = MessageRecordUtils.updateMessageRecord(tmp42, message);
           if (null != obj[guildId]) {
             obj = {};
             const merged = Object.assign(obj);
             const obj2 = {};
-            const merged1 = Object.assign(tmp30);
+            const merged1 = Object.assign(tmp27);
             const obj3 = { messages: null };
             const obj4 = {};
-            const merged2 = Object.assign(tmp30.messages);
+            const merged2 = Object.assign(tmp27.messages);
             obj4[updateMessageRecordResult.id] = updateMessageRecordResult;
             obj3.messages = obj4;
             const merged3 = Object.assign(obj3);
             obj[guildId] = obj2;
           }
         }
-        return null != tmp45;
+        return null != tmp42;
       } else {
         let num = message.flags;
         if (num == null) {
@@ -351,43 +351,43 @@ obj = {
         }
         const hasFlagResult = FlagUtils.hasFlag(num, MessageFlags.IS_GUILD_OFFICIAL);
         if (hasFlagResult) {
-          if (null == tmp45) {
-            const messageRecord = tmp46(4979).createMessageRecord(message);
+          if (null == tmp42) {
+            const messageRecord = tmp43(5049).createMessageRecord(message);
             if (null != obj[guildId]) {
               const obj5 = {};
               const merged4 = Object.assign(obj);
-              const obj6 = {};
-              const merged5 = Object.assign(tmp11);
+              const obj7 = {};
+              const merged5 = Object.assign(tmp8);
               const obj8 = { ids: null, messages: null };
               const items = [messageRecord.id];
-              HermesBuiltin.arraySpread(tmp11.ids, 1);
+              HermesBuiltin.arraySpread(tmp8.ids, 1);
               obj8.ids = items;
               const obj9 = {};
-              const merged6 = Object.assign(tmp11.messages);
+              const merged6 = Object.assign(tmp8.messages);
               obj9[messageRecord.id] = messageRecord;
               obj8.messages = obj9;
               const merged7 = Object.assign(obj8);
-              obj5[guildId] = obj6;
+              obj5[guildId] = obj7;
               obj = obj5;
             }
-            const tmp46Result = tmp46(4979);
+            const tmp43Result = tmp43(5049);
           }
         }
         if (!hasFlagResult) {
-          if (null != tmp45) {
+          if (null != tmp42) {
             id = message.id;
             if (null != obj[guildId]) {
               const obj10 = {};
               const merged8 = Object.assign(obj);
               const obj11 = {};
-              const merged9 = Object.assign(tmp49);
-              const obj12 = {};
-              const merged10 = Object.assign(tmp49.messages);
+              const merged9 = Object.assign(tmp46);
+              const obj13 = {};
+              const merged10 = Object.assign(tmp46.messages);
               delete tmp2[tmp];
               const obj14 = { ids: null, messages: null };
-              const ids = tmp49.ids;
+              const ids = tmp46.ids;
               obj14.ids = ids.filter((item) => item !== id);
-              obj14.messages = obj12;
+              obj14.messages = obj13;
               const merged11 = Object.assign(obj14);
               obj10[guildId] = obj11;
               obj = obj10;
@@ -395,23 +395,23 @@ obj = {
           }
         }
         if (hasFlagResult) {
-          if (null != tmp45) {
-            const updateMessageRecordResult1 = tmp46(4979).updateMessageRecord(tmp45, message);
+          if (null != tmp42) {
+            const updateMessageRecordResult1 = tmp43(5049).updateMessageRecord(tmp42, message);
             if (null != obj[guildId]) {
               const obj15 = {};
               const merged12 = Object.assign(obj);
               const obj16 = {};
-              const merged13 = Object.assign(tmp8);
+              const merged13 = Object.assign(tmp60);
               const obj17 = { messages: null };
               const obj18 = {};
-              const merged14 = Object.assign(tmp8.messages);
+              const merged14 = Object.assign(tmp60.messages);
               obj18[updateMessageRecordResult1.id] = updateMessageRecordResult1;
               obj17.messages = obj18;
               const merged15 = Object.assign(obj17);
               obj15[guildId] = obj16;
               obj = obj15;
             }
-            const tmp46Result2 = tmp46(4979);
+            const tmp43Result2 = tmp43(5049);
           }
         }
         return false;

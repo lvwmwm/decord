@@ -1,9 +1,9 @@
-// Module ID: 8913
-// Function ID: 8914
+// Module ID: 8984
+// Function ID: 8985
 // Name: MenuTypes
 // Dependencies: [2]
 
-// Module 8913 (MenuTypes)
+// Module 8984 (MenuTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/in_app_reports/MenuTypes.tsx");

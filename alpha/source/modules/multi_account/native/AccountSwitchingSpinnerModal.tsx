@@ -1,11 +1,11 @@
-// Module ID: 17844
-// Function ID: 17845
+// Module ID: 17913
+// Function ID: 17914
 // Name: AccountSwitchingSpinnerModal
-// Dependencies: [19, 17, 21, 4757, 1115, 5796, 1094, 2]
+// Dependencies: [19, 17, 21, 4827, 1115, 5880, 1094, 2]
 
-// Module 17844 (AccountSwitchingSpinnerModal)
+// Module 17913 (AccountSwitchingSpinnerModal)
 import util from "util" /* 1115 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5796 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5880 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ class AccountSwitchingSpinnerModal {
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 const React4 = createStyles.createStyles({ switchingSpinnerContainer: { flex: 1, alignItems: "center", justifyContent: "center" } });
 AccountSwitchingSpinnerModal.modalConfig = { animation: fn(1094).ModalAnimation.FADE, closable: false };
 const size = fn(2);

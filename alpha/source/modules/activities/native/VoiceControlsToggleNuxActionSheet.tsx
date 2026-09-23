@@ -1,14 +1,14 @@
-// Module ID: 17574
-// Function ID: 17575
+// Module ID: 17644
+// Function ID: 17645
 // Name: VoiceControlsToggleNuxActionSheet
-// Dependencies: [32, 19, 17, 4749, 2039, 21, 4757, 576, 5344, 504, 7397, 8582, 4753, 1115, 5187, 2]
+// Dependencies: [32, 19, 17, 4819, 2039, 21, 4827, 576, 5428, 504, 7481, 8653, 4823, 1115, 5271, 2]
 // Exports: default
 
-// Module 17574 (VoiceControlsToggleNuxActionSheet)
+// Module 17644 (VoiceControlsToggleNuxActionSheet)
 import nativeDefault from "native" /* 576 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4749 */;
+import AccessibilityStore from "AccessibilityStore" /* 4819 */;
 
 const require = globalThis.__r;
 
@@ -18,7 +18,7 @@ const ContentDismissActionType = fn(2039).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const src = { videoURI: "https://cdn.discordapp.com/assets/activities/platform/activities_pipfab_tutorial_redesign.mp4" };
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 const obj2 = { videoContainer: { borderRadius: nativeDefault.radii.sm, overflow: "hidden" }, bottomSheetWrapper: { paddingHorizontal: 24 }, contentContainer: { flex: 1, alignItems: "center", paddingTop: 24, paddingBottom: 16 }, title: { marginTop: 16, textAlign: "center" }, body: { marginTop: 8, marginBottom: 24, textAlign: "center" } };
 let closure_11 = createStyles.createStyles(obj2);
 let size = fn(2);

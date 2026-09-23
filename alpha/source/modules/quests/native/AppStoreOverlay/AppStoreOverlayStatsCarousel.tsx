@@ -1,17 +1,17 @@
-// Module ID: 11762
-// Function ID: 11763
+// Module ID: 11838
+// Function ID: 11839
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 576, 4757, 11763, 1115, 11764, 4753, 1364, 6899, 7957, 7967, 2]
+// Dependencies: [19, 17, 21, 576, 4827, 11839, 1115, 11840, 4823, 1364, 6983, 8039, 8049, 2]
 // Exports: default
 
-// Module 11762 (AppStoreOverlayStatsCarousel)
+// Module 11838 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6899 */;
-import AnalyticsActions from "AnalyticsActions" /* 7957 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 11763 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 11764 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6983 */;
+import AnalyticsActions from "AnalyticsActions" /* 8039 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 11839 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 11840 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -31,8 +31,8 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const result = AppStoreOverlayStatCardUtils.formatAppStoreRatingValue(stat.rating, util.intl.currentLocale);
     let result1;
     if (null != stat.ratingCount) {
-      result1 = tmp9(11763).formatAppStoreRatingCount(stat.ratingCount, tmp9(1115).intl.currentLocale);
-      const tmp9Result = tmp9(11763);
+      result1 = tmp9(11839).formatAppStoreRatingCount(stat.ratingCount, tmp9(1115).intl.currentLocale);
+      const tmp9Result = tmp9(11839);
     }
     const appStoreStarFillAmounts = AppStoreOverlayStatCardUtils.getAppStoreStarFillAmounts(stat.rating, num);
     const intl = tmp9(1115).intl;
@@ -91,7 +91,7 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const obj8 = { style: tmp.secondaryRow, children: null };
     if (null == secondaryContent) {
       const obj9 = { variant: "text-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp23(tmp20(4753).Text, obj9);
+      secondaryContent = tmp23(tmp20(4823).Text, obj9);
     }
     obj8.children = secondaryContent;
     tmp23Result = tmp23(timestampProducer, obj8);
@@ -120,7 +120,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
 let closure_10 = 130 + nativeDefault.space.PX_16;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { carousel: { marginHorizontal: -nativeDefault.space.PX_16 }, carouselContent: null, statCard: null, statCardExpanded: null, expandedCarouselContent: null, secondaryRow: null };
 let obj3 = { marginHorizontal: -nativeDefault.space.PX_16 };
 obj2.carouselContent = { gap: nativeDefault.space.PX_16, paddingLeft: nativeDefault.space.PX_16, paddingRight: nativeDefault.space.PX_16 };
@@ -161,10 +161,10 @@ export default function AppStoreOverlayStatsCarousel(arg0) {
           let HorizontalScrollingDirection = dependencyMap;
           obj.carouselType = AnalyticsActions.AppStoreOverlayCarouselTypes.STATS;
           if (bound > current) {
-            HorizontalScrollingDirection = tmp2(7967).HorizontalScrollingDirection;
+            HorizontalScrollingDirection = tmp2(8049).HorizontalScrollingDirection;
             let LEFT = HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(7967).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(8049).HorizontalScrollingDirection.LEFT;
           }
           obj.scrollingDirection = LEFT;
           obj.carouselPosition = bound;

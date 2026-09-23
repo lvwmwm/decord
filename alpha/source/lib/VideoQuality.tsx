@@ -1,17 +1,17 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14178
+// Function ID: 14179
 // Name: VideoQuality
-// Dependencies: [4815, 14093, 4786, 7987, 4812, 7986, 12, 1364, 11, 2059, 2]
+// Dependencies: [4885, 14175, 4856, 8069, 4882, 8068, 12, 1364, 11, 2059, 2]
 
-// Module 14096 (VideoQuality)
+// Module 14178 (VideoQuality)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import TimeUtils from "TimeUtils" /* 4786 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4812 */;
-import VideoQualityStats from "VideoQualityStats" /* 7986 */;
-import Histogram from "Histogram" /* 7987 */;
-import NetworkQualityDefault from "NetworkQuality" /* 14093 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4815 */;
+import TimeUtils from "TimeUtils" /* 4856 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4882 */;
+import VideoQualityStats from "VideoQualityStats" /* 8068 */;
+import Histogram from "Histogram" /* 8069 */;
+import NetworkQualityDefault from "NetworkQuality" /* 14175 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4885 */;
 
 require = fn;
 function round(arg0) {
@@ -269,27 +269,27 @@ prototype["getCodecUsageStats"] = function getCodecUsageStats(receiver, userId) 
         num = 0;
       }
       obj.codec_h264_decode_duration_sec = num;
-      let num2 = value.get(tmp2(7986).CodecTypes.H265);
+      let num2 = value.get(tmp2(8068).CodecTypes.H265);
       if (num2 == null) {
         num2 = 0;
       }
       obj.codec_h265_decode_duration_sec = num2;
-      let num3 = value.get(tmp2(7986).CodecTypes.VP8);
+      let num3 = value.get(tmp2(8068).CodecTypes.VP8);
       if (num3 == null) {
         num3 = 0;
       }
       obj.codec_vp8_decode_duration_sec = num3;
-      let num4 = value.get(tmp2(7986).CodecTypes.VP9);
+      let num4 = value.get(tmp2(8068).CodecTypes.VP9);
       if (num4 == null) {
         num4 = 0;
       }
       obj.codec_vp9_decode_duration_sec = num4;
-      let num5 = value.get(tmp2(7986).CodecTypes.AV1);
+      let num5 = value.get(tmp2(8068).CodecTypes.AV1);
       if (num5 == null) {
         num5 = 0;
       }
       obj.codec_av1_decode_duration_sec = num5;
-      let num6 = value.get(tmp2(7986).CodecTypes.UNKNOWN);
+      let num6 = value.get(tmp2(8068).CodecTypes.UNKNOWN);
       if (num6 == null) {
         num6 = 0;
       }
@@ -309,27 +309,27 @@ prototype["getCodecUsageStats"] = function getCodecUsageStats(receiver, userId) 
     num8 = 0;
   }
   obj2.codec_h264_encode_duration_sec = num8;
-  let num9 = map.get(tmp7(7986).CodecTypes.H265);
+  let num9 = map.get(tmp7(8068).CodecTypes.H265);
   if (num9 == null) {
     num9 = 0;
   }
   obj2.codec_h265_encode_duration_sec = num9;
-  let num10 = map.get(tmp7(7986).CodecTypes.VP8);
+  let num10 = map.get(tmp7(8068).CodecTypes.VP8);
   if (num10 == null) {
     num10 = 0;
   }
   obj2.codec_vp8_encode_duration_sec = num10;
-  let num11 = map.get(tmp7(7986).CodecTypes.VP9);
+  let num11 = map.get(tmp7(8068).CodecTypes.VP9);
   if (num11 == null) {
     num11 = 0;
   }
   obj2.codec_vp9_encode_duration_sec = num11;
-  let num12 = map.get(tmp7(7986).CodecTypes.AV1);
+  let num12 = map.get(tmp7(8068).CodecTypes.AV1);
   if (num12 == null) {
     num12 = 0;
   }
   obj2.codec_av1_encode_duration_sec = num12;
-  let num13 = map.get(tmp7(7986).CodecTypes.UNKNOWN);
+  let num13 = map.get(tmp7(8068).CodecTypes.UNKNOWN);
   if (num13 == null) {
     num13 = 0;
   }
@@ -401,7 +401,7 @@ prototype["getOutboundStats"] = function getOutboundStats() {
           context = connection2.context;
         }
         let result1 = null;
-        if (context === tmp9(4812).MediaEngineContextTypes.STREAM) {
+        if (context === tmp9(4882).MediaEngineContextTypes.STREAM) {
           result1 = null;
           if (0 < result) {
             result1 = framesCodec / result;
@@ -505,98 +505,98 @@ prototype["getOutboundStats"] = function getOutboundStats() {
           tmp33 = report3.percentiles[99];
         }
         obj3.outbound_bandwidth_surplus_percentile99 = tmp33;
-        const tmp34 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.NVIDIA_CUDA];
+        const tmp34 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.NVIDIA_CUDA];
         let num13 = 0;
         if (null != tmp34) {
           const _Math = Math;
           num13 = Math.round(tmp34);
         }
         obj3.duration_encoder_nvidia_cuda = num13;
-        const tmp36 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.NVIDIA_DIRECT_3D];
+        const tmp36 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.NVIDIA_DIRECT_3D];
         let num14 = 0;
         if (null != tmp36) {
           const _Math2 = Math;
           num14 = Math.round(tmp36);
         }
         obj3.duration_encoder_nvidia_direct3d = num14;
-        const tmp38 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.NVIDIA_VULKAN];
+        const tmp38 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.NVIDIA_VULKAN];
         let num15 = 0;
         if (null != tmp38) {
           const _Math3 = Math;
           num15 = Math.round(tmp38);
         }
         obj3.duration_encoder_nvidia_vulkan = num15;
-        const tmp40 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.OPENH264];
+        const tmp40 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.OPENH264];
         let num16 = 0;
         if (null != tmp40) {
           const _Math4 = Math;
           num16 = Math.round(tmp40);
         }
         obj3.duration_encoder_openh264 = num16;
-        const tmp42 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.VIDEOTOOLBOX];
+        const tmp42 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.VIDEOTOOLBOX];
         let num17 = 0;
         if (null != tmp42) {
           const _Math5 = Math;
           num17 = Math.round(tmp42);
         }
         obj3.duration_encoder_videotoolbox = num17;
-        const tmp44 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.AMD_DIRECT_3D];
+        const tmp44 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.AMD_DIRECT_3D];
         let num18 = 0;
         if (null != tmp44) {
           const _Math6 = Math;
           num18 = Math.round(tmp44);
         }
         obj3.duration_encoder_amd_direct3d = num18;
-        const tmp46 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.AMD_VAAPI];
+        const tmp46 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.AMD_VAAPI];
         let num19 = 0;
         if (null != tmp46) {
           const _Math7 = Math;
           num19 = Math.round(tmp46);
         }
         obj3.duration_encoder_amd_vaapi = num19;
-        const tmp48 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.INTEL];
+        const tmp48 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.INTEL];
         let num20 = 0;
         if (null != tmp48) {
           const _Math8 = Math;
           num20 = Math.round(tmp48);
         }
         obj3.duration_encoder_intel = num20;
-        const tmp50 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.INTEL_DIRECT_3D];
+        const tmp50 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.INTEL_DIRECT_3D];
         let num21 = 0;
         if (null != tmp50) {
           const _Math9 = Math;
           num21 = Math.round(tmp50);
         }
         obj3.duration_encoder_intel_direct3d = num21;
-        const tmp52 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.INTEL_VAAPI];
+        const tmp52 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.INTEL_VAAPI];
         let num22 = 0;
         if (null != tmp52) {
           const _Math10 = Math;
           num22 = Math.round(tmp52);
         }
         obj3.duration_encoder_intel_vaapi = num22;
-        const tmp54 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.VP8_LIBVPX];
+        const tmp54 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.VP8_LIBVPX];
         let num23 = 0;
         if (null != tmp54) {
           const _Math11 = Math;
           num23 = Math.round(tmp54);
         }
         obj3.duration_encoder_vp8_libvpx = num23;
-        const tmp56 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.UNCATEGORIZED];
+        const tmp56 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.UNCATEGORIZED];
         let num24 = 0;
         if (null != tmp56) {
           const _Math12 = Math;
           num24 = Math.round(tmp56);
         }
         obj3.duration_encoder_uncategorized = num24;
-        const tmp58 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.WMF_CHROME];
+        const tmp58 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.WMF_CHROME];
         let num25 = 0;
         if (null != tmp58) {
           const _Math13 = Math;
           num25 = Math.round(tmp58);
         }
         obj3.duration_encoder_wmf_chrome = num25;
-        const tmp60 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.UNKNOWN];
+        const tmp60 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.UNKNOWN];
         let num26 = 0;
         if (null != tmp60) {
           const _Math14 = Math;
@@ -756,42 +756,42 @@ prototype["getOutboundStats"] = function getOutboundStats() {
           tmp94 = report4.percentiles[99];
         }
         obj3.video_entropy_percentile99 = tmp94;
-        const tmp95 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.EXYNOS];
+        const tmp95 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.EXYNOS];
         let num32 = 0;
         if (null != tmp95) {
           const _Math20 = Math;
           num32 = Math.round(tmp95);
         }
         obj3.duration_encoder_exynos = num32;
-        const tmp97 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.QUALCOMM];
+        const tmp97 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.QUALCOMM];
         let num33 = 0;
         if (null != tmp97) {
           const _Math21 = Math;
           num33 = Math.round(tmp97);
         }
         obj3.duration_encoder_qualcomm = num33;
-        const tmp99 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.MEDIATEK];
+        const tmp99 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.MEDIATEK];
         let num34 = 0;
         if (null != tmp99) {
           const _Math22 = Math;
           num34 = Math.round(tmp99);
         }
         obj3.duration_encoder_mediatek = num34;
-        const tmp101 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.WMF_SW];
+        const tmp101 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.WMF_SW];
         let num35 = 0;
         if (null != tmp101) {
           const _Math23 = Math;
           num35 = Math.round(tmp101);
         }
         obj3.duration_encoder_wmf_sw = num35;
-        const tmp103 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.WMF_HW];
+        const tmp103 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.WMF_HW];
         let num36 = 0;
         if (null != tmp103) {
           const _Math24 = Math;
           num36 = Math.round(tmp103);
         }
         obj3.duration_encoder_wmf_hw = num36;
-        const tmp105 = vmafHistogram.encoderBuckets[tmp9(undefined, 7986).Encoders.WMF_DIRECT_3D];
+        const tmp105 = vmafHistogram.encoderBuckets[tmp9(undefined, 8068).Encoders.WMF_DIRECT_3D];
         let num37 = 0;
         if (null != tmp105) {
           const _Math25 = Math;
@@ -1350,12 +1350,12 @@ prototype["receivedStats"] = function receivedStats(nowResult, transport, stream
   const set = new Set();
   const set1 = new Set();
   self.updateSendState({ receivers: num });
-  let tmp7 = self.connection.context === tmp(4812).MediaEngineContextTypes.DEFAULT;
+  let tmp7 = self.connection.context === tmp(4882).MediaEngineContextTypes.DEFAULT;
   if (tmp7) {
     tmp7 = null != transport.camera;
   }
   self.cameraDuration.value = tmp7;
-  let tmp9 = self.connection.context === tmp(4812).MediaEngineContextTypes.DEFAULT;
+  let tmp9 = self.connection.context === tmp(4882).MediaEngineContextTypes.DEFAULT;
   if (tmp9) {
     tmp9 = null != transport.camera;
   }
@@ -1363,7 +1363,7 @@ prototype["receivedStats"] = function receivedStats(nowResult, transport, stream
     tmp9 = self.callUserIdsCount > 1;
   }
   self.cameraOpportunityDuration.value = tmp9;
-  let tmp11 = self.connection.context === tmp(4812).MediaEngineContextTypes.DEFAULT;
+  let tmp11 = self.connection.context === tmp(4882).MediaEngineContextTypes.DEFAULT;
   if (tmp11) {
     tmp11 = null != transport.camera;
   }

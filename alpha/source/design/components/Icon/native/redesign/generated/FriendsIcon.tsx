@@ -1,13 +1,13 @@
-// Module ID: 4456
-// Function ID: 4457
+// Module ID: 4522
+// Function ID: 4523
 // Name: FriendsIcon
-// Dependencies: [19, 21, 576, 4457, 4692, 2]
+// Dependencies: [19, 21, 576, 4523, 4762, 2]
 // Exports: FriendsIcon
 
-// Module 4456 (FriendsIcon)
+// Module 4522 (FriendsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod4692 from "module_4692" /* 4692 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod4762 from "module_4762" /* 4762 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const FriendsIcon = function FriendsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4692, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4762, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

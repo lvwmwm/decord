@@ -1,9 +1,9 @@
-// Module ID: 17530
-// Function ID: 17531
+// Module ID: 17598
+// Function ID: 17599
 // Name: EventBannerStore
 // Dependencies: [2048, 504, 573, 2]
 
-// Module 17530 (EventBannerStore)
+// Module 17598 (EventBannerStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2048 */;

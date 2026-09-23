@@ -1,10 +1,10 @@
-// Module ID: 16286
-// Function ID: 16287
+// Module ID: 16339
+// Function ID: 16340
 // Name: RegistrationHandoff
 // Dependencies: [2]
 // Exports: clearRegistrationHandoff, hasRegistrationHandoff, setRegistrationHandoff
 
-// Module 16286 (RegistrationHandoff)
+// Module 16339 (RegistrationHandoff)
 import size from "module_2" /* 2 */;
 
 let c0 = false;

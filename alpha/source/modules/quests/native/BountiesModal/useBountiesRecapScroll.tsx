@@ -1,10 +1,10 @@
-// Module ID: 15296
-// Function ID: 15297
+// Module ID: 15348
+// Function ID: 15349
 // Name: useBountiesRecapScroll
 // Dependencies: [19, 2]
 // Exports: useBountiesRecapScroll
 
-// Module 15296 (useBountiesRecapScroll)
+// Module 15348 (useBountiesRecapScroll)
 import noop from "module_19" /* 19 */;
 
 function getRevealProgress(scrollY, c26, height3) {

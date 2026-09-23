@@ -1,193 +1,193 @@
-// Module ID: 8030
-// Function ID: 8031
+// Module ID: 8112
+// Function ID: 8113
 // Name: getBurstAnimation
-// Dependencies: [5, 8031, 8032, 8033, 8034, 8035, 8036, 8037, 8038, 8039, 8040, 8041, 8042, 8043, 8044, 8045, 8046, 8047, 8048, 8049, 8050, 8051, 8052, 8053, 8054, 8055, 8056, 8057, 8058, 8059, 8060, 8061, 8062, 8063, 8064, 8065, 8066, 8067, 2]
+// Dependencies: [5, 8113, 8114, 8115, 8116, 8117, 8118, 8119, 8120, 8121, 8122, 8123, 8124, 8125, 8126, 8127, 8128, 8129, 8130, 8131, 8132, 8133, 8134, 8135, 8136, 8137, 8138, 8139, 8140, 8141, 8142, 8143, 8144, 8145, 8146, 8147, 8148, 8149, 2]
 // Exports: getBurstAnimation
 
-// Module 8030 (getBurstAnimation)
+// Module 8112 (getBurstAnimation)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 const items = [
   {
     load() {
-      return closure_0(8031);
+      return closure_0(8113);
     }
   },
   {
     load() {
-      return closure_0(8032);
+      return closure_0(8114);
     }
   },
   {
     load() {
-      return closure_0(8033);
+      return closure_0(8115);
     }
   },
   {
     load() {
-      return closure_0(8034);
+      return closure_0(8116);
     }
   },
   {
     load() {
-      return closure_0(8035);
+      return closure_0(8117);
     }
   },
   {
     load() {
-      return closure_0(8036);
+      return closure_0(8118);
     }
   },
   {
     load() {
-      return closure_0(8037);
+      return closure_0(8119);
     }
   },
   {
     load() {
-      return closure_0(8038);
+      return closure_0(8120);
     }
   },
   {
     load() {
-      return closure_0(8039);
+      return closure_0(8121);
     }
   },
   {
     load() {
-      return closure_0(8040);
+      return closure_0(8122);
     }
   },
   {
     load() {
-      return closure_0(8041);
+      return closure_0(8123);
     }
   },
   {
     load() {
-      return closure_0(8042);
+      return closure_0(8124);
     }
   },
   {
     load() {
-      return closure_0(8043);
+      return closure_0(8125);
     }
   },
   {
     load() {
-      return closure_0(8044);
+      return closure_0(8126);
     }
   },
   {
     load() {
-      return closure_0(8045);
+      return closure_0(8127);
     }
   },
   {
     load() {
-      return closure_0(8046);
+      return closure_0(8128);
     }
   },
   {
     load() {
-      return closure_0(8047);
+      return closure_0(8129);
     }
   },
   {
     load() {
-      return closure_0(8048);
+      return closure_0(8130);
     }
   }
 ];
 const items1 = [
   {
     load() {
-      return closure_0(8049);
+      return closure_0(8131);
     }
   },
   {
     load() {
-      return closure_0(8050);
+      return closure_0(8132);
     }
   },
   {
     load() {
-      return closure_0(8051);
+      return closure_0(8133);
     }
   },
   {
     load() {
-      return closure_0(8052);
+      return closure_0(8134);
     }
   },
   {
     load() {
-      return closure_0(8053);
+      return closure_0(8135);
     }
   },
   {
     load() {
-      return closure_0(8054);
+      return closure_0(8136);
     }
   },
   {
     load() {
-      return closure_0(8055);
+      return closure_0(8137);
     }
   },
   {
     load() {
-      return closure_0(8056);
+      return closure_0(8138);
     }
   },
   {
     load() {
-      return closure_0(8057);
+      return closure_0(8139);
     }
   },
   {
     load() {
-      return closure_0(8058);
+      return closure_0(8140);
     }
   },
   {
     load() {
-      return closure_0(8059);
+      return closure_0(8141);
     }
   },
   {
     load() {
-      return closure_0(8060);
+      return closure_0(8142);
     }
   },
   {
     load() {
-      return closure_0(8061);
+      return closure_0(8143);
     }
   },
   {
     load() {
-      return closure_0(8062);
+      return closure_0(8144);
     }
   },
   {
     load() {
-      return closure_0(8063);
+      return closure_0(8145);
     }
   },
   {
     load() {
-      return closure_0(8064);
+      return closure_0(8146);
     }
   },
   {
     load() {
-      return closure_0(8065);
+      return closure_0(8147);
     }
   },
   {
     load() {
-      return closure_0(8066);
+      return closure_0(8148);
     }
   }
 ];

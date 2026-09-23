@@ -1,11 +1,12 @@
 // Module ID: 4212
 // Function ID: 4213
-// Dependencies: [3845, 3846]
+// Dependencies: [4213, 4093, 3912]
 // Exports: default
 
 // Module 4212
-import _typeof_mod from "module_3845" /* 3845 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import _typeof_mod from "module_4213" /* 4213 */;
+import module_4093_mod from "module_4093" /* 4093 */;
+import requiredArgs_mod from "requiredArgs" /* 3912 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -15,17 +16,25 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+let module_4093 = module_4093_mod;
+if (!module_4093) {
+  const obj2 = { default: module_4093 };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = module_4093;
 }
-requiredArgs = tmp5;
+module_4093 = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
 
-export default function isTuesday(arg0) {
-  requiredArgs.default(1, arguments);
-  return 2 === _typeof.default(arg0).getDay();
+export default function isMatch(arg0, arg1, arg2) {
+  requiredArgs.default(2, arguments);
+  return module_4093.default(_typeof.default(arg0, arg1, new Date(), arg2));
 };
 export default exports.default;

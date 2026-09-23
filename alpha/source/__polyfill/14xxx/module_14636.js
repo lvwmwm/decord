@@ -3,5 +3,3 @@
 // Dependencies: []
 
 // Module 14636
-
-export const f = Object.getOwnPropertySymbols;

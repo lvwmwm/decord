@@ -1,18 +1,18 @@
-// Module ID: 18256
-// Function ID: 18257
+// Module ID: 18325
+// Function ID: 18326
 // Name: GuildRoleSubscriptionTierTemplateBasicInfo
-// Dependencies: [19, 17, 1374, 1085, 21, 4757, 576, 5806, 1177, 4753, 1115, 7481, 15512, 5188, 2]
+// Dependencies: [19, 17, 1374, 1085, 21, 4827, 576, 5890, 1177, 4823, 1115, 7565, 15566, 5272, 2]
 // Exports: GuildRoleSubscriptionTierTemplateBasicInfo
 
-// Module 18256 (GuildRoleSubscriptionTierTemplateBasicInfo)
+// Module 18325 (GuildRoleSubscriptionTierTemplateBasicInfo)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import BaseTextButton from "BaseTextButton" /* 5188 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import PriceUtils from "PriceUtils" /* 7481 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15512 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import BaseTextButton from "BaseTextButton" /* 5272 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import PriceUtils from "PriceUtils" /* 7565 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15566 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ const SubscriptionIntervalTypes = fn(1374).SubscriptionIntervalTypes;
 const CurrencyCodes = fn(1085).CurrencyCodes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { paddingBottom: 24 }, header: { flexDirection: "row" }, image: null, templateCTAButton: null };
 let size = { width: 48, height: 48, borderRadius: nativeDefault.radii.sm };
 obj2.image = size;

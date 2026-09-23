@@ -1,17 +1,17 @@
-// Module ID: 17006
-// Function ID: 17007
+// Module ID: 17063
+// Function ID: 17064
 // Name: useVibegrationsPreviewMenu
-// Dependencies: [19, 13366, 13193, 17007, 4454, 504, 13373, 17008, 1115, 3678, 2]
+// Dependencies: [19, 13448, 13275, 17064, 4520, 504, 13455, 17065, 1115, 3712, 2]
 // Exports: default
 
-// Module 17006 (useVibegrationsPreviewMenu)
+// Module 17063 (useVibegrationsPreviewMenu)
 import util from "util" /* 1115 */;
-import _modDef3678 from "module_3678" /* 3678 */;
-import ToastUtils from "ToastUtils" /* 4454 */;
-import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13373 */;
-import vibegrationsProjectMenuItems from "vibegrationsProjectMenuItems" /* 17008 */;
+import _modDef3712 from "module_3712" /* 3712 */;
+import ToastUtils from "ToastUtils" /* 4520 */;
+import vibegrationsExternalConnections from "vibegrationsExternalConnections" /* 13455 */;
+import vibegrationsProjectMenuItems from "vibegrationsProjectMenuItems" /* 17065 */;
 import noop from "module_19" /* 19 */;
-import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13366 */;
+import VibegrationsConnectionStore from "VibegrationsConnectionStore" /* 13448 */;
 
 require = fn;
 const size = fn(2);
@@ -44,7 +44,7 @@ export default function useVibegrationsPreviewMenu(projectId) {
           connect(found);
         } else {
           const intl = util.intl;
-          ToastUtils.presentError(intl.string(_modDef3678.avu1u4));
+          ToastUtils.presentError(intl.string(_modDef3712.avu1u4));
         }
       }
     } else {

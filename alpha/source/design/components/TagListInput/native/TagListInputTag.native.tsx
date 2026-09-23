@@ -1,15 +1,15 @@
-// Module ID: 9852
-// Function ID: 9853
+// Module ID: 9925
+// Function ID: 9926
 // Name: TagListInputTag
-// Dependencies: [19, 17, 21, 4757, 576, 1115, 9853, 5341, 4753, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 1115, 9926, 5425, 4823, 2]
 // Exports: TagListInputTagComponent
 
-// Module 9852 (TagListInputTag)
+// Module 9925 (TagListInputTag)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import Pressables from "Pressables" /* 5341 */;
-import useAccessibilityPressDefault from "useAccessibilityPress" /* 9853 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import Pressables from "Pressables" /* 5425 */;
+import useAccessibilityPressDefault from "useAccessibilityPress" /* 9926 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_6 = createStyles.createStyles(() => {
   const obj = { tagWrapper: { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, marginHorizontal: 2, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, overflow: "hidden", flexDirection: "row", alignItems: "center", flexShrink: 1 }, tagText: { flexShrink: 1 }, highlightedTagWrapper: null, tagIcon: null, start: null, end: null };
   const obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, marginHorizontal: 2, borderRadius: nativeDefault.radii.xs, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, paddingHorizontal: nativeDefault.space.PX_8, paddingVertical: nativeDefault.space.PX_4, overflow: "hidden", flexDirection: "row", alignItems: "center", flexShrink: 1 };

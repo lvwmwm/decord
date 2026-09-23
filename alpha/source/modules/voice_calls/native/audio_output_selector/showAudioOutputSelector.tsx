@@ -1,14 +1,14 @@
-// Module ID: 9940
-// Function ID: 9941
+// Module ID: 10013
+// Function ID: 10014
 // Name: showAudioOutputSelector
-// Dependencies: [17, 9941, 1364, 4724, 9942, 1980, 2]
+// Dependencies: [17, 10014, 1364, 4794, 10015, 1980, 2]
 // Exports: showAudioOutputSelector
 
-// Module 9940 (showAudioOutputSelector)
+// Module 10013 (showAudioOutputSelector)
 import _mod17 from "module_17" /* 17 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9941 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 10014 */;
 import size from "module_2" /* 2 */;
 
 const NativeModules = _mod17.NativeModules;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/voice_calls/native/audio_outp
 export const showAudioOutputSelector = function showAudioOutputSelector(channelId, isConnectedToVoiceChannel) {
   if (obj.isAndroid()) {
     const obj3 = { channelId, isConnectedToVoiceChannel };
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9942, dependencyMap.paths), closure_4, obj3);
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10015, dependencyMap.paths), closure_4, obj3);
   } else {
     const AudioRoutePicker = NativeModules.AudioRoutePicker;
     if (AudioRoutePicker != null) {

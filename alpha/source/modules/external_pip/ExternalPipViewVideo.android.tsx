@@ -1,14 +1,14 @@
-// Module ID: 17478
-// Function ID: 17479
+// Module ID: 17547
+// Function ID: 17548
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 2042, 1372, 4778, 21, 4757, 576, 9694, 4711, 4753, 1115, 504, 1177, 9698, 4458, 17479, 9709, 17480, 9703, 2]
+// Dependencies: [32, 19, 17, 2042, 1372, 4848, 21, 4827, 576, 9767, 4781, 4823, 1115, 504, 1177, 9771, 4524, 17548, 9782, 17549, 9776, 2]
 
-// Module 17478 (ExternalPipViewVideo)
+// Module 17547 (ExternalPipViewVideo)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import ExternalPipDefault from "ExternalPip" /* 9703 */;
-import VideoActionCreators from "VideoActionCreators" /* 17479 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17480 */;
+import ExternalPipDefault from "ExternalPip" /* 9776 */;
+import VideoActionCreators from "VideoActionCreators" /* 17548 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 17549 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
@@ -21,11 +21,11 @@ function ExternalPipViewVideoUnavailable(wasStream) {
   const obj = { style: tmp.unavailable, children: null };
   if (wasStream) {
     const obj2 = { style: tmp.unavaiableImage };
-    let tmp4Result = tmp4(tmp5(9694).StreamEnded, obj2);
+    let tmp4Result = tmp4(tmp5(9767).StreamEnded, obj2);
     let tmp8 = tmp4;
     let tmp10 = tmp5;
   } else {
-    tmp4Result = tmp4(tmp5(4711).CircleInformationIcon, {});
+    tmp4Result = tmp4(tmp5(4781).CircleInformationIcon, {});
     tmp8 = tmp4;
     tmp10 = tmp5;
   }
@@ -38,7 +38,7 @@ function ExternalPipViewVideoUnavailable(wasStream) {
     result = intl.string(tmp10(1115).t.Nzo5nz);
   }
   obj3.children = result;
-  items[1] = tmp8(tmp10(4753).Text, obj3);
+  items[1] = tmp8(tmp10(4823).Text, obj3);
   obj.children = items;
   return closure_1_12(timestampProducer, obj);
 }
@@ -63,7 +63,7 @@ function ExternalPipViewVideoStream(streamId) {
   first = 300;
   _slicedToArray = undefined;
   noop = undefined;
-  const surfaceDirectRendererExperiment = streamId(9698).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
+  const surfaceDirectRendererExperiment = streamId(9771).useSurfaceDirectRendererExperiment(streamId.userId, { location: "ExternalPipViewVideoStream" });
   [first, _slicedToArray] = noop.useState(undefined);
   const tmp4 = _slicedToArray(noop.useState(false), 2);
   noop = tmp4[1];
@@ -95,8 +95,8 @@ function ExternalPipViewVideoStream(streamId) {
     items[1] = { opacity: num };
     return items;
   }, items2);
-  let obj = streamId(9698);
-  const token = streamId(4458).useToken(first(576).colors.TEXT_FEEDBACK_INFO);
+  let obj = streamId(9771);
+  const token = streamId(4524).useToken(first(576).colors.TEXT_FEEDBACK_INFO);
   value = closure_7.get();
   _slicedToArray = value;
   const items3 = [streamId, value];
@@ -107,7 +107,7 @@ function ExternalPipViewVideoStream(streamId) {
       VideoActionCreators.updateVideoSize(tmp, size, 1);
     }
   }, items3);
-  const children = [closure_11(first(9709), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [closure_11(first(9782), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp14Result = null;
   if (null == first) {
     tmp14Result = null;
@@ -123,10 +123,10 @@ function ExternalPipViewVideoStream(streamId) {
 }
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, StyleSheet, View: metroRequire, PixelRatio: closure_7 } = get_ActivityIndicator);
-const ParticipantTypes = fn(4778).ParticipantTypes;
+const ParticipantTypes = fn(4848).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { container: null, video: null, videoUnavailableWrap: null, videoUnavailableSpinner: null, unavailable: null, unavailableText: null, unavaiableImage: null, user: null };
 let obj3 = {};
 const merged = Object.assign(StyleSheet.absoluteFillObject);

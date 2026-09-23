@@ -1,10 +1,10 @@
-// Module ID: 15484
-// Function ID: 15485
+// Module ID: 15538
+// Function ID: 15539
 // Name: NoFillQuestDock
-// Dependencies: [19, 17, 15370, 21, 4757, 15375, 12035, 5670, 5666, 2]
+// Dependencies: [19, 17, 15422, 21, 4827, 15427, 12112, 5754, 5750, 2]
 // Exports: default
 
-// Module 15484 (NoFillQuestDock)
+// Module 15538 (NoFillQuestDock)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -12,8 +12,8 @@ const require = globalThis.__r;
 const require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
-let closure_4 = createStyles.createStyles({ placeholder: { position: "absolute", left: 0, right: 0, height: fn(15370).QUEST_DOCK_COLLAPSED_HEIGHT, opacity: 0 } });
+const createStyles = fn(4827);
+let closure_4 = createStyles.createStyles({ placeholder: { position: "absolute", left: 0, right: 0, height: fn(15422).QUEST_DOCK_COLLAPSED_HEIGHT, opacity: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/NoFillQuestDock.tsx");
 

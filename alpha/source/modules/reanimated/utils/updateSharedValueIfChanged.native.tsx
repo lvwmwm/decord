@@ -1,10 +1,10 @@
-// Module ID: 11621
-// Function ID: 11622
+// Module ID: 11697
+// Function ID: 11698
 // Name: updateSharedValueIfChanged
-// Dependencies: [4493, 2]
+// Dependencies: [4559, 2]
 
-// Module 11621 (updateSharedValueIfChanged)
-import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+// Module 11697 (updateSharedValueIfChanged)
+import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
 import size from "module_2" /* 2 */;
 
 const fn = function u(get, arg1) {
@@ -23,8 +23,8 @@ const fn = function u(get, arg1) {
       break;
     }
   } else {
-    fn2(4493).runOnUI(fn)(get, arg1);
-    const obj = fn2(4493);
+    fn2(4559).runOnUI(fn)(get, arg1);
+    const obj = fn2(4559);
   }
 };
 fn.__closure = { runOnUI: ReanimatedRexport.runOnUI, updateSharedValueIfChanged: "Array" };
@@ -46,8 +46,8 @@ const fn2 = function u(get, arg1) {
       }
     }
   } else {
-    closure_0(4493).runOnUI(fn2)(get, arg1);
-    const obj = closure_0(4493);
+    closure_0(4559).runOnUI(fn2)(get, arg1);
+    const obj = closure_0(4559);
   }
 };
 let obj2 = { runOnUI: ReanimatedRexport.runOnUI };

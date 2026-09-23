@@ -1,11 +1,11 @@
-// Module ID: 8539
-// Function ID: 8540
+// Module ID: 8610
+// Function ID: 8611
 // Name: useMediaItemHasSpoiler
-// Dependencies: [19, 2042, 8535, 8540, 563, 8546, 2]
+// Dependencies: [19, 2042, 8606, 8611, 563, 8617, 2]
 // Exports: useMediaItemHasSpoiler
 
-// Module 8539 (useMediaItemHasSpoiler)
-import MediaSourceUtil from "MediaSourceUtil" /* 8540 */;
+// Module 8610 (useMediaItemHasSpoiler)
+import MediaSourceUtil from "MediaSourceUtil" /* 8611 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 

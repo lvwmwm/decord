@@ -1,10 +1,10 @@
-// Module ID: 4445
-// Function ID: 4446
+// Module ID: 4511
+// Function ID: 4512
 // Name: intlFormatDate
-// Dependencies: [2109, 4442, 1115, 2]
+// Dependencies: [2109, 4508, 1115, 2]
 // Exports: makeFormatter
 
-// Module 4445 (intlFormatDate)
+// Module 4511 (intlFormatDate)
 import LocaleStore from "LocaleStore" /* 2109 */;
 
 const require = fn;

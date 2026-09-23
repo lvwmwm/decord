@@ -1,17 +1,17 @@
-// Module ID: 7869
-// Function ID: 7870
+// Module ID: 7952
+// Function ID: 7953
 // Name: UserProfilePersonalWidget
-// Dependencies: [1372, 1374, 7870, 4577, 2028, 1370, 1331, 7861, 1969, 2]
+// Dependencies: [1372, 1374, 7953, 4647, 2028, 1370, 1331, 7944, 1969, 2]
 // Exports: createDefaultCoverSection, createDefaultField, createDefaultPersonalWidget, isPersonalWidgetNew, parsePersonalWidgetSections
 
-// Module 7869 (UserProfilePersonalWidget)
+// Module 7952 (UserProfilePersonalWidget)
 import _modDef1331 from "module_1331" /* 1331 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 1969 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4577 */;
-import WidgetType from "WidgetType" /* 7861 */;
-import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7870 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4647 */;
+import WidgetType from "WidgetType" /* 7944 */;
+import PersonalWidgetSectionType from "PersonalWidgetSectionType" /* 7953 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -248,7 +248,7 @@ prototype["isEqual"] = function isEqual(header) {
             sum = sum + 1;
             num2 = sum;
             flag = true;
-          } else if (tmp16(7870).PersonalWidgetSectionType.FIELDS !== type) {
+          } else if (tmp16(7953).PersonalWidgetSectionType.FIELDS !== type) {
             flag = false;
           }
           tmp16 = require;

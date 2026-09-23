@@ -1,13 +1,13 @@
-// Module ID: 6486
-// Function ID: 6487
+// Module ID: 6570
+// Function ID: 6571
 // Name: MissionScrollSpotIllustration
-// Dependencies: [21, 5806, 6487, 2]
+// Dependencies: [21, 5890, 6571, 2]
 // Exports: MissionScrollSpotIllustration
 
-// Module 6486 (MissionScrollSpotIllustration)
+// Module 6570 (MissionScrollSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6487 from "module_6487" /* 6487 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6571 from "module_6571" /* 6571 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const MissionScrollSpotIllustration = function MissionScrollSpotIllustrat
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6487 };
+  const obj2 = { uri: _modDef6571 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

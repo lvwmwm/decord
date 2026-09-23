@@ -1,9 +1,9 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 9284
+// Function ID: 9285
 // Name: ApplicationWidgetFieldPresentationType
 // Dependencies: [2]
 
-// Module 9213 (ApplicationWidgetFieldPresentationType)
+// Module 9284 (ApplicationWidgetFieldPresentationType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationWidgetFieldPresentationType.tsx");

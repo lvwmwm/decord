@@ -1,8 +1,8 @@
-// Module ID: 6125
-// Function ID: 6126
+// Module ID: 6209
+// Function ID: 6210
 // Dependencies: [2]
 
-// Module 6125
+// Module 6209
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CustomTypingAbstractUI-2x.png.js");

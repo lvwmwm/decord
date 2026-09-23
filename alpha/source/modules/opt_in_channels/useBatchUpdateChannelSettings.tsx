@@ -1,15 +1,15 @@
-// Module ID: 11812
-// Function ID: 11813
+// Module ID: 11888
+// Function ID: 11889
 // Name: useBatchUpdateChannelSettings
-// Dependencies: [19, 7364, 4938, 1074, 573, 504, 7360, 11813, 11810, 2]
+// Dependencies: [19, 7448, 5008, 1074, 573, 504, 7444, 11889, 11886, 2]
 // Exports: default
 
-// Module 11812 (useBatchUpdateChannelSettings)
+// Module 11888 (useBatchUpdateChannelSettings)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7360 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7444 */;
 import noop from "module_19" /* 19 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7364 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4938 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7448 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
 
 const require = globalThis.__r;
 
@@ -47,8 +47,8 @@ export default function useBatchUpdateChannelSettings(guildId) {
         isCollapsedResult = null != channel;
       }
       if (isCollapsedResult) {
-        guildId(11813).categoryExpand(channel);
-        const obj = guildId(11813);
+        guildId(11889).categoryExpand(channel);
+        const obj = guildId(11889);
       }
       if (obj2.hasNotSetUpChannelOptIn(guildId)) {
         if (channelId === channel) {
@@ -57,19 +57,19 @@ export default function useBatchUpdateChannelSettings(guildId) {
           const items = [channelId];
           const set = new Set(items);
           obj3.include = set;
-          const result = tmp8(11810).optIntoAllChannelsForExistingMember(guildId, obj3);
-          const tmp8Result = tmp8(11810);
+          const result = tmp8(11886).optIntoAllChannelsForExistingMember(guildId, obj3);
+          const tmp8Result = tmp8(11886);
         } else {
           const obj4 = { exclude: null };
           const _Set = Set;
           const items1 = [channelId];
           const set1 = new Set(items1);
           obj4.exclude = set1;
-          const result1 = tmp8(11810).optIntoAllChannelsForExistingMember(guildId, obj4);
-          const tmp8Result3 = tmp8(11810);
+          const result1 = tmp8(11886).optIntoAllChannelsForExistingMember(guildId, obj4);
+          const tmp8Result3 = tmp8(11886);
         }
       } else {
-        const tmp8Result4 = tmp8(7360);
+        const tmp8Result4 = tmp8(7444);
         const obj5 = { section: constants.CHANNEL_BROWSER };
         const result2 = tmp8Result4.updateOptInChannelsImmediate(guildId, channelId, !isChannelOptedInResult, obj5);
       }

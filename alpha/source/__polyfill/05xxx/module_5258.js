@@ -1,9 +1,0 @@
-// Module ID: 5258
-// Function ID: 5259
-// Dependencies: [1121]
-
-// Module 5258
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "9ca1aab40b1d1dec8d5caf0688317d98", name: "TextSpoilerIcon", type: "png" });

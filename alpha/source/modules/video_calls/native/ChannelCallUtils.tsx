@@ -1,23 +1,23 @@
-// Module ID: 17690
-// Function ID: 17691
+// Module ID: 17759
+// Function ID: 17760
 // Name: ChannelCallUtils
-// Dependencies: [19, 4796, 1074, 21, 1115, 17691, 7627, 4724, 4958, 5110, 17688, 1980, 17692, 4809, 17693, 10082, 11845, 10264, 8910, 7, 4455, 8636, 2]
+// Dependencies: [19, 4866, 1074, 21, 1115, 17760, 7710, 4794, 5028, 5194, 17757, 1980, 17761, 4879, 17762, 10162, 11921, 10343, 8981, 7, 4521, 8707, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 17690 (ChannelCallUtils)
+// Module 17759 (ChannelCallUtils)
 import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 4809 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4958 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5110 */;
-import _modDef8910 from "module_8910" /* 8910 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10082 */;
-import _modDef10264 from "module_10264" /* 10264 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11845 */;
-import _modDef17691 from "module_17691" /* 17691 */;
-import _modDef17692 from "module_17692" /* 17692 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 4879 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5028 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5194 */;
+import _modDef8981 from "module_8981" /* 8981 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 10162 */;
+import _modDef10343 from "module_10343" /* 10343 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11921 */;
+import _modDef17760 from "module_17760" /* 17760 */;
+import _modDef17761 from "module_17761" /* 17761 */;
 import noop from "module_19" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4796 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 4866 */;
 
 const require = globalThis.__r;
 
@@ -33,7 +33,7 @@ export const voiceSettings = function voiceSettings() {
   let obj = { label: null, icon: null, onPress: null };
   const intl = util.intl;
   obj.label = intl.string(util.t.NiTd0e);
-  obj.icon = _modDef17691;
+  obj.icon = _modDef17760;
   obj.onPress = function onPress() {
     require("openUserSettings").openUserSettings({ screen: constants.VOICE });
     const obj = require("openUserSettings");
@@ -59,7 +59,7 @@ export const openHideSelfStreamAndVideoConfirmDialog = function openHideSelfStre
   importDefault = arg1;
   actions_AlertActionCreatorsDefault.openLazy({
     importer() {
-      return asyncRequireImpl(17688, dependencyMap.paths).then((result) => {
+      return asyncRequireImpl(17757, dependencyMap.paths).then((result) => {
         closure_0 = result.default;
         return (arg0) => {
           const obj = {};
@@ -89,7 +89,7 @@ export const reportStreamIssue = function reportStreamIssue(stream) {
   let obj = { label: null, icon: null, onPress: null };
   const intl = require("util").intl;
   obj.label = intl.string(require("util").t.KHGhHf);
-  obj.icon = _modDef17692;
+  obj.icon = _modDef17761;
   obj.onPress = function onPress() {
     const encodeStreamKeyResult = StreamKeyUtils.encodeStreamKey(stream);
     let videoStats = StreamRTCConnectionStore.getVideoStats(encodeStreamKeyResult);
@@ -100,7 +100,7 @@ export const reportStreamIssue = function reportStreamIssue(stream) {
     const merged = Object.assign(videoStats);
     const obj3 = { media_session_id: StreamRTCConnectionStore.getMediaSessionId(encodeStreamKeyResult), rtc_connection_id: StreamRTCConnectionStore.getRtcConnectionId(encodeStreamKeyResult), stream_region: StreamRTCConnectionStore.getRegion(encodeStreamKeyResult), max_viewers: StreamRTCConnectionStore.getMaxViewers(encodeStreamKeyResult) };
     const obj5 = ActionSheetActionCreatorsDefault;
-    obj5.openLazy(asyncRequireImpl(17693, tmp2.paths), "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj3 });
+    obj5.openLazy(asyncRequireImpl(17762, tmp2.paths), "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj3 });
   };
   return obj;
 };
@@ -130,7 +130,7 @@ export const invite = function invite(dependencyMap, stream, targetApplicationId
   const obj = { label: null, icon: null, onPress: null };
   const intl = require("util").intl;
   obj.label = intl.string(require("util").t.VINpSK);
-  obj.icon = _modDef10264;
+  obj.icon = _modDef10343;
   obj.onPress = onPress;
   return obj;
 };
@@ -139,7 +139,7 @@ export const rtcDebugPanel = function rtcDebugPanel(arg0) {
   const obj = { label: null, icon: null, onPress: null };
   const intl = require("util").intl;
   obj.label = intl.string(require("util").t.X8bCMe);
-  obj.icon = _modDef8910;
+  obj.icon = _modDef8981;
   obj.onPress = function onPress() {
     closure_0();
     ActionSheetActionCreatorsDefault.hideActionSheet();
@@ -150,7 +150,7 @@ export const shareActivityLogs = function shareActivityLogs() {
   const obj = { label: null, icon: null, onPress: null };
   let intl = util.intl;
   obj.label = intl.string(util.t.iQzQs3);
-  obj.icon = _modDef8910;
+  obj.icon = _modDef8981;
   obj.onPress = function onPress() {
     const items = [closure_1_7];
     const json = require("LogAggregator").stringify(items);

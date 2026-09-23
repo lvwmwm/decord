@@ -1,15 +1,15 @@
-// Module ID: 13432
-// Function ID: 13433
+// Module ID: 13514
+// Function ID: 13515
 // Name: FriendRequestNote
-// Dependencies: [32, 19, 17, 4406, 1074, 21, 4757, 576, 13433, 504, 13434, 4753, 5187, 7215, 1115, 2]
+// Dependencies: [32, 19, 17, 4472, 1074, 21, 4827, 576, 13515, 504, 13516, 4823, 5271, 7299, 1115, 2]
 // Exports: default
 
-// Module 13432 (FriendRequestNote)
+// Module 13514 (FriendRequestNote)
 import nativeDefault from "native" /* 576 */;
-import PeopleListTracking from "PeopleListTracking" /* 13434 */;
+import PeopleListTracking from "PeopleListTracking" /* 13516 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 
 const require = globalThis.__r;
 
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { width: "100%", position: "relative", padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.md, minHeight: 56, flexDirection: "row", alignItems: "center" }, spoiler: null, hidden: null };
 const rect = { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.md };
 obj2.spoiler = rect;

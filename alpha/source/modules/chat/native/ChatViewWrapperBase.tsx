@@ -1,13 +1,13 @@
-// Module ID: 11628
-// Function ID: 11629
+// Module ID: 11704
+// Function ID: 11705
 // Name: ChatViewWrapperBase
-// Dependencies: [19, 21, 11626, 7403, 11627, 2]
+// Dependencies: [19, 21, 11702, 7487, 11703, 2]
 // Exports: default
 
-// Module 11628 (ChatViewWrapperBase)
-import LayerScope from "LayerScope" /* 7403 */;
-import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 11626 */;
-import StickyWrapper from "StickyWrapper" /* 11627 */;
+// Module 11704 (ChatViewWrapperBase)
+import LayerScope from "LayerScope" /* 7487 */;
+import useChatViewPointerEventsDefault from "useChatViewPointerEvents" /* 11702 */;
+import StickyWrapper from "StickyWrapper" /* 11703 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

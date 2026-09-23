@@ -1,11 +1,11 @@
-// Module ID: 9639
-// Function ID: 9640
+// Module ID: 9712
+// Function ID: 9713
 // Name: getApplicationIdsForGame
-// Dependencies: [4984, 2000, 504, 2]
+// Dependencies: [5054, 2000, 504, 2]
 // Exports: default, useApplicationIdsForGame
 
-// Module 9639 (getApplicationIdsForGame)
-import ApplicationStore from "ApplicationStore" /* 4984 */;
+// Module 9712 (getApplicationIdsForGame)
+import ApplicationStore from "ApplicationStore" /* 5054 */;
 import GameStore from "GameStore" /* 2000 */;
 
 const require = globalThis.__r;

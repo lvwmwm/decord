@@ -1,14 +1,14 @@
-// Module ID: 8347
-// Function ID: 8348
+// Module ID: 8429
+// Function ID: 8430
 // Name: EphemeralIndication
-// Dependencies: [8200, 1074, 8348, 1115, 2108, 2]
+// Dependencies: [8282, 1074, 8430, 1115, 2108, 2]
 // Exports: createEphemeralIndication
 
-// Module 8347 (EphemeralIndication)
+// Module 8429 (EphemeralIndication)
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8348 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8200 */;
+import ApplicationCommandUserAppUtils from "ApplicationCommandUserAppUtils" /* 8430 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8282 */;
 
 require = fn;
 const Constants = fn(1074);

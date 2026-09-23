@@ -1,13 +1,13 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 14539
+// Function ID: 14540
 // Name: createAccessibleNativeStackNavigator
-// Dependencies: [19, 21, 7247, 1485, 8161, 2]
+// Dependencies: [19, 21, 7331, 1485, 8243, 2]
 // Exports: default, useAccessibilityPatchedDescriptors
 
-// Module 14459 (createAccessibleNativeStackNavigator)
+// Module 14539 (createAccessibleNativeStackNavigator)
 import Link from "Link" /* 1485 */;
-import Navigator from "Navigator" /* 7247 */;
-import NativeStackNavigator from "NativeStackNavigator" /* 8161 */;
+import Navigator from "Navigator" /* 7331 */;
+import NativeStackNavigator from "NativeStackNavigator" /* 8243 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

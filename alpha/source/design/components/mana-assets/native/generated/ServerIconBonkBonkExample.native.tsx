@@ -1,13 +1,13 @@
-// Module ID: 6662
-// Function ID: 6663
+// Module ID: 6746
+// Function ID: 6747
 // Name: ServerIconBonkBonkExample
-// Dependencies: [21, 5806, 6663, 2]
+// Dependencies: [21, 5890, 6747, 2]
 // Exports: ServerIconBonkBonkExample
 
-// Module 6662 (ServerIconBonkBonkExample)
+// Module 6746 (ServerIconBonkBonkExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6663 from "module_6663" /* 6663 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6747 from "module_6747" /* 6747 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ServerIconBonkBonkExample = function ServerIconBonkBonkExample(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6663 };
+  const obj2 = { uri: _modDef6747 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

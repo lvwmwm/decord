@@ -1,14 +1,14 @@
-// Module ID: 17533
-// Function ID: 17534
+// Module ID: 17601
+// Function ID: 17602
 // Name: useChannelFloatingCTAContent
-// Dependencies: [19, 1992, 4780, 563, 10047, 2028, 2]
+// Dependencies: [19, 1992, 4850, 563, 10127, 2028, 2]
 // Exports: default
 
-// Module 17533 (useChannelFloatingCTAContent)
+// Module 17601 (useChannelFloatingCTAContent)
 import dismissible_content from "dismissible_content" /* 2028 */;
 import noop from "module_19" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
 
 const require = globalThis.__r;
 

@@ -1,9 +1,9 @@
-// Module ID: 15370
-// Function ID: 15371
+// Module ID: 15422
+// Function ID: 15423
 // Name: QuestDockConstants
 // Dependencies: [576, 2]
 
-// Module 15370 (QuestDockConstants)
+// Module 15422 (QuestDockConstants)
 import nativeDefault from "native" /* 576 */;
 import size from "module_2" /* 2 */;
 
@@ -17,6 +17,7 @@ export const QUEST_DOCK_COLLAPSED_HEIGHT = 56;
 export const QUEST_DOCK_CLOSED_HEIGHT = 22;
 export const QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT = 400;
 export const QUEST_DOCK_PORTRAIT_MEDIA_EXPANDED_HEIGHT = 585;
+export const QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT = nativeDefault.space.PX_16;
 export const QUEST_DOCK_EXPANDED_PADDING_BOTTOM = nativeDefault.space.PX_16;
 export const QUEST_DOCK_EXPANDED_PADDING_HORIZONTAL = nativeDefault.space.PX_12;
 export const QUEST_DOCK_EXPANDED_ENROLLED_PADDING_TOP = nativeDefault.space.PX_8;

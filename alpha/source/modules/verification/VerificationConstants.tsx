@@ -1,9 +1,9 @@
-// Module ID: 5903
-// Function ID: 5904
+// Module ID: 5987
+// Function ID: 5988
 // Name: VerificationConstants
 // Dependencies: [2]
 
-// Module 5903 (VerificationConstants)
+// Module 5987 (VerificationConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { DISCORD_EMPLOYEE_ASKED_ME_TO: 0, [0]: "DISCORD_EMPLOYEE_ASKED_ME_TO", SOMEONE_ASKED_ME_TO: 1, [1]: "SOMEONE_ASKED_ME_TO", NEW_EMAIL: 2, [2]: "NEW_EMAIL", SOMETHING_ELSE: 3, [3]: "SOMETHING_ELSE" };

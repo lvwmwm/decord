@@ -1,13 +1,13 @@
-// Module ID: 6520
-// Function ID: 6521
+// Module ID: 6604
+// Function ID: 6605
 // Name: NitroOpalBadgeLargeBadge
-// Dependencies: [21, 5806, 6521, 2]
+// Dependencies: [21, 5890, 6605, 2]
 // Exports: NitroOpalBadgeLargeBadge
 
-// Module 6520 (NitroOpalBadgeLargeBadge)
+// Module 6604 (NitroOpalBadgeLargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6521 from "module_6521" /* 6521 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6605 from "module_6605" /* 6605 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const NitroOpalBadgeLargeBadge = function NitroOpalBadgeLargeBadge(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6521 };
+  const obj2 = { uri: _modDef6605 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,11 +1,11 @@
-// Module ID: 9197
-// Function ID: 9198
+// Module ID: 9268
+// Function ID: 9269
 // Name: CollapsibleFloatingActionButtonState
-// Dependencies: [19, 4493, 2]
+// Dependencies: [19, 4559, 2]
 // Exports: useCollapsibleFloatingActionButtonScroll, useCollapsibleFloatingActionButtonState
 
-// Module 9197 (CollapsibleFloatingActionButtonState)
-import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
+// Module 9268 (CollapsibleFloatingActionButtonState)
+import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

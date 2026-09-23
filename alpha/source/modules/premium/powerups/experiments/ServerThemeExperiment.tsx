@@ -1,13 +1,13 @@
-// Module ID: 4685
-// Function ID: 4686
+// Module ID: 4755
+// Function ID: 4756
 // Name: ServerThemeExperiment
-// Dependencies: [1074, 4670, 4686, 2]
+// Dependencies: [1074, 4740, 4756, 2]
 // Exports: getServerThemeEnabled, getServerThemeRollbackEnabled, resolveServerThemeConfig, useServerThemeEnabled, useServerThemeRollbackEnabled
 
-// Module 4685 (ServerThemeExperiment)
+// Module 4755 (ServerThemeExperiment)
 import Constants from "Constants" /* 1074 */;
-import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 4686 */;
-import createExperiment from "module_4670" /* 4670 */;
+import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 4756 */;
+import createExperiment from "module_4740" /* 4740 */;
 import size from "module_2" /* 2 */;
 
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;

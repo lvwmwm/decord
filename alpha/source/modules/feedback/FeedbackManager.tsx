@@ -1,16 +1,16 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17070
+// Function ID: 17071
 // Name: feedback/FeedbackManager
-// Dependencies: [7461, 4780, 17014, 11881, 7460, 2020, 510, 12, 17015, 7365, 2]
+// Dependencies: [7545, 4850, 17071, 11957, 7544, 2020, 510, 12, 17072, 7449, 2]
 
-// Module 17013 (feedback/FeedbackManager)
+// Module 17070 (feedback/FeedbackManager)
 import _mod12 from "module_12" /* 12 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 17015 */;
-import HotspotStore from "hotspot/HotspotStore" /* 7461 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
-import FeedbackOverrideStore from "FeedbackOverrideStore" /* 17014 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import SearchResultsFeedbackExperiment from "SearchResultsFeedbackExperiment" /* 17072 */;
+import HotspotStore from "hotspot/HotspotStore" /* 7545 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
+import FeedbackOverrideStore from "FeedbackOverrideStore" /* 17071 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7449 */;
 
 require = fn;
 function optOutEligibilityCheck(hotspot) {
@@ -120,14 +120,14 @@ function groupRecencyEligibilityCheck(cooldown) {
   }
   return true;
 }
-const Constants = fn(11881);
+const Constants = fn(11957);
 ({ FeedbackGroup, FeedbackType, FeedbackTypePrecedence: hasOwnProperty, MAX_REPRESENTABLE_DATE: metroRequire } = Constants);
 let obj = { chance: 0.2, cooldown: 86400000 };
 let obj2 = {};
 const obj3 = {};
 let merged = Object.assign(obj);
 obj3.group = FeedbackGroup.AV;
-obj3.hotspot = fn(7460).HotspotLocations.VOICE_CALL_FEEDBACK;
+obj3.hotspot = fn(7544).HotspotLocations.VOICE_CALL_FEEDBACK;
 obj3.storageKey = "lastVoiceFeedback";
 obj3.feedbackType = FeedbackType.VOICE;
 let items = [
@@ -145,24 +145,24 @@ obj2[FeedbackType.VOICE] = obj3;
 const obj4 = {};
 let merged1 = Object.assign(obj);
 obj4.group = FeedbackGroup.AV;
-obj4.hotspot = fn(7460).HotspotLocations.REPORT_PROBLEM_POST_STREAM;
+obj4.hotspot = fn(7544).HotspotLocations.REPORT_PROBLEM_POST_STREAM;
 obj4.storageKey = "lastStreamFeedback";
 obj4.feedbackType = FeedbackType.STREAM;
 obj2[FeedbackType.STREAM] = obj4;
 const obj5 = {};
 const merged2 = Object.assign(obj);
 obj5.group = FeedbackGroup.AV;
-obj5.hotspot = fn(7460).HotspotLocations.VIDEO_BACKGROUND_FEEDBACK;
+obj5.hotspot = fn(7544).HotspotLocations.VIDEO_BACKGROUND_FEEDBACK;
 obj5.storageKey = "lastVideoBackgroundFeedback";
 obj5.feedbackType = FeedbackType.VIDEO_BACKGROUND;
 obj2[FeedbackType.VIDEO_BACKGROUND] = obj5;
-obj2[FeedbackType.ACTIVITY] = { cooldown: 0, chance: 0.5, group: FeedbackGroup.AV, hotspot: fn(7460).HotspotLocations.POST_ACTIVITY_FEEDBACK, storageKey: "lastActivityFeedback", feedbackType: FeedbackType.ACTIVITY };
-const obj6 = { cooldown: 0, chance: 0.5, group: FeedbackGroup.AV, hotspot: fn(7460).HotspotLocations.POST_ACTIVITY_FEEDBACK, storageKey: "lastActivityFeedback", feedbackType: FeedbackType.ACTIVITY };
-obj2[FeedbackType.IN_APP_REPORTS] = { cooldown: 172800000, chance: 0.5, group: FeedbackGroup.SAFETY, hotspot: fn(7460).HotspotLocations.IN_APP_REPORTS_FEEDBACK, storageKey: "inAppReportsFeedback", feedbackType: FeedbackType.IN_APP_REPORTS };
+obj2[FeedbackType.ACTIVITY] = { cooldown: 0, chance: 0.5, group: FeedbackGroup.AV, hotspot: fn(7544).HotspotLocations.POST_ACTIVITY_FEEDBACK, storageKey: "lastActivityFeedback", feedbackType: FeedbackType.ACTIVITY };
+const obj6 = { cooldown: 0, chance: 0.5, group: FeedbackGroup.AV, hotspot: fn(7544).HotspotLocations.POST_ACTIVITY_FEEDBACK, storageKey: "lastActivityFeedback", feedbackType: FeedbackType.ACTIVITY };
+obj2[FeedbackType.IN_APP_REPORTS] = { cooldown: 172800000, chance: 0.5, group: FeedbackGroup.SAFETY, hotspot: fn(7544).HotspotLocations.IN_APP_REPORTS_FEEDBACK, storageKey: "inAppReportsFeedback", feedbackType: FeedbackType.IN_APP_REPORTS };
 const obj8 = {};
 const merged3 = Object.assign(obj);
 obj8.group = FeedbackGroup.SEARCH;
-obj8.hotspot = fn(7460).HotspotLocations.SEARCH_RESULTS_FEEDBACK;
+obj8.hotspot = fn(7544).HotspotLocations.SEARCH_RESULTS_FEEDBACK;
 obj8.storageKey = "searchResultsFeedback";
 obj8.feedbackType = FeedbackType.SEARCH_RESULTS;
 const items1 = [
@@ -172,8 +172,8 @@ const items1 = [
 ];
 obj8.eligibilityChecks = items1;
 obj2[FeedbackType.SEARCH_RESULTS] = obj8;
-const obj7 = { cooldown: 172800000, chance: 0.5, group: FeedbackGroup.SAFETY, hotspot: fn(7460).HotspotLocations.IN_APP_REPORTS_FEEDBACK, storageKey: "inAppReportsFeedback", feedbackType: FeedbackType.IN_APP_REPORTS };
-obj2[FeedbackType.VIBEGRATIONS] = { cooldown: 3600000, chance: 1, group: FeedbackGroup.BUILDER, hotspot: fn(7460).HotspotLocations.VIBEGRATIONS_FEEDBACK, storageKey: "lastVibegrationsFeedback", feedbackType: FeedbackType.VIBEGRATIONS };
+const obj7 = { cooldown: 172800000, chance: 0.5, group: FeedbackGroup.SAFETY, hotspot: fn(7544).HotspotLocations.IN_APP_REPORTS_FEEDBACK, storageKey: "inAppReportsFeedback", feedbackType: FeedbackType.IN_APP_REPORTS };
+obj2[FeedbackType.VIBEGRATIONS] = { cooldown: 3600000, chance: 1, group: FeedbackGroup.BUILDER, hotspot: fn(7544).HotspotLocations.VIBEGRATIONS_FEEDBACK, storageKey: "lastVibegrationsFeedback", feedbackType: FeedbackType.VIBEGRATIONS };
 class FeedbackManager extends tmp7 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);

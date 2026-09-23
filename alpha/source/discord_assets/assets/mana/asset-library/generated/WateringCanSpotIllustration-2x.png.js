@@ -1,8 +1,8 @@
-// Module ID: 6811
-// Function ID: 6812
+// Module ID: 6895
+// Function ID: 6896
 // Dependencies: [2]
 
-// Module 6811
+// Module 6895
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WateringCanSpotIllustration-2x.png.js");

@@ -1,18 +1,18 @@
-// Module ID: 16935
-// Function ID: 16936
+// Module ID: 16987
+// Function ID: 16988
 // Name: MembersPruneActionSheet
-// Dependencies: [32, 19, 16936, 2064, 4396, 1372, 21, 573, 16937, 7444, 7396, 1115, 5904, 5907, 4753, 5187, 4724, 504, 7509, 2]
+// Dependencies: [32, 19, 16988, 2064, 4462, 1372, 21, 573, 16989, 7528, 7480, 1115, 5988, 5991, 4823, 5271, 4794, 504, 7593, 2]
 // Exports: default
 
-// Module 16935 (MembersPruneActionSheet)
+// Module 16987 (MembersPruneActionSheet)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7509 */;
-import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 16937 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 7593 */;
+import PruneGuildModalActionCreatorsDefault from "PruneGuildModalActionCreators" /* 16989 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -101,7 +101,7 @@ function MembersPruneActionSheetContent(guild) {
   obj.children = items3;
   return closure_12(guild(days[9]).ActionSheet, obj);
 }
-const PrunePreviewStore = fn(16936);
+const PrunePreviewStore = fn(16988);
 ({ usePrunePreview: hasOwnProperty, setPrunePreview: metroRequire, clearAllPrunePreviews: closure_7 } = PrunePreviewStore);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);

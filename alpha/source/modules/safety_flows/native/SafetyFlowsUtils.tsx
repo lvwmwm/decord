@@ -1,17 +1,17 @@
-// Module ID: 18341
-// Function ID: 18342
+// Module ID: 18410
+// Function ID: 18411
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1372, 18335, 18337, 4960, 18336, 4455, 9627, 1115, 2776, 1484, 18340, 2]
+// Dependencies: [5, 19, 1372, 18404, 18406, 5030, 18405, 4521, 9700, 1115, 2778, 1484, 18409, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 18341 (SafetyFlowsUtils)
+// Module 18410 (SafetyFlowsUtils)
 import util from "util" /* 1115 */;
-import _modDef2776 from "module_2776" /* 2776 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4455 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
-import _modDef9627 from "module_9627" /* 9627 */;
-import types from "types" /* 18335 */;
-import constants from "constants" /* 18336 */;
+import _modDef2778 from "module_2778" /* 2778 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4521 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
+import _modDef9700 from "module_9700" /* 9700 */;
+import types from "types" /* 18404 */;
+import constants from "constants" /* 18405 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -41,9 +41,9 @@ let closure_7 = async function _fetchAndUpdateTask() {
 function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     ModalActionCreatorsDefault.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj3 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: _modDef9627, content: null };
+    const obj3 = { key: "SAFETY_FLOWS_VERIFY_EMAIL_SUCCESS", icon: _modDef9700, content: null };
     const intl = util.intl;
-    obj3.content = intl.string(_modDef2776["/fHz9S"]);
+    obj3.content = intl.string(_modDef2778["/fHz9S"]);
     ToastActionCreatorsDefault.open(obj3);
   } else {
     task_type = task_type.task_type;
@@ -51,7 +51,7 @@ function navigateToScreenForTask(arr, task_type) {
     let tmp5 = null;
     if (null != tmp16) {
       let tmp = tmp16;
-      if (task_type === tmp14(18335).TaskType.EMAIL_VERIFICATION) {
+      if (task_type === tmp14(18404).TaskType.EMAIL_VERIFICATION) {
         const currentUser = UserStore.getCurrentUser();
         let email;
         if (currentUser != null) {
@@ -59,7 +59,7 @@ function navigateToScreenForTask(arr, task_type) {
         }
         tmp = tmp16;
         if (null != email) {
-          const items = [tmp14(18335).SafetyFlowScreens.VERIFY_EMAIL];
+          const items = [tmp14(18404).SafetyFlowScreens.VERIFY_EMAIL];
           tmp = items;
         }
       }
@@ -68,7 +68,7 @@ function navigateToScreenForTask(arr, task_type) {
     if (null != tmp5) {
       arr.push(tmp5[0]);
     } else {
-      arr.push(tmp14(18335).SafetyFlowScreens.UPDATE_APP);
+      arr.push(tmp14(18404).SafetyFlowScreens.UPDATE_APP);
     }
   }
 }
@@ -80,7 +80,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
   let tmp4 = null;
   if (null != tmp3) {
     let tmp5 = tmp3;
-    if (task_type === tmp(18335).TaskType.EMAIL_VERIFICATION) {
+    if (task_type === tmp(18404).TaskType.EMAIL_VERIFICATION) {
       const currentUser = UserStore.getCurrentUser();
       let email;
       if (currentUser != null) {
@@ -88,7 +88,7 @@ export const getScreensForTaskType = function getScreensForTaskType(task_type) {
       }
       tmp5 = tmp3;
       if (null != email) {
-        const items = [tmp(18335).SafetyFlowScreens.VERIFY_EMAIL];
+        const items = [tmp(18404).SafetyFlowScreens.VERIFY_EMAIL];
         tmp5 = items;
       }
     }

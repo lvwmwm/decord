@@ -1,21 +1,21 @@
-// Module ID: 5649
-// Function ID: 5650
+// Module ID: 5733
+// Function ID: 5734
 // Name: StageBoostingActionSheet
-// Dependencies: [19, 4749, 2064, 4396, 5633, 1074, 1374, 21, 504, 2050, 1115, 4724, 1241, 5650, 5644, 5204, 5652, 5187, 5653, 10494, 5911, 5806, 8875, 2]
+// Dependencies: [19, 4819, 2064, 4462, 5717, 1074, 1374, 21, 504, 2050, 1115, 4794, 1241, 5734, 5728, 5288, 5736, 5271, 5737, 10573, 5995, 5890, 8946, 2]
 // Exports: default
 
-// Module 5649 (StageBoostingActionSheet)
+// Module 5733 (StageBoostingActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 2050 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5653 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 5737 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4749 */;
+import AccessibilityStore from "AccessibilityStore" /* 4819 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
 
 require = fn;
-const STAGE_BOOSTING_SHEET_KEY = fn(5633).STAGE_BOOSTING_SHEET_KEY;
+const STAGE_BOOSTING_SHEET_KEY = fn(5717).STAGE_BOOSTING_SHEET_KEY;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_7, BoostedGuildTiers: closure_8, GuildFeatures: closure_9, MAX_STAGE_VIDEO_USER_LIMIT_TIER2: c10, MAX_STAGE_VIDEO_USER_LIMIT_UNCAPPED: closure_11 } = Constants);
 const PremiumConstants = fn(1374);
@@ -105,10 +105,10 @@ export default function StageBoostingActionSheet(channel) {
       AnalyticsUtilsDefault.track(constants.BOOSTING_UPSELL_CLICKED, { guild_id: channel.guild_id, type: constants4.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, action: constants3.DISMISS });
     }
     const string3Result1 = string3(t1.pqPQL0);
-    dependencyMap = tmp(5650).useActualStageSpeakerCount(channel.id);
-    const tmpResult3 = tmp(5650);
-    useReducedMotion = tmp(5650).useStageParticipantsCount(channel.id, tmp(5644).StageChannelParticipantNamedIndex.AUDIENCE);
-    stateFromStores2(5204)(() => {
+    dependencyMap = tmp(5734).useActualStageSpeakerCount(channel.id);
+    const tmpResult3 = tmp(5734);
+    useReducedMotion = tmp(5734).useStageParticipantsCount(channel.id, tmp(5728).StageChannelParticipantNamedIndex.AUDIENCE);
+    stateFromStores2(5288)(() => {
       AnalyticsUtilsDefault.track(constants.BOOSTING_UPSELL_VIEWED, { guild_id: channel.guild_id, type: constants4.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, listener_count: closure_2 + closure_3 });
     });
     if (tmp9) {
@@ -123,14 +123,14 @@ export default function StageBoostingActionSheet(channel) {
         actions_BoostingActionCreators.openApplyBoostModal(channel.guild_id);
         AnalyticsUtilsDefault.track(constants.BOOSTING_UPSELL_CLICKED, { guild_id: channel.guild_id, type: constants4.VIDEO_STAGE_LIMIT, is_moderator: stateFromStores2, action: constants3.BOOST });
       };
-      const items5 = [closure_14(tmp(5187).Button, obj4), ];
+      const items5 = [closure_14(tmp(5271).Button, obj4), ];
       const obj5 = { variant: "secondary", size: "lg", text: null, onPress: null };
       const intl7 = tmp(1115).intl;
       obj5.text = intl7.string(tmp(1115).t.f3Pet9);
       obj5.onPress = handleClose;
-      items5[1] = closure_14(tmp(5187).Button, obj5);
+      items5[1] = closure_14(tmp(5271).Button, obj5);
       obj3.children = items5;
-      let tmp24Result = closure_15(tmp(5652).ButtonGroup, obj3);
+      let tmp24Result = closure_15(tmp(5736).ButtonGroup, obj3);
       let tmp24 = closure_14;
     } else {
       tmp24 = closure_14;
@@ -146,18 +146,18 @@ export default function StageBoostingActionSheet(channel) {
         obj7.text = intl4.string(tmp(1115).t["NX+WJN"]);
         obj7.onPress = handleClose;
       }
-      tmp24Result = tmp24(tmp(5187).Button, obj7);
+      tmp24Result = tmp24(tmp(5271).Button, obj7);
     }
     const obj8 = { title: string3Result1, description: stringResult, illustration: null, actions: null };
     if (tmp9) {
-      let tmp24Result2 = tmp24(tmp(5911).HoldingGemSpotIllustration, { accessible: false });
+      let tmp24Result2 = tmp24(tmp(5995).HoldingGemSpotIllustration, { accessible: false });
     } else {
-      const obj9 = { source: tmp22(8875) };
-      tmp24Result2 = tmp24(tmp22(5806), obj9);
-      const tmp22Result = tmp22(5806);
+      const obj9 = { source: tmp22(8946) };
+      tmp24Result2 = tmp24(tmp22(5890), obj9);
+      const tmp22Result = tmp22(5890);
     }
     obj8.illustration = tmp24Result2;
     obj8.actions = tmp24Result;
-    return tmp24(tmp(10494).PromoSheet, obj8);
+    return tmp24(tmp(10573).PromoSheet, obj8);
   }
 };

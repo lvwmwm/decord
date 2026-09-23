@@ -1,10 +1,10 @@
-// Module ID: 4956
-// Function ID: 4957
+// Module ID: 5026
+// Function ID: 5027
 // Name: GuildRoomErrorUtils
 // Dependencies: [1074, 2]
 // Exports: handleGuildRoomError
 
-// Module 4956 (GuildRoomErrorUtils)
+// Module 5026 (GuildRoomErrorUtils)
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

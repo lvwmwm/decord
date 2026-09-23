@@ -1,10 +1,10 @@
-// Module ID: 16936
-// Function ID: 16937
+// Module ID: 16988
+// Function ID: 16989
 // Name: PrunePreviewStore
 // Dependencies: [32, 560, 2]
 // Exports: clearAllPrunePreviews, getPrunePreview, getPrunePreviewKey, setPrunePreview, usePrunePreview
 
-// Module 16936 (PrunePreviewStore)
+// Module 16988 (PrunePreviewStore)
 import _slicedToArray from "module_32" /* 32 */;
 
 let c1 = 3600000;

@@ -1,13 +1,13 @@
-// Module ID: 5364
-// Function ID: 5365
+// Module ID: 5448
+// Function ID: 5449
 // Name: mobile/NativePermissionUtils
-// Dependencies: [5, 19, 17, 4966, 21, 1364, 1609, 5361, 3, 5365, 5367, 1980, 5111, 1115, 2]
+// Dependencies: [5, 19, 17, 5036, 21, 1364, 1609, 5445, 3, 5449, 5451, 1980, 5195, 1115, 2]
 
-// Module 5364 (mobile/NativePermissionUtils)
+// Module 5448 (mobile/NativePermissionUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import util from "util" /* 1115 */;
-import useAlertStore from "useAlertStore" /* 5111 */;
-import openPrivacySettingsDefault from "openPrivacySettings" /* 5365 */;
+import useAlertStore from "useAlertStore" /* 5195 */;
+import openPrivacySettingsDefault from "openPrivacySettings" /* 5449 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -103,7 +103,7 @@ let closure_9 = async function _combineStatuses(arg0) {
 };
 get_ActivityIndicator = fn(17);
 const NativeModules = get_ActivityIndicator.NativeModules;
-const NativePermissionConstants = fn(4966);
+const NativePermissionConstants = fn(5036);
 ({ NativePermissionTypes, NativePermissionStatus: metroRequire } = NativePermissionConstants);
 const jsx = fn(21).jsx;
 let PlatformUtils = fn(1364);
@@ -144,7 +144,7 @@ if (MetaQuestUtils) {
 }
 HermesBuiltin.arraySpread(items9, tmp8);
 let NativePermissionIOSUtils;
-const NativePermissionBaseUtils = fn(5361).NativePermissionBaseUtils;
+const NativePermissionBaseUtils = fn(5445).NativePermissionBaseUtils;
 class NativePermissionIOSUtils extends NativePermissionBaseUtils {
 }
 const prototype = NativePermissionIOSUtils.prototype;

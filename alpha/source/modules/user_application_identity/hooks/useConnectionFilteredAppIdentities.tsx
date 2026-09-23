@@ -1,10 +1,10 @@
-// Module ID: 13397
-// Function ID: 13398
+// Module ID: 13479
+// Function ID: 13480
 // Name: useConnectionFilteredAppIdentities
-// Dependencies: [19, 2006, 9307, 2]
+// Dependencies: [19, 2006, 9378, 2]
 // Exports: default
 
-// Module 13397 (useConnectionFilteredAppIdentities)
+// Module 13479 (useConnectionFilteredAppIdentities)
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

@@ -1,13 +1,13 @@
-// Module ID: 6034
-// Function ID: 6035
+// Module ID: 6118
+// Function ID: 6119
 // Name: BeeIllocon
-// Dependencies: [21, 5806, 6035, 2]
+// Dependencies: [21, 5890, 6119, 2]
 // Exports: BeeIllocon
 
-// Module 6034 (BeeIllocon)
+// Module 6118 (BeeIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6035 from "module_6035" /* 6035 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6119 from "module_6119" /* 6119 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const BeeIllocon = function BeeIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6035 };
+  const obj2 = { uri: _modDef6119 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

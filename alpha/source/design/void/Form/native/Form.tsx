@@ -1,17 +1,17 @@
-// Module ID: 7385
-// Function ID: 7386
+// Module ID: 7469
+// Function ID: 7470
 // Name: Form/Form
-// Dependencies: [19, 17, 21, 4757, 7228, 5905, 2]
+// Dependencies: [19, 17, 21, 4827, 7312, 5989, 2]
 
-// Module 7385 (Form/Form)
-import RedesignCompat from "RedesignCompat" /* 5905 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7228 */;
+// Module 7469 (Form/Form)
+import RedesignCompat from "RedesignCompat" /* 5989 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7312 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const ScrollView = fn(17).ScrollView;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_6 = createStyles.createStyles({ form: { flex: 1 }, redesign: { paddingTop: 16 } });
 const context = noop.createContext({ isForm: false });
 const size = fn(2);

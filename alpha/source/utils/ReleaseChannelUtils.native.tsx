@@ -1,9 +1,9 @@
-// Module ID: 5086
-// Function ID: 5087
+// Module ID: 5170
+// Function ID: 5171
 // Name: ReleaseChannelUtils
 // Dependencies: [1363, 1364, 2]
 
-// Module 5086 (ReleaseChannelUtils)
+// Module 5170 (ReleaseChannelUtils)
 import ClientInfoUtils from "ClientInfoUtils" /* 1363 */;
 
 const ReleaseChannel = ClientInfoUtils.getConstants().ReleaseChannel;

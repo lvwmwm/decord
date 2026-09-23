@@ -1,26 +1,26 @@
-// Module ID: 4902
-// Function ID: 4903
+// Module ID: 4972
+// Function ID: 4973
 // Name: ChannelUtils
-// Dependencies: [2046, 2042, 4394, 4396, 2096, 4781, 1074, 1374, 4401, 1086, 1978, 4903, 4904, 1115, 4601, 4905, 11, 2, 4912]
+// Dependencies: [2046, 2042, 4460, 4462, 2096, 4851, 1074, 1374, 4467, 1086, 1978, 4973, 4974, 1115, 4671, 4975, 11, 2, 4982]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 4902 (ChannelUtils)
+// Module 4972 (ChannelUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import util from "util" /* 1115 */;
 import PremiumConstants from "PremiumConstants" /* 1374 */;
 import Server from "Server" /* 1978 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4401 */;
-import UserUtilsDefault from "UserUtils" /* 4601 */;
-import ChannelListUtils from "ChannelListUtils" /* 4903 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4904 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4912 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4467 */;
+import UserUtilsDefault from "UserUtils" /* 4671 */;
+import ChannelListUtils from "ChannelListUtils" /* 4973 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4974 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 4982 */;
 import ChannelRecord from "ChannelRecord" /* 2046 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildChannelStore from "GuildChannelStore" /* 4394 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
+import GuildChannelStore from "GuildChannelStore" /* 4460 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4781 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4851 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

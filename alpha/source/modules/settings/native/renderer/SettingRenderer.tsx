@@ -1,38 +1,38 @@
-// Module ID: 14974
-// Function ID: 14975
+// Module ID: 15051
+// Function ID: 15052
 // Name: SettingRenderer
-// Dependencies: [32, 109, 19, 17, 2109, 14973, 2064, 11730, 21, 4757, 576, 1177, 5824, 1484, 14975, 504, 1115, 11086, 5803, 14977, 14978, 4753, 7448, 7447, 4477, 5904, 5907, 7436, 4454, 10249, 4725, 4726, 5826, 5185, 1881, 1364, 14464, 5341, 5187, 4458, 7244, 1875, 2]
+// Dependencies: [32, 109, 19, 17, 2109, 15050, 2064, 11806, 21, 4827, 576, 1177, 5908, 1484, 15052, 504, 1115, 11162, 5887, 15054, 15055, 4823, 7532, 7531, 4543, 5988, 5991, 7520, 4520, 10328, 4795, 4796, 5910, 5269, 1881, 1364, 14544, 5425, 5271, 4524, 7328, 1875, 2]
 // Exports: renderSettingItem, renderSettingSearchResultItem, renderSettingSearchResultPlaceholderItem
 
-// Module 14974 (SettingRenderer)
+// Module 15051 (SettingRenderer)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import ToastUtils from "ToastUtils" /* 4454 */;
-import useToken from "useToken" /* 4458 */;
-import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4477 */;
-import HapticUtils from "HapticUtils" /* 4725 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4726 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import GuildIcon from "GuildIcon" /* 5803 */;
-import TableRow from "TableRow" /* 5824 */;
-import TableRadioRow from "TableRadioRow" /* 5907 */;
-import Tracking from "Tracking" /* 7244 */;
-import ClipboardUtils from "ClipboardUtils" /* 7436 */;
-import VolumeSliderDefault from "VolumeSlider" /* 10249 */;
-import ClydeIcon from "ClydeIcon" /* 11086 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 14975 */;
-import useHighlightSettingItem from "useHighlightSettingItem" /* 14977 */;
-import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 14978 */;
+import ToastUtils from "ToastUtils" /* 4520 */;
+import useToken from "useToken" /* 4524 */;
+import AccessibilityPreferencesContext from "AccessibilityPreferencesContext" /* 4543 */;
+import HapticUtils from "HapticUtils" /* 4795 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4796 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import GuildIcon from "GuildIcon" /* 5887 */;
+import TableRow from "TableRow" /* 5908 */;
+import TableRadioRow from "TableRadioRow" /* 5991 */;
+import Tracking from "Tracking" /* 7328 */;
+import ClipboardUtils from "ClipboardUtils" /* 7520 */;
+import VolumeSliderDefault from "VolumeSlider" /* 10328 */;
+import ClydeIcon from "ClydeIcon" /* 11162 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15052 */;
+import useHighlightSettingItem from "useHighlightSettingItem" /* 15054 */;
+import SettingListItemHighlightDefault from "SettingListItemHighlight" /* 15055 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 14973 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15050 */;
 import GuildStore from "GuildStore" /* 2064 */;
 
 const GuildIconDefault = GuildIcon;
 
-const TableRadioGroup = tmp2(5904);
+const TableRadioGroup = tmp2(5988);
 require = fn;
 class GuildSelectDefaultIcon {
   constructor(arg0) {
@@ -210,11 +210,11 @@ function SettingSearchResultPlaceholder(arg0) {
 let closure_3 = ["onSlidingComplete", "step", "startIcon", "endIcon", "minimumValue", "maximumValue", "valueLabel", "defaultValue", "onValueChange"];
 let closure_4 = ["settingData"];
 const View = fn(17).View;
-const SettingRendererConstants = fn(11730);
+const SettingRendererConstants = fn(11806);
 ({ GUILD_SELECT_ALL_SERVERS_OPTION_ID: closure_12, NodeType: map1 } = SettingRendererConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { slider: { marginTop: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8 }, sliderTitle: { flexDirection: "row", justifyContent: "space-between" }, radioSettingHighlight: { top: 26 }, defaultIcon: null, placeholderAvatar: null, placeholderUsername: null };
 let obj3 = { marginTop: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8 };
 obj.defaultIcon = { backgroundColor: nativeDefault.colors.BACKGROUND_BRAND, justifyContent: "center", alignItems: "center" };
@@ -361,7 +361,7 @@ let closure_21 = noop.memo((arg0) => {
   let tmp10Result = null;
   if (null != IconComponent) {
     const obj3 = { IconComponent, variant };
-    tmp10Result = tmp10(tmp(5824).TableRow.Icon, obj3);
+    tmp10Result = tmp10(tmp(5908).TableRow.Icon, obj3);
   }
   obj2.icon = tmp10Result;
   obj2.onPress = onPress;
@@ -371,7 +371,7 @@ let closure_21 = noop.memo((arg0) => {
     let tmp10Result2 = trailing;
     if (typeof trailing === "string") {
       const obj4 = { text: trailing };
-      tmp10Result2 = tmp10(tmp(5824).TableRow.TrailingText, obj4);
+      tmp10Result2 = tmp10(tmp(5908).TableRow.TrailingText, obj4);
     }
     tmp12 = tmp10Result2;
   }
@@ -404,7 +404,7 @@ let closure_23 = noop.memo((arg0) => {
   let tmp8 = null;
   if (null != IconComponent) {
     const obj3 = { IconComponent, variant };
-    tmp8 = closure_1_14(tmp(5824).TableRow.Icon, obj3);
+    tmp8 = closure_1_14(tmp(5908).TableRow.Icon, obj3);
   }
   obj2.icon = tmp8;
   obj2.variant = variant;
@@ -419,9 +419,9 @@ let closure_23 = noop.memo((arg0) => {
     ({ accessibilityHint: obj4.accessibilityHint, onPress: obj4.onPress } = isDisabled);
     const obj7 = { style: { opacity: 0.5 }, children: null };
     const obj8 = { "aria-hidden": true, value, disabled: true };
-    obj7.children = closure_1_14(tmp(7448).FormSwitch, obj8);
+    obj7.children = closure_1_14(tmp(7532).FormSwitch, obj8);
     obj5.trailing = closure_1_14(View, obj7);
-    let tmp16 = closure_1_14(tmp(5824).TableRow, obj5);
+    let tmp16 = closure_1_14(tmp(5908).TableRow, obj5);
     let tmp17 = closure_1_14;
   } else {
     const obj9 = {};
@@ -429,7 +429,7 @@ let closure_23 = noop.memo((arg0) => {
     obj9.disabled = isDisabled;
     obj9.onValueChange = onValueChange;
     obj9.value = value;
-    tmp16 = closure_1_14(tmp(7447).TableSwitchRow, obj9);
+    tmp16 = closure_1_14(tmp(7531).TableSwitchRow, obj9);
     tmp17 = closure_1_14;
   }
   let tmp17Result = tmp16;
@@ -489,7 +489,7 @@ let closure_26 = noop.memo((arg0) => {
   ({ variant, useTrailing, useIsDisabled, useDescription, start, end, IconComponent } = arg0);
   let trailing;
   ({ setting, useTitle } = arg0);
-  let highlightSettingItem = trailing(14977).useHighlightSettingItem(setting);
+  let highlightSettingItem = trailing(15054).useHighlightSettingItem(setting);
   trailing = undefined;
   const title = useTitle();
   if (useTrailing != null) {
@@ -521,18 +521,18 @@ let closure_26 = noop.memo((arg0) => {
   let tmp11Result = null;
   if (null != IconComponent) {
     const obj3 = { IconComponent, variant };
-    tmp11Result = tmp11(tmp(5824).TableRow.Icon, obj3);
+    tmp11Result = tmp11(tmp(5908).TableRow.Icon, obj3);
   }
   obj2.icon = tmp11Result;
   let tmp11Result2 = null;
   if (null != trailing) {
     const obj4 = { text: trailing };
-    tmp11Result2 = tmp11(tmp(5824).TableRow.TrailingText, obj4);
+    tmp11Result2 = tmp11(tmp(5908).TableRow.TrailingText, obj4);
   }
   obj2.trailing = tmp11Result2;
   obj2.start = start;
   obj2.end = end;
-  const children = [closure_14(trailing(5824).TableRow, obj2), ];
+  const children = [closure_14(trailing(5908).TableRow, obj2), ];
   if (highlightSettingItem) {
     const obj5 = { start, end };
     highlightSettingItem = tmp11(SettingListItemHighlightDefault, obj5);

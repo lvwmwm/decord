@@ -1,12 +1,12 @@
-// Module ID: 16343
-// Function ID: 16344
+// Module ID: 16396
+// Function ID: 16397
 // Name: useOrientationLock
-// Dependencies: [19, 4736, 1609, 7189, 8607, 2]
+// Dependencies: [19, 4806, 1609, 7273, 8678, 2]
 // Exports: default
 
-// Module 16343 (useOrientationLock)
-import DeviceUtils from "DeviceUtils" /* 4736 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7189 */;
+// Module 16396 (useOrientationLock)
+import DeviceUtils from "DeviceUtils" /* 4806 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7273 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,8 +29,8 @@ export default function usePortraitOrientationOnly() {
     }
     closure_0 = tmp4;
     if (tmp4) {
-      tmp(8607).lockOrientation("PORTRAIT", false);
-      const tmpResult2 = tmp(8607);
+      tmp(8678).lockOrientation("PORTRAIT", false);
+      const tmpResult2 = tmp(8678);
     }
     return () => {
       if (closure_0) {

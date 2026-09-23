@@ -1,10 +1,10 @@
-// Module ID: 15126
-// Function ID: 15127
+// Module ID: 15178
+// Function ID: 15179
 // Name: StaffOnlyFindYourFriendsDeletionSetting
-// Dependencies: [5, 17, 8237, 21, 1243, 1248, 4379, 12937, 1325, 4455, 11729, 15127, 2]
+// Dependencies: [5, 17, 8319, 21, 1243, 1248, 4445, 13019, 1325, 4521, 11805, 15179, 2]
 
-// Module 15126 (StaffOnlyFindYourFriendsDeletionSetting)
-import _mod4379 from "module_4379" /* 4379 */;
+// Module 15178 (StaffOnlyFindYourFriendsDeletionSetting)
+import _mod4445 from "module_4445" /* 4445 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -99,14 +99,14 @@ const ActivityIndicator = fn(17).ActivityIndicator;
 const jsx = fn(21).jsx;
 const identity = fn(1243);
 let closure_6 = identity.createWithEqualityFn(() => ({ isLoading: false }));
-const SettingBuilders = fn(11729);
+const SettingBuilders = fn(11805);
 const pressable = SettingBuilders.createPressable({
   useTitle() {
     return "STAFF ONLY - Find your friends deletion";
   },
-  parent: fn(8237).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8319).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useIsDisabled: function useIsFindYourFriendsDeletionDisabled() {
-    return closure_6((isLoading) => isLoading.isLoading, _mod4379.shallow);
+    return closure_6((isLoading) => isLoading.isLoading, _mod4445.shallow);
   },
   onPress: function onFindYourFriendsDeletionPress() {
     const self = this;
@@ -118,10 +118,10 @@ const pressable = SettingBuilders.createPressable({
     }
     return applyArgumentsResult;
   },
-  usePredicate: fn(15127).useStaffOrDeveloperSettingPredicate,
+  usePredicate: fn(15179).useStaffOrDeveloperSettingPredicate,
   useTrailing: function useIsFindYourFriendsDeletionTrailing() {
     let tmp = null;
-    if (closure_6((isLoading) => isLoading.isLoading, _mod4379.shallow)) {
+    if (closure_6((isLoading) => isLoading.isLoading, _mod4445.shallow)) {
       tmp = <ActivityIndicator />;
     }
     return tmp;

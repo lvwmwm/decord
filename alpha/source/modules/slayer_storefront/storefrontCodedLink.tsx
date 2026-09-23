@@ -1,10 +1,10 @@
-// Module ID: 13242
-// Function ID: 13243
+// Module ID: 13324
+// Function ID: 13325
 // Name: storefrontCodedLink
 // Dependencies: [32, 2]
 // Exports: makeStorefrontCodedLink, parseStorefrontCodedLink
 
-// Module 13242 (storefrontCodedLink)
+// Module 13324 (storefrontCodedLink)
 import _slicedToArray from "module_32" /* 32 */;
 
 function normalizeStorefrontSkuIds(items) {

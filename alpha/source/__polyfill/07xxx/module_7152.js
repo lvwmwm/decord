@@ -1,32 +1,10 @@
 // Module ID: 7152
 // Function ID: 7153
-// Dependencies: [19]
-// Exports: getValidComponent, isComponentClass
+// Dependencies: [17]
 
 // Module 7152
-import noop from "module_19" /* 19 */;
+import _mod17 from "module_17" /* 17 */;
 
+const StyleSheet = _mod17.StyleSheet;
 
-export const isComponentClass = (fn) => {
-  let BooleanResult = typeof fn === "function";
-  if (typeof fn === "function") {
-    const prototype = fn.prototype;
-    let isReactComponent;
-    if (prototype != null) {
-      isReactComponent = prototype.isReactComponent;
-    }
-    BooleanResult = Boolean(isReactComponent);
-  }
-  return BooleanResult;
-};
-export const getValidComponent = (icon) => {
-  let tmp = icon;
-  if (!noop.isValidElement(icon)) {
-    let element = null;
-    if (null != icon) {
-      element = noop.createElement(icon);
-    }
-    tmp = element;
-  }
-  return tmp;
-};
+export const styles = StyleSheet.create({ container: { position: "absolute", top: 0, left: 0, right: 0, zIndex: 9999, pointerEvents: "box-none" } });

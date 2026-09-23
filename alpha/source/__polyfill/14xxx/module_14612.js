@@ -1,9 +1,0 @@
-// Module ID: 14612
-// Function ID: 14613
-// Dependencies: [14590]
-
-// Module 14612
-import _mod14590 from "module_14590" /* 14590 */;
-
-
-export default _mod14590({}.isPrototypeOf);

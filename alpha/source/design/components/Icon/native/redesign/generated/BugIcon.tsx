@@ -1,13 +1,13 @@
-// Module ID: 16064
-// Function ID: 16065
+// Module ID: 16117
+// Function ID: 16118
 // Name: BugIcon
-// Dependencies: [19, 21, 576, 4457, 16065, 2]
+// Dependencies: [19, 21, 576, 4523, 16118, 2]
 // Exports: BugIcon
 
-// Module 16064 (BugIcon)
+// Module 16117 (BugIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod16065 from "module_16065" /* 16065 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod16118 from "module_16118" /* 16118 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BugIcon = function BugIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod16065, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod16118, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

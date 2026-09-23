@@ -1,15 +1,15 @@
-// Module ID: 11241
-// Function ID: 11242
+// Module ID: 11317
+// Function ID: 11318
 // Name: useInappropriateConversationBannerForChannel
-// Dependencies: [11185, 11240, 11242, 11244, 11245, 2]
+// Dependencies: [11261, 11316, 11318, 11320, 11321, 2]
 // Exports: useInappropriateConversationBannerForChannel
 
-// Module 11241 (useInappropriateConversationBannerForChannel)
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11185 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11240 */;
-import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 11242 */;
-import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11244 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11245 */;
+// Module 11317 (useInappropriateConversationBannerForChannel)
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11261 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11316 */;
+import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 11318 */;
+import useInappropriateConversationWarningsForChannel from "useInappropriateConversationWarningsForChannel" /* 11320 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11321 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;

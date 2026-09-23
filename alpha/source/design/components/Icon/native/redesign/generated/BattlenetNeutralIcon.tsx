@@ -1,13 +1,13 @@
-// Module ID: 8976
-// Function ID: 8977
+// Module ID: 9047
+// Function ID: 9048
 // Name: BattlenetNeutralIcon
-// Dependencies: [19, 21, 576, 4457, 8977, 2]
+// Dependencies: [19, 21, 576, 4523, 9048, 2]
 // Exports: BattlenetNeutralIcon
 
-// Module 8976 (BattlenetNeutralIcon)
+// Module 9047 (BattlenetNeutralIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod8977 from "module_8977" /* 8977 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod9048 from "module_9048" /* 9048 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BattlenetNeutralIcon = function BattlenetNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8977, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9048, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

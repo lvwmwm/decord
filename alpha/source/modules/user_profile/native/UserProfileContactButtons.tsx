@@ -1,21 +1,21 @@
-// Module ID: 13436
-// Function ID: 13437
+// Module ID: 13518
+// Function ID: 13519
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 4406, 1074, 21, 4757, 576, 5187, 7409, 8463, 13361, 504, 4601, 13437, 4693, 1115, 12877, 10009, 11487, 4724, 4960, 4770, 13439, 8183, 5291, 8127, 13440, 2]
+// Dependencies: [19, 17, 4472, 1074, 21, 4827, 576, 5271, 7493, 8534, 13443, 504, 4671, 13519, 4763, 1115, 12959, 10082, 11563, 4794, 5030, 4840, 13521, 8265, 5375, 8209, 13522, 2]
 // Exports: default
 
-// Module 13436 (UserProfileContactButtons)
+// Module 13518 (UserProfileContactButtons)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4770 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
-import components_Button_Button from "components/Button/Button" /* 5187 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10009 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11487 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12877 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 13440 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4840 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
+import components_Button_Button from "components/Button/Button" /* 5271 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 10082 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11563 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12959 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 13522 */;
 import noop from "module_19" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 
 require = fn;
 function FlatFriendButton(label) {
@@ -42,19 +42,19 @@ function FriendRequestButton(user) {
   let stateFromStores;
   let userDisplayName;
   ({ hasCustomProfileTheme, ButtonComponent } = user);
-  const trackUserProfileAction = user(8463).useUserProfileAnalyticsContext().trackUserProfileAction;
+  const trackUserProfileAction = user(8534).useUserProfileAnalyticsContext().trackUserProfileAction;
   if (newestAnalyticsLocation == null) {
-    newestAnalyticsLocation = trackUserProfileAction(7409)().newestAnalyticsLocation;
+    newestAnalyticsLocation = trackUserProfileAction(7493)().newestAnalyticsLocation;
   }
   dependencyMap = { location: newestAnalyticsLocation };
-  let obj = user(8463);
+  let obj = user(8534);
   const tmp = trackUserProfileAction;
-  const gameFriendsForUser = user(13361).useGameFriendsForUser(user.id);
-  const tmp3Result = user(13361);
+  const gameFriendsForUser = user(13443).useGameFriendsForUser(user.id);
+  const tmp3Result = user(13443);
   const items = [userDisplayName];
   stateFromStores = user(504).useStateFromStores(items, () => RelationshipStore.getRelationshipType(user.id));
   const tmp3Result2 = user(504);
-  userDisplayName = tmp(4601).useName(user);
+  userDisplayName = tmp(4671).useName(user);
   if (stateFromStores !== RelationshipTypes.FRIEND) {
     if (stateFromStores !== tmp5.BLOCKED) {
       if (gameFriendsForUser.length > 0) {
@@ -63,9 +63,9 @@ function FriendRequestButton(user) {
         return null;
       } else {
         if (stateFromStores === tmp5.PENDING_OUTGOING) {
-          let UserPlusIcon = tmp3(13437).UserClockIcon;
+          let UserPlusIcon = tmp3(13519).UserClockIcon;
         } else {
-          UserPlusIcon = tmp3(4693).UserPlusIcon;
+          UserPlusIcon = tmp3(4763).UserPlusIcon;
         }
         const intl = tmp3(1115).intl;
         const string = intl.string;
@@ -116,7 +116,7 @@ const View = fn(17).View;
 const RelationshipTypes = fn(1074).RelationshipTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { threeButtonLayout: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 }, flexGrow: { flex: 1 }, iconButtonGroup: null };
 let obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
 obj2.iconButtonGroup = { flexDirection: "row", gap: nativeDefault.space.PX_12 };

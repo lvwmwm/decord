@@ -1,11 +1,11 @@
-// Module ID: 15001
-// Function ID: 15002
+// Module ID: 15084
+// Function ID: 15085
 // Name: DismissibleBadgeUtils
-// Dependencies: [32, 19, 2039, 21, 7633, 15000, 2]
+// Dependencies: [32, 19, 2039, 21, 7716, 15083, 2]
 // Exports: createDismissibleBadgePreNavigationAction, createDismissibleBadgeRouteProps
 
-// Module 15001 (DismissibleBadgeUtils)
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15000 */;
+// Module 15084 (DismissibleBadgeUtils)
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15083 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

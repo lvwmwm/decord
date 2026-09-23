@@ -1,14 +1,14 @@
-// Module ID: 11150
-// Function ID: 11151
+// Module ID: 11226
+// Function ID: 11227
 // Name: ActivityStatusIcon
-// Dependencies: [19, 21, 4757, 2]
+// Dependencies: [19, 21, 4827, 2]
 // Exports: default
 
-// Module 11150 (ActivityStatusIcon)
+// Module 11226 (ActivityStatusIcon)
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_1 = createStyles.createStyles({ icon: { flexShrink: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activity_status/native/ActivityStatusIcon.tsx");

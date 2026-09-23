@@ -1,14 +1,14 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 15266
+// Function ID: 15267
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1074, 7783, 21, 4757, 576, 1484, 7409, 7429, 7241, 15178, 15196, 1115, 2482, 8110, 15215, 15216, 9896, 7784, 7370, 15217, 9897, 12873, 2]
+// Dependencies: [32, 19, 17, 1074, 7866, 21, 4827, 576, 1484, 7493, 7513, 7325, 15230, 15248, 1115, 2484, 8192, 15267, 15268, 9969, 7867, 7454, 15269, 9970, 12955, 2]
 // Exports: default
 
-// Module 15214 (UserSettingsFamilyCenterParentalControls)
+// Module 15266 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef2482 from "module_2482" /* 2482 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7784 */;
+import _modDef2484 from "module_2484" /* 2484 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7867 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,10 +18,10 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const UserSettingsSections = fn(1074).UserSettingsSections;
-const FamilyCenterSubPages = fn(7783).FamilyCenterSubPages;
+const FamilyCenterSubPages = fn(7866).FamilyCenterSubPages;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 const obj2 = { container: { display: "flex", flex: 1 }, segmentedControlContainer: { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, content: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.content = { paddingBottom: nativeDefault.space.PX_16 };
@@ -86,7 +86,7 @@ export default function FamilyCenterParentalControlsSettings() {
       if (null != id) {
         let obj = { title: null, headerRight: null };
         let intl = util.intl;
-        obj.title = intl.string(_modDef2482["1Op+NP"]);
+        obj.title = intl.string(_modDef2484["1Op+NP"]);
         let fn;
         if (!closure_5) {
           fn = (arg0) => {

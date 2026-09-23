@@ -1,16 +1,16 @@
-// Module ID: 5814
-// Function ID: 5815
+// Module ID: 5898
+// Function ID: 5899
 // Name: form_fields/FormSeparator
-// Dependencies: [19, 17, 21, 4757, 576, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 2]
 // Exports: default
 
-// Module 5814 (form_fields/FormSeparator)
+// Module 5898 (form_fields/FormSeparator)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 const obj2 = { separator: { borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1, marginVertical: 12 } };
 let closure_2 = createStyles.createStyles(obj2);
 const size = fn(2);

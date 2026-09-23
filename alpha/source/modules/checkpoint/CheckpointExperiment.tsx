@@ -1,10 +1,10 @@
-// Module ID: 15974
-// Function ID: 15975
+// Module ID: 5072
+// Function ID: 5073
 // Name: CheckpointExperiment
 // Dependencies: [1434, 2]
-// Exports: useIsCheckpointEnabled
+// Exports: getIsCheckpointEnabled, useIsCheckpointEnabled
 
-// Module 15974 (CheckpointExperiment)
+// Module 5072 (CheckpointExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 
@@ -13,4 +13,7 @@ const result = size.fileFinishedImporting("modules/checkpoint/CheckpointExperime
 
 export const useIsCheckpointEnabled = function useIsCheckpointEnabled(DevToolsQuickActionsScreen) {
   return closure_0.useConfig({ location: DevToolsQuickActionsScreen }).enabled;
+};
+export const getIsCheckpointEnabled = function getIsCheckpointEnabled(transformCheckpoint2026CardComponent) {
+  return closure_0.getConfig({ location: transformCheckpoint2026CardComponent }).enabled;
 };

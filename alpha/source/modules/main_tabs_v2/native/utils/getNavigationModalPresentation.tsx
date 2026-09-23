@@ -1,13 +1,13 @@
-// Module ID: 11195
-// Function ID: 11196
+// Module ID: 11271
+// Function ID: 11272
 // Name: getNavigationModalPresentation
-// Dependencies: [1364, 7190, 4736, 8607, 2]
+// Dependencies: [1364, 7274, 4806, 8678, 2]
 // Exports: default
 
-// Module 11195 (getNavigationModalPresentation)
-import DeviceUtils from "DeviceUtils" /* 4736 */;
-import useIsWindowLarge from "useIsWindowLarge" /* 7190 */;
-import DeviceOrientation from "DeviceOrientation" /* 8607 */;
+// Module 11271 (getNavigationModalPresentation)
+import DeviceUtils from "DeviceUtils" /* 4806 */;
+import useIsWindowLarge from "useIsWindowLarge" /* 7274 */;
+import DeviceOrientation from "DeviceOrientation" /* 8678 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;
 
@@ -58,8 +58,8 @@ export default function getNavigationModalPresentation() {
       if (null != orientationLock) {
         str2 = "portrait";
       } else {
-        const orientation = tmp5(8607).getOrientation();
-        const tmp5Result = tmp5(8607);
+        const orientation = tmp5(8678).getOrientation();
+        const tmp5Result = tmp5(8678);
       }
       str4 = str2;
     }

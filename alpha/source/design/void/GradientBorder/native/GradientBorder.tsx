@@ -1,12 +1,12 @@
-// Module ID: 14366
-// Function ID: 14367
+// Module ID: 14446
+// Function ID: 14447
 // Name: GradientBorder
-// Dependencies: [19, 17, 1074, 21, 4942, 576, 5199, 2]
+// Dependencies: [19, 17, 1074, 21, 5012, 576, 5283, 2]
 
-// Module 14366 (GradientBorder)
+// Module 14446 (GradientBorder)
 import nativeDefault from "native" /* 576 */;
-import _mod4942 from "module_4942" /* 4942 */;
-import LinearGradientDefault from "LinearGradient" /* 5199 */;
+import _mod5012 from "module_5012" /* 5012 */;
+import LinearGradientDefault from "LinearGradient" /* 5283 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

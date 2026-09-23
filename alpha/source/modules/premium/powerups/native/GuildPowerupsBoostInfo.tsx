@@ -1,19 +1,19 @@
-// Module ID: 12811
-// Function ID: 12812
+// Module ID: 12893
+// Function ID: 12894
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 4646, 21, 4757, 576, 7227, 12812, 9495, 4753, 2]
+// Dependencies: [17, 4716, 21, 4827, 576, 7311, 12894, 9568, 4823, 2]
 // Exports: default
 
-// Module 12811 (GuildPowerupsBoostInfo)
+// Module 12893 (GuildPowerupsBoostInfo)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4646 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7227 */;
-import BoostGemIcon from "BoostGemIcon" /* 9495 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12812 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 4716 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7311 */;
+import BoostGemIcon from "BoostGemIcon" /* 9568 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 12894 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4757 */;
+import createStyles from "createStyles" /* 4827 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

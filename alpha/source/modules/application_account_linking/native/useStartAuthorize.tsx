@@ -1,19 +1,19 @@
-// Module ID: 7412
-// Function ID: 7413
+// Module ID: 7496
+// Function ID: 7497
 // Name: useStartAuthorize
-// Dependencies: [5, 19, 7413, 1074, 7414, 7416, 4452, 1241, 7418, 2]
+// Dependencies: [5, 19, 7497, 1074, 7498, 7500, 4518, 1241, 7502, 2]
 // Exports: default
 
-// Module 7412 (useStartAuthorize)
+// Module 7496 (useStartAuthorize)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import LinkingDefault from "Linking" /* 4452 */;
+import LinkingDefault from "Linking" /* 4518 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const AuthorizeFlow = fn(7413).AuthorizeFlow;
+const AuthorizeFlow = fn(7497).AuthorizeFlow;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/application_account_linking/native/useStartAuthorize.tsx");
@@ -118,7 +118,7 @@ export default function useStartAuthorize(getOfficialApplicationId) {
           const obj8 = { location_stack: closure_129_0.analyticsLocations, application_id: closure_0.id, flow_type: constants.WEB };
           AnalyticsUtilsDefault.track(constants2.ON_PLATFORM_ACCOUNT_LINK_FLOW_STARTED, obj8);
           const obj9 = { onSuccess: closure_129_0.onSuccess, onError: closure_129_0.onError };
-          const result = closure_0(7418).accountLinkAuthorizationStarted(closure_0.id, obj9);
+          const result = closure_0(7502).accountLinkAuthorizationStarted(closure_0.id, obj9);
           c4 = 0;
           c6 = 3;
           return { value: true, done: true };

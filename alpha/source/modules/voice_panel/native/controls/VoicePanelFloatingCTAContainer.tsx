@@ -1,19 +1,19 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 17722
+// Function ID: 17723
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 2042, 12530, 12533, 1085, 21, 12444, 576, 4757, 5185, 8878, 4467, 12529, 17533, 7634, 563, 17529, 17654, 4493, 12537, 11265, 5186, 7320, 10891, 2]
+// Dependencies: [32, 19, 2042, 12606, 12609, 1085, 21, 12520, 576, 4827, 5269, 8949, 4533, 12605, 17601, 7717, 563, 17597, 17723, 4559, 12613, 11341, 5270, 7404, 10967, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 17653 (VoicePanelFloatingCTAContainer)
+// Module 17722 (VoicePanelFloatingCTAContainer)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4467 */;
-import Stack_Stack from "Stack/Stack" /* 5185 */;
-import spring from "spring" /* 5186 */;
-import RowButton from "RowButton" /* 8878 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 11265 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12444 */;
-import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12537 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17529 */;
+import native from "native" /* 4533 */;
+import Stack_Stack from "Stack/Stack" /* 5269 */;
+import spring from "spring" /* 5270 */;
+import RowButton from "RowButton" /* 8949 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 11341 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12520 */;
+import VoicePanelControlsUtils from "VoicePanelControlsUtils" /* 12613 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 17597 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
@@ -119,11 +119,11 @@ class VoicePanelFloatingCTAContainer {
     return tmp12(tmp13, obj9);
   }
 }
-const UI_SHOW_HIDE_PHYSICS = fn(12530).UI_SHOW_HIDE_PHYSICS;
-let CALL_TILE_GUTTER = fn(12533).CALL_TILE_GUTTER;
+const UI_SHOW_HIDE_PHYSICS = fn(12606).UI_SHOW_HIDE_PHYSICS;
+let CALL_TILE_GUTTER = fn(12609).CALL_TILE_GUTTER;
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: null };
 const rect = { zIndex: 1, position: "absolute", bottom: 0, left: "50%", overflow: "hidden", alignItems: "center", borderRadius: nativeDefault.radii.lg };
 obj2.container = rect;

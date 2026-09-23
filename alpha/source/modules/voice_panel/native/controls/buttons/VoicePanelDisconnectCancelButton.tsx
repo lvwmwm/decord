@@ -1,30 +1,30 @@
-// Module ID: 17670
-// Function ID: 17671
+// Module ID: 17739
+// Function ID: 17740
 // Name: VoicePanelDisconnectCancelButton
-// Dependencies: [32, 19, 2041, 4779, 4965, 12530, 21, 4757, 576, 12529, 9622, 4493, 9582, 4958, 4899, 5630, 10176, 17671, 8129, 17661, 1115, 2]
+// Dependencies: [32, 19, 2041, 4849, 5035, 12606, 21, 4827, 576, 12605, 9695, 4559, 9655, 5028, 4969, 5714, 10256, 17740, 8211, 17730, 1115, 2]
 // Exports: default
 
-// Module 17670 (VoicePanelDisconnectCancelButton)
+// Module 17739 (VoicePanelDisconnectCancelButton)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
-import StreamActionCreators from "StreamActionCreators" /* 4899 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 4958 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9582 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9622 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+import StreamActionCreators from "StreamActionCreators" /* 4969 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5028 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5714 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9655 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9695 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4779 */;
-import VoicePanelStore from "VoicePanelStore" /* 4965 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4849 */;
+import VoicePanelStore from "VoicePanelStore" /* 5035 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const VoicePanelModes = fn(12530).VoicePanelModes;
+const VoicePanelModes = fn(12606).VoicePanelModes;
 const jsx = fn(21).jsx;
 const constants = { USER: 0, [0]: "USER", STREAM: 1, [1]: "STREAM", ACTIVITY: 2, [2]: "ACTIVITY" };
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { disconnectCancelBG: { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT }, icon: null };
 let obj3 = { backgroundColor: nativeDefault.colors.CONTROL_CRITICAL_PRIMARY_BACKGROUND_DEFAULT };
 obj2.icon = { tintColor: nativeDefault.colors.WHITE };

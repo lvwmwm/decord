@@ -1,13 +1,13 @@
-// Module ID: 12981
-// Function ID: 12982
+// Module ID: 13063
+// Function ID: 13064
 // Name: InviteErrorUtils
-// Dependencies: [1372, 1074, 4415, 1115, 2108, 2]
+// Dependencies: [1372, 1074, 4481, 1115, 2108, 2]
 // Exports: getDescriptiveInviteError, getInviteError
 
-// Module 12981 (InviteErrorUtils)
+// Module 13063 (InviteErrorUtils)
 import util from "util" /* 1115 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4415 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4481 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;

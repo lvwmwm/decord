@@ -1,8 +1,8 @@
-// Module ID: 6359
-// Function ID: 6360
+// Module ID: 6443
+// Function ID: 6444
 // Dependencies: [2]
 
-// Module 6359
+// Module 6443
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GemLevel3SpotIllustration-2x.png.js");

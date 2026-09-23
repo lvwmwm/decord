@@ -1,9 +1,9 @@
-// Module ID: 14940
-// Function ID: 14941
+// Module ID: 15020
+// Function ID: 15021
 // Name: WebAuthnConstants
 // Dependencies: [2]
 
-// Module 14940 (WebAuthnConstants)
+// Module 15020 (WebAuthnConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/webauthn/WebAuthnConstants.tsx");

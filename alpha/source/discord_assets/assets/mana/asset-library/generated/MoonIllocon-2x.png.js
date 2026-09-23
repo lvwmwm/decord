@@ -1,8 +1,8 @@
-// Module ID: 6491
-// Function ID: 6492
+// Module ID: 6575
+// Function ID: 6576
 // Dependencies: [2]
 
-// Module 6491
+// Module 6575
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/MoonIllocon-2x.png.js");

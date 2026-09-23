@@ -1,13 +1,13 @@
-// Module ID: 6654
-// Function ID: 6655
+// Module ID: 6738
+// Function ID: 6739
 // Name: ServerBannerStaffServerExample
-// Dependencies: [21, 5806, 6655, 2]
+// Dependencies: [21, 5890, 6739, 2]
 // Exports: ServerBannerStaffServerExample
 
-// Module 6654 (ServerBannerStaffServerExample)
+// Module 6738 (ServerBannerStaffServerExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6655 from "module_6655" /* 6655 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6739 from "module_6739" /* 6739 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ServerBannerStaffServerExample = function ServerBannerStaffServerEx
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6655 };
+  const obj2 = { uri: _modDef6739 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

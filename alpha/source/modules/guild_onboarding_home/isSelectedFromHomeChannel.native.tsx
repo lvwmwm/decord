@@ -1,13 +1,13 @@
-// Module ID: 11610
-// Function ID: 11611
+// Module ID: 11686
+// Function ID: 11687
 // Name: isSelectedFromHomeChannel
-// Dependencies: [7524, 2096, 2049, 4615, 4614, 2]
+// Dependencies: [7608, 2096, 2049, 4685, 4684, 2]
 // Exports: default
 
-// Module 11610 (isSelectedFromHomeChannel)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4614 */;
-import RootNavigationRef from "RootNavigationRef" /* 4615 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7524 */;
+// Module 11686 (isSelectedFromHomeChannel)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4684 */;
+import RootNavigationRef from "RootNavigationRef" /* 4685 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7608 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 
 require = fn;
@@ -42,7 +42,7 @@ export default function isSelectedFromHomeChannel(id) {
                   let coerceChannelRouteResult = obj3.coerceChannelRoute(tmp4);
                   if (null != coerceChannelRouteResult) {
                     if (coerceChannelRouteResult.params.channelId === id.id) {
-                      let tmp6Result = tmp6(4614);
+                      let tmp6Result = tmp6(4684);
                       coerceChannelRouteResult1 = tmp6Result.coerceChannelRoute(state.routes[index - 1]);
                       if (null != coerceChannelRouteResult1) {
                         break;

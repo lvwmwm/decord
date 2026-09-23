@@ -1,16 +1,17 @@
 // Module ID: 6977
 // Function ID: 6978
-// Dependencies: [19]
-// Exports: useInterceptingDetectorContext
+// Dependencies: []
+// Exports: noop, workletNoop
 
 // Module 6977
-import noop from "module_19" /* 19 */;
+const fn = function o() {
 
-const use = noop.use;
-const context = noop.createContext(null);
-
-export const InterceptingDetectorMode = { DEFAULT: 0, [0]: "DEFAULT", ANIMATED: 1, [1]: "ANIMATED", REANIMATED: 2, [2]: "REANIMATED" };
-export const InterceptingDetectorContext = context;
-export const useInterceptingDetectorContext = function useInterceptingDetectorContext() {
-  return use(context);
 };
+fn.__closure = {};
+fn.__workletHash = 16791771801238;
+fn.__initData = { code: "function pnpm_noopTs1(){}" };
+
+export () => {
+
+}
+export const workletNoop = fn;

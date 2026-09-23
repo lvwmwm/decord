@@ -1,12 +1,12 @@
-// Module ID: 12189
-// Function ID: 12190
+// Module ID: 12265
+// Function ID: 12266
 // Name: getInlineForwardOptions
-// Dependencies: [1074, 4907, 2]
+// Dependencies: [1074, 4977, 2]
 // Exports: getInlineForwardOptions
 
-// Module 12189 (getInlineForwardOptions)
+// Module 12265 (getInlineForwardOptions)
 import Constants from "Constants" /* 1074 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4907 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4977 */;
 import size from "module_2" /* 2 */;
 
 const MessageReferenceTypes = Constants.MessageReferenceTypes;

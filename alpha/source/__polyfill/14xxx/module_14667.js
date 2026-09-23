@@ -1,9 +1,13 @@
 // Module ID: 14667
 // Function ID: 14668
-// Dependencies: [14655]
+// Dependencies: []
 
 // Module 14667
-import replaceByteInByteSequence from "replaceByteInByteSequence" /* 14655 */;
 
-
-export const URLSearchParams = replaceByteInByteSequence.URLSearchParams;
+export default (fn) => {
+  try {
+    return fn();
+  } catch (err) {
+    return true;
+  }
+};

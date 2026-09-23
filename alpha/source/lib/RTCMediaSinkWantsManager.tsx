@@ -1,19 +1,19 @@
-// Module ID: 14081
-// Function ID: 14082
+// Module ID: 14163
+// Function ID: 14164
 // Name: RTCMediaSinkWantsManager
-// Dependencies: [32, 502, 1074, 4782, 1091, 5078, 1364, 4815, 4826, 2037, 9702, 11, 12, 558, 4812, 2]
+// Dependencies: [32, 502, 1074, 4852, 1091, 5162, 1364, 4885, 4896, 2037, 9775, 11, 12, 558, 4882, 2]
 
-// Module 14081 (RTCMediaSinkWantsManager)
+// Module 14163 (RTCMediaSinkWantsManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
 import DurationsDefault from "Durations" /* 1091 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4812 */;
-import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 9702 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4882 */;
+import WindowVisibilityVideoManager2 from "WindowVisibilityVideoManager" /* 9775 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4815 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4885 */;
 
 require = fn;
 function getDefaultWants(wantsLevel) {
@@ -28,12 +28,12 @@ function getDefaultWants(wantsLevel) {
   return obj3;
 }
 const VideoToggleState = fn(1074).VideoToggleState;
-const SimulcastOverrideQuality = fn(4782).SimulcastOverrideQuality;
+const SimulcastOverrideQuality = fn(4852).SimulcastOverrideQuality;
 let c7 = 100;
 const DEFAULT_WANTS_DISABLED = { any: 0 };
 let closure_9 = 30 * DurationsDefault.Millis.SECOND;
 let closure_10 = 120 * DurationsDefault.Millis.SECOND;
-const BrowserUtils = fn(5078);
+const BrowserUtils = fn(5162);
 let closure_11 = -1 !== BrowserUtils.getFirefoxVersion();
 let obj3 = { UserSSRCUpdate: "user-ssrc-update", Update: "update" };
 class RTCMediaSinkWantsManager extends tmp2 {
@@ -577,7 +577,7 @@ prototype["reset"] = function reset() {
     obj3 = { any };
   }
   self.latestWants = obj3;
-  const WindowVisibilityVideoManager = tmp3(9702).WindowVisibilityVideoManager;
+  const WindowVisibilityVideoManager = tmp3(9775).WindowVisibilityVideoManager;
   WindowVisibilityVideoManager.off(WindowVisibilityVideoManager2.WindowVisibilityEvent.IncomingVideoEnabledChanged, self.incomingVideoEnabledChanged);
 };
 prototype["setSelectedParticipant"] = function setSelectedParticipant(selectedParticipantId) {

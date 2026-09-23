@@ -1,10 +1,10 @@
-// Module ID: 14465
-// Function ID: 14466
+// Module ID: 14545
+// Function ID: 14546
 // Name: Badge/Badge
-// Dependencies: [19, 17, 2109, 1074, 1179, 21, 4757, 576, 1364, 4608, 504, 4753, 1881, 8895, 2]
+// Dependencies: [19, 17, 2109, 1074, 1179, 21, 4827, 576, 1364, 4678, 504, 4823, 1881, 8966, 2]
 // Exports: MaskedBadge
 
-// Module 14465 (Badge/Badge)
+// Module 14545 (Badge/Badge)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
@@ -136,7 +136,7 @@ const BadgeConstants = fn(1179);
 ({ BADGE_MASK_SIZE: metroRequire, BADGE_MASK_UNREAD_SIZE: closure_7, BADGE_PADDING, BADGE_SIZE } = BadgeConstants);
 const BADGE_SIZE_UNREAD = BadgeConstants.BADGE_SIZE_UNREAD;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { badgeMask: { position: "absolute", bottom: -BADGE_PADDING, right: -BADGE_PADDING, padding: BADGE_PADDING, zIndex: 1 }, badge: { paddingLeft: BADGE_PADDING, paddingRight: BADGE_PADDING, borderRadius: nativeDefault.space.PX_8, justifyContent: "center", alignItems: "center", overflow: "hidden" }, badgeText: null, experimentalBadgeText: null, noCount: null, unread: null, mention: null, lowImportanceMention: null, eventsMentionBadge: null };
 let obj4 = { minWidth: BADGE_SIZE - 2 * BADGE_PADDING, color: nativeDefault.colors.WHITE, fontSize: 12, lineHeight: null, fontFamily: null, textAlign: "center", textAlignVertical: null };
 let PlatformUtils = fn(1364);

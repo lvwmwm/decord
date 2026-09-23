@@ -1,12 +1,12 @@
-// Module ID: 16437
-// Function ID: 16438
+// Module ID: 16490
+// Function ID: 16491
 // Name: HappeningNowCardEvent
-// Dependencies: [19, 17, 2109, 1372, 15577, 1074, 21, 4757, 576, 1177, 9099, 504, 16438, 9759, 9884, 1241, 9893, 1397, 9883, 15578, 5309, 4753, 1881, 1115, 2]
+// Dependencies: [19, 17, 2109, 1372, 15631, 1074, 21, 4827, 576, 1177, 9170, 504, 7639, 9832, 9957, 1241, 9966, 1397, 9956, 15632, 5393, 4823, 1881, 1115, 2]
 
-// Module 16437 (HappeningNowCardEvent)
+// Module 16490 (HappeningNowCardEvent)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9893 */;
+import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 9966 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -14,13 +14,13 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, Image: hasOwnProperty } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15577);
+const HappeningNowConstants = fn(15631);
 const HAPPENING_NOW_CONTENT_HEIGHT = HappeningNowConstants.HAPPENING_NOW_CONTENT_HEIGHT;
 ({ HappeningNowCardTrackingType: closure_9, HAPPENING_NOW_CARD_HEIGHT: c10, HAPPENING_NOW_EVENT_BANNER_WIDTH } = HappeningNowConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { info: { alignSelf: "center", flexShrink: 1, marginLeft: 12, gap: 2 }, infoNoImage: { alignSelf: "center", justifyContent: "center", flexShrink: 1, flexGrow: 1, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, height: HAPPENING_NOW_CONTENT_HEIGHT, gap: 2, marginRight: -4, paddingLeft: 8, paddingRight: 8, borderTopRightRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm }, decorationImage: null, dottedLineContainer: null, shortDottedLineSegment: null, dottedLineSegment: null, interestedUsersContainer: null, interestedUsersIcon: null, ticketContainer: null, avatarContainer: null };
 let size = { borderTopRightRadius: nativeDefault.radii.sm, borderBottomRightRadius: nativeDefault.radii.sm, alignSelf: "center", width: HAPPENING_NOW_EVENT_BANNER_WIDTH, height: HAPPENING_NOW_CONTENT_HEIGHT };
 obj.decorationImage = size;
@@ -37,7 +37,7 @@ obj.ticketContainer = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUB
 let obj5 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, flexDirection: "column", justifyContent: "space-between", alignItems: "center", height: HAPPENING_NOW_CONTENT_HEIGHT, padding: 6, borderTopLeftRadius: nativeDefault.radii.sm, borderBottomLeftRadius: nativeDefault.radii.sm };
 obj.avatarContainer = { width: fn(1177).AVATAR_SIZE_MAP[fn(undefined, 1177).AvatarSizes.XSMALL_20] };
 let closure_14 = createStyles.createStyles(obj);
-const point = { shape: fn(9099).CutoutShape.Circle, x: -8, y: HAPPENING_NOW_CONTENT_HEIGHT / 2 - 8, size: 16 };
+const point = { shape: fn(9170).CutoutShape.Circle, x: -8, y: HAPPENING_NOW_CONTENT_HEIGHT / 2 - 8, size: 16 };
 let items = [point];
 let closure_16 = noop.memo(() => {
   const tmp = closure_14();
@@ -77,7 +77,7 @@ export default noop.memo((event) => {
   } else {
     items2 = [];
   }
-  const ensureHydratedUsers = event(creator_id[12]).useEnsureHydratedUsers(event.guild_id, items2);
+  const ensureHydratedGuildUsers = event(creator_id[12]).useEnsureHydratedGuildUsers(event.guild_id, items2);
   const tmp2Result = event(creator_id[12]);
   const items3 = [UserStore];
   const stateFromStores1 = event(creator_id[11]).useStateFromStores(items3, () => UserStore.getUser(creator_id));

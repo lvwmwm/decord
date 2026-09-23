@@ -1,10 +1,10 @@
-// Module ID: 17060
-// Function ID: 17061
+// Module ID: 17117
+// Function ID: 17118
 // Name: vibegrations/VibegrationsRepliedMessage
 // Dependencies: [2]
 // Exports: repliedMessage
 
-// Module 17060 (vibegrations/VibegrationsRepliedMessage)
+// Module 17117 (vibegrations/VibegrationsRepliedMessage)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsRepliedMessage.tsx");

@@ -1,19 +1,19 @@
-// Module ID: 16215
-// Function ID: 16216
+// Module ID: 16268
+// Function ID: 16269
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [2064, 16205, 8237, 11730, 16216, 15109, 2020, 5109, 1115, 5206, 16217, 8686, 8688, 7242, 16208, 11729, 2]
+// Dependencies: [2064, 16258, 8319, 11806, 16269, 15154, 2020, 5193, 1115, 5290, 16270, 8757, 8759, 7326, 16261, 11805, 2]
 
-// Module 16215 (SafetyGuildSettingMessageRequests)
+// Module 16268 (SafetyGuildSettingMessageRequests)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5109 */;
-import common_AlertDefault from "common/Alert" /* 5206 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7242 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8686 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8688 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15109 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16208 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 16216 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5193 */;
+import common_AlertDefault from "common/Alert" /* 5290 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7326 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8757 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8759 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15154 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 16261 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 16269 */;
 import GuildStore from "GuildStore" /* 2064 */;
 
 require = fn;
@@ -46,10 +46,10 @@ function showMessageRequestRestrictionModal(arg0) {
   };
   AlertActionCreatorsDefault.show(obj2);
 }
-const UserSettingsSafetySelectedGuildStore = fn(16205);
+const UserSettingsSafetySelectedGuildStore = fn(16258);
 ({ getSelectedGuildId: closure_4, useUserSafetySettingsSelectedGuildStore: hasOwnProperty } = UserSettingsSafetySelectedGuildStore);
-let closure_6 = fn(11730).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
-const SettingBuilders = fn(11729);
+let closure_6 = fn(11806).GUILD_SELECT_ALL_SERVERS_OPTION_ID;
+const SettingBuilders = fn(11805);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
@@ -59,7 +59,7 @@ const toggle = SettingBuilders.createToggle({
     const intl = util.intl;
     return intl.string(util.t.o5fjz6);
   },
-  parent: fn(8237).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8319).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue() {
     const selectedGuildId = hasOwnProperty().selectedGuildId;
     const defaultGuildsRestricted = DefultGuildsRestrictedSetting.useDefaultGuildsRestricted();

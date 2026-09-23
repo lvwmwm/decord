@@ -1,21 +1,21 @@
-// Module ID: 16145
-// Function ID: 16146
+// Module ID: 16198
+// Function ID: 16199
 // Name: ShopNitroUpsellBanner
-// Dependencies: [19, 21, 4757, 576, 672, 4458, 4724, 13460, 1980, 7429, 1115, 5826, 5199, 1094, 1177, 5899, 5185, 4753, 16144, 5187, 10233, 2]
+// Dependencies: [19, 21, 4827, 576, 672, 4524, 4794, 13542, 1980, 7513, 1115, 5910, 5283, 1094, 1177, 5983, 5269, 4823, 16197, 5271, 10312, 2]
 
-// Module 16145 (ShopNitroUpsellBanner)
+// Module 16198 (ShopNitroUpsellBanner)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
-import useToken from "useToken" /* 4458 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import Stack_Stack from "Stack/Stack" /* 5185 */;
-import LinearGradientDefault from "LinearGradient" /* 5199 */;
-import Card from "Card" /* 5826 */;
-import XSmallIcon from "XSmallIcon" /* 5899 */;
-import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 16144 */;
+import useToken from "useToken" /* 4524 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import Stack_Stack from "Stack/Stack" /* 5269 */;
+import LinearGradientDefault from "LinearGradient" /* 5283 */;
+import Card from "Card" /* 5910 */;
+import XSmallIcon from "XSmallIcon" /* 5983 */;
+import MobileNitroUpsellInShopFeedExperiment from "MobileNitroUpsellInShopFeedExperiment" /* 16197 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -99,7 +99,7 @@ class ShopNitroUpsellBanner {
 }
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { card: { overflow: "hidden", padding: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_16, borderWidth: 1 }, borderDark: null, borderLight: null, gradientBackground: null, text: null, closeButton: null };
 let obj3 = { overflow: "hidden", padding: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_8, marginHorizontal: nativeDefault.space.PX_16, borderWidth: 1 };
 obj2.borderDark = { borderColor: nativeDefault.unsafe_rawColors.PRIMARY_660 };

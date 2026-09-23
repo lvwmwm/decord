@@ -1,14 +1,14 @@
-// Module ID: 10201
-// Function ID: 10202
+// Module ID: 10281
+// Function ID: 10282
 // Name: useIsVoiceChannelFull
-// Dependencies: [2064, 4396, 4776, 1085, 504, 4902, 2]
+// Dependencies: [2064, 4462, 4846, 1085, 504, 4972, 2]
 // Exports: default, useIsVoiceChannelLocked
 
-// Module 10201 (useIsVoiceChannelFull)
-import ChannelUtils from "ChannelUtils" /* 4902 */;
+// Module 10281 (useIsVoiceChannelFull)
+import ChannelUtils from "ChannelUtils" /* 4972 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
-import VoiceStateStore from "VoiceStateStore" /* 4776 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
+import VoiceStateStore from "VoiceStateStore" /* 4846 */;
 
 const require = globalThis.__r;
 

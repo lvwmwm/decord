@@ -1,10 +1,10 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 13019
+// Function ID: 13020
 // Name: ContactSyncUtils
-// Dependencies: [5, 17, 5500, 12936, 12935, 1074, 1365, 4950, 1249, 573, 12938, 2020, 1231, 504, 1385, 2108, 4452, 4960, 2]
+// Dependencies: [5, 17, 5584, 13018, 13017, 1074, 1365, 5020, 1249, 573, 13020, 2020, 1231, 504, 1385, 2108, 4518, 5030, 2]
 // Exports: adminDeleteContactSync, bulkAddFriends, checkContactPermissions, getContacts, getImageForContactId, getOpenLearnMoreUrl, getStoredContacts, handleOpenLearnMoreLink, isContactSyncAvailable, isContactSyncEnabled, transitionToAddFriendsLandingPage, uploadContacts, useContactSyncAccount, useContactSyncEnabled, useContactSyncUserIsDiscoverable
 
-// Module 12937 (ContactSyncUtils)
+// Module 13019 (ContactSyncUtils)
 import initialize from "initialize" /* 504 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
@@ -12,12 +12,12 @@ import utils_PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import UserSettings from "UserSettings" /* 2020 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import LinkingDefault from "Linking" /* 4452 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 4950 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
-import ContactSyncManager from "ContactSyncManager" /* 12938 */;
+import LinkingDefault from "Linking" /* 4518 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5020 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
+import ContactSyncManager from "ContactSyncManager" /* 13020 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5500 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5584 */;
 
 require = fn;
 let closure_18 = async function _uploadContacts(arg0, value) {
@@ -102,9 +102,9 @@ let closure_18 = async function _uploadContacts(arg0, value) {
   }
 };
 const NativeModules = fn(17).NativeModules;
-const ContactSyncPersistedStore = fn(12936);
+const ContactSyncPersistedStore = fn(13018);
 ({ useContactSyncStore: metroRequire, clearDismissState: closure_7, deleteStoredContacts: closure_8 } = ContactSyncPersistedStore);
-const ContactSyncConstants = fn(12935);
+const ContactSyncConstants = fn(13017);
 ({ CONTACT_SYNC_MODAL_KEY: closure_9, ContactPermissions: c10, ContactSyncSuggestionsSetting: closure_11 } = ContactSyncConstants);
 const Constants = fn(1074);
 ({ Endpoints: closure_12, PlatformTypes: map1, FriendDiscoveryFlags: closure_14, HelpdeskArticles: closure_15 } = Constants);

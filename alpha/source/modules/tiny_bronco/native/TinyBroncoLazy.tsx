@@ -1,20 +1,15 @@
-// Module ID: 14999
-// Function ID: 15000
+// Module ID: 15076
+// Function ID: 15077
 // Name: TinyBroncoLazy
-// Dependencies: [2]
-// Exports: useIsTinyBroncoEligible, useShouldShowAgeNotice, useShowTinyBroncoPromoSheet
+// Dependencies: [2, 15077, 15078]
 
-// Module 14999 (TinyBroncoLazy)
+// Module 15076 (TinyBroncoLazy)
+import TinyBroncoNoticeVisibility from "TinyBroncoNoticeVisibility" /* 15077 */;
+import useShowTinyBroncoPromoSheet from "useShowTinyBroncoPromoSheet" /* 15078 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tiny_bronco/native/TinyBroncoLazy.tsx");
 
-export function useShouldShowAgeNotice() {
-  return false;
-}
-export function useIsTinyBroncoEligible() {
-  return false;
-}
-export const useShowTinyBroncoPromoSheet = function useShowTinyBroncoPromoSheet(arg0) {
-  ({ visibleContent, markAsDismissed } = arg0);
-};
+export const useShouldShowAgeNotice = TinyBroncoNoticeVisibility.useShouldShowAgeNotice;
+export const useIsTinyBroncoEligible = useShowTinyBroncoPromoSheet.useIsTinyBroncoEligible;
+export const useShowTinyBroncoPromoSheet = useShowTinyBroncoPromoSheet.useShowTinyBroncoPromoSheet;

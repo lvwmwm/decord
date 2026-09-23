@@ -1,26 +1,31 @@
 // Module ID: 7134
 // Function ID: 7135
-// Dependencies: [7135]
+// Dependencies: [19, 6978]
+// Exports: useBoundingClientRect
 
 // Module 7134
-import _mod7135 from "module_7135" /* 7135 */;
+import _mod19 from "module_19" /* 19 */;
 
+const useLayoutEffect = _mod19.useLayoutEffect;
 
-export default function _inherits(value, fn) {
-  if (typeof fn !== "function") {
-    if (null !== fn) {
-      const _TypeError = TypeError;
-      const typeError = new TypeError("Super expression must either be null or a function");
-      throw typeError;
-    }
-  }
-  let prototype = fn;
-  if (fn) {
-    prototype = fn.prototype;
-  }
-  value.prototype = Object.create(prototype, { constructor: { value, writable: true, configurable: true } });
-  Object.defineProperty(value, "prototype", { writable: false });
-  if (fn) {
-    _mod7135(value, fn);
+export const useBoundingClientRect = function useBoundingClientRect(arg0, arg1) {
+  closure_0 = arg0;
+  closure_1 = arg1;
+  if (obj.isFabricInstalled()) {
+    useLayoutEffect(() => {
+      if (closure_0) {
+        if (tmp.current) {
+          if (typeof tmp.current.unstable_getBoundingClientRect !== "function") {
+            if (typeof tmp.current.getBoundingClientRect === "function") {
+              const current2 = tmp.current;
+              closure_1(current2.getBoundingClientRect());
+            }
+          } else {
+            const current = tmp.current;
+            closure_1(current.unstable_getBoundingClientRect());
+          }
+        }
+      }
+    });
   }
 };

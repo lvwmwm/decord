@@ -1,13 +1,13 @@
-// Module ID: 13340
-// Function ID: 13341
+// Module ID: 13422
+// Function ID: 13423
 // Name: useUserProfileVoiceActivity
-// Dependencies: [4797, 4776, 7984, 11147, 504, 2]
+// Dependencies: [4867, 4846, 8066, 11223, 504, 2]
 // Exports: default, isUserProfileVoiceActivityForChannel
 
-// Module 13340 (useUserProfileVoiceActivity)
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7984 */;
-import PresenceStore from "PresenceStore" /* 4797 */;
-import VoiceStateStore from "VoiceStateStore" /* 4776 */;
+// Module 13422 (useUserProfileVoiceActivity)
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8066 */;
+import PresenceStore from "PresenceStore" /* 4867 */;
+import VoiceStateStore from "VoiceStateStore" /* 4846 */;
 
 const require = fn;
 const size = fn(2);
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/user_profile/hooks/useUserPro
 export default function useUserProfileVoiceActivity(guildId) {
   const userId = guildId.userId;
   let id;
-  const tmp2 = id(11147)({ userId, guildId: guildId.guildId });
+  const tmp2 = id(11223)({ userId, guildId: guildId.guildId });
   const voiceChannel = tmp2.voiceChannel;
   id = undefined;
   if (voiceChannel != null) {

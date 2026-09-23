@@ -1,13 +1,13 @@
-// Module ID: 4707
-// Function ID: 4708
+// Module ID: 4777
+// Function ID: 4778
 // Name: CheckmarkLargeIcon
-// Dependencies: [19, 21, 576, 4457, 4708, 2]
+// Dependencies: [19, 21, 576, 4523, 4778, 2]
 // Exports: CheckmarkLargeIcon
 
-// Module 4707 (CheckmarkLargeIcon)
+// Module 4777 (CheckmarkLargeIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod4708 from "module_4708" /* 4708 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod4778 from "module_4778" /* 4778 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const CheckmarkLargeIcon = function CheckmarkLargeIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4708, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4778, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 7226
-// Function ID: 7227
+// Module ID: 7310
+// Function ID: 7311
 // Name: useTypeConsolidationTextTransform
-// Dependencies: [7227, 2]
+// Dependencies: [7311, 2]
 // Exports: useTypeConsolidationEyebrow, useTypeConsolidationTextTransform
 
-// Module 7226 (useTypeConsolidationTextTransform)
+// Module 7310 (useTypeConsolidationTextTransform)
 import size from "module_2" /* 2 */;
 
 const style = { textTransform: "none" };

@@ -1,12 +1,12 @@
-// Module ID: 8929
-// Function ID: 8930
+// Module ID: 9000
+// Function ID: 9001
 // Name: useIsInAdultAgeGroup
-// Dependencies: [7782, 504, 2]
+// Dependencies: [7865, 504, 2]
 // Exports: default
 
-// Module 8929 (useIsInAdultAgeGroup)
+// Module 9000 (useIsInAdultAgeGroup)
 import initialize from "initialize" /* 504 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7782 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7865 */;
 
 require = fn;
 const size = fn(2);

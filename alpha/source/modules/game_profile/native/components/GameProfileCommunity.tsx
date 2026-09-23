@@ -1,16 +1,16 @@
-// Module ID: 9022
-// Function ID: 9023
+// Module ID: 9093
+// Function ID: 9094
 // Name: GameProfileCommunity
-// Dependencies: [19, 17, 21, 576, 4757, 7190, 9018, 9017, 8991, 8962, 7587, 9023, 2056, 1115, 5803, 4753, 9025, 1177, 5187, 2]
+// Dependencies: [19, 17, 21, 576, 4827, 7274, 9089, 9088, 9062, 9033, 7670, 9094, 2056, 1115, 5887, 4823, 9096, 1177, 5271, 2]
 // Exports: default
 
-// Module 9022 (GameProfileCommunity)
+// Module 9093 (GameProfileCommunity)
 import nativeDefault from "native" /* 576 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7190 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 8962 */;
-import GameProfileSection from "GameProfileSection" /* 9017 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9018 */;
-import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9023 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7274 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9033 */;
+import GameProfileSection from "GameProfileSection" /* 9088 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9089 */;
+import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 9094 */;
 import noop from "module_19" /* 19 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 const sum = nativeDefault.space.PX_48 + nativeDefault.space.PX_8;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { card: { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, guildContent: null, guildHeaderRow: null, guildIcon: null, guildIconImage: null, guildIconLoading: null, guildInfo: null, guildNameDescriptionContainer: null, guildNameRow: null, memberCountsContainer: null, memberCountContainer: null, onlineEllipse: null, membersEllipse: null, skeletonGuildIcon: null, skeletonGuildInfo: null, skeletonGuildInfoSmall: null, skeletonGuildInfoLarge: null, skeletonGuildName: null, skeletonGuildDescription: null, skeletonMemberCounts: null };
 let obj3 = { borderRadius: nativeDefault.radii.lg, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.guildContent = { flexDirection: "column", padding: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 };

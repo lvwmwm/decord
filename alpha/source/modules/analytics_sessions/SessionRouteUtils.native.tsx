@@ -1,10 +1,10 @@
-// Module ID: 7708
-// Function ID: 7709
+// Module ID: 7791
+// Function ID: 7792
 // Name: SessionRouteUtils
 // Dependencies: [2]
 // Exports: isActiveUserRoute, subscribeToLocationChanges
 
-// Module 7708 (SessionRouteUtils)
+// Module 7791 (SessionRouteUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/analytics_sessions/SessionRouteUtils.native.tsx");

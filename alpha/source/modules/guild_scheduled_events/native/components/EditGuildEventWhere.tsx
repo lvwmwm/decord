@@ -1,30 +1,30 @@
-// Module ID: 9818
-// Function ID: 9819
+// Module ID: 9891
+// Function ID: 9892
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 2042, 4396, 7771, 2048, 1074, 21, 4757, 1115, 9796, 504, 1484, 9819, 9801, 4753, 5187, 1875, 9795, 4468, 9799, 9859, 4348, 9860, 9861, 2]
+// Dependencies: [32, 19, 2042, 4462, 7854, 2048, 1074, 21, 4827, 1115, 9869, 504, 1484, 9892, 9874, 4823, 5271, 1875, 9868, 4534, 9872, 9932, 4414, 9933, 9934, 2]
 // Exports: default
 
-// Module 9818 (EditGuildEventWhere)
+// Module 9891 (EditGuildEventWhere)
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 1875 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 9795 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9861 */;
+import _modDef4414 from "module_4414" /* 4414 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 9868 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9934 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_8 = fn(7771).isGuildScheduledEventActive;
+let closure_8 = fn(7854).isGuildScheduledEventActive;
 const GuildScheduledEventsConstants = fn(2048);
 ({ AGE_VERIFICATION_STAGE_CHANNEL_TYPES: closure_9, GuildScheduledEventEntityTypes: c10 } = GuildScheduledEventsConstants);
 const Constants = fn(1074);
 ({ Permissions: closure_11, GuildSettingsSections: closure_12 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_16 = createStyles.createStyles({ channelSelection: { marginTop: 16 }, error: { paddingVertical: 8 }, text: { marginTop: 24 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_scheduled_events/native/components/EditGuildEventWhere.tsx");
@@ -117,7 +117,7 @@ export default function EditGuildEventWhere(guild) {
               const error1 = new Error(intl2.string(tmp3(1115).t.q91szp));
               throw error1;
             }
-            obj = guild(9796);
+            obj = guild(9869);
           }
           if (null == tmp) {
             if (entityType !== tmp2.EXTERNAL) {
@@ -157,9 +157,9 @@ export default function EditGuildEventWhere(guild) {
         _undefined(null);
         const obj = { entityType, scheduledEndTime: "Array" };
         if (entityType === constants.EXTERNAL) {
-          let obj2 = _modDef4348(guildEvent.scheduledStartTime);
+          let obj2 = _modDef4414(guildEvent.scheduledStartTime);
           if (obj2 == null) {
-            obj2 = tmp2(4348)();
+            obj2 = tmp2(4414)();
           }
           obj.scheduledEndTime = obj2.add(1, "hour").toISOString();
           const addResult = obj2.add(1, "hour");
@@ -180,9 +180,9 @@ export default function EditGuildEventWhere(guild) {
       _undefined(null);
       const obj = { entityType, scheduledEndTime: "Array" };
       if (entityType === constants.EXTERNAL) {
-        let obj2 = _modDef4348(guildEvent.scheduledStartTime);
+        let obj2 = _modDef4414(guildEvent.scheduledStartTime);
         if (obj2 == null) {
-          obj2 = tmp2(4348)();
+          obj2 = tmp2(4414)();
         }
         obj.scheduledEndTime = obj2.add(1, "hour").toISOString();
         const addResult = obj2.add(1, "hour");

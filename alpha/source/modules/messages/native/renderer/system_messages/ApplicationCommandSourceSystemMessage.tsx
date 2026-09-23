@@ -1,15 +1,15 @@
-// Module ID: 8271
-// Function ID: 8272
+// Module ID: 8353
+// Function ID: 8354
 // Name: ApplicationCommandSourceSystemMessage
-// Dependencies: [1074, 5212, 8272, 8222, 1115, 8224, 8226, 2]
+// Dependencies: [1074, 5296, 8354, 8304, 1115, 8306, 8308, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 8271 (ApplicationCommandSourceSystemMessage)
+// Module 8353 (ApplicationCommandSourceSystemMessage)
 import Constants from "Constants" /* 1074 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5212 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8224 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8226 */;
-import ApplicationCommands from "ApplicationCommands" /* 8272 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5296 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8306 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8308 */;
+import ApplicationCommands from "ApplicationCommands" /* 8354 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
@@ -25,7 +25,7 @@ export const createApplicationCommandSourceSystemMessage = function createApplic
   }
   if (null != applicationCommand) {
     if (null != name) {
-      const messageAuthorWithProcessedColor = tmp(8222).getMessageAuthorWithProcessedColor(message);
+      const messageAuthorWithProcessedColor = tmp(8304).getMessageAuthorWithProcessedColor(message);
       const intl = tmp(1115).intl;
       const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: null, commandName: null, applicationName: null };
       const obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };

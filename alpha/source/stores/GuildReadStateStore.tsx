@@ -1,26 +1,26 @@
-// Module ID: 7875
-// Function ID: 7876
+// Module ID: 7958
+// Function ID: 7959
 // Name: GuildReadStateStore
-// Dependencies: [7876, 7878, 5725, 4398, 2046, 502, 2042, 2064, 1073, 4396, 4772, 2096, 4938, 1372, 1074, 2049, 4939, 7780, 11, 2067, 12, 4404, 2]
+// Dependencies: [7959, 7961, 5809, 4464, 2046, 502, 2042, 2064, 1073, 4462, 4842, 2096, 5008, 1372, 1074, 2049, 5009, 7863, 11, 2067, 12, 4470, 2]
 
-// Module 7875 (GuildReadStateStore)
+// Module 7958 (GuildReadStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import FavoritesUtils from "FavoritesUtils" /* 2067 */;
-import ThreadActionUtils from "ThreadActionUtils" /* 4404 */;
-import isOptInEnabled from "isOptInEnabled" /* 7780 */;
-import RecentMentionsStore from "RecentMentionsStore" /* 7876 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7878 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5725 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4398 */;
+import ThreadActionUtils from "ThreadActionUtils" /* 4470 */;
+import isOptInEnabled from "isOptInEnabled" /* 7863 */;
+import RecentMentionsStore from "RecentMentionsStore" /* 7959 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7961 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 5809 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4464 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 import GuildStore from "GuildStore" /* 2064 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
-import ReadStateStore from "ReadStateStore" /* 4772 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
+import ReadStateStore from "ReadStateStore" /* 4842 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4938 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -938,7 +938,7 @@ function handleRecentMentionsSuccess(messages) {
 const ChannelRecord = fn(2046);
 ({ getBasicAccessPermissions: closure_7, isGuildVocalChannelType: closure_8, isThread: closure_9 } = ChannelRecord);
 const ChannelFlags = fn(2049).ChannelFlags;
-const ReadStateConstants = fn(4939);
+const ReadStateConstants = fn(5009);
 ({ ReadStateTypes: closure_19, UnreadSetting: closure_20 } = ReadStateConstants);
 const NULL_STRING_GUILD_ID = fn(1074).NULL_STRING_GUILD_ID;
 let guilds = {};

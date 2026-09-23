@@ -1,13 +1,13 @@
-// Module ID: 6812
-// Function ID: 6813
+// Module ID: 6896
+// Function ID: 6897
 // Name: WaypostSpotIllustration
-// Dependencies: [21, 5806, 6813, 2]
+// Dependencies: [21, 5890, 6897, 2]
 // Exports: WaypostSpotIllustration
 
-// Module 6812 (WaypostSpotIllustration)
+// Module 6896 (WaypostSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6813 from "module_6813" /* 6813 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6897 from "module_6897" /* 6897 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const WaypostSpotIllustration = function WaypostSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6813 };
+  const obj2 = { uri: _modDef6897 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

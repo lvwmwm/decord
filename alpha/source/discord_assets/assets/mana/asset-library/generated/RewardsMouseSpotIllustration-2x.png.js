@@ -1,8 +1,8 @@
-// Module ID: 6629
-// Function ID: 6630
+// Module ID: 6713
+// Function ID: 6714
 // Dependencies: [2]
 
-// Module 6629
+// Module 6713
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RewardsMouseSpotIllustration-2x.png.js");

@@ -1,12 +1,12 @@
-// Module ID: 12658
-// Function ID: 12659
+// Module ID: 12740
+// Function ID: 12741
 // Name: ApplicationCommandItem
-// Dependencies: [19, 17, 2105, 10527, 21, 4757, 576, 5194, 504, 12488, 5341, 1115, 5806, 4753, 2]
+// Dependencies: [19, 17, 2105, 10606, 21, 4827, 576, 5278, 504, 12564, 5425, 1115, 5890, 4823, 2]
 // Exports: default
 
-// Module 12658 (ApplicationCommandItem)
+// Module 12740 (ApplicationCommandItem)
 import nativeDefault from "native" /* 576 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12488 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 12564 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 
@@ -14,10 +14,10 @@ const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const AUTOCOMPLETE_ROW_HEIGHT = fn(10527).AUTOCOMPLETE_ROW_HEIGHT;
+const AUTOCOMPLETE_ROW_HEIGHT = fn(10606).AUTOCOMPLETE_ROW_HEIGHT;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { applicationCommandItem: { flexDirection: "row", paddingVertical: 8, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) }, highlightedApplicationCommandItem: null, applicationCommandIcon: null, applicationCommandDescriptionWrapper: null, applicationCommandSectionName: null };
   const obj2 = { flexDirection: "row", paddingVertical: 8, paddingHorizontal: 16, alignItems: "center", height: Math.max(arg0 * AUTOCOMPLETE_ROW_HEIGHT, AUTOCOMPLETE_ROW_HEIGHT) };

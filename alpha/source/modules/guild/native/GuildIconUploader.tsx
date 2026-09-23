@@ -1,16 +1,16 @@
-// Module ID: 12056
-// Function ID: 12057
+// Module ID: 12133
+// Function ID: 12134
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1182, 21, 4757, 576, 4467, 4608, 12057, 12058, 4753, 1115, 12059, 12060, 5341, 2]
+// Dependencies: [19, 17, 1182, 21, 4827, 576, 4533, 4678, 12134, 12135, 4823, 1115, 12136, 12137, 5425, 2]
 
-// Module 12056 (GuildIconUploader)
+// Module 12133 (GuildIconUploader)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import shared from "shared" /* 4608 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import Pressables from "Pressables" /* 5341 */;
-import _modDef12059 from "module_12059" /* 12059 */;
-import _modDef12060 from "module_12060" /* 12060 */;
+import shared from "shared" /* 4678 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import Pressables from "Pressables" /* 5425 */;
+import _modDef12136 from "module_12136" /* 12136 */;
+import _modDef12137 from "module_12137" /* 12137 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c3, Image: closure_4 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { width: 82, height: 82, marginTop: 4 }, guildPlaceholder: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, guildIcon: { width: 82, height: 82, borderRadius: 41 }, iconWrapperBorder: { position: "absolute", top: -8, right: -8, width: 40, height: 40, borderRadius: 20, justifyContent: "center", alignItems: "center" }, filledIconWrapper: null, emptyIconWrapper: null, emptyGuildIcon: null, emptyGuildIconText: null, uploadIcon: null };
 let size = { width: 32, height: 32, borderRadius: nativeDefault.radii.lg, justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 obj2.filledIconWrapper = size;
@@ -51,9 +51,9 @@ prototype["renderIcon"] = function renderIcon() {
     ({ guildIcon: arr3[0], emptyGuildIcon: arr3[1] } = tmp);
     obj4.style = items1;
     if (obj6.isThemeDark(ThemeStore.theme)) {
-      let tmp13Result = tmp13(12057);
+      let tmp13Result = tmp13(12134);
     } else {
-      tmp13Result = tmp13(12058);
+      tmp13Result = tmp13(12135);
     }
     const obj = { source: tmp13Result };
     const items2 = [timestampProducer(React4, obj), ];
@@ -86,13 +86,13 @@ prototype["renderUpload"] = function renderUpload() {
     const obj6 = { tintColor: iconBackgroundColor };
     items1[1] = obj6;
     obj5.style = items1;
-    obj5.source = _modDef12059;
+    obj5.source = _modDef12136;
     obj4.children = tmp2(React4, obj5);
     obj2.children = tmp2(tmp3, obj4);
     let obj = obj2;
   } else {
     obj = { style: tmp.emptyIconWrapper, children: null };
-    const obj7 = { source: _modDef12060 };
+    const obj7 = { source: _modDef12137 };
     obj.children = tmp2(React4, obj7);
   }
   return timestampProducer(React3, obj);
@@ -117,7 +117,7 @@ prototype["render"] = function render() {
   obj.children = React5(React3, obj2);
   return timestampProducer(Pressables.PressableOpacity, obj);
 };
-GuildIconUploader.contextType = fn(4467).ThemeContext;
+GuildIconUploader.contextType = fn(4533).ThemeContext;
 size = fn(2);
 const result = size.fileFinishedImporting("modules/guild/native/GuildIconUploader.tsx");
 

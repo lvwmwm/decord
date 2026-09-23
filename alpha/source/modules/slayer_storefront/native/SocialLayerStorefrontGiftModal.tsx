@@ -1,16 +1,16 @@
-// Module ID: 11092
-// Function ID: 11093
+// Module ID: 11168
+// Function ID: 11169
 // Name: SocialLayerStorefrontGiftModal
-// Dependencies: [19, 5729, 1074, 21, 504, 7409, 7429, 1364, 9485, 5204, 1241, 11065, 4428, 11093, 1115, 11090, 11072, 11094, 11277, 11278, 2]
+// Dependencies: [19, 5813, 1074, 21, 504, 7493, 7513, 1364, 9556, 5288, 1241, 11141, 4494, 11169, 1115, 11166, 11148, 11170, 11353, 11354, 2]
 // Exports: default
 
-// Module 11092 (SocialLayerStorefrontGiftModal)
+// Module 11168 (SocialLayerStorefrontGiftModal)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11065 */;
-import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 11277 */;
-import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 11278 */;
+import SocialLayerStorefrontNativeActionCreators from "SocialLayerStorefrontNativeActionCreators" /* 11141 */;
+import SocialLayerStorefrontGiftProductDetailsDefault from "SocialLayerStorefrontGiftProductDetails" /* 11353 */;
+import SocialLayerStorefrontGiftPurchaseSectionDefault from "SocialLayerStorefrontGiftPurchaseSection" /* 11354 */;
 import noop from "module_19" /* 19 */;
-import SKUStore from "SKUStore" /* 5729 */;
+import SKUStore from "SKUStore" /* 5813 */;
 
 require = fn;
 const Constants = fn(1074);

@@ -1,10 +1,10 @@
-// Module ID: 5794
-// Function ID: 5795
+// Module ID: 5878
+// Function ID: 5879
 // Name: InitialMemberVerificationStore
 // Dependencies: [504, 573, 2]
 // Exports: setInitialVerification
 
-// Module 5794 (InitialMemberVerificationStore)
+// Module 5878 (InitialMemberVerificationStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

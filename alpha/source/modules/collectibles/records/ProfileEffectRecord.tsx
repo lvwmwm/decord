@@ -1,10 +1,10 @@
-// Module ID: 7793
-// Function ID: 7794
+// Module ID: 7876
+// Function ID: 7877
 // Name: ProfileEffectRecord
 // Dependencies: [1972, 1973, 2]
 // Exports: isProfileEffectRecord
 
-// Module 7793 (ProfileEffectRecord)
+// Module 7876 (ProfileEffectRecord)
 import CollectiblesItemType from "CollectiblesItemType" /* 1973 */;
 import BaseCollectiblesItemRecord from "BaseCollectiblesItemRecord" /* 1972 */;
 

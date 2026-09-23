@@ -1,9 +1,9 @@
-// Module ID: 11567
-// Function ID: 11568
+// Module ID: 11643
+// Function ID: 11644
 // Name: DiscordAppState
 // Dependencies: [1979, 504, 2]
 
-// Module 11567 (DiscordAppState)
+// Module 11643 (DiscordAppState)
 import initialize from "initialize" /* 504 */;
 import AppStateStore from "AppStateStore" /* 1979 */;
 

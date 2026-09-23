@@ -1,16 +1,16 @@
-// Module ID: 18277
-// Function ID: 18278
+// Module ID: 18346
+// Function ID: 18347
 // Name: NativeNotificationsManager
-// Dependencies: [5, 17, 7875, 4772, 1074, 3, 18278, 9563, 11, 7365, 1364, 8478, 1241, 2]
+// Dependencies: [5, 17, 7958, 4842, 1074, 3, 18347, 9636, 11, 7449, 1364, 8549, 1241, 2]
 
-// Module 18277 (NativeNotificationsManager)
+// Module 18346 (NativeNotificationsManager)
 import LoggerDefault from "Logger" /* 3 */;
-import PushNotificationDefault from "PushNotification" /* 9563 */;
-import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 18278 */;
+import PushNotificationDefault from "PushNotification" /* 9636 */;
+import ClearChannelNotificationsOnAppForegroundExperiment from "ClearChannelNotificationsOnAppForegroundExperiment" /* 18347 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7875 */;
-import ReadStateStore from "ReadStateStore" /* 4772 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7958 */;
+import ReadStateStore from "ReadStateStore" /* 4842 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7449 */;
 
 require = fn;
 function getDeliveredNotifications() {
@@ -411,7 +411,7 @@ const prototype = function NativeNotificationsManager() {
           }
           c7 = 6;
           logger = 1;
-          const obj11 = { value: applyArgumentsResult(8478).removeFile(closure_131_0, closure_131_2), done: false };
+          const obj11 = { value: applyArgumentsResult(8549).removeFile(closure_131_0, closure_131_2), done: false };
           return obj11;
         }
       } catch (tmp41) {

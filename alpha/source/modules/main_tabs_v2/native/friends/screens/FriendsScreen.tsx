@@ -1,23 +1,23 @@
-// Module ID: 17234
-// Function ID: 17235
+// Module ID: 17303
+// Function ID: 17304
 // Name: FriendsScreen
-// Dependencies: [19, 17, 7897, 4406, 21, 4757, 576, 1484, 7409, 7429, 1612, 504, 17235, 1875, 8452, 17236, 17239, 16795, 4701, 1115, 5824, 11266, 5911, 5187, 11129, 12155, 2]
+// Dependencies: [19, 17, 7979, 4472, 21, 4827, 576, 1484, 7493, 7513, 1612, 504, 17304, 1875, 8523, 17305, 17308, 16847, 4771, 1115, 5908, 11342, 5995, 5271, 11205, 12232, 2]
 // Exports: default
 
-// Module 17234 (FriendsScreen)
+// Module 17303 (FriendsScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import SendMessageIcon from "SendMessageIcon" /* 4701 */;
-import components_Button_Button from "components/Button/Button" /* 5187 */;
-import TableRow from "TableRow" /* 5824 */;
-import native from "native" /* 5911 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8452 */;
-import NoResultsDefault from "NoResults" /* 11266 */;
-import _modDef16795 from "module_16795" /* 16795 */;
+import SendMessageIcon from "SendMessageIcon" /* 4771 */;
+import components_Button_Button from "components/Button/Button" /* 5271 */;
+import TableRow from "TableRow" /* 5908 */;
+import native from "native" /* 5995 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8523 */;
+import NoResultsDefault from "NoResults" /* 11342 */;
+import _modDef16847 from "module_16847" /* 16847 */;
 import noop from "module_19" /* 19 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 7897 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 7979 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 
 const require = globalThis.__r;
 
@@ -25,7 +25,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { paddingTop: nativeDefault.space.PX_8, flex: 1 }, requestsButtonContainer: null, emptyContainer: null, buttonContainer: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_8, flex: 1 };
 obj2.requestsButtonContainer = { marginHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.lg, overflow: "hidden" };
@@ -84,7 +84,7 @@ export default function FriendsScreen() {
     }
     const items = [];
     if (tmp2) {
-      const obj = { icon: _modDef16795, IconComponent: SendMessageIcon.SendMessageIcon, iconVariant: "default", label: null, subLabel: null, onPress: null };
+      const obj = { icon: _modDef16847, IconComponent: SendMessageIcon.SendMessageIcon, iconVariant: "default", label: null, subLabel: null, onPress: null };
       const intl = util.intl;
       obj.label = intl.string(util.t.fyA115);
       const intl2 = util.intl;
@@ -127,7 +127,7 @@ export default function FriendsScreen() {
       let v1IEawz = require;
       let obj9 = dependencyMap;
       let obj7 = { start: true, end: true, icon: null, trailing: null, label: null, subLabel: null, onPress: null };
-      const obj8 = { source: _modDef16795 };
+      const obj8 = { source: _modDef16847 };
       obj7.icon = React5(TableRow.TableRow.Icon, obj8);
       obj7.trailing = React5(TableRow.TableRow.Arrow, {});
       const intl5 = util.intl;

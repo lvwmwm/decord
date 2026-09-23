@@ -1,9 +1,9 @@
-// Module ID: 10554
-// Function ID: 10555
+// Module ID: 10633
+// Function ID: 10634
 // Name: EmojiPickerListConstants
 // Dependencies: [1218, 2]
 
-// Module 10554 (EmojiPickerListConstants)
+// Module 10633 (EmojiPickerListConstants)
 import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1218 */;
 import size from "module_2" /* 2 */;
 

@@ -1,8 +1,8 @@
-// Module ID: 6601
-// Function ID: 6602
+// Module ID: 6685
+// Function ID: 6686
 // Dependencies: [2]
 
-// Module 6601
+// Module 6685
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/PowerupSpotIllustration-2x.png.js");

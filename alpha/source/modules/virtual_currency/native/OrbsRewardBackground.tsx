@@ -1,18 +1,18 @@
-// Module ID: 12041
-// Function ID: 12042
+// Module ID: 12118
+// Function ID: 12119
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 4749, 1979, 21, 504, 1094, 5806, 12042, 8582, 12043, 2]
+// Dependencies: [32, 19, 4819, 1979, 21, 504, 1094, 5890, 12119, 8653, 12120, 2]
 // Exports: OrbsRewardBackground
 
-// Module 12041 (OrbsRewardBackground)
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef12042 from "module_12042" /* 12042 */;
+// Module 12118 (OrbsRewardBackground)
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef12119 from "module_12119" /* 12119 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4749 */;
+import AccessibilityStore from "AccessibilityStore" /* 4819 */;
 import AppStateStore from "AppStateStore" /* 1979 */;
 
-const _modDef12043 = tmp15(12043);
+const _modDef12120 = tmp15(12120);
 const require = fn;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
@@ -58,7 +58,7 @@ export const OrbsRewardBackground = function OrbsRewardBackground(arg0) {
   const tmp13 = closure_8;
   const tmp14 = closure_7;
   const tmp7 = _slicedToArray(noop.useState(false), 2);
-  obj5.uri = _modDef12042;
+  obj5.uri = _modDef12119;
   obj4.source = obj5;
   obj4.style = style;
   obj4.onLoad = callback;
@@ -69,11 +69,11 @@ export const OrbsRewardBackground = function OrbsRewardBackground(arg0) {
   }
   if (tmp14Result) {
     const obj6 = { source: null, style: null, resizeMode: "cover", onLoad: null, disableFocus: true, playInBackground: true, preventsDisplaySleepDuringVideoPlayback: false };
-    const obj7 = { uri: _modDef12043 };
+    const obj7 = { uri: _modDef12120 };
     obj6.source = obj7;
     obj6.style = style;
     obj6.onLoad = callback1;
-    tmp14Result = tmp14(tmp(8582).VideoComponent, obj6);
+    tmp14Result = tmp14(tmp(8653).VideoComponent, obj6);
   }
   children[1] = tmp14Result;
   return tmp13(noop.Fragment, { children });

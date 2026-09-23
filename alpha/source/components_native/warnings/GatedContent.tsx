@@ -1,18 +1,18 @@
-// Module ID: 12923
-// Function ID: 12924
+// Module ID: 13005
+// Function ID: 13006
 // Name: GatedContent
-// Dependencies: [19, 21, 4757, 576, 8688, 5185, 4753, 5652, 5187, 2]
+// Dependencies: [19, 21, 4827, 576, 8759, 5269, 4823, 5736, 5271, 2]
 // Exports: default
 
-// Module 12923 (GatedContent)
+// Module 13005 (GatedContent)
 import nativeDefault from "native" /* 576 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8688 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 8759 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { flex: 1, padding: 20, alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, textAlign: "center" }, title: { textAlign: "center" }, description: { textAlign: "center" }, buttonGroup: { width: "100%", maxWidth: 400 } };
 let closure_5 = createStyles.createStyles(obj2);
 const size = fn(2);

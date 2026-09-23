@@ -1,10 +1,10 @@
-// Module ID: 8390
-// Function ID: 8391
+// Module ID: 8472
+// Function ID: 8473
 // Name: InteractionActionCreators
 // Dependencies: [5, 1074, 573, 1271, 2]
 // Exports: addQueued, fetchMessageInteractionData, queueInteractionComponentState, setFailed
 
-// Module 8390 (InteractionActionCreators)
+// Module 8472 (InteractionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

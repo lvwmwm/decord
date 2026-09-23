@@ -1,8 +1,8 @@
-// Module ID: 6147
-// Function ID: 6148
+// Module ID: 6231
+// Function ID: 6232
 // Dependencies: [2]
 
-// Module 6147
+// Module 6231
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/DiamondSpotIllustration-2x.png.js");

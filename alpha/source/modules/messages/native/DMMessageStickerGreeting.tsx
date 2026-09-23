@@ -1,20 +1,20 @@
-// Module ID: 12520
-// Function ID: 12521
+// Module ID: 12596
+// Function ID: 12597
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 5721, 4977, 1372, 21, 4757, 576, 4575, 4458, 4606, 4455, 12521, 12522, 7701, 1115, 504, 1090, 4601, 12523, 10653, 4493, 4758, 1177, 10652, 5199, 5341, 10439, 4753, 5187, 2]
+// Dependencies: [5, 32, 19, 17, 5805, 5047, 1372, 21, 4827, 576, 4645, 4524, 4676, 4521, 12597, 12598, 7784, 1115, 504, 1090, 4671, 12599, 10729, 4559, 4828, 1177, 10728, 5283, 5425, 10518, 4823, 5271, 2]
 // Exports: default
 
-// Module 12520 (DMMessageStickerGreeting)
+// Module 12596 (DMMessageStickerGreeting)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4493 */;
-import timing from "timing" /* 4758 */;
-import StickersActionCreators from "StickersActionCreators" /* 10653 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+import timing from "timing" /* 4828 */;
+import StickersActionCreators from "StickersActionCreators" /* 10729 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import StickersStore from "StickersStore" /* 5721 */;
-import MessageStore from "MessageStore" /* 4977 */;
+import StickersStore from "StickersStore" /* 5805 */;
+import MessageStore from "MessageStore" /* 5047 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_13 = createStyles.createStyles((arg0) => {
   let BACKGROUND_BASE_LOWER = arg0;
   if (arg0 == null) {
@@ -33,7 +33,7 @@ let closure_13 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let c14 = "749054660769218631";
-const END = fn(4575).GradientPercentage.END;
+const END = fn(4645).GradientPercentage.END;
 const __initData = { code: "function DMMessageStickerGreetingTsx1(){const{styles,isRendered,hasInputText,hasMessages,HEIGHT_COMPACT,HEIGHT_FULL,withDelay,withTiming,STANDARD_EASING}=this.__closure;const gradientOverlayOffset=styles.gradient.height;const hasHeight=isRendered&&!hasInputText;const heightExpanded=(hasMessages?HEIGHT_COMPACT:HEIGHT_FULL)-1;const targetHeight=hasHeight?heightExpanded+gradientOverlayOffset:0;const targetMargin=hasHeight?-gradientOverlayOffset:0;function generateAnimationConfig(value){return withDelay(300,withTiming(value,{easing:STANDARD_EASING,duration:250}));}return{justifyContent:'flex-end',overflow:'hidden',marginTop:generateAnimationConfig(targetMargin),height:generateAnimationConfig(targetHeight)};}" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/messages/native/DMMessageStickerGreeting.tsx");
@@ -130,8 +130,8 @@ export default function DMMessageStickerGreeting(channel) {
               if (closure_1_1 !== content) {
                 dependencyMap(content);
               }
-              const obj = closure_1(4455);
-              obj.open({ key: "HANDLE_WAVE_PRESS_TOAST", content, icon: closure_1(12521) });
+              const obj = closure_1(4521);
+              obj.open({ key: "HANDLE_WAVE_PRESS_TOAST", content, icon: closure_1(12597) });
             }
             closure_128_0 = showErrorToast;
             tmp7 = stateFromStores;

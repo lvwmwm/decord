@@ -1,13 +1,13 @@
-// Module ID: 6092
-// Function ID: 6093
+// Module ID: 6176
+// Function ID: 6177
 // Name: ClydeAngledSpotIllustration
-// Dependencies: [21, 5806, 6093, 2]
+// Dependencies: [21, 5890, 6177, 2]
 // Exports: ClydeAngledSpotIllustration
 
-// Module 6092 (ClydeAngledSpotIllustration)
+// Module 6176 (ClydeAngledSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6093 from "module_6093" /* 6093 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6177 from "module_6177" /* 6177 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ClydeAngledSpotIllustration = function ClydeAngledSpotIllustration(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6093 };
+  const obj2 = { uri: _modDef6177 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

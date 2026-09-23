@@ -1,17 +1,17 @@
-// Module ID: 10083
-// Function ID: 10084
+// Module ID: 10163
+// Function ID: 10164
 // Name: CreateInviteModalStore
-// Dependencies: [2042, 2064, 8654, 1074, 10084, 10086, 38, 504, 573, 2]
+// Dependencies: [2042, 2064, 8725, 1074, 10164, 10166, 38, 504, 573, 2]
 
-// Module 10083 (CreateInviteModalStore)
+// Module 10163 (CreateInviteModalStore)
 import _modDef38 from "module_38" /* 38 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10084 */;
-import DefaultInviteExpirationExperiments from "DefaultInviteExpirationExperiments" /* 10086 */;
+import InstantInviteUtilsDefault from "InstantInviteUtils" /* 10164 */;
+import DefaultInviteExpirationExperiments from "DefaultInviteExpirationExperiments" /* 10166 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import InstantInviteStore from "InstantInviteStore" /* 8654 */;
+import InstantInviteStore from "InstantInviteStore" /* 8725 */;
 
 require = fn;
 function updateWithLatestInvite(channelId, arg1) {

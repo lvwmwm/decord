@@ -1,10 +1,10 @@
-// Module ID: 9796
-// Function ID: 9797
+// Module ID: 9869
+// Function ID: 9870
 // Name: EntityUtils
 // Dependencies: [2042, 2048, 2]
 // Exports: getChannelFromEvent, getChannelTypeFromEntity, getLocationFromEvent, getLocationFromEventData
 
-// Module 9796 (EntityUtils)
+// Module 9869 (EntityUtils)
 import ChannelStore from "ChannelStore" /* 2042 */;
 
 const GuildScheduledEventsConstants = fn(2048);

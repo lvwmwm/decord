@@ -1,21 +1,21 @@
-// Module ID: 10050
-// Function ID: 10051
+// Module ID: 10130
+// Function ID: 10131
 // Name: GameConsoleActionCreators
-// Dependencies: [5, 4780, 4775, 4774, 1074, 1241, 573, 5109, 1115, 9920, 10051, 1271, 1231, 10052, 10053, 10056, 2]
+// Dependencies: [5, 4850, 4845, 4844, 1074, 1241, 573, 5193, 1115, 9993, 10131, 1271, 1231, 10132, 10133, 10136, 2]
 // Exports: connectToRemote, fetchDevices, persistSelectedDeviceId, remoteAudioSettingsUpdate, remoteDisconnect, remoteVoiceStateUpdate, transferToPlayStation, waitForSession
 
-// Module 10050 (GameConsoleActionCreators)
+// Module 10130 (GameConsoleActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 9920 */;
-import ConsoleHandoffType from "ConsoleHandoffType" /* 10051 */;
-import ConsoleCommands from "ConsoleCommands" /* 10052 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 10053 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 9993 */;
+import ConsoleHandoffType from "ConsoleHandoffType" /* 10131 */;
+import ConsoleCommands from "ConsoleCommands" /* 10132 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 10133 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
-import SessionsStore from "SessionsStore" /* 4775 */;
-import GameConsoleStore from "GameConsoleStore" /* 4774 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
+import SessionsStore from "SessionsStore" /* 4845 */;
+import GameConsoleStore from "GameConsoleStore" /* 4844 */;
 
 require = fn;
 function disconnectRemote() {

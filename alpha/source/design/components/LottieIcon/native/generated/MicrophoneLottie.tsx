@@ -1,11 +1,11 @@
-// Module ID: 14427
-// Function ID: 14428
+// Module ID: 14507
+// Function ID: 14508
 // Name: MicrophoneLottie
-// Dependencies: [19, 21, 10212, 14428, 2]
+// Dependencies: [19, 21, 10292, 14508, 2]
 
-// Module 14427 (MicrophoneLottie)
-import LottieIcon from "LottieIcon" /* 10212 */;
-import _mod14428 from "module_14428" /* 14428 */;
+// Module 14507 (MicrophoneLottie)
+import LottieIcon from "LottieIcon" /* 10292 */;
+import _mod14508 from "module_14508" /* 14508 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,5 +17,5 @@ const result = size.fileFinishedImporting("design/components/LottieIcon/native/g
 
 export const MicrophoneLottie = noop.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14428, ref, layers, markers: items });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14508, ref, layers, markers: items });
 });

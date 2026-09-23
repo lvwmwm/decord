@@ -1,12 +1,12 @@
-// Module ID: 11224
-// Function ID: 11225
+// Module ID: 11300
+// Function ID: 11301
 // Name: openFavoritesGuildMoveToCategoryActionSheet
-// Dependencies: [7442, 5294, 2]
+// Dependencies: [7526, 5378, 2]
 // Exports: default
 
-// Module 11224 (openFavoritesGuildMoveToCategoryActionSheet)
-import FolderIcon2 from "FolderIcon" /* 5294 */;
-import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7442 */;
+// Module 11300 (openFavoritesGuildMoveToCategoryActionSheet)
+import FolderIcon2 from "FolderIcon" /* 5378 */;
+import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7526 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

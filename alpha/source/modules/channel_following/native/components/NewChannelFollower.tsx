@@ -1,23 +1,23 @@
-// Module ID: 11593
-// Function ID: 11594
+// Module ID: 11669
+// Function ID: 11670
 // Name: NewChannelFollower
-// Dependencies: [32, 19, 17, 2046, 2042, 4394, 2064, 4396, 5657, 1074, 21, 4757, 576, 8443, 4691, 504, 4910, 5204, 4608, 11594, 11595, 7397, 6871, 5803, 1177, 5241, 4753, 1115, 5185, 5906, 5824, 4724, 9546, 1980, 11596, 8876, 5652, 5187, 11599, 7401, 2]
+// Dependencies: [32, 19, 17, 2046, 2042, 4460, 2064, 4462, 5741, 1074, 21, 4827, 576, 8514, 4761, 504, 4980, 5288, 4678, 11670, 11671, 7481, 6955, 5887, 1177, 5325, 4823, 1115, 5269, 5990, 5908, 4794, 9619, 1980, 11672, 8947, 5736, 5271, 11675, 7485, 2]
 // Exports: default
 
-// Module 11593 (NewChannelFollower)
+// Module 11669 (NewChannelFollower)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import openChannelPickerDefault from "openChannelPicker" /* 11596 */;
-import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11599 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import openChannelPickerDefault from "openChannelPicker" /* 11672 */;
+import ChannelFollowerActionCreatorsDefault from "ChannelFollowerActionCreators" /* 11675 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildChannelStore from "GuildChannelStore" /* 4394 */;
+import GuildChannelStore from "GuildChannelStore" /* 4460 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
-import SortedGuildStore from "SortedGuildStore" /* 5657 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
+import SortedGuildStore from "SortedGuildStore" /* 5741 */;
 
 const require = globalThis.__r;
 
@@ -33,12 +33,12 @@ function canFollowIntoChannel(channel) {
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ImageBackground: metroRequire } = get_ActivityIndicator);
 fn(2046).GUILD_FOLLOW_DESTINATION_CHANNEL_TYPES;
-let closure_10 = fn(4394).GUILD_SELECTABLE_CHANNELS_KEY;
+let closure_10 = fn(4460).GUILD_SELECTABLE_CHANNELS_KEY;
 const Constants = fn(1074);
 ({ AbortCodes: closure_14, Permissions: closure_15 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 16, paddingVertical: 24 }, header: { flex: 1, flexDirection: "row", justifyContent: "center", alignItems: "center", height: 96 }, headerGuildIcon: { width: 40, marginRight: 16 }, headerChannelContainer: { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 32 }, headerChannel: null, headerChannelIcon: null, ctaHeader: null, ctaSubhead: null, channelIcon: null };
 let obj3 = { borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, height: 32 };
 obj2.headerChannel = { flex: 1, flexDirection: "row", minWidth: 160, paddingHorizontal: 8, paddingVertical: 6, borderRadius: nativeDefault.radii.xs, backgroundColor: nativeDefault.colors.INTERACTIVE_BACKGROUND_SELECTED };
@@ -168,7 +168,7 @@ export default function NewChannelFollower(targetChannelId) {
     obj2.onClose = function onClose() {
       closure_1_4(targetGuildId, targetChannelId);
     };
-    obj.openLazy(asyncRequireImpl(9546, dependencyMap.paths), "NewChannelFollowerGuildPicker", obj2);
+    obj.openLazy(asyncRequireImpl(9619, dependencyMap.paths), "NewChannelFollowerGuildPicker", obj2);
   };
   obj14.children = closure_16(require("TableRow").TableRow, obj15);
   const items6 = [closure_16(require("TableRowGroup").TableRowGroup, obj14), ];

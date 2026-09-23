@@ -1,12 +1,12 @@
-// Module ID: 8731
-// Function ID: 8732
+// Module ID: 8802
+// Function ID: 8803
 // Name: MethodPathIcon
-// Dependencies: [19, 17, 21, 4757, 576, 4458, 8732, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 4524, 8803, 2]
 // Exports: default
 
-// Module 8731 (MethodPathIcon)
+// Module 8802 (MethodPathIcon)
 import nativeDefault from "native" /* 576 */;
-import inlineStyles from "inlineStyles" /* 8732 */;
+import inlineStyles from "inlineStyles" /* 8803 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -15,7 +15,7 @@ const inlineStylesDefault = inlineStyles;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: null };
 let size = { width: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, height: nativeDefault.modules.mobile.TABLE_ROW_ICON_SIZE, justifyContent: "center", alignItems: "center", borderRadius: nativeDefault.radii.lg };
 obj2.container = size;

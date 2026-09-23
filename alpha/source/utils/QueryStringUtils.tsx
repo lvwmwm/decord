@@ -1,10 +1,10 @@
-// Module ID: 4743
-// Function ID: 4744
+// Module ID: 4813
+// Function ID: 4814
 // Name: QueryStringUtils
 // Dependencies: [2]
 // Exports: getFirstQueryStringValue
 
-// Module 4743 (QueryStringUtils)
+// Module 4813 (QueryStringUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/QueryStringUtils.tsx");

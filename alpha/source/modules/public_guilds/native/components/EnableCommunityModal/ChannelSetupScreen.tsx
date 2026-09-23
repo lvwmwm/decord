@@ -1,25 +1,25 @@
-// Module ID: 18124
-// Function ID: 18125
+// Module ID: 18193
+// Function ID: 18194
 // Name: ChannelSetupScreen
-// Dependencies: [19, 17, 9862, 2042, 4394, 4406, 1372, 8298, 1074, 21, 4458, 576, 18113, 504, 4910, 1115, 18114, 4724, 9546, 1980, 9861, 18111, 4753, 5185, 5906, 5824, 2]
+// Dependencies: [19, 17, 9935, 2042, 4460, 4472, 1372, 8380, 1074, 21, 4524, 576, 18182, 504, 4980, 1115, 18183, 4794, 9619, 1980, 9934, 18180, 4823, 5269, 5990, 5908, 2]
 // Exports: default
 
-// Module 18124 (ChannelSetupScreen)
+// Module 18193 (ChannelSetupScreen)
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 9862 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 9935 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildChannelStore from "GuildChannelStore" /* 4394 */;
-import RelationshipStore from "RelationshipStore" /* 4406 */;
+import GuildChannelStore from "GuildChannelStore" /* 4460 */;
+import RelationshipStore from "RelationshipStore" /* 4472 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-let closure_9 = fn(4394).GUILD_SELECTABLE_CHANNELS_KEY;
-const CREATE_NEW_CHANNEL_VALUE = fn(8298).CREATE_NEW_CHANNEL_VALUE;
+let closure_9 = fn(4460).GUILD_SELECTABLE_CHANNELS_KEY;
+const CREATE_NEW_CHANNEL_VALUE = fn(8380).CREATE_NEW_CHANNEL_VALUE;
 const ChannelTypes = fn(1074).ChannelTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
@@ -97,10 +97,10 @@ export default function ChannelSetupScreen() {
     obj2.title = intl.string(util.t.Yr6nGx);
     obj2.items = callback();
     obj2.onItemSelect = function onItemSelect(rulesChannelId) {
-      rulesChannel(9861).updateGuild({ rulesChannelId });
-      const obj = rulesChannel(9861);
+      rulesChannel(9934).updateGuild({ rulesChannelId });
+      const obj = rulesChannel(9934);
       const obj2 = { rulesChannelId };
-      rulesChannel(4724).hideActionSheet();
+      rulesChannel(4794).hideActionSheet();
     };
     let id;
     if (rulesChannel != null) {
@@ -110,7 +110,7 @@ export default function ChannelSetupScreen() {
       id = CREATE_NEW_CHANNEL_VALUE;
     }
     obj2.selectedItem = id;
-    obj.openLazy(asyncRequireImpl(9546, dependencyMap.paths), "SelectRulesChannel", obj2);
+    obj.openLazy(asyncRequireImpl(9619, dependencyMap.paths), "SelectRulesChannel", obj2);
   }, items3);
   const callback2 = obj.useCallback(() => {
     let obj2 = { title: null, items: null, onItemSelect: null, selectedItem: null, hasIcons: false };
@@ -119,10 +119,10 @@ export default function ChannelSetupScreen() {
     obj2.title = intl.string(util.t.VqhxxN);
     obj2.items = callback();
     obj2.onItemSelect = function onItemSelect(publicUpdatesChannelId) {
-      rulesChannel(9861).updateGuild({ publicUpdatesChannelId });
-      const obj = rulesChannel(9861);
+      rulesChannel(9934).updateGuild({ publicUpdatesChannelId });
+      const obj = rulesChannel(9934);
       const obj2 = { publicUpdatesChannelId };
-      rulesChannel(4724).hideActionSheet();
+      rulesChannel(4794).hideActionSheet();
     };
     let id;
     if (publicUpdatesChannel != null) {
@@ -132,7 +132,7 @@ export default function ChannelSetupScreen() {
       id = CREATE_NEW_CHANNEL_VALUE;
     }
     obj2.selectedItem = id;
-    obj.openLazy(asyncRequireImpl(9546, dependencyMap.paths), "SelectUpdatesChannel", obj2);
+    obj.openLazy(asyncRequireImpl(9619, dependencyMap.paths), "SelectUpdatesChannel", obj2);
   }, items4);
   const obj6 = { headerRef: ref, disableNextStep: false, currentStep: guild(publicUpdatesChannel[21]).EnableCommunityModalSteps.STEP_2, children: null };
   const obj7 = { style: enableCommunitySharedStyles.content, children: null };

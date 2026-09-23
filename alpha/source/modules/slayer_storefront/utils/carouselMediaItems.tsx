@@ -1,11 +1,11 @@
-// Module ID: 11069
-// Function ID: 11070
+// Module ID: 11145
+// Function ID: 11146
 // Name: carouselMediaItems
-// Dependencies: [4998, 7473, 2]
+// Dependencies: [5082, 7557, 2]
 // Exports: convertCarouselItemsToMediaItems, getThumbnailSrc
 
-// Module 11069 (carouselMediaItems)
-import StoreUtils from "StoreUtils" /* 4998 */;
+// Module 11145 (carouselMediaItems)
+import StoreUtils from "StoreUtils" /* 5082 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/slayer_storefront/utils/carouselMediaItems.tsx");
@@ -53,15 +53,15 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
             obj3.videoThumbnailSrc = obj7.getAssetURL(applicationId, tmp5, heroWidth, "webp");
             let assetURL;
             if (null != tmp4.thumbnailAssetId) {
-              let tmp26Result = tmp26(4998);
+              let tmp26Result = tmp26(5082);
               let str5 = "webp";
               assetURL = tmp26Result.getAssetURL(applicationId, tmp4.thumbnailAssetId, 112, "webp");
             }
             obj3.thumbnailSrc = assetURL;
             let assetURL1;
             if (null != tmp4.backgroundAssetId) {
-              let tmp26Result2 = tmp26(4998);
-              assetURL1 = tmp26Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp26(7473).LARGE_ASSET_FORMAT);
+              let tmp26Result2 = tmp26(5082);
+              assetURL1 = tmp26Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp26(7557).LARGE_ASSET_FORMAT);
             }
             obj3.backgroundSrc = assetURL1;
             let arr2 = push(obj3);
@@ -73,15 +73,15 @@ export const convertCarouselItemsToMediaItems = function convertCarouselItemsToM
             obj.src = obj2.getAssetURL(applicationId, tmp7, heroWidth, "webp");
             let assetURL2;
             if (null != tmp4.thumbnailAssetId) {
-              let tmp8Result = tmp8(4998);
+              let tmp8Result = tmp8(5082);
               let str2 = "webp";
               assetURL2 = tmp8Result.getAssetURL(applicationId, tmp4.thumbnailAssetId, 112, "webp");
             }
             obj.thumbnailSrc = assetURL2;
             let assetURL3;
             if (null != tmp4.backgroundAssetId) {
-              let tmp8Result2 = tmp8(4998);
-              assetURL3 = tmp8Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp8(7473).LARGE_ASSET_FORMAT);
+              let tmp8Result2 = tmp8(5082);
+              assetURL3 = tmp8Result2.getAssetURL(applicationId, tmp4.backgroundAssetId, heroWidth, tmp8(7557).LARGE_ASSET_FORMAT);
             }
             obj.backgroundSrc = assetURL3;
             let arr3 = push(obj);

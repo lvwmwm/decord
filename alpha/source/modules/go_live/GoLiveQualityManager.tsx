@@ -1,12 +1,12 @@
-// Module ID: 14082
-// Function ID: 14083
+// Module ID: 14164
+// Function ID: 14165
 // Name: GoLiveQualityManager
-// Dependencies: [4815, 3, 2037, 2]
+// Dependencies: [4885, 3, 2037, 2]
 
-// Module 14082 (GoLiveQualityManager)
+// Module 14164 (GoLiveQualityManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Timers from "Timers" /* 2037 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 4815 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 4885 */;
 
 require = fn;
 const GoLiveQualityManagerEvent = { RequestedSSRCsUpdate: "requested-ssrcs-update", RequestedStreamsUpdate: "requested-streams-update" };

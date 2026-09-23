@@ -1,14 +1,14 @@
-// Module ID: 10341
-// Function ID: 10342
+// Module ID: 10420
+// Function ID: 10421
 // Name: common/Notifications
-// Dependencies: [19, 10342, 21, 504, 10367, 2]
+// Dependencies: [19, 10421, 21, 504, 10446, 2]
 // Exports: default
 
-// Module 10341 (common/Notifications)
+// Module 10420 (common/Notifications)
 import initialize from "initialize" /* 504 */;
-import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 10367 */;
+import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 10446 */;
 import noop from "module_19" /* 19 */;
-import InAppNotificationStore from "InAppNotificationStore" /* 10342 */;
+import InAppNotificationStore from "InAppNotificationStore" /* 10421 */;
 
 require = fn;
 const jsx = fn(21).jsx;

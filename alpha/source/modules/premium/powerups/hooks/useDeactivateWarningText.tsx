@@ -1,14 +1,14 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12882
+// Function ID: 12883
 // Name: useDeactivateWarningText
-// Dependencies: [19, 4676, 2099, 2064, 504, 7374, 4649, 1115, 2514, 2]
+// Dependencies: [19, 4746, 2099, 2064, 504, 7458, 4719, 1115, 2516, 2]
 // Exports: default
 
-// Module 12800 (useDeactivateWarningText)
-import _modDef2514 from "module_2514" /* 2514 */;
-import Powerups from "Powerups" /* 4649 */;
+// Module 12882 (useDeactivateWarningText)
+import _modDef2516 from "module_2516" /* 2516 */;
+import Powerups from "Powerups" /* 4719 */;
 import noop from "module_19" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4676 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4746 */;
 import GuildRoleStore from "GuildRoleStore" /* 2099 */;
 import GuildStore from "GuildStore" /* 2064 */;
 
@@ -71,17 +71,17 @@ export default function useDeactivateWarningText(arg0, skuId) {
       if (stateFromStores2 > 0) {
         const intl5 = tmp2(1115).intl;
         const obj2 = { perk: tmp.title, memberCount: tmp14 };
-        let formatToPlainStringResult = intl5.formatToPlainString(_modDef2514["4jSvr1"], obj2);
+        let formatToPlainStringResult = intl5.formatToPlainString(_modDef2516["4jSvr1"], obj2);
       } else {
         const intl4 = tmp2(1115).intl;
         const obj3 = { perk: tmp.title };
-        formatToPlainStringResult = intl4.formatToPlainString(_modDef2514.cavtEo, obj3);
+        formatToPlainStringResult = intl4.formatToPlainString(_modDef2516.cavtEo, obj3);
       }
     } else {
-      if (tmp2(4649).VANITY_URL_POWERUP_SKU_ID === skuId) {
+      if (tmp2(4719).VANITY_URL_POWERUP_SKU_ID === skuId) {
         const intl3 = tmp2(1115).intl;
         const string = intl3.string;
-        const tmp11 = _modDef2514;
+        const tmp11 = _modDef2516;
         if (stateFromStores1) {
           let stringResult = string(tmp11.hN75yb);
           let tmp13 = tmp10;
@@ -92,10 +92,10 @@ export default function useDeactivateWarningText(arg0, skuId) {
         let tmp7 = tmp13;
         let formatToPlainStringResult1 = stringResult;
       } else {
-        if (tmp2(4649).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID !== skuId) {
-          if (tmp2(4649).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
-            if (tmp2(4649).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
-              if (tmp2(4649).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
+        if (tmp2(4719).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID !== skuId) {
+          if (tmp2(4719).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
+            if (tmp2(4719).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
+              if (tmp2(4719).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
                 const intl = tmp2(1115).intl;
                 const obj = { perk: tmp.title, memberCount: null };
                 let num = stateFromStores;
@@ -103,26 +103,26 @@ export default function useDeactivateWarningText(arg0, skuId) {
                   num = 0;
                 }
                 obj.memberCount = num;
-                formatToPlainStringResult1 = intl.formatToPlainString(_modDef2514["4jSvr1"], obj);
+                formatToPlainStringResult1 = intl.formatToPlainString(_modDef2516["4jSvr1"], obj);
                 tmp7 = importDefault;
               }
             }
           }
         }
         const intl2 = tmp2(1115).intl;
-        formatToPlainStringResult1 = intl2.string(_modDef2514.Vf2ZcR);
+        formatToPlainStringResult1 = intl2.string(_modDef2516.Vf2ZcR);
         tmp7 = importDefault;
       }
-      const obj4 = { text: formatToPlainStringResult1, critical: tmp.skuId === tmp2(4649).VANITY_URL_POWERUP_SKU_ID };
+      const obj4 = { text: formatToPlainStringResult1, critical: tmp.skuId === tmp2(4719).VANITY_URL_POWERUP_SKU_ID };
       const items = [obj4];
       let tmp20 = stateFromStores1;
       if (stateFromStores1) {
-        tmp20 = tmp.skuId === tmp2(4649).GUILD_POWERUP_LEVEL_3_SKU_ID;
+        tmp20 = tmp.skuId === tmp2(4719).GUILD_POWERUP_LEVEL_3_SKU_ID;
       }
       if (tmp20) {
         const obj5 = { text: null, critical: true };
         const intl6 = tmp2(1115).intl;
-        obj5.text = intl6.string(tmp7(2514).M4XL5n);
+        obj5.text = intl6.string(tmp7(2516).M4XL5n);
         items.push(obj5);
       }
       return items;

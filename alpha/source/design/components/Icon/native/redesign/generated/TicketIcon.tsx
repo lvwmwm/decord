@@ -1,13 +1,13 @@
-// Module ID: 15488
-// Function ID: 15489
+// Module ID: 15542
+// Function ID: 15543
 // Name: TicketIcon
-// Dependencies: [19, 21, 576, 4457, 15489, 2]
+// Dependencies: [19, 21, 576, 4523, 15543, 2]
 // Exports: TicketIcon
 
-// Module 15488 (TicketIcon)
+// Module 15542 (TicketIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod15489 from "module_15489" /* 15489 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod15543 from "module_15543" /* 15543 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const TicketIcon = function TicketIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15489, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15543, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

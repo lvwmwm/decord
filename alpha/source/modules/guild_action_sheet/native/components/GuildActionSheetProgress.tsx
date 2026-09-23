@@ -1,22 +1,20 @@
-// Module ID: 14250
-// Function ID: 14251
+// Module ID: 14332
+// Function ID: 14333
 // Name: GuildActionSheetProgress
-// Dependencies: [19, 21, 4757, 576, 12732, 5826, 14251, 2]
+// Dependencies: [19, 21, 4827, 576, 12814, 5910, 14333, 2]
 // Exports: default
 
-// Module 14250 (GuildActionSheetProgress)
+// Module 14332 (GuildActionSheetProgress)
 import nativeDefault from "native" /* 576 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 12732 */;
-import GuildProgressOverviewDefault from "GuildProgressOverview" /* 14251 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 12814 */;
+import GuildProgressOverviewDefault from "GuildProgressOverview" /* 14333 */;
 import noop from "module_19" /* 19 */;
 
-const Card = tmp2(5826);
+const Card = tmp2(5910);
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
-const obj2 = { title: { color: nativeDefault.colors.TEXT_DEFAULT }, cardStyle: null };
-let obj3 = { color: nativeDefault.colors.TEXT_DEFAULT };
-obj2.cardStyle = { marginHorizontal: nativeDefault.space.PX_16, padding: 0, marginBottom: nativeDefault.space.PX_24 };
+const createStyles = fn(4827);
+const obj2 = { title: { color: nativeDefault.colors.TEXT_DEFAULT }, cardStyle: { padding: 0 } };
 let closure_4 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_action_sheet/native/components/GuildActionSheetProgress.tsx");

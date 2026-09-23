@@ -1,14 +1,14 @@
-// Module ID: 9909
-// Function ID: 9910
+// Module ID: 9982
+// Function ID: 9983
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 2048, 1074, 21, 4757, 576, 9756, 4724, 9910, 8874, 1177, 1115, 4753, 5187, 9794, 2]
+// Dependencies: [19, 17, 2048, 1074, 21, 4827, 576, 9829, 4794, 9983, 8945, 1177, 1115, 4823, 5271, 9867, 2]
 // Exports: default
 
-// Module 9909 (EndEventActionSheet)
+// Module 9982 (EndEventActionSheet)
 import nativeDefault from "native" /* 576 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9794 */;
-import CallsUtils from "CallsUtils" /* 9910 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import GuildScheduledEventsActionCreatorsDefault from "GuildScheduledEventsActionCreators" /* 9867 */;
+import CallsUtils from "CallsUtils" /* 9983 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const View = fn(17).View;
 let closure_4 = fn(2048).EXPLICIT_END_EVENT_SHEET_KEY;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { paddingVertical: 24, paddingHorizontal: 16, alignItems: "center" }, title: { fontSize: 24, fontFamily: fn(1074).Fonts.PRIMARY_BOLD, textAlign: "center", color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY }, subtitle: { marginTop: 8, textAlign: "center" }, cancelButtonContainer: { marginTop: 24, alignSelf: "stretch" }, confirmButtonContainer: { marginTop: 8, alignSelf: "stretch" } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -25,7 +25,7 @@ const result = size.fileFinishedImporting("modules/guild_scheduled_events/native
 export default function EndEventActionSheet(channel) {
   channel = channel.channel;
   const tmp = closure_7();
-  const activeEvent = channel(9756).useActiveEvent(channel.id);
+  const activeEvent = channel(9829).useActiveEvent(channel.id);
   if (null == activeEvent) {
     return null;
   } else {
@@ -42,13 +42,13 @@ export default function EndEventActionSheet(channel) {
     const obj5 = { style: tmp.subtitle, variant: "text-md/medium", color: "text-default", children: null };
     const intl2 = tmp2(1115).intl;
     obj5.children = intl2.string(tmp2(1115).t["0I0B8f"]);
-    items[1] = closure_5(tmp2(4753).Text, obj5);
+    items[1] = closure_5(tmp2(4823).Text, obj5);
     const obj6 = { style: tmp.cancelButtonContainer, children: null };
     const obj7 = { text: null, grow: true, onPress: null };
     const intl3 = tmp2(1115).intl;
     obj7.text = intl3.string(tmp2(1115).t.P60OAX);
     obj7.onPress = handleClose;
-    obj6.children = closure_5(tmp2(5187).Button, obj7);
+    obj6.children = closure_5(tmp2(5271).Button, obj7);
     items[2] = closure_5(View, obj6);
     const obj8 = { style: tmp.confirmButtonContainer, children: null };
     const obj9 = { text: null, variant: "destructive", grow: true, onPress: null };
@@ -61,11 +61,11 @@ export default function EndEventActionSheet(channel) {
         CallsUtils.handleDisconnect(channel);
       }
     };
-    obj8.children = closure_5(tmp2(5187).Button, obj9);
+    obj8.children = closure_5(tmp2(5271).Button, obj9);
     items[3] = closure_5(View, obj8);
     obj3.children = items;
     obj2.children = closure_6(View, obj3);
-    return closure_5(activeEvent(8874), obj2);
+    return closure_5(activeEvent(8945), obj2);
   }
-  let obj = channel(9756);
+  let obj = channel(9829);
 };

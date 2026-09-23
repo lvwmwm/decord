@@ -1,9 +1,9 @@
-// Module ID: 12331
-// Function ID: 12332
+// Module ID: 12407
+// Function ID: 12408
 // Name: ApplicationDirectorySimilarApplicationsStore
 // Dependencies: [1438, 504, 573, 2]
 
-// Module 12331 (ApplicationDirectorySimilarApplicationsStore)
+// Module 12407 (ApplicationDirectorySimilarApplicationsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import privDefault from "priv" /* 1438 */;

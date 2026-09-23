@@ -1,16 +1,16 @@
-// Module ID: 16968
-// Function ID: 16969
+// Module ID: 17025
+// Function ID: 17026
 // Name: VibegrationsChangelogSheet
-// Dependencies: [19, 17, 21, 4757, 576, 1612, 16967, 7444, 7396, 1115, 3678, 6871, 4753, 4439, 4348, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 1612, 17024, 7528, 7480, 1115, 3712, 6955, 4823, 4505, 4414, 2]
 // Exports: default
 
-// Module 16968 (VibegrationsChangelogSheet)
+// Module 17025 (VibegrationsChangelogSheet)
 import nativeDefault from "native" /* 576 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import _modDef3678 from "module_3678" /* 3678 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import DateUtils from "DateUtils" /* 4439 */;
-import Text_Text from "Text/Text" /* 4753 */;
+import _modDef3712 from "module_3712" /* 3712 */;
+import _modDef4414 from "module_4414" /* 4414 */;
+import DateUtils from "DateUtils" /* 4505 */;
+import Text_Text from "Text/Text" /* 4823 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -19,7 +19,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { entries: { gap: nativeDefault.space.PX_12 }, entry: null };
 let obj3 = { gap: nativeDefault.space.PX_12 };
 obj2.entry = { gap: nativeDefault.space.PX_4 };
@@ -35,7 +35,7 @@ export default function VibegrationsChangelogSheet() {
   let obj2 = { scrollable: true, header: null, children: null };
   const obj3 = { title: null };
   let intl = require("util").intl;
-  obj3.title = intl.string(_modDef3678.x07mpp);
+  obj3.title = intl.string(_modDef3712.x07mpp);
   obj2.header = closure_4(require("BottomSheetTitleHeader").BottomSheetTitleHeader, obj3);
   const obj4 = { contentContainerStyle: null, scrollIndicatorInsets: null, children: null };
   let items = [tmp.entries, ];
@@ -45,13 +45,13 @@ export default function VibegrationsChangelogSheet() {
   obj4.scrollIndicatorInsets = { bottom };
   obj4.children = result.map((children) => {
     const obj = { style: entry.entry, children: null };
-    const items = [DateUtils.dateFormat(_modDef4348(children.date, "YYYY-MM-DD"), "LL"), ];
+    const items = [DateUtils.dateFormat(_modDef4414(children.date, "YYYY-MM-DD"), "LL"), ];
     const tmp2 = View;
     let combined = null;
     if (obj3.isVibegrationsChangelogEntryExclusive(children)) {
       const intl = tmp3(1115).intl;
       const _HermesInternal = HermesInternal;
-      combined = " \u00B7 " + intl.string(_modDef3678["CLX+p/"]);
+      combined = " \u00B7 " + intl.string(_modDef3712["CLX+p/"]);
     }
     items[1] = combined;
     const items1 = [hasOwnProperty(Text_Text.Text, { variant: "text-xs/bold", color: "text-muted", children: items }), React4(Text_Text.Text, { variant: "text-sm/normal", color: "text-subtle", children: children.summary })];

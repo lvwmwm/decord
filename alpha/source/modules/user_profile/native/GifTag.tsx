@@ -1,16 +1,16 @@
-// Module ID: 8528
-// Function ID: 8529
+// Module ID: 8599
+// Function ID: 8600
 // Name: GifTag
-// Dependencies: [17, 21, 4757, 576, 672, 4753, 1115, 2]
+// Dependencies: [17, 21, 4827, 576, 672, 4823, 1115, 2]
 // Exports: default
 
-// Module 8528 (GifTag)
+// Module 8599 (GifTag)
 import _mod17 from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import createStyles from "createStyles" /* 4757 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import createStyles from "createStyles" /* 4827 */;
 import n from "module_672" /* 672 */;
 import size from "module_2" /* 2 */;
 

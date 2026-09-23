@@ -1,12 +1,12 @@
-// Module ID: 11236
-// Function ID: 11237
+// Module ID: 11312
+// Function ID: 11313
 // Name: ChannelCollapseActionCreators
-// Dependencies: [4938, 573, 7363, 2]
+// Dependencies: [5008, 573, 7447, 2]
 
-// Module 11236 (ChannelCollapseActionCreators)
+// Module 11312 (ChannelCollapseActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7363 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 4938 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7447 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
 
 const size = fn(2);
 let result = size.fileFinishedImporting("actions/ChannelCollapseActionCreators.tsx");

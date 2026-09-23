@@ -1,18 +1,18 @@
-// Module ID: 8389
-// Function ID: 8390
+// Module ID: 8471
+// Function ID: 8472
 // Name: InteractionUtils
-// Dependencies: [5, 502, 8203, 1074, 11, 8010, 8390, 1978, 1271, 7701, 8391, 573, 4986, 2, 4983]
+// Dependencies: [5, 502, 8285, 1074, 11, 8092, 8472, 1978, 1271, 7784, 8473, 573, 5056, 2, 5053]
 // Exports: canRetryInteractionData, executeMessageComponentInteraction, getInteractionInitialResponseDeadlineTimestamp, getInteractionStatusViewState, getInteractionTimeoutTimestamp
 
-// Module 8389 (InteractionUtils)
+// Module 8471 (InteractionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Server from "Server" /* 1978 */;
-import InteractionActionCreators from "InteractionActionCreators" /* 8390 */;
-import SkemaUtils from "SkemaUtils" /* 8391 */;
+import InteractionActionCreators from "InteractionActionCreators" /* 8472 */;
+import SkemaUtils from "SkemaUtils" /* 8473 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import InteractionStore from "InteractionStore" /* 8203 */;
+import InteractionStore from "InteractionStore" /* 8285 */;
 
 require = fn;
 let closure_10 = async function _executeMessageComponentInteraction(arg0, value) {
@@ -351,4 +351,4 @@ export const canRetryInteractionData = function canRetryInteractionData(interact
   }
   return true;
 };
-export const interactionCallbackErrorReason = fn(4983).interactionCallbackErrorReason;
+export const interactionCallbackErrorReason = fn(5053).interactionCallbackErrorReason;

@@ -1,13 +1,13 @@
-// Module ID: 9889
-// Function ID: 9890
+// Module ID: 9962
+// Function ID: 9963
 // Name: CalendarIcon
-// Dependencies: [19, 21, 576, 4457, 9890, 2]
+// Dependencies: [19, 21, 576, 4523, 9963, 2]
 // Exports: CalendarIcon
 
-// Module 9889 (CalendarIcon)
+// Module 9962 (CalendarIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod9890 from "module_9890" /* 9890 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod9963 from "module_9963" /* 9963 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const CalendarIcon = function CalendarIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9890, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9963, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

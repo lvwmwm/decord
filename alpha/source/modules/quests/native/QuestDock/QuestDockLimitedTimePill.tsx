@@ -1,20 +1,20 @@
-// Module ID: 15480
-// Function ID: 15481
+// Module ID: 15534
+// Function ID: 15535
 // Name: QuestDockLimitedTimePill
-// Dependencies: [19, 17, 21, 576, 4757, 11860, 4753, 1115, 2]
+// Dependencies: [19, 17, 21, 576, 4827, 11936, 4823, 1115, 2]
 
-// Module 15480 (QuestDockLimitedTimePill)
+// Module 15534 (QuestDockLimitedTimePill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import TimerIcon from "TimerIcon" /* 11860 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import TimerIcon from "TimerIcon" /* 11936 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { pill: { alignItems: "center", alignSelf: "flex-start", backgroundColor: nativeDefault.unsafe_rawColors.NEUTRAL_79, borderRadius: nativeDefault.radii.round, flexDirection: "row", gap: nativeDefault.space.PX_4, paddingHorizontal: 6, paddingVertical: 2 }, text: { textTransform: "uppercase" } };
 let closure_6 = createStyles.createStyles(obj);
 let obj3 = { alignItems: "center", alignSelf: "flex-start", backgroundColor: nativeDefault.unsafe_rawColors.NEUTRAL_79, borderRadius: nativeDefault.radii.round, flexDirection: "row", gap: nativeDefault.space.PX_4, paddingHorizontal: 6, paddingVertical: 2 };

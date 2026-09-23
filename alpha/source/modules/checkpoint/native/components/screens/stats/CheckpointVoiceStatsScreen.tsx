@@ -1,12 +1,12 @@
-// Module ID: 15991
-// Function ID: 15992
+// Module ID: 16044
+// Function ID: 16045
 // Name: CheckpointVoiceStatsScreen
-// Dependencies: [21, 15992, 2]
+// Dependencies: [21, 16045, 2]
 // Exports: default
 
-// Module 15991 (CheckpointVoiceStatsScreen)
+// Module 16044 (CheckpointVoiceStatsScreen)
 import jsxProd from "jsxProd" /* 21 */;
-import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 15992 */;
+import CheckpointStatsScreenDefault from "CheckpointStatsScreen" /* 16045 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;

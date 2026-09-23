@@ -1,9 +1,9 @@
-// Module ID: 8632
-// Function ID: 8633
+// Module ID: 8703
+// Function ID: 8704
 // Name: ICYMIItemTypes
 // Dependencies: [2]
 
-// Module 8632 (ICYMIItemTypes)
+// Module 8703 (ICYMIItemTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/icymi/ICYMIItemTypes.tsx");

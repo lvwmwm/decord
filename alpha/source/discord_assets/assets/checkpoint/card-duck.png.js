@@ -1,8 +1,8 @@
-// Module ID: 8423
-// Function ID: 8424
+// Module ID: 5068
+// Function ID: 5069
 // Dependencies: [2]
 
-// Module 8423
+// Module 5068
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/card-duck.png.js");

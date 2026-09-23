@@ -1,13 +1,13 @@
-// Module ID: 6696
-// Function ID: 6697
+// Module ID: 6780
+// Function ID: 6781
 // Name: ShieldSpotIllustration
-// Dependencies: [21, 5806, 6697, 2]
+// Dependencies: [21, 5890, 6781, 2]
 // Exports: ShieldSpotIllustration
 
-// Module 6696 (ShieldSpotIllustration)
+// Module 6780 (ShieldSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6697 from "module_6697" /* 6697 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6781 from "module_6781" /* 6781 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ShieldSpotIllustration = function ShieldSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6697 };
+  const obj2 = { uri: _modDef6781 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,13 +1,13 @@
-// Module ID: 11156
-// Function ID: 11157
+// Module ID: 11232
+// Function ID: 11233
 // Name: getActivityStatusText
-// Dependencies: [1074, 11157, 7984, 11158, 1115, 11159, 9634, 8619, 2]
+// Dependencies: [1074, 11233, 8066, 11234, 1115, 11235, 9707, 8690, 2]
 // Exports: default
 
-// Module 11156 (getActivityStatusText)
+// Module 11232 (getActivityStatusText)
 import Constants from "Constants" /* 1074 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7984 */;
-import StatusDisplayTypes from "StatusDisplayTypes" /* 11157 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8066 */;
+import StatusDisplayTypes from "StatusDisplayTypes" /* 11233 */;
 import size from "module_2" /* 2 */;
 
 const ActivityTypes = Constants.ActivityTypes;
@@ -75,7 +75,7 @@ export default function getActivityStatusText(name) {
     if (name != null) {
       status_display_type1 = name.status_display_type;
     }
-    if (status_display_type1 !== tmp15(11157).StatusDisplayTypes.STATE) {
+    if (status_display_type1 !== tmp15(11233).StatusDisplayTypes.STATE) {
       let status_display_type2;
       if (name != null) {
         status_display_type2 = name.status_display_type;
@@ -84,7 +84,7 @@ export default function getActivityStatusText(name) {
       if (tmp20) {
         tmp17 = tmp5;
       }
-      tmp20 = status_display_type2 === tmp15(11157).StatusDisplayTypes.DETAILS && null != tmp5;
+      tmp20 = status_display_type2 === tmp15(11233).StatusDisplayTypes.DETAILS && null != tmp5;
     } else {
       tmp17 = tmp8;
     }
@@ -92,7 +92,7 @@ export default function getActivityStatusText(name) {
     tmp17 = tmp2;
   }
   if (isEmbeddedActivityDefault(name)) {
-    const tmp28 = tmp21(11158)(tmp2);
+    const tmp28 = tmp21(11234)(tmp2);
     const obj = { text: tmp28, tooltip: tmp28 };
     return obj;
   } else {
@@ -109,7 +109,7 @@ export default function getActivityStatusText(name) {
         return obj2;
       }
     }
-    if (tmp21(11159)(name)) {
+    if (tmp21(11235)(name)) {
       if (flag) {
         if (null != tmp8) {
           const parts = tmp8.split("; ");
@@ -148,7 +148,7 @@ export default function getActivityStatusText(name) {
         obj18 = obj8;
       }
     }
-    if (tmp21(8619)(name)) {
+    if (tmp21(8690)(name)) {
       if (flag) {
         if (null != tmp5) {
           const obj10 = { text: tmp5, tooltip: null };
@@ -199,6 +199,6 @@ export default function getActivityStatusText(name) {
       }
     }
     obj18 = {};
-    tmp15Result = tmp15(9634);
+    tmp15Result = tmp15(9707);
   }
 };

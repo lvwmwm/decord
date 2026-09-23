@@ -1,19 +1,19 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 17731
+// Function ID: 17732
 // Name: VoicePanelConnectButton
-// Dependencies: [19, 2042, 21, 4757, 576, 12529, 17602, 504, 1115, 4967, 7574, 8668, 5630, 5111, 17663, 17666, 17667, 13230, 17661, 4753, 2]
+// Dependencies: [19, 2042, 21, 4827, 576, 12605, 17671, 504, 1115, 5037, 7657, 8739, 5714, 5195, 17732, 17735, 17736, 13312, 17730, 4823, 2]
 // Exports: default
 
-// Module 17662 (VoicePanelConnectButton)
+// Module 17731 (VoicePanelConnectButton)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import useAlertStore from "useAlertStore" /* 5111 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8668 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13230 */;
-import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 17663 */;
-import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 17666 */;
-import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 17667 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import useAlertStore from "useAlertStore" /* 5195 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5714 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8739 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 13312 */;
+import VoicePanelNoJoinPermissionsAlert from "VoicePanelNoJoinPermissionsAlert" /* 17732 */;
+import VoicePanelMaxCapacityAlert from "VoicePanelMaxCapacityAlert" /* 17735 */;
+import VoicePanelNsfwAlert from "VoicePanelNsfwAlert" /* 17736 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 
@@ -25,7 +25,7 @@ const VoicePanelNsfwAlertDefault = VoicePanelNsfwAlert;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { connectButton: { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360, paddingLeft: nativeDefault.space.PX_8, paddingRight: nativeDefault.space.PX_8 }, connectText: { textAlign: "center" } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

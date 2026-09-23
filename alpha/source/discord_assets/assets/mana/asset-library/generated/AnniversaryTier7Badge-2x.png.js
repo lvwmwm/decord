@@ -1,8 +1,8 @@
-// Module ID: 5979
-// Function ID: 5980
+// Module ID: 6063
+// Function ID: 6064
 // Dependencies: [2]
 
-// Module 5979
+// Module 6063
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AnniversaryTier7Badge-2x.png.js");

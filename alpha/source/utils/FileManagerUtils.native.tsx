@@ -1,10 +1,10 @@
-// Module ID: 8478
-// Function ID: 8479
+// Module ID: 8549
+// Function ID: 8550
 // Name: FileManagerUtils
 // Dependencies: [5, 3, 1151, 1364, 2]
 // Exports: clearFolder, moveFile, readFile, removeFile, writeFile
 
-// Module 8478 (FileManagerUtils)
+// Module 8549 (FileManagerUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import NativeFileModuleDefault from "NativeFileModule" /* 1151 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

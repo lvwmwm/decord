@@ -1,13 +1,13 @@
-// Module ID: 17188
-// Function ID: 17189
+// Module ID: 17262
+// Function ID: 17263
 // Name: useFileOrLinkImageDimensions
-// Dependencies: [19, 8125, 2]
+// Dependencies: [19, 8207, 2]
 // Exports: useFileOrLinkImageDimensions
 
-// Module 17188 (useFileOrLinkImageDimensions)
+// Module 17262 (useFileOrLinkImageDimensions)
 import noop from "module_19" /* 19 */;
 
-const SearchConstants = fn(8125);
+const SearchConstants = fn(8207);
 ({ FILES_OR_LINKS_GAP_WIDTH: closure_1, FILES_OR_LINKS_NUM_COLUMNS: c2, FILE_OR_LINK_IMAGE_RATIO: c3, SEARCH_LIST_HORIZONTAL_PADDING: closure_4 } = SearchConstants);
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/hooks/useFileOrLinkImageDimensions.tsx");

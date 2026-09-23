@@ -1,13 +1,13 @@
-// Module ID: 13446
-// Function ID: 13447
+// Module ID: 13528
+// Function ID: 13529
 // Name: DynamicBadgeTooltip
-// Dependencies: [32, 19, 21, 1115, 11399, 5341, 2]
+// Dependencies: [32, 19, 21, 1115, 11475, 5425, 2]
 // Exports: DynamicBadgeTooltip
 
-// Module 13446 (DynamicBadgeTooltip)
+// Module 13528 (DynamicBadgeTooltip)
 import util from "util" /* 1115 */;
-import Pressables from "Pressables" /* 5341 */;
-import useTooltip from "useTooltip" /* 11399 */;
+import Pressables from "Pressables" /* 5425 */;
+import useTooltip from "useTooltip" /* 11475 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

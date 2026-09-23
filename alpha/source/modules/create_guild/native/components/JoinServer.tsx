@@ -1,21 +1,21 @@
-// Module ID: 12972
-// Function ID: 12973
+// Module ID: 13054
+// Function ID: 13055
 // Name: components/JoinServer
-// Dependencies: [32, 19, 7225, 21, 4757, 5901, 1484, 5843, 12940, 7370, 7224, 1115, 8653, 2]
+// Dependencies: [32, 19, 7309, 21, 4827, 5985, 1484, 5927, 13022, 7454, 7308, 1115, 8724, 2]
 // Exports: default
 
-// Module 12972 (components/JoinServer)
-import NavigatorHeader from "NavigatorHeader" /* 5843 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8653 */;
+// Module 13054 (components/JoinServer)
+import NavigatorHeader from "NavigatorHeader" /* 5927 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 8724 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const CreateGuildConstants = fn(7225);
+const CreateGuildConstants = fn(7309);
 ({ CreateGuildModalStates: hasOwnProperty, NUXGuildTemplatesAnalytics: metroRequire } = CreateGuildConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
-let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(5901).NAV_BAR_HEIGHT } };
+const createStyles = fn(4827);
+let obj2 = { flex: { flex: 1 }, contentContainer: { marginTop: fn(5985).NAV_BAR_HEIGHT } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/create_guild/native/components/JoinServer.tsx");

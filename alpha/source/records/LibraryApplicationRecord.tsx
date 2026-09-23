@@ -1,14 +1,14 @@
-// Module ID: 7643
-// Function ID: 7644
+// Module ID: 7726
+// Function ID: 7727
 // Name: LibraryApplicationRecord
-// Dependencies: [1387, 4984, 7640, 1074, 4348, 1385, 2]
+// Dependencies: [1387, 5054, 7723, 1074, 4414, 1385, 2]
 
-// Module 7643 (LibraryApplicationRecord)
+// Module 7726 (LibraryApplicationRecord)
 import FlagUtilsAll from "FlagUtils" /* 1385 */;
-import _modDef4348 from "module_4348" /* 4348 */;
+import _modDef4414 from "module_4414" /* 4414 */;
 import Record from "Record" /* 1387 */;
-import ApplicationStore from "ApplicationStore" /* 4984 */;
-import EntitlementRecord from "EntitlementRecord" /* 7640 */;
+import ApplicationStore from "ApplicationStore" /* 5054 */;
+import EntitlementRecord from "EntitlementRecord" /* 7723 */;
 
 const Constants = fn(1074);
 ({ LibraryApplicationFlags: hasOwnProperty, Distributors: metroRequire, SKUTypes: closure_7 } = Constants);
@@ -35,7 +35,7 @@ LibraryApplicationRecord["createFromServer"] = function createFromServer(id) {
   const obj2 = { id: id.sku.id, type: id.sku.type, premium: id.sku.premium, preorderReleaseAt: null, preorderApproximateReleaseDate: null };
   let entitlementsResult = null;
   if (null != id.sku.preorder_release_at) {
-    entitlements = _modDef4348;
+    entitlements = _modDef4414;
     entitlementsResult = entitlements(id.sku.preorder_release_at);
   }
   obj2.preorderReleaseAt = entitlementsResult;

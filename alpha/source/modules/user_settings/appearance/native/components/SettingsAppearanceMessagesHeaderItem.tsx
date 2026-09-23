@@ -1,19 +1,19 @@
-// Module ID: 15574
-// Function ID: 15575
+// Module ID: 15628
+// Function ID: 15629
 // Name: SettingsAppearanceMessagesHeaderItem
-// Dependencies: [19, 17, 21, 4757, 576, 4753, 1115, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 4823, 1115, 2]
 // Exports: default
 
-// Module 15574 (SettingsAppearanceMessagesHeaderItem)
+// Module 15628 (SettingsAppearanceMessagesHeaderItem)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
+import Text_Text from "Text/Text" /* 4823 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { messagesHeaderContainer: { flexDirection: "row", gap: nativeDefault.space.PX_12, alignItems: "center", marginHorizontal: nativeDefault.space.PX_24 } };
 let closure_4 = createStyles.createStyles(obj2);
 const size = fn(2);

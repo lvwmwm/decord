@@ -1,15 +1,15 @@
-// Module ID: 17579
-// Function ID: 17580
+// Module ID: 17649
+// Function ID: 17650
 // Name: useStableParticipant
-// Dependencies: [4773, 502, 1992, 1372, 4778, 558, 504, 4909, 8489, 9716, 2]
+// Dependencies: [4843, 502, 1992, 1372, 4848, 558, 504, 4979, 8560, 9789, 2]
 // Exports: default, isStableActivityParticipant, isStableParticipantWithUser, isStableStreamParticipant, isStableUserParticipant, stableParticipantHasVideo
 
-// Module 17579 (useStableParticipant)
+// Module 17649 (useStableParticipant)
 import discord_common_shallowEqualDefault from "discord_common/shallowEqual" /* 558 */;
-import NicknameUtils from "NicknameUtils" /* 4909 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8489 */;
-import participantHasVideoDefault from "participantHasVideo" /* 9716 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4773 */;
+import NicknameUtils from "NicknameUtils" /* 4979 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8560 */;
+import participantHasVideoDefault from "participantHasVideo" /* 9789 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4843 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -28,7 +28,7 @@ function areStableParticipantsEqual(arg0, arg1) {
   }
   return tmp;
 }
-const ParticipantTypes = fn(4778).ParticipantTypes;
+const ParticipantTypes = fn(4848).ParticipantTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/voice_panel/native/utils/useStableParticipant.tsx");
 

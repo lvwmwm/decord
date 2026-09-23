@@ -1,8 +1,8 @@
-// Module ID: 4485
-// Function ID: 4486
-// Dependencies: [2, 4486, 4543, 4545, 4547, 4549, 4551, 4553, 4555, 4557, 4559, 4561, 4563, 4565, 4567, 4569, 4571]
+// Module ID: 4551
+// Function ID: 4552
+// Dependencies: [2, 4552, 4609, 4611, 4613, 4615, 4617, 4619, 4621, 4623, 4625, 4627, 4629, 4631, 4633, 4635, 4637, 4639, 4641]
 
-// Module 4485
+// Module 4551
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,11 +64,19 @@ for (const key10070 in require("OmnibuttonCoachmarkRive")) {
   arg5[key10070] = require("OmnibuttonCoachmarkRive")[key10070];
   continue;
 }
-for (const key10074 in require("TeenScreenTimeRive")) {
-  arg5[key10074] = require("TeenScreenTimeRive")[key10074];
+for (const key10074 in require("OrbsIllustration_HandsRive")) {
+  arg5[key10074] = require("OrbsIllustration_HandsRive")[key10074];
   continue;
 }
-for (const key10078 in require("ThemeAwareNitroWishlistingWumpusRive")) {
-  arg5[key10078] = require("ThemeAwareNitroWishlistingWumpusRive")[key10078];
+for (const key10078 in require("QuestBar_2DOrbsRive")) {
+  arg5[key10078] = require("QuestBar_2DOrbsRive")[key10078];
+  continue;
+}
+for (const key10082 in require("TeenScreenTimeRive")) {
+  arg5[key10082] = require("TeenScreenTimeRive")[key10082];
+  continue;
+}
+for (const key10086 in require("ThemeAwareNitroWishlistingWumpusRive")) {
+  arg5[key10086] = require("ThemeAwareNitroWishlistingWumpusRive")[key10086];
   continue;
 }

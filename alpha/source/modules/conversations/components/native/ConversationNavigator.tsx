@@ -1,15 +1,15 @@
-// Module ID: 8160
-// Function ID: 8161
+// Module ID: 8242
+// Function ID: 8243
 // Name: ConversationNavigator
-// Dependencies: [19, 21, 8161, 7247, 8171, 8172, 576, 8187, 13562, 4615, 2]
+// Dependencies: [19, 21, 8243, 7331, 8253, 8254, 576, 8269, 13644, 4685, 2]
 // Exports: default, openConversationNavigator
 
-// Module 8160 (ConversationNavigator)
+// Module 8242 (ConversationNavigator)
 import nativeDefault from "native" /* 576 */;
-import RootNavigationRef from "RootNavigationRef" /* 4615 */;
-import Navigator from "Navigator" /* 7247 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8171 */;
-import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 8172 */;
+import RootNavigationRef from "RootNavigationRef" /* 4685 */;
+import Navigator from "Navigator" /* 7331 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8253 */;
+import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 8254 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 require = fn;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const NativeStackNavigator = fn(8161);
+const NativeStackNavigator = fn(8243);
 const Screen = NativeStackNavigator.createNativeStackNavigator();
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/conversations/components/native/ConversationNavigator.tsx");
@@ -32,7 +32,8 @@ export default function ConversationNavigator(route) {
       name: ConversationNavigatorUtils.ConversationNavigatorScreens.LIST,
       options(arg0) {
         ({ route, navigation } = arg0);
-        return ConversationNavigatorHeader.conversationNavigatorListHeaderOptions(route, navigation, nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+        const obj = ConversationNavigatorHeader;
+        return obj.conversationNavigatorListHeaderOptions(route, navigation, { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
       },
       getComponent() {
         return require("ConversationListScreen").default;
@@ -45,7 +46,8 @@ export default function ConversationNavigator(route) {
     name: ConversationNavigatorUtils.ConversationNavigatorScreens.LIST,
     options(arg0) {
       ({ route, navigation } = arg0);
-      return ConversationNavigatorHeader.conversationNavigatorListHeaderOptions(route, navigation, nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+      const obj = ConversationNavigatorHeader;
+      return obj.conversationNavigatorListHeaderOptions(route, navigation, { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
     },
     getComponent() {
       return require("ConversationListScreen").default;
@@ -55,7 +57,8 @@ export default function ConversationNavigator(route) {
     name: ConversationNavigatorUtils.ConversationNavigatorScreens.FOCUS,
     options(arg0) {
       ({ route, navigation } = arg0);
-      return ConversationNavigatorHeader.conversationNavigatorFocusHeaderOptions(route, navigation, nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND);
+      const obj = ConversationNavigatorHeader;
+      return obj.conversationNavigatorFocusHeaderOptions(route, navigation, { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND });
     },
     getComponent() {
       return require("ConversationFocusScreen").default;

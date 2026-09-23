@@ -1,10 +1,10 @@
-// Module ID: 10490
-// Function ID: 10491
+// Module ID: 10569
+// Function ID: 10570
 // Name: FavoritesGuildExperiment
 // Dependencies: [1434, 2]
 // Exports: getFavoritesGuildConfig, useFavoritesGuildConfig
 
-// Module 10490 (FavoritesGuildExperiment)
+// Module 10569 (FavoritesGuildExperiment)
 import ApexExperiment_mod from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

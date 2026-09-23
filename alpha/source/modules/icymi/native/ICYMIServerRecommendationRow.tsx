@@ -1,23 +1,23 @@
-// Module ID: 16868
-// Function ID: 16869
+// Module ID: 16920
+// Function ID: 16921
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 4749, 2064, 8610, 1074, 21, 16803, 576, 504, 1397, 2056, 9099, 5806, 5803, 8626, 4455, 1115, 5739, 4753, 5187, 16842, 7302, 2]
+// Dependencies: [32, 5, 19, 17, 4819, 2064, 8681, 1074, 21, 16855, 576, 504, 1397, 2056, 9170, 5890, 5887, 8697, 4521, 1115, 5823, 4823, 5271, 16894, 7386, 2]
 // Exports: ICYMIServerRecommendationRow
 
-// Module 16868 (ICYMIServerRecommendationRow)
+// Module 16920 (ICYMIServerRecommendationRow)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import GuildRecordUtils from "GuildRecordUtils" /* 2056 */;
-import GuildIconDefault from "GuildIcon" /* 5803 */;
-import FastestListDefault from "FastestList" /* 7302 */;
-import ClipViewDefault from "ClipView" /* 9099 */;
+import GuildIconDefault from "GuildIcon" /* 5887 */;
+import FastestListDefault from "FastestList" /* 7386 */;
+import ClipViewDefault from "ClipView" /* 9170 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4749 */;
+import AccessibilityStore from "AccessibilityStore" /* 4819 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import ICYMIStore from "ICYMIStore" /* 8610 */;
+import ICYMIStore from "ICYMIStore" /* 8681 */;
 
 require = fn;
 function CutoutGuildBanner(guild) {
@@ -40,12 +40,12 @@ function CutoutGuildBanner(guild) {
   const size = { shape: null, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   const obj = guild(504);
   const tmp10 = closure_15;
-  size.shape = guild(9099).CutoutShape.RoundedRect;
+  size.shape = guild(9170).CutoutShape.RoundedRect;
   const items2 = [size];
   obj4.cutouts = items2;
   if (null != guild.banner) {
     const obj5 = { style: tmp.bannerImage, source: animatableSourceWithFallback, resizeMode: "cover" };
-    let tmp12Result = tmp12(tmp13(5806), obj5);
+    let tmp12Result = tmp12(tmp13(5890), obj5);
   } else {
     const obj6 = { style: null };
     const items3 = [, ];
@@ -56,7 +56,7 @@ function CutoutGuildBanner(guild) {
   obj4.children = tmp12Result;
   const items4 = [closure_14(ClipViewDefault, obj4), ];
   const obj7 = { style: tmp.guildIcon, guild: memo, size: null, animate: null };
-  obj7.size = guild(5803).GuildIconSizes.LARGE;
+  obj7.size = guild(5887).GuildIconSizes.LARGE;
   obj7.animate = !stateFromStores;
   items4[1] = closure_14(GuildIconDefault, obj7);
   obj3.children = items4;
@@ -96,15 +96,15 @@ function FeaturedServer(guild) {
             closure_1 = tmp5;
             closure_128_0 = undefined;
             closure_1(true);
-            closure_1(8626).itemInteracted("recommended_guilds", "recommended_guilds", "press_join_guild");
-            const obj17 = closure_1(8626);
+            closure_1(8697).itemInteracted("recommended_guilds", "recommended_guilds", "press_join_guild");
+            const obj17 = closure_1(8697);
             let obj5 = { itemId: guild.id, itemType: "recommended_guilds", actionParameters: { actionGestureType: "press", actionTargetElement: "item_container", actionIntentType: "join", actionDestinationType: "guild" } };
-            closure_1(8626).feedItemActioned(obj5);
-            const obj18 = closure_1(8626);
+            closure_1(8697).feedItemActioned(obj5);
+            const obj18 = closure_1(8697);
             const items = [guild.id];
             dependencyMap = 1;
             c3 = 1;
-            const obj6 = { value: closure_1(8626).gravityJoinGuild(items, "recommended_guilds"), done: false };
+            const obj6 = { value: closure_1(8697).gravityJoinGuild(items, "recommended_guilds"), done: false };
             return obj6;
           }
         } else if (1 === tmp5) {
@@ -122,9 +122,9 @@ function FeaturedServer(guild) {
             obj12.analyticsSource = obj13;
             obj11.state = obj12;
             closure_128_0 = obj11;
-            const result = closure_1(8626).addedRecommendedGuild();
-            let obj8 = closure_1(8626);
-            const dehydrated = closure_1(8626).fetchDehydrated({ isReloading: true, forceRefresh: true });
+            const result = closure_1(8697).addedRecommendedGuild();
+            let obj8 = closure_1(8697);
+            const dehydrated = closure_1(8697).fetchDehydrated({ isReloading: true, forceRefresh: true });
             dehydrated.then(asyncGeneratorStep(async (arg0, value) => {
               if (dependencyMap === 2) {
                 dependencyMap = 3;
@@ -153,7 +153,7 @@ function FeaturedServer(guild) {
                       closure_0 = tmp4;
                       v2 = 1;
                       dependencyMap = 1;
-                      const obj5 = { value: v2(8626).reloadICYMITab(), done: false };
+                      const obj5 = { value: v2(8697).reloadICYMITab(), done: false };
                       return obj5;
                     }
                   } else if (1 === tmp4) {
@@ -167,7 +167,7 @@ function FeaturedServer(guild) {
                     } else {
                       v2 = 2;
                       dependencyMap = 1;
-                      const obj8 = { value: v2(8626).getGuildChannelScores(), done: false };
+                      const obj8 = { value: v2(8697).getGuildChannelScores(), done: false };
                       return obj8;
                     }
                   } else if (arg0 === 1) {
@@ -178,7 +178,7 @@ function FeaturedServer(guild) {
                     const obj9 = { value, done: true };
                     return obj9;
                   } else {
-                    const recommendedGuilds = v2(8626).getRecommendedGuilds();
+                    const recommendedGuilds = v2(8697).getRecommendedGuilds();
                     dependencyMap = 3;
                     return { value: "HermesInternal", done: null };
                   }
@@ -188,19 +188,19 @@ function FeaturedServer(guild) {
                 }
               }
             }));
-            let obj9 = closure_1(8626);
+            let obj9 = closure_1(8697);
             const obj14 = {};
             const merged = Object.assign(closure_128_0);
             dependencyMap = 2;
             c3 = 1;
-            const obj15 = { value: closure_1(5739).transitionToGuildSync(closure_129_0.id, obj14), done: false };
+            const obj15 = { value: closure_1(5823).transitionToGuildSync(closure_129_0.id, obj14), done: false };
             return obj15;
           } else {
             closure_129_1(false);
             const obj16 = { key: "RecommeendedServersRow", content: null };
             const intl = tmp2(1115).intl;
             obj16.content = intl.string(tmp2(1115).t.CG4Hks);
-            closure_1(4455).open(obj16);
+            closure_1(4521).open(obj16);
             c3 = 3;
             const obj19 = { value: undefined, done: true };
             return obj19;
@@ -228,7 +228,7 @@ function FeaturedServer(guild) {
   let obj2 = { style: tmp.featuredServerContainer, children: null };
   const items2 = [closure_14(CutoutGuildBanner, { guild }), , ];
   let obj3 = { style: tmp.featuredServerInnerContainer, children: null };
-  const items3 = [closure_14(guild(4753).Text, { maxFontSizeMultiplier: 1, lineClamp: 1, style: tmp.featuredServerTitle, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guild.name }), closure_14(guild(4753).Text, { maxFontSizeMultiplier: 1, lineClamp: 3, variant: "text-xs/normal", color: "text-default", children: guild.description })];
+  const items3 = [closure_14(guild(4823).Text, { maxFontSizeMultiplier: 1, lineClamp: 1, style: tmp.featuredServerTitle, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: guild.name }), closure_14(guild(4823).Text, { maxFontSizeMultiplier: 1, lineClamp: 3, variant: "text-xs/normal", color: "text-default", children: guild.description })];
   obj3.children = items3;
   items2[1] = closure_15(View, obj3);
   let obj6 = { style: tmp.buttonContainer, children: null };
@@ -243,7 +243,7 @@ function FeaturedServer(guild) {
   }
   obj7.text = stringResult;
   obj7.onPress = callback;
-  obj6.children = closure_14(guild(5187).Button, obj7);
+  obj6.children = closure_14(guild(5271).Button, obj7);
   items2[2] = closure_14(View, obj6);
   obj2.children = items2;
   return closure_15(View, obj2);
@@ -268,7 +268,7 @@ const Constants = fn(1074);
 ({ AnalyticsObjects: c10, AnalyticsPages: closure_11, AnalyticsSections: closure_12, GuildFeatures: map1 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = jsxProd);
-const createICYMIStyles = fn(16803);
+const createICYMIStyles = fn(16855);
 let closure_17 = createICYMIStyles.createICYMIStyles((marginHorizontal) => {
   const obj = { container: { marginVertical: nativeDefault.space.PX_24 }, title: null, subtitle: null, featuredServerInnerContainer: null, buttonContainer: null, featuredServerTitle: null, guildIcon: null, bannerImage: null, emptyBanner: null, featuredServerContainer: null };
   const obj2 = { marginVertical: nativeDefault.space.PX_24 };
@@ -303,15 +303,15 @@ export const ICYMIServerRecommendationRow = function ICYMIServerRecommendationRo
     const obj4 = { style: tmp3.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp(1115).intl;
     obj4.children = intl.string(tmp(1115).t.lv1tce);
-    const items1 = [closure_1_14(tmp(4753).Text, obj4), , ];
+    const items1 = [closure_1_14(tmp(4823).Text, obj4), , ];
     const obj5 = { style: tmp3.subtitle, variant: "heading-sm/normal", color: "text-muted", children: null };
     const intl2 = tmp(1115).intl;
     obj5.children = intl2.string(tmp(1115).t.x4OezN);
-    items1[1] = closure_1_14(tmp(4753).Text, obj5);
+    items1[1] = closure_1_14(tmp(4823).Text, obj5);
     const obj6 = { discoverableGuilds: stateFromStoresArray };
     items1[2] = closure_1_14(RecommendedGuildsRow, obj6);
     obj3.children = items1;
-    const items2 = [__initData(View, obj3), closure_1_14(tmp(16842).Separator, {})];
+    const items2 = [__initData(View, obj3), closure_1_14(tmp(16894).Separator, {})];
     obj2.children = items2;
     tmp4 = __initData(value2, obj2);
   }

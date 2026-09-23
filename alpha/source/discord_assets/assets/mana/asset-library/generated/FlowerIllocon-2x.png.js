@@ -1,8 +1,8 @@
-// Module ID: 6243
-// Function ID: 6244
+// Module ID: 6327
+// Function ID: 6328
 // Dependencies: [2]
 
-// Module 6243
+// Module 6327
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/FlowerIllocon-2x.png.js");

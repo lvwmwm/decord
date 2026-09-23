@@ -1,18 +1,18 @@
-// Module ID: 17207
-// Function ID: 17208
+// Module ID: 17276
+// Function ID: 17277
 // Name: useAutoSearchGuildChannelTab
-// Dependencies: [19, 12611, 12598, 12619, 12, 12596, 2]
+// Dependencies: [19, 12687, 12674, 12695, 12, 12672, 2]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 17207 (useAutoSearchGuildChannelTab)
+// Module 17276 (useAutoSearchGuildChannelTab)
 import _mod12 from "module_12" /* 12 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12596 */;
-import SearchUtils from "SearchUtils" /* 12598 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12619 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 12672 */;
+import SearchUtils from "SearchUtils" /* 12674 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 12695 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-let closure_4 = fn(12611).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
+let closure_4 = fn(12687).SEARCH_TEXT_INPUT_DEBOUNCE_TIME;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/search/native/hooks/useAutoSearchGuildChannelTab.tsx");
 

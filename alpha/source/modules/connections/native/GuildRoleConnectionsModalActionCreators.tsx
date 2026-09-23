@@ -1,13 +1,13 @@
-// Module ID: 11824
-// Function ID: 11825
+// Module ID: 11900
+// Function ID: 11901
 // Name: GuildRoleConnectionsModalActionCreators
-// Dependencies: [4960, 11825, 1980, 4724, 11817, 2]
+// Dependencies: [5030, 11901, 1980, 4794, 11893, 2]
 // Exports: makeGuildRoleConnectionsConnectAccountsActionSheetKey, openGuildRoleConnectionsConnectAccountModal, openGuildRoleConnectionsModal
 
-// Module 11824 (GuildRoleConnectionsModalActionCreators)
+// Module 11900 (GuildRoleConnectionsModalActionCreators)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
 import size from "module_2" /* 2 */;
 
 const ROLE_CONNECTIONS_MODAL_KEY = "ROLE_CONNECTIONS_MODAL_KEY";
@@ -15,7 +15,7 @@ const result = size.fileFinishedImporting("modules/connections/native/GuildRoleC
 
 export const openGuildRoleConnectionsModal = function openGuildRoleConnectionsModal(guildId) {
   const onClose = guildId.onClose;
-  ModalActionCreatorsDefault.pushLazy(onClose(1980)(11825, dependencyMap.paths), {
+  ModalActionCreatorsDefault.pushLazy(onClose(1980)(11901, dependencyMap.paths), {
     guildId: guildId.guildId,
     onClose() {
       ModalActionCreatorsDefault.popWithKey(ROLE_CONNECTIONS_MODAL_KEY);
@@ -30,5 +30,5 @@ export const makeGuildRoleConnectionsConnectAccountsActionSheetKey = function ma
 };
 export const openGuildRoleConnectionsConnectAccountModal = function openGuildRoleConnectionsConnectAccountModal(verificationRole, guildId) {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequireImpl(11817, dependencyMap.paths), "GuildRoleConnectionsConnectAccountsActionSheet-" + verificationRole.id, { role: verificationRole, guildId });
+  obj.openLazy(asyncRequireImpl(11893, dependencyMap.paths), "GuildRoleConnectionsConnectAccountsActionSheet-" + verificationRole.id, { role: verificationRole, guildId });
 };

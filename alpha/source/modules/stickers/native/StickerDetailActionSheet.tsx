@@ -1,24 +1,24 @@
-// Module ID: 10669
-// Function ID: 10670
+// Module ID: 10745
+// Function ID: 10746
 // Name: StickerDetailActionSheet
-// Dependencies: [5, 32, 19, 17, 2064, 1372, 5721, 10537, 1074, 7398, 21, 4757, 1364, 576, 10652, 10499, 10505, 4724, 4753, 1115, 10653, 4455, 504, 1478, 1241, 10666, 5187, 10668, 10654, 10659, 4415, 7435, 2020, 5104, 10670, 1980, 4937, 5739, 10671, 7627, 10439, 8185, 10233, 10672, 8876, 10607, 7397, 2]
+// Dependencies: [5, 32, 19, 17, 2064, 1372, 5805, 10616, 1074, 7482, 21, 4827, 1364, 576, 10728, 10578, 10584, 4794, 4823, 1115, 10729, 4521, 504, 1478, 1241, 10742, 5271, 10744, 10730, 10735, 4481, 7519, 2020, 5188, 10746, 1980, 5007, 5823, 10747, 7710, 10518, 8267, 10312, 10748, 8947, 10683, 7481, 2]
 
-// Module 10669 (StickerDetailActionSheet)
+// Module 10745 (StickerDetailActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
-import openUserSettings from "openUserSettings" /* 7627 */;
-import StickersHooks from "StickersHooks" /* 10652 */;
-import StickersActionCreators from "StickersActionCreators" /* 10653 */;
-import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 10672 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5823 */;
+import openUserSettings from "openUserSettings" /* 7710 */;
+import StickersHooks from "StickersHooks" /* 10728 */;
+import StickersActionCreators from "StickersActionCreators" /* 10729 */;
+import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 10748 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import GuildStore from "GuildStore" /* 2064 */;
 import UserStore from "UserStore" /* 1372 */;
-import StickersStore from "StickersStore" /* 5721 */;
+import StickersStore from "StickersStore" /* 5805 */;
 
 require = fn;
 function StandardStickerDetail(chatInputRef) {
@@ -146,7 +146,7 @@ function UnavailableStickerDetail(arg0) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequireImpl(10670, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequireImpl(10746, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
   const items2 = [closure_21(require("Sticker"), { sticker: renderableSticker, size: 48 }), , ];
@@ -190,14 +190,14 @@ function UnavailableStickerDetail(arg0) {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ActivityIndicator: closure_7, Pressable: closure_8 } = get_ActivityIndicator);
-const StickerPickerConstants = fn(10537);
+const StickerPickerConstants = fn(10616);
 ({ PADDING_HORIZONTAL: closure_12, MIN_MARGIN: map1, STICKER_SIZE: closure_14 } = StickerPickerConstants);
 const Constants = fn(1074);
 ({ AnalyticsPages: closure_15, AnalyticsSections: closure_16, AnalyticEvents: closure_17, GuildFeatures: closure_18, UserSettingsSections: closure_19 } = Constants);
-const ACTION_SHEET_MAX_WIDTH = fn(7398).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7482).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_21, Fragment: closure_22, jsxs: closure_23 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 const PlatformUtils = fn(1364);
 let num = 0;
 if (PlatformUtils.isAndroid()) {
@@ -266,9 +266,9 @@ function GuildStickerDetail(sticker) {
       style = obj;
     }
     if (arg0) {
-      let StarOutlineIcon = tmp9(10499).StarIcon;
+      let StarOutlineIcon = tmp9(10578).StarIcon;
     } else {
-      StarOutlineIcon = tmp9(10505).StarOutlineIcon;
+      StarOutlineIcon = tmp9(10584).StarOutlineIcon;
     }
     return __initData(StarOutlineIcon, { style });
   }, items1);
@@ -299,8 +299,8 @@ function GuildStickerDetail(sticker) {
           },
         content
       };
-      tmp(4455).open(obj3);
-      const tmpResult = tmp(4455);
+      tmp(4521).open(obj3);
+      const tmpResult = tmp(4521);
     } else {
       obj2.favoriteSticker(sticker);
       const obj4 = {
@@ -310,8 +310,8 @@ function GuildStickerDetail(sticker) {
           },
         content
       };
-      tmp(4455).open(obj4);
-      const tmpResult2 = tmp(4455);
+      tmp(4521).open(obj4);
+      const tmpResult2 = tmp(4521);
     }
   }, items2);
   if (tidaWebformEnabled) {
@@ -325,7 +325,7 @@ function GuildStickerDetail(sticker) {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequireImpl(10670, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequireImpl(10746, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items3);
   analyticsLocation = obj.useMemo(() => {
@@ -629,7 +629,7 @@ export default noop.memo(function StickerDetailActionSheet(chatInputRef) {
     const obj3 = { startExpanded: true, children: null };
     const obj4 = { style: tmp.content, children: tmp6Result };
     obj3.children = tmp6(timestampProducer, obj4);
-    return tmp6(tmp2(7397).BottomSheet, obj3);
+    return tmp6(tmp2(7481).BottomSheet, obj3);
   }
   tmp6Result = tmp6Result2;
   if (null != first) {
@@ -641,9 +641,9 @@ export default noop.memo(function StickerDetailActionSheet(chatInputRef) {
         const obj6 = { sticker: first, channel };
         tmp6Result2 = tmp6(GuildStickerDetail, obj6);
       }
-      tmp2Result2 = tmp2(5104);
+      tmp2Result2 = tmp2(5188);
     }
     tmp6Result = tmp6Result2;
-    tmp2Result = tmp2(5104);
+    tmp2Result = tmp2(5188);
   }
 });

@@ -1,18 +1,18 @@
-// Module ID: 10419
-// Function ID: 10420
+// Module ID: 10498
+// Function ID: 10499
 // Name: NotificationSettingsMessageNotification
-// Dependencies: [19, 17, 21, 4757, 576, 10420, 4753, 1115, 5341, 10421, 10418, 4724, 10423, 1980, 10410, 10425, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 10499, 4823, 1115, 5425, 10500, 10497, 4794, 10502, 1980, 10489, 10504, 2]
 // Exports: NotificationSettingsChannelMessageNotification, NotificationSettingsGuildMessageNotification
 
-// Module 10419 (NotificationSettingsMessageNotification)
+// Module 10498 (NotificationSettingsMessageNotification)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import Pressables from "Pressables" /* 5341 */;
-import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 10420 */;
-import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 10421 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import Pressables from "Pressables" /* 5425 */;
+import notificationSettingsPresetOptionUtils from "notificationSettingsPresetOptionUtils" /* 10499 */;
+import NotificationSettingsMockMessageDefault from "NotificationSettingsMockMessage" /* 10500 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ class NotificationSettingsMessageNotification {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { card: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: 20, borderWidth: 1, padding: 14 }, cta: { textAlign: "center", marginTop: 4 }, label: { textAlign: "center", marginTop: 8 }, header: { marginBottom: 8 }, headerTitle: { marginBottom: 4 } };
 const timestampProducer = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -93,7 +93,7 @@ export const NotificationSettingsGuildMessageNotification = function Notificatio
     style: style.style,
     setting: require("notificationSettingsGuildFlagUtils").useGuildPresetSettings(style.guildId).notification,
     onCustomize() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10423, dependencyMap.paths), "MessageNotificationGuildActionSheet", { guildId: style.guildId });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10502, dependencyMap.paths), "MessageNotificationGuildActionSheet", { guildId: style.guildId });
     }
   };
   return closure_4(NotificationSettingsMessageNotification, obj);
@@ -105,7 +105,7 @@ export const NotificationSettingsChannelMessageNotification = function Notificat
     style: style.style,
     setting: require("notficationSettingsChannelFlagUtils").useChannelPresetSettings(style.channel).notification,
     onCustomize() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10425, dependencyMap.paths), "MessageNotificationChannelActionSheet", { channel: style.channel });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(10504, dependencyMap.paths), "MessageNotificationChannelActionSheet", { channel: style.channel });
     }
   };
   return closure_4(NotificationSettingsMessageNotification, obj);

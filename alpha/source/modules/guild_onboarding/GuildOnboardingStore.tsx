@@ -1,10 +1,10 @@
-// Module ID: 7343
-// Function ID: 7344
+// Module ID: 7427
+// Function ID: 7428
 // Name: GuildOnboardingStore
 // Dependencies: [1074, 504, 2067, 573, 2]
 // Exports: isOnboarding
 
-// Module 7343 (GuildOnboardingStore)
+// Module 7427 (GuildOnboardingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Constants from "Constants" /* 1074 */;

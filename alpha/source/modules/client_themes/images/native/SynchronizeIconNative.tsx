@@ -1,11 +1,11 @@
-// Module ID: 15558
-// Function ID: 15559
+// Module ID: 15612
+// Function ID: 15613
 // Name: SynchronizeIconNative
-// Dependencies: [19, 21, 8732, 2]
+// Dependencies: [19, 21, 8803, 2]
 // Exports: default
 
-// Module 15558 (SynchronizeIconNative)
-import inlineStyles from "inlineStyles" /* 8732 */;
+// Module 15612 (SynchronizeIconNative)
+import inlineStyles from "inlineStyles" /* 8803 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

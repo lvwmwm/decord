@@ -1,10 +1,10 @@
-// Module ID: 17455
-// Function ID: 17456
+// Module ID: 17524
+// Function ID: 17525
 // Name: useSimpleGuildSize
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 17455 (useSimpleGuildSize)
+// Module 17524 (useSimpleGuildSize)
 import noop from "module_19" /* 19 */;
 
 let size = fn(2);

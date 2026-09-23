@@ -1,13 +1,13 @@
-// Module ID: 13953
-// Function ID: 13954
+// Module ID: 14038
+// Function ID: 14039
 // Name: NotifSettingsProtoStore
-// Dependencies: [13954, 1222, 504, 573, 2]
+// Dependencies: [14039, 1222, 504, 573, 2]
 
-// Module 13953 (NotifSettingsProtoStore)
+// Module 14038 (NotifSettingsProtoStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import user_settings_UserSettingsUtils from "user_settings/UserSettingsUtils" /* 1222 */;
-import notification_settings from "notification_settings" /* 13954 */;
+import notification_settings from "notification_settings" /* 14039 */;
 import size from "module_2" /* 2 */;
 
 let DeclarativeSettings = notification_settings.DeclarativeSettings;

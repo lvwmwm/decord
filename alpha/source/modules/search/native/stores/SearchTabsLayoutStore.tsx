@@ -1,18 +1,21 @@
-// Module ID: 12620
-// Function ID: 12621
+// Module ID: 12696
+// Function ID: 12697
 // Name: SearchTabsLayoutStore
-// Dependencies: [2042, 7525, 12621, 12622, 12623, 12597, 8125, 558, 12598, 504, 573, 2]
+// Dependencies: [12697, 2042, 7609, 12701, 12702, 12703, 12673, 8207, 558, 12674, 12700, 12699, 504, 573, 2]
 
-// Module 12620 (SearchTabsLayoutStore)
+// Module 12696 (SearchTabsLayoutStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SearchUtils from "SearchUtils" /* 12598 */;
+import SearchUtils from "SearchUtils" /* 12674 */;
+import IntelligenceSearchTypes from "IntelligenceSearchTypes" /* 12699 */;
+import IntelligenceSearchUtils from "IntelligenceSearchUtils" /* 12700 */;
+import IntelligenceSearchStore from "IntelligenceSearchStore" /* 12697 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import SearchMessageStore from "SearchMessageStore" /* 7525 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12621 */;
-import SearchMemberTabStore from "SearchMemberTabStore" /* 12622 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12623 */;
-import SearchQueryStore from "SearchQueryStore" /* 12597 */;
+import SearchMessageStore from "SearchMessageStore" /* 7609 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 12701 */;
+import SearchMemberTabStore from "SearchMemberTabStore" /* 12702 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 12703 */;
+import SearchQueryStore from "SearchQueryStore" /* 12673 */;
 
 require = fn;
 function handleSearchQuery(searchContext) {
@@ -29,20 +32,20 @@ function handleSearchQuery(searchContext) {
 function computeLayoutForState(value) {
   _require = value;
   const searchContext = value.searchContext;
-  if (SearchQueryStore.isAutocompleteVisible(searchContext)) {
+  if (reduced.isAutocompleteVisible(searchContext)) {
     return false;
   } else {
     const isInitialSearchQueryResult = obj.isInitialSearchQuery(searchContext);
     dependencyMap = isInitialSearchQueryResult;
-    ChannelStore = obj.isTextInputValueEmpty(searchContext);
-    closure_4 = obj.hasUserAddedTags(searchContext);
+    closure_3 = obj.isTextInputValueEmpty(searchContext);
+    ChannelStore = obj.hasUserAddedTags(searchContext);
     closure_5 = obj.isTagsEmpty(searchContext);
     const searchResultsQuery = obj.getSearchResultsQuery(searchContext);
     const queryString = obj.getQueryString(searchContext);
     if (isInitialSearchQueryResult) {
-      let arr = closure_10[searchContext.type];
+      let arr = closure_11[searchContext.type];
     } else {
-      arr = closure_11[searchContext.type];
+      arr = closure_12[searchContext.type];
     }
     const channel = ChannelStore.getChannel(require("SearchUtils").getChannelIdFromSearchContext(searchContext));
     let flag;
@@ -78,15 +81,26 @@ function computeLayoutForState(value) {
         return closure_5;
       }
     });
-    const obj2 = require("SearchUtils");
-    SearchQueryStore = require("SearchUtils").getSearchContextId(searchContext);
-    const reduced = found.reduce((acc, item) => {
+    let obj2 = require("SearchUtils");
+    const searchContextId = require("SearchUtils").getSearchContextId(searchContext);
+    reduced = found.reduce((acc, item) => {
       if (constants.MEMBERS === item) {
         acc[item] = SearchMemberTabStore.getCount(closure_8);
       } else if (tmp.GUILD_CHANNELS === item) {
         acc[item] = SearchGuildChannelTabStore.getCount(closure_8);
       } else if (tmp.PEOPLE === item) {
         acc[item] = SearchPeopleTabStore.getCount(closure_8);
+      } else if (tmp.MESSAGES === item) {
+        const totalCount = SearchMessageStore.getTotalCount(SearchUtils.getSearchTabFetchId(searchContext, item, searchResultsQuery));
+        let sum = null;
+        if (null != totalCount) {
+          sum = totalCount + tmp8(12700).getIntelligenceSearchCitationsCount(tmp10, tmp11, totalCount > 0);
+          const tmp8Result = tmp8(12700);
+        }
+        acc[item] = sum;
+        tmp10 = searchContext;
+        tmp11 = searchResultsQuery;
+        tmp8 = require;
       } else {
         acc[item] = SearchMessageStore.getTotalCount(SearchUtils.getSearchTabFetchId(searchContext, item, searchResultsQuery));
       }
@@ -108,9 +122,29 @@ function computeLayoutForState(value) {
         flag2 = false;
         visibleTabCounts = null;
       } else if (found.every((item) => null != reduced[item])) {
-        visibleTabs = found.filter((item) => 0 !== reduced[item]);
+        const found1 = found.filter((item) => {
+          if (item === constants.MESSAGES) {
+            let tmp5 = 0 !== tmp3[constants.MESSAGES];
+            if (!tmp5) {
+              const intelligenceSearchStatus = IntelligenceSearchUtils.getIntelligenceSearchStatus(tmp, tmp2);
+              tmp5 = intelligenceSearchStatus === IntelligenceSearchTypes.IntelligenceSearchStatus.LOADING;
+            }
+            let tmp4 = tmp5;
+          } else {
+            tmp4 = 0 !== tmp3[item];
+          }
+          return tmp4;
+        });
         flag2 = false;
         visibleTabCounts = reduced;
+        visibleTabs = found1;
+        if (tmp13) {
+          reduced[tmp12.MESSAGES] = null;
+          flag2 = false;
+          visibleTabCounts = reduced;
+          visibleTabs = found1;
+        }
+        tmp13 = 0 === reduced[constants.MESSAGES] && found1.includes(constants.MESSAGES);
       } else {
         ({ visibleTabs, visibleTabCounts } = value);
         flag2 = tmp11;
@@ -118,17 +152,17 @@ function computeLayoutForState(value) {
     }
     const tmp6Result = require("SearchUtils");
     const result = require("discord_common/shallowEqual").areArraysShallowEqual(value.candidateTabs, found);
-    let tmp13 = !result;
+    let tmp15 = !result;
     const tmp6Result3 = require("discord_common/shallowEqual");
     const result1 = require("discord_common/shallowEqual").areArraysShallowEqual(value.visibleTabs, visibleTabs);
     const visibleTabCounts2 = value.visibleTabCounts;
-    let tmp16 = visibleTabCounts2 === visibleTabCounts;
-    if (!tmp16) {
-      let tmp17 = null != visibleTabCounts2 && null != visibleTabCounts;
-      if (tmp17) {
-        tmp17 = searchContext(558)(visibleTabCounts2, visibleTabCounts);
+    let tmp18 = visibleTabCounts2 === visibleTabCounts;
+    if (!tmp18) {
+      let tmp19 = null != visibleTabCounts2 && null != visibleTabCounts;
+      if (tmp19) {
+        tmp19 = searchContext(558)(visibleTabCounts2, visibleTabCounts);
       }
-      tmp16 = tmp17;
+      tmp18 = tmp19;
     }
     if (!result) {
       value.candidateTabs = found;
@@ -136,17 +170,17 @@ function computeLayoutForState(value) {
     if (!result1) {
       value.visibleTabs = visibleTabs;
     }
-    if (!tmp16) {
+    if (!tmp18) {
       value.visibleTabCounts = visibleTabCounts;
     }
     value.wasInitialSearchQuery = flag2;
     if (result) {
-      tmp13 = tmp15;
+      tmp15 = tmp17;
     }
-    if (!tmp13) {
-      tmp13 = tmp19;
+    if (!tmp15) {
+      tmp15 = tmp21;
     }
-    return tmp13;
+    return tmp15;
   }
 }
 function computeLayoutForAll() {
@@ -160,17 +194,17 @@ function computeLayoutForAll() {
   }
   return flag;
 }
-const SearchConstants = fn(8125);
-({ SearchTabs: closure_9, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: c10, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: closure_11 } = SearchConstants);
-let closure_12 = [];
+const SearchConstants = fn(8207);
+({ SearchTabs: c10, SEARCH_TYPE_TO_SEARCH_INITIAL_TABS: closure_11, SEARCH_TYPE_TO_SEARCH_RESULT_TABS: closure_12 } = SearchConstants);
+let closure_13 = [];
 const map = new Map();
 const Store = initializeDefault.Store;
 class SearchTabsLayoutStore extends Store {
 }
 const prototype = SearchTabsLayoutStore.prototype;
 prototype["initialize"] = function initialize() {
-  this.waitFor(SearchQueryStore, SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, ChannelStore);
-  const items = [SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore];
+  this.waitFor(SearchQueryStore, SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, ChannelStore, IntelligenceSearchStore);
+  const items = [SearchMessageStore, SearchMemberTabStore, SearchGuildChannelTabStore, SearchPeopleTabStore, IntelligenceSearchStore];
   this.syncWith(items, computeLayoutForAll);
 };
 prototype["getCandidateTabs"] = function getCandidateTabs(searchContext) {

@@ -1,13 +1,13 @@
-// Module ID: 15239
-// Function ID: 15240
+// Module ID: 15291
+// Function ID: 15292
 // Name: PuzzlePieceIcon
-// Dependencies: [19, 21, 576, 4457, 15240, 2]
+// Dependencies: [19, 21, 576, 4523, 15292, 2]
 // Exports: PuzzlePieceIcon
 
-// Module 15239 (PuzzlePieceIcon)
+// Module 15291 (PuzzlePieceIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4457 */;
-import _mod15240 from "module_15240" /* 15240 */;
+import BaseIconImage from "BaseIconImage" /* 4523 */;
+import _mod15292 from "module_15292" /* 15292 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PuzzlePieceIcon = function PuzzlePieceIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15240, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15292, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

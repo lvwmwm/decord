@@ -1,21 +1,21 @@
-// Module ID: 4967
-// Function ID: 4968
+// Module ID: 5037
+// Function ID: 5038
 // Name: AgeGateUtils
-// Dependencies: [2060, 2042, 4968, 2064, 1372, 1099, 1074, 1115, 11, 4969, 5642, 5643, 504, 8688, 2108, 7458, 7574, 2]
+// Dependencies: [2060, 2042, 5038, 2064, 1372, 1099, 1074, 1115, 11, 5039, 5726, 5727, 14122, 504, 8759, 2108, 7542, 7657, 2]
 // Exports: guildNeedsAgeGate, isChannelAgeVerificationGated, isChannelOrGuildNSFW, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForAgeGate, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userCannotSeeNSFWContent, userNeedsAgeGate
 
-// Module 4967 (AgeGateUtils)
+// Module 5037 (AgeGateUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initialize from "initialize" /* 504 */;
 import AgeGateConstants from "AgeGateConstants" /* 1099 */;
 import GuildRecord from "GuildRecord" /* 2060 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 4969 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5642 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5643 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 7458 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5039 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5726 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5727 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 7542 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 4968 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 5038 */;
 import GuildStore from "GuildStore" /* 2064 */;
 import UserStore from "UserStore" /* 1372 */;
 import Constants from "Constants" /* 1074 */;
@@ -30,12 +30,12 @@ function shouldShowAgeGateForVoiceChannel(channelId) {
     const currentUser = UserStore.getCurrentUser();
     let flag = false;
     if (null != currentUser) {
-      const result1 = tmp(4969).shouldShowTiggerPawtect();
-      const tmpResult = tmp(4969);
-      const tmpResult2 = tmp(5642);
-      const tmp9 = tmp(5642).isFeatureAgeGated(tmp(5643).AgeGatedFeature.AGE_GATED_SPACES) && result1;
-      flag = true !== currentUser.nsfwAllowed || tmp(5642).isFeatureAgeGated(tmp(5643).AgeGatedFeature.AGE_GATED_SPACES) && result1;
-      const tmp10 = true !== currentUser.nsfwAllowed || tmp(5642).isFeatureAgeGated(tmp(5643).AgeGatedFeature.AGE_GATED_SPACES) && result1;
+      const result1 = tmp(5039).shouldShowTiggerPawtect();
+      const tmpResult = tmp(5039);
+      const tmpResult2 = tmp(5726);
+      const tmp9 = tmp(5726).isFeatureAgeGated(tmp(5727).AgeGatedFeature.AGE_GATED_SPACES) && result1;
+      flag = true !== currentUser.nsfwAllowed || tmp(5726).isFeatureAgeGated(tmp(5727).AgeGatedFeature.AGE_GATED_SPACES) && result1;
+      const tmp10 = true !== currentUser.nsfwAllowed || tmp(5726).isFeatureAgeGated(tmp(5727).AgeGatedFeature.AGE_GATED_SPACES) && result1;
     }
     let tmp12 = !flag;
     if (flag) {
@@ -203,14 +203,29 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
     }
     return false === nsfwAllowed;
   });
-  const isFeatureAgeGated = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES);
-  let shouldShowTiggerPawtect = isFeatureAgeGated;
+  let isFeatureAgeGated = RegionalFeatureConfigUtils.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES);
   if (isFeatureAgeGated) {
-    shouldShowTiggerPawtect = obj4.useShouldShowTiggerPawtect();
+    isFeatureAgeGated = obj4.useShouldShowTiggerPawtect();
   }
   obj4 = AgeVerificationUtils;
+  let tmp7 = null;
+  let tmp8 = null;
   if (tmpResult.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
-    tmp3(stateFromStores);
+    const tmp3Result = tmp3(stateFromStores);
+    let str;
+    if (stateFromStores != tmp7) {
+      str = stateFromStores.name;
+    }
+    if (str == tmp7) {
+      str = "";
+    }
+    if (tmp3Result) {
+      let tinyBroncoWarningDescriptions = tmp(14122).getTinyBroncoWarningDescriptions(tmp3Result, str);
+      const tmpResult2 = tmp(14122);
+    } else {
+      tinyBroncoWarningDescriptions = null;
+    }
+    tmp8 = tinyBroncoWarningDescriptions;
   }
   const intl = tmp(1115).intl;
   const t = tmp(1115).t;
@@ -233,24 +248,42 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
   }
   const intl4 = tmp(1115).intl;
   const t4 = tmp(1115).t;
-  let string2 = intl4.string(tmp4 ? t4.xi46lg : t4.ZmwvDc);
-  if (shouldShowTiggerPawtect) {
-    if (isAgeVerified) {
-      const obj5 = { title: string2, description: formatResult, agreement: null, modalType: null, emphasiseDisagree: null };
-      const intl9 = tmp(1115).intl;
-      string2 = intl9.string;
-      formatResult = string2(tmp(1115).t.Zt4Mf4);
-      obj5.agreement = formatResult;
-      NSFW_CHANNEL_AGE_VERIFY = tmp(8688).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
-      obj5.modalType = NSFW_CHANNEL_AGE_VERIFY;
-      obj5.emphasiseDisagree = false;
-      let obj6 = obj5;
-    } else {
-      obj6 = { title: string2, description: stringResult1, agreement: null, modalType: null };
+  const stringResult2 = intl4.string(tmp4 ? t4.xi46lg : t4.ZmwvDc);
+  if (isFeatureAgeGated) {
+    if (!isAgeVerified) {
+      const obj5 = { title: stringResult2, description: null, agreement: null, modalType: null };
+      let unverified;
+      if (tmp8 != tmp7) {
+        unverified = tmp8.unverified;
+      }
+      if (unverified == tmp7) {
+        unverified = stringResult1;
+      }
+      obj5.description = unverified;
       const intl8 = tmp(1115).intl;
-      obj6.agreement = intl8.string(tmp(1115).t.FDSSia);
-      obj6.modalType = tmp(8688).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
+      obj5.agreement = intl8.string(tmp(1115).t.FDSSia);
+      obj5.modalType = tmp(8759).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
     }
+    const obj6 = { title: stringResult2, description: null, agreement: null, modalType: null, emphasiseDisagree: null };
+    let teen;
+    if (tmp8 != tmp7) {
+      teen = tmp8.teen;
+    }
+    if (teen == tmp7) {
+      teen = formatResult;
+    }
+    obj6.description = teen;
+    const intl9 = tmp(1115).intl;
+    if (tmp7 != tmp8) {
+      let Zt4Mf4 = tmp(1115).t.FDSSia;
+    } else {
+      Zt4Mf4 = tmp(1115).t.Zt4Mf4;
+    }
+    obj6.agreement = intl9.string(Zt4Mf4);
+    NSFW_CHANNEL_AGE_VERIFY = tmp(8759).NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY;
+    obj6.modalType = NSFW_CHANNEL_AGE_VERIFY;
+    tmp7 = tmp7 != tmp8;
+    obj6.emphasiseDisagree = tmp7;
   } else {
     const obj7 = { title: null, description: null, agreement: null, modalType: null };
     if (stateFromStores) {
@@ -259,17 +292,24 @@ export const useAgeGateVerifyContentForGuild = function useAgeGateVerifyContentF
       obj7.title = intl6.string(tmp4 ? t5["H0SG/g"] : t5.NEabBa);
       const intl7 = tmp(1115).intl;
       let NSFW_CHANNEL_UNDERAGE = tmp(1115).t;
-      const obj9 = { helpURL: HelpdeskUtilsDefault.getArticleURL(constants.NSFW_AGE_GATING) };
-      obj7.description = intl7.format(tmp4 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"], obj9);
-      NSFW_CHANNEL_UNDERAGE = tmp(8688).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE;
+      const obj8 = { helpURL: HelpdeskUtilsDefault.getArticleURL(constants.NSFW_AGE_GATING) };
+      obj7.description = intl7.format(tmp4 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"], obj8);
+      NSFW_CHANNEL_UNDERAGE = tmp(8759).NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE;
       obj7.modalType = NSFW_CHANNEL_UNDERAGE;
-      const tmp13 = tmp4 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"];
+      const tmp17 = tmp4 ? NSFW_CHANNEL_UNDERAGE["6++3cX"] : NSFW_CHANNEL_UNDERAGE["2kHZes"];
     } else {
-      obj7.title = string2;
-      obj7.description = stringResult;
+      obj7.title = stringResult2;
+      let adult;
+      if (tmp8 != tmp7) {
+        adult = tmp8.adult;
+      }
+      if (adult == tmp7) {
+        adult = stringResult;
+      }
+      obj7.description = adult;
       const intl5 = tmp(1115).intl;
       obj7.agreement = intl5.string(tmp(1115).t.wVq7uo);
-      obj7.modalType = tmp(8688).NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
+      obj7.modalType = tmp(8759).NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
       return obj7;
     }
   }
@@ -292,35 +332,60 @@ export const useAgeGateVerifyContent = function useAgeGateVerifyContent(source) 
     return false === nsfwAllowed;
   });
   const tmpResult = initialize;
-  const isFeatureAgeGated1 = RegionalFeatureConfigUtils.useIsFeatureAgeGated(tmp(5643).AgeGatedFeature.AGE_GATED_SPACES);
+  let tmp9 = null;
+  let tinyBroncoWarningDescriptions = null;
+  if (tmpResult3.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.AGE_GATED_SPACES)) {
+    tinyBroncoWarningDescriptions = null;
+    if (tmp7) {
+      tinyBroncoWarningDescriptions = tmp(14122).getTinyBroncoWarningDescriptions(true, "");
+      const tmpResult4 = tmp(14122);
+    }
+  }
   if (source !== AgeGateSource.JOIN_LARGE_GUILD_UNDERAGE) {
     if (source !== tmp6.ACCESS_LARGE_GUILD_UNDERAGE) {
       if (isAgeVerified) {
-        const obj4 = { verifyAgreementButtonText: null, verifyGateDescription: null, verifyTitle: null, verifyDisagreementButtonText: null, verifyEmphasiseDisagree: null };
         const intl10 = tmp(1115).intl;
-        obj4.verifyAgreementButtonText = intl10.string(tmp(1115).t.Zt4Mf4);
-        const intl11 = tmp(1115).intl;
-        const format = intl11.format;
-        const t2 = tmp(1115).t;
-        if (tmp7) {
-          let formatResult = format(t2["8tk6bB"], {});
+        if (tmp9 != tinyBroncoWarningDescriptions) {
+          let Zt4Mf4 = tmp(1115).t.FDSSia;
         } else {
-          formatResult = format(t2.XQZvwn, {});
+          Zt4Mf4 = tmp(1115).t.Zt4Mf4;
         }
-        obj4.verifyGateDescription = formatResult;
-        const intl12 = tmp(1115).intl;
-        let intl13 = intl12.string;
-        let string3 = tmp(1115).t;
-        if (tmp7) {
-          let intl13Result = intl13(string3.xi46lg);
+        const obj4 = { verifyAgreementButtonText: intl10.string(Zt4Mf4), verifyGateDescription: null, verifyTitle: null, verifyDisagreementButtonText: null, verifyEmphasiseDisagree: null };
+        let teen;
+        if (tinyBroncoWarningDescriptions != tmp9) {
+          teen = tinyBroncoWarningDescriptions.teen;
+        }
+        if (teen != tmp9) {
+          obj4.verifyGateDescription = teen;
+          const intl12 = tmp(1115).intl;
+          const string3 = intl12.string;
+          const t2 = tmp(1115).t;
+          if (tmp7) {
+            let string3Result = string3(t2.xi46lg);
+          } else {
+            string3Result = string3(t2.ZmwvDc);
+          }
+          obj4.verifyTitle = string3Result;
+          const intl13 = tmp(1115).intl;
+          if (tmp9 != tinyBroncoWarningDescriptions) {
+            let f3Pet92 = tmp(1115).t["/g10LC"];
+          } else {
+            f3Pet92 = tmp(1115).t.f3Pet9;
+          }
+          obj4.verifyDisagreementButtonText = intl13.string(f3Pet92);
+          tmp9 = tmp9 != tinyBroncoWarningDescriptions;
+          obj4.verifyEmphasiseDisagree = tmp9;
         } else {
-          intl13Result = intl13(string3.ZmwvDc);
+          const intl11 = tmp(1115).intl;
+          const format = intl11.format;
+          let t1 = tmp(1115).t;
+          if (tmp7) {
+            t1 = {};
+            let formatResult = format(t1["8tk6bB"], t1);
+          } else {
+            formatResult = format(t1.XQZvwn, {});
+          }
         }
-        obj4.verifyTitle = intl13Result;
-        intl13 = tmp(1115).intl;
-        string3 = intl13.string;
-        obj4.verifyDisagreementButtonText = string3(tmp(1115).t.f3Pet9);
-        obj4.verifyEmphasiseDisagree = false;
       } else {
         if (source === tmp6.LARGE_GUILD) {
           const obj5 = { verifyTitle: null, verifyGateDescription: null, verifyAgreementButtonText: null };
@@ -344,30 +409,42 @@ export const useAgeGateVerifyContent = function useAgeGateVerifyContent(source) 
               }
             }
           }
-          const obj9 = { verifyAgreementButtonText: null, verifyGateDescription: null, verifyTitle: null, verifyDisagreementButtonText: null };
+          const obj8 = { verifyAgreementButtonText: null, verifyGateDescription: null, verifyTitle: null, verifyDisagreementButtonText: null };
           const intl3 = tmp(1115).intl;
-          obj9.verifyAgreementButtonText = intl3.string(tmp(1115).t.FDSSia);
-          const intl4 = tmp(1115).intl;
-          const string = intl4.string;
-          const t = tmp(1115).t;
-          if (tmp7) {
-            let stringResult = string(t.V6Gmu9);
-          } else {
-            stringResult = string(t["5rygLk"]);
+          obj8.verifyAgreementButtonText = intl3.string(tmp(1115).t.FDSSia);
+          let unverified;
+          if (tinyBroncoWarningDescriptions != tmp9) {
+            unverified = tinyBroncoWarningDescriptions.unverified;
           }
-          obj9.verifyGateDescription = stringResult;
-          const intl5 = tmp(1115).intl;
-          let intl6 = intl5.string;
-          let string2 = tmp(1115).t;
-          if (tmp7) {
-            let intl6Result = intl6(string2.xi46lg);
+          if (unverified != tmp9) {
+            obj8.verifyGateDescription = unverified;
+            const intl5 = tmp(1115).intl;
+            const string2 = intl5.string;
+            const t = tmp(1115).t;
+            if (tmp7) {
+              let string2Result = string2(t.xi46lg);
+            } else {
+              string2Result = string2(t.ZmwvDc);
+            }
+            obj8.verifyTitle = string2Result;
+            const intl6 = tmp(1115).intl;
+            if (tmp9 != tinyBroncoWarningDescriptions) {
+              let f3Pet9 = tmp(1115).t["/g10LC"];
+            } else {
+              f3Pet9 = tmp(1115).t.f3Pet9;
+            }
+            obj8.verifyDisagreementButtonText = intl6.string(f3Pet9);
           } else {
-            intl6Result = intl6(string2.ZmwvDc);
+            const intl4 = tmp(1115).intl;
+            const string = intl4.string;
+            let V6Gmu9 = tmp(1115).t;
+            if (tmp7) {
+              V6Gmu9 = V6Gmu9.V6Gmu9;
+              let stringResult = string(V6Gmu9);
+            } else {
+              stringResult = string(V6Gmu9["5rygLk"]);
+            }
           }
-          obj9.verifyTitle = intl6Result;
-          intl6 = tmp(1115).intl;
-          string2 = intl6.string;
-          obj9.verifyDisagreementButtonText = string2(tmp(1115).t.f3Pet9);
         }
         return obj6;
       }

@@ -1,8 +1,8 @@
-// Module ID: 6699
-// Function ID: 6700
+// Module ID: 6783
+// Function ID: 6784
 // Dependencies: [2]
 
-// Module 6699
+// Module 6783
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ShoesSpotIllustration-2x.png.js");

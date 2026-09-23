@@ -1,31 +1,31 @@
-// Module ID: 17095
-// Function ID: 17096
+// Module ID: 17153
+// Function ID: 17154
 // Name: VibegrationsAppChannelView
-// Dependencies: [32, 19, 17, 9318, 13566, 9319, 21, 4757, 576, 1878, 5276, 9320, 16977, 9568, 9577, 16978, 13570, 7701, 16979, 17096, 4753, 1115, 3678, 5187, 2]
+// Dependencies: [32, 19, 17, 9389, 13648, 9390, 21, 4827, 576, 1878, 5360, 9391, 17034, 9641, 9650, 17035, 13652, 7784, 17036, 17154, 4823, 1115, 3712, 5271, 2]
 // Exports: default
 
-// Module 17095 (VibegrationsAppChannelView)
+// Module 17153 (VibegrationsAppChannelView)
 import nativeDefault from "native" /* 576 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 7701 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 9320 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9568 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9577 */;
-import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 13570 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 7784 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 9391 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9641 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9650 */;
+import VibegrationsAppChannelActionCreators from "VibegrationsAppChannelActionCreators" /* 13652 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9318 */;
-import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 13566 */;
+import FramesStore from "FramesStore" /* 9389 */;
+import VibegrationsAppChannelsStore from "VibegrationsAppChannelsStore" /* 13648 */;
 
 const require = globalThis.__r;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const FramesConstants = fn(9319);
+const FramesConstants = fn(9390);
 ({ FrameLayoutModes: closure_9, isLaunched: c10 } = FramesConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_13 = createStyles.createStyles((paddingBottom) => {
   const obj = { container: { flex: 1, paddingBottom }, centered: { flex: 1, alignItems: "center", justifyContent: "center", padding: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_12 }, copy: null };
   const obj2 = { flex: 1, paddingBottom };

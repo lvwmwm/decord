@@ -1,13 +1,13 @@
-// Module ID: 6530
-// Function ID: 6531
+// Module ID: 6614
+// Function ID: 6615
 // Name: NitroRocketSpotIllustration
-// Dependencies: [21, 5806, 6531, 2]
+// Dependencies: [21, 5890, 6615, 2]
 // Exports: NitroRocketSpotIllustration
 
-// Module 6530 (NitroRocketSpotIllustration)
+// Module 6614 (NitroRocketSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6531 from "module_6531" /* 6531 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6615 from "module_6615" /* 6615 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const NitroRocketSpotIllustration = function NitroRocketSpotIllustration(
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6531 };
+  const obj2 = { uri: _modDef6615 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

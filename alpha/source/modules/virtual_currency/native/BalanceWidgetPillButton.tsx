@@ -1,11 +1,11 @@
-// Module ID: 11372
-// Function ID: 11373
+// Module ID: 11448
+// Function ID: 11449
 // Name: BalanceWidgetPillButton
-// Dependencies: [19, 21, 5187, 9122, 1115, 2]
+// Dependencies: [19, 21, 5271, 9193, 1115, 2]
 
-// Module 11372 (BalanceWidgetPillButton)
-import components_Button_Button from "components/Button/Button" /* 5187 */;
-import _modDef9122 from "module_9122" /* 9122 */;
+// Module 11448 (BalanceWidgetPillButton)
+import components_Button_Button from "components/Button/Button" /* 5271 */;
+import _modDef9193 from "module_9193" /* 9193 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

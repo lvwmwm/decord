@@ -1,9 +1,0 @@
-// Module ID: 9449
-// Function ID: 9450
-// Dependencies: [1121]
-
-// Module 9449
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/BlurpleTwilightIcon", width: 60, height: 60, scales: [2, 3], hash: "f385b38a044809a0b451d707fc7cd058", name: "BlurpleTwilightIcon", type: "png" });

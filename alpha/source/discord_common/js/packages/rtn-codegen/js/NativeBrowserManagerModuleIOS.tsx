@@ -1,9 +1,9 @@
-// Module ID: 4723
-// Function ID: 4724
+// Module ID: 4793
+// Function ID: 4794
 // Name: NativeBrowserManagerModuleIOS
 // Dependencies: [17, 2]
 
-// Module 4723 (NativeBrowserManagerModuleIOS)
+// Module 4793 (NativeBrowserManagerModuleIOS)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

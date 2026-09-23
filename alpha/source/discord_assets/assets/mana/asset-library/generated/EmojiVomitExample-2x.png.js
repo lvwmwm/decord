@@ -1,8 +1,8 @@
-// Module ID: 6199
-// Function ID: 6200
+// Module ID: 6283
+// Function ID: 6284
 // Dependencies: [2]
 
-// Module 6199
+// Module 6283
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EmojiVomitExample-2x.png.js");

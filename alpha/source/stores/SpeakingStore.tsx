@@ -1,17 +1,17 @@
-// Module ID: 5638
-// Function ID: 5639
+// Module ID: 5722
+// Function ID: 5723
 // Name: SpeakingStore
-// Dependencies: [32, 2042, 1992, 4780, 2096, 1074, 4782, 4401, 504, 5639, 573, 2]
+// Dependencies: [32, 2042, 1992, 4850, 2096, 1074, 4852, 4467, 504, 5723, 573, 2]
 
-// Module 5638 (SpeakingStore)
+// Module 5722 (SpeakingStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4401 */;
-import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5639 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4467 */;
+import ProportionalVadIndicatorExperimentDefault from "ProportionalVadIndicatorExperiment" /* 5723 */;
 import _slicedToArray from "module_32" /* 32 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
 
 function anyoneHasFlagInContext(DEFAULT, VOICE, arg2) {
@@ -46,7 +46,7 @@ function handleConnectionOpen(user) {
   c14 = null;
 }
 const Permissions = fn(1074).Permissions;
-const Constants = fn(4782);
+const Constants = fn(4852);
 ({ SpeakingFlags: closure_9, MediaEngineContextTypes: c10 } = Constants);
 let map = new Map();
 let id = null;

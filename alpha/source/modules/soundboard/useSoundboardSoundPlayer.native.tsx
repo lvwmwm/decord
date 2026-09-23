@@ -1,18 +1,18 @@
-// Module ID: 17546
-// Function ID: 17547
+// Module ID: 17614
+// Function ID: 17615
 // Name: useSoundboardSoundPlayer
-// Dependencies: [19, 5225, 9919, 2020, 17547, 504, 7589, 2]
+// Dependencies: [19, 5309, 9992, 2020, 17615, 504, 7672, 2]
 // Exports: default
 
-// Module 17546 (useSoundboardSoundPlayer)
-import SoundboardUtils from "SoundboardUtils" /* 7589 */;
+// Module 17614 (useSoundboardSoundPlayer)
+import SoundboardUtils from "SoundboardUtils" /* 7672 */;
 import noop from "module_19" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5225 */;
+import SoundboardStore from "SoundboardStore" /* 5309 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const SoundOutputChannel = fn(9919).SoundOutputChannel;
+const SoundOutputChannel = fn(9992).SoundOutputChannel;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/soundboard/useSoundboardSoundPlayer.native.tsx");
 

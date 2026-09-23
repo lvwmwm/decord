@@ -1,27 +1,27 @@
-// Module ID: 12130
-// Function ID: 12131
+// Module ID: 12207
+// Function ID: 12208
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 10041, 502, 2105, 2064, 4396, 4578, 1074, 4382, 1084, 563, 4402, 1115, 10042, 10043, 7627, 2]
+// Dependencies: [19, 10114, 502, 2105, 2064, 4462, 4648, 1074, 4448, 1084, 563, 4468, 1115, 10115, 10116, 7710, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 12130 (AutomodQuarantineUtils)
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4402 */;
-import openUserSettings2 from "openUserSettings" /* 7627 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10043 */;
+// Module 12207 (AutomodQuarantineUtils)
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4468 */;
+import openUserSettings2 from "openUserSettings" /* 7710 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10116 */;
 import noop from "module_19" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10041 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10114 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4578 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4648 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const Constants = fn(1074);
 ({ Permissions: closure_9, UserSettingsSections: c10 } = Constants);
-const GuildMemberFlags = fn(4382).GuildMemberFlags;
+const GuildMemberFlags = fn(4448).GuildMemberFlags;
 let closure_12 = fn(1084).ProfileCustomizationSubsection;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/AutomodQuarantineUtils.tsx");

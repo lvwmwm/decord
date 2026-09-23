@@ -1,26 +1,26 @@
-// Module ID: 12730
-// Function ID: 12731
+// Module ID: 12812
+// Function ID: 12813
 // Name: GuildProgressHooks
-// Dependencies: [19, 502, 2042, 4394, 4676, 2064, 12731, 4977, 4396, 1074, 504, 9877, 11, 12, 7514, 2]
+// Dependencies: [19, 502, 2042, 4460, 4746, 2064, 12813, 5047, 4462, 1074, 504, 9950, 11, 12, 7598, 2]
 // Exports: useChannelsMessaged, useCompletedStates, useGuildChannelCreated, useGuildMessaged, useGuildPersonalized, useGuildPopulated, usePermissions
 
-// Module 12730 (GuildProgressHooks)
+// Module 12812 (GuildProgressHooks)
 import _modDef12 from "module_12" /* 12 */;
-import canViewInviteModal from "canViewInviteModal" /* 9877 */;
+import canViewInviteModal from "canViewInviteModal" /* 9950 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildChannelStore_mod from "GuildChannelStore" /* 4394 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4676 */;
+import GuildChannelStore_mod from "GuildChannelStore" /* 4460 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4746 */;
 import GuildStore from "GuildStore" /* 2064 */;
-import LayerStore from "LayerStore" /* 12731 */;
-import MessageStore from "MessageStore" /* 4977 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
+import LayerStore from "LayerStore" /* 12813 */;
+import MessageStore from "MessageStore" /* 5047 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let GuildChannelStore = fn(4394);
+let GuildChannelStore = fn(4460);
 ({ GUILD_SELECTABLE_CHANNELS_KEY: metroRequire, GUILD_VOCAL_CHANNELS_KEY: closure_7 } = GuildChannelStore);
 let GuildChannelStore = GuildChannelStore_mod;
 const Constants = fn(1074);

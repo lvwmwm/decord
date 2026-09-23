@@ -1,9 +1,9 @@
-// Module ID: 8469
-// Function ID: 8470
+// Module ID: 8540
+// Function ID: 8541
 // Name: types
 // Dependencies: [2]
 
-// Module 8469 (types)
+// Module 8540 (types)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/virtual_currency/types.tsx");

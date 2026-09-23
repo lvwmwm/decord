@@ -1,14 +1,14 @@
-// Module ID: 10332
-// Function ID: 10333
+// Module ID: 10411
+// Function ID: 10412
 // Name: AudienceTile
-// Dependencies: [19, 17, 2105, 21, 4757, 576, 4904, 1177, 8899, 1478, 504, 5644, 4909, 6899, 1115, 8668, 10313, 4608, 10333, 2]
+// Dependencies: [19, 17, 2105, 21, 4827, 576, 4974, 1177, 8970, 1478, 504, 5728, 4979, 6983, 1115, 8739, 10392, 4678, 10412, 2]
 // Exports: getTileWidthStyle
 
-// Module 10332 (AudienceTile)
+// Module 10411 (AudienceTile)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4904 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8668 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4974 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 8739 */;
 import noop from "module_19" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 2105 */;
 
@@ -28,14 +28,14 @@ function RaisedHandIcon(rtsState) {
   if (activeBackground) {
     activeBackground = tmp.activeBackground;
   }
-  const obj = { style: items, children: hasOwnProperty(native.Icon, { style: tmp.raisedHand, source: tmp5(8899), color: PRIMARY_800 }) };
+  const obj = { style: items, children: hasOwnProperty(native.Icon, { style: tmp.raisedHand, source: tmp5(8970), color: PRIMARY_800 }) };
   items[1] = activeBackground;
   return hasOwnProperty(View, obj);
 }
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { touchableContainer: { overflow: "visible" }, container: { alignItems: "center" }, avatarContainer: { position: "relative", padding: 8, paddingTop: 0, paddingBottom: 4 }, raisedHandContainer: null, activeBackground: null, raisedHand: null, nameplateContainer: null, usernameText: null, faded: null };
 let size = { position: "absolute", top: -8, right: 0, height: 24, width: 24, alignItems: "center", justifyContent: "center", borderRadius: 12, borderWidth: 2, borderColor: nativeDefault.unsafe_rawColors.PRIMARY_800, backgroundColor: nativeDefault.colors.WHITE };
 obj.raisedHandContainer = size;

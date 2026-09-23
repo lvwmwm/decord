@@ -1,14 +1,14 @@
-// Module ID: 13230
-// Function ID: 13231
+// Module ID: 13312
+// Function ID: 13313
 // Name: VoicePanelSpoilerAlert
-// Dependencies: [19, 21, 5115, 5115, 1115, 5739, 5630, 2]
+// Dependencies: [19, 21, 5199, 5199, 1115, 5823, 5714, 2]
 // Exports: default
 
-// Module 13230 (VoicePanelSpoilerAlert)
+// Module 13312 (VoicePanelSpoilerAlert)
 import util from "util" /* 1115 */;
-import AlertModal from "AlertModal" /* 5115 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5630 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 5739 */;
+import AlertModal from "AlertModal" /* 5199 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 5714 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 5823 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

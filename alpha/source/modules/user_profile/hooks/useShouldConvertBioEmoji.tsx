@@ -1,10 +1,10 @@
-// Module ID: 8441
-// Function ID: 8442
+// Module ID: 8512
+// Function ID: 8513
 // Name: useShouldConvertBioEmoji
 // Dependencies: [2020, 2]
 // Exports: default, getShouldConvertBioEmoji
 
-// Module 8441 (useShouldConvertBioEmoji)
+// Module 8512 (useShouldConvertBioEmoji)
 import UserSettings from "UserSettings" /* 2020 */;
 import size from "module_2" /* 2 */;
 

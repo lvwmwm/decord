@@ -1,14 +1,14 @@
-// Module ID: 11714
-// Function ID: 11715
+// Module ID: 11790
+// Function ID: 11791
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 4757, 9111, 4753, 1115, 10061, 3548, 2]
+// Dependencies: [19, 17, 21, 4827, 9182, 4823, 1115, 10141, 3582, 2]
 // Exports: default
 
-// Module 11714 (SlayerStorefrontGiftPreview)
+// Module 11790 (SlayerStorefrontGiftPreview)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9111 */;
-import InfoBox from "InfoBox" /* 10061 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9182 */;
+import InfoBox from "InfoBox" /* 10141 */;
 import noop from "module_19" /* 19 */;
 
 const InfoBoxDefault = InfoBox;
@@ -26,7 +26,7 @@ function WarningBox(application) {
     const obj = { look: InfoBox.InfoBoxLooks.WARNING, style: tmp.warningBox, children: null };
     const intl = util.intl;
     if (mobileAccountLinkingDisabled) {
-      BMMo2K = name(3548).BMMo2K;
+      BMMo2K = name(3582).BMMo2K;
       tmp2 = application == tmp2;
       name = undefined;
       if (!tmp2) {
@@ -55,7 +55,7 @@ function WarningBox(application) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", justifyContent: "center", gap: 16, marginTop: 20 }, text: { textAlign: "center", paddingHorizontal: 32 }, warningBox: { marginHorizontal: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/SlayerStorefrontGiftPreview.tsx");

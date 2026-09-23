@@ -1,22 +1,22 @@
-// Module ID: 17992
-// Function ID: 17993
+// Module ID: 18061
+// Function ID: 18062
 // Name: GuildSettingsModalAuditLogFilter
-// Dependencies: [32, 19, 17, 1372, 17988, 1074, 21, 4757, 576, 1115, 4601, 17990, 4475, 11213, 5908, 1612, 1484, 5736, 17993, 1177, 10292, 17994, 5907, 7297, 8505, 9002, 7287, 2]
+// Dependencies: [32, 19, 17, 1372, 18057, 1074, 21, 4827, 576, 1115, 4671, 18059, 4541, 11289, 5992, 1612, 1484, 5820, 18062, 1177, 10371, 18063, 5991, 7381, 8576, 9073, 7371, 2]
 // Exports: createAuditLogFilterActionData, createAuditLogFilterUserData, default
 
-// Module 17992 (GuildSettingsModalAuditLogFilter)
+// Module 18061 (GuildSettingsModalAuditLogFilter)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4475 */;
-import UserUtilsDefault from "UserUtils" /* 4601 */;
-import FormRadio from "FormRadio" /* 5908 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11213 */;
-import AuditLogUtils from "AuditLogUtils" /* 17990 */;
-import AuditLogActionCreators from "AuditLogActionCreators" /* 17993 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4541 */;
+import UserUtilsDefault from "UserUtils" /* 4671 */;
+import FormRadio from "FormRadio" /* 5992 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11289 */;
+import AuditLogUtils from "AuditLogUtils" /* 18059 */;
+import AuditLogActionCreators from "AuditLogActionCreators" /* 18062 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 17988 */;
+import GuildSettingsAuditLogStore from "GuildSettingsAuditLogStore" /* 18057 */;
 
 const require = globalThis.__r;
 
@@ -25,7 +25,7 @@ const View = fn(17).View;
 const AuditLogFilterTypes = fn(1074).AuditLogFilterTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj = { searchBar: { paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: nativeDefault.space.PX_16 }, allUsersIconContainer: { height: 30, width: 30, alignItems: "center" } };
 let closure_12 = createStyles.createStyles(obj);
 let closure_13 = noop.memo((selected) => {

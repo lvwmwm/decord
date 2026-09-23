@@ -1,14 +1,14 @@
-// Module ID: 8706
-// Function ID: 8707
+// Module ID: 8777
+// Function ID: 8778
 // Name: SafetyHubStore
-// Dependencies: [8695, 8696, 8707, 504, 573, 2]
+// Dependencies: [8766, 8767, 8778, 504, 573, 2]
 
-// Module 8706 (SafetyHubStore)
+// Module 8777 (SafetyHubStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import SafetyHubModels from "SafetyHubModels" /* 8696 */;
-import _modDef8707 from "module_8707" /* 8707 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8695 */;
+import SafetyHubModels from "SafetyHubModels" /* 8767 */;
+import _modDef8778 from "module_8778" /* 8778 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 8766 */;
 import size from "module_2" /* 2 */;
 
 function handleSafetyHubRequestAgeVerificationResetModalAction(arg0) {
@@ -150,7 +150,7 @@ const safetyHubStore = new SafetyHubStore(DispatcherDefault, {
   },
   SAFETY_HUB_FETCH_SUCCESS: function handleFetchSuccess(arg0) {
     ({ classifications, accountStanding, isDsaEligible, isAppealEligible, username, appealEligibility, expressiveModalV2Enabled, showExpressiveModalSubtitleAlt, manualReviewFallbackEnabled, manualReviewDecidedUnderage } = arg0);
-    closure_6 = _modDef8707(classifications, "id");
+    closure_6 = _modDef8778(classifications, "id");
     c9 = false;
     c10 = true;
     error = null;
@@ -236,13 +236,13 @@ const safetyHubStore = new SafetyHubStore(DispatcherDefault, {
       throw new TypeError("Cannot destructure 'undefined' or 'null'.");
     } else {
       NONE = AgeCheckStatus.LOADING;
-      for (const key10007 in closure_6) {
-        if (!dependencyMap[key10007].is_coppa) {
+      for (const key10002 in closure_6) {
+        if (!dependencyMap[key10002].is_coppa) {
           continue;
         } else {
           let obj = { status: null };
           obj.status = SafetyHubModels.AppealStatusType.REVIEW_PENDING;
-          dependencyMap[key10007].appeal_status = obj;
+          dependencyMap[key10002].appeal_status = obj;
           continue;
         }
         continue;

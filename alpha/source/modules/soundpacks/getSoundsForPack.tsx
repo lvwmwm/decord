@@ -1,11 +1,11 @@
-// Module ID: 10167
-// Function ID: 10168
+// Module ID: 10247
+// Function ID: 10248
 // Name: getSoundsForPack
-// Dependencies: [10166, 2]
+// Dependencies: [10246, 2]
 // Exports: default
 
-// Module 10167 (getSoundsForPack)
-import Constants from "Constants" /* 10166 */;
+// Module 10247 (getSoundsForPack)
+import Constants from "Constants" /* 10246 */;
 import size from "module_2" /* 2 */;
 
 const Soundpacks = Constants.Soundpacks;

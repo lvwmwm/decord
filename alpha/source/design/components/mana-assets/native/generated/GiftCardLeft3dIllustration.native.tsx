@@ -1,13 +1,13 @@
-// Module ID: 6378
-// Function ID: 6379
+// Module ID: 6462
+// Function ID: 6463
 // Name: GiftCardLeft3dIllustration
-// Dependencies: [21, 5806, 6379, 2]
+// Dependencies: [21, 5890, 6463, 2]
 // Exports: GiftCardLeft3dIllustration
 
-// Module 6378 (GiftCardLeft3dIllustration)
+// Module 6462 (GiftCardLeft3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6379 from "module_6379" /* 6379 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6463 from "module_6463" /* 6463 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GiftCardLeft3dIllustration = function GiftCardLeft3dIllustration(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6379 };
+  const obj2 = { uri: _modDef6463 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,12 +1,12 @@
-// Module ID: 13497
-// Function ID: 13498
+// Module ID: 13579
+// Function ID: 13580
 // Name: SurveyIndication
-// Dependencies: [6839, 1115, 8208, 4608, 13498, 13499, 2]
+// Dependencies: [6923, 1115, 8290, 4678, 13580, 13581, 2]
 // Exports: createSurveyIndication
 
-// Module 13497 (SurveyIndication)
+// Module 13579 (SurveyIndication)
 import util from "util" /* 1115 */;
-import PushNotificationConstants from "PushNotificationConstants" /* 6839 */;
+import PushNotificationConstants from "PushNotificationConstants" /* 6923 */;
 import size from "module_2" /* 2 */;
 
 const NotificationTypes = PushNotificationConstants.NotificationTypes;
@@ -29,11 +29,11 @@ export const createSurveyIndication = function createSurveyIndication(message, f
   const obj2 = { content: intl.formatToParts(GwWhce, { handleMessage: obj }), feedbackIconUrl: null };
   obj.notificationType = TOP_MESSAGE_PUSH;
   tmp = NotificationTypes;
-  const tmp2Result = tmp2(8208);
+  const tmp2Result = tmp2(8290);
   if (tmp2Result2.isThemeDark(forcedTheme)) {
-    let tmp7Result = tmp7(13498);
+    let tmp7Result = tmp7(13580);
   } else {
-    tmp7Result = tmp7(13499);
+    tmp7Result = tmp7(13581);
   }
   obj2.feedbackIconUrl = tmp2Result.getAssetUriForEmbed(tmp7Result);
   return obj2;

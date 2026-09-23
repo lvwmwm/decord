@@ -1,17 +1,17 @@
-// Module ID: 17689
-// Function ID: 17690
+// Module ID: 17758
+// Function ID: 17759
 // Name: useHideSelfVideo
-// Dependencies: [502, 1992, 1074, 4782, 504, 9917, 2]
+// Dependencies: [502, 1992, 1074, 4852, 504, 9990, 2]
 // Exports: default
 
-// Module 17689 (useHideSelfVideo)
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9917 */;
+// Module 17758 (useHideSelfVideo)
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9990 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
 const require = fn;
 const VideoToggleState = fn(1074).VideoToggleState;
-const Constants = fn(4782);
+const Constants = fn(4852);
 ({ MediaEngineContextTypes: metroRequire, Features: closure_7 } = Constants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/calls/useHideSelfVideo.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 15772
-// Function ID: 15773
+// Module ID: 15826
+// Function ID: 15827
 // Name: FamilyCenterAgeGroupPrefetch
-// Dependencies: [7782, 7784, 2]
+// Dependencies: [7865, 7867, 2]
 // Exports: prefetchFamilyCenterAgeGroup
 
-// Module 15772 (FamilyCenterAgeGroupPrefetch)
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7784 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7782 */;
+// Module 15826 (FamilyCenterAgeGroupPrefetch)
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7867 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7865 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/parent_tools/FamilyCenterAgeGroupPrefetch.tsx");

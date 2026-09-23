@@ -1,20 +1,20 @@
-// Module ID: 13221
-// Function ID: 13222
+// Module ID: 13303
+// Function ID: 13304
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1085, 21, 4757, 576, 1115, 2614, 4753, 5187, 1177, 2]
+// Dependencies: [19, 17, 1085, 21, 4827, 576, 1115, 2616, 4823, 5271, 1177, 2]
 // Exports: default
 
-// Module 13221 (InAppReportsBottomButton)
+// Module 13303 (InAppReportsBottomButton)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef2614 from "module_2614" /* 2614 */;
+import _modDef2616 from "module_2616" /* 2616 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { flex: 0, alignSelf: "stretch", paddingBottom: 12 }, paddingHorizontal: { paddingHorizontal: 16 }, divider: { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 }, descriptionText: { lineHeight: 16, textAlign: "center", marginBottom: 12 }, errorText: null };
 let obj3 = { height: 1, alignSelf: "stretch", backgroundColor: nativeDefault.colors.BORDER_SUBTLE, marginBottom: 16 };
 obj2.errorText = { color: nativeDefault.unsafe_rawColors.RED_400, fontSize: 12, lineHeight: 16, fontFamily: fn(1085).Fonts.PRIMARY_SEMIBOLD, textAlign: "center", marginTop: 12 };
@@ -35,7 +35,7 @@ export default function InAppReportsBottomButton(button) {
       const intl2 = tmp17(1115).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        let stringResult = string(_modDef2614.ZUyreS);
+        let stringResult = string(_modDef2616.ZUyreS);
       } else {
         const intl3 = tmp17(1115).intl;
         const stringResult1 = string(tmp17(1115).t["G+vU89"]);
@@ -56,7 +56,7 @@ export default function InAppReportsBottomButton(button) {
       const intl4 = tmp17(1115).intl;
       const string2 = intl4.string;
       if (isModeratorReport) {
-        let string2Result = string2(_modDef2614.psKFdJ);
+        let string2Result = string2(_modDef2616.psKFdJ);
       } else {
         string2Result = string2(tmp17(1115).t.h6D8Vy);
       }
@@ -67,7 +67,7 @@ export default function InAppReportsBottomButton(button) {
       let tmp14Result = null;
       if (null != tmp3) {
         const obj4 = { style: tmp.descriptionText, variant: "text-xs/medium", color: "text-default", children: tmp3 };
-        tmp14Result = tmp14(tmp17(4753).Text, obj4);
+        tmp14Result = tmp14(tmp17(4823).Text, obj4);
       }
       const items1 = [tmp14Result, , ];
       const obj5 = {
@@ -78,7 +78,7 @@ export default function InAppReportsBottomButton(button) {
         text: stringResult2,
         variant: str2
       };
-      items1[1] = React4(tmp17(5187).Button, obj5);
+      items1[1] = React4(tmp17(5271).Button, obj5);
       let tmp14Result2 = null;
       if (hasError) {
         const obj6 = { style: tmp.errorText, children: string2Result };

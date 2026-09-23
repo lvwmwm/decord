@@ -1,10 +1,10 @@
-// Module ID: 15619
-// Function ID: 15620
+// Module ID: 15673
+// Function ID: 15674
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [19, 1074, 1391, 8440, 8437, 1241, 1392, 2]
+// Dependencies: [19, 1074, 1391, 8511, 8508, 1241, 1392, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 15619 (useDisplayNameStylesHandleApply)
+// Module 15673 (useDisplayNameStylesHandleApply)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import DisplayNameEffect from "DisplayNameEffect" /* 1391 */;
 import DisplayNameFont from "DisplayNameFont" /* 1392 */;
@@ -40,12 +40,12 @@ export const useDisplayNameStylesHandleApply = function useDisplayNameStylesHand
       }
       const obj = { fontId: selectedFontId, effectId: selectedEffectId, colors: items };
       if (isTryItOut) {
-        const result = tmp2(8440).setTryItOutDisplayNameStyles(obj);
-        const tmp2Result = tmp2(8440);
+        const result = tmp2(8511).setTryItOutDisplayNameStyles(obj);
+        const tmp2Result = tmp2(8511);
       } else {
         const obj2 = { guildId, displayNameStyles: obj };
-        tmp2(8437).setPendingChanges(obj2);
-        const tmp2Result2 = tmp2(8437);
+        tmp2(8508).setPendingChanges(obj2);
+        const tmp2Result2 = tmp2(8508);
       }
       const obj3 = { font_name: DisplayNameFont.DisplayNameFont[selectedFontId], effect_name: DisplayNameEffect.DisplayNameEffect[selectedEffectId], colors: selectedColors };
       AnalyticsUtilsDefault.track(AnalyticEvents.DISPLAY_NAME_STYLES_APPLIED, obj3);

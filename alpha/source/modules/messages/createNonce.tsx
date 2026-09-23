@@ -1,10 +1,10 @@
-// Module ID: 7998
-// Function ID: 7999
+// Module ID: 8080
+// Function ID: 8081
 // Name: createNonce
 // Dependencies: [11, 2]
 // Exports: createNonce
 
-// Module 7998 (createNonce)
+// Module 8080 (createNonce)
 import SnowflakeUtils from "SnowflakeUtils" /* 11 */;
 import size from "module_2" /* 2 */;
 

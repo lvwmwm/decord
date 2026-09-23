@@ -1,12 +1,12 @@
-// Module ID: 18030
-// Function ID: 18031
+// Module ID: 18099
+// Function ID: 18100
 // Name: showGuildSettingsModalStickerInfoActionSheet
-// Dependencies: [4724, 18031, 1980, 2]
+// Dependencies: [4794, 18100, 1980, 2]
 // Exports: showGuildSettingsModalStickerInfoActionSheet
 
-// Module 18030 (showGuildSettingsModalStickerInfoActionSheet)
+// Module 18099 (showGuildSettingsModalStickerInfoActionSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsModalStickerInfoActionSheet = "GuildSettingsModalStickerInfoActionSheet";
@@ -14,7 +14,7 @@ const result = size.fileFinishedImporting("modules/guild_settings/server_monetiz
 
 export const showGuildSettingsModalStickerInfoActionSheet = function showGuildSettingsModalStickerInfoActionSheet(arg0) {
   ({ guildId, stickerId } = arg0);
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18031, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, {
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(18100, dependencyMap.paths), GuildSettingsModalStickerInfoActionSheet, {
     guildId,
     stickerId,
     hideActionSheet() {

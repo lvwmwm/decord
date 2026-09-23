@@ -1,10 +1,10 @@
-// Module ID: 16931
-// Function ID: 16932
+// Module ID: 16983
+// Function ID: 16984
 // Name: MemberSafetyPageTypes
-// Dependencies: [4581, 2]
+// Dependencies: [4651, 2]
 
-// Module 16931 (MemberSafetyPageTypes)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4581 */;
+// Module 16983 (MemberSafetyPageTypes)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4651 */;
 import size from "module_2" /* 2 */;
 
 const obj = { ALL_MEMBERS: "ALL_MEMBERS" };

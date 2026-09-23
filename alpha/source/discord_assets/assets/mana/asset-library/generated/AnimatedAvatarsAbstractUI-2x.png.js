@@ -1,8 +1,8 @@
-// Module ID: 5961
-// Function ID: 5962
+// Module ID: 6045
+// Function ID: 6046
 // Dependencies: [2]
 
-// Module 5961
+// Module 6045
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/AnimatedAvatarsAbstractUI-2x.png.js");

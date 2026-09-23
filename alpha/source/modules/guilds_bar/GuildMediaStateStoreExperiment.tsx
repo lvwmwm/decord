@@ -1,10 +1,10 @@
-// Module ID: 16683
-// Function ID: 16684
+// Module ID: 16735
+// Function ID: 16736
 // Name: GuildMediaStateStoreExperiment
 // Dependencies: [1435, 2]
 // Exports: useGuildMediaStateSource
 
-// Module 16683 (GuildMediaStateStoreExperiment)
+// Module 16735 (GuildMediaStateStoreExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const obj = { HOOK: "hook", STORE: "store", SHADOW: "shadow" };

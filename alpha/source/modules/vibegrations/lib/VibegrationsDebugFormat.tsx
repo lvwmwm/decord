@@ -1,10 +1,10 @@
-// Module ID: 17079
-// Function ID: 17080
+// Module ID: 17137
+// Function ID: 17138
 // Name: VibegrationsDebugFormat
 // Dependencies: [2]
 // Exports: debugLogEnv, formatBytes, formatClockTime, formatCount, formatMs, formatObservedAt, shortBuildLabel
 
-// Module 17079 (VibegrationsDebugFormat)
+// Module 17137 (VibegrationsDebugFormat)
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsDebugFormat.tsx");

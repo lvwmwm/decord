@@ -1,12 +1,12 @@
-// Module ID: 11242
-// Function ID: 11243
+// Module ID: 11318
+// Function ID: 11319
 // Name: useSafetyAlertsSettingOrDefault
-// Dependencies: [1220, 1372, 504, 8927, 11243, 2]
+// Dependencies: [1220, 1372, 504, 8998, 11319, 2]
 // Exports: useSafetyAlertsSettingOrDefault
 
-// Module 11242 (useSafetyAlertsSettingOrDefault)
+// Module 11318 (useSafetyAlertsSettingOrDefault)
 import initialize from "initialize" /* 504 */;
-import useUserIsTeen from "useUserIsTeen" /* 8927 */;
+import useUserIsTeen from "useUserIsTeen" /* 8998 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 import UserStore from "UserStore" /* 1372 */;
 

@@ -1,9 +1,43 @@
 // Module ID: 4702
 // Function ID: 4703
-// Dependencies: [1121]
+// Dependencies: [19, 4703, 4704]
+// Exports: usePortal
 
 // Module 4702
-import registerAsset from "module_1121" /* 1121 */;
+import ACTIONS from "ACTIONS" /* 4704 */;
+import noop from "module_19" /* 19 */;
 
+({ useCallback: c2, useContext: c3 } = noop);
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "4c483b0c9e54993ee793f71f5dfd0dd4", name: "SendMessageIcon", type: "png" });
+export const usePortal = () => {
+  let str = arg0;
+  if (arg0 === undefined) {
+    str = "root";
+  }
+  const tmp = closure_3(str(4703).PortalDispatchContext);
+  dependencyMap = tmp;
+  if (null === tmp) {
+    const _Error = Error;
+    const error = new Error("'PortalDispatchContext' cannot be null, please add 'PortalProvider' to the root component.");
+    throw error;
+  } else {
+    const tmp3 = closure_2(() => {
+      closure_1({ type: ACTIONS.ACTIONS.REGISTER_HOST, hostName: str });
+    }, []);
+    const tmp5 = closure_2((portalName, node) => {
+      closure_1({ type: ACTIONS.ACTIONS.ADD_UPDATE_PORTAL, hostName: str, portalName, node });
+    }, []);
+    const obj = {
+      registerHost: tmp3,
+      deregisterHost: closure_2(() => {
+          closure_1({ type: ACTIONS.ACTIONS.DEREGISTER_HOST, hostName: str });
+        }, []),
+      addPortal: tmp5,
+      updatePortal: tmp5,
+      removePortal: closure_2((portalName) => {
+          closure_1({ type: ACTIONS.ACTIONS.REMOVE_PORTAL, hostName: str, portalName });
+        }, [])
+    };
+    return obj;
+  }
+};

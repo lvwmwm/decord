@@ -1,9 +1,9 @@
-// Module ID: 8849
-// Function ID: 8850
+// Module ID: 8920
+// Function ID: 8921
 // Name: NativeAppAttestModule
 // Dependencies: [17, 2]
 
-// Module 8849 (NativeAppAttestModule)
+// Module 8920 (NativeAppAttestModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

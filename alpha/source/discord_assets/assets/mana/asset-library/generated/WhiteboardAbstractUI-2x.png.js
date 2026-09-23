@@ -1,8 +1,8 @@
-// Module ID: 6815
-// Function ID: 6816
+// Module ID: 6899
+// Function ID: 6900
 // Dependencies: [2]
 
-// Module 6815
+// Module 6899
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WhiteboardAbstractUI-2x.png.js");

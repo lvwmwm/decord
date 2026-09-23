@@ -1,11 +1,11 @@
-// Module ID: 16984
-// Function ID: 16985
+// Module ID: 17041
+// Function ID: 17042
 // Name: getFrameSurfaceQueryParams
-// Dependencies: [9320, 2]
+// Dependencies: [9391, 2]
 // Exports: default
 
-// Module 16984 (getFrameSurfaceQueryParams)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 9320 */;
+// Module 17041 (getFrameSurfaceQueryParams)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 9391 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/frames/utils/getFrameSurfaceQueryParams.tsx");
@@ -15,8 +15,8 @@ export default function getFrameSurfaceQueryParams(type) {
   if (EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN === type) {
     return {};
   } else {
-    if (tmp(9320).EmbeddedSurfaceType.APP_CHANNEL !== type) {
-      if (tmp(9320).EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
+    if (tmp(9391).EmbeddedSurfaceType.APP_CHANNEL !== type) {
+      if (tmp(9391).EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
         return {};
       }
     }

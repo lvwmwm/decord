@@ -1,12 +1,12 @@
-// Module ID: 14782
-// Function ID: 14783
+// Module ID: 14862
+// Function ID: 14863
 // Name: ApplicationSubscriptionsActionCreators
-// Dependencies: [5, 1074, 573, 9611, 7501, 2]
+// Dependencies: [5, 1074, 573, 9684, 7585, 2]
 // Exports: dismissApplicationSubscriptionExpirationNotice, fetchAllSubscriptionListingsDataForApplication, fetchEntitlementsForGuild
 
-// Module 14782 (ApplicationSubscriptionsActionCreators)
+// Module 14862 (ApplicationSubscriptionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 9611 */;
+import ApplicationSubscriptionsHttpApiAll from "ApplicationSubscriptionsHttpApi" /* 9684 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 function transformSubscriptionListingToSku(id) {

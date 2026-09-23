@@ -1,16 +1,16 @@
-// Module ID: 16198
-// Function ID: 16199
+// Module ID: 16251
+// Function ID: 16252
 // Name: ManageSponsoredContentScreen
-// Dependencies: [19, 17, 1074, 21, 1186, 2154, 2020, 7447, 1115, 4757, 576, 5906, 2108, 2]
+// Dependencies: [19, 17, 1074, 21, 1186, 2154, 2020, 7531, 1115, 4827, 576, 5990, 2108, 2]
 // Exports: default
 
-// Module 16198 (ManageSponsoredContentScreen)
+// Module 16251 (ManageSponsoredContentScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
 import _modDef2154 from "module_2154" /* 2154 */;
-import TableRowGroup from "TableRowGroup" /* 5906 */;
+import TableRowGroup from "TableRowGroup" /* 5990 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -38,7 +38,7 @@ function AdTopicRow(adTopic) {
     const items = [...set];
     AdTopicOptOuts2.updateSetting(items);
   };
-  return closure_5(adTopic(7447).TableSwitchRow, obj);
+  return closure_5(adTopic(7531).TableSwitchRow, obj);
 }
 const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
@@ -48,7 +48,7 @@ let obj = {};
 obj[fn(1186).AdTopic.REAL_MONEY_GAMING] = _modDef2154.pmIitA;
 const keys = Object.keys(obj);
 let closure_8 = keys.map(Number);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj3 = { content: { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_16 } };
 let closure_10 = createStyles.createStyles(obj3);
 const size = fn(2);

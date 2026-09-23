@@ -1,9 +1,9 @@
-// Module ID: 7593
-// Function ID: 7594
+// Module ID: 7676
+// Function ID: 7677
 // Name: VoiceChannelEffectsConstants
 // Dependencies: [2]
 
-// Module 7593 (VoiceChannelEffectsConstants)
+// Module 7676 (VoiceChannelEffectsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/voice_channel_effects/VoiceChannelEffectsConstants.tsx");

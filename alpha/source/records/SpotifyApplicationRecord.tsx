@@ -1,11 +1,11 @@
-// Module ID: 13540
-// Function ID: 13541
+// Module ID: 13622
+// Function ID: 13623
 // Name: SpotifyApplicationRecord
-// Dependencies: [2002, 5502, 2]
+// Dependencies: [2002, 5586, 2]
 
-// Module 13540 (SpotifyApplicationRecord)
+// Module 13622 (SpotifyApplicationRecord)
 import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import Platforms from "Platforms" /* 5502 */;
+import Platforms from "Platforms" /* 5586 */;
 
 const spotify = "spotify";
 const value = Platforms.get("spotify");

@@ -1,15 +1,15 @@
-// Module ID: 17872
-// Function ID: 17873
+// Module ID: 17941
+// Function ID: 17942
 // Name: useConnectGuardianGate
-// Dependencies: [32, 19, 7782, 504, 7784, 5204, 2]
+// Dependencies: [32, 19, 7865, 504, 7867, 5288, 2]
 // Exports: useConnectGuardianGate
 
-// Module 17872 (useConnectGuardianGate)
+// Module 17941 (useConnectGuardianGate)
 import initialize from "initialize" /* 504 */;
-import useMountEffectDefault from "useMountEffect" /* 5204 */;
+import useMountEffectDefault from "useMountEffect" /* 5288 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7782 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7865 */;
 
 const require = globalThis.__r;
 

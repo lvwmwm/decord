@@ -1,10 +1,10 @@
 // Module ID: 10860
 // Function ID: 10861
-// Dependencies: [41, 42, 93, 95, 98, 10722, 10854]
+// Dependencies: [41, 42, 93, 95, 98, 10798, 10781]
 
 // Module 10860
-import now from "now" /* 10722 */;
-import _mod10854 from "module_10854" /* 10854 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 10781 */;
+import now from "now" /* 10798 */;
 import _classCallCheck_mod from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
@@ -47,7 +47,7 @@ if (self2) {
       fn = self.__importStar;
     }
     if (!fn) {
-      fn = function o(arg0) {
+      fn = function u(arg0) {
         fn = Object.getOwnPropertyNames;
         if (!fn) {
           fn = (obj) => {
@@ -95,12 +95,12 @@ if (self2) {
     }
     const _Object3 = Object;
     let closure_7 = fn(now);
-    class UKCasualDateParser {
+    class PTCasualDateParser {
       constructor() {
         self = this;
-        tmp = closure_0(this, UKCasualDateParser);
+        tmp = closure_0(this, PTCasualDateParser);
         tmp2 = c2;
-        obj = c2(UKCasualDateParser);
+        obj = c2(PTCasualDateParser);
         tmp3 = closure_1;
         if (closure_3()) {
           tmp7 = globalThis;
@@ -115,40 +115,39 @@ if (self2) {
         return tmp3(self, constructResult);
       }
     }
-    _classCallCheck = UKCasualDateParser;
-    _inherits(UKCasualDateParser, _mod10854.AbstractParserWithLeftRightBoundaryChecking);
+    _classCallCheck = PTCasualDateParser;
+    _inherits(PTCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
     const entry = {
-      key: "innerPatternString",
-      value: function innerPatternString(arg0) {
-            return "(?:\u0437|\u0456\u0437|\u0432\u0456\u0434)?\\s*(\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456|\u0432\u0447\u043E\u0440\u0430|\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430|\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430|\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430)";
+      key: "innerPattern",
+      value: function innerPattern(arg0) {
+            return /(agora|hoje|amanha|amanhã|ontem)(?=\W|$)/i;
           }
     };
     let items = [entry, ];
     const entry1 = {
       key: "innerExtract",
       value: function innerExtract(reference, arg1) {
-            const formatted = arg1[1].toLowerCase();
-            if ("\u0441\u044C\u043E\u0433\u043E\u0434\u043D\u0456" === formatted) {
+            const formatted = arg1[0].toLowerCase();
+            if ("agora" === formatted) {
+              return closure_7.now(reference.reference);
+            } else if ("hoje" === formatted) {
               return closure_7.today(reference.reference);
-            } else if ("\u0432\u0447\u043E\u0440\u0430" === formatted) {
-              return closure_7.yesterday(reference.reference);
-            } else if ("\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
-              return closure_7.tomorrow(reference.reference);
-            } else if ("\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
-              return closure_7.theDayAfter(reference.reference, 2);
-            } else if ("\u043F\u0456\u0441\u043B\u044F\u043F\u0456\u0441\u043B\u044F\u0437\u0430\u0432\u0442\u0440\u0430" === formatted) {
-              return closure_7.theDayAfter(reference.reference, 3);
-            } else if ("\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
-              return closure_7.theDayBefore(reference.reference, 2);
-            } else if ("\u043F\u043E\u0437\u0430\u043F\u043E\u0437\u0430\u0432\u0447\u043E\u0440\u0430" === formatted) {
-              return closure_7.theDayBefore(reference.reference, 3);
             } else {
-              return tmp2;
+              if ("amanha" !== formatted) {
+                if ("amanh\u00E3" !== formatted) {
+                  if ("ontem" === formatted) {
+                    return closure_7.yesterday(reference.reference);
+                  } else {
+                    return tmp2;
+                  }
+                }
+              }
+              return closure_7.tomorrow(reference.reference);
             }
           }
     };
     items[1] = entry1;
-    exports.default = _createClass(UKCasualDateParser, items);
+    exports.default = _createClass(PTCasualDateParser, items);
   } else {
     const _Object2 = Object;
   }

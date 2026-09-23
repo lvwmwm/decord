@@ -1,21 +1,21 @@
-// Module ID: 18236
-// Function ID: 18237
+// Module ID: 18305
+// Function ID: 18306
 // Name: GuildRoleSubscriptionListingPreview
-// Dependencies: [32, 19, 17, 21, 4757, 576, 4753, 7481, 1115, 15512, 15508, 5806, 18237, 18231, 18210, 15519, 2]
+// Dependencies: [32, 19, 17, 21, 4827, 576, 4823, 7565, 1115, 15566, 15562, 5890, 18306, 18300, 18279, 15573, 2]
 // Exports: GuildRoleSubscriptionListingPreview
 
-// Module 18236 (GuildRoleSubscriptionListingPreview)
+// Module 18305 (GuildRoleSubscriptionListingPreview)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import PriceUtils from "PriceUtils" /* 7481 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15508 */;
-import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15512 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 15519 */;
-import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 18210 */;
-import GuildRoleSubscriptionBenefitPreview from "GuildRoleSubscriptionBenefitPreview" /* 18231 */;
-import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 18237 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import PriceUtils from "PriceUtils" /* 7565 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 15562 */;
+import GuildRoleSubscriptionTypeUtils from "GuildRoleSubscriptionTypeUtils" /* 15566 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 15573 */;
+import GuildRoleSubscriptionsActionCreatorExtras from "GuildRoleSubscriptionsActionCreatorExtras" /* 18279 */;
+import GuildRoleSubscriptionBenefitPreview from "GuildRoleSubscriptionBenefitPreview" /* 18300 */;
+import GuildPremiumRoleSubscribeButton from "GuildPremiumRoleSubscribeButton" /* 18306 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -155,7 +155,7 @@ class BenefitsSection {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { padding: 16 }, header: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderTopStartRadius: 8, borderTopEndRadius: 8, display: "flex", flexDirection: "column", alignItems: "center", padding: 16 }, image: { width: 80, height: 80, borderRadius: 40, marginTop: 16 }, priceGroup: { marginTop: 16, alignItems: "center" }, priceInterval: { marginTop: 4 }, content: { paddingHorizontal: 16 }, contentWithBackground: null, separator: null, sectionLabel: null, benefitSpacing: null, roundedBenefitsContainer: null, footer: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderTopStartRadius: 8, borderTopEndRadius: 8, display: "flex", flexDirection: "column", alignItems: "center", padding: 16 };
 obj2.contentWithBackground = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };

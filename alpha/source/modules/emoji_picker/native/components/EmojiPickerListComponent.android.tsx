@@ -1,31 +1,31 @@
-// Module ID: 10588
-// Function ID: 10589
+// Module ID: 10664
+// Function ID: 10665
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 5678, 5682, 10554, 1218, 21, 4757, 4493, 10589, 6871, 1609, 4410, 7317, 10577, 2]
+// Dependencies: [19, 5762, 5766, 10633, 1218, 21, 4827, 4559, 10665, 6955, 1609, 4476, 7401, 10653, 2]
 
-// Module 10588 (EmojiPickerListComponent)
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4410 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4493 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 7317 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 10577 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 10589 */;
+// Module 10664 (EmojiPickerListComponent)
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4476 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4559 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 7401 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 10653 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 10665 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5678 */;
+import EmojiStore from "EmojiStore" /* 5762 */;
 
 const EmojiPickerNativeComponentDefault = EmojiPickerNativeComponent2;
 const ReanimatedRexport = ReanimatedRexport2;
 
 require = fn;
-const EmojiCategoryTypes = fn(5682).EmojiCategoryTypes;
-const IMAGE_SIZE = fn(10554).IMAGE_SIZE;
+const EmojiCategoryTypes = fn(5766).EmojiCategoryTypes;
+const IMAGE_SIZE = fn(10633).IMAGE_SIZE;
 const PADDING_VERTICAL = fn(1218).PADDING_VERTICAL;
 const jsxProd = fn(21);
 ({ jsx: closure_8, Fragment: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_11 = createStyles.createStyles({ container: { flex: 1 } });
 const EmojiPickerNativeComponent = ReanimatedRexport.createAnimatedComponent(EmojiPickerNativeComponentDefault);
-const BottomSheetModal = fn(6871);
-let closure_12 = BottomSheetModal.createBottomSheetScrollableComponent(fn(6871).SCROLLABLE_TYPE.SCROLLVIEW, EmojiPickerNativeComponent);
+const BottomSheetModal = fn(6955);
+let closure_12 = BottomSheetModal.createBottomSheetScrollableComponent(fn(6955).SCROLLABLE_TYPE.SCROLLVIEW, EmojiPickerNativeComponent);
 const MetaQuestUtils = fn(1609);
 let closure_13 = MetaQuestUtils.isMetaQuest();
 const __initData = { code: "function EmojiPickerListComponentAndroidTsx1(){const{bottomSheetIndex}=this.__closure;return bottomSheetIndex.get();}" };

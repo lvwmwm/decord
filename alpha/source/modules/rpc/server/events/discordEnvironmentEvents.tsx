@@ -1,15 +1,15 @@
-// Module ID: 14809
-// Function ID: 14810
+// Module ID: 14889
+// Function ID: 14890
 // Name: discordEnvironmentEvents
-// Dependencies: [109, 4749, 4661, 1074, 9731, 12, 2]
+// Dependencies: [109, 4819, 4731, 1074, 9804, 12, 2]
 // Exports: createDiscordEnvironmentEvents
 
-// Module 14809 (discordEnvironmentEvents)
+// Module 14889 (discordEnvironmentEvents)
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import AccessibilityStore from "AccessibilityStore" /* 4749 */;
+import AccessibilityStore from "AccessibilityStore" /* 4819 */;
 
 let closure_3 = ["uiDensity"];
-const Constants = fn(4661);
+const Constants = fn(4731);
 const RPC_AUTHENTICATED_SCOPE = Constants.RPC_AUTHENTICATED_SCOPE;
 const RPC_EMBEDDED_APP_SCOPE = Constants.RPC_EMBEDDED_APP_SCOPE;
 const RPC_SCOPE_CONFIG = Constants.RPC_SCOPE_CONFIG;

@@ -1,30 +1,30 @@
-// Module ID: 14911
-// Function ID: 14912
+// Module ID: 14991
+// Function ID: 14992
 // Name: EditProfileEffectSection
-// Dependencies: [19, 17, 7793, 9084, 21, 4757, 13482, 14910, 13483, 7429, 8499, 5806, 9109, 9087, 2]
+// Dependencies: [19, 17, 7876, 9155, 21, 4827, 13564, 14990, 13565, 7513, 8570, 5890, 9180, 9158, 2]
 
-// Module 14911 (EditProfileEffectSection)
-import FastImageDefault from "FastImage" /* 5806 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7429 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8499 */;
-import ProfileEffectDefault from "ProfileEffect" /* 9087 */;
-import _modDef9109 from "module_9109" /* 9109 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 13482 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 13483 */;
-import useProfileEffectSections from "useProfileEffectSections" /* 14910 */;
+// Module 14991 (EditProfileEffectSection)
+import FastImageDefault from "FastImage" /* 5890 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7513 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8570 */;
+import ProfileEffectDefault from "ProfileEffect" /* 9158 */;
+import _modDef9180 from "module_9180" /* 9180 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 13564 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 13565 */;
+import useProfileEffectSections from "useProfileEffectSections" /* 14990 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-const isProfileEffectRecord = fn(7793).isProfileEffectRecord;
+const isProfileEffectRecord = fn(7876).isProfileEffectRecord;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4757);
-let obj = { row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13482).GUTTER_SIZE }, rowSpacer: null, profileEffect: null, sampleProfile: null };
-let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13482).GUTTER_SIZE };
-obj.rowSpacer = { height: fn(13482).GUTTER_SIZE };
+const createStyles = fn(4827);
+let obj = { row: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13564).GUTTER_SIZE }, rowSpacer: null, profileEffect: null, sampleProfile: null };
+let obj3 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", paddingHorizontal: fn(13564).GUTTER_SIZE };
+obj.rowSpacer = { height: fn(13564).GUTTER_SIZE };
 obj.profileEffect = { overflow: "hidden", width: "100%", height: "100%" };
-obj.sampleProfile = { aspectRatio: fn(9084).SAMPLE_PROFILE_ASPECT_RATIO, width: "100%" };
+obj.sampleProfile = { aspectRatio: fn(9155).SAMPLE_PROFILE_ASPECT_RATIO, width: "100%" };
 let closure_9 = createStyles.createStyles(obj);
 const memoResult = noop.memo((size) => {
   ({ items, selectedSkuId: require, setSelectedProfileEffect } = size);
@@ -45,10 +45,10 @@ const memoResult = noop.memo((size) => {
   obj2.children = substr.map((item, index) => {
     if (item === useProfileEffectSections.NONE_ITEM) {
       const obj2 = { size, onPress, isSelected: null == closure_1_0, asDefault: null != dependencyMap };
-      return timestampProducer(tmp(13483).EditCollectiblesListItemNone, obj2, "none");
-    } else if (item === tmp(14910).SHOP_ITEM) {
+      return timestampProducer(tmp(13565).EditCollectiblesListItemNone, obj2, "none");
+    } else if (item === tmp(14990).SHOP_ITEM) {
       const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_PROFILE_EFFECT_SHEET };
-      return timestampProducer(tmp(13483).EditCollectiblesListItemShop, obj3, "shop");
+      return timestampProducer(tmp(13565).EditCollectiblesListItemShop, obj3, "shop");
     } else if (isProfileEffectRecord(item)) {
       const obj4 = { item, isSelected: closure_1_0 === item.skuId, setSelectedProfileEffect, isTryItOut, size };
       return timestampProducer(memoResult1, obj4, item.skuId);
@@ -112,7 +112,7 @@ const memoResult1 = noop.memo((isSelected) => {
   const items2 = [tmp.profileEffect, { borderRadius: 6 }];
   obj2.style = items2;
   const obj3 = { source: null, style: null, resizeMode: "cover" };
-  const obj4 = { uri: _modDef9109 };
+  const obj4 = { uri: _modDef9180 };
   obj3.source = obj4;
   obj3.style = tmp.sampleProfile;
   const items3 = [timestampProducer(FastImageDefault, obj3), timestampProducer(ProfileEffectDefault, { skuId: item.skuId, bannerAdjustment: 0, useThumbnail: true, thumbnailUrlOverride: memo })];

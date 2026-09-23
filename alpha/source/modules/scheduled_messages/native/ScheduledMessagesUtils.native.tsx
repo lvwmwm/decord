@@ -1,17 +1,17 @@
-// Module ID: 12468
-// Function ID: 12469
+// Module ID: 12544
+// Function ID: 12545
 // Name: ScheduledMessagesUtils
-// Dependencies: [5, 8022, 1115, 4348, 8091, 4960, 12469, 1980, 12479, 8093, 8090, 8094, 7441, 4724, 11970, 2]
+// Dependencies: [5, 8104, 1115, 4414, 8173, 5030, 12545, 1980, 12555, 8175, 8172, 8176, 7525, 4794, 12047, 2]
 // Exports: cancelScheduledMessage, openRescheduleMessageActionSheet, openScheduleMessageActionSheet, openScheduledMessageEditContentModal, pickScheduledMessageTime, sendScheduledMessageNow, showScheduledMessagesModal
 
-// Module 12468 (ScheduledMessagesUtils)
+// Module 12544 (ScheduledMessagesUtils)
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 4960 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8022 */;
-import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8091 */;
+import _modDef4414 from "module_4414" /* 4414 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8104 */;
+import ScheduledMessageUtils from "ScheduledMessageUtils" /* 8173 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;
@@ -141,11 +141,11 @@ function openSendTimeActionSheet(title) {
   title = title.title;
   ({ startDate: importDefault, scheduledMessageId: dependencyMap, onSelect: asyncGeneratorStep, onClear } = title);
   ({ key, entryPoint, isEditing, channelId } = title);
-  const result = title(8091).trackScheduledMessageTimePickerOpened({ entryPoint, isEditing, channelId });
-  let obj = title(8091);
+  const result = title(8173).trackScheduledMessageTimePickerOpened({ entryPoint, isEditing, channelId });
+  let obj = title(8173);
   let obj3 = { key, header: { title }, hasIcons: false, options: null };
-  let obj2 = title(7441);
-  const presetScheduledTimes = title(8091).getPresetScheduledTimes();
+  let obj2 = title(7525);
+  const presetScheduledTimes = title(8173).getPresetScheduledTimes();
   const items = [
     ...presetScheduledTimes.map((label) => {
       title = label.value;
@@ -164,14 +164,14 @@ function openSendTimeActionSheet(title) {
     ActionSheetActionCreatorsDefault.hideActionSheet();
     const obj2 = ModalActionCreatorsDefault;
     const obj3 = { title, defaultValue, minimumDate: null, maximumDate: null, getError: null, createReminder: null, onClose: null };
-    const tmp2 = asyncRequireImpl(11970, dependencyMap.paths);
+    const tmp2 = asyncRequireImpl(12047, dependencyMap.paths);
     obj3.minimumDate = ScheduledMessageUtils.getEarliestScheduledTime();
     obj3.maximumDate = ScheduledMessageUtils.getLatestScheduledTime(closure_1_2);
     obj3.getError = function getError(isBefore) {
-      return title(8091).getScheduledTimeError(isBefore, dependencyMap);
+      return title(8173).getScheduledTimeError(isBefore, dependencyMap);
     };
     obj3.createReminder = function createReminder(arg0) {
-      return closure_1_3(defaultValue(4348)(arg0));
+      return closure_1_3(defaultValue(4414)(arg0));
     };
     obj3.onClose = ModalActionCreatorsDefault.pop;
     obj2.pushLazy(tmp2, obj3, "scheduled-message-custom-time", { presentation: "modal" });
@@ -210,7 +210,7 @@ export const openScheduleMessageActionSheet = function openScheduleMessageAction
   const intl = require("util").intl;
   obj2.title = intl.string(require("util").t["3+ii4F"]);
   if (null != currentTimestamp) {
-    let defaultScheduledTime = _modDef4348(currentTimestamp);
+    let defaultScheduledTime = _modDef4414(currentTimestamp);
   } else {
     defaultScheduledTime = require("ScheduledMessageUtils").getDefaultScheduledTime();
     const tmp2Result = require("ScheduledMessageUtils");
@@ -232,7 +232,7 @@ export const pickScheduledMessageTime = function pickScheduledMessageTime(arg0) 
   const intl = util.intl;
   obj.title = intl.string(util.t["3+ii4F"]);
   if (null != currentTimestamp) {
-    let defaultScheduledTime = _modDef4348(currentTimestamp);
+    let defaultScheduledTime = _modDef4414(currentTimestamp);
   } else {
     defaultScheduledTime = ScheduledMessageUtils.getDefaultScheduledTime();
     const tmp2Result = ScheduledMessageUtils;
@@ -248,17 +248,17 @@ export const pickScheduledMessageTime = function pickScheduledMessageTime(arg0) 
   openSendTimeActionSheet(obj);
 };
 export const showScheduledMessagesModal = function showScheduledMessagesModal() {
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12469, dependencyMap.paths), {}, "scheduled-messages-modal", { presentation: "modal" });
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12545, dependencyMap.paths), {}, "scheduled-messages-modal", { presentation: "modal" });
 };
 export const openScheduledMessageEditContentModal = function openScheduledMessageEditContentModal(scheduledMessage) {
-  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12479, dependencyMap.paths), { scheduledMessage }, "scheduled-message-edit-content", { presentation: "modal" });
+  ModalActionCreatorsDefault.pushLazy(asyncRequireImpl(12555, dependencyMap.paths), { scheduledMessage }, "scheduled-message-edit-content", { presentation: "modal" });
 };
 export const openRescheduleMessageActionSheet = function openRescheduleMessageActionSheet(scheduledMessageId, sendAtTimestamp, channelId) {
   _require = scheduledMessageId;
   const obj = { key: "reschedule-message", title: null, startDate: null, scheduledMessageId: null, onSelect: null, entryPoint: null, isEditing: true, channelId: null };
   const intl = require("util").intl;
   obj.title = intl.string(require("util").t.jbdHj3);
-  obj.startDate = _modDef4348(sendAtTimestamp);
+  obj.startDate = _modDef4414(sendAtTimestamp);
   obj.scheduledMessageId = scheduledMessageId;
   obj.onSelect = function onSelect(toISOString) {
     return editScheduledMessage(closure_0, { scheduledTimestamp: toISOString.toISOString() });

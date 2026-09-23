@@ -1,11 +1,11 @@
-// Module ID: 15953
-// Function ID: 15954
+// Module ID: 16007
+// Function ID: 16008
 // Name: DevToolsProfilingUseStateFromStores
-// Dependencies: [32, 19, 21, 15954, 4753, 5906, 7447, 5824, 6857, 11860, 10649, 15955, 4714, 1115, 2]
+// Dependencies: [32, 19, 21, 16008, 4823, 5990, 7531, 5908, 6941, 11936, 10725, 16009, 4784, 1115, 2]
 // Exports: DevToolsProfilingUseStateFromStores
 
-// Module 15953 (DevToolsProfilingUseStateFromStores)
-import useStateFromStoresPerformanceDebugging from "useStateFromStoresPerformanceDebugging" /* 15954 */;
+// Module 16007 (DevToolsProfilingUseStateFromStores)
+import useStateFromStoresPerformanceDebugging from "useStateFromStoresPerformanceDebugging" /* 16008 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

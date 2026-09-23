@@ -1,31 +1,22 @@
-// Module ID: 10217
-// Function ID: 10218
+// Module ID: 10297
+// Function ID: 10298
 // Name: getStreamSettingsForPreset
-// Dependencies: [4804, 10218, 10219, 1364, 4895, 2]
+// Dependencies: [4874, 10298, 1364, 4965, 2]
 // Exports: canStreamWithPreset, getMaxSettingsForPreset
 
-// Module 10217 (getStreamSettingsForPreset)
+// Module 10297 (getStreamSettingsForPreset)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import GoLiveVideoPresetResolutionExperimentDefault from "GoLiveVideoPresetResolutionExperiment" /* 10218 */;
-import canStreamWithSettingsDefault from "canStreamWithSettings" /* 10219 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 4804 */;
+import canStreamWithSettingsDefault from "canStreamWithSettings" /* 10298 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 4874 */;
 import size from "module_2" /* 2 */;
 
 function getApplicationStreamPresetValues() {
-  const obj2 = { [closure_1_4.PRESET_DOCUMENTS]: items };
-  items = [{ resolution: hasOwnProperty.RESOLUTION_SOURCE, fps: React3.FPS_15 }, { resolution: hasOwnProperty.RESOLUTION_SOURCE, fps: React3.FPS_5 }];
-  const obj3 = { resolution: hasOwnProperty.RESOLUTION_SOURCE, fps: React3.FPS_15 };
-  const items1 = [{ resolution: GoLiveVideoPresetResolutionExperimentDefault.getConfig({ location: "getApplicationStreamPresetValues" }).videoPresetResolutionMax, fps: React3.FPS_60 }, { resolution: hasOwnProperty.RESOLUTION_1080, fps: React3.FPS_60 }, { resolution: hasOwnProperty.RESOLUTION_720, fps: React3.FPS_60 }, { resolution: hasOwnProperty.RESOLUTION_720, fps: React3.FPS_30 }];
-  obj2[constants.PRESET_VIDEO] = items1;
-  obj2[constants.PRESET_AUTO] = [];
-  obj2[constants.PRESET_CUSTOM] = [];
+  const items = [{ resolution: hasOwnProperty.RESOLUTION_SOURCE, fps: React3.FPS_15 }, { resolution: hasOwnProperty.RESOLUTION_SOURCE, fps: React3.FPS_5 }];
+  const items1 = [{ resolution: hasOwnProperty.RESOLUTION_1440, fps: React3.FPS_60 }, { resolution: hasOwnProperty.RESOLUTION_1080, fps: React3.FPS_60 }, { resolution: hasOwnProperty.RESOLUTION_720, fps: React3.FPS_60 }, { resolution: hasOwnProperty.RESOLUTION_720, fps: React3.FPS_30 }];
   const items2 = [{ resolution: hasOwnProperty.RESOLUTION_720, fps: React3.FPS_30 }];
-  obj2[constants.PRESET_MOBILE_DEFAULT] = items2;
   const items3 = [{ resolution: hasOwnProperty.RESOLUTION_480, fps: React3.FPS_30 }];
-  obj2[constants.PRESET_MOBILE_PERFORMANCE] = items3;
   const items4 = [{ resolution: hasOwnProperty.RESOLUTION_1080, fps: React3.FPS_60 }];
-  obj2[constants.PRESET_MOBILE_HIGH_QUALITY] = items4;
-  return obj2;
+  return { [closure_1_4.PRESET_DOCUMENTS]: items, [closure_1_4.PRESET_VIDEO]: items1, [closure_1_4.PRESET_AUTO]: [], [closure_1_4.PRESET_CUSTOM]: [], [closure_1_4.PRESET_MOBILE_DEFAULT]: items2, [closure_1_4.PRESET_MOBILE_PERFORMANCE]: items3, [closure_1_4.PRESET_MOBILE_HIGH_QUALITY]: items4 };
 }
 function getStreamSettingsForPreset(arg0, user, guildPremiumTier, arg3) {
   const tmp = getApplicationStreamPresetValues()[arg0];
@@ -42,7 +33,7 @@ function getStreamSettingsForPreset(arg0, user, guildPremiumTier, arg3) {
             let tmp26Result = tmp26(1364);
             if (tmp26Result.isDesktop()) {
               let str = "getStreamSettingsForPreset";
-              let tmp11 = tmp4(4895)("getStreamSettingsForPreset", arg1, arg3);
+              let tmp11 = tmp4(4965)("getStreamSettingsForPreset", arg1, arg3);
               let tmp12 = tmp11;
               let maxResolution;
               if (tmp11 != null) {

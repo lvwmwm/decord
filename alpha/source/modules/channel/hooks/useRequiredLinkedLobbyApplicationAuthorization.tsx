@@ -1,15 +1,15 @@
-// Module ID: 12694
-// Function ID: 12695
+// Module ID: 12776
+// Function ID: 12777
 // Name: useRequiredLinkedLobbyApplicationAuthorization
-// Dependencies: [19, 4984, 7354, 504, 7417, 7410, 2]
+// Dependencies: [19, 5054, 7438, 504, 7501, 7494, 2]
 // Exports: default
 
-// Module 12694 (useRequiredLinkedLobbyApplicationAuthorization)
+// Module 12776 (useRequiredLinkedLobbyApplicationAuthorization)
 import _mod19 from "module_19" /* 19 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7354 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7410 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7417 */;
-import ApplicationStore from "ApplicationStore" /* 4984 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7438 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7494 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7501 */;
+import ApplicationStore from "ApplicationStore" /* 5054 */;
 import size from "module_2" /* 2 */;
 
 const AuthorizedAppsStore = AuthorizedAppsStore2;

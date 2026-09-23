@@ -1,15 +1,15 @@
-// Module ID: 12871
-// Function ID: 12872
+// Module ID: 12953
+// Function ID: 12954
 // Name: Tabs/Tabs
-// Dependencies: [19, 17, 2109, 21, 4493, 4757, 576, 5186, 9670, 12872, 6899, 1364, 2]
+// Dependencies: [19, 17, 2109, 21, 4559, 4827, 576, 5270, 9743, 12954, 6983, 1364, 2]
 // Exports: Tabs
 
-// Module 12871 (Tabs/Tabs)
+// Module 12953 (Tabs/Tabs)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4493 */;
-import spring from "spring" /* 5186 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6899 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9670 */;
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4559 */;
+import spring from "spring" /* 5270 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6983 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9743 */;
 import noop from "module_19" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2109 */;
 
@@ -26,7 +26,7 @@ const jsxProd = fn(21);
 let closure_8 = ReanimatedRexport.createAnimatedComponent(ScrollView);
 let c9 = 0.04;
 let closure_10 = { mass: 0.3, damping: 13, stiffness: 100, restDisplacementThreshold: 0.001, overshootClamping: true };
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_11 = createStyles.createStyles((gap, arg1) => {
   const obj = { container: { display: "flex", flexGrow: 1, minWidth: "100%", flexDirection: "row", alignItems: "center", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 }, controlsContainer: null, indicatorContainer: null, indicator: null };
   const obj2 = { display: "flex", flexGrow: 1, minWidth: "100%", flexDirection: "row", alignItems: "center", borderBottomColor: nativeDefault.colors.BORDER_SUBTLE, borderBottomWidth: 1 };
@@ -322,7 +322,7 @@ export const Tabs = function Tabs(state) {
         const result = pressed.set(-1);
       };
       obj.variant = variant;
-      return variant(state(12872).TabItem, obj, id);
+      return variant(state(12954).TabItem, obj, id);
     })
   }), items3);
   const memo1 = simultaneousHandlers.useMemo(() => {

@@ -1,27 +1,27 @@
-// Module ID: 8540
-// Function ID: 8541
+// Module ID: 8611
+// Function ID: 8612
 // Name: MediaSourceUtil
-// Dependencies: [19, 17, 2042, 1074, 4907, 1385, 7536, 7541, 1477, 8541, 7574, 8135, 5102, 8208, 4981, 1978, 8383, 8399, 1370, 8542, 1094, 4454, 8536, 5110, 1115, 8543, 2]
+// Dependencies: [19, 17, 2042, 1074, 4977, 1385, 7620, 7625, 1477, 8612, 7657, 8217, 5186, 8290, 5051, 1978, 8465, 8481, 1370, 8613, 1094, 4520, 8607, 5194, 1115, 8614, 2]
 // Exports: downloadMediaAsset, downloadMediaAssetWithContentType, extractMediaFromMessageComponents, extractMediaSourcesFromComponent, extractMediaSourcesFromEmbed, extractMediaSourcesFromMessage, flattenSource, getAttachmentUrl, getEmbedMedia, getEmbedUrl, getSelectedMediaSource, getVideoSourceType, getYoutubeClipVideoIdFromURI, getYoutubeVideoIdFromURI, isAnimatedAvifSource, isAnimatedImageSource, isAnimatedWebpSource, isGIFSource, isThumbnailAttachment, isValidImageEmbed, isValidVideoAttachment, isValidVideoEmbed, setMediaSourcePortal, supportOverlayVideoControls, useSelectedMediaSource
 
-// Module 8540 (MediaSourceUtil)
+// Module 8611 (MediaSourceUtil)
 import ConstantsIOS from "ConstantsIOS" /* 1094 */;
 import util from "util" /* 1115 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import utils_ImageUtilsDefault from "utils/ImageUtils" /* 1477 */;
 import Server from "Server" /* 1978 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4907 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 4981 */;
-import EmbedUtils from "EmbedUtils" /* 5102 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5110 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7536 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7541 */;
-import renderMessageMarkupDefault from "renderMessageMarkup" /* 8135 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8208 */;
-import transformMessageComponents from "transformMessageComponents" /* 8383 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 8399 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8542 */;
-import NativePortalView from "NativePortalView" /* 8543 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4977 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5051 */;
+import EmbedUtils from "EmbedUtils" /* 5186 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5194 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7620 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7625 */;
+import renderMessageMarkupDefault from "renderMessageMarkup" /* 8217 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8290 */;
+import transformMessageComponents from "transformMessageComponents" /* 8465 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 8481 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 8613 */;
+import NativePortalView from "NativePortalView" /* 8614 */;
 import noop from "module_19" /* 19 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
 
@@ -79,7 +79,7 @@ function extractMediaFromAttachment(found, message2, mediaIndex, guildIdFromSear
             }
             const mobileOptimizedSrc = obj.getMobileOptimizedSrc(url, width, height, str2);
             if (isVideoFileResult) {
-              const size = { uri: mobileOptimizedSrc, messageId: message2.id, guildId: guildIdFromSearchContext, channelId: message2.channel_id, videoURI: url, filename: tmp(8541)(found), mediaIndex, width: null, height: null, sourceURI: null, contentType: null, description: null, accessoryType: "attachment", spoiler: null, flags: null, obscure: null, placeholder: null, contentScanVersion: null, mediaViewIndex: null, attachmentId: null, shareURI: null };
+              const size = { uri: mobileOptimizedSrc, messageId: message2.id, guildId: guildIdFromSearchContext, channelId: message2.channel_id, videoURI: url, filename: tmp(8612)(found), mediaIndex, width: null, height: null, sourceURI: null, contentType: null, description: null, accessoryType: "attachment", spoiler: null, flags: null, obscure: null, placeholder: null, contentScanVersion: null, mediaViewIndex: null, attachmentId: null, shareURI: null };
               ({ width: obj11.width, height: obj11.height } = found);
               size.sourceURI = url;
               ({ content_type: obj11.contentType, description: obj11.description } = found);
@@ -89,8 +89,8 @@ function extractMediaFromAttachment(found, message2, mediaIndex, guildIdFromSear
               }
               let hasFlagResult = tmp43(1385).hasFlag(num3, constants.IS_SPOILER);
               if (!hasFlagResult) {
-                hasFlagResult = tmp43(7574).isChannelSpoilerGated(ChannelStore.getChannel(message2.channel_id));
-                const tmp43Result5 = tmp43(7574);
+                hasFlagResult = tmp43(7657).isChannelSpoilerGated(ChannelStore.getChannel(message2.channel_id));
+                const tmp43Result5 = tmp43(7657);
               }
               size.spoiler = hasFlagResult;
               size.flags = found.flags;
@@ -101,7 +101,7 @@ function extractMediaFromAttachment(found, message2, mediaIndex, guildIdFromSear
               size.shareURI = url;
               return size;
             } else {
-              const size1 = { uri: mobileOptimizedSrc, messageId: message2.id, guildId: guildIdFromSearchContext, channelId: message2.channel_id, filename: tmp(8541)(found), mediaIndex, width: null, height: null, sourceURI: null, contentType: null, description: null, accessoryType: "attachment", spoiler: null, flags: null, obscure: null, placeholder: null, contentScanVersion: null, mediaViewIndex: null, attachmentId: null, shareURI: null };
+              const size1 = { uri: mobileOptimizedSrc, messageId: message2.id, guildId: guildIdFromSearchContext, channelId: message2.channel_id, filename: tmp(8612)(found), mediaIndex, width: null, height: null, sourceURI: null, contentType: null, description: null, accessoryType: "attachment", spoiler: null, flags: null, obscure: null, placeholder: null, contentScanVersion: null, mediaViewIndex: null, attachmentId: null, shareURI: null };
               ({ width: obj2.width, height: obj2.height, url: obj2.sourceURI, content_type: obj2.contentType, description: obj2.description } = found);
               let num = found.flags;
               if (num == null) {
@@ -109,8 +109,8 @@ function extractMediaFromAttachment(found, message2, mediaIndex, guildIdFromSear
               }
               let hasFlagResult1 = tmp43(1385).hasFlag(num, constants.IS_SPOILER);
               if (!hasFlagResult1) {
-                hasFlagResult1 = tmp43(7574).isChannelSpoilerGated(ChannelStore.getChannel(message2.channel_id));
-                const tmp43Result7 = tmp43(7574);
+                hasFlagResult1 = tmp43(7657).isChannelSpoilerGated(ChannelStore.getChannel(message2.channel_id));
+                const tmp43Result7 = tmp43(7657);
               }
               size1.spoiler = hasFlagResult1;
               size1.flags = found.flags;
@@ -123,12 +123,12 @@ function extractMediaFromAttachment(found, message2, mediaIndex, guildIdFromSear
               obj4.uri = url;
               const tmp11 = constants;
               const tmp43Result6 = tmp43(1385);
-              const formatted = tmp(8541)(found).toLowerCase();
-              const str3 = tmp(8541)(found);
+              const formatted = tmp(8612)(found).toLowerCase();
+              const str3 = tmp(8612)(found);
               const endsWithResult = formatted.endsWith(".webp");
-              const formatted1 = tmp(8541)(found).toLowerCase();
+              const formatted1 = tmp(8612)(found).toLowerCase();
               const endsWithResult1 = formatted1.endsWith(".avif");
-              const str5 = tmp(8541)(found);
+              const str5 = tmp(8612)(found);
               let num2 = found.flags;
               if (num2 == null) {
                 num2 = 0;
@@ -498,7 +498,7 @@ function toMediaSourceFromUnfurledMedia(id, guildId, media, description, spoiler
     if (num == null) {
       num = 0;
     }
-    const tmp4 = unfurledMediaItemType === tmp(8399).MediaGalleryItemType.VIDEO;
+    const tmp4 = unfurledMediaItemType === tmp(8481).MediaGalleryItemType.VIDEO;
     let str;
     if (tmp4) {
       str = "png";
@@ -509,12 +509,12 @@ function toMediaSourceFromUnfurledMedia(id, guildId, media, description, spoiler
     if (contentScanMetadata != null) {
       version = contentScanMetadata.version;
     }
-    const enabledHarmTypesForMessage = tmp(7536).getEnabledHarmTypesForMessage(id);
-    const tmpResult = tmp(7536);
-    const obj2 = { type: tmp(7541).ObscuredMediaTypes.GenericMedia, media };
+    const enabledHarmTypesForMessage = tmp(7620).getEnabledHarmTypesForMessage(id);
+    const tmpResult = tmp(7620);
+    const obj2 = { type: tmp(7625).ObscuredMediaTypes.GenericMedia, media };
     const size = { messageId: id.id, guildId, channelId: id.channel_id, uri: mobileOptimizedSrc, sourceURI: null, width: null, height: null, contentType: null, description: null, spoiler: null, obscure: null, contentScanVersion: null, accessoryType: "component", mediaIndex: 0, shareURI: null };
     ({ url: obj5.sourceURI, width: width2 } = media);
-    const result = tmp(7536).isMediaObscuredForHarmTypes(obj2, enabledHarmTypesForMessage);
+    const result = tmp(7620).isMediaObscuredForHarmTypes(obj2, enabledHarmTypesForMessage);
     if (width2 == null) {
       width2 = 0;
     }
@@ -547,7 +547,7 @@ function toMediaSourceFromUnfurledMedia(id, guildId, media, description, spoiler
       }
       return tmp21;
     }
-    const tmpResult2 = tmp(7536);
+    const tmpResult2 = tmp(7620);
   }
 }
 function handleDownloadError() {
@@ -921,16 +921,16 @@ export const downloadMediaAsset = function downloadMediaAsset(mediaUrl, VIDEO) {
   const MediaManager = NativeModules.MediaManager;
   return MediaManager.downloadMediaAsset(mediaUrl, VIDEO).then(() => {
     if (ConstantsIOS.MediaType.IMAGE === closure_0) {
-      tmp2(4454).presentImageSaved();
-      const tmp2Result = tmp2(4454);
+      tmp2(4520).presentImageSaved();
+      const tmp2Result = tmp2(4520);
     } else if (tmp2(1094).MediaType.GIF === tmp) {
-      tmp2(4454).presentGifSaved();
-      const tmp2Result3 = tmp2(4454);
+      tmp2(4520).presentGifSaved();
+      const tmp2Result3 = tmp2(4520);
     } else if (tmp2(1094).MediaType.VIDEO === tmp) {
-      tmp2(4454).presentVideoSaved();
-      const tmp2Result4 = tmp2(4454);
+      tmp2(4520).presentVideoSaved();
+      const tmp2Result4 = tmp2(4520);
     }
-    const MediaViewerAnalytics = tmp2(8536).MediaViewerAnalytics;
+    const MediaViewerAnalytics = tmp2(8607).MediaViewerAnalytics;
     const result = MediaViewerAnalytics.trackMediaViewerDownloadButtonTapped();
   }, handleDownloadError);
 };
@@ -945,16 +945,16 @@ export const downloadMediaAssetWithContentType = function downloadMediaAssetWith
   }
   return result.then(() => {
     if (ConstantsIOS.MediaType.IMAGE === closure_0) {
-      tmp2(4454).presentImageSaved();
-      const tmp2Result = tmp2(4454);
+      tmp2(4520).presentImageSaved();
+      const tmp2Result = tmp2(4520);
     } else if (tmp2(1094).MediaType.GIF === tmp) {
-      tmp2(4454).presentGifSaved();
-      const tmp2Result3 = tmp2(4454);
+      tmp2(4520).presentGifSaved();
+      const tmp2Result3 = tmp2(4520);
     } else if (tmp2(1094).MediaType.VIDEO === tmp) {
-      tmp2(4454).presentVideoSaved();
-      const tmp2Result4 = tmp2(4454);
+      tmp2(4520).presentVideoSaved();
+      const tmp2Result4 = tmp2(4520);
     }
-    const MediaViewerAnalytics = tmp2(8536).MediaViewerAnalytics;
+    const MediaViewerAnalytics = tmp2(8607).MediaViewerAnalytics;
     const result = MediaViewerAnalytics.trackMediaViewerDownloadButtonTapped();
   }, handleDownloadError);
 };
@@ -1066,8 +1066,8 @@ export const isAnimatedImageSource = function isAnimatedImageSource(source) {
   if (!result) {
     let result1 = null != source.sourceURI && null != source.uri;
     if (result1) {
-      result1 = tmp(4907).urlMatchesFileExtension(source.sourceURI, React5);
-      const tmpResult = tmp(4907);
+      result1 = tmp(4977).urlMatchesFileExtension(source.sourceURI, React5);
+      const tmpResult = tmp(4977);
     }
     if (result1) {
       const _URL = URL;
@@ -1080,8 +1080,8 @@ export const isAnimatedImageSource = function isAnimatedImageSource(source) {
   if (!result) {
     let result2 = null != source.sourceURI && null != source.uri;
     if (result2) {
-      result2 = tmp(4907).urlMatchesFileExtension(source.sourceURI, re8);
-      const tmpResult2 = tmp(4907);
+      result2 = tmp(4977).urlMatchesFileExtension(source.sourceURI, re8);
+      const tmpResult2 = tmp(4977);
     }
     if (result2) {
       const _URL2 = URL;

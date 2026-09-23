@@ -1,10 +1,10 @@
-// Module ID: 11148
-// Function ID: 11149
+// Module ID: 11224
+// Function ID: 11225
 // Name: useGameMentionsAsPlainText
-// Dependencies: [19, 2000, 1372, 5212, 7553, 504, 2010, 5329, 1115, 2]
+// Dependencies: [19, 2000, 1372, 5296, 7637, 504, 2010, 5413, 1115, 2]
 // Exports: useGameMentionsAsPlainText
 
-// Module 11148 (useGameMentionsAsPlainText)
+// Module 11224 (useGameMentionsAsPlainText)
 import noop from "module_19" /* 19 */;
 import GameStore from "GameStore" /* 2000 */;
 import UserStore from "UserStore" /* 1372 */;
@@ -12,7 +12,7 @@ import UserStore from "UserStore" /* 1372 */;
 const require = globalThis.__r;
 
 const require = fn;
-const ChannelAutocompleteConstants = fn(5212);
+const ChannelAutocompleteConstants = fn(5296);
 ({ extractGameMentionIds: hasOwnProperty, GAME_MENTION_RAW_RE_GLOBAL: metroRequire } = ChannelAutocompleteConstants);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_mentions/hooks/useGameMentionsAsPlainText.tsx");

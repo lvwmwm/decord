@@ -1,9 +1,9 @@
-// Module ID: 4390
-// Function ID: 4391
+// Module ID: 4456
+// Function ID: 4457
 // Name: CreatorMonetizationReviewConstants
 // Dependencies: [2]
 
-// Module 4390 (CreatorMonetizationReviewConstants)
+// Module 4456 (CreatorMonetizationReviewConstants)
 import size from "module_2" /* 2 */;
 
 const obj = { NEW_PURCHASES_DISABLED: "NEW_PURCHASES_DISABLED", REAPPLICATION_DISABLED: "REAPPLICATION_DISABLED", SETTINGS_READ_ONLY: "SETTINGS_READ_ONLY", SUBSCRIPTIONS_ENDED_FULL_REFUND: "SUBSCRIPTIONS_ENDED_FULL_REFUND", SUBSCRIPTIONS_ENDED_PRORATED_REFUND: "SUBSCRIPTIONS_ENDED_PRORATED_REFUND" };

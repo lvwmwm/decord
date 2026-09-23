@@ -1,8 +1,8 @@
-// Module ID: 6705
-// Function ID: 6706
+// Module ID: 6789
+// Function ID: 6790
 // Dependencies: [2]
 
-// Module 6705
+// Module 6789
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SkullIllocon-2x.png.js");

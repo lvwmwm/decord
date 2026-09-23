@@ -1,9 +1,9 @@
-// Module ID: 8262
-// Function ID: 8263
+// Module ID: 8344
+// Function ID: 8345
 // Name: LottieNodeNativeComponent
 // Dependencies: [65, 114, 2]
 
-// Module 8262 (LottieNodeNativeComponent)
+// Module 8344 (LottieNodeNativeComponent)
 import renderElement from "renderElement" /* 114 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

@@ -1,25 +1,25 @@
-// Module ID: 15408
-// Function ID: 15409
+// Module ID: 15460
+// Function ID: 15461
 // Name: VideoQuestPlayer
-// Dependencies: [32, 19, 7944, 5663, 21, 15401, 11742, 11552, 4379, 15299, 15409, 7963, 15411, 1363, 11771, 11546, 15419, 15312, 2]
+// Dependencies: [32, 19, 8026, 5747, 21, 15453, 11818, 11628, 4445, 15351, 15461, 8045, 15463, 1363, 11847, 11622, 15471, 15364, 2]
 
-// Module 15408 (VideoQuestPlayer)
-import QuestActionCreators from "QuestActionCreators" /* 11546 */;
-import AssetUtils from "AssetUtils" /* 11552 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 11771 */;
-import SimpleMuxWrapper from "SimpleMuxWrapper" /* 15411 */;
-import VideoQuestCaptions from "VideoQuestCaptions" /* 15419 */;
+// Module 15460 (VideoQuestPlayer)
+import QuestActionCreators from "QuestActionCreators" /* 11622 */;
+import AssetUtils from "AssetUtils" /* 11628 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 11847 */;
+import SimpleMuxWrapper from "SimpleMuxWrapper" /* 15463 */;
+import VideoQuestCaptions from "VideoQuestCaptions" /* 15471 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VideoQuestUIStore from "VideoQuestUIStore" /* 7944 */;
+import VideoQuestUIStore from "VideoQuestUIStore" /* 8026 */;
 
 require = fn;
-const QuestsExperimentLocations = fn(5663).QuestsExperimentLocations;
+const QuestsExperimentLocations = fn(5747).QuestsExperimentLocations;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/VideoQuestModal/VideoQuestPlayer.tsx");
 
-export const PlayerState = fn(15299).PlayerState;
+export const PlayerState = fn(15351).PlayerState;
 export const VideoQuestPlayer = noop.memo((onLoad) => {
   onLoad = onLoad.onLoad;
   const onEnd = onLoad.onEnd;
@@ -156,7 +156,7 @@ export const VideoQuestPlayer = noop.memo((onLoad) => {
             ({ Version: obj4.appVersion, ReleaseChannel: obj4.releaseChannel } = constants);
             const obj5 = { contentId: arr, videoStreamType: str, contentType: "quests", durationMs: 1000 * targetSeconds, title: videoTitle, questId: id, gameName: gameTitle };
             obj3.contentMetadata = obj5;
-            const mobileMuxWrapper = new tmp2(15411).MobileMuxWrapper(obj3);
+            const mobileMuxWrapper = new tmp2(15463).MobileMuxWrapper(obj3);
             ref2.current = mobileMuxWrapper;
             let current = ref2.current;
             current.initialize();

@@ -1,10 +1,10 @@
-// Module ID: 12897
-// Function ID: 12898
+// Module ID: 12979
+// Function ID: 12980
 // Name: getChatPlaceholderRowHeight
 // Dependencies: [576, 1177, 2]
 // Exports: default
 
-// Module 12897 (getChatPlaceholderRowHeight)
+// Module 12979 (getChatPlaceholderRowHeight)
 import nativeDefault from "native" /* 576 */;
 
 const PX_24 = nativeDefault.space.PX_24;

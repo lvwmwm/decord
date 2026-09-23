@@ -1,19 +1,19 @@
-// Module ID: 10930
-// Function ID: 10931
+// Module ID: 11006
+// Function ID: 11007
 // Name: PremiumGiftPlanSelect
-// Dependencies: [32, 19, 17, 8465, 10931, 1374, 1074, 21, 4757, 576, 672, 1484, 1612, 1478, 10965, 5172, 5849, 504, 11008, 11006, 8457, 11010, 10928, 11013, 11016, 8150, 4493, 1177, 4758, 11024, 7429, 11025, 11059, 9656, 1115, 5899, 5806, 11314, 5199, 5901, 4753, 2]
+// Dependencies: [32, 19, 17, 8536, 11007, 1374, 1074, 21, 4827, 576, 672, 1484, 1612, 1478, 11041, 5256, 5933, 504, 11084, 11082, 8528, 11086, 11004, 11089, 11092, 8232, 4559, 1177, 4828, 11100, 7513, 11101, 11135, 9729, 1115, 5983, 5890, 11390, 5283, 5985, 4823, 2]
 // Exports: default
 
-// Module 10930 (PremiumGiftPlanSelect)
+// Module 11006 (PremiumGiftPlanSelect)
 import nativeDefault from "native" /* 576 */;
 import _modDef672 from "module_672" /* 672 */;
 import native from "native" /* 1177 */;
-import timing from "timing" /* 4758 */;
-import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 11016 */;
+import timing from "timing" /* 4828 */;
+import PremiumGiftFeaturesCardDefault from "PremiumGiftFeaturesCard" /* 11092 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8465 */;
-import PromotionsStore from "PromotionsStore" /* 10931 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8536 */;
+import PromotionsStore from "PromotionsStore" /* 11007 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -24,7 +24,7 @@ const jsxProd = fn(21);
 let items = [, ];
 ({ TIER_2: arr[0], TIER_0: arr[1] } = fn(1374).PremiumTypes);
 let c16 = 16;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let closure_17 = createStyles.createStyles((width, arg1, arg2) => {
   const obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, headerBackground: null, headerBackgroundColor: null, headerImageContainer: null, headerImage: null, headerOverlay: null, avatar: null, title: null, description: null, carousel: null, dmGiftingContent: null, loadingContainer: null, closeButtonContainer: null, closeButton: null, closeButtonIcon: null, badgeBanner: null };
   const size = { position: "absolute", width, height: 0.1 * arg1, top: arg1 / 1.75 - 0.1 * arg1 };

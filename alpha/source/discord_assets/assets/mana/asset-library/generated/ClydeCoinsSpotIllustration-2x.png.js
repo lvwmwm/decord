@@ -1,8 +1,8 @@
-// Module ID: 6097
-// Function ID: 6098
+// Module ID: 6181
+// Function ID: 6182
 // Dependencies: [2]
 
-// Module 6097
+// Module 6181
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ClydeCoinsSpotIllustration-2x.png.js");

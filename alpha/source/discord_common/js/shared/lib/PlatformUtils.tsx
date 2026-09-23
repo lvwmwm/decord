@@ -1,9 +1,9 @@
-// Module ID: 4997
-// Function ID: 4998
+// Module ID: 5081
+// Function ID: 5082
 // Name: shared/PlatformUtils
 // Dependencies: [1340, 2]
 
-// Module 4997 (shared/PlatformUtils)
+// Module 5081 (shared/PlatformUtils)
 import format_mod from "format" /* 1340 */;
 
 const set1 = new Set(["Android", "iOS", "Windows Phone"]);

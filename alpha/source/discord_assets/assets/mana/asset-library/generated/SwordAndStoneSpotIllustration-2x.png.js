@@ -1,8 +1,8 @@
-// Module ID: 6777
-// Function ID: 6778
+// Module ID: 6861
+// Function ID: 6862
 // Dependencies: [2]
 
-// Module 6777
+// Module 6861
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SwordAndStoneSpotIllustration-2x.png.js");

@@ -1,10 +1,10 @@
-// Module ID: 11763
-// Function ID: 11764
+// Module ID: 11839
+// Function ID: 11840
 // Name: AppStoreOverlayStatCardUtils
 // Dependencies: [2]
 // Exports: formatAppStoreChartRank, formatAppStoreRatingCount, formatAppStoreRatingValue, getAppStoreStarFillAmounts
 
-// Module 11763 (AppStoreOverlayStatCardUtils)
+// Module 11839 (AppStoreOverlayStatCardUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/native/AppStoreOverlay/AppStoreOverlayStatCardUtils.tsx");

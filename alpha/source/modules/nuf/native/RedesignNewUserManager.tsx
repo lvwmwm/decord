@@ -1,13 +1,13 @@
-// Module ID: 17863
-// Function ID: 17864
+// Module ID: 17932
+// Function ID: 17933
 // Name: RedesignNewUserManager
-// Dependencies: [12934, 5778, 7365, 10082, 17864, 4960, 17866, 1980, 17865, 1364, 4614, 2]
+// Dependencies: [13016, 5862, 7449, 10162, 17933, 5030, 17935, 1980, 17934, 1364, 4684, 2]
 
-// Module 17863 (RedesignNewUserManager)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4614 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 12934 */;
-import NewUserStore from "NewUserStore" /* 5778 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+// Module 17932 (RedesignNewUserManager)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4684 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13016 */;
+import NewUserStore from "NewUserStore" /* 5862 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7449 */;
 import size from "module_2" /* 2 */;
 
 ({ initialize: c3, ContactSyncModes: closure_4 } = ContactSyncModalStore);

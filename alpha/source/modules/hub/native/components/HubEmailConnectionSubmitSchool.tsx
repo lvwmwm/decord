@@ -1,19 +1,19 @@
-// Module ID: 12993
-// Function ID: 12994
+// Module ID: 13075
+// Function ID: 13076
 // Name: HubEmailConnectionSubmitSchool
-// Dependencies: [5, 32, 19, 17, 12976, 1074, 21, 4757, 576, 1484, 7228, 12989, 4657, 12984, 1177, 1115, 4753, 6849, 5187, 2]
+// Dependencies: [5, 32, 19, 17, 13058, 1074, 21, 4827, 576, 1484, 7312, 13071, 4727, 13066, 1177, 1115, 4823, 6933, 5271, 2]
 // Exports: default
 
-// Module 12993 (HubEmailConnectionSubmitSchool)
+// Module 13075 (HubEmailConnectionSubmitSchool)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import useNavigation from "useNavigation" /* 1484 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import components_Button_Button from "components/Button/Button" /* 5187 */;
-import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6849 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7228 */;
-import HubEmailConnectionModal from "HubEmailConnectionModal" /* 12984 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import components_Button_Button from "components/Button/Button" /* 5271 */;
+import FreeFormInputGroupDefault from "FreeFormInputGroup" /* 6933 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7312 */;
+import HubEmailConnectionModal from "HubEmailConnectionModal" /* 13066 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -21,10 +21,10 @@ import noop from "module_19" /* 19 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const HubEmailConnectionSteps = fn(12976).HubEmailConnectionSteps;
+const HubEmailConnectionSteps = fn(13058).HubEmailConnectionSteps;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { paddingHorizontal: 16 }, title: { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 }, description: { textAlign: "center", marginBottom: 24 }, scrollViewContainer: { flexGrow: 2 }, input: { marginBottom: 8 }, redesignTextInput: null, redesignGrowSpacing: null, redesignSubmit: null };
 let obj3 = { fontFamily: fn(1074).Fonts.PRIMARY_BOLD, color: nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, fontSize: 24, textAlign: "center", marginBottom: 8 };
 obj2.redesignTextInput = { borderRadius: nativeDefault.radii.lg };

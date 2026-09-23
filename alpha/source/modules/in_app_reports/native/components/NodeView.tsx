@@ -1,24 +1,24 @@
-// Module ID: 8919
-// Function ID: 8920
+// Module ID: 8990
+// Function ID: 8991
 // Name: NodeView
-// Dependencies: [32, 19, 17, 4756, 2042, 4396, 8920, 8918, 1074, 1085, 21, 4757, 576, 5817, 5207, 4753, 4606, 4711, 504, 5341, 8921, 1484, 5172, 5181, 8915, 8913, 4937, 4468, 8923, 8927, 8928, 7370, 8931, 8932, 8933, 8934, 8939, 8940, 13202, 13203, 13204, 13205, 13206, 13207, 13208, 13210, 13212, 13213, 13214, 13215, 13216, 13217, 13218, 13221, 2]
+// Dependencies: [32, 19, 17, 4826, 2042, 4462, 8991, 8989, 1074, 1085, 21, 4827, 576, 5901, 5291, 4823, 4676, 4781, 504, 5425, 8992, 1484, 5256, 5265, 8986, 8984, 5007, 4534, 8994, 8998, 8999, 7454, 9002, 9003, 9004, 9005, 9010, 9011, 13284, 13285, 13286, 13287, 13288, 13289, 13290, 13292, 13294, 13295, 13296, 13297, 13298, 13299, 13300, 13303, 2]
 // Exports: default
 
-// Module 8919 (NodeView)
+// Module 8990 (NodeView)
 import nativeDefault from "native" /* 576 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4468 */;
-import ColorUtils from "ColorUtils" /* 4606 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 4711 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4937 */;
-import CustomMarkupAll from "CustomMarkup" /* 5207 */;
-import MenuTypes from "MenuTypes" /* 8913 */;
-import ArrowDefault from "Arrow" /* 8921 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4534 */;
+import ColorUtils from "ColorUtils" /* 4676 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 4781 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5007 */;
+import CustomMarkupAll from "CustomMarkup" /* 5291 */;
+import MenuTypes from "MenuTypes" /* 8984 */;
+import ArrowDefault from "Arrow" /* 8992 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 4756 */;
+import DevSettingsStore from "DevSettingsStore" /* 4826 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import PermissionStore from "PermissionStore" /* 4396 */;
+import PermissionStore from "PermissionStore" /* 4462 */;
 
 require = fn;
 function HeaderView(node) {
@@ -90,20 +90,20 @@ function ChildItem(child) {
   const obj2 = { style: tmp.childButton, accessibilityRole: "button", onPress: _slicedToArray(noop.useState(() => () => closure_1_1.onPress(child)), 1)[0], children: null };
   const obj3 = { style: tmp.childContainer, children: null };
   const obj4 = { style: tmp.childContent, children: null };
-  const items1 = [closure_16(child(4753).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
+  const items1 = [closure_16(child(4823).Text, { style: tmp.childButtonText, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp3 }), ];
   if (stateFromStores) {
     stateFromStores = null != report_type;
   }
   if (stateFromStores) {
     const obj6 = { style: tmp.debugText, variant: "text-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = tmp9(tmp5(4753).Text, obj6);
+    stateFromStores = tmp9(tmp5(4823).Text, obj6);
   }
   items1[1] = stateFromStores;
   obj4.children = items1;
   const items2 = [closure_17(closure_6, obj4), closure_16(ArrowDefault, {})];
   obj3.children = items2;
   obj2.children = closure_17(closure_6, obj3);
-  return closure_16(child(5341).PressableHighlight, obj2);
+  return closure_16(child(5425).PressableHighlight, obj2);
 }
 function ChildrenView(node) {
   const children = node.node.children;
@@ -129,14 +129,14 @@ function NullComponent() {
 }
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const REMEDIATION_ELEMENT_TYPES = fn(8920).REMEDIATION_ELEMENT_TYPES;
-const IN_APP_REPORTS_NODE = fn(8918).IN_APP_REPORTS_NODE;
+const REMEDIATION_ELEMENT_TYPES = fn(8991).REMEDIATION_ELEMENT_TYPES;
+const IN_APP_REPORTS_NODE = fn(8989).IN_APP_REPORTS_NODE;
 const Constants = fn(1074);
 ({ AnalyticEvents: map1, ChannelTypes: closure_14 } = Constants);
 const Permissions = fn(1085).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_16, jsxs: closure_17 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, marginTop: 30 }, scrollView: { flex: 1, alignSelf: "stretch", marginTop: 24 }, childrenContainer: { flex: 1, alignSelf: "stretch", paddingHorizontal: 16 }, headerContainer: { alignSelf: "stretch", marginBottom: 24, paddingHorizontal: 16 }, header: { marginBottom: 8, textAlign: "center" }, subheader: { lineHeight: 20, marginBottom: 8, textAlign: "center" }, description: { lineHeight: 16, marginBottom: 8, textAlign: "center" }, infoBox: null, infoBoxText: null, childButton: null, childContainer: null, childContent: null, childButtonText: null, debugText: null };
 let obj3 = { flex: 1, alignSelf: "stretch", justifyContent: "flex-start", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, marginTop: 30 };
 obj2.infoBox = { alignSelf: "stretch", alignItems: "center", backgroundColor: nativeDefault.unsafe_rawColors.BLUE_345, borderRadius: nativeDefault.radii.xs, borderColor: nativeDefault.unsafe_rawColors.BLUE_345, borderWidth: 1, padding: 8, flexDirection: "row", marginBottom: 16, marginHorizontal: 16 };

@@ -1,10 +1,10 @@
-// Module ID: 9915
-// Function ID: 9916
+// Module ID: 9988
+// Function ID: 9989
 // Name: NativeAudioManagerModule
 // Dependencies: [17, 2]
 // Exports: getInvalidAndroidDevice
 
-// Module 9915 (NativeAudioManagerModule)
+// Module 9988 (NativeAudioManagerModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

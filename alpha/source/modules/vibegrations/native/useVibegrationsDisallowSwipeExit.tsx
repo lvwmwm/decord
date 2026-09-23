@@ -1,11 +1,11 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 17035
+// Function ID: 17036
 // Name: useVibegrationsDisallowSwipeExit
-// Dependencies: [19, 16352, 2]
+// Dependencies: [19, 16405, 2]
 // Exports: default
 
-// Module 16978 (useVibegrationsDisallowSwipeExit)
-import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16352 */;
+// Module 17035 (useVibegrationsDisallowSwipeExit)
+import MainTabsNavigatorPanelContext from "MainTabsNavigatorPanelContext" /* 16405 */;
 import noop from "module_19" /* 19 */;
 
 const MainTabsNavigatorPanelContextDefault = MainTabsNavigatorPanelContext;

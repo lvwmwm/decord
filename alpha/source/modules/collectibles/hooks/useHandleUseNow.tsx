@@ -1,10 +1,10 @@
-// Module ID: 11359
-// Function ID: 11360
+// Module ID: 11435
+// Function ID: 11436
 // Name: hooks/useHandleUseNow
-// Dependencies: [5, 32, 19, 1076, 1973, 1115, 8444, 11360, 8440, 7231, 2]
+// Dependencies: [5, 32, 19, 1076, 1973, 1115, 8515, 11436, 8511, 7315, 2]
 // Exports: useHandleUseNow
 
-// Module 11359 (hooks/useHandleUseNow)
+// Module 11435 (hooks/useHandleUseNow)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;

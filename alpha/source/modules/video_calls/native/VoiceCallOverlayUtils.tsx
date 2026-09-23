@@ -1,12 +1,12 @@
-// Module ID: 9679
-// Function ID: 9680
+// Module ID: 9752
+// Function ID: 9753
 // Name: VoiceCallOverlayUtils
-// Dependencies: [9647, 573, 2]
+// Dependencies: [9720, 573, 2]
 // Exports: doesTargetPositionIntersectOtherOverlaysWorklet, setPipEnabledWhileFocusedOnActivityOrStream, updateVoiceCallOverlayLayoutState
 
-// Module 9679 (VoiceCallOverlayUtils)
+// Module 9752 (VoiceCallOverlayUtils)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelCallConstants from "ChannelCallConstants" /* 9647 */;
+import ChannelCallConstants from "ChannelCallConstants" /* 9720 */;
 import size from "module_2" /* 2 */;
 
 const MIN_MARGIN_BETWEEN_OVERLAYS = ChannelCallConstants.MIN_MARGIN_BETWEEN_OVERLAYS;

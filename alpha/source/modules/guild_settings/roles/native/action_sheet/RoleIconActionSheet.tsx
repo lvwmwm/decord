@@ -1,22 +1,22 @@
-// Module ID: 18073
-// Function ID: 18074
+// Module ID: 18142
+// Function ID: 18143
 // Name: RoleIconActionSheet
-// Dependencies: [5, 19, 18056, 1074, 1375, 21, 504, 4724, 5356, 1475, 18074, 4454, 1115, 18070, 7444, 7396, 4753, 5906, 5824, 11392, 2]
+// Dependencies: [5, 19, 18125, 1074, 1375, 21, 504, 4794, 5440, 1475, 18143, 4520, 1115, 18139, 7528, 7480, 4823, 5990, 5908, 11468, 2]
 // Exports: default
 
-// Module 18073 (RoleIconActionSheet)
+// Module 18142 (RoleIconActionSheet)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4724 */;
-import Text_Text from "Text/Text" /* 4753 */;
-import TableRow from "TableRow" /* 5824 */;
-import TableRowGroup from "TableRowGroup" /* 5906 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7396 */;
-import ActionSheet from "ActionSheet" /* 7444 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18070 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import Text_Text from "Text/Text" /* 4823 */;
+import TableRow from "TableRow" /* 5908 */;
+import TableRowGroup from "TableRowGroup" /* 5990 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7480 */;
+import ActionSheet from "ActionSheet" /* 7528 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 18139 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18056 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 18125 */;
 
 require = fn;
 const UPLOAD_SMALL_SIZE = fn(1074).UPLOAD_SMALL_SIZE;
@@ -182,18 +182,18 @@ export default function RoleIconActionSheet(arg0) {
                   surrogates = tmp38.surrogates;
                 }
                 if (null != surrogates) {
-                  closure_0(18070).updateRoleIcon(surrogates, null, tmp26);
-                  const obj5 = closure_0(18070);
+                  closure_0(18139).updateRoleIcon(surrogates, null, tmp26);
+                  const obj5 = closure_0(18139);
                 }
               } else {
                 c6 = 1;
-                const tmp22 = closure_0(18070);
+                const tmp22 = closure_0(18139);
                 closure_4 = tmp22;
                 const updateRoleIcon = tmp22.updateRoleIcon;
                 closure_2 = surrogates;
                 c7 = 2;
                 c8 = 1;
-                const obj7 = { value: closure_0(18074).fetchCustomEmojiAsPngDataUri(tmp38.id), done: false };
+                const obj7 = { value: closure_0(18143).fetchCustomEmojiAsPngDataUri(tmp38.id), done: false };
                 return obj7;
               }
             }
@@ -201,8 +201,8 @@ export default function RoleIconActionSheet(arg0) {
             if (1 === tmp7) {
               c6 = 0;
               const intl = closure_0(1115).intl;
-              closure_0(4454).presentError(intl.string(closure_0(1115).t.R0RpRX));
-              const obj2 = closure_0(4454);
+              closure_0(4520).presentError(intl.string(closure_0(1115).t.R0RpRX));
+              const obj2 = closure_0(4520);
             } else if (arg0 === 1) {
               c8 = 3;
               throw value;
@@ -236,7 +236,7 @@ export default function RoleIconActionSheet(arg0) {
       }
       return applyArgumentsResult;
     };
-    const result = guildId(11392).openEmojiPickerActionSheet(obj2, "stack");
+    const result = guildId(11468).openEmojiPickerActionSheet(obj2, "stack");
   };
   items3[1] = closure_7(TableRow.TableRow, obj5);
   let tmp5Result = null;
@@ -248,7 +248,7 @@ export default function RoleIconActionSheet(arg0) {
       ActionSheetActionCreatorsDefault.hideActionSheet();
       GuildSettingsRolesActionCreators.updateRoleIcon(roleId, null, null);
     };
-    tmp5Result = closure_7(tmp(5824).TableRow, obj6);
+    tmp5Result = closure_7(tmp(5908).TableRow, obj6);
   }
   let obj7 = { children: null };
   items3[2] = tmp5Result;

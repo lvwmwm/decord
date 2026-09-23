@@ -1,29 +1,29 @@
-// Module ID: 17593
-// Function ID: 17594
+// Module ID: 17663
+// Function ID: 17664
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 17594, 4774, 17595, 9911, 2042, 4775, 1074, 21, 17597, 17600, 9910, 10067, 9775, 563, 10065, 10047, 17602, 1364, 9940, 9912, 1115, 9937, 9939, 17603, 10048, 4577, 2028, 5808, 17510, 14408, 2]
+// Dependencies: [109, 19, 17, 17664, 4844, 17665, 9984, 2042, 4845, 1074, 21, 17667, 17638, 9983, 10147, 9848, 563, 10145, 10127, 17671, 1364, 10013, 9985, 1115, 10010, 10012, 17672, 10128, 4647, 2028, 5892, 17579, 14488, 2]
 
-// Module 17593 (VoicePanelHeaderSpeaker)
+// Module 17663 (VoicePanelHeaderSpeaker)
 import util from "util" /* 1115 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4577 */;
-import NativeViewDefault from "NativeView" /* 5808 */;
-import showAudioOutputSelector from "showAudioOutputSelector" /* 9940 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 10065 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17510 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17597 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4647 */;
+import NativeViewDefault from "NativeView" /* 5892 */;
+import showAudioOutputSelector from "showAudioOutputSelector" /* 10013 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 10145 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 17579 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 17667 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4774 */;
-import StageChannelAudioStore from "StageChannelAudioStore" /* 17595 */;
-import AudioRouteStore from "AudioRouteStore" /* 9911 */;
+import GameConsoleStore from "GameConsoleStore" /* 4844 */;
+import StageChannelAudioStore from "StageChannelAudioStore" /* 17665 */;
+import AudioRouteStore from "AudioRouteStore" /* 9984 */;
 import ChannelStore from "ChannelStore" /* 2042 */;
-import SessionsStore from "SessionsStore" /* 4775 */;
+import SessionsStore from "SessionsStore" /* 4845 */;
 
 require = fn;
 let closure_3 = ["ref"];
 const NativeModules = fn(17).NativeModules;
-const setVoiceUpsellDismissed = fn(17594).setVoiceUpsellDismissed;
+const setVoiceUpsellDismissed = fn(17664).setVoiceUpsellDismissed;
 const PlatformTypes = fn(1074).PlatformTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = jsxProd);

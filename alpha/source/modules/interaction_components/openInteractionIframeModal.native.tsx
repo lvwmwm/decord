@@ -1,10 +1,10 @@
-// Module ID: 17818
-// Function ID: 17819
+// Module ID: 17887
+// Function ID: 17888
 // Name: openInteractionIframeModal
-// Dependencies: [5, 17819, 4960, 17820, 1980, 2]
+// Dependencies: [5, 17888, 5030, 17889, 1980, 2]
 // Exports: default
 
-// Module 17818 (openInteractionIframeModal)
+// Module 17887 (openInteractionIframeModal)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = fn;
@@ -42,7 +42,7 @@ let closure_5 = async function _openInteractionIframeModal(arg0, value) {
     }
   }
 };
-let closure_4 = fn(17819).INTERACTION_IFRAME_MODAL_KEY;
+let closure_4 = fn(17888).INTERACTION_IFRAME_MODAL_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/interaction_components/openInteractionIframeModal.native.tsx");
 

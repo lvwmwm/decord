@@ -1,15 +1,15 @@
-// Module ID: 13737
-// Function ID: 13738
+// Module ID: 13822
+// Function ID: 13823
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 1074, 2039, 1374, 21, 4757, 576, 5660, 13730, 13731, 1484, 7409, 13732, 1612, 13738, 4493, 13695, 11005, 4577, 2028, 2030, 13739, 1115, 12544, 4415, 7638, 7245, 1241, 13740, 13701, 9482, 13743, 13748, 13765, 13768, 2]
+// Dependencies: [32, 19, 17, 1074, 2039, 1374, 21, 4827, 576, 5744, 13815, 13816, 1484, 7493, 13817, 1612, 13823, 4559, 13780, 11081, 4647, 2028, 2030, 13824, 1115, 12620, 4481, 7721, 7329, 1241, 13825, 13786, 9553, 13828, 13833, 13850, 13853, 2]
 // Exports: default
 
-// Module 13737 (PremiumMarketingPage)
+// Module 13822 (PremiumMarketingPage)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import dismissible_content from "dismissible_content" /* 2028 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2030 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4577 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4647 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -21,16 +21,16 @@ const ContentDismissActionType = fn(2039).ContentDismissActionType;
 let FractionalPremiumStates = fn(1374).FractionalPremiumStates;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { display: "flex" }, scrollContainer: { flexDirection: "column", alignItems: "center", marginTop: 16 }, arrowIcon: { tintColor: nativeDefault.colors.TEXT_DEFAULT }, backButton: null, sectionWithTopMargin: { marginTop: 48 }, sectionWithPadding: { paddingHorizontal: 12 }, sectionWidth: { maxWidth: 464 }, accountCreditContainer: { width: "100%" }, accountCreditContainerWithSpacing: { marginTop: 24, marginBottom: 20 }, themedBackground: null, backButtonBackground: null };
 let obj4 = { transform: null, position: "absolute", left: 16 };
 let items = [{ scaleX: -1 }];
 obj4.transform = items;
 obj2.backButton = obj4;
 let obj3 = { tintColor: nativeDefault.colors.TEXT_DEFAULT };
-obj2.themedBackground = { backgroundColor: fn(5660).DARK_PRIMARY_700_LIGHT_WHITE_500 };
-let obj5 = { backgroundColor: fn(5660).DARK_PRIMARY_700_LIGHT_WHITE_500 };
-obj2.backButtonBackground = { backgroundColor: fn(5660).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
+obj2.themedBackground = { backgroundColor: fn(5744).DARK_PRIMARY_700_LIGHT_WHITE_500 };
+let obj5 = { backgroundColor: fn(5744).DARK_PRIMARY_700_LIGHT_WHITE_500 };
+obj2.backButtonBackground = { backgroundColor: fn(5744).TIER_0_MARKETING_PAGE_BACK_BUTTON_BG };
 let closure_12 = createStyles.createStyles(obj2);
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_settings/premium/native/PremiumMarketingPage.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 13019
-// Function ID: 13020
+// Module ID: 13101
+// Function ID: 13102
 // Name: ReportToModChannelStore
-// Dependencies: [560, 4628, 1248, 7946, 2]
+// Dependencies: [560, 4698, 1248, 8028, 2]
 // Exports: useShouldShowResolvedFlagsForChannel
 
-// Module 13019 (ReportToModChannelStore)
+// Module 13101 (ReportToModChannelStore)
 import module_560 from "module_560" /* 560 */;
-import "module_4628";
-import module_4628 from "module_4628" /* 4628 */;
+import "module_4698";
+import module_4698 from "module_4698" /* 4698 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let obj = { name: "report-to-mod-channel-storage", storage: null };
-obj.storage = module_4628.createJSONStorage(() => require("LocalStorageWrapper"));
-let obj2 = module_560.create(module_4628.persist((arg0, arg1) => {
+obj.storage = module_4698.createJSONStorage(() => require("LocalStorageWrapper"));
+let obj2 = module_560.create(module_4698.persist((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
   return {

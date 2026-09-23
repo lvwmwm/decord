@@ -1,13 +1,13 @@
-// Module ID: 6124
-// Function ID: 6125
+// Module ID: 6208
+// Function ID: 6209
 // Name: CustomTypingAbstractUI
-// Dependencies: [21, 5806, 6125, 2]
+// Dependencies: [21, 5890, 6209, 2]
 // Exports: CustomTypingAbstractUI
 
-// Module 6124 (CustomTypingAbstractUI)
+// Module 6208 (CustomTypingAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6125 from "module_6125" /* 6125 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6209 from "module_6209" /* 6209 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const CustomTypingAbstractUI = function CustomTypingAbstractUI(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6125 };
+  const obj2 = { uri: _modDef6209 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

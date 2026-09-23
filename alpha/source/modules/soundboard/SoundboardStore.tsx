@@ -1,22 +1,22 @@
-// Module ID: 5225
-// Function ID: 5226
+// Module ID: 5309
+// Function ID: 5310
 // Name: SoundboardStore
-// Dependencies: [32, 1220, 4780, 1372, 5226, 5227, 1074, 1084, 4794, 4348, 12, 1241, 5228, 2020, 11, 504, 5230, 573, 2]
+// Dependencies: [32, 1220, 4850, 1372, 5310, 5311, 1074, 1084, 4864, 4414, 12, 1241, 5312, 2020, 11, 504, 5314, 573, 2]
 
-// Module 5225 (SoundboardStore)
+// Module 5309 (SoundboardStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef4348 from "module_4348" /* 4348 */;
-import FrecencyDefault from "Frecency" /* 4794 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5228 */;
-import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5230 */;
+import _modDef4414 from "module_4414" /* 4414 */;
+import FrecencyDefault from "Frecency" /* 4864 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5312 */;
+import SoundboardFavoritesExperiment2 from "SoundboardFavoritesExperiment" /* 5314 */;
 import _slicedToArray from "module_32" /* 32 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4780 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
 import UserStore from "UserStore" /* 1372 */;
-import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5226 */;
+import TopSoundboardSoundStore from "TopSoundboardSoundStore" /* 5310 */;
 import apply from "module_12" /* 12 */;
 
 const UserSettings = tmp2(2020);
@@ -77,7 +77,7 @@ function syncLocalSoundboardMutesFromUserSettings(proto) {
     continue;
   }
 }
-const SoundboardConstants = fn(5227);
+const SoundboardConstants = fn(5311);
 ({ DEFAULT_SOUND_GUILD_ID: closure_8, EMPTY_SOUND_ID_LIST: closure_9 } = SoundboardConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const UserSettingsTypes = fn(1084).UserSettingsTypes;
@@ -119,7 +119,7 @@ let closure_23 = new FrecencyDefault({
       }
       return num2;
     }
-    obj = _modDef4348();
+    obj = _modDef4414();
   },
   lookupKey(arg0) {
     return arg0;
@@ -474,8 +474,8 @@ const soundboardStore = new SoundboardStore(DispatcherDefault, {
   TOP_SOUNDBOARD_SOUNDS_FETCH_SUCCESS: function handleTopSoundboardSoundsLoaded(topSoundsMetadata) {
     topSoundsMetadata = topSoundsMetadata.topSoundsMetadata;
     const obj = { soundIds: topSoundsMetadata.map((soundId) => soundId.soundId), topSoundsTTL: null };
-    const obj2 = _modDef4348();
-    obj.topSoundsTTL = _modDef4348().add(1, "days").valueOf();
+    const obj2 = _modDef4414();
+    obj.topSoundsTTL = _modDef4414().add(1, "days").valueOf();
     const result = map1.set(topSoundsMetadata.guildId, obj);
   }
 });

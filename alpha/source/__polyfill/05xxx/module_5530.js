@@ -1,9 +1,24 @@
 // Module ID: 5530
 // Function ID: 5531
-// Dependencies: [1121]
+// Dependencies: [5516]
 
 // Module 5530
-import registerAsset from "module_1121" /* 1121 */;
+import _mod5516 from "module_5516" /* 5516 */;
 
+require = arg1;
+const dependencyMap = arg6;
+let c2 = 6;
+let closure_3 = ["GIF87a", "GIF89a"];
 
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 255, height: 255, scales: [1], hash: "25ba997e1d3e8344c193637ad6eeccd3", name: "img_account_sync_league_of_legends_white", type: "png" });
+export default {
+  isGifFile(dataView) {
+    let hasItem = dataView;
+    if (hasItem) {
+      hasItem = closure_3.includes(_mod5516.getStringFromDataView(dataView, 0, c2));
+    }
+    return hasItem;
+  },
+  findOffsets() {
+    return { gifHeaderOffset: 0 };
+  }
+};

@@ -1,13 +1,13 @@
-// Module ID: 6572
-// Function ID: 6573
+// Module ID: 6656
+// Function ID: 6657
 // Name: Orb3dIllustration
-// Dependencies: [21, 5806, 6573, 2]
+// Dependencies: [21, 5890, 6657, 2]
 // Exports: Orb3dIllustration
 
-// Module 6572 (Orb3dIllustration)
+// Module 6656 (Orb3dIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5806 */;
-import _modDef6573 from "module_6573" /* 6573 */;
+import FastImageDefault from "FastImage" /* 5890 */;
+import _modDef6657 from "module_6657" /* 6657 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const Orb3dIllustration = function Orb3dIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6573 };
+  const obj2 = { uri: _modDef6657 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,10 +1,10 @@
-// Module ID: 15808
-// Function ID: 15809
+// Module ID: 15862
+// Function ID: 15863
 // Name: HighlightNotificationsSetting
-// Dependencies: [2064, 8237, 1074, 504, 11729, 1115, 15809, 2]
+// Dependencies: [2064, 8319, 1074, 504, 11805, 1115, 15863, 2]
 // Exports: useHighlightNotifications
 
-// Module 15808 (HighlightNotificationsSetting)
+// Module 15862 (HighlightNotificationsSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import GuildStore from "GuildStore" /* 2064 */;
@@ -14,13 +14,13 @@ function useHighlightNotifications() {
   const items = [GuildStore];
   return initialize.useStateFromStores(items, () => guildCount.getGuildCount() > 0);
 }
-const SettingBuilders = fn(11729);
+const SettingBuilders = fn(11805);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.o8Bypv);
   },
-  parent: fn(8237).MobileUserSettings.NOTIFICATIONS,
+  parent: fn(8319).MobileUserSettings.NOTIFICATIONS,
   useDescription() {
     const intl = util.intl;
     return intl.string(util.t["Vw/Xn8"]);

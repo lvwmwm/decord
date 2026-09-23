@@ -1,11 +1,11 @@
 // Module ID: 4209
 // Function ID: 4210
-// Dependencies: [3845, 3846]
+// Dependencies: [3911, 3912]
 // Exports: default
 
 // Module 4209
-import _typeof_mod from "module_3845" /* 3845 */;
-import requiredArgs_mod from "requiredArgs" /* 3846 */;
+import _typeof_mod from "module_3911" /* 3911 */;
+import requiredArgs_mod from "requiredArgs" /* 3912 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isThursday(arg0) {
+export default function isFirstDayOfMonth(arg0) {
   requiredArgs.default(1, arguments);
-  return 4 === _typeof.default(arg0).getDay();
+  return 1 === _typeof.default(arg0).getDate();
 };
 export default exports.default;

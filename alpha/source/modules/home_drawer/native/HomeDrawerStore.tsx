@@ -1,13 +1,13 @@
-// Module ID: 16366
-// Function ID: 16367
+// Module ID: 16419
+// Function ID: 16420
 // Name: HomeDrawerStore
-// Dependencies: [1074, 1243, 4493, 4758, 16367, 4379, 2]
+// Dependencies: [1074, 1243, 4559, 4828, 16420, 4445, 2]
 // Exports: computeMaxX
 
-// Module 16366 (HomeDrawerStore)
+// Module 16419 (HomeDrawerStore)
 import Constants from "Constants" /* 1074 */;
-import _mod4379 from "module_4379" /* 4379 */;
-import timing from "timing" /* 4758 */;
+import _mod4445 from "module_4445" /* 4445 */;
+import timing from "timing" /* 4828 */;
 import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
@@ -36,8 +36,8 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       if (tmp2) {
         num = tmp.maxX;
       }
-      const result1 = panelX.set(timing.withTiming(num, tmp9(16367).HOME_DRAWER_SETTLE_TIMING));
-      const result2 = snapX.set(timing.withTiming(0, tmp9(16367).HOME_DRAWER_SETTLE_TIMING));
+      const result1 = panelX.set(timing.withTiming(num, tmp9(16420).HOME_DRAWER_SETTLE_TIMING));
+      const result2 = snapX.set(timing.withTiming(0, tmp9(16420).HOME_DRAWER_SETTLE_TIMING));
       const obj = {};
       const merged = Object.assign(gestureState.get());
       obj.active = false;
@@ -52,7 +52,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
     closure_1().lastInteractionAt.current = Date.now();
   };
   return obj;
-}, _mod4379.shallow);
+}, _mod4445.shallow);
 let result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerStore.tsx");
 
 export default withEqualityFn;

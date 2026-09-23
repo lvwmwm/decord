@@ -1,0 +1,9 @@
+// Module ID: 7462
+// Function ID: 7463
+// Dependencies: [1121]
+
+// Module 7462
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 30, height: 30, scales: [2, 3], hash: "3fda792f0f90666acb261765593ba984", name: "ic_loading_emoji_dark", type: "png" });

@@ -1,16 +1,16 @@
-// Module ID: 7242
-// Function ID: 7243
+// Module ID: 7326
+// Function ID: 7327
 // Name: UserSettingsUtils
-// Dependencies: [5107, 2064, 1074, 2020, 4937, 7243, 1115, 1110, 2]
+// Dependencies: [5191, 2064, 1074, 2020, 5007, 7327, 1115, 1110, 2]
 // Exports: computeFlags, generateNonSpamRetrainingOptInSettingOptions, getSanitizedActivityJoiningRestrictedGuilds, getSanitizedActivityRestrictedGuilds, getSanitizedMessageRequestRestrictedGuilds, getSanitizedRestrictedGuilds, shakeUserSettings, trackUserSettingsPaneViewed
 
-// Module 7242 (UserSettingsUtils)
+// Module 7326 (UserSettingsUtils)
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1110 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 4937 */;
-import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7243 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5107 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5007 */;
+import SettingSearchSessionAnalyticsManagerDefault from "SettingSearchSessionAnalyticsManager" /* 7327 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 5191 */;
 import GuildStore from "GuildStore" /* 2064 */;
 
 require = fn;

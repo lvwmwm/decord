@@ -1,12 +1,12 @@
-// Module ID: 14372
-// Function ID: 14373
+// Module ID: 14452
+// Function ID: 14453
 // Name: SummarizedIconRow
-// Dependencies: [19, 17, 21, 4757, 576, 4753, 2]
+// Dependencies: [19, 17, 21, 4827, 576, 4823, 2]
 // Exports: OverflowCircle, OverflowText, OverflowTextSmall, default
 
-// Module 14372 (SummarizedIconRow)
+// Module 14452 (SummarizedIconRow)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4753 */;
+import Text_Text from "Text/Text" /* 4823 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,7 +22,7 @@ function OverflowSquircle(arg0) {
 }
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4757);
+const createStyles = fn(4827);
 let obj2 = { container: { flexDirection: "row", alignItems: "center" }, iconWrapper: { alignItems: "center", justifyContent: "center" }, overflowSquircleWrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md }, overflowSquircle: null, overflowTextOnly: null, overflowCircleWrap: null, overflowCircle: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.md };
 obj2.overflowSquircle = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, margin: 3, paddingHorizontal: 8, height: 30, alignItems: "center", justifyContent: "center", borderRadius: 10 };

@@ -1,9 +1,9 @@
-// Module ID: 9752
-// Function ID: 9753
+// Module ID: 9825
+// Function ID: 9826
 // Name: SafeAreaDisabledStore
 // Dependencies: [560, 1248, 2]
 
-// Module 9752 (SafeAreaDisabledStore)
+// Module 9825 (SafeAreaDisabledStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

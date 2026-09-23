@@ -1,14 +1,14 @@
-// Module ID: 7587
-// Function ID: 7588
+// Module ID: 7670
+// Function ID: 7671
 // Name: transitionToGuild
-// Dependencies: [1074, 7464, 5800, 1101, 2]
+// Dependencies: [1074, 7548, 5884, 1101, 2]
 // Exports: transitionToGuild
 
-// Module 7587 (transitionToGuild)
+// Module 7670 (transitionToGuild)
 import Constants from "Constants" /* 1074 */;
 import router_utils from "router_utils" /* 1101 */;
-import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5800 */;
-import getChannelIdForGuildTransition from "getChannelIdForGuildTransition" /* 7464 */;
+import DeprecatedLayoutAnimation from "DeprecatedLayoutAnimation" /* 5884 */;
+import getChannelIdForGuildTransition from "getChannelIdForGuildTransition" /* 7548 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
