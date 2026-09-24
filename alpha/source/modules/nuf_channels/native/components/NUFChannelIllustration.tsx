@@ -1,14 +1,14 @@
-// Module ID: 14128
-// Function ID: 14129
+// Module ID: 14137
+// Function ID: 14138
 // Name: NUFChannelIllustration
-// Dependencies: [32, 19, 17, 21, 4827, 576, 1115, 14129, 14130, 4559, 4828, 14131, 14132, 14133, 14134, 5910, 5384, 4823, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 1115, 14138, 14139, 4561, 4830, 14140, 14141, 14142, 14143, 5912, 5386, 4825, 2]
 // Exports: default
 
-// Module 14128 (NUFChannelIllustration)
+// Module 14137 (NUFChannelIllustration)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import timing from "timing" /* 4828 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import timing from "timing" /* 4830 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { width: "100%", maxWidth: 275, position: "relative", display: "flex", justifyContent: "center", alignItems: "center", marginTop: 24, marginBottom: 24 }, card: { padding: 0, width: "100%" }, cardBackground: null, header: null, content: null, message: null, messageAvatar: null, messageContent: null, starMedium: null, starSmall: null, starGreen: null, starBlue: null, starPink: null, starPurple: null };
 let size = { width: "90%", height: 12, borderTopLeftRadius: nativeDefault.radii.lg, borderTopRightRadius: nativeDefault.radii.lg, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.cardBackground = size;
@@ -55,7 +55,7 @@ export default function NUFChannelIllustration() {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = closure_1_0(1115).intl;
       obj.name = intl2.string(closure_1_0(1115).t["9m/HsX"]);
-      obj.avatar = closure_1_1(14129);
+      obj.avatar = closure_1_1(14138);
       obj.message = intl.string(closure_1_0(1115).t["5alrl0"]);
       items[tmp] = obj;
       return items;
@@ -66,7 +66,7 @@ export default function NUFChannelIllustration() {
       const obj = { name: null, avatar: null, message: null };
       const intl2 = closure_1_0(1115).intl;
       obj.name = intl2.string(closure_1_0(1115).t["AW1kM+"]);
-      obj.avatar = closure_1_1(14130);
+      obj.avatar = closure_1_1(14139);
       obj.message = intl.string(closure_1_0(1115).t["5Oo+vS"]);
       items[tmp] = obj;
       return items;
@@ -102,22 +102,22 @@ export default function NUFChannelIllustration() {
   const obj5 = { style: tmp.container, children: null };
   const obj6 = { source: null, style: null };
   const animatedStyle = obj3.useAnimatedStyle(fn);
-  obj6.source = first(14131);
+  obj6.source = first(14140);
   const items2 = [, ];
   ({ starSmall: arr4[0], starBlue: arr4[1] } = tmp);
   obj6.style = items2;
   const items3 = [closure_7(closure_6, obj6), , , , , ];
-  const obj7 = { source: first(14132), style: null };
+  const obj7 = { source: first(14141), style: null };
   const items4 = [, ];
   ({ starMedium: arr6[0], starPink: arr6[1] } = tmp);
   obj7.style = items4;
   items3[1] = closure_7(closure_6, obj7);
-  const obj8 = { source: first(14133), style: null };
+  const obj8 = { source: first(14142), style: null };
   const items5 = [, ];
   ({ starMedium: arr7[0], starGreen: arr7[1] } = tmp);
   obj8.style = items5;
   items3[2] = closure_7(closure_6, obj8);
-  const obj9 = { source: first(14134), style: null };
+  const obj9 = { source: first(14143), style: null };
   const items6 = [, ];
   ({ starSmall: arr8[0], starPurple: arr8[1] } = tmp);
   obj9.style = items6;
@@ -136,7 +136,7 @@ export default function NUFChannelIllustration() {
   const obj14 = { style: tmp.content, children: null };
   const obj10 = { style: tmp.cardBackground };
   const obj4 = { interpolate: require("ReanimatedRexport").interpolate, messageListAnimation: sharedValue };
-  obj14.children = closure_7(first(4559).View, {
+  obj14.children = closure_7(first(4561).View, {
     style: animatedStyle,
     children: first.map((children) => {
       const obj = { style: closure_0.message, children: null };

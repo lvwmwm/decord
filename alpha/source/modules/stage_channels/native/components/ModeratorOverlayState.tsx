@@ -1,11 +1,11 @@
-// Module ID: 9827
-// Function ID: 9828
+// Module ID: 9832
+// Function ID: 9833
 // Name: ModeratorOverlayState
-// Dependencies: [1243, 1248, 4445, 2]
+// Dependencies: [1243, 1248, 4447, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 9827 (ModeratorOverlayState)
-import _mod4445 from "module_4445" /* 4445 */;
+// Module 9832 (ModeratorOverlayState)
+import _mod4447 from "module_4447" /* 4447 */;
 import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ const result = size.fileFinishedImporting("modules/stage_channels/native/compone
 
 export const useModeratorOverlayChannelState = function useModeratorOverlayChannelState(id) {
   closure_0 = id;
-  closure_1 = closure_2((dismissOverlay) => dismissOverlay.dismissOverlay, _mod4445.shallow);
-  const items = [!closure_2((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _mod4445.shallow).has(id), () => closure_1(closure_0)];
+  closure_1 = closure_2((dismissOverlay) => dismissOverlay.dismissOverlay, _mod4447.shallow);
+  const items = [!closure_2((overlayDismissedChannelIds) => overlayDismissedChannelIds.overlayDismissedChannelIds, _mod4447.shallow).has(id), () => closure_1(closure_0)];
   return items;
 };

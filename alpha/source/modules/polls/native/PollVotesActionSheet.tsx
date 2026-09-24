@@ -1,29 +1,29 @@
-// Module ID: 12050
-// Function ID: 12051
+// Module ID: 12057
+// Function ID: 12058
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 4819, 5762, 2042, 5047, 1372, 21, 4827, 576, 504, 1397, 7461, 1115, 5425, 4823, 8088, 6983, 12051, 7493, 12057, 11602, 8090, 4979, 4671, 5908, 1177, 9980, 8523, 4559, 4828, 9073, 4761, 4678, 12058, 12059, 7513, 4794, 7481, 2]
+// Dependencies: [32, 5, 19, 17, 4821, 5764, 2044, 5049, 1372, 21, 4829, 576, 504, 1397, 7463, 1115, 5427, 4825, 8090, 6985, 12058, 7495, 12064, 11608, 8092, 4981, 4673, 5910, 1177, 9985, 8527, 4561, 4830, 9077, 4763, 4680, 12065, 12066, 7515, 4796, 7483, 2]
 // Exports: default
 
-// Module 12050 (PollVotesActionSheet)
+// Module 12057 (PollVotesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import useThemeDefault from "useTheme" /* 4761 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import timing from "timing" /* 4828 */;
-import Pressables from "Pressables" /* 5425 */;
-import EmojiDefault from "Emoji" /* 7461 */;
-import PollsUtils from "PollsUtils" /* 8088 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8523 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 12051 */;
+import useThemeDefault from "useTheme" /* 4763 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import timing from "timing" /* 4830 */;
+import Pressables from "Pressables" /* 5427 */;
+import EmojiDefault from "Emoji" /* 7463 */;
+import PollsUtils from "PollsUtils" /* 8090 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8527 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 12058 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4819 */;
-import EmojiStore from "EmojiStore" /* 5762 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import MessageStore from "MessageStore" /* 5047 */;
+import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import EmojiStore from "EmojiStore" /* 5764 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import MessageStore from "MessageStore" /* 5049 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -316,9 +316,9 @@ function NoResults() {
   const tmp6 = React5;
   const tmp8 = timestampProducer;
   if (obj3.isThemeDark(tmp4)) {
-    let tmp2Result = tmp2(12058);
+    let tmp2Result = tmp2(12065);
   } else {
-    tmp2Result = tmp2(12059);
+    tmp2Result = tmp2(12066);
   }
   obj2.source = tmp2Result;
   const items = [closure_1_14(tmp8, obj2), , ];
@@ -337,7 +337,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: metroRequire, View: closure_7, ScrollView: closure_8 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { headerText: { textAlign: "center", paddingHorizontal: 16 }, subheaderText: { textAlign: "center", marginTop: 2, paddingHorizontal: 16 }, answerScroll: { marginTop: 24 }, answerScrollContainer: { gap: 4, paddingHorizontal: 16 }, answerName: { marginTop: 16, marginHorizontal: 16, marginBottom: 8 }, list: { paddingHorizontal: 16 }, answerButton: { padding: 8, flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.radii.xs, maxWidth: 200 }, answerSelected: null, answerEmoji: null, answerText: null, emojiText: null, emojiImage: null, noResultsContainer: null, noResultsImage: null, noResultsTitle: null, noResultsSubtitle: null };
 let obj3 = { padding: 8, flexDirection: "row", alignItems: "center", borderRadius: nativeDefault.radii.xs, maxWidth: 200 };
 obj.answerSelected = { backgroundColor: nativeDefault.colors.BORDER_SUBTLE };
@@ -392,7 +392,7 @@ let closure_18 = noop.forwardRef((answer, ref) => {
   let tmp11 = null;
   if (null != answer.poll_media.text) {
     const obj4 = { style: tmp.answerText, variant: "text-sm/semibold", color: str, lineClamp: 1, children: answer.poll_media.text };
-    tmp11 = closure_1_14(tmp3(4823).Text, obj4);
+    tmp11 = closure_1_14(tmp3(4825).Text, obj4);
   }
   items2[1] = tmp11;
   const obj5 = { variant: "text-sm/semibold", color: str, lineClamp: 1, children: null };

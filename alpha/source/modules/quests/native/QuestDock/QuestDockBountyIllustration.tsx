@@ -1,20 +1,73 @@
-// Module ID: 15531
-// Function ID: 15532
+// Module ID: 15545
+// Function ID: 15546
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 4819, 5747, 15422, 21, 4827, 15509, 15419, 9165, 15532, 504, 1364, 5890, 4533, 11626, 2]
+// Dependencies: [19, 17, 4821, 5749, 15431, 21, 4829, 15541, 15428, 9169, 15546, 504, 1364, 5892, 4535, 11632, 2]
 
-// Module 15531 (QuestDockBountyIllustration)
+// Module 15545 (QuestDockBountyIllustration)
 import initialize from "initialize" /* 504 */;
-import APNGPlayer from "APNGPlayer" /* 9165 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 11626 */;
-import QuestDockHooks from "QuestDockHooks" /* 15419 */;
-import QuestDockVisibilityContextDefault from "QuestDockVisibilityContext" /* 15509 */;
-import _modDef15532 from "module_15532" /* 15532 */;
+import native from "native" /* 4535 */;
+import APNGPlayer from "APNGPlayer" /* 9169 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 11632 */;
+import QuestDockHooks from "QuestDockHooks" /* 15428 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 15541 */;
+import _modDef15546 from "module_15546" /* 15546 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4819 */;
+import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
-const native = tmp2(4533);
 require = fn;
+function useRivePlaybackGateRef() {
+  let tmp = useIsQuestDockContentVisibleDefault();
+  if (tmp) {
+    tmp = !obj.useIsQuestDockExpanded();
+  }
+  let current = tmp;
+  noop.useRef(null);
+  noop.useRef(tmp);
+  noop.useRef(null);
+  const callback = noop.useCallback(() => {
+    if (null != ref3.current) {
+      const _clearTimeout = clearTimeout;
+      clearTimeout(tmp.current);
+      tmp.current = null;
+    }
+  }, []);
+  const items = [tmp, callback];
+  const effect = noop.useEffect(() => {
+    closure_2.current = current;
+    if (current) {
+      callback();
+      const current2 = ref.current;
+      if (current2 != null) {
+        current2.play();
+      }
+    } else {
+      current = ref.current;
+      if (current != null) {
+        current.pause();
+      }
+    }
+  }, items);
+  const items1 = [callback];
+  const effect1 = noop.useEffect(() => callback, items1);
+  const items2 = [callback];
+  return noop.useCallback((current) => {
+    closure_1.current = current;
+    callback();
+    current = null == current;
+    if (!current) {
+      current = ref2.current;
+    }
+    if (!current) {
+      const _setTimeout = setTimeout;
+      closure_3.current = setTimeout(() => {
+        closure_3.current = null;
+        if (!ref.current) {
+          current.pause();
+        }
+      }, 0);
+    }
+  }, items2);
+}
 function IllustrationFrame(arg0) {
   ({ style, children } = arg0);
   const obj = { style: null, pointerEvents: "none", accessible: false, importantForAccessibility: "no-hide-descendants", children: null };
@@ -36,107 +89,48 @@ function QuestDock3DOrbsAPNGPlayer(shouldAnimate) {
       obj.pause();
     }
   }, items);
-  return jsx(APNGPlayer.APNGPlayer, { ref, url: _modDef15532, style: tmp.fill, autoplay: false });
+  return jsx(APNGPlayer.APNGPlayer, { ref, url: _modDef15546, style: tmp.fill, autoplay: false });
 }
 function QuestDock3DOrbsIllustration() {
   const tmp = closure_8();
   const items = [AccessibilityStore];
   const stateFromStores = initialize.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let isVisibleToUser = noop.useContext(QuestDockVisibilityContextDefault).isVisibleToUser;
-  if (isVisibleToUser) {
-    isVisibleToUser = !obj2.useIsQuestDockExpanded();
+  const tmp6 = useIsQuestDockContentVisibleDefault();
+  let tmp7 = tmp6;
+  if (tmp6) {
+    tmp7 = !obj2.useIsQuestDockExpanded();
   }
-  if (isVisibleToUser) {
-    isVisibleToUser = !stateFromStores;
+  if (tmp7) {
+    tmp7 = !stateFromStores;
   }
   obj2 = QuestDockHooks;
   if (tmp2Result.isAndroid()) {
-    const obj3 = { shouldAnimate: isVisibleToUser };
-    let tmp6Result = tmp6(QuestDock3DOrbsAPNGPlayer, obj3);
+    const obj3 = { shouldAnimate: tmp7 };
+    let tmp8Result = tmp8(QuestDock3DOrbsAPNGPlayer, obj3);
   } else {
     const obj4 = { source: null, style: null, resizeMode: "contain", enableAnimation: null, paused: null, accessible: false };
-    const obj5 = { uri: tmp5(15532) };
+    const obj5 = { uri: tmp5(15546) };
     obj4.source = obj5;
     obj4.style = tmp.fill;
     obj4.enableAnimation = !stateFromStores;
-    obj4.paused = !isVisibleToUser;
-    tmp6Result = tmp6(tmp5(5890), obj4);
-    const tmp5Result = tmp5(5890);
+    obj4.paused = !tmp7;
+    tmp8Result = tmp8(tmp5(5892), obj4);
+    const tmp5Result = tmp5(5892);
   }
-  return tmp6Result;
+  return tmp8Result;
 }
 function QuestDock2DOrbsIllustration() {
-  let isVisibleToUser = noop.useContext(QuestDockVisibilityContextDefault).isVisibleToUser;
-  if (isVisibleToUser) {
-    isVisibleToUser = !obj2.useIsQuestDockExpanded();
-  }
-  closure_1 = obj.useRef(null);
-  closure_2 = obj.useRef(isVisibleToUser);
-  const items = [isVisibleToUser];
-  const effect = obj.useEffect(() => {
-    closure_2.current = isVisibleToUser;
-    const current = ref.current;
-    if (isVisibleToUser) {
-      if (current != null) {
-        current.play();
-      }
-    } else if (current != null) {
-      current.pause();
-    }
-  }, items);
-  obj2 = QuestDockHooks;
-  return jsx(native.QuestBar_2DOrbsRive, {
-    ref: noop.useCallback((current) => {
-      closure_1.current = current;
-      if (null != current) {
-        if (ref2.current) {
-          current.play();
-        } else {
-          current.pause();
-        }
-      }
-    }, []),
-    stateMachine: "State Machine 1",
-    fit: "contain"
-  });
+  return jsx(native.QuestBar_2DOrbsRive, { ref: useRivePlaybackGateRef(), stateMachine: "State Machine 1", fit: "contain" });
 }
 function QuestDockOrbHandsIllustration() {
-  let isVisibleToUser = noop.useContext(QuestDockVisibilityContextDefault).isVisibleToUser;
-  if (isVisibleToUser) {
-    isVisibleToUser = !obj2.useIsQuestDockExpanded();
-  }
-  obj.useRef(null);
-  noop.useRef(isVisibleToUser);
-  const items = [isVisibleToUser];
-  const effect = obj.useEffect(() => {
-    closure_2.current = isVisibleToUser;
-    const current = ref.current;
-    if (isVisibleToUser) {
-      if (current != null) {
-        current.play();
-      }
-    } else if (current != null) {
-      current.pause();
-    }
-  }, items);
-  const ref = obj.useCallback((current) => {
-    closure_1.current = current;
-    if (null != current) {
-      if (ref2.current) {
-        current.play();
-      } else {
-        current.pause();
-      }
-    }
-  }, []);
-  return jsx(native.OrbsIllustration_HandsRive, { ref, stateMachine: "State Machine 1", fit: "contain" });
+  return jsx(native.OrbsIllustration_HandsRive, { ref: useRivePlaybackGateRef(), stateMachine: "State Machine 1", fit: "contain" });
 }
 const View = fn(17).View;
-const QuestsExperimentLocations = fn(5747).QuestsExperimentLocations;
-const QuestDockConstants = fn(15422);
+const QuestsExperimentLocations = fn(5749).QuestsExperimentLocations;
+const QuestDockConstants = fn(15431);
 ({ QUEST_DOCK_COLLAPSED_HEIGHT, QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT } = QuestDockConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { frame: { marginRight: -QUEST_DOCK_COLLAPSED_HEADER_PADDING_RIGHT + 5 }, hands: null, orbs: null, fill: { flex: 1 } };
 let size = { width: 124, height: QUEST_DOCK_COLLAPSED_HEIGHT, transform: null };
 let items = [{ translateY: -2 }];
@@ -155,10 +149,10 @@ export default noop.memo(function QuestDockBountyIllustration() {
   if (BountiesMobileQuestBarExperiment2.BountiesMobileQuestBarIllustration.ILLUSTRATION_2 === illustration) {
     const obj2 = { style: tmp.orbs, children: <QuestDock2DOrbsIllustration /> };
     return <IllustrationFrame style={tmp.orbs}><QuestDock2DOrbsIllustration /></IllustrationFrame>;
-  } else if (tmp2(11626).BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
+  } else if (tmp2(11632).BountiesMobileQuestBarIllustration.ILLUSTRATION_3 === illustration) {
     const obj3 = { style: tmp.hands, children: <QuestDockOrbHandsIllustration /> };
     return <IllustrationFrame style={tmp.hands}><QuestDockOrbHandsIllustration /></IllustrationFrame>;
-  } else if (tmp2(11626).BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
+  } else if (tmp2(11632).BountiesMobileQuestBarIllustration.ILLUSTRATION_1 === illustration) {
     const obj4 = { style: tmp.orbs, children: <QuestDock3DOrbsIllustration /> };
     return <IllustrationFrame style={tmp.orbs}><QuestDock3DOrbsIllustration /></IllustrationFrame>;
   }

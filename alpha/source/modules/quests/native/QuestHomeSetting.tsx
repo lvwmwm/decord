@@ -1,23 +1,23 @@
-// Module ID: 15333
-// Function ID: 15334
+// Module ID: 15342
+// Function ID: 15343
 // Name: QuestHomeSetting
-// Dependencies: [32, 19, 12102, 5747, 21, 4827, 576, 1484, 4445, 7321, 15334, 15338, 2]
+// Dependencies: [32, 19, 12109, 5749, 21, 4829, 576, 1484, 4447, 7323, 15343, 15347, 2]
 // Exports: default
 
-// Module 15333 (QuestHomeSetting)
+// Module 15342 (QuestHomeSetting)
 import nativeDefault from "native" /* 576 */;
-import _mod4445 from "module_4445" /* 4445 */;
-import useQuestHomeHeaderDefault from "useQuestHomeHeader" /* 15334 */;
-import QuestHomeDefault from "QuestHome" /* 15338 */;
+import _mod4447 from "module_4447" /* 4447 */;
+import useQuestHomeHeaderDefault from "useQuestHomeHeader" /* 15343 */;
+import QuestHomeDefault from "QuestHome" /* 15347 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 12102 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 12109 */;
 
 require = fn;
-const QuestConstants = fn(5747);
+const QuestConstants = fn(5749);
 ({ QuestHomeSortMethods: metroRequire, getQuestHomeFilterOptionItem: closure_7 } = QuestConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 const obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST } };
 let closure_9 = createStyles.createStyles(obj2);
 let closure_10 = [];
@@ -84,7 +84,7 @@ export default function QuestHomeSetting() {
       }
       closure_1_1(found);
     }
-  }, { equalityFn: _mod4445.shallow, fireImmediately: true }), []);
+  }, { equalityFn: _mod4447.shallow, fireImmediately: true }), []);
   let navigation;
   const tmp5 = _slicedToArray(noop.useState(() => {
     const str = QuestHomeNavigationStore.getField("filter");

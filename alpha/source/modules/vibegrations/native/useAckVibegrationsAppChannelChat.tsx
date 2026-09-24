@@ -1,14 +1,14 @@
-// Module ID: 13650
-// Function ID: 13651
+// Module ID: 13659
+// Function ID: 13660
 // Name: useAckVibegrationsAppChannelChat
-// Dependencies: [19, 5047, 4842, 1979, 1074, 504, 573, 2]
+// Dependencies: [19, 5049, 4844, 1979, 1074, 504, 573, 2]
 // Exports: default
 
-// Module 13650 (useAckVibegrationsAppChannelChat)
+// Module 13659 (useAckVibegrationsAppChannelChat)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import noop from "module_19" /* 19 */;
-import MessageStore from "MessageStore" /* 5047 */;
-import ReadStateStore from "ReadStateStore" /* 4842 */;
+import MessageStore from "MessageStore" /* 5049 */;
+import ReadStateStore from "ReadStateStore" /* 4844 */;
 import AppStateStore from "AppStateStore" /* 1979 */;
 
 const require = globalThis.__r;

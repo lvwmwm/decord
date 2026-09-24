@@ -1,23 +1,23 @@
-// Module ID: 15640
-// Function ID: 15641
+// Module ID: 15654
+// Function ID: 15655
 // Name: LightModeThemeSetting
-// Dependencies: [1182, 1185, 8319, 1074, 504, 11805, 1115, 15641, 15642, 2]
+// Dependencies: [1182, 1185, 8323, 1074, 504, 11811, 1115, 15655, 15656, 2]
 
-// Module 15640 (LightModeThemeSetting)
+// Module 15654 (LightModeThemeSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15641 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 15655 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
 const SystemTheme = fn(1185).SystemTheme;
-const SettingBuilders = fn(11805);
+const SettingBuilders = fn(11811);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.NoFvjZ);
   },
-  parent: fn(8319).MobileUserSettings.APPEARANCE,
+  parent: fn(8323).MobileUserSettings.APPEARANCE,
   usePredicate: function useSyncedModePickerVisible() {
     const items = [ThemeStore];
     return initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());

@@ -1,13 +1,13 @@
-// Module ID: 15064
-// Function ID: 15065
+// Module ID: 15073
+// Function ID: 15074
 // Name: UserSettingsChangeUsername
-// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4827, 576, 5012, 15065, 4823, 1115, 1484, 504, 4481, 15066, 7321, 7315, 1271, 1485, 8192, 6934, 7329, 7267, 2]
+// Dependencies: [5, 32, 19, 17, 1372, 1074, 21, 4829, 576, 5014, 15074, 4825, 1115, 1484, 504, 4483, 15075, 7323, 7317, 1271, 1485, 8194, 6936, 7331, 7269, 2]
 // Exports: default
 
-// Module 15064 (UserSettingsChangeUsername)
+// Module 15073 (UserSettingsChangeUsername)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4823 */;
+import Text_Text from "Text/Text" /* 4825 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -16,16 +16,16 @@ import UserStore from "UserStore" /* 1372 */;
 require = fn;
 function UsernameStatusMessage(showHint) {
   showHint = showHint.showHint;
-  const match = showHint(5012).match(showHint.usernameStatus);
-  let obj = { type: showHint(15065).NameValidationState.ERROR, message: null };
-  const P = showHint(5012).P;
+  const match = showHint(5014).match(showHint.usernameStatus);
+  let obj = { type: showHint(15074).NameValidationState.ERROR, message: null };
+  const P = showHint(5014).P;
   obj.message = P.select();
-  const str = showHint(5012);
-  const obj2 = { type: showHint(15065).NameValidationState.AVAILABLE, message: null };
-  const P2 = showHint(5012).P;
+  const str = showHint(5014);
+  const obj2 = { type: showHint(15074).NameValidationState.AVAILABLE, message: null };
+  const P2 = showHint(5014).P;
   obj2.message = P2.select();
-  const withResult = match.with(obj, (children) => closure_1_11(showHint(4823).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
-  return match.with(obj, (children) => closure_1_11(showHint(4823).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj2, (children) => closure_1_11(showHint(4823).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
+  const withResult = match.with(obj, (children) => closure_1_11(showHint(4825).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children }));
+  return match.with(obj, (children) => closure_1_11(showHint(4825).Text, { variant: "text-xs/medium", color: "text-feedback-critical", children })).with(obj2, (children) => closure_1_11(showHint(4825).Text, { variant: "text-xs/medium", color: "text-feedback-positive", children })).otherwise(() => {
     let tmp = null;
     if (showHint) {
       const obj = { variant: "text-xs/medium", color: "text-default", children: null };
@@ -41,7 +41,7 @@ get_ActivityIndicator = fn(17);
 const UserSettingsSections = fn(1074).UserSettingsSections;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { background: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, container: { padding: 16 }, inputs: { flex: 1, flexDirection: "row", marginTop: 8 }, username: { flex: 2 }, discriminator: { flex: 1 }, divider: null, dividerInner: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.divider = { width: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, marginBottom: 8 };
@@ -142,7 +142,7 @@ export default function UserSettingsChangeUsername() {
           const tmp34 = first1;
         }
         user.discriminator = tmp34;
-        closure_129_0 = yield closure_2_2(7315).saveAccountChanges(user, { close: false });
+        closure_129_0 = yield closure_2_2(7317).saveAccountChanges(user, { close: false });
         if (!closure_129_0.ok) {
           const v6OrEarlierAPIError = new closure_0(1271).V6OrEarlierAPIError(closure_129_0);
           closure_129_1 = v6OrEarlierAPIError;

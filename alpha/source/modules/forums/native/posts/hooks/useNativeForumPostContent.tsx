@@ -1,15 +1,15 @@
-// Module ID: 12357
-// Function ID: 12358
+// Module ID: 12366
+// Function ID: 12367
 // Name: useNativeForumPostContent
-// Dependencies: [1074, 4827, 1115, 7598, 5188, 2]
+// Dependencies: [1074, 4829, 1115, 7600, 5190, 2]
 // Exports: default
 
-// Module 12357 (useNativeForumPostContent)
+// Module 12366 (useNativeForumPostContent)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import StickersUtils from "StickersUtils" /* 5188 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7598 */;
-import createStyles from "createStyles" /* 4827 */;
+import StickersUtils from "StickersUtils" /* 5190 */;
+import isSystemMessageDefault from "isSystemMessage" /* 7600 */;
+import createStyles from "createStyles" /* 4829 */;
 import size from "module_2" /* 2 */;
 
 const MessageFlags = Constants.MessageFlags;

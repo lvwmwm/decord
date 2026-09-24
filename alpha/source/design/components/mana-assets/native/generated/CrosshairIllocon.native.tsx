@@ -1,13 +1,13 @@
-// Module ID: 6204
-// Function ID: 6205
+// Module ID: 6206
+// Function ID: 6207
 // Name: CrosshairIllocon
-// Dependencies: [21, 5890, 6205, 2]
+// Dependencies: [21, 5892, 6207, 2]
 // Exports: CrosshairIllocon
 
-// Module 6204 (CrosshairIllocon)
+// Module 6206 (CrosshairIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6205 from "module_6205" /* 6205 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6207 from "module_6207" /* 6207 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const CrosshairIllocon = function CrosshairIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6205 };
+  const obj2 = { uri: _modDef6207 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

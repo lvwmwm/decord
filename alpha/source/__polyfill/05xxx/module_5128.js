@@ -1,19 +1,19 @@
 // Module ID: 5128
 // Function ID: 5129
-// Dependencies: [1281, 1315]
+// Dependencies: [1313, 5120, 1306, 1307]
 
 // Module 5128
-import _mod1281 from "module_1281" /* 1281 */;
-import callBoundIntrinsic from "callBoundIntrinsic" /* 1315 */;
+import _mod1313 from "module_1313" /* 1313 */;
 
-const tmp = _mod1281("%Array%");
-const isArray = tmp.isArray;
-let tmp2 = !isArray;
-if (!isArray) {
-  tmp2 = callBoundIntrinsic("Object.prototype.toString");
-}
-let closure_0 = tmp2;
 
-export default tmp.isArray || (function IsArray(arg0) {
-  return "[object Array]" === closure_0(arg0);
-});
+export default function isInteger(num) {
+  if (typeof num === "number") {
+    if (!_mod1313(num)) {
+      if (tmp2(5120)(num)) {
+        const tmp = tmp2(1306)(num);
+        return tmp2(1307)(tmp) === tmp;
+      }
+    }
+  }
+  return false;
+};

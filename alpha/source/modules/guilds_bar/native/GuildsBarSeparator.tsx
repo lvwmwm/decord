@@ -1,17 +1,17 @@
-// Module ID: 16747
-// Function ID: 16748
+// Module ID: 16771
+// Function ID: 16772
 // Name: GuildsBarSeparator
-// Dependencies: [19, 21, 4827, 576, 16425, 4559, 7404, 4524, 5892, 2]
+// Dependencies: [19, 21, 4829, 576, 16449, 4561, 7406, 4526, 5894, 2]
 
-// Module 16747 (GuildsBarSeparator)
+// Module 16771 (GuildsBarSeparator)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4524 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7404 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16425 */;
+import useToken from "useToken" /* 4526 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import ReanimatedNativeViewDefault from "ReanimatedNativeView" /* 7406 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 16449 */;
 import noop from "module_19" /* 19 */;
 
-const NativeViewDefault = tmp2(5892);
+const NativeViewDefault = tmp2(5894);
 require = fn;
 function GuildsBarHomeDrawerSeparator(guildItemSize) {
   guildItemSize = guildItemSize.guildItemSize;
@@ -33,7 +33,7 @@ function GuildsBarHomeDrawerSeparator(guildItemSize) {
   return jsx(ReanimatedNativeViewDefault, { style: null });
 }
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_4 = createStyles.createStyles((width) => {
   const obj = { separator: null };
   const size = { height: 1, width, marginTop: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, marginBottom: nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN, marginLeft: 12, marginRight: 12, backgroundColor: nativeDefault.colors.BORDER_SUBTLE, transformOrigin: "0% 50%" };

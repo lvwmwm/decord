@@ -1,17 +1,17 @@
-// Module ID: 2099
-// Function ID: 2100
+// Module ID: 2101
+// Function ID: 2102
 // Name: GuildRoleStore
-// Dependencies: [2057, 2065, 2060, 2100, 1086, 2101, 2103, 2068, 2]
+// Dependencies: [2059, 2067, 2062, 2102, 1086, 2103, 2105, 2070, 2]
 
-// Module 2099 (GuildRoleStore)
+// Module 2101 (GuildRoleStore)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import PlainRecord from "PlainRecord" /* 2057 */;
-import GuildRecord from "GuildRecord" /* 2060 */;
-import LibdiscoreStore2 from "LibdiscoreStore" /* 2065 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 2068 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2100 */;
-import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 2101 */;
-import GuildRoleUtilsAll from "GuildRoleUtils" /* 2103 */;
+import PlainRecord from "PlainRecord" /* 2059 */;
+import GuildRecord from "GuildRecord" /* 2062 */;
+import LibdiscoreStore2 from "LibdiscoreStore" /* 2067 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 2070 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2102 */;
+import GuildRoleRecordUtilsAll from "GuildRoleRecordUtils" /* 2103 */;
+import GuildRoleUtilsAll from "GuildRoleUtils" /* 2105 */;
 import size from "module_2" /* 2 */;
 
 function createGuildRoleRecordFromRust(permissions) {

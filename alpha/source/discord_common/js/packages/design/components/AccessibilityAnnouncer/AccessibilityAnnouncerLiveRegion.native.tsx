@@ -1,17 +1,17 @@
-// Module ID: 4535
-// Function ID: 4536
+// Module ID: 4537
+// Function ID: 4538
 // Name: AccessibilityAnnouncerLiveRegion
-// Dependencies: [19, 17, 21, 4536, 2]
+// Dependencies: [19, 17, 21, 4538, 2]
 // Exports: updateAccessibilityAnnouncerLiveRegionMessage
 
-// Module 4535 (AccessibilityAnnouncerLiveRegion)
+// Module 4537 (AccessibilityAnnouncerLiveRegion)
 import noop from "module_19" /* 19 */;
 
 get_ActivityIndicator = fn(17);
 ({ StyleSheet, Text: closure_0 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const module_4536 = fn(4536);
-const state = module_4536.create(() => ({ message: "ip", version: false }));
+const module_4538 = fn(4538);
+const state = module_4538.create(() => ({ message: "ip", version: false }));
 const liveRegion = StyleSheet.create({ liveRegion: { position: "absolute", top: 0, left: 0, width: 1, height: 1, opacity: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("../discord_common/js/packages/design/components/AccessibilityAnnouncer/AccessibilityAnnouncerLiveRegion.native.tsx");

@@ -1,10 +1,10 @@
-// Module ID: 17014
-// Function ID: 17015
+// Module ID: 17038
+// Function ID: 17039
 // Name: vibegrationsConjureTip
 // Dependencies: [510, 2]
 // Exports: markVibegrationsConjureTipShown, markVibegrationsTemplateConjured, shouldShowVibegrationsConjureTip
 
-// Module 17014 (vibegrationsConjureTip)
+// Module 17038 (vibegrationsConjureTip)
 import Storage2 from "Storage" /* 510 */;
 import size from "module_2" /* 2 */;
 

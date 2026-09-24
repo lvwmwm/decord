@@ -1,14 +1,14 @@
-// Module ID: 17425
-// Function ID: 17426
+// Module ID: 17448
+// Function ID: 17449
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1074, 21, 4827, 576, 1115, 4521, 5900, 4838, 5030, 12782, 1241, 5425, 17426, 1177, 9700, 15260, 8947, 1612, 17431, 17433, 12780, 17436, 1364, 4823, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 1115, 4523, 5902, 4840, 5032, 12791, 1241, 5427, 17449, 1177, 9704, 15269, 8951, 1612, 17454, 17456, 12789, 17459, 1364, 4825, 2]
 // Exports: default
 
-// Module 17425 (MessageRequestList)
+// Module 17448 (MessageRequestList)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import transitionToChannel from "transitionToChannel" /* 4838 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
+import transitionToChannel from "transitionToChannel" /* 4840 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -153,7 +153,7 @@ get_ActivityIndicator = fn(17);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { sectionContainer: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, flexDirection: "row", justifyContent: "space-between", marginTop: 6, marginBottom: 10 }, rowContainer: { flexDirection: "row", alignItems: "center", justifyContent: "space-between", marginTop: 14, marginBottom: 12 }, actionContainer: { flexDirection: "row", alignItems: "flex-start", height: "100%" }, actionButton: null, acceptButton: null, acceptButtonRestricted: null, pressableRow: null, activityIndicator: null, list: null };
 let size = { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, borderRadius: nativeDefault.radii.lg, alignItems: "center", justifyContent: "center", height: 32, width: 32 };
 obj2.actionButton = size;

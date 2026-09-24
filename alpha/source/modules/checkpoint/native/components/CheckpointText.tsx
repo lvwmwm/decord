@@ -1,13 +1,13 @@
-// Module ID: 16042
-// Function ID: 16043
+// Module ID: 16062
+// Function ID: 16063
 // Name: CheckpointText
-// Dependencies: [5052, 21, 4823, 2]
+// Dependencies: [5054, 21, 4825, 2]
 // Exports: default
 
-// Module 16042 (CheckpointText)
+// Module 16062 (CheckpointText)
 import jsxProd from "jsxProd" /* 21 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import CheckpointConstants from "CheckpointConstants" /* 5052 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import CheckpointConstants from "CheckpointConstants" /* 5054 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;

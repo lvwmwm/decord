@@ -1,13 +1,13 @@
-// Module ID: 8620
-// Function ID: 8621
+// Module ID: 8624
+// Function ID: 8625
 // Name: PlayIcon
-// Dependencies: [19, 21, 576, 4523, 8621, 2]
+// Dependencies: [19, 21, 576, 4525, 8625, 2]
 // Exports: PlayIcon
 
-// Module 8620 (PlayIcon)
+// Module 8624 (PlayIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod8621 from "module_8621" /* 8621 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod8625 from "module_8625" /* 8625 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PlayIcon = function PlayIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8621, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8625, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

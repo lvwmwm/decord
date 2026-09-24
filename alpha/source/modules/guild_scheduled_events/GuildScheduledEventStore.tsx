@@ -1,15 +1,15 @@
-// Module ID: 7854
-// Function ID: 7855
+// Module ID: 7856
+// Function ID: 7857
 // Name: GuildScheduledEventStore
-// Dependencies: [502, 2105, 2048, 4457, 12, 11, 504, 573, 2]
+// Dependencies: [502, 2107, 2050, 4459, 12, 11, 504, 573, 2]
 // Exports: eventScheduledToStartWithin, isEventUpcoming, isGuildEventEnded, isGuildScheduledEventActive, scheduledEventSort
 
-// Module 7854 (GuildScheduledEventStore)
+// Module 7856 (GuildScheduledEventStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 
 function scheduledEventSort(status) {
   ({ id, scheduled_start_time } = status);
@@ -173,7 +173,7 @@ function handleGuildScheduledEventExceptionCreateOrUpdate(eventException) {
   }
   obj = secondaryIndexMap;
 }
-const GuildScheduledEventsConstants = fn(2048);
+const GuildScheduledEventsConstants = fn(2050);
 ({ GuildScheduledEventStatus: closure_4, GuildScheduledEventStatusDone: hasOwnProperty, GuildScheduledEventUserResponses: metroRequire } = GuildScheduledEventsConstants);
 const StaticGuildEventIndexes = {
   EVENT: "event",
@@ -198,7 +198,7 @@ const StaticGuildEventIndexes = {
     return "" + channel_id + "-" + obj.EVENT_UPCOMING;
   }
 };
-const secondaryIndexMap = new fn(4457).SecondaryIndexMap(function scheduledEventIndex(status) {
+const secondaryIndexMap = new fn(4459).SecondaryIndexMap(function scheduledEventIndex(status) {
   ({ guild_id, entity_id, channel_id } = status);
   const items = [guild_id];
   if (null != entity_id) {

@@ -1,15 +1,15 @@
-// Module ID: 10478
-// Function ID: 10479
+// Module ID: 10483
+// Function ID: 10484
 // Name: useGetInitialMessagePreview
-// Dependencies: [19, 4473, 7630, 2]
+// Dependencies: [19, 4475, 7632, 2]
 // Exports: useGetInitialMessagePreview
 
-// Module 10478 (useGetInitialMessagePreview)
-import isForwardMessageDefault from "isForwardMessage" /* 7630 */;
+// Module 10483 (useGetInitialMessagePreview)
+import isForwardMessageDefault from "isForwardMessage" /* 7632 */;
 import noop from "module_19" /* 19 */;
-import MessageRecord from "MessageRecord" /* 4473 */;
+import MessageRecord from "MessageRecord" /* 4475 */;
 
-const MessageSnapshotRecord = fn(4473).MessageSnapshotRecord;
+const MessageSnapshotRecord = fn(4475).MessageSnapshotRecord;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/in_app_notifications/native/hooks/useGetInitialMessagePreview.tsx");
 

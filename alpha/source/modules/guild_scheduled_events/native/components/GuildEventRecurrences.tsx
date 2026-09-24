@@ -1,14 +1,14 @@
-// Module ID: 9973
-// Function ID: 9974
+// Module ID: 9978
+// Function ID: 9979
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 4827, 576, 9974, 4823, 1115, 11, 9976, 5271, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 9979, 4825, 1115, 11, 9981, 5273, 2]
 // Exports: default
 
-// Module 9973 (GuildEventRecurrences)
+// Module 9978 (GuildEventRecurrences)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
-import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9974 */;
-import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9976 */;
+import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 9979 */;
+import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 9981 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -16,7 +16,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { marginTop: 16 }, scrollView: { marginTop: 8, marginBottom: 8, borderRadius: nativeDefault.radii.sm, maxHeight: 140 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -35,7 +35,7 @@ export default function GuildEventRecurrences(guildEventId) {
   const obj2 = { variant: "heading-md/semibold", children: null };
   const intl = guildEventId(1115).intl;
   obj2.children = intl.string(guildEventId(1115).t["D/jjoa"]);
-  const items = [closure_6(guildEventId(4823).Text, obj2), , ];
+  const items = [closure_6(guildEventId(4825).Text, obj2), , ];
   const tmp4 = useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
   const tmp5 = closure_7;
   const tmp6 = c4;
@@ -63,7 +63,7 @@ export default function GuildEventRecurrences(guildEventId) {
         current.scrollToEnd();
       }
     };
-    canViewMoreRecurrences = tmp7(tmp8(5271).Button, obj4);
+    canViewMoreRecurrences = tmp7(tmp8(5273).Button, obj4);
   }
   items[2] = canViewMoreRecurrences;
   obj.children = items;

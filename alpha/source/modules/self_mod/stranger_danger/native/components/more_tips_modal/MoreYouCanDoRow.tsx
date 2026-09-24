@@ -1,11 +1,11 @@
-// Module ID: 11729
-// Function ID: 11730
+// Module ID: 11735
+// Function ID: 11736
 // Name: MoreYouCanDoRow
-// Dependencies: [19, 21, 5908, 2]
+// Dependencies: [19, 21, 5910, 2]
 // Exports: default
 
-// Module 11729 (MoreYouCanDoRow)
-import TableRow from "TableRow" /* 5908 */;
+// Module 11735 (MoreYouCanDoRow)
+import TableRow from "TableRow" /* 5910 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

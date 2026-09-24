@@ -1,19 +1,19 @@
-// Module ID: 12558
-// Function ID: 12559
+// Module ID: 12567
+// Function ID: 12568
 // Name: PollAnswerInput
-// Dependencies: [19, 17, 2042, 5190, 8156, 1375, 21, 4827, 576, 12559, 1115, 8088, 5425, 1177, 11468, 9498, 4794, 12560, 1980, 9114, 8947, 4785, 12563, 2]
+// Dependencies: [19, 17, 2044, 5192, 8158, 1375, 21, 4829, 576, 12568, 1115, 8090, 5427, 1177, 11474, 9502, 4796, 12569, 1980, 9118, 8951, 4787, 12572, 2]
 // Exports: default
 
-// Module 12558 (PollAnswerInput)
+// Module 12567 (PollAnswerInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import PollsUtils from "PollsUtils" /* 8088 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9498 */;
-import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11468 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import PollsUtils from "PollsUtils" /* 8090 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9502 */;
+import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 11474 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 function ImageInput(openImageInputActionSheet) {
@@ -91,13 +91,13 @@ function ImageInput(openImageInputActionSheet) {
 }
 get_ActivityIndicator = fn(17);
 ({ Keyboard: closure_4, TouchableOpacity: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const DraftType = fn(5190).DraftType;
-const PollsConstants = fn(8156);
+const DraftType = fn(5192).DraftType;
+const PollsConstants = fn(8158);
 ({ MAX_POLL_ANSWER_LENGTH: closure_9, POLL_CREATION_IMAGE_INPUT_ACTION_SHEET_KEY: c10 } = PollsConstants);
 const EmojiIntention = fn(1375).EmojiIntention;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1, Fragment: closure_14 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { defaultContainer: { flexDirection: "row", alignItems: "center" }, defaultImageAndTextContainer: { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, flex: 1, overflow: "hidden" }, cannotRemove: { marginRight: 30 }, defaultImageContainer: { width: 60, height: 48, justifyContent: "center", alignItems: "center" }, pollAnswerTextInput: { flex: 1, paddingStart: 0 }, defaultRemoveButtonContainer: null, uploadContainer: null, errorInput: null };
 let obj3 = { flexDirection: "row", alignItems: "center", backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.lg, flex: 1, overflow: "hidden" };
 obj2.defaultRemoveButtonContainer = { paddingLeft: 6, height: 48, justifyContent: "center", color: nativeDefault.colors.TEXT_MUTED };
@@ -158,7 +158,7 @@ export default function PollAnswerInput(answer) {
       image: answer.image,
       openExpressionPicker,
       openImageInputActionSheet() {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12560, dependencyMap.paths), closure_2_10, { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker });
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(12569, dependencyMap.paths), closure_2_10, { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker });
       },
       iconSrc: index(channelId[19]),
       containerStyle: tmp.defaultImageContainer,

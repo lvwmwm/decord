@@ -1,13 +1,13 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 10068
+// Function ID: 10069
 // Name: useSecureFramesUserVerifiedKeysCount
-// Dependencies: [19, 10033, 10034, 504, 2]
+// Dependencies: [19, 10038, 10039, 504, 2]
 // Exports: useSecureFramesUserVerifiedKeysCount
 
-// Module 10063 (useSecureFramesUserVerifiedKeysCount)
-import _mod10034 from "module_10034" /* 10034 */;
+// Module 10068 (useSecureFramesUserVerifiedKeysCount)
+import _mod10039 from "module_10039" /* 10039 */;
 import noop from "module_19" /* 19 */;
-import VerifiedKeyStore from "VerifiedKeyStore" /* 10033 */;
+import VerifiedKeyStore from "VerifiedKeyStore" /* 10038 */;
 
 require = fn;
 const size = fn(2);
@@ -24,7 +24,7 @@ export const useSecureFramesUserVerifiedKeysCount = function useSecureFramesUser
     } else {
       const _Uint8Array = Uint8Array;
       const uint8Array = new Uint8Array(tmp);
-      return _mod10034.serializeKey(uint8Array);
+      return _mod10039.serializeKey(uint8Array);
     }
   }, items);
   const items1 = [VerifiedKeyStore];

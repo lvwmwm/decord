@@ -1,18 +1,18 @@
-// Module ID: 11086
-// Function ID: 11087
+// Module ID: 11092
+// Function ID: 11093
 // Name: GiftingBadgesUtils
-// Dependencies: [8536, 1372, 1115, 2580, 11082, 11087, 11088, 504, 4647, 2028, 2]
+// Dependencies: [8540, 1372, 1115, 2582, 11088, 11093, 11094, 504, 4649, 2028, 2]
 // Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, getIsGiftingBadgesDesktopEnabled, useIsEligibleToShowGiftingBadgeCoachmark, useIsGiftingBadgeComplexArtEnabled, useIsGiftingBadgesDesktopEnabled
 
-// Module 11086 (GiftingBadgesUtils)
+// Module 11092 (GiftingBadgesUtils)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import _modDef2580 from "module_2580" /* 2580 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4647 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8536 */;
-import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 11082 */;
-import GiftingBadgeDesktopExperiment2 from "GiftingBadgeDesktopExperiment" /* 11087 */;
-import GiftingBadgeComplexArtExperiment2 from "GiftingBadgeComplexArtExperiment" /* 11088 */;
+import _modDef2582 from "module_2582" /* 2582 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4649 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8540 */;
+import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 11088 */;
+import GiftingBadgeDesktopExperiment2 from "GiftingBadgeDesktopExperiment" /* 11093 */;
+import GiftingBadgeComplexArtExperiment2 from "GiftingBadgeComplexArtExperiment" /* 11094 */;
 import UserStore from "UserStore" /* 1372 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ export const getGiftingBadgeAccessibilityLabel = function getGiftingBadgeAccessi
     str = "";
   }
   const intl = util.intl;
-  return "" + str + ", " + intl.formatToPlainString(_modDef2580.qvx9E4, { count });
+  return "" + str + ", " + intl.formatToPlainString(_modDef2582.qvx9E4, { count });
 };
 export const getGiftingBadgeProgressPercent = function getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier) {
   const tmp = closure_3(currentTier);

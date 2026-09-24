@@ -1,17 +1,17 @@
-// Module ID: 9802
-// Function ID: 9803
+// Module ID: 9806
+// Function ID: 9807
 // Name: EmbeddedActivityView
-// Dependencies: [109, 32, 19, 17, 2041, 2004, 1349, 21, 4827, 9801, 1478, 573, 9803, 9804, 9806, 9799, 504, 9808, 9655, 9809, 9817, 2]
+// Dependencies: [109, 32, 19, 17, 2043, 2004, 1349, 21, 4829, 9805, 1478, 573, 9807, 9808, 9810, 9803, 504, 9812, 9659, 9813, 9822, 2]
 
-// Module 9802 (EmbeddedActivityView)
+// Module 9806 (EmbeddedActivityView)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9655 */;
-import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9803 */;
-import WakeLockDefault from "WakeLock" /* 9806 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 9659 */;
+import doesOrientationMatchLockStateDefault from "doesOrientationMatchLockState" /* 9807 */;
+import WakeLockDefault from "WakeLock" /* 9810 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 
 const require = fn;
 function useBaseActivityView(orientationLockState) {
@@ -118,14 +118,14 @@ const Constants = fn(2004);
 fn(1349).OBEY_SILENT_HARDWARE_SWITCH_APP_IDS;
 const jsxProd = fn(21);
 ({ jsx: map1, Fragment: closure_14, jsxs: closure_15 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 const value = createStyles.createStyles({ loadingContainer: { flex: 1, justifyContent: "center" } });
 const memoResult = noop.memo(function EmbeddedActivityViewInner(portraitSafeAreasConfig) {
   ({ channel, layoutMode } = portraitSafeAreasConfig);
   let landscapeSafeAreasConfig = portraitSafeAreasConfig.portraitSafeAreasConfig;
   let setIsResetting;
   const currentEmbeddedActivity = EmbeddedActivitiesStore.getCurrentEmbeddedActivity();
-  const tmp4 = currentEmbeddedActivity(9799)();
+  const tmp4 = currentEmbeddedActivity(9803)();
   dependencyMap = tmp4;
   const items = [EmbeddedActivitiesStore];
   const items1 = [tmp4];
@@ -141,7 +141,7 @@ const memoResult = noop.memo(function EmbeddedActivityViewInner(portraitSafeArea
   if (null == currentEmbeddedActivity) {
     let obj3 = { instance_id: "" };
   } else {
-    const discordEnvQueryParams = tmp5(9804).getDiscordEnvQueryParams();
+    const discordEnvQueryParams = tmp5(9808).getDiscordEnvQueryParams();
     const ui_density = discordEnvQueryParams.ui_density;
     const tmp38 = _objectWithoutProperties(discordEnvQueryParams, setIsResetting);
     let launchId = currentEmbeddedActivity.compositeInstanceId;
@@ -188,9 +188,9 @@ const memoResult = noop.memo(function EmbeddedActivityViewInner(portraitSafeArea
       obj4.guild_id = guild_id2;
       obj3 = obj4;
     }
-    const tmp5Result = tmp5(9804);
+    const tmp5Result = tmp5(9808);
   }
-  currentEmbeddedActivity(9808)({ connectedEmbeddedActivity: currentEmbeddedActivity });
+  currentEmbeddedActivity(9812)({ connectedEmbeddedActivity: currentEmbeddedActivity });
   const items2 = [layoutMode, currentEmbeddedActivity];
   const layoutEffect = obj2.useLayoutEffect(() => {
     if (null != currentEmbeddedActivity) {
@@ -233,8 +233,8 @@ const memoResult = noop.memo(function EmbeddedActivityViewInner(portraitSafeArea
     tmp22 = null == tmp4;
   }
   const tmp7 = _slicedToArray(noop.useState(true), 2);
-  const obj5 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp22, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: layoutMode(9801).setOrientationLockState };
-  setIsResetting = useBaseActivityView({ orientationLockState: stateFromStores, showLoadingIndicator: tmp22, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: layoutMode(9801).setOrientationLockState }).setIsResetting;
+  const obj5 = { orientationLockState: stateFromStores, showLoadingIndicator: tmp22, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: layoutMode(9805).setOrientationLockState };
+  setIsResetting = useBaseActivityView({ orientationLockState: stateFromStores, showLoadingIndicator: tmp22, setShowLoadingStateForLockingOrientation: tmp9, application: tmp4, setOrientationLockState: layoutMode(9805).setOrientationLockState }).setIsResetting;
   let tmp28Result = null;
   if (null != currentEmbeddedActivity) {
     tmp28Result = null;
@@ -280,10 +280,10 @@ const memoResult = noop.memo(function EmbeddedActivityViewInner(portraitSafeArea
       obj7.queryParams = obj3;
       obj7.onLoadError = callback;
       const tmp29 = BaseActivityView;
-      const tmp2Result = tmp2(9809);
-      obj7.allowPopups = tmp5(9817).allowPopups(tmp4);
+      const tmp2Result = tmp2(9813);
+      obj7.allowPopups = tmp5(9822).allowPopups(tmp4);
       obj7.isPipOrGridMode = layoutMode === constants.PIP || layoutMode === constants.GRID;
-      obj7.webViewKey = tmp5(9655).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
+      obj7.webViewKey = tmp5(9659).EMBEDDED_ACTIVITY_WEB_VIEW_KEY;
       if (tmp26) {
         landscapeSafeAreasConfig = portraitSafeAreasConfig.landscapeSafeAreasConfig;
       }
@@ -291,7 +291,7 @@ const memoResult = noop.memo(function EmbeddedActivityViewInner(portraitSafeArea
       obj7.ignoreSilentHardwareSwitch = !set.has(id);
       obj6.children = closure_13(tmp2Result, obj7);
       tmp28Result = tmp28(tmp29, obj6);
-      const tmp5Result2 = tmp5(9817);
+      const tmp5Result2 = tmp5(9822);
     }
   }
   return tmp28Result;

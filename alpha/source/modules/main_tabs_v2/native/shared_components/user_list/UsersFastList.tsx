@@ -1,18 +1,18 @@
-// Module ID: 11210
-// Function ID: 11211
+// Module ID: 11216
+// Function ID: 11217
 // Name: UsersFastList
-// Dependencies: [32, 19, 17, 10556, 21, 4827, 576, 11211, 5908, 8201, 4559, 4823, 1177, 5425, 5427, 1612, 7380, 10555, 11212, 11255, 11258, 7386, 2]
+// Dependencies: [32, 19, 17, 10561, 21, 4829, 576, 11217, 5910, 8203, 4561, 4825, 1177, 5427, 5429, 1612, 7382, 10560, 11218, 11261, 11264, 7388, 2]
 
-// Module 11210 (UsersFastList)
+// Module 11216 (UsersFastList)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import TableRow from "TableRow" /* 5908 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 8201 */;
-import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 11211 */;
-import UserRowDefault from "UserRow" /* 11212 */;
-import GroupDMRowDefault from "GroupDMRow" /* 11255 */;
-import ChannelRowDefault from "ChannelRow" /* 11258 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import TableRow from "TableRow" /* 5910 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8203 */;
+import useFastestListTableRowPlaceholderConfig from "useFastestListTableRowPlaceholderConfig" /* 11217 */;
+import UserRowDefault from "UserRow" /* 11218 */;
+import GroupDMRowDefault from "GroupDMRow" /* 11261 */;
+import ChannelRowDefault from "ChannelRow" /* 11264 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -34,11 +34,11 @@ function PlaceholderSection() {
   return React5(View, {});
 }
 const View = fn(17).View;
-const UsersFastListConstants = fn(10556);
+const UsersFastListConstants = fn(10561);
 const USERS_LIST_PADDING_BETWEEN_SECTIONS = UsersFastListConstants.USERS_LIST_PADDING_BETWEEN_SECTIONS;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { sectionHeader: { flex: 1, overflow: "hidden", top: -1 * UsersFastListConstants.USERS_LIST_SECTION_BOTTOM_PADDING }, stickyHeader: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, list: null, emptySection: null, section: null, interactiveSection: null, titlePressable: null, titleRow: null, badgeWrapper: null, badge: null };
 let obj3 = { flex: 1, overflow: "hidden", top: -1 * UsersFastListConstants.USERS_LIST_SECTION_BOTTOM_PADDING };
 let obj4 = { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
@@ -163,7 +163,7 @@ let closure_16 = noop.memo(function UserSectionInner(stickyAt) {
   let tmp18 = tmp11Result4;
   if (null != onTitlePress) {
     const obj10 = { accessibilityRole: "button", style: tmp.titlePressable, onPress: onTitlePress, children: tmp11Result4 };
-    tmp18 = React5(tmp3(5425).PressableOpacity, obj10);
+    tmp18 = React5(tmp3(5427).PressableOpacity, obj10);
   }
   const obj11 = { style: memo1, children: null };
   const items5 = [tmp18, ];
@@ -171,8 +171,8 @@ let closure_16 = noop.memo(function UserSectionInner(stickyAt) {
   if (null != actionTitle) {
     const obj12 = { onPress: action, children: null };
     const obj13 = { variant: "text-sm/semibold", color: "text-brand", children: actionTitle };
-    obj12.children = React5(tmp3(4823).Text, obj13);
-    tmp21 = React5(tmp3(5425).PressableOpacity, obj12);
+    obj12.children = React5(tmp3(4825).Text, obj13);
+    tmp21 = React5(tmp3(5427).PressableOpacity, obj12);
   }
   items5[1] = tmp21;
   obj11.children = items5;
@@ -182,8 +182,8 @@ let closure_16 = noop.memo(function UserSectionInner(stickyAt) {
     const obj14 = { style: memo2, children: null };
     let tmp26 = !disableThemedGradient;
     if (!disableThemedGradient) {
-      const obj15 = { style: animatedStyle1, children: React5(tmp25(5427), { absolute: true, tall: true, wide: true, mix: true }) };
-      tmp26 = React5(tmp25(4559).View, obj15);
+      const obj15 = { style: animatedStyle1, children: React5(tmp25(5429), { absolute: true, tall: true, wide: true, mix: true }) };
+      tmp26 = React5(tmp25(4561).View, obj15);
     }
     const items6 = [tmp26, tmp11Result5];
     obj14.children = items6;

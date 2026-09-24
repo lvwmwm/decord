@@ -1,22 +1,22 @@
-// Module ID: 12037
-// Function ID: 12038
+// Module ID: 12044
+// Function ID: 12045
 // Name: DestinationFailedAlertModal
-// Dependencies: [19, 17, 2042, 2064, 4867, 4472, 1372, 1085, 21, 4827, 576, 4980, 11256, 1177, 4823, 504, 4671, 11350, 5199, 5199, 1115, 2]
+// Dependencies: [19, 17, 2044, 2066, 4869, 4474, 1372, 1085, 21, 4829, 576, 4982, 11262, 1177, 4825, 504, 4673, 11356, 5201, 5201, 1115, 2]
 // Exports: default
 
-// Module 12037 (DestinationFailedAlertModal)
+// Module 12044 (DestinationFailedAlertModal)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import UserUtilsDefault from "UserUtils" /* 4671 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import useChannelNameDefault from "useChannelName" /* 4980 */;
-import AlertModal from "AlertModal" /* 5199 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 11256 */;
+import UserUtilsDefault from "UserUtils" /* 4673 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import useChannelNameDefault from "useChannelName" /* 4982 */;
+import AlertModal from "AlertModal" /* 5201 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 11262 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import PresenceStore from "PresenceStore" /* 4867 */;
-import RelationshipStore from "RelationshipStore" /* 4472 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import PresenceStore from "PresenceStore" /* 4869 */;
+import RelationshipStore from "RelationshipStore" /* 4474 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -44,7 +44,7 @@ function FailedUserRow(user) {
   let tmp9Result = null;
   if (null != user) {
     const obj3 = { style: tmp.row, children: null };
-    const obj4 = { user, guildId: "Boolean", status: true, isMobileOnline: false, isVROnline: "done", size: "flowing", avatarDecoration: "hourglass", autoStatusCutout: "hours" };
+    const obj4 = { user, guildId: "Boolean", status: true, isMobileOnline: "done", isVROnline: true, size: null, avatarDecoration: "header", autoStatusCutout: null };
     let tmp13 = null;
     if (StatusTypes.OFFLINE !== status) {
       tmp13 = status;
@@ -60,7 +60,7 @@ function FailedUserRow(user) {
       stateFromStores = UserUtilsDefault.getName(user);
     }
     obj5.children = stateFromStores;
-    items2[1] = closure_10(tmp2(4823).Text, obj5);
+    items2[1] = closure_10(tmp2(4825).Text, obj5);
     obj3.children = items2;
     tmp9Result = closure_11(View, obj3);
   }
@@ -80,7 +80,7 @@ function FailedChannelRow(channel) {
   const obj2 = { style: tmp.row, children: null };
   const obj = channel(504);
   const tmp3 = useChannelNameDefault(channel);
-  const items1 = [closure_10(channel(11350).GuildIconWithChannelType, { "aria-label": "", guild: stateFromStores, channel, size: channel(11350).GuildIconWithChannelTypeSizes.SMALL_32 }), closure_10(channel(4823).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 })];
+  const items1 = [closure_10(channel(11356).GuildIconWithChannelType, { "aria-label": "", guild: stateFromStores, channel, size: channel(11356).GuildIconWithChannelTypeSizes.SMALL_32 }), closure_10(channel(4825).Text, { style: tmp.label, variant: "text-md/medium", lineClamp: 1, ellipsizeMode: "tail", children: tmp3 })];
   obj2.children = items1;
   return closure_11(View, obj2);
 }
@@ -124,7 +124,7 @@ const View = fn(17).View;
 const StatusTypes = fn(1085).StatusTypes;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11, Fragment: closure_12 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_STRONG, borderRadius: nativeDefault.radii.lg, paddingVertical: nativeDefault.space.PX_8 }, row: null, label: null };
 let obj3 = { borderWidth: 1, borderColor: nativeDefault.colors.BORDER_STRONG, borderRadius: nativeDefault.radii.lg, paddingVertical: nativeDefault.space.PX_8 };
 obj2.row = { display: "flex", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12, height: 40, marginHorizontal: nativeDefault.space.PX_16 };
@@ -144,18 +144,18 @@ export default function DestinationFailedAlertModal(arg0) {
     const obj4 = { variant: "primary", onPress: onRetry, text: null };
     const intl2 = tmp3(1115).intl;
     obj4.text = intl2.string(tmp3(1115).t["5911Lb"]);
-    const items = [tmp2(tmp3(5199).AlertActionButton, obj4, "confirm"), ];
+    const items = [tmp2(tmp3(5201).AlertActionButton, obj4, "confirm"), ];
     const obj5 = { variant: "secondary", text: null };
     const intl3 = tmp3(1115).intl;
     obj5.text = intl3.string(tmp3(1115).t.WAI6xu);
-    items[1] = tmp2(tmp3(5199).AlertActionButton, obj5, "cancel");
+    items[1] = tmp2(tmp3(5201).AlertActionButton, obj5, "cancel");
     obj3.children = items;
     let tmp2Result = closure_1_11(closure_1_12, obj3);
   } else {
     const obj6 = { variant: "primary", text: null };
     const intl = tmp3(1115).intl;
     obj6.text = intl.string(tmp3(1115).t.BddRzS);
-    tmp2Result = tmp2(tmp3(5199).AlertActionButton, obj6, "confirm");
+    tmp2Result = tmp2(tmp3(5201).AlertActionButton, obj6, "confirm");
   }
   obj.actions = closure_1_10(AlertModal.AlertActions, { children: tmp2Result });
   return closure_1_10(AlertModal.AlertModal, obj);

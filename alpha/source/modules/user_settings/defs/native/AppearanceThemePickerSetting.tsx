@@ -1,26 +1,26 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 15616
+// Function ID: 15617
 // Name: AppearanceThemePickerSetting
-// Dependencies: [1182, 8319, 1074, 504, 11805, 1115, 15596, 15603, 2]
+// Dependencies: [1182, 8323, 1074, 504, 11811, 1115, 15610, 15617, 2]
 
-// Module 15602 (AppearanceThemePickerSetting)
+// Module 15616 (AppearanceThemePickerSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 require = fn;
-const SettingBuilders = fn(11805);
+const SettingBuilders = fn(11811);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.Ksh3ik);
   },
-  parent: fn(8319).MobileUserSettings.APPEARANCE,
+  parent: fn(8323).MobileUserSettings.APPEARANCE,
   usePredicate: function useIsSingleThemePickerVisible() {
     const items = [ThemeStore];
     return !initialize.useStateFromStores(items, () => sameAsDeviceThemeEnabled.isSameAsDeviceThemeEnabled());
   },
-  useTrailing: fn(15596).useAppearanceSettingTrailing,
+  useTrailing: fn(15610).useAppearanceSettingTrailing,
   screen: {
     route: fn(1074).UserSettingsSections.APPEARANCE_THEME_PICKER,
     getComponent() {

@@ -1,13 +1,13 @@
-// Module ID: 15877
-// Function ID: 15878
+// Module ID: 15891
+// Function ID: 15892
 // Name: SupportSetting
-// Dependencies: [11805, 1115, 11453, 15878, 2]
+// Dependencies: [11811, 1115, 11459, 15892, 2]
 
-// Module 15877 (SupportSetting)
+// Module 15891 (SupportSetting)
 import util from "util" /* 1115 */;
-import CircleQuestionIcon from "CircleQuestionIcon" /* 11453 */;
-import SupportUtils from "SupportUtils" /* 15878 */;
-import SettingBuilders from "SettingBuilders" /* 11805 */;
+import CircleQuestionIcon from "CircleQuestionIcon" /* 11459 */;
+import SupportUtils from "SupportUtils" /* 15892 */;
+import SettingBuilders from "SettingBuilders" /* 11811 */;
 import size from "module_2" /* 2 */;
 
 const pressable = SettingBuilders.createPressable({

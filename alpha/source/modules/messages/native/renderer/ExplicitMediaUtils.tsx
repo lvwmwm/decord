@@ -1,14 +1,14 @@
-// Module ID: 8480
-// Function ID: 8481
+// Module ID: 8484
+// Function ID: 8485
 // Name: ExplicitMediaUtils
-// Dependencies: [1074, 1385, 7620, 7625, 5039, 1115, 2]
+// Dependencies: [1074, 1385, 7622, 7627, 5041, 1115, 2]
 // Exports: getAttachmentObscurityDefaults, getAttachmentObscurityProps, getUnfurledMediaItemObscurityProps
 
-// Module 8480 (ExplicitMediaUtils)
+// Module 8484 (ExplicitMediaUtils)
 import Constants from "Constants" /* 1074 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7620 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7625 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7622 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7627 */;
 import size from "module_2" /* 2 */;
 
 const MessageAttachmentFlags = Constants.MessageAttachmentFlags;
@@ -42,8 +42,8 @@ export const getAttachmentObscurityProps = function getAttachmentObscurityProps(
   let isVerifiedTeenResult = tmp5;
   const obj4 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Attachment, media: obj2 };
   if (mediaObscuredReasonFromBitmask.length > 0) {
-    isVerifiedTeenResult = tmp(5039).isVerifiedTeen();
-    const tmpResult4 = tmp(5039);
+    isVerifiedTeenResult = tmp(5041).isVerifiedTeen();
+    const tmpResult4 = tmp(5041);
   }
   let tmp7 = shouldObscureSpoiler;
   if (shouldObscureSpoiler) {
@@ -84,17 +84,17 @@ export const getUnfurledMediaItemObscurityProps = function getUnfurledMediaItemO
   let isMediaScanPendingResult = !isAuthorBot;
   const mediaObscuredReasonFromBitmask = obj.getMediaObscuredReasonFromBitmask({ type: ExplicitMediaRedactionModels.ObscuredMediaTypes.GenericMedia, media: mediaItem }, enabledContentHarmTypeFlags);
   if (!isAuthorBot) {
-    const obj3 = { type: tmp(7625).ObscuredMediaTypes.GenericMedia, media: mediaItem };
-    isMediaScanPendingResult = tmp(7620).isMediaScanPending(obj3, enabledContentHarmTypeFlags);
-    const tmpResult = tmp(7620);
+    const obj3 = { type: tmp(7627).ObscuredMediaTypes.GenericMedia, media: mediaItem };
+    isMediaScanPendingResult = tmp(7622).isMediaScanPending(obj3, enabledContentHarmTypeFlags);
+    const tmpResult = tmp(7622);
   }
   if (isSpoilered) {
     isSpoilered = shouldObscureSpoiler;
   }
   let isVerifiedTeenResult = tmp4;
   if (mediaObscuredReasonFromBitmask.length > 0) {
-    isVerifiedTeenResult = tmp(5039).isVerifiedTeen();
-    const tmpResult2 = tmp(5039);
+    isVerifiedTeenResult = tmp(5041).isVerifiedTeen();
+    const tmpResult2 = tmp(5041);
   }
   const obj4 = { isSpoiler: isSpoilered, spoilerDescription: null, isObscured: null, obscureDescription: null, obscureAwaitingScan: null, verifyAge: null, obscureHideControls: null, obscureIsOpaque: null };
   if (!isSpoilered) {

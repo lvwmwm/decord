@@ -1,16 +1,16 @@
-// Module ID: 15484
-// Function ID: 15485
+// Module ID: 15493
+// Function ID: 15494
 // Name: VideoQuestModalContentCompleted
-// Dependencies: [32, 19, 17, 21, 4827, 576, 15458, 15453, 11628, 15482, 15449, 11427, 11818, 4559, 5270, 8043, 8707, 11638, 12117, 15423, 8613, 7454, 5269, 4823, 1115, 15475, 7404, 15476, 5271, 15445, 5425, 10522, 5750, 5890, 13293, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 15467, 15462, 11634, 15491, 15458, 11433, 11824, 4561, 5272, 8045, 8711, 11644, 12124, 15432, 8617, 7456, 5271, 4825, 1115, 15484, 7406, 15485, 5273, 15454, 5427, 10527, 5752, 5892, 13302, 2]
 
-// Module 15484 (VideoQuestModalContentCompleted)
+// Module 15493 (VideoQuestModalContentCompleted)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import spring from "spring" /* 5270 */;
-import QuestTypes from "QuestTypes" /* 5750 */;
-import showShareActionSheet from "showShareActionSheet" /* 8707 */;
-import AssetUtils from "AssetUtils" /* 11628 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 11638 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import spring from "spring" /* 5272 */;
+import QuestTypes from "QuestTypes" /* 5752 */;
+import showShareActionSheet from "showShareActionSheet" /* 8711 */;
+import AssetUtils from "AssetUtils" /* 11634 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 11644 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,13 +22,13 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 const ANIMATED_CONTENT_SPRING_CONFIG = { mass: 1.9, damping: 18, stiffness: 80, overshootClamping: false };
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { wrapper: { flexGrow: 1, flexShrink: 1 }, headerContentCopy: { flexGrow: 1, flexShrink: 1 }, closeButton: { opacity: 0.5 }, scroll: { flexGrow: 1, flexShrink: 1 }, scrollContent: { flexGrow: 1 }, content: { padding: nativeDefault.space.PX_16 }, contentRewardsAnimatedWrapper: { flexGrow: 1, flexShrink: 0 }, contentRewardsWrapper: null, contentRewards: null, contentRewardsCopy: null, contentEndCardHeader: null, contentEndCardHeaderCopy: null, contentEndCard: null, image: null };
 let obj3 = { padding: nativeDefault.space.PX_16 };
-obj.contentRewardsWrapper = { flexGrow: 1, flexShrink: 0, paddingTop: fn(15458).COMPLETION_GLOW_CLEARANCE };
+obj.contentRewardsWrapper = { flexGrow: 1, flexShrink: 0, paddingTop: fn(15467).COMPLETION_GLOW_CLEARANCE };
 obj.contentRewards = { alignItems: "center" };
 obj.contentRewardsCopy = { textAlign: "center" };
-let obj4 = { flexGrow: 1, flexShrink: 0, paddingTop: fn(15458).COMPLETION_GLOW_CLEARANCE };
+let obj4 = { flexGrow: 1, flexShrink: 0, paddingTop: fn(15467).COMPLETION_GLOW_CLEARANCE };
 obj.contentEndCardHeader = { marginBottom: nativeDefault.space.PX_16 };
 obj.contentEndCardHeaderCopy = { flexGrow: 1, flexShrink: 1 };
 let obj5 = { marginBottom: nativeDefault.space.PX_16 };

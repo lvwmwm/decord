@@ -1,14 +1,14 @@
-// Module ID: 14084
-// Function ID: 14085
+// Module ID: 14093
+// Function ID: 14094
 // Name: ProgramRewardsUtils
-// Dependencies: [1372, 1374, 4255, 14085, 14088, 14089, 4481, 2]
+// Dependencies: [1372, 1374, 4257, 14094, 14097, 14098, 4483, 2]
 // Exports: canFetchAnyProgramReward, canFetchNitroProgramReward, canFetchXboxProgramReward, hasNecessaryPremiumSubscriptionStatus, isEligibleForProgramReward, isProgramRewardStale, useIsEligibleForProgramReward
 
-// Module 14084 (ProgramRewardsUtils)
-import _modDef4255 from "module_4255" /* 4255 */;
-import PremiumUtils from "PremiumUtils" /* 4481 */;
-import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14085 */;
-import PremiumRewardsOrbsExperiment from "PremiumRewardsOrbsExperiment" /* 14088 */;
+// Module 14093 (ProgramRewardsUtils)
+import _modDef4257 from "module_4257" /* 4257 */;
+import PremiumUtils from "PremiumUtils" /* 4483 */;
+import ProgramRewardsTypes from "ProgramRewardsTypes" /* 14094 */;
+import PremiumRewardsOrbsExperiment from "PremiumRewardsOrbsExperiment" /* 14097 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -22,18 +22,18 @@ function canFetchNitroProgramReward(ProgramRewardsUtils) {
     str = "ProgramRewardsUtils";
   }
   if (ProgramRewardsTypes.RewardProgram.NITRO === NITRO) {
-    let flag = tmp(14088).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-    const tmpResult = tmp(14088);
+    let flag = tmp(14097).getPremiumRewardsOrbsExperiment(str).isInTreatment;
+    const tmpResult = tmp(14097);
   } else {
     flag = false;
-    if (tmp(14085).RewardProgram.XBOX === NITRO) {
+    if (tmp(14094).RewardProgram.XBOX === NITRO) {
       flag = true;
     }
   }
   if (flag) {
     const currentUser = UserStore.getCurrentUser();
-    flag = tmp(4481).isPremiumExactly(currentUser, PremiumTypes.TIER_2);
-    const tmpResult2 = tmp(4481);
+    flag = tmp(4483).isPremiumExactly(currentUser, PremiumTypes.TIER_2);
+    const tmpResult2 = tmp(4483);
   }
   return flag;
 }
@@ -47,22 +47,22 @@ function canFetchXboxProgramReward(ProgramRewardsUtils) {
     str = "ProgramRewardsUtils";
   }
   if (ProgramRewardsTypes.RewardProgram.NITRO === XBOX) {
-    let flag = tmp(14088).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-    const tmpResult = tmp(14088);
+    let flag = tmp(14097).getPremiumRewardsOrbsExperiment(str).isInTreatment;
+    const tmpResult = tmp(14097);
   } else {
     flag = false;
-    if (tmp(14085).RewardProgram.XBOX === XBOX) {
+    if (tmp(14094).RewardProgram.XBOX === XBOX) {
       flag = true;
     }
   }
   if (flag) {
-    flag = tmp(14089).hasCrepeMonthlyOrbsPerk(UserStore.getCurrentUser());
-    const tmpResult2 = tmp(14089);
+    flag = tmp(14098).hasCrepeMonthlyOrbsPerk(UserStore.getCurrentUser());
+    const tmpResult2 = tmp(14098);
   }
   return flag;
 }
 const PremiumTypes = fn(1374).PremiumTypes;
-const dependencyMap = { [fn(14085).RewardProgram.NITRO]: canFetchNitroProgramReward, [fn(14085).RewardProgram.XBOX]: canFetchXboxProgramReward };
+const dependencyMap = { [fn(14094).RewardProgram.NITRO]: canFetchNitroProgramReward, [fn(14094).RewardProgram.XBOX]: canFetchXboxProgramReward };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/rewards/ProgramRewardsUtils.tsx");
 
@@ -78,7 +78,7 @@ export const isProgramRewardStale = function isProgramRewardStale(next_reward_da
     if (tmp) {
       const _Date = Date;
       const date = new Date(next_reward_date);
-      tmp = _modDef4255(date);
+      tmp = _modDef4257(date);
     }
     return tmp;
   }
@@ -89,8 +89,8 @@ export const isEligibleForProgramReward = function isEligibleForProgramReward(ar
     str = "ProgramRewardsUtils";
   }
   if (ProgramRewardsTypes.RewardProgram.NITRO === arg0) {
-    return tmp(14088).getPremiumRewardsOrbsExperiment(str).isInTreatment;
-  } else if (tmp(14085).RewardProgram.XBOX === arg0) {
+    return tmp(14097).getPremiumRewardsOrbsExperiment(str).isInTreatment;
+  } else if (tmp(14094).RewardProgram.XBOX === arg0) {
     return true;
   } else {
     return false;

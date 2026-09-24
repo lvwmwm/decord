@@ -1,19 +1,19 @@
-// Module ID: 11707
-// Function ID: 11708
+// Module ID: 11713
+// Function ID: 11714
 // Name: useStrangerDangerWarning
-// Dependencies: [1372, 11261, 504, 11708, 11709, 11321, 8998, 11320, 2]
+// Dependencies: [1372, 11267, 504, 11714, 11715, 11327, 9002, 11326, 2]
 // Exports: useStrangerDangerWarning
 
-// Module 11707 (useStrangerDangerWarning)
+// Module 11713 (useStrangerDangerWarning)
 import initialize from "initialize" /* 504 */;
-import useUserIsTeen from "useUserIsTeen" /* 8998 */;
-import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11321 */;
-import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 11708 */;
-import useIsMessageRequest from "useIsMessageRequest" /* 11709 */;
+import useUserIsTeen from "useUserIsTeen" /* 9002 */;
+import useChannelSafetyWarning from "useChannelSafetyWarning" /* 11327 */;
+import useIsSpamMessageRequest from "useIsSpamMessageRequest" /* 11714 */;
+import useIsMessageRequest from "useIsMessageRequest" /* 11715 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const SafetyWarningTypes = fn(11261).SafetyWarningTypes;
+const SafetyWarningTypes = fn(11267).SafetyWarningTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/self_mod/stranger_danger/hooks/useStrangerDangerWarning.tsx");
 

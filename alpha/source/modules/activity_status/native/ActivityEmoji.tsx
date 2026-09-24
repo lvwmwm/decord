@@ -1,17 +1,17 @@
-// Module ID: 11238
-// Function ID: 11239
+// Module ID: 11244
+// Function ID: 11245
 // Name: ActivityEmoji
-// Dependencies: [19, 21, 4827, 2020, 1397, 9113, 7461, 2]
+// Dependencies: [19, 21, 4829, 2020, 1397, 9117, 7463, 2]
 // Exports: default
 
-// Module 11238 (ActivityEmoji)
+// Module 11244 (ActivityEmoji)
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import EmojiDefault from "Emoji" /* 7461 */;
+import EmojiDefault from "Emoji" /* 7463 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_5 = createStyles.createStyles({ emoji: { flexShrink: 0, width: "100%", height: "100%" }, text: { textAlign: "center", fontFamily: "System" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/activity_status/native/ActivityEmoji.tsx");
@@ -64,7 +64,7 @@ export default function ActivityEmoji(emoji) {
     }
   }
   if (null == emoji) {
-    ReactionIcon = ReactionIcon(9113).ReactionIcon;
+    ReactionIcon = ReactionIcon(9117).ReactionIcon;
     const obj = { style, size: "sm" };
     <ReactionIcon style={style} size="sm" />;
   } else {

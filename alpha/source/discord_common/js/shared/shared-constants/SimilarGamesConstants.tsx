@@ -1,9 +1,9 @@
-// Module ID: 9117
-// Function ID: 9118
+// Module ID: 9121
+// Function ID: 9122
 // Name: SimilarGamesConstants
 // Dependencies: [2]
 
-// Module 9117 (SimilarGamesConstants)
+// Module 9121 (SimilarGamesConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/SimilarGamesConstants.tsx");

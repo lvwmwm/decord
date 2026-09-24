@@ -1,14 +1,14 @@
-// Module ID: 16569
-// Function ID: 16570
+// Module ID: 16593
+// Function ID: 16594
 // Name: useIsCurrentUserEligibleForPowerupUpsells
-// Dependencies: [2105, 5741, 1372, 4721, 1374, 1969, 504, 2]
+// Dependencies: [2107, 5743, 1372, 4723, 1374, 1969, 504, 2]
 // Exports: default, getIsCurrentUserEligibleForPowerupUpsells
 
-// Module 16569 (useIsCurrentUserEligibleForPowerupUpsells)
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import SortedGuildStore from "SortedGuildStore" /* 5741 */;
+// Module 16593 (useIsCurrentUserEligibleForPowerupUpsells)
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import SortedGuildStore from "SortedGuildStore" /* 5743 */;
 import UserStore from "UserStore" /* 1372 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4721 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 4723 */;
 
 const require = fn;
 const PremiumTypes = fn(1374).PremiumTypes;

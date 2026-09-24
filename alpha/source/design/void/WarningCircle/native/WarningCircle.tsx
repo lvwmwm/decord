@@ -1,11 +1,11 @@
-// Module ID: 14457
-// Function ID: 14458
+// Module ID: 14466
+// Function ID: 14467
 // Name: WarningCircle
-// Dependencies: [19, 21, 8803, 2]
+// Dependencies: [19, 21, 8807, 2]
 // Exports: default
 
-// Module 14457 (WarningCircle)
-import inlineStyles from "inlineStyles" /* 8803 */;
+// Module 14466 (WarningCircle)
+import inlineStyles from "inlineStyles" /* 8807 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

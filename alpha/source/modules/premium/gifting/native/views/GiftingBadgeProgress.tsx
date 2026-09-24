@@ -1,14 +1,14 @@
-// Module ID: 11382
-// Function ID: 11383
+// Module ID: 11388
+// Function ID: 11389
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 8536, 21, 4827, 576, 11086, 11091, 4823, 1115, 2580, 2]
+// Dependencies: [19, 17, 8540, 21, 4829, 576, 11092, 11097, 4825, 1115, 2582, 2]
 // Exports: default
 
-// Module 11382 (GiftingBadgeProgress)
+// Module 11388 (GiftingBadgeProgress)
 import nativeDefault from "native" /* 576 */;
-import _modDef2580 from "module_2580" /* 2580 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11086 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11091 */;
+import _modDef2582 from "module_2582" /* 2582 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11092 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11097 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,10 +22,10 @@ function GiftingBadgeProgressBar(percent) {
   return hasOwnProperty(View, obj);
 }
 const View = fn(17).View;
-let closure_4 = fn(8536).getSingleRequirementThreshold;
+let closure_4 = fn(8540).getSingleRequirementThreshold;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_16 }, content: null, progressBarTrack: null, progressBarFill: null, labels: null };
 const obj3 = { flexDirection: "row", alignItems: "center", padding: nativeDefault.space.PX_16 };
 obj2.content = { flex: 1, paddingHorizontal: nativeDefault.space.PX_8, gap: nativeDefault.space.PX_4 };
@@ -71,7 +71,7 @@ export default function GiftingBadgeProgress(title) {
   let tmp15 = null != title;
   if (tmp15) {
     const obj7 = { variant: "text-md/semibold", children: title };
-    tmp15 = hasOwnProperty(tmp2(4823).Text, obj7);
+    tmp15 = hasOwnProperty(tmp2(4825).Text, obj7);
   }
   const items1 = [tmp15, hasOwnProperty(GiftingBadgeProgressBar, { percent: num2 }), ];
   const obj8 = { style: tmp.labels, children: null };
@@ -80,8 +80,8 @@ export default function GiftingBadgeProgress(title) {
     const obj9 = { variant: "text-xs/normal", color: "text-muted", children: null };
     const intl = tmp2(1115).intl;
     const obj10 = { count: progress, threshold: tmp7 };
-    obj9.children = intl.format(_modDef2580.iIpfQe, obj10);
-    tmp17Result = tmp17(tmp2(4823).Text, obj9);
+    obj9.children = intl.format(_modDef2582.iIpfQe, obj10);
+    tmp17Result = tmp17(tmp2(4825).Text, obj9);
   }
   obj8.children = tmp17Result;
   items1[2] = hasOwnProperty(View, obj8);

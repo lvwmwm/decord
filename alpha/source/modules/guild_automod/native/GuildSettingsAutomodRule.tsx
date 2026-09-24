@@ -1,27 +1,27 @@
-// Module ID: 18037
-// Function ID: 18038
+// Module ID: 18060
+// Function ID: 18061
 // Name: GuildSettingsAutomodRule
-// Dependencies: [5, 19, 18021, 18023, 12198, 21, 4827, 576, 1484, 17382, 2020, 18024, 5199, 1115, 5927, 7705, 8947, 5269, 4823, 6934, 7531, 18038, 18049, 18052, 5990, 5908, 12203, 4520, 4727, 7520, 7371, 2]
+// Dependencies: [5, 19, 18044, 18046, 12205, 21, 4829, 576, 1484, 17405, 2020, 18047, 5201, 1115, 5929, 7707, 8951, 5271, 4825, 6936, 7533, 18061, 18072, 18075, 5992, 5910, 12210, 4522, 4729, 7522, 7373, 2]
 // Exports: default
 
-// Module 18037 (GuildSettingsAutomodRule)
+// Module 18060 (GuildSettingsAutomodRule)
 import nativeDefault from "native" /* 576 */;
-import ToastUtils from "ToastUtils" /* 4520 */;
-import NavigatorHeader from "NavigatorHeader" /* 5927 */;
-import ClipboardUtils from "ClipboardUtils" /* 7520 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 18024 */;
+import ToastUtils from "ToastUtils" /* 4522 */;
+import NavigatorHeader from "NavigatorHeader" /* 5929 */;
+import ClipboardUtils from "ClipboardUtils" /* 7522 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 18047 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const useAutomodRulesList = fn(18021).useAutomodRulesList;
-const GuildSettingsAutomodRuleStore = fn(18023);
+const useAutomodRulesList = fn(18044).useAutomodRulesList;
+const GuildSettingsAutomodRuleStore = fn(18046);
 ({ useAutomodEditingRuleActions: metroRequire, useAutomodEditingRuleState: closure_7 } = GuildSettingsAutomodRuleStore);
-const MAX_RULE_NAME_LENGTH = fn(12198).MAX_RULE_NAME_LENGTH;
+const MAX_RULE_NAME_LENGTH = fn(12205).MAX_RULE_NAME_LENGTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 let c12 = "automod-delete-rule";
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { stack: { marginTop: nativeDefault.space.PX_12, paddingHorizontal: nativeDefault.modules.mobile.TABLE_ROW_PADDING } };
 let closure_13 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -329,20 +329,20 @@ export default function GuildSettingsAutomodRule(guildId) {
                         let v0 = 1;
                         c5 = 2;
                         c6 = 1;
-                        const obj6 = { value: closure_0(12203).deleteAutomodRule(id, closure_0), done: false };
+                        const obj6 = { value: closure_0(12210).deleteAutomodRule(id, closure_0), done: false };
                         return obj6;
                       }
                     } else if (1 === tmp7) {
                       v0 = 0;
                       closure_129_0 = closure_3;
-                      const aPIError = new closure_0(4727).APIError(closure_129_0);
+                      const aPIError = new closure_0(4729).APIError(closure_129_0);
                       const anyErrorMessage = aPIError.getAnyErrorMessage();
                       closure_0 = anyErrorMessage;
                       if (anyErrorMessage == null) {
                         const intl = closure_0(1115).intl;
                         closure_0 = intl.string(closure_0(1115).t.fEptJP);
                       }
-                      closure_0(4520).presentError(closure_0);
+                      closure_0(4522).presentError(closure_0);
                       throw closure_129_0;
                     } else if (arg0 === 1) {
                       c6 = 3;

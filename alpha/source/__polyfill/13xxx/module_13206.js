@@ -1,32 +1,37 @@
 // Module ID: 13206
 // Function ID: 13207
-// Dependencies: [13138]
-// Exports: applySdkMetadata
+// Dependencies: [13192, 13151, 13189]
+// Exports: createCheckInEnvelope
 
 // Module 13206
-import _mod13138 from "module_13138" /* 13138 */;
+import _mod13151 from "module_13151" /* 13151 */;
+import _mod13189 from "module_13189" /* 13189 */;
+import _mod13192 from "module_13192" /* 13192 */;
 
 require = arg1;
 const dependencyMap = arg6;
 
-export const applySdkMetadata = function applySdkMetadata(_metadata, arg1) {
-  let arr = arg2;
-  if (arg2 === undefined) {
-    const items = [arg1];
-    arr = items;
+export const createCheckInEnvelope = function createCheckInEnvelope(arg0, arg1, sdk, arg3, arg4) {
+  const obj = { sent_at: new Date().toISOString() };
+  if (sdk) {
+    sdk = sdk.sdk;
   }
-  let str = arg3;
-  if (arg3 === undefined) {
-    str = "npm";
+  if (sdk) {
+    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
+    obj.sdk = obj2;
   }
-  const tmp = _metadata._metadata || {};
-  if (!tmp.sdk) {
-    const obj = { name: null, packages: null, version: null };
-    const _HermesInternal = HermesInternal;
-    obj.name = "sentry.javascript." + arg1;
-    obj.packages = arr.map((item) => ({ name: "" + str + ":@sentry/" + item, version: _mod13138.SDK_VERSION }));
-    obj.version = str(13138).SDK_VERSION;
-    tmp.sdk = obj;
+  let tmp = arg3;
+  if (arg3) {
+    tmp = arg4;
   }
-  _metadata._metadata = tmp;
+  if (tmp) {
+    obj.dsn = _mod13192.dsnToString(arg4);
+  }
+  if (arg1) {
+    obj.trace = _mod13151.dropUndefinedKeys(arg1);
+  }
+  const items = [{ type: "check_in" }, arg0];
+  const date = new Date();
+  const items1 = [items];
+  return _mod13189.createEnvelope(obj, items1);
 };

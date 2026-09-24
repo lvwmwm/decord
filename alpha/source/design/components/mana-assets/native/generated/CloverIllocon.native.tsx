@@ -1,13 +1,13 @@
-// Module ID: 6174
-// Function ID: 6175
+// Module ID: 6176
+// Function ID: 6177
 // Name: CloverIllocon
-// Dependencies: [21, 5890, 6175, 2]
+// Dependencies: [21, 5892, 6177, 2]
 // Exports: CloverIllocon
 
-// Module 6174 (CloverIllocon)
+// Module 6176 (CloverIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6175 from "module_6175" /* 6175 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6177 from "module_6177" /* 6177 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const CloverIllocon = function CloverIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6175 };
+  const obj2 = { uri: _modDef6177 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

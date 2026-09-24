@@ -1,13 +1,13 @@
-// Module ID: 13803
-// Function ID: 13804
+// Module ID: 13812
+// Function ID: 13813
 // Name: ReferralProgramShareActionSheetUtils
-// Dependencies: [4472, 11204, 2]
+// Dependencies: [4474, 11210, 2]
 // Exports: buildReferralUserRow
 
-// Module 13803 (ReferralProgramShareActionSheetUtils)
-import RelationshipStore from "RelationshipStore" /* 4472 */;
+// Module 13812 (ReferralProgramShareActionSheetUtils)
+import RelationshipStore from "RelationshipStore" /* 4474 */;
 
-const UserRowModes = fn(11204).UserRowModes;
+const UserRowModes = fn(11210).UserRowModes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/premium/referral_program/native/ReferralProgramShareActionSheetUtils.tsx");
 

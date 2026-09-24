@@ -1,11 +1,11 @@
-// Module ID: 7906
-// Function ID: 7907
+// Module ID: 7908
+// Function ID: 7909
 // Name: HeroBlockRecord
-// Dependencies: [7900, 7882, 2]
+// Dependencies: [7902, 7884, 2]
 
-// Module 7906 (HeroBlockRecord)
-import CollectiblesUtils from "CollectiblesUtils" /* 7882 */;
-import ShopBlockType from "ShopBlockType" /* 7900 */;
+// Module 7908 (HeroBlockRecord)
+import CollectiblesUtils from "CollectiblesUtils" /* 7884 */;
+import ShopBlockType from "ShopBlockType" /* 7902 */;
 import size from "module_2" /* 2 */;
 
 const prototype = function HeroBlockRecord(unpublished_at) {

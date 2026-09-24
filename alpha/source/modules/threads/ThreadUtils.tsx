@@ -1,21 +1,21 @@
-// Module ID: 8108
-// Function ID: 8109
+// Module ID: 8110
+// Function ID: 8111
 // Name: ThreadUtils
-// Dependencies: [109, 4842, 5008, 4464, 1114, 1074, 1115, 7827, 5007, 1241, 8101, 7445, 1385, 504, 11, 4414, 2]
+// Dependencies: [109, 4844, 5010, 4466, 1114, 1074, 1115, 7829, 5009, 1241, 8103, 7447, 1385, 504, 11, 4416, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 8108 (ThreadUtils)
+// Module 8110 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import _modDef4414 from "module_4414" /* 4414 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5007 */;
-import threads_getTimestampStringDefault from "threads/getTimestampString" /* 7827 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8101 */;
+import _modDef4416 from "module_4416" /* 4416 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
+import threads_getTimestampStringDefault from "threads/getTimestampString" /* 7829 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8103 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 4842 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4464 */;
+import ReadStateStore from "ReadStateStore" /* 4844 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4466 */;
 
 const require = globalThis.__r;
 
@@ -55,7 +55,7 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
   if (null != result) {
     const guildId = getGuildId.getGuildId();
     const parent_id = getGuildId.parent_id;
-    const currentChannelSettings = tmp(7445).getCurrentChannelSettings(guildId, parent_id);
+    const currentChannelSettings = tmp(7447).getCurrentChannelSettings(guildId, parent_id);
     let num = JoinedThreadsStore.flags(getGuildId.id);
     if (num == null) {
       num = 0;
@@ -82,8 +82,8 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     }
     let notificationAnalyticsString = getNotificationAnalyticsString(num);
     const isMutedResult = JoinedThreadsStore.isMuted(getGuildId.id);
-    let tmpResult = tmp(7445);
-    let result1 = tmp(7445).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
+    let tmpResult = tmp(7447);
+    let result1 = tmp(7447).muteConfigToTimestamp(obj7.getMuteConfig(getGuildId.id));
     ({ can_send_message, parent_channel_type } = result);
     const obj2 = {};
     const merged = Object.assign(_objectWithoutProperties(result, closure_3));
@@ -107,11 +107,11 @@ export const trackThreadNotificationSettingsUpdated = function trackThreadNotifi
     obj2.new_thread_is_muted = muted;
     obj2.old_thread_muted_until = result1;
     if (null != flags.mute_config) {
-      result1 = tmp(7445).muteConfigToTimestamp(flags.mute_config);
-      const tmpResult4 = tmp(7445);
+      result1 = tmp(7447).muteConfigToTimestamp(flags.mute_config);
+      const tmpResult4 = tmp(7447);
     }
     obj2.new_thread_muted_until = result1;
-    const tmpResult3 = tmp(7445);
+    const tmpResult3 = tmp(7447);
     AnalyticsUtilsDefault.track(constants.THREAD_NOTIFICATION_SETTINGS_UPDATED, obj2);
   }
 };
@@ -130,8 +130,8 @@ export const useLastMessageTimestamp = function useLastMessageTimestamp(thread) 
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    valueOfResult = _modDef4414(createTimestamp).valueOf();
-    const obj3 = _modDef4414(createTimestamp);
+    valueOfResult = _modDef4416(createTimestamp).valueOf();
+    const obj3 = _modDef4416(createTimestamp);
   }
   if (extractTimestampResult == null) {
     extractTimestampResult = valueOfResult;

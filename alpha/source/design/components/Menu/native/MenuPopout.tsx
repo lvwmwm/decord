@@ -1,12 +1,12 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14497
+// Function ID: 14498
 // Name: MenuPopout
-// Dependencies: [32, 19, 21, 8263, 4559, 10992, 14485, 14486, 14487, 2]
+// Dependencies: [32, 19, 21, 8267, 4561, 10998, 14494, 14495, 14496, 2]
 // Exports: MenuPopout
 
-// Module 14488 (MenuPopout)
-import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10992 */;
-import Menu from "Menu" /* 14485 */;
+// Module 14497 (MenuPopout)
+import NativeMenuActionCreatorsDefault from "NativeMenuActionCreators" /* 10998 */;
+import Menu from "Menu" /* 14494 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -62,8 +62,8 @@ export const MenuPopout = function MenuPopout(onRequestOpen) {
     children: menuItems.map((item, index) => {
       const obj = { children: null };
       const merged = Object.assign(item);
-      obj.children = offset(menuItems(14487).MenuItem, { showIconFirst: true });
-      return offset(menuItems(14486).MenuGroup, obj, "chat-context-menu-group-" + index);
+      obj.children = offset(menuItems(14496).MenuItem, { showIconFirst: true });
+      return offset(menuItems(14495).MenuGroup, obj, "chat-context-menu-group-" + index);
     })
   }), items1);
   const items2 = [memo, key, onRequestOpen];

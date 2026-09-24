@@ -1,10 +1,10 @@
-// Module ID: 5484
-// Function ID: 5485
+// Module ID: 5486
+// Function ID: 5487
 // Name: webpConversion
-// Dependencies: [5, 3, 5485, 1240, 2]
+// Dependencies: [5, 3, 5487, 1240, 2]
 // Exports: maybeConvertToWebP
 
-// Module 5484 (webpConversion)
+// Module 5486 (webpConversion)
 import LoggerDefault from "Logger" /* 3 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1240 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

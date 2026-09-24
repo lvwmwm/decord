@@ -1,9 +1,9 @@
-// Module ID: 10032
-// Function ID: 10033
+// Module ID: 10037
+// Function ID: 10038
 // Name: TransientKeyStore
 // Dependencies: [504, 573, 2]
 
-// Module 10032 (TransientKeyStore)
+// Module 10037 (TransientKeyStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

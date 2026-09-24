@@ -1,15 +1,15 @@
-// Module ID: 9683
-// Function ID: 9684
+// Module ID: 9687
+// Function ID: 9688
 // Name: getCachedOrFetchActivityApplicationForLaunch
-// Dependencies: [5, 5054, 2002, 2042, 9672, 9647, 9684, 2]
+// Dependencies: [5, 5056, 2002, 2044, 9676, 9651, 9688, 2]
 // Exports: default
 
-// Module 9683 (getCachedOrFetchActivityApplicationForLaunch)
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9672 */;
+// Module 9687 (getCachedOrFetchActivityApplicationForLaunch)
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 9676 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5054 */;
+import ApplicationStore from "ApplicationStore" /* 5056 */;
 import ApplicationRecord from "ApplicationRecord" /* 2002 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 let closure_7 = async function _getCachedOrFetchActivityApplicationForLaunch(arg0, value) {

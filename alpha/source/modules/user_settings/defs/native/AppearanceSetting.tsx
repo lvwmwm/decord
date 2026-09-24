@@ -1,18 +1,18 @@
-// Module ID: 15596
-// Function ID: 15597
+// Module ID: 15610
+// Function ID: 15611
 // Name: AppearanceSetting
-// Dependencies: [4646, 1185, 1074, 4761, 504, 1228, 8203, 1115, 2714, 11805, 15597, 15599, 2]
+// Dependencies: [4648, 1185, 1074, 4763, 504, 1228, 8205, 1115, 2716, 11811, 15611, 15613, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 15596 (AppearanceSetting)
+// Module 15610 (AppearanceSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
-import useThemeDefault from "useTheme" /* 4761 */;
-import useActiveTheme from "useActiveTheme" /* 8203 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4646 */;
+import useThemeDefault from "useTheme" /* 4763 */;
+import useActiveTheme from "useActiveTheme" /* 8205 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4648 */;
 
-const _modDef2714 = tmp(2714);
+const _modDef2716 = tmp(2716);
 require = fn;
 function useAppearanceSettingTrailing() {
   const tmp3 = useThemeDefault();
@@ -22,7 +22,7 @@ function useAppearanceSettingTrailing() {
   const activeThemeType = useActiveTheme.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
     const intl2 = tmp4(1115).intl;
-    return intl2.string(_modDef2714.KSBBpC);
+    return intl2.string(_modDef2716.KSBBpC);
   } else if (tmp8.CLIENT === activeThemeType) {
     let name;
     if (stateFromStores != null) {
@@ -43,14 +43,14 @@ function useAppearanceSettingTrailing() {
   }
 }
 const ActiveThemeType = fn(1185).ActiveThemeType;
-const SettingBuilders = fn(11805);
+const SettingBuilders = fn(11811);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t["iHH+ky"]);
   },
   parent: null,
-  IconComponent: fn(15597).PaintPaletteIcon,
+  IconComponent: fn(15611).PaintPaletteIcon,
   useTrailing: useAppearanceSettingTrailing,
   screen: {
     route: fn(1074).UserSettingsSections.APPEARANCE,

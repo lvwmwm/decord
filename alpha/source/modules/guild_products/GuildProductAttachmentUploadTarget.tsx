@@ -1,11 +1,11 @@
-// Module ID: 5479
-// Function ID: 5480
+// Module ID: 5481
+// Function ID: 5482
 // Name: GuildProductAttachmentUploadTarget
-// Dependencies: [5480, 1074, 2]
+// Dependencies: [5482, 1074, 2]
 
-// Module 5479 (GuildProductAttachmentUploadTarget)
+// Module 5481 (GuildProductAttachmentUploadTarget)
 import Constants from "Constants" /* 1074 */;
-import GuildProductConstants from "GuildProductConstants" /* 5480 */;
+import GuildProductConstants from "GuildProductConstants" /* 5482 */;
 import size from "module_2" /* 2 */;
 
 ({ MAX_ATTACHMENT_UPLOAD_COUNT: closure_0, MAX_ATTACHMENT_UPLOAD_FILESIZE_BYTES: closure_1, MAX_ATTACHMENT_UPLOAD_TOTAL_FILESIZE_BYTES: c2 } = GuildProductConstants);

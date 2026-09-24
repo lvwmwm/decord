@@ -1,12 +1,12 @@
-// Module ID: 17242
-// Function ID: 17243
+// Module ID: 17266
+// Function ID: 17267
 // Name: SmartSearchExpandButton
-// Dependencies: [19, 17, 21, 576, 4827, 17241, 13929, 11500, 1115, 3874, 2]
+// Dependencies: [19, 17, 21, 576, 4829, 17265, 13938, 11506, 1115, 3876, 2]
 
-// Module 17242 (SmartSearchExpandButton)
+// Module 17266 (SmartSearchExpandButton)
 import nativeDefault from "native" /* 576 */;
-import _modDef3874 from "module_3874" /* 3874 */;
-import useSearchHostSurface from "useSearchHostSurface" /* 17241 */;
+import _modDef3876 from "module_3876" /* 3876 */;
+import useSearchHostSurface from "useSearchHostSurface" /* 17265 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ get_ActivityIndicator = fn(17);
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const rect = { top: nativeDefault.space.PX_8, bottom: nativeDefault.space.PX_8 };
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_9 = createStyles.createStyles((backgroundColor) => {
   const obj = { block: { position: "absolute", left: 0, right: 0, bottom: 0, alignItems: "center" }, pill: { height: nativeDefault.space.PX_32, paddingHorizontal: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.round, borderWidth: 1, borderColor: nativeDefault.colors.CONTROL_SECONDARY_BORDER_DEFAULT, backgroundColor, alignItems: "center", justifyContent: "center" }, surface: null };
   const obj3 = {};
@@ -32,14 +32,14 @@ export default noop.memo((isExpanded) => {
   isExpanded = isExpanded.isExpanded;
   const tmp3 = closure_9(useSearchHostSurface.useSearchHostSurfaceColor());
   if (isExpanded) {
-    let ChevronSmallDownIcon = tmp(13929).ChevronSmallUpIcon;
+    let ChevronSmallDownIcon = tmp(13938).ChevronSmallUpIcon;
   } else {
-    ChevronSmallDownIcon = tmp(11500).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp(11506).ChevronSmallDownIcon;
   }
   const obj2 = { style: tmp3.block, hitSlop: rect, children: null };
   const obj3 = { style: tmp3.pill, hitSlop: rect, accessibilityRole: "button", accessibilityLabel: null, onPress: null, children: null };
   const intl = tmp(1115).intl;
-  const tmp9 = _modDef3874;
+  const tmp9 = _modDef3876;
   if (isExpanded) {
     let OLD0mz = tmp9.ih0v1g;
     let tmp10 = tmp8;

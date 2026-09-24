@@ -1,16 +1,16 @@
-// Module ID: 7575
-// Function ID: 7576
+// Module ID: 7577
+// Function ID: 7578
 // Name: safeTransitionTo
-// Dependencies: [5, 2064, 1074, 4981, 7576, 1101, 7577, 5194, 1115, 7604, 2616, 7644, 2]
+// Dependencies: [5, 2066, 1074, 4983, 7578, 1101, 7579, 5196, 1115, 7606, 2618, 7646, 2]
 // Exports: default
 
-// Module 7575 (safeTransitionTo)
+// Module 7577 (safeTransitionTo)
 import router_utils from "router_utils" /* 1101 */;
-import LinkUtils from "LinkUtils" /* 4981 */;
-import DiceRollActionCreators from "DiceRollActionCreators" /* 7576 */;
-import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7577 */;
+import LinkUtils from "LinkUtils" /* 4983 */;
+import DiceRollActionCreators from "DiceRollActionCreators" /* 7578 */;
+import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 7579 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GuildStore from "GuildStore" /* 2064 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 require = fn;
 let closure_6 = async function _safeTransitionTo(arg0, value) {

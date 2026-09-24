@@ -1,12 +1,12 @@
-// Module ID: 10275
-// Function ID: 10276
+// Module ID: 10280
+// Function ID: 10281
 // Name: useLocalStorageState
-// Dependencies: [32, 19, 510, 5288, 2]
+// Dependencies: [32, 19, 510, 5290, 2]
 // Exports: useLocalStorageState
 
-// Module 10275 (useLocalStorageState)
+// Module 10280 (useLocalStorageState)
 import Storage3 from "Storage" /* 510 */;
-import useMountEffectDefault from "useMountEffect" /* 5288 */;
+import useMountEffectDefault from "useMountEffect" /* 5290 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

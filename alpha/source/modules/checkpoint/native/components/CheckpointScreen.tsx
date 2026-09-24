@@ -1,19 +1,19 @@
-// Module ID: 16041
-// Function ID: 16042
+// Module ID: 16060
+// Function ID: 16061
 // Name: CheckpointScreen
-// Dependencies: [19, 17, 5052, 21, 576, 4827, 7312, 2]
+// Dependencies: [19, 17, 5054, 21, 576, 4829, 7314, 2]
 // Exports: default
 
-// Module 16041 (CheckpointScreen)
+// Module 16060 (CheckpointScreen)
 import nativeDefault from "native" /* 576 */;
 import noop from "module_19" /* 19 */;
 
 get_ActivityIndicator = fn(17);
 ({ ScrollView: c3, View: closure_4 } = get_ActivityIndicator);
-const CHECKPOINT_NAV_HEIGHT = fn(5052).CHECKPOINT_NAV_HEIGHT;
+const CHECKPOINT_NAV_HEIGHT = fn(5054).CHECKPOINT_NAV_HEIGHT;
 const jsx = fn(21).jsx;
 const PX_24 = nativeDefault.space.PX_24;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_8 = createStyles.createStyles({ container: { height: "100%", width: "100%" }, scroll: { width: "100%" }, scrollContent: { flexGrow: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointScreen.tsx");
@@ -21,7 +21,7 @@ const result = size.fileFinishedImporting("modules/checkpoint/native/components/
 export default function CheckpointScreen(children) {
   let insets;
   const tmp = closure_8();
-  insets = insets(7312)().insets;
+  insets = insets(7314)().insets;
   const items = [, , , ];
   ({ bottom: arr[0], left: arr[1], right: arr[2], top: arr[3] } = insets);
   const obj = { style: tmp.container, children: null };

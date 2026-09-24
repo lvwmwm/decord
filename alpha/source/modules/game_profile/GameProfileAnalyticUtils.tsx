@@ -1,18 +1,18 @@
-// Module ID: 9033
-// Function ID: 9034
+// Module ID: 9037
+// Function ID: 9038
 // Name: GameProfileAnalyticUtils
-// Dependencies: [8682, 1074, 8704, 1255, 1241, 2]
+// Dependencies: [8686, 1074, 8708, 1255, 1241, 2]
 // Exports: generateViewId, getGuildIdAndVerifiedFromInvite, trackGameProfileAction, trackGameProfileClose, trackGameProfileEmbedAction, trackGameProfileFeedback, trackGameProfileOpen
 
-// Module 9033 (GameProfileAnalyticUtils)
+// Module 9037 (GameProfileAnalyticUtils)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import v1 from "v1" /* 1255 */;
-import ContentInventoryStore from "ContentInventoryStore" /* 8682 */;
+import ContentInventoryStore from "ContentInventoryStore" /* 8686 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_4, GuildFeatures: hasOwnProperty } = Constants);
-const ContentInventoryFeedKey = fn(8704).ContentInventoryFeedKey;
+const ContentInventoryFeedKey = fn(8708).ContentInventoryFeedKey;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_profile/GameProfileAnalyticUtils.tsx");
 

@@ -1,18 +1,18 @@
-// Module ID: 17092
-// Function ID: 17093
+// Module ID: 17119
+// Function ID: 17120
 // Name: VibegrationsMessageAuthor
-// Dependencies: [19, 17, 1372, 21, 4827, 576, 17089, 17093, 504, 17094, 4823, 5425, 1115, 4671, 17095, 3712, 1177, 5364, 2]
+// Dependencies: [19, 17, 1372, 21, 4829, 576, 17116, 17120, 504, 17121, 4825, 5427, 1115, 4673, 17122, 3714, 1177, 5366, 2]
 // Exports: VibegrationsConjureAvatar, VibegrationsConjureHeader, VibegrationsUserAvatar, VibegrationsUserHeader, useMessageAuthorUser
 
-// Module 17092 (VibegrationsMessageAuthor)
+// Module 17119 (VibegrationsMessageAuthor)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef3712 from "module_3712" /* 3712 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import AppsIcon from "AppsIcon" /* 5364 */;
-import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 17093 */;
-import VibegrationsMessageTime from "VibegrationsMessageTime" /* 17094 */;
-import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17095 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import AppsIcon from "AppsIcon" /* 5366 */;
+import vibegrationsMessageAuthors from "vibegrationsMessageAuthors" /* 17120 */;
+import VibegrationsMessageTime from "VibegrationsMessageTime" /* 17121 */;
+import VibegrationsMessageActionSheet from "VibegrationsMessageActionSheet" /* 17122 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -64,9 +64,9 @@ class VibegrationsMessageHeader {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { header: { flexDirection: "row", alignItems: "baseline", gap: nativeDefault.space.PX_8 }, name: { flexShrink: 1 }, time: { flexShrink: 0 }, conjureTile: null };
-let size = { width: fn(17089).MESSAGE_AVATAR_SIZE, height: fn(17089).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
+let size = { width: fn(17116).MESSAGE_AVATAR_SIZE, height: fn(17116).MESSAGE_AVATAR_SIZE, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_MUTED, backgroundColor: nativeDefault.colors.BACKGROUND_CODE, alignItems: "center", justifyContent: "center" };
 obj2.conjureTile = size;
 const React6 = createStyles.createStyles(obj2);
 size = fn(2);
@@ -103,7 +103,7 @@ export const VibegrationsUserHeader = function VibegrationsUserHeader(userId) {
     return vibegrationsMessageAuthors.resolveMessageAuthor(stateFromStores, user, UserStore.getCurrentUser());
   }, items2);
   let obj = stateFromStores(504);
-  const name = stateFromStores(4671).useName(stateFromStores);
+  const name = stateFromStores(4673).useName(stateFromStores);
   [][0] = stateFromStores;
   let tmp5 = null;
   if (null != stateFromStores) {
@@ -118,7 +118,7 @@ export const VibegrationsUserHeader = function VibegrationsUserHeader(userId) {
 export const VibegrationsConjureHeader = function VibegrationsConjureHeader(arg0) {
   const obj = { name: null, color: "text-brand", at: null };
   const intl = util.intl;
-  obj.name = intl.string(_modDef3712.Xmvb23);
+  obj.name = intl.string(_modDef3714.Xmvb23);
   obj.at = arg0.at;
   return timestampProducer(VibegrationsMessageHeader, obj);
 };
@@ -151,9 +151,9 @@ export const VibegrationsUserAvatar = function VibegrationsUserAvatar(arg0) {
     const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: null, children: null };
     const intl = tmp4(1115).intl;
     obj2.accessibilityLabel = intl.string(tmp4(1115).t.iXAna6);
-    const obj3 = { size, user: stateFromStores, guildId: "Array" };
+    const obj3 = { size, user: stateFromStores, guildId: "r" };
     obj2.children = closure_6(tmp4(1177).Avatar, obj3);
-    tmp8 = closure_6(tmp4(5425).PressableOpacity, obj2);
+    tmp8 = closure_6(tmp4(5427).PressableOpacity, obj2);
   }
   return tmp8;
 };

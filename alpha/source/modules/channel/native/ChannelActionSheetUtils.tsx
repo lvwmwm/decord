@@ -1,13 +1,13 @@
-// Module ID: 11303
-// Function ID: 11304
+// Module ID: 11309
+// Function ID: 11310
 // Name: ChannelActionSheetUtils
-// Dependencies: [4972, 7520, 4520, 2]
+// Dependencies: [4974, 7522, 4522, 2]
 // Exports: copyGuildChannelOrThreadLink
 
-// Module 11303 (ChannelActionSheetUtils)
-import ToastUtils from "ToastUtils" /* 4520 */;
-import ChannelUtils from "ChannelUtils" /* 4972 */;
-import ClipboardUtils from "ClipboardUtils" /* 7520 */;
+// Module 11309 (ChannelActionSheetUtils)
+import ToastUtils from "ToastUtils" /* 4522 */;
+import ChannelUtils from "ChannelUtils" /* 4974 */;
+import ClipboardUtils from "ClipboardUtils" /* 7522 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/native/ChannelActionSheetUtils.tsx");

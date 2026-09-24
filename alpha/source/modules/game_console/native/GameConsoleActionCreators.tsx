@@ -1,11 +1,11 @@
-// Module ID: 10137
-// Function ID: 10138
+// Module ID: 10142
+// Function ID: 10143
 // Name: game_console/GameConsoleActionCreators
-// Dependencies: [5, 10130, 5193, 1115, 2]
+// Dependencies: [5, 10135, 5195, 1115, 2]
 // Exports: transferToPlaystationWithAlert
 
-// Module 10137 (game_console/GameConsoleActionCreators)
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10130 */;
+// Module 10142 (game_console/GameConsoleActionCreators)
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10135 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;

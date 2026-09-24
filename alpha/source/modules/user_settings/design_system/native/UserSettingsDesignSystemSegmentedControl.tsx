@@ -1,13 +1,13 @@
-// Module ID: 16154
-// Function ID: 16155
+// Module ID: 16176
+// Function ID: 16177
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 4827, 576, 4823, 9969, 5269, 9970, 12955, 5271, 4534, 2]
+// Dependencies: [32, 19, 17, 21, 4829, 576, 4825, 9974, 5271, 9975, 12964, 5273, 4536, 2]
 // Exports: default
 
-// Module 16154 (UserSettingsDesignSystemSegmentedControl)
+// Module 16176 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 576 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4534 */;
-import Text_Text from "Text/Text" /* 4823 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4536 */;
+import Text_Text from "Text/Text" /* 4825 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsxs: metroRequire, jsx: closure_7 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { margin: 16, flex: 1, alignItems: "center", padding: 40 }, item: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderWidth: 2, borderColor: nativeDefault.colors.BORDER_STRONG, flex: 1, alignItems: "center", justifyContent: "center", height: 400 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);

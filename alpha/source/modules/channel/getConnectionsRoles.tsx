@@ -1,12 +1,12 @@
-// Module ID: 5712
-// Function ID: 5713
+// Module ID: 5714
+// Function ID: 5715
 // Name: getConnectionsRoles
-// Dependencies: [2099, 2064, 1074, 1086, 2]
+// Dependencies: [2101, 2066, 1074, 1086, 2]
 // Exports: default
 
-// Module 5712 (getConnectionsRoles)
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2064 */;
+// Module 5714 (getConnectionsRoles)
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import BigFlagUtils from "BigFlagUtils" /* 1086 */;
 
 const Constants = fn(1074);

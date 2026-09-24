@@ -1,9 +1,9 @@
-// Module ID: 4543
-// Function ID: 4544
+// Module ID: 4545
+// Function ID: 4546
 // Name: AccessibilityPreferencesContext
 // Dependencies: [19, 2]
 
-// Module 4543 (AccessibilityPreferencesContext)
+// Module 4545 (AccessibilityPreferencesContext)
 import noop from "module_19" /* 19 */;
 
 const context = noop.createContext({ reducedMotion: { enabled: false, rawValue: "no-preference" }, prefersCrossfades: false, forcedColors: { enabled: false, rawValue: "none" }, alwaysShowLinkDecorations: false, highContrastModeEnabled: false, keyboardModeEnabled: true, switchIconsEnabled: false });

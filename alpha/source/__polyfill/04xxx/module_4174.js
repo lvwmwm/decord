@@ -1,11 +1,12 @@
 // Module ID: 4174
 // Function ID: 4175
-// Dependencies: [3911, 3912]
+// Dependencies: [3913, 3917, 3914]
 // Exports: default
 
 // Module 4174
-import _typeof_mod from "module_3911" /* 3911 */;
-import requiredArgs_mod from "requiredArgs" /* 3912 */;
+import _typeof_mod from "module_3913" /* 3913 */;
+import module_3917_mod from "module_3917" /* 3917 */;
+import requiredArgs_mod from "requiredArgs" /* 3914 */;
 
 let _typeof = _typeof_mod;
 if (!_typeof) {
@@ -15,17 +16,25 @@ if (!_typeof) {
   tmp3 = _typeof;
 }
 _typeof = tmp3;
-let requiredArgs = requiredArgs_mod;
-if (!requiredArgs) {
-  const obj2 = { default: requiredArgs };
+let module_3917 = module_3917_mod;
+if (!module_3917) {
+  const obj2 = { default: module_3917 };
   let tmp5 = obj2;
 } else {
-  tmp5 = requiredArgs;
+  tmp5 = module_3917;
 }
-requiredArgs = tmp5;
+module_3917 = tmp5;
+let requiredArgs = requiredArgs_mod;
+if (!requiredArgs) {
+  const obj3 = { default: requiredArgs };
+  let tmp7 = obj3;
+} else {
+  tmp7 = requiredArgs;
+}
+requiredArgs = tmp7;
 
-export default function getDay(arg0) {
+export default function fromUnixTime(arg0) {
   requiredArgs.default(1, arguments);
-  return _typeof.default(arg0).getDay();
+  return _typeof.default(1000 * module_3917.default(arg0));
 };
 export default exports.default;

@@ -1,14 +1,14 @@
-// Module ID: 10424
-// Function ID: 10425
+// Module ID: 10429
+// Function ID: 10430
 // Name: RestrictedScheduleNotificationUtils
-// Dependencies: [12, 2484, 1115, 10425, 2]
+// Dependencies: [12, 2486, 1115, 10430, 2]
 // Exports: diffSchedules, getRestrictedScheduleNotificationSubtitle, getRestrictedScheduleNotificationTitle, restrictedScheduleNotificationKey, toScheduleSnapshot
 
-// Module 10424 (RestrictedScheduleNotificationUtils)
+// Module 10429 (RestrictedScheduleNotificationUtils)
 import _modDef12 from "module_12" /* 12 */;
 import util from "util" /* 1115 */;
-import _modDef2484 from "module_2484" /* 2484 */;
-import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10425 */;
+import _modDef2486 from "module_2486" /* 2486 */;
+import FamilyCenterRestrictedHoursUtils from "FamilyCenterRestrictedHoursUtils" /* 10430 */;
 import size from "module_2" /* 2 */;
 
 function isOnlyDayLoss(label, label2) {
@@ -38,7 +38,7 @@ function isOnlyDayLoss(label, label2) {
 }
 let obj = { Created: "created", Enabled: "enabled", Disabled: "disabled", Updated: "updated", Removed: "removed", Multiple: "multiple" };
 let map = new Map();
-let obj2 = { [Created]: _modDef2484["5V7eBH"], [Enabled]: _modDef2484.iefrVg, [Disabled]: _modDef2484["k+s9cM"], [Updated]: _modDef2484.Nm6hZV, [Multiple]: _modDef2484.Nm6hZV, [Removed]: _modDef2484.jR6uOs };
+let obj2 = { [Created]: _modDef2486["5V7eBH"], [Enabled]: _modDef2486.iefrVg, [Disabled]: _modDef2486["k+s9cM"], [Updated]: _modDef2486.Nm6hZV, [Multiple]: _modDef2486.Nm6hZV, [Removed]: _modDef2486.jR6uOs };
 ({ Created, Enabled, Disabled, Updated, Multiple, Removed } = obj);
 let result = size.fileFinishedImporting("modules/parent_tools/RestrictedScheduleNotificationUtils.tsx");
 
@@ -215,7 +215,7 @@ export const getRestrictedScheduleNotificationSubtitle = function getRestrictedS
   }
   if (result == null) {
     const intl = util.intl;
-    result = intl.string(_modDef2484["8OlpoY"]);
+    result = intl.string(_modDef2486["8OlpoY"]);
   }
   return result;
 };

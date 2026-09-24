@@ -1,20 +1,20 @@
 // Module ID: 4276
 // Function ID: 4277
-// Dependencies: [4092, 3912]
+// Dependencies: [4268, 3914]
 // Exports: default
 
 // Module 4276
-import module_4092_mod from "module_4092" /* 4092 */;
-import requiredArgs_mod from "requiredArgs" /* 3912 */;
+import module_4268_mod from "module_4268" /* 4268 */;
+import requiredArgs_mod from "requiredArgs" /* 3914 */;
 
-let module_4092 = module_4092_mod;
-if (!module_4092) {
-  const obj = { default: module_4092 };
+let module_4268 = module_4268_mod;
+if (!module_4268) {
+  const obj = { default: module_4268 };
   let tmp3 = obj;
 } else {
-  tmp3 = module_4092;
+  tmp3 = module_4268;
 }
-module_4092 = tmp3;
+module_4268 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isToday(arg0) {
+export default function isThisYear(arg0) {
   requiredArgs.default(1, arguments);
-  return module_4092.default(arg0, Date.now());
+  return module_4268.default(arg0, Date.now());
 };
 export default exports.default;

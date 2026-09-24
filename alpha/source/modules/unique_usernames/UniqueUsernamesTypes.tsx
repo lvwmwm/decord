@@ -1,9 +1,9 @@
-// Module ID: 15065
-// Function ID: 15066
+// Module ID: 15074
+// Function ID: 15075
 // Name: UniqueUsernamesTypes
 // Dependencies: [2]
 
-// Module 15065 (UniqueUsernamesTypes)
+// Module 15074 (UniqueUsernamesTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/unique_usernames/UniqueUsernamesTypes.tsx");

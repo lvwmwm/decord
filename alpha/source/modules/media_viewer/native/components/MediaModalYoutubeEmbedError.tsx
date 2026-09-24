@@ -1,18 +1,18 @@
-// Module ID: 13357
-// Function ID: 13358
+// Module ID: 13366
+// Function ID: 13367
 // Name: MediaModalYoutubeEmbedError
-// Dependencies: [19, 17, 21, 4827, 576, 4823, 1115, 5271, 4518, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4825, 1115, 5273, 4520, 2]
 
-// Module 13357 (MediaModalYoutubeEmbedError)
+// Module 13366 (MediaModalYoutubeEmbedError)
 import nativeDefault from "native" /* 576 */;
-import LinkingDefault from "Linking" /* 4518 */;
+import LinkingDefault from "Linking" /* 4520 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { container: { backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND, padding: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center", flex: 1 }, text: null };
 let obj3 = { backgroundColor: nativeDefault.colors.VOICE_VIDEO_VIDEO_TILE_BACKGROUND, padding: nativeDefault.space.PX_32, justifyContent: "center", alignItems: "center", flex: 1 };
 obj.text = { marginBottom: nativeDefault.space.PX_8, textAlign: "center" };
@@ -28,14 +28,14 @@ export default noop.memo(function MediaModalYoutubeEmbedError(videoId) {
   const obj2 = { style: tmp.text, variant: "text-md/semibold", color: "text-overlay-light", children: null };
   const intl = videoId(1115).intl;
   obj2.children = intl.string(videoId(1115).t.u7vKPs);
-  const items = [closure_4(videoId(4823).Text, obj2), ];
+  const items = [closure_4(videoId(4825).Text, obj2), ];
   const obj3 = { text: null, variant: "secondary", size: "md", shrink: true, grow: false, onPress: null };
   const intl2 = videoId(1115).intl;
   obj3.text = intl2.string(videoId(1115).t.LLpxJ5);
   obj3.onPress = function onPress() {
     LinkingDefault.openURL("https://youtube.com/watch?v=" + videoId);
   };
-  items[1] = closure_4(videoId(5271).Button, obj3);
+  items[1] = closure_4(videoId(5273).Button, obj3);
   obj.children = items;
   return closure_5(View, obj);
 });

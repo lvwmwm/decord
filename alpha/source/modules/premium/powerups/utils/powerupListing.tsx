@@ -1,13 +1,13 @@
-// Module ID: 12856
-// Function ID: 12857
+// Module ID: 12865
+// Function ID: 12866
 // Name: powerupListing
-// Dependencies: [32, 19, 4715, 4716, 4719, 504, 2]
+// Dependencies: [32, 19, 4717, 4718, 4721, 504, 2]
 // Exports: useBuildGuildPowerupsSections
 
-// Module 12856 (powerupListing)
+// Module 12865 (powerupListing)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4715 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4717 */;
 
 const require = globalThis.__r;
 
@@ -119,11 +119,11 @@ function buildPowerupListings(arg0, arr, arg2) {
   }
   return orderPowerupListings(items);
 }
-const GuildPowerupsConstants = fn(4716);
+const GuildPowerupsConstants = fn(4718);
 const GuildPowerupType = GuildPowerupsConstants.GuildPowerupType;
 const PERK_SKU_BADGES = GuildPowerupsConstants.PERK_SKU_BADGES;
 const POWERUP_GROUP_TO_SKU_IDS = { guildTagsBadgePacks: null };
-let items = [fn(4719).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID, fn(4719).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, fn(4719).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, fn(4719).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID];
+let items = [fn(4721).GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID, fn(4721).GUILD_TAGS_BADGE_PACK_PETS_POWERUP_SKU_ID, fn(4721).GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID, fn(4721).GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID];
 POWERUP_GROUP_TO_SKU_IDS.guildTagsBadgePacks = items;
 const entries = Object.entries(POWERUP_GROUP_TO_SKU_IDS);
 let closure_8 = entries.reduce((acc, item) => {

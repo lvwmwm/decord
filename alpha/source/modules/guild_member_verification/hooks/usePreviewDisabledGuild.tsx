@@ -1,14 +1,14 @@
-// Module ID: 5879
-// Function ID: 5880
+// Module ID: 5881
+// Function ID: 5882
 // Name: usePreviewDisabledGuild
-// Dependencies: [19, 2064, 5875, 504, 5850, 2056, 2]
+// Dependencies: [19, 2066, 5877, 504, 5852, 2058, 2]
 // Exports: default
 
-// Module 5879 (usePreviewDisabledGuild)
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5850 */;
+// Module 5881 (usePreviewDisabledGuild)
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5852 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5875 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5877 */;
 
 const require = globalThis.__r;
 
@@ -40,8 +40,8 @@ export default function usePreviewDisabledGuild(arg0) {
   if (stateFromStores == null) {
     let result = null;
     if (null != stateFromStores1) {
-      result = tmp(2056).fromVerificationGateGuild(stateFromStores1);
-      const tmpResult = tmp(2056);
+      result = tmp(2058).fromVerificationGateGuild(stateFromStores1);
+      const tmpResult = tmp(2058);
     }
     stateFromStores = result;
   }

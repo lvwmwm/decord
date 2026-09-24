@@ -1,13 +1,13 @@
-// Module ID: 11644
-// Function ID: 11645
+// Module ID: 11650
+// Function ID: 11651
 // Name: EarnedDecisionRoundtripTracker
-// Dependencies: [4876, 1074, 7787, 1241, 7998, 7790, 2]
+// Dependencies: [4878, 1074, 7789, 1241, 8000, 7792, 2]
 
-// Module 11644 (EarnedDecisionRoundtripTracker)
+// Module 11650 (EarnedDecisionRoundtripTracker)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import NetStats from "NetStats" /* 7787 */;
-import getDeviceMetadataDefault from "getDeviceMetadata" /* 7998 */;
-import NetworkStore from "NetworkStore" /* 4876 */;
+import NetStats from "NetStats" /* 7789 */;
+import getDeviceMetadataDefault from "getDeviceMetadata" /* 8000 */;
+import NetworkStore from "NetworkStore" /* 4878 */;
 
 require = fn;
 function trackRoundtrip(apiResponseTimestamp) {
@@ -31,9 +31,9 @@ function trackRoundtrip(apiResponseTimestamp) {
     const merged1 = Object.assign(tmp10);
     ({ callerSource: obj3.caller_source, requestId: obj3.request_id, fetchedAt: obj3.fetched_at } = apiResponseTimestamp);
     const obj2 = AnalyticsUtilsDefault;
-    obj4.is_foregrounded = tmp2(7790).isForegrounded();
+    obj4.is_foregrounded = tmp2(7792).isForegrounded();
     obj2.track(AnalyticEvents.EARNED_DECISION_ROUNDTRIP, obj4);
-    const tmp2Result = tmp2(7790);
+    const tmp2Result = tmp2(7792);
   }
 }
 const AnalyticEvents = fn(1074).AnalyticEvents;

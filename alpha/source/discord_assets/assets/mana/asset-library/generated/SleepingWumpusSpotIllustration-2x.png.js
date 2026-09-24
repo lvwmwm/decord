@@ -1,8 +1,8 @@
-// Module ID: 6791
-// Function ID: 6792
+// Module ID: 6793
+// Function ID: 6794
 // Dependencies: [2]
 
-// Module 6791
+// Module 6793
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/SleepingWumpusSpotIllustration-2x.png.js");

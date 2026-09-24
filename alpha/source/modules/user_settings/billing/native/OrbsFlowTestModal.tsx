@@ -1,20 +1,20 @@
-// Module ID: 16073
-// Function ID: 16074
+// Module ID: 16095
+// Function ID: 16096
 // Name: OrbsFlowTestModal
-// Dependencies: [32, 19, 17, 21, 8243, 7331, 8192, 11271, 4827, 576, 5269, 4823, 16074, 4794, 11449, 1980, 1115, 6934, 5271, 11439, 11448, 7312, 7487, 16076, 2]
+// Dependencies: [32, 19, 17, 21, 8245, 7333, 8194, 11277, 4829, 576, 5271, 4825, 16096, 4796, 11455, 1980, 1115, 6936, 5273, 11445, 11454, 7314, 7489, 16098, 2]
 
-// Module 16073 (OrbsFlowTestModal)
+// Module 16095 (OrbsFlowTestModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import Stack_Stack from "Stack/Stack" /* 5269 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7312 */;
-import LayerScope from "LayerScope" /* 7487 */;
-import HeaderShared from "HeaderShared" /* 8192 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11271 */;
-import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 16074 */;
-import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 16076 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import Stack_Stack from "Stack/Stack" /* 5271 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7314 */;
+import LayerScope from "LayerScope" /* 7489 */;
+import HeaderShared from "HeaderShared" /* 8194 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 11277 */;
+import BalanceWidgetMenuDefault from "BalanceWidgetMenu" /* 16096 */;
+import OrbCheckoutMenuDefault from "OrbCheckoutMenu" /* 16098 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -88,9 +88,9 @@ get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const NativeStackNavigator = fn(8243);
+const NativeStackNavigator = fn(8245);
 let closure_9 = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { wrap: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, container: null, title: null, balancePillContainer: null };
 let obj4 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj.container = { padding: nativeDefault.space.PX_16 };

@@ -1,11 +1,11 @@
-// Module ID: 15084
-// Function ID: 15085
+// Module ID: 15093
+// Function ID: 15094
 // Name: DismissibleBadgeUtils
-// Dependencies: [32, 19, 2039, 21, 7716, 15083, 2]
+// Dependencies: [32, 19, 2041, 21, 7718, 15092, 2]
 // Exports: createDismissibleBadgePreNavigationAction, createDismissibleBadgeRouteProps
 
-// Module 15084 (DismissibleBadgeUtils)
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15083 */;
+// Module 15093 (DismissibleBadgeUtils)
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 15092 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -13,7 +13,7 @@ const require = fn;
 function useAlwaysShow() {
   return true;
 }
-const ContentDismissActionType = fn(2039).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let closure_7 = [];
 const size = fn(2);

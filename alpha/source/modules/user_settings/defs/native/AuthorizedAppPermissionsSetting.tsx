@@ -1,13 +1,13 @@
-// Module ID: 15279
-// Function ID: 15280
+// Module ID: 15288
+// Function ID: 15289
 // Name: AuthorizedAppPermissionsSetting
-// Dependencies: [8319, 1074, 11805, 1115, 15280, 2]
+// Dependencies: [8323, 1074, 11811, 1115, 15289, 2]
 
-// Module 15279 (AuthorizedAppPermissionsSetting)
+// Module 15288 (AuthorizedAppPermissionsSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import SettingsConstants from "SettingsConstants" /* 8319 */;
-import SettingBuilders from "SettingBuilders" /* 11805 */;
+import SettingsConstants from "SettingsConstants" /* 8323 */;
+import SettingBuilders from "SettingBuilders" /* 11811 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

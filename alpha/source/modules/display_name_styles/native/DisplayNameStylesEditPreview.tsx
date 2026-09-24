@@ -1,27 +1,27 @@
-// Module ID: 15692
-// Function ID: 15693
+// Module ID: 15706
+// Function ID: 15707
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 4819, 21, 4827, 576, 8510, 1970, 11457, 1115, 2874, 11566, 8560, 8503, 504, 4505, 1177, 11242, 11243, 4823, 2]
+// Dependencies: [19, 17, 4821, 21, 4829, 576, 8514, 1970, 11463, 1115, 2876, 11572, 8564, 8507, 504, 4507, 1177, 11248, 11249, 4825, 2]
 // Exports: default
 
-// Module 15692 (DisplayNameStylesEditPreview)
+// Module 15706 (DisplayNameStylesEditPreview)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import native from "native" /* 1177 */;
 import utils from "utils" /* 1970 */;
-import _modDef2874 from "module_2874" /* 2874 */;
-import DateUtils from "DateUtils" /* 4505 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8503 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8510 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8560 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11242 */;
-import types from "types" /* 11243 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 11457 */;
-import NameplatePreview from "NameplatePreview" /* 11566 */;
+import _modDef2876 from "module_2876" /* 2876 */;
+import DateUtils from "DateUtils" /* 4507 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import usePendingAvatarSettingsDefault from "usePendingAvatarSettings" /* 8507 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8514 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8564 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 11248 */;
+import types from "types" /* 11249 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 11463 */;
+import NameplatePreview from "NameplatePreview" /* 11572 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4819 */;
+import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
 require = fn;
 function ChatPreview(arg0) {
@@ -54,7 +54,7 @@ function ChatPreview(arg0) {
   const items3 = [React5(View, obj6), ];
   const obj9 = { variant: "text-md/normal", color: "text-default", style: tmp.chatMessageText, children: null };
   const intl = tmp2(1115).intl;
-  obj9.children = intl.string(_modDef2874.h5Cuej);
+  obj9.children = intl.string(_modDef2876.h5Cuej);
   items3[1] = timestampProducer(Text_Text.Text, obj9);
   obj5.children = items3;
   items1[1] = React5(View, obj5);
@@ -64,7 +64,7 @@ function ChatPreview(arg0) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { previewSection: { marginBottom: nativeDefault.space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 }, chatPreviewWrapper: null, nameplatePreviewWrapper: null, chatContainer: null, chatContent: null, chatHeader: null, chatUsername: null, chatTimestamp: null, chatMessageText: null };
 let obj3 = { marginBottom: nativeDefault.space.PX_24, alignItems: "center", alignSelf: "center", width: "100%", maxWidth: 360 };
 obj2.chatPreviewWrapper = { marginTop: -18, alignSelf: "flex-end", width: 260, borderRadius: nativeDefault.radii.sm, borderWidth: 1, borderColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
@@ -94,7 +94,7 @@ export default function DisplayNameStylesEditPreview(selectedEffectId) {
   const obj4 = { user, displayName, guildId, displayNameStylesOverride: memo, compact: true, hideFrame: true, maxWidth: 320, accessibilityLabel: null };
   const tmp5 = React5;
   const intl = util.intl;
-  obj4.accessibilityLabel = intl.string(_modDef2874.zoh6MT);
+  obj4.accessibilityLabel = intl.string(_modDef2876.zoh6MT);
   const items1 = [timestampProducer(UserProfilePreviewDefault, obj4), , ];
   items1[1] = timestampProducer(View, { style: tmp.chatPreviewWrapper, children: timestampProducer(ChatPreview, { user, displayName, displayNameStyles: memo, guildId }) });
   const obj6 = { style: tmp.nameplatePreviewWrapper, children: null };

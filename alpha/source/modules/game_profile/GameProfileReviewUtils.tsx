@@ -1,10 +1,10 @@
-// Module ID: 9078
-// Function ID: 9079
+// Module ID: 9082
+// Function ID: 9083
 // Name: GameProfileReviewUtils
 // Dependencies: [2019, 1115, 2]
 // Exports: canShowLocalizedSteamReview, getSteamReviewScoreDescriptionColor, getSteamReviewScoreDescriptionIntl
 
-// Module 9078 (GameProfileReviewUtils)
+// Module 9082 (GameProfileReviewUtils)
 import GameDetectionTypes from "GameDetectionTypes" /* 2019 */;
 import size from "module_2" /* 2 */;
 

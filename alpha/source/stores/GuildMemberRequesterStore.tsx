@@ -1,14 +1,14 @@
-// Module ID: 5729
-// Function ID: 5730
+// Module ID: 5731
+// Function ID: 5732
 // Name: GuildMemberRequesterStore
-// Dependencies: [2042, 2105, 5730, 573, 504, 2]
+// Dependencies: [2044, 2107, 5732, 573, 504, 2]
 
-// Module 5729 (GuildMemberRequesterStore)
+// Module 5731 (GuildMemberRequesterStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5730 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
+import GuildMemberRequesterDefault from "GuildMemberRequester" /* 5732 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
 
 function handleConnectionReset() {
   navigation.reset();

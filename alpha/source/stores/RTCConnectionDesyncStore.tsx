@@ -1,20 +1,20 @@
-// Module ID: 14113
-// Function ID: 14114
+// Module ID: 14122
+// Function ID: 14123
 // Name: RTCConnectionDesyncStore
-// Dependencies: [4847, 2042, 4850, 1372, 4846, 4851, 1074, 4848, 2017, 4979, 8560, 4882, 504, 573, 2]
+// Dependencies: [4849, 2044, 4852, 1372, 4848, 4853, 1074, 4850, 2017, 4981, 8564, 4884, 504, 573, 2]
 
-// Module 14113 (RTCConnectionDesyncStore)
+// Module 14122 (RTCConnectionDesyncStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import CachedEntriesMapDefault from "CachedEntriesMap" /* 2017 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 4882 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 4979 */;
-import useAvatarDecoration from "useAvatarDecoration" /* 8560 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4847 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 4884 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 4981 */;
+import useAvatarDecoration from "useAvatarDecoration" /* 8564 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4849 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
 import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4846 */;
+import VoiceStateStore from "VoiceStateStore" /* 4848 */;
 
 require = fn;
 function retryFailedUsers() {
@@ -52,10 +52,10 @@ function retryFailedUsers() {
     return c2;
   }
 }
-const makeSortedVoiceState = fn(4851).makeSortedVoiceState;
+const makeSortedVoiceState = fn(4853).makeSortedVoiceState;
 const Constants = fn(1074);
 ({ ME: closure_9, RTCConnectionStates: c10 } = Constants);
-const ParticipantTypes = fn(4848).ParticipantTypes;
+const ParticipantTypes = fn(4850).ParticipantTypes;
 new CachedEntriesMapDefault();
 const tmp3 = new CachedEntriesMapDefault();
 const set = new Set();

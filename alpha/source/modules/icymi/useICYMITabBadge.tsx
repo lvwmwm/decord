@@ -1,12 +1,12 @@
-// Module ID: 16794
-// Function ID: 16795
+// Module ID: 16818
+// Function ID: 16819
 // Name: useICYMITabBadge
-// Dependencies: [8681, 504, 2]
+// Dependencies: [8685, 504, 2]
 // Exports: default, icymiTabBadgeShown
 
-// Module 16794 (useICYMITabBadge)
+// Module 16818 (useICYMITabBadge)
 import initialize from "initialize" /* 504 */;
-import ICYMIStore from "ICYMIStore" /* 8681 */;
+import ICYMIStore from "ICYMIStore" /* 8685 */;
 
 require = fn;
 const size = fn(2);

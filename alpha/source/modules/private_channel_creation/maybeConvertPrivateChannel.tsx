@@ -1,13 +1,13 @@
-// Module ID: 8081
-// Function ID: 8082
+// Module ID: 8083
+// Function ID: 8084
 // Name: maybeConvertPrivateChannel
-// Dependencies: [2042, 7552, 4840, 2]
+// Dependencies: [2044, 7554, 4842, 2]
 // Exports: default
 
-// Module 8081 (maybeConvertPrivateChannel)
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4840 */;
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7552 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+// Module 8083 (maybeConvertPrivateChannel)
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4842 */;
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7554 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 const size = fn(2);

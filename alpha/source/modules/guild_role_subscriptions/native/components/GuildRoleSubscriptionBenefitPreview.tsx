@@ -1,16 +1,16 @@
-// Module ID: 18300
-// Function ID: 18301
+// Module ID: 18323
+// Function ID: 18324
 // Name: GuildRoleSubscriptionBenefitPreview
-// Dependencies: [19, 17, 15540, 21, 4827, 15575, 1177, 10283, 4823, 4476, 15568, 4980, 5325, 1115, 2]
+// Dependencies: [19, 17, 15554, 21, 4829, 15589, 1177, 10288, 4825, 4478, 15582, 4982, 5327, 1115, 2]
 // Exports: GuildRoleSubscriptionBenefitPreview
 
-// Module 18300 (GuildRoleSubscriptionBenefitPreview)
+// Module 18323 (GuildRoleSubscriptionBenefitPreview)
 import native from "native" /* 1177 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4476 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import _modDef10283 from "module_10283" /* 10283 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 15568 */;
-import EmojiIconDefault from "EmojiIcon" /* 15575 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4478 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import _modDef10288 from "module_10288" /* 10288 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 15582 */;
+import EmojiIconDefault from "EmojiIcon" /* 15589 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -29,7 +29,7 @@ function BaseBenefitRow(isInteractive) {
   items[1] = hasOwnProperty(View, obj3);
   let tmp4Result = true === flag;
   if (tmp4Result) {
-    const obj4 = { source: _modDef10283 };
+    const obj4 = { source: _modDef10288 };
     tmp4Result = hasOwnProperty(native.Icon, obj4);
   }
   items[2] = tmp4Result;
@@ -64,22 +64,22 @@ function ChannelBenefitRow(benefit) {
   const channelWithTemplateFallback = GuildRoleSubscriptionTierTemplatesUtils.useChannelWithTemplateFallback(benefit.ref_id);
   let channelIcon = null;
   if (null != channelWithTemplateFallback) {
-    channelIcon = tmp2(5325).getChannelIcon(channelWithTemplateFallback);
-    const tmp2Result = tmp2(5325);
+    channelIcon = tmp2(5327).getChannelIcon(channelWithTemplateFallback);
+    const tmp2Result = tmp2(5327);
   }
   if (null == channelWithTemplateFallback) {
     const obj2 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl = tmp2(1115).intl;
     const _HermesInternal = HermesInternal;
     obj2.children = "[" + intl.string(tmp2(1115).t.bz1PZX) + "]";
-    let tmp9 = hasOwnProperty(tmp2(4823).Text, obj2);
+    let tmp9 = hasOwnProperty(tmp2(4825).Text, obj2);
   } else {
     const obj3 = { benefit, guildId, isInteractive, children: null };
     const obj4 = { style: tmp.channelRow, children: null };
     const obj5 = { style: tmp.channelIcon, size: tmp2(1177).Icon.Sizes.CUSTOM, source: channelIcon };
     const items = [hasOwnProperty(tmp2(1177).Icon, obj5), ];
     const obj6 = { variant: "text-md/semibold", color: "mobile-text-heading-primary", children: tmp5 };
-    items[1] = hasOwnProperty(tmp2(4823).Text, obj6);
+    items[1] = hasOwnProperty(tmp2(4825).Text, obj6);
     obj4.children = items;
     obj3.children = timestampProducer(View, obj4);
     tmp9 = hasOwnProperty(DescriptiveBenefitRow, obj3);
@@ -101,10 +101,10 @@ function EmojiBenefitRow(benefit) {
   return timestampProducer(BaseBenefitRow, obj);
 }
 const View = fn(17).View;
-const constants = fn(15540).GuildRoleSubscriptionBenefitTypes;
+const constants = fn(15554).GuildRoleSubscriptionBenefitTypes;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_7 = createStyles.createStyles({ container: { flexDirection: "row", justifyContent: "flex-start" }, emojiContainer: { width: 24, height: 24, alignSelf: "flex-start", alignItems: "center", justifyContent: "center", marginEnd: 16 }, benefitColumn: { flexDirection: "column", flexGrow: 1, flex: 1, alignItems: "flex-start", justifyContent: "center" }, benefitDescription: { flex: 1, marginTop: 2 }, channelRow: { flexDirection: "row", alignItems: "center", justifyContent: "center" }, channelIcon: { width: 16, height: 16, marginEnd: 8 }, emojiRow: { flexDirection: "row", justifyContent: "flex-start", alignItems: "center" }, emojiColons: { paddingHorizontal: 2 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_role_subscriptions/native/components/GuildRoleSubscriptionBenefitPreview.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 17188
-// Function ID: 17189
+// Module ID: 17214
+// Function ID: 17215
 // Name: usePlaceholderStyles
-// Dependencies: [4819, 8207, 1478, 504, 4559, 4828, 1177, 2]
+// Dependencies: [4821, 8209, 1478, 504, 4561, 4830, 1177, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 17188 (usePlaceholderStyles)
+// Module 17214 (usePlaceholderStyles)
 import native from "native" /* 1177 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import timing from "timing" /* 4828 */;
-import AccessibilityStore from "AccessibilityStore" /* 4819 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import timing from "timing" /* 4830 */;
+import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const duration = fn(8207).FADE_LAYOUT_ANIMATION_DURATION;
+const duration = fn(8209).FADE_LAYOUT_ANIMATION_DURATION;
 const __initData = { code: "function usePlaceholderStylesTsx1(){const{useReducedMotion,visible,withRepeat,withSequence,withTiming,STANDARD_EASING,FADE_LAYOUT_ANIMATION_DURATION}=this.__closure;if(useReducedMotion){return{opacity:visible?1:0};}if(visible){return{opacity:withRepeat(withSequence(withTiming(0.5,{duration:0}),withTiming(1,{duration:1300,easing:STANDARD_EASING}),withTiming(0.5,{duration:1300,easing:STANDARD_EASING})),-1)};}return{opacity:withTiming(0,{duration:FADE_LAYOUT_ANIMATION_DURATION})};}" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/hooks/usePlaceholderStyles.tsx");

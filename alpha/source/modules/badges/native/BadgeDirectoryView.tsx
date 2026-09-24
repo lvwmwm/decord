@@ -1,18 +1,18 @@
-// Module ID: 11542
-// Function ID: 11543
+// Module ID: 11548
+// Function ID: 11549
 // Name: BadgeDirectoryView
-// Dependencies: [19, 17, 1372, 8536, 1074, 11543, 21, 4827, 576, 1478, 4823, 11537, 1612, 504, 8541, 11544, 1115, 11540, 7710, 5271, 5880, 2]
+// Dependencies: [19, 17, 1372, 8540, 1074, 11549, 21, 4829, 576, 1478, 4825, 11543, 1612, 504, 8545, 11550, 1115, 11546, 7712, 5273, 5882, 2]
 // Exports: default
 
-// Module 11542 (BadgeDirectoryView)
+// Module 11548 (BadgeDirectoryView)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8541 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11537 */;
-import BadgeUtils from "BadgeUtils" /* 11544 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8545 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 11543 */;
+import BadgeUtils from "BadgeUtils" /* 11550 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8536 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8540 */;
 
 require = fn;
 function BadgeSection(children) {
@@ -48,10 +48,10 @@ function BadgeSection(children) {
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
 const UserSettingsSections = fn(1074).UserSettingsSections;
-let closure_9 = fn(11543).UserProfileEditAutoFocusElement;
+let closure_9 = fn(11549).UserProfileEditAutoFocusElement;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, content: null, centered: null, section: null, grid: null, tile: null, footer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.content = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_48 };

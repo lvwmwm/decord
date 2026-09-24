@@ -1,10 +1,10 @@
-// Module ID: 12211
-// Function ID: 12212
+// Module ID: 12218
+// Function ID: 12219
 // Name: MediaChannelActionCreators
-// Dependencies: [5, 1074, 573, 1271, 4727, 2]
+// Dependencies: [5, 1074, 573, 1271, 4729, 2]
 // Exports: dismissMediaPostSharePrompt, fetchMediaPostEmbed, unfurlEmbedUrl
 
-// Module 12211 (MediaChannelActionCreators)
+// Module 12218 (MediaChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
@@ -97,11 +97,11 @@ let closure_6 = async function _unfurlEmbedUrl(urls) {
           const obj = { value: value.body, done: true };
           return obj;
         }
-      } catch (tmp19) {
-        closure_3 = tmp19;
+      } catch (tmp23) {
+        closure_3 = tmp23;
         if (tmp4 === c4) {
           c6 = tmp2;
-          throw tmp19;
+          throw tmp23;
         } else {
           c5 = tmp;
         }

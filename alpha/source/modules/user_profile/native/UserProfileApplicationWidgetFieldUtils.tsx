@@ -1,15 +1,15 @@
-// Module ID: 9367
-// Function ID: 9368
+// Module ID: 9371
+// Function ID: 9372
 // Name: UserProfileApplicationWidgetFieldUtils
-// Dependencies: [19, 17, 21, 4827, 576, 1115, 9368, 4823, 9369, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 1115, 9372, 4825, 9373, 2]
 // Exports: FieldText, formatDurationNarrow
 
-// Module 9367 (UserProfileApplicationWidgetFieldUtils)
+// Module 9371 (UserProfileApplicationWidgetFieldUtils)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 9368 */;
-import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 9369 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import UserProfileApplicationWidgetSkeletons from "UserProfileApplicationWidgetSkeletons" /* 9372 */;
+import ApplicationWidgetMarkupUtils from "ApplicationWidgetMarkupUtils" /* 9373 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,7 +17,7 @@ get_ActivityIndicator = fn(17);
 ({ Image: c2, View: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { fieldTextRow: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, fieldIcon: { width: 16, height: 16 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

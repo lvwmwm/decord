@@ -1,10 +1,10 @@
-// Module ID: 4547
-// Function ID: 4548
+// Module ID: 4549
+// Function ID: 4550
 // Name: TransitionGroup/TransitionGroup
 // Dependencies: [32, 19, 21, 2]
 // Exports: TransitionItem
 
-// Module 4547 (TransitionGroup/TransitionGroup)
+// Module 4549 (TransitionGroup/TransitionGroup)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 16857
-// Function ID: 16858
+// Module ID: 16881
+// Function ID: 16882
 // Name: ICYMISettingsActionSheet
-// Dependencies: [5, 19, 17, 4842, 8693, 8681, 1074, 21, 4827, 576, 504, 8698, 7528, 5990, 1115, 7531, 8697, 5908, 8694, 1095, 11, 7441, 4794, 8696, 5030, 16858, 1980, 16867, 2]
+// Dependencies: [5, 19, 17, 4844, 8697, 8685, 1074, 21, 4829, 576, 504, 8702, 7530, 5992, 1115, 7533, 8701, 5910, 8698, 1095, 11, 7443, 4796, 8700, 5032, 16882, 1980, 16891, 2]
 // Exports: default
 
-// Module 16857 (ICYMISettingsActionSheet)
+// Module 16881 (ICYMISettingsActionSheet)
 import nativeDefault from "native" /* 576 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8697 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 8701 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 4842 */;
-import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8693 */;
-import ICYMIStore from "ICYMIStore" /* 8681 */;
+import ReadStateStore from "ReadStateStore" /* 4844 */;
+import ICYMIFiltersStore from "ICYMIFiltersStore" /* 8697 */;
+import ICYMIStore from "ICYMIStore" /* 8685 */;
 
 const require = globalThis.__r;
 
@@ -21,7 +21,7 @@ const Constants = fn(1074);
 ({ AnalyticsObjectTypes: closure_8, AnalyticsObjects: closure_9 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: c10, Fragment: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { padding: { bottomPadding: nativeDefault.space.PX_16, width: "100%" } };
 let closure_13 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -31,7 +31,7 @@ export default function ICYMISettingsActionSheet() {
   const items = [ICYMIFiltersStore];
   stateFromStoresObject = stateFromStoresObject(504).useStateFromStoresObject(items, () => state.getState());
   let obj = stateFromStoresObject(504);
-  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8698).ICYMIStaffDebuggingUtilityExperiment;
+  const ICYMIStaffDebuggingUtilityExperiment = stateFromStoresObject(8702).ICYMIStaffDebuggingUtilityExperiment;
   let obj2 = { title: null, hasIcons: false, children: null };
   const intl = stateFromStoresObject(1115).intl;
   obj2.title = intl.string(stateFromStoresObject(1115).t["7Si8Ul"]);
@@ -53,7 +53,7 @@ export default function ICYMISettingsActionSheet() {
       ICYMIActionCreatorsDefault.setFilters(obj2);
       const dehydrated = ICYMIActionCreatorsDefault.fetchDehydrated();
     };
-    const items1 = [closure_10(tmp(7531).TableSwitchRow, obj3), , ];
+    const items1 = [closure_10(tmp(7533).TableSwitchRow, obj3), , ];
     let obj5 = {
       label: "Clear read states",
       onPress() {
@@ -80,7 +80,7 @@ export default function ICYMISettingsActionSheet() {
           require("ActionSheetActionCreators").hideActionSheet();
         }
     };
-    items1[1] = closure_10(tmp(5908).TableRow, obj5);
+    items1[1] = closure_10(tmp(5910).TableRow, obj5);
     let obj6 = {
       label: "Regenerate feed and clear read states",
       onPress: asyncGeneratorStep(async (arg0, value) => {
@@ -110,7 +110,7 @@ export default function ICYMISettingsActionSheet() {
                 } else {
                   v1 = 1;
                   dependencyMap = 1;
-                  const obj5 = { value: tmp4(8696).regenerateFeedAndClearReadStates(constants.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON), done: false };
+                  const obj5 = { value: tmp4(8700).regenerateFeedAndClearReadStates(constants.ACK_GRAVITY_REGENERATE_FEED_AND_CLEAR_READ_STATES_BUTTON), done: false };
                   return obj5;
                 }
               } else if (arg0 === 1) {
@@ -121,7 +121,7 @@ export default function ICYMISettingsActionSheet() {
                 const obj6 = { value, done: true };
                 return obj6;
               } else {
-                v1(4794).hideActionSheet();
+                v1(4796).hideActionSheet();
                 dependencyMap = 3;
                 return { value: "HermesInternal", done: null };
               }
@@ -132,7 +132,7 @@ export default function ICYMISettingsActionSheet() {
           }
         })
     };
-    items1[2] = closure_10(tmp(5908).TableRow, obj6);
+    items1[2] = closure_10(tmp(5910).TableRow, obj6);
     obj4.children = items1;
     tmp5Result = tmp5(closure_11, obj4);
   }
@@ -151,11 +151,11 @@ export default function ICYMISettingsActionSheet() {
     const tmp3 = stateFromStoresObject(paths[26])(paths[25], paths.paths);
     require("ActionSheetActionCreators").hideActionSheet();
   };
-  items2[1] = closure_10(stateFromStoresObject(5908).TableRow, obj8);
+  items2[1] = closure_10(stateFromStoresObject(5910).TableRow, obj8);
   obj2.children = items2;
-  const items3 = [closure_12(stateFromStoresObject(5990).TableRowGroup, obj2), ];
+  const items3 = [closure_12(stateFromStoresObject(5992).TableRowGroup, obj2), ];
   const tmp4 = closure_13();
   items3[1] = closure_10(View, { style: closure_13().padding });
   obj7.children = items3;
-  return closure_12(stateFromStoresObject(7528).ActionSheet, obj7);
+  return closure_12(stateFromStoresObject(7530).ActionSheet, obj7);
 };

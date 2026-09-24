@@ -1,17 +1,17 @@
-// Module ID: 8556
-// Function ID: 8557
+// Module ID: 8560
+// Function ID: 8561
 // Name: useProfileFrame
-// Dependencies: [7870, 7885, 7877, 504, 2]
+// Dependencies: [7872, 7887, 7879, 504, 2]
 // Exports: default
 
-// Module 8556 (useProfileFrame)
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7870 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7885 */;
+// Module 8560 (useProfileFrame)
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7872 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7887 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const isProfileFrameRecord = fn(7877).isProfileFrameRecord;
+const isProfileFrameRecord = fn(7879).isProfileFrameRecord;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/collectibles/profile_frames/hooks/useProfileFrame.tsx");
 

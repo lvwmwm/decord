@@ -1,11 +1,15 @@
 // Module ID: 7265
 // Function ID: 7266
-// Dependencies: [6983]
+// Dependencies: [17]
 
 // Module 7265
-import LegacyBaseButton from "LegacyBaseButton" /* 6983 */;
+import _mod17 from "module_17" /* 17 */;
 
+const StyleSheet = _mod17.StyleSheet;
+const obj = { backdrop: null };
+const obj2 = {};
+const merged = Object.assign(StyleSheet.absoluteFillObject);
+obj2.backgroundColor = "black";
+obj.backdrop = obj2;
 
-export const TouchableOpacity = LegacyBaseButton.TouchableOpacity;
-export const TouchableHighlight = LegacyBaseButton.TouchableHighlight;
-export const TouchableWithoutFeedback = LegacyBaseButton.TouchableWithoutFeedback;
+export const styles = StyleSheet.create(obj);

@@ -1,12 +1,12 @@
-// Module ID: 14115
-// Function ID: 14116
+// Module ID: 14124
+// Function ID: 14125
 // Name: GuildMFAWarningStore
-// Dependencies: [4460, 1372, 1074, 504, 573, 2]
+// Dependencies: [4462, 1372, 1074, 504, 573, 2]
 
-// Module 14115 (GuildMFAWarningStore)
+// Module 14124 (GuildMFAWarningStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildChannelStore from "GuildChannelStore" /* 4460 */;
+import GuildChannelStore from "GuildChannelStore" /* 4462 */;
 import UserStore from "UserStore" /* 1372 */;
 
 function handleUserStoreUpdates() {

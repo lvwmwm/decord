@@ -1,27 +1,27 @@
-// Module ID: 17877
-// Function ID: 17878
+// Module ID: 17900
+// Function ID: 17901
 // Name: InteractionModalUtils
-// Dependencies: [5, 32, 19, 502, 2042, 5190, 2105, 4648, 5189, 14763, 8468, 1074, 8467, 1978, 1397, 9393, 7582, 504, 5901, 11, 573, 9498, 1115, 38, 5051, 8170, 8472, 5431, 1271, 1091, 2]
+// Dependencies: [5, 32, 19, 502, 2044, 5192, 2107, 4650, 5191, 14772, 8472, 1074, 8471, 1978, 1397, 9397, 7584, 504, 5903, 11, 573, 9502, 1115, 38, 5053, 8172, 8476, 5433, 1271, 1091, 2]
 // Exports: useIframeModalState, useIsFirstTextInputInModal, useModalState
 
-// Module 17877 (InteractionModalUtils)
+// Module 17900 (InteractionModalUtils)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
-import ComponentStateContext from "ComponentStateContext" /* 8467 */;
-import getURLForApplicationDefault from "getURLForApplication" /* 9393 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9498 */;
+import ComponentStateContext from "ComponentStateContext" /* 8471 */;
+import getURLForApplicationDefault from "getURLForApplication" /* 9397 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 9502 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4648 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 5189 */;
-import InteractionModalStore from "InteractionModalStore" /* 14763 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8468 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 5191 */;
+import InteractionModalStore from "InteractionModalStore" /* 14772 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 8472 */;
 
 const require = globalThis.__r;
 
@@ -2189,8 +2189,8 @@ let closure_19 = async function _submitModal(arg0, value) {
     }
   }
 };
-const DraftType = fn(5190).DraftType;
-const InteractionModalState = fn(14763).InteractionModalState;
+const DraftType = fn(5192).DraftType;
+const InteractionModalState = fn(14772).InteractionModalState;
 const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/interaction_components/InteractionModalUtils.tsx");

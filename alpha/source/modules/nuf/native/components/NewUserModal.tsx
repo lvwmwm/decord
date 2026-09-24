@@ -1,12 +1,12 @@
-// Module ID: 17935
-// Function ID: 17936
+// Module ID: 17958
+// Function ID: 17959
 // Name: NewUserModal
-// Dependencies: [32, 19, 17, 21, 8243, 4827, 576, 17936, 1980, 5195, 7331, 17933, 5030, 17934, 5933, 1364, 16394, 17937, 13035, 13024, 17938, 17940, 2]
+// Dependencies: [32, 19, 17, 21, 8245, 4829, 576, 17959, 1980, 5197, 7333, 17956, 5032, 17957, 5935, 1364, 16418, 17960, 13044, 13033, 17961, 17963, 2]
 // Exports: default
 
-// Module 17935 (NewUserModal)
+// Module 17958 (NewUserModal)
 import nativeDefault from "native" /* 576 */;
-import NewUserUtils from "NewUserUtils" /* 17933 */;
+import NewUserUtils from "NewUserUtils" /* 17956 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -16,9 +16,9 @@ require = fn;
 const NativeModules = fn(17).NativeModules;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const NativeStackNavigator = fn(8243);
+const NativeStackNavigator = fn(8245);
 const Navigator = NativeStackNavigator.createNativeStackNavigator();
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj3 = { header: { borderBottomWidth: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, shadowColor: "transparent" } };
 let closure_9 = createStyles.createStyles(obj3);
 const size = fn(2);
@@ -50,11 +50,11 @@ export default function NewUserModal(arg0) {
       closure_1_4(lastShownStepIndex);
       if (continueNavigation) {
         if (null != ref.current) {
-          closure_0(17933).continueToNextStep(onboardingStepIndex, tmp3.current);
-          const obj2 = closure_0(17933);
+          closure_0(17956).continueToNextStep(onboardingStepIndex, tmp3.current);
+          const obj2 = closure_0(17956);
         }
       }
-      first(5030).popWithKey(closure_0(17934).NEW_USER_MODAL_KEY);
+      first(5032).popWithKey(closure_0(17957).NEW_USER_MODAL_KEY);
     });
   }, items);
   let obj = require("Navigator");
@@ -100,14 +100,14 @@ export default function NewUserModal(arg0) {
     closure_6(Navigator.Screen, {
       name: "enable-notification",
       getComponent() {
-        return closure_0(16394).RedesignNotificationScreen;
+        return closure_0(16418).RedesignNotificationScreen;
       },
       initialParams: { onComplete }
     }),
     closure_6(Navigator.Screen, {
       name: "choose-avatar",
       getComponent() {
-        return closure_0(17937).default;
+        return closure_0(17960).default;
       },
       options() {
         return {
@@ -117,13 +117,13 @@ export default function NewUserModal(arg0) {
             obj.onPress = function onPress() {
               closure_0 = closure_1_7;
               const lazyResult = React.lazy(() => closure_0(paths[8])(paths[7], paths.paths));
-              closure_2_0(5195).openAlert("skip-avatar-upload", closure_2_6(lazyResult, {
+              closure_2_0(5197).openAlert("skip-avatar-upload", closure_2_6(lazyResult, {
                 onConfirm() {
                   return closure_0(true);
                 }
               }));
             };
-            return closure_6(first(13035), obj);
+            return closure_6(first(13044), obj);
           }
         };
       },
@@ -133,7 +133,7 @@ export default function NewUserModal(arg0) {
       name: "contact-sync",
       options: { headerShown: false },
       getComponent() {
-        return closure_0(13024).ContactSyncOnboardingModal;
+        return closure_0(13033).ContactSyncOnboardingModal;
       },
       initialParams: { onComplete }
     }),
@@ -141,14 +141,14 @@ export default function NewUserModal(arg0) {
       name: "discoverability",
       options: { headerShown: false },
       getComponent() {
-        return closure_0(17938).default;
+        return closure_0(17961).default;
       },
       initialParams: { onComplete }
     }),
     closure_6(Navigator.Screen, {
       name: "connect-guardian",
       getComponent() {
-        return closure_0(17940).default;
+        return closure_0(17963).default;
       },
       initialParams: { onComplete }
     })

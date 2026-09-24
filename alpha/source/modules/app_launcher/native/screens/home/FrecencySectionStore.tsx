@@ -1,9 +1,9 @@
-// Module ID: 12386
-// Function ID: 12387
+// Module ID: 12395
+// Function ID: 12396
 // Name: FrecencySectionStore
 // Dependencies: [504, 573, 2]
 
-// Module 12386 (FrecencySectionStore)
+// Module 12395 (FrecencySectionStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

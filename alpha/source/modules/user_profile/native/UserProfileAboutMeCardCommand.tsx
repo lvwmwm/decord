@@ -1,15 +1,15 @@
-// Module ID: 11557
-// Function ID: 11558
+// Module ID: 11563
+// Function ID: 11564
 // Name: UserProfileAboutMeCardCommand
-// Dependencies: [19, 1074, 21, 4827, 576, 4823, 4693, 11558, 1241, 5007, 4794, 11563, 7849, 7851, 2]
+// Dependencies: [19, 1074, 21, 4829, 576, 4825, 4695, 11564, 1241, 5009, 4796, 11569, 7851, 7853, 2]
 
-// Module 11557 (UserProfileAboutMeCardCommand)
+// Module 11563 (UserProfileAboutMeCardCommand)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5007 */;
-import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11558 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 11563 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
+import MarkupReactCommandRule from "MarkupReactCommandRule" /* 11564 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11569 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxs = fn(21).jsxs;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { commandClickable: { color: nativeDefault.colors.MENTION_FOREGROUND, backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, marginEnd: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_12 } };
 let closure_5 = createStyles.createStyles(obj);
 let obj3 = { color: nativeDefault.colors.MENTION_FOREGROUND, backgroundColor: nativeDefault.colors.MENTION_BACKGROUND, marginEnd: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_12 };
@@ -71,11 +71,11 @@ export default noop.memo(function UserProfileAboutMeCardCommand(channel) {
             const obj4 = { channelId: tmp6.id, command: tmp5, section: null, location: null };
             let applicationCommandSection = null;
             if (null != tmp3) {
-              applicationCommandSection = tmp7(7849).getApplicationCommandSection(tmp3);
-              const tmp7Result = tmp7(7849);
+              applicationCommandSection = tmp7(7851).getApplicationCommandSection(tmp3);
+              const tmp7Result = tmp7(7851);
             }
             obj4.section = applicationCommandSection;
-            obj4.location = tmp7(7851).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
+            obj4.location = tmp7(7853).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
             applicationCommandManager.setCommand(obj4);
           }
         }
@@ -134,11 +134,11 @@ export default noop.memo(function UserProfileAboutMeCardCommand(channel) {
             const obj4 = { channelId: tmp6.id, command: tmp5, section: null, location: null };
             let applicationCommandSection = null;
             if (null != tmp3) {
-              applicationCommandSection = tmp7(7849).getApplicationCommandSection(tmp3);
-              const tmp7Result = tmp7(7849);
+              applicationCommandSection = tmp7(7851).getApplicationCommandSection(tmp3);
+              const tmp7Result = tmp7(7851);
             }
             obj4.section = applicationCommandSection;
-            obj4.location = tmp7(7851).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
+            obj4.location = tmp7(7853).ApplicationCommandTriggerLocations.POPULAR_COMMANDS;
             applicationCommandManager.setCommand(obj4);
           }
         }

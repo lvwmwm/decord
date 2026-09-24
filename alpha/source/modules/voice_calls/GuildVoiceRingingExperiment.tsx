@@ -1,11 +1,11 @@
-// Module ID: 10074
-// Function ID: 10075
+// Module ID: 10079
+// Function ID: 10080
 // Name: GuildVoiceRingingExperiment
-// Dependencies: [4743, 4740, 2]
+// Dependencies: [4745, 4742, 2]
 
-// Module 10074 (GuildVoiceRingingExperiment)
-import ExperimentConstants from "ExperimentConstants" /* 4743 */;
-import createExperiment from "module_4740" /* 4740 */;
+// Module 10079 (GuildVoiceRingingExperiment)
+import ExperimentConstants from "ExperimentConstants" /* 4745 */;
+import createExperiment from "module_4742" /* 4742 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2024-12_guild_voice_channel_ringing", label: "Guild Voice Ringing", defaultConfig: { enabled: false }, commonTriggerPoint: ExperimentConstants.CommonTriggerPoints.VOICE_CALL, treatments: null };

@@ -1,11 +1,11 @@
-// Module ID: 16664
-// Function ID: 16665
+// Module ID: 16688
+// Function ID: 16689
 // Name: GameClaimCoachmarkExperiment
-// Dependencies: [4740, 2]
+// Dependencies: [4742, 2]
 // Exports: useGameClaimCoachmarkEnabled
 
-// Module 16664 (GameClaimCoachmarkExperiment)
-import createExperiment from "module_4740" /* 4740 */;
+// Module 16688 (GameClaimCoachmarkExperiment)
+import createExperiment from "module_4742" /* 4742 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", id: "2026-02_game_claim_coachmark", label: "Game Claim Coachmark", defaultConfig: { enabled: false }, treatments: null };

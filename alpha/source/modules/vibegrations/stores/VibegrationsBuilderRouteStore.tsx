@@ -1,12 +1,12 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 17025
+// Function ID: 17026
 // Name: VibegrationsBuilderRouteStore
-// Dependencies: [2049, 504, 573, 2]
+// Dependencies: [2051, 504, 573, 2]
 
-// Module 17001 (VibegrationsBuilderRouteStore)
+// Module 17025 (VibegrationsBuilderRouteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelConstants from "ChannelConstants" /* 2049 */;
+import ChannelConstants from "ChannelConstants" /* 2051 */;
 import size from "module_2" /* 2 */;
 
 const StaticChannelRoute = ChannelConstants.StaticChannelRoute;

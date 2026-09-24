@@ -1,15 +1,15 @@
-// Module ID: 17311
-// Function ID: 17312
+// Module ID: 17334
+// Function ID: 17335
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1074, 21, 4827, 576, 1364, 11922, 4524, 1115, 4823, 9016, 12521, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 1364, 11929, 4526, 1115, 4825, 9020, 12530, 2]
 // Exports: default
 
-// Module 17311 (GroupDMRecipientLimitTitle)
+// Module 17334 (GroupDMRecipientLimitTitle)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useToken from "useToken" /* 4524 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11922 */;
+import useToken from "useToken" /* 4526 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11929 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -18,7 +18,7 @@ get_ActivityIndicator = fn(17);
 const MAX_GROUP_DM_PARTICIPANTS = fn(1074).MAX_GROUP_DM_PARTICIPANTS;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7, Fragment: closure_8 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { title: { textAlign: "center", fontSize: 18 }, subtitleRow: { alignSelf: "center", flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 }, subtitle: { textAlign: "center" }, nitroWheelIcon: null };
 const PlatformUtils = fn(1364);
 let tmp5;
@@ -64,7 +64,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
       token2 = token1;
     }
     const obj7 = { size: "xxs", color: token2, style: tmp.nitroWheelIcon, accessible: false };
-    tmp15Result = tmp15(tmp2(9016).NitroWheelIcon, obj7);
+    tmp15Result = tmp15(tmp2(9020).NitroWheelIcon, obj7);
   }
   const obj8 = { children: null };
   const items1 = [tmp15Result, timestampProducer(Text_Text.Text, { lineClamp: 1, variant: "text-xs/medium", color: str2, style: tmp.subtitle, maxFontSizeMultiplier: 2, children: formatToPlainStringResult })];
@@ -78,7 +78,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
     obj10.accessibilityLabel = "" + title + ", " + formatToPlainStringResult;
     const rect = { top: tmp5(576).space.PX_8, bottom: tmp5(576).space.PX_8, left: tmp5(576).space.PX_16, right: tmp5(576).space.PX_16 };
     obj10.hitSlop = rect;
-    obj10.onPress = tmp5(12521);
+    obj10.onPress = tmp5(12530);
     obj10.children = tmp13Result;
     let tmp15Result2 = tmp15(React3, obj10);
   } else {

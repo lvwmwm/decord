@@ -1,16 +1,16 @@
-// Module ID: 5478
-// Function ID: 5479
+// Module ID: 5480
+// Function ID: 5481
 // Name: UploadTargets
-// Dependencies: [2042, 1074, 5464, 5436, 5431, 5479, 5481, 2]
+// Dependencies: [2044, 1074, 5466, 5438, 5433, 5481, 5483, 2]
 // Exports: getUploadTarget
 
-// Module 5478 (UploadTargets)
-import UploadUtils from "UploadUtils" /* 5431 */;
-import FileUtilsAll from "FileUtils" /* 5436 */;
-import UploadLimits from "UploadLimits" /* 5464 */;
-import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 5479 */;
-import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 5481 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+// Module 5480 (UploadTargets)
+import UploadUtils from "UploadUtils" /* 5433 */;
+import FileUtilsAll from "FileUtils" /* 5438 */;
+import UploadLimits from "UploadLimits" /* 5466 */;
+import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 5481 */;
+import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 5483 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 const Constants = fn(1074);

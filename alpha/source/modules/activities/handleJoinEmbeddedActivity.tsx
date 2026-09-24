@@ -1,16 +1,16 @@
-// Module ID: 9716
-// Function ID: 9717
+// Module ID: 9720
+// Function ID: 9721
 // Name: handleJoinEmbeddedActivity
-// Dependencies: [5, 5054, 2042, 2096, 1372, 2041, 2004, 9717, 9654, 4451, 9718, 9683, 9682, 9693, 9694, 9679, 13267, 9672, 2]
+// Dependencies: [5, 5056, 2044, 2098, 1372, 2043, 2004, 9721, 9658, 4453, 9722, 9687, 9686, 9697, 9698, 9683, 13276, 9676, 2]
 // Exports: default
 
-// Module 9716 (handleJoinEmbeddedActivity)
+// Module 9720 (handleJoinEmbeddedActivity)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 5054 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
+import ApplicationStore from "ApplicationStore" /* 5056 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 import UserStore from "UserStore" /* 1372 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
 
 const require = globalThis.__r;
 

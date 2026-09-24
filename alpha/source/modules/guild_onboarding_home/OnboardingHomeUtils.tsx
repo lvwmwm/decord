@@ -1,24 +1,24 @@
-// Module ID: 7553
-// Function ID: 7554
+// Module ID: 7555
+// Function ID: 7556
 // Name: OnboardingHomeUtils
-// Dependencies: [2098, 2042, 2064, 5014, 1074, 2049, 7554, 563, 2067, 7437, 5016, 2]
+// Dependencies: [2100, 2044, 2066, 5016, 1074, 2051, 7556, 563, 2069, 7439, 5018, 2]
 // Exports: canSeeOnboardingHome, useCanSeeOnboardingHome
 
-// Module 7553 (OnboardingHomeUtils)
-import FavoritesUtils from "FavoritesUtils" /* 2067 */;
-import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 5016 */;
-import useIsNewMemberDefault from "useIsNewMember" /* 7554 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5014 */;
+// Module 7555 (OnboardingHomeUtils)
+import FavoritesUtils from "FavoritesUtils" /* 2069 */;
+import guildHasOnboardingHomeDefault from "guildHasOnboardingHome" /* 5018 */;
+import useIsNewMemberDefault from "useIsNewMember" /* 7556 */;
+import ImpersonateStore from "ImpersonateStore" /* 2100 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 5016 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const Constants = fn(1074);
 ({ GuildFeatures: closure_7, ME: closure_8 } = Constants);
-const ChannelFlags = fn(2049).ChannelFlags;
+const ChannelFlags = fn(2051).ChannelFlags;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_onboarding_home/OnboardingHomeUtils.tsx");
 
@@ -59,7 +59,7 @@ export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id
           }
           let result = hasItem1;
         } else {
-          result = tmp23(7437).isGuildOnboardingSettingsAvailable(tmp2);
+          result = tmp23(7439).isGuildOnboardingSettingsAvailable(tmp2);
           if (!result) {
             result = guildHasOnboardingHomeDefault(has);
           }
@@ -83,7 +83,7 @@ export const useCanSeeOnboardingHome = function useCanSeeOnboardingHome(guild_id
             }
             result = tmp11;
           }
-          const tmp23Result = tmp23(7437);
+          const tmp23Result = tmp23(7439);
         }
       }
       obj3 = FavoritesUtils;
@@ -118,7 +118,7 @@ export const canSeeOnboardingHome = function canSeeOnboardingHome(id) {
           }
           return hasItem;
         } else {
-          let result = tmp14(7437).isGuildOnboardingSettingsAvailable(id);
+          let result = tmp14(7439).isGuildOnboardingSettingsAvailable(id);
           if (result) {
             const features = guild.features;
             result = features.has(constants.GUILD_ONBOARDING);

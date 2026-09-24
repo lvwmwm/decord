@@ -1,13 +1,13 @@
-// Module ID: 15283
-// Function ID: 15284
+// Module ID: 15292
+// Function ID: 15293
 // Name: LaptopPhoneIcon
-// Dependencies: [19, 21, 576, 4523, 15284, 2]
+// Dependencies: [19, 21, 576, 4525, 15293, 2]
 // Exports: LaptopPhoneIcon
 
-// Module 15283 (LaptopPhoneIcon)
+// Module 15292 (LaptopPhoneIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod15284 from "module_15284" /* 15284 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod15293 from "module_15293" /* 15293 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const LaptopPhoneIcon = function LaptopPhoneIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15284, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15293, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

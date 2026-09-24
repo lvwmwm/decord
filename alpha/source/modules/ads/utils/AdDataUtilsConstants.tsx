@@ -1,9 +1,9 @@
-// Module ID: 8057
-// Function ID: 8058
+// Module ID: 8059
+// Function ID: 8060
 // Name: AdDataUtilsConstants
 // Dependencies: [2]
 
-// Module 8057 (AdDataUtilsConstants)
+// Module 8059 (AdDataUtilsConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/utils/AdDataUtilsConstants.tsx");

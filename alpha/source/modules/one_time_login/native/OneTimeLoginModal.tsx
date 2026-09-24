@@ -1,19 +1,19 @@
-// Module ID: 14219
-// Function ID: 14220
+// Module ID: 14228
+// Function ID: 14229
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1372, 1074, 1229, 21, 4827, 576, 1612, 1478, 1365, 1241, 5030, 4684, 1101, 5195, 5199, 6938, 1115, 5199, 6920, 5427, 4645, 14220, 4823, 7271, 2]
+// Dependencies: [5, 19, 17, 502, 1372, 1074, 1229, 21, 4829, 576, 1612, 1478, 1365, 1241, 5032, 4686, 1101, 5197, 5201, 6940, 1115, 5201, 6922, 5429, 4647, 14229, 4825, 7273, 2]
 // Exports: default
 
-// Module 14219 (OneTimeLoginModal)
+// Module 14228 (OneTimeLoginModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import useAlertStore from "useAlertStore" /* 5195 */;
-import AlertModal from "AlertModal" /* 5199 */;
-import ThemedGradientDefault from "ThemedGradient" /* 5427 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6938 */;
+import useAlertStore from "useAlertStore" /* 5197 */;
+import AlertModal from "AlertModal" /* 5201 */;
+import ThemedGradientDefault from "ThemedGradient" /* 5429 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6940 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -27,7 +27,7 @@ const Constants = fn(1074);
 let closure_12 = fn(1229).BACKGROUND_GRADIENT_PRESETS_MOBILE;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { padding: 24, paddingTop: 128, paddingBottom: 96, borderRadius: nativeDefault.radii.md, alignItems: "center", flex: 1, justifyContent: "space-between" }, centerContent: { flex: 1, justifyContent: "center", alignItems: "center" }, bottomContent: null, logo: null, loadingContainer: null, link: null, raisedIcon: null };
 let obj3 = { padding: 24, paddingTop: 128, paddingBottom: 96, borderRadius: nativeDefault.radii.md, alignItems: "center", flex: 1, justifyContent: "space-between" };
 obj2.bottomContent = { alignItems: "center", gap: nativeDefault.space.PX_8 };
@@ -167,18 +167,18 @@ export default function OneTimeLoginModal(token) {
   }, items5);
   let obj = { style: memo, children: null };
   let obj2 = { absolute: true, wide: true, tall: true, gradientOverride: closure_12[5], mix: true, angleOverride: 0, mixAmount: null };
-  const obj3 = { dark: token(4645).OverlayOpacity.LEVEL_1 };
+  const obj3 = { dark: token(4647).OverlayOpacity.LEVEL_1 };
   obj2.mixAmount = obj3;
   const items6 = [closure_13(ThemedGradientDefault, obj2), ];
   let obj4 = { style: tmp.container, children: null };
   let obj5 = { style: tmp.centerContent, children: null };
-  const items7 = [closure_13(callback3, { source: token(14220), style: tmp.logo }), ];
+  const items7 = [closure_13(callback3, { source: token(14229), style: tmp.logo }), ];
   const obj7 = { style: tmp.loadingContainer, children: null };
   const items8 = [closure_13(callback2, {}), ];
   const obj8 = { variant: "text-lg/semibold", children: null };
   let intl = token(1115).intl;
   obj8.children = intl.string(token(1115).t.W9uNdG);
-  items8[1] = closure_13(token(4823).Text, obj8);
+  items8[1] = closure_13(token(4825).Text, obj8);
   obj7.children = items8;
   items7[1] = closure_14(callback1, obj7);
   obj5.children = items7;
@@ -187,13 +187,13 @@ export default function OneTimeLoginModal(token) {
   const obj10 = { variant: "text-sm/normal", children: null };
   let intl2 = token(1115).intl;
   obj10.children = intl2.string(token(1115).t["ZXe5/Y"]);
-  const items10 = [closure_13(token(4823).Text, obj10), ];
+  const items10 = [closure_13(token(4825).Text, obj10), ];
   const obj11 = { textColor: "text-default", text: null, variant: "text-sm/medium", onPress: null, textStyle: null };
   let intl3 = token(1115).intl;
   obj11.text = intl3.string(token(1115).t.FIEwfG);
   obj11.onPress = onPress;
   obj11.textStyle = tmp.link;
-  items10[1] = closure_13(token(7271).LinkButton, obj11);
+  items10[1] = closure_13(token(7273).LinkButton, obj11);
   obj9.children = items10;
   items9[1] = closure_14(callback1, obj9);
   obj4.children = items9;

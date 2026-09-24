@@ -1,13 +1,13 @@
-// Module ID: 16150
-// Function ID: 16151
+// Module ID: 16172
+// Function ID: 16173
 // Name: UserSettingsDesignSystemAlertModal
-// Dependencies: [5, 19, 17, 21, 5199, 5195, 4827, 5271, 2]
+// Dependencies: [5, 19, 17, 21, 5201, 5197, 4829, 5273, 2]
 // Exports: default
 
-// Module 16150 (UserSettingsDesignSystemAlertModal)
-import useAlertStore from "useAlertStore" /* 5195 */;
-import AlertModal from "AlertModal" /* 5199 */;
-import components_Button_Button from "components/Button/Button" /* 5271 */;
+// Module 16172 (UserSettingsDesignSystemAlertModal)
+import useAlertStore from "useAlertStore" /* 5197 */;
+import AlertModal from "AlertModal" /* 5201 */;
+import components_Button_Button from "components/Button/Button" /* 5273 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
 
@@ -72,7 +72,7 @@ function openDemoModal() {
 get_ActivityIndicator = fn(17);
 ({ View: closure_4, ScrollView: hasOwnProperty } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_9 = createStyles.createStyles({ container: { padding: 16, flex: 1, alignItems: "center" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/design_system/native/UserSettingsDesignSystemAlertModal.tsx");

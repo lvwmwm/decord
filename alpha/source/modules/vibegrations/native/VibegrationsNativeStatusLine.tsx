@@ -1,13 +1,13 @@
-// Module ID: 17089
-// Function ID: 17090
+// Module ID: 17116
+// Function ID: 17117
 // Name: VibegrationsNativeStatusLine
-// Dependencies: [19, 17, 21, 576, 4827, 4524, 11500, 7540, 10493, 4823, 17090, 5425, 1115, 3712, 2]
+// Dependencies: [19, 17, 21, 576, 4829, 4526, 11506, 7542, 10498, 4825, 17117, 5427, 1115, 3714, 2]
 // Exports: default, laneTintFor, laneTintIndexFor
 
-// Module 17089 (VibegrationsNativeStatusLine)
+// Module 17116 (VibegrationsNativeStatusLine)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import MagicWandIcon from "MagicWandIcon" /* 10493 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import MagicWandIcon from "MagicWandIcon" /* 10498 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let items = [nativeDefault.colors.TEXT_BRAND, nativeDefault.colors.TEXT_FEEDBACK_POSITIVE, nativeDefault.colors.TEXT_FEEDBACK_WARNING, nativeDefault.colors.TEXT_FEEDBACK_INFO];
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { row: { flexDirection: "row", alignItems: "flex-start", paddingVertical: nativeDefault.space.PX_4 }, glyphGutter: { width: 40, marginRight: 12, alignItems: "center" }, label: { flex: 1 }, trailing: null, chevron: null };
 let obj3 = { flexDirection: "row", alignItems: "flex-start", paddingVertical: nativeDefault.space.PX_4 };
 obj2.trailing = { flexShrink: 0, marginLeft: nativeDefault.space.PX_8 };

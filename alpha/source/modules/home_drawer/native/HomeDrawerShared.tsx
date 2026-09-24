@@ -1,16 +1,16 @@
-// Module ID: 16708
-// Function ID: 16709
+// Module ID: 16732
+// Function ID: 16733
 // Name: HomeDrawerShared
-// Dependencies: [19, 17, 21, 4827, 2]
+// Dependencies: [19, 17, 21, 4829, 2]
 // Exports: HomeDrawerSharedItem
 
-// Module 16708 (HomeDrawerShared)
+// Module 16732 (HomeDrawerShared)
 import noop from "module_19" /* 19 */;
 
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsxs: closure_1, jsx: c2 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_3 = createStyles.createStyles({ container: { flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 12 }, titleContainer: { flex: 1, flexDirection: "column", justifyContent: "center", gap: 2 }, rightContainer: { overflow: "hidden" } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerShared.tsx");

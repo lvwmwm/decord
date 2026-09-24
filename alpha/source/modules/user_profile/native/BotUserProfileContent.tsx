@@ -1,23 +1,23 @@
-// Module ID: 13367
-// Function ID: 13368
+// Module ID: 13376
+// Function ID: 13377
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1372, 7539, 7482, 21, 8585, 8574, 8587, 1612, 8534, 504, 4979, 4671, 7639, 8586, 11497, 8571, 8582, 7520, 4520, 8588, 4559, 13368, 8600, 11459, 4794, 11496, 1980, 11499, 1115, 13373, 13376, 9611, 13377, 5271, 5375, 576, 5030, 4840, 13378, 11553, 7516, 13428, 13431, 2]
+// Dependencies: [19, 17, 1372, 7541, 7484, 21, 8589, 8578, 8591, 1612, 8538, 504, 4981, 4673, 7641, 8590, 11503, 8575, 8586, 7522, 4522, 8592, 4561, 13377, 8604, 11465, 4796, 11502, 1980, 11505, 1115, 13382, 13385, 9615, 13386, 5273, 5377, 576, 5032, 4842, 13387, 11559, 7518, 13437, 13440, 2]
 
-// Module 13367 (BotUserProfileContent)
+// Module 13376 (BotUserProfileContent)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ToastUtils from "ToastUtils" /* 4520 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4840 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
-import ClipboardUtils from "ClipboardUtils" /* 7520 */;
+import ToastUtils from "ToastUtils" /* 4522 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4842 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
+import ClipboardUtils from "ClipboardUtils" /* 7522 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 const View = fn(17).View;
-const Constants = fn(7539);
+const Constants = fn(7541);
 ({ PROFILE_CONTENT_BOTTOM_PADDING: metroRequire, PROFILE_CONTENT_WITHOUT_STATUS_TOP_PADDING: closure_7 } = Constants);
-const ACTION_SHEET_MAX_WIDTH = fn(7482).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7484).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
 const size = fn(2);
@@ -121,7 +121,7 @@ export default noop.memo(function BotUserProfileContent(user) {
                 id = channel.id;
               }
               obj2.channelId = id;
-              obj.openLazy(asyncRequireImpl(11496, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj2, "stack");
+              obj.openLazy(asyncRequireImpl(11502, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj2, "stack");
             },
         style: null,
         emojiOnlyStyle: null

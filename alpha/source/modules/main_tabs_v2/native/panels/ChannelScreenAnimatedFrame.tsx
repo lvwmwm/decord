@@ -1,19 +1,19 @@
-// Module ID: 16404
-// Function ID: 16405
+// Module ID: 16428
+// Function ID: 16429
 // Name: ChannelScreenAnimatedFrame
-// Dependencies: [19, 21, 4827, 576, 4559, 4828, 1177, 16402, 8201, 7454, 2]
+// Dependencies: [19, 21, 4829, 576, 4561, 4830, 1177, 16426, 8203, 7456, 2]
 // Exports: default
 
-// Module 16404 (ChannelScreenAnimatedFrame)
+// Module 16428 (ChannelScreenAnimatedFrame)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import timing from "timing" /* 4828 */;
-import PanelsConfig from "PanelsConfig" /* 16402 */;
+import timing from "timing" /* 4830 */;
+import PanelsConfig from "PanelsConfig" /* 16426 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { position: "absolute", zIndex: 1, top: 0, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, splitDivider: null };
 const obj3 = { position: "absolute", zIndex: 1, top: 0, width: "100%", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.splitDivider = { borderLeftColor: nativeDefault.colors.APP_FRAME_BORDER, borderLeftWidth: nativeDefault.modules.mobile.CHANNEL_DRAWER_DIVIDER_WIDTH };

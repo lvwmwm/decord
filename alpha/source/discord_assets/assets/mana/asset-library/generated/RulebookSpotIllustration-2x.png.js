@@ -1,8 +1,8 @@
-// Module ID: 6719
-// Function ID: 6720
+// Module ID: 6721
+// Function ID: 6722
 // Dependencies: [2]
 
-// Module 6719
+// Module 6721
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/RulebookSpotIllustration-2x.png.js");

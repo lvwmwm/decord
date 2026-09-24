@@ -1,20 +1,20 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 17889
+// Function ID: 17890
 // Name: HolidayEventsManager
-// Dependencies: [1235, 10245, 10246, 7449, 17867, 17871, 17872, 17873, 10247, 2]
+// Dependencies: [1235, 10250, 10251, 7451, 17890, 17894, 17895, 17896, 10252, 2]
 
-// Module 17866 (HolidayEventsManager)
-import getSoundsForPackDefault from "getSoundsForPack" /* 10247 */;
-import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17867 */;
-import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 17871 */;
-import SoundpackActions from "SoundpackActions" /* 17872 */;
-import setIncomingRingtone from "setIncomingRingtone" /* 17873 */;
+// Module 17889 (HolidayEventsManager)
+import getSoundsForPackDefault from "getSoundsForPack" /* 10252 */;
+import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 17890 */;
+import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 17894 */;
+import SoundpackActions from "SoundpackActions" /* 17895 */;
+import setIncomingRingtone from "setIncomingRingtone" /* 17896 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1235 */;
-import SoundpackStore from "SoundpackStore" /* 10245 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7449 */;
+import SoundpackStore from "SoundpackStore" /* 10250 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7451 */;
 
 require = fn;
-const Soundpacks = fn(10246).Soundpacks;
+const Soundpacks = fn(10251).Soundpacks;
 class HolidayEventsManager extends tmp2 {
   constructor() {
     applyArgumentsResult = HermesBuiltin.applyArguments(new.target, new.target);
@@ -42,16 +42,16 @@ prototype["updateSoundpack"] = function updateSoundpack() {
   let isEligibleResult = HolidayEventsUtilsDefault.isEligible();
   if (isEligibleResult) {
     if (isEligibleResult) {
-      isEligibleResult = null != tmp3(17867).soundpack;
+      isEligibleResult = null != tmp3(17890).soundpack;
     }
     if (isEligibleResult) {
       isEligibleResult = name !== lastSoundpackExperimentId;
     }
     if (isEligibleResult) {
-      isEligibleResult = soundpack !== tmp3(17867).soundpack;
+      isEligibleResult = soundpack !== tmp3(17890).soundpack;
     }
     if (isEligibleResult) {
-      SoundpackActions.setSoundpack(tmp3(17867).soundpack, name);
+      SoundpackActions.setSoundpack(tmp3(17890).soundpack, name);
     }
   } else {
     SoundpackActions.setSoundpack(Soundpacks.CLASSIC, null);

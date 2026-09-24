@@ -1,10 +1,10 @@
-// Module ID: 4482
-// Function ID: 4483
+// Module ID: 4484
+// Function ID: 4485
 // Name: SubscriptionPlanRecord
 // Dependencies: [1387, 1374, 2]
 // Exports: getPriceFromServer, isNoneSubscription
 
-// Module 4482 (SubscriptionPlanRecord)
+// Module 4484 (SubscriptionPlanRecord)
 import Record from "Record" /* 1387 */;
 
 const PremiumConstants = fn(1374);

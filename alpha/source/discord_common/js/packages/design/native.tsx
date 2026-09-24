@@ -1,13 +1,13 @@
-// Module ID: 4533
-// Function ID: 4534
+// Module ID: 4535
+// Function ID: 4536
 // Name: native
-// Dependencies: [2, 4534, 4539, 4541, 4542, 4543, 4544, 4535, 4545, 4546, 4547, 4540, 4548, 4549, 4550, 4551, 4643, 4604, 4644]
+// Dependencies: [2, 4536, 4541, 4543, 4544, 4545, 4546, 4537, 4547, 4548, 4549, 4542, 4550, 4551, 4552, 4553, 4645, 4606, 4646]
 
-// Module 4533 (native)
-import ManaContext from "ManaContext" /* 4604 */;
-import GraphicTypes from "GraphicTypes" /* 4644 */;
+// Module 4535 (native)
+import ManaContext from "ManaContext" /* 4606 */;
+import GraphicTypes from "GraphicTypes" /* 4646 */;
 import size from "module_2" /* 2 */;
-import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 4544 */;
+import AccessibilityConstants from "AccessibilityPreferencesContext/AccessibilityConstants" /* 4546 */;
 
 const require = globalThis.__r;
 
@@ -68,8 +68,8 @@ for (const key10071 in require("ThemeContextFlags")) {
   arg5[key10071] = require("ThemeContextFlags")[key10071];
   continue;
 }
-for (const key10075 in require("module_4551")) {
-  arg5[key10075] = require("module_4551")[key10075];
+for (const key10075 in require("module_4553")) {
+  arg5[key10075] = require("module_4553")[key10075];
   continue;
 }
 for (const key10079 in require("Colors")) {

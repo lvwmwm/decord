@@ -1,0 +1,9 @@
+// Module ID: 17001
+// Function ID: 17002
+// Dependencies: [1121]
+
+// Module 17001
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 32, height: 32, scales: [2, 3], hash: "b7959151112c46092618236391150e02", name: "ic_rulebook", type: "png" });

@@ -1,13 +1,13 @@
-// Module ID: 17909
-// Function ID: 17910
+// Module ID: 17932
+// Function ID: 17933
 // Name: setupLoadFromMessageManagerHandlers
-// Dependencies: [7608, 2096, 1091, 2]
+// Dependencies: [7610, 2098, 1091, 2]
 // Exports: default
 
-// Module 17909 (setupLoadFromMessageManagerHandlers)
+// Module 17932 (setupLoadFromMessageManagerHandlers)
 import DurationsDefault from "Durations" /* 1091 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 7608 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 7610 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
 
 let closure_2 = 5 * DurationsDefault.Millis.SECOND;
 const size = fn(2);

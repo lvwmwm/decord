@@ -1,13 +1,13 @@
-// Module ID: 15574
-// Function ID: 15575
+// Module ID: 15588
+// Function ID: 15589
 // Name: GuildRoleSubscriptionEmojiGallery
-// Dependencies: [19, 17, 21, 10685, 10687, 15575, 2]
+// Dependencies: [19, 17, 21, 10690, 10692, 15589, 2]
 // Exports: default
 
-// Module 15574 (GuildRoleSubscriptionEmojiGallery)
-import chunkDefault from "chunk" /* 10685 */;
-import LayoutUtils from "LayoutUtils" /* 10687 */;
-import EmojiIconDefault from "EmojiIcon" /* 15575 */;
+// Module 15588 (GuildRoleSubscriptionEmojiGallery)
+import chunkDefault from "chunk" /* 10690 */;
+import LayoutUtils from "LayoutUtils" /* 10692 */;
+import EmojiIconDefault from "EmojiIcon" /* 15589 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

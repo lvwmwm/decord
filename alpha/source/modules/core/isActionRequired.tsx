@@ -1,10 +1,10 @@
-// Module ID: 2038
-// Function ID: 2039
+// Module ID: 2040
+// Function ID: 2041
 // Name: isActionRequired
 // Dependencies: [2035, 2036, 2]
 // Exports: default
 
-// Module 2038 (isActionRequired)
+// Module 2040 (isActionRequired)
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 2035 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 2036 */;
 

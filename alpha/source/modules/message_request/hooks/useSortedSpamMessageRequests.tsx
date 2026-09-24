@@ -1,14 +1,14 @@
-// Module ID: 17442
-// Function ID: 17443
+// Module ID: 17465
+// Function ID: 17466
 // Name: useSortedSpamMessageRequests
-// Dependencies: [19, 2042, 1372, 7551, 504, 17432, 2]
+// Dependencies: [19, 2044, 1372, 7553, 504, 17455, 2]
 // Exports: default
 
-// Module 17442 (useSortedSpamMessageRequests)
+// Module 17465 (useSortedSpamMessageRequests)
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import UserStore from "UserStore" /* 1372 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7551 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7553 */;
 
 const require = fn;
 const size = fn(2);

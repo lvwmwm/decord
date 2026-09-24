@@ -1,38 +1,38 @@
-// Module ID: 8951
-// Function ID: 8952
+// Module ID: 8955
+// Function ID: 8956
 // Name: BackgroundBlurFill
-// Dependencies: [19, 17, 21, 576, 4676, 4533, 5259, 4524, 5258, 4559, 5270, 5274, 2]
+// Dependencies: [19, 17, 21, 576, 4678, 4535, 5261, 4526, 5260, 4561, 5272, 5276, 2]
 // Exports: BackgroundBlurFill, BackgroundBlurFillAnimated, BackgroundBlurFillWithPress
 
-// Module 8951 (BackgroundBlurFill)
+// Module 8955 (BackgroundBlurFill)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import VisualEffectView from "VisualEffectView" /* 5259 */;
-import spring from "spring" /* 5270 */;
-import springPresets from "springPresets" /* 5274 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import VisualEffectView from "VisualEffectView" /* 5261 */;
+import spring from "spring" /* 5272 */;
+import springPresets from "springPresets" /* 5276 */;
 import noop from "module_19" /* 19 */;
 
-const VisualEffectViewAnimatedDefault = tmp3(5258);
-const VisualEffectViewDefault = tmp3(5259);
+const VisualEffectViewAnimatedDefault = tmp3(5260);
+const VisualEffectViewDefault = tmp3(5261);
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const jsx = fn(21).jsx;
 const BLACK = nativeDefault.unsafe_rawColors.BLACK;
-let ColorUtils = fn(4676);
+let ColorUtils = fn(4678);
 let closure_6 = ColorUtils.hexWithOpacity(BLACK, 0);
-ColorUtils = fn(4676);
+ColorUtils = fn(4678);
 let closure_7 = ColorUtils.hexWithOpacity(BLACK, 0.2);
-ColorUtils = fn(4676);
+ColorUtils = fn(4678);
 let closure_8 = ColorUtils.hexWithOpacity(BLACK, 0.4);
-ColorUtils = fn(4676);
+ColorUtils = fn(4678);
 let closure_9 = ColorUtils.hexWithOpacity(BLACK, 0.5);
 const __initData = { code: "function BackgroundBlurFillNativeTsx1(){const{withSpring,interpolateColor,pressed,fallbackColor,fallbackColorPressed,ON_PRESS_SPRING}=this.__closure;return{backgroundColor:withSpring(interpolateColor(pressed.get(),[0,1],[fallbackColor,fallbackColorPressed]),ON_PRESS_SPRING,'animate-always')};}" };
 const __initData2 = { code: "function BackgroundBlurFillNativeTsx2(){const{shouldUseFallback,withSpring,interpolateColor,pressed,restingTint,pressedTint,ON_PRESS_SPRING}=this.__closure;return{tintColor:shouldUseFallback?undefined:withSpring(interpolateColor(pressed.get(),[0,1],[restingTint,pressedTint]),ON_PRESS_SPRING,'animate-always')};}" };
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/experimental/BackgroundBlurView/native/BackgroundBlurFill.native.tsx");
 
-export const BlurTheme = fn(5259).BlurTheme;
-export const BlurStyle = fn(5259).BlurStyle;
+export const BlurTheme = fn(5261).BlurTheme;
+export const BlurStyle = fn(5261).BlurStyle;
 export const BackgroundBlurFill = function BackgroundBlurFill(arg0) {
   ({ blurTheme, blurStyle, tintColor, android_fallbackColor } = arg0);
   ({ style, blurAmount, android_blurTargetViewNativeId } = arg0);
@@ -54,9 +54,9 @@ export const BackgroundBlurFill = function BackgroundBlurFill(arg0) {
   if (tintColor == null) {
     tintColor = obj2.useMemo(() => VisualEffectView.isBlurThemeLight(blurTheme) ? closure_6 : closure_8, items1);
   }
-  obj = blurTheme(4533);
+  obj = blurTheme(4535);
   obj2 = noop;
-  const tmpResult = blurTheme(4524);
+  const tmpResult = blurTheme(4526);
   if (android_fallbackColor == null) {
     android_fallbackColor = tmpResult.useToken(nativeDefault.colors.BACKGROUND_SCRIM, tmpResult2.normalizeBlurTheme(blurTheme));
   }
@@ -86,9 +86,9 @@ export const BackgroundBlurFillAnimated = function BackgroundBlurFillAnimated(ar
   if (tintColor == null) {
     tintColor = obj2.useMemo(() => VisualEffectView.isBlurThemeLight(blurTheme) ? closure_6 : closure_8, items1);
   }
-  obj = blurTheme(4533);
+  obj = blurTheme(4535);
   obj2 = noop;
-  const tmpResult = blurTheme(4524);
+  const tmpResult = blurTheme(4526);
   if (android_fallbackColor == null) {
     android_fallbackColor = tmpResult.useToken(nativeDefault.colors.BACKGROUND_SCRIM, tmpResult2.normalizeBlurTheme(blurTheme));
   }
@@ -97,7 +97,7 @@ export const BackgroundBlurFillAnimated = function BackgroundBlurFillAnimated(ar
   obj3.style = items2;
   let tmp6 = null != animatedProps;
   const tmp4 = jsx;
-  tmpResult2 = blurTheme(5259);
+  tmpResult2 = blurTheme(5261);
   if (tmp6) {
     const obj4 = { animatedProps };
     tmp6 = obj4;
@@ -125,22 +125,22 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
     }
     return str;
   }, items);
-  obj = pressed(4533);
-  const normalizeBlurThemeResult = pressed(5259).normalizeBlurTheme(blurTheme);
-  const tmp2Result = pressed(5259);
-  const tmp6 = pressed(5259).isBlurThemeLight(blurTheme) ? closure_6 : closure_8;
+  obj = pressed(4535);
+  const normalizeBlurThemeResult = pressed(5261).normalizeBlurTheme(blurTheme);
+  const tmp2Result = pressed(5261);
+  const tmp6 = pressed(5261).isBlurThemeLight(blurTheme) ? closure_6 : closure_8;
   importDefault = tmp6;
-  const tmp2Result8 = pressed(5259);
-  const tmp7 = pressed(5259).isBlurThemeLight(blurTheme) ? closure_7 : closure_9;
+  const tmp2Result8 = pressed(5261);
+  const tmp7 = pressed(5261).isBlurThemeLight(blurTheme) ? closure_7 : closure_9;
   dependencyMap = tmp7;
-  const tmp2Result9 = pressed(5259);
-  token = pressed(4524).useToken(nativeDefault.colors.BACKGROUND_SCRIM, normalizeBlurThemeResult);
-  const tmp2Result10 = pressed(4524);
-  token1 = pressed(4524).useToken(nativeDefault.colors.BACKGROUND_SCRIM_LIGHTBOX, normalizeBlurThemeResult);
-  const tmp2Result11 = pressed(4524);
-  const isBlurDisabledResult = pressed(5259).isBlurDisabled(merged);
+  const tmp2Result9 = pressed(5261);
+  token = pressed(4526).useToken(nativeDefault.colors.BACKGROUND_SCRIM, normalizeBlurThemeResult);
+  const tmp2Result10 = pressed(4526);
+  token1 = pressed(4526).useToken(nativeDefault.colors.BACKGROUND_SCRIM_LIGHTBOX, normalizeBlurThemeResult);
+  const tmp2Result11 = pressed(4526);
+  const isBlurDisabledResult = pressed(5261).isBlurDisabled(merged);
   c5 = isBlurDisabledResult;
-  const tmp2Result12 = pressed(5259);
+  const tmp2Result12 = pressed(5261);
   const fn = function p() {
     const obj = { backgroundColor: null };
     const obj2 = spring;
@@ -148,12 +148,12 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
     obj.backgroundColor = obj2.withSpring(ReanimatedRexport.interpolateColor(pressed.get(), [0, 1], items), springPresets.ON_PRESS_SPRING, "animate-always");
     return obj;
   };
-  const tmp2Result13 = pressed(4559);
-  fn.__closure = { withSpring: pressed(5270).withSpring, interpolateColor: pressed(4559).interpolateColor, pressed, fallbackColor: token, fallbackColorPressed: token1, ON_PRESS_SPRING: pressed(5274).ON_PRESS_SPRING };
+  const tmp2Result13 = pressed(4561);
+  fn.__closure = { withSpring: pressed(5272).withSpring, interpolateColor: pressed(4561).interpolateColor, pressed, fallbackColor: token, fallbackColorPressed: token1, ON_PRESS_SPRING: pressed(5276).ON_PRESS_SPRING };
   fn.__workletHash = 10497618157620;
   fn.__initData = __initData;
   let animatedStyle = tmp2Result13.useAnimatedStyle(fn);
-  let obj2 = { withSpring: pressed(5270).withSpring, interpolateColor: pressed(4559).interpolateColor, pressed, fallbackColor: token, fallbackColorPressed: token1, ON_PRESS_SPRING: pressed(5274).ON_PRESS_SPRING };
+  let obj2 = { withSpring: pressed(5272).withSpring, interpolateColor: pressed(4561).interpolateColor, pressed, fallbackColor: token, fallbackColorPressed: token1, ON_PRESS_SPRING: pressed(5276).ON_PRESS_SPRING };
   class C {
     constructor() {
       withSpringResult = undefined;
@@ -175,14 +175,14 @@ export const BackgroundBlurFillWithPress = function BackgroundBlurFillWithPress(
       return { tintColor: withSpringResult };
     }
   }
-  const tmp2Result14 = pressed(4559);
-  C.__closure = { shouldUseFallback: isBlurDisabledResult, withSpring: pressed(5270).withSpring, interpolateColor: pressed(4559).interpolateColor, pressed, restingTint: tmp6, pressedTint: tmp7, ON_PRESS_SPRING: pressed(5274).ON_PRESS_SPRING };
+  const tmp2Result14 = pressed(4561);
+  C.__closure = { shouldUseFallback: isBlurDisabledResult, withSpring: pressed(5272).withSpring, interpolateColor: pressed(4561).interpolateColor, pressed, restingTint: tmp6, pressedTint: tmp7, ON_PRESS_SPRING: pressed(5276).ON_PRESS_SPRING };
   C.__workletHash = 11987567486157;
   C.__initData = __initData2;
   const animatedProps = tmp2Result14.useAnimatedProps(C);
   const obj4 = { blurTheme, blurStyle: memo, style: null };
   const items1 = [token1.absoluteFill, style.style, ];
-  let obj3 = { shouldUseFallback: isBlurDisabledResult, withSpring: pressed(5270).withSpring, interpolateColor: pressed(4559).interpolateColor, pressed, restingTint: tmp6, pressedTint: tmp7, ON_PRESS_SPRING: pressed(5274).ON_PRESS_SPRING };
+  let obj3 = { shouldUseFallback: isBlurDisabledResult, withSpring: pressed(5272).withSpring, interpolateColor: pressed(4561).interpolateColor, pressed, restingTint: tmp6, pressedTint: tmp7, ON_PRESS_SPRING: pressed(5276).ON_PRESS_SPRING };
   const tmp12 = c5;
   if (!isBlurDisabledResult) {
     animatedStyle = {};

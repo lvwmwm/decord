@@ -1,19 +1,19 @@
-// Module ID: 8237
-// Function ID: 8238
+// Module ID: 8239
+// Function ID: 8240
 // Name: ConversationsActionCreators
-// Dependencies: [5, 7922, 7926, 8238, 7923, 1074, 8235, 573, 1271, 7784, 8239, 5017, 5025, 2]
-// Exports: clearConversationSelection, fetchChannelConversations, fetchConversation, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
+// Dependencies: [5, 7924, 7928, 8240, 7925, 1074, 8237, 573, 1271, 7786, 8241, 5019, 5027, 2]
+// Exports: clearConversationSelection, fetchChannelConversations, fetchConversation, requestConversationFocus, setConversationFeedbackRating, setSelectedConversation, toggleConversationHighlighting, trackTopicalNavigationEntrypointImpression
 
-// Module 8237 (ConversationsActionCreators)
+// Module 8239 (ConversationsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 5017 */;
-import SurveyActionTypes from "SurveyActionTypes" /* 5025 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8239 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 5019 */;
+import SurveyActionTypes from "SurveyActionTypes" /* 5027 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8241 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 7922 */;
-import ConversationsStore from "ConversationsStore" /* 7926 */;
-import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 8238 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 7924 */;
+import ConversationsStore from "ConversationsStore" /* 7928 */;
+import TopicalNavigationSurveyStore from "TopicalNavigationSurveyStore" /* 8240 */;
 
 require = fn;
 let closure_9 = async function _fetchChannelConversations(arg0, value) {
@@ -310,7 +310,7 @@ let closure_12 = async function _fetchConversationMessages(arg0, value) {
     }
   }
 };
-const FETCH_LIMIT = fn(7923).FETCH_LIMIT;
+const FETCH_LIMIT = fn(7925).FETCH_LIMIT;
 const Endpoints = fn(1074).Endpoints;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/conversations/ConversationsActionCreators.tsx");
@@ -359,15 +359,18 @@ export const setSelectedConversation = function setSelectedConversation(channelI
       }
       if (null != startMessageId) {
         const obj3 = { channelId, messageId: startMessageId, flash: false };
-        tmp6(7784).jumpToMessage(obj3);
-        const tmp6Result = tmp6(7784);
+        tmp6(7786).jumpToMessage(obj3);
+        const tmp6Result = tmp6(7786);
       }
     }
     tmp6 = importDefault;
   }
 };
-export const clearConversationSelection = function clearConversationSelection(channelId, conversationId) {
-  DispatcherDefault.dispatch({ type: "CLEAR_CONVERSATION_SELECTION", channelId, conversationId });
+export const clearConversationSelection = function clearConversationSelection(channelId, handleScrollPositionResult1) {
+  DispatcherDefault.dispatch({ type: "CLEAR_CONVERSATION_SELECTION", channelId, conversationId: handleScrollPositionResult1 });
+};
+export const requestConversationFocus = function requestConversationFocus() {
+  DispatcherDefault.dispatch({ type: "CONVERSATION_FOCUS_REQUEST" });
 };
 export const setConversationFeedbackRating = function setConversationFeedbackRating(channelId, conversationId, down) {
   DispatcherDefault.dispatch({ type: "SET_CONVERSATION_FEEDBACK_RATING", channelId, conversationId, rating: down });

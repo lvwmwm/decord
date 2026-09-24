@@ -1,11 +1,11 @@
-// Module ID: 2077
-// Function ID: 2078
+// Module ID: 2079
+// Function ID: 2080
 // Name: Key
-// Dependencies: [2078, 2]
+// Dependencies: [2080, 2]
 // Exports: combineKey, combineKeyPrefix
 
-// Module 2077 (Key)
-import TableId from "TableId" /* 2078 */;
+// Module 2079 (Key)
+import TableId from "TableId" /* 2080 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/util/Key.tsx");

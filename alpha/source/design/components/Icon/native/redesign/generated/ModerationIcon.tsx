@@ -1,13 +1,13 @@
-// Module ID: 18007
-// Function ID: 18008
+// Module ID: 18030
+// Function ID: 18031
 // Name: ModerationIcon
-// Dependencies: [19, 21, 576, 4523, 18008, 2]
+// Dependencies: [19, 21, 576, 4525, 18031, 2]
 // Exports: ModerationIcon
 
-// Module 18007 (ModerationIcon)
+// Module 18030 (ModerationIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod18008 from "module_18008" /* 18008 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod18031 from "module_18031" /* 18031 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ModerationIcon = function ModerationIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod18008, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod18031, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

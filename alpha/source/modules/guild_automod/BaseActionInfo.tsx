@@ -1,20 +1,20 @@
-// Module ID: 18030
-// Function ID: 18031
+// Module ID: 18053
+// Function ID: 18054
 // Name: BaseActionInfo
-// Dependencies: [2042, 4472, 1372, 12198, 2107, 1115, 4980, 2]
+// Dependencies: [2044, 4474, 1372, 12205, 2109, 1115, 4982, 2]
 // Exports: getBaseActionInfo
 
-// Module 18030 (BaseActionInfo)
+// Module 18053 (BaseActionInfo)
 import util from "util" /* 1115 */;
-import useChannelName from "useChannelName" /* 4980 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import RelationshipStore from "RelationshipStore" /* 4472 */;
+import useChannelName from "useChannelName" /* 4982 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import RelationshipStore from "RelationshipStore" /* 4474 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const Constants = fn(12198);
+const Constants = fn(12205);
 ({ AutomodActionType: hasOwnProperty, AutomodTriggerType: metroRequire } = Constants);
-const getFriendlyDurationString = fn(2107).getFriendlyDurationString;
+const getFriendlyDurationString = fn(2109).getFriendlyDurationString;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_automod/BaseActionInfo.tsx");
 

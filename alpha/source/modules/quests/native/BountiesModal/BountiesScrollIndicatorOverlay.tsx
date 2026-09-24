@@ -1,14 +1,14 @@
-// Module ID: 15375
-// Function ID: 15376
+// Module ID: 15384
+// Function ID: 15385
 // Name: BountiesScrollIndicatorOverlay
-// Dependencies: [32, 19, 17, 21, 4831, 4827, 576, 4559, 4828, 5283, 15376, 4823, 1115, 2]
+// Dependencies: [32, 19, 17, 21, 4833, 4829, 576, 4561, 4830, 5285, 15385, 4825, 1115, 2]
 // Exports: default
 
-// Module 15375 (BountiesScrollIndicatorOverlay)
+// Module 15384 (BountiesScrollIndicatorOverlay)
 import nativeDefault from "native" /* 576 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import timing from "timing" /* 4828 */;
-import timingPresets from "timingPresets" /* 4831 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import timing from "timing" /* 4830 */;
+import timingPresets from "timingPresets" /* 4833 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -17,8 +17,8 @@ const StyleSheet = fn(17).StyleSheet;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
 const colors = ["rgba(0,0,0,0)", "rgba(0,0,0,0.7)", "rgba(0,0,0,1)"];
-let closure_9 = 5000 + fn(4831).timingSlowDuration;
-const createStyles = fn(4827);
+let closure_9 = 5000 + fn(4833).timingSlowDuration;
+const createStyles = fn(4829);
 let closure_10 = createStyles.createStyles(() => {
   const obj = { scrollIndicator: null, scrollIndicatorContent: null, scrollIndicatorText: null };
   const rect = { position: "absolute", left: 0, right: 0, bottom: 0, height: "45%", alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_16 };
@@ -139,12 +139,12 @@ export default function BountiesScrollIndicatorOverlay(enabled) {
     }
     if (!isEndCardVisible) {
       if (enabled) {
-        let timingStandard = tmp(4831).timingSlow;
+        let timingStandard = tmp(4833).timingSlow;
       }
       const obj2 = { opacity: obj.withTiming(num, timingStandard) };
       return obj2;
     }
-    timingStandard = tmp(4831).timingStandard;
+    timingStandard = tmp(4833).timingStandard;
   };
   const obj4 = enabled(visible[7]);
   fn.__closure = { withTiming: enabled(visible[8]).withTiming, visible, isEndCardVisible, enabled, timingStandard: enabled(visible[4]).timingStandard, timingSlow: enabled(visible[4]).timingSlow };

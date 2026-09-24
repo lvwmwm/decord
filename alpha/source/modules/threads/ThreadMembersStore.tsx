@@ -1,14 +1,14 @@
-// Module ID: 8097
-// Function ID: 8098
+// Module ID: 8099
+// Function ID: 8100
 // Name: ThreadMembersStore
-// Dependencies: [2046, 2042, 12, 504, 573, 2]
+// Dependencies: [2048, 2044, 12, 504, 573, 2]
 
-// Module 8097 (ThreadMembersStore)
+// Module 8099 (ThreadMembersStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import ChannelRecord from "ChannelRecord" /* 2046 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelRecord from "ChannelRecord" /* 2048 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import size from "module_2" /* 2 */;
 
 function updateFromGuild(threads) {

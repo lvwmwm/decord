@@ -1,13 +1,13 @@
-// Module ID: 14969
-// Function ID: 14970
+// Module ID: 14978
+// Function ID: 14979
 // Name: useScrollToUserProfileEditFormSection
-// Dependencies: [19, 17, 4819, 10114, 504, 2]
+// Dependencies: [19, 17, 4821, 10119, 504, 2]
 // Exports: default
 
-// Module 14969 (useScrollToUserProfileEditFormSection)
+// Module 14978 (useScrollToUserProfileEditFormSection)
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4819 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10114 */;
+import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10119 */;
 
 const require = globalThis.__r;
 

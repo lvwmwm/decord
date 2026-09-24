@@ -1,30 +1,30 @@
-// Module ID: 14143
-// Function ID: 14144
+// Module ID: 14152
+// Function ID: 14153
 // Name: VoiceMemberEmbeddedActivity
-// Dependencies: [32, 19, 17, 2041, 2042, 1372, 1181, 7482, 21, 1177, 4827, 576, 7499, 1370, 504, 4451, 9715, 1478, 5330, 9714, 5425, 1115, 4823, 9818, 5272, 2]
+// Dependencies: [32, 19, 17, 2043, 2044, 1372, 1181, 7484, 21, 1177, 4829, 576, 7501, 1370, 504, 4453, 9719, 1478, 5332, 9718, 5427, 1115, 4825, 9823, 5274, 2]
 // Exports: calculateActivityRowHeight, default
 
-// Module 14143 (VoiceMemberEmbeddedActivity)
+// Module 14152 (VoiceMemberEmbeddedActivity)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9714 */;
+import handlePressJoinActivityDefault from "handlePressJoinActivity" /* 9718 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ Image: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const ACTION_SHEET_MAX_WIDTH = fn(7482).ACTION_SHEET_MAX_WIDTH;
+const ACTION_SHEET_MAX_WIDTH = fn(7484).ACTION_SHEET_MAX_WIDTH;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const XSMALL = fn(1177).AvatarSizes.XSMALL;
 const androidRippleConfig = fn(1181).getThemedRippleConfig({ foreground: true });
 let size = { width: 32, height: 32, marginRight: 16, borderRadius: 4 };
 let c14 = 1.7777777777777777;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { voiceMemberItemRow: { paddingTop: 12, paddingBottom: 16, flexDirection: "column", display: "flex", justifyContent: "flex-start" }, innerRow: { paddingHorizontal: 16, alignItems: "center" }, activityDetails: { marginBottom: 8, flexDirection: "row", display: "flex" }, appIcon: size, appIconPlaceholder: null, centerGroup: null, applicationName: null, joinButton: null, joinButtonPill: null, joinButtonContainer: null, overflow: null, overflowBackgroundColor: null, overflowBackgroundColorActionSheet: null };
 let obj3 = {};
 const merged = Object.assign(size);

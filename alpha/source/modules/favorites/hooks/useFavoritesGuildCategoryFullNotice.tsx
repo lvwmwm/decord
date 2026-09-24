@@ -1,17 +1,17 @@
-// Module ID: 16509
-// Function ID: 16510
+// Module ID: 16533
+// Function ID: 16534
 // Name: useFavoritesGuildCategoryFullNotice
-// Dependencies: [2045, 2055, 1074, 504, 10567, 2067, 1115, 3358, 2]
+// Dependencies: [2047, 2057, 1074, 504, 10572, 2069, 1115, 3360, 2]
 // Exports: default
 
-// Module 16509 (useFavoritesGuildCategoryFullNotice)
+// Module 16533 (useFavoritesGuildCategoryFullNotice)
 import initialize from "initialize" /* 504 */;
-import _modDef3358 from "module_3358" /* 3358 */;
-import FavoritesHooks from "FavoritesHooks" /* 10567 */;
-import FavoriteStore from "FavoriteStore" /* 2045 */;
+import _modDef3360 from "module_3360" /* 3360 */;
+import FavoritesHooks from "FavoritesHooks" /* 10572 */;
+import FavoriteStore from "FavoriteStore" /* 2047 */;
 
 require = fn;
-let closure_4 = fn(2055).FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;
+let closure_4 = fn(2057).FAVORITES_AUTO_ADDED_THREADS_CATEGORY_NAME;
 const ChannelTypes = fn(1074).ChannelTypes;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/favorites/hooks/useFavoritesGuildCategoryFullNotice.tsx");
@@ -35,15 +35,15 @@ export default function useFavoritesGuildCategoryFullNotice(getGuildId, str) {
             if (formatted === closure_4.toLowerCase()) {
               const obj2 = { label: null, tooltip: null };
               const intl = tmp(1115).intl;
-              obj2.label = intl.string(_modDef3358.WsUrMD);
+              obj2.label = intl.string(_modDef3360.WsUrMD);
               const intl2 = tmp(1115).intl;
-              obj2.tooltip = intl2.string(_modDef3358.dW9Kov);
+              obj2.tooltip = intl2.string(_modDef3360.dW9Kov);
               tmp6 = obj2;
             }
             str = str.trim();
           }
         }
-        tmpResult = tmp(2067);
+        tmpResult = tmp(2069);
       }
     }
   }

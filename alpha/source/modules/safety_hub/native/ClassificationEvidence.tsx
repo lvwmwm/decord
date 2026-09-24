@@ -1,21 +1,21 @@
-// Module ID: 12226
-// Function ID: 12227
+// Module ID: 12233
+// Function ID: 12234
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 4827, 1177, 576, 4823, 1115, 12227, 2]
+// Dependencies: [19, 17, 21, 4829, 1177, 576, 4825, 1115, 12234, 2]
 // Exports: default
 
-// Module 12226 (ClassificationEvidence)
+// Module 12233 (ClassificationEvidence)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12227 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12234 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { cardShadow: null, flaggedContent: null, sectionContainer: null };
 const native = fn(1177);
 obj2.cardShadow = native.generateBoxShadowStyle(fn(1177).FOUR_DP_ELEVATION_SHADOW_PARAMS);

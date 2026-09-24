@@ -1,12 +1,12 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8025
+// Function ID: 8026
 // Name: BountyStore
-// Dependencies: [5754, 504, 573, 2]
+// Dependencies: [5756, 504, 573, 2]
 
-// Module 8023 (BountyStore)
+// Module 8025 (BountyStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AdCreativeType from "AdCreativeType" /* 5754 */;
+import AdCreativeType from "AdCreativeType" /* 5756 */;
 
 require = fn;
 function resetStateForDeliveredBounties(items) {

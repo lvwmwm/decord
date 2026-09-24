@@ -1,11 +1,11 @@
-// Module ID: 4633
-// Function ID: 4634
+// Module ID: 4635
+// Function ID: 4636
 // Name: OmnibuttonCoachmarkRive
-// Dependencies: [109, 19, 21, 4553, 4634, 4608, 2]
+// Dependencies: [109, 19, 21, 4555, 4636, 4610, 2]
 
-// Module 4633 (OmnibuttonCoachmarkRive)
-import BaseRive from "BaseRive" /* 4553 */;
-import RiveErrorBoundary from "RiveErrorBoundary" /* 4608 */;
+// Module 4635 (OmnibuttonCoachmarkRive)
+import BaseRive from "BaseRive" /* 4555 */;
+import RiveErrorBoundary from "RiveErrorBoundary" /* 4610 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

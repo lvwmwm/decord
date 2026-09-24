@@ -1,15 +1,15 @@
-// Module ID: 2101
-// Function ID: 2102
+// Module ID: 2103
+// Function ID: 2104
 // Name: GuildRoleRecordUtils
-// Dependencies: [2057, 2100, 1086, 1092, 2102, 2]
+// Dependencies: [2059, 2102, 1086, 1092, 2104, 2]
 // Exports: constructGuildRoleInPlace, fromSerializedPartition, fromSyncOperation, isGuildRoleRecord, toSerializedPartition
 
-// Module 2101 (GuildRoleRecordUtils)
+// Module 2103 (GuildRoleRecordUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 2100 */;
-import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2102 */;
-import PlainRecord from "PlainRecord" /* 2057 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 2102 */;
+import EnhancedRoleColorUtils from "EnhancedRoleColorUtils" /* 2104 */;
+import PlainRecord from "PlainRecord" /* 2059 */;
 import size from "module_2" /* 2 */;
 
 function fromServerArray(id, roles) {

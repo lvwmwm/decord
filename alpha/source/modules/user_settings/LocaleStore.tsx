@@ -1,12 +1,12 @@
-// Module ID: 2109
-// Function ID: 2110
+// Module ID: 2111
+// Function ID: 2112
 // Name: LocaleStore
-// Dependencies: [5, 2110, 1220, 4443, 1115, 504, 573, 2]
+// Dependencies: [5, 2112, 1220, 4445, 1115, 504, 573, 2]
 
-// Module 2109 (LocaleStore)
+// Module 2111 (LocaleStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import DiscordNativeDefault from "DiscordNative" /* 4443 */;
+import DiscordNativeDefault from "DiscordNative" /* 4445 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
@@ -48,7 +48,7 @@ let closure_6 = async function _getSystemLocale(arg0, value) {
             }
           }
           if (null != prop) {
-            const app2 = tmp22(4443).app;
+            const app2 = tmp22(4445).app;
             const preferredSystemLanguages = app2.getPreferredSystemLanguages();
             c2 = 1;
             c3 = 1;
@@ -105,7 +105,7 @@ function handleUpdate() {
   }
   return flag;
 }
-const setAppLocale = fn(2110).setAppLocale;
+const setAppLocale = fn(2112).setAppLocale;
 let locale = fn(1115).intl.currentLocale;
 let global = fn(1115).systemLocale;
 (function getSystemLocale() {

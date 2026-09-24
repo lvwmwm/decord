@@ -1,12 +1,12 @@
-// Module ID: 16728
-// Function ID: 16729
+// Module ID: 16752
+// Function ID: 16753
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 16727, 5325, 5384, 4823, 2]
+// Dependencies: [19, 17, 21, 16751, 5327, 5386, 4825, 2]
 // Exports: default
 
-// Module 16728 (TypingSubtitle)
-import Text_Text from "Text/Text" /* 4823 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 16727 */;
+// Module 16752 (TypingSubtitle)
+import Text_Text from "Text/Text" /* 4825 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 16751 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,11 +22,11 @@ export default function TypingSubtitle(arg0) {
   const subtitleStyles = useSubtitleStyles.useSubtitleStyles();
   let channelIconComponentWithGuild;
   if (null != channel) {
-    channelIconComponentWithGuild = tmp(5325).getChannelIconComponentWithGuild(channel, guild);
-    const tmpResult = tmp(5325);
+    channelIconComponentWithGuild = tmp(5327).getChannelIconComponentWithGuild(channel, guild);
+    const tmpResult = tmp(5327);
   }
   if (channelIconComponentWithGuild == null) {
-    channelIconComponentWithGuild = tmp(5384).TextIcon;
+    channelIconComponentWithGuild = tmp(5386).TextIcon;
   }
   const obj2 = { style: subtitleStyles.subtitleRow, children: null };
   let tmp7 = null;
@@ -41,7 +41,7 @@ export default function TypingSubtitle(arg0) {
     const obj5 = { variant: "text-xs/medium", children: null };
     const items1 = [channelName, "  \u00B7  "];
     obj5.children = items1;
-    tmp5Result = tmp5(tmp(4823).Text, obj5);
+    tmp5Result = tmp5(tmp(4825).Text, obj5);
   }
   const items2 = [tmp5Result, text];
   obj4.children = items2;

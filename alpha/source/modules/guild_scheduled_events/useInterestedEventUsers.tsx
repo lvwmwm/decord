@@ -1,13 +1,13 @@
-// Module ID: 9968
-// Function ID: 9969
+// Module ID: 9973
+// Function ID: 9974
 // Name: useInterestedEventUsers
-// Dependencies: [19, 7854, 2048, 504, 2]
+// Dependencies: [19, 7856, 2050, 504, 2]
 // Exports: default
 
-// Module 9968 (useInterestedEventUsers)
+// Module 9973 (useInterestedEventUsers)
 import _mod19 from "module_19" /* 19 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2048 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7854 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 2050 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7856 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,18 +1,18 @@
-// Module ID: 15397
-// Function ID: 15398
+// Module ID: 15406
+// Function ID: 15407
 // Name: openBountiesNuxPromoSheet
-// Dependencies: [4794, 15398, 1980, 2]
+// Dependencies: [4796, 15407, 1980, 2]
 // Exports: default
 
-// Module 15397 (openBountiesNuxPromoSheet)
+// Module 15406 (openBountiesNuxPromoSheet)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import size from "module_2" /* 2 */;
 
 const BountiesNuxPromoSheet = "BountiesNuxPromoSheet";
 const result = size.fileFinishedImporting("modules/quests/native/openBountiesNuxPromoSheet.tsx");
 
 export default function openBountiesNuxPromoSheet() {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15398, dependencyMap.paths), BountiesNuxPromoSheet, {});
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15407, dependencyMap.paths), BountiesNuxPromoSheet, {});
 };
 export const PROMO_SHEET_KEY = "BountiesNuxPromoSheet";

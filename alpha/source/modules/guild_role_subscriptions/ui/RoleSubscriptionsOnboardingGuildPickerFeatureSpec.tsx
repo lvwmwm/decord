@@ -1,15 +1,15 @@
-// Module ID: 14248
-// Function ID: 14249
+// Module ID: 14257
+// Function ID: 14258
 // Name: RoleSubscriptionsOnboardingGuildPickerFeatureSpec
-// Dependencies: [4742, 2060, 1115, 504, 7588, 7589, 4454, 2]
+// Dependencies: [4744, 2062, 1115, 504, 7590, 7591, 4456, 2]
 
-// Module 14248 (RoleSubscriptionsOnboardingGuildPickerFeatureSpec)
+// Module 14257 (RoleSubscriptionsOnboardingGuildPickerFeatureSpec)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import ExperimentStore from "ExperimentStore" /* 4742 */;
+import ExperimentStore from "ExperimentStore" /* 4744 */;
 
 require = fn;
-const isGuildOwner = fn(2060).isGuildOwner;
+const isGuildOwner = fn(2062).isGuildOwner;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/guild_role_subscriptions/ui/RoleSubscriptionsOnboardingGuildPickerFeatureSpec.tsx");
 
@@ -29,12 +29,12 @@ export default {
       let result = closure_1_3(guild, arg1);
       if (result) {
         const obj2 = { guild, isOwner: true, canManageGuildRoleSubscriptions: true, isUserInCreatorMonetizationEligibleCountry: null, shouldRestrictUpdatingRoleSubscriptionSettings: null };
-        const obj = closure_1_0(7588);
-        obj2.isUserInCreatorMonetizationEligibleCountry = closure_1_0(7589).isUserInCreatorMonetizationEligibleCountry();
-        const obj3 = closure_1_0(7589);
-        obj2.shouldRestrictUpdatingRoleSubscriptionSettings = closure_1_0(4454).shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
+        const obj = closure_1_0(7590);
+        obj2.isUserInCreatorMonetizationEligibleCountry = closure_1_0(7591).isUserInCreatorMonetizationEligibleCountry();
+        const obj3 = closure_1_0(7591);
+        obj2.shouldRestrictUpdatingRoleSubscriptionSettings = closure_1_0(4456).shouldRestrictUpdatingCreatorMonetizationSettings(guild.id);
         result = obj.canSeeGuildRoleSubscriptionSettings(obj2);
-        const obj4 = closure_1_0(4454);
+        const obj4 = closure_1_0(4456);
       }
       return result;
     }, [], initialize.statesWillNeverBeEqual);

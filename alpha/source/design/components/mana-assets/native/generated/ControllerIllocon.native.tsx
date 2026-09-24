@@ -1,13 +1,13 @@
-// Module ID: 6198
-// Function ID: 6199
+// Module ID: 6200
+// Function ID: 6201
 // Name: ControllerIllocon
-// Dependencies: [21, 5890, 6199, 2]
+// Dependencies: [21, 5892, 6201, 2]
 // Exports: ControllerIllocon
 
-// Module 6198 (ControllerIllocon)
+// Module 6200 (ControllerIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6199 from "module_6199" /* 6199 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6201 from "module_6201" /* 6201 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const ControllerIllocon = function ControllerIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6199 };
+  const obj2 = { uri: _modDef6201 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

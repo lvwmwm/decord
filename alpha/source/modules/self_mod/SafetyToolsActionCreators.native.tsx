@@ -1,12 +1,12 @@
-// Module ID: 11734
-// Function ID: 11735
+// Module ID: 11740
+// Function ID: 11741
 // Name: SafetyToolsActionCreators
-// Dependencies: [11706, 4794, 11735, 1980, 2]
+// Dependencies: [11712, 4796, 11741, 1980, 2]
 // Exports: openSafetyToolsActionSheet
 
-// Module 11734 (SafetyToolsActionCreators)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import Constants from "Constants" /* 11706 */;
+// Module 11740 (SafetyToolsActionCreators)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import Constants from "Constants" /* 11712 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ const result = size.fileFinishedImporting("modules/self_mod/SafetyToolsActionCre
 export const openSafetyToolsActionSheet = function openSafetyToolsActionSheet(channelId, recipientId, warningId, warningType) {
   const tmp = closure_3(channelId);
   _require = tmp;
-  ActionSheetActionCreatorsDefault.openLazy(require("asyncRequireImpl")(11735, dependencyMap.paths), tmp, {
+  ActionSheetActionCreatorsDefault.openLazy(require("asyncRequireImpl")(11741, dependencyMap.paths), tmp, {
     channelId,
     warningId,
     warningType,

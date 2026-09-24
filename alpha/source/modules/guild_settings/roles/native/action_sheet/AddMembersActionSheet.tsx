@@ -1,22 +1,22 @@
-// Module ID: 18130
-// Function ID: 18131
+// Module ID: 18153
+// Function ID: 18154
 // Name: action_sheet/AddMembersActionSheet
-// Dependencies: [32, 19, 17, 18124, 21, 4827, 576, 4541, 11289, 5920, 7312, 4814, 1177, 4534, 1115, 9073, 9922, 5822, 18129, 11, 9927, 7639, 7481, 7480, 5271, 9934, 4794, 4823, 2]
+// Dependencies: [32, 19, 17, 18147, 21, 4829, 576, 4543, 11295, 5922, 7314, 4816, 1177, 4536, 1115, 9077, 9927, 5824, 18152, 11, 9932, 7641, 7483, 7482, 5273, 9939, 4796, 4825, 2]
 // Exports: default
 
-// Module 18130 (action_sheet/AddMembersActionSheet)
+// Module 18153 (action_sheet/AddMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4534 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4541 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import RegexUtilsDefault from "RegexUtils" /* 4814 */;
-import GuildUtilsDefault from "GuildUtils" /* 5822 */;
-import FormCheckbox from "FormCheckbox" /* 5920 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9934 */;
-import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11289 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18129 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4536 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4543 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import RegexUtilsDefault from "RegexUtils" /* 4816 */;
+import GuildUtilsDefault from "GuildUtils" /* 5824 */;
+import FormCheckbox from "FormCheckbox" /* 5922 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 9939 */;
+import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 11295 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 18152 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -218,10 +218,10 @@ class AddMembersBody {
   }
 }
 const View = fn(17).View;
-const MAX_BULK_ROLE_MEMBERS_ADD = fn(18124).MAX_BULK_ROLE_MEMBERS_ADD;
+const MAX_BULK_ROLE_MEMBERS_ADD = fn(18147).MAX_BULK_ROLE_MEMBERS_ADD;
 const jsxProd = fn(21);
 ({ jsx: closure_7, Fragment: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 }, inputContainer: null, tagAvatar: null, emptyStateText: null, addMembersDescription: null };
 let obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER, flex: 1 };
 obj2.inputContainer = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_12 };

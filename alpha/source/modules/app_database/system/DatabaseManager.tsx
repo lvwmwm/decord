@@ -1,14 +1,14 @@
-// Module ID: 2088
-// Function ID: 2089
+// Module ID: 2090
+// Function ID: 2091
 // Name: DatabaseManager
-// Dependencies: [5, 502, 3, 504, 573, 2089, 2072, 2]
+// Dependencies: [5, 502, 3, 504, 573, 2091, 2074, 2]
 
-// Module 2088 (DatabaseManager)
+// Module 2090 (DatabaseManager)
 import LoggerDefault from "Logger" /* 3 */;
 import initializeDefault from "initialize" /* 504 */;
 import Dispatcher2 from "Dispatcher" /* 573 */;
-import _mod2072 from "module_2072" /* 2072 */;
-import StartupDataAll from "StartupData" /* 2089 */;
+import _mod2074 from "module_2074" /* 2074 */;
+import StartupDataAll from "StartupData" /* 2091 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -49,7 +49,7 @@ let closure_8 = async function _trySpeculativelyOpenDatabaseAsync(arg0, value) {
           const _HermesInternal = HermesInternal;
           timestampProducer.verbose("speculatively opening " + tmp25);
           c4 = 1;
-          const Database = require("module_2072").Database;
+          const Database = require("module_2074").Database;
           c5 = 2;
           c6 = 1;
           const obj4 = { value: Database.open(tmp25), done: false };
@@ -168,7 +168,7 @@ prototype["carefullyOpenDatabase"] = function carefullyOpenDatabase(id) {
             }
           }
         })(50, () => {
-          const Database = _mod2072.Database;
+          const Database = _mod2074.Database;
           return Database.openSyncUnsafe(combined, { invalidateDisabledHandles: true });
         });
         const _HermesInternal3 = HermesInternal;
@@ -234,7 +234,7 @@ prototype["handleConnectionOpen"] = function handleConnectionOpen() {
   }
   let tmp3 = null == value;
   if (tmp3) {
-    tmp3 = stateResult !== _mod2072.DatabaseState.Open;
+    tmp3 = stateResult !== _mod2074.DatabaseState.Open;
   }
   if (tmp3) {
     self.remove(id);

@@ -1,19 +1,19 @@
-// Module ID: 9233
-// Function ID: 9234
+// Module ID: 9237
+// Function ID: 9238
 // Name: GameProfileSimilarGames
-// Dependencies: [32, 19, 17, 9061, 9117, 21, 576, 4827, 9023, 9033, 9027, 1115, 9089, 4823, 9088, 9107, 9234, 1478, 9073, 9074, 2]
+// Dependencies: [32, 19, 17, 9065, 9121, 21, 576, 4829, 9027, 9037, 9031, 1115, 9093, 4825, 9092, 9111, 9238, 1478, 9077, 9078, 2]
 // Exports: default
 
-// Module 9233 (GameProfileSimilarGames)
+// Module 9237 (GameProfileSimilarGames)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1478 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9027 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9033 */;
-import _mod9073 from "module_9073" /* 9073 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9089 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9107 */;
-import useSimilarGamesDefault from "useSimilarGames" /* 9234 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9031 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9037 */;
+import _mod9077 from "module_9077" /* 9077 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9093 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9111 */;
+import useSimilarGamesDefault from "useSimilarGames" /* 9238 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -28,13 +28,13 @@ function ListPadding() {
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, Pressable: metroRequire, View: closure_7 } = get_ActivityIndicator);
-let closure_8 = fn(9061).MOBILE_GAME_PROFILE_MAX_WIDTH;
-fn(9117).SIMILAR_GAMES_BLOCKED_GAME_IDS;
+let closure_8 = fn(9065).MOBILE_GAME_PROFILE_MAX_WIDTH;
+fn(9121).SIMILAR_GAMES_BLOCKED_GAME_IDS;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
 const PX_16 = nativeDefault.space.PX_16;
 const PX_12 = nativeDefault.space.PX_12;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { container: { gap: nativeDefault.space.PX_8, marginHorizontal: -1 * nativeDefault.space.PX_16 }, header: null, card: null, spacer: null, listPadding: null, coverArtContainer: null, coverArt: null, coverArtPlaceholder: null, coverArtFallback: null, skeletonCards: null, skeletonArtwork: null };
 let obj3 = { gap: nativeDefault.space.PX_8, marginHorizontal: -1 * nativeDefault.space.PX_16 };
 obj.header = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -144,7 +144,7 @@ let closure_20 = noop.memo((cardWidth) => {
   const obj = { style: tmp.container, headerStyle: tmp.header, showViewAllSkeleton: false, skeletonTitleWidth: 124, children: null };
   const obj2 = { contentContainerStyle: tmp.skeletonCards, children: Array.from({ length: 4 }, (arg0, arg1) => closure_2_10(closure_19, { animationDelayMs: arg1 * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS, cardWidth }, arg1)) };
   obj.children = closure_10(GameProfileSkeletonCardRowDefault, obj2);
-  return closure_10(cardWidth(9088).GameProfileSectionSkeleton, obj);
+  return closure_10(cardWidth(9092).GameProfileSectionSkeleton, obj);
 });
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/game_profile/native/components/GameProfileSimilarGames.tsx");
@@ -167,7 +167,7 @@ export default function GameProfileSimilarGames(arg0) {
     obj3.title = intl.string(util.t["6rLyQB"]);
     const obj5 = {
       horizontal: true,
-      renderScrollComponent: tmp2(9074),
+      renderScrollComponent: tmp2(9078),
       data: similarGames,
       renderItem(game) {
           return closure_2_10(closure_18, { game: game.item, trackAction, cardWidth });
@@ -179,8 +179,8 @@ export default function GameProfileSimilarGames(arg0) {
       decelerationRate: "fast",
       snapToInterval: result + PX_12
     };
-    obj3.children = closure_10(_mod9073.FlashList, obj5);
-    tmp7 = closure_10(tmp2(9088), obj3);
-    const tmp2Result = tmp2(9088);
+    obj3.children = closure_10(_mod9077.FlashList, obj5);
+    tmp7 = closure_10(tmp2(9092), obj3);
+    const tmp2Result = tmp2(9092);
   }
 };

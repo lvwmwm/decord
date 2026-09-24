@@ -1,13 +1,13 @@
-// Module ID: 8218
-// Function ID: 8219
+// Module ID: 8220
+// Function ID: 8221
 // Name: MarkupPostProcessors
-// Dependencies: [1074, 1375, 8219, 1361, 8220, 1231, 2]
+// Dependencies: [1074, 1375, 8221, 1361, 8222, 1231, 2]
 // Exports: checkForSimpleEmbedMessage, convertNewlinesInContent, removeBuildOverrideLinks, removeExperimentLinks, removeRedundantLinks, runMessageMarkupPostProcessors
 
-// Module 8218 (MarkupPostProcessors)
+// Module 8220 (MarkupPostProcessors)
 import Constants from "Constants" /* 1074 */;
 import EmojiConstants from "EmojiConstants" /* 1375 */;
-import RedundantLinkUtils from "RedundantLinkUtils" /* 8219 */;
+import RedundantLinkUtils from "RedundantLinkUtils" /* 8221 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -40983,12 +40983,12 @@ export { checkSpoilerEmbeds };
 export const checkForSimpleEmbedMessage = function checkForSimpleEmbedMessage(found1, embeds) {
   let items = found1;
   if (obj.hasOnlySimpleEmbed(embeds)) {
-    const tmpResult = tmp(8219);
+    const tmpResult = tmp(8221);
     items = found1;
     if (tmpResult.isSingleLinkContent(tmpResult2.readContentLinks(found1, isLinkNode))) {
       items = [];
     }
-    tmpResult2 = tmp(8219);
+    tmpResult2 = tmp(8221);
   }
   return items;
 };
@@ -41006,14 +41006,14 @@ export const removeExperimentLinks = function removeExperimentLinks(arr) {
   return arr.filter((type) => {
     let tmp = "link" !== type.type;
     if (!tmp) {
-      tmp = !closure_0(8220).isExperimentEmbedURL(type.target);
-      const obj = closure_0(8220);
+      tmp = !closure_0(8222).isExperimentEmbedURL(type.target);
+      const obj = closure_0(8222);
     }
     return tmp;
   });
 };
 export const removeRedundantLinks = function removeRedundantLinks(arr) {
-  obj = { onlyLinkContent: obj(8219).readContentLinks(arr, isLinkNode).onlyLinks, stripGameServerShareLinks: false };
+  obj = { onlyLinkContent: obj(8221).readContentLinks(arr, isLinkNode).onlyLinks, stripGameServerShareLinks: false };
   return arr.filter((type) => {
     let tmp = null;
     if ("link" === type.type) {
@@ -41138,12 +41138,12 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     }
     let items2 = tmp;
     if (obj3.hasOnlySimpleEmbed(tmp3.embeds)) {
-      const tmp4Result = tmp4(8219);
+      const tmp4Result = tmp4(8221);
       items2 = tmp;
       if (tmp4Result.isSingleLinkContent(tmp4Result2.readContentLinks(tmp, isLinkNode))) {
         items2 = [];
       }
-      tmp4Result2 = tmp4(8219);
+      tmp4Result2 = tmp4(8221);
     }
     arr3 = items2;
     obj3 = require("RedundantLinkUtils");
@@ -41248,8 +41248,8 @@ export const runMessageMarkupPostProcessors = function runMessageMarkupPostProce
     found1 = found.filter((type) => {
       let tmp = "link" !== type.type;
       if (!tmp) {
-        tmp = !closure_0(8220).isExperimentEmbedURL(type.target);
-        const obj = closure_0(8220);
+        tmp = !closure_0(8222).isExperimentEmbedURL(type.target);
+        const obj = closure_0(8222);
       }
       return tmp;
     });

@@ -1,13 +1,13 @@
-// Module ID: 6694
-// Function ID: 6695
+// Module ID: 6696
+// Function ID: 6697
 // Name: ProfileEffectsAbstractUI
-// Dependencies: [21, 5890, 6695, 2]
+// Dependencies: [21, 5892, 6697, 2]
 // Exports: ProfileEffectsAbstractUI
 
-// Module 6694 (ProfileEffectsAbstractUI)
+// Module 6696 (ProfileEffectsAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6695 from "module_6695" /* 6695 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6697 from "module_6697" /* 6697 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ProfileEffectsAbstractUI = function ProfileEffectsAbstractUI(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6695 };
+  const obj2 = { uri: _modDef6697 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

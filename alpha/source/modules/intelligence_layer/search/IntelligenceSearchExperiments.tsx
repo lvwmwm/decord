@@ -1,11 +1,11 @@
-// Module ID: 12709
-// Function ID: 12710
+// Module ID: 12718
+// Function ID: 12719
 // Name: IntelligenceSearchExperiments
-// Dependencies: [2064, 1074, 1434, 504, 2]
+// Dependencies: [2066, 1074, 1434, 504, 2]
 // Exports: isNlpSearchEnabled, useIsNlpSearchEnabled
 
-// Module 12709 (IntelligenceSearchExperiments)
-import GuildStore from "GuildStore" /* 2064 */;
+// Module 12718 (IntelligenceSearchExperiments)
+import GuildStore from "GuildStore" /* 2066 */;
 
 const require = globalThis.__r;
 

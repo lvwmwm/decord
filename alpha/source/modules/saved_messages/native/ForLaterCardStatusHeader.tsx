@@ -1,15 +1,15 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12559
+// Function ID: 12560
 // Name: ForLaterCardStatusHeader
-// Dependencies: [17, 21, 4827, 576, 4823, 2]
+// Dependencies: [17, 21, 4829, 576, 4825, 2]
 // Exports: ForLaterCardStatusHeader
 
-// Module 12550 (ForLaterCardStatusHeader)
+// Module 12559 (ForLaterCardStatusHeader)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4823 */;
+import Text_Text from "Text/Text" /* 4825 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4827 */;
+import createStyles from "createStyles" /* 4829 */;
 import size from "module_2" /* 2 */;
 
 const View = _mod17.View;

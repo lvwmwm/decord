@@ -1,10 +1,10 @@
-// Module ID: 4558
-// Function ID: 4559
+// Module ID: 4560
+// Function ID: 4561
 // Name: reactNativeWorkletsCompat
-// Dependencies: [4559, 2]
+// Dependencies: [4561, 2]
 
-// Module 4558 (reactNativeWorkletsCompat)
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+// Module 4560 (reactNativeWorkletsCompat)
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/gesture_handlers/native/reactNativeWorkletsCompat.js");

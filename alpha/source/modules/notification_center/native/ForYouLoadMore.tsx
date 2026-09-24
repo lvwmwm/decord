@@ -1,18 +1,18 @@
-// Module ID: 16850
-// Function ID: 16851
+// Module ID: 16874
+// Function ID: 16875
 // Name: ForYouLoadMore
-// Dependencies: [19, 17, 7961, 21, 4827, 563, 5271, 1115, 2]
+// Dependencies: [19, 17, 7963, 21, 4829, 563, 5273, 1115, 2]
 // Exports: ForYouLoadMore
 
-// Module 16850 (ForYouLoadMore)
+// Module 16874 (ForYouLoadMore)
 import noop from "module_19" /* 19 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7961 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 7963 */;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: c2, View: c3 } = get_ActivityIndicator);
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_6 = createStyles.createStyles({ container: { alignItems: "center", flexDirection: "row", justifyContent: "center", marginTop: 8, marginBottom: 24, marginHorizontal: 16, height: 42 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/notification_center/native/ForYouLoadMore.tsx");
@@ -28,7 +28,7 @@ export const ForYouLoadMore = function ForYouLoadMore(onPressLoad) {
     const intl = tmp2(1115).intl;
     obj3.text = intl.string(tmp2(1115).t["Q/LSXp"]);
     obj3.onPress = onPressLoad.onPressLoad;
-    tmp4Result = tmp4(tmp2(5271).Button, obj3);
+    tmp4Result = tmp4(tmp2(5273).Button, obj3);
   }
   obj2.children = tmp4Result;
   return <React3 style={tmp.container}>{null}</React3>;

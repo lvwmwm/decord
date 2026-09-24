@@ -1,13 +1,13 @@
-// Module ID: 5928
-// Function ID: 5929
+// Module ID: 5930
+// Function ID: 5931
 // Name: HeaderDebugOverlay
-// Dependencies: [19, 17, 21, 4827, 576, 5929, 4823, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 5931, 4825, 2]
 // Exports: default
 
-// Module 5928 (HeaderDebugOverlay)
+// Module 5930 (HeaderDebugOverlay)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import useDesignToggleDefault from "useDesignToggle" /* 5929 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import useDesignToggleDefault from "useDesignToggle" /* 5931 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -15,7 +15,7 @@ const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = jsxProd);
 let closure_7 = { "os-drawn": "OS-Drawn", "custom-drawn": "Custom-Drawn", "js-stack": "JS Stack", sheet: "Sheet", bespoke: "Bespoke" };
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { tintWash: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, pointerEvents: "none", opacity: 0.15 }, badgeContainer: { position: "absolute", bottom: 2, right: 4, pointerEvents: "none" }, badge: { paddingHorizontal: 4, paddingVertical: 1, borderRadius: nativeDefault.radii.xs }, "color-os-drawn": null, "color-custom-drawn": null, "color-js-stack": null, "color-sheet": null, "color-bespoke": null };
 let obj3 = { paddingHorizontal: 4, paddingVertical: 1, borderRadius: nativeDefault.radii.xs };
 obj2["color-os-drawn"] = { backgroundColor: nativeDefault.colors.TEXT_LINK };

@@ -1,12 +1,12 @@
-// Module ID: 9209
-// Function ID: 9210
+// Module ID: 9213
+// Function ID: 9214
 // Name: TestModeUtils
-// Dependencies: [9210, 9212, 504, 2]
+// Dependencies: [9214, 9216, 504, 2]
 // Exports: isAnyApplicationInTestMode, isTestModeForApplication, useIsTestModeForApplication
 
-// Module 9209 (TestModeUtils)
-import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9210 */;
-import TestModeStore from "TestModeStore" /* 9212 */;
+// Module 9213 (TestModeUtils)
+import DeveloperActivityShelfStore from "DeveloperActivityShelfStore" /* 9214 */;
+import TestModeStore from "TestModeStore" /* 9216 */;
 
 const require = globalThis.__r;
 

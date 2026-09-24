@@ -1,13 +1,13 @@
-// Module ID: 17011
-// Function ID: 17012
+// Module ID: 17035
+// Function ID: 17036
 // Name: ChatShieldIcon
-// Dependencies: [19, 21, 576, 4523, 17012, 2]
+// Dependencies: [19, 21, 576, 4525, 17036, 2]
 // Exports: ChatShieldIcon
 
-// Module 17011 (ChatShieldIcon)
+// Module 17035 (ChatShieldIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod17012 from "module_17012" /* 17012 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod17036 from "module_17036" /* 17036 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ChatShieldIcon = function ChatShieldIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod17012, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod17036, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

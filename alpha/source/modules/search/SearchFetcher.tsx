@@ -1,13 +1,13 @@
-// Module ID: 12684
-// Function ID: 12685
+// Module ID: 12693
+// Function ID: 12694
 // Name: SearchFetcher
-// Dependencies: [5, 2042, 1074, 1091, 3, 1271, 1472, 2]
+// Dependencies: [5, 2044, 1074, 1091, 3, 1271, 1472, 2]
 
-// Module 12684 (SearchFetcher)
+// Module 12693 (SearchFetcher)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import _modDef1472 from "module_1472" /* 1472 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 const Constants = fn(1074);

@@ -1,12 +1,12 @@
-// Module ID: 17134
-// Function ID: 17135
+// Module ID: 17160
+// Function ID: 17161
 // Name: VibegrationsDebugSnapshot
-// Dependencies: [17133, 9385, 2]
+// Dependencies: [17159, 9389, 2]
 // Exports: vibegrationsDebugSnapshot
 
-// Module 17134 (VibegrationsDebugSnapshot)
-import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17133 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9385 */;
+// Module 17160 (VibegrationsDebugSnapshot)
+import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17159 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9389 */;
 
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsDebugSnapshot.tsx");

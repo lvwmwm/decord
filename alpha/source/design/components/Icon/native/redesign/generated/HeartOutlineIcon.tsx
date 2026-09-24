@@ -1,13 +1,13 @@
-// Module ID: 9195
-// Function ID: 9196
+// Module ID: 9199
+// Function ID: 9200
 // Name: HeartOutlineIcon
-// Dependencies: [19, 21, 576, 4523, 9196, 2]
+// Dependencies: [19, 21, 576, 4525, 9200, 2]
 // Exports: HeartOutlineIcon
 
-// Module 9195 (HeartOutlineIcon)
+// Module 9199 (HeartOutlineIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod9196 from "module_9196" /* 9196 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod9200 from "module_9200" /* 9200 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const HeartOutlineIcon = function HeartOutlineIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9196, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9200, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

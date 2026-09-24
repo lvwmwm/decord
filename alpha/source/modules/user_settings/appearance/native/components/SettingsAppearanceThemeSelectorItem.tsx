@@ -1,28 +1,28 @@
-// Module ID: 15610
-// Function ID: 15611
+// Module ID: 15624
+// Function ID: 15625
 // Name: SettingsAppearanceThemeSelectorItem
-// Dependencies: [19, 17, 1182, 15609, 1085, 21, 4827, 576, 4677, 4531, 5427, 1177, 15611, 563, 4524, 15612, 1230, 4541, 5425, 1115, 2]
+// Dependencies: [19, 17, 1182, 15623, 1085, 21, 4829, 576, 4679, 4533, 5429, 1177, 15625, 563, 4526, 15626, 1230, 4543, 5427, 1115, 2]
 // Exports: default
 
-// Module 15610 (SettingsAppearanceThemeSelectorItem)
+// Module 15624 (SettingsAppearanceThemeSelectorItem)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1230 */;
-import useToken from "useToken" /* 4524 */;
-import themes from "themes" /* 4531 */;
-import useA11yRolesNative from "useA11yRolesNative" /* 4541 */;
-import utils_ColorDefault from "utils/Color" /* 4677 */;
-import Pressables from "Pressables" /* 5425 */;
-import ThemedGradient from "ThemedGradient" /* 5427 */;
+import useToken from "useToken" /* 4526 */;
+import themes from "themes" /* 4533 */;
+import useA11yRolesNative from "useA11yRolesNative" /* 4543 */;
+import utils_ColorDefault from "utils/Color" /* 4679 */;
+import Pressables from "Pressables" /* 5427 */;
+import ThemedGradient from "ThemedGradient" /* 5429 */;
 import noop from "module_19" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15609 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 15623 */;
 
 const ThemedGradientDefault = ThemedGradient;
 
 const native = tmp(1177);
-const _modDef15611 = tmp8(15611);
-const SynchronizeIconNativeDefault = tmp5(15612);
+const _modDef15625 = tmp8(15625);
+const SynchronizeIconNativeDefault = tmp5(15626);
 require = fn;
 function GradientThemeBackground(arg0) {
   ({ item, isThemeLocked } = arg0);
@@ -45,7 +45,7 @@ function GradientThemeBackground(arg0) {
   obj4.mixColorOverride = isThemeDarkResult ? closure_10 : closure_11;
   const items1 = [timestampProducer(ThemedGradientDefault, obj4), ];
   if (isThemeLocked) {
-    const obj6 = { source: _modDef15611, style: tmp4.lock };
+    const obj6 = { source: _modDef15625, style: tmp4.lock };
     isThemeLocked = tmp7(native.Icon, obj6);
   }
   items1[1] = isThemeLocked;
@@ -100,7 +100,7 @@ function CustomThemeBackground(arg0) {
   obj4.customTheme = item;
   const items1 = [timestampProducer(ThemedGradient.CustomThemedGradient, obj4), ];
   if (isThemeLocked) {
-    const obj6 = { source: _modDef15611, style: tmp4.lock };
+    const obj6 = { source: _modDef15625, style: tmp4.lock };
     isThemeLocked = tmp7(tmp(1177).Icon, obj6);
   }
   items1[1] = isThemeLocked;
@@ -111,14 +111,14 @@ const View = fn(17).View;
 const ThemeTypes = fn(1085).ThemeTypes;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-let createStyles = fn(4827);
+let createStyles = fn(4829);
 let obj2 = { rippleColor: { color: nativeDefault.unsafe_rawColors.TRANSPARENT }, themeSelectorItemContainer: { width: SettingsAppearanceConstants.THEME_ITEM_WIDTH, height: SettingsAppearanceConstants.THEME_ITEM_HEIGHT }, themeSelectorItem: null, newRedCircle: null };
 let obj3 = { color: nativeDefault.unsafe_rawColors.TRANSPARENT };
 obj2.themeSelectorItem = { borderRadius: nativeDefault.radii.sm, padding: SettingsAppearanceConstants.THEME_ITEM_PADDING };
 let size = { backgroundColor: nativeDefault.unsafe_rawColors.RED_430, width: 12, height: 12, borderRadius: nativeDefault.radii.sm, position: "absolute", top: 0, right: 0 };
 obj2.newRedCircle = size;
 let closure_8 = createStyles.createStyles(obj2);
-createStyles = fn(4827);
+createStyles = fn(4829);
 let closure_9 = createStyles.createStyles((arg0) => {
   const obj = { themeSelectorGradientBackground: { justifyContent: "center", width: "100%", height: "100%" }, lock: null };
   const internal = nativeDefault.internal;

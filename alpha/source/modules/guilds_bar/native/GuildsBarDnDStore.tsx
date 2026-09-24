@@ -1,14 +1,14 @@
-// Module ID: 16687
-// Function ID: 16688
+// Module ID: 16711
+// Function ID: 16712
 // Name: GuildsBarDnDStore
-// Dependencies: [5741, 1243, 4559, 1248, 1231, 4445, 2]
+// Dependencies: [5743, 1243, 4561, 1248, 1231, 4447, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 16687 (GuildsBarDnDStore)
+// Module 16711 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import _mod4445 from "module_4445" /* 4445 */;
-import SortedGuildStore from "SortedGuildStore" /* 5741 */;
+import _mod4447 from "module_4447" /* 4447 */;
+import SortedGuildStore from "SortedGuildStore" /* 5743 */;
 import identity from "module_1243" /* 1243 */;
 import size from "module_2" /* 2 */;
 
@@ -59,7 +59,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       const error = new Error("GuildsBarDnDStore.dropStart: you cannot start a drop while an existing drop is in progress");
       throw error;
     } else {
-      dropSpecs(1248).batchUpdates(() => dropSpecs({ dropSpecs, dragSpecs: "Array", overSpecs: "isArray" }));
+      dropSpecs(1248).batchUpdates(() => dropSpecs({ dropSpecs, dragSpecs: "Array", overSpecs: "paddingHorizontal" }));
       const _clearTimeout = clearTimeout;
       clearTimeout(timeout);
       const _setTimeout = setTimeout;
@@ -201,7 +201,7 @@ export const useItemDragState = function useItemDragState(arg0, arg1) {
     obj.itemSize = num;
     obj.dragDropInProgress = dragDropInProgress;
     return obj;
-  }, _mod4445.shallow);
+  }, _mod4447.shallow);
 };
 export const useFolderBGHeightOffset = function useFolderBGHeightOffset(arg0) {
   closure_0 = arg0;

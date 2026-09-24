@@ -1,18 +1,18 @@
-// Module ID: 9126
-// Function ID: 9127
+// Module ID: 9130
+// Function ID: 9131
 // Name: useWishlistNUXActionSheet
-// Dependencies: [19, 7943, 502, 2039, 504, 4647, 2028, 2030, 4794, 9127, 1980, 2]
+// Dependencies: [19, 7945, 502, 2041, 504, 4649, 2028, 2030, 4796, 9131, 1980, 2]
 // Exports: default, useHasNeverWishlisted
 
-// Module 9126 (useWishlistNUXActionSheet)
+// Module 9130 (useWishlistNUXActionSheet)
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7943 */;
+import UserProfileStore from "UserProfileStore" /* 7945 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const ContentDismissActionType = fn(2039).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/collectibles/native/useWishlistNUXActionSheet.tsx");
 

@@ -1,9 +1,9 @@
-// Module ID: 7995
-// Function ID: 7996
+// Module ID: 7997
+// Function ID: 7998
 // Name: NativeTTIModule
 // Dependencies: [17, 2]
 
-// Module 7995 (NativeTTIModule)
+// Module 7997 (NativeTTIModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

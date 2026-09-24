@@ -1,9 +1,9 @@
-// Module ID: 9038
-// Function ID: 9039
+// Module ID: 9042
+// Function ID: 9043
 // Name: SteamReleaseStatus
 // Dependencies: [2]
 
-// Module 9038 (SteamReleaseStatus)
+// Module 9042 (SteamReleaseStatus)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/SteamReleaseStatus.tsx");

@@ -1,8 +1,8 @@
-// Module ID: 6907
-// Function ID: 6908
+// Module ID: 6909
+// Function ID: 6910
 // Dependencies: [2]
 
-// Module 6907
+// Module 6909
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WordBalloonIllocon-2x.png.js");

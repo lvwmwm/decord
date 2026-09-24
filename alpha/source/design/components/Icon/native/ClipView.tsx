@@ -1,14 +1,14 @@
-// Module ID: 9170
-// Function ID: 9171
+// Module ID: 9174
+// Function ID: 9175
 // Name: ClipView
-// Dependencies: [19, 17, 21, 9171, 9173, 4559, 2]
+// Dependencies: [19, 17, 21, 9175, 9177, 4561, 2]
 // Exports: default
 
-// Module 9170 (ClipView)
-import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9171 */;
-import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9173 */;
+// Module 9174 (ClipView)
+import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9175 */;
+import ClipViewNativeComponentDefault from "ClipViewNativeComponent" /* 9177 */;
 import noop from "module_19" /* 19 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
 
 require = fn;
 function SolidCutout(arg0) {

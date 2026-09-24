@@ -1,9 +1,9 @@
-// Module ID: 8224
-// Function ID: 8225
+// Module ID: 8226
+// Function ID: 8227
 // Name: rules
 // Dependencies: [32, 1187, 1217, 2]
 
-// Module 8224 (rules)
+// Module 8226 (rules)
 import _mod1187 from "module_1187" /* 1187 */;
 import wrappers from "wrappers" /* 1217 */;
 import _slicedToArray from "module_32" /* 32 */;

@@ -1,10 +1,10 @@
-// Module ID: 8006
-// Function ID: 8007
+// Module ID: 8008
+// Function ID: 8009
 // Name: IsolateString
 // Dependencies: [2]
 // Exports: isolate
 
-// Module 8006 (IsolateString)
+// Module 8008 (IsolateString)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/bidi/IsolateString.tsx");

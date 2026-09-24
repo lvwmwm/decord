@@ -1,13 +1,13 @@
-// Module ID: 6226
-// Function ID: 6227
+// Module ID: 6228
+// Function ID: 6229
 // Name: DevSdkWideAbstractUI
-// Dependencies: [21, 5890, 6227, 2]
+// Dependencies: [21, 5892, 6229, 2]
 // Exports: DevSdkWideAbstractUI
 
-// Module 6226 (DevSdkWideAbstractUI)
+// Module 6228 (DevSdkWideAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6227 from "module_6227" /* 6227 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6229 from "module_6229" /* 6229 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const DevSdkWideAbstractUI = function DevSdkWideAbstractUI(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6227 };
+  const obj2 = { uri: _modDef6229 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

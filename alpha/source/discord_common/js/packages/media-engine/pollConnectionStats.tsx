@@ -1,10 +1,10 @@
-// Module ID: 4891
-// Function ID: 4892
+// Module ID: 4893
+// Function ID: 4894
 // Name: pollConnectionStats
-// Dependencies: [5, 4882, 4892, 2]
+// Dependencies: [5, 4884, 4894, 2]
 // Exports: default
 
-// Module 4891 (pollConnectionStats)
+// Module 4893 (pollConnectionStats)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 const require = globalThis.__r;

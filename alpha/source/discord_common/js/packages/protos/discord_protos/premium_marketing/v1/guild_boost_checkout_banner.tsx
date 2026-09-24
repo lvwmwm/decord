@@ -1,13 +1,13 @@
-// Module ID: 11036
-// Function ID: 11037
+// Module ID: 11042
+// Function ID: 11043
 // Name: guild_boost_checkout_banner
-// Dependencies: [32, 1187, 11022, 11012, 11013, 2]
+// Dependencies: [32, 1187, 11028, 11018, 11019, 2]
 
-// Module 11036 (guild_boost_checkout_banner)
+// Module 11042 (guild_boost_checkout_banner)
 import _mod1187 from "module_1187" /* 1187 */;
-import localized_string from "localized_string" /* 11012 */;
-import help_article from "help_article" /* 11013 */;
-import theme_aware_asset from "theme_aware_asset" /* 11022 */;
+import localized_string from "localized_string" /* 11018 */;
+import help_article from "help_article" /* 11019 */;
+import theme_aware_asset from "theme_aware_asset" /* 11028 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

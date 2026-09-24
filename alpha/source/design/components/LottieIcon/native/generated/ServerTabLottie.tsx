@@ -1,11 +1,11 @@
-// Module ID: 14501
-// Function ID: 14502
+// Module ID: 14510
+// Function ID: 14511
 // Name: ServerTabLottie
-// Dependencies: [19, 21, 10292, 14502, 2]
+// Dependencies: [19, 21, 10297, 14511, 2]
 
-// Module 14501 (ServerTabLottie)
-import LottieIcon from "LottieIcon" /* 10292 */;
-import _mod14502 from "module_14502" /* 14502 */;
+// Module 14510 (ServerTabLottie)
+import LottieIcon from "LottieIcon" /* 10297 */;
+import _mod14511 from "module_14511" /* 14511 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -17,5 +17,5 @@ const result = size.fileFinishedImporting("design/components/LottieIcon/native/g
 
 export const ServerTabLottie = noop.forwardRef((arg0, ref) => {
   const merged = Object.assign(arg0);
-  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14502, animation: "all", ref, layers, markers: items });
+  return jsx(LottieIcon.LottieIcon, { dotLottie: _mod14511, animation: "all", ref, layers, markers: items });
 });

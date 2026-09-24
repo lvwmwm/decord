@@ -1,8 +1,8 @@
-// Module ID: 6175
-// Function ID: 6176
+// Module ID: 6177
+// Function ID: 6178
 // Dependencies: [2]
 
-// Module 6175
+// Module 6177
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CloverIllocon-2x.png.js");

@@ -1,18 +1,19 @@
-// Module ID: 13702
-// Function ID: 13703
+// Module ID: 13711
+// Function ID: 13712
 // Name: NitroOrbsDeliveredModal
-// Dependencies: [32, 19, 17, 1074, 1076, 21, 4827, 576, 7869, 7513, 7710, 12118, 7454, 7529, 13703, 4823, 1115, 5271, 2]
+// Dependencies: [32, 19, 17, 1074, 1076, 21, 4829, 576, 9128, 1249, 7871, 7515, 7712, 12125, 7456, 7531, 13712, 4825, 1115, 5273, 2]
 // Exports: default
 
-// Module 13702 (NitroOrbsDeliveredModal)
+// Module 13711 (NitroOrbsDeliveredModal)
 import nativeDefault from "native" /* 576 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7513 */;
-import openUserSettings from "openUserSettings" /* 7710 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7869 */;
-import _modDef13703 from "module_13703" /* 13703 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7515 */;
+import openUserSettings from "openUserSettings" /* 7712 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7871 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 9128 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
+const _modDef13712 = tmp2(13712);
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ActivityIndicator: hasOwnProperty, Image: metroRequire, StyleSheet } = get_ActivityIndicator);
@@ -21,13 +22,13 @@ const UserSettingsSections = fn(1074).UserSettingsSections;
 let closure_10 = fn(1076).CollectiblesMobileShopScreen;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { root: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, background: StyleSheet.absoluteFillObject, loading: null, main: null, header: null, body: null, orbGraphic: null, title: null, description: null, footer: null };
-const obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj2.loading = { justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.main = { flex: 1 };
-let obj4 = { justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
+const obj4 = { justifyContent: "center", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.header = { alignItems: "flex-start", paddingHorizontal: nativeDefault.space.PX_16 };
 let obj5 = { alignItems: "flex-start", paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.body = { flex: 1, alignItems: "center", justifyContent: "center", paddingHorizontal: nativeDefault.space.PX_32 };
@@ -46,6 +47,8 @@ export default function NitroOrbsDeliveredModal(arg0) {
   ({ orbsAmount, onClose } = arg0);
   importDefault = undefined;
   const tmp = closure_13();
+  let obj = { type: onClose(1249).ImpressionTypes.MODAL, name: onClose(1249).ImpressionNames.PREMIUM_ORBS_DELIVERED_MODAL, properties: { orbs_amount: orbsAmount } };
+  useTrackImpressionDefault(obj);
   const items = [onClose];
   const items1 = [onClose];
   const callback = noop.useCallback(() => {
@@ -57,59 +60,59 @@ export default function NitroOrbsDeliveredModal(arg0) {
     onClose();
     openUserSettings.openUserSettings({ screen: UserSettingsSections.PREMIUM });
   }, items1);
-  [tmp5, c1] = noop.useState(false);
-  let obj = { style: tmp.root, children: null };
-  const obj2 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
+  [tmp10, c1] = noop.useState(false);
+  const obj2 = { style: tmp.root, children: null };
+  const obj3 = { style: StyleSheet.absoluteFill, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: null };
   const callback2 = noop.useCallback(() => _undefined(true), []);
-  obj2.children = closure_11(onClose(12118).OrbsRewardBackground, { style: tmp.background, onReady: callback2 });
-  const items2 = [closure_11(View, obj2), , ];
-  let tmp9Result = !tmp7Result;
-  if (!tmp7Result) {
-    const obj4 = { style: tmp.loading, children: tmp9(closure_5, { animating: true }) };
-    tmp9Result = tmp9(tmp8, obj4);
+  obj3.children = closure_11(onClose(12125).OrbsRewardBackground, { style: tmp.background, onReady: callback2 });
+  const items2 = [closure_11(View, obj3), , ];
+  let tmp14Result = !tmp12Result;
+  if (!tmp12Result) {
+    const obj5 = { style: tmp.loading, children: tmp14(closure_5, { animating: true }) };
+    tmp14Result = tmp14(tmp13, obj5);
   }
-  items2[1] = tmp9Result;
-  if (tmp7Result) {
+  items2[1] = tmp14Result;
+  if (tmp12Result) {
     const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: null };
-    const obj5 = { style: tmp.header, children: null };
-    const obj6 = { onPress: onClose, variant: "overlay" };
-    obj5.children = tmp9(tmp10(7529).ActionSheetCloseButton, obj6);
-    const items3 = [tmp9(tmp8, obj5), , ];
-    const obj7 = { style: tmp.body, children: null };
-    const obj8 = { source: _modDef13703, style: tmp.orbGraphic, resizeMode: "contain" };
-    const items4 = [tmp9(closure_6, obj8), ];
-    const obj9 = { children: null };
-    const obj10 = { variant: "heading-lg/bold", color: "text-overlay-light", style: tmp.title, children: null };
-    const intl = tmp10(1115).intl;
-    const obj11 = { orbAmount: orbsAmount };
-    obj10.children = intl.formatToPlainString(tmp10(1115).t["O2/Bj8"], obj11);
-    const items5 = [tmp9(tmp10(4823).Text, obj10), ];
-    const obj12 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp.description, children: null };
-    const intl2 = tmp10(1115).intl;
-    const obj13 = { orbAmount: orbsAmount };
-    obj12.children = intl2.format(tmp10(1115).t.qiZPb6, obj13);
-    items5[1] = tmp9(tmp10(4823).Text, obj12);
-    obj9.children = items5;
-    items4[1] = tmp7(tmp8, obj9);
-    obj7.children = items4;
-    items3[1] = tmp7(tmp8, obj7);
-    const obj14 = { style: tmp.footer, children: null };
-    const obj15 = { text: null, variant: "primary", size: "lg", onPress: null };
-    const intl3 = tmp10(1115).intl;
-    obj15.text = intl3.string(tmp10(1115).t.OhOWfI);
-    obj15.onPress = callback;
-    const items6 = [tmp9(tmp10(5271).Button, obj15), ];
-    const obj16 = { text: null, variant: "secondary-overlay", size: "lg", onPress: null };
-    const intl4 = tmp10(1115).intl;
-    obj16.text = intl4.string(tmp10(1115).t.CvXwDY);
-    obj16.onPress = callback1;
-    items6[1] = tmp9(tmp10(5271).Button, obj16);
-    obj14.children = items6;
-    items3[2] = tmp7(tmp8, obj14);
+    const obj6 = { style: tmp.header, children: null };
+    const obj7 = { onPress: onClose, variant: "overlay" };
+    obj6.children = tmp14(tmp5(7531).ActionSheetCloseButton, obj7);
+    const items3 = [tmp14(tmp13, obj6), , ];
+    const obj8 = { style: tmp.body, children: null };
+    const obj9 = { source: _modDef13712, style: tmp.orbGraphic, resizeMode: "contain" };
+    const items4 = [tmp14(closure_6, obj9), ];
+    const obj10 = { children: null };
+    const obj11 = { variant: "heading-lg/bold", color: "text-overlay-light", style: tmp.title, children: null };
+    const intl = tmp5(1115).intl;
+    const obj12 = { orbAmount: orbsAmount };
+    obj11.children = intl.formatToPlainString(tmp5(1115).t["O2/Bj8"], obj12);
+    const items5 = [tmp14(tmp5(4825).Text, obj11), ];
+    const obj13 = { variant: "text-md/normal", color: "text-overlay-light", style: tmp.description, children: null };
+    const intl2 = tmp5(1115).intl;
+    const obj14 = { orbAmount: orbsAmount };
+    obj13.children = intl2.format(tmp5(1115).t.qiZPb6, obj14);
+    items5[1] = tmp14(tmp5(4825).Text, obj13);
+    obj10.children = items5;
+    items4[1] = tmp12(tmp13, obj10);
+    obj8.children = items4;
+    items3[1] = tmp12(tmp13, obj8);
+    const obj15 = { style: tmp.footer, children: null };
+    const obj16 = { text: null, variant: "primary", size: "lg", onPress: null };
+    const intl3 = tmp5(1115).intl;
+    obj16.text = intl3.string(tmp5(1115).t.OhOWfI);
+    obj16.onPress = callback;
+    const items6 = [tmp14(tmp5(5273).Button, obj16), ];
+    const obj17 = { text: null, variant: "secondary-overlay", size: "lg", onPress: null };
+    const intl4 = tmp5(1115).intl;
+    obj17.text = intl4.string(tmp5(1115).t.CvXwDY);
+    obj17.onPress = callback1;
+    items6[1] = tmp14(tmp5(5273).Button, obj17);
+    obj15.children = items6;
+    items3[2] = tmp12(tmp13, obj15);
     rect.children = items3;
-    tmp7Result = tmp7(tmp10(7454).SafeAreaPaddingView, rect);
+    tmp12Result = tmp12(tmp5(7456).SafeAreaPaddingView, rect);
   }
-  items2[2] = tmp7Result;
-  obj.children = items2;
-  return closure_12(View, obj);
+  items2[2] = tmp12Result;
+  obj2.children = items2;
+  return closure_12(View, obj2);
 };

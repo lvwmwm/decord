@@ -1,18 +1,18 @@
-// Module ID: 12572
-// Function ID: 12573
+// Module ID: 12581
+// Function ID: 12582
 // Name: ChatInputActionButton
-// Dependencies: [19, 17, 21, 4827, 576, 4524, 5425, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4526, 5427, 2]
 
-// Module 12572 (ChatInputActionButton)
+// Module 12581 (ChatInputActionButton)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4524 */;
+import useToken from "useToken" /* 4526 */;
 import noop from "module_19" /* 19 */;
 
-const Pressables = tmp(5425);
+const Pressables = tmp(5427);
 require = fn;
 const StyleSheet = fn(17).StyleSheet;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_5 = createStyles.createStyles((height, marginHorizontal) => {
   const obj = { actionButton: null, actionButtonIcon: null, actionButtonIconActive: null, actionButtonIconDisabled: null };
   const size = { borderRadius: nativeDefault.radii.sm, height, width: height, marginHorizontal, flexShrink: 0, flexDirection: "row", alignItems: "center", justifyContent: "center" };

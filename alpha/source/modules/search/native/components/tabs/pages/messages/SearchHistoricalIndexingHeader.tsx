@@ -1,19 +1,19 @@
-// Module ID: 17258
-// Function ID: 17259
+// Module ID: 17281
+// Function ID: 17282
 // Name: SearchHistoricalIndexingHeader
-// Dependencies: [19, 2109, 8207, 21, 4827, 12692, 5910, 4823, 1115, 2]
+// Dependencies: [19, 2111, 8209, 21, 4829, 12701, 5912, 4825, 1115, 2]
 // Exports: default
 
-// Module 17258 (SearchHistoricalIndexingHeader)
-import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12692 */;
+// Module 17281 (SearchHistoricalIndexingHeader)
+import search_tracking_TrackingDefault from "search/tracking/Tracking" /* 12701 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 
 const require = fn;
-const SearchConstants = fn(8207);
+const SearchConstants = fn(8209);
 ({ SearchTabs: hasOwnProperty, SEARCH_LIST_HORIZONTAL_PADDING, SEARCH_ROW_TAP_STATE_PADDING } = SearchConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_7 = createStyles.createStyles({ header: { marginBottom: 16 }, headerMessages: { marginHorizontal: SEARCH_LIST_HORIZONTAL_PADDING, marginTop: SEARCH_ROW_TAP_STATE_PADDING } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/messages/SearchHistoricalIndexingHeader.tsx");

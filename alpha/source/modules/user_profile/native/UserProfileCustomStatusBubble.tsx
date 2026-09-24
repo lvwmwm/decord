@@ -1,20 +1,20 @@
-// Module ID: 11459
-// Function ID: 11460
+// Module ID: 11465
+// Function ID: 11466
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 7539, 1375, 1085, 21, 4827, 576, 8803, 2020, 5890, 1397, 1364, 4823, 7461, 4524, 8534, 11224, 10460, 4794, 11460, 7513, 1115, 5425, 11550, 2]
+// Dependencies: [32, 19, 17, 7541, 1375, 1085, 21, 4829, 576, 8807, 2020, 5892, 1397, 1364, 4825, 7463, 4526, 8538, 11230, 10465, 4796, 11466, 7515, 1115, 5427, 11556, 2]
 
-// Module 11459 (UserProfileCustomStatusBubble)
+// Module 11465 (UserProfileCustomStatusBubble)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1397 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import EmojiDefault from "Emoji" /* 7461 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7513 */;
-import inlineStyles from "inlineStyles" /* 8803 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 11460 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import EmojiDefault from "Emoji" /* 7463 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7515 */;
+import inlineStyles from "inlineStyles" /* 8807 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 11466 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -148,7 +148,7 @@ const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
 const Fonts = fn(1085).Fonts;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10, Fragment: closure_11 } = jsxProd);
-let createStyles = fn(4827);
+let createStyles = fn(4829);
 let closure_12 = createStyles.createStyles((arg0) => {
   const obj = { container: { position: "relative" }, bubble: null, statusBubble: null, statusBubbleMeasureable: null, smallCircle: null, largeCircle: null, addStatusIconSpacer: null, statusBubbleLeftAligned: null };
   const colors = nativeDefault.colors;
@@ -177,8 +177,8 @@ let closure_12 = createStyles.createStyles((arg0) => {
   return obj;
 });
 let closure_14 = { textVariant: "text-md/normal", emojiOnlyEmojiSize: 32, textMinWidth: 42, statusBubblePaddingHorizontal: 12, statusBubblePaddingVertical: 7 };
-let closure_15 = { [fn(7539).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
-createStyles = fn(4827);
+let closure_15 = { [fn(7541).UserProfileThemeTypes.PREVIEW]: { textVariant: "text-sm/normal", emojiOnlyEmojiSize: 26, textMinWidth: 53, statusBubblePaddingHorizontal: 10, statusBubblePaddingVertical: 6 } };
+createStyles = fn(4829);
 let closure_18 = createStyles.createStyles(() => ({ container: { alignItems: "center" } }));
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileCustomStatusBubble.tsx");

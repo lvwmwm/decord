@@ -1,16 +1,16 @@
-// Module ID: 7702
-// Function ID: 7703
+// Module ID: 7704
+// Function ID: 7705
 // Name: useCustomJoinSound
-// Dependencies: [1220, 5311, 504, 2]
+// Dependencies: [1220, 5313, 504, 2]
 // Exports: getCustomJoinSound, useCustomJoinSound
 
-// Module 7702 (useCustomJoinSound)
+// Module 7704 (useCustomJoinSound)
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1220 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-let closure_3 = fn(5311).CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID;
+let closure_3 = fn(5313).CUSTOM_CALL_SOUND_GLOBAL_GUILD_ID;
 const CustomSoundType = { GLOBAL: 0, [0]: "GLOBAL", GUILD: 1, [1]: "GUILD" };
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/soundboard/useCustomJoinSound.tsx");

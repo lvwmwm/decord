@@ -1,23 +1,13 @@
-// Module ID: 8112
-// Function ID: 8113
+// Module ID: 8114
+// Function ID: 8115
 // Name: getBurstAnimation
-// Dependencies: [5, 8113, 8114, 8115, 8116, 8117, 8118, 8119, 8120, 8121, 8122, 8123, 8124, 8125, 8126, 8127, 8128, 8129, 8130, 8131, 8132, 8133, 8134, 8135, 8136, 8137, 8138, 8139, 8140, 8141, 8142, 8143, 8144, 8145, 8146, 8147, 8148, 8149, 2]
+// Dependencies: [5, 8115, 8116, 8117, 8118, 8119, 8120, 8121, 8122, 8123, 8124, 8125, 8126, 8127, 8128, 8129, 8130, 8131, 8132, 8133, 8134, 8135, 8136, 8137, 8138, 8139, 8140, 8141, 8142, 8143, 8144, 8145, 8146, 8147, 8148, 8149, 8150, 8151, 2]
 // Exports: getBurstAnimation
 
-// Module 8112 (getBurstAnimation)
+// Module 8114 (getBurstAnimation)
 import asyncGeneratorStepDefault from "asyncGeneratorStep" /* 5 */;
 
 const items = [
-  {
-    load() {
-      return closure_0(8113);
-    }
-  },
-  {
-    load() {
-      return closure_0(8114);
-    }
-  },
   {
     load() {
       return closure_0(8115);
@@ -97,9 +87,7 @@ const items = [
     load() {
       return closure_0(8130);
     }
-  }
-];
-const items1 = [
+  },
   {
     load() {
       return closure_0(8131);
@@ -109,7 +97,9 @@ const items1 = [
     load() {
       return closure_0(8132);
     }
-  },
+  }
+];
+const items1 = [
   {
     load() {
       return closure_0(8133);
@@ -188,6 +178,16 @@ const items1 = [
   {
     load() {
       return closure_0(8148);
+    }
+  },
+  {
+    load() {
+      return closure_0(8149);
+    }
+  },
+  {
+    load() {
+      return closure_0(8150);
     }
   }
 ];

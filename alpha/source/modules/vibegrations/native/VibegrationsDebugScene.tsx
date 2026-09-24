@@ -1,29 +1,29 @@
-// Module ID: 17132
-// Function ID: 17133
+// Module ID: 17158
+// Function ID: 17159
 // Name: VibegrationsDebugScene
-// Dependencies: [32, 19, 17, 8041, 13448, 17133, 21, 4827, 576, 1115, 3712, 1484, 1612, 504, 9969, 7520, 17134, 4521, 4773, 17002, 9970, 17135, 17141, 17150, 17152, 2]
+// Dependencies: [32, 19, 17, 8043, 13457, 17159, 21, 4829, 576, 1115, 3714, 1484, 1612, 504, 9974, 7522, 17160, 4523, 4775, 17026, 9975, 17161, 17167, 17176, 17178, 2]
 // Exports: default
 
-// Module 17132 (VibegrationsDebugScene)
+// Module 17158 (VibegrationsDebugScene)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef3712 from "module_3712" /* 3712 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4521 */;
-import CopyIcon from "CopyIcon" /* 4773 */;
-import ClipboardUtils from "ClipboardUtils" /* 7520 */;
-import VibegrationsDebugSnapshot from "VibegrationsDebugSnapshot" /* 17134 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
+import CopyIcon from "CopyIcon" /* 4775 */;
+import ClipboardUtils from "ClipboardUtils" /* 7522 */;
+import VibegrationsDebugSnapshot from "VibegrationsDebugSnapshot" /* 17160 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8041 */;
-import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17133 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8043 */;
+import VibegrationsDebugStore from "VibegrationsDebugStore" /* 17159 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ ScrollView: hasOwnProperty, View: metroRequire } = get_ActivityIndicator);
-const requestDebugStatus = fn(13448).requestDebugStatus;
+const requestDebugStatus = fn(13457).requestDebugStatus;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { scene: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, tabs: null, content: null, report: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.tabs = { paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8, paddingBottom: nativeDefault.space.PX_12 };
@@ -124,7 +124,7 @@ export default function VibegrationsDebugScene(projectId) {
     obj.copy(VibegrationsDebugSnapshot.vibegrationsDebugSnapshot(projectId));
     const obj4 = { key: "VIBEGRATIONS_DEBUG_COPIED", content: null, IconComponent: null };
     const intl = util.intl;
-    obj4.content = intl.string(_modDef3712.sDSDiO);
+    obj4.content = intl.string(_modDef3714.sDSDiO);
     obj4.IconComponent = CopyIcon.CopyIcon;
     ToastActionCreatorsDefault.open(obj4);
   }, items8);

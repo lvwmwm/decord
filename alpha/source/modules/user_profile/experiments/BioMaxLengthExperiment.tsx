@@ -1,10 +1,10 @@
-// Module ID: 8506
-// Function ID: 8507
+// Module ID: 8510
+// Function ID: 8511
 // Name: BioMaxLengthExperiment
 // Dependencies: [1074, 1434, 2]
 // Exports: getBioMaxLength, useBioMaxLength
 
-// Module 8506 (BioMaxLengthExperiment)
+// Module 8510 (BioMaxLengthExperiment)
 import Constants from "Constants" /* 1074 */;
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;

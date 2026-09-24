@@ -1,14 +1,14 @@
-// Module ID: 7704
-// Function ID: 7705
+// Module ID: 7706
+// Function ID: 7707
 // Name: SearchBarNav
-// Dependencies: [19, 17, 21, 4827, 5985, 576, 5425, 1115, 1364, 5931, 4823, 7381, 2]
+// Dependencies: [19, 17, 21, 4829, 5987, 576, 5427, 1115, 1364, 5933, 4825, 7383, 2]
 
-// Module 7704 (SearchBarNav)
+// Module 7706 (SearchBarNav)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import Pressables from "Pressables" /* 5425 */;
-import SearchField from "SearchField" /* 7381 */;
+import Pressables from "Pressables" /* 5427 */;
+import SearchField from "SearchField" /* 7383 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,9 +16,9 @@ get_ActivityIndicator = fn(17);
 ({ View: c2, StyleSheet } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4827);
-let obj = { container: { flexDirection: "row", alignItems: "center", height: fn(5985).NAV_BAR_HEIGHT, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BORDER_STRONG }, cancelText: null, cancelIcon: null, flex: null };
-let obj3 = { flexDirection: "row", alignItems: "center", height: fn(5985).NAV_BAR_HEIGHT, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BORDER_STRONG };
+const createStyles = fn(4829);
+let obj = { container: { flexDirection: "row", alignItems: "center", height: fn(5987).NAV_BAR_HEIGHT, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BORDER_STRONG }, cancelText: null, cancelIcon: null, flex: null };
+let obj3 = { flexDirection: "row", alignItems: "center", height: fn(5987).NAV_BAR_HEIGHT, paddingHorizontal: nativeDefault.space.PX_16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderBottomWidth: StyleSheet.hairlineWidth, borderColor: nativeDefault.colors.BORDER_STRONG };
 obj.cancelText = { paddingLeft: nativeDefault.space.PX_16 };
 let obj4 = { paddingLeft: nativeDefault.space.PX_16 };
 obj.cancelIcon = { marginRight: nativeDefault.space.PX_16 };
@@ -38,12 +38,12 @@ export default noop.forwardRef((onClose, ref) => {
   obj.hitSlop = { top: 8, right: 8, bottom: 8, left: 8 };
   if (obj2.isAndroid()) {
     const obj3 = { style: tmp2.cancelIcon };
-    let tmp3Result = tmp3(tmp4(5931).ArrowLargeLeftIcon, obj3);
+    let tmp3Result = tmp3(tmp4(5933).ArrowLargeLeftIcon, obj3);
   } else {
     const obj4 = { style: tmp2.cancelText, maxFontSizeMultiplier: 2, variant: "text-md/semibold", color: "mobile-text-heading-primary", children: null };
     const intl2 = tmp4(1115).intl;
     obj4.children = intl2.string(tmp4(1115).t["ETE/oC"]);
-    tmp3Result = tmp3(tmp4(4823).Text, obj4);
+    tmp3Result = tmp3(tmp4(4825).Text, obj4);
   }
   obj.children = tmp3Result;
   const tmp3Result2 = React3(Pressables.PressableOpacity, obj);

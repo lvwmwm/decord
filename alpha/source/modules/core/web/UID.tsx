@@ -1,12 +1,12 @@
-// Module ID: 8263
-// Function ID: 8264
+// Module ID: 8267
+// Function ID: 8268
 // Name: UID
-// Dependencies: [5031, 5901, 2]
+// Dependencies: [5033, 5903, 2]
 // Exports: UID, uid, useUID
 
-// Module 8263 (UID)
-import uniqueIdDefault from "uniqueId" /* 5031 */;
-import useInitialValueDefault from "useInitialValue" /* 5901 */;
+// Module 8267 (UID)
+import uniqueIdDefault from "uniqueId" /* 5033 */;
+import useInitialValueDefault from "useInitialValue" /* 5903 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/core/web/UID.tsx");

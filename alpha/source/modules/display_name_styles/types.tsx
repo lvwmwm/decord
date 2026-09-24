@@ -1,9 +1,9 @@
-// Module ID: 11243
-// Function ID: 11244
+// Module ID: 11249
+// Function ID: 11250
 // Name: types
 // Dependencies: [2]
 
-// Module 11243 (types)
+// Module 11249 (types)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/display_name_styles/types.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 8082
-// Function ID: 8083
+// Module ID: 8084
+// Function ID: 8085
 // Name: BackgroundTaskManager
-// Dependencies: [5, 17, 1364, 8083, 8085, 2]
+// Dependencies: [5, 17, 1364, 8085, 8087, 2]
 // Exports: backgroundify, endBackgroundTask
 
-// Module 8082 (BackgroundTaskManager)
+// Module 8084 (BackgroundTaskManager)
 import PlatformUtils2 from "PlatformUtils" /* 1364 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8083 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8085 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -17,7 +17,7 @@ function startBackgroundTask(arg0) {
       return promise;
     } else {
       ({ title, content } = arg0);
-      const obj3 = { title, content, priority: tmp(8085).ServiceNotificationPriority.MEDIUM, type: tmp(8085).ServiceNotificationType.FILE_UPLOAD, usesGateway: false };
+      const obj3 = { title, content, priority: tmp(8087).ServiceNotificationPriority.MEDIUM, type: tmp(8087).ServiceNotificationType.FILE_UPLOAD, usesGateway: false };
       return ForegroundServiceManagerDefault.addServiceHandler(obj3);
     }
   } else {

@@ -1,12 +1,12 @@
-// Module ID: 17300
-// Function ID: 17301
+// Module ID: 17323
+// Function ID: 17324
 // Name: makeAuthenticated
-// Dependencies: [19, 502, 1074, 21, 7989, 17301, 2]
+// Dependencies: [19, 502, 1074, 21, 7991, 17324, 2]
 // Exports: makeAuthenticated
 
-// Module 17300 (makeAuthenticated)
-import AuthenticationUtils from "AuthenticationUtils" /* 7989 */;
-import RedirectUnauthenticatedDefault from "RedirectUnauthenticated" /* 17301 */;
+// Module 17323 (makeAuthenticated)
+import AuthenticationUtils from "AuthenticationUtils" /* 7991 */;
+import RedirectUnauthenticatedDefault from "RedirectUnauthenticated" /* 17324 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 9274
-// Function ID: 9275
+// Module ID: 9278
+// Function ID: 9279
 // Name: useGameNameAndCoverImage
-// Dependencies: [7637, 1115, 2]
+// Dependencies: [7639, 1115, 2]
 // Exports: default
 
-// Module 9274 (useGameNameAndCoverImage)
-import useGame from "useGame" /* 7637 */;
+// Module 9278 (useGameNameAndCoverImage)
+import useGame from "useGame" /* 7639 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/games/hooks/useGameNameAndCoverImage.tsx");

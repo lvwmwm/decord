@@ -1,10 +1,10 @@
-// Module ID: 14431
-// Function ID: 14432
+// Module ID: 14440
+// Function ID: 14441
 // Name: NvencReconstructedFrameExperiment
 // Dependencies: [1435, 2]
 // Exports: getNvencReconstructedFrameExperimentConfig
 
-// Module 14431 (NvencReconstructedFrameExperiment)
+// Module 14440 (NvencReconstructedFrameExperiment)
 import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1435 */;
 
 const obj = { kind: "user", name: "2026-07-nvenc-reconstructed-frames", defaultConfig: { enabled: false }, variations: null };

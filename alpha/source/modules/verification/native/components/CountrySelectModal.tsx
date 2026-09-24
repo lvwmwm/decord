@@ -1,14 +1,14 @@
-// Module ID: 7378
-// Function ID: 7379
+// Module ID: 7380
+// Function ID: 7381
 // Name: CountrySelectModal
-// Dependencies: [19, 21, 1115, 5927, 5030, 7379, 7376, 7369, 7407, 7331, 2]
+// Dependencies: [19, 21, 1115, 5929, 5032, 7381, 7378, 7371, 7409, 7333, 2]
 // Exports: default
 
-// Module 7378 (CountrySelectModal)
+// Module 7380 (CountrySelectModal)
 import util from "util" /* 1115 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
-import NavigatorHeader from "NavigatorHeader" /* 5927 */;
-import Navigator from "Navigator" /* 7331 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
+import NavigatorHeader from "NavigatorHeader" /* 5929 */;
+import Navigator from "Navigator" /* 7333 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -26,10 +26,10 @@ export default function CountrySelectModal() {
     obj2.render = function render() {
       return closure_1_4(closure_1_1(dependencyMap[5]), {
         onClose() {
-          return closure_1_1(5030).pop();
+          return closure_1_1(5032).pop();
         },
         onCountrySelected(countryCode) {
-          return closure_1_1(7376).setCountryCode(countryCode);
+          return closure_1_1(7378).setCountryCode(countryCode);
         }
       });
     };
@@ -37,7 +37,7 @@ export default function CountrySelectModal() {
     return obj;
   }, []);
   const effect = noop.useEffect(() => () => {
-    closure_1_1(7369).runAfterInteractions(closure_1_1(7407).setCountrySelectorClosed, 400);
+    closure_1_1(7371).runAfterInteractions(closure_1_1(7409).setCountrySelectorClosed, 400);
   }, []);
   return jsx(Navigator.Navigator, { screens, initialRouteName: "COUNTRY_SELECT" });
 };

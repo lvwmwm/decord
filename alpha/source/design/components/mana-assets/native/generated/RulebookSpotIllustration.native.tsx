@@ -1,13 +1,13 @@
-// Module ID: 6718
-// Function ID: 6719
+// Module ID: 6720
+// Function ID: 6721
 // Name: RulebookSpotIllustration
-// Dependencies: [21, 5890, 6719, 2]
+// Dependencies: [21, 5892, 6721, 2]
 // Exports: RulebookSpotIllustration
 
-// Module 6718 (RulebookSpotIllustration)
+// Module 6720 (RulebookSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6719 from "module_6719" /* 6719 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6721 from "module_6721" /* 6721 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const RulebookSpotIllustration = function RulebookSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6719 };
+  const obj2 = { uri: _modDef6721 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

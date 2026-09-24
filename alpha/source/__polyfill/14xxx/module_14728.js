@@ -1,12 +1,14 @@
 // Module ID: 14728
 // Function ID: 14729
-// Dependencies: [14707, 14706]
+// Dependencies: [14675, 14726, 14709]
 
 // Module 14728
-import _mod14706 from "module_14706" /* 14706 */;
-import _mod14707 from "module_14707" /* 14707 */;
+import _mod14675 from "module_14675" /* 14675 */;
+import _mod14709 from "module_14709" /* 14709 */;
+import _mod14726 from "module_14726" /* 14726 */;
 
 
-export default Object.keys || (function keys(arg0) {
-  return _mod14707(arg0, _mod14706);
+export default _mod14675 ? ((arg0, arg1, arg2) => _mod14726.f(arg0, arg1, _mod14709(1, arg2))) : ((arg0, arg1, arg2) => {
+  arg0[arg1] = arg2;
+  return arg0;
 });

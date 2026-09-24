@@ -1,13 +1,13 @@
-// Module ID: 12922
-// Function ID: 12923
+// Module ID: 12931
+// Function ID: 12932
 // Name: BoostTier1Icon
-// Dependencies: [19, 21, 576, 4523, 12923, 2]
+// Dependencies: [19, 21, 576, 4525, 12932, 2]
 // Exports: BoostTier1Icon
 
-// Module 12922 (BoostTier1Icon)
+// Module 12931 (BoostTier1Icon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod12923 from "module_12923" /* 12923 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod12932 from "module_12932" /* 12932 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const BoostTier1Icon = function BoostTier1Icon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12923, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12932, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

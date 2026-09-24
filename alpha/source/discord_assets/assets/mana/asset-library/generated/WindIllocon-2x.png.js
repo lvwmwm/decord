@@ -1,8 +1,8 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6905
+// Function ID: 6906
 // Dependencies: [2]
 
-// Module 6903
+// Module 6905
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/WindIllocon-2x.png.js");

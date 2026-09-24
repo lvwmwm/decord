@@ -1,13 +1,13 @@
-// Module ID: 15905
-// Function ID: 15906
+// Module ID: 15919
+// Function ID: 15920
 // Name: WrenchIcon
-// Dependencies: [19, 21, 576, 4523, 15906, 2]
+// Dependencies: [19, 21, 576, 4525, 15920, 2]
 // Exports: WrenchIcon
 
-// Module 15905 (WrenchIcon)
+// Module 15919 (WrenchIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod15906 from "module_15906" /* 15906 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod15920 from "module_15920" /* 15920 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const WrenchIcon = function WrenchIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15906, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15920, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

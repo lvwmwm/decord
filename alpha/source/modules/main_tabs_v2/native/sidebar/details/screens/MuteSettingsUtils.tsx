@@ -1,20 +1,20 @@
-// Module ID: 10483
-// Function ID: 10484
+// Module ID: 10488
+// Function ID: 10489
 // Name: MuteSettingsUtils
-// Dependencies: [4464, 2042, 2064, 4472, 5008, 1372, 1074, 1084, 1115, 4980, 8092, 7450, 7445, 10484, 2]
+// Dependencies: [4466, 2044, 2066, 4474, 5010, 1372, 1074, 1084, 1115, 4982, 8094, 7452, 7447, 10489, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 10483 (MuteSettingsUtils)
+// Module 10488 (MuteSettingsUtils)
 import util from "util" /* 1115 */;
-import useChannelName from "useChannelName" /* 4980 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7445 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7450 */;
-import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 10484 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4464 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import RelationshipStore from "RelationshipStore" /* 4472 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
+import useChannelName from "useChannelName" /* 4982 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7447 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7452 */;
+import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 10489 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4466 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import RelationshipStore from "RelationshipStore" /* 4474 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -68,12 +68,12 @@ export const handleUnmutePress = function handleUnmutePress(channelId, guildId) 
   const channel = ChannelStore.getChannel(channelId);
   if (null != channel) {
     if (channel.isThread()) {
-      const result = tmp5(8092).setNotificationSettings(channel, { muted: false });
-      const tmp5Result = tmp5(8092);
+      const result = tmp5(8094).setNotificationSettings(channel, { muted: false });
+      const tmp5Result = tmp5(8094);
     } else {
       const obj = { guildId, channelId: channel.id, settings: { muted: false, mute_config: null }, label: NotificationSettingsUtils.NotificationLabels.Unmuted };
-      const result1 = tmp5(7450).updateChannelOverrideSettings(obj);
-      const tmp5Result2 = tmp5(7450);
+      const result1 = tmp5(7452).updateChannelOverrideSettings(obj);
+      const tmp5Result2 = tmp5(7452);
     }
   }
 };
@@ -87,12 +87,12 @@ export const handleMuteSettingPress = function handleMuteSettingPress(arg0) {
     onOptionPress(muteSettings);
   } else if (null != channel) {
     if (channel.isThread()) {
-      const result = tmp4(8092).setNotificationSettings(channel, muteSettings);
-      const tmp4Result = tmp4(8092);
+      const result = tmp4(8094).setNotificationSettings(channel, muteSettings);
+      const tmp4Result = tmp4(8094);
     } else {
       const obj2 = { guildId, channelId: channel.id, settings: muteSettings, label: NotificationSettingsUtils.NotificationLabels.Muted };
-      const result1 = tmp4(7450).updateChannelOverrideSettings(obj2);
-      const tmp4Result2 = tmp4(7450);
+      const result1 = tmp4(7452).updateChannelOverrideSettings(obj2);
+      const tmp4Result2 = tmp4(7452);
     }
   } else if (null != guild) {
     const result2 = NotificationSettingsModalActionCreatorsDefault.updateGuildNotificationSettings(guild.id, muteSettings, NotificationSettingsUtils.NotificationLabels.Muted);

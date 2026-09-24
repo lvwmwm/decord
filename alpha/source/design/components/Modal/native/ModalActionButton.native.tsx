@@ -1,18 +1,18 @@
-// Module ID: 11344
-// Function ID: 11345
+// Module ID: 11350
+// Function ID: 11351
 // Name: ModalActionButton
-// Dependencies: [19, 17, 21, 4827, 5271, 2]
+// Dependencies: [19, 17, 21, 4829, 5273, 2]
 // Exports: ModalActionButton
 
-// Module 11344 (ModalActionButton)
-import components_Button_Button from "components/Button/Button" /* 5271 */;
+// Module 11350 (ModalActionButton)
+import components_Button_Button from "components/Button/Button" /* 5273 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_6 = createStyles.createStyles({ spacer: { marginTop: 12 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("design/components/Modal/native/ModalActionButton.native.tsx");

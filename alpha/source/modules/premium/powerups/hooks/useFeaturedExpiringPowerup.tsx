@@ -1,14 +1,14 @@
-// Module ID: 12846
-// Function ID: 12847
+// Module ID: 12855
+// Function ID: 12856
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 4736, 4715, 504, 12847, 7882, 2]
+// Dependencies: [19, 4738, 4717, 504, 12856, 7884, 2]
 // Exports: default
 
-// Module 12846 (useFeaturedExpiringPowerup)
-import CollectiblesUtils from "CollectiblesUtils" /* 7882 */;
+// Module 12855 (useFeaturedExpiringPowerup)
+import CollectiblesUtils from "CollectiblesUtils" /* 7884 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4736 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4715 */;
+import GameServerStore from "GameServerStore" /* 4738 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4717 */;
 
 const require = globalThis.__r;
 

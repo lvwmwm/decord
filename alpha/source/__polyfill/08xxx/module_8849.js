@@ -1,16 +1,16 @@
 // Module ID: 8849
 // Function ID: 8850
-// Dependencies: [41, 42, 93, 95, 98, 8819, 8842]
+// Dependencies: [41, 42, 93, 95, 98, 8823, 8846]
 
 // Module 8849
-import _modDef8842 from "module_8842" /* 8842 */;
+import _modDef8846 from "module_8846" /* 8846 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-const FeDiffuseLighting = arg1;
+const FeComponentTransfer = arg1;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -30,12 +30,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class FeDiffuseLighting {
+class FeComponentTransfer {
   constructor() {
     self = this;
-    tmp = c2(this, FeDiffuseLighting);
+    tmp = c2(this, FeComponentTransfer);
     tmp2 = closure_4;
-    obj = closure_4(FeDiffuseLighting);
+    obj = closure_4(FeComponentTransfer);
     tmp3 = closure_3;
     if (hasOwnProperty()) {
       tmp7 = globalThis;
@@ -50,17 +50,17 @@ class FeDiffuseLighting {
     return tmp3(self, constructResult);
   }
 }
-_inherits(FeDiffuseLighting, _modDef8842);
+_inherits(FeComponentTransfer, _modDef8846);
 const entry = {
   key: "render",
   value: function render() {
-    const result = FeDiffuseLighting(8819).warnUnimplementedFilter();
+    const result = FeComponentTransfer(8823).warnUnimplementedFilter();
     return null;
   }
 };
 const items = [entry];
-const importDefaultResultResult = _createClass(FeDiffuseLighting, items);
-importDefaultResultResult.displayName = "FeDiffuseLighting";
+const importDefaultResultResult = _createClass(FeComponentTransfer, items);
+importDefaultResultResult.displayName = "FeComponentTransfer";
 const merged = Object.assign(importDefaultResultResult.defaultPrimitiveProps);
 importDefaultResultResult.defaultProps = {};
 

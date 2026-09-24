@@ -1,33 +1,33 @@
-// Module ID: 15295
-// Function ID: 15296
+// Module ID: 15304
+// Function ID: 15305
 // Name: UserSettingsConnections
-// Dependencies: [19, 17, 7438, 502, 5584, 2109, 1074, 21, 4827, 576, 4761, 504, 13479, 7501, 5709, 4794, 15294, 1980, 9418, 15296, 8947, 5269, 15299, 15300, 2]
+// Dependencies: [19, 17, 7440, 502, 5586, 2111, 1074, 21, 4829, 576, 4763, 504, 13488, 7503, 5711, 4796, 15303, 1980, 9422, 15305, 8951, 5271, 15308, 15309, 2]
 // Exports: UserSettingsConnections
 
-// Module 15295 (UserSettingsConnections)
+// Module 15304 (UserSettingsConnections)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import useThemeDefault from "useTheme" /* 4761 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7501 */;
-import authorizeConnectionDefault from "authorizeConnection" /* 9418 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 13479 */;
-import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 15299 */;
-import ConnectedAccountDefault from "ConnectedAccount" /* 15300 */;
+import useThemeDefault from "useTheme" /* 4763 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import AuthorizedAppsActionCreatorsDefault from "AuthorizedAppsActionCreators" /* 7503 */;
+import authorizeConnectionDefault from "authorizeConnection" /* 9422 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 13488 */;
+import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 15308 */;
+import ConnectedAccountDefault from "ConnectedAccount" /* 15309 */;
 import noop from "module_19" /* 19 */;
-import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7438 */;
+import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7440 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5584 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5586 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 
-const ConnectionsEmptyStateUpsellDefault = tmp2(15296);
+const ConnectionsEmptyStateUpsellDefault = tmp2(15305);
 require = fn;
 const ActivityIndicator = fn(17).ActivityIndicator;
-const FetchState = fn(7438).FetchState;
+const FetchState = fn(7440).FetchState;
 const AnalyticsLocations = fn(1074).AnalyticsLocations;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { flex: { flex: 1 }, form: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, padding: nativeDefault.space.PX_16 } };
 let closure_13 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -65,7 +65,7 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
   const effect2 = authorizedAppsFetchState.useEffect(() => {
     if (null != selectedPlatformType) {
       if (-1 === tmp) {
-        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15294, dependencyMap.paths), "AddConnection");
+        ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15303, dependencyMap.paths), "AddConnection");
       } else {
         const obj = { platformType: tmp, location: AnalyticsLocations.USER_SETTINGS };
         authorizeConnectionDefault(obj);
@@ -89,8 +89,8 @@ export const UserSettingsConnections = function UserSettingsConnections(selected
         accounts.map((account) => closure_2_11(ConnectedAccountDefault, { theme, locale, account }, account.id))
       ];
       obj5.children = items5;
-      obj4.children = closure_12(tmp4(5269).Stack, obj5);
-      tmp14 = closure_11(tmp4(8947).Form, obj4);
+      obj4.children = closure_12(tmp4(5271).Stack, obj5);
+      tmp14 = closure_11(tmp4(8951).Form, obj4);
     }
     return tmp14;
   }

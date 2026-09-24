@@ -1,36 +1,36 @@
-// Module ID: 15354
-// Function ID: 15355
+// Module ID: 15363
+// Function ID: 15364
 // Name: QuestCustomAppStoreOverlayUtils
-// Dependencies: [11824, 11831, 11833, 2]
+// Dependencies: [11827, 11837, 11839, 2]
 // Exports: canOpenCustomAppStoreOverlayFromCta, prefetchCustomAppStoreOverlayContent
 
-// Module 15354 (QuestCustomAppStoreOverlayUtils)
-import apexExperiment from "apexExperiment" /* 11824 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11831 */;
+// Module 15363 (QuestCustomAppStoreOverlayUtils)
+import apexExperiment from "apexExperiment" /* 11827 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 11837 */;
 import size from "module_2" /* 2 */;
 
 function fetchCustomAppStoreOverlayContent(cta) {
   const CustomAppStoreOverlayExperiment = apexExperiment.CustomAppStoreOverlayExperiment;
   let enabled = CustomAppStoreOverlayExperiment.getConfig({ location: "quest_open_game_link" }).enabled;
   if (enabled) {
-    enabled = null != tmp(11831).getInlineStoreParamsFromCta(cta);
-    const tmpResult = tmp(11831);
+    enabled = null != tmp(11837).getInlineStoreParamsFromCta(cta);
+    const tmpResult = tmp(11837);
   }
   let inlineStoreParamsFromCta = null;
   if (enabled) {
-    inlineStoreParamsFromCta = tmp(11831).getInlineStoreParamsFromCta(cta);
-    const tmpResult4 = tmp(11831);
+    inlineStoreParamsFromCta = tmp(11837).getInlineStoreParamsFromCta(cta);
+    const tmpResult4 = tmp(11837);
   }
   if (null == inlineStoreParamsFromCta) {
     let resolved = Promise.resolve(null);
   } else {
-    const tmpResult5 = tmp(11833);
-    let url = tmp(11831).getDirectAppStoreLinkFromCta(cta);
+    const tmpResult5 = tmp(11839);
+    let url = tmp(11837).getDirectAppStoreLinkFromCta(cta);
     if (url == null) {
       url = cta.url;
     }
     resolved = tmpResult5.getAppStoreOverlayContent(inlineStoreParamsFromCta, url);
-    const tmpResult6 = tmp(11831);
+    const tmpResult6 = tmp(11837);
   }
   return resolved;
 }

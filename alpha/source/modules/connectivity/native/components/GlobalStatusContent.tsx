@@ -1,30 +1,30 @@
-// Module ID: 9853
-// Function ID: 9854
+// Module ID: 9858
+// Function ID: 9859
 // Name: GlobalStatusContent
-// Dependencies: [19, 17, 2042, 2064, 4850, 4845, 9847, 1074, 21, 4827, 576, 9848, 504, 9751, 9845, 4678, 4761, 5428, 4684, 9725, 1364, 1612, 9729, 9854, 2]
+// Dependencies: [19, 17, 2044, 2066, 4852, 4847, 9852, 1074, 21, 4829, 576, 9853, 504, 9755, 9850, 4680, 4763, 5430, 4686, 9729, 1364, 1612, 9733, 9859, 2]
 // Exports: default
 
-// Module 9853 (GlobalStatusContent)
+// Module 9858 (GlobalStatusContent)
 import nativeDefault from "native" /* 576 */;
-import useThemeDefault from "useTheme" /* 4761 */;
-import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9751 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9845 */;
-import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9848 */;
+import useThemeDefault from "useTheme" /* 4763 */;
+import useCanSpeakInChannelDefault from "useCanSpeakInChannel" /* 9755 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 9850 */;
+import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 9853 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
-import SessionsStore from "SessionsStore" /* 4845 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
+import SessionsStore from "SessionsStore" /* 4847 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 const View = fn(17).View;
-const RTC_PANEL_HEIGHT = fn(9847).RTC_PANEL_HEIGHT;
+const RTC_PANEL_HEIGHT = fn(9852).RTC_PANEL_HEIGHT;
 const RTCConnectionStates = fn(1074).RTCConnectionStates;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { bgNeutral: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST }, bg: null, container: null };
 const obj3 = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 obj2.bg = { backgroundColor: nativeDefault.unsafe_rawColors.GREEN_360 };
@@ -105,8 +105,8 @@ export default function ConnectivityGlobalStatusContent() {
   const isThemeDarkResult = require("shared").isThemeDark(useThemeDefault());
   let isScreenLandscape = require("useIsScreenLandscape").useIsScreenLandscape();
   if (isScreenLandscape) {
-    isScreenLandscape = tmp5(4684).isModalOpen(tmp2(9725));
-    const tmp5Result5 = tmp5(4684);
+    isScreenLandscape = tmp5(4686).isModalOpen(tmp2(9729));
+    const tmp5Result5 = tmp5(4686);
   }
   if (isScreenLandscape) {
     isScreenLandscape = tmp5(1364).isAndroid();
@@ -120,13 +120,13 @@ export default function ConnectivityGlobalStatusContent() {
   const items2 = [tmp14 ? tmp.bg : tmp.bgNeutral, tmp.container, { minHeight: RTC_PANEL_HEIGHT + num, paddingTop: num }];
   obj2.style = items2;
   if (isScreenLandscape) {
-    isScreenLandscape = closure_10(tmp2(9729), { hidden: true });
+    isScreenLandscape = closure_10(tmp2(9733), { hidden: true });
   }
   const items3 = [isScreenLandscape, ];
   let tmp19 = null;
   if (isGuildStageVoiceResult) {
     const obj4 = { channel, guild, hasRTCConnectivity: tmp12, isDarkTheme: isThemeDarkResult, rtcConnectionState, remotePlatform };
-    tmp19 = closure_10(tmp2(9854), obj4);
+    tmp19 = closure_10(tmp2(9859), obj4);
   }
   items3[1] = tmp19;
   obj2.children = items3;

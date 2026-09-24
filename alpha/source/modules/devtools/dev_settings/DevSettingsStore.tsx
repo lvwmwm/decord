@@ -1,9 +1,9 @@
-// Module ID: 4826
-// Function ID: 4827
+// Module ID: 4828
+// Function ID: 4829
 // Name: DevSettingsStore
 // Dependencies: [504, 573, 2]
 
-// Module 4826 (DevSettingsStore)
+// Module 4828 (DevSettingsStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 

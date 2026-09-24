@@ -1,15 +1,15 @@
-// Module ID: 5048
-// Function ID: 5049
+// Module ID: 5050
+// Function ID: 5051
 // Name: EphemeralMessageStore
-// Dependencies: [2042, 1074, 1385, 5049, 504, 573, 2]
+// Dependencies: [2044, 1074, 1385, 5051, 504, 573, 2]
 
-// Module 5048 (EphemeralMessageStore)
+// Module 5050 (EphemeralMessageStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
-const MessageRecordUtils = tmp(5049);
+const MessageRecordUtils = tmp(5051);
 require = fn;
 function dropChannelIfEmpty(channelId, value) {
   if (0 === value.size) {

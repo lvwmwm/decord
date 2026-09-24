@@ -1,13 +1,13 @@
-// Module ID: 15757
-// Function ID: 15758
+// Module ID: 15771
+// Function ID: 15772
 // Name: AnimateEmojiSetting
-// Dependencies: [8319, 11805, 1115, 2020, 2]
+// Dependencies: [8323, 11811, 1115, 2020, 2]
 
-// Module 15757 (AnimateEmojiSetting)
+// Module 15771 (AnimateEmojiSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import SettingsConstants from "SettingsConstants" /* 8319 */;
-import SettingBuilders from "SettingBuilders" /* 11805 */;
+import SettingsConstants from "SettingsConstants" /* 8323 */;
+import SettingBuilders from "SettingBuilders" /* 11811 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({

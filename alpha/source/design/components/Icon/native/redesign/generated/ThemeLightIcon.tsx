@@ -1,13 +1,13 @@
-// Module ID: 15604
-// Function ID: 15605
+// Module ID: 15618
+// Function ID: 15619
 // Name: ThemeLightIcon
-// Dependencies: [19, 21, 576, 4523, 15605, 2]
+// Dependencies: [19, 21, 576, 4525, 15619, 2]
 // Exports: ThemeLightIcon
 
-// Module 15604 (ThemeLightIcon)
+// Module 15618 (ThemeLightIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod15605 from "module_15605" /* 15605 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod15619 from "module_15619" /* 15619 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ThemeLightIcon = function ThemeLightIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod15605, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod15619, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

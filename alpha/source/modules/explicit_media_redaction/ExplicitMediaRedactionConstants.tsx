@@ -1,9 +1,9 @@
-// Module ID: 7929
-// Function ID: 7930
+// Module ID: 7931
+// Function ID: 7932
 // Name: ExplicitMediaRedactionConstants
 // Dependencies: [1096, 2]
 
-// Module 7929 (ExplicitMediaRedactionConstants)
+// Module 7931 (ExplicitMediaRedactionConstants)
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1096 */;
 import size from "module_2" /* 2 */;
 

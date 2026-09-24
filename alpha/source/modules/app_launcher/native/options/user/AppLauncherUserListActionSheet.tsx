@@ -1,12 +1,12 @@
-// Module ID: 12518
-// Function ID: 12519
+// Module ID: 12527
+// Function ID: 12528
 // Name: AppLauncherUserListActionSheet
-// Dependencies: [19, 1483, 21, 4827, 4794, 7849, 1177, 12501, 1115, 12499, 12519, 11919, 12500, 5908, 2]
+// Dependencies: [19, 1483, 21, 4829, 4796, 7851, 1177, 12510, 1115, 12508, 12528, 11926, 12509, 5910, 2]
 // Exports: default
 
-// Module 12518 (AppLauncherUserListActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import TableRow from "TableRow" /* 5908 */;
+// Module 12527 (AppLauncherUserListActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import TableRow from "TableRow" /* 5910 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -23,7 +23,7 @@ function EmptyStateWithSnowflakeQuery(onPressRow) {
   };
   const items = [onPressRow.query];
   obj.data = items;
-  return jsx(onPressRow(12500).AppLauncherList, {
+  return jsx(onPressRow(12509).AppLauncherList, {
     contentContainerStyle: closure_6().emptyState,
     data: null,
     renderItem(label) {
@@ -36,7 +36,7 @@ function EmptyStateWithSnowflakeQuery(onPressRow) {
 const DEFAULT_CONTENT_PADDING = fn(1483).DEFAULT_CONTENT_PADDING;
 const jsx = fn(21).jsx;
 const AppLauncherUserListActionSheet = "AppLauncherUserListActionSheet";
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_6 = createStyles.createStyles({ emptyState: { paddingHorizontal: DEFAULT_CONTENT_PADDING, paddingTop: DEFAULT_CONTENT_PADDING, flex: 1 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/app_launcher/native/options/user/AppLauncherUserListActionSheet.tsx");

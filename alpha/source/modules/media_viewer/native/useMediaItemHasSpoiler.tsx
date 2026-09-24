@@ -1,13 +1,13 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8614
+// Function ID: 8615
 // Name: useMediaItemHasSpoiler
-// Dependencies: [19, 2042, 8606, 8611, 563, 8617, 2]
+// Dependencies: [19, 2044, 8610, 8615, 563, 8621, 2]
 // Exports: useMediaItemHasSpoiler
 
-// Module 8610 (useMediaItemHasSpoiler)
-import MediaSourceUtil from "MediaSourceUtil" /* 8611 */;
+// Module 8614 (useMediaItemHasSpoiler)
+import MediaSourceUtil from "MediaSourceUtil" /* 8615 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 const require = globalThis.__r;
 

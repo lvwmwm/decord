@@ -1,12 +1,12 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13535
+// Function ID: 13536
 // Name: useTrackPdpClick
-// Dependencies: [19, 1074, 9123, 8522, 7882, 1241, 2]
+// Dependencies: [19, 1074, 9127, 8526, 7884, 1241, 2]
 // Exports: useTrackPdpClick
 
-// Module 13526 (useTrackPdpClick)
+// Module 13535 (useTrackPdpClick)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7882 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7884 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

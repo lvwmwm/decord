@@ -1,13 +1,13 @@
-// Module ID: 10020
-// Function ID: 10021
+// Module ID: 10025
+// Function ID: 10026
 // Name: HeadphonesDenyIcon
-// Dependencies: [19, 21, 576, 4523, 10021, 2]
+// Dependencies: [19, 21, 576, 4525, 10026, 2]
 // Exports: HeadphonesDenyIcon
 
-// Module 10020 (HeadphonesDenyIcon)
+// Module 10025 (HeadphonesDenyIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod10021 from "module_10021" /* 10021 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod10026 from "module_10026" /* 10026 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const HeadphonesDenyIcon = function HeadphonesDenyIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10021, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10026, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

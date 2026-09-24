@@ -1,15 +1,15 @@
-// Module ID: 5990
-// Function ID: 5991
+// Module ID: 5992
+// Function ID: 5993
 // Name: TableRowGroup
-// Dependencies: [19, 17, 21, 4827, 576, 4823, 4524, 5905, 5909, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4825, 4526, 5907, 5911, 2]
 // Exports: TableRowGroup
 
-// Module 5990 (TableRowGroup)
+// Module 5992 (TableRowGroup)
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4524 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import TableRowDivider from "TableRowDivider" /* 5905 */;
-import TableRowGroupContext from "TableRowGroupContext" /* 5909 */;
+import useToken from "useToken" /* 4526 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import TableRowDivider from "TableRowDivider" /* 5907 */;
+import TableRowGroupContext from "TableRowGroupContext" /* 5911 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -28,7 +28,7 @@ class TableRowGroupTitle {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { flexShrink: 0 }, content: { borderRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, overflow: "hidden", flexGrow: 1, flexShrink: 0, padding: 0 }, title: { marginBottom: 8 }, description: { marginBottom: 8 }, hasTrailingText: null, helperText: null };
 let obj3 = { borderRadius: nativeDefault.modules.mobile.TABLE_ROW_BORDER_RADIUS, overflow: "hidden", flexGrow: 1, flexShrink: 0, padding: 0 };
 obj2.hasTrailingText = { borderBottomLeftRadius: nativeDefault.radii.none, borderBottomRightRadius: nativeDefault.radii.none };
@@ -74,7 +74,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityLabel) {
   let tmp6Result3 = null != description;
   if (tmp6Result3) {
     const obj4 = { variant: "text-sm/normal", color: "text-subtle", style: tmp.description, children: description };
-    tmp6Result3 = tmp6(tmp2(4823).Text, obj4);
+    tmp6Result3 = tmp6(tmp2(4825).Text, obj4);
   }
   items[1] = tmp6Result3;
   const items1 = [tmp.content, ];
@@ -87,7 +87,7 @@ export const TableRowGroup = function TableRowGroup(accessibilityLabel) {
   let tmp6Result4 = null != helperText;
   if (tmp6Result4) {
     const obj5 = { variant: token, color: "text-muted", style: tmp.helperText, children: helperText };
-    tmp6Result4 = tmp6(tmp2(4823).Text, obj5);
+    tmp6Result4 = tmp6(tmp2(4825).Text, obj5);
   }
   items[3] = tmp6Result4;
   obj2.children = items;

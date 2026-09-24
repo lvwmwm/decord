@@ -1,13 +1,13 @@
-// Module ID: 11033
-// Function ID: 11034
+// Module ID: 11039
+// Function ID: 11040
 // Name: shop_nagbar
-// Dependencies: [32, 1187, 11014, 11013, 11012, 1217, 2]
+// Dependencies: [32, 1187, 11020, 11019, 11018, 1217, 2]
 
-// Module 11033 (shop_nagbar)
+// Module 11039 (shop_nagbar)
 import _mod1187 from "module_1187" /* 1187 */;
 import wrappers from "wrappers" /* 1217 */;
-import localized_string from "localized_string" /* 11012 */;
-import help_article from "help_article" /* 11013 */;
+import localized_string from "localized_string" /* 11018 */;
+import help_article from "help_article" /* 11019 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

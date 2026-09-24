@@ -1,19 +1,19 @@
-// Module ID: 14893
-// Function ID: 14894
+// Module ID: 14902
+// Function ID: 14903
 // Name: RPCServer
-// Dependencies: [5, 4731, 1074, 12, 9666, 9660, 14869, 1241, 38, 13271, 1091, 2]
+// Dependencies: [5, 4733, 1074, 12, 9670, 9664, 14878, 1241, 38, 13280, 1091, 2]
 
-// Module 14893 (RPCServer)
+// Module 14902 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import RPCErrorDefault from "RPCError" /* 9660 */;
-import transformUserDefault from "transformUser" /* 9666 */;
-import RpcCommandInterception from "RpcCommandInterception" /* 13271 */;
-import validateScopeDefault from "validateScope" /* 14869 */;
+import RPCErrorDefault from "RPCError" /* 9664 */;
+import transformUserDefault from "transformUser" /* 9670 */;
+import RpcCommandInterception from "RpcCommandInterception" /* 13280 */;
+import validateScopeDefault from "validateScope" /* 14878 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
-const TransportTypes = fn(4731).TransportTypes;
+const TransportTypes = fn(4733).TransportTypes;
 const Constants = fn(1074);
 ({ AnalyticEvents: hasOwnProperty, RPCCloseCodes: metroRequire, RPCCommands: closure_7, RPCErrors: closure_8, RPCEvents: closure_9 } = Constants);
 const RPC_STORE_WAIT = "RPC_STORE_WAIT";
@@ -101,7 +101,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(9660)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(9664)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -132,7 +132,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(9660)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(9664)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -239,7 +239,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(9660)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(9664)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -371,7 +371,7 @@ prototype["handleRequest"] = function handleRequest(socket, arg1) {
           fn(tmp25);
         } else {
           const obj = { errorCode: constants4.INVALID_PERMISSIONS };
-          const tmp6 = new tmp29(9660)(obj, "Not authenticated or invalid scope");
+          const tmp6 = new tmp29(9664)(obj, "Not authenticated or invalid scope");
           throw tmp6;
         }
       }
@@ -568,10 +568,10 @@ prototype["isChildSubscribed"] = function isChildSubscribed(arg0, arg1) {
   }
   return tmp;
 };
-prototype["getSubscription"] = function getSubscription(socket, evt, args) {
+prototype["getSubscription"] = function getSubscription(socket, evt, c3) {
   closure_0 = socket;
   closure_1 = evt;
-  closure_2 = args;
+  closure_2 = c3;
   const subscriptions = this.subscriptions;
   return subscriptions.find((socket) => {
     let isEqualResult = socket.socket === closure_0;
@@ -584,7 +584,7 @@ prototype["getSubscription"] = function getSubscription(socket, evt, args) {
     return isEqualResult;
   });
 };
-prototype["addSubscription"] = function addSubscription(socket, evt, args, arg3) {
+prototype["addSubscription"] = function addSubscription(socket, evt, c3, arg3) {
   let tmp = arg3;
   if (arg3 === undefined) {
     tmp = null;
@@ -594,7 +594,7 @@ prototype["addSubscription"] = function addSubscription(socket, evt, args, arg3)
   if (sockets.has(socket)) {
     const dispatch = self.dispatch;
     const bindResult = dispatch.bind(self, socket, null, constants3.DISPATCH, evt);
-    if (null == self.getSubscription(socket, evt, args)) {
+    if (null == self.getSubscription(socket, evt, c3)) {
       const subscriptions = self.subscriptions;
       const obj = { update: tmp, dispatch: bindResult, prevState: null, socket: null, evt: null, args: null };
       let tmpResult = null;
@@ -605,7 +605,7 @@ prototype["addSubscription"] = function addSubscription(socket, evt, args, arg3)
       obj.prevState = tmpResult;
       obj.socket = socket;
       obj.evt = evt;
-      obj.args = args;
+      obj.args = c3;
       subscriptions.push(obj);
       const result = self.dispatchIsSubscribedUpdate();
     }

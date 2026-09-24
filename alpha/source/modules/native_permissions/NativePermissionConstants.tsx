@@ -1,9 +1,9 @@
-// Module ID: 5036
-// Function ID: 5037
+// Module ID: 5038
+// Function ID: 5039
 // Name: NativePermissionConstants
 // Dependencies: [2]
 
-// Module 5036 (NativePermissionConstants)
+// Module 5038 (NativePermissionConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/native_permissions/NativePermissionConstants.tsx");

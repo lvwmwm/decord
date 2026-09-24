@@ -1,13 +1,13 @@
-// Module ID: 10253
-// Function ID: 10254
+// Module ID: 10258
+// Function ID: 10259
 // Name: MusicIcon
-// Dependencies: [19, 21, 576, 4523, 10254, 2]
+// Dependencies: [19, 21, 576, 4525, 10259, 2]
 // Exports: MusicIcon
 
-// Module 10253 (MusicIcon)
+// Module 10258 (MusicIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod10254 from "module_10254" /* 10254 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod10259 from "module_10259" /* 10259 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const MusicIcon = function MusicIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod10254, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod10259, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

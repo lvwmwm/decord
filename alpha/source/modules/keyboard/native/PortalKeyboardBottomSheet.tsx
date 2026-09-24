@@ -1,20 +1,20 @@
-// Module ID: 12412
-// Function ID: 12413
+// Module ID: 12421
+// Function ID: 12422
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 9852, 21, 1364, 4827, 576, 9260, 5256, 4559, 12413, 4533, 7484, 12414, 504, 6955, 4795, 10431, 1875, 5288, 4524, 1612, 1478, 4700, 4680, 5253, 10618, 7371, 2]
+// Dependencies: [32, 19, 17, 9857, 21, 1364, 4829, 576, 9264, 5258, 4561, 12422, 4535, 7486, 12423, 504, 6957, 4797, 10436, 1875, 5290, 4526, 1612, 1478, 4702, 4682, 5255, 10623, 7373, 2]
 
-// Module 12412 (PortalKeyboardBottomSheet)
+// Module 12421 (PortalKeyboardBottomSheet)
 import nativeDefault from "native" /* 576 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 1875 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import HapticUtils from "HapticUtils" /* 4795 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5256 */;
-import BottomSheetModal from "BottomSheetModal" /* 6955 */;
-import native from "native" /* 9260 */;
-import isChannelFocused from "isChannelFocused" /* 10431 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import HapticUtils from "HapticUtils" /* 4797 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5258 */;
+import BottomSheetModal from "BottomSheetModal" /* 6957 */;
+import native from "native" /* 9264 */;
+import isChannelFocused from "isChannelFocused" /* 10436 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import NativeMenuStore from "NativeMenuStore" /* 9852 */;
+import NativeMenuStore from "NativeMenuStore" /* 9857 */;
 
 const ReanimatedRexportDefault = ReanimatedRexport;
 
@@ -46,9 +46,9 @@ const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 const PlatformUtils = fn(1364);
 let closure_9 = PlatformUtils.isIOS();
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { container: { position: "absolute", top: 0, left: 0 }, background: { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, overflow: "hidden" }, headerContainer: null, headerContainerScreenReaderEnabled: null, roundingView: null };
-let size = { borderTopLeftRadius: nativeDefault.radii.none, borderTopRightRadius: nativeDefault.radii.none, width: "100%", height: fn(9260).ACTION_SHEET_DRAG_HANDLE_HEIGHT, marginBottom: -fn(9260).ACTION_SHEET_DRAG_HANDLE_HEIGHT };
+let size = { borderTopLeftRadius: nativeDefault.radii.none, borderTopRightRadius: nativeDefault.radii.none, width: "100%", height: fn(9264).ACTION_SHEET_DRAG_HANDLE_HEIGHT, marginBottom: -fn(9264).ACTION_SHEET_DRAG_HANDLE_HEIGHT };
 obj.headerContainer = size;
 let obj4 = { backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND, overflow: "hidden" };
 obj.headerContainerScreenReaderEnabled = { marginBottom: -nativeDefault.space.PX_8 };

@@ -1,13 +1,13 @@
-// Module ID: 17028
-// Function ID: 17029
+// Module ID: 17056
+// Function ID: 17057
 // Name: useVibegrationsPreviewMode
-// Dependencies: [32, 19, 502, 504, 17029, 17030, 9363, 7494, 9673, 2]
+// Dependencies: [32, 19, 502, 504, 17057, 17058, 9367, 7496, 9677, 2]
 // Exports: useVibegrationsPreviewMode
 
-// Module 17028 (useVibegrationsPreviewMode)
+// Module 17056 (useVibegrationsPreviewMode)
 import initialize from "initialize" /* 504 */;
-import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 17029 */;
-import vibegrationsPreviewModes from "vibegrationsPreviewModes" /* 17030 */;
+import useUserApplicationWidgetDataDefault from "useUserApplicationWidgetData" /* 17057 */;
+import vibegrationsPreviewModes from "vibegrationsPreviewModes" /* 17058 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -46,22 +46,22 @@ export const useVibegrationsPreviewMode = function useVibegrationsPreviewMode(ar
   }
   let tmp14;
   if (surfaces != null) {
-    tmp14 = surfaces[tmp8(undefined, 9363).ApplicationWidgetConfigSurface.WIDGET_TOP];
+    tmp14 = surfaces[tmp8(undefined, 9367).ApplicationWidgetConfigSurface.WIDGET_TOP];
   }
   const obj2 = { widgetTop: null != tmp14, widgetBottom: null, miniProfile: null };
   let tmp15;
   if (surfaces != null) {
-    tmp15 = surfaces[tmp8(undefined, 9363).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
+    tmp15 = surfaces[tmp8(undefined, 9367).ApplicationWidgetConfigSurface.WIDGET_BOTTOM];
   }
   obj2.widgetBottom = null != tmp15;
   let tmp16;
   if (surfaces != null) {
-    tmp16 = surfaces[tmp8(undefined, 9363).ApplicationWidgetConfigSurface.MINI_PROFILE];
+    tmp16 = surfaces[tmp8(undefined, 9367).ApplicationWidgetConfigSurface.MINI_PROFILE];
   }
   obj2.miniProfile = null != tmp16;
   const result = vibegrationsPreviewModes.profileSurfaceAvailability(obj2);
   if (null == tmp7) {
-    const data = tmp8(7494).useApplication(previewApplicationId).data;
+    const data = tmp8(7496).useApplication(previewApplicationId).data;
     let tmp21 = null != previewApplicationId;
     if (tmp21) {
       let id;
@@ -73,20 +73,20 @@ export const useVibegrationsPreviewMode = function useVibegrationsPreviewMode(ar
       }
       tmp21 = null != id;
     }
-    const tmp8Result6 = tmp8(7494);
-    const application = tmp8(7494).useApplication(applicationId);
+    const tmp8Result6 = tmp8(7496);
+    const application = tmp8(7496).useApplication(applicationId);
     if (!declaredActivity) {
-      declaredActivity = tmp8(9673).canLaunchFrame(tmp25);
-      const tmp8Result8 = tmp8(9673);
+      declaredActivity = tmp8(9677).canLaunchFrame(tmp25);
+      const tmp8Result8 = tmp8(9677);
     }
-    const tmp8Result7 = tmp8(7494);
+    const tmp8Result7 = tmp8(7496);
     const obj3 = { installScope, hasFrame: declaredActivity, hasProfileWidget: tmp18, hasBotDm: tmp21, ownerAuthorizationRevoked };
-    const result1 = tmp8(17030).previewModeAvailability(obj3);
+    const result1 = tmp8(17058).previewModeAvailability(obj3);
     const obj4 = { availability: result1, isResolving: null != applicationId && application.isLoading, activeMode: null, setMode: null, widgetApplicationId: null };
     let previewMode = null;
     if (!(null != applicationId && application.isLoading)) {
-      previewMode = tmp8(17030).resolvePreviewMode(tmp2, result1);
-      const tmp8Result10 = tmp8(17030);
+      previewMode = tmp8(17058).resolvePreviewMode(tmp2, result1);
+      const tmp8Result10 = tmp8(17058);
     }
     obj4.activeMode = previewMode;
     obj4.setMode = tmp3;

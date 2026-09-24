@@ -1,13 +1,13 @@
-// Module ID: 6152
-// Function ID: 6153
+// Module ID: 6154
+// Function ID: 6155
 // Name: CandyIllocon
-// Dependencies: [21, 5890, 6153, 2]
+// Dependencies: [21, 5892, 6155, 2]
 // Exports: CandyIllocon
 
-// Module 6152 (CandyIllocon)
+// Module 6154 (CandyIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6153 from "module_6153" /* 6153 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6155 from "module_6155" /* 6155 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const CandyIllocon = function CandyIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6153 };
+  const obj2 = { uri: _modDef6155 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

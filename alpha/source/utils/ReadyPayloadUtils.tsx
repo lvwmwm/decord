@@ -1,15 +1,15 @@
-// Module ID: 14036
-// Function ID: 14037
+// Module ID: 14045
+// Function ID: 14046
 // Name: ReadyPayloadUtils
-// Dependencies: [2046, 2071, 7970, 7974, 2092, 7975, 2088, 12, 38, 2]
+// Dependencies: [2048, 2073, 7972, 7976, 2094, 7977, 2090, 12, 38, 2]
 // Exports: hydrateInitialGuild, hydrateReadyPayloadPrioritized, hydrateReadySupplementalPayload, preloadReadyPayloadData
 
-// Module 14036 (ReadyPayloadUtils)
+// Module 14045 (ReadyPayloadUtils)
 import _modDef12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
-import ChannelRecord from "ChannelRecord" /* 2046 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2071 */;
-import isCacheEnabled from "isCacheEnabled" /* 7970 */;
+import ChannelRecord from "ChannelRecord" /* 2048 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
+import isCacheEnabled from "isCacheEnabled" /* 7972 */;
 import size from "module_2" /* 2 */;
 
 function hydrateGuild(guild) {
@@ -342,23 +342,23 @@ export const hydrateReadySupplementalPayload = function hydrateReadySupplemental
 export const preloadReadyPayloadData = function preloadReadyPayloadData() {
   const databaseResult = DatabaseDaosDefault.database();
   if (obj2.isCacheEnabled()) {
-    let committedVersions = tmp(7974).getCommittedVersions();
-    const tmpResult = tmp(7974);
+    let committedVersions = tmp(7976).getCommittedVersions();
+    const tmpResult = tmp(7976);
   } else {
     committedVersions = Promise.resolve({});
   }
   obj2 = isCacheEnabled;
   if (tmp4Result.isCacheEnabled()) {
-    let guildIds = tmp(2092).getGuildIds();
-    const tmpResult3 = tmp(2092);
+    let guildIds = tmp(2094).getGuildIds();
+    const tmpResult3 = tmp(2094);
   } else {
     const _Set = Set;
     const set = new Set();
     guildIds = Promise.resolve(set);
   }
   if (null != databaseResult) {
-    let okAsyncResult = tmp(7975).okAsync(databaseResult);
-    const tmpResult4 = tmp(7975);
+    let okAsyncResult = tmp(7977).okAsync(databaseResult);
+    const tmpResult4 = tmp(7977);
   } else {
     okAsyncResult = Promise.resolve(false);
   }
@@ -378,8 +378,8 @@ export const hydrateReadyPayloadPrioritized = function hydrateReadyPayloadPriori
     tmp4 = false === databaseOk.databaseOk;
   }
   if (tmp4) {
-    const result = tmp2(2088).replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok");
-    const tmp2Result = tmp2(2088);
+    const result = tmp2(2090).replaceDisableAllDatabases("ReadyPayloadUtils: database was not ok");
+    const tmp2Result = tmp2(2090);
   }
   closure_5 = _modDef12.keyBy(users, (id) => id.id);
   if (private_channels != null) {

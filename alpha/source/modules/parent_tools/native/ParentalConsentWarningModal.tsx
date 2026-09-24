@@ -1,34 +1,34 @@
-// Module ID: 17948
-// Function ID: 17949
+// Module ID: 17971
+// Function ID: 17972
 // Name: ParentalConsentWarningModal
-// Dependencies: [19, 17, 7865, 7866, 1074, 2039, 21, 2028, 7867, 4685, 7710, 5033, 4827, 576, 1612, 1115, 2484, 1241, 573, 2030, 4794, 5030, 17949, 1980, 7481, 5269, 5995, 4823, 5271, 2]
+// Dependencies: [19, 17, 7867, 7868, 1074, 2041, 21, 2028, 7869, 4687, 7712, 5035, 4829, 576, 1612, 1115, 2486, 1241, 573, 2030, 4796, 5032, 17972, 1980, 7483, 5271, 5997, 4825, 5273, 2]
 // Exports: default
 
-// Module 17948 (ParentalConsentWarningModal)
+// Module 17971 (ParentalConsentWarningModal)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
 import DismissibleContentUtils from "DismissibleContentUtils" /* 2030 */;
-import RootNavigationRef from "RootNavigationRef" /* 4685 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import RootNavigationRef from "RootNavigationRef" /* 4687 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import noop from "module_19" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7865 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7867 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const FamilyCenterConstants = fn(7866);
+const FamilyCenterConstants = fn(7868);
 ({ FamilyCenterSubPages: metroRequire, UserLinkStatus: closure_7, UserLinkType: closure_8 } = FamilyCenterConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_9, UserSettingsSections: c10 } = Constants);
-const ContentDismissActionType = fn(2039).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const jsxProd = fn(21);
 ({ jsx: closure_12, jsxs: map1 } = jsxProd);
 const modal = "modal";
 let closure_15 = fn(2028).DismissibleContent.PARENTAL_CONSENT_GRACE_WARNING;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { paddingHorizontal: nativeDefault.space.PX_16 }, illustration: null, title: null, body: null };
 let obj3 = { paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.illustration = { alignItems: "center", paddingTop: nativeDefault.space.PX_12 };
@@ -85,22 +85,22 @@ export default function ParentalConsentWarningModal(daysRemaining) {
       }
       return tmp;
     })) {
-      const tab = tmp2(7867).selectTab(constants.REQUESTS);
-      const tmp2Result = tmp2(7867);
+      const tab = tmp2(7869).selectTab(constants.REQUESTS);
+      const tmp2Result = tmp2(7869);
       const tmp9 = require;
       const rootNavigationRef = RootNavigationRef.getRootNavigationRef();
       if (null != rootNavigationRef) {
         if (rootNavigationRef.isReady()) {
           const obj2 = { screen: constants3.FAMILY_CENTER };
-          tmp9(7710).openUserSettings(obj2);
-          const tmp9Result = tmp9(7710);
+          tmp9(7712).openUserSettings(obj2);
+          const tmp9Result = tmp9(7712);
         }
       }
-      tmp2(5033).enqueue(() => daysRemaining(callback[10]).openUserSettings({ screen: constants3.FAMILY_CENTER }));
-      const tmp2Result3 = tmp2(5033);
+      tmp2(5035).enqueue(() => daysRemaining(callback[10]).openUserSettings({ screen: constants3.FAMILY_CENTER }));
+      const tmp2Result3 = tmp2(5035);
     } else {
-      tmp2(5030).pushLazy(asyncRequireImpl(17949, dependencyMap.paths));
-      const tmp2Result4 = tmp2(5030);
+      tmp2(5032).pushLazy(asyncRequireImpl(17972, dependencyMap.paths));
+      const tmp2Result4 = tmp2(5032);
     }
   }, items2);
   const intl = daysRemaining(callback[15]).intl;
@@ -127,14 +127,14 @@ export default function ParentalConsentWarningModal(daysRemaining) {
   const obj10 = { spacing: require("native").space.PX_8, children: null };
   const obj11 = { size: "lg", variant: "primary", grow: true, text: null, onPress: null };
   const intl3 = tmp4(tmp3[15]).intl;
-  obj11.text = intl3.string(require("module_2484").Kp7sjX);
+  obj11.text = intl3.string(require("module_2486").Kp7sjX);
   obj11.onPress = callback3;
   const items5 = [closure_12(daysRemaining(callback[28]).Button, obj11), ];
   const obj12 = { size: "lg", variant: "secondary", grow: true, text: null, accessibilityHint: null, onPress: null };
   const intl4 = tmp4(tmp3[15]).intl;
-  obj12.text = intl4.string(require("module_2484").hST5o8);
+  obj12.text = intl4.string(require("module_2486").hST5o8);
   const intl5 = tmp4(tmp3[15]).intl;
-  obj12.accessibilityHint = intl5.string(require("module_2484")["4fZtHa"]);
+  obj12.accessibilityHint = intl5.string(require("module_2486")["4fZtHa"]);
   obj12.onPress = callback2;
   items5[1] = closure_12(daysRemaining(callback[28]).Button, obj12);
   obj10.children = items5;

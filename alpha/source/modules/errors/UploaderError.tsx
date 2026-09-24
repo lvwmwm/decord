@@ -1,10 +1,10 @@
-// Module ID: 12332
-// Function ID: 12333
+// Module ID: 12341
+// Function ID: 12342
 // Name: UploaderError
-// Dependencies: [4728, 2]
+// Dependencies: [4730, 2]
 
-// Module 12332 (UploaderError)
-import APIError from "APIError" /* 4728 */;
+// Module 12341 (UploaderError)
+import APIError from "APIError" /* 4730 */;
 
 const prototype = function UploaderError(body, arg1) {
   const tmp2 = new tmp(body, arg1, new.target, tmp, new.target);

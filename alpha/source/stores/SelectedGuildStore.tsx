@@ -1,18 +1,18 @@
-// Module ID: 4648
-// Function ID: 4649
+// Module ID: 4650
+// Function ID: 4651
 // Name: SelectedGuildStore
-// Dependencies: [4649, 502, 4652, 2064, 1074, 1101, 504, 4653, 4666, 573, 2]
+// Dependencies: [4651, 502, 4654, 2066, 1074, 1101, 504, 4655, 4668, 573, 2]
 
-// Module 4648 (SelectedGuildStore)
+// Module 4650 (SelectedGuildStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import router_utils from "router_utils" /* 1101 */;
-import matchPathCompat from "matchPathCompat" /* 4653 */;
-import RouteUtils from "RouteUtils" /* 4666 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4649 */;
+import matchPathCompat from "matchPathCompat" /* 4655 */;
+import RouteUtils from "RouteUtils" /* 4668 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4651 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4652 */;
-import GuildStore from "GuildStore" /* 2064 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4654 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 require = fn;
 function handleConnectionOpen() {

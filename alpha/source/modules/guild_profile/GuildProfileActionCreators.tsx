@@ -1,18 +1,18 @@
-// Module ID: 9916
-// Function ID: 9917
+// Module ID: 9921
+// Function ID: 9922
 // Name: GuildProfileActionCreators
-// Dependencies: [5, 4649, 2105, 9914, 1074, 573, 1271, 5851, 4727, 1241, 2]
+// Dependencies: [5, 4651, 2107, 9919, 1074, 573, 1271, 5853, 4729, 1241, 2]
 // Exports: fetchGuildTopGames, getGuildProfile, saveGuildProfile, setGuildProfileVisibility, trackGuildProfileViewed
 
-// Module 9916 (GuildProfileActionCreators)
+// Module 9921 (GuildProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4727 */;
-import GuildProfileBuilders from "GuildProfileBuilders" /* 5851 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 4729 */;
+import GuildProfileBuilders from "GuildProfileBuilders" /* 5853 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4649 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildProfileStore from "GuildProfileStore" /* 9914 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4651 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildProfileStore from "GuildProfileStore" /* 9919 */;
 
 const require = globalThis.__r;
 
@@ -24,7 +24,7 @@ let closure_10 = async function _fetchGuildTopGames() {
   closure_129_0 = await HTTP.get({ url: closure_2_9.GUILD_TOP_GAMES(closure_0), rejectWithError: require("HTTPUtils").rejectWithMigratedError() });
   return closure_130_0(closure_130_2[7]).buildTopGamesFromServer(closure_129_0.body.top_games);
 };
-const GuildProfileFetchStatus = fn(9914).GuildProfileFetchStatus;
+const GuildProfileFetchStatus = fn(9919).GuildProfileFetchStatus;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, Endpoints: closure_9 } = Constants);
 const size = fn(2);

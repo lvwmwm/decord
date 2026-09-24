@@ -1,14 +1,14 @@
-// Module ID: 12705
-// Function ID: 12706
+// Module ID: 12714
+// Function ID: 12715
 // Name: NewMessagesTagListInput
-// Dependencies: [19, 17, 1372, 21, 4827, 576, 1364, 1370, 11207, 9922, 5425, 1115, 12706, 11550, 4823, 4534, 2]
+// Dependencies: [19, 17, 1372, 21, 4829, 576, 1364, 1370, 11213, 9927, 5427, 1115, 12715, 11556, 4825, 4536, 2]
 
-// Module 12705 (NewMessagesTagListInput)
+// Module 12714 (NewMessagesTagListInput)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4534 */;
-import makeUserListPillDataDefault from "makeUserListPillData" /* 11207 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4536 */;
+import makeUserListPillDataDefault from "makeUserListPillData" /* 11213 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { searchBarContainer: { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND }, header: null, showSearchButton: null };
 let obj4 = { marginLeft: nativeDefault.space.PX_12, marginBottom: null };
 const PlatformUtils = fn(1364);

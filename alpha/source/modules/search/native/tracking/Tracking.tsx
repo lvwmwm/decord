@@ -1,19 +1,19 @@
-// Module ID: 12692
-// Function ID: 12693
+// Module ID: 12701
+// Function ID: 12702
 // Name: search/tracking/Tracking
-// Dependencies: [2042, 12673, 8206, 1074, 12693, 12674, 5007, 1255, 2020, 2]
+// Dependencies: [2044, 12682, 8208, 1074, 12702, 12683, 5009, 1255, 2020, 2]
 
-// Module 12692 (search/tracking/Tracking)
+// Module 12701 (search/tracking/Tracking)
 import v1 from "v1" /* 1255 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5007 */;
-import SearchUtils from "SearchUtils" /* 12674 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12693 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import SearchQueryStore from "SearchQueryStore" /* 12673 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
+import SearchUtils from "SearchUtils" /* 12683 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 12702 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import SearchQueryStore from "SearchQueryStore" /* 12682 */;
 
 require = fn;
-let closure_5 = fn(8206).SEARCH_HISTORY_TO_ANALYTICS_SEARCH_HISTORY;
+let closure_5 = fn(8208).SEARCH_HISTORY_TO_ANALYTICS_SEARCH_HISTORY;
 const Constants = fn(1074);
 ({ SearchTokenTypes: metroRequire, AnalyticEvents: closure_7 } = Constants);
 const size = fn(2);

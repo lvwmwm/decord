@@ -1,10 +1,10 @@
-// Module ID: 4742
-// Function ID: 4743
+// Module ID: 4744
+// Function ID: 4745
 // Name: ExperimentStore
-// Dependencies: [32, 502, 1073, 4743, 1074, 3, 1361, 1240, 1241, 4744, 510, 12, 573, 2]
+// Dependencies: [32, 502, 1073, 4745, 1074, 3, 1361, 1240, 1241, 4746, 510, 12, 573, 2]
 // Exports: registerExperiment
 
-// Module 4742 (ExperimentStore)
+// Module 4744 (ExperimentStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage5 from "Storage" /* 510 */;
@@ -12,7 +12,7 @@ import Dispatcher from "Dispatcher" /* 573 */;
 import MurmurHashV3Default from "MurmurHashV3" /* 1240 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1361 */;
-import GuildFilters from "GuildFilters" /* 4744 */;
+import GuildFilters from "GuildFilters" /* 4746 */;
 import _slicedToArray from "module_32" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1073 */;
@@ -713,7 +713,7 @@ function handleGuildChange(arg0) {
     continue;
   }
 }
-const ExperimentConstants = fn(4743);
+const ExperimentConstants = fn(4745);
 ({ ExperimentBuckets: hasOwnProperty, ExperimentTypes: metroRequire, ExposureTypes: closure_7 } = ExperimentConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, EMPTY_STRING_SNOWFLAKE_ID: closure_9, UserFlags: c10 } = Constants);

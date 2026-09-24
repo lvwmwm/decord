@@ -1,15 +1,15 @@
-// Module ID: 12477
-// Function ID: 12478
+// Module ID: 12486
+// Function ID: 12487
 // Name: useShowTryItOutButtonInAppLauncher
-// Dependencies: [9680, 12478, 9673, 2]
+// Dependencies: [9684, 12487, 9677, 2]
 // Exports: default
 
-// Module 12477 (useShowTryItOutButtonInAppLauncher)
-import getPrimaryAppCommand from "getPrimaryAppCommand" /* 9680 */;
-import useIsAppDMDefault from "useIsAppDM" /* 12478 */;
+// Module 12486 (useShowTryItOutButtonInAppLauncher)
+import getPrimaryAppCommand from "getPrimaryAppCommand" /* 9684 */;
+import useIsAppDMDefault from "useIsAppDM" /* 12487 */;
 import size from "module_2" /* 2 */;
 
-const canLaunchFrame = tmp(9673);
+const canLaunchFrame = tmp(9677);
 const result = size.fileFinishedImporting("modules/app_dms/useShowTryItOutButtonInAppLauncher.tsx");
 
 export default function useShowTryItOutButtonInAppLauncher(arg0) {

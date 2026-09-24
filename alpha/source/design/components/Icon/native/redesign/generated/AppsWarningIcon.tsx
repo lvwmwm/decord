@@ -1,13 +1,13 @@
-// Module ID: 5407
-// Function ID: 5408
+// Module ID: 5409
+// Function ID: 5410
 // Name: AppsWarningIcon
-// Dependencies: [19, 21, 576, 4523, 5352, 2]
+// Dependencies: [19, 21, 576, 4525, 5354, 2]
 // Exports: AppsWarningIcon
 
-// Module 5407 (AppsWarningIcon)
+// Module 5409 (AppsWarningIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod5352 from "module_5352" /* 5352 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod5354 from "module_5354" /* 5354 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const AppsWarningIcon = function AppsWarningIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5352, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5354, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

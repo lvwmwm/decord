@@ -1,7 +1,0 @@
-// Module ID: 14648
-// Function ID: 14649
-// Dependencies: []
-
-// Module 14648
-
-export const collations = ["big5han", "compat", "dict", "direct", "ducet", "emoji", "eor", "gb2312", "phonebk", "phonetic", "pinyin", "reformed", "search", "searchjl", "standard", "stroke", "trad", "unihan", "zhuyin"];

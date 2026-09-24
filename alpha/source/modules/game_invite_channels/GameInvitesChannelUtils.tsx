@@ -1,17 +1,17 @@
-// Module ID: 7600
-// Function ID: 7601
+// Module ID: 7602
+// Function ID: 7603
 // Name: GameInvitesChannelUtils
-// Dependencies: [109, 19, 2042, 1074, 2049, 7601, 7602, 504, 7603, 7632, 38, 7637, 7494, 7639, 7641, 5811, 2]
+// Dependencies: [109, 19, 2044, 1074, 2051, 7603, 7604, 504, 7605, 7634, 38, 7639, 7496, 7641, 7643, 5813, 2]
 // Exports: canInviteToActivity, deriveThreadName, maxedAppliedForumPostTags, useFirstMessage, useGameInviteVoiceChatState, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
 
-// Module 7600 (GameInvitesChannelUtils)
+// Module 7602 (GameInvitesChannelUtils)
 import _modDef38 from "module_38" /* 38 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5811 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7602 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 7632 */;
-import hasFlagDefault from "hasFlag" /* 7641 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 5813 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7604 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 7634 */;
+import hasFlagDefault from "hasFlag" /* 7643 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 const require = globalThis.__r;
 
@@ -20,8 +20,8 @@ let closure_3 = ["data"];
 const useMemo = fn(19).useMemo;
 const Constants = fn(1074);
 ({ ActivityFlags: closure_7, ActivityTypes: closure_8, MAX_CHANNEL_NAME_LENGTH: closure_9 } = Constants);
-const ChannelFlags = fn(2049).ChannelFlags;
-const MAX_FORUM_POST_TAGS = fn(7601).MAX_FORUM_POST_TAGS;
+const ChannelFlags = fn(2051).ChannelFlags;
+const MAX_FORUM_POST_TAGS = fn(7603).MAX_FORUM_POST_TAGS;
 let c12 = "No Mic";
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/game_invite_channels/GameInvitesChannelUtils.tsx");

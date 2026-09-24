@@ -1,11 +1,11 @@
-// Module ID: 4895
-// Function ID: 4896
+// Module ID: 4897
+// Function ID: 4898
 // Name: VideoQualityManager
-// Dependencies: [4852, 4896, 2]
+// Dependencies: [4854, 4898, 2]
 
-// Module 4895 (VideoQualityManager)
-import MediaSinkWantsLadder from "MediaSinkWantsLadder" /* 4896 */;
-import Constants from "Constants" /* 4852 */;
+// Module 4897 (VideoQualityManager)
+import MediaSinkWantsLadder from "MediaSinkWantsLadder" /* 4898 */;
+import Constants from "Constants" /* 4854 */;
 import size from "module_2" /* 2 */;
 
 ({ defaultVideoQualityOptions: c2, MediaEngineContextTypes: c3, VideoQualityMode, VIDEO_QUALITY_FRAMERATE: closure_4, BIT_FLOOR_PER_PIXEL: hasOwnProperty } = Constants);

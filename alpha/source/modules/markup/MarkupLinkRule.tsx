@@ -1,16 +1,16 @@
-// Module ID: 5297
-// Function ID: 5298
+// Module ID: 5299
+// Function ID: 5300
 // Name: MarkupLinkRule
-// Dependencies: [32, 1438, 5298, 5292, 1370, 4810, 1366, 5299, 1929, 12, 2]
+// Dependencies: [32, 1438, 5300, 5294, 1370, 4812, 1366, 5301, 1929, 12, 2]
 
-// Module 5297 (MarkupLinkRule)
+// Module 5299 (MarkupLinkRule)
 import URLUtilsDefault from "URLUtils" /* 1366 */;
 import privDefault from "priv" /* 1438 */;
 import _modDef1929 from "module_1929" /* 1929 */;
-import findCodedLinks from "findCodedLinks" /* 4810 */;
-import MarkupTypes from "MarkupTypes" /* 5292 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5298 */;
-import errorDefault from "error" /* 5299 */;
+import findCodedLinks from "findCodedLinks" /* 4812 */;
+import MarkupTypes from "MarkupTypes" /* 5294 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5300 */;
+import errorDefault from "error" /* 5301 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;
@@ -62,28 +62,28 @@ function getRawText(content) {
     let type = nextResult.type;
     let tmp3 = require;
     if (MarkupTypes.AST_KEY.TEXT !== type) {
-      if (tmp3(5292).AST_KEY.INLINE_CODE !== type) {
-        if (tmp3(5292).AST_KEY.CUSTOM_EMOJI === type) {
+      if (tmp3(5294).AST_KEY.INLINE_CODE !== type) {
+        if (tmp3(5294).AST_KEY.CUSTOM_EMOJI === type) {
           str = `${tmp2.name}`;
-        } else if (tmp3(5292).AST_KEY.EMOJI === type) {
+        } else if (tmp3(5294).AST_KEY.EMOJI === type) {
           str = `${tmp2.name}${tmp2.surrogate}`;
-        } else if (tmp3(5292).AST_KEY.LINE_BREAK === type) {
+        } else if (tmp3(5294).AST_KEY.LINE_BREAK === type) {
           str = `${tmp2.name}${tmp2.surrogate}
   `;
         } else {
-          if (tmp3(5292).AST_KEY.STRONG !== type) {
-            if (tmp3(5292).AST_KEY.ITALICS !== type) {
-              if (tmp3(5292).AST_KEY.UNDERLINE !== type) {
-                if (tmp3(5292).AST_KEY.STRIKETHROUGH !== type) {
-                  if (tmp3(5292).AST_KEY.SPOILER !== type) {
-                    if (tmp3(5292).AST_KEY.TIMESTAMP === type) {
+          if (tmp3(5294).AST_KEY.STRONG !== type) {
+            if (tmp3(5294).AST_KEY.ITALICS !== type) {
+              if (tmp3(5294).AST_KEY.UNDERLINE !== type) {
+                if (tmp3(5294).AST_KEY.STRIKETHROUGH !== type) {
+                  if (tmp3(5294).AST_KEY.SPOILER !== type) {
+                    if (tmp3(5294).AST_KEY.TIMESTAMP === type) {
                       str = `${tmp2.name}${tmp2.surrogate}
   <timestamp>`;
                     } else {
-                      if (tmp3(5292).AST_KEY.BLOCK_QUOTE !== type) {
-                        if (tmp3(5292).AST_KEY.LIST !== type) {
-                          if (tmp3(5292).AST_KEY.HEADING !== type) {
-                            if (tmp3(5292).AST_KEY.SUBTEXT !== type) {
+                      if (tmp3(5294).AST_KEY.BLOCK_QUOTE !== type) {
+                        if (tmp3(5294).AST_KEY.LIST !== type) {
+                          if (tmp3(5294).AST_KEY.HEADING !== type) {
+                            if (tmp3(5294).AST_KEY.SUBTEXT !== type) {
                               let tmp3Result = tmp3(1370);
                               let assertNeverResult = tmp3Result.assertNever(tmp2.type);
                             }
@@ -112,13 +112,13 @@ function isSuspiciousUrl(url) {
   } else {
     value = closure_4.get(url);
     if (null == value) {
-      const sanitizeWhitespaceResult = tmp(5298).sanitizeWhitespace(url);
+      const sanitizeWhitespaceResult = tmp(5300).sanitizeWhitespace(url);
       const obj3 = { whitespaceSanitized: sanitizeWhitespaceResult, fullySanitized: null };
-      const tmpResult = tmp(5298);
-      obj3.fullySanitized = tmp(5298).sanitizeUnicodeConfusables(sanitizeWhitespaceResult);
+      const tmpResult = tmp(5300);
+      obj3.fullySanitized = tmp(5300).sanitizeUnicodeConfusables(sanitizeWhitespaceResult);
       const result = obj2.set(url, obj3);
       value = obj3;
-      const tmpResult2 = tmp(5298);
+      const tmpResult2 = tmp(5300);
     }
     if (value.whitespaceSanitized !== url) {
       return true;
@@ -188,11 +188,11 @@ function punycodeLink(url) {
 }
 let closure_4 = new privDefault({ max: 50 });
 let items = ["http:", "https:", "discord:", "tel:", "sms:", "mailto:"];
-let items1 = [fn(5292).AST_KEY.TEXT, fn(5292).AST_KEY.UNDERLINE, fn(5292).AST_KEY.STRONG, fn(5292).AST_KEY.ITALICS, fn(5292).AST_KEY.STRIKETHROUGH, fn(5292).AST_KEY.INLINE_CODE, fn(5292).AST_KEY.SPOILER, fn(5292).AST_KEY.LINE_BREAK, fn(5292).AST_KEY.TIMESTAMP];
-let items2 = [...items1, fn(5292).AST_KEY.EMOJI, fn(5292).AST_KEY.CUSTOM_EMOJI];
-let items3 = [fn(5292).AST_KEY.LIST, fn(5292).AST_KEY.HEADING, fn(5292).AST_KEY.BLOCK_QUOTE, fn(5292).AST_KEY.SUBTEXT];
-const items4 = [fn(5292).AST_KEY.TEXT];
-const items5 = [fn(5292).AST_KEY.UNDERLINE, fn(5292).AST_KEY.STRONG, fn(5292).AST_KEY.ITALICS, fn(5292).AST_KEY.STRIKETHROUGH, fn(5292).AST_KEY.INLINE_CODE, fn(5292).AST_KEY.SPOILER, fn(5292).AST_KEY.LINE_BREAK, fn(5292).AST_KEY.TIMESTAMP, fn(5292).AST_KEY.EMOJI, fn(5292).AST_KEY.CUSTOM_EMOJI, fn(5292).AST_KEY.LIST, fn(5292).AST_KEY.HEADING, fn(5292).AST_KEY.BLOCK_QUOTE, fn(5292).AST_KEY.SUBTEXT];
+let items1 = [fn(5294).AST_KEY.TEXT, fn(5294).AST_KEY.UNDERLINE, fn(5294).AST_KEY.STRONG, fn(5294).AST_KEY.ITALICS, fn(5294).AST_KEY.STRIKETHROUGH, fn(5294).AST_KEY.INLINE_CODE, fn(5294).AST_KEY.SPOILER, fn(5294).AST_KEY.LINE_BREAK, fn(5294).AST_KEY.TIMESTAMP];
+let items2 = [...items1, fn(5294).AST_KEY.EMOJI, fn(5294).AST_KEY.CUSTOM_EMOJI];
+let items3 = [fn(5294).AST_KEY.LIST, fn(5294).AST_KEY.HEADING, fn(5294).AST_KEY.BLOCK_QUOTE, fn(5294).AST_KEY.SUBTEXT];
+const items4 = [fn(5294).AST_KEY.TEXT];
+const items5 = [fn(5294).AST_KEY.UNDERLINE, fn(5294).AST_KEY.STRONG, fn(5294).AST_KEY.ITALICS, fn(5294).AST_KEY.STRIKETHROUGH, fn(5294).AST_KEY.INLINE_CODE, fn(5294).AST_KEY.SPOILER, fn(5294).AST_KEY.LINE_BREAK, fn(5294).AST_KEY.TIMESTAMP, fn(5294).AST_KEY.EMOJI, fn(5294).AST_KEY.CUSTOM_EMOJI, fn(5294).AST_KEY.LIST, fn(5294).AST_KEY.HEADING, fn(5294).AST_KEY.BLOCK_QUOTE, fn(5294).AST_KEY.SUBTEXT];
 let obj = {};
 let merged = Object.assign(_modDef1929.defaultRules.link);
 obj.match = function match(arr, allowLinks, arg2) {
@@ -288,55 +288,56 @@ obj.parse = function parse(arg0, rules, allowEmojiLinks) {
     const trimmed = str3.trim();
     if (0 !== str2.trim().length) {
       if (0 !== trimmed.length) {
-        const tmp48 = punycodeLink(_modDef1929.unescapeUrl(tmp4));
-        if (null != tmp48) {
-          if (tmp46(4810)(tmp5).length <= 0) {
+        const tmp51 = punycodeLink(_modDef1929.unescapeUrl(tmp4));
+        if (null != tmp51) {
+          if (!obj24.containsCodedLink(tmp5)) {
             const obj12 = {};
             const merged = Object.assign(allowEmojiLinks);
             obj12.allowEscape = false;
             obj12.parseInlineCodeChildContent = true;
-            const tmp23 = allowEmojiLinks.allowEmojiLinks ? items2 : items1;
+            const tmp27 = allowEmojiLinks.allowEmojiLinks ? items2 : items1;
             items = [];
-            HermesBuiltin.arraySpread(items3, HermesBuiltin.arraySpread(tmp23, 0));
+            HermesBuiltin.arraySpread(items3, HermesBuiltin.arraySpread(tmp27, 0));
             items1 = [];
             HermesBuiltin.arraySpread(items5, HermesBuiltin.arraySpread(items4, 0));
-            items2 = [MarkupTypes.AST_KEY.EMOJI];
-            const tmp38 = validateContentTypes(rules(str3, obj12), items, items2);
-            if (null != tmp38) {
+            items2 = [tmp52(5294).AST_KEY.EMOJI];
+            const tmp41 = validateContentTypes(rules(str3, obj12), items, items2);
+            if (null != tmp41) {
               if (null != validateContentTypes(rules(value4.fullySanitized, obj12), items1)) {
-                const str4 = getRawText(tmp38);
+                const str4 = getRawText(tmp41);
                 if (0 === str4.trim().length) {
-                  const obj13 = { type: tmp37(5292).AST_KEY.TEXT, content: tmp2 };
+                  const obj13 = { type: tmp52(5294).AST_KEY.TEXT, content: tmp2 };
                   return obj13;
-                } else if (tmp46(4810)(str4).length > 0) {
-                  const obj14 = { type: tmp37(5292).AST_KEY.TEXT, content: tmp2 };
+                } else if (tmp49(4812)(str4).length > 0) {
+                  const obj14 = { type: tmp52(5294).AST_KEY.TEXT, content: tmp2 };
                   return obj14;
                 } else {
                   if (str4 !== str3) {
-                    if (tmp46(4810)(str3).length > 0) {
-                      const obj15 = { type: tmp37(5292).AST_KEY.TEXT, content: tmp2 };
+                    if (tmp49(4812)(str3).length > 0) {
+                      const obj15 = { type: tmp52(5294).AST_KEY.TEXT, content: tmp2 };
                       return obj15;
                     } else {
                       items3 = [];
                       const tmp54 = rules(str4, obj12);
-                      items3[HermesBuiltin.arraySpread(items, 0)] = tmp37(5292).AST_KEY.EMOJI;
+                      items3[HermesBuiltin.arraySpread(items, 0)] = tmp52(5294).AST_KEY.EMOJI;
                       if (null == validateContentTypes(tmp54, items3)) {
-                        const obj16 = { type: tmp37(5292).AST_KEY.TEXT, content: tmp2 };
+                        const obj16 = { type: tmp52(5294).AST_KEY.TEXT, content: tmp2 };
                         return obj16;
                       }
                       const arraySpreadResult4 = HermesBuiltin.arraySpread(items, 0);
                     }
                   }
-                  const tmp46Result = tmp46(12);
-                  const pickResult = tmp46(12).pick(rules.rules, tmp23);
-                  const obj17 = { content: tmp46(1929).parserFor(pickResult)(value3.whitespaceSanitized, obj12), target: tmp48.target, title: value4.whitespaceSanitized };
+                  const tmp49Result = tmp49(12);
+                  const pickResult = tmp49(12).pick(rules.rules, tmp27);
+                  const obj17 = { content: tmp49(1929).parserFor(pickResult)(value3.whitespaceSanitized, obj12), target: tmp51.target, title: value4.whitespaceSanitized };
                   return obj17;
                 }
               }
             }
-            const obj18 = { type: MarkupTypes.AST_KEY.TEXT, content: tmp2 };
+            const obj18 = { type: tmp52(5294).AST_KEY.TEXT, content: tmp2 };
             return obj18;
           }
+          obj24 = findCodedLinks;
         }
         const obj19 = { type: MarkupTypes.AST_KEY.TEXT, content: tmp2 };
         return obj19;

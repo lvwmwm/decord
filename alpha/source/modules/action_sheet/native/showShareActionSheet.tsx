@@ -1,14 +1,14 @@
-// Module ID: 8707
-// Function ID: 8708
+// Module ID: 8711
+// Function ID: 8712
 // Name: showShareActionSheet
-// Dependencies: [17, 1365, 8708, 8709, 8712, 1231, 2]
+// Dependencies: [17, 1365, 8712, 8713, 8716, 1231, 2]
 // Exports: showShareActionSheet
 
-// Module 8707 (showShareActionSheet)
+// Module 8711 (showShareActionSheet)
 import _mod17 from "module_17" /* 17 */;
 import SentryUtilsDefault from "SentryUtils" /* 1231 */;
-import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 8708 */;
-import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8709 */;
+import NativeShareManagerModuleDefault from "NativeShareManagerModule" /* 8712 */;
+import ShowShareActionSheetUtils from "ShowShareActionSheetUtils" /* 8713 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1365 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export const showShareActionSheet = function showShareActionSheet(source, SECURE
     let mediaShareParams = require("ShowShareActionSheetUtils").getMediaShareParams(source.source);
     const obj2 = require("ShowShareActionSheetUtils");
   } else {
-    mediaShareParams = { mediaFallbackUrl: "Array", mediaStagingOptions: "flex" };
+    mediaShareParams = { mediaFallbackUrl: "channel", mediaStagingOptions: "channelId" };
   }
   ({ mediaFallbackUrl, mediaStagingOptions } = mediaShareParams);
   if (null == source.source) {

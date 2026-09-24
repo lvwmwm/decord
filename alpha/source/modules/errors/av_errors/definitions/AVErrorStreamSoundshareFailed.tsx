@@ -1,14 +1,14 @@
-// Module ID: 18382
-// Function ID: 18383
+// Module ID: 18405
+// Function ID: 18406
 // Name: AVErrorStreamSoundshareFailed
-// Dependencies: [4849, 4875, 1074, 9765, 18374, 4879, 2]
+// Dependencies: [4851, 4877, 1074, 9769, 18397, 4881, 2]
 
-// Module 18382 (AVErrorStreamSoundshareFailed)
-import StreamKeyUtils from "StreamKeyUtils" /* 4879 */;
-import AVError from "AVError" /* 9765 */;
-import AVErrorContext from "AVErrorContext" /* 18374 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4849 */;
-import HookErrorStore from "HookErrorStore" /* 4875 */;
+// Module 18405 (AVErrorStreamSoundshareFailed)
+import StreamKeyUtils from "StreamKeyUtils" /* 4881 */;
+import AVError from "AVError" /* 9769 */;
+import AVErrorContext from "AVErrorContext" /* 18397 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
+import HookErrorStore from "HookErrorStore" /* 4877 */;
 
 require = fn;
 const MediaEngineHookTypes = fn(1074).MediaEngineHookTypes;

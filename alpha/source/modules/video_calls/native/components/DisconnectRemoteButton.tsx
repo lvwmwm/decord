@@ -1,15 +1,15 @@
-// Module ID: 10354
-// Function ID: 10355
+// Module ID: 10359
+// Function ID: 10360
 // Name: DisconnectRemoteButton
-// Dependencies: [19, 4844, 21, 504, 9745, 7323, 10317, 1115, 10130, 9983, 2]
+// Dependencies: [19, 4846, 21, 504, 9749, 7325, 10322, 1115, 10135, 9988, 2]
 // Exports: DisconnectRemoteButton
 
-// Module 10354 (DisconnectRemoteButton)
-import CallBarActionAll from "CallBarAction" /* 9745 */;
-import CallsUtils from "CallsUtils" /* 9983 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10130 */;
+// Module 10359 (DisconnectRemoteButton)
+import CallBarActionAll from "CallBarAction" /* 9749 */;
+import CallsUtils from "CallsUtils" /* 9988 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10135 */;
 import noop from "module_19" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 4844 */;
+import GameConsoleStore from "GameConsoleStore" /* 4846 */;
 
 require = fn;
 const jsx = fn(21).jsx;
@@ -21,7 +21,7 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
   const items = [GameConsoleStore];
   const stateFromStoresObject = channel(504).useStateFromStoresObject(items, () => ({ awaitingRemote: null != GameConsoleStore.getAwaitingRemoteSessionInfo(), remoteSessionId: GameConsoleStore.getRemoteSessionId() }));
   const remoteSessionId = stateFromStoresObject.remoteSessionId;
-  let obj2 = { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7323 : 10317), accessibilityLabel: null, isSmallSize: null, onPress: null };
+  let obj2 = { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7325 : 10322), accessibilityLabel: null, isSmallSize: null, onPress: null };
   const intl = tmp(1115).intl;
   obj2.accessibilityLabel = intl.string(channel(1115).t["6vrfgt"]);
   obj2.isSmallSize = channel.isSmallSize;
@@ -33,5 +33,5 @@ export const DisconnectRemoteButton = function DisconnectRemoteButton(channel) {
       GameConsoleActionCreators.disconnectRemote();
     }
   };
-  return jsx(CallBarActionAll.PrimaryActionButton, { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7323 : 10317), accessibilityLabel: null, isSmallSize: null, onPress: null });
+  return jsx(CallBarActionAll.PrimaryActionButton, { source: remoteSessionId(stateFromStoresObject.awaitingRemote ? 7325 : 10322), accessibilityLabel: null, isSmallSize: null, onPress: null });
 };

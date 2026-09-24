@@ -1,14 +1,14 @@
-// Module ID: 17097
-// Function ID: 17098
+// Module ID: 17124
+// Function ID: 17125
 // Name: useVibegrationsPlanDesign
-// Dependencies: [32, 19, 13448, 2]
+// Dependencies: [32, 19, 13457, 2]
 // Exports: useVibegrationsPlanDesign
 
-// Module 17097 (useVibegrationsPlanDesign)
+// Module 17124 (useVibegrationsPlanDesign)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-const VibegrationsConnectionStore = fn(13448);
+const VibegrationsConnectionStore = fn(13457);
 ({ getAttachmentUrl: c2, isAttachmentAvailable: c3 } = VibegrationsConnectionStore);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/vibegrations/lib/useVibegrationsPlanDesign.tsx");

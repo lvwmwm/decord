@@ -1,11 +1,11 @@
-// Module ID: 2076
-// Function ID: 2077
+// Module ID: 2078
+// Function ID: 2079
 // Name: Table
-// Dependencies: [5, 2077, 2078, 2]
+// Dependencies: [5, 2079, 2080, 2]
 
-// Module 2076 (Table)
-import Key from "Key" /* 2077 */;
-import TableId from "TableId" /* 2078 */;
+// Module 2078 (Table)
+import Key from "Key" /* 2079 */;
+import TableId from "TableId" /* 2080 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -140,7 +140,7 @@ prototype["put"] = function put(key) {
 prototype["putAll"] = function putAll(arr) {
   let Replace = arg1;
   if (arg1 === undefined) {
-    Replace = prefix(2078).ConflictOptions.Replace;
+    Replace = prefix(2080).ConflictOptions.Replace;
   }
   const transaction = this.transaction;
   const obj = { type: "kv.put_many", table: this.tableId, cells: null, overwrite: null };
@@ -158,7 +158,7 @@ prototype["putAll"] = function putAll(arr) {
     });
   }
   obj.cells = mapped;
-  obj.overwrite = Replace === prefix(2078).ConflictOptions.Replace;
+  obj.overwrite = Replace === prefix(2080).ConflictOptions.Replace;
   transaction.add(obj);
 };
 prototype["delete"] = function delete(items) {
@@ -322,7 +322,7 @@ prototype2["put"] = function put(key) {
 prototype2["putAll"] = function putAll(arr) {
   let Replace = arg1;
   if (arg1 === undefined) {
-    Replace = prefix(2078).ConflictOptions.Replace;
+    Replace = prefix(2080).ConflictOptions.Replace;
   }
   const database = this.database;
   let obj = { type: "kv.put_many", table: this.tableId, cells: null, overwrite: null };
@@ -340,7 +340,7 @@ prototype2["putAll"] = function putAll(arr) {
     });
   }
   obj.cells = mapped;
-  obj.overwrite = Replace === prefix(2078).ConflictOptions.Replace;
+  obj.overwrite = Replace === prefix(2080).ConflictOptions.Replace;
   return database.execute(obj, this.defaultDebugTag);
 };
 prototype2["replaceAll"] = function replaceAll(arg0) {

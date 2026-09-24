@@ -1,18 +1,18 @@
-// Module ID: 18416
-// Function ID: 18417
+// Module ID: 18439
+// Function ID: 18440
 // Name: UpdateAppScreen
-// Dependencies: [17, 21, 4827, 576, 4823, 1115, 2778, 5271, 2]
+// Dependencies: [17, 21, 4829, 576, 4825, 1115, 2780, 5273, 2]
 // Exports: default
 
-// Module 18416 (UpdateAppScreen)
+// Module 18439 (UpdateAppScreen)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef2778 from "module_2778" /* 2778 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import components_Button_Button from "components/Button/Button" /* 5271 */;
+import _modDef2780 from "module_2780" /* 2780 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import components_Button_Button from "components/Button/Button" /* 5273 */;
 import get_ActivityIndicator from "module_17" /* 17 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4827 */;
+import createStyles from "createStyles" /* 4829 */;
 import size from "module_2" /* 2 */;
 
 ({ NativeModules: c3, View: closure_4 } = get_ActivityIndicator);
@@ -28,11 +28,11 @@ export default function UpdateAppScreen() {
   const obj = { style: tmp.container, children: null };
   const obj2 = { variant: "heading-lg/semibold", children: null };
   const intl = util.intl;
-  obj2.children = intl.string(_modDef2778.yxqMCD);
+  obj2.children = intl.string(_modDef2780.yxqMCD);
   const items = [hasOwnProperty(Text_Text.Text, obj2), , ];
   const obj3 = { variant: "text-md/normal", color: "text-muted", children: null };
   const intl2 = util.intl;
-  obj3.children = intl2.string(_modDef2778.VBZJJg);
+  obj3.children = intl2.string(_modDef2780.VBZJJg);
   items[1] = hasOwnProperty(Text_Text.Text, obj3);
   const obj4 = { style: tmp.buttonContainer, children: null };
   const obj5 = {
@@ -45,7 +45,7 @@ export default function UpdateAppScreen() {
     size: "md"
   };
   const intl3 = util.intl;
-  obj5.text = intl3.string(_modDef2778.o4D6fm);
+  obj5.text = intl3.string(_modDef2780.o4D6fm);
   obj4.children = hasOwnProperty(components_Button_Button.Button, obj5);
   items[2] = hasOwnProperty(React4, obj4);
   obj.children = items;

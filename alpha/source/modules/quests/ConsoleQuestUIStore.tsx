@@ -1,9 +1,9 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8027
+// Function ID: 8028
 // Name: ConsoleQuestUIStore
 // Dependencies: [560, 2]
 
-// Module 8025 (ConsoleQuestUIStore)
+// Module 8027 (ConsoleQuestUIStore)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

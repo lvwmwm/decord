@@ -1,9 +1,9 @@
-// Module ID: 16773
-// Function ID: 16774
+// Module ID: 16797
+// Function ID: 16798
 // Name: YouConstants
 // Dependencies: [1177, 576, 2]
 
-// Module 16773 (YouConstants)
+// Module 16797 (YouConstants)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import size from "module_2" /* 2 */;

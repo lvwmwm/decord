@@ -1,9 +1,9 @@
-// Module ID: 8010
-// Function ID: 8011
+// Module ID: 8012
+// Function ID: 8013
 // Name: MessageEmbedConstants
 // Dependencies: [2]
 
-// Module 8010 (MessageEmbedConstants)
+// Module 8012 (MessageEmbedConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/applications/message_embed/MessageEmbedConstants.tsx");

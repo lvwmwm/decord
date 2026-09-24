@@ -1,12 +1,12 @@
-// Module ID: 14291
-// Function ID: 14292
+// Module ID: 14300
+// Function ID: 14301
 // Name: GuildBadgePsychic
-// Dependencies: [19, 21, 14275, 8803, 2]
+// Dependencies: [19, 21, 14284, 8807, 2]
 // Exports: GuildBadgePsychic
 
-// Module 14291 (GuildBadgePsychic)
-import inlineStyles from "inlineStyles" /* 8803 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14275 */;
+// Module 14300 (GuildBadgePsychic)
+import inlineStyles from "inlineStyles" /* 8807 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14284 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,16 +1,16 @@
-// Module ID: 12142
-// Function ID: 12143
+// Module ID: 12149
+// Function ID: 12150
 // Name: ExperimentEmbed
-// Dependencies: [19, 17, 502, 4743, 8063, 21, 8289, 8220, 11815, 11816, 4531, 12143, 12144, 12145, 8290, 12146, 8222, 4794, 4747, 7481, 7480, 12147, 11814, 2]
+// Dependencies: [19, 17, 502, 4745, 8065, 21, 8293, 8222, 11821, 11822, 4533, 12150, 12151, 12152, 8294, 12153, 8224, 4796, 4749, 7483, 7482, 12154, 11820, 2]
 // Exports: createExperimentEmbed, default
 
-// Module 12142 (ExperimentEmbed)
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8220 */;
-import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8222 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8289 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11814 */;
-import useLegacyExperiments from "useLegacyExperiments" /* 11815 */;
-import useApexExperiments from "useApexExperiments" /* 11816 */;
+// Module 12149 (ExperimentEmbed)
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8222 */;
+import ExperimentDevToolsUtils from "ExperimentDevToolsUtils" /* 8224 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8293 */;
+import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11820 */;
+import useLegacyExperiments from "useLegacyExperiments" /* 11821 */;
+import useApexExperiments from "useApexExperiments" /* 11822 */;
 import noop from "module_19" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
@@ -68,8 +68,8 @@ function ExperimentOverrideActionSheet(override) {
   return jsx(id(memo[19]).BottomSheet, { header: jsx(id(memo[20]).BottomSheetTitleHeader, { title: experiment.title, subtitle: id }), children: jsx(id(memo[21]).ExperimentDetails, { experiment, override: override.override, id, options: memo1, onCopyLink: callback }) });
 }
 const Image = fn(17).Image;
-const ExperimentEmbedType = fn(4743).ExperimentEmbedType;
-const InviteTypes = fn(8063).InviteTypes;
+const ExperimentEmbedType = fn(4745).ExperimentEmbedType;
+const InviteTypes = fn(8065).InviteTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/ExperimentEmbed.tsx");
@@ -140,7 +140,7 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
       if (tmp12 == null) {
         tmp12 = null;
       }
-      const experimentBuckets = tmp4(8220).getExperimentBuckets(tmp10);
+      const experimentBuckets = tmp4(8222).getExperimentBuckets(tmp10);
       const iter = experimentBuckets.find((value) => value.value === experimentTreatmentFromEmbedURL);
       if (null != iter) {
         let EXPERIMENT = ExperimentEmbedType.EXPERIMENT_TREATMENT;
@@ -150,10 +150,10 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
         EXPERIMENT = ExperimentEmbedType.EXPERIMENT;
       }
       const id = AuthenticationStore.getId();
-      const tmp4Result = tmp4(8220);
-      const experimentServerAssignment = tmp4(12145).getExperimentServerAssignment(tmp10, id);
-      const tmp4Result6 = tmp4(12145);
-      const experimentServerAssignmentLabel = tmp4(8220).getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
+      const tmp4Result = tmp4(8222);
+      const experimentServerAssignment = tmp4(12152).getExperimentServerAssignment(tmp10, id);
+      const tmp4Result6 = tmp4(12152);
+      const experimentServerAssignmentLabel = tmp4(8222).getExperimentServerAssignmentLabel(tmp10, experimentServerAssignment);
       if (EXPERIMENT === tmp13.EXPERIMENT_TREATMENT) {
         if (null != iter) {
           let label = iter.label;
@@ -168,7 +168,7 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
         obj5.titleColor = colors.titleColor;
         obj5.subtitle = label;
         obj5.subtitleColor = colors.subtitleColor;
-        obj5.thumbnailUrl = tmp4(8290).getAssetUriForEmbed(tmp(12146));
+        obj5.thumbnailUrl = tmp4(8294).getAssetUriForEmbed(tmp(12153));
         obj5.thumbnailBackgroundColor = colors.backgroundColor;
         obj5.acceptLabelColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedColor : colors.acceptLabelGreenColor;
         obj5.acceptLabelBackgroundColor = null != tmp12 && null != iter && tmp12.variantId === iter.value ? colors.clearLabelRedBackgroundColor : colors.acceptLabelGreenBackgroundColor;
@@ -197,14 +197,14 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
         }
         obj6.subtitle = combined1;
         obj6.subtitleColor = colors.subtitleColor;
-        obj6.thumbnailUrl = tmp4(8290).getAssetUriForEmbed(tmp(12146));
+        obj6.thumbnailUrl = tmp4(8294).getAssetUriForEmbed(tmp(12153));
         ({ backgroundColor: obj13.thumbnailBackgroundColor, acceptLabelGreenColor: obj13.acceptLabelColor, acceptLabelGreenBackgroundColor: obj13.acceptLabelBackgroundColor } = colors);
         obj6.acceptLabelText = "View Experiment Details";
         obj6.embedCanBeTapped = true;
         obj6.type = InviteTypes.GUILD;
         return obj6;
       }
-      const tmp4Result7 = tmp4(8220);
+      const tmp4Result7 = tmp4(8222);
     }
   }
   const obj7 = {};
@@ -221,9 +221,9 @@ export const createExperimentEmbed = function createExperimentEmbed(url, arg1) {
   obj7.bodyText = "This client is missing this experiment. You may need to open the surface where the experiment is used first.";
   obj7.bodyTextColor = colors.bodyTextColor;
   if (tmp4Result10.isThemeDark(arg1)) {
-    let tmpResult = tmp(12143);
+    let tmpResult = tmp(12150);
   } else {
-    tmpResult = tmp(12144);
+    tmpResult = tmp(12151);
   }
   obj7.thumbnailUrl = Image.resolveAssetSource(tmpResult).uri;
   obj7.thumbnailBackgroundColor = colors.thumbnailBackgroundColor;

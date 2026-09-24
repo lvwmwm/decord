@@ -1,21 +1,21 @@
-// Module ID: 14211
-// Function ID: 14212
+// Module ID: 14220
+// Function ID: 14221
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1372, 1074, 13017, 21, 4827, 5827, 576, 13019, 5288, 1241, 1364, 1487, 5030, 4671, 1115, 8707, 7705, 14212, 5927, 4823, 14213, 14215, 1612, 7331, 2]
+// Dependencies: [32, 19, 17, 1372, 1074, 13026, 21, 4829, 5829, 576, 13028, 5290, 1241, 1364, 1487, 5032, 4673, 1115, 8711, 7707, 14221, 5929, 4825, 14222, 14224, 1612, 7333, 2]
 // Exports: default
 
-// Module 14211 (AddFriendModal)
+// Module 14220 (AddFriendModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
-import NavigatorHeader from "NavigatorHeader" /* 5927 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13019 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
+import NavigatorHeader from "NavigatorHeader" /* 5929 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13028 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
-import TextStyles from "TextStyles" /* 5827 */;
+import TextStyles from "TextStyles" /* 5829 */;
 
 const require = globalThis.__r;
 
@@ -113,10 +113,10 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_8, Fonts } = Constants);
-const ContactPermissions = fn(13017).ContactPermissions;
+const ContactPermissions = fn(13026).ContactPermissions;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { headerText: null, subheaderText: null, input: null, otherOptionsContainer: null, rowContainer: null };
 const obj3 = {};
 let merged = Object.assign(TextStyles(Fonts.DISPLAY_EXTRABOLD, nativeDefault.colors.MOBILE_TEXT_HEADING_PRIMARY, 24));

@@ -1,13 +1,13 @@
-// Module ID: 12009
-// Function ID: 12010
+// Module ID: 12016
+// Function ID: 12017
 // Name: useExplicitMediaAttachmentsForMessage
-// Dependencies: [5047, 563, 10517, 7620, 7625, 2]
+// Dependencies: [5049, 563, 10522, 7622, 7627, 2]
 // Exports: useRedactableMediaAttachmentsForMessage, useRedactableMediaEmbedsForMessage
 
-// Module 12009 (useExplicitMediaAttachmentsForMessage)
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7620 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7625 */;
-import MessageStore from "MessageStore" /* 5047 */;
+// Module 12016 (useExplicitMediaAttachmentsForMessage)
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 7622 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 7627 */;
+import MessageStore from "MessageStore" /* 5049 */;
 
 const require = globalThis.__r;
 

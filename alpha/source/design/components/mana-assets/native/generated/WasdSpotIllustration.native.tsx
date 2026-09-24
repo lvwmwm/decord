@@ -1,13 +1,13 @@
-// Module ID: 6890
-// Function ID: 6891
+// Module ID: 6892
+// Function ID: 6893
 // Name: WasdSpotIllustration
-// Dependencies: [21, 5890, 6891, 2]
+// Dependencies: [21, 5892, 6893, 2]
 // Exports: WasdSpotIllustration
 
-// Module 6890 (WasdSpotIllustration)
+// Module 6892 (WasdSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6891 from "module_6891" /* 6891 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6893 from "module_6893" /* 6893 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const WasdSpotIllustration = function WasdSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6891 };
+  const obj2 = { uri: _modDef6893 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

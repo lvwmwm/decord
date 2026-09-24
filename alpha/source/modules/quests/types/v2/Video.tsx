@@ -1,10 +1,10 @@
-// Module ID: 8035
-// Function ID: 8036
+// Module ID: 8037
+// Function ID: 8038
 // Name: v2/Video
 // Dependencies: [2]
 // Exports: desktopVideoAssetsFromServer, desktopVideoMessagesFromServer, mobileVideoAssetsFromServer, mobileVideoMessagesFromServer, videoAssetFromServer
 
-// Module 8035 (v2/Video)
+// Module 8037 (v2/Video)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/quests/types/v2/Video.tsx");

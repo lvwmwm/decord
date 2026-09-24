@@ -1,13 +1,13 @@
-// Module ID: 7295
-// Function ID: 7296
+// Module ID: 7297
+// Function ID: 7298
 // Name: SplitTextInput
-// Dependencies: [109, 19, 21, 4542, 6935, 7296, 6936, 2]
+// Dependencies: [109, 19, 21, 4544, 6937, 7298, 6938, 2]
 
-// Module 7295 (SplitTextInput)
-import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4542 */;
-import Input from "Input" /* 6935 */;
-import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6936 */;
-import SplitTextField from "SplitTextField" /* 7296 */;
+// Module 7297 (SplitTextInput)
+import useFieldLabelA11yNative from "useFieldLabelA11yNative" /* 4544 */;
+import Input from "Input" /* 6937 */;
+import getRequiredFieldA11yName from "getRequiredFieldA11yName" /* 6938 */;
+import SplitTextField from "SplitTextField" /* 7298 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import noop from "module_19" /* 19 */;
 

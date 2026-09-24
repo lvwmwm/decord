@@ -1,17 +1,17 @@
-// Module ID: 17382
-// Function ID: 17383
+// Module ID: 17405
+// Function ID: 17406
 // Name: guild_automod/PermissionUtils
-// Dependencies: [2064, 4462, 12198, 1074, 504, 2]
+// Dependencies: [2066, 4464, 12205, 1074, 504, 2]
 // Exports: canCurrentUserManageAutomod, canCurrentUserManageMessageFilters, useCanCurrentUserManageAutomod, useIsUndeletableMentionSpamRule, useIsUserProfileRuleEnabled
 
-// Module 17382 (guild_automod/PermissionUtils)
-import GuildStore from "GuildStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4462 */;
+// Module 17405 (guild_automod/PermissionUtils)
+import GuildStore from "GuildStore" /* 2066 */;
+import PermissionStore from "PermissionStore" /* 4464 */;
 
 const require = globalThis.__r;
 
 const require = fn;
-const AutomodTriggerType = fn(12198).AutomodTriggerType;
+const AutomodTriggerType = fn(12205).AutomodTriggerType;
 const Constants = fn(1074);
 ({ GuildFeatures: hasOwnProperty, Permissions: metroRequire } = Constants);
 const size = fn(2);

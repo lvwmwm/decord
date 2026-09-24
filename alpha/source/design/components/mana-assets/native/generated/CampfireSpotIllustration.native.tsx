@@ -1,13 +1,13 @@
-// Module ID: 6150
-// Function ID: 6151
+// Module ID: 6152
+// Function ID: 6153
 // Name: CampfireSpotIllustration
-// Dependencies: [21, 5890, 6151, 2]
+// Dependencies: [21, 5892, 6153, 2]
 // Exports: CampfireSpotIllustration
 
-// Module 6150 (CampfireSpotIllustration)
+// Module 6152 (CampfireSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6151 from "module_6151" /* 6151 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6153 from "module_6153" /* 6153 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const CampfireSpotIllustration = function CampfireSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6151 };
+  const obj2 = { uri: _modDef6153 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

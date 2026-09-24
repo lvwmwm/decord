@@ -1,10 +1,10 @@
-// Module ID: 4450
-// Function ID: 4451
+// Module ID: 4452
+// Function ID: 4453
 // Name: GuildLeaderboardTypes
 // Dependencies: [2]
 // Exports: parseServerMemberGamingLeaderboardData
 
-// Module 4450 (GuildLeaderboardTypes)
+// Module 4452 (GuildLeaderboardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_space/gaming_leaderboard/GuildLeaderboardTypes.tsx");
@@ -32,7 +32,12 @@ export const parseServerMemberGamingLeaderboardData = function parseServerMember
       }
       return tmp4;
     }
-    const obj = { winningStat: winning_stat, winningStreak: winning_streak, winningWeek: winning_week };
+    const obj = { winningStat: winning_stat, winningStreak: winning_streak, winningWeek: winning_week, winningValue: null };
+    let winning_value = member_gaming_leaderboard_data.winning_value;
+    if (winning_value == null) {
+      winning_value = null;
+    }
+    obj.winningValue = winning_value;
     tmp4 = obj;
   }
 };

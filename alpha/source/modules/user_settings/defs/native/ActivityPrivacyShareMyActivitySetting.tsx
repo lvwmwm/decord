@@ -1,24 +1,24 @@
-// Module ID: 16296
-// Function ID: 16297
+// Module ID: 16318
+// Function ID: 16319
 // Name: ActivityPrivacyShareMyActivitySetting
-// Dependencies: [8319, 11805, 1115, 2650, 2020, 2]
+// Dependencies: [8323, 11811, 1115, 2652, 2020, 2]
 
-// Module 16296 (ActivityPrivacyShareMyActivitySetting)
+// Module 16318 (ActivityPrivacyShareMyActivitySetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import _modDef2650 from "module_2650" /* 2650 */;
-import SettingsConstants from "SettingsConstants" /* 8319 */;
-import SettingBuilders from "SettingBuilders" /* 11805 */;
+import _modDef2652 from "module_2652" /* 2652 */;
+import SettingsConstants from "SettingsConstants" /* 8323 */;
+import SettingBuilders from "SettingBuilders" /* 11811 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
-    return intl.string(_modDef2650.WhdCGP);
+    return intl.string(_modDef2652.WhdCGP);
   },
   useDescription() {
     const intl = util.intl;
-    return intl.string(_modDef2650.UQ9RHJ);
+    return intl.string(_modDef2652.UQ9RHJ);
   },
   parent: SettingsConstants.MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: UserSettings.ShowCurrentGame.useSetting,

@@ -1,15 +1,15 @@
-// Module ID: 17226
-// Function ID: 17227
+// Module ID: 17252
+// Function ID: 17253
 // Name: MemberRowPlaceholder
-// Dependencies: [19, 21, 4827, 17220, 2]
+// Dependencies: [19, 21, 4829, 17246, 2]
 // Exports: default
 
-// Module 17226 (MemberRowPlaceholder)
-import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 17220 */;
+// Module 17252 (MemberRowPlaceholder)
+import FormRowPlaceholderDefault from "FormRowPlaceholder" /* 17246 */;
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_3 = createStyles.createStyles({ container: { paddingHorizontal: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/components/tabs/pages/placeholders/MemberRowPlaceholder.tsx");

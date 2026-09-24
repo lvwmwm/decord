@@ -1,28 +1,28 @@
-// Module ID: 10628
-// Function ID: 10629
+// Module ID: 10633
+// Function ID: 10634
 // Name: EmojiPickerUtils
-// Dependencies: [19, 5762, 2064, 5741, 1372, 5766, 1074, 1375, 1218, 1374, 1255, 10629, 5007, 10621, 10624, 10625, 504, 1969, 10630, 1115, 4480, 4476, 1241, 12, 1091, 2025, 2]
+// Dependencies: [19, 5764, 2066, 5743, 1372, 5768, 1074, 1375, 1218, 1374, 1255, 10634, 5009, 10626, 10629, 10630, 504, 1969, 10635, 1115, 4482, 4478, 1241, 12, 1091, 2025, 2]
 // Exports: getAriaIdForEmojiCategory, getEmojiSubCategory, getSearchPlaceholder, getStringForEmojiCategory, getUnicodeEmojiCategories, initializeSearch, trackEmojiFavorited, trackEmojiFocus, trackEmojiSearchEmpty, trackEmojiSearchResultsViewed, trackEmojiSearchSelect, trackEmojiSearchStart, trackEmojiSelect, trackPremiumSettingsPaneOpened, useEmojiCategories, useEmojiInPriorityOrder, useEmojiSearchResults, useFavoriteEmojis, useFrequentlyUsedEmojis, useFrequentlyUsedReactionEmojis, useIsFavoriteEmoji
 
-// Module 10628 (EmojiPickerUtils)
+// Module 10633 (EmojiPickerUtils)
 import DurationsDefault from "Durations" /* 1091 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import v1 from "v1" /* 1255 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4476 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4480 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5007 */;
-import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 10629 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4478 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4482 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
+import ExpressionPickerGridStores from "ExpressionPickerGridStores" /* 10634 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5762 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import SortedGuildStore from "SortedGuildStore" /* 5741 */;
+import EmojiStore from "EmojiStore" /* 5764 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import SortedGuildStore from "SortedGuildStore" /* 5743 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const EmojiPickerConstants = fn(5766);
+const EmojiPickerConstants = fn(5768);
 ({ EmojiCategories: closure_8, EmojiCategoryTypes: closure_9, EmojiSubCategory: c10 } = EmojiPickerConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_11, AnalyticsPages: closure_12, AnalyticsSections: map1, AutoCompleteResultTypes: closure_14, SearchTypes: closure_15 } = Constants);

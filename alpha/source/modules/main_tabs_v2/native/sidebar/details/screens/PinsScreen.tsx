@@ -1,19 +1,19 @@
-// Module ID: 17412
-// Function ID: 17413
+// Module ID: 17435
+// Function ID: 17436
 // Name: PinsScreen
-// Dependencies: [19, 17, 2042, 8207, 21, 4827, 576, 1487, 504, 12633, 17272, 2]
+// Dependencies: [19, 17, 2044, 8209, 21, 4829, 576, 1487, 504, 12642, 17295, 2]
 
-// Module 17412 (PinsScreen)
+// Module 17435 (PinsScreen)
 import nativeDefault from "native" /* 576 */;
-import messages_PinsScreenDefault from "messages/PinsScreen" /* 17272 */;
+import messages_PinsScreenDefault from "messages/PinsScreen" /* 17295 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 const require = fn;
 const View = fn(17).View;
-const SearchTabs = fn(8207).SearchTabs;
+const SearchTabs = fn(8209).SearchTabs;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER } };
 let closure_7 = createStyles.createStyles(obj);
 const obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
@@ -33,7 +33,7 @@ export default noop.memo(() => {
     return guild_id;
   });
   const obj2 = channelId(504);
-  const channelDetailsSearchContext = channelId(12633).useChannelDetailsSearchContext(channelId, stateFromStores);
+  const channelDetailsSearchContext = channelId(12642).useChannelDetailsSearchContext(channelId, stateFromStores);
   const obj4 = { style: closure_7().container, children: jsx(messages_PinsScreenDefault, { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS }) };
   return <View style={closure_7().container}>{jsx(messages_PinsScreenDefault, { searchContext: channelDetailsSearchContext, isFocused: true, tab: SearchTabs.PINS })}</View>;
 });

@@ -1,13 +1,13 @@
-// Module ID: 6912
-// Function ID: 6913
+// Module ID: 6914
+// Function ID: 6915
 // Name: WumpusGearSpotIllustration
-// Dependencies: [21, 5890, 6913, 2]
+// Dependencies: [21, 5892, 6915, 2]
 // Exports: WumpusGearSpotIllustration
 
-// Module 6912 (WumpusGearSpotIllustration)
+// Module 6914 (WumpusGearSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6913 from "module_6913" /* 6913 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6915 from "module_6915" /* 6915 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const WumpusGearSpotIllustration = function WumpusGearSpotIllustration(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6913 };
+  const obj2 = { uri: _modDef6915 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

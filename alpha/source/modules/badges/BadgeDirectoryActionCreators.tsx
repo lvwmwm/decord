@@ -1,14 +1,14 @@
-// Module ID: 8541
-// Function ID: 8542
+// Module ID: 8545
+// Function ID: 8546
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1372, 1074, 573, 1271, 5169, 5174, 1231, 2]
-// Exports: fetchBadge, fetchBadgeDirectory, markBadgeDirectoryBadgeIndicatorSeen
+// Dependencies: [5, 1372, 1074, 573, 1271, 5171, 5176, 1231, 559, 1091, 2]
+// Exports: fetchBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8541 (BadgeDirectoryActionCreators)
-import DispatcherDefault from "Dispatcher" /* 573 */;
+// Module 8545 (BadgeDirectoryActionCreators)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
+import Dispatcher from "Dispatcher" /* 573 */;
 
 require = fn;
 function urlUserId(arg0) {
@@ -23,7 +23,7 @@ function urlUserId(arg0) {
   }
   return tmp3;
 }
-let closure_8 = async function _fetchBadgeDirectory(arg0, value) {
+let closure_10 = async function _fetchBadgeDirectory(arg0, value) {
   if (c8 === 2) {
     c8 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -113,7 +113,7 @@ let closure_8 = async function _fetchBadgeDirectory(arg0, value) {
               closure_132_1(closure_132_2[3]).dispatch(obj9);
               c6 = 1;
               const HTTP = closure_132_0(closure_132_2[4]).HTTP;
-              const obj12 = { url: closure_132_5.USER_BADGES(closure_132_7(closure_131_2)), rejectWithError: true };
+              const obj12 = { url: closure_132_5.USER_BADGES(closure_132_9(closure_131_2)), rejectWithError: true };
               c7 = 3;
               c8 = 1;
               const obj13 = { value: HTTP.get(obj12), done: false };
@@ -175,7 +175,7 @@ let closure_8 = async function _fetchBadgeDirectory(arg0, value) {
     }
   }
 };
-let closure_9 = async function _fetchBadge(arg0, value) {
+let closure_11 = async function _fetchBadge(arg0, value) {
   if (c8 === 2) {
     c8 = 3;
     throw new TypeError("Generator functions may not be called on executing generators");
@@ -257,14 +257,63 @@ let closure_9 = async function _fetchBadge(arg0, value) {
     }
   }
 };
+let closure_12 = async function _requestBadgeSummary(arg0, arg1) {
+  closure_5 = tmp3;
+  closure_132_0 = closure_0;
+  closure_132_1 = closure_2;
+  const HTTP = HTTPUtils.HTTP;
+  const request = { url: hasOwnProperty.USER_BADGE(urlUserId(closure_2), closure_1), query: { with_progress: false }, rejectWithError: true };
+  await HTTP.get(request);
+  if (1 === tmp7) {
+    c7 = 0;
+    closure_132_4 = closure_6;
+    value = closure_133_8.get(closure_132_0);
+    let backoff;
+    if (value != null) {
+      backoff = value.backoff;
+    }
+    closure_3 = backoff;
+    if (backoff == null) {
+      const MINUTE = closure_133_1(closure_133_2[9]).Millis.MINUTE;
+      closure_3 = new closure_133_1(closure_133_2[8])(MINUTE, closure_133_1(closure_133_2[9]).Millis.HOUR, true);
+      closure_133_1(closure_133_2[8]);
+      new closure_133_1(closure_133_2[8])(MINUTE, closure_133_1(closure_133_2[9]).Millis.HOUR, true);
+    }
+    closure_132_3 = closure_3;
+    const obj6 = { backoff: closure_132_3, gateUntil: null };
+    const _Date = Date;
+    const timestamp = Date.now();
+    obj6.gateUntil = timestamp + closure_132_3.fail();
+    const result = closure_133_8.set(closure_132_0, obj6);
+    closure_133_1(closure_133_2[7]).captureException(closure_132_4);
+    c9 = 3;
+    closure_133_1(closure_133_2[7]);
+  } else if (arg0 === 1) {
+    c9 = 3;
+    throw arg1;
+  } else if (arg0 !== 2) {
+    closure_132_2 = arg1;
+    closure_133_8.delete(closure_132_0);
+    closure_133_1(closure_133_2[3]).dispatch({ type: "BADGE_SUMMARY_FETCH_SUCCESS", userId: closure_132_1, badge: closure_132_2.body });
+    c7 = 0;
+    closure_133_1(closure_133_2[3]);
+  }
+  return arg1;
+};
 const Constants = fn(1074);
 ({ Endpoints: hasOwnProperty, ME: metroRequire } = Constants);
+const map = new Map();
+const map1 = new Map();
+const subscription = Dispatcher.subscribe("LOGOUT", () => {
+  map.clear();
+  map1.clear();
+});
 const size = fn(2);
-const result = size.fileFinishedImporting("modules/badges/BadgeDirectoryActionCreators.tsx");
+let result = size.fileFinishedImporting("modules/badges/BadgeDirectoryActionCreators.tsx");
 
 export const fetchBadgeDirectory = function fetchBadgeDirectory() {
   const self = this;
-  const apply = closure_8.apply;
+  const apply = closure_10.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
@@ -274,7 +323,7 @@ export const fetchBadgeDirectory = function fetchBadgeDirectory() {
 };
 export const fetchBadge = function fetchBadge() {
   const self = this;
-  const apply = closure_9.apply;
+  const apply = closure_11.apply;
   if (typeof apply === "unknown") {
     let applyArgumentsResult = HermesBuiltin.applyArguments(self);
   } else {
@@ -282,6 +331,58 @@ export const fetchBadge = function fetchBadge() {
   }
   return applyArgumentsResult;
 };
+export const fetchBadgeSummary = function fetchBadgeSummary(arg0, id) {
+  let tmp = id;
+  if (id == null) {
+    const currentUser = UserStore.getCurrentUser();
+    id = undefined;
+    if (currentUser != null) {
+      id = currentUser.id;
+    }
+    tmp = id;
+  }
+  if (null == tmp) {
+    return Promise.resolve();
+  } else {
+    const _HermesInternal = HermesInternal;
+    const combined = "" + tmp + "#" + arg0;
+    value = map.get(combined);
+    if (null != value) {
+      return value;
+    } else {
+      value2 = map1.get(combined);
+      let num;
+      if (value2 != null) {
+        num = value2.gateUntil;
+      }
+      if (num == null) {
+        num = 0;
+      }
+      const _Date = Date;
+      if (Date.now() < num) {
+        return Promise.resolve();
+      } else {
+        const cleanupPromise = (function requestBadgeSummary() {
+          const self = this;
+          const apply = closure_1_12.apply;
+          if (typeof apply === "unknown") {
+            let applyArgumentsResult = HermesBuiltin.applyArguments(self);
+          } else {
+            applyArgumentsResult = apply(self, arguments);
+          }
+          return applyArgumentsResult;
+        })(combined, arg0, tmp).finally(() => {
+          if (map.get(combined) === cleanupPromise) {
+            map.delete(combined);
+          }
+        });
+        const result = obj.set(combined, cleanupPromise);
+        return cleanupPromise;
+      }
+    }
+    obj = map;
+  }
+};
 export const markBadgeDirectoryBadgeIndicatorSeen = function markBadgeDirectoryBadgeIndicatorSeen(badgeId) {
-  DispatcherDefault.dispatch({ type: "BADGE_DIRECTORY_MARK_BADGE_INDICATOR_SEEN", badgeId });
+  Dispatcher.dispatch({ type: "BADGE_DIRECTORY_MARK_BADGE_INDICATOR_SEEN", badgeId });
 };

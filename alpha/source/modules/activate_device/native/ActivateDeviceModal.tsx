@@ -1,11 +1,11 @@
-// Module ID: 14231
-// Function ID: 14232
+// Module ID: 14240
+// Function ID: 14241
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 14230, 7705, 7323, 1115, 14232, 7331, 2]
+// Dependencies: [19, 21, 14239, 7707, 7325, 1115, 14241, 7333, 2]
 // Exports: default
 
-// Module 14231 (ActivateDeviceModal)
-import _modDef7323 from "module_7323" /* 7323 */;
+// Module 14240 (ActivateDeviceModal)
+import _modDef7325 from "module_7325" /* 7325 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -29,16 +29,16 @@ export default function ActivateDeviceModal(userCode) {
           return null;
         },
         headerLeft() {
-          const obj = { source: _modDef7323, onPress: onClose, accessibilityLabel: null };
+          const obj = { source: _modDef7325, onPress: onClose, accessibilityLabel: null };
           const intl = userCode(1115).intl;
           obj.accessibilityLabel = intl.string(userCode(1115).t.cpT0Cq);
-          return jsx(userCode(7705).HeaderActionButton, { source: _modDef7323, onPress: onClose, accessibilityLabel: null });
+          return jsx(userCode(7707).HeaderActionButton, { source: _modDef7325, onPress: onClose, accessibilityLabel: null });
         },
         headerRight() {
           return null;
         },
         render() {
-          return jsx(userCode(14232).ActivateDevice, { onClose, prefilledUserCode });
+          return jsx(userCode(14241).ActivateDevice, { onClose, prefilledUserCode });
         }
       }
     };
@@ -46,5 +46,5 @@ export default function ActivateDeviceModal(userCode) {
   let obj = { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null };
   let intl = userCode(1115).intl;
   obj.headerBackTitle = intl.string(userCode(1115).t["13/7kX"]);
-  return jsx(userCode(7331).Navigator, { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null });
+  return jsx(userCode(7333).Navigator, { screens: memo, initialRouteName: constants.ACTIVATE_DEVICE, headerBackTitle: null });
 };

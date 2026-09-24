@@ -1,18 +1,18 @@
-// Module ID: 12151
-// Function ID: 12152
+// Module ID: 12158
+// Function ID: 12159
 // Name: GiftIntentGifModal
-// Dependencies: [32, 5, 19, 17, 2042, 1074, 4820, 21, 4827, 576, 7784, 8003, 1241, 7513, 7312, 504, 7416, 1115, 12152, 10705, 5271, 5030, 5901, 5927, 7331, 2]
+// Dependencies: [32, 5, 19, 17, 2044, 1074, 4822, 21, 4829, 576, 7786, 8005, 1241, 7515, 7314, 504, 7418, 1115, 12159, 10710, 5273, 5032, 5903, 5929, 7333, 2]
 // Exports: default
 
-// Module 12151 (GiftIntentGifModal)
+// Module 12158 (GiftIntentGifModal)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
-import NavigatorHeader from "NavigatorHeader" /* 5927 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
+import NavigatorHeader from "NavigatorHeader" /* 5929 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 const require = globalThis.__r;
 
@@ -174,10 +174,10 @@ function GiftIntentGifModalBody(channelId) {
 }
 const View = fn(17).View;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const MessageSendLocation = fn(4820).MessageSendLocation;
+const MessageSendLocation = fn(4822).MessageSendLocation;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, messageContainer: null, pickerContainer: null, footer: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.messageContainer = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8 };

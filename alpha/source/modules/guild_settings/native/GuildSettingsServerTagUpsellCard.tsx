@@ -1,17 +1,17 @@
-// Module ID: 18102
-// Function ID: 18103
+// Module ID: 18125
+// Function ID: 18126
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 4715, 21, 4827, 576, 504, 4719, 12860, 12828, 5283, 5269, 12863, 4823, 1115, 5271, 16620, 2]
+// Dependencies: [19, 17, 4717, 21, 4829, 576, 504, 4721, 12869, 12837, 5285, 5271, 12872, 4825, 1115, 5273, 16644, 2]
 // Exports: default
 
-// Module 18102 (GuildSettingsServerTagUpsellCard)
+// Module 18125 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 576 */;
-import Powerups from "Powerups" /* 4719 */;
-import LinearGradientDefault from "LinearGradient" /* 5283 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12828 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12860 */;
+import Powerups from "Powerups" /* 4721 */;
+import LinearGradientDefault from "LinearGradient" /* 5285 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 12837 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 12869 */;
 import noop from "module_19" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4715 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4717 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
@@ -23,7 +23,7 @@ const end = { x: 1, y: 0.5 };
 const colors = ["rgba(88, 101, 242, 0.3)", "rgba(22, 26, 138, 0.3)"];
 const colors2 = ["rgba(151, 151, 159, 0.04)", "rgba(151, 151, 159, 0.04)"];
 let c12 = "#29292D";
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { card: { borderRadius: nativeDefault.radii.xl, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: "#29292D", overflow: "hidden", paddingHorizontal: nativeDefault.space.PX_24, paddingTop: nativeDefault.space.PX_20, paddingBottom: nativeDefault.space.PX_24 }, imageContainer: { height: 104, justifyContent: "center" }, textBlock: { alignItems: "center" }, centerText: { textAlign: "center" }, body: { maxWidth: 320 }, backgroundLayer: StyleSheet.absoluteFillObject, powerupImage: { width: "92%" } };
 let closure_13 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -59,7 +59,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   let tmp10Result = null != tmp6;
   if (tmp10Result) {
     const obj8 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp10Result = tmp10(tmp5(12863), obj8);
+    tmp10Result = tmp10(tmp5(12872), obj8);
   }
   obj7.children = tmp10Result;
   const items5 = [closure_6(closure_4, obj7), , ];
@@ -67,24 +67,24 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   const obj10 = { variant: "heading-xl/semibold", color: "text-strong", style: tmp.centerText, children: null };
   const intl = tmp2(1115).intl;
   obj10.children = intl.string(guildId(1115).t["2QmKZ2"]);
-  const items6 = [closure_6(guildId(4823).Text, obj10), ];
+  const items6 = [closure_6(guildId(4825).Text, obj10), ];
   const obj11 = { variant: "text-sm/medium", color: "text-subtle", style: null, children: null };
   const items7 = [, ];
   ({ centerText: arr8[0], body: arr8[1] } = tmp);
   obj11.style = items7;
   const intl2 = tmp2(1115).intl;
   obj11.children = intl2.string(guildId(1115).t.Tg0fDm);
-  items6[1] = closure_6(guildId(4823).Text, obj11);
+  items6[1] = closure_6(guildId(4825).Text, obj11);
   obj9.children = items6;
-  items5[1] = closure_7(guildId(5269).Stack, obj9);
+  items5[1] = closure_7(guildId(5271).Stack, obj9);
   const obj12 = { variant: "primary", size: "lg", text: null, icon: null, iconPosition: "start", onPress: null };
   const intl3 = tmp2(1115).intl;
   obj12.text = intl3.string(guildId(1115).t.kMRDWs);
-  obj12.icon = closure_6(guildId(16620).BoostTier2Icon, { color: "white" });
+  obj12.icon = closure_6(guildId(16644).BoostTier2Icon, { color: "white" });
   obj12.onPress = guildId.onUnlockPress;
-  items5[2] = closure_6(guildId(5271).Button, obj12);
+  items5[2] = closure_6(guildId(5273).Button, obj12);
   obj6.children = items5;
-  items4[3] = closure_7(guildId(5269).Stack, obj6);
+  items4[3] = closure_7(guildId(5271).Stack, obj6);
   obj2.children = items4;
   return closure_7(closure_4, obj2);
 };

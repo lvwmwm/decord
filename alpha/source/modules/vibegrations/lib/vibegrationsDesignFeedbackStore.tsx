@@ -1,11 +1,11 @@
-// Module ID: 16999
-// Function ID: 17000
+// Module ID: 17023
+// Function ID: 17024
 // Name: vibegrationsDesignFeedbackStore
-// Dependencies: [19, 17000, 2]
+// Dependencies: [19, 17024, 2]
 // Exports: addVibegrationsDesignAnnotation, canEditVibegrationsDesignAnnotation, enterVibegrationsDesignFeedback, exitVibegrationsDesignFeedback, getVibegrationsDesignFeedback, relocateVibegrationsDesignAnnotations, removeVibegrationsDesignAnnotation, setVibegrationsDesignFeedbackContext, updateVibegrationsDesignAnnotation, useVibegrationsDesignFeedback
 
-// Module 16999 (vibegrationsDesignFeedbackStore)
-import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 17000 */;
+// Module 17023 (vibegrationsDesignFeedbackStore)
+import VibegrationsDesignFeedback from "VibegrationsDesignFeedback" /* 17024 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

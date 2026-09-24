@@ -1,12 +1,12 @@
-// Module ID: 10680
-// Function ID: 10681
+// Module ID: 10685
+// Function ID: 10686
 // Name: getEmojiPopoutMessage
-// Dependencies: [5888, 1115, 2]
+// Dependencies: [5890, 1115, 2]
 // Exports: getEmojiPopoutData
 
-// Module 10680 (getEmojiPopoutMessage)
+// Module 10685 (getEmojiPopoutMessage)
 import util from "util" /* 1115 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5888 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 5890 */;
 import size from "module_2" /* 2 */;
 
 const EmojiSourceDataTypes = ExpressionSourceRecord.EmojiSourceDataTypes;

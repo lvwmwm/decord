@@ -1,13 +1,13 @@
-// Module ID: 11301
-// Function ID: 11302
+// Module ID: 11307
+// Function ID: 11308
 // Name: PinIcon
-// Dependencies: [19, 21, 576, 4523, 11302, 2]
+// Dependencies: [19, 21, 576, 4525, 11308, 2]
 // Exports: PinIcon
 
-// Module 11301 (PinIcon)
+// Module 11307 (PinIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod11302 from "module_11302" /* 11302 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod11308 from "module_11308" /* 11308 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const PinIcon = function PinIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11302, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11308, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

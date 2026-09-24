@@ -1,21 +1,21 @@
-// Module ID: 16476
-// Function ID: 16477
+// Module ID: 16500
+// Function ID: 16501
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 2047, 1372, 15631, 1074, 1085, 21, 16477, 16478, 4827, 576, 7493, 504, 7499, 1241, 13266, 1980, 8523, 16472, 4979, 16479, 15632, 16473, 1177, 16482, 11235, 16483, 10253, 13382, 9055, 5401, 9425, 1115, 4676, 1364, 10401, 5890, 16474, 16485, 10404, 8494, 16487, 8592, 2]
+// Dependencies: [19, 17, 2049, 1372, 15645, 1074, 1085, 21, 16501, 16502, 4829, 576, 7495, 504, 7501, 1241, 13275, 1980, 8527, 16496, 4981, 16503, 15646, 16497, 1177, 16506, 11241, 16507, 10258, 13391, 9059, 5403, 9429, 1115, 4678, 1364, 10406, 5892, 16498, 16509, 10409, 8498, 16511, 8596, 2]
 
-// Module 16476 (HappeningNowCardActivity)
+// Module 16500 (HappeningNowCardActivity)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ColorUtils from "ColorUtils" /* 4676 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10404 */;
-import useLiveStageData from "useLiveStageData" /* 16474 */;
-import _modDef16477 from "module_16477" /* 16477 */;
-import _modDef16478 from "module_16478" /* 16478 */;
-import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 16485 */;
+import ColorUtils from "ColorUtils" /* 4678 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10409 */;
+import useLiveStageData from "useLiveStageData" /* 16498 */;
+import _modDef16501 from "module_16501" /* 16501 */;
+import _modDef16502 from "module_16502" /* 16502 */;
+import HappeningNowAvatarStack from "HappeningNowAvatarStack" /* 16509 */;
 import noop from "module_19" /* 19 */;
-import StageInstanceStore from "StageInstanceStore" /* 2047 */;
+import StageInstanceStore from "StageInstanceStore" /* 2049 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -133,10 +133,10 @@ function IconOrPreview(arg0) {
       obj8.style = tmp.cardImageStreamPreview;
       const intl5 = tmp28(1115).intl;
       obj8.ctaText = intl5.string(tmp28(1115).t["7Xq/nV"]);
-      obj3.children = closure_11(tmp2(10401), obj8);
+      obj3.children = closure_11(tmp2(10406), obj8);
       return closure_11(closure_4, obj3);
     } else {
-      if (tmp2(11235)(activity)) {
+      if (tmp2(11241)(activity)) {
         const intl4 = tmp28(1115).intl;
         let stringResult = intl4.string(tmp28(1115).t.rmnkz4);
       } else {
@@ -147,7 +147,7 @@ function IconOrPreview(arg0) {
         if (type === constants2.LISTENING) {
           const intl3 = tmp28(1115).intl;
           stringResult = intl3.string(tmp28(1115).t.kUEnxN);
-        } else if (tmp2(13382)(activity)) {
+        } else if (tmp2(13391)(activity)) {
           const intl2 = tmp28(1115).intl;
           stringResult = intl2.string(tmp28(1115).t.T0uYK9);
         } else {
@@ -164,7 +164,7 @@ function IconOrPreview(arg0) {
       const obj10 = { style: memo, accessibilityLabel: stringResult, children: null };
       const obj11 = { style: tmp35, children: null };
       const obj12 = { style: tmp.cardImageAsset, source: memoizedImageSourceResult };
-      obj11.children = closure_11(tmp2(5890), obj12);
+      obj11.children = closure_11(tmp2(5892), obj12);
       obj10.children = closure_11(closure_4, obj11);
       return closure_11(closure_4, obj10);
     }
@@ -179,7 +179,7 @@ function IconOrPreview(arg0) {
       userId = substr.charCodeAt(0);
       let tmp2Result2 = items[userId % items.length];
     } else {
-      tmp2Result2 = tmp2(16487);
+      tmp2Result2 = tmp2(16511);
     }
   }
 }
@@ -201,15 +201,15 @@ function StageStreamAvatars(stage) {
 }
 get_ActivityIndicator = fn(17);
 ({ PixelRatio, View: closure_4 } = get_ActivityIndicator);
-const HappeningNowConstants = fn(15631);
+const HappeningNowConstants = fn(15645);
 ({ HAPPENING_NOW_CONTENT_HEIGHT, HappeningNowCardTrackingType: closure_7, STATUS_CUTOUT_SMALL: closure_8, HAPPENING_NOW_STAGE_PREVIEW_HEIGHT } = HappeningNowConstants);
 const Constants = fn(1074);
 ({ ActivityTypes: closure_9, AnalyticEvents: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12, Fragment: map1 } = jsxProd);
 const pixelSizeForLayoutSize = PixelRatio.getPixelSizeForLayoutSize(HAPPENING_NOW_CONTENT_HEIGHT);
-let items = [_modDef16477, _modDef16478];
-const createStyles = fn(4827);
+let items = [_modDef16501, _modDef16502];
+const createStyles = fn(4829);
 let obj = { content: { flexShrink: 1, gap: 2 }, avatarStackContainer: { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 }, cardAvatar: { marginBottom: 2 }, cardImage: { height: HAPPENING_NOW_CONTENT_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, marginRight: 12, position: "relative" }, cardImageStream: { height: HAPPENING_NOW_STAGE_PREVIEW_HEIGHT, minWidth: HAPPENING_NOW_CONTENT_HEIGHT, position: "relative" }, cardImageAsset: null, cardImageAssetContainer: null, cardImageAssetBackground: null, cardImageStreamPreview: null, cardImageStreamLive: null, stageStreamLiveText: null, stagePreviewWrapper: null };
 let obj3 = { backgroundColor: nativeDefault.colors.STAGE_CARD_PILL_BG, padding: 2, borderRadius: nativeDefault.radii.xl, position: "absolute", alignSelf: "center", bottom: 0 };
 obj.cardImageAsset = { flex: 1, width: "100%", borderRadius: nativeDefault.radii.sm - 1 };
@@ -305,11 +305,11 @@ export default noop.memo((userId) => {
     obj2.destination_channel_id = channelId;
     AnalyticsUtilsDefault.track(constants3.ACTIVITY_CARD_CLICKED, obj2);
     if (null != stream) {
-      asyncRequireImpl(13266, tmp6.paths).then((result) => result.default(channelId.channelId, true));
-      const promise2 = asyncRequireImpl(13266, tmp6.paths);
+      asyncRequireImpl(13275, tmp6.paths).then((result) => result.default(channelId.channelId, true));
+      const promise2 = asyncRequireImpl(13275, tmp6.paths);
     } else {
-      asyncRequireImpl(8523, tmp6.paths).then((result) => result.default({ userId, localUser, sourceAnalyticsLocations }));
-      const promise = asyncRequireImpl(8523, tmp6.paths);
+      asyncRequireImpl(8527, tmp6.paths).then((result) => result.default({ userId, localUser, sourceAnalyticsLocations }));
+      const promise = asyncRequireImpl(8527, tmp6.paths);
     }
   }, items2);
   if (null == stateFromStores) {

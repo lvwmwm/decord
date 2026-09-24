@@ -1,30 +1,30 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 17085
+// Function ID: 17086
 // Name: VibegrationsPatchNotesChannel
-// Dependencies: [1115, 3712, 510, 2]
+// Dependencies: [1115, 3714, 510, 2]
 // Exports: formatPlaySuffix, lastPatchNotesChannel, rememberPatchNotesChannel
 
-// Module 17057 (VibegrationsPatchNotesChannel)
+// Module 17085 (VibegrationsPatchNotesChannel)
 import Storage3 from "Storage" /* 510 */;
 import util from "util" /* 1115 */;
-import _modDef3712 from "module_3712" /* 3712 */;
+import _modDef3714 from "module_3714" /* 3714 */;
 import size from "module_2" /* 2 */;
 
-const VibegrationsPatchNotesLastChannels = "VibegrationsPatchNotesLastChannels";
+const VibegrationsPatchNotesLastChannelsByApp = "VibegrationsPatchNotesLastChannelsByApp";
 const combined = "<#" + "9".repeat(20) + ">";
 let result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsPatchNotesChannel.tsx");
 
 export const PLAY_LINE_CHANNEL_PLACEHOLDER = combined;
 export const formatPlaySuffix = function formatPlaySuffix(PLAY_LINE_CHANNEL_PLACEHOLDER) {
   const intl = util.intl;
-  return "\n\n" + intl.formatToPlainString(_modDef3712.bhoZhI, { channel: PLAY_LINE_CHANNEL_PLACEHOLDER });
+  return "\n\n" + intl.formatToPlainString(_modDef3714.bhoZhI, { channel: PLAY_LINE_CHANNEL_PLACEHOLDER });
 };
-export const lastPatchNotesChannel = function lastPatchNotesChannel(guildId) {
+export const lastPatchNotesChannel = function lastPatchNotesChannel(applicationId) {
   const Storage = Storage3.Storage;
-  value = Storage.get(VibegrationsPatchNotesLastChannels);
+  value = Storage.get(VibegrationsPatchNotesLastChannelsByApp);
   let tmp2;
   if (value != null) {
-    tmp2 = value[guildId];
+    tmp2 = value[applicationId];
   }
   return tmp2;
 };
@@ -32,7 +32,7 @@ export const rememberPatchNotesChannel = function rememberPatchNotesChannel(arg0
   const Storage = Storage3.Storage;
   const obj = {};
   const Storage2 = Storage3.Storage;
-  const merged = Object.assign(Storage2.get(VibegrationsPatchNotesLastChannels));
+  const merged = Object.assign(Storage2.get(VibegrationsPatchNotesLastChannelsByApp));
   obj[arg0] = id;
-  const result = Storage.set(VibegrationsPatchNotesLastChannels, obj);
+  const result = Storage.set(VibegrationsPatchNotesLastChannelsByApp, obj);
 };

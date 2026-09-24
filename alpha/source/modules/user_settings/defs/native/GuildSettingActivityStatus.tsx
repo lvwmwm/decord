@@ -1,15 +1,15 @@
-// Module ID: 16271
-// Function ID: 16272
+// Module ID: 16293
+// Function ID: 16294
 // Name: GuildSettingActivityStatus
-// Dependencies: [16258, 8319, 2020, 7326, 11805, 1115, 2]
+// Dependencies: [16280, 8323, 2020, 7328, 11811, 1115, 2]
 
-// Module 16271 (GuildSettingActivityStatus)
+// Module 16293 (GuildSettingActivityStatus)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7326 */;
-import SettingsConstants from "SettingsConstants" /* 8319 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16258 */;
-import SettingBuilders from "SettingBuilders" /* 11805 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7328 */;
+import SettingsConstants from "SettingsConstants" /* 8323 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 16280 */;
+import SettingBuilders from "SettingBuilders" /* 11811 */;
 import size from "module_2" /* 2 */;
 
 ({ getSelectedGuildId: c2, useUserSafetySettingsSelectedGuildStore: c3 } = UserSettingsSafetySelectedGuildStore);

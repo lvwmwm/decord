@@ -1,11 +1,11 @@
-// Module ID: 13267
-// Function ID: 13268
+// Module ID: 13276
+// Function ID: 13277
 // Name: closeCustomKeyboard
-// Dependencies: [4693, 2]
+// Dependencies: [4695, 2]
 // Exports: default
 
-// Module 13267 (closeCustomKeyboard)
-import ChatInputUtils from "ChatInputUtils" /* 4693 */;
+// Module 13276 (closeCustomKeyboard)
+import ChatInputUtils from "ChatInputUtils" /* 4695 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/closeCustomKeyboard.native.tsx");

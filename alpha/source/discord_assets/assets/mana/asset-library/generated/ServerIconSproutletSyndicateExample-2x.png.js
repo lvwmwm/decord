@@ -1,8 +1,8 @@
-// Module ID: 6763
-// Function ID: 6764
+// Module ID: 6765
+// Function ID: 6766
 // Dependencies: [2]
 
-// Module 6763
+// Module 6765
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ServerIconSproutletSyndicateExample-2x.png.js");

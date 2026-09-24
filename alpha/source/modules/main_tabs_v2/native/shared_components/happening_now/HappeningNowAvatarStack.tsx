@@ -1,28 +1,28 @@
-// Module ID: 16485
-// Function ID: 16486
+// Module ID: 16509
+// Function ID: 16510
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2109, 13409, 21, 4827, 576, 1177, 4559, 563, 5270, 9170, 4823, 1881, 16486, 2]
+// Dependencies: [32, 19, 17, 2111, 13418, 21, 4829, 576, 1177, 4561, 563, 5272, 9174, 4825, 1881, 16510, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 16485 (HappeningNowAvatarStack)
+// Module 16509 (HappeningNowAvatarStack)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import spring from "spring" /* 5270 */;
-import ClipViewDefault from "ClipView" /* 9170 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import spring from "spring" /* 5272 */;
+import ClipViewDefault from "ClipView" /* 9174 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2109 */;
+import LocaleStore from "LocaleStore" /* 2111 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-const CHANNEL_SPRING_CONFIG = fn(13409).CHANNEL_SPRING_CONFIG;
+const CHANNEL_SPRING_CONFIG = fn(13418).CHANNEL_SPRING_CONFIG;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
 let SPRING_CONFIG = { damping: 17, stiffness: 320, mass: 0.5 };
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 createStyles.createStyles((arg0, marginLeft) => {
   const obj = { avatarStack: { flexDirection: "row" }, stageAvatarStack: { flexDirection: "row", justifyContent: "space-between", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: 24, paddingLeft: 4, paddingRight: 4, paddingVertical: 4 }, avatarBubbles: { display: "flex", flexDirection: "row" }, avatars: { display: "flex", flexDirection: "row" }, shiftedAvatar: { marginLeft: -marginLeft }, userCounter: null, ellipsisWrapper: null, ellipsisBorder: null };
   const obj2 = { flexDirection: "row", justifyContent: "space-between", alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: 24, paddingLeft: 4, paddingRight: 4, paddingVertical: 4 };
@@ -130,7 +130,7 @@ export const HappeningNowAvatarStack = function HappeningNowAvatarStack(userLimi
     const obj2 = { style: shiftedAvatar, children: null };
     if (index !== diff) {
       const obj3 = { cutouts: null, children: null };
-      const point = { shape: tmp3(9170).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp5] - num3 - num2, y: -num2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp5] + 2 * num2 };
+      const point = { shape: tmp3(9174).CutoutShape.Circle, x: tmp3(1177).AVATAR_SIZE_MAP[tmp5] - num3 - num2, y: -num2, size: tmp3(1177).AVATAR_SIZE_MAP[tmp5] + 2 * num2 };
       const items = [point];
       obj3.cutouts = items;
       obj3.children = tmp6;

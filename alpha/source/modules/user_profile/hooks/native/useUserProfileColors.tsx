@@ -1,16 +1,16 @@
-// Module ID: 8582
-// Function ID: 8583
+// Module ID: 8586
+// Function ID: 8587
 // Name: useUserProfileColors
-// Dependencies: [4819, 1085, 4761, 7515, 504, 4524, 576, 8573, 1092, 2]
+// Dependencies: [4821, 1085, 4763, 7517, 504, 4526, 576, 8577, 1092, 2]
 // Exports: useUserProfileColors
 
-// Module 8582 (useUserProfileColors)
+// Module 8586 (useUserProfileColors)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
-import useToken from "useToken" /* 4524 */;
-import useThemeDefault from "useTheme" /* 4761 */;
-import useProfileThemeValues from "useProfileThemeValues" /* 7515 */;
-import AccessibilityStore from "AccessibilityStore" /* 4819 */;
+import useToken from "useToken" /* 4526 */;
+import useThemeDefault from "useTheme" /* 4763 */;
+import useProfileThemeValues from "useProfileThemeValues" /* 7517 */;
+import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 
 require = fn;
 const ThemeTypes = fn(1085).ThemeTypes;
@@ -38,18 +38,18 @@ export const useUserProfileColors = function useUserProfileColors(theme) {
         if (stateFromStores) {
           tmp7 = overlaySyncedWithUserTheme;
         }
-        const result = tmp3(8573).calculateOverlayedColor(primaryColor, tmp7);
+        const result = tmp3(8577).calculateOverlayedColor(primaryColor, tmp7);
         const obj10 = {};
         const merged = Object.assign(obj3);
         obj10.containerBackground = tmp6;
-        const tmp3Result = tmp3(8573);
+        const tmp3Result = tmp3(8577);
         const tmp3Result6 = tmp3(1092);
-        obj10.gradientSecondaryBackground = tmp3Result6.int2hex(tmp3(8573).calculateOverlayedColor(secondaryColor, overlay));
-        const tmp3Result7 = tmp3(8573);
+        obj10.gradientSecondaryBackground = tmp3Result6.int2hex(tmp3(8577).calculateOverlayedColor(secondaryColor, overlay));
+        const tmp3Result7 = tmp3(8577);
         obj10.avatarBackground = tmp3(1092).int2hex(result);
         const tmp3Result8 = tmp3(1092);
         const tmp3Result9 = tmp3(1092);
-        obj10.statusBackground = tmp3Result9.int2hex(tmp3(8573).calculateOverlayedColor(result, sectionBox));
+        obj10.statusBackground = tmp3Result9.int2hex(tmp3(8577).calculateOverlayedColor(result, sectionBox));
         return obj10;
       }
     }

@@ -1,9 +1,9 @@
-// Module ID: 8182
-// Function ID: 8183
+// Module ID: 8184
+// Function ID: 8185
 // Name: PremiumUpsellSubfeatureNames
 // Dependencies: [2]
 
-// Module 8182 (PremiumUpsellSubfeatureNames)
+// Module 8184 (PremiumUpsellSubfeatureNames)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/roadblocks/native/utils/PremiumUpsellSubfeatureNames.tsx");

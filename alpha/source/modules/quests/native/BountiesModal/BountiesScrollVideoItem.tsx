@@ -1,19 +1,19 @@
-// Module ID: 15350
-// Function ID: 15351
+// Module ID: 15359
+// Function ID: 15360
 // Name: BountiesScrollVideoItem
-// Dependencies: [5, 32, 19, 17, 9207, 8023, 5747, 21, 15351, 504, 15352, 11856, 15357, 15358, 15359, 15355, 15362, 12112, 5754, 5752, 15380, 2]
+// Dependencies: [5, 32, 19, 17, 9211, 8025, 5749, 21, 15360, 504, 15361, 11862, 15366, 15367, 15368, 15364, 15371, 12119, 5756, 5754, 15389, 2]
 // Exports: BountiesScrollVideoItem
 
-// Module 15350 (BountiesScrollVideoItem)
-import QuestContent from "QuestContent" /* 5752 */;
-import AdCreativeType from "AdCreativeType" /* 5754 */;
-import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12112 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 15351 */;
+// Module 15359 (BountiesScrollVideoItem)
+import QuestContent from "QuestContent" /* 5754 */;
+import AdCreativeType from "AdCreativeType" /* 5756 */;
+import QuestContentImpressionTracker from "QuestContentImpressionTracker" /* 12119 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 15360 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9207 */;
-import BountyStore from "BountyStore" /* 8023 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9211 */;
+import BountyStore from "BountyStore" /* 8025 */;
 
 require = fn;
 function BountiesScrollVideoItemInner(bounty) {
@@ -283,7 +283,7 @@ function BountiesScrollVideoItemInner(bounty) {
   return handleVideoProgressAnalytics(closure_6, obj6);
 }
 const View = fn(17).View;
-const BOUNTY_ORB_AMOUNT = fn(5747).BOUNTY_ORB_AMOUNT;
+const BOUNTY_ORB_AMOUNT = fn(5749).BOUNTY_ORB_AMOUNT;
 const jsx = fn(21).jsx;
 let size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/BountiesScrollVideoItem.tsx");
@@ -315,10 +315,10 @@ export const BountiesScrollVideoItem = function BountiesScrollVideoItem(bounty) 
   if (flag3 === undefined) {
     flag3 = false;
   }
-  return jsx(bounty(12112).BillableAdPlacementImpressionTrackerNative, {
+  return jsx(bounty(12119).BillableAdPlacementImpressionTrackerNative, {
     adContentId: bounty.id,
-    adCreativeType: bounty(5754).AdCreativeType.BOUNTY,
-    questContent: bounty(5752).QuestContent.VIDEO_MODAL_MOBILE,
+    adCreativeType: bounty(5756).AdCreativeType.BOUNTY,
+    questContent: bounty(5754).QuestContent.VIDEO_MODAL_MOBILE,
     sourceQuestContent,
     overrideVisibility: isActive,
     children() {

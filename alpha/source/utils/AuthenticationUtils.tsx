@@ -1,12 +1,12 @@
-// Module ID: 7989
-// Function ID: 7990
+// Module ID: 7991
+// Function ID: 7992
 // Name: AuthenticationUtils
-// Dependencies: [1100, 7990, 2]
+// Dependencies: [1100, 7992, 2]
 // Exports: getArtForPath, getToken, isAuthenticated
 
-// Module 7989 (AuthenticationUtils)
+// Module 7991 (AuthenticationUtils)
 import TokenManagerAll from "TokenManager" /* 1100 */;
-import _mod7990 from "module_7990" /* 7990 */;
+import _mod7992 from "module_7992" /* 7992 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/AuthenticationUtils.tsx");
@@ -22,7 +22,7 @@ export const getArtForPath = function getArtForPath(arg0) {
   if (null != arg0) {
     tmp = null;
     if (obj.test(arg0)) {
-      tmp = _mod7990;
+      tmp = _mod7992;
     }
     obj = /^\/developers/;
   }

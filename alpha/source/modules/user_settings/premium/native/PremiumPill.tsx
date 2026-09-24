@@ -1,10 +1,10 @@
-// Module ID: 7766
-// Function ID: 7767
+// Module ID: 7768
+// Function ID: 7769
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 4827, 576, 4761, 7767, 7774, 1115, 4823, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4763, 7769, 7776, 1115, 4825, 2]
 // Exports: PremiumPill
 
-// Module 7766 (PremiumPill)
+// Module 7768 (PremiumPill)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import noop from "module_19" /* 19 */;
@@ -12,7 +12,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_6 = createStyles.createStyles((arg0) => {
   const tmp3 = nativeDefault;
   if (arg0) {

@@ -1,16 +1,16 @@
-// Module ID: 17583
-// Function ID: 17584
+// Module ID: 17606
+// Function ID: 17607
 // Name: FramePanelContainer
-// Dependencies: [19, 9389, 9390, 21, 504, 17584, 17586, 2]
+// Dependencies: [19, 9393, 9394, 21, 504, 17607, 17609, 2]
 
-// Module 17583 (FramePanelContainer)
-import FramePanelControllerDefault from "FramePanelController" /* 17584 */;
-import FramePanelUIDefault from "FramePanelUI" /* 17586 */;
+// Module 17606 (FramePanelContainer)
+import FramePanelControllerDefault from "FramePanelController" /* 17607 */;
+import FramePanelUIDefault from "FramePanelUI" /* 17609 */;
 import noop from "module_19" /* 19 */;
-import FramesStore from "FramesStore" /* 9389 */;
+import FramesStore from "FramesStore" /* 9393 */;
 
 const require = fn;
-const isLaunched = fn(9390).isLaunched;
+const isLaunched = fn(9394).isLaunched;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/frames/panel/native/FramePanelContainer.tsx");

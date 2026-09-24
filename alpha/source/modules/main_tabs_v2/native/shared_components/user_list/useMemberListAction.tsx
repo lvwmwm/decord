@@ -1,16 +1,16 @@
-// Module ID: 11920
-// Function ID: 11921
+// Module ID: 11927
+// Function ID: 11928
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 2042, 4462, 4472, 1372, 10556, 1074, 21, 4827, 563, 9902, 7380, 11921, 11930, 11931, 1115, 10373, 10374, 4647, 2028, 11933, 11938, 7708, 11939, 1875, 10162, 8949, 2]
+// Dependencies: [32, 19, 17, 2044, 4464, 4474, 1372, 10561, 1074, 21, 4829, 563, 9907, 7382, 11928, 11937, 11938, 1115, 10378, 10379, 4649, 2028, 11940, 11945, 7710, 11946, 1875, 10167, 8953, 2]
 // Exports: default
 
-// Module 11920 (useMemberListAction)
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11921 */;
+// Module 11927 (useMemberListAction)
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11928 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import PermissionStore from "PermissionStore" /* 4462 */;
-import RelationshipStore from "RelationshipStore" /* 4472 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import PermissionStore from "PermissionStore" /* 4464 */;
+import RelationshipStore from "RelationshipStore" /* 4474 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -20,9 +20,9 @@ const View = fn(17).View;
 const Constants = fn(1074);
 ({ Permissions: c10, AnalyticsSections: closure_11, InstantInviteSources: closure_12 } = Constants);
 const jsx = fn(21).jsx;
-let closure_14 = { listActionRenderer: "Array", listActionHeight: "flex" };
-const createStyles = fn(4827);
-let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(10556).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
+let closure_14 = { listActionRenderer: "channel", listActionHeight: "channelId" };
+const createStyles = fn(4829);
+let closure_15 = createStyles.createStyles({ wrapper: { paddingTop: fn(10561).USERS_LIST_PADDING_BETWEEN_SECTIONS } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/user_list/useMemberListAction.tsx");
 

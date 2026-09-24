@@ -1,13 +1,13 @@
-// Module ID: 17013
-// Function ID: 17014
+// Module ID: 17037
+// Function ID: 17038
 // Name: VibegrationsTemplateWizard
-// Dependencies: [1115, 3712, 5360, 2]
+// Dependencies: [1115, 3714, 5362, 2]
 // Exports: canLeaveVibegrationsWizardQuestion, formatVibegrationsWizardAnswers, isVibegrationsWizardComplete, latestVibegrationsIntake, vibegrationsTemplateStartMessage, vibegrationsTemplateWizardGuilds, vibegrationsTemplateWizardSteps, vibegrationsWizardIntro, vibegrationsWizardQuestions, vibegrationsWizardServerCopy
 
-// Module 17013 (VibegrationsTemplateWizard)
+// Module 17037 (VibegrationsTemplateWizard)
 import util from "util" /* 1115 */;
-import _modDef3712 from "module_3712" /* 3712 */;
-import VibegrationsUtils from "VibegrationsUtils" /* 5360 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import VibegrationsUtils from "VibegrationsUtils" /* 5362 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsTemplateWizard.tsx");
@@ -34,7 +34,7 @@ export const canLeaveVibegrationsWizardQuestion = function canLeaveVibegrationsW
 };
 export const vibegrationsTemplateStartMessage = function vibegrationsTemplateStartMessage(name) {
   const intl = util.intl;
-  return intl.formatToPlainString(_modDef3712["4lZNuo"], { templateName: name, locale: util.intl.currentLocale });
+  return intl.formatToPlainString(_modDef3714["4lZNuo"], { templateName: name, locale: util.intl.currentLocale });
 };
 export const vibegrationsTemplateWizardGuilds = function vibegrationsTemplateWizardGuilds(guildsArray, VibegrationsTemplateWizardSheet) {
   closure_0 = VibegrationsTemplateWizardSheet;
@@ -94,9 +94,9 @@ export const vibegrationsWizardServerCopy = function vibegrationsWizardServerCop
   if (server == null) {
     const obj = { title: null, hint: null };
     const intl = util.intl;
-    obj.title = intl.string(_modDef3712.WQCnSf);
+    obj.title = intl.string(_modDef3714.WQCnSf);
     const intl2 = util.intl;
-    obj.hint = intl2.string(_modDef3712.KLTQfQ);
+    obj.hint = intl2.string(_modDef3714.KLTQfQ);
     server = obj;
   }
   return server;

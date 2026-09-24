@@ -1,17 +1,17 @@
-// Module ID: 15691
-// Function ID: 15692
+// Module ID: 15705
+// Function ID: 15706
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 1390, 1074, 21, 1092, 15688, 4827, 576, 8514, 11246, 1389, 4795, 4794, 14957, 1241, 7481, 15680, 1115, 2874, 5271, 12, 4777, 15689, 2]
+// Dependencies: [32, 19, 17, 1390, 1074, 21, 1092, 15702, 4829, 576, 8518, 11252, 1389, 4797, 4796, 14966, 1241, 7483, 15694, 1115, 2876, 5273, 12, 4779, 15703, 2]
 // Exports: default
 
-// Module 15691 (DisplayNameStylesColorPickerSheet)
+// Module 15705 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
 import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1389 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import HapticUtils from "HapticUtils" /* 4795 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14957 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import HapticUtils from "HapticUtils" /* 4797 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 14966 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -22,7 +22,7 @@ const getColorPresetsForEffect = fn(1390).getColorPresetsForEffect;
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { flex: 1 }, contentContainer: { alignSelf: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 }, presetGrid: null, presetRow: null, presetColor: null, presetColorSelected: null, checkmarkOverlay: null, checkmark: null, buttonsContainer: null, button: null };
 let obj3 = { alignSelf: "center", paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_16 };
 obj2.presetGrid = { gap: nativeDefault.space.PX_16, marginBottom: nativeDefault.space.PX_16 };
@@ -37,7 +37,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj7.alignItems = "center";
 obj7.justifyContent = "center";
 obj2.checkmarkOverlay = obj7;
-const size1 = { width: fn(15688).CHECKMARK_SIZE, height: fn(15688).CHECKMARK_SIZE };
+const size1 = { width: fn(15702).CHECKMARK_SIZE, height: fn(15702).CHECKMARK_SIZE };
 obj2.checkmark = size1;
 let obj6 = { borderColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND };
 obj2.buttonsContainer = { alignSelf: "stretch", flexDirection: "row", gap: nativeDefault.space.PX_16 };
@@ -145,11 +145,11 @@ export default function DisplayNameStylesColorPickerSheet(selectedColor) {
           const obj5 = { size: "custom", style: tmp4.checkmark, color: null };
           const darkness = tmp5(1092).getDarkness(item);
           let str = "black";
-          if (darkness > tmp5(15688).DARK_SWATCH_THRESHOLD) {
+          if (darkness > tmp5(15702).DARK_SWATCH_THRESHOLD) {
             str = "white";
           }
           obj5.color = str;
-          obj4.children = tmp2(tmp5(4777).CheckmarkLargeIcon, obj5);
+          obj4.children = tmp2(tmp5(4779).CheckmarkLargeIcon, obj5);
           tmp = tmp2(hasOwnProperty, obj4);
           const tmp5Result2 = tmp5(1092);
         }

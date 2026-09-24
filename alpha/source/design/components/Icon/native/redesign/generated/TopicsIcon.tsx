@@ -1,13 +1,13 @@
-// Module ID: 11984
-// Function ID: 11985
+// Module ID: 11991
+// Function ID: 11992
 // Name: TopicsIcon
-// Dependencies: [19, 21, 576, 4523, 11985, 2]
+// Dependencies: [19, 21, 576, 4525, 11992, 2]
 // Exports: TopicsIcon
 
-// Module 11984 (TopicsIcon)
+// Module 11991 (TopicsIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod11985 from "module_11985" /* 11985 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod11992 from "module_11992" /* 11992 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const TopicsIcon = function TopicsIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod11985, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod11992, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

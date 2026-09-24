@@ -1,15 +1,15 @@
-// Module ID: 2110
-// Function ID: 2111
+// Module ID: 2112
+// Function ID: 2113
 // Name: IntlLoaderStore
-// Dependencies: [5, 1882, 1243, 2111, 1115, 2121, 1154, 3906, 4381, 4412, 4414, 1231, 2]
+// Dependencies: [5, 1882, 1243, 2113, 1115, 2123, 1154, 3908, 4383, 4414, 4416, 1231, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
-// Module 2110 (IntlLoaderStore)
+// Module 2112 (IntlLoaderStore)
 import util from "util" /* 1115 */;
-import _modDef2111 from "module_2111" /* 2111 */;
-import bg from "bg" /* 3906 */;
-import formatjs from "formatjs" /* 4381 */;
-import moment from "moment" /* 4412 */;
+import _modDef2113 from "module_2113" /* 2113 */;
+import bg from "bg" /* 3908 */;
+import formatjs from "formatjs" /* 4383 */;
+import moment from "moment" /* 4414 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import module_1882 from "module_1882" /* 1882 */;
 
@@ -77,7 +77,7 @@ let closure_6 = async function _setAppLocale(arg0, value) {
                     closure_0 = tmp4;
                     c1 = 1;
                     dependencyMap = 1;
-                    const obj6 = { value: closure_0(2121).preloadAllIntlMessageFiles(), done: false };
+                    const obj6 = { value: closure_0(2123).preloadAllIntlMessageFiles(), done: false };
                     return obj6;
                   }
                 } else if (1 === tmp4) {
@@ -207,7 +207,7 @@ let closure_7 = async function _loadDateFnsLocale(arg0, value) {
             const obj4 = { value: tmp20(), done: false };
             return obj4;
           } else {
-            state.setLocaleData(require("module_2111"));
+            state.setLocaleData(require("module_2113"));
             c3 = 3;
           }
           tmp19 = dependencyMap;
@@ -351,11 +351,11 @@ const identity = fn(1243);
 const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
   closure_0 = arg0;
   closure_1 = arg1;
-  return {
+  let obj = {
     isLoading: false,
     inProgressLocale: "Boolean",
     error: "padding",
-    localeData: _modDef2111,
+    localeData: _modDef2113,
     setLoadingStarted(inProgressLocale) {
       return closure_0({ isLoading: true, inProgressLocale });
     },
@@ -374,6 +374,7 @@ const withEqualityFn = identity.createWithEqualityFn((arg0, arg1) => {
       closure_0({ localeData });
     }
   };
+  return obj;
 });
 const size = fn(2);
 const result = size.fileFinishedImporting("intl/IntlLoaderStore.tsx");
@@ -400,7 +401,7 @@ export const setAppLocale = function setAppLocale() {
 export const useLocaleData = function useLocaleData() {
   let tmp = withEqualityFn((localeData) => localeData.localeData);
   if (tmp == null) {
-    tmp = _modDef2111;
+    tmp = _modDef2113;
   }
   return tmp;
 };

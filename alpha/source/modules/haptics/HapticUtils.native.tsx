@@ -1,13 +1,13 @@
-// Module ID: 4795
-// Function ID: 4796
+// Module ID: 4797
+// Function ID: 4798
 // Name: HapticUtils
-// Dependencies: [4796, 4797, 1364, 4806, 2]
+// Dependencies: [4798, 4799, 1364, 4808, 2]
 // Exports: triggerHapticFeedback
 
-// Module 4795 (HapticUtils)
+// Module 4797 (HapticUtils)
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4796 */;
-import Patterns from "Patterns" /* 4797 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 4798 */;
+import Patterns from "Patterns" /* 4799 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/haptics/HapticUtils.native.tsx");
@@ -25,11 +25,11 @@ export const triggerHapticFeedback = function triggerHapticFeedback(IMPACT_LIGHT
         str37 = "impactLight";
       }
       str36 = str37;
-      tmp69Result = tmp69(4806);
+      tmp69Result = tmp69(4808);
     }
     obj41.trigger(str36);
     obj42 = PlatformUtils;
-  } else if (tmp(4796).IMPACT_MEDIUM === IMPACT_LIGHT) {
+  } else if (tmp(4798).IMPACT_MEDIUM === IMPACT_LIGHT) {
     const obj38 = Patterns;
     const tmp66 = require;
     let str34 = "impactMedium";
@@ -40,15 +40,15 @@ export const triggerHapticFeedback = function triggerHapticFeedback(IMPACT_LIGHT
         str35 = "impactLight";
       }
       str34 = str35;
-      tmp66Result = tmp66(4806);
+      tmp66Result = tmp66(4808);
     }
     obj38.trigger(str34);
     obj39 = PlatformUtils;
-  } else if (tmp(4796).IMPACT_HEAVY === IMPACT_LIGHT) {
+  } else if (tmp(4798).IMPACT_HEAVY === IMPACT_LIGHT) {
     Patterns.trigger("impactHeavy");
-  } else if (tmp(4796).NOTIFICATION_ERROR === IMPACT_LIGHT) {
+  } else if (tmp(4798).NOTIFICATION_ERROR === IMPACT_LIGHT) {
     Patterns.trigger("notificationError");
-  } else if (tmp(4796).DRAG_AND_DROP_START === IMPACT_LIGHT) {
+  } else if (tmp(4798).DRAG_AND_DROP_START === IMPACT_LIGHT) {
     const obj34 = Patterns;
     let str31 = "impactHeavy";
     if (obj35.isAndroid()) {
@@ -56,7 +56,7 @@ export const triggerHapticFeedback = function triggerHapticFeedback(IMPACT_LIGHT
     }
     obj34.trigger(str31);
     obj35 = PlatformUtils;
-  } else if (tmp(4796).DRAG_AND_DROP_END === IMPACT_LIGHT) {
+  } else if (tmp(4798).DRAG_AND_DROP_END === IMPACT_LIGHT) {
     const obj31 = Patterns;
     const tmp57 = require;
     let str29 = "notificationSuccess";
@@ -67,11 +67,11 @@ export const triggerHapticFeedback = function triggerHapticFeedback(IMPACT_LIGHT
         str30 = "impactLight";
       }
       str29 = str30;
-      tmp57Result = tmp57(4806);
+      tmp57Result = tmp57(4808);
     }
     obj31.trigger(str29);
     obj32 = PlatformUtils;
-  } else if (tmp(4796).DRAG_AND_DROP_MOVE === IMPACT_LIGHT) {
+  } else if (tmp(4798).DRAG_AND_DROP_MOVE === IMPACT_LIGHT) {
     const obj28 = Patterns;
     const tmp54 = require;
     let str27 = "impactMedium";
@@ -82,13 +82,13 @@ export const triggerHapticFeedback = function triggerHapticFeedback(IMPACT_LIGHT
         str28 = "impactLight";
       }
       str27 = str28;
-      tmp54Result = tmp54(4806);
+      tmp54Result = tmp54(4808);
     }
     obj28.trigger(str27);
     obj29 = PlatformUtils;
-  } else if (tmp(4796).SOFT === IMPACT_LIGHT) {
+  } else if (tmp(4798).SOFT === IMPACT_LIGHT) {
     Patterns.trigger("soft");
-  } else if (tmp(4796).SELECTION === IMPACT_LIGHT) {
+  } else if (tmp(4798).SELECTION === IMPACT_LIGHT) {
     const obj24 = Patterns;
     const tmp49 = require;
     let str24 = "selection";
@@ -99,57 +99,57 @@ export const triggerHapticFeedback = function triggerHapticFeedback(IMPACT_LIGHT
         str25 = "impactLight";
       }
       str24 = str25;
-      tmp49Result = tmp49(4806);
+      tmp49Result = tmp49(4808);
     }
     obj24.trigger(str24);
     obj25 = PlatformUtils;
-  } else if (tmp(4796).RIGID === IMPACT_LIGHT) {
+  } else if (tmp(4798).RIGID === IMPACT_LIGHT) {
     Patterns.trigger("rigid");
-  } else if (tmp(4796).NOTIFICATION_SUCCESS === IMPACT_LIGHT) {
+  } else if (tmp(4798).NOTIFICATION_SUCCESS === IMPACT_LIGHT) {
     Patterns.trigger("notificationSuccess");
-  } else if (tmp(4796).NOTIFICATION_WARNING === IMPACT_LIGHT) {
+  } else if (tmp(4798).NOTIFICATION_WARNING === IMPACT_LIGHT) {
     Patterns.trigger("notificationWarning");
-  } else if (tmp(4796).CONFIRM === IMPACT_LIGHT) {
+  } else if (tmp(4798).CONFIRM === IMPACT_LIGHT) {
     Patterns.trigger("confirm");
-  } else if (tmp(4796).REJECT === IMPACT_LIGHT) {
+  } else if (tmp(4798).REJECT === IMPACT_LIGHT) {
     Patterns.trigger("reject");
-  } else if (tmp(4796).GESTURE_START === IMPACT_LIGHT) {
+  } else if (tmp(4798).GESTURE_START === IMPACT_LIGHT) {
     Patterns.trigger("gestureStart");
-  } else if (tmp(4796).GESTURE_END === IMPACT_LIGHT) {
+  } else if (tmp(4798).GESTURE_END === IMPACT_LIGHT) {
     Patterns.trigger("gestureEnd");
-  } else if (tmp(4796).SEGMENT_TICK === IMPACT_LIGHT) {
+  } else if (tmp(4798).SEGMENT_TICK === IMPACT_LIGHT) {
     Patterns.trigger("segmentTick");
-  } else if (tmp(4796).SEGMENT_FREQUENT_TICK === IMPACT_LIGHT) {
+  } else if (tmp(4798).SEGMENT_FREQUENT_TICK === IMPACT_LIGHT) {
     Patterns.trigger("segmentFrequentTick");
-  } else if (tmp(4796).TOGGLE_ON === IMPACT_LIGHT) {
+  } else if (tmp(4798).TOGGLE_ON === IMPACT_LIGHT) {
     Patterns.trigger("toggleOn");
-  } else if (tmp(4796).TOGGLE_OFF === IMPACT_LIGHT) {
+  } else if (tmp(4798).TOGGLE_OFF === IMPACT_LIGHT) {
     Patterns.trigger("toggleOff");
-  } else if (tmp(4796).CLOCK_TICK === IMPACT_LIGHT) {
+  } else if (tmp(4798).CLOCK_TICK === IMPACT_LIGHT) {
     Patterns.trigger("clockTick");
-  } else if (tmp(4796).CONTEXT_CLICK === IMPACT_LIGHT) {
+  } else if (tmp(4798).CONTEXT_CLICK === IMPACT_LIGHT) {
     Patterns.trigger("contextClick");
-  } else if (tmp(4796).KEYBOARD_PRESS === IMPACT_LIGHT) {
+  } else if (tmp(4798).KEYBOARD_PRESS === IMPACT_LIGHT) {
     Patterns.trigger("keyboardPress");
-  } else if (tmp(4796).KEYBOARD_RELEASE === IMPACT_LIGHT) {
+  } else if (tmp(4798).KEYBOARD_RELEASE === IMPACT_LIGHT) {
     Patterns.trigger("keyboardRelease");
-  } else if (tmp(4796).KEYBOARD_TAP === IMPACT_LIGHT) {
+  } else if (tmp(4798).KEYBOARD_TAP === IMPACT_LIGHT) {
     Patterns.trigger("keyboardTap");
-  } else if (tmp(4796).LONG_PRESS === IMPACT_LIGHT) {
+  } else if (tmp(4798).LONG_PRESS === IMPACT_LIGHT) {
     Patterns.trigger("longPress");
-  } else if (tmp(4796).TEXT_HANDLE_MOVE === IMPACT_LIGHT) {
+  } else if (tmp(4798).TEXT_HANDLE_MOVE === IMPACT_LIGHT) {
     Patterns.trigger("textHandleMove");
-  } else if (tmp(4796).VIRTUAL_KEY === IMPACT_LIGHT) {
+  } else if (tmp(4798).VIRTUAL_KEY === IMPACT_LIGHT) {
     Patterns.trigger("virtualKey");
-  } else if (tmp(4796).VIRTUAL_KEY_RELEASE === IMPACT_LIGHT) {
+  } else if (tmp(4798).VIRTUAL_KEY_RELEASE === IMPACT_LIGHT) {
     Patterns.trigger("virtualKeyRelease");
-  } else if (tmp(4796).EFFECT_CLICK === IMPACT_LIGHT) {
+  } else if (tmp(4798).EFFECT_CLICK === IMPACT_LIGHT) {
     Patterns.trigger("effectClick");
-  } else if (tmp(4796).EFFECT_DOUBLE_CLICK === IMPACT_LIGHT) {
+  } else if (tmp(4798).EFFECT_DOUBLE_CLICK === IMPACT_LIGHT) {
     Patterns.trigger("effectDoubleClick");
-  } else if (tmp(4796).EFFECT_HEAVY_CLICK === IMPACT_LIGHT) {
+  } else if (tmp(4798).EFFECT_HEAVY_CLICK === IMPACT_LIGHT) {
     Patterns.trigger("effectHeavyClick");
-  } else if (tmp(4796).EFFECT_TICK === IMPACT_LIGHT) {
+  } else if (tmp(4798).EFFECT_TICK === IMPACT_LIGHT) {
     Patterns.trigger("effectTick");
   }
 };

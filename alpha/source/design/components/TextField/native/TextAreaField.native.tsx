@@ -1,25 +1,25 @@
-// Module ID: 7417
-// Function ID: 7418
+// Module ID: 7419
+// Function ID: 7420
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 4827, 576, 6949, 6942, 4526, 7418, 1115, 6952, 7266, 4823, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 6951, 6944, 4528, 7420, 1115, 6954, 7268, 4825, 2]
 
-// Module 7417 (TextAreaField)
+// Module 7419 (TextAreaField)
 import nativeDefault from "native" /* 576 */;
-import native from "native" /* 4526 */;
-import useTextField from "useTextField" /* 6942 */;
-import InputFieldContainer from "InputFieldContainer" /* 6949 */;
+import native from "native" /* 4528 */;
+import useTextField from "useTextField" /* 6944 */;
+import InputFieldContainer from "InputFieldContainer" /* 6951 */;
 import noop from "module_19" /* 19 */;
 
 const util = prop(1115);
-const Text_Text = prop(4823);
-const NativeTextInput = prop(6952);
-const propsForNativeTextInput = prop(7266);
-const useCharacterLimitAnnouncement = prop(7418);
+const Text_Text = prop(4825);
+const NativeTextInput = prop(6954);
+const propsForNativeTextInput = prop(7268);
+const useCharacterLimitAnnouncement = prop(7420);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { area: { height: 128, textAlignVertical: "top" }, maxLengthIndicator: null };
 const rect = { position: "absolute", bottom: nativeDefault.space.PX_4, right: nativeDefault.space.PX_16 };
 obj.maxLengthIndicator = rect;

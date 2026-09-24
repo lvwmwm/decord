@@ -1,15 +1,15 @@
-// Module ID: 14828
-// Function ID: 14829
+// Module ID: 14837
+// Function ID: 14838
 // Name: validateEmbeddedAppFrame
-// Dependencies: [9389, 14829, 4731, 1074, 9390, 9391, 9665, 9211, 9660, 2]
+// Dependencies: [9393, 14838, 4733, 1074, 9394, 9395, 9669, 9215, 9664, 2]
 // Exports: tryValidateEmbeddedAppFrame
 
-// Module 14828 (validateEmbeddedAppFrame)
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9211 */;
-import RPCErrorDefault from "RPCError" /* 9660 */;
-import RPCHelpers from "RPCHelpers" /* 9665 */;
-import FramesStore from "FramesStore" /* 9389 */;
-import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14829 */;
+// Module 14837 (validateEmbeddedAppFrame)
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 9215 */;
+import RPCErrorDefault from "RPCError" /* 9664 */;
+import RPCHelpers from "RPCHelpers" /* 9669 */;
+import FramesStore from "FramesStore" /* 9393 */;
+import VibegrationsBuilderPreviewStore from "VibegrationsBuilderPreviewStore" /* 14838 */;
 
 require = fn;
 function validateEmbeddedAppFrame(transport) {
@@ -25,11 +25,11 @@ function validateEmbeddedAppFrame(transport) {
       let tmp13 = null;
       if (null != tmp35) {
         const type = tmp35.surface.type;
-        if (tmp(9391).EmbeddedSurfaceType.APP_CHANNEL !== type) {
-          if (tmp(9391).EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
-            if (tmp(9391).EmbeddedSurfaceType.MAIN === type) {
+        if (tmp(9395).EmbeddedSurfaceType.APP_CHANNEL !== type) {
+          if (tmp(9395).EmbeddedSurfaceType.VOICE_CHANNEL !== type) {
+            if (tmp(9395).EmbeddedSurfaceType.MAIN === type) {
               if (tmp35.applicationId === VibegrationsBuilderPreviewStore.getBuilderPreviewApplicationId()) {
-                let obj5 = { channelId: "Array", guildId: "flex" };
+                let obj5 = { channelId: "channel", guildId: "channelId" };
               } else {
                 obj5 = null;
               }
@@ -60,10 +60,10 @@ function validateEmbeddedAppFrame(transport) {
   }
   obj3 = ApplicationFlagUtils;
 }
-const TransportTypes = fn(4731).TransportTypes;
+const TransportTypes = fn(4733).TransportTypes;
 const Constants = fn(1074);
 ({ ApplicationFlags: metroRequire, RPCErrors: closure_7 } = Constants);
-const asLaunched = fn(9390).asLaunched;
+const asLaunched = fn(9394).asLaunched;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/rpc/helpers/validateEmbeddedAppFrame.tsx");
 

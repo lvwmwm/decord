@@ -1,13 +1,13 @@
-// Module ID: 6294
-// Function ID: 6295
+// Module ID: 6296
+// Function ID: 6297
 // Name: EnvelopeSpotIllustration
-// Dependencies: [21, 5890, 6295, 2]
+// Dependencies: [21, 5892, 6297, 2]
 // Exports: EnvelopeSpotIllustration
 
-// Module 6294 (EnvelopeSpotIllustration)
+// Module 6296 (EnvelopeSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6295 from "module_6295" /* 6295 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6297 from "module_6297" /* 6297 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const EnvelopeSpotIllustration = function EnvelopeSpotIllustration(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6295 };
+  const obj2 = { uri: _modDef6297 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

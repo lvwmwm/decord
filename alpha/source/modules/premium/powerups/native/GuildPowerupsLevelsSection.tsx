@@ -1,14 +1,14 @@
-// Module ID: 12903
-// Function ID: 12904
+// Module ID: 12912
+// Function ID: 12913
 // Name: GuildPowerupsLevelsSection
-// Dependencies: [19, 17, 21, 576, 1365, 4827, 12892, 1115, 2516, 12904, 12905, 2]
+// Dependencies: [19, 17, 21, 576, 1365, 4829, 12901, 1115, 2518, 12913, 12914, 2]
 // Exports: default
 
-// Module 12903 (GuildPowerupsLevelsSection)
+// Module 12912 (GuildPowerupsLevelsSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import MarketingCardsScroller from "MarketingCardsScroller" /* 12904 */;
-import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12905 */;
+import MarketingCardsScroller from "MarketingCardsScroller" /* 12913 */;
+import GuildPowerupsLevelCardDefault from "GuildPowerupsLevelCard" /* 12914 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -21,7 +21,7 @@ let num = 325;
 if (PlatformUtils.isIOS()) {
   num = 300;
 }
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 const obj3 = { cardContainer: { width: 250, marginEnd: PX_16, flex: 1 }, scroller: { height: num, paddingBottom: nativeDefault.space.PX_8 }, scrollerContent: null };
 const obj4 = { height: num, paddingBottom: nativeDefault.space.PX_8 };
 obj3.scrollerContent = { paddingHorizontal: nativeDefault.space.PX_16 };
@@ -46,11 +46,11 @@ export default function GuildPowerupsLevelsSection(arg0) {
   }, []);
   const obj2 = { title: null, description: null };
   const intl = util.intl;
-  obj2.title = intl.string(listings(2516)["TXY/b0"]);
+  obj2.title = intl.string(listings(2518)["TXY/b0"]);
   const intl2 = util.intl;
-  obj2.description = intl2.string(listings(2516).aJv4PB);
-  const items1 = [closure_5(listings(12892), obj2), ];
-  const tmp3 = listings(12892);
+  obj2.description = intl2.string(listings(2518).aJv4PB);
+  const items1 = [closure_5(listings(12901), obj2), ];
+  const tmp3 = listings(12901);
   items1[1] = closure_5(MarketingCardsScroller.MarketingCardsScroller, {
     cardMarginRight: PX_16,
     cardWidth: 250,

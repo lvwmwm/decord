@@ -1,17 +1,17 @@
-// Module ID: 4714
-// Function ID: 4715
+// Module ID: 4716
+// Function ID: 4717
 // Name: GuildThemeRuntimeStore
-// Dependencies: [4715, 2064, 4648, 1074, 4719, 2063, 12, 504, 573, 2]
+// Dependencies: [4717, 2066, 4650, 1074, 4721, 2065, 12, 504, 573, 2]
 
-// Module 4714 (GuildThemeRuntimeStore)
+// Module 4716 (GuildThemeRuntimeStore)
 import _mod12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import guildThemeSerialization from "guildThemeSerialization" /* 2063 */;
-import Powerups from "Powerups" /* 4719 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4715 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4648 */;
+import guildThemeSerialization from "guildThemeSerialization" /* 2065 */;
+import Powerups from "Powerups" /* 4721 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4717 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
 
 require = fn;
 function snapshotSelectedGuildId(guildId) {

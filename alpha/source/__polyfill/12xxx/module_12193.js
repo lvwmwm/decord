@@ -1,0 +1,9 @@
+// Module ID: 12193
+// Function ID: 12194
+// Dependencies: [1121]
+
+// Module 12193
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 184, height: 152, scales: [2, 3], hash: "e53950ae8b4e55a0d929557716fe168b", name: "img_kick_member", type: "png" });

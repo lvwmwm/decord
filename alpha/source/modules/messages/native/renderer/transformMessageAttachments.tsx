@@ -1,18 +1,18 @@
-// Module ID: 13574
-// Function ID: 13575
+// Module ID: 13583
+// Function ID: 13584
 // Name: transformMessageAttachments
-// Dependencies: [8277, 1074, 1385, 11621, 4977, 8463, 1364, 8462, 1115, 8482, 8612, 5437, 8480, 2]
+// Dependencies: [8281, 1074, 1385, 11627, 4979, 8467, 1364, 8466, 1115, 8486, 8616, 5439, 8484, 2]
 // Exports: default
 
-// Module 13574 (transformMessageAttachments)
+// Module 13583 (transformMessageAttachments)
 import Constants from "Constants" /* 1074 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 4977 */;
-import noConflictDefault from "noConflict" /* 5437 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8277 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8463 */;
-import getDisplayFilenameDefault from "getDisplayFilename" /* 8612 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 11621 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 4979 */;
+import noConflictDefault from "noConflict" /* 5439 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8281 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8467 */;
+import getDisplayFilenameDefault from "getDisplayFilename" /* 8616 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 11627 */;
 import size from "module_2" /* 2 */;
 
 const AttachmentType = RowGeneratorConstants.AttachmentType;
@@ -81,8 +81,8 @@ export default function transformMessageAttachments(arg0) {
             }
           }
         }
-        const result1 = tmp(8462).sanitizeMediaDimension(num4);
-        const tmpResult8 = tmp(8462);
+        const result1 = tmp(8466).sanitizeMediaDimension(num4);
+        const tmpResult8 = tmp(8466);
         let num5 = 0;
         if (closure_1_1) {
           num5 = 0;
@@ -93,8 +93,8 @@ export default function transformMessageAttachments(arg0) {
             }
           }
         }
-        const result2 = tmp(8462).sanitizeMediaDimension(num5);
-        const tmpResult9 = tmp(8462);
+        const result2 = tmp(8466).sanitizeMediaDimension(num5);
+        const tmpResult9 = tmp(8466);
         if (flags == null) {
           flags = 0;
         }
@@ -122,8 +122,8 @@ export default function transformMessageAttachments(arg0) {
         const size1 = { url: localUri, isSuspiciousDownload: null, videoUrl: null, filename: null, size: null, description: null, alt: null, altTextHint: null, showDescription: null, durationSecs: null, waveform: null, width: null, height: null, hint: null, role: null, attachmentType: null, id: null, isAnimated: null, uploaderId: null, uploaderItemId: null, backgroundColor: null, placeholder: null, placeholderVersion: null, mediaViewerBufferForPlaybackMs: 1000, mediaViewerBufferForPlaybackAfterRebufferMs: 1000, mediaViewerMinBufferMs: 20000, mediaViewerMaxBufferMs: 20000, mediaViewerEnableDecoderFallback: false, mediaViewerEnableAsyncBufferQueueing: true, mediaViewerHttpEngine: null, srcIsAnimated: null, inlinePlaybackDisabled: null };
         let tmp30 = null != localUri;
         if (tmp30) {
-          tmp30 = null != tmp(8482).isSuspiciousDownload(localUri);
-          const tmpResult11 = tmp(8482);
+          tmp30 = null != tmp(8486).isSuspiciousDownload(localUri);
+          const tmpResult11 = tmp(8486);
         }
         size1.isSuspiciousDownload = tmp30;
         size1.videoUrl = tmp16;
@@ -186,7 +186,7 @@ export default function transformMessageAttachments(arg0) {
         size1.inlinePlaybackDisabled = isWebPlayerVideoFileResult;
         const str5 = intl2.string(tmp(1115).t.jCV1Tz);
         const obj8 = { attachment, shouldObscureSpoiler, enabledContentHarmTypeFlags, shouldAgeVerify };
-        const merged = Object.assign(tmp(8480).getAttachmentObscurityProps(obj8));
+        const merged = Object.assign(tmp(8484).getAttachmentObscurityProps(obj8));
         const merged1 = Object.assign(tmp28);
         return size1;
       }

@@ -1,10 +1,10 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12431
+// Function ID: 12432
 // Name: useClickOnHomeActivityOpensAppDetails
 // Dependencies: [2020, 2]
 // Exports: useClickOnHomeActivityOpensAppDetails
 
-// Module 12422 (useClickOnHomeActivityOpensAppDetails)
+// Module 12431 (useClickOnHomeActivityOpensAppDetails)
 import UserSettings from "UserSettings" /* 2020 */;
 import size from "module_2" /* 2 */;
 

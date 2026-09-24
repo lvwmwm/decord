@@ -1,13 +1,13 @@
-// Module ID: 11894
-// Function ID: 11895
+// Module ID: 11901
+// Function ID: 11902
 // Name: useGetOrFetchApplicationBatched
-// Dependencies: [19, 5054, 2037, 12, 7494, 504, 2]
+// Dependencies: [19, 5056, 2039, 12, 7496, 504, 2]
 // Exports: useGetOrFetchApplicationBatched, useRequestApplication
 
-// Module 11894 (useGetOrFetchApplicationBatched)
-import Timers from "Timers" /* 2037 */;
+// Module 11901 (useGetOrFetchApplicationBatched)
+import Timers from "Timers" /* 2039 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5054 */;
+import ApplicationStore from "ApplicationStore" /* 5056 */;
 
 const require = globalThis.__r;
 
@@ -85,7 +85,7 @@ let closure_129_0 = obj2;
 obj2._lastFetchedAttempted = new Map();
 let map = new Map();
 obj2._pending = new Set();
-let delayedCall = new fn(2037).DelayedCall(32, () => obj._flush());
+let delayedCall = new fn(2039).DelayedCall(32, () => obj._flush());
 obj2._flushHandler = delayedCall;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/applications/useGetOrFetchApplicationBatched.tsx");

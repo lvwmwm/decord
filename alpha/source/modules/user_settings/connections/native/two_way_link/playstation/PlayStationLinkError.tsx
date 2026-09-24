@@ -1,18 +1,18 @@
-// Module ID: 9460
-// Function ID: 9461
+// Module ID: 9464
+// Function ID: 9465
 // Name: PlayStationLinkError
-// Dependencies: [19, 9452, 1074, 21, 1484, 9446, 1115, 9447, 2]
+// Dependencies: [19, 9456, 1074, 21, 1484, 9450, 1115, 9451, 2]
 // Exports: PlayStationLinkError
 
-// Module 9460 (PlayStationLinkError)
+// Module 9464 (PlayStationLinkError)
 import util from "util" /* 1115 */;
 import useNavigation from "useNavigation" /* 1484 */;
-import useConnectRetry from "useConnectRetry" /* 9446 */;
-import TwoWayLinkError from "TwoWayLinkError" /* 9447 */;
+import useConnectRetry from "useConnectRetry" /* 9450 */;
+import TwoWayLinkError from "TwoWayLinkError" /* 9451 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const constants = fn(9452).PlayStationLinkModalScenes;
+const constants = fn(9456).PlayStationLinkModalScenes;
 const AbortCodes = fn(1074).AbortCodes;
 const jsx = fn(21).jsx;
 const size = fn(2);

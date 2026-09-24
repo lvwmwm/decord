@@ -1,14 +1,14 @@
-// Module ID: 17914
-// Function ID: 17915
+// Module ID: 17937
+// Function ID: 17938
 // Name: MultiAccountManager
-// Dependencies: [1372, 13987, 7449, 573, 13988, 2]
+// Dependencies: [1372, 13996, 7451, 573, 13997, 2]
 
-// Module 17914 (MultiAccountManager)
+// Module 17937 (MultiAccountManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GatewaySocket from "GatewaySocket" /* 13988 */;
+import GatewaySocket from "GatewaySocket" /* 13997 */;
 import UserStore from "UserStore" /* 1372 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13987 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7449 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 13996 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7451 */;
 
 require = fn;
 class MultiAccountManager extends tmp2 {

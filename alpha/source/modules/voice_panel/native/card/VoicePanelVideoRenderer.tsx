@@ -1,16 +1,16 @@
-// Module ID: 17678
-// Function ID: 17679
+// Module ID: 17701
+// Function ID: 17702
 // Name: VoicePanelVideoRenderer
-// Dependencies: [32, 19, 17, 12606, 12604, 17633, 12607, 21, 4559, 9782, 4827, 12605, 5270, 9743, 4795, 6983, 9771, 17636, 9774, 9772, 17625, 11697, 17548, 9776, 4524, 576, 4828, 7404, 9779, 2]
+// Dependencies: [32, 19, 17, 12615, 12613, 17656, 12616, 21, 4561, 9786, 4829, 12614, 5272, 9747, 4797, 6985, 9775, 17659, 9778, 9776, 17648, 11703, 17571, 9780, 4526, 576, 4830, 7406, 9783, 2]
 
-// Module 17678 (VoicePanelVideoRenderer)
-import ReanimatedRexport2 from "ReanimatedRexport" /* 4559 */;
-import spring from "spring" /* 5270 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 6983 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9743 */;
-import DCDVideoRendererDefault from "DCDVideoRenderer" /* 9782 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11697 */;
-import VideoActionCreators from "VideoActionCreators" /* 17548 */;
+// Module 17701 (VoicePanelVideoRenderer)
+import ReanimatedRexport2 from "ReanimatedRexport" /* 4561 */;
+import spring from "spring" /* 5272 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 6985 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 9747 */;
+import DCDVideoRendererDefault from "DCDVideoRenderer" /* 9786 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11703 */;
+import VideoActionCreators from "VideoActionCreators" /* 17571 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,12 +18,12 @@ const ReanimatedRexport = ReanimatedRexport2;
 
 require = fn;
 const PixelRatio = fn(17).PixelRatio;
-const VoicePanelConstants = fn(12606);
+const VoicePanelConstants = fn(12615);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const MODE_CHANGE_PHYSICS = VoicePanelConstants.MODE_CHANGE_PHYSICS;
-const VoicePanelControlsModes = fn(12604).VoicePanelControlsModes;
-const VoicePanelPIPModes = fn(17633).VoicePanelPIPModes;
-let SCALE_PHYSICS = fn(12607).SCALE_PHYSICS;
+const VoicePanelControlsModes = fn(12613).VoicePanelControlsModes;
+const VoicePanelPIPModes = fn(17656).VoicePanelPIPModes;
+let SCALE_PHYSICS = fn(12616).SCALE_PHYSICS;
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
 let c13 = 25;
@@ -43,7 +43,7 @@ function getScaleChangeWithOverscroll(arg0, arg1, arg2) {
 getScaleChangeWithOverscroll.__closure = { MIN_OVERSCROLL: 0.1, OVERSCOLL_INTENSITY_FACTOR: 5 };
 getScaleChangeWithOverscroll.__workletHash = 8727721301304;
 getScaleChangeWithOverscroll.__initData = { code: "function getScaleChangeWithOverscroll_VoicePanelVideoRendererTsx1(currentScale,scaleChange,fitScale){const{MIN_OVERSCROLL,OVERSCOLL_INTENSITY_FACTOR}=this.__closure;if(currentScale>=fitScale){return scaleChange;}const underScale=1-currentScale;const factor=Math.max(MIN_OVERSCROLL,1-underScale*underScale*OVERSCOLL_INTENSITY_FACTOR);return 1+(scaleChange-1)*factor;}" };
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_18 = createStyles.createStyles({ wrapper: { position: "absolute", top: 0, left: 0, width: "100%", height: "100%", alignItems: "center", justifyContent: "center" }, animatedWrapperStyles: { position: "absolute" }, video: { width: "100%", height: "100%" }, spinner: { position: "absolute", top: "50%", left: "50%", marginTop: -16, marginLeft: -16, height: 32, width: 32 } });
 let closure_19 = { code: "function VoicePanelVideoRendererTsx2(){const{containerLayout,videoDimensions}=this.__closure;return Math.max(containerLayout.get().width/videoDimensions.get().width,containerLayout.get().height/videoDimensions.get().height);}" };
 let closure_20 = { code: "function VoicePanelVideoRendererTsx3(){const{containerLayout,videoDimensions}=this.__closure;return Math.min(containerLayout.get().width/videoDimensions.get().width,containerLayout.get().height/videoDimensions.get().height);}" };
@@ -1144,9 +1144,9 @@ export default noop.memo(function VideoRenderer(streamKey) {
           }
           let num2 = 0.3;
           if (true === isFocused) {
-            const tmpResult = tmp(4559);
-            num2 = tmpResult.withDelay(300, tmp(4828).withTiming(0.3, { duration: 0 }, "animate-never"));
-            const tmpResult2 = tmp(4828);
+            const tmpResult = tmp(4561);
+            num2 = tmpResult.withDelay(300, tmp(4830).withTiming(0.3, { duration: 0 }, "animate-never"));
+            const tmpResult2 = tmp(4830);
           }
           const result = sharedValue10.set(num2);
         }

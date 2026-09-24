@@ -1,14 +1,14 @@
-// Module ID: 15266
-// Function ID: 15267
+// Module ID: 15275
+// Function ID: 15276
 // Name: UserSettingsFamilyCenterParentalControls
-// Dependencies: [32, 19, 17, 1074, 7866, 21, 4827, 576, 1484, 7493, 7513, 7325, 15230, 15248, 1115, 2484, 8192, 15267, 15268, 9969, 7867, 7454, 15269, 9970, 12955, 2]
+// Dependencies: [32, 19, 17, 1074, 7868, 21, 4829, 576, 1484, 7495, 7515, 7327, 15239, 15257, 1115, 2486, 8194, 15276, 15277, 9974, 7869, 7456, 15278, 9975, 12964, 2]
 // Exports: default
 
-// Module 15266 (UserSettingsFamilyCenterParentalControls)
+// Module 15275 (UserSettingsFamilyCenterParentalControls)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef2484 from "module_2484" /* 2484 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7867 */;
+import _modDef2486 from "module_2486" /* 2486 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 7869 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -18,10 +18,10 @@ require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = get_ActivityIndicator);
 const UserSettingsSections = fn(1074).UserSettingsSections;
-const FamilyCenterSubPages = fn(7866).FamilyCenterSubPages;
+const FamilyCenterSubPages = fn(7868).FamilyCenterSubPages;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 const obj2 = { container: { display: "flex", flex: 1 }, segmentedControlContainer: { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 }, content: null };
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16 };
 obj2.content = { paddingBottom: nativeDefault.space.PX_16 };
@@ -86,7 +86,7 @@ export default function FamilyCenterParentalControlsSettings() {
       if (null != id) {
         let obj = { title: null, headerRight: null };
         let intl = util.intl;
-        obj.title = intl.string(_modDef2484["1Op+NP"]);
+        obj.title = intl.string(_modDef2486["1Op+NP"]);
         let fn;
         if (!closure_5) {
           fn = (arg0) => {
@@ -104,7 +104,7 @@ export default function FamilyCenterParentalControlsSettings() {
         stackNavigation.setOptions(obj);
       }
     }
-    stackNavigation.setOptions({ title: "Array", headerRight: "flex" });
+    stackNavigation.setOptions({ title: "channel", headerRight: "channelId" });
   }, items1);
   const obj4 = { label: null, id: null, page: null };
   let intl = tmp2(tmp3[14]).intl;

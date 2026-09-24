@@ -1,23 +1,23 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13354
+// Function ID: 13355
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 8710, 21, 4827, 13342, 8680, 11993, 4684, 4559, 4828, 8714, 8715, 1115, 5983, 1177, 576, 4823, 13346, 8260, 1364, 13347, 8267, 2]
+// Dependencies: [19, 17, 8714, 21, 4829, 13351, 8684, 12000, 4686, 4561, 4830, 8718, 8719, 1115, 5985, 1177, 576, 4825, 13355, 8264, 1364, 13356, 8271, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 13345 (MediaModalOverlayHeader)
-import ReanimatedRexportDefault from "ReanimatedRexport" /* 4559 */;
-import timing from "timing" /* 4828 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8715 */;
-import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 11993 */;
+// Module 13354 (MediaModalOverlayHeader)
+import ReanimatedRexportDefault from "ReanimatedRexport" /* 4561 */;
+import timing from "timing" /* 4830 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 8719 */;
+import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 12000 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ StyleSheet: c3, View: closure_4 } = get_ActivityIndicator);
-const SHARE_PREPARING_MODAL_KEY = fn(8710).SHARE_PREPARING_MODAL_KEY;
+const SHARE_PREPARING_MODAL_KEY = fn(8714).SHARE_PREPARING_MODAL_KEY;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_8 = createStyles.createStyles({ navbarInner: { flex: 1, justifyContent: "space-between" }, navbarLeft: { flexShrink: 1, flexDirection: "row", marginRight: 8 }, navbarRight: { flexShrink: 0, justifyContent: "flex-end", flexDirection: "row", gap: 8 }, navbarName: { flexShrink: 1, alignItems: "center", height: 40, marginLeft: 8 }, navbarNameInner: { borderRadius: 20, justifyContent: "center", alignItems: "center", backgroundColor: "rgba(0, 0, 0, 0.7)", flex: 1, flexDirection: "row", paddingHorizontal: 18 }, navbarNameShrinkWrapper: { flexShrink: 1 }, contextIcon: { width: 18, height: 18, marginRight: 6 } });
 const __initData = { code: "function MediaModalOverlayHeaderTsx1(){const{withTiming,isPreparing}=this.__closure;return{opacity:withTiming(isPreparing?0:1)};}" };
 const size = fn(2);
@@ -28,13 +28,13 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   let isModalOpen;
   ({ onClose, disableDownload, disableMediaOverlayButton, shareable, animationDriver, channelId } = arg0);
   const tmp = closure_8();
-  const headerLayoutAnimation = isModalOpen(13342).useHeaderLayoutAnimation(animationDriver);
-  let obj = isModalOpen(13342);
-  const mediaShareActions = isModalOpen(8680).useMediaShareActions({ source, disableDownload, shareable });
+  const headerLayoutAnimation = isModalOpen(13351).useHeaderLayoutAnimation(animationDriver);
+  let obj = isModalOpen(13351);
+  const mediaShareActions = isModalOpen(8684).useMediaShareActions({ source, disableDownload, shareable });
   const tmp7 = useShouldHideMediaOptionsDefault(channelId);
-  const obj2 = isModalOpen(8680);
-  isModalOpen = isModalOpen(4684).useIsModalOpen(SHARE_PREPARING_MODAL_KEY);
-  const obj3 = isModalOpen(4684);
+  const obj2 = isModalOpen(8684);
+  isModalOpen = isModalOpen(4686).useIsModalOpen(SHARE_PREPARING_MODAL_KEY);
+  const obj3 = isModalOpen(4686);
   const fn = function w() {
     let num = 1;
     if (isModalOpen) {
@@ -42,8 +42,8 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
     }
     return { opacity: timing.withTiming(num) };
   };
-  const obj4 = isModalOpen(4559);
-  fn.__closure = { withTiming: isModalOpen(4828).withTiming, isPreparing: isModalOpen };
+  const obj4 = isModalOpen(4561);
+  fn.__closure = { withTiming: isModalOpen(4830).withTiming, isPreparing: isModalOpen };
   fn.__workletHash = 13276839935975;
   fn.__initData = __initData;
   const animatedStyle = obj4.useAnimatedStyle(fn);
@@ -62,10 +62,10 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   const obj9 = { style: tmp.navbarInner, children: null };
   const obj10 = { style: tmp.navbarLeft, children: null };
   const obj11 = { accessibilityLabel: null, icon: null, onPress: null };
-  const obj5 = { withTiming: isModalOpen(4828).withTiming, isPreparing: isModalOpen };
+  const obj5 = { withTiming: isModalOpen(4830).withTiming, isPreparing: isModalOpen };
   let intl = tmp2(1115).intl;
   obj11.accessibilityLabel = intl.string(isModalOpen(1115).t.cpT0Cq);
-  obj11.icon = closure_6(isModalOpen(5983).XSmallIcon, { size: "md", color: "interactive-text-active" });
+  obj11.icon = closure_6(isModalOpen(5985).XSmallIcon, { size: "md", color: "interactive-text-active" });
   obj11.onPress = onClose;
   const items1 = [closure_6(MediaViewerOverlayButtonDefault, obj11), ];
   let tmp10Result3 = null != contextName;
@@ -80,7 +80,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
     const items2 = [tmp10Result, ];
     const obj15 = { style: tmp.navbarNameShrinkWrapper, children: null };
     const obj16 = { accessibilityRole: "header", variant: "heading-md/medium", lineClamp: 1, ellipsizeMode: "tail", color: "text-overlay-light", children: contextName };
-    obj15.children = tmp10(tmp2(4823).Text, obj16);
+    obj15.children = tmp10(tmp2(4825).Text, obj16);
     items2[1] = tmp10(tmp13, obj15);
     obj13.children = items2;
     obj12.children = tmp12(tmp13, obj13);
@@ -93,7 +93,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   if (!tmp7) {
     const obj17 = { style: tmp.navbarRight, children: null };
     const obj18 = { source };
-    const items4 = [tmp10(tmp6(13346), obj18), ];
+    const items4 = [tmp10(tmp6(13355), obj18), ];
     let tmp10Result4 = null;
     if (!disableMediaOverlayButton) {
       const obj19 = {
@@ -105,9 +105,9 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
               obj.accessibilityLabel = intl.string(isModalOpen(1115).t.PdRCRg);
               const tmp4 = MediaViewerOverlayButtonDefault;
               if (obj2.isAndroid()) {
-                let tmp2Result = tmp2(tmp5(13347).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
+                let tmp2Result = tmp2(tmp5(13356).MoreVerticalIcon, { size: "md", color: "interactive-text-active" });
               } else {
-                tmp2Result = tmp2(tmp5(8267).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
+                tmp2Result = tmp2(tmp5(8271).MoreHorizontalIcon, { size: "md", color: "interactive-text-active" });
               }
               obj.icon = tmp2Result;
               obj.ref = ref.ref;
@@ -115,7 +115,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
               return closure_1_6(tmp4, obj);
             }
       };
-      tmp10Result4 = tmp10(tmp2(8260).ContextMenu, obj19);
+      tmp10Result4 = tmp10(tmp2(8264).ContextMenu, obj19);
     }
     items4[1] = tmp10Result4;
     obj17.children = items4;
@@ -123,7 +123,7 @@ export const MediaModalOverlayHeader = function MediaModalOverlayHeader(arg0) {
   }
   items3[1] = tmp12Result;
   obj9.children = items3;
-  obj8.children = closure_7(isModalOpen(8714).MediaModalOverlayHeaderWrapper, obj9);
+  obj8.children = closure_7(isModalOpen(8718).MediaModalOverlayHeaderWrapper, obj9);
   obj6.children = closure_6(ReanimatedRexportDefault.View, obj8);
   return closure_6(ReanimatedRexportDefault.View, obj6);
 };

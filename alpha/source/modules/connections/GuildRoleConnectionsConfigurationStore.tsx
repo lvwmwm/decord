@@ -1,12 +1,12 @@
-// Module ID: 18126
-// Function ID: 18127
+// Module ID: 18149
+// Function ID: 18150
 // Name: GuildRoleConnectionsConfigurationStore
-// Dependencies: [2064, 504, 573, 2]
+// Dependencies: [2066, 504, 573, 2]
 
-// Module 18126 (GuildRoleConnectionsConfigurationStore)
+// Module 18149 (GuildRoleConnectionsConfigurationStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import GuildStore from "GuildStore" /* 2064 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 const map = new Map();
 const Store = initializeDefault.Store;

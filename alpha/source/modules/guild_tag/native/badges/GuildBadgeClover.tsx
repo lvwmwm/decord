@@ -1,12 +1,12 @@
-// Module ID: 14307
-// Function ID: 14308
+// Module ID: 14316
+// Function ID: 14317
 // Name: GuildBadgeClover
-// Dependencies: [19, 21, 14275, 8803, 2]
+// Dependencies: [19, 21, 14284, 8807, 2]
 // Exports: GuildBadgeClover
 
-// Module 14307 (GuildBadgeClover)
-import inlineStyles from "inlineStyles" /* 8803 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 14275 */;
+// Module 14316 (GuildBadgeClover)
+import inlineStyles from "inlineStyles" /* 8807 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 14284 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

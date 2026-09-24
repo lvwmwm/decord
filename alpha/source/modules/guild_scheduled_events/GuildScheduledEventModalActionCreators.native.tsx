@@ -1,15 +1,15 @@
-// Module ID: 9966
-// Function ID: 9967
+// Module ID: 9971
+// Function ID: 9972
 // Name: guild_scheduled_events/GuildScheduledEventModalActionCreators
-// Dependencies: [5, 2048, 9863, 4794, 9967, 1980, 9832, 9982, 2]
+// Dependencies: [5, 2050, 9868, 4796, 9972, 1980, 9837, 9987, 2]
 // Exports: openEndEventModal, transitionToEventDetailsFromInvite
 
-// Module 9966 (guild_scheduled_events/GuildScheduledEventModalActionCreators)
+// Module 9971 (guild_scheduled_events/GuildScheduledEventModalActionCreators)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
-const ScheduleUtils = tmp2(9832);
+const ScheduleUtils = tmp2(9837);
 require = fn;
 function openGuildEventDetails(arg0) {
   ({ event, recurrenceId } = arg0);
@@ -21,7 +21,7 @@ function openGuildEventDetails(arg0) {
     const tmp2Result = ScheduleUtils;
   }
   obj2.recurrenceId = recurrenceId;
-  obj.openLazy(asyncRequireImpl(9967, dependencyMap.paths), closure_5, obj2, "stack");
+  obj.openLazy(asyncRequireImpl(9972, dependencyMap.paths), closure_5, obj2, "stack");
 }
 let closure_7 = async function _transitionToEventDetailsFromInvite(arg0, value) {
   if (c5 === 2) {
@@ -81,8 +81,8 @@ let closure_7 = async function _transitionToEventDetailsFromInvite(arg0, value) 
     }
   }
 };
-let closure_4 = fn(2048).EXPLICIT_END_EVENT_SHEET_KEY;
-let closure_5 = fn(9863).GUILD_EVENT_INFO_ACTION_SHEET_KEY;
+let closure_4 = fn(2050).EXPLICIT_END_EVENT_SHEET_KEY;
+let closure_5 = fn(9868).GUILD_EVENT_INFO_ACTION_SHEET_KEY;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_scheduled_events/GuildScheduledEventModalActionCreators.native.tsx");
 
@@ -98,5 +98,5 @@ export const transitionToEventDetailsFromInvite = function transitionToEventDeta
   return applyArgumentsResult;
 };
 export const openEndEventModal = function openEndEventModal(channel) {
-  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9982, dependencyMap.paths), closure_4, { channel });
+  ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(9987, dependencyMap.paths), closure_4, { channel });
 };

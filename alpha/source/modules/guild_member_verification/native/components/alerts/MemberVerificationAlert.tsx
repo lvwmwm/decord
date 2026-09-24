@@ -1,20 +1,20 @@
-// Module ID: 5840
-// Function ID: 5841
+// Module ID: 5842
+// Function ID: 5843
 // Name: MemberVerificationAlert
-// Dependencies: [19, 17, 21, 4827, 576, 5290, 4823, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 5292, 4825, 2]
 // Exports: default
 
-// Module 5840 (MemberVerificationAlert)
+// Module 5842 (MemberVerificationAlert)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import common_AlertDefault from "common/Alert" /* 5290 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import common_AlertDefault from "common/Alert" /* 5292 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { headerImage: { marginLeft: "auto", marginRight: "auto", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, borderRadius: nativeDefault.radii.round, padding: 12, marginTop: 8, marginBottom: 8 }, header: { marginTop: 8, marginBottom: 8, textAlign: "center" }, subtitle: { lineHeight: 18, marginBottom: 8, textAlign: "center" }, buttons: { marginTop: 16, marginBottom: 8, gap: 12 } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);

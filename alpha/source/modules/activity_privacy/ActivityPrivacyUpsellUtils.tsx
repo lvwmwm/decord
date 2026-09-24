@@ -1,18 +1,18 @@
-// Module ID: 15188
-// Function ID: 15189
+// Module ID: 15197
+// Function ID: 15198
 // Name: ActivityPrivacyUpsellUtils
-// Dependencies: [5812, 4746, 2064, 5741, 1186, 7326, 1115, 2020, 2]
+// Dependencies: [5814, 4748, 2066, 5743, 1186, 7328, 1115, 2020, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
-// Module 15188 (ActivityPrivacyUpsellUtils)
+// Module 15197 (ActivityPrivacyUpsellUtils)
 import util from "util" /* 1115 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7326 */;
-import FrecencyStore from "FrecencyStore" /* 5812 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 4746 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import SortedGuildStore from "SortedGuildStore" /* 5741 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7328 */;
+import FrecencyStore from "FrecencyStore" /* 5814 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 4748 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import SortedGuildStore from "SortedGuildStore" /* 5743 */;
 
 require = fn;
 function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
@@ -46,7 +46,7 @@ function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
         } else {
           EXPANDING = obj.EXPANDING;
         }
-        dependencyMap = tmp8(7326).getSanitizedActivityRestrictedGuilds();
+        dependencyMap = tmp8(7328).getSanitizedActivityRestrictedGuilds();
         const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
         if (setting !== tmp8(1186).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {
           if (setting !== tmp8(1186).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {

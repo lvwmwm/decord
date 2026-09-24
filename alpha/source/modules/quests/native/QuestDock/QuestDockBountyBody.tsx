@@ -1,24 +1,24 @@
-// Module ID: 15533
-// Function ID: 15534
+// Module ID: 15547
+// Function ID: 15548
 // Name: QuestDockBountyBody
-// Dependencies: [19, 5747, 21, 15509, 15429, 15419, 15426, 11821, 1115, 11848, 8045, 8050, 8060, 5754, 8049, 5750, 15339, 15341, 11831, 15527, 11640, 15534, 8265, 13302, 2]
+// Dependencies: [19, 5749, 21, 15518, 15438, 15428, 15435, 11829, 1115, 11854, 8047, 8052, 8062, 5756, 8051, 5752, 15348, 15350, 11837, 15536, 11646, 15548, 8269, 13311, 2]
 
-// Module 15533 (QuestDockBountyBody)
+// Module 15547 (QuestDockBountyBody)
 import util from "util" /* 1115 */;
-import QuestTypes from "QuestTypes" /* 5750 */;
-import AdCreativeType from "AdCreativeType" /* 5754 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8045 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8049 */;
-import captureAdUserAction from "captureAdUserAction" /* 8050 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 8060 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 11831 */;
-import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 11848 */;
-import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15339 */;
-import BountiesModalTypes from "BountiesModalTypes" /* 15341 */;
+import QuestTypes from "QuestTypes" /* 5752 */;
+import AdCreativeType from "AdCreativeType" /* 5756 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8047 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8051 */;
+import captureAdUserAction from "captureAdUserAction" /* 8052 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 8062 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 11837 */;
+import MobileQuestVideoWatchCtaCopy from "MobileQuestVideoWatchCtaCopy" /* 11854 */;
+import BountiesModalActionCreatorsDefault from "BountiesModalActionCreators" /* 15348 */;
+import BountiesModalTypes from "BountiesModalTypes" /* 15350 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const QuestDockMode = fn(5747).QuestDockMode;
+const QuestDockMode = fn(5749).QuestDockMode;
 const jsx = fn(21).jsx;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockBountyBody.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 7401
-// Function ID: 7402
+// Module ID: 7403
+// Function ID: 7404
 // Name: PortalToNativeView
-// Dependencies: [19, 17, 21, 4827, 2]
+// Dependencies: [19, 17, 21, 4829, 2]
 // Exports: default
 
-// Module 7401 (PortalToNativeView)
+// Module 7403 (PortalToNativeView)
 import noop from "module_19" /* 19 */;
 
 const jsx = fn(21).jsx;
 let closure_1 = fn(17).requireNativeComponent("PortalToNativeView");
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_2 = createStyles.createStyles({ portal: { position: "absolute", opacity: 0, height: 0, right: 0, left: 0, top: 0 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/portals/PortalToNativeView.native.tsx");

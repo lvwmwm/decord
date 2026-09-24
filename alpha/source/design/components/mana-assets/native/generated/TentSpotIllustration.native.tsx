@@ -1,13 +1,13 @@
-// Module ID: 6868
-// Function ID: 6869
+// Module ID: 6870
+// Function ID: 6871
 // Name: TentSpotIllustration
-// Dependencies: [21, 5890, 6869, 2]
+// Dependencies: [21, 5892, 6871, 2]
 // Exports: TentSpotIllustration
 
-// Module 6868 (TentSpotIllustration)
+// Module 6870 (TentSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6869 from "module_6869" /* 6869 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6871 from "module_6871" /* 6871 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const TentSpotIllustration = function TentSpotIllustration(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6869 };
+  const obj2 = { uri: _modDef6871 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

@@ -1,13 +1,13 @@
-// Module ID: 5438
-// Function ID: 5439
+// Module ID: 5440
+// Function ID: 5441
 // Name: uploader/UploadUtils
-// Dependencies: [5430, 1271, 5439, 1350, 2]
+// Dependencies: [5432, 1271, 5441, 1350, 2]
 // Exports: calculateProgress, canUploadNatively, doesImageMatchUpload
 
-// Module 5438 (uploader/UploadUtils)
+// Module 5440 (uploader/UploadUtils)
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import js_shim_shim from "js_shim/shim" /* 1350 */;
-import Upload from "Upload" /* 5430 */;
+import Upload from "Upload" /* 5432 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("lib/uploader/UploadUtils.tsx");
@@ -122,8 +122,8 @@ export const canUploadNatively = function canUploadNatively(platform) {
     fileIsInAppDirResult = null != platform.uri;
   }
   if (fileIsInAppDirResult) {
-    fileIsInAppDirResult = tmp(5439).fileIsInAppDir(platform.uri);
-    const tmpResult = tmp(5439);
+    fileIsInAppDirResult = tmp(5441).fileIsInAppDir(platform.uri);
+    const tmpResult = tmp(5441);
   }
   if (fileIsInAppDirResult) {
     fileIsInAppDirResult = tmp(1350).isLibdiscoreInitialized();

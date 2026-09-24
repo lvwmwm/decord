@@ -1,13 +1,13 @@
-// Module ID: 6906
-// Function ID: 6907
+// Module ID: 6908
+// Function ID: 6909
 // Name: WordBalloonIllocon
-// Dependencies: [21, 5890, 6907, 2]
+// Dependencies: [21, 5892, 6909, 2]
 // Exports: WordBalloonIllocon
 
-// Module 6906 (WordBalloonIllocon)
+// Module 6908 (WordBalloonIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6907 from "module_6907" /* 6907 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6909 from "module_6909" /* 6909 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const WordBalloonIllocon = function WordBalloonIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6907 };
+  const obj2 = { uri: _modDef6909 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

@@ -1,9 +1,0 @@
-// Module ID: 15021
-// Function ID: 15022
-// Dependencies: [1121]
-
-// Module 15021
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/mfa/native/images", width: 380, height: 290, scales: [1], hash: "e8d550faf4e256dff3cc4faddf07f107", name: "img_keychain", type: "png" });

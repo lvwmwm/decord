@@ -1,13 +1,13 @@
-// Module ID: 9041
-// Function ID: 9042
+// Module ID: 9045
+// Function ID: 9046
 // Name: SteamNeutralIcon
-// Dependencies: [19, 21, 576, 4523, 9042, 2]
+// Dependencies: [19, 21, 576, 4525, 9046, 2]
 // Exports: SteamNeutralIcon
 
-// Module 9041 (SteamNeutralIcon)
+// Module 9045 (SteamNeutralIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod9042 from "module_9042" /* 9042 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod9046 from "module_9046" /* 9046 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const SteamNeutralIcon = function SteamNeutralIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9042, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9046, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,10 +1,10 @@
-// Module ID: 12492
-// Function ID: 12493
+// Module ID: 12501
+// Function ID: 12502
 // Name: useLatch
 // Dependencies: [19, 2]
 // Exports: default
 
-// Module 12492 (useLatch)
+// Module 12501 (useLatch)
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);

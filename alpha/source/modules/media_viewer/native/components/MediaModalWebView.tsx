@@ -1,11 +1,11 @@
-// Module ID: 8643
-// Function ID: 8644
+// Module ID: 8647
+// Function ID: 8648
 // Name: MediaModalWebView
-// Dependencies: [19, 17, 21, 1364, 4827, 4559, 4828, 4518, 8644, 2]
+// Dependencies: [19, 17, 21, 1364, 4829, 4561, 4830, 4520, 8648, 2]
 
-// Module 8643 (MediaModalWebView)
-import LinkingDefault from "Linking" /* 4518 */;
-import timing from "timing" /* 4828 */;
+// Module 8647 (MediaModalWebView)
+import LinkingDefault from "Linking" /* 4520 */;
+import timing from "timing" /* 4830 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -19,7 +19,7 @@ if (PlatformUtils.isIOS()) {
   str = "\n  window.addEventListener('click', function(event) {\n    window.ReactNativeWebView.postMessage(JSON.stringify({event: 'click'}));\n  });\n";
 }
 const PlayerState = { UNREADY: 0, [0]: "UNREADY", READY: 1, [1]: "READY", ERRORED: 2, [2]: "ERRORED", UNSTARTED: 3, [3]: "UNSTARTED", ENDED: 4, [4]: "ENDED", PLAYING: 5, [5]: "PLAYING", PAUSED: 6, [6]: "PAUSED", BUFFERING: 7, [7]: "BUFFERING", VIDEO_CUED: 8, [8]: "VIDEO_CUED" };
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_10 = createStyles.createStyles({ loading: { top: 0, left: 0, right: 0, bottom: 0, position: "absolute", alignItems: "center", justifyContent: "center" } });
 const __initData = { code: "function MediaModalWebViewTsx1(){const{withTiming,webviewOpacity}=this.__closure;return{opacity:withTiming(webviewOpacity.get())};}" };
 const __initData2 = { code: "function MediaModalWebViewTsx2(){const{withTiming,loaderOpacity}=this.__closure;return{opacity:withTiming(loaderOpacity.get())};}" };

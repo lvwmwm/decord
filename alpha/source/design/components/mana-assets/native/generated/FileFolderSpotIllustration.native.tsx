@@ -1,13 +1,13 @@
-// Module ID: 6316
-// Function ID: 6317
+// Module ID: 6318
+// Function ID: 6319
 // Name: FileFolderSpotIllustration
-// Dependencies: [21, 5890, 6317, 2]
+// Dependencies: [21, 5892, 6319, 2]
 // Exports: FileFolderSpotIllustration
 
-// Module 6316 (FileFolderSpotIllustration)
+// Module 6318 (FileFolderSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6317 from "module_6317" /* 6317 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6319 from "module_6319" /* 6319 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const FileFolderSpotIllustration = function FileFolderSpotIllustration(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6317 };
+  const obj2 = { uri: _modDef6319 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

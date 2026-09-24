@@ -1,19 +1,19 @@
-// Module ID: 14951
-// Function ID: 14952
+// Module ID: 14960
+// Function ID: 14961
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 8536, 10114, 7539, 1074, 1084, 11543, 21, 7320, 14952, 4481, 7493, 7513, 14953, 4794, 14954, 1980, 8511, 8508, 8510, 1115, 8585, 14965, 8506, 6953, 7312, 576, 11493, 14966, 11076, 12207, 8530, 9709, 12300, 8513, 8586, 11538, 504, 8541, 13464, 8571, 8582, 14969, 4823, 4533, 11458, 14970, 11459, 11499, 14975, 14976, 14981, 14985, 14987, 14988, 14992, 14996, 15001, 15002, 15005, 15006, 2]
+// Dependencies: [19, 17, 8540, 10119, 7541, 1074, 1084, 11549, 21, 7322, 14961, 4483, 7495, 7515, 14962, 4796, 14963, 1980, 8515, 8512, 8514, 1115, 8589, 14974, 8510, 6955, 7314, 576, 11499, 14975, 11082, 12214, 8534, 9713, 12309, 8517, 8590, 11544, 504, 8545, 13473, 8575, 8586, 14978, 4825, 4535, 11464, 14979, 11465, 11505, 14984, 14985, 14990, 14994, 14996, 14997, 15001, 15005, 15010, 15011, 15014, 15015, 2]
 // Exports: default
 
-// Module 14951 (UserProfileEditForm)
+// Module 14960 (UserProfileEditForm)
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8510 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8541 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 13464 */;
-import _modDef14952 from "module_14952" /* 14952 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8514 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8545 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 13473 */;
+import _modDef14961 from "module_14961" /* 14961 */;
 import noop from "module_19" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8536 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10114 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8540 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10119 */;
 
 require = fn;
 function EditUserProfileBanner(user) {
@@ -45,12 +45,12 @@ function EditUserProfileBanner(user) {
     const obj2 = { user, analyticsLocations, onBannerChange: null, showRemoveBanner: null, isTryItOut: null };
     obj = ActionSheetActionCreatorsDefault;
     if (isTryItOut) {
-      let fn = tmp2(8511).setTryItOutBanner;
+      let fn = tmp2(8515).setTryItOutBanner;
     } else {
       fn = (banner) => user(isTryItOut[19]).setPendingChanges({ banner });
     }
     obj2.onBannerChange = fn;
-    const tmp3 = asyncRequireImpl(14954, dependencyMap.paths);
+    const tmp3 = asyncRequireImpl(14963, dependencyMap.paths);
     const tmp4 = isTryItOut;
     let banner;
     if (displayProfile != null) {
@@ -68,14 +68,14 @@ function EditUserProfileBanner(user) {
 }
 get_ActivityIndicator = fn(17);
 ({ ScrollView: closure_4, View: hasOwnProperty } = get_ActivityIndicator);
-const FLOATING_UPSELL_HEIGHT = fn(7539).FLOATING_UPSELL_HEIGHT;
+const FLOATING_UPSELL_HEIGHT = fn(7541).FLOATING_UPSELL_HEIGHT;
 const Constants = fn(1074);
 ({ DISPLAY_NAME_MAX_LENGTH: closure_9, PRONOUNS_MAX_LENGTH: c10 } = Constants);
 let closure_11 = fn(1084).ProfileCustomizationScrollPositions;
-const constants = fn(11543).UserProfileEditAutoFocusElement;
+const constants = fn(11549).UserProfileEditAutoFocusElement;
 const jsxProd = fn(21);
 ({ jsx: map1, jsxs: closure_14 } = jsxProd);
-let obj = { assetOrigin: fn(7320).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14952, staticImageUri: _modDef14952, description: "", originalAsset: "channel" };
+let obj = { assetOrigin: fn(7322).AssetOriginTypes.NEW_ASSET, imageUri: _modDef14961, staticImageUri: _modDef14961, description: "", originalAsset: "paddingHorizontal" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileEditForm.tsx");
 

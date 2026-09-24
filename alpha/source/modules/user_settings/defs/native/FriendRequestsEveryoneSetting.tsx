@@ -1,25 +1,25 @@
-// Module ID: 15313
-// Function ID: 15314
+// Module ID: 15322
+// Function ID: 15323
 // Name: FriendRequestsEveryoneSetting
-// Dependencies: [19, 8319, 1074, 2020, 7326, 15154, 11805, 1115, 2]
+// Dependencies: [19, 8323, 1074, 2020, 7328, 15163, 11811, 1115, 2]
 
-// Module 15313 (FriendRequestsEveryoneSetting)
+// Module 15322 (FriendRequestsEveryoneSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7326 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 15154 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7328 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15163 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const Constants = fn(1074);
 ({ AllFriendSourceFlags: c3, FriendSourceFlags: closure_4 } = Constants);
-const SettingBuilders = fn(11805);
+const SettingBuilders = fn(11811);
 const toggle = SettingBuilders.createToggle({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.mGr3CX);
   },
-  parent: fn(8319).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
+  parent: fn(8323).MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: function useFriendRequestsEveryoneSettingValue() {
     const FriendSourceFlagsSetting = setting(2020).FriendSourceFlagsSetting;
     setting = FriendSourceFlagsSetting.useSetting();

@@ -1,13 +1,13 @@
-// Module ID: 8256
-// Function ID: 8257
+// Module ID: 8260
+// Function ID: 8261
 // Name: ThumbsUpIcon
-// Dependencies: [19, 21, 576, 4523, 8257, 2]
+// Dependencies: [19, 21, 576, 4525, 8261, 2]
 // Exports: ThumbsUpIcon
 
-// Module 8256 (ThumbsUpIcon)
+// Module 8260 (ThumbsUpIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod8257 from "module_8257" /* 8257 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod8261 from "module_8261" /* 8261 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ThumbsUpIcon = function ThumbsUpIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8257, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8261, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,16 +1,16 @@
-// Module ID: 15580
-// Function ID: 15581
+// Module ID: 15594
+// Function ID: 15595
 // Name: UntouchableAlert
-// Dependencies: [19, 17, 21, 4827, 4533, 5880, 2]
+// Dependencies: [19, 17, 21, 4829, 4535, 5882, 2]
 
-// Module 15580 (UntouchableAlert)
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5880 */;
+// Module 15594 (UntouchableAlert)
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 5882 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_4 = createStyles.createLegacyClassComponentStyles({ container: { flex: 1, alignItems: "center", justifyContent: "center" } });
 const PureComponent = noop.PureComponent;
 class UntouchableAlert extends PureComponent {
@@ -44,7 +44,7 @@ prototype["render"] = function render() {
   }
   return tmp2;
 };
-UntouchableAlert.contextType = fn(4533).ThemeContext;
+UntouchableAlert.contextType = fn(4535).ThemeContext;
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/common/UntouchableAlert.tsx");
 

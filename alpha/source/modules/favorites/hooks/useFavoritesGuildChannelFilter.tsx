@@ -1,15 +1,15 @@
-// Module ID: 11327
-// Function ID: 11328
+// Module ID: 11333
+// Function ID: 11334
 // Name: useFavoritesGuildChannelFilter
-// Dependencies: [19, 2042, 4462, 2045, 1074, 504, 10177, 2067, 1370, 2]
+// Dependencies: [19, 2044, 4464, 2047, 1074, 504, 10182, 2069, 1370, 2]
 // Exports: default
 
-// Module 11327 (useFavoritesGuildChannelFilter)
-import sortByMatchScore from "sortByMatchScore" /* 10177 */;
+// Module 11333 (useFavoritesGuildChannelFilter)
+import sortByMatchScore from "sortByMatchScore" /* 10182 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import PermissionStore from "PermissionStore" /* 4462 */;
-import FavoriteStore from "FavoriteStore" /* 2045 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import PermissionStore from "PermissionStore" /* 4464 */;
+import FavoriteStore from "FavoriteStore" /* 2047 */;
 
 require = fn;
 const Permissions = fn(1074).Permissions;
@@ -37,18 +37,18 @@ export default function useFavoritesGuildChannelFilter() {
         tmp15 = tmp17;
       }
       return tmp15;
-    } else if (tmp(10177).AutocompleterResultTypes.GROUP_DM === type) {
+    } else if (tmp(10182).AutocompleterResultTypes.GROUP_DM === type) {
       return null == stateFromStores[type.record.id];
     } else {
-      if (tmp(10177).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-        if (tmp(10177).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+      if (tmp(10182).AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+        if (tmp(10182).AutocompleterResultTypes.VOICE_CHANNEL !== type) {
           return tmp(1370).assertNever(type);
         }
       }
       let canResult = PermissionStore.can(Permissions.VIEW_CHANNEL, type.record);
       if (canResult) {
-        canResult = tmp(2067).isFavoritableChannel(type.record);
-        const tmpResult2 = tmp(2067);
+        canResult = tmp(2069).isFavoritableChannel(type.record);
+        const tmpResult2 = tmp(2069);
       }
       if (canResult) {
         canResult = null == stateFromStores[type.record.id];

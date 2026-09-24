@@ -1,26 +1,26 @@
-// Module ID: 8179
-// Function ID: 8180
+// Module ID: 8181
+// Function ID: 8182
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4819, 1182, 4850, 4648, 1372, 1374, 1074, 4874, 8180, 8174, 21, 4827, 576, 4524, 4481, 8181, 5464, 5436, 8182, 8183, 8185, 5995, 1115, 8186, 8187, 4794, 8178, 8188, 8189, 13690, 13691, 12544, 12553, 13694, 1094, 1364, 9165, 5890, 5283, 504, 7493, 9504, 10308, 7775, 9561, 9512, 1241, 10309, 4693, 7528, 13695, 4823, 5271, 8396, 2]
+// Dependencies: [19, 17, 4821, 1182, 4852, 4650, 1372, 1374, 1074, 4876, 8182, 8176, 21, 4829, 576, 4526, 4483, 8183, 5466, 5438, 8184, 8185, 8187, 5997, 1115, 8188, 8189, 4796, 8180, 8190, 8191, 13699, 13700, 12553, 12562, 13703, 1094, 1364, 9169, 5892, 5285, 504, 7495, 9508, 10313, 7777, 9565, 9516, 1241, 10314, 4695, 7530, 13704, 4825, 5273, 8400, 2]
 // Exports: default
 
-// Module 8179 (PremiumUpsellActionSheet)
+// Module 8181 (PremiumUpsellActionSheet)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import PremiumUtils from "PremiumUtils" /* 4481 */;
-import ChatInputUtils from "ChatInputUtils" /* 4693 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import LinearGradientDefault from "LinearGradient" /* 5283 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8178 */;
-import showForLaterModal from "showForLaterModal" /* 8188 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 8189 */;
-import APNGPlayer from "APNGPlayer" /* 9165 */;
+import PremiumUtils from "PremiumUtils" /* 4483 */;
+import ChatInputUtils from "ChatInputUtils" /* 4695 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import LinearGradientDefault from "LinearGradient" /* 5285 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8180 */;
+import showForLaterModal from "showForLaterModal" /* 8190 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 8191 */;
+import APNGPlayer from "APNGPlayer" /* 9169 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4819 */;
+import AccessibilityStore from "AccessibilityStore" /* 4821 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4648 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -73,13 +73,13 @@ const PremiumConstants = fn(1374);
 ({ PremiumSubscriptionSKUs: c10, PremiumTypes: closure_11, PremiumUpsellTypes: closure_12 } = PremiumConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: map1, AnalyticsPages: closure_14, ThemeTypes: closure_15 } = Constants);
-const ApplicationStreamFPS = fn(4874).ApplicationStreamFPS;
-const SavedMessagesConstants = fn(8180);
+const ApplicationStreamFPS = fn(4876).ApplicationStreamFPS;
+const SavedMessagesConstants = fn(8182);
 ({ SAVED_BOOKMARKS_MAX: closure_17, SAVED_REMINDERS_MAX: closure_18 } = SavedMessagesConstants);
-const premiumMax = fn(8174).MAX_SCHEDULED_MESSAGES_PER_USER;
+const premiumMax = fn(8176).MAX_SCHEDULED_MESSAGES_PER_USER;
 const jsxProd = fn(21);
 ({ jsx: closure_20, Fragment: closure_21, jsxs: closure_22 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { hero: { alignSelf: "center", marginTop: nativeDefault.space.PX_16 }, image: { width: 240, height: 144 }, text: { alignSelf: "center", textAlign: "center" }, betaTag: { marginLeft: 0 }, description: null, textContainer: null, buttonContainer: null, imageGradientBackgroundContainer: null, imageGradientBackground: null, imageInGradientBackground: null };
 let obj3 = { alignSelf: "center", marginTop: nativeDefault.space.PX_16 };
 obj2.description = { marginHorizontal: nativeDefault.space.PX_16 };

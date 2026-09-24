@@ -1,9 +1,9 @@
-// Module ID: 2095
-// Function ID: 2096
+// Module ID: 2097
+// Function ID: 2098
 // Name: ChangelogConstants
 // Dependencies: [2]
 
-// Module 2095 (ChangelogConstants)
+// Module 2097 (ChangelogConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/changelog/ChangelogConstants.tsx");

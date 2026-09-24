@@ -1,14 +1,14 @@
 // Module ID: 1227
 // Function ID: 1228
 // Name: CustomThemeMobileStore
-// Dependencies: [1183, 1182, 1184, 1220, 1084, 1228, 4674, 1186, 573, 504, 2]
+// Dependencies: [1183, 1182, 1184, 1220, 1084, 1228, 4676, 1186, 573, 504, 2]
 
 // Module 1227 (CustomThemeMobileStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1186 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 4674 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 4676 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1183 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1184 */;
@@ -99,7 +99,7 @@ prototype["getState"] = function getState() {
     const obj2 = { theme, customTheme: prop };
     let obj = obj2;
   } else {
-    obj = { theme: "Array", customTheme: "flex" };
+    obj = { theme: "channel", customTheme: "channelId" };
   }
   return obj;
 };

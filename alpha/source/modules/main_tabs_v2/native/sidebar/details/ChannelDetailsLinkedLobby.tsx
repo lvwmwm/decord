@@ -1,23 +1,23 @@
-// Module ID: 17287
-// Function ID: 17288
+// Module ID: 17310
+// Function ID: 17311
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1074, 21, 4827, 576, 7499, 4823, 1115, 2108, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 7501, 4825, 1115, 2110, 2]
 // Exports: default
 
-// Module 17287 (ChannelDetailsLinkedLobby)
+// Module 17310 (ChannelDetailsLinkedLobby)
 import nativeDefault from "native" /* 576 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7499 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7501 */;
 import noop from "module_19" /* 19 */;
 
 const util = BPDKoA(1115);
-const Text_Text = BPDKoA(4823);
+const Text_Text = BPDKoA(4825);
 require = fn;
 const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ Fragment: hasOwnProperty, jsxs: metroRequire, jsx: closure_7 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { alignItems: "center" }, divider: null };
 let size = { height: 1, width: 48, marginTop: 12, backgroundColor: nativeDefault.colors.BORDER_STRONG };
 obj2.divider = size;

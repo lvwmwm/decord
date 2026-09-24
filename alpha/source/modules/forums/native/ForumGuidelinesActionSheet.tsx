@@ -1,26 +1,26 @@
-// Module ID: 10610
-// Function ID: 10611
+// Module ID: 10615
+// Function ID: 10616
 // Name: ForumGuidelinesActionSheet
-// Dependencies: [32, 19, 17, 7601, 21, 4827, 576, 8214, 1612, 10611, 1364, 10612, 4794, 7454, 5272, 1115, 4654, 4981, 8979, 7481, 6955, 5425, 4823, 10593, 8753, 5379, 4817, 10610, 1980, 2]
+// Dependencies: [32, 19, 17, 7603, 21, 4829, 576, 8216, 1612, 10616, 1364, 10617, 4796, 7456, 5274, 1115, 4656, 4983, 8983, 7483, 6957, 5427, 4825, 10598, 8757, 5381, 4819, 10615, 1980, 2]
 // Exports: default, openForumGuidelinesActionSheet
 
-// Module 10610 (ForumGuidelinesActionSheet)
+// Module 10615 (ForumGuidelinesActionSheet)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import LinkUtils from "LinkUtils" /* 4981 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8979 */;
-import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10612 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import LinkUtils from "LinkUtils" /* 4983 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8983 */;
+import ForumGuidelinesManagerDefault from "ForumGuidelinesManager" /* 10617 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
-let closure_6 = fn(7601).FORUM_GUIDELINES_ACTION_SHEET;
+let closure_6 = fn(7603).FORUM_GUIDELINES_ACTION_SHEET;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8, Fragment: closure_9 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { scrollContainer: { paddingHorizontal: 16 }, header: { alignItems: "center", paddingTop: 20, paddingBottom: 24 }, headerTitle: { marginTop: 8 }, guidelinesContainer: { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm }, footer: { paddingBottom: 16 }, buttonWrapper: { marginHorizontal: 16 }, buttonPill: null, floatingButtonContainer: null, editButton: null, editText: null, editIcon: null };
 let obj3 = { padding: 16, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm };
 obj2.buttonPill = { borderRadius: nativeDefault.radii.sm };
@@ -187,5 +187,5 @@ export const openForumGuidelinesActionSheet = function openForumGuidelinesAction
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = {};
   const merged = Object.assign(arg0);
-  obj.openLazy(asyncRequireImpl(10610, dependencyMap.paths), closure_6, obj2);
+  obj.openLazy(asyncRequireImpl(10615, dependencyMap.paths), closure_6, obj2);
 };

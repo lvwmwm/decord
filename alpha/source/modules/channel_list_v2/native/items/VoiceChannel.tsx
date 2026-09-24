@@ -1,21 +1,21 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16661
+// Function ID: 16662
 // Name: VoiceChannel
-// Dependencies: [5, 19, 17, 7855, 4462, 4842, 5008, 4851, 10459, 1074, 21, 576, 5354, 5872, 1980, 5034, 9829, 16635, 16638, 9723, 504, 16628, 11224, 4817, 8295, 9946, 1241, 16629, 16518, 11259, 1115, 4972, 16532, 16523, 12392, 2]
+// Dependencies: [5, 19, 17, 7857, 4464, 4844, 5010, 4853, 10464, 1074, 21, 576, 5356, 5874, 1980, 5036, 9834, 16659, 16662, 9727, 504, 16652, 11230, 4819, 8299, 9951, 1241, 16653, 16542, 11265, 1115, 4974, 16556, 16547, 12401, 2]
 
-// Module 16637 (VoiceChannel)
+// Module 16661 (VoiceChannel)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9946 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11259 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12392 */;
+import getChannelA11yLabelDefault from "getChannelA11yLabel" /* 9951 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 11265 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12401 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7855 */;
-import PermissionStore from "PermissionStore" /* 4462 */;
-import ReadStateStore from "ReadStateStore" /* 4842 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4851 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 7857 */;
+import PermissionStore from "PermissionStore" /* 4464 */;
+import ReadStateStore from "ReadStateStore" /* 4844 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 4853 */;
 
 require = fn;
 let closure_17 = async function _handleVoiceChannelPress(arg0) {
@@ -42,8 +42,8 @@ let closure_17 = async function _handleVoiceChannelPress(arg0) {
   })();
 };
 const View = fn(17).View;
-const NO_VOICE_STATES = fn(4851).NO_VOICE_STATES;
-const RedesignChannelListConstants = fn(10459);
+const NO_VOICE_STATES = fn(4853).NO_VOICE_STATES;
+const RedesignChannelListConstants = fn(10464);
 ({ CHANNEL_SUBTITLE_TEXT_VARIANT: closure_12, CHANNEL_MARGIN_VERTICAL } = RedesignChannelListConstants);
 const Constants = fn(1074);
 ({ AnalyticEvents: map1, Permissions: closure_14 } = Constants);

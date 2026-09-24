@@ -1,11 +1,11 @@
-// Module ID: 7646
-// Function ID: 7647
+// Module ID: 7648
+// Function ID: 7649
 // Name: SimpleLoadingModal
-// Dependencies: [5030, 7647, 1980, 2]
+// Dependencies: [5032, 7649, 1980, 2]
 // Exports: showSimpleLoadingModal
 
-// Module 7646 (SimpleLoadingModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
+// Module 7648 (SimpleLoadingModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,5 +25,5 @@ export const showSimpleLoadingModal = function showSimpleLoadingModal(c3, arg1) 
       onDismissed();
     }
   };
-  obj.pushLazy(require("asyncRequireImpl")(7647, dependencyMap.paths), obj2, c3, { animation: "none" });
+  obj.pushLazy(require("asyncRequireImpl")(7649, dependencyMap.paths), obj2, c3, { animation: "none" });
 };

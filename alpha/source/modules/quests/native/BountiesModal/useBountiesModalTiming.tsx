@@ -1,14 +1,14 @@
-// Module ID: 15355
-// Function ID: 15356
+// Module ID: 15364
+// Function ID: 15365
 // Name: useBountiesModalTiming
-// Dependencies: [32, 19, 5747, 2]
+// Dependencies: [32, 19, 5749, 2]
 // Exports: useBountiesModalTiming
 
-// Module 15355 (useBountiesModalTiming)
+// Module 15364 (useBountiesModalTiming)
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
-let closure_2 = fn(5747).BOUNTY_CTA_TIMER_MILLISECONDS;
+let closure_2 = fn(5749).BOUNTY_CTA_TIMER_MILLISECONDS;
 const BountyVideoEndMode = { END_CARD: "END_CARD", END_CARD_WITH_CTA: "END_CARD_WITH_CTA", LOOP: "LOOP", APP_STORE_LOOP: "APP_STORE_LOOP" };
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/quests/native/BountiesModal/useBountiesModalTiming.tsx");

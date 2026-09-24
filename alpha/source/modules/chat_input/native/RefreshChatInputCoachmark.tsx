@@ -1,20 +1,20 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12327
+// Function ID: 12328
 // Name: RefreshChatInputCoachmark
-// Dependencies: [32, 19, 2039, 7716, 2028, 1115, 4533, 11474, 2]
+// Dependencies: [32, 19, 2041, 7718, 2028, 1115, 4535, 11480, 2]
 // Exports: default, useRefreshChatInputCoachmark
 
-// Module 12318 (RefreshChatInputCoachmark)
+// Module 12327 (RefreshChatInputCoachmark)
 import util from "util" /* 1115 */;
-import native from "native" /* 4533 */;
-import useCoachmark from "useCoachmark" /* 11474 */;
+import native from "native" /* 4535 */;
+import useCoachmark from "useCoachmark" /* 11480 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ContentDismissActionType = fn(2039).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/chat_input/native/RefreshChatInputCoachmark.tsx");
 

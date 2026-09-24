@@ -1,20 +1,20 @@
-// Module ID: 9057
-// Function ID: 9058
+// Module ID: 9061
+// Function ID: 9062
 // Name: GameProfileStoreLinksActionSheet
-// Dependencies: [19, 17, 21, 4827, 576, 9030, 4518, 1612, 7528, 6955, 4823, 1115, 5271, 4794, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 9034, 4520, 1612, 7530, 6957, 4825, 1115, 5273, 4796, 2]
 // Exports: default
 
-// Module 9057 (GameProfileStoreLinksActionSheet)
+// Module 9061 (GameProfileStoreLinksActionSheet)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import LinkingDefault from "Linking" /* 4518 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import components_Button_Button from "components/Button/Button" /* 5271 */;
-import BottomSheetModal from "BottomSheetModal" /* 6955 */;
-import ActionSheet from "ActionSheet" /* 7528 */;
-import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9030 */;
+import LinkingDefault from "Linking" /* 4520 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import components_Button_Button from "components/Button/Button" /* 5273 */;
+import BottomSheetModal from "BottomSheetModal" /* 6957 */;
+import ActionSheet from "ActionSheet" /* 7530 */;
+import useOpenExternalUrlFromGameProfileDefault from "useOpenExternalUrlFromGameProfile" /* 9034 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { header: { gap: nativeDefault.space.PX_8, paddingTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_24 }, headerText: { textAlign: "center" }, buttons: null };
 let obj3 = { gap: nativeDefault.space.PX_8, paddingTop: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_24 };
 obj2.buttons = { gap: nativeDefault.space.PX_12 };

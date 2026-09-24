@@ -1,25 +1,25 @@
-// Module ID: 13449
-// Function ID: 13450
+// Module ID: 13458
+// Function ID: 13459
 // Name: VibegrationsChatStore
-// Dependencies: [32, 109, 7865, 10423, 2096, 4648, 5582, 9385, 1074, 2049, 1115, 3712, 9388, 2020, 10244, 504, 573, 2]
+// Dependencies: [32, 109, 7867, 10428, 2098, 4650, 5584, 9389, 1074, 2051, 1115, 3714, 9392, 2020, 10249, 504, 573, 2]
 // Exports: getOlderHistoryCursor, turnSettled
 
-// Module 13449 (VibegrationsChatStore)
+// Module 13458 (VibegrationsChatStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import _modDef3712 from "module_3712" /* 3712 */;
-import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9388 */;
-import SoundUtils from "SoundUtils" /* 10244 */;
+import _modDef3714 from "module_3714" /* 3714 */;
+import VibegrationsPlatformUtilsDefault from "VibegrationsPlatformUtils" /* 9392 */;
+import SoundUtils from "SoundUtils" /* 10249 */;
 import _slicedToArray from "module_32" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 7865 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 10423 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4648 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 5582 */;
-import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9385 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 7867 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 10428 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 5584 */;
+import VibegrationsProjectStore from "VibegrationsProjectStore" /* 9389 */;
 
 require = fn;
 function newMessage(assistant, content, arg2) {
@@ -347,8 +347,8 @@ function recordThinkingTransition(projectId) {
             isWindowFocusedResult = SelectedChannelStore.getChannelId() === StaticChannelRoute.VIBEGRATIONS;
           }
           if (isWindowFocusedResult) {
-            isWindowFocusedResult = tmp68(9388).isWindowFocused();
-            const tmp68Result = tmp68(9388);
+            isWindowFocusedResult = tmp68(9392).isWindowFocused();
+            const tmp68Result = tmp68(9392);
           }
           if (guild_id == null) {
             guild_id = project.guild_id;
@@ -390,7 +390,7 @@ function recordThinkingTransition(projectId) {
                     if ("terminal_error" !== tmp47.kind) {
                       if ("preview_ready" === tmp47.kind) {
                         let intl = util.intl;
-                        content = intl.string(_modDef3712["78YNh7"]);
+                        content = intl.string(_modDef3714["78YNh7"]);
                       } else {
                         diff3 = diff3 - 1;
                         content = null;
@@ -553,7 +553,7 @@ let closure_4 = ["disposition"];
 let closure_5 = ["disposition"];
 const Constants = fn(1074);
 ({ Routes: closure_14, StatusTypes: closure_15 } = Constants);
-const StaticChannelRoute = fn(2049).StaticChannelRoute;
+const StaticChannelRoute = fn(2051).StaticChannelRoute;
 const bit_message1 = "bit_message1";
 let set = new Set(["reply", "plan_proposed", "terminal_error"]);
 const map = new Map();
@@ -1072,7 +1072,7 @@ const vibegrationsChatStore = new VibegrationsChatStore(DispatcherDefault, {
                 const items = [];
                 const obj2 = { type: "step", kind: "terminal_error", message: null };
                 const intl = util.intl;
-                obj2.message = intl.string(_modDef3712["wjWm+/"]);
+                obj2.message = intl.string(_modDef3714["wjWm+/"]);
                 items[HermesBuiltin.arraySpread(disposition.steps, 0)] = obj2;
                 obj.steps = items;
                 tmp2 = obj;

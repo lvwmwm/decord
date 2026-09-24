@@ -1,28 +1,28 @@
-// Module ID: 11940
-// Function ID: 11941
+// Module ID: 11947
+// Function ID: 11948
 // Name: ChannelMembersActionSheet
-// Dependencies: [19, 17, 2042, 2105, 2099, 2064, 4462, 1074, 21, 4827, 576, 1612, 504, 1484, 4980, 11941, 9902, 1115, 7481, 7480, 5425, 4794, 8979, 11943, 7708, 8949, 11939, 10374, 1177, 6955, 9918, 4823, 2]
+// Dependencies: [19, 17, 2044, 2107, 2101, 2066, 4464, 1074, 21, 4829, 576, 1612, 504, 1484, 4982, 11948, 9907, 1115, 7483, 7482, 5427, 4796, 8983, 11950, 7710, 8953, 11946, 10379, 1177, 6957, 9923, 4825, 2]
 // Exports: default
 
-// Module 11940 (ChannelMembersActionSheet)
+// Module 11947 (ChannelMembersActionSheet)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import useNavigation from "useNavigation" /* 1484 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1612 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8979 */;
-import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9918 */;
-import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11939 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11941 */;
-import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11943 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 8983 */;
+import ChannelOverwritesItemDefault from "ChannelOverwritesItem" /* 9923 */;
+import channel_permissions_ChannelPermissionsUtils from "channel_permissions/ChannelPermissionsUtils" /* 11946 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 11948 */;
+import ChannelDetailsUtils from "ChannelDetailsUtils" /* 11950 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4462 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import PermissionStore from "PermissionStore" /* 4464 */;
 
 require = fn;
 const View = fn(17).View;
@@ -30,7 +30,7 @@ const Constants = fn(1074);
 ({ ChannelSettingsSections: closure_9, Permissions: c10 } = Constants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { paddingHorizontal: 16, flex: 1 }, sectionRowWrapper: { paddingVertical: nativeDefault.space.PX_12 }, warning: { margin: 16, marginBottom: 0 } };
 let closure_13 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -78,9 +78,9 @@ export default function ChannelMembersActionSheet(arg0) {
       if (null != sortedGuildRoles) {
         const canResult = PermissionStore.can(constants2.MANAGE_ROLES, stateFromStores);
         c5 = canResult;
-        const tmp5Result = tmp5(9902);
+        const tmp5Result = tmp5(9907);
         const existingRolesRows = tmp5Result.getExistingRolesRows(guild, sortedGuildRoles, stateFromStores, stateFromStores.accessPermissions);
-        const tmp5Result2 = tmp5(9902);
+        const tmp5Result2 = tmp5(9907);
         const obj5 = { appChannelBotUserId: tmp11 };
         const items5 = [];
         const obj6 = { title: null, data: null };
@@ -113,12 +113,12 @@ export default function ChannelMembersActionSheet(arg0) {
           };
           let intl = tmp5(1115).intl;
           obj9.accessibilityLabel = intl.string(tmp5(1115).t.XPDhcc);
-          obj9.children = tmp32(tmp5(7708).SettingsIcon, {});
-          tmp32Result = tmp32(tmp5(5425).PressableOpacity, obj9);
+          obj9.children = tmp32(tmp5(7710).SettingsIcon, {});
+          tmp32Result = tmp32(tmp5(5427).PressableOpacity, obj9);
         }
         const obj10 = { scrollable: true, header: null, startExpanded: true, children: null };
         obj8.trailing = tmp32Result;
-        obj10.header = closure_11(tmp5(7480).BottomSheetTitleHeader, obj8);
+        obj10.header = closure_11(tmp5(7482).BottomSheetTitleHeader, obj8);
         const obj11 = { style: tmp.container, children: null };
         if (canResult) {
           const obj12 = { label: null, onPress: null, icon: null };
@@ -127,8 +127,8 @@ export default function ChannelMembersActionSheet(arg0) {
           obj12.onPress = function onPress() {
             return channel_permissions_ChannelPermissionsUtils.openAddMembersActionSheet(stateFromStores);
           };
-          obj12.icon = tmp32(tmp5(10374).GroupPlusIcon, {});
-          let tmp32Result2 = tmp32(tmp5(8949).RowButton, obj12);
+          obj12.icon = tmp32(tmp5(10379).GroupPlusIcon, {});
+          let tmp32Result2 = tmp32(tmp5(8953).RowButton, obj12);
         } else {
           const obj13 = { style: tmp.warning, children: null };
           const obj14 = { messageType: tmp5(1177).HelpMessageTypes.INFO, children: null };
@@ -154,10 +154,10 @@ export default function ChannelMembersActionSheet(arg0) {
           return closure_2_11(Text_Text.Text, obj);
         };
         obj15.sections = items5;
-        items6[1] = closure_11(tmp5(6955).BottomSheetSectionList, obj15);
+        items6[1] = closure_11(tmp5(6957).BottomSheetSectionList, obj15);
         obj11.children = items6;
         obj10.children = closure_12(stateFromStores, obj11);
-        return closure_11(tmp5(7481).BottomSheet, obj10);
+        return closure_11(tmp5(7483).BottomSheet, obj10);
       }
     }
   }

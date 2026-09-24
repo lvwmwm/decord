@@ -1,9 +1,9 @@
-// Module ID: 2081
-// Function ID: 2082
+// Module ID: 2083
+// Function ID: 2084
 // Name: Runtime
-// Dependencies: [4, 2073, 2]
+// Dependencies: [4, 2075, 2]
 
-// Module 2081 (Runtime)
+// Module 2083 (Runtime)
 import logger_Logger from "logger/Logger" /* 4 */;
 import size from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ prototype["completeOperation"] = function completeOperation(value, timings, nowR
 prototype["initialize"] = function initialize() {
   const self = this;
   if (!this.initialized) {
-    const KV_RAW = self(2073).KV_RAW;
+    const KV_RAW = self(2075).KV_RAW;
     const obj = {
       status(handle) {
           return self.onStatus(handle);

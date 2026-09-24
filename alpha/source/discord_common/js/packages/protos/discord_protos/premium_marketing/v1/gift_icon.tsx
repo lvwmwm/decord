@@ -1,11 +1,11 @@
-// Module ID: 11019
-// Function ID: 11020
+// Module ID: 11025
+// Function ID: 11026
 // Name: gift_icon
-// Dependencies: [32, 1187, 11020, 2]
+// Dependencies: [32, 1187, 11026, 2]
 
-// Module 11019 (gift_icon)
+// Module 11025 (gift_icon)
 import _mod1187 from "module_1187" /* 1187 */;
-import gradient from "gradient" /* 11020 */;
+import gradient from "gradient" /* 11026 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

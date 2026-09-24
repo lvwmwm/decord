@@ -1,21 +1,21 @@
-// Module ID: 12284
-// Function ID: 12285
+// Module ID: 12291
+// Function ID: 12292
 // Name: createChannelStream
-// Dependencies: [11771, 8002, 8165, 8277, 1074, 11, 12285, 12286, 1115, 4505, 8320, 12080, 7597, 2]
+// Dependencies: [11777, 8004, 8167, 8281, 1074, 11, 12292, 12294, 12295, 1115, 4507, 8324, 12087, 7599, 2]
 // Exports: default
 
-// Module 12284 (createChannelStream)
+// Module 12291 (createChannelStream)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import isNewMessageGroupDefault from "isNewMessageGroup" /* 12285 */;
-import tryInjectMessage from "tryInjectMessage" /* 12286 */;
-import PushFeedbackStore from "PushFeedbackStore" /* 11771 */;
-import EditMessageStore from "EditMessageStore" /* 8002 */;
-import UploadStore from "UploadStore" /* 8165 */;
+import isNewMessageGroupDefault from "isNewMessageGroup" /* 12294 */;
+import tryInjectMessage from "tryInjectMessage" /* 12295 */;
+import PushFeedbackStore from "PushFeedbackStore" /* 11777 */;
+import EditMessageStore from "EditMessageStore" /* 8004 */;
+import UploadStore from "UploadStore" /* 8167 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const RowGeneratorConstants = fn(8277);
+const RowGeneratorConstants = fn(8281);
 ({ Changeset: metroRequire, LoadingType: closure_7, RowType: closure_8, SeparatorType: closure_9 } = RowGeneratorConstants);
 const MessageFlags = fn(1074).MessageFlags;
 const size = fn(2);
@@ -23,9 +23,9 @@ let result = size.fileFinishedImporting("modules/messages/native/createChannelSt
 
 export default function createChannelStream(forceRender) {
   ({ channel: require, messages } = forceRender);
-  ({ uploads, oldestUnreadMessageId: id, replyingMessageId: PushFeedbackStore, currentUserId: EditMessageStore, canAddNewReactions: UploadStore, selectedSummary: closure_6, chatManager: closure_7, roleStyle } = forceRender);
+  ({ uploads, oldestUnreadMessageId: id, replyingMessageId: PushFeedbackStore, currentUserId: EditMessageStore, canAddNewReactions: UploadStore, selectedSummary: closure_6, selectedConversation: closure_7, chatManager: closure_8, roleStyle } = forceRender);
   forceRender = forceRender.forceRender;
-  ({ updateMessageIds: MessageFlags, isResourceChannel: closure_11, unloadableContentEntryMessageIds: closure_12 } = forceRender);
+  ({ updateMessageIds: closure_11, isResourceChannel: closure_12, unloadableContentEntryMessageIds: closure_13 } = forceRender);
   let items1;
   function unreadFilter(id) {
     if (require.isForumPost()) {
@@ -42,21 +42,23 @@ export default function createChannelStream(forceRender) {
   function insertMessage(message) {
     const first = items1[0];
     if (null != first) {
-      if (require.isForumPost()) {
-        let tmp2 = tmp12;
-        if (tmp12) {
-          tmp2 = message.id !== SnowflakeUtilsDefault.castChannelIdAsMessageId(tmp10.id);
+      if (forumPost.isForumPost()) {
+        let tmp2 = tmp15;
+        if (tmp15) {
+          tmp2 = message.id !== SnowflakeUtilsDefault.castChannelIdAsMessageId(tmp13.id);
         }
         let tmp = tmp2;
       } else {
-        tmp = tmp12;
+        tmp = tmp15;
       }
       if (!tmp) {
-        if (isNewMessageGroupDefault(tmp10, first[first.length - 1], message)) {
-          items = [message];
-          arr.unshift(items);
-        } else {
-          first.unshift(message);
+        if (!obj2.isConversationStartMessage(constants2, message.id)) {
+          if (isNewMessageGroupDefault(tmp13, first[first.length - 1], message)) {
+            items = [message];
+            arr.unshift(items);
+          } else {
+            first.unshift(message);
+          }
         }
       }
     }
@@ -68,7 +70,7 @@ export default function createChannelStream(forceRender) {
     if (arg1 === undefined) {
       flag = false;
     }
-    return constants.determineChangeType({ message, updateMessageIds, forceRender }, flag);
+    return constants2.determineChangeType({ message, updateMessageIds, forceRender }, flag);
   }
   let items = [];
   let obj = {};
@@ -91,7 +93,7 @@ export default function createChannelStream(forceRender) {
   }
   items1 = [];
   let item = messages.forEach((id) => {
-    const result = tryInjectMessage.tryCreateInjectedMessage(id, closure_1_0);
+    const result = tryInjectMessage.tryCreateInjectedMessage(id, forumPost);
     let tmp2 = null != result;
     if (tmp2) {
       tmp2 = "before" === result.position;
@@ -180,16 +182,16 @@ export default function createChannelStream(forceRender) {
       }
       let obj2 = { roleStyle, message, isFirst: true, content: [], text: "", revealed: false };
       let tmp32 = items[items.length - 1];
-      if (message.hasFlag(updateMessageIds.HIDDEN_SUSPENDED_USER)) {
+      if (message.hasFlag(forceRender.HIDDEN_SUSPENDED_USER)) {
         if (null == tmp32) {
           const obj5 = {};
           const merged = Object.assign(obj2);
-          obj5.rowType = roleStyle.SUSPENDED_USER_GROUP;
+          obj5.rowType = closure_1_8.SUSPENDED_USER_GROUP;
           obj5.changeType = determineChangeType(message);
           obj5.canUncollapse = false;
           arr.push(obj5);
           tmp32 = obj5;
-          const tmp157 = determineChangeType(message);
+          const tmp160 = determineChangeType(message);
         }
         const result = processHiddenMessageRow(tmp32);
         const intl4 = require("util").intl;
@@ -200,47 +202,47 @@ export default function createChannelStream(forceRender) {
           let INSERT2 = determineChangeType(message);
           let blocked = INSERT2 === constants.NOOP;
           if (blocked) {
-            blocked = closure_7.getBlocked(message);
+            blocked = closure_8.getBlocked(message);
           }
           if (blocked) {
             INSERT2 = constants.INSERT;
           }
           const obj11 = {};
           const merged1 = Object.assign(obj2);
-          obj11.rowType = roleStyle.BLOCKED_GROUP;
+          obj11.rowType = closure_1_8.BLOCKED_GROUP;
           obj11.changeType = INSERT2;
           arr.push(obj11);
-          let tmp138 = obj11;
+          let tmp141 = obj11;
         } else {
-          tmp138 = tmp32;
+          tmp141 = tmp32;
         }
-        const result1 = processHiddenMessageRow(tmp138);
+        const result1 = processHiddenMessageRow(tmp141);
         const intl3 = require("util").intl;
-        const obj12 = { count: tmp138.content.length };
-        tmp138.text = intl3.formatToPlainString(require("util").t["+FcYM/"], obj12);
+        const obj12 = { count: tmp141.content.length };
+        tmp141.text = intl3.formatToPlainString(require("util").t["+FcYM/"], obj12);
       } else if (message.ignored) {
         if (null == tmp32) {
           let INSERT = determineChangeType(message);
           let ignored = INSERT === constants.NOOP;
           if (ignored) {
-            ignored = closure_7.getIgnored(message);
+            ignored = closure_8.getIgnored(message);
           }
           if (ignored) {
             INSERT = constants.INSERT;
           }
           const obj14 = {};
           const merged2 = Object.assign(obj2);
-          obj14.rowType = roleStyle.IGNORED_GROUP;
+          obj14.rowType = closure_1_8.IGNORED_GROUP;
           obj14.changeType = INSERT;
           arr.push(obj14);
-          let tmp120 = obj14;
+          let tmp123 = obj14;
         } else {
-          tmp120 = tmp32;
+          tmp123 = tmp32;
         }
-        const result2 = processHiddenMessageRow(tmp120);
+        const result2 = processHiddenMessageRow(tmp123);
         const intl2 = require("util").intl;
-        const obj15 = { count: tmp120.content.length };
-        tmp120.text = intl2.formatToPlainString(require("util").t["VFWjc+"], obj15);
+        const obj15 = { count: tmp123.content.length };
+        tmp123.text = intl2.formatToPlainString(require("util").t["VFWjc+"], obj15);
       } else {
         let iter = item[Symbol.iterator]();
         let nextResult = iter.next();
@@ -255,16 +257,16 @@ export default function createChannelStream(forceRender) {
           let tmp44 = isEditingResult;
           pushFeedback = pushFeedback.getPushFeedback(obj6.channel_id, obj6.id);
           let obj8 = require("canReplyToMessage");
-          let canReplyToMessageResult = obj8.canReplyToMessage(obj7, obj6);
           let tmp52 = messages;
-          let tmp55 = messages(id[11])(obj6, closure_4);
+          let canReplyToMessageResult = obj8.canReplyToMessage(obj7, obj6);
+          let tmp55 = messages(id[12])(obj6, closure_4);
           if (tmp55) {
             let obj9 = require("ThreadHooks");
             tmp55 = !obj9.isNonModInLockedThread(obj7);
           }
           let tmp60 = message;
           if (message.hasOwnProperty(obj6.id)) {
-            let result3 = closure_7.determineChangeTypeForUploadProgress(tmp60[obj6.id]);
+            let result3 = closure_8.determineChangeTypeForUploadProgress(tmp60[obj6.id]);
           } else {
             result3 = determineChangeType(obj6, true);
           }
@@ -278,14 +280,14 @@ export default function createChannelStream(forceRender) {
           }
           if (tmp68) {
             let obj16 = { rowType: null, changeType: null, roleStyle: null, summary: null, isBeforeContent: false };
-            obj16.rowType = forceRender.SUMMARY;
+            obj16.rowType = roleStyle.SUMMARY;
             obj16.changeType = determineChangeType(obj6);
             obj16.roleStyle = roleStyle;
             obj16.summary = tmp67;
             let arr13 = items.push(obj16);
           }
           let arr2 = items;
-          let obj17 = { roleStyle, message: null, isSystemDM: null, isFirst: null, isEditing: null, separatorBefore: null, canAddNewReactions: null, alwaysShowAddReaction: null, renderContentOnly: null, pushFeedbackType: null, canReply: null, canEdit: null, rowType: null, changeType: null, showContentInventoryEntryFallbackEmbed: null };
+          let obj17 = { roleStyle, message: null, isSystemDM: null, isFirst: null, isEditing: null, separatorBefore: null, canAddNewReactions: null, alwaysShowAddReaction: null, renderContentOnly: null, pushFeedbackType: null, canReply: null, canEdit: null, rowType: null, changeType: null, showContentInventoryEntryFallbackEmbed: null, conversationHeader: null };
           obj17.message = obj6;
           let tmp80 = roleStyle;
           let isSystemDMResult = obj7.isSystemDM();
@@ -334,25 +336,26 @@ export default function createChannelStream(forceRender) {
             tmp105 = tmp55;
           }
           obj17.canEdit = tmp105;
-          obj17.rowType = roleStyle.MESSAGE;
+          obj17.rowType = closure_1_8.MESSAGE;
           obj17.changeType = result3;
-          let obj13 = closure_12;
+          let obj13 = closure_13;
           let hasItem;
-          if (closure_12 != null) {
+          if (closure_13 != null) {
             hasItem = obj13.has(obj6.id);
           }
           obj17.showContentInventoryEntryFallbackEmbed = hasItem;
+          obj17.conversationHeader = tmp52(id[6])(closure_7, obj6.id);
           let arr14 = items.push(obj17);
-          let tmp111 = null != tmp67;
-          if (tmp111) {
-            tmp111 = tmp67.startId === obj6.id;
+          let tmp114 = null != tmp67;
+          if (tmp114) {
+            tmp114 = tmp67.startId === obj6.id;
           }
-          if (tmp111) {
-            tmp111 = tmp67.count > 1;
+          if (tmp114) {
+            tmp114 = tmp67.count > 1;
           }
-          if (tmp111) {
+          if (tmp114) {
             let obj18 = { rowType: null, changeType: null, roleStyle: null, summary: null, isBeforeContent: true };
-            obj18.rowType = forceRender.SUMMARY;
+            obj18.rowType = roleStyle.SUMMARY;
             obj18.changeType = determineChangeType(obj6);
             obj18.roleStyle = tmp80;
             obj18.summary = tmp67;
@@ -367,7 +370,7 @@ export default function createChannelStream(forceRender) {
           if (NOOP === constants.UPDATE) {
             NOOP = constants.NOOP;
           }
-          const obj19 = { rowType: forceRender.DAY, changeType: NOOP, roleStyle, text: require("DateUtils").dateFormat(message.timestamp, "LL") };
+          const obj19 = { rowType: roleStyle.DAY, changeType: NOOP, roleStyle, text: require("DateUtils").dateFormat(message.timestamp, "LL") };
           items.push(obj19);
           const obj21 = require("DateUtils");
         }
@@ -376,7 +379,7 @@ export default function createChannelStream(forceRender) {
         tmp19 = !renderContentOnly;
       }
       if (tmp19) {
-        const obj20 = { rowType: forceRender.UNREAD, changeType: determineChangeType(message), roleStyle, text: null };
+        const obj20 = { rowType: roleStyle.UNREAD, changeType: determineChangeType(message), roleStyle, text: null };
         const intl5 = require("util").intl;
         obj20.text = intl5.string(require("util").t.q7hm3m).toUpperCase();
         items.push(obj20);
@@ -386,13 +389,13 @@ export default function createChannelStream(forceRender) {
         tmp17 = !renderContentOnly;
       }
       if (tmp17) {
-        let obj22 = { rowType: closure_1_7.LOAD_BEFORE, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: message.loadingMore, text: null };
+        let obj22 = { rowType: constants2.LOAD_BEFORE, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: message.loadingMore, text: null };
         const intl6 = require("util").intl;
         obj22.text = intl6.string(require("util").t.XBlaiC);
         obj22 = items.push(obj22);
       }
     } else {
-      let obj23 = { rowType: closure_1_7.LOAD_AFTER, changeType: null, roleStyle: null, isLoading: null, text: null };
+      let obj23 = { rowType: constants2.LOAD_AFTER, changeType: null, roleStyle: null, isLoading: null, text: null };
       let intl = constants;
       obj23.changeType = forceRender ? intl.UPDATE : intl.NOOP;
       obj23.roleStyle = roleStyle;
@@ -410,7 +413,7 @@ export default function createChannelStream(forceRender) {
   if (!tmp12) {
     return items;
   } else {
-    let obj2 = { rowType: messages.hasMoreBefore ? constants.LOAD_BEFORE : constants.LOAD_AFTER, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: messages.loadingMore, text: null };
+    let obj2 = { rowType: messages.hasMoreBefore ? constants2.LOAD_BEFORE : constants2.LOAD_AFTER, changeType: forceRender ? constants.UPDATE : constants.NOOP, roleStyle, isLoading: messages.loadingMore, text: null };
     roleStyle = require("util").intl;
     messages = roleStyle.string;
     obj2.text = messages(require("util").t.XBlaiC);

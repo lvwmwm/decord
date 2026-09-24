@@ -1,18 +1,15 @@
 // Module ID: 7204
 // Function ID: 7205
-// Dependencies: [19]
-// Exports: useFlashListContext, useRecyclerViewContext
+// Dependencies: [7202]
+// Exports: getInvertedTransformStyle
 
 // Module 7204
-import noop from "module_19" /* 19 */;
+import PlatformConfig2 from "PlatformConfig" /* 7202 */;
 
-const useContext = noop.useContext;
-const context = noop.createContext(undefined);
+require = arg1;
+const dependencyMap = arg6;
 
-export const RecyclerViewContextProvider = context.Provider;
-export const useRecyclerViewContext = function useRecyclerViewContext() {
-  return useContext(context);
-};
-export const useFlashListContext = function useFlashListContext() {
-  return useContext(context);
+export const getInvertedTransformStyle = function getInvertedTransformStyle(horizontal) {
+  const PlatformConfig = PlatformConfig2.PlatformConfig;
+  return horizontal ? PlatformConfig.invertedTransformStyleHorizontal : PlatformConfig.invertedTransformStyle;
 };

@@ -1,12 +1,12 @@
-// Module ID: 16175
-// Function ID: 16176
+// Module ID: 16197
+// Function ID: 16198
 // Name: DesignSystemPileSetting
-// Dependencies: [8319, 1074, 11805, 16176, 2]
+// Dependencies: [8323, 1074, 11811, 16198, 2]
 
-// Module 16175 (DesignSystemPileSetting)
+// Module 16197 (DesignSystemPileSetting)
 import Constants from "Constants" /* 1074 */;
-import SettingsConstants from "SettingsConstants" /* 8319 */;
-import SettingBuilders from "SettingBuilders" /* 11805 */;
+import SettingsConstants from "SettingsConstants" /* 8323 */;
+import SettingBuilders from "SettingBuilders" /* 11811 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

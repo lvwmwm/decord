@@ -1,24 +1,24 @@
-// Module ID: 17616
-// Function ID: 17617
+// Module ID: 17639
+// Function ID: 17640
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1372, 5311, 504, 7672, 4481, 17617, 8178, 8181, 4521, 10412, 1115, 2]
+// Dependencies: [19, 1372, 5313, 504, 7674, 4483, 17640, 8180, 8183, 4523, 10417, 1115, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 17616 (useSoundboardSoundLock)
+// Module 17639 (useSoundboardSoundLock)
 import util from "util" /* 1115 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 4481 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4521 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8178 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8181 */;
-import _modDef10412 from "module_10412" /* 10412 */;
-import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17617 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 4483 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8180 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8183 */;
+import _modDef10417 from "module_10417" /* 10417 */;
+import SoundboardSoundPreviewMenuExperiment2 from "SoundboardSoundPreviewMenuExperiment" /* 17640 */;
 import noop from "module_19" /* 19 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const DEFAULT_SOUND_GUILD_ID = fn(5311).DEFAULT_SOUND_GUILD_ID;
+const DEFAULT_SOUND_GUILD_ID = fn(5313).DEFAULT_SOUND_GUILD_ID;
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/soundboard/native/utils/useSoundboardSoundLock.tsx");
 

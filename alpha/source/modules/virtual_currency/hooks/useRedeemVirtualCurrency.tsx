@@ -1,10 +1,10 @@
-// Module ID: 9213
-// Function ID: 9214
+// Module ID: 9217
+// Function ID: 9218
 // Name: useRedeemVirtualCurrency
-// Dependencies: [5, 32, 19, 9214, 9215, 7574, 9208, 1115, 2]
+// Dependencies: [5, 32, 19, 9218, 9219, 7576, 9212, 1115, 2]
 // Exports: useRedeemVirtualCurrency
 
-// Module 9213 (useRedeemVirtualCurrency)
+// Module 9217 (useRedeemVirtualCurrency)
 import util from "util" /* 1115 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
@@ -25,7 +25,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   const isSubmitting = _slicedToArray(enabled(false), 2);
   _slicedToArray = isSubmitting[1];
   const tmp5 = _slicedToArray(enabled(null), 2);
-  enabled = entitlements(9214).useConfig({ location: "orb_checkout_modal" }).enabled;
+  enabled = entitlements(9218).useConfig({ location: "orb_checkout_modal" }).enabled;
   order = undefined;
   if (order != null) {
     order = order.order;
@@ -37,7 +37,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
   if (order != null) {
     onSignFailure = order.onSignFailure;
   }
-  let obj = entitlements(9214);
+  let obj = entitlements(9218);
   const orderSigning = require("useOrderSigning").useOrderSigning({ order, errorSource: "orb_redeem_orders_api", onSignFailure });
   const signOrder = orderSigning.signOrder;
   const _reportError = orderSigning.reportError;
@@ -104,7 +104,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
                   v0 = 2;
                   v4 = 4;
                   c8 = 1;
-                  const obj9 = { value: skuId(7574).fetchOrderEntitlementsWithRetry(closure_131_3.order.id), done: false };
+                  const obj9 = { value: skuId(7576).fetchOrderEntitlementsWithRetry(closure_131_3.order.id), done: false };
                   return obj9;
                 } else {
                   tmp4(false);
@@ -128,7 +128,7 @@ export const useRedeemVirtualCurrency = function useRedeemVirtualCurrency(order)
               } else {
                 closure_131_4 = value;
                 if (0 === closure_131_4.length) {
-                  const orderProcessingPendingError = new skuId(7574).OrderProcessingPendingError();
+                  const orderProcessingPendingError = new skuId(7576).OrderProcessingPendingError();
                   throw orderProcessingPendingError;
                 } else {
                   dependencyMap(closure_131_4);

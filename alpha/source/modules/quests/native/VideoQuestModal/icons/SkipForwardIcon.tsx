@@ -1,10 +1,10 @@
-// Module ID: 15371
-// Function ID: 15372
+// Module ID: 15380
+// Function ID: 15381
 // Name: SkipForwardIcon
-// Dependencies: [19, 21, 8803, 2]
+// Dependencies: [19, 21, 8807, 2]
 
-// Module 15371 (SkipForwardIcon)
-import inlineStyles from "inlineStyles" /* 8803 */;
+// Module 15380 (SkipForwardIcon)
+import inlineStyles from "inlineStyles" /* 8807 */;
 import noop from "module_19" /* 19 */;
 
 const inlineStylesDefault = inlineStyles;

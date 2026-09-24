@@ -1,25 +1,25 @@
-// Module ID: 10073
-// Function ID: 10074
+// Module ID: 10078
+// Function ID: 10079
 // Name: useCanRing
-// Dependencies: [502, 5581, 2042, 2105, 5716, 4462, 4867, 4472, 4846, 1074, 504, 10074, 5719, 5304, 2]
+// Dependencies: [502, 5583, 2044, 2107, 5718, 4464, 4869, 4474, 4848, 1074, 504, 10079, 5721, 5306, 2]
 // Exports: canRingUsersInChannel, useCanRing
 
-// Module 10073 (useCanRing)
-import useChannelRoleSubscriptionStatusDefault from "useChannelRoleSubscriptionStatus" /* 5304 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5719 */;
+// Module 10078 (useCanRing)
+import useChannelRoleSubscriptionStatusDefault from "useChannelRoleSubscriptionStatus" /* 5306 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 5721 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallStore from "CallStore" /* 5581 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 5716 */;
-import PermissionStore from "PermissionStore" /* 4462 */;
-import PresenceStore from "PresenceStore" /* 4867 */;
-import RelationshipStore from "RelationshipStore" /* 4472 */;
-import VoiceStateStore from "VoiceStateStore" /* 4846 */;
+import CallStore from "CallStore" /* 5583 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 5718 */;
+import PermissionStore from "PermissionStore" /* 4464 */;
+import PresenceStore from "PresenceStore" /* 4869 */;
+import RelationshipStore from "RelationshipStore" /* 4474 */;
+import VoiceStateStore from "VoiceStateStore" /* 4848 */;
 
 const require = globalThis.__r;
 
-const GuildVoiceRingingExperimentDefault = tmp4(10074);
+const GuildVoiceRingingExperimentDefault = tmp4(10079);
 const require = fn;
 function useCanRingToGuildVoiceChannel(user, useCanRing, stateFromStores) {
   _require = user;

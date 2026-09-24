@@ -1,18 +1,18 @@
-// Module ID: 11880
-// Function ID: 11881
+// Module ID: 11887
+// Function ID: 11888
 // Name: ChannelsAndRolesModal
-// Dependencies: [32, 19, 17, 2064, 7432, 21, 4827, 576, 563, 7663, 9969, 1115, 9970, 11881, 11887, 11270, 2]
+// Dependencies: [32, 19, 17, 2066, 7434, 21, 4829, 576, 563, 7665, 9974, 1115, 9975, 11888, 11894, 11276, 2]
 // Exports: default
 
-// Module 11880 (ChannelsAndRolesModal)
+// Module 11887 (ChannelsAndRolesModal)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7663 */;
-import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11270 */;
+import useGuildOnboardingAvailableDefault from "useGuildOnboardingAvailable" /* 7665 */;
+import ModalStackNavigatorDefault from "ModalStackNavigator" /* 11276 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2064 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 require = fn;
 function ChannelsAndRolesScreen(guildId) {
@@ -71,10 +71,10 @@ function ChannelsAndRolesScreen(guildId) {
   }
 }
 const View = fn(17).View;
-const GuildOnboardingTab = fn(7432).GuildOnboardingTab;
+const GuildOnboardingTab = fn(7434).GuildOnboardingTab;
 const jsxProd = fn(21);
 ({ jsx: closure_8, jsxs: closure_9 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 const obj2 = { screen: { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, tabBar: null };
 let obj3 = { flex: 1, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW };
 obj2.tabBar = { paddingHorizontal: nativeDefault.space.PX_12, paddingTop: nativeDefault.space.PX_16 };

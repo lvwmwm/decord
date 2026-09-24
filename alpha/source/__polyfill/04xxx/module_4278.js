@@ -1,20 +1,20 @@
 // Module ID: 4278
 // Function ID: 4279
-// Dependencies: [3911, 3912]
+// Dependencies: [4094, 3914]
 // Exports: default
 
 // Module 4278
-import _typeof_mod from "module_3911" /* 3911 */;
-import requiredArgs_mod from "requiredArgs" /* 3912 */;
+import module_4094_mod from "module_4094" /* 4094 */;
+import requiredArgs_mod from "requiredArgs" /* 3914 */;
 
-let _typeof = _typeof_mod;
-if (!_typeof) {
-  const obj = { default: _typeof };
+let module_4094 = module_4094_mod;
+if (!module_4094) {
+  const obj = { default: module_4094 };
   let tmp3 = obj;
 } else {
-  tmp3 = _typeof;
+  tmp3 = module_4094;
 }
-_typeof = tmp3;
+module_4094 = tmp3;
 let requiredArgs = requiredArgs_mod;
 if (!requiredArgs) {
   const obj2 = { default: requiredArgs };
@@ -24,8 +24,8 @@ if (!requiredArgs) {
 }
 requiredArgs = tmp5;
 
-export default function isTuesday(arg0) {
+export default function isToday(arg0) {
   requiredArgs.default(1, arguments);
-  return 2 === _typeof.default(arg0).getDay();
+  return module_4094.default(arg0, Date.now());
 };
 export default exports.default;

@@ -1,13 +1,13 @@
-// Module ID: 5403
-// Function ID: 5404
+// Module ID: 5405
+// Function ID: 5406
 // Name: VoiceWarningIcon
-// Dependencies: [19, 21, 576, 4523, 5338, 2]
+// Dependencies: [19, 21, 576, 4525, 5340, 2]
 // Exports: VoiceWarningIcon
 
-// Module 5403 (VoiceWarningIcon)
+// Module 5405 (VoiceWarningIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod5338 from "module_5338" /* 5338 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod5340 from "module_5340" /* 5340 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const VoiceWarningIcon = function VoiceWarningIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5338, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5340, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

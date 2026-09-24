@@ -1,13 +1,13 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16441
+// Function ID: 16442
 // Name: TabsPerformanceTracker
-// Dependencies: [19, 1074, 3, 1241, 4559, 2]
+// Dependencies: [19, 1074, 3, 1241, 4561, 2]
 // Exports: trackTabPressed, useTrackTabPerformance
 
-// Module 16417 (TabsPerformanceTracker)
+// Module 16441 (TabsPerformanceTracker)
 import LoggerDefault from "Logger" /* 3 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -52,12 +52,12 @@ export const useTrackTabPerformance = function useTrackTabPerformance(GUILDS) {
         const fn = function t() {
           return ReanimatedRexport.runOnJS(log)();
         };
-        let obj3 = { runOnJS: GUILDS(4559).runOnJS, log };
+        let obj3 = { runOnJS: GUILDS(4561).runOnJS, log };
         fn.__closure = obj3;
         fn.__workletHash = 7114578957129;
         fn.__initData = __initData;
-        GUILDS(4559).runOnUI(fn)();
-        const obj2 = GUILDS(4559);
+        GUILDS(4561).runOnUI(fn)();
+        const obj2 = GUILDS(4561);
       }
     }
     let obj = tmp[tmp2];
@@ -90,12 +90,12 @@ export const useTrackTabPerformance = function useTrackTabPerformance(GUILDS) {
         const fn = function t() {
           return ReanimatedRexport.runOnJS(log)();
         };
-        let obj3 = { runOnJS: GUILDS(4559).runOnJS, log };
+        let obj3 = { runOnJS: GUILDS(4561).runOnJS, log };
         fn.__closure = obj3;
         fn.__workletHash = 331508196106;
         fn.__initData = __initData2;
-        GUILDS(4559).runOnUI(fn)();
-        const obj2 = GUILDS(4559);
+        GUILDS(4561).runOnUI(fn)();
+        const obj2 = GUILDS(4561);
       }
     }
     let obj = tmp[tmp2];

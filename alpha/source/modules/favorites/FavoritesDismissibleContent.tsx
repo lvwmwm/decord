@@ -1,24 +1,24 @@
-// Module ID: 10583
-// Function ID: 10584
+// Module ID: 10588
+// Function ID: 10589
 // Name: FavoritesDismissibleContent
-// Dependencies: [32, 19, 2039, 2028, 7717, 10569, 10567, 10582, 7716, 10581, 2]
+// Dependencies: [32, 19, 2041, 2028, 7719, 10574, 10572, 10587, 7718, 10586, 2]
 // Exports: useFavoritesBetaTagDismissibleContent, useFavoritesMenuItemPopoverDismissibleContent, useShouldRenderFavoritesMenuItemPopover
 
-// Module 10583 (FavoritesDismissibleContent)
+// Module 10588 (FavoritesDismissibleContent)
 import dismissible_content from "dismissible_content" /* 2028 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7716 */;
-import useGetDismissibleContent from "useGetDismissibleContent" /* 7717 */;
-import FavoritesHooks from "FavoritesHooks" /* 10567 */;
-import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10569 */;
-import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10581 */;
-import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10582 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 7718 */;
+import useGetDismissibleContent from "useGetDismissibleContent" /* 7719 */;
+import FavoritesHooks from "FavoritesHooks" /* 10572 */;
+import FavoritesGuildExperiment from "FavoritesGuildExperiment" /* 10574 */;
+import FavoritesGuildIntroPopover from "FavoritesGuildIntroPopover" /* 10586 */;
+import useCanShowFavoritesGuildOnboardingDefault from "useCanShowFavoritesGuildOnboarding" /* 10587 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
 
 require = fn;
-const ContentDismissActionType = fn(2039).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 let items = [fn(2028).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO, fn(2028).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM, fn(2028).DismissibleContent.FAVORITES_GUILD_NEW_BADGE, fn(2028).DismissibleContent.FAVORITES_GUILD_SUGGESTIONS];
 const items1 = [fn(2028).DismissibleContent.FAVORITES_SERVER_ONBOARDING_INTRO, fn(2028).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];
 const items2 = [fn(2028).DismissibleContent.FAVORITES_SERVER_ONBOARDING_MENU_ITEM];

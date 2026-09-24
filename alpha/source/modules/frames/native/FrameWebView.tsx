@@ -1,12 +1,12 @@
-// Module ID: 17038
-// Function ID: 17039
+// Module ID: 17066
+// Function ID: 17067
 // Name: FrameWebView
-// Dependencies: [19, 21, 9809, 9641, 9650, 2]
+// Dependencies: [19, 21, 9813, 9645, 9654, 2]
 // Exports: default
 
-// Module 17038 (FrameWebView)
-import FramesNativeManagerDefault from "FramesNativeManager" /* 9641 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 9650 */;
+// Module 17066 (FrameWebView)
+import FramesNativeManagerDefault from "FramesNativeManager" /* 9645 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 9654 */;
 import noop from "module_19" /* 19 */;
 
 const require = fn;
@@ -31,7 +31,29 @@ export default function FrameWebView(applicationId) {
       FramesNativeManagerDefault.leaveFrame(frameId);
     }
   }, items);
+  const obj2 = {
+    hasIframeId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).hasIframeId();
+    },
+    getOrCreateIframeId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).getOrCreateIframeId();
+    },
+    releaseIframeId() {
+      return hasInvalidUrlError(hadInvalidUrlError[3]).releaseIframeId();
+    },
+    onIframeMount(iframeId) {
+      return FramesActionCreatorsDefault.attachFrameIframe(frameId, iframeId);
+    },
+    onIframeUnmount(iframeId) {
+      return FramesActionCreatorsDefault.detachFrameIframe(frameId, iframeId);
+    },
+    hasInvalidUrlError,
+    setHasInvalidUrlError: hasInvalidUrlErrorState.setHasInvalidUrlError,
+    hadInvalidUrlError,
+    applicationId: applicationId.applicationId
+  };
   const merged1 = Object.assign(merged);
+  obj2.allowMotionSensors = true;
   return jsx(frameId(hadInvalidUrlError[2]).BaseActivityWebView, {
     hasIframeId() {
       return hasInvalidUrlError(hadInvalidUrlError[3]).hasIframeId();

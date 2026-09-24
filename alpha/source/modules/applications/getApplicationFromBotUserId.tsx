@@ -1,11 +1,11 @@
-// Module ID: 12939
-// Function ID: 12940
+// Module ID: 12948
+// Function ID: 12949
 // Name: getApplicationFromBotUserId
-// Dependencies: [7943, 1074, 504, 2]
+// Dependencies: [7945, 1074, 504, 2]
 // Exports: default
 
-// Module 12939 (getApplicationFromBotUserId)
-import UserProfileStore from "UserProfileStore" /* 7943 */;
+// Module 12948 (getApplicationFromBotUserId)
+import UserProfileStore from "UserProfileStore" /* 7945 */;
 
 const require = globalThis.__r;
 

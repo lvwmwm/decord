@@ -1,9 +1,9 @@
-// Module ID: 11165
-// Function ID: 11166
+// Module ID: 11171
+// Function ID: 11172
 // Name: StorefrontPlatform
 // Dependencies: [2]
 
-// Module 11165 (StorefrontPlatform)
+// Module 11171 (StorefrontPlatform)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/StorefrontPlatform.tsx");

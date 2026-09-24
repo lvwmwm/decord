@@ -1,71 +1,71 @@
-// Module ID: 16512
-// Function ID: 16513
+// Module ID: 16536
+// Function ID: 16537
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 2045, 21, 4980, 11323, 2020, 7528, 7480, 7530, 11298, 1115, 7708, 16513, 10971, 7520, 4520, 504, 2]
+// Dependencies: [19, 2047, 21, 4982, 11329, 2020, 7530, 7482, 7532, 11304, 1115, 7710, 16537, 10977, 7522, 4522, 504, 2]
 // Exports: default
 
-// Module 16512 (FavoritesGuildCategoryActionSheet)
-import ToastUtils from "ToastUtils" /* 4520 */;
-import ClipboardUtils from "ClipboardUtils" /* 7520 */;
-import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 16513 */;
+// Module 16536 (FavoritesGuildCategoryActionSheet)
+import ToastUtils from "ToastUtils" /* 4522 */;
+import ClipboardUtils from "ClipboardUtils" /* 7522 */;
+import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 16537 */;
 import noop from "module_19" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 2045 */;
+import FavoriteStore from "FavoriteStore" /* 2047 */;
 
 require = fn;
 function FavoritesGuildCategoryActionSheetConnected(category) {
   category = category.category;
   const onClose = category.onClose;
-  const tmp3 = onClose(11323)(category);
+  const tmp3 = onClose(11329)(category);
   dependencyMap = tmp3;
   const DeveloperMode = category(2020).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = { header: closure_5(category(7480).BottomSheetTitleHeader, { title: onClose(4980)(category, true) }), children: null };
+  let obj = { header: closure_5(category(7482).BottomSheetTitleHeader, { title: onClose(4982)(category, true) }), children: null };
   let tmp7Result = null;
   if (null != tmp3) {
     const obj2 = { hasIcons: true, children: null };
     const obj3 = { label: tmp3.label, icon: null, onPress: null };
-    const obj4 = { IconComponent: tmp4(11298).PlusLargeIcon };
-    obj3.icon = tmp7(tmp4(7530).ActionSheetRow.Icon, obj4);
+    const obj4 = { IconComponent: tmp4(11304).PlusLargeIcon };
+    obj3.icon = tmp7(tmp4(7532).ActionSheetRow.Icon, obj4);
     obj3.onPress = function onPress() {
       closure_2.perform();
       onClose();
     };
-    obj2.children = tmp7(tmp4(7530).ActionSheetRow, obj3);
-    tmp7Result = tmp7(tmp4(7530).ActionSheetRow.Group, obj2);
+    obj2.children = tmp7(tmp4(7532).ActionSheetRow, obj3);
+    tmp7Result = tmp7(tmp4(7532).ActionSheetRow.Group, obj2);
   }
   const items = [tmp7Result, , ];
   const obj5 = { hasIcons: true, children: null };
   const obj6 = { label: null, icon: null, onPress: null };
   const intl = tmp4(1115).intl;
   obj6.label = intl.string(category(1115).t.zdPFs9);
-  const tmp2 = onClose(4980)(category, true);
+  const tmp2 = onClose(4982)(category, true);
   const tmp6 = closure_6;
-  obj6.icon = closure_5(category(7530).ActionSheetRow.Icon, { IconComponent: category(7708).SettingsIcon });
+  obj6.icon = closure_5(category(7532).ActionSheetRow.Icon, { IconComponent: category(7710).SettingsIcon });
   obj6.onPress = function onPress() {
     openFavoritesGuildCategorySettingsModalDefault(category.id);
     onClose();
   };
-  obj5.children = closure_5(category(7530).ActionSheetRow, obj6);
-  items[1] = closure_5(category(7530).ActionSheetRow.Group, obj5);
+  obj5.children = closure_5(category(7532).ActionSheetRow, obj6);
+  items[1] = closure_5(category(7532).ActionSheetRow.Group, obj5);
   let tmp7Result2 = null;
   if (setting) {
     const obj8 = { hasIcons: true, children: null };
     const obj9 = { label: null, icon: null, onPress: null };
     const intl2 = tmp4(1115).intl;
     obj9.label = intl2.string(tmp4(1115).t["2visC6"]);
-    const obj10 = { IconComponent: tmp4(10971).IdIcon };
-    obj9.icon = tmp7(tmp4(7530).ActionSheetRow.Icon, obj10);
+    const obj10 = { IconComponent: tmp4(10977).IdIcon };
+    obj9.icon = tmp7(tmp4(7532).ActionSheetRow.Icon, obj10);
     obj9.onPress = function onPress() {
       ClipboardUtils.copy(category.id);
       ToastUtils.presentIdCopied();
       onClose();
     };
-    obj8.children = tmp7(tmp4(7530).ActionSheetRow, obj9);
-    tmp7Result2 = tmp7(tmp4(7530).ActionSheetRow.Group, obj8);
+    obj8.children = tmp7(tmp4(7532).ActionSheetRow, obj9);
+    tmp7Result2 = tmp7(tmp4(7532).ActionSheetRow.Group, obj8);
   }
   items[2] = tmp7Result2;
   obj.children = items;
-  return tmp6(category(7528).ActionSheet, obj);
+  return tmp6(category(7530).ActionSheet, obj);
 }
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);

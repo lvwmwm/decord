@@ -1,15 +1,15 @@
-// Module ID: 4838
-// Function ID: 4839
+// Module ID: 4840
+// Function ID: 4841
 // Name: transitionToChannel
-// Dependencies: [2042, 1074, 4839, 4840, 1101, 5028, 38, 2]
+// Dependencies: [2044, 1074, 4841, 4842, 1101, 5030, 38, 2]
 // Exports: transitionToChannel, transitionToMessage, transitionToStaticChannelRoute, transitionToThread, transitionToThreadMessage, tryTransitionToThreadMessage
 
-// Module 4838 (transitionToChannel)
+// Module 4840 (transitionToChannel)
 import _modDef38 from "module_38" /* 38 */;
 import router_utils from "router_utils" /* 1101 */;
-import useGuildIdForChannelRoute from "useGuildIdForChannelRoute" /* 4839 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4840 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import useGuildIdForChannelRoute from "useGuildIdForChannelRoute" /* 4841 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 4842 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 const Routes = fn(1074).Routes;
@@ -34,8 +34,8 @@ export const transitionToChannel = function transitionToChannel(id, openTextInVo
       prop = channel.isGuildVocal();
     }
     if (prop) {
-      tmp7(5028).updateChatOpen(channel.id, true);
-      const tmp7Result = tmp7(5028);
+      tmp7(5030).updateChatOpen(channel.id, true);
+      const tmp7Result = tmp7(5030);
     }
     const CHANNELResult = Routes.CHANNEL(guildIdForGenericRedirect, channel.id);
   }
@@ -84,8 +84,8 @@ export const tryTransitionToThreadMessage = function tryTransitionToThreadMessag
         prop = channel1.isGuildVocal();
       }
       if (prop) {
-        tmp20(5028).updateChatOpen(channel1.id, true);
-        const tmp20Result = tmp20(5028);
+        tmp20(5030).updateChatOpen(channel1.id, true);
+        const tmp20Result = tmp20(5030);
       }
       const CHANNELResult1 = Routes.CHANNEL(guildIdForGenericRedirect1, channel1.id);
     }

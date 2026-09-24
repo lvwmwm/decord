@@ -1,22 +1,9 @@
 // Module ID: 14696
 // Function ID: 14697
-// Dependencies: [14671]
+// Dependencies: [14682]
 
 // Module 14696
-import _mod14671 from "module_14671" /* 14671 */;
+import _mod14682 from "module_14682" /* 14682 */;
 
-if (_mod14671) {
-  let fn = call.bind(call);
-} else {
-  fn = () => {
-    const apply = call.apply;
-    if (typeof apply === "unknown") {
-      let applyArgumentsResult = HermesBuiltin.applyArguments(tmp);
-    } else {
-      applyArgumentsResult = apply(tmp, arguments);
-    }
-    return applyArgumentsResult;
-  };
-}
 
-export default fn;
+export default (arg0) => Object(_mod14682(arg0));

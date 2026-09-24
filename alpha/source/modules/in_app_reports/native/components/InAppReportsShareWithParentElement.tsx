@@ -1,12 +1,12 @@
-// Module ID: 13292
-// Function ID: 13293
+// Module ID: 13301
+// Function ID: 13302
 // Name: InAppReportsShareWithParentElement
-// Dependencies: [32, 19, 21, 7867, 4520, 1115, 8750, 13291, 13293, 2]
+// Dependencies: [32, 19, 21, 7869, 4522, 1115, 8754, 13300, 13302, 2]
 // Exports: default
 
-// Module 13292 (InAppReportsShareWithParentElement)
-import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7867 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 13291 */;
+// Module 13301 (InAppReportsShareWithParentElement)
+import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 7869 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 13300 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -50,7 +50,7 @@ export default function _default(parents) {
     }
     obj3.parent3 = username3;
     obj.disabledTitle = intl.formatToPlainString(parents(1115).t.BlAMme, obj3);
-    obj.icon = jsx(parents(13293).ShareIcon, {});
+    obj.icon = jsx(parents(13302).ShareIcon, {});
     const intl2 = tmp15(1115).intl;
     obj.description = intl2.string(parents(1115).t["5l/hlt"]);
     obj.disabled = tmp[0];

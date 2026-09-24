@@ -1,13 +1,13 @@
-// Module ID: 12258
-// Function ID: 12259
+// Module ID: 12265
+// Function ID: 12266
 // Name: CreditCardIcon
-// Dependencies: [19, 21, 576, 4523, 12259, 2]
+// Dependencies: [19, 21, 576, 4525, 12266, 2]
 // Exports: CreditCardIcon
 
-// Module 12258 (CreditCardIcon)
+// Module 12265 (CreditCardIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod12259 from "module_12259" /* 12259 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod12266 from "module_12266" /* 12266 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const CreditCardIcon = function CreditCardIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod12259, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod12266, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,15 +1,15 @@
 // Module ID: 6978
 // Function ID: 6979
 // Dependencies: []
-// Exports: isFabricInstalled
+// Exports: enableLogging, print
 
 // Module 6978
-const global = arg0;
+function print() {
 
-export const isFabricInstalled = function isFabricInstalled() {
-  let prop;
-  if (global != null) {
-    prop = global.nativeFabricUIManager;
-  }
-  return null != prop;
+}
+const frozen = Object.freeze(print);
+
+export { print };
+export const enableLogging = (arg0) => {
+  console.warn("[BottomSheet] could not enable logging on production!");
 };

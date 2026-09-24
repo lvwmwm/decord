@@ -1,13 +1,13 @@
-// Module ID: 7518
-// Function ID: 7519
+// Module ID: 7520
+// Function ID: 7521
 // Name: RoleIconUtils
-// Dependencies: [1074, 1364, 4476, 1431, 1397, 2]
+// Dependencies: [1074, 1364, 4478, 1431, 1397, 2]
 // Exports: canGuildUseRoleIcons, getRoleIconData, isRoleIconAssetUrl, replaceRoleIconSourceSize
 
-// Module 7518 (RoleIconUtils)
+// Module 7520 (RoleIconUtils)
 import AvatarUtils from "AvatarUtils" /* 1397 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1431 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4476 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4478 */;
 import Constants from "Constants" /* 1074 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 7829
-// Function ID: 7830
+// Module ID: 7831
+// Function ID: 7832
 // Name: MemberSafetyStoreSupplemental
-// Dependencies: [7830, 2]
+// Dependencies: [7832, 2]
 // Exports: getMemberSupplementalByGuildId, hasMemberSupplemental, syncMemberSupplemental
 
-// Module 7829 (MemberSafetyStoreSupplemental)
-import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 7830 */;
+// Module 7831 (MemberSafetyStoreSupplemental)
+import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 7832 */;
 import size from "module_2" /* 2 */;
 
 const dependencyMap = {};

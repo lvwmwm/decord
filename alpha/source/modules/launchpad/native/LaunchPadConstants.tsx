@@ -1,11 +1,11 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 11807
+// Function ID: 11808
 // Name: LaunchPadConstants
-// Dependencies: [17, 1364, 4806, 2]
+// Dependencies: [17, 1364, 4808, 2]
 
-// Module 11801 (LaunchPadConstants)
+// Module 11807 (LaunchPadConstants)
 import _mod17 from "module_17" /* 17 */;
-import DeviceUtils from "DeviceUtils" /* 4806 */;
+import DeviceUtils from "DeviceUtils" /* 4808 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
 import size_mod from "module_2" /* 2 */;
 

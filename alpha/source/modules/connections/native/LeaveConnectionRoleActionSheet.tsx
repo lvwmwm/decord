@@ -1,21 +1,21 @@
-// Module ID: 11903
-// Function ID: 11904
+// Module ID: 11910
+// Function ID: 11911
 // Name: LeaveConnectionRoleActionSheet
-// Dependencies: [19, 17, 21, 4827, 7481, 4823, 1115, 5271, 2]
+// Dependencies: [19, 17, 21, 4829, 7483, 4825, 1115, 5273, 2]
 // Exports: default
 
-// Module 11903 (LeaveConnectionRoleActionSheet)
+// Module 11910 (LeaveConnectionRoleActionSheet)
 import util from "util" /* 1115 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import components_Button_Button from "components/Button/Button" /* 5271 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7481 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import components_Button_Button from "components/Button/Button" /* 5273 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 7483 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: c3, jsxs: closure_4 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_5 = createStyles.createStyles({ container: { padding: 12 }, marginTop: { marginTop: 8 }, button: { marginTop: 8, marginBottom: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/connections/native/LeaveConnectionRoleActionSheet.tsx");

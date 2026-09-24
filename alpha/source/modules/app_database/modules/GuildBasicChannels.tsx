@@ -1,22 +1,22 @@
-// Module ID: 7969
-// Function ID: 7970
+// Module ID: 7971
+// Function ID: 7972
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 5580, 2046, 502, 2042, 2099, 2064, 4462, 2043, 3, 2071, 7970, 1086, 4471, 2]
+// Dependencies: [32, 5, 5582, 2048, 502, 2044, 2101, 2066, 4464, 2045, 3, 2073, 7972, 1086, 4473, 2]
 
-// Module 7969 (GuildBasicChannels)
+// Module 7971 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 2071 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4471 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 2073 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4473 */;
 import _slicedToArray from "module_32" /* 32 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 5580 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 5582 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildRoleStore from "GuildRoleStore" /* 2099 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import PermissionStore from "PermissionStore" /* 4462 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2043 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildRoleStore from "GuildRoleStore" /* 2101 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import PermissionStore from "PermissionStore" /* 4464 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 2045 */;
 
 const require = fn;
 function hasBasicChannelChanged(basicChannel, nextResult) {
@@ -27,8 +27,8 @@ function hasBasicChannelChanged(basicChannel, nextResult) {
   }
   return tmp;
 }
-let closure_7 = fn(2046).createChannelRecordFromServer;
-const ChannelLoader = fn(2042).ChannelLoader;
+let closure_7 = fn(2048).createChannelRecordFromServer;
+const ChannelLoader = fn(2044).ChannelLoader;
 let closure_15 = new LoggerDefault("GuildBasicChannels");
 class GuildBasicChannels {
   constructor() {
@@ -84,9 +84,9 @@ prototype["getAsync"] = function getAsync(arg0) {
     closure_0 = tmp2;
     const _performance2 = performance;
     closure_128_0 = performance.now();
-    let items = [tmp3(2071).basicChannels(closure_0).getKvEntries(), ];
-    tmp3(2071).basicChannels(closure_0);
-    items[1] = tmp3(2071).syncedBasicChannels(closure_0).getKvEntries();
+    let items = [tmp3(2073).basicChannels(closure_0).getKvEntries(), ];
+    tmp3(2073).basicChannels(closure_0);
+    items[1] = tmp3(2073).syncedBasicChannels(closure_0).getKvEntries();
     closure_128_1 = await Promise.all(items);
     closure_128_2 = _slicedToArray(closure_128_1, 2);
     closure_128_3 = closure_128_2[0];

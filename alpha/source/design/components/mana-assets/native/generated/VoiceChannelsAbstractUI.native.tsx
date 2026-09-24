@@ -1,13 +1,13 @@
-// Module ID: 6886
-// Function ID: 6887
+// Module ID: 6888
+// Function ID: 6889
 // Name: VoiceChannelsAbstractUI
-// Dependencies: [21, 5890, 6887, 2]
+// Dependencies: [21, 5892, 6889, 2]
 // Exports: VoiceChannelsAbstractUI
 
-// Module 6886 (VoiceChannelsAbstractUI)
+// Module 6888 (VoiceChannelsAbstractUI)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6887 from "module_6887" /* 6887 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6889 from "module_6889" /* 6889 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const VoiceChannelsAbstractUI = function VoiceChannelsAbstractUI(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6887 };
+  const obj2 = { uri: _modDef6889 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

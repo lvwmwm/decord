@@ -1,14 +1,14 @@
-// Module ID: 18146
-// Function ID: 18147
+// Module ID: 18169
+// Function ID: 18170
 // Name: useGuildSettingsRoleExampleMessage
-// Dependencies: [19, 1386, 1074, 5049, 8079, 1115, 8525, 13692, 2]
+// Dependencies: [19, 1386, 1074, 5051, 8081, 1115, 8529, 13701, 2]
 // Exports: useGuildSettingsRoleExampleMessage
 
-// Module 18146 (useGuildSettingsRoleExampleMessage)
+// Module 18169 (useGuildSettingsRoleExampleMessage)
 import util from "util" /* 1115 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5049 */;
-import createMessageDefault from "createMessage" /* 8079 */;
-import UserActionCreatorsAll from "UserActionCreators" /* 8525 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5051 */;
+import createMessageDefault from "createMessage" /* 8081 */;
+import UserActionCreatorsAll from "UserActionCreators" /* 8529 */;
 import noop from "module_19" /* 19 */;
 import UserRecord from "UserRecord" /* 1386 */;
 

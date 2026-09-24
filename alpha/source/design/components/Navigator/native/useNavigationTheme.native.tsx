@@ -1,12 +1,12 @@
-// Module ID: 7372
-// Function ID: 7373
+// Module ID: 7374
+// Function ID: 7375
 // Name: useNavigationTheme
-// Dependencies: [19, 4524, 576, 4678, 1485, 2]
+// Dependencies: [19, 4526, 576, 4680, 1485, 2]
 // Exports: useNavigationTheme
 
-// Module 7372 (useNavigationTheme)
+// Module 7374 (useNavigationTheme)
 import Link from "Link" /* 1485 */;
-import shared from "shared" /* 4678 */;
+import shared from "shared" /* 4680 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;

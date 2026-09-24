@@ -1,9 +1,9 @@
-// Module ID: 7573
-// Function ID: 7574
+// Module ID: 7575
+// Function ID: 7576
 // Name: OrderConstants
 // Dependencies: [2]
 
-// Module 7573 (OrderConstants)
+// Module 7575 (OrderConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/payments/OrderConstants.tsx");

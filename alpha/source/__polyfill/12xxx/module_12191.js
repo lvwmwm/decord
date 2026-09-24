@@ -1,0 +1,9 @@
+// Module ID: 12191
+// Function ID: 12192
+// Dependencies: [1121]
+
+// Module 12191
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 78, height: 15, scales: [2, 3], hash: "6686c0dca54e6176e93ab454fcbd7545", name: "img_transfer_arrow", type: "png" });

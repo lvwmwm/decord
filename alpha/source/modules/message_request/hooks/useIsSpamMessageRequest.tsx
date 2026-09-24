@@ -1,11 +1,11 @@
-// Module ID: 11708
-// Function ID: 11709
+// Module ID: 11714
+// Function ID: 11715
 // Name: useIsSpamMessageRequest
-// Dependencies: [7551, 504, 2]
+// Dependencies: [7553, 504, 2]
 // Exports: useIsSpamMessageRequest
 
-// Module 11708 (useIsSpamMessageRequest)
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7551 */;
+// Module 11714 (useIsSpamMessageRequest)
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7553 */;
 
 const require = globalThis.__r;
 

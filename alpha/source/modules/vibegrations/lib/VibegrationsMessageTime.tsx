@@ -1,10 +1,10 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 17121
+// Function ID: 17122
 // Name: VibegrationsMessageTime
 // Dependencies: [2]
 // Exports: describeMessageTime
 
-// Module 17094 (VibegrationsMessageTime)
+// Module 17121 (VibegrationsMessageTime)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/vibegrations/lib/VibegrationsMessageTime.tsx");

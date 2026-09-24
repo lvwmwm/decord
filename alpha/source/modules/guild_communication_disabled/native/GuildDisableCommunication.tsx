@@ -1,20 +1,20 @@
-// Module ID: 12177
-// Function ID: 12178
+// Module ID: 12184
+// Function ID: 12185
 // Name: GuildDisableCommunication
-// Dependencies: [5, 32, 19, 17, 2107, 1074, 21, 1115, 4827, 576, 7312, 11493, 5288, 1241, 12178, 4521, 4979, 9700, 4823, 5988, 5991, 7416, 5271, 2]
+// Dependencies: [5, 32, 19, 17, 2109, 1074, 21, 1115, 4829, 576, 7314, 11499, 5290, 1241, 12185, 4523, 4981, 9704, 4825, 5990, 5993, 7418, 5273, 2]
 
-// Module 12177 (GuildDisableCommunication)
+// Module 12184 (GuildDisableCommunication)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import components_Button_Button from "components/Button/Button" /* 5271 */;
-import useMountEffectDefault from "useMountEffect" /* 5288 */;
-import TableRadioGroup from "TableRadioGroup" /* 5988 */;
-import TableRadioRow from "TableRadioRow" /* 5991 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7312 */;
-import TextArea from "TextArea" /* 7416 */;
-import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11493 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import components_Button_Button from "components/Button/Button" /* 5273 */;
+import useMountEffectDefault from "useMountEffect" /* 5290 */;
+import TableRadioGroup from "TableRadioGroup" /* 5990 */;
+import TableRadioRow from "TableRadioRow" /* 5993 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 7314 */;
+import TextArea from "TextArea" /* 7418 */;
+import useSafeAreaAvoidingInputsDefault from "useSafeAreaAvoidingInputs" /* 11499 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
@@ -22,7 +22,7 @@ import noop from "module_19" /* 19 */;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, ScrollView: closure_7 } = get_ActivityIndicator);
-const GuildDisableCommunicationConstants = fn(2107);
+const GuildDisableCommunicationConstants = fn(2109);
 ({ DisableCommunicationDuration, GUILD_COMMUNICATION_DISABLED_RESOURCE_LINK: closure_8, SET_COMMUNICATION_DISABLED_MODAL_NAME: closure_9 } = GuildDisableCommunicationConstants);
 const AnalyticEvents = fn(1074).AnalyticEvents;
 const jsxProd = fn(21);
@@ -71,7 +71,7 @@ let items = [
     }
   }
 ];
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW }, reasonTextArea: null, buttonContainer: null };
 let obj = {
   value: DisableCommunicationDuration.DURATION_60_SEC,
@@ -119,7 +119,7 @@ export default noop.memo(function GuildDisableCommunication(arg0) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            const obj4 = tmp4(12178);
+            const obj4 = tmp4(12185);
             dependencyMap = 1;
             c3 = 1;
             const obj5 = { value: obj4.setCommunicationDisabledDuration(guild_id, id.id, items[asyncGeneratorStep].value, ref.current), done: false };
@@ -134,8 +134,8 @@ export default noop.memo(function GuildDisableCommunication(arg0) {
           return obj6;
         } else {
           const intl = user(1115).intl;
-          const obj8 = tmp4(4521);
-          const name = tmp4(4979).getName(closure_129_1, null, closure_129_0);
+          const obj8 = tmp4(4523);
+          const name = tmp4(4981).getName(closure_129_1, null, closure_129_0);
           user = name;
           if (name == null) {
             user = "";
@@ -143,7 +143,7 @@ export default noop.memo(function GuildDisableCommunication(arg0) {
           const obj = { key: "GUILD_COMMUNICATION_DISABLED_SUCCESS", content: null, icon: null };
           const obj7 = { user };
           obj.content = intl.formatToPlainString(user(1115).t.O9C3Nt, obj7);
-          obj.icon = tmp4(9700);
+          obj.icon = tmp4(9704);
           obj8.open(obj);
           closure_129_2();
           c3 = 3;

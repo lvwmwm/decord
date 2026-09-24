@@ -1,14 +1,14 @@
-// Module ID: 16328
-// Function ID: 16329
+// Module ID: 16350
+// Function ID: 16351
 // Name: ScreenRecordingUtils
-// Dependencies: [5, 17, 16327, 5193, 16329, 16330, 4794, 16331, 1980, 10529, 5430, 8549, 10528, 1478, 2]
+// Dependencies: [5, 17, 16349, 5195, 16351, 16352, 4796, 16353, 1980, 10534, 5432, 8553, 10533, 1478, 2]
 // Exports: handleRecordingPhase, handleStopAndSend
 
-// Module 16328 (ScreenRecordingUtils)
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5193 */;
-import bug_reporter_BugReportUtils from "bug_reporter/BugReportUtils" /* 10529 */;
-import ScreenRecordingManagerDefault from "ScreenRecordingManager" /* 16329 */;
-import StudyConfig from "StudyConfig" /* 16330 */;
+// Module 16350 (ScreenRecordingUtils)
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5195 */;
+import bug_reporter_BugReportUtils from "bug_reporter/BugReportUtils" /* 10534 */;
+import ScreenRecordingManagerDefault from "ScreenRecordingManager" /* 16351 */;
+import StudyConfig from "StudyConfig" /* 16352 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 
 require = fn;
@@ -574,7 +574,7 @@ let closure_11 = async function _submitBugReportWithScreenRecording(arg0, value)
                 const obj22 = { name: closure_133_2.uploadConfig.reportTitle, description: closure_133_2.uploadConfig.reportDescription, priority: closure_133_2.uploadConfig.priority, feature: null, url: "" };
                 let obj24 = closure_133_3;
                 if (closure_133_3 == null) {
-                  obj24 = { name: closure_133_2.uploadConfig.featureName, squad: closure_133_2.uploadConfig.squadName, asana_inbox_id: "Array" };
+                  obj24 = { name: closure_133_2.uploadConfig.featureName, squad: closure_133_2.uploadConfig.squadName, asana_inbox_id: "r" };
                 }
                 obj22.feature = obj24;
                 closure_133_14 = obj22;
@@ -831,7 +831,7 @@ let closure_13 = async function _handleRecordingPhase(arg0, value) {
 };
 get_ActivityIndicator = fn(17);
 ({ NativeModules, NativeEventEmitter } = get_ActivityIndicator);
-const useScreenRecordingStore = fn(16327).useScreenRecordingStore;
+const useScreenRecordingStore = fn(16349).useScreenRecordingStore;
 const DCDPhotos = NativeModules.DCDPhotos;
 const nativeEventEmitter = new NativeEventEmitter(NativeModules.DCDScreenRecordingManager);
 let size = fn(2);

@@ -1,9 +1,9 @@
-// Module ID: 8099
-// Function ID: 8100
+// Module ID: 8101
+// Function ID: 8102
 // Name: ForumChannelAnalyticsManager
-// Dependencies: [2042, 2]
+// Dependencies: [2044, 2]
 
-// Module 8099 (ForumChannelAnalyticsManager)
+// Module 8101 (ForumChannelAnalyticsManager)
 import "ChannelStore";
 
 const obj2 = Object.create(function ForumChannelAnalyticsManager() {

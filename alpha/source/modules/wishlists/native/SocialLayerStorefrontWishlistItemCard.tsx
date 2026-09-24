@@ -1,21 +1,21 @@
-// Module ID: 11388
-// Function ID: 11389
+// Module ID: 11394
+// Function ID: 11395
 // Name: SocialLayerStorefrontWishlistItemCard
-// Dependencies: [19, 5054, 11386, 21, 4827, 576, 504, 9182, 5890, 9129, 2]
+// Dependencies: [19, 5056, 11392, 21, 4829, 576, 504, 9186, 5892, 9133, 2]
 // Exports: default
 
-// Module 11388 (SocialLayerStorefrontWishlistItemCard)
+// Module 11394 (SocialLayerStorefrontWishlistItemCard)
 import nativeDefault from "native" /* 576 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9182 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9186 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 5054 */;
-import SentGiftsStore from "SentGiftsStore" /* 11386 */;
+import ApplicationStore from "ApplicationStore" /* 5056 */;
+import SentGiftsStore from "SentGiftsStore" /* 11392 */;
 
 const require = fn;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, Fragment: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { applicationIcon: null, nestedCard: null };
 let size = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefault.space.PX_8, width: 24, height: 24, borderRadius: nativeDefault.radii.sm, zIndex: 1 };
 obj2.applicationIcon = size;

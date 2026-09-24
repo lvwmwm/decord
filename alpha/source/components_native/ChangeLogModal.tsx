@@ -1,19 +1,19 @@
-// Module ID: 15885
-// Function ID: 15886
+// Module ID: 15899
+// Function ID: 15900
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1074, 2095, 21, 4827, 576, 4533, 1241, 8605, 15886, 5890, 8653, 1115, 5425, 10090, 10738, 1177, 8435, 1478, 8436, 1485, 5927, 4414, 8437, 4823, 5030, 7331, 2]
+// Dependencies: [19, 17, 1074, 2097, 21, 4829, 576, 4535, 1241, 8609, 15900, 5892, 8657, 1115, 5427, 10095, 10744, 1177, 8439, 1478, 8440, 1485, 5929, 4416, 8441, 4825, 5032, 7333, 2]
 // Exports: default
 
-// Module 15885 (ChangeLogModal)
+// Module 15899 (ChangeLogModal)
 import nativeDefault from "native" /* 576 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
-import NavigatorHeader from "NavigatorHeader" /* 5927 */;
-import Navigator from "Navigator" /* 7331 */;
-import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8435 */;
-import openMediaModal from "openMediaModal" /* 8605 */;
-import common_VideoDefault from "common/Video" /* 8653 */;
-import _modDef15886 from "module_15886" /* 15886 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
+import NavigatorHeader from "NavigatorHeader" /* 5929 */;
+import Navigator from "Navigator" /* 7333 */;
+import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 8439 */;
+import openMediaModal from "openMediaModal" /* 8609 */;
+import common_VideoDefault from "common/Video" /* 8657 */;
+import _modDef15900 from "module_15900" /* 15900 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -134,18 +134,18 @@ function hideChangeLog() {
 }
 const View = fn(17).View;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const CHANGELOG_MODAL_KEY = fn(2095).CHANGELOG_MODAL_KEY;
+const CHANGELOG_MODAL_KEY = fn(2097).CHANGELOG_MODAL_KEY;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
 let c9 = 0.5625;
-let createStyles = fn(4827);
+let createStyles = fn(4829);
 let obj2 = { video: { alignSelf: "center" }, videoWrapper: { marginBottom: 8 }, videoSpecial: { borderRadius: nativeDefault.radii.xs, overflow: "hidden" }, videoOverlay: { position: "absolute", width: "100%", height: "100%" }, playButton: null, playIcon: null, empty: null };
 let size = { position: "absolute", top: "50%", left: "50%", marginLeft: -28, marginTop: -28, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, width: 56, height: 56 };
 obj2.playButton = size;
 obj2.playIcon = { width: 21, height: 21 };
 obj2.empty = { width: "100%", height: 240, alignItems: "center", paddingTop: 48 };
 let closure_10 = createStyles.createLegacyClassComponentStyles(obj2);
-createStyles = fn(4827);
+createStyles = fn(4829);
 let obj4 = { bulletPoint: null, listItem: null, listText: null, listItemContent: null };
 let size1 = { width: 7, height: 7, borderRadius: 3.5, marginRight: 13, marginTop: 7, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
 obj4.bulletPoint = size1;
@@ -173,7 +173,7 @@ ListItem.prototype["render"] = function render() {
   obj.children = items;
   return React6(View, obj);
 };
-ListItem.contextType = fn(4533).ThemeContext;
+ListItem.contextType = fn(4535).ThemeContext;
 const PureComponent2 = noop.PureComponent;
 class ChangeLog extends PureComponent2 {
   constructor() {
@@ -275,7 +275,7 @@ prototype["renderVideo"] = function renderVideo() {
             },
         useLocalHTML: true
       };
-      const items = [closure_7(_modDef15886, obj4), ];
+      const items = [closure_7(_modDef15900, obj4), ];
       let tmp6Result = null;
       if (!tmp2) {
         const obj5 = { style: tmp.videoOverlay, source: null };
@@ -283,8 +283,8 @@ prototype["renderVideo"] = function renderVideo() {
         const _HermesInternal = HermesInternal;
         obj6.uri = "https://i.ytimg.com/vi/" + youtube_video_id + "/hqdefault.jpg";
         obj5.source = obj6;
-        tmp6Result = tmp6(tmp7(5890), obj5);
-        const tmp7Result = tmp7(5890);
+        tmp6Result = tmp6(tmp7(5892), obj5);
+        const tmp7Result = tmp7(5892);
       }
       items[1] = tmp6Result;
       obj3.children = items;
@@ -308,10 +308,10 @@ prototype["renderVideo"] = function renderVideo() {
   let tmp12Result = null;
   if (null != video) {
     const obj9 = { accessibilityLabel: "Play Video", accessibilityRole: "button", style: tmp.videoOverlay, onPress: self.playVideo, children: null };
-    const obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: tmp15(10738), onPress: self.playVideo, style: tmp.playButton, iconSize: tmp18(1177).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
-    obj9.children = tmp12(tmp15(10090), obj10);
-    tmp12Result = tmp12(tmp18(5425).PressableOpacity, obj9);
-    const tmp15Result = tmp15(10090);
+    const obj10 = { accessibilityLabel: "Play Video", accessibilityRole: "button", source: tmp15(10744), onPress: self.playVideo, style: tmp.playButton, iconSize: tmp18(1177).IconSizes.CUSTOM, iconStyle: tmp.playIcon };
+    obj9.children = tmp12(tmp15(10095), obj10);
+    tmp12Result = tmp12(tmp18(5427).PressableOpacity, obj9);
+    const tmp15Result = tmp15(10095);
   }
   items1[1] = tmp12Result;
   obj8.children = items1;
@@ -325,7 +325,7 @@ prototype["render"] = function render() {
   obj.onScroll = this.handleScroll;
   return React5(ChangeLogStandardTemplateDefault, obj);
 };
-ChangeLog.contextType = fn(4533).ThemeContext;
+ChangeLog.contextType = fn(4535).ThemeContext;
 size = fn(2);
 let result = size.fileFinishedImporting("components_native/ChangeLogModal.tsx");
 

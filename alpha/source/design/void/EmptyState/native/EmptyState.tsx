@@ -1,12 +1,12 @@
-// Module ID: 14481
-// Function ID: 14482
+// Module ID: 14490
+// Function ID: 14491
 // Name: EmptyState
-// Dependencies: [19, 17, 21, 4827, 576, 4678, 4823, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4680, 4825, 2]
 // Exports: default
 
-// Module 14481 (EmptyState)
+// Module 14490 (EmptyState)
 import nativeDefault from "native" /* 576 */;
-import shared from "shared" /* 4678 */;
+import shared from "shared" /* 4680 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -16,7 +16,7 @@ const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
 let closure_6 = { textTransform: "none" };
 let closure_7 = { accessible: false, accessibilityRole: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants" };
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { flex: 1, justifyContent: "center", alignItems: "center", paddingHorizontal: 36, paddingBottom: 80, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, emptyImage: { flex: 1, maxWidth: 300, maxHeight: 200 }, textGroup: { alignSelf: "stretch", alignItems: "center" }, emptyTitle: { marginTop: 20, textTransform: "uppercase" }, emptyBody: { textAlign: "center", marginTop: 8 } };
 let closure_8 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -49,11 +49,11 @@ export default function EmptyState(Illustration) {
       const obj3 = {};
       const merged1 = Object.assign(closure_7);
       obj3.resizeMode = "contain";
-      obj3.source = tmp2(4678).isThemeLight(tmp8) ? Illustration.lightSource : Illustration.darkSource;
+      obj3.source = tmp2(4680).isThemeLight(tmp8) ? Illustration.lightSource : Illustration.darkSource;
       const items1 = [tmp.emptyImage, Illustration.imageStyle];
       obj3.style = items1;
       tmp11Result = React4(React3, obj3);
-      const tmp2Result2 = tmp2(4678);
+      const tmp2Result2 = tmp2(4680);
     }
     tmp9 = null != Illustration.lightSource && null != Illustration.darkSource;
   }
@@ -70,7 +70,7 @@ export default function EmptyState(Illustration) {
       const items4 = [tmp.emptyTitle, tmp21, tmp6];
       obj6.style = items4;
       obj6.children = title;
-      tmp25 = React4(tmp2(4823).Text, obj6);
+      tmp25 = React4(tmp2(4825).Text, obj6);
     }
     const items5 = [tmp25, ];
     let tmp27 = null;
@@ -79,7 +79,7 @@ export default function EmptyState(Illustration) {
       const items6 = [tmp.emptyBody, tmp20];
       obj7.style = items6;
       obj7.children = body;
-      tmp27 = React4(tmp2(4823).Text, obj7);
+      tmp27 = React4(tmp2(4825).Text, obj7);
     }
     items5[1] = tmp27;
     obj5.children = items5;

@@ -1,20 +1,20 @@
-// Module ID: 15002
-// Function ID: 15003
+// Module ID: 15011
+// Function ID: 15012
 // Name: UserProfilePrimaryGuildEditButton
-// Dependencies: [19, 2064, 8288, 21, 4827, 576, 504, 15003, 8509, 8508, 1115, 1364, 4823, 14980, 4794, 15004, 1980, 5887, 10092, 2]
+// Dependencies: [19, 2066, 8292, 21, 4829, 576, 504, 15012, 8513, 8512, 1115, 1364, 4825, 14989, 4796, 15013, 1980, 5889, 10097, 2]
 // Exports: default
 
-// Module 15002 (UserProfilePrimaryGuildEditButton)
+// Module 15011 (UserProfilePrimaryGuildEditButton)
 import nativeDefault from "native" /* 576 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2064 */;
+import GuildStore from "GuildStore" /* 2066 */;
 
 require = fn;
-const GuildTagBadgeSize = fn(8288).GuildTagBadgeSize;
+const GuildTagBadgeSize = fn(8292).GuildTagBadgeSize;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { tag: { paddingHorizontal: 6, paddingVertical: 2, columnGap: 4, borderRadius: nativeDefault.radii.sm } };
 let closure_6 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -115,7 +115,7 @@ export default function UserProfilePrimaryGuildEditButton(arg0) {
     const obj5 = { text: combined };
     obj4.accessibilityValue = obj5;
     obj4.onPress = function onPress() {
-      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15004, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild });
+      ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(15013, dependencyMap.paths), "UserPrimaryGuildListBottomSheet", { availableGuilds: userAvailableGuildsWithTags, selectedGuildId: pendingPrimaryGuildId, onSelectGuild: handleSelectPrimaryGuild });
     };
     let tmp23Result = null;
     if (null != stateFromStores) {

@@ -1,13 +1,13 @@
-// Module ID: 6756
-// Function ID: 6757
+// Module ID: 6758
+// Function ID: 6759
 // Name: ServerIconGeargrindExample
-// Dependencies: [21, 5890, 6757, 2]
+// Dependencies: [21, 5892, 6759, 2]
 // Exports: ServerIconGeargrindExample
 
-// Module 6756 (ServerIconGeargrindExample)
+// Module 6758 (ServerIconGeargrindExample)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6757 from "module_6757" /* 6757 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6759 from "module_6759" /* 6759 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const ServerIconGeargrindExample = function ServerIconGeargrindExample(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6757 };
+  const obj2 = { uri: _modDef6759 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

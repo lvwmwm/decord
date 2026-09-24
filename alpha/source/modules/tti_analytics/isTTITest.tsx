@@ -1,9 +1,9 @@
-// Module ID: 14756
-// Function ID: 14757
+// Module ID: 14765
+// Function ID: 14766
 // Name: isTTITest
 // Dependencies: [2]
 
-// Module 14756 (isTTITest)
+// Module 14765 (isTTITest)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/tti_analytics/isTTITest.tsx");

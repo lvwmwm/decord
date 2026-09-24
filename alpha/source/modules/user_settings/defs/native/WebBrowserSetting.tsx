@@ -1,14 +1,14 @@
-// Module ID: 15816
-// Function ID: 15817
+// Module ID: 15830
+// Function ID: 15831
 // Name: WebBrowserSetting
-// Dependencies: [1074, 11805, 1115, 15817, 9244, 15818, 2]
+// Dependencies: [1074, 11811, 1115, 15831, 9248, 15832, 2]
 
-// Module 15816 (WebBrowserSetting)
+// Module 15830 (WebBrowserSetting)
 import Constants from "Constants" /* 1074 */;
 import util from "util" /* 1115 */;
-import GlobeEarthIcon from "GlobeEarthIcon" /* 9244 */;
-import SelectWebBrowserSetting from "SelectWebBrowserSetting" /* 15817 */;
-import SettingBuilders from "SettingBuilders" /* 11805 */;
+import GlobeEarthIcon from "GlobeEarthIcon" /* 9248 */;
+import SelectWebBrowserSetting from "SelectWebBrowserSetting" /* 15831 */;
+import SettingBuilders from "SettingBuilders" /* 11811 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

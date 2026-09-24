@@ -1,14 +1,14 @@
-// Module ID: 10150
-// Function ID: 10151
+// Module ID: 10155
+// Function ID: 10156
 // Name: GuildEventCard
-// Dependencies: [19, 17, 4850, 7854, 2048, 21, 4827, 576, 9948, 5736, 504, 9868, 5910, 8756, 9973, 2]
+// Dependencies: [19, 17, 4852, 7856, 2050, 21, 4829, 576, 9953, 5738, 504, 9873, 5912, 8760, 9978, 2]
 
-// Module 10150 (GuildEventCard)
+// Module 10155 (GuildEventCard)
 import nativeDefault from "native" /* 576 */;
-import ButtonGroup from "ButtonGroup" /* 5736 */;
-import GuildEventCardComponents from "GuildEventCardComponents" /* 9948 */;
+import ButtonGroup from "ButtonGroup" /* 5738 */;
+import GuildEventCardComponents from "GuildEventCardComponents" /* 9953 */;
 import noop from "module_19" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
 
 const require = globalThis.__r;
 
@@ -22,7 +22,7 @@ function GuildEventCardControls(onCloseAction) {
   let tmp6Result = primaryActionButtonType === GuildEventCardComponents.PrimaryActionType.START;
   if (tmp6Result) {
     const obj3 = { event };
-    tmp6Result = tmp6(tmp2(9948).GuildEventCardRSVPAction, obj3);
+    tmp6Result = tmp6(tmp2(9953).GuildEventCardRSVPAction, obj3);
   }
   items[1] = tmp6Result;
   items[2] = React5(GuildEventCardComponents.GuildEventShareAction, { event });
@@ -30,11 +30,11 @@ function GuildEventCardControls(onCloseAction) {
   return React6(ButtonGroup.ButtonGroup, obj2);
 }
 const View = fn(17).View;
-let closure_5 = fn(7854).isGuildScheduledEventActive;
-fn(2048).AGE_VERIFICATION_STAGE_CHANNEL_TYPES;
+let closure_5 = fn(7856).isGuildScheduledEventActive;
+fn(2050).AGE_VERIFICATION_STAGE_CHANNEL_TYPES;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { actionContainer: { paddingTop: nativeDefault.space.PX_16, paddingBottom: 0 } };
 const styles = createStyles.createStyles(obj);
 let obj3 = { paddingTop: nativeDefault.space.PX_16, paddingBottom: 0 };

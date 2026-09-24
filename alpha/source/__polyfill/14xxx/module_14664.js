@@ -1,17 +1,28 @@
 // Module ID: 14664
 // Function ID: 14665
-// Dependencies: [14663]
+// Dependencies: [14575, 14665]
+// Exports: getSupportedUnits
 
 // Module 14664
-import _mod14663 from "module_14663" /* 14663 */;
+const require = globalThis.__r;
 
+const require = arg1;
+const dependencyMap = arg6;
 
-export default (arg0, value) => {
-  try {
-    const obj = { value, configurable: true, writable: true };
-    defineProperty(_mod14663, arg0, obj);
-    return value;
-  } catch (err) {
-    _mod14663[tmp2] = tmp;
-  }
+export const getSupportedUnits = function getSupportedUnits(locale) {
+  _require = locale;
+  const units = require("module_14665").units;
+  return units.filter((item) => (function isSupported(unit, arg1) {
+    let str = arg1;
+    if (undefined === arg1) {
+      str = "en";
+    }
+    try {
+      const obj = { style: "unit", unit };
+      const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
+      return memoizedNumberFormat.resolvedOptions().unit === unit;
+    } catch (err) {
+      return false;
+    }
+  })(item, closure_0));
 };

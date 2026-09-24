@@ -1,11 +1,11 @@
-// Module ID: 12937
-// Function ID: 12938
+// Module ID: 12946
+// Function ID: 12947
 // Name: shouldWarnAuthorizedAppTwoWay
-// Dependencies: [9437, 2]
+// Dependencies: [9441, 2]
 // Exports: default, useShouldWarnAuthorizedAppTwoWay
 
-// Module 12937 (shouldWarnAuthorizedAppTwoWay)
-import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 9437 */;
+// Module 12946 (shouldWarnAuthorizedAppTwoWay)
+import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 9441 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/authorized_apps/shouldWarnAuthorizedAppTwoWay.tsx");

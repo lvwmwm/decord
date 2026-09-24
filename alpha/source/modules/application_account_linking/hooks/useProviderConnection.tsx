@@ -1,14 +1,14 @@
-// Module ID: 7512
-// Function ID: 7513
+// Module ID: 7514
+// Function ID: 7515
 // Name: useProviderConnection
-// Dependencies: [5, 19, 5584, 504, 5709, 2]
+// Dependencies: [5, 19, 5586, 504, 5711, 2]
 // Exports: useProviderConnection
 
-// Module 7512 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5709 */;
+// Module 7514 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 5711 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import noop from "module_19" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5584 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 5586 */;
 
 const require = globalThis.__r;
 

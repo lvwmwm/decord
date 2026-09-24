@@ -1,12 +1,12 @@
-// Module ID: 11239
-// Function ID: 11240
+// Module ID: 11245
+// Function ID: 11246
 // Name: ActionButton
-// Dependencies: [19, 17, 21, 5277, 8265, 2]
+// Dependencies: [19, 17, 21, 5279, 8269, 2]
 // Exports: default
 
-// Module 11239 (ActionButton)
-import ButtonHooks from "ButtonHooks" /* 5277 */;
-import IconButton from "IconButton" /* 8265 */;
+// Module 11245 (ActionButton)
+import ButtonHooks from "ButtonHooks" /* 5279 */;
+import IconButton from "IconButton" /* 8269 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

@@ -1,10 +1,10 @@
-// Module ID: 18329
-// Function ID: 18330
+// Module ID: 18352
+// Function ID: 18353
 // Name: GuildRoleSubscriptionTierTemplateActionCreators
 // Dependencies: [5, 1074, 573, 1271, 2]
 // Exports: getTemplates, stashTemplateChannels
 
-// Module 18329 (GuildRoleSubscriptionTierTemplateActionCreators)
+// Module 18352 (GuildRoleSubscriptionTierTemplateActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;

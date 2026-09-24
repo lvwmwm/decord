@@ -1,11 +1,11 @@
-// Module ID: 9201
-// Function ID: 9202
+// Module ID: 9205
+// Function ID: 9206
 // Name: FractionalNitroCoinIllustration
-// Dependencies: [19, 1076, 21, 5995, 2]
+// Dependencies: [19, 1076, 21, 5997, 2]
 // Exports: FractionalNitroCoinIllustration
 
-// Module 9201 (FractionalNitroCoinIllustration)
-import native from "native" /* 5995 */;
+// Module 9205 (FractionalNitroCoinIllustration)
+import native from "native" /* 5997 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

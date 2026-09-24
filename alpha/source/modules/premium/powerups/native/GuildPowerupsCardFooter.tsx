@@ -1,22 +1,22 @@
-// Module ID: 12864
-// Function ID: 12865
+// Module ID: 12873
+// Function ID: 12874
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 4827, 4786, 576, 4823, 6938, 1115, 2516, 12865, 12838, 7311, 9568, 2]
+// Dependencies: [17, 21, 4829, 4788, 576, 4825, 6940, 1115, 2518, 12874, 12847, 7313, 9572, 2]
 // Exports: GuildPowerupsCardFooter
 
-// Module 12864 (GuildPowerupsCardFooter)
+// Module 12873 (GuildPowerupsCardFooter)
 import _mod17 from "module_17" /* 17 */;
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import _modDef2516 from "module_2516" /* 2516 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 4786 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 6938 */;
-import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7311 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12838 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12865 */;
+import _modDef2518 from "module_2518" /* 2518 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 4788 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 6940 */;
+import ManaTypeConsolidationExperiment from "ManaTypeConsolidationExperiment" /* 7313 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 12847 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 12874 */;
 import jsxProd from "jsxProd" /* 21 */;
-import createStyles from "createStyles" /* 4827 */;
+import createStyles from "createStyles" /* 4829 */;
 import size from "module_2" /* 2 */;
 
 class GuildPowerupCardFooterActive {

@@ -1,17 +1,17 @@
-// Module ID: 9900
-// Function ID: 9901
+// Module ID: 9905
+// Function ID: 9906
 // Name: CreateChannelActionCreators
-// Dependencies: [5008, 1074, 1084, 573, 5020, 1249, 2054, 1271, 7450, 7445, 7651, 2]
+// Dependencies: [5010, 1074, 1084, 573, 5022, 1249, 2056, 1271, 7452, 7447, 7653, 2]
 
-// Module 9900 (CreateChannelActionCreators)
+// Module 9905 (CreateChannelActionCreators)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1249 */;
 import HTTPUtils from "HTTPUtils" /* 1271 */;
-import TypeUtils from "TypeUtils" /* 2054 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5020 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7445 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7450 */;
-import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7651 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
+import TypeUtils from "TypeUtils" /* 2056 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 5022 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7447 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7452 */;
+import GuildTemplateTooltipActionCreatorsDefault from "GuildTemplateTooltipActionCreators" /* 7653 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
 
 require = fn;
 const Constants = fn(1074);
@@ -82,7 +82,7 @@ export default {
     let obj = permissionOverwrites(573);
     tmp8 = constants;
     const request = { url: closure_6.GUILD_CHANNELS(guildId), body: obj2, oldFormErrors: true, trackedActionData: null, rejectWithError: null };
-    const tmpResult = permissionOverwrites(5020);
+    const tmpResult = permissionOverwrites(5022);
     request.trackedActionData = {
       event: guildId(1249).NetworkActionNames.CHANNEL_CREATE,
       properties(body) {

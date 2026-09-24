@@ -1,17 +1,17 @@
-// Module ID: 18080
-// Function ID: 18081
+// Module ID: 18103
+// Function ID: 18104
 // Name: GuildSettingsModalEmoji/EmojiRow
-// Dependencies: [32, 19, 17, 2064, 1372, 21, 4827, 576, 1364, 504, 9838, 10677, 4480, 18081, 5256, 4823, 1177, 5908, 4521, 1115, 1397, 4979, 4671, 5425, 18083, 2]
+// Dependencies: [32, 19, 17, 2066, 1372, 21, 4829, 576, 1364, 504, 9843, 10682, 4482, 18104, 5258, 4825, 1177, 5910, 4523, 1115, 1397, 4981, 4673, 5427, 18106, 2]
 // Exports: EmojiRow
 
-// Module 18080 (GuildSettingsModalEmoji/EmojiRow)
+// Module 18103 (GuildSettingsModalEmoji/EmojiRow)
 import nativeDefault from "native" /* 576 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4480 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10677 */;
-import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18081 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4482 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10682 */;
+import showEmojiOverflowActionSheetDefault from "showEmojiOverflowActionSheet" /* 18104 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildStore from "GuildStore" /* 2064 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -19,7 +19,7 @@ get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, Image: metroRequire, Pressable: closure_7 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { flex: { flex: 1 }, flexCenterRow: { flexDirection: "row", alignItems: "center" }, nameContainer: { paddingVertical: 4, borderRadius: nativeDefault.radii.xs, alignItems: "center", flexDirection: "row" }, activeNameContainer: null, usernameContainer: null, emojiText: null, colon: null, username: null, emojiImage: null, overflowIcon: null };
 let PlatformUtils = fn(1364);
 let num = 4;

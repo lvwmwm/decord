@@ -1,11 +1,11 @@
-// Module ID: 16459
-// Function ID: 16460
+// Module ID: 16483
+// Function ID: 16484
 // Name: useMessagesFlatData
-// Dependencies: [19, 16448, 16460, 16497, 16498, 2]
+// Dependencies: [19, 16472, 16484, 16521, 16522, 2]
 // Exports: default
 
-// Module 16459 (useMessagesFlatData)
-import useMessagesData from "useMessagesData" /* 16448 */;
+// Module 16483 (useMessagesFlatData)
+import useMessagesData from "useMessagesData" /* 16472 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,12 +22,12 @@ export default function useMessagesFlatData(channels, listItemHeight) {
   const items = [channels, channelFavorites, renderHeader, sections, listItemHeight];
   return channelFavorites.useMemo(() => {
     if (renderHeader === useMessagesData.MessagesDataHeader.HappeningNow) {
-      let listHeaderHeight = tmp2(16460).getMessagesItemHappeningNowHeight();
-      const tmp2Result = tmp2(16460);
+      let listHeaderHeight = tmp2(16484).getMessagesItemHappeningNowHeight();
+      const tmp2Result = tmp2(16484);
     } else {
       listHeaderHeight = 0;
-      if (renderHeader === tmp2(16448).MessagesDataHeader.EmptyState) {
-        listHeaderHeight = tmp2(16497).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
+      if (renderHeader === tmp2(16472).MessagesDataHeader.EmptyState) {
+        listHeaderHeight = tmp2(16521).MESSAGES_ITEM_EMPTY_STATE_HEIGHT;
       }
     }
     const listData = [];
@@ -64,7 +64,7 @@ export default function useMessagesFlatData(channels, listItemHeight) {
     let sum2 = tmp12;
     if (sections[useMessagesData.MessagesDataSections.Separator] > 0) {
       listData.push({ kind: "separator" });
-      sum2 = tmp12 + tmp17(16498).MESSAGES_ITEM_SEPERATOR_HEIGHT;
+      sum2 = tmp12 + tmp17(16522).MESSAGES_ITEM_SEPERATOR_HEIGHT;
     }
     const tmp21 = sections[useMessagesData.MessagesDataSections.SuggestedFriends];
     let friendsHeaderOffset;

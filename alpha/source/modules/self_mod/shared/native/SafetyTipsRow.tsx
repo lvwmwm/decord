@@ -1,12 +1,12 @@
-// Module ID: 8930
-// Function ID: 8931
+// Module ID: 8934
+// Function ID: 8935
 // Name: SafetyTipsRow
-// Dependencies: [19, 17, 21, 4827, 576, 5908, 4823, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 5910, 4825, 2]
 // Exports: default
 
-// Module 8930 (SafetyTipsRow)
+// Module 8934 (SafetyTipsRow)
 import nativeDefault from "native" /* 576 */;
-import Text_Text from "Text/Text" /* 4823 */;
+import Text_Text from "Text/Text" /* 4825 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 const obj2 = { indexContainer: null };
 let size = { width: 32, height: 32, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, borderRadius: nativeDefault.radii.round, alignItems: "center", justifyContent: "center", marginRight: nativeDefault.space.PX_4 };
 obj2.indexContainer = size;

@@ -1,19 +1,19 @@
-// Module ID: 17641
-// Function ID: 17642
+// Module ID: 17664
+// Function ID: 17665
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 4843, 12606, 12604, 4848, 21, 12605, 1248, 1364, 551, 4559, 9743, 9729, 9731, 2]
+// Dependencies: [32, 19, 4845, 12615, 12613, 4850, 21, 12614, 1248, 1364, 551, 4561, 9747, 9733, 9735, 2]
 
-// Module 17641 (VoicePanelSystemUIManager)
+// Module 17664 (VoicePanelSystemUIManager)
 import ReactBatchUpdates from "ReactBatchUpdates" /* 1248 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4843 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
 
 require = fn;
-const VoicePanelModes = fn(12606).VoicePanelModes;
-const VoicePanelControlsModes = fn(12604).VoicePanelControlsModes;
-const ParticipantTypes = fn(4848).ParticipantTypes;
+const VoicePanelModes = fn(12615).VoicePanelModes;
+const VoicePanelControlsModes = fn(12613).VoicePanelControlsModes;
+const ParticipantTypes = fn(4850).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_9, Fragment: c10, jsxs: closure_11 } = jsxProd);
 const __initData = { code: "function VoicePanelSystemUIManagerTsx1(){const{focused,mode,controlsSpecs,windowDimensions}=this.__closure;var _focused$get;return{focusedId:(_focused$get=focused.get())===null||_focused$get===void 0?void 0:_focused$get.id,mode:mode.get(),controlsMode:controlsSpecs.get().mode,landscape:windowDimensions.get().landscape};}" };

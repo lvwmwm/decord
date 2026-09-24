@@ -1,22 +1,22 @@
-// Module ID: 14112
-// Function ID: 14113
+// Module ID: 14121
+// Function ID: 14122
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [4742, 7980, 2046, 2042, 6922, 5812, 2105, 2064, 4472, 1372, 1074, 2010, 4671, 10181, 504, 573, 2]
+// Dependencies: [4744, 7982, 2048, 2044, 6924, 5814, 2107, 2066, 4474, 1372, 1074, 2010, 4673, 10186, 504, 573, 2]
 
-// Module 14112 (PrivateChannelRecipientsInviteStore)
+// Module 14121 (PrivateChannelRecipientsInviteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import StringUtils from "StringUtils" /* 2010 */;
-import UserUtilsDefault from "UserUtils" /* 4671 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 10181 */;
-import ExperimentStore from "ExperimentStore" /* 4742 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7980 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import ConsentStore from "ConsentStore" /* 6922 */;
-import FrecencyStore from "FrecencyStore" /* 5812 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import RelationshipStore from "RelationshipStore" /* 4472 */;
+import UserUtilsDefault from "UserUtils" /* 4673 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 10186 */;
+import ExperimentStore from "ExperimentStore" /* 4744 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 7982 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import ConsentStore from "ConsentStore" /* 6924 */;
+import FrecencyStore from "FrecencyStore" /* 5814 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import RelationshipStore from "RelationshipStore" /* 4474 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -224,7 +224,7 @@ function handleActionSheetDismiss(key) {
 function performQueryOnAffinityChange() {
   return false;
 }
-const PrivateChannelRecord = fn(2046).PrivateChannelRecord;
+const PrivateChannelRecord = fn(2048).PrivateChannelRecord;
 const Constants = fn(1074);
 ({ NEW_GROUP_DM_POPOUT_ID: closure_14, Consents } = Constants);
 let c15 = false;

@@ -1,9 +1,9 @@
-// Module ID: 4877
-// Function ID: 4878
+// Module ID: 4879
+// Function ID: 4880
 // Name: RTCRegionStore
 // Dependencies: [1091, 504, 12, 573, 2]
 
-// Module 4877 (RTCRegionStore)
+// Module 4879 (RTCRegionStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;

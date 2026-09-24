@@ -1,9 +1,0 @@
-// Module ID: 16650
-// Function ID: 16651
-// Dependencies: [1121]
-
-// Module 16650
-import registerAsset from "module_1121" /* 1121 */;
-
-
-export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 327, height: 285, scales: [2, 3], hash: "21d9af173c2aa764d18866600cd204ee", name: "onboarding_v2_upsell", type: "png" });

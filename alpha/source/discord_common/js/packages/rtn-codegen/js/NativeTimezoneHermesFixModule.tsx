@@ -1,9 +1,9 @@
-// Module ID: 4507
-// Function ID: 4508
+// Module ID: 4509
+// Function ID: 4510
 // Name: NativeTimezoneHermesFixModule
 // Dependencies: [17, 2]
 
-// Module 4507 (NativeTimezoneHermesFixModule)
+// Module 4509 (NativeTimezoneHermesFixModule)
 import _mod17 from "module_17" /* 17 */;
 import size from "module_2" /* 2 */;
 

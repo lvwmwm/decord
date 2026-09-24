@@ -1,17 +1,17 @@
-// Module ID: 8369
-// Function ID: 8370
+// Module ID: 8373
+// Function ID: 8374
 // Name: GuildProductPurchaseSystemMessage
-// Dependencies: [4473, 2042, 1074, 5073, 8304, 1400, 1397, 8338, 8306, 1115, 8308, 2]
+// Dependencies: [4475, 2044, 1074, 5075, 8308, 1400, 1397, 8342, 8310, 1115, 8312, 2]
 // Exports: createGuildProductPurchaseSystemMessage
 
-// Module 8369 (GuildProductPurchaseSystemMessage)
+// Module 8373 (GuildProductPurchaseSystemMessage)
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1400 */;
-import useMessageAuthor from "useMessageAuthor" /* 5073 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8304 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8306 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8308 */;
-import MessageRecord from "MessageRecord" /* 4473 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import useMessageAuthor from "useMessageAuthor" /* 5075 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8308 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8310 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8312 */;
+import MessageRecord from "MessageRecord" /* 4475 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 require = fn;
 const MessageTypes = fn(1074).MessageTypes;
@@ -55,7 +55,7 @@ export const createGuildProductPurchaseSystemMessage = function createGuildProdu
       const obj7 = { message, author: messageAuthorWithProcessedColor, roleStyle: message.roleStyle };
       obj6.usernameOnClickHandler = formatUsernameOnClickDefault(obj7);
       obj6.productName = product_name;
-      obj5.content = tmp5(8338).getGuildProductPurchaseSystemMessageContentMobile(obj6);
+      obj5.content = tmp5(8342).getGuildProductPurchaseSystemMessageContentMobile(obj6);
       obj5.username = messageAuthorWithProcessedColor.nick;
       obj5.avatarURL = tmp9Result.uri;
       const intl = tmp5(1115).intl;

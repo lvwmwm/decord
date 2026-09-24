@@ -1,9 +1,9 @@
-// Module ID: 2078
-// Function ID: 2079
+// Module ID: 2080
+// Function ID: 2081
 // Name: TableId
 // Dependencies: [2]
 
-// Module 2078 (TableId)
+// Module 2080 (TableId)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/kv-storage/js/types/index.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 6796
-// Function ID: 6797
+// Module ID: 6798
+// Function ID: 6799
 // Name: SnowIllocon
-// Dependencies: [21, 5890, 6797, 2]
+// Dependencies: [21, 5892, 6799, 2]
 // Exports: SnowIllocon
 
-// Module 6796 (SnowIllocon)
+// Module 6798 (SnowIllocon)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6797 from "module_6797" /* 6797 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6799 from "module_6799" /* 6799 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -20,7 +20,7 @@ export const SnowIllocon = function SnowIllocon(size) {
     num = 64;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6797 };
+  const obj2 = { uri: _modDef6799 };
   obj.source = obj2;
   const items = [{ width: num, height: num }];
   obj.style = items;

@@ -1,18 +1,18 @@
-// Module ID: 16757
-// Function ID: 16758
+// Module ID: 16781
+// Function ID: 16782
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 7958, 4648, 5741, 16684, 15425, 21, 4827, 7403, 1612, 15418, 15427, 551, 558, 504, 4559, 16758, 2]
+// Dependencies: [32, 19, 17, 7960, 4650, 5743, 16708, 15434, 21, 4829, 7405, 1612, 15427, 15436, 551, 558, 504, 4561, 16782, 2]
 
-// Module 16757 (GuildsBarUnreadBars)
+// Module 16781 (GuildsBarUnreadBars)
 import initialize from "initialize" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import FastList from "FastList" /* 7403 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import FastList from "FastList" /* 7405 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7958 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4648 */;
-import SortedGuildStore from "SortedGuildStore" /* 5741 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 7960 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4650 */;
+import SortedGuildStore from "SortedGuildStore" /* 5743 */;
 
 const require = globalThis.__r;
 
@@ -126,7 +126,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               ({ section, item: item2 } = tmp4);
             }
             let type = tmp4.type;
-            if (tmp41(7403).FastListItemTypes.SECTION === type) {
+            if (tmp41(7405).FastListItemTypes.SECTION === type) {
               let node = guildsTree.getNode(tmp4.recyclerKey);
               let element = node;
               if (null != node) {
@@ -150,7 +150,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               continue;
             } else {
-              if (tmp41(7403).FastListItemTypes.ITEM === type) {
+              if (tmp41(7405).FastListItemTypes.ITEM === type) {
                 let node1 = guildsTree.getNode(tmp4.recyclerKey);
                 let tmp12 = node1;
                 if (null != node1) {
@@ -222,15 +222,15 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
   }
 }
 const View = fn(17).View;
-const GuildsNodeType = fn(5741).GuildsNodeType;
-const GuildsBarConstants = fn(16684);
+const GuildsNodeType = fn(5743).GuildsNodeType;
+const GuildsBarConstants = fn(16708);
 ({ FastListRenderSections: c10, useGuildWrapperSize: closure_11, GUILD_LIST_WIDTH } = GuildsBarConstants);
-const YouBarConstants = fn(15425);
+const YouBarConstants = fn(15434);
 ({ YOU_BAR_HEIGHT: closure_12, YOU_BAR_MARGIN: map1 } = YouBarConstants);
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_15 = createStyles.createStyles({ wrapper: { position: "absolute", top: 0, left: 0, bottom: 0, width: GUILD_LIST_WIDTH } });
-let closure_17 = { beforeItem: "Array", afterItem: "flex" };
+let closure_17 = { beforeItem: "channel", afterItem: "channelId" };
 let closure_18 = { beforeItem: { section: 0, row: 0, mention: true }, afterItem: "Array" };
 const __initData = { code: "function GuildsBarUnreadBarsTsx1(){const{scrollPosValue}=this.__closure;return scrollPosValue.get();}" };
 const __initData2 = { code: "function GuildsBarUnreadBarsTsx2(position,lastPosition){const{runOnJS,debouncedUpdate}=this.__closure;if(position!==lastPosition){runOnJS(debouncedUpdate)();}}" };

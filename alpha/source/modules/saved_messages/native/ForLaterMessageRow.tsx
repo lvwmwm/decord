@@ -1,13 +1,13 @@
-// Module ID: 12549
-// Function ID: 12550
+// Module ID: 12558
+// Function ID: 12559
 // Name: ForLaterMessageRow
-// Dependencies: [19, 17, 21, 4827, 576, 4761, 2020, 8276, 9006, 1364, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4763, 2020, 8280, 9010, 1364, 2]
 // Exports: ForLaterMessageRow
 
-// Module 12549 (ForLaterMessageRow)
+// Module 12558 (ForLaterMessageRow)
 import nativeDefault from "native" /* 576 */;
 import PlatformUtils from "PlatformUtils" /* 1364 */;
-import RowGeneratorDefault from "RowGenerator" /* 8276 */;
+import RowGeneratorDefault from "RowGenerator" /* 8280 */;
 import noop from "module_19" /* 19 */;
 
 const require = globalThis.__r;
@@ -16,7 +16,7 @@ require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { preview: { marginHorizontal: -16, marginTop: -9, overflow: "hidden" }, flushToCardBottom: { marginBottom: -16, borderBottomLeftRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS, borderBottomRightRadius: nativeDefault.modules.mobile.CARD_DEFAULT_RADIUS }, footer: { paddingHorizontal: 16, paddingTop: 8 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);

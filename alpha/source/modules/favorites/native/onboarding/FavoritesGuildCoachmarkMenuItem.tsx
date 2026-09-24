@@ -1,15 +1,15 @@
-// Module ID: 16636
-// Function ID: 16637
+// Module ID: 16660
+// Function ID: 16661
 // Name: FavoritesGuildCoachmarkMenuItem
-// Dependencies: [19, 2045, 1074, 2039, 21, 10583, 7487, 504, 1115, 3358, 11474, 2]
+// Dependencies: [19, 2047, 1074, 2041, 21, 10588, 7489, 504, 1115, 3360, 11480, 2]
 // Exports: default
 
-// Module 16636 (FavoritesGuildCoachmarkMenuItem)
+// Module 16660 (FavoritesGuildCoachmarkMenuItem)
 import util from "util" /* 1115 */;
-import _modDef3358 from "module_3358" /* 3358 */;
-import LayerScope from "LayerScope" /* 7487 */;
+import _modDef3360 from "module_3360" /* 3360 */;
+import LayerScope from "LayerScope" /* 7489 */;
 import noop from "module_19" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 2045 */;
+import FavoriteStore from "FavoriteStore" /* 2047 */;
 
 require = fn;
 function FavoritesGuildCoachmarkMenuItemContent(arg0) {
@@ -34,9 +34,9 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   }, items2);
   const items3 = [shouldShowPopover, stateFromStores, onDismiss, callback1];
   const memo = onDismiss.useMemo(() => {
-    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M15 6H8v1h7V6ZM10 1H9v1h1V1ZM14 1h-1v1h1V1ZM13 2h-1v1h1V2ZM12 3h-1v1h1V3ZM11 4h-1v1h1V4ZM10 5H9v1h1V5ZM15 9h-2v1h2V9ZM12 11h-2v1h2v-1ZM13 10h-1v1h1v-1ZM9 13H7v1h2v-1ZM10 12H9v1h1v-1ZM6 15H3v1h3v-1ZM8 9H1v1h7V9ZM7 14H6v1h1v-1ZM3 14H2v1h1v-1ZM4 13H3v1h1v-1ZM5 12H4v1h1v-1ZM6 11H5v1h1v-1ZM7 10H6v1h1v-1Z", onButtonPress: "#000" };
+    const obj = { visible: shouldShowPopover, position: "bottom", title: null, description: null, onDismiss: null, renderImgComponent: "r", buttonLabel: "M11 3h-1v1h1V3ZM10 4H9v1h1V4ZM9 5H8v1h1V5ZM8 6H7v1h1V6Z", onButtonPress: null };
     const intl = util.intl;
-    const tmp4 = _modDef3358;
+    const tmp4 = _modDef3360;
     if (stateFromStores) {
       let TWuDTt = tmp4.TWuDTt;
       let tmp6 = tmp3;
@@ -46,10 +46,10 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
     }
     obj.title = intl.string(TWuDTt);
     const intl2 = tmp(1115).intl;
-    obj.description = intl2.string(tmp6(3358).Ztl9ht);
+    obj.description = intl2.string(tmp6(3360).Ztl9ht);
     obj.onDismiss = onDismiss;
     const intl3 = tmp(1115).intl;
-    obj.buttonLabel = intl3.string(tmp6(3358)["+h9aza"]);
+    obj.buttonLabel = intl3.string(tmp6(3360)["+h9aza"]);
     obj.onButtonPress = callback1;
     return obj;
   }, items3);
@@ -57,7 +57,7 @@ function FavoritesGuildCoachmarkMenuItemContent(arg0) {
   const coachmark = stateFromStores(markPopoverAsDismissed[10]).useCoachmark(targetRef, memo);
   return null;
 }
-const ContentDismissActionType = fn(2039).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const jsx = fn(21).jsx;
 let items = [, , ];
 ({ GUILD_TEXT: arr[0], GUILD_ANNOUNCEMENT: arr[1], GUILD_FORUM: arr[2] } = fn(1074).ChannelTypes);

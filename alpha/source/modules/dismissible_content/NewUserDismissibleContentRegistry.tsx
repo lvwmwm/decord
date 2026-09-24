@@ -1,12 +1,12 @@
-// Module ID: 4669
-// Function ID: 4670
+// Module ID: 4671
+// Function ID: 4672
 // Name: NewUserDismissibleContentRegistry
-// Dependencies: [502, 2032, 2028, 4670, 563, 11, 2]
+// Dependencies: [502, 2032, 2028, 4672, 563, 11, 2]
 // Exports: disableNewUserDismissibleContent, isUserAccountOldEnough, useNewUserDismissibleContent
 
-// Module 4669 (NewUserDismissibleContentRegistry)
+// Module 4671 (NewUserDismissibleContentRegistry)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 4670 */;
+import DcfNewUserCooldownExperiment from "DcfNewUserCooldownExperiment" /* 4672 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 2032 */;
 

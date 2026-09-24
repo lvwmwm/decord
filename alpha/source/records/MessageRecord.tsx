@@ -1,14 +1,14 @@
-// Module ID: 4473
-// Function ID: 4474
+// Module ID: 4475
+// Function ID: 4476
 // Name: MessageRecord
-// Dependencies: [1387, 1074, 1385, 4474, 7630, 8090, 9395, 2]
+// Dependencies: [1387, 1074, 1385, 4476, 7632, 8092, 9399, 2]
 // Exports: isMessageComponentsV2
 
-// Module 4473 (MessageRecord)
+// Module 4475 (MessageRecord)
 import FlagUtils from "FlagUtils" /* 1385 */;
-import ReactionUtils from "ReactionUtils" /* 4474 */;
-import isForwardMessageDefault from "isForwardMessage" /* 7630 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9395 */;
+import ReactionUtils from "ReactionUtils" /* 4476 */;
+import isForwardMessageDefault from "isForwardMessage" /* 7632 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 9399 */;
 import Record from "Record" /* 1387 */;
 
 require = fn;
@@ -270,7 +270,7 @@ prototype["addReaction"] = function addReaction(emoji) {
           return emoji;
         }
       }
-      if (NORMAL === tmp(8090).ReactionTypes.BURST) {
+      if (NORMAL === tmp(8092).ReactionTypes.BURST) {
         if (flag) {
           if (emoji.me_burst) {
             return emoji;
@@ -294,7 +294,7 @@ prototype["addReaction"] = function addReaction(emoji) {
         }
         burst_colors = colors;
         tmp28 = flag;
-      } else if (tmp12 === tmp(8090).ReactionTypes.VOTE) {
+      } else if (tmp12 === tmp(8092).ReactionTypes.VOTE) {
         const count_details2 = emoji.count_details;
         let num7;
         if (count_details2 != null) {
@@ -378,7 +378,7 @@ prototype["removeReaction"] = function removeReaction(arg0) {
     if (!obj.emojiEquals(emoji.emoji, closure_0)) {
       return merged1;
     } else {
-      if (NORMAL === tmp2(8090).ReactionTypes.BURST) {
+      if (NORMAL === tmp2(8092).ReactionTypes.BURST) {
         if (flag) {
           if (!merged1.me_burst) {
             let burst_count = merged1.burst_count;
@@ -399,7 +399,7 @@ prototype["removeReaction"] = function removeReaction(arg0) {
           closure_3 = index;
         }
         burst_count = merged1.burst_count - 1;
-      } else if (tmp4 !== tmp2(8090).ReactionTypes.VOTE) {
+      } else if (tmp4 !== tmp2(8092).ReactionTypes.VOTE) {
         if (flag) {
           if (!merged1.me) {
             let count = merged1.count;

@@ -1,11 +1,11 @@
-// Module ID: 8617
-// Function ID: 8618
+// Module ID: 8621
+// Function ID: 8622
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: [4462, 1074, 563, 2020, 2]
+// Dependencies: [4464, 1074, 563, 2020, 2]
 // Exports: default, useShouldDisplaySpoilerObscurity
 
-// Module 8617 (computeGlobalSpoilerDisplay)
-import PermissionStore from "PermissionStore" /* 4462 */;
+// Module 8621 (computeGlobalSpoilerDisplay)
+import PermissionStore from "PermissionStore" /* 4464 */;
 
 const require = globalThis.__r;
 

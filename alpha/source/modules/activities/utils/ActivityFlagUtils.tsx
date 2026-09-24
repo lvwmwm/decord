@@ -1,14 +1,14 @@
-// Module ID: 9711
-// Function ID: 9712
+// Module ID: 9715
+// Function ID: 9716
 // Name: ActivityFlagUtils
-// Dependencies: [1074, 2020, 510, 1385, 8066, 2]
+// Dependencies: [1074, 2020, 510, 1385, 8068, 2]
 // Exports: computeActivityFlags, isContextlessEmbeddedActivity
 
-// Module 9711 (ActivityFlagUtils)
+// Module 9715 (ActivityFlagUtils)
 import Storage2 from "Storage" /* 510 */;
 import FlagUtils from "FlagUtils" /* 1385 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8066 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8068 */;
 import Constants from "Constants" /* 1074 */;
 import size from "module_2" /* 2 */;
 

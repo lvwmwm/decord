@@ -1,25 +1,25 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15143
+// Function ID: 15144
 // Name: AccountWebAuthnViewSetting
-// Dependencies: [19, 15019, 1372, 8319, 1074, 5193, 1115, 6924, 504, 11805, 15022, 2]
+// Dependencies: [19, 15028, 1372, 8323, 1074, 5195, 1115, 6926, 504, 11811, 15031, 2]
 
-// Module 15134 (AccountWebAuthnViewSetting)
+// Module 15143 (AccountWebAuthnViewSetting)
 import initialize from "initialize" /* 504 */;
 import util from "util" /* 1115 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5193 */;
-import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6924 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5195 */;
+import WebAuthnActionCreators from "WebAuthnActionCreators" /* 6926 */;
 import noop from "module_19" /* 19 */;
-import WebAuthnStore from "WebAuthnStore" /* 15019 */;
+import WebAuthnStore from "WebAuthnStore" /* 15028 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
-const SettingBuilders = fn(11805);
+const SettingBuilders = fn(11811);
 const route = SettingBuilders.createRoute({
   useTitle() {
     const intl = util.intl;
     return intl.string(util.t.y7SXYX);
   },
-  parent: fn(8319).MobileUserSettings.ACCOUNT,
+  parent: fn(8323).MobileUserSettings.ACCOUNT,
   usePreNavigationAction: function useAccountCanUseWebAuthnView() {
     return noop.useCallback(() => {
       currentUser = currentUser.getCurrentUser();

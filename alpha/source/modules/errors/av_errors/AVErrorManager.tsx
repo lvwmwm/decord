@@ -1,20 +1,20 @@
-// Module ID: 18371
-// Function ID: 18372
+// Module ID: 18394
+// Function ID: 18395
 // Name: AVErrorManager
-// Dependencies: [109, 4849, 2096, 4846, 9764, 3, 18372, 7449, 9765, 573, 18392, 2]
+// Dependencies: [109, 4851, 2098, 4848, 9768, 3, 18395, 7451, 9769, 573, 18415, 2]
 
-// Module 18371 (AVErrorManager)
+// Module 18394 (AVErrorManager)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
-import AVError from "AVError" /* 9765 */;
-import ErrorDefinitions from "ErrorDefinitions" /* 18372 */;
-import AVErrorAnalytics from "AVErrorAnalytics" /* 18392 */;
+import AVError from "AVError" /* 9769 */;
+import ErrorDefinitions from "ErrorDefinitions" /* 18395 */;
+import AVErrorAnalytics from "AVErrorAnalytics" /* 18415 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4849 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
-import VoiceStateStore from "VoiceStateStore" /* 4846 */;
-import AVErrorStore from "AVErrorStore" /* 9764 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7449 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import VoiceStateStore from "VoiceStateStore" /* 4848 */;
+import AVErrorStore from "AVErrorStore" /* 9768 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7451 */;
 
 require = fn;
 function setDifference(set, set2) {

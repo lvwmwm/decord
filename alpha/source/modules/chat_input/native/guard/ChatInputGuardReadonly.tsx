@@ -1,19 +1,19 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 12816
+// Function ID: 12817
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 2046, 2042, 4460, 4462, 4842, 4472, 1372, 12295, 1074, 21, 12622, 504, 1370, 1115, 4980, 5007, 1101, 11, 12788, 2]
+// Dependencies: [19, 2048, 2044, 4462, 4464, 4844, 4474, 1372, 12304, 1074, 21, 12631, 504, 1370, 1115, 4982, 5009, 1101, 11, 12797, 2]
 
-// Module 12807 (ChatInputGuardReadonly)
+// Module 12816 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import router_utils from "router_utils" /* 1101 */;
 import GlobalUtils from "GlobalUtils" /* 1370 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5007 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5009 */;
 import noop from "module_19" /* 19 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildChannelStore from "GuildChannelStore" /* 4460 */;
-import PermissionStore from "PermissionStore" /* 4462 */;
-import ReadStateStore from "ReadStateStore" /* 4842 */;
-import RelationshipStore from "RelationshipStore" /* 4472 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildChannelStore from "GuildChannelStore" /* 4462 */;
+import PermissionStore from "PermissionStore" /* 4464 */;
+import ReadStateStore from "ReadStateStore" /* 4844 */;
+import RelationshipStore from "RelationshipStore" /* 4474 */;
 import UserStore from "UserStore" /* 1372 */;
 
 const require = globalThis.__r;
@@ -23,9 +23,9 @@ function sortChannelsByLastMessageId(id, id2) {
   const obj = SnowflakeUtilsDefault;
   return obj.compare(ReadStateStore.lastMessageId(id2.id), ReadStateStore.lastMessageId(id.id));
 }
-const isTextChannel = fn(2046).isTextChannel;
-let closure_6 = fn(4460).GUILD_SELECTABLE_CHANNELS_KEY;
-const TextAreaCta = fn(12295).TextAreaCta;
+const isTextChannel = fn(2048).isTextChannel;
+let closure_6 = fn(4462).GUILD_SELECTABLE_CHANNELS_KEY;
+const TextAreaCta = fn(12304).TextAreaCta;
 const Constants = fn(1074);
 ({ AnalyticEvents: closure_12, Permissions: map1 } = Constants);
 const jsx = fn(21).jsx;

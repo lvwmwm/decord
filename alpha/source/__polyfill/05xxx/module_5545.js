@@ -1,13 +1,17 @@
 // Module ID: 5545
 // Function ID: 5546
-// Dependencies: []
+// Dependencies: [5543]
 
 // Module 5545
-const obj = { 4: null };
-obj[4] = {
-  name: "ShotInfo",
-  description(arg0) {
-    return arg0;
+import _mod5543 from "module_5543" /* 5543 */;
+
+require = arg1;
+const dependencyMap = arg6;
+const obj = { 1: "InteroperabilityIndex", 2: null, 4096: "RelatedImageFileFormat", 4097: "RelatedImageWidth", 4098: "RelatedImageHeight" };
+obj[2] = {
+  name: "InteroperabilityVersion",
+  description(value) {
+    return _mod5543.getStringValue(value);
   }
 };
 

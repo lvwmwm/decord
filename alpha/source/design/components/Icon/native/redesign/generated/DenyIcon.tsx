@@ -1,13 +1,13 @@
-// Module ID: 8273
-// Function ID: 8274
+// Module ID: 8277
+// Function ID: 8278
 // Name: DenyIcon
-// Dependencies: [19, 21, 576, 4523, 8274, 2]
+// Dependencies: [19, 21, 576, 4525, 8278, 2]
 // Exports: DenyIcon
 
-// Module 8273 (DenyIcon)
+// Module 8277 (DenyIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod8274 from "module_8274" /* 8274 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod8278 from "module_8278" /* 8278 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const DenyIcon = function DenyIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod8274, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod8278, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

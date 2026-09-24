@@ -1,13 +1,13 @@
-// Module ID: 6042
-// Function ID: 6043
+// Module ID: 6044
+// Function ID: 6045
 // Name: AgeVerificationSpotIllustration
-// Dependencies: [21, 5890, 6043, 2]
+// Dependencies: [21, 5892, 6045, 2]
 // Exports: AgeVerificationSpotIllustration
 
-// Module 6042 (AgeVerificationSpotIllustration)
+// Module 6044 (AgeVerificationSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6043 from "module_6043" /* 6043 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6045 from "module_6045" /* 6045 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AgeVerificationSpotIllustration = function AgeVerificationSpotIllus
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6043 };
+  const obj2 = { uri: _modDef6045 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

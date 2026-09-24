@@ -1,12 +1,12 @@
-// Module ID: 9823
-// Function ID: 9824
+// Module ID: 9828
+// Function ID: 9829
 // Name: ChannelCallModalManager
-// Dependencies: [1372, 4846, 1982, 573, 5034, 2]
+// Dependencies: [1372, 4848, 1982, 573, 5036, 2]
 
-// Module 9823 (ChannelCallModalManager)
+// Module 9828 (ChannelCallModalManager)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import UserStore from "UserStore" /* 1372 */;
-import VoiceStateStore from "VoiceStateStore" /* 4846 */;
+import VoiceStateStore from "VoiceStateStore" /* 4848 */;
 import LifecycleManager from "LifecycleManager" /* 1982 */;
 
 let require = fn;

@@ -1,14 +1,14 @@
-// Module ID: 16818
-// Function ID: 16819
+// Module ID: 16842
+// Function ID: 16843
 // Name: useGetOrFetchNotificationCenterItemApplications
-// Dependencies: [19, 7962, 7499, 2]
+// Dependencies: [19, 7964, 7501, 2]
 // Exports: useGetOrFetchNotificationCenterItemsApplications
 
-// Module 16818 (useGetOrFetchNotificationCenterItemApplications)
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7499 */;
+// Module 16842 (useGetOrFetchNotificationCenterItemApplications)
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 7501 */;
 import noop from "module_19" /* 19 */;
 
-let items = [fn(7962).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, fn(7962).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, fn(7962).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, fn(7962).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
+let items = [fn(7964).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS, fn(7964).NotificationCenterLocalItems.INCOMING_GAME_FRIEND_REQUESTS_ACCEPTED, fn(7964).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS, fn(7964).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS_ACCEPTED];
 let set = new Set(items);
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/notification_center/useGetOrFetchNotificationCenterItemApplications.tsx");

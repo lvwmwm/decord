@@ -1,9 +1,9 @@
-// Module ID: 9498
-// Function ID: 9499
+// Module ID: 9502
+// Function ID: 9503
 // Name: UploadAttachmentActionCreators
-// Dependencies: [573, 9499, 2]
+// Dependencies: [573, 9503, 2]
 
-// Module 9498 (UploadAttachmentActionCreators)
+// Module 9502 (UploadAttachmentActionCreators)
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import size from "module_2" /* 2 */;
 
@@ -16,12 +16,12 @@ export default {
   addFiles(draftType) {
     ({ files, channelId } = draftType);
     draftType = draftType.draftType;
-    if (files.some(channelId(9499).itemNeedsImagePreConversion)) {
+    if (files.some(channelId(9503).itemNeedsImagePreConversion)) {
       function dispatch(files) {
         DispatcherDefault.dispatch({ type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files, draftType });
       }
-      Promise.all(files.map(channelId(9499).maybePreConvertImageItem)).then(dispatch);
-      const allPromises = Promise.all(files.map(channelId(9499).maybePreConvertImageItem));
+      Promise.all(files.map(channelId(9503).maybePreConvertImageItem)).then(dispatch);
+      const allPromises = Promise.all(files.map(channelId(9503).maybePreConvertImageItem));
     } else {
       const obj2 = { type: "UPLOAD_ATTACHMENT_ADD_FILES", channelId, files, draftType };
       draftType(573).dispatch(obj2);

@@ -1,10 +1,10 @@
-// Module ID: 4760
-// Function ID: 4761
+// Module ID: 4762
+// Function ID: 4763
 // Name: useCustomThemeDisplaySettings
 // Dependencies: [32, 1227, 504, 1228, 2]
 // Exports: useCustomThemeDisplaySettings
 
-// Module 4760 (useCustomThemeDisplaySettings)
+// Module 4762 (useCustomThemeDisplaySettings)
 import initialize from "initialize" /* 504 */;
 import _slicedToArray from "module_32" /* 32 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1227 */;

@@ -1,13 +1,13 @@
-// Module ID: 6370
-// Function ID: 6371
+// Module ID: 6372
+// Function ID: 6373
 // Name: GameDepthTier9LargeBadge
-// Dependencies: [21, 5890, 6371, 2]
+// Dependencies: [21, 5892, 6373, 2]
 // Exports: GameDepthTier9LargeBadge
 
-// Module 6370 (GameDepthTier9LargeBadge)
+// Module 6372 (GameDepthTier9LargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6371 from "module_6371" /* 6371 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6373 from "module_6373" /* 6373 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const GameDepthTier9LargeBadge = function GameDepthTier9LargeBadge(width)
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6371 };
+  const obj2 = { uri: _modDef6373 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

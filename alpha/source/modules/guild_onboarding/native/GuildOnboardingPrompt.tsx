@@ -1,25 +1,25 @@
-// Module ID: 7455
-// Function ID: 7456
+// Module ID: 7457
+// Function ID: 7458
 // Name: GuildOnboardingPrompt
-// Dependencies: [32, 19, 17, 5762, 5875, 2064, 7431, 7428, 1375, 21, 4827, 5985, 576, 1484, 504, 1612, 4524, 672, 7454, 5904, 4823, 1115, 5271, 5850, 5283, 1094, 7437, 7456, 7457, 7461, 1397, 4794, 7466, 1980, 5425, 7489, 2]
+// Dependencies: [32, 19, 17, 5764, 5877, 2066, 7433, 7430, 1375, 21, 4829, 5987, 576, 1484, 504, 1612, 4526, 672, 7456, 5906, 4825, 1115, 5273, 5852, 5285, 1094, 7439, 7458, 7459, 7463, 1397, 4796, 7468, 1980, 5427, 7491, 2]
 // Exports: DropdownPrompt, MultipleChoicePrompt, RulesPrompt
 
-// Module 7455 (GuildOnboardingPrompt)
+// Module 7457 (GuildOnboardingPrompt)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
 import asyncRequireImpl from "asyncRequireImpl" /* 1980 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5850 */;
-import TermsFieldListDefault from "TermsFieldList" /* 5904 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7437 */;
-import EmojiDefault from "Emoji" /* 7461 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 5852 */;
+import TermsFieldListDefault from "TermsFieldList" /* 5906 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 7439 */;
+import EmojiDefault from "Emoji" /* 7463 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmojiStore from "EmojiStore" /* 5762 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5875 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7431 */;
+import EmojiStore from "EmojiStore" /* 5764 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5877 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7433 */;
 
 const require = globalThis.__r;
 
@@ -46,7 +46,7 @@ function PromptHeader(currentPrompt) {
     const obj6 = { variant: "text-sm/medium", color: "text-brand", children: null };
     const intl2 = tmp6(1115).intl;
     obj6.children = intl2.string(tmp6(1115).t.Ur8Vrt);
-    items1[1] = tmp5(tmp6(4823).Text, obj6);
+    items1[1] = tmp5(tmp6(4825).Text, obj6);
     obj4.children = items1;
     tmp2Result = tmp2(tmp3, obj4);
   }
@@ -218,19 +218,19 @@ function DropdownOption(option) {
   }
   obj4.name = str;
   obj3.children = closure_15(EmojiDefault, obj4);
-  const items1 = [closure_15(closure_6, obj3), closure_15(tmp2(4823).Text, { variant: "text-md/semibold", children: option.title })];
+  const items1 = [closure_15(closure_6, obj3), closure_15(tmp2(4825).Text, { variant: "text-md/semibold", children: option.title })];
   obj2.children = items1;
   return tmp5(closure_6, obj2);
 }
 get_ActivityIndicator = fn(17);
 ({ Image: hasOwnProperty, View: metroRequire, ScrollView: closure_7, FlatList: closure_8 } = get_ActivityIndicator);
-let closure_13 = fn(7428).GuildOnboardingModalStates;
+let closure_13 = fn(7430).GuildOnboardingModalStates;
 const EMOJI_URL_BASE_SIZE = fn(1375).EMOJI_URL_BASE_SIZE;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = jsxProd);
-const createStyles = fn(4827);
-let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5985).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollContainer: null, scrollContainerGradient: null, promptHeader: null, requiredSeparator: null, countText: null, title: null, helpText: null, footer: null, footerText: null, footerContent: null, optionTextEmoji: null, optionImageEmoji: null, emojiContainer: null, dropdownContainer: null, emptyDropdownText: null, dropdownPill: null, dropdownIconContainer: null, dropdownIcon: null };
-let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5985).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
+const createStyles = fn(4829);
+let obj2 = { flex: { flex: 1 }, container: { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5987).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, scrollContainer: null, scrollContainerGradient: null, promptHeader: null, requiredSeparator: null, countText: null, title: null, helpText: null, footer: null, footerText: null, footerContent: null, optionTextEmoji: null, optionImageEmoji: null, emojiContainer: null, dropdownContainer: null, emptyDropdownText: null, dropdownPill: null, dropdownIconContainer: null, dropdownIcon: null };
+let obj3 = { display: "flex", flex: 1, flexGrow: 1, marginTop: fn(5987).NAV_BAR_HEIGHT, marginBottom: 16, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollContainer = { display: "flex", flexGrow: 1, justifyContent: "center", paddingHorizontal: 16, paddingTop: 0, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };
 obj2.scrollContainerGradient = { position: "absolute", height: 48, width: "100%", left: 0, top: -48 };
 obj2.promptHeader = { display: "flex", flexDirection: "row", alignItems: "center", marginBottom: 8 };
@@ -467,7 +467,7 @@ export const DropdownPrompt = function DropdownPrompt(guildId) {
   items3[1] = { paddingBottom: 64 + currentPrompt(selectOption[15])().bottom + 48 + 48, position: "relative" };
   obj2.contentContainerStyle = items3;
   const callback = noop.useCallback(() => {
-    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(7466, dependencyMap.paths), "DropdownOptions", {
+    ActionSheetActionCreatorsDefault.openLazy(asyncRequireImpl(7468, dependencyMap.paths), "DropdownOptions", {
       guildId,
       promptId: currentPrompt.id,
       onSelect(id, arg1) {

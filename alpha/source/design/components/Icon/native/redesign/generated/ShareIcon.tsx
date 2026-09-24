@@ -1,13 +1,13 @@
-// Module ID: 13293
-// Function ID: 13294
+// Module ID: 13302
+// Function ID: 13303
 // Name: ShareIcon
-// Dependencies: [19, 21, 576, 4523, 9952, 2]
+// Dependencies: [19, 21, 576, 4525, 9957, 2]
 // Exports: ShareIcon
 
-// Module 13293 (ShareIcon)
+// Module 13302 (ShareIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod9952 from "module_9952" /* 9952 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod9957 from "module_9957" /* 9957 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ShareIcon = function ShareIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod9952, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod9957, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

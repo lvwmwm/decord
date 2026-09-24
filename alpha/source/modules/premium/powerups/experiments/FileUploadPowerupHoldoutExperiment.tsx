@@ -1,9 +1,9 @@
-// Module ID: 4752
-// Function ID: 4753
+// Module ID: 4754
+// Function ID: 4755
 // Name: FileUploadPowerupHoldoutExperiment
 // Dependencies: [1434, 2]
 
-// Module 4752 (FileUploadPowerupHoldoutExperiment)
+// Module 4754 (FileUploadPowerupHoldoutExperiment)
 import ApexExperiment from "ApexExperiment" /* 1434 */;
 import size from "module_2" /* 2 */;
 

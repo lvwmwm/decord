@@ -1,22 +1,22 @@
-// Module ID: 12914
-// Function ID: 12915
+// Module ID: 12923
+// Function ID: 12924
 // Name: GuildPowerupsGameServerCard
-// Dependencies: [19, 17, 4819, 4736, 21, 4827, 576, 504, 12915, 12916, 12907, 12911, 4533, 2]
+// Dependencies: [19, 17, 4821, 4738, 21, 4829, 576, 504, 12924, 12925, 12916, 12920, 4535, 2]
 // Exports: default
 
-// Module 12914 (GuildPowerupsGameServerCard)
+// Module 12923 (GuildPowerupsGameServerCard)
 import nativeDefault from "native" /* 576 */;
-import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12915 */;
-import useGameServerPerkDefault from "useGameServerPerk" /* 12916 */;
+import useGameServerPowerupStatusDefault from "useGameServerPowerupStatus" /* 12924 */;
+import useGameServerPerkDefault from "useGameServerPerk" /* 12925 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4819 */;
-import GameServerStore from "GameServerStore" /* 4736 */;
+import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import GameServerStore from "GameServerStore" /* 4738 */;
 
-const GuildPowerupsPerkCardDefault = tmp5(12911);
+const GuildPowerupsPerkCardDefault = tmp5(12920);
 const require = fn;
 const View = fn(17).View;
 const jsx = fn(21).jsx;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 const obj2 = { riveContainer: { flex: 1, paddingVertical: nativeDefault.space.PX_8 } };
 let closure_7 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -43,7 +43,7 @@ export default function GuildPowerupsGameServerCard(guildId) {
       const obj6 = { stateMachine: "SM_Auto", dataBinding: null };
       const obj10 = { reducedMotion: stateFromStores1 };
       obj6.dataBinding = obj10;
-      obj5.children = jsx(tmp2(4533).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: null });
+      obj5.children = jsx(tmp2(4535).GameServerHostingRive, { stateMachine: "SM_Auto", dataBinding: null });
       obj4.riveComponent = <View style={tmp.riveContainer}>{null}</View>;
       obj4.status = tmp6;
       obj4.onPress = tmp9;

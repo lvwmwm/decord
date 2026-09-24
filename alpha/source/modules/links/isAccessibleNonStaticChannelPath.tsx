@@ -1,12 +1,12 @@
-// Module ID: 7643
-// Function ID: 7644
+// Module ID: 7645
+// Function ID: 7646
 // Name: isAccessibleNonStaticChannelPath
-// Dependencies: [2097, 4981, 2]
+// Dependencies: [2099, 4983, 2]
 // Exports: default
 
-// Module 7643 (isAccessibleNonStaticChannelPath)
-import LinkUtils from "LinkUtils" /* 4981 */;
-import GatedChannelStore from "GatedChannelStore" /* 2097 */;
+// Module 7645 (isAccessibleNonStaticChannelPath)
+import LinkUtils from "LinkUtils" /* 4983 */;
+import GatedChannelStore from "GatedChannelStore" /* 2099 */;
 
 require = fn;
 const size = fn(2);

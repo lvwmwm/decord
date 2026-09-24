@@ -1,13 +1,13 @@
-// Module ID: 12104
-// Function ID: 12105
+// Module ID: 12111
+// Function ID: 12112
 // Name: QuestRewardTile
-// Dependencies: [19, 21, 11633, 11628, 12105, 2]
+// Dependencies: [19, 21, 11639, 11634, 12112, 2]
 // Exports: default
 
-// Module 12104 (QuestRewardTile)
-import AssetUtils from "AssetUtils" /* 11628 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 11633 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 12105 */;
+// Module 12111 (QuestRewardTile)
+import AssetUtils from "AssetUtils" /* 11634 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 11639 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 12112 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;

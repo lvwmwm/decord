@@ -1,25 +1,25 @@
-// Module ID: 12651
-// Function ID: 12652
+// Module ID: 12660
+// Function ID: 12661
 // Name: GuildDirectoryEditDescriptionTemplate
-// Dependencies: [5, 32, 19, 17, 12646, 12639, 21, 4827, 504, 4728, 7416, 1115, 5988, 5991, 5271, 2]
+// Dependencies: [5, 32, 19, 17, 12655, 12648, 21, 4829, 504, 4730, 7418, 1115, 5990, 5993, 5273, 2]
 // Exports: default
 
-// Module 12651 (GuildDirectoryEditDescriptionTemplate)
+// Module 12660 (GuildDirectoryEditDescriptionTemplate)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 12646 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 12655 */;
 
 const require = globalThis.__r;
 
 const require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: metroRequire, Keyboard: closure_7 } = get_ActivityIndicator);
-const GuildDirectoryConstants = fn(12639);
+const GuildDirectoryConstants = fn(12648);
 ({ DirectoryEntryCategories: closure_9, getHubCategories: c10 } = GuildDirectoryConstants);
 const jsxProd = fn(21);
 ({ jsx: closure_11, jsxs: closure_12 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_13 = createStyles.createStyles({ container: { marginHorizontal: 16, gap: 24 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/directory_channels/native/components/GuildDirectoryEditDescriptionTemplate.tsx");

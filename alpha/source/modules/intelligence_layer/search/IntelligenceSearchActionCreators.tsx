@@ -1,13 +1,13 @@
-// Module ID: 12708
-// Function ID: 12709
+// Module ID: 12717
+// Function ID: 12718
 // Name: IntelligenceSearchActionCreators
-// Dependencies: [5, 1372, 12697, 1074, 8207, 12700, 12674, 12709, 573, 1271, 12699, 2]
+// Dependencies: [5, 1372, 12706, 1074, 8209, 12709, 12683, 12718, 573, 1271, 12708, 2]
 // Exports: fetchAnswer
 
-// Module 12708 (IntelligenceSearchActionCreators)
+// Module 12717 (IntelligenceSearchActionCreators)
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import UserStore from "UserStore" /* 1372 */;
-import IntelligenceSearchStore from "IntelligenceSearchStore" /* 12697 */;
+import IntelligenceSearchStore from "IntelligenceSearchStore" /* 12706 */;
 
 const require = fn;
 let closure_9 = async function _fetchAnswer(arg0, value) {
@@ -147,7 +147,7 @@ let closure_9 = async function _fetchAnswer(arg0, value) {
   }
 };
 const Endpoints = fn(1074).Endpoints;
-const SearchTabs = fn(8207).SearchTabs;
+const SearchTabs = fn(8209).SearchTabs;
 let closure_8 = JSON.stringify({ arbiter: { enabled: false } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/IntelligenceSearchActionCreators.tsx");

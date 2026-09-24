@@ -1,23 +1,23 @@
-// Module ID: 17819
-// Function ID: 17820
+// Module ID: 17842
+// Function ID: 17843
 // Name: VoicePermissionManager
-// Dependencies: [5724, 4847, 502, 2042, 1992, 4850, 1074, 5036, 5441, 17820, 4974, 7449, 2]
+// Dependencies: [5726, 4849, 502, 2044, 1992, 4852, 1074, 5038, 5443, 17843, 4976, 7451, 2]
 // Exports: shouldImmediatelyRequestVoicePermissions
 
-// Module 17819 (VoicePermissionManager)
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4974 */;
-import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5441 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 5724 */;
-import VoiceStateRecord from "VoiceStateRecord" /* 4847 */;
+// Module 17842 (VoicePermissionManager)
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 4976 */;
+import NativePermissionUtilsDefault from "NativePermissionUtils" /* 5443 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 5726 */;
+import VoiceStateRecord from "VoiceStateRecord" /* 4849 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 4850 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7449 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 4852 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7451 */;
 
 require = fn;
 const InputModes = fn(1074).InputModes;
-const NativePermissionTypes = fn(5036).NativePermissionTypes;
+const NativePermissionTypes = fn(5038).NativePermissionTypes;
 let c11 = null;
 class VoicePermissionManager extends tmp2 {
   constructor() {
@@ -71,8 +71,8 @@ prototype["handleVoiceStateUpdates"] = function handleVoiceStateUpdates(voiceSta
                   }
                 });
                 if (MediaEngineStore.getMode() === constants.PUSH_TO_TALK) {
-                  const permission3 = tmp13(5441).requestPermission(tmp14.INPUT_MONITORING);
-                  const tmp13Result = tmp13(5441);
+                  const permission3 = tmp13(5443).requestPermission(tmp14.INPUT_MONITORING);
+                  const tmp13Result = tmp13(5443);
                 }
                 tmp13 = importDefault;
                 tmp14 = constants2;

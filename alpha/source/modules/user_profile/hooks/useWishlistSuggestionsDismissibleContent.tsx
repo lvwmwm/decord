@@ -1,17 +1,17 @@
-// Module ID: 13489
-// Function ID: 13490
+// Module ID: 13498
+// Function ID: 13499
 // Name: useWishlistSuggestionsDismissibleContent
-// Dependencies: [32, 19, 7943, 2039, 1091, 504, 7716, 2028, 2]
+// Dependencies: [32, 19, 7945, 2041, 1091, 504, 7718, 2028, 2]
 // Exports: default
 
-// Module 13489 (useWishlistSuggestionsDismissibleContent)
+// Module 13498 (useWishlistSuggestionsDismissibleContent)
 import DurationsDefault from "Durations" /* 1091 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 7943 */;
+import UserProfileStore from "UserProfileStore" /* 7945 */;
 
 const require = fn;
-const ContentDismissActionType = fn(2039).ContentDismissActionType;
+const ContentDismissActionType = fn(2041).ContentDismissActionType;
 const cooldownDurationMs = 90 * DurationsDefault.Millis.DAY;
 let closure_7 = 90 * DurationsDefault.Millis.DAY;
 const size = fn(2);

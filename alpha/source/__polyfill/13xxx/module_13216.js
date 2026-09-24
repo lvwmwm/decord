@@ -1,112 +1,67 @@
 // Module ID: 13216
 // Function ID: 13217
-// Dependencies: [32, 109, 13217, 13192]
+// Dependencies: [13141, 13144, 13173, 13159, 13172, 13193, 13163, 13164, 13150, 13181, 13158, 13157, 13145]
+// Exports: getTraceData
 
 // Module 13216
-import extractRequestData from "extractRequestData" /* 13217 */;
-import _slicedToArray from "module_32" /* 32 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import setupIntegration from "module_13192" /* 13192 */;
+import errorCallback from "errorCallback" /* 13141 */;
+import _mod13172 from "module_13172" /* 13172 */;
+import "module_13144";
+import __SENTRY_DEBUG__ from "module_13173" /* 13173 */;
+import dateTimestampInSeconds from "module_13159" /* 13159 */;
 
-let closure_4 = ["ip", "user"];
-let obj = { include: { cookies: true, data: true, headers: true, ip: false, query_string: true, url: true, user: { id: true, username: true, email: true } }, transactionNamingScheme: "methodPath" };
+errorCallback;
 
-export const requestDataIntegration = setupIntegration.defineIntegration(() => {
-  obj = arg0;
+export const getTraceData = function getTraceData() {
+  let obj = arg0;
   if (arg0 === undefined) {
     obj = {};
   }
-  let obj2 = {};
-  const merged = Object.assign(obj);
-  const merged1 = Object.assign(obj);
-  let obj3 = {};
-  const merged2 = Object.assign(obj.include);
-  const merged3 = Object.assign(obj.include);
-  if (obj.include) {
-    if (typeof obj.include.user === "boolean") {
-      let user = obj.include.user;
-    }
-    obj3.user = user;
-    obj2.include = obj3;
-    const obj4 = {
-      name: "RequestData",
-      processEvent(sdkProcessingMetadata) {
-          let prop = sdkProcessingMetadata.sdkProcessingMetadata;
-          if (undefined === prop) {
-            prop = {};
-          }
-          ({ request, normalizedRequest } = prop);
-          const tmp = (function convertReqDataIntegrationOptsToAddReqDataOpts(include) {
-            include = include.include;
-            const user = include.user;
-            const items = ["method"];
-            const entries = Object.entries(closure_1_3(include, closure_1_4));
-            while (tmp2 !== undefined) {
-              let tmp5 = closure_1_2(tmp3, 2);
-              let first = tmp5[0];
-              if (tmp5[1]) {
-                let arr = items.push(first);
-              }
-              continue;
-            }
-            let flag = true;
-            if (undefined !== user) {
-              flag = user;
-              if (typeof user !== "boolean") {
-                const items1 = [];
-                const _Object = Object;
-                const entries1 = Object.entries(user);
-                flag = items1;
-                for (const item10032 of entries1) {
-                  let tmp11 = closure_1_2(item10032, 2);
-                  let first1 = tmp11[0];
-                  if (tmp11[1]) {
-                    let arr2 = items1.push(first1);
-                  }
-                  continue;
-                }
-              }
-            }
-            const include2 = { ip: include.ip, user: flag, request: null, transaction: null };
-            let tmp15;
-            if (0 !== items.length) {
-              tmp15 = items;
-            }
-            include2.request = tmp15;
-            include2.transaction = include.transactionNamingScheme;
-            return { include: include2 };
-          })(obj2);
-          if (normalizedRequest) {
-            let tmp5;
-            if (request) {
-              let ip = request.ip;
-              if (!ip) {
-                ip = request.socket && request.socket.remoteAddress;
-                const tmp6 = request.socket && request.socket.remoteAddress;
-              }
-              tmp5 = ip;
-            }
-            let user;
-            if (request) {
-              user = request.user;
-            }
-            const obj3 = extractRequestData;
-            obj = { ipAddress: tmp5, user };
-            const result = obj3.addNormalizedRequestDataToEvent(sdkProcessingMetadata, normalizedRequest, obj, tmp);
-            return sdkProcessingMetadata;
-          } else {
-            let result1 = sdkProcessingMetadata;
-            if (request) {
-              obj2 = extractRequestData;
-              result1 = obj2.addRequestDataToEvent(sdkProcessingMetadata, request, tmp);
-            }
-            return result1;
-          }
+  const client = _mod13172.getClient();
+  if (obj3.isEnabled()) {
+    if (client) {
+      const mainCarrier = tmp(13163).getMainCarrier();
+      const tmpResult = tmp(13163);
+      const asyncContextStrategy = tmp(13164).getAsyncContextStrategy(mainCarrier);
+      if (asyncContextStrategy.getTraceData) {
+        return asyncContextStrategy.getTraceData(obj);
+      } else {
+        const currentScope = tmp(13172).getCurrentScope();
+        let span = obj.span;
+        if (!span) {
+          span = tmp(13150).getActiveSpan();
+          const tmpResult10 = tmp(13150);
         }
-    };
-    return obj4;
+        if (span) {
+          let spanToTraceHeaderResult = tmp(13150).spanToTraceHeader(span);
+          const tmpResult11 = tmp(13150);
+        } else {
+          const propagationContext = currentScope.getPropagationContext();
+          ({ traceId, sampled, spanId } = propagationContext);
+          spanToTraceHeaderResult = tmp(13157).generateSentryTraceHeader(traceId, spanId, sampled);
+          const tmpResult12 = tmp(13157);
+        }
+        const tmpResult13 = tmp(13181);
+        if (span) {
+          let dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromSpan(span);
+        } else {
+          dynamicSamplingContextFromSpan = tmpResult13.getDynamicSamplingContextFromScope(client, currentScope);
+        }
+        const tmpResult9 = tmp(13172);
+        const result = tmp(13158).dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan);
+        const TRACEPARENT_REGEXP = tmp(13157).TRACEPARENT_REGEXP;
+        if (TRACEPARENT_REGEXP.test(spanToTraceHeaderResult)) {
+          const obj4 = { "sentry-trace": spanToTraceHeaderResult, baggage: result };
+          let obj5 = obj4;
+        } else {
+          const logger = tmp(13145).logger;
+          logger.warn("Invalid sentry-trace data. Cannot generate trace data");
+          obj5 = {};
+        }
+        return obj5;
+      }
+      const tmpResult8 = tmp(13164);
+    }
   }
-  user = {};
-  const merged4 = Object.assign(obj.include.user);
-  const merged5 = Object.assign(obj.include || {}.user);
-});
+  return {};
+};

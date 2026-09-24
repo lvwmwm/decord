@@ -1,9 +1,9 @@
-// Module ID: 9552
-// Function ID: 9553
+// Module ID: 9556
+// Function ID: 9557
 // Name: Carousel
-// Dependencies: [19, 17, 21, 4827, 576, 4533, 1177, 2]
+// Dependencies: [19, 17, 21, 4829, 576, 4535, 1177, 2]
 
-// Module 9552 (Carousel)
+// Module 9556 (Carousel)
 import nativeDefault from "native" /* 576 */;
 import native from "native" /* 1177 */;
 import noop from "module_19" /* 19 */;
@@ -13,7 +13,7 @@ get_ActivityIndicator = fn(17);
 ({ View: c2, ScrollView: c3 } = get_ActivityIndicator);
 const jsxProd = fn(21);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { alignItems: "center" }, carouselContentWrapper: { flexDirection: "row" }, pageIndicator: { flexDirection: "row", justifyContent: "space-around", alignItems: "center" }, activeIndicator: { color: nativeDefault.colors.ICON_STRONG }, inactiveIndicator: null };
 let obj3 = { color: nativeDefault.colors.ICON_STRONG };
 obj2.inactiveIndicator = { color: nativeDefault.colors.ICON_SUBTLE };
@@ -45,7 +45,7 @@ PageIndicator.prototype["render"] = function render() {
   obj3.style = items2;
   return React4(React2, obj3);
 };
-PageIndicator.contextType = fn(4533).ThemeContext;
+PageIndicator.contextType = fn(4535).ThemeContext;
 PageIndicator.defaultProps = { indicatorSpace: 10, indicatorSize: 20 };
 const Component2 = noop.Component;
 class Carousel extends Component2 {
@@ -97,7 +97,7 @@ Carousel.prototype["render"] = function render() {
   obj2.children = items1;
   return hasOwnProperty(React2, obj2);
 };
-Carousel.contextType = fn(4533).ThemeContext;
+Carousel.contextType = fn(4535).ThemeContext;
 Carousel.defaultProps = { pageIndictor: true, width: 375 };
 const size = fn(2);
 const result = size.fileFinishedImporting("components_native/common/Carousel.tsx");

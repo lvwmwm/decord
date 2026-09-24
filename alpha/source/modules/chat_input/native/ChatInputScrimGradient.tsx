@@ -1,17 +1,17 @@
-// Module ID: 12594
-// Function ID: 12595
+// Module ID: 12603
+// Function ID: 12604
 // Name: ChatInputScrimGradient
-// Dependencies: [19, 17, 21, 4645, 4524, 576, 1092, 5283, 2]
+// Dependencies: [19, 17, 21, 4647, 4526, 576, 1092, 5285, 2]
 // Exports: ChatInputScrimGradient, useChatInputFloatingOverlayStyle
 
-// Module 12594 (ChatInputScrimGradient)
+// Module 12603 (ChatInputScrimGradient)
 import nativeDefault from "native" /* 576 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1092 */;
-import useToken from "useToken" /* 4524 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4645 */;
+import useToken from "useToken" /* 4526 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4647 */;
 import noop from "module_19" /* 19 */;
 
-const LinearGradientDefault = tmp4(5283);
+const LinearGradientDefault = tmp4(5285);
 require = fn;
 const View = fn(17).View;
 const jsxProd = fn(21);

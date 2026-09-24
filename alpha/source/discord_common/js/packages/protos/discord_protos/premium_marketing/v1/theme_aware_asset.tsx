@@ -1,9 +1,9 @@
-// Module ID: 11022
-// Function ID: 11023
+// Module ID: 11028
+// Function ID: 11029
 // Name: theme_aware_asset
 // Dependencies: [32, 1187, 2]
 
-// Module 11022 (theme_aware_asset)
+// Module 11028 (theme_aware_asset)
 import _mod1187 from "module_1187" /* 1187 */;
 import _slicedToArray from "module_32" /* 32 */;
 

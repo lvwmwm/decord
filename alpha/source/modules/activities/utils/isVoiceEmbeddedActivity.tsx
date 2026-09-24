@@ -1,15 +1,15 @@
-// Module ID: 9693
-// Function ID: 9694
+// Module ID: 9697
+// Function ID: 9698
 // Name: isVoiceEmbeddedActivity
-// Dependencies: [502, 2042, 2096, 4846, 1095, 2]
+// Dependencies: [502, 2044, 2098, 4848, 1095, 2]
 // Exports: default
 
-// Module 9693 (isVoiceEmbeddedActivity)
+// Module 9697 (isVoiceEmbeddedActivity)
 import ChannelTypes from "ChannelTypes" /* 1095 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
-import VoiceStateStore from "VoiceStateStore" /* 4846 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import VoiceStateStore from "VoiceStateStore" /* 4848 */;
 
 require = fn;
 const size = fn(2);

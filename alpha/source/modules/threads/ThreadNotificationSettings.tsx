@@ -1,14 +1,14 @@
-// Module ID: 10430
-// Function ID: 10431
+// Module ID: 10435
+// Function ID: 10436
 // Name: ThreadNotificationSettings
-// Dependencies: [2042, 5008, 4464, 1114, 1074, 1385, 504, 2]
+// Dependencies: [2044, 5010, 4466, 1114, 1074, 1385, 504, 2]
 // Exports: useThreadNotificationSetting
 
-// Module 10430 (ThreadNotificationSettings)
+// Module 10435 (ThreadNotificationSettings)
 import FlagUtils from "FlagUtils" /* 1385 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5008 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4464 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 5010 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4466 */;
 
 const require = globalThis.__r;
 

@@ -1,13 +1,13 @@
-// Module ID: 15641
-// Function ID: 15642
+// Module ID: 15655
+// Function ID: 15656
 // Name: useSyncedModeThemeName
-// Dependencies: [1182, 1229, 504, 1228, 1115, 2714, 2]
+// Dependencies: [1182, 1229, 504, 1228, 1115, 2716, 2]
 // Exports: useSyncedModeThemeName
 
-// Module 15641 (useSyncedModeThemeName)
+// Module 15655 (useSyncedModeThemeName)
 import util from "util" /* 1115 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1228 */;
-import _modDef2714 from "module_2714" /* 2714 */;
+import _modDef2716 from "module_2716" /* 2716 */;
 import ThemeStore from "ThemeStore" /* 1182 */;
 
 const require = globalThis.__r;
@@ -29,7 +29,7 @@ export const useSyncedModeThemeName = function useSyncedModeThemeName(DARK) {
     }
     if (null != prop) {
       const intl = util.intl;
-      let stringResult = intl.string(_modDef2714.yl1iMm);
+      let stringResult = intl.string(_modDef2716.yl1iMm);
     } else {
       let prop1;
       if (syncedClientTheme != null) {

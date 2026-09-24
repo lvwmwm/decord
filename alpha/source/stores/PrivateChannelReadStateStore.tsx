@@ -1,17 +1,17 @@
-// Module ID: 14111
-// Function ID: 14112
+// Module ID: 14120
+// Function ID: 14121
 // Name: PrivateChannelReadStateStore
-// Dependencies: [2046, 2042, 4842, 2096, 7549, 2018, 504, 573, 2]
+// Dependencies: [2048, 2044, 4844, 2098, 7551, 2018, 504, 573, 2]
 
-// Module 14111 (PrivateChannelReadStateStore)
+// Module 14120 (PrivateChannelReadStateStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import FunctionUtils from "FunctionUtils" /* 2018 */;
-import ChannelRecord from "ChannelRecord" /* 2046 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import ReadStateStore from "ReadStateStore" /* 4842 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 2096 */;
-import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7549 */;
+import ChannelRecord from "ChannelRecord" /* 2048 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import ReadStateStore from "ReadStateStore" /* 4844 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 2098 */;
+import PrivateChannelSortStore from "PrivateChannelSortStore" /* 7551 */;
 import size from "module_2" /* 2 */;
 
 function rebuildUnreads() {

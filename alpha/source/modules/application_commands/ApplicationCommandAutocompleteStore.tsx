@@ -1,14 +1,14 @@
-// Module ID: 8106
-// Function ID: 8107
+// Module ID: 8108
+// Function ID: 8109
 // Name: ApplicationCommandAutocompleteStore
-// Dependencies: [8107, 1074, 1364, 1978, 5007, 504, 573, 2]
+// Dependencies: [8109, 1074, 1364, 1978, 5009, 504, 573, 2]
 
-// Module 8106 (ApplicationCommandAutocompleteStore)
+// Module 8108 (ApplicationCommandAutocompleteStore)
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import Server from "Server" /* 1978 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5007 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8107 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8109 */;
 
 require = fn;
 function handleInit() {

@@ -1,11 +1,11 @@
-// Module ID: 8607
-// Function ID: 8608
+// Module ID: 8611
+// Function ID: 8612
 // Name: MediaViewerAnalyticsManager
-// Dependencies: [2042, 1074, 560, 1241, 2]
+// Dependencies: [2044, 1074, 560, 1241, 2]
 
-// Module 8607 (MediaViewerAnalyticsManager)
+// Module 8611 (MediaViewerAnalyticsManager)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
 
 const Constants = fn(1074);
 ({ AnalyticEvents: c3, AnalyticsSections: closure_4 } = Constants);

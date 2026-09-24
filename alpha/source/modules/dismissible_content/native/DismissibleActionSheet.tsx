@@ -1,12 +1,12 @@
-// Module ID: 10968
-// Function ID: 10969
+// Module ID: 10974
+// Function ID: 10975
 // Name: DismissibleActionSheet
-// Dependencies: [19, 5288, 4794, 2]
+// Dependencies: [19, 5290, 4796, 2]
 // Exports: DismissibleActionSheet
 
-// Module 10968 (DismissibleActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import useMountEffectDefault from "useMountEffect" /* 5288 */;
+// Module 10974 (DismissibleActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import useMountEffectDefault from "useMountEffect" /* 5290 */;
 import noop from "module_19" /* 19 */;
 
 const size = fn(2);
@@ -19,7 +19,7 @@ export const DismissibleActionSheet = function DismissibleActionSheet(arg0) {
     const obj = ActionSheetActionCreatorsDefault;
     const merged = Object.assign(closure_0);
     obj2.markAsDismissed = function markAsDismissed(arg0) {
-      closure_0(4794).hideActionSheet(closure_1_0.actionSheetKey);
+      closure_0(4796).hideActionSheet(closure_1_0.actionSheetKey);
       closure_1_0.markAsDismissed(arg0);
     };
     obj.openLazy(closure_0.importer(), closure_0.actionSheetKey, obj2);
@@ -28,8 +28,8 @@ export const DismissibleActionSheet = function DismissibleActionSheet(arg0) {
   ({ actionSheetKey: arr[0], hideSheetOnUnmount: arr[1] } = arg0);
   const effect = noop.useEffect(() => () => {
     if (tmp2) {
-      closure_0(4794).hideActionSheet(tmp.actionSheetKey);
-      const obj = closure_0(4794);
+      closure_0(4796).hideActionSheet(tmp.actionSheetKey);
+      const obj = closure_0(4796);
     }
   }, items);
   return null;

@@ -1,9 +1,9 @@
-// Module ID: 7862
-// Function ID: 7863
+// Module ID: 7864
+// Function ID: 7865
 // Name: GuildSidebarConstants
 // Dependencies: [2]
 
-// Module 7862 (GuildSidebarConstants)
+// Module 7864 (GuildSidebarConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_sidebar/GuildSidebarConstants.tsx");

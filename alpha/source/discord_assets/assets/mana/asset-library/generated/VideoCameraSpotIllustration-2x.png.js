@@ -1,8 +1,8 @@
-// Module ID: 6885
-// Function ID: 6886
+// Module ID: 6887
+// Function ID: 6888
 // Dependencies: [2]
 
-// Module 6885
+// Module 6887
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/VideoCameraSpotIllustration-2x.png.js");

@@ -1,0 +1,9 @@
+// Module ID: 16763
+// Function ID: 16764
+// Dependencies: [1121]
+
+// Module 16763
+import registerAsset from "module_1121" /* 1121 */;
+
+
+export default registerAsset.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "9055490a5df5abd5b4d009687b826923", name: "ic_guild_voice_24px", type: "png" });

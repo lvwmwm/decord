@@ -1,12 +1,12 @@
-// Module ID: 13435
-// Function ID: 13436
+// Module ID: 13444
+// Function ID: 13445
 // Name: UserProfileEditNoteModal
-// Dependencies: [32, 19, 21, 1484, 5030, 7331, 1365, 1115, 4823, 5927, 13436, 2]
+// Dependencies: [32, 19, 21, 1484, 5032, 7333, 1365, 1115, 4825, 5929, 13445, 2]
 // Exports: default
 
-// Module 13435 (UserProfileEditNoteModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 5030 */;
-import UserProfileEditNote from "UserProfileEditNote" /* 13436 */;
+// Module 13444 (UserProfileEditNoteModal)
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 5032 */;
+import UserProfileEditNote from "UserProfileEditNote" /* 13445 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
 
@@ -51,14 +51,14 @@ export default function UserProfileEditNoteModal(arg0) {
     const obj = { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null };
     const intl = navigation(1115).intl;
     obj.children = intl.string(navigation(1115).t.sHHsOM);
-    return jsx(navigation(4823).Text, { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null });
+    return jsx(navigation(4825).Text, { variant: "redesign/heading-18/bold", accessibilityRole: "header", children: null });
   };
   tmpResult = navigation(1365);
-  obj6.headerLeft = navigation(5927).getHeaderCloseButton(handleClose);
+  obj6.headerLeft = navigation(5929).getHeaderCloseButton(handleClose);
   obj6.render = function render() {
     return jsx(UserProfileEditNote.default, { userId: navigation, onSave, onClose: handleClose, shouldFocusInput });
   };
   obj5.root = obj6;
   obj3.screens = obj5;
-  return tmp6(navigation(7331).Navigator, obj3);
+  return tmp6(navigation(7333).Navigator, obj3);
 };

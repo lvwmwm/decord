@@ -1,19 +1,19 @@
-// Module ID: 10364
-// Function ID: 10365
+// Module ID: 10369
+// Function ID: 10370
 // Name: ChannelCallSingleController
-// Dependencies: [19, 4849, 502, 1074, 4848, 21, 1241, 5007, 504, 10365, 10367, 10368, 2]
+// Dependencies: [19, 4851, 502, 1074, 4850, 21, 1241, 5009, 504, 10370, 10372, 10373, 2]
 // Exports: ChannelCallSingleController
 
-// Module 10364 (ChannelCallSingleController)
+// Module 10369 (ChannelCallSingleController)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1241 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5007 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5009 */;
 import noop from "module_19" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4849 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 4851 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 
 require = fn;
 const AnalyticEvents = fn(1074).AnalyticEvents;
-const ParticipantTypes = fn(4848).ParticipantTypes;
+const ParticipantTypes = fn(4850).ParticipantTypes;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/video_calls/native/components/ChannelCallSingleController.tsx");
@@ -36,13 +36,13 @@ export const ChannelCallSingleController = function ChannelCallSingleController(
       return null;
     } else {
       let tmp18 = channel;
-      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10365 : 10367);
+      tmp18 = tmp18(selectedParticipant.user.id === tmp15 ? 10370 : 10372);
       let obj2 = { participant: selectedParticipant, channel };
       <tmp18 participant={selectedParticipant} channel={channel} />;
     }
   } else if (tmp5.USER === type) {
     let obj = { participant: selectedParticipant, channel };
-    return jsx(channel(10368), { participant: selectedParticipant, channel });
+    return jsx(channel(10373), { participant: selectedParticipant, channel });
   } else if (tmp5.HIDDEN_STREAM === type) {
     return null;
   } else if (tmp5.ACTIVITY === type) {

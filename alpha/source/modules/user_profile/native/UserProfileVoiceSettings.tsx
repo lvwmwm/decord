@@ -1,18 +1,18 @@
-// Module ID: 13423
-// Function ID: 13424
+// Module ID: 13432
+// Function ID: 13433
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 5309, 1992, 4462, 1074, 1085, 21, 4827, 8534, 504, 4974, 10069, 10328, 9990, 7538, 1115, 10026, 10347, 13424, 12868, 13426, 10451, 6938, 4823, 12959, 10125, 8947, 4794, 10053, 10049, 2]
+// Dependencies: [19, 17, 5311, 1992, 4464, 1074, 1085, 21, 4829, 8538, 504, 4976, 10074, 10333, 9995, 7540, 1115, 10031, 10352, 13433, 12877, 13435, 10456, 6940, 4825, 12968, 10130, 8951, 4796, 10058, 10054, 2]
 // Exports: default
 
-// Module 13423 (UserProfileVoiceSettings)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4794 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 9990 */;
-import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 10053 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12959 */;
+// Module 13432 (UserProfileVoiceSettings)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 4796 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 9995 */;
+import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 10058 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12968 */;
 import noop from "module_19" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5309 */;
+import SoundboardStore from "SoundboardStore" /* 5311 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import PermissionStore from "PermissionStore" /* 4462 */;
+import PermissionStore from "PermissionStore" /* 4464 */;
 
 require = fn;
 function UserVoiceSettings(user) {
@@ -172,8 +172,8 @@ function CurrentUserVoiceSettings(channel) {
   ({ user, style } = channel);
   const tmp = closure_11();
   let tmp9Result = dependencyMap;
-  const trackUserProfileAction = channel(8534).useUserProfileAnalyticsContext().trackUserProfileAction;
-  const obj = channel(8534);
+  const trackUserProfileAction = channel(8538).useUserProfileAnalyticsContext().trackUserProfileAction;
+  const obj = channel(8538);
   const items = [MediaEngineStore];
   const stateFromStores = channel(504).useStateFromStores(items, () => selfMute.isSelfMute());
   const obj2 = channel(504);
@@ -206,9 +206,9 @@ function CurrentUserVoiceSettings(channel) {
     }
     const obj5 = { label: stringResult, icon: null, onPress: null };
     if (stateFromStores) {
-      let MicrophoneIcon = tmp2(10026).MicrophoneSlashIcon;
+      let MicrophoneIcon = tmp2(10031).MicrophoneSlashIcon;
     } else {
-      MicrophoneIcon = tmp2(10347).MicrophoneIcon;
+      MicrophoneIcon = tmp2(10352).MicrophoneIcon;
     }
     const obj6 = { children: null };
     obj5.icon = MicrophoneIcon;
@@ -216,11 +216,11 @@ function CurrentUserVoiceSettings(channel) {
       trackUserProfileAction({ action: "MUTE" });
       AudioActionCreatorsDefault.toggleSelfMute();
     };
-    obj6.children = closure_9(tmp2(7538).UserProfileFormRow, obj5, "mute");
-    tmp9Result = tmp9(tmp2(7538).UserProfileCardRows, obj6);
+    obj6.children = closure_9(tmp2(7540).UserProfileFormRow, obj5, "mute");
+    tmp9Result = tmp9(tmp2(7540).UserProfileCardRows, obj6);
     obj4.children = tmp9Result;
-    closure_9(trackUserProfileAction(7538), obj4);
-    const tmp6Result = trackUserProfileAction(7538);
+    closure_9(trackUserProfileAction(7540), obj4);
+    const tmp6Result = trackUserProfileAction(7540);
   }
   return tmp8;
 }
@@ -229,7 +229,7 @@ const VideoToggleState = fn(1074).VideoToggleState;
 const Permissions = fn(1085).Permissions;
 const jsxProd = fn(21);
 ({ jsx: closure_9, jsxs: c10 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_11 = createStyles.createStyles({ card: { paddingBottom: 0 }, cardTitle: { marginBottom: 0 }, volumeSlider: { paddingVertical: 20 }, disableVideoSublabel: { flexDirection: "row", alignItems: "center", gap: 4 } });
 const size = fn(2);
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileVoiceSettings.tsx");

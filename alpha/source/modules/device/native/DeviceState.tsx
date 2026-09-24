@@ -1,10 +1,10 @@
-// Module ID: 8077
-// Function ID: 8078
+// Module ID: 8079
+// Function ID: 8080
 // Name: device/DeviceState
-// Dependencies: [5, 17, 3, 8078, 2]
+// Dependencies: [5, 17, 3, 8080, 2]
 // Exports: getDeviceState
 
-// Module 8077 (device/DeviceState)
+// Module 8079 (device/DeviceState)
 import LoggerDefault from "Logger" /* 3 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 5389
-// Function ID: 5390
+// Module ID: 5391
+// Function ID: 5392
 // Name: ImageLockIcon
-// Dependencies: [19, 21, 576, 4523, 5370, 2]
+// Dependencies: [19, 21, 576, 4525, 5372, 2]
 // Exports: ImageLockIcon
 
-// Module 5389 (ImageLockIcon)
+// Module 5391 (ImageLockIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod5370 from "module_5370" /* 5370 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod5372 from "module_5372" /* 5372 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const ImageLockIcon = function ImageLockIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod5370, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod5372, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

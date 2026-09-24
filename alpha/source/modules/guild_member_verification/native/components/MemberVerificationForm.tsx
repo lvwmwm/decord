@@ -1,25 +1,25 @@
-// Module ID: 5899
-// Function ID: 5900
+// Module ID: 5901
+// Function ID: 5902
 // Name: MemberVerificationForm
-// Dependencies: [5, 32, 19, 17, 5875, 1074, 21, 4827, 4521, 1115, 5900, 5877, 5901, 4651, 504, 5355, 5850, 5902, 7270, 5271, 2]
+// Dependencies: [5, 32, 19, 17, 5877, 1074, 21, 4829, 4523, 1115, 5902, 5879, 5903, 4653, 504, 5357, 5852, 5904, 7272, 5273, 2]
 // Exports: default
 
-// Module 5899 (MemberVerificationForm)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4651 */;
+// Module 5901 (MemberVerificationForm)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4653 */;
 import asyncGeneratorStep from "asyncGeneratorStep" /* 5 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5875 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 5877 */;
 
 const require = globalThis.__r;
 
 require = fn;
 const View = fn(17).View;
-let closure_8 = fn(5875).NO_MEMBER_VERIFICATION_FORM;
+let closure_8 = fn(5877).NO_MEMBER_VERIFICATION_FORM;
 const VerificationLevels = fn(1074).VerificationLevels;
 const jsxProd = fn(21);
 ({ jsx: c10, jsxs: closure_11 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let closure_12 = createStyles.createStyles({ container: { flex: 1, flexDirection: "column", alignItems: "stretch", paddingHorizontal: 16, paddingVertical: 0 }, submitButton: { marginTop: 12, marginBottom: 12 }, error: { alignSelf: "center", paddingVertical: 16, fontSize: 16 } });
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/guild_member_verification/native/components/MemberVerificationForm.tsx");
@@ -67,8 +67,8 @@ export default function MemberVerificationForm(guild) {
                   const obj2 = { key: "MEMBER_VERIFICATION_FORM_INCOMPLETE", content: null, icon: null };
                   const intl = closure_1_0(1115).intl;
                   obj2.content = intl.string(closure_1_0(1115).t.StC497);
-                  obj2.icon = closure_1_1(5900);
-                  closure_1_1(4521).open(obj2);
+                  obj2.icon = closure_1_1(5902);
+                  closure_1_1(4523).open(obj2);
                 })();
                 c6 = 3;
                 return { value: "HermesInternal", done: null };
@@ -294,7 +294,7 @@ export default function MemberVerificationForm(guild) {
           const tmp8 = userVerificationState[MemberVerificationTypes.UserVerificationFieldPlatforms.EMAIL];
           let tmp9 = !tmp8;
           if (!tmp8) {
-            tmp9 = !userVerificationState[tmp6(undefined, 4651).UserVerificationFieldPlatforms.PHONE];
+            tmp9 = !userVerificationState[tmp6(undefined, 4653).UserVerificationFieldPlatforms.PHONE];
           }
           return tmp9;
         }

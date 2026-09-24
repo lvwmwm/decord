@@ -1,13 +1,13 @@
-// Module ID: 16270
-// Function ID: 16271
+// Module ID: 16292
+// Function ID: 16293
 // Name: DefaultDMSettingsExperiment
-// Dependencies: [5726, 5727, 5039, 2]
+// Dependencies: [5728, 5729, 5041, 2]
 // Exports: shouldAgeVerifyForDMDefaultOff
 
-// Module 16270 (DefaultDMSettingsExperiment)
-import AgeVerificationUtils from "AgeVerificationUtils" /* 5039 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5726 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 5727 */;
+// Module 16292 (DefaultDMSettingsExperiment)
+import AgeVerificationUtils from "AgeVerificationUtils" /* 5041 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5728 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 5729 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/DefaultDMSettingsExperiment.tsx");

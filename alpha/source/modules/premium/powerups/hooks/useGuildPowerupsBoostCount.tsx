@@ -1,15 +1,15 @@
-// Module ID: 4735
-// Function ID: 4736
+// Module ID: 4737
+// Function ID: 4738
 // Name: useGuildPowerupsBoostCount
-// Dependencies: [19, 4736, 2064, 4715, 4739, 504, 2]
+// Dependencies: [19, 4738, 2066, 4717, 4741, 504, 2]
 // Exports: default, getGuildPowerupsBoostCount
 
-// Module 4735 (useGuildPowerupsBoostCount)
-import GameServerExperiment from "GameServerExperiment" /* 4739 */;
+// Module 4737 (useGuildPowerupsBoostCount)
+import GameServerExperiment from "GameServerExperiment" /* 4741 */;
 import noop from "module_19" /* 19 */;
-import GameServerStore from "GameServerStore" /* 4736 */;
-import GuildStore from "GuildStore" /* 2064 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 4715 */;
+import GameServerStore from "GameServerStore" /* 4738 */;
+import GuildStore from "GuildStore" /* 2066 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 4717 */;
 
 const require = globalThis.__r;
 

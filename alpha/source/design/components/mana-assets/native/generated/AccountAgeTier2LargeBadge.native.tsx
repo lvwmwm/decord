@@ -1,13 +1,13 @@
-// Module ID: 6004
-// Function ID: 6005
+// Module ID: 6006
+// Function ID: 6007
 // Name: AccountAgeTier2LargeBadge
-// Dependencies: [21, 5890, 6005, 2]
+// Dependencies: [21, 5892, 6007, 2]
 // Exports: AccountAgeTier2LargeBadge
 
-// Module 6004 (AccountAgeTier2LargeBadge)
+// Module 6006 (AccountAgeTier2LargeBadge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6005 from "module_6005" /* 6005 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6007 from "module_6007" /* 6007 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AccountAgeTier2LargeBadge = function AccountAgeTier2LargeBadge(widt
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6005 };
+  const obj2 = { uri: _modDef6007 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

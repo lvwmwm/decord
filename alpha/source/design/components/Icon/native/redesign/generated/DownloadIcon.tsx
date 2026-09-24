@@ -1,13 +1,13 @@
-// Module ID: 4775
-// Function ID: 4776
+// Module ID: 4777
+// Function ID: 4778
 // Name: DownloadIcon
-// Dependencies: [19, 21, 576, 4523, 4776, 2]
+// Dependencies: [19, 21, 576, 4525, 4778, 2]
 // Exports: DownloadIcon
 
-// Module 4775 (DownloadIcon)
+// Module 4777 (DownloadIcon)
 import nativeDefault from "native" /* 576 */;
-import BaseIconImage from "BaseIconImage" /* 4523 */;
-import _mod4776 from "module_4776" /* 4776 */;
+import BaseIconImage from "BaseIconImage" /* 4525 */;
+import _mod4778 from "module_4778" /* 4778 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -22,5 +22,5 @@ export const DownloadIcon = function DownloadIcon(color) {
   }
   const merged = Object.assign(color, Object.assign({ style: 0, color: 0 }));
   const merged1 = Object.assign(merged);
-  return jsx(BaseIconImage.BaseIconImage, { source: _mod4776, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
+  return jsx(BaseIconImage.BaseIconImage, { source: _mod4778, color: INTERACTIVE_ICON_DEFAULT, style: color.style });
 };

@@ -1,15 +1,15 @@
-// Module ID: 15818
-// Function ID: 15819
+// Module ID: 15832
+// Function ID: 15833
 // Name: SettingsWebBrowserScreen
-// Dependencies: [19, 8319, 21, 11805, 15048, 2]
+// Dependencies: [19, 8323, 21, 11811, 15057, 2]
 
-// Module 15818 (SettingsWebBrowserScreen)
-import SettingBuilders from "SettingBuilders" /* 11805 */;
-import SettingLayoutDefault from "SettingLayout" /* 15048 */;
+// Module 15832 (SettingsWebBrowserScreen)
+import SettingBuilders from "SettingBuilders" /* 11811 */;
+import SettingLayoutDefault from "SettingLayout" /* 15057 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
-const MobileUserSettings = fn(8319).MobileUserSettings;
+const MobileUserSettings = fn(8323).MobileUserSettings;
 const jsx = fn(21).jsx;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/user_settings/web_browser/native/SettingsWebBrowserScreen.tsx");

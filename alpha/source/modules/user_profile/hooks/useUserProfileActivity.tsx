@@ -1,16 +1,16 @@
-// Module ID: 13420
-// Function ID: 13421
+// Module ID: 13429
+// Function ID: 13430
 // Name: useUserProfileActivity
-// Dependencies: [19, 9148, 1992, 4867, 4852, 504, 11222, 13421, 8490, 8687, 8683, 2]
+// Dependencies: [19, 9152, 1992, 4869, 4854, 504, 11228, 13430, 8494, 8691, 8687, 2]
 // Exports: default
 
-// Module 13420 (useUserProfileActivity)
+// Module 13429 (useUserProfileActivity)
 import _mod19 from "module_19" /* 19 */;
-import Constants from "Constants" /* 4852 */;
-import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 13421 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9148 */;
+import Constants from "Constants" /* 4854 */;
+import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 13430 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9152 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
-import PresenceStore from "PresenceStore" /* 4867 */;
+import PresenceStore from "PresenceStore" /* 4869 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -61,8 +61,8 @@ export default function useUserProfileActivity(arg0) {
               tmp6 = !userProfileLiveActivities.some((item) => {
                 let result = null != item;
                 if (result) {
-                  result = userProfileLiveActivities(8683).isMatchingListeningActivity(closure_0, item);
-                  const obj = userProfileLiveActivities(8683);
+                  result = userProfileLiveActivities(8687).isMatchingListeningActivity(closure_0, item);
+                  const obj = userProfileLiveActivities(8687);
                 }
                 return result;
               });
@@ -73,8 +73,8 @@ export default function useUserProfileActivity(arg0) {
               result = !userProfileLiveActivities.some((item) => {
                 let result = null != item;
                 if (result) {
-                  result = userProfileLiveActivities(8683).isMatchingWatchActivity(closure_0, item);
-                  const obj = userProfileLiveActivities(8683);
+                  result = userProfileLiveActivities(8687).isMatchingWatchActivity(closure_0, item);
+                  const obj = userProfileLiveActivities(8687);
                 }
                 return result;
               });

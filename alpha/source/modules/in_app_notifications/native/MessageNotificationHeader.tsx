@@ -1,18 +1,18 @@
-// Module ID: 10514
-// Function ID: 10515
+// Module ID: 10519
+// Function ID: 10520
 // Name: MessageNotificationHeader
-// Dependencies: [19, 17, 4819, 4472, 1372, 21, 4827, 576, 4823, 4980, 1095, 5375, 5377, 5325, 504, 2]
+// Dependencies: [19, 17, 4821, 4474, 1372, 21, 4829, 576, 4825, 4982, 1095, 5377, 5379, 5327, 504, 2]
 // Exports: SimpleNotificationHeader, default
 
-// Module 10514 (MessageNotificationHeader)
+// Module 10519 (MessageNotificationHeader)
 import initialize from "initialize" /* 504 */;
 import nativeDefault from "native" /* 576 */;
 import ChannelTypes from "ChannelTypes" /* 1095 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import useChannelName from "useChannelName" /* 4980 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import useChannelName from "useChannelName" /* 4982 */;
 import noop from "module_19" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4819 */;
-import RelationshipStore from "RelationshipStore" /* 4472 */;
+import AccessibilityStore from "AccessibilityStore" /* 4821 */;
+import RelationshipStore from "RelationshipStore" /* 4474 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -41,13 +41,13 @@ function LocationText(channel) {
       return element;
     } else {
       if (tmp.type !== tmp3(1095).ChannelTypes.PUBLIC_THREAD) {
-        const simpleChannelIconComponent = tmp3(5325).getSimpleChannelIconComponent(tmp);
-        const tmp3Result = tmp3(5325);
+        const simpleChannelIconComponent = tmp3(5327).getSimpleChannelIconComponent(tmp);
+        const tmp3Result = tmp3(5327);
       }
       if (null == tmp2) {
-        const ThreadIcon = tmp3(5377).ThreadIcon;
+        const ThreadIcon = tmp3(5379).ThreadIcon;
       }
-      tmp3Result2 = tmp3(5375);
+      tmp3Result2 = tmp3(5377);
       const ChatIcon = tmp3Result2.ChatIcon;
     }
   }, items);
@@ -62,7 +62,7 @@ function LocationText(channel) {
 const View = fn(17).View;
 const jsxProd = fn(21);
 ({ jsx: closure_7, jsxs: closure_8 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 }, headerContent: { flex: 1, flexDirection: "row", alignItems: "center" }, primaryText: { flexShrink: 1, marginRight: 2 }, secondaryTextContainer: { flexDirection: "row", alignItems: "center", gap: 2, flex: 1, overflow: "hidden" }, separator: { marginHorizontal: 2 }, icon: { width: 16, height: 16 }, secondaryText: { flex: 1 } };
 let closure_9 = createStyles.createStyles(obj2);
 const size = fn(2);
@@ -122,8 +122,8 @@ export default function MessageNotificationHeader(locationTextColor) {
                   }
                   let channelName1 = null;
                   if (null != parentChannel) {
-                    channelName1 = tmp2(4980).computeChannelName(parentChannel, UserStore, RelationshipStore);
-                    const tmp2Result2 = tmp2(4980);
+                    channelName1 = tmp2(4982).computeChannelName(parentChannel, UserStore, RelationshipStore);
+                    const tmp2Result2 = tmp2(4982);
                   }
                   if (null != channelName1) {
                     const _HermesInternal2 = HermesInternal;
@@ -158,7 +158,7 @@ export default function MessageNotificationHeader(locationTextColor) {
     const items1 = [tmp.primaryText, tmp6];
     obj5.style = items1;
     obj5.children = author.nick;
-    tmp17Result = tmp17(tmp2(4823).Text, obj5);
+    tmp17Result = tmp17(tmp2(4825).Text, obj5);
   }
   const items2 = [tmp17Result, ];
   let tmp17Result2 = null != tmp10;
@@ -184,9 +184,9 @@ export const SimpleNotificationHeader = function SimpleNotificationHeader(second
   if (tmp2Result) {
     const obj3 = { style: tmp.secondaryTextContainer, children: null };
     const obj4 = { variant: "text-md/bold", color: "text-muted", maxFontSizeMultiplier: 1.75, style: tmp.separator, children: "\u00B7" };
-    const items2 = [tmp4(tmp5(4823).Text, obj4), ];
+    const items2 = [tmp4(tmp5(4825).Text, obj4), ];
     const obj5 = { variant: "text-md/semibold", color: "text-muted", lineClamp: 1, style: tmp.secondaryText, children: secondaryText };
-    items2[1] = tmp4(tmp5(4823).Text, obj5);
+    items2[1] = tmp4(tmp5(4825).Text, obj5);
     obj3.children = items2;
     tmp2Result = tmp2(tmp3, obj3);
   }

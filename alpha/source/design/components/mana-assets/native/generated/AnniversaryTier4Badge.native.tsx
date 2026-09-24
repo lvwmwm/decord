@@ -1,13 +1,13 @@
-// Module ID: 6056
-// Function ID: 6057
+// Module ID: 6058
+// Function ID: 6059
 // Name: AnniversaryTier4Badge
-// Dependencies: [21, 5890, 6057, 2]
+// Dependencies: [21, 5892, 6059, 2]
 // Exports: AnniversaryTier4Badge
 
-// Module 6056 (AnniversaryTier4Badge)
+// Module 6058 (AnniversaryTier4Badge)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6057 from "module_6057" /* 6057 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6059 from "module_6059" /* 6059 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const AnniversaryTier4Badge = function AnniversaryTier4Badge(width) {
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6057 };
+  const obj2 = { uri: _modDef6059 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

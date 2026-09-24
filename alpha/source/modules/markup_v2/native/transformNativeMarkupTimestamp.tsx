@@ -1,11 +1,11 @@
-// Module ID: 8455
-// Function ID: 8456
+// Module ID: 8459
+// Function ID: 8460
 // Name: transformNativeMarkupTimestamp
-// Dependencies: [5320, 5292, 2]
+// Dependencies: [5322, 5294, 2]
 // Exports: transformNativeTimestamp
 
-// Module 8455 (transformNativeMarkupTimestamp)
-import TimestampUtils from "TimestampUtils" /* 5320 */;
+// Module 8459 (transformNativeMarkupTimestamp)
+import TimestampUtils from "TimestampUtils" /* 5322 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupTimestamp.tsx");
@@ -15,13 +15,13 @@ export const transformNativeTimestamp = function transformNativeTimestamp(value)
   const style = value.style;
   const parseTimestampResult = TimestampUtils.parseTimestamp(str1, style);
   if (null == parseTimestampResult) {
-    const obj2 = { type: tmp2(5292).AST_KEY.TEXT, content: tmp2(5320).unparseTimestamp(str1, style) };
+    const obj2 = { type: tmp2(5294).AST_KEY.TEXT, content: tmp2(5322).unparseTimestamp(str1, style) };
     let obj3 = obj2;
-    const tmp2Result = tmp2(5320);
+    const tmp2Result = tmp2(5322);
   } else {
     obj3 = {};
     const merged = Object.assign(parseTimestampResult);
-    obj3.type = tmp2(5292).AST_KEY.TIMESTAMP;
+    obj3.type = tmp2(5294).AST_KEY.TIMESTAMP;
   }
   return obj3;
 };

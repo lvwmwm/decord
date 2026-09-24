@@ -1,13 +1,13 @@
-// Module ID: 8068
-// Function ID: 8069
+// Module ID: 8070
+// Function ID: 8071
 // Name: VideoQualityStats
-// Dependencies: [32, 8069, 8075, 4856, 2]
+// Dependencies: [32, 8071, 8077, 4858, 2]
 // Exports: parseCodecType
 
-// Module 8068 (VideoQualityStats)
-import TimeUtils from "TimeUtils" /* 4856 */;
-import Histogram from "Histogram" /* 8069 */;
-import SystemResourcesDefault from "SystemResources" /* 8075 */;
+// Module 8070 (VideoQualityStats)
+import TimeUtils from "TimeUtils" /* 4858 */;
+import Histogram from "Histogram" /* 8071 */;
+import SystemResourcesDefault from "SystemResources" /* 8077 */;
 import _slicedToArray from "module_32" /* 32 */;
 
 require = fn;

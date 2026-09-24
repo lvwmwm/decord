@@ -1,9 +1,9 @@
-// Module ID: 12698
-// Function ID: 12699
+// Module ID: 12707
+// Function ID: 12708
 // Name: IntelligenceSearchConstants
 // Dependencies: [2]
 
-// Module 12698 (IntelligenceSearchConstants)
+// Module 12707 (IntelligenceSearchConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/intelligence_layer/search/IntelligenceSearchConstants.tsx");

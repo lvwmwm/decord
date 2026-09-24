@@ -1,21 +1,21 @@
-// Module ID: 17244
-// Function ID: 17245
+// Module ID: 17268
+// Function ID: 17269
 // Name: useSearchScreenError
-// Dependencies: [19, 7609, 12673, 8207, 504, 12674, 1115, 4521, 9792, 2]
+// Dependencies: [19, 7611, 12682, 8209, 504, 12683, 1115, 4523, 9796, 2]
 // Exports: useMessageSearchErrorScreen, useMessageTabCountsErrorText
 
-// Module 17244 (useSearchScreenError)
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 4521 */;
-import _modDef9792 from "module_9792" /* 9792 */;
-import SearchUtils from "SearchUtils" /* 12674 */;
+// Module 17268 (useSearchScreenError)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 4523 */;
+import _modDef9796 from "module_9796" /* 9796 */;
+import SearchUtils from "SearchUtils" /* 12683 */;
 import noop from "module_19" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 7609 */;
-import SearchQueryStore from "SearchQueryStore" /* 12673 */;
+import SearchMessageStore from "SearchMessageStore" /* 7611 */;
+import SearchQueryStore from "SearchQueryStore" /* 12682 */;
 
 const require = globalThis.__r;
 
 require = fn;
-let closure_6 = fn(8207).SEARCH_MESSAGE_TAB_SENTINEL;
+let closure_6 = fn(8209).SEARCH_MESSAGE_TAB_SENTINEL;
 const size = fn(2);
 const result = size.fileFinishedImporting("modules/search/native/hooks/useSearchScreenError.tsx");
 
@@ -42,7 +42,7 @@ export const useMessageSearchErrorScreen = function useMessageSearchErrorScreen(
   let tmp5 = null != stateFromStores;
   const callback = anyErrorMessage.useCallback(() => {
     if (stateFromStores !== ref.current) {
-      const obj2 = { key: "SEARCH_ERROR_TOAST", icon: _modDef9792, content: anyErrorMessage };
+      const obj2 = { key: "SEARCH_ERROR_TOAST", icon: _modDef9796, content: anyErrorMessage };
       ToastActionCreatorsDefault.open(obj2);
       tmp2.current = tmp;
     }

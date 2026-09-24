@@ -1,13 +1,13 @@
-// Module ID: 6530
-// Function ID: 6531
+// Module ID: 6532
+// Function ID: 6533
 // Name: HoldingGemSpotIllustration
-// Dependencies: [21, 5890, 6531, 2]
+// Dependencies: [21, 5892, 6533, 2]
 // Exports: HoldingGemSpotIllustration
 
-// Module 6530 (HoldingGemSpotIllustration)
+// Module 6532 (HoldingGemSpotIllustration)
 import jsxProd from "jsxProd" /* 21 */;
-import FastImageDefault from "FastImage" /* 5890 */;
-import _modDef6531 from "module_6531" /* 6531 */;
+import FastImageDefault from "FastImage" /* 5892 */;
+import _modDef6533 from "module_6533" /* 6533 */;
 import size from "module_2" /* 2 */;
 
 const jsx = jsxProd.jsx;
@@ -28,7 +28,7 @@ export const HoldingGemSpotIllustration = function HoldingGemSpotIllustration(wi
     num3 = 1;
   }
   const obj = { fadeDuration: 0, source: null, style: null, accessible: null, accessibilityLabel: null, resizeMode: null };
-  const obj2 = { uri: _modDef6531 };
+  const obj2 = { uri: _modDef6533 };
   obj.source = obj2;
   const size = { width: num * num3, height: num2 * num3 };
   const items = [size];

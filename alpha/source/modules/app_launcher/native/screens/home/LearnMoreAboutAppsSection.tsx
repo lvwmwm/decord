@@ -1,18 +1,18 @@
-// Module ID: 12428
-// Function ID: 12429
+// Module ID: 12437
+// Function ID: 12438
 // Name: LearnMoreAboutAppsSection
-// Dependencies: [19, 17, 1074, 21, 4827, 576, 4518, 2108, 1115, 12429, 9602, 4823, 5425, 2]
+// Dependencies: [19, 17, 1074, 21, 4829, 576, 4520, 2110, 1115, 12438, 9606, 4825, 5427, 2]
 // Exports: default
 
-// Module 12428 (LearnMoreAboutAppsSection)
+// Module 12437 (LearnMoreAboutAppsSection)
 import nativeDefault from "native" /* 576 */;
 import util from "util" /* 1115 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2108 */;
-import LinkingDefault from "Linking" /* 4518 */;
-import Text_Text from "Text/Text" /* 4823 */;
-import Pressables from "Pressables" /* 5425 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 9602 */;
-import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12429 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2110 */;
+import LinkingDefault from "Linking" /* 4520 */;
+import Text_Text from "Text/Text" /* 4825 */;
+import Pressables from "Pressables" /* 5427 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 9606 */;
+import TrackSectionHeaderDefault from "TrackSectionHeader" /* 12438 */;
 import noop from "module_19" /* 19 */;
 
 require = fn;
@@ -20,7 +20,7 @@ const View = fn(17).View;
 const HelpdeskArticles = fn(1074).HelpdeskArticles;
 const jsxProd = fn(21);
 ({ jsx: metroRequire, jsxs: closure_7 } = jsxProd);
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj2 = { container: { marginTop: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.lg, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, paddingHorizontal: nativeDefault.space.PX_64 }, body: { textAlign: "center" }, divider: null, linkButton: null };
 const obj3 = { marginTop: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.lg, alignItems: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, paddingHorizontal: nativeDefault.space.PX_64 };
 obj2.divider = { height: nativeDefault.space.PX_16 };

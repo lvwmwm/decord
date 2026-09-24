@@ -1,24 +1,24 @@
-// Module ID: 17459
-// Function ID: 17460
+// Module ID: 17482
+// Function ID: 17483
 // Name: PictureInPictureGlobal
-// Dependencies: [32, 19, 17, 2041, 4843, 9733, 502, 1992, 1074, 4848, 21, 4827, 1177, 576, 9738, 504, 9695, 9728, 5034, 9737, 5428, 9740, 8678, 9758, 9762, 9770, 9790, 9798, 9718, 9759, 9736, 10431, 4559, 4828, 5985, 17460, 1612, 2]
+// Dependencies: [32, 19, 17, 2043, 4845, 9737, 502, 1992, 1074, 4850, 21, 4829, 1177, 576, 9742, 504, 9699, 9732, 5036, 9741, 5430, 9744, 8682, 9762, 9766, 9774, 9794, 9802, 9722, 9763, 9740, 10436, 4561, 4830, 5987, 17483, 1612, 2]
 // Exports: default
 
-// Module 17459 (PictureInPictureGlobal)
+// Module 17482 (PictureInPictureGlobal)
 import nativeDefault from "native" /* 576 */;
 import native2 from "native" /* 1177 */;
-import ReanimatedRexport from "ReanimatedRexport" /* 4559 */;
-import timing from "timing" /* 4828 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5034 */;
-import NavigatorConstants from "NavigatorConstants" /* 5985 */;
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9695 */;
-import transitionToActivityDefault from "transitionToActivity" /* 9718 */;
-import PictureInPictureDefault from "PictureInPicture" /* 9736 */;
-import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17460 */;
+import ReanimatedRexport from "ReanimatedRexport" /* 4561 */;
+import timing from "timing" /* 4830 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 5036 */;
+import NavigatorConstants from "NavigatorConstants" /* 5987 */;
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 9699 */;
+import transitionToActivityDefault from "transitionToActivity" /* 9722 */;
+import PictureInPictureDefault from "PictureInPicture" /* 9740 */;
+import getPIPBottomOffsetForPIPMode from "getPIPBottomOffsetForPIPMode" /* 17483 */;
 import _slicedToArray from "module_32" /* 32 */;
 import noop from "module_19" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2041 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 4843 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 2043 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 4845 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 1992 */;
 
@@ -27,13 +27,13 @@ const require = globalThis.__r;
 require = fn;
 get_ActivityIndicator = fn(17);
 ({ View: hasOwnProperty, StyleSheet: metroRequire, TouchableOpacity: closure_7 } = get_ActivityIndicator);
-let closure_10 = fn(9733).useBestActiveChatInputContainerHeight;
+let closure_10 = fn(9737).useBestActiveChatInputContainerHeight;
 const PictureInPicturePositions = fn(1074).PictureInPicturePositions;
-const ParticipantTypes = fn(4848).ParticipantTypes;
+const ParticipantTypes = fn(4850).ParticipantTypes;
 const jsxProd = fn(21);
 ({ jsx: closure_15, jsxs: closure_16 } = jsxProd);
 let c17 = 12;
-const createStyles = fn(4827);
+const createStyles = fn(4829);
 let obj = { container: { flex: 1, marginLeft: 12, marginRight: 12 }, elevationShadow: null, pip: null, background: null };
 const native = fn(1177);
 obj.elevationShadow = native.generateBoxShadowStyle(fn(1177).EIGHT_DP_ELEVATION_SHADOW_PARAMS);

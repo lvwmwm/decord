@@ -1,145 +1,58 @@
 // Module ID: 13143
 // Function ID: 13144
-// Dependencies: []
-// Exports: isDOMError, isDOMException, isElement, isError, isErrorEvent, isEvent, isParameterizedString, isPlainObject, isPrimitive, isRegExp, isString, isSyntheticEvent, isThenable, isVueViewModel
+// Dependencies: [13144, 13145, 13148]
+// Exports: addHandler, maybeInstrument, resetInstrumentationHandlers, triggerHandlers
 
 // Module 13143
-function isInstanceOf(arg0, arg1) {
-  try {
-    return arg0 instanceof arg1;
-  } catch (err) {
-    return false;
-  }
-}
+import _mod13144 from "module_13144" /* 13144 */;
 
-export const isDOMError = function isDOMError(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "DOMError" + "]";
+require = arg1;
+const dependencyMap = {};
+let closure_3 = {};
+
+export const addHandler = function addHandler(arg0, arg1) {
+  dependencyMap[arg0] = dependencyMap[arg0] || [];
+  dependencyMap[arg0].push(arg1);
 };
-export const isDOMException = function isDOMException(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "DOMException" + "]";
-};
-export const isElement = function isElement(arg0) {
-  let tmp = typeof globalThis.Element !== "undefined";
-  if (typeof globalThis.Element !== "undefined") {
-    tmp = isInstanceOf(arg0, globalThis.Element);
+export const maybeInstrument = function maybeInstrument(arg0, fn) {
+  if (!closure_3[arg0]) {
+    tmp2[arg0] = true;
+    try {
+      fn();
+    } catch (tmp5) {
+      if (_mod13144.DEBUG_BUILD) {
+        const logger = tmp6(13145).logger;
+        const _HermesInternal = HermesInternal;
+        logger.error("Error while instrumenting " + tmp, tmp5);
+      }
+      tmp6 = require;
+    }
   }
-  return tmp;
 };
-export const isError = function isError(arg0) {
-  const call = toString.call;
-  const tmp2 = typeof call === "unknown" ? toString() : call(arg0);
-  if ("[object Error]" !== tmp2) {
-    if ("[object Exception]" !== tmp2) {
-      if ("[object DOMException]" !== tmp2) {
-        if ("[object WebAssembly.Exception]" !== tmp2) {
-          const _Error = Error;
-          return isInstanceOf(arg0, Error);
+export const resetInstrumentationHandlers = function resetInstrumentationHandlers() {
+  const keys = Object.keys(closure_2);
+  const item = keys.forEach((item) => {
+    dependencyMap[item] = undefined;
+  });
+};
+export const triggerHandlers = function triggerHandlers(arg0, arg1) {
+  let tmp8 = arg0;
+  if (arg0) {
+    tmp8 = dependencyMap[arg0];
+  }
+  if (tmp8) {
+    const iter = tmp8[Symbol.iterator]();
+    if (iter !== undefined) {
+      try {
+        tmp15(arg1);
+      } catch (tmp18) {
+        if (_mod13144.DEBUG_BUILD) {
+          const logger = tmp19(13145).logger;
+          logger.error(tmp2 + tmp6 + tmp3 + tmp19(13148).getFunctionName(tmp7) + tmp4, tmp18);
+          const tmp19Result = tmp19(13148);
         }
       }
     }
+    const nextResult = iter.next();
   }
-  return true;
-};
-export const isErrorEvent = function isErrorEvent(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "ErrorEvent" + "]";
-};
-export const isEvent = function isEvent(arg0) {
-  let tmp = typeof Event !== "undefined";
-  if (typeof Event !== "undefined") {
-    const _Event = Event;
-    tmp = isInstanceOf(arg0, Event);
-  }
-  return tmp;
-};
-export { isInstanceOf };
-export const isParameterizedString = function isParameterizedString(obj) {
-  let tmp = typeof obj === "object";
-  if (typeof obj === "object") {
-    tmp = null !== obj;
-  }
-  if (tmp) {
-    tmp = "__sentry_template_string__" in obj;
-  }
-  if (tmp) {
-    tmp = "__sentry_template_values__" in obj;
-  }
-  return tmp;
-};
-export const isPlainObject = function isPlainObject(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "Object" + "]";
-};
-export const isPrimitive = function isPrimitive(obj) {
-  let tmp = null === obj;
-  if (!tmp) {
-    let tmp2 = typeof obj === "object";
-    if (typeof obj === "object") {
-      tmp2 = null !== obj;
-    }
-    if (tmp2) {
-      tmp2 = "__sentry_template_string__" in obj;
-    }
-    if (tmp2) {
-      tmp2 = "__sentry_template_values__" in obj;
-    }
-    tmp = tmp2;
-  }
-  if (!tmp) {
-    let tmp3 = typeof obj !== "object";
-    if (typeof obj !== "object") {
-      tmp3 = typeof obj !== "function";
-    }
-    tmp = tmp3;
-  }
-  return tmp;
-};
-export const isRegExp = function isRegExp(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "RegExp" + "]";
-};
-export const isString = function isString(arg0) {
-  const call = toString.call;
-  return (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "String" + "]";
-};
-export const isSyntheticEvent = function isSyntheticEvent(arg0) {
-  const call = toString.call;
-  let tmp3 = (typeof call === "unknown" ? toString() : call(arg0)) === "[object " + "Object" + "]";
-  if (tmp3) {
-    tmp3 = "nativeEvent" in arg0;
-  }
-  if (tmp3) {
-    tmp3 = "preventDefault" in arg0;
-  }
-  if (tmp3) {
-    tmp3 = "stopPropagation" in arg0;
-  }
-  return tmp3;
-};
-export const isThenable = function isThenable(arg0) {
-  let then = arg0;
-  if (arg0) {
-    then = arg0.then;
-  }
-  if (then) {
-    then = typeof arg0.then === "function";
-  }
-  return Boolean(then);
-};
-export const isVueViewModel = function isVueViewModel(__isVue) {
-  let tmp = typeof __isVue !== "object";
-  if (typeof __isVue === "object") {
-    tmp = null === __isVue;
-  }
-  if (!tmp) {
-    __isVue = __isVue.__isVue;
-    let tmp2 = !__isVue;
-    if (!__isVue) {
-      tmp2 = !__isVue._isVue;
-    }
-    tmp = tmp2;
-  }
-  return !tmp;
 };

@@ -1,25 +1,25 @@
-// Module ID: 4462
-// Function ID: 4463
+// Module ID: 4464
+// Function ID: 4465
 // Name: PermissionStore
-// Dependencies: [2098, 4463, 2047, 4464, 2046, 2060, 1386, 2042, 2105, 2064, 1372, 1074, 4466, 4467, 12, 4470, 2056, 504, 1086, 4471, 573, 2]
+// Dependencies: [2100, 4465, 2049, 4466, 2048, 2062, 1386, 2044, 2107, 2066, 1372, 1074, 4468, 4469, 12, 4472, 2058, 504, 1086, 4473, 573, 2]
 
-// Module 4462 (PermissionStore)
+// Module 4464 (PermissionStore)
 import _modDef12 from "module_12" /* 12 */;
 import initializeDefault from "initialize" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 573 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1086 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 2056 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4467 */;
-import ThreadActionUtils from "ThreadActionUtils" /* 4470 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4471 */;
-import ImpersonateStore from "ImpersonateStore" /* 2098 */;
-import LurkingStore from "LurkingStore" /* 4463 */;
-import StageInstanceStore from "StageInstanceStore" /* 2047 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4464 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 2058 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4469 */;
+import ThreadActionUtils from "ThreadActionUtils" /* 4472 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4473 */;
+import ImpersonateStore from "ImpersonateStore" /* 2100 */;
+import LurkingStore from "LurkingStore" /* 4465 */;
+import StageInstanceStore from "StageInstanceStore" /* 2049 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4466 */;
 import UserRecord from "UserRecord" /* 1386 */;
-import ChannelStore from "ChannelStore" /* 2042 */;
-import GuildMemberStore from "GuildMemberStore" /* 2105 */;
-import GuildStore from "GuildStore" /* 2064 */;
+import ChannelStore from "ChannelStore" /* 2044 */;
+import GuildMemberStore from "GuildMemberStore" /* 2107 */;
+import GuildStore from "GuildStore" /* 2066 */;
 import UserStore from "UserStore" /* 1372 */;
 
 require = fn;
@@ -195,9 +195,9 @@ function computePermissions(context, overwrites, roles, excludeGuildPermissions)
     if (set.has(context.type)) {
       const channel = ChannelStore.getChannel(context.parent_id);
       if (null == channel) {
-        let NONE4 = tmp(4467).NONE;
+        let NONE4 = tmp(4469).NONE;
       } else {
-        const tmpResult = tmp(4467);
+        const tmpResult = tmp(4469);
         const tmp24 = computePermissions(channel, overwrites, roles, excludeGuildPermissions);
         NONE4 = tmpResult.applyThreadPermissions(context, tmp24, JoinedThreadsStore.hasJoined(context.id), GuildMemberStore.isCurrentUserGuest(context.guild_id));
         const hasJoinedResult = JoinedThreadsStore.hasJoined(context.id);
@@ -220,16 +220,16 @@ function computePermissions(context, overwrites, roles, excludeGuildPermissions)
       if (null == NONE2) {
         const currentUser = UserStore.getCurrentUser();
         if (null == currentUser) {
-          NONE2 = tmp(4467).NONE;
+          NONE2 = tmp(4469).NONE;
         } else {
           const guild = GuildStore.getGuild(id);
           if (null == guild) {
-            let NONE3 = tmp(4467).NONE;
+            let NONE3 = tmp(4469).NONE;
           } else {
             const obj2 = { user: currentUser, context: guild, checkElevated: true };
-            NONE3 = tmp(4467).computePermissions(obj2);
+            NONE3 = tmp(4469).computePermissions(obj2);
             dependencyMap[id] = NONE3;
-            const tmpResult3 = tmp(4467);
+            const tmpResult3 = tmp(4469);
           }
           NONE2 = NONE3;
         }
@@ -244,12 +244,12 @@ function computePermissions(context, overwrites, roles, excludeGuildPermissions)
   const tmpResult4 = PermissionUtilsAll;
   NONE = tmpResult4.computePermissions({ user: UserStore.getCurrentUser(), context, overwrites, roles, checkElevated: true, excludeGuildPermissions });
 }
-const ChannelRecord = fn(2046);
+const ChannelRecord = fn(2048);
 ({ ChannelRecordBase: closure_8, THREAD_CHANNEL_TYPES: closure_9 } = ChannelRecord);
-const GuildRecord = fn(2060);
+const GuildRecord = fn(2062);
 ({ isGuildOwner: c10, isGuildOwnerWithRequiredMfaLevel: closure_11 } = GuildRecord);
 const Permissions = fn(1074).Permissions;
-let closure_18 = fn(4466).MemberSafetyPagePermissions;
+let closure_18 = fn(4468).MemberSafetyPagePermissions;
 const dependencyMap = {};
 const dependencyMap2 = {};
 const dependencyMap3 = {};
@@ -319,16 +319,16 @@ prototype["canAccessMemberSafetyPage"] = function canAccessMemberSafetyPage(id) 
   if (null == NONE) {
     const currentUser = UserStore.getCurrentUser();
     if (null == currentUser) {
-      NONE = tmp(4467).NONE;
+      NONE = tmp(4469).NONE;
     } else {
       const guild = GuildStore.getGuild(id);
       if (null == guild) {
-        let NONE2 = tmp(4467).NONE;
+        let NONE2 = tmp(4469).NONE;
       } else {
         const obj2 = { user: currentUser, context: guild, checkElevated: true };
-        NONE2 = tmp(4467).computePermissions(obj2);
+        NONE2 = tmp(4469).computePermissions(obj2);
         dependencyMap[id] = NONE2;
-        const tmpResult = tmp(4467);
+        const tmpResult = tmp(4469);
       }
       NONE = NONE2;
     }
@@ -341,16 +341,16 @@ prototype["canAccessGuildSettings"] = function canAccessGuildSettings(guild) {
   if (null == NONE) {
     const currentUser = UserStore.getCurrentUser();
     if (null == currentUser) {
-      NONE = tmp(4467).NONE;
+      NONE = tmp(4469).NONE;
     } else {
       guild = GuildStore.getGuild(id);
       if (null == guild) {
-        let NONE2 = tmp(4467).NONE;
+        let NONE2 = tmp(4469).NONE;
       } else {
         const obj2 = { user: currentUser, context: guild, checkElevated: true };
-        NONE2 = tmp(4467).computePermissions(obj2);
+        NONE2 = tmp(4469).computePermissions(obj2);
         dependencyMap[id] = NONE2;
-        const tmpResult = tmp(4467);
+        const tmpResult = tmp(4469);
       }
       NONE = NONE2;
     }

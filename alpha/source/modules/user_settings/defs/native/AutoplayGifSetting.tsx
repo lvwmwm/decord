@@ -1,13 +1,13 @@
-// Module ID: 15756
-// Function ID: 15757
+// Module ID: 15770
+// Function ID: 15771
 // Name: AutoplayGifSetting
-// Dependencies: [8319, 11805, 1115, 2020, 2]
+// Dependencies: [8323, 11811, 1115, 2020, 2]
 
-// Module 15756 (AutoplayGifSetting)
+// Module 15770 (AutoplayGifSetting)
 import util from "util" /* 1115 */;
 import UserSettings from "UserSettings" /* 2020 */;
-import SettingsConstants from "SettingsConstants" /* 8319 */;
-import SettingBuilders from "SettingBuilders" /* 11805 */;
+import SettingsConstants from "SettingsConstants" /* 8323 */;
+import SettingBuilders from "SettingBuilders" /* 11811 */;
 import size from "module_2" /* 2 */;
 
 const toggle = SettingBuilders.createToggle({
